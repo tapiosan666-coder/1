@@ -20,6 +20,8 @@ var sonar_cooldown := 0.0
 var pulse_cooldown := 0.0
 var target_distance := 0.0
 var player_position := Vector3.ZERO
+var using_gun := false
+var scan_progress := 0.0
 var buttons: Control
 var face_slider: HSlider
 var skin_select: OptionButton
@@ -73,10 +75,10 @@ func _draw() -> void:
 		_text("HAIR", Vector2(258, 558), 13, muted)
 		_text("FACE WIDTH", Vector2(434, 558), 13, muted)
 		_text("WASD  Move    MOUSE  Look    SHIFT  Sprint", Vector2(82, 730), 16, muted)
-		_text("LMB  Scan    RMB  Aim    R  Reload    SPACE  Jump", Vector2(82, 758), 16, muted)
-		_text("TAB  Skills    F  Sonar    Q  Radial scan    ESC  Pause", Vector2(82, 786), 16, muted)
+		_text("HOLD LMB  Read one person / 2 s    RMB  Focus", Vector2(82, 758), 16, muted)
+		_text("1  Reader    2  Pistol (unlock in TAB)    ESC  Pause", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("DEVELOPMENT BUILD  0.1  /  A-1F SECTOR  /  120 IDENTITIES", Vector2(82, 860), 13, muted)
+		_text("DEVELOPMENT BUILD  0.2  /  A-1F SECTOR  /  120 IDENTITIES", Vector2(82, 860), 13, muted)
 		_text("A / ATRIUM", Vector2(1030, 790), 35)
 		_text("01  —  THE FIRST REFLECTION", Vector2(1030, 820), 14, lime)
 		return
@@ -106,9 +108,14 @@ func _draw() -> void:
 				draw_line(center + dir * 9, center + dir * 14, c, 1, true)
 		if target_id >= 0:
 			_text("IDENTITY / %04d" % (target_id + 1), Vector2(765, 443), 13, muted)
-			var count := mini(run.hits[target_id], run.required_hits())
-			for i in run.required_hits():
-				draw_rect(Rect2(765 + i * 19, 455, 14, 4), lime if i < count else Color("52686a"))
+			if using_gun:
+				var count := mini(run.hits[target_id], run.required_hits())
+				for i in run.required_hits():
+					draw_rect(Rect2(765 + i * 19, 455, 14, 4), lime if i < count else Color("52686a"))
+			else:
+				_text("HOLD LMB / %.1f s" % (2.0 * (1 - scan_progress)), Vector2(765, 467), 14, lime)
+		if not using_gun and scan_progress > 0:
+			draw_arc(center, 25, -PI / 2, -PI / 2 + TAU * scan_progress, 64, lime, 3, true)
 		if run.located:
 			draw_rect(Rect2(498, 131, 444, 45), Color(0.08, 0.18, 0.17, 0.95))
 			_text("ORIGINAL LOCATED / %.0f m / FOLLOW THE BEACON" % target_distance, Vector2(515, 159), 15, lime)
@@ -119,11 +126,16 @@ func _draw() -> void:
 			_text("%02d CHAIN" % combo, Vector2(1060, 665), 32, orange)
 		_draw_minimap()
 		draw_rect(Rect2(1130, 753, 280, 112), Color(0.035, 0.07, 0.085, 0.9))
-		_text("SCANNER / MK.01", Vector2(1152, 779), 14, lime)
-		_text("%02d" % ammo, Vector2(1150, 831), 45)
-		_text("/ %02d  UNLIMITED" % run.magazine_size(), Vector2(1226, 828), 15, muted)
-		if reload_progress >= 0:
-			draw_rect(Rect2(1152, 846, 236 * reload_progress, 3), lime)
+		if using_gun:
+			_text("[2] SCAN PISTOL", Vector2(1152, 779), 14, lime)
+			_text("%02d" % ammo, Vector2(1150, 831), 45)
+			_text("/ %02d  UNLIMITED" % run.magazine_size(), Vector2(1226, 828), 15, muted)
+			if reload_progress >= 0:
+				draw_rect(Rect2(1152, 846, 236 * reload_progress, 3), lime)
+		else:
+			_text("[1] IDENTITY READER", Vector2(1152, 779), 14, lime)
+			_text("%03d%%" % int(scan_progress * 100), Vector2(1150, 825), 35)
+			_text("ONE PERSON / 2 s / 6 m", Vector2(1152, 850), 13, muted)
 		draw_rect(Rect2(310, 818, 780, 47), Color(0.035, 0.07, 0.085, 0.9))
 		_text("TAB / SKILLS", Vector2(325, 846), 14, muted)
 		_text("F / ECHO " + ("LOCKED" if run.upgrades.sonar == 0 else ("READY" if sonar_cooldown <= 0 else "%ds" % ceili(sonar_cooldown))), Vector2(535, 846), 14, lime if run.upgrades.sonar > 0 else muted)
@@ -189,13 +201,13 @@ func show_mode(next: String) -> void:
 			var i := 0
 			for key in IdentityRun.SKILLS:
 				var skill: Dictionary = IdentityRun.SKILLS[key]
-				var col := i % 3
-				var row := i / 3
+				var col := i % 4
+				var row := i / 4
 				var maxed: bool = run.upgrades[key] >= skill.max
 				var text := "%s\n%s  [%d/%d]\n%s\n%s" % [skill.branch, skill.name, run.upgrades[key], skill.max, skill.detail, "MAX LEVEL" if maxed else "%d AP" % run.price(key)]
-				var button := _button(text, Rect2(70 + col * 440, 206 + row * 171, 420, 148), func(): skill_pressed.emit(key))
-				button.add_theme_font_size_override("font_size", 16)
-				button.disabled = maxed or run.ap < run.price(key) or (key == "cat_speed" and run.upgrades.cat == 0)
+				var button := _button(text, Rect2(70 + col * 330, 206 + row * 171, 312, 148), func(): skill_pressed.emit(key))
+				button.add_theme_font_size_override("font_size", 14)
+				button.disabled = maxed or run.ap < run.price(key) or (key == "cat_speed" and run.upgrades.cat == 0) or (key in ["focus", "magazine", "reload", "range"] and run.upgrades.gun == 0)
 				i += 1
 			_button("BACK TO SEARCH  /  TAB", Rect2(70, 772, 420, 56), func(): resume_pressed.emit(), true)
 		"win":

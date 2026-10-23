@@ -5,6 +5,9 @@ signal fired
 signal reload_requested
 var camera: Camera3D
 var gun: Node3D
+var handheld: Node3D
+var reader_screen: Label3D
+var using_gun := false
 var enabled := false
 var sensitivity := 0.0022
 var sprint_multiplier := 1.0
@@ -37,6 +40,36 @@ func _ready() -> void:
 	Shapes.box(gun, Vector3(0, 0, -0.24), Vector3(0.1, 0.09, 0.09), dark)
 	Shapes.box(gun, Vector3(0, 0, -0.291), Vector3(0.065, 0.055, 0.009), energy)
 	Shapes.box(gun, Vector3(0.095, 0.01, 0.0), Vector3(0.008, 0.035, 0.19), energy)
+	_make_handheld()
+
+func _make_handheld() -> void:
+	handheld = Node3D.new()
+	camera.add_child(handheld)
+	handheld.position = Vector3(0.24, -0.22, -0.55)
+	handheld.rotation_degrees = Vector3(-12, -14, -5)
+	var rubber := Shapes.material(Color("182027"))
+	var metal := Shapes.material(Color("627780"))
+	metal.metallic = 0.65
+	metal.roughness = 0.3
+	var screen := Shapes.material(Color("102d32"), 0.3)
+	var light := Shapes.material(Color("93e7bb"), 0.5)
+	var shell := Shapes.sphere(handheld, Vector3.ZERO, 1, rubber)
+	shell.scale = Vector3(0.115, 0.18, 0.047)
+	Shapes.box(handheld, Vector3(0, 0.01, 0.022), Vector3(0.19, 0.28, 0.035), metal)
+	Shapes.box(handheld, Vector3(0, 0.03, 0.043), Vector3(0.158, 0.19, 0.009), screen)
+	Shapes.box(handheld, Vector3(0, -0.075, 0.049), Vector3(0.12, 0.003, 0.002), light)
+	for x in [-0.042, 0.0, 0.042]:
+		Shapes.sphere(handheld, Vector3(x, -0.115, 0.039), 0.012, rubber)
+	reader_screen = Shapes.sign_text(handheld, Vector3(0, 0.068, 0.051), "IDENTITY\nREADER", 26, Color("93e7bb"))
+	reader_screen.pixel_size = 0.00065
+	Shapes.box(handheld, Vector3(0, 0.19, 0), Vector3(0.09, 0.06, 0.055), rubber)
+	Shapes.box(handheld, Vector3(0, 0.218, 0), Vector3(0.065, 0.003, 0.032), light)
+	# A first-person gloved hand and sleeve anchor the instrument to the player.
+	var glove := Shapes.material(Color("333b3d"))
+	var palm := Shapes.sphere(handheld, Vector3(0.09, -0.13, -0.005), 0.055, glove)
+	palm.scale = Vector3(0.65, 1.2, 0.8)
+	var sleeve := Shapes.cylinder(handheld, Vector3(0.09, -0.26, -0.005), 0.045, 0.2, Shapes.material(Color("4c5756")))
+	sleeve.rotation.z = -0.12
 
 func _unhandled_input(event: InputEvent) -> void:
 	if not enabled:
@@ -73,6 +106,7 @@ func _physics_process(delta: float) -> void:
 	var target := Vector3(0.0, -0.14, -0.6) if aiming else Vector3(0.25, -0.18, -0.65)
 	var bob := sin(time * 10) * 0.007 * minf(velocity.length() / 5, 1)
 	gun.position = gun.position.lerp(target + Vector3(0, bob, recoil), delta * 12)
+	handheld.position = handheld.position.lerp(Vector3(0.1, -0.15, -0.48) if aiming else Vector3(0.24, -0.22 + bob, -0.55), delta * 12)
 	camera.fov = lerpf(camera.fov, 57.0 if aiming else 78.0, delta * 10)
 	if Input.is_action_pressed("fire"):
 		fired.emit()

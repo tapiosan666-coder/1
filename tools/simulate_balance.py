@@ -16,18 +16,20 @@ import numpy as np
 
 
 ASSUMPTIONS = {
-    "model": "aggregate-v1; hypothetical 15-floor finished game; not measured gameplay",
+    "model": "aggregate-v2; original handheld required for victory; hypothetical 15-floor finished game; not measured gameplay",
     "population": 5000,
     "batch_size": 50,
     "true_selection": "fixed uniform discovery rank 1..5000; no minimum duration or re-selection",
     "identity_order": "exchangeable encounter order, no revisits; spatial NPC routes are NOT simulated",
     "accuracy": "per-run Beta(12, 6), clipped to 0.30..0.95; ADS included in this abstraction",
+    "handheld": "starts owned; 2 continuous seconds, one person, 6 m; perfect tracking assumed; no ammunition",
+    "gun_unlock": "16670 AP for population 5000 (400 AP for sector 120); only gun upgrades reduce gun hit requirements",
     "fire_rate": "6.25 shots/s; 5 down to 1 hits; 30 shots, 1 s reload; infinite reserve",
     "skill_orders": {
-        "scanner_first": ["focus", "focus", "sonar", "cat", "focus", "sprint", "pulse", "focus", "cat_speed", "sonar", "pulse", "sprint", "sonar"],
-        "cat_first": ["cat", "cat_speed", "sonar", "focus", "cat_speed", "focus", "sprint", "pulse", "focus", "sonar", "focus", "pulse", "sonar"],
-        "explorer": ["sonar", "sprint", "focus", "sonar", "cat", "focus", "pulse", "focus", "sprint", "cat_speed", "focus", "pulse", "sonar"],
-        "specialist": ["focus", "pulse", "sonar", "pulse", "cat", "focus", "sprint", "cat_speed", "focus", "sonar", "focus", "pulse", "sonar"],
+        "scanner_first": ["gun", "focus", "focus", "sonar", "cat", "focus", "sprint", "pulse", "focus", "cat_speed", "sonar", "pulse", "sprint", "sonar"],
+        "cat_first": ["cat", "cat_speed", "sonar", "gun", "focus", "cat_speed", "focus", "sprint", "pulse", "focus", "sonar", "focus", "pulse", "sonar"],
+        "explorer": ["sonar", "sprint", "gun", "focus", "sonar", "cat", "focus", "pulse", "focus", "sprint", "cat_speed", "focus", "pulse", "sonar"],
+        "specialist": ["pulse", "sonar", "cat", "gun", "focus", "pulse", "focus", "sprint", "cat_speed", "focus", "sonar", "focus", "pulse", "sonar"],
     },
     "ap": "10 per fake; escalating skill costs copied from IdentityRun; no free initial AP",
     "movement": "search 3.8 s per person + 5.5 s store-search overhead; per-batch Gamma noise; NPC mobility multiplier Uniform(0.85,1.35) per run",
@@ -41,11 +43,11 @@ ASSUMPTIONS = {
     "chests": "10 reachable chests in rank-space; discovery probabilities 0.55 normal (6), 0.65 rare (3), 0.80 legendary (1); uniform first discovery rank; no 3D reachability simulation",
     "item_timing": "discovered items saved until next work batch; offensive variants remove 100..200 at density 1, capped by remaining rank/density; utility variants multiply search by 0.65 for 180 s",
     "items": "uniform choice among the eight specified items; magnet/chain/black hole/ceiling laser/disco represented as crowd clearing, watch/sonar/cart as utility; proposed effects, not implemented gameplay",
-    "special_original": "cat, pulse, offensive item mark original; player then travels 15..90 m at 5 m/s and completes required normal hits + reload allowance",
+    "special_original": "cat/pulse/item mark original and add 15..90 m approach at 5 m/s + 2 s reader; gun marks original and adds 3..30 m approach + 2 s reader; only original handheld wins",
     "limitations": "perfect identification bookkeeping; no missed rooms, navigation errors, combat stress, pauses, save/load, real collision or multi-floor NPC motion; cannot establish a 3-hour commercial playtime",
 }
 
-COST = {"focus": 60, "sonar": 40, "sprint": 60, "cat": 100, "cat_speed": 80, "pulse": 120}
+COST = {"gun": 16670, "focus": 60, "sonar": 40, "sprint": 60, "cat": 100, "cat_speed": 80, "pulse": 120}
 
 
 def simulate(trials: int, seed: int) -> dict:
@@ -67,6 +69,8 @@ def simulate(trials: int, seed: int) -> dict:
     item_type = rng.integers(0, 8, (trials, 10))
     utility_left = np.zeros(trials)
     special_finish = np.zeros(trials, dtype=bool)
+    gun_finish = np.zeros(trials, dtype=bool)
+    gun_unlock_rank = np.full(trials, -1, dtype=np.int32)
     items_used = np.zeros(trials, dtype=np.int32)
     # A maximum 5000 ranks with at least one identity processed each step.
     for _ in range(101):
@@ -74,12 +78,14 @@ def simulate(trials: int, seed: int) -> dict:
         if not active.any():
             break
         # Purchase priorities are fixed at run start; prices use actual AP.
-        for _purchase in range(13):
+        for _purchase in range(15):
             purchased = np.zeros(trials, dtype=bool)
             for strategy_id, skills in enumerate(order):
                 for slot, key in enumerate(skills):
                     price = COST[key] * (levels[key] + 1)
                     eligible = active & ~purchased & (strategy == strategy_id) & (next_purchase == slot) & (ap >= price)
+                    if key == "gun":
+                        gun_unlock_rank[eligible] = done[eligible]
                     ap[eligible] -= price[eligible]
                     levels[key][eligible] += 1
                     next_purchase[eligible] += 1
@@ -109,7 +115,7 @@ def simulate(trials: int, seed: int) -> dict:
         search_per_person *= np.where(visited >= 2, 0.85, 1.0)
         search = ordinary_batch * search_per_person * rng.gamma(8.0, 1 / 8, trials)
         hits = 5 - levels["focus"]
-        gun_per_person = hits / (6.25 * accuracy) + hits / accuracy / 30.0
+        gun_per_person = np.where(levels["gun"] > 0, hits / (6.25 * accuracy) + hits / accuracy / 30.0, 2.0)
         gun_rate = 1.0 / gun_per_person
         cat_period = np.choose(np.minimum(2, levels["cat_speed"]), [20.0, 12.0, 6.0])
         cat_rate = levels["cat"] * 0.65 / cat_period
@@ -127,8 +133,11 @@ def simulate(trials: int, seed: int) -> dict:
         passive_share = passive_rate * dt / np.maximum(1, ordinary_batch)
         special = finished & ((rng.random(trials) < np.minimum(0.95, passive_share)) | finished_by_item)
         special_finish |= special
-        # A special detection still requires approach and the ordinary gun.
-        dt += special * (rng.uniform(15, 90, trials) / 5.0 + gun_per_person + 1.0)
+        # Neither the gun nor a special can verify the original identity.
+        pistol = finished & ~special & (levels["gun"] > 0)
+        gun_finish |= pistol
+        dt += special * (rng.uniform(15, 90, trials) / 5.0 + 2.0)
+        dt += pistol * (rng.uniform(3, 30, trials) / 5.0 + 2.0)
         seconds += np.where(active, dt, 0)
         ap += np.where(active, np.maximum(0, batch - finished.astype(int)) * 10, 0)
         done += np.where(active, batch, 0)
@@ -150,6 +159,9 @@ def simulate(trials: int, seed: int) -> dict:
             "median_discovery_rank": float(np.median(rank)),
             "first_identity_trials": int((rank == 1).sum()),
             "special_detection_percent": round(float(special_finish.mean() * 100), 3),
+            "pistol_detection_percent": round(float(gun_finish.mean() * 100), 3),
+            "gun_purchased_percent": round(float((gun_unlock_rank >= 0).mean() * 100), 3),
+            "mean_gun_unlock_rank_when_purchased": round(float(gun_unlock_rank[gun_unlock_rank >= 0].mean()), 3),
             "mean_items_discovered": round(float(items_used.mean()), 3),
             "strategies": {name: summarize(minutes[strategy == i]) for i, name in enumerate(ASSUMPTIONS["skill_orders"])},
             "conclusion": "Predictive model only. Compare with 180-minute target; do not enforce a minimum or move the original. Validate with instrumented full-map playtests."}

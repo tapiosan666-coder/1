@@ -16,6 +16,8 @@ var elapsed := 0.0
 var combo := 0
 var combo_left := 0.0
 var target: Dictionary = {}
+var handheld_scan := HandheldScan.new()
+var using_gun := false
 var cat: Node3D
 var cat_target := -1
 var cat_scan_time := 0.0
@@ -91,6 +93,8 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	sonar_left = 0
 	pulse_left = 0
 	target = {}
+	using_gun = false
+	handheld_scan.reset()
 	hud.combo = 0
 	hud.notice_time = 0
 	hud.hit_time = 0
@@ -101,12 +105,14 @@ func start_run(count: int = 120, run_seed: int = -1) -> void:
 	player.rotation = Vector3.ZERO
 	player.camera.rotation = Vector3.ZERO
 	set_mode("play")
-	hud.message("Every identity needs 5 hits. Scan imitations to earn AP.")
+	hud.message("Hold LMB on one person for 2 seconds. TAB: unlock equipment.")
 
 func set_mode(mode: String) -> void:
 	hud.show_mode(mode)
 	player.enabled = mode == "play"
-	player.gun.visible = mode == "play"
+	_update_equipment()
+	if mode != "play":
+		handheld_scan.reset()
 	# Pausing the tree preserves timers, NPC positions and ability snapshots.
 	get_tree().paused = mode not in ["play", "title"]
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -137,6 +143,10 @@ func _input(event: InputEvent) -> void:
 		sonar()
 	elif event.keycode == KEY_Q and hud.mode == "play":
 		pulse()
+	elif event.keycode == KEY_1 and hud.mode == "play":
+		equip(false)
+	elif event.keycode == KEY_2 and hud.mode == "play":
+		equip(true)
 
 func _physics_process(delta: float) -> void:
 	if hud.mode != "play":
@@ -154,6 +164,11 @@ func _physics_process(delta: float) -> void:
 			ammo = run.magazine_size()
 	target = ray_target()
 	hud.target_id = int(target.collider.get_meta("identity")) if not target.is_empty() and target.collider.has_meta("identity") else -1
+	if not using_gun:
+		_tick_handheld(delta, Input.is_action_pressed("fire"))
+	hud.using_gun = using_gun
+	hud.scan_progress = handheld_scan.seconds / IdentityRun.HANDHELD_SECONDS
+	player.reader_screen.text = "READING\n%03d%%" % int(hud.scan_progress * 100) if hud.scan_progress > 0 else "IDENTITY\nREADER"
 	hud.ammo = ammo
 	hud.player_position = player.position
 	hud.elapsed = elapsed
@@ -169,13 +184,14 @@ func _physics_process(delta: float) -> void:
 
 func ray_target() -> Dictionary:
 	var from := player.camera.global_position
-	var to := from - player.camera.global_transform.basis.z * run.scan_range()
+	var reach := run.scan_range() if using_gun else IdentityRun.HANDHELD_RANGE
+	var to := from - player.camera.global_transform.basis.z * reach
 	var query := PhysicsRayQueryParameters3D.create(from, to, 3, [player.get_rid()])
 	query.collide_with_areas = true
 	return get_world_3d().direct_space_state.intersect_ray(query)
 
 func fire() -> void:
-	if hud.mode != "play" or reload_left > 0 or shot_cooldown > 0:
+	if not using_gun or run.upgrades.gun == 0 or hud.mode != "play" or reload_left > 0 or shot_cooldown > 0:
 		return
 	if ammo <= 0:
 		reload_gun()
@@ -190,16 +206,16 @@ func fire() -> void:
 	var at: Vector3 = hit.position
 	_spark(at)
 	if hit.collider.has_meta("identity"):
-		resolve(int(hit.collider.get_meta("identity")), true)
+		resolve(int(hit.collider.get_meta("identity")), IdentityRun.Source.GUN)
 
 func reload_gun() -> void:
-	if hud.mode != "play" or reload_left > 0 or ammo >= run.magazine_size():
+	if not using_gun or hud.mode != "play" or reload_left > 0 or ammo >= run.magazine_size():
 		return
 	reload_left = run.reload_seconds()
 	audio.play("reload")
 
-func resolve(id: int, normal: bool) -> IdentityRun.Result:
-	var outcome := run.scan(id, normal)
+func resolve(id: int, source: IdentityRun.Source) -> IdentityRun.Result:
+	var outcome := run.scan(id, source)
 	if outcome == IdentityRun.Result.HIT:
 		hud.hit_time = 0.12
 		audio.play("hit", 0.8 + float(run.hits[id]) * 0.12)
@@ -214,11 +230,40 @@ func resolve(id: int, normal: bool) -> IdentityRun.Result:
 		audio.play("fall", minf(1.5, 1 + combo * 0.025))
 	elif outcome == IdentityRun.Result.LOCATED:
 		_mark_original()
-		hud.message("ORIGINAL LOCATED. Approach and finish with your scanner.")
+		hud.message("ORIGINAL LOCATED. Press 1: finish with the original reader.")
 	elif outcome == IdentityRun.Result.FOUND:
 		audio.play("found")
 		set_mode("win")
 	return outcome
+
+func equip(gun_selected: bool) -> bool:
+	if gun_selected and run.upgrades.gun == 0:
+		hud.message("Unlock SCAN PISTOL in TAB first / %d AP." % run.price("gun"))
+		return false
+	using_gun = gun_selected
+	handheld_scan.reset()
+	_update_equipment()
+	return true
+
+func _update_equipment() -> void:
+	player.using_gun = using_gun
+	player.gun.visible = hud.mode == "play" and using_gun
+	player.handheld.visible = hud.mode == "play" and not using_gun
+
+func _tick_handheld(delta: float, held: bool) -> void:
+	if hud.mode != "play" or using_gun:
+		handheld_scan.reset()
+		return
+	var hit := ray_target()
+	var id := -1
+	if not hit.is_empty() and hit.collider.has_meta("identity"):
+		id = int(hit.collider.get_meta("identity"))
+		if run.eliminated[id]:
+			id = -1
+	var finished := handheld_scan.tick(delta, id, held)
+	if finished >= 0:
+		resolve(finished, IdentityRun.Source.HANDHELD)
+		audio.play("hit", 1.25)
 
 func buy_skill(key: String) -> void:
 	if run.purchase(key):
@@ -259,7 +304,7 @@ func pulse() -> void:
 	var radius: float = 4.0 + run.upgrades.pulse * 4.0
 	var ids := crowd.live_positions_in_radius(player.position, radius)
 	for id in ids:
-		resolve(id, false)
+		resolve(id, IdentityRun.Source.SPECIAL)
 	_ring(player.position, radius, Color("f3b588"))
 	audio.play("sonar", 0.65)
 
@@ -272,7 +317,7 @@ func _mark_original() -> void:
 	mat.no_depth_test = true
 	mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	Shapes.sphere(beacon, Vector3.ZERO, 0.25, mat)
-	var label := Shapes.sign_text(beacon, Vector3(0, 0.55, 0), "ORIGINAL\nFINISH WITH SCANNER", 28, Color("b6ff94"))
+	var label := Shapes.sign_text(beacon, Vector3(0, 0.55, 0), "ORIGINAL\n[1] IDENTITY READER", 28, Color("b6ff94"))
 	label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
 	label.no_depth_test = true
 	audio.play("found", 1.3)
@@ -337,7 +382,7 @@ func _tick_cat(delta: float) -> void:
 		cat.rotation.z = sin(cat_scan_time * 8) * 0.1
 		var seconds: float = [20.0, 12.0, 6.0][run.upgrades.cat_speed]
 		if cat_scan_time >= seconds:
-			resolve(cat_target, false)
+			resolve(cat_target, IdentityRun.Source.SPECIAL)
 			cat_target = -1
 			cat.rotation.z = 0
 
@@ -388,26 +433,34 @@ func _configure_input() -> void:
 func _setup_environment() -> void:
 	var environment := WorldEnvironment.new()
 	var settings := Environment.new()
-	settings.background_mode = Environment.BG_COLOR
+	settings.background_mode = Environment.BG_SKY
+	var sky := Sky.new()
+	var sky_material := ProceduralSkyMaterial.new()
+	sky_material.sky_top_color = Color("8daebf")
+	sky_material.sky_horizon_color = Color("e8e6d9")
+	sky.sky_material = sky_material
+	settings.sky = sky
 	settings.background_color = Color("101f29")
 	settings.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 	settings.ambient_light_color = Color("e2e7d6")
-	settings.ambient_light_energy = 0.7
+	settings.ambient_light_energy = 0.32
+	settings.tonemap_exposure = 0.85
 	settings.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 	environment.environment = settings
 	add_child(environment)
 	var sun := DirectionalLight3D.new()
 	sun.rotation_degrees = Vector3(-58, -24, 0)
 	sun.light_color = Color("fff0d1")
-	sun.light_energy = 1.1
+	sun.light_energy = 0.8
 	sun.shadow_enabled = true
+	sun.directional_shadow_max_distance = 85
 	add_child(sun)
 	for x in [-22.0, 0.0, 22.0]:
 		var light := OmniLight3D.new()
 		light.position = Vector3(x, 5, 0)
 		light.omni_range = 27
 		light.light_color = Color("cfe7d7")
-		light.light_energy = 1.2
+		light.light_energy = 0.85
 		add_child(light)
 
 func _capture() -> void:
@@ -416,6 +469,19 @@ func _capture() -> void:
 	start_run(120, 912)
 	await get_tree().create_timer(2).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-play.png")
+	# A dedicated development capture exercises a partial original-reader lock.
+	crowd.positions[0] = Vector3(11, 0, 7)
+	crowd.bodies[0].position = Vector3(11, 0.95, 7)
+	crowd.waits[0] = 30
+	crowd.headings[0] = PI
+	player.position = Vector3(11, 0.1, 10.4)
+	player.velocity = Vector3.ZERO
+	player.camera.look_at(Vector3(11, 1.55, 7))
+	await get_tree().physics_frame
+	Input.action_press("fire")
+	await get_tree().create_timer(0.9).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-reader.png")
+	Input.action_release("fire")
 	set_mode("skills")
 	await get_tree().create_timer(0.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-skills.png")

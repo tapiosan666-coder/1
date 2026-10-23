@@ -60,21 +60,48 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		add_child(area)
 		area.position = p + Vector3.UP * 0.95
 		bodies.append(area)
-	_add_part("torso", Vector3(0, 1.12, 0), Vector3(0.54, 0.72, 0.32), Color.WHITE, palette)
-	_add_part("leg_l", Vector3(-0.14, 0.4, 0), Vector3(0.19, 0.8, 0.22), Color("34434a"))
-	_add_part("leg_r", Vector3(0.14, 0.4, 0), Vector3(0.19, 0.8, 0.22), Color("34434a"))
-	_add_part("arm_l", Vector3(-0.35, 1.06, 0), Vector3(0.15, 0.66, 0.18), Color.WHITE, palette)
-	_add_part("arm_r", Vector3(0.35, 1.06, 0), Vector3(0.15, 0.66, 0.18), Color.WHITE, palette)
-	_add_part("head", Vector3(0, 1.7, 0), Vector3(0.42 * face_width, 0.48, 0.4), skin_color)
-	_add_part("hair", Vector3(0, 1.89, 0.02), Vector3(0.44 * face_width, 0.14, 0.42), hair_color)
-	_add_part("eye_l", Vector3(-0.095 * face_width, 1.74, -0.207), Vector3(0.045, 0.035, 0.018), Color("253237"))
-	_add_part("eye_r", Vector3(0.095 * face_width, 1.74, -0.207), Vector3(0.045, 0.035, 0.018), Color("253237"))
-	_add_part("nose", Vector3(0, 1.66, -0.22), Vector3(0.07, 0.08, 0.06), skin_color.darkened(0.1))
+	_add_part("torso", Vector3(0, 1.13, 0), Vector3(0.5, 0.69, 0.31), Color.WHITE, palette)
+	_add_part("leg_l", Vector3(-0.12, 0.42, 0), Vector3(0.19, 0.82, 0.2), Color("34434a"))
+	_add_part("leg_r", Vector3(0.12, 0.42, 0), Vector3(0.19, 0.82, 0.2), Color("34434a"))
+	_add_part("arm_l", Vector3(-0.31, 1.13, 0), Vector3(0.14, 0.58, 0.15), Color.WHITE, palette)
+	_add_part("arm_r", Vector3(0.31, 1.13, 0), Vector3(0.14, 0.58, 0.15), Color.WHITE, palette)
+	_add_part("hand_l", Vector3(-0.32, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
+	_add_part("hand_r", Vector3(0.32, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
+	_add_part("shoe_l", Vector3(-0.12, 0.08, -0.035), Vector3(0.14, 0.12, 0.28), Color("222a2c"))
+	_add_part("shoe_r", Vector3(0.12, 0.08, -0.035), Vector3(0.14, 0.12, 0.28), Color("222a2c"))
+	_add_part("neck", Vector3(0, 1.52, 0), Vector3(0.12, 0.16, 0.12), skin_color)
+	_add_part("head", Vector3(0, 1.7, 0), Vector3(0.205 * face_width, 0.28, 0.22), skin_color)
+	_add_part("hair", Vector3(0, 1.81, 0.015), Vector3(0.22 * face_width, 0.12, 0.23), hair_color)
+	_add_part("ear_l", Vector3(-0.103 * face_width, 1.715, 0), Vector3(0.027, 0.05, 0.03), skin_color)
+	_add_part("ear_r", Vector3(0.103 * face_width, 1.715, 0), Vector3(0.027, 0.05, 0.03), skin_color)
+	_add_part("eye_l", Vector3(-0.04 * face_width, 1.73, -0.099), Vector3(0.032, 0.014, 0.015), Color("e5e0d5"))
+	_add_part("eye_r", Vector3(0.04 * face_width, 1.73, -0.099), Vector3(0.032, 0.014, 0.015), Color("e5e0d5"))
+	_add_part("pupil_l", Vector3(-0.04 * face_width, 1.73, -0.109), Vector3(0.011, 0.012, 0.006), Color("333c38"))
+	_add_part("pupil_r", Vector3(0.04 * face_width, 1.73, -0.109), Vector3(0.011, 0.012, 0.006), Color("333c38"))
+	_add_part("brow_l", Vector3(-0.04 * face_width, 1.753, -0.098), Vector3(0.035, 0.005, 0.01), hair_color)
+	_add_part("brow_r", Vector3(0.04 * face_width, 1.753, -0.098), Vector3(0.035, 0.005, 0.01), hair_color)
+	_add_part("nose", Vector3(0, 1.697, -0.112), Vector3(0.027, 0.045, 0.035), skin_color.darkened(0.05))
+	_add_part("mouth", Vector3(0, 1.653, -0.098), Vector3(0.041, 0.006, 0.01), skin_color.darkened(0.28))
 	_render()
 
 func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, palette: Array = []) -> void:
-	var mesh := BoxMesh.new()
-	mesh.size = size
+	var mesh: PrimitiveMesh
+	var instance_scale := size
+	if title in ["torso", "arm_l", "arm_r", "leg_l", "leg_r", "neck"]:
+		var capsule := CapsuleMesh.new()
+		capsule.radius = 0.5
+		capsule.height = 2.0
+		capsule.radial_segments = 12
+		capsule.rings = 4
+		mesh = capsule
+		instance_scale.y *= 0.5
+	else:
+		var sphere := SphereMesh.new()
+		sphere.radius = 0.5
+		sphere.height = 1.0
+		sphere.radial_segments = 16
+		sphere.rings = 8
+		mesh = sphere
 	var mat := Shapes.material(color)
 	mat.vertex_color_use_as_albedo = true
 	mesh.material = mat
@@ -88,7 +115,7 @@ func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, pale
 	var node := MultiMeshInstance3D.new()
 	node.multimesh = instances
 	add_child(node)
-	parts.append({"name": title, "offset": offset, "instances": instances})
+	parts.append({"name": title, "offset": offset, "scale": instance_scale, "instances": instances})
 
 func _physics_process(delta: float) -> void:
 	if run == null:
@@ -131,15 +158,15 @@ func _render() -> void:
 			var local_offset: Vector3 = part.offset
 			if waits[id] <= 0 and death_times[id] < 0 and not paths[id].is_empty():
 				var sway := sin(clock * 6 + id) * 0.12
-				if part.name == "leg_l" or part.name == "arm_r":
+				if part.name in ["leg_l", "shoe_l", "arm_r", "hand_r"]:
 					local_offset.z += sway
-				elif part.name == "leg_r" or part.name == "arm_l":
+				elif part.name in ["leg_r", "shoe_r", "arm_l", "hand_l"]:
 					local_offset.z -= sway
 			var base := positions[id]
 			if death_times[id] >= 0:
 				base.y -= pow(death_times[id] / 0.8, 2) * 4.0
 			var basis := Basis(Vector3.UP, headings[id])
-			instances.set_instance_transform(id, Transform3D(basis, base + basis * local_offset))
+			instances.set_instance_transform(id, Transform3D(basis.scaled_local(part.scale), base + basis * local_offset))
 
 func fall(id: int) -> void:
 	death_times[id] = 0

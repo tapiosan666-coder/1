@@ -6,18 +6,23 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
-INSTRUCTIONS = """FIND YOURSELF / Development build 0.1
+INSTRUCTIONS = """FIND YOURSELF / Development build 0.2
 
-ZIP全体を展開してから起動してください。
+旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
 Linux: ./FIND_YOURSELF.x86_64（必要なら chmod +x）。
 FIND_YOURSELF.pck は実行ファイルと同じフォルダーに置いてください。
 
-ENTER THE ATRIUMで開始。WASD移動、マウス視点、左クリック射撃、
-右クリック照準、Rリロード、Shiftダッシュ、Spaceジャンプ。
+ENTER THE ATRIUMで開始。WASD移動、マウス視点。
+初期装備は手持ちスキャナーです。6m以内の1人を狙い、左クリックを2秒長押し。
+視線を外す・ボタンを離すと最初からやり直しです。
+TabのSCAN PISTOLを400 APで購入すると銃が使えます。
+1で初期スキャナー、2で銃に切替。銃は左クリック射撃、Rリロード。
+右クリック照準、Shiftダッシュ、Spaceジャンプ。
 Tab強化、Fソナー、Q範囲スキャン、M案内図、Esc一時停止。
-120人のうち本物は1人。偽物5発で10 AP。猫・範囲は本物の場所を通知し、
-最後は通常銃でスキャンしてクリアします。
+120人のうち本物は1人。偽物を処理すると10 AP。
+銃・猫・範囲は本物の場所を通知するだけです。
+最後は必ず1の初期スキャナーで本物を2秒スキャンしてクリアします。
 
 現版はA館1階の開発用セクターです。5,000人・15フロアの製品版ではありません。
 写真顔生成、宝箱、セーブ、Steam連携は未実装。UIは英語です。
@@ -46,7 +51,7 @@ def main() -> None:
     with ZipFile(source, "w", ZIP_DEFLATED) as archive:
         for path in sorted(ROOT.rglob("*")):
             relative = path.relative_to(ROOT)
-            if path.is_file() and not any(part in {".git", ".godot", "builds", ".venv", "__pycache__"} for part in relative.parts):
+            if path.is_file() and not any(part in {".git", ".godot", "builds", "downloads", ".venv", "__pycache__"} for part in relative.parts):
                 archive.write(path, f"FIND_YOURSELF/{relative}")
     artifacts.append(source)
     lines = []

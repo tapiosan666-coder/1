@@ -4,6 +4,9 @@ extends RefCounted
 ## Only this object chooses the true identity; it never changes during a run.
 
 enum Result { INVALID, HIT, FAKE, LOCATED, FOUND, ALREADY_SCANNED }
+enum Source { HANDHELD, GUN, SPECIAL }
+const HANDHELD_SECONDS := 2.0
+const HANDHELD_RANGE := 6.0
 const FULL_POPULATION := 5000
 const DISTRIBUTION := {
 	"A": [180, 420, 420, 350, 130],
@@ -11,6 +14,7 @@ const DISTRIBUTION := {
 	"C": [100, 370, 330, 300, 100],
 }
 const SKILLS := {
+	"gun": {"name": "SCAN PISTOL", "detail": "Unlock ranged scanning / key 2", "cost": 400, "max": 1, "branch": "01 / EQUIPMENT"},
 	"focus": {"name": "SCAN EFFICIENCY", "detail": "One fewer hit per identity", "cost": 60, "max": 4, "branch": "01 / SCANNER"},
 	"magazine": {"name": "EXTENDED CELL", "detail": "+15 shots per magazine", "cost": 50, "max": 3, "branch": "01 / SCANNER"},
 	"reload": {"name": "QUICK RELOAD", "detail": "Reload 20% faster per level", "cost": 40, "max": 3, "branch": "01 / SCANNER"},
@@ -58,18 +62,20 @@ func scan_range() -> float:
 func reload_seconds() -> float:
 	return pow(0.8, int(upgrades.reload))
 
-func scan(id: int, normal_gun: bool = true) -> Result:
+func scan(id: int, source: Source = Source.HANDHELD) -> Result:
 	if id < 0 or id >= population or won:
 		return Result.INVALID
 	if eliminated[id]:
 		return Result.ALREADY_SCANNED
-	if normal_gun:
-		hits[id] += 1
+	if source == Source.GUN:
+		if upgrades.gun == 0:
+			return Result.INVALID
+		hits[id] = mini(hits[id] + 1, required_hits())
 		if hits[id] < required_hits():
 			return Result.HIT
 	if id == true_id:
 		located = true
-		if normal_gun:
+		if source == Source.HANDHELD:
 			won = true
 			return Result.FOUND
 		return Result.LOCATED
@@ -81,12 +87,17 @@ func scan(id: int, normal_gun: bool = true) -> Result:
 func price(key: String) -> int:
 	if not SKILLS.has(key):
 		return -1
+	if key == "gun":
+		# About one third of a sector's potential AP; never delay the true ID.
+		return maxi(400, roundi(float(population) / 3.0) * 10)
 	return int(SKILLS[key].cost) * (int(upgrades[key]) + 1)
 
 func purchase(key: String) -> bool:
 	if not SKILLS.has(key):
 		return false
 	if key == "cat_speed" and upgrades.cat == 0:
+		return false
+	if key in ["focus", "magazine", "reload", "range"] and upgrades.gun == 0:
 		return false
 	if int(upgrades[key]) >= int(SKILLS[key].max) or ap < price(key):
 		return false

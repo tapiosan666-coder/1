@@ -13,12 +13,16 @@ func _ready() -> void:
 	_build()
 
 func _build() -> void:
-	Shapes.box(self, Vector3(0, -0.25, 0), Vector3(76, 0.5, 56), chalk, true)
-	Shapes.box(self, Vector3(0, 7.5, 0), Vector3(76, 0.3, 56), dark)
-	for x in range(-36, 38, 4):
-		Shapes.box(self, Vector3(x, 0.006, 0), Vector3(0.018, 0.008, 56), stone)
-	for z in range(-28, 29, 4):
-		Shapes.box(self, Vector3(0, 0.006, z), Vector3(76, 0.008, 0.018), stone)
+	var floor_mat := ShaderMaterial.new()
+	floor_mat.shader = load("res://assets/terrazzo.gdshader")
+	Shapes.box(self, Vector3(0, -0.25, 0), Vector3(76, 0.5, 56), floor_mat, true)
+	# An open structural skylight admits directional daylight and real shadows.
+	for z in [-21.0, 21.0]:
+		Shapes.box(self, Vector3(0, 7.5, z), Vector3(76, 0.3, 14), chalk)
+	for x in range(-36, 37, 6):
+		Shapes.box(self, Vector3(x, 8.1, 0), Vector3(0.15, 0.24, 29), stone)
+	for z in [-14.0, -7.0, 0.0, 7.0, 14.0]:
+		Shapes.box(self, Vector3(0, 8.1, z), Vector3(76, 0.2, 0.13), stone)
 	for x in [-38.0, 38.0]:
 		Shapes.box(self, Vector3(x, 3.5, 0), Vector3(0.5, 7, 56), dark, true)
 	for z in [-28.0, 28.0]:
@@ -101,6 +105,18 @@ func _shop(p: Vector3, title: String, color: Color, side: int) -> void:
 	for i in [-1, 0, 1]:
 		Shapes.box(local, Vector3(i * 5, 0.65, side * 3.5), Vector3(3.5, 1.3, 1.2), brass, true)
 		Shapes.box(local, Vector3(i * 5, 1.45, side * 3.5), Vector3(1.3, 0.35, 0.65), chalk)
+		# Display goods, shelving and warm task lighting give stores scale.
+		for j in range(4):
+			var product := Shapes.cylinder(local, Vector3(i * 5 - 1 + j * 0.65, 1.6, side * 3.5), 0.12, 0.45, Shapes.material(color.lightened(j * 0.07)))
+			product.rotation.z = 0.08 * (j % 2)
+		Shapes.box(local, Vector3(i * 5, 2.8, side * 5.8), Vector3(4.3, 0.08, 0.6), brass)
+		Shapes.box(local, Vector3(i * 5, 3.75, side * 3.5), Vector3(2.0, 0.06, 0.16), Shapes.material(Color("ffe4b8"), 0.8))
+	var warm := OmniLight3D.new()
+	local.add_child(warm)
+	warm.position = Vector3(0, 3.2, 1.5 * side)
+	warm.light_color = Color("ffdbac")
+	warm.light_energy = 1.0
+	warm.omni_range = 10
 	Shapes.box(local, Vector3(4, 0.65, -side * 0.5), Vector3(3, 1.3, 1.2), chalk, true)
 
 func _bench(p: Vector3) -> void:
@@ -111,5 +127,28 @@ func _bench(p: Vector3) -> void:
 func _tree(p: Vector3) -> void:
 	Shapes.cylinder(self, p + Vector3(0, 0.3, 0), 0.8, 0.6, stone)
 	Shapes.cylinder(self, p + Vector3(0, 1.7, 0), 0.12, 2.8, brass)
-	Shapes.sphere(self, p + Vector3(0, 3.2, 0), 1.4, Shapes.material(Color("567359")))
-	Shapes.sphere(self, p + Vector3(0.7, 3.8, 0.2), 0.9, Shapes.material(Color("78946b")))
+	var leaves := MultiMesh.new()
+	leaves.transform_format = MultiMesh.TRANSFORM_3D
+	leaves.use_colors = true
+	var leaf_mesh := SphereMesh.new()
+	leaf_mesh.radius = 0.65
+	leaf_mesh.height = 1.3
+	leaf_mesh.radial_segments = 12
+	leaf_mesh.rings = 6
+	var leaf_material := Shapes.material(Color("456d42"))
+	leaf_material.vertex_color_use_as_albedo = true
+	leaf_mesh.material = leaf_material
+	leaves.mesh = leaf_mesh
+	leaves.instance_count = 34
+	var random := RandomNumberGenerator.new()
+	random.seed = 7919
+	for i in 34:
+		var angle := random.randf_range(0, TAU)
+		var radius := random.randf_range(0, 1.15)
+		var offset := Vector3(cos(angle) * radius, random.randf_range(2.7, 4.1), sin(angle) * radius)
+		var scale_factor := random.randf_range(0.6, 1.15)
+		leaves.set_instance_transform(i, Transform3D(Basis().scaled(Vector3(1, 0.7, 0.8) * scale_factor), p + offset))
+		leaves.set_instance_color(i, Color.WHITE * random.randf_range(0.8, 1.15))
+	var canopy := MultiMeshInstance3D.new()
+	canopy.multimesh = leaves
+	add_child(canopy)
