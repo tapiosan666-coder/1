@@ -71,10 +71,12 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	_add_part("leg_r", Vector3(0.12, 0.62, 0), Vector3(0.19, 0.42, 0.2), Color("34434a"))
 	_add_part("shin_l", Vector3(-0.12, 0.22, 0), Vector3(0.17, 0.44, 0.18), Color("34434a"))
 	_add_part("shin_r", Vector3(0.12, 0.22, 0), Vector3(0.17, 0.44, 0.18), Color("34434a"))
-	_add_part("arm_l", Vector3(-0.31, 1.13, 0), Vector3(0.14, 0.58, 0.15), Color.WHITE, palette)
-	_add_part("arm_r", Vector3(0.31, 1.13, 0), Vector3(0.14, 0.58, 0.15), Color.WHITE, palette)
-	_add_part("hand_l", Vector3(-0.32, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
-	_add_part("hand_r", Vector3(0.32, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
+	_add_part("arm_l", Vector3(-0.275, 1.27, 0), Vector3(0.155, 0.31, 0.17), Color.WHITE, palette)
+	_add_part("arm_r", Vector3(0.275, 1.27, 0), Vector3(0.155, 0.31, 0.17), Color.WHITE, palette)
+	_add_part("forearm_l", Vector3(-.275, .98, 0), Vector3(.125, .29, .14), Color.WHITE, palette)
+	_add_part("forearm_r", Vector3(.275, .98, 0), Vector3(.125, .29, .14), Color.WHITE, palette)
+	_add_part("hand_l", Vector3(-0.275, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
+	_add_part("hand_r", Vector3(0.275, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
 	_add_part("shoe_l", Vector3(-0.12, 0.08, -0.035), Vector3(0.14, 0.12, 0.28), Color("222a2c"))
 	_add_part("shoe_r", Vector3(0.12, 0.08, -0.035), Vector3(0.14, 0.12, 0.28), Color("222a2c"))
 	_add_part("neck", Vector3(0, 1.52, 0), Vector3(0.12, 0.16, 0.12), skin_color)
@@ -82,33 +84,41 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	_add_part("hair", Vector3(0, 1.81, 0.015), Vector3(0.22 * face_width, 0.12, 0.23), hair_color)
 	_add_part("ear_l", Vector3(-0.103 * face_width, 1.715, 0), Vector3(0.027, 0.05, 0.03), skin_color)
 	_add_part("ear_r", Vector3(0.103 * face_width, 1.715, 0), Vector3(0.027, 0.05, 0.03), skin_color)
-	_add_part("eye_l", Vector3(-0.04 * face_width, 1.73, -0.099), Vector3(0.032, 0.014, 0.015), Color("e5e0d5"))
-	_add_part("eye_r", Vector3(0.04 * face_width, 1.73, -0.099), Vector3(0.032, 0.014, 0.015), Color("e5e0d5"))
-	_add_part("pupil_l", Vector3(-0.04 * face_width, 1.73, -0.109), Vector3(0.011, 0.012, 0.006), Color("333c38"))
-	_add_part("pupil_r", Vector3(0.04 * face_width, 1.73, -0.109), Vector3(0.011, 0.012, 0.006), Color("333c38"))
-	_add_part("brow_l", Vector3(-0.04 * face_width, 1.753, -0.098), Vector3(0.035, 0.005, 0.01), hair_color)
-	_add_part("brow_r", Vector3(0.04 * face_width, 1.753, -0.098), Vector3(0.035, 0.005, 0.01), hair_color)
-	_add_part("nose", Vector3(0, 1.697, -0.112), Vector3(0.027, 0.045, 0.035), skin_color.darkened(0.05))
-	_add_part("mouth", Vector3(0, 1.653, -0.098), Vector3(0.041, 0.006, 0.01), skin_color.darkened(0.28))
+	_add_part("eye_l", Vector3(-0.04 * face_width, 1.73, -0.111), Vector3(0.039, 0.018, 0.012), Color("e5e0d5"))
+	_add_part("eye_r", Vector3(0.04 * face_width, 1.73, -0.111), Vector3(0.039, 0.018, 0.012), Color("e5e0d5"))
+	_add_part("pupil_l", Vector3(-0.04 * face_width, 1.73, -0.122), Vector3(0.014, 0.015, 0.006), Color("333c38"))
+	_add_part("pupil_r", Vector3(0.04 * face_width, 1.73, -0.122), Vector3(0.014, 0.015, 0.006), Color("333c38"))
+	_add_part("brow_l", Vector3(-0.04 * face_width, 1.753, -0.112), Vector3(0.035, 0.005, 0.01), hair_color)
+	_add_part("brow_r", Vector3(0.04 * face_width, 1.753, -0.112), Vector3(0.035, 0.005, 0.01), hair_color)
+	_add_part("nose", Vector3(0, 1.697, -0.124), Vector3(0.027, 0.045, 0.035), skin_color.darkened(0.05))
+	_add_part("mouth", Vector3(0, 1.653, -0.100), Vector3(0.041, 0.006, 0.01), skin_color.darkened(0.28))
 	_add_part("apron", Vector3(0, 1.02, -0.165), Vector3(0.34, 0.45, 0.02), Color("293d36"))
 	_add_part("badge", Vector3(0.14, 1.32, -0.16), Vector3(0.08, 0.04, 0.015), Color("e8e3d3"))
+	_add_part("shirt", Vector3(0, 1.36, -0.145), Vector3(.16, .19, .025), Color("e3ded1"))
+	_add_part("collar_l", Vector3(-.07, 1.43, -.16), Vector3(.09, .065, .035), Color("f0ebdf"))
+	_add_part("collar_r", Vector3(.07, 1.43, -.16), Vector3(.09, .065, .035), Color("f0ebdf"))
+	_add_part("belt", Vector3(0, .84, -.015), Vector3(.32, .038, .23), Color("252c30"))
+	for index in 3:
+		_add_part("button%d" % index, Vector3(.025, 1.24 - index * .11, -.155), Vector3(.012, .012, .009), Color("262c31"))
+	for index in 5:
+		_add_part("fringe%d" % index, Vector3((index - 2) * .039 * face_width, 1.793 - (index % 2) * .019, -.085), Vector3(.06, .09 + (index % 2) * .025, .065), hair_color)
+	_add_part("sideburn_l", Vector3(-.098 * face_width, 1.75, -.005), Vector3(.028, .09, .1), hair_color)
+	_add_part("sideburn_r", Vector3(.098 * face_width, 1.75, -.005), Vector3(.028, .09, .1), hair_color)
 	_render()
 
 func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, palette: Array = []) -> void:
-	var mesh: PrimitiveMesh
+	var mesh: Mesh
 	var instance_scale := size
-	if title in ["apron", "badge"]:
+	if title == "torso":
+		mesh = HumanMesh.torso()
+	elif title == "head":
+		mesh = HumanMesh.face()
+	elif title in ["arm_l", "arm_r", "forearm_l", "forearm_r", "leg_l", "leg_r", "shin_l", "shin_r"]:
+		mesh = HumanMesh.limb()
+	elif title in ["apron", "badge", "shirt", "collar_l", "collar_r", "belt"]:
 		var box := BoxMesh.new()
 		box.size = Vector3.ONE
 		mesh = box
-	elif title in ["torso", "arm_l", "arm_r", "leg_l", "leg_r", "shin_l", "shin_r", "neck"]:
-		var capsule := CapsuleMesh.new()
-		capsule.radius = 0.5
-		capsule.height = 2.0
-		capsule.radial_segments = 12
-		capsule.rings = 4
-		mesh = capsule
-		instance_scale.y *= 0.5
 	else:
 		var sphere := SphereMesh.new()
 		sphere.radius = 0.5
@@ -118,10 +128,17 @@ func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, pale
 		mesh = sphere
 	var mat := Shapes.material(color)
 	mat.vertex_color_use_as_albedo = true
-	mesh.material = mat
+	mat.diffuse_mode = BaseMaterial3D.DIFFUSE_TOON
+	mat.roughness = 0.9
+	if mesh is ArrayMesh:
+		mesh.surface_set_material(0, mat)
+	else:
+		mesh.set("material", mat)
 	var instances := MultiMesh.new()
 	instances.transform_format = MultiMesh.TRANSFORM_3D
 	instances.use_colors = true
+	# Explicit sector bounds avoid camera-near clipping of animated instance groups.
+	instances.custom_aabb = AABB(Vector3(-100, -8, -72), Vector3(200, 20, 140))
 	instances.mesh = mesh
 	instances.instance_count = run.population
 	for id in run.population:
@@ -185,20 +202,33 @@ func _render() -> void:
 					local_offset.y = 0.49
 					local_offset.z = -0.47
 				elif part.name in ["arm_l", "arm_r"]:
-					local_offset.y = 1.24
-					local_offset.z = -0.29
+					local_offset.y = 1.28
+					local_offset.z = -.08
+					pose = Basis(Vector3.RIGHT, -.5)
+				elif part.name in ["forearm_l", "forearm_r"]:
+					local_offset.y = 1.15
+					local_offset.z = -.27
 					pose = Basis(Vector3.RIGHT, -PI / 2)
 				elif part.name in ["hand_l", "hand_r"]:
-					local_offset.y = 1.24 + sin(clock * 0.8 + id) * 0.025
-					local_offset.z = -0.6
+					local_offset.y = 1.15 + sin(clock * 0.8 + id) * 0.025
+					local_offset.z = -0.46
 			elif roles[id] == "conversation" and part.name == "arm_r":
 				pose = Basis(Vector3.RIGHT, sin(clock * 0.9 + id) * 0.22 - 0.12)
 			if roles[id] == "walking" and waits[id] <= 0 and death_times[id] < 0 and not paths[id].is_empty():
-				var sway := sin(clock * 6 + id) * 0.12
-				if part.name in ["leg_l", "shin_l", "shoe_l", "arm_r", "hand_r"]:
-					local_offset.z += sway
-				elif part.name in ["leg_r", "shin_r", "shoe_r", "arm_l", "hand_l"]:
-					local_offset.z -= sway
+				var phase := clock * 5.5 + id
+				var left: bool = part.name.ends_with("_l")
+				var swing := sin(phase + (0 if left else PI)) * .35
+				if part.name.begins_with("leg_"):
+					pose = Basis(Vector3.RIGHT, swing)
+					local_offset = Vector3(local_offset.x, .83, 0) + pose * Vector3(0, -.21, 0)
+				elif part.name.begins_with("shin_") or part.name.begins_with("shoe_"):
+					var hip := Basis(Vector3.RIGHT, swing)
+					var knee := maxf(0, -sin(phase + (0 if left else PI))) * .65
+					pose = hip * Basis(Vector3.RIGHT, -knee)
+					local_offset = Vector3(local_offset.x, .83, 0) + hip * Vector3(0, -.42, 0) + pose * Vector3(0, -.19 if part.name.begins_with("shin_") else -.33, -.035 if part.name.begins_with("shoe_") else 0)
+				elif part.name.begins_with("arm_") or part.name.begins_with("forearm_") or part.name.begins_with("hand_"):
+					pose = Basis(Vector3.RIGHT, -swing * .7)
+					local_offset = Vector3(local_offset.x, 1.42, 0) + pose * Vector3(0, -.15 if part.name.begins_with("arm_") else (-.44 if part.name.begins_with("forearm_") else -.63), 0)
 			var base := positions[id]
 			if roles[id] == "seated":
 				base.y -= 0.42

@@ -11,6 +11,8 @@ var using_gun := false
 var enabled := false
 var sensitivity := 0.0022
 var sprint_multiplier := 1.0
+var double_jump_enabled := false
+var air_jump_used := false
 var recoil := 0.0
 var time := 0.0
 
@@ -95,10 +97,16 @@ func _physics_process(delta: float) -> void:
 		speed *= 0.55
 	velocity.x = move_toward(velocity.x, direction.x * speed, delta * 40)
 	velocity.z = move_toward(velocity.z, direction.z * speed, delta * 40)
-	if not is_on_floor():
+	if is_on_floor():
+		air_jump_used = false
+	else:
 		velocity.y -= 22 * delta
-	elif Input.is_action_just_pressed("jump"):
-		velocity.y = 7
+	if Input.is_action_just_pressed("jump"):
+		if is_on_floor():
+			velocity.y = 7
+		elif double_jump_enabled and not air_jump_used:
+			velocity.y = 7
+			air_jump_used = true
 	move_and_slide()
 	if position.y < -10:
 		position = Mall.ENTRANCE

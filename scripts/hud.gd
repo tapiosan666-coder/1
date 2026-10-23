@@ -17,6 +17,7 @@ var notice_time := 0.0
 var hit_time := 0.0
 var combo := 0
 var sonar_cooldown := 0.0
+var chain_cooldown := 0.0
 var pulse_cooldown := 0.0
 var target_distance := 0.0
 var player_position := Vector3.ZERO
@@ -80,7 +81,7 @@ func _draw() -> void:
 		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
 		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 0.3 ／ A館1階 ／ 120人", Vector2(82, 860), 13, muted)
+		_text("日本語開発版 0.4 ／ A館1階 ／ 120人", Vector2(82, 860), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -141,9 +142,10 @@ func _draw() -> void:
 			_text("[1] 初期スキャナー", Vector2(1152, 779), 14, lime)
 			_text("%03d%%" % int(scan_progress * 100), Vector2(1150, 825), 35)
 			_text("単体 / 2秒 / 射程6m", Vector2(1152, 850), 13, muted)
-		draw_rect(Rect2(310, 818, 780, 47), Color(0.035, 0.07, 0.085, 0.9))
+		draw_rect(Rect2(310, 818, 780, 70), Color(0.035, 0.07, 0.085, 0.9))
 		_text("Tab / スキル購入", Vector2(325, 846), 14, muted)
 		_text("F / ソナー " + ("未解放" if run.upgrades.sonar == 0 else ("使用可能" if sonar_cooldown <= 0 else "%d秒" % ceili(sonar_cooldown))), Vector2(535, 846), 14, lime if run.upgrades.sonar > 0 else muted)
+		_text("E / 連鎖スキャン " + ("未解放" if run.upgrades.chain == 0 else ("使用可能" if chain_cooldown <= 0 else "%d秒" % ceili(chain_cooldown))), Vector2(800, 870), 14, lime if run.upgrades.chain > 0 else muted)
 		_text("Q / 範囲スキャン " + ("未解放" if run.upgrades.pulse == 0 else ("使用可能" if pulse_cooldown <= 0 else "%d秒" % ceili(pulse_cooldown))), Vector2(800, 846), 14, lime if run.upgrades.pulse > 0 else muted)
 		return
 	draw_rect(Rect2(0, 0, 1440, 900), Color(0.025, 0.055, 0.065, 0.95))
@@ -238,9 +240,9 @@ func show_mode(next: String) -> void:
 				var row := i / 4
 				var maxed: bool = run.upgrades[key] >= skill.max
 				var text := "%s\n%s  [%d/%d]\n%s\n%s" % [skill.branch, skill.name, run.upgrades[key], skill.max, skill.detail, "最大レベル" if maxed else "%d AP" % run.price(key)]
-				var button := _button(text, Rect2(70 + col * 330, 206 + row * 171, 312, 148), func(): skill_pressed.emit(key))
+				var button := _button(text, Rect2(70 + col * 330, 192 + row * 137, 312, 126), func(): skill_pressed.emit(key))
 				button.add_theme_font_size_override("font_size", 14)
-				button.disabled = maxed or run.ap < run.price(key) or (key == "cat_speed" and run.upgrades.cat == 0) or (key in ["focus", "magazine", "reload", "range"] and run.upgrades.gun == 0)
+				button.disabled = maxed or run.ap < run.price(key) or (key == "cat_speed" and run.upgrades.cat == 0) or (key in ["focus", "magazine", "reload", "range", "pierce"] and run.upgrades.gun == 0)
 				i += 1
 			_button("探索に戻る / Tab", Rect2(70, 772, 420, 56), func(): resume_pressed.emit(), true)
 		"win":

@@ -11,6 +11,7 @@ var ammo := 30
 var shot_cooldown := 0.0
 var reload_left := 0.0
 var sonar_left := 0.0
+var chain_left := 0.0
 var pulse_left := 0.0
 var elapsed := 0.0
 var combo := 0
@@ -93,6 +94,9 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	reload_left = 0
 	shot_cooldown = 0
 	sonar_left = 0
+	chain_left = 0
+	player.air_jump_used = false
+	player.double_jump_enabled = false
 	pulse_left = 0
 	target = {}
 	using_gun = false
@@ -143,6 +147,8 @@ func _input(event: InputEvent) -> void:
 			set_mode("play")
 	elif event.keycode == KEY_F and hud.mode == "play":
 		sonar()
+	elif event.keycode == KEY_E and hud.mode == "play":
+		chain_scan()
 	elif event.keycode == KEY_Q and hud.mode == "play":
 		pulse()
 	elif event.keycode == KEY_1 and hud.mode == "play":
@@ -156,6 +162,7 @@ func _physics_process(delta: float) -> void:
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
 	sonar_left = maxf(0, sonar_left - delta)
+	chain_left = maxf(0, chain_left - delta)
 	pulse_left = maxf(0, pulse_left - delta)
 	combo_left -= delta
 	if combo_left <= 0:
@@ -177,7 +184,9 @@ func _physics_process(delta: float) -> void:
 	hud.elapsed = elapsed
 	hud.sonar_cooldown = sonar_left
 	hud.pulse_cooldown = pulse_left
+	hud.chain_cooldown = chain_left
 	hud.reload_progress = 1.0 - reload_left / run.reload_seconds() if reload_left > 0 else -1.0
+	player.double_jump_enabled = run.upgrades.double_jump > 0
 	player.sprint_multiplier = 1.0 + run.upgrades.sprint * 0.25
 	if run.located:
 		hud.target_distance = player.position.distance_to(crowd.positions[run.true_id])
@@ -203,13 +212,56 @@ func fire() -> void:
 	shot_cooldown = 0.16
 	player.recoil = 0.065
 	audio.play("shot", randf_range(0.94, 1.06))
-	var hit := ray_target()
-	if hit.is_empty():
-		return
-	var at: Vector3 = hit.position
-	_spark(at)
-	if hit.collider.has_meta("identity"):
+	var origin := player.camera.global_position
+	var end := origin - player.camera.global_transform.basis.z * run.scan_range()
+	var excluded: Array[RID] = [player.get_rid()]
+	for step in (3 if run.upgrades.pierce > 0 else 1):
+		var query := PhysicsRayQueryParameters3D.create(origin, end, 3, excluded)
+		query.collide_with_areas = true
+		var hit := get_world_3d().direct_space_state.intersect_ray(query)
+		if hit.is_empty():
+			break
+		_spark(hit.position)
+		if not hit.collider.has_meta("identity"):
+			break
+		excluded.append(hit.collider.get_rid())
 		resolve(int(hit.collider.get_meta("identity")), IdentityRun.Source.GUN)
+
+func chain_scan() -> void:
+	if run.upgrades.chain == 0:
+		hud.message("連鎖スキャンはTabから購入できます")
+		return
+	if chain_left > 0:
+		hud.message("連鎖スキャン：あと%d秒" % ceili(chain_left))
+		return
+	var hit := ray_target()
+	if hit.is_empty() or not hit.collider.has_meta("identity"):
+		return
+	chain_left = 20
+	var current: int = hit.collider.get_meta("identity")
+	var visited: Array[int] = []
+	for step in 8:
+		visited.append(current)
+		var at := crowd.positions[current] + Vector3.UP
+		resolve(current, IdentityRun.Source.SPECIAL)
+		_ring(at, 0.7, Color("85cfff"))
+		var next := -1
+		var nearest := 25.0
+		for id in crowd.live_positions_in_radius(crowd.positions[current], 5):
+			if id in visited:
+				continue
+			var to := crowd.positions[id] + Vector3.UP
+			var query := PhysicsRayQueryParameters3D.create(at, to, 1)
+			if not get_world_3d().direct_space_state.intersect_ray(query).is_empty():
+				continue
+			var distance := at.distance_squared_to(to)
+			if distance < nearest:
+				nearest = distance
+				next = id
+		if next < 0:
+			break
+		current = next
+	hud.message("連鎖スキャン：%d人を解析 ／ 再使用20秒" % visited.size())
 
 func reload_gun() -> void:
 	if not using_gun or hud.mode != "play" or reload_left > 0 or ammo >= run.magazine_size():
@@ -495,6 +547,10 @@ func _capture() -> void:
 	await get_tree().create_timer(0.9).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-reader.png")
 	Input.action_release("fire")
+	player.position = Vector3(11, .1, 8.4)
+	player.camera.look_at(Vector3(11, 1.58, 7))
+	await get_tree().create_timer(.5).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-portrait.png")
 	set_mode("skills")
 	await get_tree().create_timer(0.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-skills.png")

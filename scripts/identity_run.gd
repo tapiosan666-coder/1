@@ -19,6 +19,9 @@ const SKILLS := {
 	"magazine": {"name": "弾倉拡張", "detail": "銃の弾倉を15発拡張", "cost": 50, "max": 3, "branch": "01 / 銃の強化"},
 	"reload": {"name": "高速リロード", "detail": "銃のリロード時間を20%短縮", "cost": 40, "max": 3, "branch": "01 / 銃の強化"},
 	"range": {"name": "射程延長", "detail": "銃の射程を15m延長", "cost": 50, "max": 3, "branch": "01 / 銃の強化"},
+	"pierce": {"name": "貫通スキャン", "detail": "銃弾が最大3人に命中（壁で停止）", "cost": 150, "max": 1, "branch": "01 / 銃の強化"},
+	"chain": {"name": "連鎖スキャン", "detail": "E：照準の相手から最大8人・間隔5m", "cost": 180, "max": 1, "branch": "04 / 特殊スキャン"},
+	"double_jump": {"name": "二段ジャンプ", "detail": "空中でもう一度Spaceでジャンプ", "cost": 80, "max": 1, "branch": "03 / 探索・移動"},
 	"cat": {"name": "探索猫を配備", "detail": "猫が20秒ごとに1人をスキャン", "cost": 100, "max": 1, "branch": "02 / 猫の探索"},
 	"cat_speed": {"name": "猫パンチ強化", "detail": "スキャン時間：20秒 → 12秒 → 6秒", "cost": 80, "max": 2, "branch": "02 / 猫の探索"},
 	"sonar": {"name": "瞬間ソナー", "detail": "探知半径：15 → 30 → 50 → 80 → 120m", "cost": 40, "max": 5, "branch": "03 / 探索・移動"},
@@ -97,7 +100,7 @@ func purchase(key: String) -> bool:
 		return false
 	if key == "cat_speed" and upgrades.cat == 0:
 		return false
-	if key in ["focus", "magazine", "reload", "range"] and upgrades.gun == 0:
+	if key in ["focus", "magazine", "reload", "range", "pierce"] and upgrades.gun == 0:
 		return false
 	if int(upgrades[key]) >= int(SKILLS[key].max) or ap < price(key):
 		return false

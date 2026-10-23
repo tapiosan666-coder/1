@@ -6,7 +6,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.3.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.4.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -19,6 +19,9 @@ FIND_YOURSELF.pck は実行ファイルと同じフォルダーに置いてく�
 Tabの「スキャン銃」を400 APで購入すると銃が使えます。
 1で初期スキャナー、2で銃に切替。銃は左クリック射撃、Rリロード。
 右クリック照準、Shiftダッシュ、Spaceジャンプ。
+購入後は空中でSpaceを再度押すと二段ジャンプ。
+E連鎖スキャン（最大8人・5m間隔・再使用20秒）。
+貫通スキャン購入後は銃弾が最大3人に命中、壁で止まります。
 Tab強化、Fソナー、Q範囲スキャン、M案内図、Esc一時停止。
 120人のうち本物は1人。偽物を処理すると10 AP。
 銃・猫・範囲は本物の場所を通知するだけです。

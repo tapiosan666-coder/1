@@ -29,6 +29,8 @@ func run_tests() -> void:
 	expect(all_glyphs, "Bundled font covers all Japanese and symbols used by the UI")
 	expect(game.hud.skin_select.get_item_text(0) == "明るい肌", "Face selection opens in Japanese")
 	expect(game.hud.skin_select.get_theme_font("font") == japanese_font and game.player.reader_screen.font == japanese_font, "Controls and 3D tool display share the bundled font")
+	await _test_skill_limits(game)
+	await _test_new_skills(game)
 	game.start_run(120, 904)
 	await physics_frame
 	await physics_frame
@@ -277,3 +279,121 @@ func _test_state() -> void:
 		buckets[sample.true_id / 500] += 1
 	for count in buckets:
 		expect(count > 850 and count < 1150, "No gross uniform-selection bias")
+
+func _test_new_skills(game: Node3D) -> void:
+	game.start_run(120, 904)
+	game.crowd.set_physics_process(false)
+	for id in 120:
+		game.crowd.positions[id] = Vector3(500 + id * 10, 0, 500)
+		game.crowd.bodies[id].collision_layer = 0
+	var ids: Array[int] = []
+	for id in 120:
+		if id != game.run.true_id and ids.size() < 3:
+			ids.append(id)
+	game.run.ap = 10000
+	expect(not game.run.purchase("pierce"), "Piercing requires the purchased gun")
+	game.run.purchase("gun")
+	game.run.purchase("pierce")
+	game.equip(true)
+	for index in 3:
+		var id := ids[index]
+		var x: float = [85.0, 87.0, 92.0][index]
+		game.crowd.positions[id] = Vector3(x, 0, 7)
+		game.crowd.bodies[id].position = Vector3(x, .95, 7)
+		game.crowd.bodies[id].collision_layer = 2
+	game.player.position = Vector3(83, .1, 7)
+	game.player.camera.look_at(Vector3(92, 1.2, 7))
+	await physics_frame
+	await physics_frame
+	game.fire()
+	expect(game.run.hits[ids[0]] == 1 and game.run.hits[ids[1]] == 1, "One piercing bullet hits two aligned people")
+	expect(game.run.hits[ids[2]] == 0 and game.ammo == 29, "Piercing stops at wall and spends one cartridge")
+	game.run.purchase("chain")
+	var original: int = game.run.true_id
+	for index in 3:
+		var id: int = ids[index] if index < 2 else original
+		game.crowd.positions[id] = Vector3(11 + index * 3, 0, 7)
+		game.crowd.bodies[id].position = Vector3(11 + index * 3, .95, 7)
+		game.crowd.bodies[id].collision_layer = 2
+	game.crowd.positions[ids[2]] = Vector3(500, 0, 500)
+	game.crowd.bodies[ids[2]].collision_layer = 0
+	game.player.position = Vector3(8, .1, 7)
+	game.player.camera.look_at(Vector3(11, 1.2, 7))
+	await physics_frame
+	await physics_frame
+	game.chain_scan()
+	expect(game.run.cleared == 2 and game.run.located and not game.run.won, "Chain clears nearby fakes but only marks original")
+	var cleared: int = game.run.cleared
+	game.chain_scan()
+	expect(game.chain_left > 19 and game.run.cleared == cleared, "Chain cooldown prevents repeated activation")
+	game.chain_left = 0
+	game.run.located = false
+	game.crowd.positions[ids[2]] = Vector3(87, 0, 7)
+	game.crowd.bodies[ids[2]].position = Vector3(87, .95, 7)
+	game.crowd.bodies[ids[2]].collision_layer = 2
+	game.crowd.positions[original] = Vector3(92, 0, 7)
+	game.crowd.bodies[original].position = Vector3(92, .95, 7)
+	game.player.position = Vector3(85, .1, 7)
+	game.player.camera.look_at(Vector3(87, 1.2, 7))
+	await physics_frame
+	await physics_frame
+	game.chain_scan()
+	expect(not game.run.located and game.run.eliminated[ids[2]], "Chain cannot jump through the perimeter wall")
+	game.player.position = Vector3(11, 3, 7)
+	game.player.velocity = Vector3(0, -1, 0)
+	await physics_frame
+	Input.action_press("jump")
+	await physics_frame
+	await physics_frame
+	Input.action_release("jump")
+	expect(not game.player.air_jump_used and game.player.velocity.y < 0, "Air jump is unavailable before purchase")
+	game.run.purchase("double_jump")
+	await physics_frame
+	game.player.position = Vector3(11, 3, 7)
+	game.player.velocity = Vector3(0, -1, 0)
+	await physics_frame
+	Input.action_press("jump")
+	await physics_frame
+	await physics_frame
+	Input.action_release("jump")
+	expect(game.player.air_jump_used and game.player.velocity.y > 5, "Purchased double jump works once in midair")
+	await physics_frame
+	game.player.velocity.y = -1
+	Input.action_press("jump")
+	await physics_frame
+	await physics_frame
+	Input.action_release("jump")
+	expect(game.player.velocity.y < 0, "Cannot jump a third time before landing")
+	game.player.position = Vector3(11, .02, 7)
+	game.player.velocity = Vector3(0, -1, 0)
+	await physics_frame
+	await physics_frame
+	await physics_frame
+	expect(not game.player.air_jump_used, "Landing restores the extra jump")
+
+func _test_skill_limits(game: Node3D) -> void:
+	game.start_run(120, 904)
+	game.crowd.set_physics_process(false)
+	var ids: Array[int] = []
+	for id in 120:
+		game.crowd.positions[id] = Vector3(500 + id * 10, 0, 500)
+		game.crowd.bodies[id].collision_layer = 0
+		if id != game.run.true_id and ids.size() < 10:
+			ids.append(id)
+	for index in ids.size():
+		var id := ids[index]
+		game.crowd.positions[id] = Vector3(11 + index * 2, 0, 7)
+		game.crowd.bodies[id].position = game.crowd.positions[id] + Vector3.UP * .95
+		game.crowd.bodies[id].collision_layer = 2
+	game.run.ap = 10000
+	for skill in ["gun", "pierce", "chain"]:
+		game.run.purchase(skill)
+	game.equip(true)
+	game.player.position = Vector3(9, .1, 7)
+	game.player.camera.look_at(Vector3(29, 1.5, 7))
+	await physics_frame
+	await physics_frame
+	game.fire()
+	expect(game.run.hits[ids[0]] == 1 and game.run.hits[ids[2]] == 1 and game.run.hits[ids[3]] == 0, "Piercing is capped at three people")
+	game.chain_scan()
+	expect(game.run.cleared == 8 and not game.run.eliminated[ids[8]], "Chain stops after eight people even in a dense line")
