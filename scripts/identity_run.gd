@@ -25,6 +25,7 @@ const SKILLS := {
 	"cat": {"name": "探索猫を配備", "detail": "猫が20秒ごとに1人をスキャン", "cost": 100, "max": 1, "branch": "02 / 猫の探索"},
 	"cat_speed": {"name": "猫パンチ強化", "detail": "スキャン時間：20秒 → 12秒 → 6秒", "cost": 80, "max": 2, "branch": "02 / 猫の探索"},
 	"sonar": {"name": "瞬間ソナー", "detail": "探知半径：15 → 30 → 50 → 80 → 120m", "cost": 40, "max": 5, "branch": "03 / 探索・移動"},
+	"travel": {"name":"ファストトラベル","detail":"M：訪問した案内ポイントへ移動","cost":100,"max":1,"branch":"03 / 探索・移動"},
 	"sprint": {"name": "高速ダッシュ", "detail": "ダッシュ速度を25%強化", "cost": 60, "max": 2, "branch": "03 / 探索・移動"},
 	"pulse": {"name": "範囲スキャン", "detail": "周囲をスキャン：8 → 12 → 16m", "cost": 120, "max": 3, "branch": "04 / 特殊スキャン"},
 }
@@ -34,6 +35,7 @@ var true_id: int
 var hits := PackedInt32Array()
 var eliminated := PackedByteArray()
 var upgrades: Dictionary = {}
+var visited: Dictionary = {}
 var ap := 0
 var cleared := 0
 var located := false
@@ -107,3 +109,6 @@ func purchase(key: String) -> bool:
 	ap -= price(key)
 	upgrades[key] += 1
 	return true
+
+func can_travel(key: String) -> bool:
+	return upgrades.travel > 0 and visited.has(key) and not won

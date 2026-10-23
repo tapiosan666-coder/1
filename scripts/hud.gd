@@ -4,6 +4,7 @@ extends Control
 signal play_pressed
 signal resume_pressed
 signal restart_pressed
+signal travel_pressed(key: String)
 signal skill_pressed(key: String)
 signal exit_pressed
 var mode := "title"
@@ -81,7 +82,7 @@ func _draw() -> void:
 		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
 		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 0.4 ／ A館1階 ／ 120人", Vector2(82, 860), 13, muted)
+		_text("日本語開発版 0.5 ／ A館1階 ／ 120人", Vector2(82, 860), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -163,15 +164,18 @@ func _draw() -> void:
 		_text("ほかの人々は、モールに残っています。", Vector2(479, 466), 18, muted)
 	elif mode == "map":
 		_text("A館1階 / フロアマップ", Vector2(100, 160), 40)
-		_text("館内案内図", Vector2(102, 201), 16, lime)
+		_text("訪問した案内ポイントのみ移動できます ／ Tabでファストトラベルを購入", Vector2(102, 201), 16, lime)
 		var frame := Rect2(200, 250, 1040, 450)
 		_draw_plan(frame)
 		_text("フードコート", _map_point(Vector2(49, -47), frame), 16)
+		_text("食品スーパー", _map_point(Vector2(7,36),frame),16)
 		_text("お手洗い", _map_point(Vector2(-87, 42), frame), 16)
 		_text("中央通路", _map_point(Vector2(-5, 3), frame), 16)
 		draw_circle(_map_point(Vector2(player_position.x, player_position.z), frame), 6, lime)
-		_text("この開発版で探索できるのは、A館1階のみです。", Vector2(450, 733), 19, muted)
-		_text("別フロアとファストトラベルは、今後の開発で追加予定です。", Vector2(318, 766), 16, muted)
+		for key in Mall.HUBS:
+			var p: Vector3 = Mall.HUBS[key]
+			draw_circle(_map_point(Vector2(p.x,p.z),frame),5,lime if run.visited.has(key) else muted)
+		_text("A館1階のみ探索可能 ／ 上階の回廊は現在、景観用です。",Vector2(430,716),15,muted)
 
 func _draw_minimap() -> void:
 	draw_rect(Rect2(30, 712, 250, 153), Color(0.035, 0.07, 0.085, 0.9))
@@ -193,10 +197,10 @@ func _draw_plan(frame: Rect2) -> void:
 		var start := _map_point(region.position, frame)
 		var end := _map_point(region.end, frame)
 		draw_rect(Rect2(start, end - start), Color("42535a"))
-	for area in [Mall.MAIN, Mall.PROMENADE, Mall.FOOD, Mall.RESTROOM]:
+	for area in [Mall.MAIN, Mall.PROMENADE, Mall.FOOD, Mall.RESTROOM, Mall.MARKET]:
 		var start := _map_point(area.position, frame)
 		var end := _map_point(area.end, frame)
-		var color := Color("677d70") if area == Mall.FOOD else Color("486e82") if area == Mall.RESTROOM else Color("899387")
+		var color := Color("677d70") if area in [Mall.FOOD,Mall.MARKET] else Color("486e82") if area == Mall.RESTROOM else Color("899387")
 		draw_rect(Rect2(start, end - start), color)
 	for side in [-1, 1]:
 		for x in Mall.SHOP_CENTERS:
@@ -208,7 +212,7 @@ func _draw_plan(frame: Rect2) -> void:
 			draw_rect(rect, Color("394f58"))
 			draw_rect(rect, Color("839796"), false, 1)
 			if frame.size.x > 400:
-				_text("店舗", rect.position + Vector2(12, 26), 12)
+				_text(Mall.CATEGORIES[Mall.SHOP_CENTERS.find(x)], rect.position + Vector2(5, 26), 10)
 
 func show_mode(next: String) -> void:
 	mode = next
@@ -249,6 +253,13 @@ func show_mode(next: String) -> void:
 			_button("もう一度探す", Rect2(460, 530, 520, 62), func(): restart_pressed.emit(), true)
 			_button("ゲームを終了", Rect2(460, 612, 520, 54), func(): exit_pressed.emit())
 		"map":
+			var index := 0
+			for key in Mall.HUBS:
+				var label: String = key + (" / 移動" if run.can_travel(key) else " / 要スキル" if run.visited.has(key) else " / 未訪問")
+				var button := _button(label,Rect2(100+index*250,742,238,45),func(): travel_pressed.emit(key))
+				button.add_theme_font_size_override("font_size",15)
+				button.disabled = not run.can_travel(key)
+				index += 1
 			_button("探索に戻る / M", Rect2(510, 806, 420, 55), func(): resume_pressed.emit(), true)
 	queue_redraw()
 

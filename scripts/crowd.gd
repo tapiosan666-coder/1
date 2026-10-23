@@ -35,7 +35,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		for offset in [Vector2i(2, 0), Vector2i(0, 2)]:
 			if lookup.has(cell + offset):
 				var other: int = lookup[cell + offset]
-				if Mall.walkable((points[i] + points[other]) / 2):
+				if Mall.segment_walkable(points[i], points[other]):
 					nav.connect_points(i, other)
 	var palette := [Color("c58a6b"), Color("bcc6b3"), Color("667e8a"), Color("d8c497"), Color("a78b91"), Color("4d6265")]
 	for id in run.population:
@@ -66,74 +66,50 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		add_child(area)
 		area.position = p + Vector3.UP * (0.95 if role != "seated" else 0.7)
 		bodies.append(area)
-	_add_part("torso", Vector3(0, 1.13, 0), Vector3(0.5, 0.69, 0.31), Color.WHITE, palette)
-	_add_part("leg_l", Vector3(-0.12, 0.62, 0), Vector3(0.19, 0.42, 0.2), Color("34434a"))
-	_add_part("leg_r", Vector3(0.12, 0.62, 0), Vector3(0.19, 0.42, 0.2), Color("34434a"))
-	_add_part("shin_l", Vector3(-0.12, 0.22, 0), Vector3(0.17, 0.44, 0.18), Color("34434a"))
-	_add_part("shin_r", Vector3(0.12, 0.22, 0), Vector3(0.17, 0.44, 0.18), Color("34434a"))
-	_add_part("arm_l", Vector3(-0.275, 1.27, 0), Vector3(0.155, 0.31, 0.17), Color.WHITE, palette)
-	_add_part("arm_r", Vector3(0.275, 1.27, 0), Vector3(0.155, 0.31, 0.17), Color.WHITE, palette)
-	_add_part("forearm_l", Vector3(-.275, .98, 0), Vector3(.125, .29, .14), Color.WHITE, palette)
-	_add_part("forearm_r", Vector3(.275, .98, 0), Vector3(.125, .29, .14), Color.WHITE, palette)
-	_add_part("hand_l", Vector3(-0.275, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
-	_add_part("hand_r", Vector3(0.275, 0.79, 0), Vector3(0.09, 0.15, 0.075), skin_color)
-	_add_part("shoe_l", Vector3(-0.12, 0.08, -0.035), Vector3(0.14, 0.12, 0.28), Color("222a2c"))
-	_add_part("shoe_r", Vector3(0.12, 0.08, -0.035), Vector3(0.14, 0.12, 0.28), Color("222a2c"))
-	_add_part("neck", Vector3(0, 1.52, 0), Vector3(0.12, 0.16, 0.12), skin_color)
-	_add_part("head", Vector3(0, 1.7, 0), Vector3(0.205 * face_width, 0.28, 0.22), skin_color)
-	_add_part("hair", Vector3(0, 1.81, 0.015), Vector3(0.22 * face_width, 0.12, 0.23), hair_color)
-	_add_part("ear_l", Vector3(-0.103 * face_width, 1.715, 0), Vector3(0.027, 0.05, 0.03), skin_color)
-	_add_part("ear_r", Vector3(0.103 * face_width, 1.715, 0), Vector3(0.027, 0.05, 0.03), skin_color)
-	_add_part("eye_l", Vector3(-0.04 * face_width, 1.73, -0.111), Vector3(0.039, 0.018, 0.012), Color("e5e0d5"))
-	_add_part("eye_r", Vector3(0.04 * face_width, 1.73, -0.111), Vector3(0.039, 0.018, 0.012), Color("e5e0d5"))
-	_add_part("pupil_l", Vector3(-0.04 * face_width, 1.73, -0.122), Vector3(0.014, 0.015, 0.006), Color("333c38"))
-	_add_part("pupil_r", Vector3(0.04 * face_width, 1.73, -0.122), Vector3(0.014, 0.015, 0.006), Color("333c38"))
-	_add_part("brow_l", Vector3(-0.04 * face_width, 1.753, -0.112), Vector3(0.035, 0.005, 0.01), hair_color)
-	_add_part("brow_r", Vector3(0.04 * face_width, 1.753, -0.112), Vector3(0.035, 0.005, 0.01), hair_color)
-	_add_part("nose", Vector3(0, 1.697, -0.124), Vector3(0.027, 0.045, 0.035), skin_color.darkened(0.05))
-	_add_part("mouth", Vector3(0, 1.653, -0.100), Vector3(0.041, 0.006, 0.01), skin_color.darkened(0.28))
-	_add_part("apron", Vector3(0, 1.02, -0.165), Vector3(0.34, 0.45, 0.02), Color("293d36"))
-	_add_part("badge", Vector3(0.14, 1.32, -0.16), Vector3(0.08, 0.04, 0.015), Color("e8e3d3"))
-	_add_part("shirt", Vector3(0, 1.36, -0.145), Vector3(.16, .19, .025), Color("e3ded1"))
-	_add_part("collar_l", Vector3(-.07, 1.43, -.16), Vector3(.09, .065, .035), Color("f0ebdf"))
-	_add_part("collar_r", Vector3(.07, 1.43, -.16), Vector3(.09, .065, .035), Color("f0ebdf"))
-	_add_part("belt", Vector3(0, .84, -.015), Vector3(.32, .038, .23), Color("252c30"))
-	for index in 3:
-		_add_part("button%d" % index, Vector3(.025, 1.24 - index * .11, -.155), Vector3(.012, .012, .009), Color("262c31"))
-	for index in 5:
-		_add_part("fringe%d" % index, Vector3((index - 2) * .039 * face_width, 1.793 - (index % 2) * .019, -.085), Vector3(.06, .09 + (index % 2) * .025, .065), hair_color)
-	_add_part("sideburn_l", Vector3(-.098 * face_width, 1.75, -.005), Vector3(.028, .09, .1), hair_color)
-	_add_part("sideburn_r", Vector3(.098 * face_width, 1.75, -.005), Vector3(.028, .09, .1), hair_color)
+	var kit: Node3D = preload("res://assets/characters/civilian.glb").instantiate()
+	var offsets := {"torso": Vector3(0,1.13,0), "head": Vector3(0,1.7,0), "hair": Vector3(0,1.81,0), "neck": Vector3(0,1.52,0)}
+	for side in [-1, 1]:
+		var suffix := "_l" if side < 0 else "_r"
+		for item in [["arm",1.27], ["forearm",.98], ["hand",.79]]:
+			offsets[item[0] + suffix] = Vector3(side * .255, item[1], 0)
+		for item in [["leg",.62,0], ["shin",.22,0], ["shoe",.08,-.035]]:
+			offsets[item[0] + suffix] = Vector3(side * .105, item[1], item[2])
+	for node in kit.find_children("*", "MeshInstance3D", true, false):
+		var title: String = node.name
+		if not offsets.has(title):
+			continue
+		var mesh: Mesh = node.mesh.duplicate()
+		for surface in mesh.get_surface_count():
+			var material: StandardMaterial3D = mesh.surface_get_material(surface).duplicate()
+			var tag := material.resource_name
+			if tag.begins_with("Skin"):
+				material.albedo_color = skin_color
+			elif tag.begins_with("Hair"):
+				material.albedo_color = hair_color
+			elif tag.begins_with("Cloth"):
+				material.albedo_color = Color.WHITE
+				material.vertex_color_use_as_albedo = true
+			material.roughness = .8
+			mesh.surface_set_material(surface, material)
+		var size := Vector3(face_width, 1, 1) if title in ["head", "hair"] else Vector3.ONE
+		_instance_part(title, mesh, offsets[title], size, palette)
+	kit.free()
+	_add_part("apron", Vector3(0,1.00,-.132), Vector3(.29,.38,.018), Color("293d36"))
+	_add_part("badge", Vector3(.13,1.32,-.128), Vector3(.065,.032,.01), Color("e8e3d3"))
 	_render()
 
 func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, palette: Array = []) -> void:
-	var mesh: Mesh
+	var mesh := BoxMesh.new()
+	mesh.size = Vector3.ONE
 	var instance_scale := size
-	if title == "torso":
-		mesh = HumanMesh.torso()
-	elif title == "head":
-		mesh = HumanMesh.face()
-	elif title in ["arm_l", "arm_r", "forearm_l", "forearm_r", "leg_l", "leg_r", "shin_l", "shin_r"]:
-		mesh = HumanMesh.limb()
-	elif title in ["apron", "badge", "shirt", "collar_l", "collar_r", "belt"]:
-		var box := BoxMesh.new()
-		box.size = Vector3.ONE
-		mesh = box
-	else:
-		var sphere := SphereMesh.new()
-		sphere.radius = 0.5
-		sphere.height = 1.0
-		sphere.radial_segments = 16
-		sphere.rings = 8
-		mesh = sphere
 	var mat := Shapes.material(color)
 	mat.vertex_color_use_as_albedo = true
 	mat.diffuse_mode = BaseMaterial3D.DIFFUSE_TOON
 	mat.roughness = 0.9
-	if mesh is ArrayMesh:
-		mesh.surface_set_material(0, mat)
-	else:
-		mesh.set("material", mat)
+	mesh.material = mat
+	_instance_part(title, mesh, offset, instance_scale, palette)
+
+func _instance_part(title: String, mesh: Mesh, offset: Vector3, instance_scale: Vector3, palette: Array) -> void:
 	var instances := MultiMesh.new()
 	instances.transform_format = MultiMesh.TRANSFORM_3D
 	instances.use_colors = true

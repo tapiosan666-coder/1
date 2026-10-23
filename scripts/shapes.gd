@@ -11,6 +11,11 @@ static func material(color: Color, glow: float = 0.0) -> StandardMaterial3D:
 		mat.emission_energy_multiplier = glow
 	return mat
 
+static func timber() -> ShaderMaterial:
+	var mat := ShaderMaterial.new()
+	mat.shader = preload("res://assets/wood.gdshader")
+	return mat
+
 static func box(parent: Node3D, pos: Vector3, size: Vector3, mat: Material, solid: bool = false) -> MeshInstance3D:
 	var mesh := BoxMesh.new()
 	mesh.size = size
@@ -60,6 +65,7 @@ static func sign_text(parent: Node3D, pos: Vector3, message: String, size: int =
 	label.text = message
 	label.font = preload("res://assets/fonts/NotoSansCJKjp-Regular.otf")
 	label.font_size = size
+	label.outline_size = 2
 	label.pixel_size = 0.009
 	label.modulate = color
 	label.no_depth_test = false

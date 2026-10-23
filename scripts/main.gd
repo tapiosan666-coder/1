@@ -52,10 +52,13 @@ func _ready() -> void:
 	hud.resume_pressed.connect(func(): set_mode("play"))
 	hud.restart_pressed.connect(func(): start_run())
 	hud.skill_pressed.connect(buy_skill)
+	hud.travel_pressed.connect(fast_travel)
 	hud.exit_pressed.connect(func(): get_tree().quit())
 	# A preview crowd shares the exact same identity model as a playable run.
 	_create_run(120, 24)
 	set_mode("title")
+	if "--capture-overview" in OS.get_cmdline_user_args():
+		_capture_overview.call_deferred()
 	if "--capture" in OS.get_cmdline_user_args():
 		_capture.call_deferred()
 
@@ -110,6 +113,7 @@ func start_run(count: int = 120, run_seed: int = -1) -> void:
 	player.position = Mall.ENTRANCE
 	player.rotation = Vector3(0, -PI / 2, 0)
 	player.camera.rotation = Vector3.ZERO
+	_visit_points(false)
 	set_mode("play")
 	hud.message("1人を狙って左クリックを2秒長押し。Tabでスキルを購入。")
 
@@ -159,6 +163,7 @@ func _input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	if hud.mode != "play":
 		return
+	_visit_points()
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
 	sonar_left = maxf(0, sonar_left - delta)
@@ -508,6 +513,8 @@ func _setup_environment() -> void:
 	sun.light_color = Color("fff0d1")
 	sun.light_energy = 0.8
 	sun.shadow_enabled = true
+	sun.shadow_bias = .25
+	sun.shadow_normal_bias = 2.0
 	sun.directional_shadow_max_distance = 85
 	add_child(sun)
 	for x in [-22.0, 0.0, 22.0]:
@@ -529,26 +536,34 @@ func _capture() -> void:
 	player.camera.look_at(Vector3(68, 1.2, -47))
 	await get_tree().create_timer(0.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-food.png")
+	player.position = Vector3(17,.1,17)
+	player.camera.look_at(Vector3(26,1.5,36))
+	await get_tree().create_timer(.5).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-market.png")
+	player.position = Vector3(-75,.1,-11)
+	player.camera.look_at(Vector3(-79,1.4,-20))
+	await get_tree().create_timer(.5).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-bookshop.png")
 	player.position = Vector3(-79, 0.1, 33)
 	player.velocity = Vector3.ZERO
 	player.camera.look_at(Vector3(-86, 1.5, 45))
 	await get_tree().create_timer(0.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-restroom.png")
 	# A dedicated development capture exercises a partial original-reader lock.
-	crowd.positions[0] = Vector3(11, 0, 7)
-	crowd.bodies[0].position = Vector3(11, 0.95, 7)
+	crowd.positions[0] = Vector3(11, 0, 2)
+	crowd.bodies[0].position = Vector3(11, 0.95, 2)
 	crowd.waits[0] = 30
 	crowd.headings[0] = PI
-	player.position = Vector3(11, 0.1, 10.4)
+	player.position = Vector3(11, 0.1, 5.4)
 	player.velocity = Vector3.ZERO
-	player.camera.look_at(Vector3(11, 1.55, 7))
+	player.camera.look_at(Vector3(11, 1.55, 2))
 	await get_tree().physics_frame
 	Input.action_press("fire")
 	await get_tree().create_timer(0.9).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-reader.png")
 	Input.action_release("fire")
-	player.position = Vector3(11, .1, 8.4)
-	player.camera.look_at(Vector3(11, 1.58, 7))
+	player.position = Vector3(11, .1, 3.4)
+	player.camera.look_at(Vector3(11, 1.58, 2))
 	await get_tree().create_timer(.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-portrait.png")
 	set_mode("skills")
@@ -558,4 +573,32 @@ func _capture() -> void:
 		set_mode(screen)
 		await get_tree().create_timer(0.2).timeout
 		get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-%s.png" % screen)
+	get_tree().quit()
+
+func _visit_points(announce: bool = true) -> void:
+	for key in Mall.HUBS:
+		if not run.visited.has(key) and player.position.distance_to(Mall.HUBS[key]) <= 2.0:
+			run.visited[key] = true
+			if announce:
+				hud.message("案内ポイントを記録：%s ／ Mで確認" % key)
+
+func fast_travel(key: String) -> bool:
+	if hud.mode != "map" or not Mall.HUBS.has(key) or not run.can_travel(key):
+		return false
+	player.position = Mall.HUBS[key]
+	player.velocity = Vector3.ZERO
+	player.air_jump_used = false
+	handheld_scan.reset()
+	set_mode("play")
+	hud.message("%sへ移動しました" % key)
+	return true
+
+func _capture_overview() -> void:
+	start_run(120,912)
+	await get_tree().create_timer(1.0).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-play.png")
+	player.position = Vector3(17,.1,17)
+	player.camera.look_at(Vector3(26,1.5,36))
+	await get_tree().create_timer(.5).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-market.png")
 	get_tree().quit()

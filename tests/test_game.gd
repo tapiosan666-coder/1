@@ -29,6 +29,7 @@ func run_tests() -> void:
 	expect(all_glyphs, "Bundled font covers all Japanese and symbols used by the UI")
 	expect(game.hud.skin_select.get_item_text(0) == "明るい肌", "Face selection opens in Japanese")
 	expect(game.hud.skin_select.get_theme_font("font") == japanese_font and game.player.reader_screen.font == japanese_font, "Controls and 3D tool display share the bundled font")
+	await _test_mall_upgrade(game)
 	await _test_skill_limits(game)
 	await _test_new_skills(game)
 	game.start_run(120, 904)
@@ -37,7 +38,7 @@ func run_tests() -> void:
 	var counts: Dictionary = {}
 	for role in game.crowd.roles:
 		counts[role] = int(counts.get(role, 0)) + 1
-	for expected in [["staff", 19], ["browsing", 15], ["seated", 32], ["restroom", 6], ["conversation", 16], ["walking", 32]]:
+	for expected in [["staff", 19], ["browsing", 17], ["seated", 32], ["restroom", 6], ["conversation", 16], ["walking", 30]]:
 		expect(counts.get(expected[0], 0) == expected[1], "Role population: %s" % expected[0])
 	var sitter: int = game.crowd.roles.find("seated")
 	var staff: int = game.crowd.roles.find("staff")
@@ -95,12 +96,12 @@ func run_tests() -> void:
 	var fake: int = (game.run.true_id + 1) % 120
 	for body in game.crowd.bodies:
 		body.collision_layer = 0
-	game.crowd.positions[fake] = Vector3(11, 0, 7)
-	game.crowd.bodies[fake].position = Vector3(11, 0.95, 7)
+	game.crowd.positions[fake] = Vector3(11, 0, 2)
+	game.crowd.bodies[fake].position = Vector3(11, 0.95, 2)
 	game.crowd.bodies[fake].collision_layer = 2
-	game.player.position = Vector3(11, 0.1, 10)
+	game.player.position = Vector3(11, 0.1, 5)
 	game.player.velocity = Vector3.ZERO
-	game.player.camera.look_at(Vector3(11, 1.2, 7))
+	game.player.camera.look_at(Vector3(11, 1.2, 2))
 	await physics_frame
 	await physics_frame
 	var hit: Dictionary = game.ray_target()
@@ -124,8 +125,8 @@ func run_tests() -> void:
 	expect(game.equip(true), "Owned gun can be equipped")
 	expect(game.player.gun.visible and not game.player.handheld.visible, "Equipment switch updates model")
 	var other: int = (fake + 1) % 120
-	game.crowd.positions[other] = Vector3(11, 0, 7)
-	game.crowd.bodies[other].position = Vector3(11, 0.95, 7)
+	game.crowd.positions[other] = Vector3(11, 0, 2)
+	game.crowd.bodies[other].position = Vector3(11, 0.95, 2)
 	game.crowd.bodies[other].collision_layer = 2
 	await physics_frame
 	await physics_frame
@@ -197,12 +198,12 @@ func run_tests() -> void:
 	# Approach the real person and finish with the original tool, via actual input.
 	game.crowd.bodies[third].collision_layer = 0
 	var original: int = game.run.true_id
-	game.crowd.positions[original] = Vector3(11, 0, 7)
-	game.crowd.bodies[original].position = Vector3(11, 0.95, 7)
+	game.crowd.positions[original] = Vector3(11, 0, 2)
+	game.crowd.bodies[original].position = Vector3(11, 0.95, 2)
 	game.crowd.bodies[original].collision_layer = 2
-	game.player.position = Vector3(11, 0.1, 10)
+	game.player.position = Vector3(11, 0.1, 5)
 	game.player.velocity = Vector3.ZERO
-	game.player.camera.look_at(Vector3(11, 1.2, 7))
+	game.player.camera.look_at(Vector3(11, 1.2, 2))
 	game.equip(false)
 	game.cat.set_process(false)
 	await physics_frame
@@ -397,3 +398,48 @@ func _test_skill_limits(game: Node3D) -> void:
 	expect(game.run.hits[ids[0]] == 1 and game.run.hits[ids[2]] == 1 and game.run.hits[ids[3]] == 0, "Piercing is capped at three people")
 	game.chain_scan()
 	expect(game.run.cleared == 8 and not game.run.eliminated[ids[8]], "Chain stops after eight people even in a dense line")
+
+func _test_mall_upgrade(game: Node3D) -> void:
+	game.start_run(120,904)
+	await physics_frame
+	await physics_frame
+	var head: Mesh
+	var hand: Mesh
+	for part in game.crowd.parts:
+		if part.name == "head": head = part.instances.mesh
+		if part.name == "hand_l": hand = part.instances.mesh
+	expect(head != null and head.get_surface_count() >= 5, "Civilian head includes modeled facial features with distinct materials")
+	expect(hand != null and hand.get_aabb().size.y > .10, "Imported human hand includes fingers below palm")
+	var state := game.get_world_3d().direct_space_state
+	var window := PhysicsRayQueryParameters3D.create(Vector3(-81,1.6,-6),Vector3(-81,1.6,-11),1)
+	var door := PhysicsRayQueryParameters3D.create(Vector3(-75,1.6,-6),Vector3(-75,1.6,-11),1)
+	expect(not state.intersect_ray(window).is_empty(), "Shop display glazing has a physical boundary")
+	expect(state.intersect_ray(door).is_empty(), "Shop centre entrance stays open")
+	var route: PackedVector3Array = game.crowd.nav.get_point_path(game.crowd.nav.get_closest_point(Vector3(-81,0,-7)),game.crowd.nav.get_closest_point(Vector3(-81,0,-11)))
+	var distance := 0.0
+	for index in range(1,route.size()):
+		distance += route[index-1].distance_to(route[index])
+	expect(distance > 8, "NPC route goes around display glass through the open entrance")
+	for key in Mall.HUBS:
+		expect(Mall.walkable(Mall.HUBS[key]), "Travel hub is on accessible floor: %s" % key)
+	expect(Mall.MARKET.has_point(Vector2(17,24)) and Mall.walkable(Vector3(17,0,24)), "Large grocery anchor has traversable browsing aisles")
+	expect(game.run.visited.has("中央入口") and game.run.visited.size() == 1, "New run records only the visited entrance")
+	game.set_mode("map")
+	expect(not game.fast_travel("中央入口"), "Travel requires purchased skill")
+	game.run.ap = 1000
+	game.run.purchase("travel")
+	var fixed: int = game.run.true_id
+	expect(not game.fast_travel("食品スーパー") and not game.fast_travel("unknown"), "Cannot travel to unvisited or unknown point")
+	game.set_mode("play")
+	game.player.position = Vector3(24,.1,7)
+	game._visit_points()
+	expect(not game.run.visited.has("食品スーパー"), "Standing outside the supermarket does not count as visiting its hub")
+	game.player.position = Mall.HUBS["食品スーパー"]
+	game._visit_points()
+	expect(game.run.visited.has("食品スーパー"), "Actually approaching a hub records it")
+	game.handheld_scan.tick(1,0,true)
+	game.set_mode("map")
+	expect(game.fast_travel("中央入口") and game.player.position == Mall.ENTRANCE, "Visited point can be selected from map")
+	expect(game.run.true_id == fixed and not game.run.won and game.handheld_scan.seconds == 0, "Travel preserves true identity and resets partial reader scan")
+	game.start_run(120,904)
+	expect(game.run.visited.size() == 1 and game.run.upgrades.travel == 0, "New run clears visited destinations and travel skill")
