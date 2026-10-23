@@ -11,6 +11,8 @@ var using_gun := false
 var enabled := false
 var sensitivity := 0.0022
 var sprint_multiplier := 1.0
+var cart_boost := 1.0
+var cart: Node3D
 var double_jump_enabled := false
 var air_jump_used := false
 var recoil := 0.0
@@ -43,6 +45,7 @@ func _ready() -> void:
 	Shapes.box(gun, Vector3(0, 0, -0.291), Vector3(0.065, 0.055, 0.009), energy)
 	Shapes.box(gun, Vector3(0.095, 0.01, 0.0), Vector3(0.008, 0.035, 0.19), energy)
 	_make_handheld()
+	_make_cart()
 
 func _make_handheld() -> void:
 	handheld = Node3D.new()
@@ -92,11 +95,15 @@ func _physics_process(delta: float) -> void:
 	var speed := 5.0
 	if Input.is_action_pressed("sprint"):
 		speed = 8.5 * sprint_multiplier
+	speed *= cart_boost
+	cart.visible = cart_boost > 1 and enabled
 	var aiming := Input.is_action_pressed("aim")
 	if aiming:
 		speed *= 0.55
-	velocity.x = move_toward(velocity.x, direction.x * speed, delta * 40)
-	velocity.z = move_toward(velocity.z, direction.z * speed, delta * 40)
+	var carry := Mall.escalator_carry(global_position)
+	floor_snap_length = .4
+	velocity.x = move_toward(velocity.x, direction.x * speed + carry.x, delta * 40)
+	velocity.z = move_toward(velocity.z, direction.z * speed + carry.z, delta * 40)
 	if is_on_floor():
 		air_jump_used = false
 	else:
@@ -118,3 +125,15 @@ func _physics_process(delta: float) -> void:
 	camera.fov = lerpf(camera.fov, 57.0 if aiming else 78.0, delta * 10)
 	if Input.is_action_pressed("fire"):
 		fired.emit()
+
+func _make_cart() -> void:
+	cart = Node3D.new(); add_child(cart); cart.position = Vector3(0,0,-1.0); cart.visible = false
+	var steel := Shapes.material(Color("899b9c")); steel.metallic = .6
+	for x in [-.35,.35]:
+		for z in [-.4,.35]:
+			Shapes.cylinder(cart,Vector3(x,.12,z),.08,.12,Shapes.material(Color("263436"))).rotation.z = PI/2
+			Shapes.box(cart,Vector3(x,.48,z),Vector3(.025,.74,.025),steel)
+		for y in [.4,.58,.76]: Shapes.box(cart,Vector3(x,y,0),Vector3(.025,.025,.80),steel)
+	for y in [.4,.58,.76]:
+		for z in [-.4,.4]: Shapes.box(cart,Vector3(0,y,z),Vector3(.72,.025,.025),steel)
+	Shapes.box(cart,Vector3(0,1,.55),Vector3(.8,.055,.055),Shapes.material(Color("3b7773")))

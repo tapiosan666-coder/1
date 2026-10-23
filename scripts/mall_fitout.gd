@@ -20,6 +20,9 @@ func build(root: Node3D, x: float, facing: int, kind: int) -> void:
 	parent = root
 	origin = x
 	side = facing
+	if x == -75 and side == -1:
+		Bookshop.new().build(root)
+		return
 	var floor_color := Color("9d8569") if kind in [1,5,6] else Color("bbb8ac")
 	box(0,.012,16,Vector3(17.6,.024,15.1),Shapes.material(floor_color))
 	# Checkout island has a customer-facing till, storage doors and task lighting.

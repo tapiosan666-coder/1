@@ -5,15 +5,22 @@ extends Node3D
 
 const CATEGORIES := ["書店","服飾","靴・鞄","生活雑貨","家電","喫茶","家具","日用品","スポーツ"]
 const SHOP_CENTERS := [-75.0, -57.0, -39.0, -21.0, -3.0, 15.0, 33.0, 51.0, 69.0]
+const COURT := Rect2(-48,-15,18,39)
+const READING := Rect2(-90,-36,24,12)
+const STOCK := Rect2(-66,-36,18,12)
 const MAIN := Rect2(-90, -8, 180, 16)
 const FOOD := Rect2(46, -62, 46, 30)
 const RESTROOM := Rect2(-90, 26, 38, 30)
 const PROMENADE := Rect2(-47, -36, 127, 8)
 const MARKET := Rect2(6, 8, 36, 40)
-const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32)}
+const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8)}
 const ENTRANCE := Vector3(-82, 0.1, 0)
 static var floor_regions: Array[Rect2] = []
 static var obstacles: Array[Rect2] = []
+static var upper_obstacles: Array[Rect2] = []
+static var cached_upper_regions: Array[Rect2] = []
+const STOREY := 5.35
+const UPPER_TOP := .175
 var spawn_points: Array[Vector3] = []
 var identity_slots: Array[Dictionary] = []
 var outline := PackedVector2Array()
@@ -24,14 +31,16 @@ var wood := Shapes.timber()
 var warm := Shapes.material(Color("ffe5ba"), 0.8)
 
 static func has_shop(x: float, side: int) -> bool:
-	return not (side == -1 and x in [-39.0, 69.0]) and not (side == 1 and x in [-75.0,15.0,33.0])
+	return not (side == -1 and x in [-39.0, 69.0]) and not (side == 1 and x in [-75.0,-39.0,15.0,33.0])
 
 static func prepare_plan() -> void:
 	if not floor_regions.is_empty():
 		return
 	floor_regions.append(MAIN)
 	# Retail units share a continuous building slab; partitions define shops.
-	floor_regions.append(Rect2(-84, -24, 164, 16))
+	floor_regions.append(Rect2(-84,-24,164,16))
+	floor_regions.append(Rect2(-90,-36,42,12))
+	floor_regions.append(COURT)
 	# Add connecting pieces before their destination for polygon union.
 	floor_regions.append(Rect2(60, -42, 20, 35))
 	floor_regions.append(FOOD)
@@ -52,17 +61,36 @@ static func prepare_plan() -> void:
 		for x in SHOP_CENTERS:
 			if not has_shop(x, side):
 				continue
+			var obstacle_start := obstacles.size()
 			floor_regions.append(Rect2(x - 9, -24 if side < 0 else 8, 18, 16))
 			for wall_x in [x - 9, x + 9]:
 				obstacles.append(Rect2(wall_x - 0.16, -24 if side < 0 else 8.8, 0.32, 15.2))
 			# Two display windows frame a six-metre shop entrance.
 			for dx in [-6.0,6.0]:
 				obstacles.append(Rect2(x+dx-3, side*8.5-.12, 6,.24))
-			obstacles.append(Rect2(x-9,side*23.6-.12,18,.24))
+			if x == -75 and side == -1:
+				obstacles.append(Rect2(-84,-23.72,7,.24))
+				obstacles.append(Rect2(-73,-23.72,7,.24))
+			else:
+				obstacles.append(Rect2(x-9,side*23.6-.12,18,.24))
 			for dx in [-4.5,4.5]:
 				obstacles.append(Rect2(x+dx-1,side*13.5-1.4,2,2.8))
 			obstacles.append(Rect2(x + 1.5, side * 18 - 0.65, 3, 1.3))
-			obstacles.append(Rect2(x - 7.5, -22.5 if side < 0 else 21.2, 12, 1.3))
+			if x == -75 and side == -1:
+				for px in [-81.0,-69.0]: obstacles.append(Rect2(px-1.75,-22.4,3.5,1.0))
+			else:
+				obstacles.append(Rect2(x-7.5,-22.5 if side < 0 else 21.2,12,1.3))
+			upper_obstacles.append_array(obstacles.slice(obstacle_start))
+	for px in [-84.0,-76.0]:
+		obstacles.append(Rect2(px-1.0,-31.5,2,1))
+		obstacles.append(Rect2(px-.3,-30.2,.6,.6))
+	obstacles.append(Rect2(-88,-35.5,20,1.0))
+	obstacles.append(Rect2(-65,-35.5,14,1.2))
+	obstacles.append(Rect2(-66.15,-36,.3,2.5))
+	obstacles.append(Rect2(-66.15,-30.5,.3,6.5))
+	# Escalator structures occupy the rear of the ground-floor court.
+	obstacles.append(Rect2(-44.6,9,2.2,12))
+	obstacles.append(Rect2(-36.1,9,2.2,12))
 	for x in [53.0, 67.0, 81.0]:
 		for z in [-39.0, -47.0, -54.0]:
 			obstacles.append(Rect2(x - 1.3, z - 0.7, 2.6, 1.4))
@@ -92,8 +120,33 @@ static func inside_floor(p: Vector2) -> bool:
 			return true
 	return false
 
-static func walkable(p: Vector3) -> bool:
-	var v := Vector2(p.x, p.z)
+static func level_at(height: float) -> int:
+	return clampi(roundi((height-UPPER_TOP)/STOREY),0,2)
+
+static func floor_height(level: int) -> float:
+	return 0.0 if level == 0 else level*STOREY+UPPER_TOP
+
+static func upper_regions() -> Array[Rect2]:
+	if not cached_upper_regions.is_empty(): return cached_upper_regions
+	var regions := gallery_regions()
+	for side in [-1,1]:
+		for x in SHOP_CENTERS:
+			if has_shop(x,side): regions.append(Rect2(x-9,-24 if side < 0 else 8,18,16))
+	cached_upper_regions = regions
+	return cached_upper_regions
+
+static func plan_walkable(p: Vector3) -> bool:
+	prepare_plan()
+	var v := Vector2(p.x, p.z).snapped(Vector2(.0001,.0001))
+	if level_at(p.y) > 0:
+		for offset in [Vector2.ZERO,Vector2(.42,0),Vector2(-.42,0),Vector2(0,.42),Vector2(0,-.42)]:
+			var inside := false
+			for region in upper_regions():
+				if region.has_point(v+offset): inside = true; break
+			if not inside: return false
+		for obstacle in upper_obstacles:
+			if obstacle.grow(.35).has_point(v): return false
+		return true
 	for offset in [Vector2.ZERO, Vector2(0.42, 0), Vector2(-0.42, 0), Vector2(0, 0.42), Vector2(0, -0.42)]:
 		if not inside_floor(v + offset):
 			return false
@@ -102,15 +155,30 @@ static func walkable(p: Vector3) -> bool:
 			return false
 	return true
 
-static func segment_walkable(a: Vector3, b: Vector3) -> bool:
+static func walkable(p: Vector3) -> bool:
+	return plan_walkable(MallCurve.plan(p))
+
+static func hub_position(key: String) -> Vector3:
+	return MallCurve.world(HUBS[key])
+
+static func plan_segment_walkable(a: Vector3,b: Vector3) -> bool:
 	var steps := maxi(1,ceili(a.distance_to(b)/.2))
 	for index in range(steps+1):
-		if not walkable(a.lerp(b,float(index)/steps)):
+		if not plan_walkable(a.lerp(b,float(index)/steps)):
 			return false
 	return true
 
+static func segment_walkable(a: Vector3,b: Vector3) -> bool:
+	return plan_segment_walkable(MallCurve.plan(a),MallCurve.plan(b))
+
 static func zone_name(p: Vector3) -> String:
-	var v := Vector2(p.x, p.z)
+	var plan := MallCurve.plan(p)
+	var v := Vector2(plan.x, plan.z)
+	if p.y >= 4.7:
+		return "A館%d階 / %s" % [level_at(p.y)+1,"店舗エリア" if absf(plan.z) > 8 and not COURT.has_point(v) else "吹き抜け回廊"]
+	if READING.has_point(v): return "A館1階 / 書店の読書コーナー"
+	if STOCK.has_point(v): return "A館1階 / バックヤード"
+	if COURT.has_point(v): return "A館1階 / センターアトリウム"
 	if MARKET.has_point(v):
 		return "A館1階 / 食品スーパー"
 	if FOOD.has_point(v):
@@ -127,15 +195,34 @@ func _ready() -> void:
 	_build_concourse()
 	_build_architecture()
 	_build_shops()
+	_build_reading_and_court()
 	_build_market()
 	_build_food_court()
 	_build_restroom()
 	_build_conversations()
-	for z in range(-61, 57, 2):
-		for x in range(-89, 93, 2):
-			var p := Vector3(x, 0, z)
-			if walkable(p):
-				spawn_points.append(p)
+	# Keep 120 identities in this slice, spreading stationary people over all floors.
+	var ground_slots: Array[Dictionary] = []
+	var seated := 0
+	var talking := 0
+	for slot in identity_slots:
+		if slot.role == "seated":
+			seated += 1
+			if seated > 14: continue
+		if slot.role == "conversation":
+			talking += 1
+			if talking > 4: continue
+		ground_slots.append(slot)
+	identity_slots = ground_slots
+	for level in [1,2]: _build_upper_shops(level)
+	for level in 3:
+		for z in range(-61, 57, 2):
+			for x in range(-89, 93, 2):
+				var p := Vector3(x, floor_height(level), z)
+				if plan_walkable(p): spawn_points.append(MallCurve.world(p))
+	for slot in identity_slots:
+		slot.yaw -= MallCurve.angle(slot.pos.x)
+		slot.pos = MallCurve.world(slot.pos)
+	MallCurve.bake(self)
 
 func _polygon(rect: Rect2) -> PackedVector2Array:
 	return PackedVector2Array([rect.position, rect.position + Vector2(rect.size.x, 0), rect.end, rect.position + Vector2(0, rect.size.y)])
@@ -225,10 +312,13 @@ func _build_shops() -> void:
 			# Cash desk and a staff member behind it.
 			Shapes.box(self, Vector3(x + 3, 0.58, side * 18), Vector3(3, 1.16, 1.3), wood, true)
 			Shapes.box(self, Vector3(x + 3, 1.28, side * 18), Vector3(0.5, 0.25, 0.35), dark)
-			identity_slots.append({"pos": Vector3(x + 3, 0, side * 20), "yaw": 0.0 if side > 0 else PI, "role": "staff"})
-			identity_slots.append({"pos": Vector3(x - 3, 0, side * 19.5), "yaw": PI if side > 0 else 0.0, "role": "browsing"})
+			identity_slots.append({"pos": Vector3(x + 3, 0, side * 19.15), "yaw": 0.0 if side > 0 else PI, "role": "staff"})
+			identity_slots.append({"pos": Vector3(x - 3, 0, side * 20.5), "yaw": PI if side > 0 else 0.0, "role": "browsing", "activity": "book" if index == 0 else "inspect"})
 			# Collision envelopes match the category-specific furniture.
-			Shapes.box(self, Vector3(x - 1.5, 0.65, side * 21.85), Vector3(12, 1.3, 1.3), Shapes.material(Color(0,0,0,0)), true).visible = false
+			if x == -75 and side == -1:
+				for px in [-81.0,-69.0]: Shapes.box(self,Vector3(px,.9,-21.9),Vector3(3.5,1.8,1),chalk,true).visible = false
+			else:
+				Shapes.box(self,Vector3(x-1.5,.65,side*21.85),Vector3(12,1.3,1.3),chalk,true).visible = false
 			MallFitout.new().build(self,x,side,index)
 			_build_frontage(x,side,index)
 			var light := OmniLight3D.new()
@@ -259,7 +349,7 @@ func _build_food_court() -> void:
 		Shapes.box(self, Vector3(x, 0.5, -59.5), Vector3(9, 1, 1), wood, true)
 		Shapes.box(self, Vector3(x, 2.9, -61.7), Vector3(9, 1.0, 0.15), dark)
 		Shapes.sign_text(self, Vector3(x, 2.9, -61.58), menus[index], 64)
-		identity_slots.append({"pos": Vector3(x, 0, -61), "yaw": PI, "role": "staff"})
+		identity_slots.append({"pos": Vector3(x, 0, -60.6), "yaw": PI, "role": "staff"})
 		for offset in [-2.0, 0.0, 2.0]:
 			Shapes.cylinder(self, Vector3(x + offset, 1.06, -59.4), 0.24, 0.08, chalk)
 	for x in [53.0, 67.0, 81.0]:
@@ -358,7 +448,11 @@ func _build_frontage(x: float, side: int, kind: int) -> void:
 		for edge in [-3.0,0.0,3.0]:
 			Shapes.box(self,Vector3(x+dx+edge,1.9,side*8.5),Vector3(.045,3.8,.16),frame)
 		Shapes.box(self,Vector3(x+dx,.18,side*8.5),Vector3(6,.36,.18),stone)
-	Shapes.box(self,Vector3(x,2.4,side*23.6),Vector3(18,4.8,.24),chalk,true)
+	if x == -75 and side == -1:
+		for px in [-80.5,-69.5]: Shapes.box(self,Vector3(px,2.4,-23.6),Vector3(7,4.8,.24),chalk,true)
+		Shapes.sign_text(self,Vector3(-75,2.8,-23.4),"READING LOUNGE  /  読書コーナー",28).pixel_size = .003
+	else:
+		Shapes.box(self,Vector3(x,2.4,side*23.6),Vector3(18,4.8,.24),chalk,true)
 	for dx in [-4.5,4.5]:
 		var collision := Shapes.box(self,Vector3(x+dx,.65,side*13.5),Vector3(2,1.3,2.8),chalk,true)
 		collision.visible = false
@@ -373,31 +467,38 @@ func _build_architecture() -> void:
 	var bronze := Shapes.material(Color("77634e"))
 	var light := Shapes.material(Color("fff1d9"),1.1)
 	var glass := _glass()
-	# A covered two-storey concourse with a central skylight and upper galleries.
-	# Galleries are architectural scenery in the current one-floor development slice.
+	# Three storeys share one continuous open void, with side galleries only.
+	for level in [1,2]:
+		var y: float = level*5.35
+		for side in [-1,1]:
+			Shapes.box(self,Vector3(0,y,side*6.5),Vector3(180,.35,3),ivory,true)
+			Shapes.box(self,Vector3(0,y-.25,side*5),Vector3(180,.18,.16),bronze)
+			Shapes.box(self,Vector3(0,y-.35,side*5.1),Vector3(178,.035,.06),light)
+			for span in [[-90.0,-61.6],[-58.4,-48.0],[-45.0,-33.0],[-30.0,8.4],[11.6,60.4],[63.6,90.0]]:
+				var middle: float = (span[0]+span[1])*.5
+				var width: float = span[1]-span[0]
+				Shapes.box(self,Vector3(middle,y+.65,side*4.95),Vector3(width,1.05,.06),glass,true)
+				Shapes.box(self,Vector3(middle,y+1.21,side*4.95),Vector3(width,.045,.065),bronze)
+			for x in range(-84,90,12):
+				Shapes.box(self,Vector3(x,y+.65,side*4.95),Vector3(.045,1.15,.07),bronze)
+				Shapes.box(self,Vector3(x,y-.22,side*6.5),Vector3(5,.035,.18),light)
+		# Blank fronts only where the lower-floor side wings have no upper store.
+		for span in [[-75.0,1,18.0],[24.0,1,36.0],[69.0,-1,18.0],[-87.0,-1,6.0],[84.0,-1,12.0],[-87.0,1,6.0],[84.0,1,12.0]]:
+			Shapes.box(self,Vector3(span[0],y+2.5,span[1]*8.5),Vector3(span[2],4.8,.25),ivory,true)
+		for x in [-60.0,10.0,62.0]:
+			Shapes.box(self,Vector3(x,y,0),Vector3(3.2,.35,10),ivory,true)
+			for edge in [-1.6,1.6]:
+				Shapes.box(self,Vector3(x+edge,y+.65,0),Vector3(.06,1.1,10),glass,true)
 	for side in [-1,1]:
-		Shapes.box(self,Vector3(0,5.35,side*6.5),Vector3(180,.35,3.0),ivory)
-		Shapes.box(self,Vector3(0,5.1,side*5),Vector3(180,.18,.16),bronze)
-		Shapes.box(self,Vector3(0,5.0,side*5.1),Vector3(178,.035,.06),light)
-		Shapes.box(self,Vector3(0,6.0,side*4.95),Vector3(180,1.05,.045),glass)
-		Shapes.box(self,Vector3(0,6.56,side*4.95),Vector3(180,.045,.055),bronze)
-		Shapes.box(self,Vector3(0,7.5,side*8),Vector3(180,4,.28),ivory)
-		Shapes.box(self,Vector3(0,10.4,side*5.5),Vector3(180,.24,5),ivory)
-		for x in range(-84,90,12):
-			Shapes.box(self,Vector3(x,6.0,side*4.95),Vector3(.045,1.15,.07),bronze)
-			Shapes.box(self,Vector3(x,7.55,side*7.8),Vector3(8,2.2,.06),Shapes.material(Color("acb6b5")))
-			Shapes.box(self,Vector3(x,10.1,side*5.5),Vector3(6,.035,.18),light)
-	# Roof glazing is held by structural ribs; the hall no longer opens into the sky.
-	Shapes.box(self,Vector3(0,10.55,0),Vector3(180,.08,6),Shapes.material(Color("b4cbd0"),.18))
-	for x in range(-90,91,6):
-		Shapes.box(self,Vector3(x,10.3,0),Vector3(.12,.38,16),ivory)
-	for z in [-3.0,0.0,3.0]:
-		Shapes.box(self,Vector3(0,10.4,z),Vector3(180,.12,.1),bronze)
+		Shapes.box(self,Vector3(0,16.1,side*5.5),Vector3(180,.24,5),ivory)
+	Shapes.box(self,Vector3(0,16.35,0),Vector3(180,.08,6),Shapes.material(Color("b4cbd0"),.2))
+	for x in range(-90,91,6): Shapes.box(self,Vector3(x,16.05,0),Vector3(.12,.38,16),ivory)
+	for z in [-3.0,0.0,3.0]: Shapes.box(self,Vector3(0,16.2,z),Vector3(180,.12,.1),bronze)
 	# Covered junctions keep indoor circulation enclosed between the larger rooms.
 	Shapes.box(self,Vector3(-73,4.95,18.5),Vector3(12,.18,23),ivory)
 	Shapes.box(self,Vector3(70,4.95,-24.5),Vector3(20,.18,35),ivory)
 	for x in [-90.0,90.0]:
-		Shapes.box(self,Vector3(x,7.8,0),Vector3(.30,5.2,16),ivory)
+		Shapes.box(self,Vector3(x,10.4,0),Vector3(.30,10.4,16),ivory)
 		Shapes.box(self,Vector3(x*.998,7.6,0),Vector3(.04,3.5,11),Shapes.material(Color("aabec2")))
 	# Floor inlays clarify circulation, junctions and the connection to the dining wing.
 	for side in [-1,1]:
@@ -475,7 +576,7 @@ func _build_market() -> void:
 		Shapes.box(self,Vector3(x,.56,13.15),Vector3(3,1.12,1.3),green,true)
 		Shapes.box(self,Vector3(x,1.18,13.15),Vector3(3.1,.08,1.4),dark)
 		Shapes.box(self,Vector3(x+.6,1.43,13.15),Vector3(.4,.4,.08),dark)
-		identity_slots.append({"pos":Vector3(x,0,15.3),"yaw":0.0,"role":"staff"})
+		identity_slots.append({"pos":Vector3(x,0,14.25),"yaw":0.0,"role":"staff"})
 	for x in [17.0,27.0]:
 		for z in [24.0,35.0]:
 			identity_slots.append({"pos":Vector3(x,0,z),"yaw":PI/2,"role":"browsing"})
@@ -489,3 +590,112 @@ func _build_market() -> void:
 		light.light_energy = .85
 		light.omni_range = 21
 	Shapes.sign_text(self,Vector3(24,3.0,47.7),"毎日の食卓に  /  FOOD & DAILY",46,Color("344d40"))
+
+static func gallery_regions() -> Array[Rect2]:
+	return [Rect2(-90,-8,180,3),Rect2(-90,5,180,3),Rect2(-48,-15,3,39),Rect2(-33,-15,3,39),Rect2(-48,21,18,3),Rect2(-48,-15,18,3),Rect2(-48,6.5,18,3),Rect2(-61.6,-5,3.2,10),Rect2(8.4,-5,3.2,10),Rect2(60.4,-5,3.2,10)]
+
+static func escalator_carry(position: Vector3) -> Vector3:
+	var p := MallCurve.plan(position)
+	for flight in [[-43.5,0.0,1.0],[-35.0,5.525,-1.0]]:
+		if absf(p.x-flight[0]) < .88 and p.z >= 9 and p.z <= 21:
+			var t: float = (p.z-9)/12 if flight[2] > 0 else (21-p.z)/12
+			var y: float = flight[1]+t*(5.525 if flight[1] == 0 else 5.35)
+			if absf(p.y-y) < .35:
+				return Basis(Vector3.UP,-MallCurve.angle(p.x))*Vector3(0,0,.9*flight[2])
+	return Vector3.ZERO
+
+func _build_reading_and_court() -> void:
+	var ivory := Shapes.material(Color("e4dfd4"))
+	var glass := _glass()
+	Shapes.box(self,Vector3(-78,.018,-30),Vector3(24,.03,12),wood)
+	Shapes.box(self,Vector3(-57,.018,-30),Vector3(18,.03,12),stone)
+	Shapes.box(self,Vector3(-69,4.1,-30),Vector3(42,.18,12),ivory)
+	for x in [-84.0,-76.0]:
+		Shapes.box(self,Vector3(x,.74,-31),Vector3(2,.12,1),wood,true)
+		_chair(Vector3(x,0,-29.9),0)
+		identity_slots.append({"pos":Vector3(x,0,-29.9),"yaw":0.0,"role":"reading","activity":"book"})
+		Shapes.cylinder(self,Vector3(x,3.45,-31),.33,.18,warm)
+		Shapes.box(self,Vector3(x,3.85,-31),Vector3(.025,.6,.025),dark)
+		Shapes.box(self,Vector3(x,.85,-31),Vector3(.24,.04,.34),Shapes.material(Color("9a6c54")))
+	for x in [-84.0,-76.0]:
+		Shapes.box(self,Vector3(x,1.0,-35),Vector3(8,2,1),wood,true)
+		for y in [.4,.9,1.4]:
+			for i in 18:
+				Shapes.box(self,Vector3(x-3.6+i*.4,y+.18,-34.42),Vector3(.12,.33,.20),Shapes.material(Color.from_hsv(i*.053,.25,.64)))
+	Shapes.sign_text(self,Vector3(-81,2.9,-35.7),"紙とことば  /  READING LOUNGE",40)
+	for fixture in [Rect2(-66.15,-36,.3,2.5),Rect2(-66.15,-30.5,.3,6.5)]:
+		Shapes.box(self,Vector3(fixture.get_center().x,1.9,fixture.get_center().y),Vector3(fixture.size.x,3.8,fixture.size.y),ivory,true)
+	Shapes.sign_text(self,Vector3(-66.3,2.8,-32),"BACKYARD",26).rotation.y = -PI/2
+	Shapes.box(self,Vector3(-58,1,-34.9),Vector3(14,2,1.2),dark,true)
+	for i in 12:
+		for y in [.5,1.5]:
+			Shapes.box(self,Vector3(-64+i*1.1,y,-34.5),Vector3(.8,.7,.6),Shapes.material(Color("a28b69")))
+	Shapes.sign_text(self,Vector3(-57,2.8,-35.7),"バックヤード / 商品保管",30)
+	# A three-storey court interrupts the retail row and opens the long concourse.
+	for y in [5.35,10.7]:
+		for index in range(2,7):
+			var rect: Rect2 = gallery_regions()[index]
+			# Notch the top landing: a slab must not cut through the last ramp metre.
+			var pieces: Array[Rect2] = [rect]
+			if index == 6 and y > 10:
+				pieces = [Rect2(-48,6.5,11.8,3),Rect2(-33.8,6.5,3.8,3),Rect2(-36.2,6.5,2.4,2.5)]
+			for piece in pieces:
+				Shapes.box(self,Vector3(piece.get_center().x,y,piece.get_center().y),Vector3(piece.size.x,.35,piece.size.y),ivory,true)
+		for x in [-45.0,-33.0]:
+			for segment in [[-12.0,-8.0],[-5.0,5.0],[9.5,21.0]]:
+				var middle: float = (segment[0]+segment[1])*.5
+				var length: float = segment[1]-segment[0]
+				Shapes.box(self,Vector3(x,y+.65,middle),Vector3(.06,1.1,length),glass,true)
+				Shapes.box(self,Vector3(x,y+1.23,middle),Vector3(.07,.055,length),dark)
+		for x in [-48.0,-30.0]:
+			Shapes.box(self,Vector3(x,y+.65,0),Vector3(.06,1.1,10),glass,true)
+		Shapes.box(self,Vector3(-39,y+.65,-12),Vector3(12,1.1,.06),glass,true)
+		# Open landings let both escalators connect to the galleries.
+		for edge in [[-40.25,3.7],[-32.75,1.7]]:
+			Shapes.box(self,Vector3(edge[0],y+.65,21),Vector3(edge[1],1.1,.06),glass,true)
+		for edge in [[-42.25,7.5],[-31.25,1.5]]:
+			Shapes.box(self,Vector3(edge[0],y+.65,9.5),Vector3(edge[1],1.1,.06),glass,true)
+		Shapes.box(self,Vector3(-39,y+2.5,-15),Vector3(18,4.6,.25),ivory,true)
+		for x in [-48.0,-30.0]:
+			Shapes.box(self,Vector3(x,y+2.5,16),Vector3(.3,4.6,16),ivory,true)
+		Shapes.box(self,Vector3(-39,y+2.5,24),Vector3(18,4.6,.3),ivory,true)
+		Shapes.box(self,Vector3(-39,y-.3,22.4),Vector3(15,.04,.12),warm)
+	Shapes.box(self,Vector3(-39,16.35,4.5),Vector3(18,.15,39),Shapes.material(Color("c4d7db"),.2))
+	for x in [-48.0,-42.0,-36.0,-30.0]: Shapes.box(self,Vector3(x,16.05,4.5),Vector3(.15,.32,39),ivory)
+	for z in [-15.0,0.0,12.0,24.0]: Shapes.box(self,Vector3(-39,16.05,z),Vector3(18,.32,.15),ivory)
+	Shapes.sign_text(self,Vector3(-39,3.2,23.7),"CENTER ATRIUM\n2F・3F 回廊へ",45)
+	_escalator(-43.5,0,9,21)
+	_escalator(-35,5.525,21,9)
+
+func _escalator(x: float,y: float,start: float,end: float) -> void:
+	var rise := 5.525 if y == 0 else 5.35
+	var length := sqrt(12*12+rise*rise)
+	var angle := -atan2(rise,end-start) if end > start else atan2(rise,start-end)
+	var material := ShaderMaterial.new(); material.shader = preload("res://assets/escalator.gdshader")
+	var ramp := Shapes.box(self,Vector3(x,y+rise/2-.075/cos(angle),(start+end)/2),Vector3(1.8,.15,length),material,true)
+	ramp.rotation.x = angle
+	for side in [-1,1]:
+		var panel := Shapes.box(self,Vector3(x+side*1.0,y+rise/2+.35,15),Vector3(.12,.85,length),_glass(),true)
+		panel.rotation.x = angle
+		var rail := Shapes.box(self,Vector3(x+side*1.0,y+rise/2+.85,15),Vector3(.16,.10,length),dark)
+		rail.rotation.x = angle
+
+func _build_upper_shops(level: int) -> void:
+	var child_start := get_child_count()
+	var slot_start := identity_slots.size()
+	_build_shops()
+	var height := floor_height(level)
+	for index in range(child_start,get_child_count()):
+		var node := get_child(index) as Node3D
+		node.position.y += height
+		if node is Label3D and "READING LOUNGE" in node.text: node.text = "BOOK FAIR / 新刊のご案内"
+	for index in range(slot_start,identity_slots.size()): identity_slots[index].pos.y += height
+	for side in [-1,1]:
+		for x in SHOP_CENTERS:
+			if not has_shop(x,side): continue
+			Shapes.box(self,Vector3(x,height-.175,side*16),Vector3(18,.35,16),chalk,true)
+			# The reused bookshop's rear lounge is closed on the upper floors.
+			if x == -75 and side == -1:
+				Shapes.box(self,Vector3(x,height+2.4,-23.6),Vector3(4,4.8,.25),chalk,true)
+	_direction_sign(Vector3(-39,height+3,22.8),"A館 %dF  /  ショッピング
+エスカレーターで各階へ" % (level+1),PI)

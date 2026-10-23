@@ -19,27 +19,66 @@ var skin_color := Color("cfaa89")
 var hair_color := Color("33312c")
 var face_width := 1.0
 var roles: Array[String] = []
+var activities: Array[String] = []
+var frozen := false
+var attraction_left := 0.0
+var attracted: Dictionary = {}
 var slots: Array[Dictionary] = []
+static var cached_nav: AStar3D
+static var cached_nav_hash := 0
+static var cached_nav_ids: Array[int] = []
+var floor_nav_ids: Array[Array] = [[],[],[]]
 
 func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	run = state
 	rng.randomize()
-	for i in points.size():
-		nav.add_point(i, points[i])
-		nav_ids.append(i)
-	var lookup: Dictionary = {}
-	for i in points.size():
-		lookup[Vector2i(roundi(points[i].x), roundi(points[i].z))] = i
-	for i in points.size():
-		var cell := Vector2i(roundi(points[i].x), roundi(points[i].z))
-		for offset in [Vector2i(2, 0), Vector2i(0, 2)]:
-			if lookup.has(cell + offset):
-				var other: int = lookup[cell + offset]
-				if Mall.segment_walkable(points[i], points[other]):
-					nav.connect_points(i, other)
+	var key := hash(points)
+	if cached_nav != null and cached_nav_hash == key:
+		nav = cached_nav
+		nav_ids = cached_nav_ids
+	else:
+		for i in points.size():
+			nav.add_point(i, points[i])
+			nav_ids.append(i)
+		var lookup: Dictionary = {}
+		for i in points.size():
+			lookup[Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))] = i
+		for i in points.size():
+			var cell := Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))
+			for offset in [Vector3i(2, 0, 0), Vector3i(0, 0, 2)]:
+				if lookup.has(cell + offset):
+					var other: int = lookup[cell + offset]
+					if Mall.plan_segment_walkable(Vector3(cell.x,Mall.floor_height(cell.y),cell.z),Vector3((cell+offset).x,Mall.floor_height(cell.y),(cell+offset).z)):
+						nav.connect_points(i, other)
+		# Explicit inclined links connect the same graph used by cats and item attraction.
+		for flight in [[-43.5,0,9.0,21.0],[-35.0,1,21.0,9.0]]:
+			var previous := -1
+			for step in range(14):
+				var t := clampf((step-.5)/12,0,1)
+				var p := MallCurve.world(Vector3(flight[0],lerpf(Mall.floor_height(flight[1]),Mall.floor_height(flight[1]+1),t),lerpf(flight[2],flight[3],t)))
+				var id := nav.get_point_count()
+				if step == 0 or step == 13:
+					var nearest := INF
+					for candidate in nav_ids:
+						var at := nav.get_point_position(candidate)
+						if Mall.level_at(at.y) != int(flight[1])+(1 if step == 13 else 0): continue
+						# Landings extend beyond the ramp, never through its side glass.
+						var plan := MallCurve.plan(at)
+						if absf(plan.x-flight[0]) > .6: continue
+						if (flight[3] > flight[2] and (plan.z < flight[3]+.4 if step == 13 else plan.z > flight[2]-.4)) or (flight[3] < flight[2] and (plan.z > flight[3]-.4 if step == 13 else plan.z < flight[2]+.4)): continue
+						if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
+					assert(nearest < INF,"Escalator must meet a public landing")
+				else: nav.add_point(id,p)
+				if previous >= 0 and id != previous: nav.connect_points(previous,id)
+				previous = id
+		cached_nav = nav
+		cached_nav_hash = key
+		cached_nav_ids = nav_ids
+	for point in nav_ids: floor_nav_ids[Mall.level_at(nav.get_point_position(point).y)].append(point)
 	var palette := [Color("c58a6b"), Color("bcc6b3"), Color("667e8a"), Color("d8c497"), Color("a78b91"), Color("4d6265")]
 	for id in run.population:
-		var p := points[rng.randi_range(0, points.size() - 1)]
+		var candidates: Array = floor_nav_ids[(posmod(id-slots.size(),3))]
+		var p := nav.get_point_position(candidates[rng.randi_range(0,candidates.size()-1)])
 		var heading := rng.randf_range(-PI, PI)
 		var role := "walking"
 		if id < slots.size():
@@ -47,6 +86,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 			heading = slots[id].yaw
 			role = slots[id].role
 		roles.append(role)
+		activities.append(str(slots[id].get("activity",role)) if id < slots.size() else role)
 		positions.append(p)
 		headings.append(heading)
 		paths.append(PackedVector3Array())
@@ -60,11 +100,11 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		var collision := CollisionShape3D.new()
 		var capsule := CapsuleShape3D.new()
 		capsule.radius = 0.32
-		capsule.height = 1.9 if role != "seated" else 1.4
+		capsule.height = 1.9 if role not in ["seated","reading"] else 1.4
 		collision.shape = capsule
 		area.add_child(collision)
 		add_child(area)
-		area.position = p + Vector3.UP * (0.95 if role != "seated" else 0.7)
+		area.position = p + Vector3.UP * (0.95 if role not in ["seated","reading"] else 0.7)
 		bodies.append(area)
 	var kit: Node3D = preload("res://assets/characters/civilian.glb").instantiate()
 	var offsets := {"torso": Vector3(0,1.13,0), "head": Vector3(0,1.7,0), "hair": Vector3(0,1.81,0), "neck": Vector3(0,1.52,0)}
@@ -96,6 +136,12 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	kit.free()
 	_add_part("apron", Vector3(0,1.00,-.132), Vector3(.29,.38,.018), Color("293d36"))
 	_add_part("badge", Vector3(.13,1.32,-.128), Vector3(.065,.032,.01), Color("e8e3d3"))
+	_add_part("held_book",Vector3(0,1.10,-.36),Vector3(.27,.035,.19),Color("715947"))
+	_add_part("held_pages",Vector3(0,1.122,-.36),Vector3(.25,.012,.17),Color("e6dcc2"))
+	_add_part("held_product",Vector3(0,1.14,-.35),Vector3(.13,.16,.05),Color("536b71"))
+	var cup := CylinderMesh.new(); cup.top_radius = .048; cup.bottom_radius = .037; cup.height = .10
+	cup.material = Shapes.material(Color("ddd8c7"))
+	_instance_part("held_cup",cup,Vector3.ZERO,Vector3.ONE,[])
 	_render()
 
 func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, palette: Array = []) -> void:
@@ -114,7 +160,7 @@ func _instance_part(title: String, mesh: Mesh, offset: Vector3, instance_scale: 
 	instances.transform_format = MultiMesh.TRANSFORM_3D
 	instances.use_colors = true
 	# Explicit sector bounds avoid camera-near clipping of animated instance groups.
-	instances.custom_aabb = AABB(Vector3(-100, -8, -72), Vector3(200, 20, 140))
+	instances.custom_aabb = AABB(Vector3(-110,-10,-90),Vector3(270,40,230))
 	instances.mesh = mesh
 	instances.instance_count = run.population
 	for id in run.population:
@@ -127,10 +173,16 @@ func _instance_part(title: String, mesh: Mesh, offset: Vector3, instance_scale: 
 func _physics_process(delta: float) -> void:
 	if run == null:
 		return
-	clock += delta
+	if not frozen:
+		clock += delta
+		attraction_left = maxf(0,attraction_left-delta)
 	for id in run.population:
 		if death_times[id] >= 0:
 			death_times[id] += delta
+			continue
+		if frozen: continue
+		if attracted.has(id):
+			_tick_attracted(id,delta)
 			continue
 		if roles[id] != "walking":
 			continue
@@ -139,7 +191,8 @@ func _physics_process(delta: float) -> void:
 			continue
 		if paths[id].is_empty():
 			var start := nav.get_closest_point(positions[id])
-			var goal: int = nav_ids[rng.randi_range(0, nav_ids.size() - 1)]
+			var candidates: Array = floor_nav_ids[Mall.level_at(positions[id].y)]
+			var goal: int = candidates[rng.randi_range(0, candidates.size() - 1)]
 			paths[id] = nav.get_point_path(start, goal)
 			if not paths[id].is_empty():
 				paths[id].remove_at(0)
@@ -158,60 +211,59 @@ func _physics_process(delta: float) -> void:
 	_render()
 
 func _render() -> void:
+	var motions: Array[Dictionary] = []
+	for id in run.population:
+		motions.append(CivilianMotion.sample("walking" if attracted.has(id) else roles[id],activities[id],clock,id))
 	for part in parts:
 		var instances: MultiMesh = part.instances
 		for id in run.population:
-			if death_times[id] > 0.8 or (part.name in ["apron", "badge"] and roles[id] != "staff"):
-				instances.set_instance_transform(id, Transform3D(Basis().scaled(Vector3.ZERO), Vector3(0, -20, 0)))
+			var role := "walking" if attracted.has(id) else roles[id]
+			var motion: Dictionary = motions[id]
+			var hidden: bool = death_times[id] > .8 or (part.name in ["apron","badge"] and role != "staff")
+			hidden = hidden or (part.name in ["held_book","held_pages"] and not motion.book)
+			hidden = hidden or (part.name == "held_product" and not motion.inspect)
+			hidden = hidden or (part.name == "held_cup" and role != "seated")
+			if hidden:
+				instances.set_instance_transform(id,Transform3D(Basis().scaled(Vector3.ZERO),Vector3(0,-20,0)))
 				continue
 			var local_offset: Vector3 = part.offset
 			var pose := Basis.IDENTITY
-			if roles[id] == "seated":
-				if part.name in ["leg_l", "leg_r"]:
-					local_offset.y = 0.91
-					local_offset.z = -0.2
-					pose = Basis(Vector3.RIGHT, -PI / 2)
-				elif part.name in ["shin_l", "shin_r"]:
-					local_offset.y = 0.65
-					local_offset.z = -0.4
-				elif part.name in ["shoe_l", "shoe_r"]:
-					local_offset.y = 0.49
-					local_offset.z = -0.47
-				elif part.name in ["arm_l", "arm_r"]:
-					local_offset.y = 1.28
-					local_offset.z = -.08
-					pose = Basis(Vector3.RIGHT, -.5)
-				elif part.name in ["forearm_l", "forearm_r"]:
-					local_offset.y = 1.15
-					local_offset.z = -.27
-					pose = Basis(Vector3.RIGHT, -PI / 2)
-				elif part.name in ["hand_l", "hand_r"]:
-					local_offset.y = 1.15 + sin(clock * 0.8 + id) * 0.025
-					local_offset.z = -0.46
-			elif roles[id] == "conversation" and part.name == "arm_r":
-				pose = Basis(Vector3.RIGHT, sin(clock * 0.9 + id) * 0.22 - 0.12)
-			if roles[id] == "walking" and waits[id] <= 0 and death_times[id] < 0 and not paths[id].is_empty():
-				var phase := clock * 5.5 + id
-				var left: bool = part.name.ends_with("_l")
-				var swing := sin(phase + (0 if left else PI)) * .35
+			if role in ["seated","reading"]:
 				if part.name.begins_with("leg_"):
-					pose = Basis(Vector3.RIGHT, swing)
-					local_offset = Vector3(local_offset.x, .83, 0) + pose * Vector3(0, -.21, 0)
+					local_offset = Vector3(local_offset.x,.91,-.2); pose = Basis(Vector3.RIGHT,-PI/2)
+				elif part.name.begins_with("shin_"): local_offset = Vector3(local_offset.x,.65,-.4)
+				elif part.name.begins_with("shoe_"): local_offset = Vector3(local_offset.x,.49,-.47)
+			var moving: bool = role == "walking" and ((waits[id] <= 0 and not paths[id].is_empty()) or attracted.has(id)) and death_times[id] < 0
+			if moving:
+				var phase := clock*5.5+id
+				var swing := sin(phase+(0 if str(part.name).ends_with("_l") else PI))*.35
+				if part.name.begins_with("leg_"):
+					pose = Basis(Vector3.RIGHT,swing); local_offset = Vector3(local_offset.x,.83,0)+pose*Vector3(0,-.21,0)
 				elif part.name.begins_with("shin_") or part.name.begins_with("shoe_"):
-					var hip := Basis(Vector3.RIGHT, swing)
-					var knee := maxf(0, -sin(phase + (0 if left else PI))) * .65
-					pose = hip * Basis(Vector3.RIGHT, -knee)
-					local_offset = Vector3(local_offset.x, .83, 0) + hip * Vector3(0, -.42, 0) + pose * Vector3(0, -.19 if part.name.begins_with("shin_") else -.33, -.035 if part.name.begins_with("shoe_") else 0)
-				elif part.name.begins_with("arm_") or part.name.begins_with("forearm_") or part.name.begins_with("hand_"):
-					pose = Basis(Vector3.RIGHT, -swing * .7)
-					local_offset = Vector3(local_offset.x, 1.42, 0) + pose * Vector3(0, -.15 if part.name.begins_with("arm_") else (-.44 if part.name.begins_with("forearm_") else -.63), 0)
+					var hip := Basis(Vector3.RIGHT,swing)
+					pose = hip*Basis(Vector3.RIGHT,-maxf(0,-sin(phase+(0 if str(part.name).ends_with("_l") else PI)))*.65)
+					local_offset = Vector3(local_offset.x,.83,0)+hip*Vector3(0,-.42,0)+pose*Vector3(0,-.19 if part.name.begins_with("shin_") else -.33,-.035 if part.name.begins_with("shoe_") else 0)
+			if str(part.name).begins_with("arm_") or str(part.name).begins_with("forearm_") or str(part.name).begins_with("hand_"):
+				var side: String = "left" if str(part.name).ends_with("_l") else "right"
+				var key: String = str(part.name).get_slice("_",0)
+				var joint: Dictionary = motion[side][key]
+				pose = joint.basis; local_offset = joint.pos
+				if moving:
+					var swing := sin(clock*5.5+id+(0 if side == "left" else PI))*.28
+					pose = Basis(Vector3.RIGHT,-swing)
+					local_offset = Vector3(local_offset.x,1.4,0)+pose*Vector3(0,-.15 if key == "arm" else -.44 if key == "forearm" else -.61,0)
+			if part.name in ["head","hair"]:
+				pose = motion.head
+				local_offset = Vector3(0,1.5,0)+pose*(local_offset-Vector3(0,1.5,0))
+			if part.name == "held_cup":
+				local_offset = motion.right.wrist+Vector3(0,.04,-.035)
+				pose = Basis(Vector3.RIGHT,motion.drink*.35)
 			var base := positions[id]
-			if roles[id] == "seated":
-				base.y -= 0.42
-			if death_times[id] >= 0:
-				base.y -= pow(death_times[id] / 0.8, 2) * 4.0
-			var basis := Basis(Vector3.UP, headings[id])
-			instances.set_instance_transform(id, Transform3D((basis * pose).scaled_local(part.scale), base + basis * local_offset))
+			if role in ["seated","reading"]: base.y -= .42
+			if part.name not in ["shoe_l","shoe_r","shin_l","shin_r"]: base.y += motion.breath
+			if death_times[id] >= 0: base.y -= pow(death_times[id]/.8,2)*4
+			var basis := Basis(Vector3.UP,headings[id])
+			instances.set_instance_transform(id,Transform3D((basis*pose).scaled_local(part.scale),base+basis*local_offset))
 
 func fall(id: int) -> void:
 	death_times[id] = 0
@@ -224,3 +276,39 @@ func live_positions_in_radius(center: Vector3, radius: float) -> Array[int]:
 		if not run.eliminated[id] and positions[id].distance_squared_to(center) <= radius * radius:
 			found.append(id)
 	return found
+
+func attract(center: Vector3,radius: float,seconds: float) -> void:
+	attraction_left = seconds
+	var destination := nav.get_closest_point(center)
+	for id in live_positions_in_radius(center,radius):
+		if attracted.has(id): continue
+		var start := nav.get_closest_point(positions[id])
+		var query := PhysicsRayQueryParameters3D.create(positions[id]+Vector3.UP*.9,nav.get_point_position(start)+Vector3.UP*.9,1)
+		if not get_world_3d().direct_space_state.intersect_ray(query).is_empty(): continue
+		attracted[id] = {"home":positions[id],"yaw":headings[id],"path":nav.get_point_path(start,destination),"returning":false}
+		_set_body_pose(id,false)
+
+func _set_body_pose(id: int,seated: bool) -> void:
+	var collision: CollisionShape3D = bodies[id].get_child(0)
+	collision.shape.height = 1.4 if seated else 1.9
+	bodies[id].position = positions[id]+Vector3.UP*(.7 if seated else .95)
+
+func _tick_attracted(id: int,delta: float) -> void:
+	var data: Dictionary = attracted[id]
+	if attraction_left <= 0 and not data.returning:
+		data.returning = true
+		data.path = nav.get_point_path(nav.get_closest_point(positions[id]),nav.get_closest_point(data.home))
+	if not data.path.is_empty():
+		var direction: Vector3 = data.path[0]-positions[id]
+		positions[id] = positions[id].move_toward(data.path[0],delta*3)
+		if direction.length() > .05: headings[id] = atan2(-direction.x,-direction.z)
+		if positions[id].distance_to(data.path[0]) < .06: data.path.remove_at(0)
+	elif data.returning:
+		positions[id] = positions[id].move_toward(data.home,delta*2)
+		if positions[id].distance_to(data.home) < .05:
+			positions[id] = data.home
+			attracted.erase(id); paths[id].clear(); waits[id] = 2
+			headings[id] = data.yaw
+			_set_body_pose(id,roles[id] in ["seated","reading"])
+			return
+	bodies[id].position = positions[id]+Vector3.UP*.95

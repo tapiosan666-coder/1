@@ -10,9 +10,10 @@ func _ready() -> void:
 func play(key: String, pitch: float = 1.0) -> void:
 	if not sounds.has(key):
 		return
+	if get_child_count() >= 8 and key != "found": return
 	var player := AudioStreamPlayer.new()
 	player.stream = sounds[key]
-	player.volume_db = -15
+	player.volume_db = -18
 	player.pitch_scale = pitch
 	add_child(player)
 	player.finished.connect(player.queue_free)

@@ -1,5 +1,8 @@
 extends Node3D
 
+var loot: RunLoot
+var caches: CacheField
+var speech: NpcSpeech
 var run: IdentityRun
 var mall: Mall
 var crowd: Crowd
@@ -52,11 +55,16 @@ func _ready() -> void:
 	hud.resume_pressed.connect(func(): set_mode("play"))
 	hud.restart_pressed.connect(func(): start_run())
 	hud.skill_pressed.connect(buy_skill)
+	hud.item_selected.connect(_select_item)
 	hud.travel_pressed.connect(fast_travel)
 	hud.exit_pressed.connect(func(): get_tree().quit())
 	# A preview crowd shares the exact same identity model as a playable run.
 	_create_run(120, 24)
 	set_mode("title")
+	if "--capture-bag" in OS.get_cmdline_user_args():
+		_capture_bag.call_deferred()
+	if "--capture-mall" in OS.get_cmdline_user_args():
+		_capture_mall.call_deferred()
 	if "--capture-overview" in OS.get_cmdline_user_args():
 		_capture_overview.call_deferred()
 	if "--capture" in OS.get_cmdline_user_args():
@@ -89,6 +97,12 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	add_child(crowd)
 	crowd.process_mode = Node.PROCESS_MODE_PAUSABLE
 	crowd.setup(run, mall.spawn_points)
+	loot = RunLoot.new(mall.spawn_points,run_seed)
+	caches = CacheField.new(); effects.add_child(caches); caches.setup(loot)
+	speech = NpcSpeech.new(); effects.add_child(speech)
+	hud.loot = loot
+	player.cart_boost = 1
+	player.cart.visible = false
 	hud.run = run
 	ammo = run.magazine_size()
 	elapsed = 0
@@ -118,6 +132,7 @@ func start_run(count: int = 120, run_seed: int = -1) -> void:
 	hud.message("1人を狙って左クリックを2秒長押し。Tabでスキルを購入。")
 
 func set_mode(mode: String) -> void:
+	if is_instance_valid(speech): speech.dismiss()
 	hud.show_mode(mode)
 	player.enabled = mode == "play"
 	_update_equipment()
@@ -137,7 +152,7 @@ func _input(event: InputEvent) -> void:
 	if event.keycode == KEY_ESCAPE:
 		if hud.mode == "play":
 			set_mode("pause")
-		elif hud.mode in ["pause", "skills", "map"]:
+		elif hud.mode in ["pause", "skills", "map", "inventory"]:
 			set_mode("play")
 	elif event.keycode == KEY_TAB:
 		if hud.mode == "play":
@@ -149,6 +164,12 @@ func _input(event: InputEvent) -> void:
 			set_mode("map")
 		elif hud.mode == "map":
 			set_mode("play")
+	elif event.keycode == KEY_I and hud.mode in ["play","inventory"]:
+		set_mode("inventory" if hud.mode == "play" else "play")
+	elif event.keycode == KEY_G and hud.mode == "play":
+		open_cache()
+	elif event.keycode == KEY_X and hud.mode == "play":
+		use_item()
 	elif event.keycode == KEY_F and hud.mode == "play":
 		sonar()
 	elif event.keycode == KEY_E and hud.mode == "play":
@@ -164,6 +185,9 @@ func _physics_process(delta: float) -> void:
 	if hud.mode != "play":
 		return
 	_visit_points()
+	_tick_items(delta)
+	hud.nearby_cache = caches.nearest(player.camera)
+	speech.update_nearby(crowd,player.camera,not Input.is_action_pressed("fire"))
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
 	sonar_left = maxf(0, sonar_left - delta)
@@ -309,6 +333,7 @@ func _update_equipment() -> void:
 	player.using_gun = using_gun
 	player.gun.visible = hud.mode == "play" and using_gun
 	player.handheld.visible = hud.mode == "play" and not using_gun
+	player.cart.visible = hud.mode == "play" and player.cart_boost > 1
 
 func _tick_handheld(delta: float, held: bool) -> void:
 	if hud.mode != "play" or using_gun:
@@ -531,39 +556,39 @@ func _capture() -> void:
 	start_run(120, 912)
 	await get_tree().create_timer(2).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-play.png")
-	player.position = Vector3(47, 0.1, -44)
+	player.position = MallCurve.world(Vector3(47, 0.1, -44))
 	player.velocity = Vector3.ZERO
-	player.camera.look_at(Vector3(68, 1.2, -47))
+	player.camera.look_at(MallCurve.world(Vector3(68, 1.2, -47)))
 	await get_tree().create_timer(0.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-food.png")
-	player.position = Vector3(17,.1,17)
-	player.camera.look_at(Vector3(26,1.5,36))
+	player.position = MallCurve.world(Vector3(17,.1,17))
+	player.camera.look_at(MallCurve.world(Vector3(26,1.5,36)))
 	await get_tree().create_timer(.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-market.png")
-	player.position = Vector3(-75,.1,-11)
-	player.camera.look_at(Vector3(-79,1.4,-20))
+	player.position = MallCurve.world(Vector3(-75,.1,-11))
+	player.camera.look_at(MallCurve.world(Vector3(-79,1.4,-20)))
 	await get_tree().create_timer(.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-bookshop.png")
-	player.position = Vector3(-79, 0.1, 33)
+	player.position = MallCurve.world(Vector3(-79, 0.1, 33))
 	player.velocity = Vector3.ZERO
-	player.camera.look_at(Vector3(-86, 1.5, 45))
+	player.camera.look_at(MallCurve.world(Vector3(-86, 1.5, 45)))
 	await get_tree().create_timer(0.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-restroom.png")
 	# A dedicated development capture exercises a partial original-reader lock.
-	crowd.positions[0] = Vector3(11, 0, 2)
-	crowd.bodies[0].position = Vector3(11, 0.95, 2)
+	crowd.positions[0] = MallCurve.world(Vector3(11, 0, 2))
+	crowd.bodies[0].position = MallCurve.world(Vector3(11, 0.95, 2))
 	crowd.waits[0] = 30
 	crowd.headings[0] = PI
-	player.position = Vector3(11, 0.1, 5.4)
+	player.position = MallCurve.world(Vector3(11, 0.1, 5.4))
 	player.velocity = Vector3.ZERO
-	player.camera.look_at(Vector3(11, 1.55, 2))
+	player.camera.look_at(MallCurve.world(Vector3(11, 1.55, 2)))
 	await get_tree().physics_frame
 	Input.action_press("fire")
 	await get_tree().create_timer(0.9).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-reader.png")
 	Input.action_release("fire")
-	player.position = Vector3(11, .1, 3.4)
-	player.camera.look_at(Vector3(11, 1.58, 2))
+	player.position = MallCurve.world(Vector3(11, .1, 3.4))
+	player.camera.look_at(MallCurve.world(Vector3(11, 1.58, 2)))
 	await get_tree().create_timer(.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-portrait.png")
 	set_mode("skills")
@@ -577,7 +602,7 @@ func _capture() -> void:
 
 func _visit_points(announce: bool = true) -> void:
 	for key in Mall.HUBS:
-		if not run.visited.has(key) and player.position.distance_to(Mall.HUBS[key]) <= 2.0:
+		if not run.visited.has(key) and player.position.distance_to(Mall.hub_position(key)) <= 2.0:
 			run.visited[key] = true
 			if announce:
 				hud.message("案内ポイントを記録：%s ／ Mで確認" % key)
@@ -585,7 +610,7 @@ func _visit_points(announce: bool = true) -> void:
 func fast_travel(key: String) -> bool:
 	if hud.mode != "map" or not Mall.HUBS.has(key) or not run.can_travel(key):
 		return false
-	player.position = Mall.HUBS[key]
+	player.position = Mall.hub_position(key)
 	player.velocity = Vector3.ZERO
 	player.air_jump_used = false
 	handheld_scan.reset()
@@ -597,8 +622,141 @@ func _capture_overview() -> void:
 	start_run(120,912)
 	await get_tree().create_timer(1.0).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-play.png")
-	player.position = Vector3(17,.1,17)
-	player.camera.look_at(Vector3(26,1.5,36))
+	player.position = MallCurve.world(Vector3(17,.1,17))
+	player.camera.look_at(MallCurve.world(Vector3(26,1.5,36)))
 	await get_tree().create_timer(.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-market.png")
+	get_tree().quit()
+
+func open_cache() -> bool:
+	if hud.mode != "play": return false
+	var index := caches.nearest(player.camera)
+	if index < 0: return false
+	var key := loot.open(index)
+	if key.is_empty(): return false
+	caches.opened(index)
+	audio.play("hit",1.3)
+	hud.message("%sを入手 / Xで使用、Iでバッグ" % RunLoot.ITEMS[key].name)
+	return true
+
+func _select_item(key: String) -> void:
+	if RunLoot.ITEMS.has(key) and loot.inventory[key] > 0:
+		loot.selected = key
+		set_mode("play")
+
+func use_item(key: String = "") -> bool:
+	if hud.mode != "play" or run.won: return false
+	if key.is_empty(): key = loot.selected
+	if not loot.inventory.has(key) or loot.inventory[key] <= 0:
+		hud.message("アイテムがありません / 宝箱を探そう")
+		return false
+	var from := player.camera.global_position
+	var query := PhysicsRayQueryParameters3D.create(from,from-player.camera.global_basis.z*40,3,[player.get_rid()])
+	query.collide_with_areas = true
+	var hit := get_world_3d().direct_space_state.intersect_ray(query)
+	if key == "chain" and (hit.is_empty() or not hit.collider.has_meta("identity")):
+		hud.message("超連鎖弾：40m以内の人を狙ってください")
+		return false
+	if not loot.consume(key): return false
+	match key:
+		"magnet":
+			var goal := crowd.nav.get_point_position(crowd.nav.get_closest_point(player.position-player.global_basis.z*4))
+			crowd.attract(goal,18,10); _ring(goal,18,Color("b8d6f0"))
+		"clock": loot.clock_left = 12; crowd.frozen = true
+		"cart": loot.cart_left = 30; player.cart_boost = 1.7
+		"sonar": _global_snapshot()
+		"chain": _item_chain(int(hit.collider.get_meta("identity")))
+		"hole":
+			var goal := crowd.nav.get_point_position(crowd.nav.get_closest_point(player.position-player.global_basis.z*6))
+			_scan_area(goal,18,200); _ring(goal,18,Color("c8a8ef"))
+		"laser":
+			var goal: Vector3 = hit.position if not hit.is_empty() else player.position-player.global_basis.z*8
+			goal = crowd.nav.get_point_position(crowd.nav.get_closest_point(goal))
+			_scan_area(goal,14,200)
+			var laser := Shapes.cylinder(effects,goal+Vector3.UP*6,.25,12,Shapes.material(Color("c9f5ff"),1))
+			var tween := laser.create_tween(); tween.tween_property(laser,"scale",Vector3.ZERO,.7); tween.tween_callback(laser.queue_free)
+		"disco": loot.disco_left = 12; loot.disco_beat = 0
+	audio.play("sonar",.85)
+	hud.message("%sを使用 / 本物の確定は初期スキャナーで" % RunLoot.ITEMS[key].name)
+	return true
+
+func _scan_area(center: Vector3,radius: float,limit: int) -> int:
+	var count := 0
+	for id in crowd.live_positions_in_radius(center,radius):
+		var query := PhysicsRayQueryParameters3D.create(center+Vector3.UP,crowd.positions[id]+Vector3.UP,1)
+		if not get_world_3d().direct_space_state.intersect_ray(query).is_empty(): continue
+		if run.located and id == run.true_id: continue
+		resolve(id,IdentityRun.Source.SPECIAL); count += 1
+		if count >= limit: break
+	return count
+
+func _item_chain(start: int) -> void:
+	var visited: Array[int] = []
+	var current := start
+	for step in 200:
+		visited.append(current)
+		var at := crowd.positions[current]
+		resolve(current,IdentityRun.Source.SPECIAL)
+		var next := -1
+		var nearest := 64.1
+		for id in crowd.live_positions_in_radius(at,8):
+			if id in visited: continue
+			var query := PhysicsRayQueryParameters3D.create(at+Vector3.UP,crowd.positions[id]+Vector3.UP,1)
+			if not get_world_3d().direct_space_state.intersect_ray(query).is_empty(): continue
+			var distance := at.distance_squared_to(crowd.positions[id])
+			if distance < nearest: nearest = distance; next = id
+		if next < 0: break
+		current = next
+
+func _global_snapshot() -> Array[Vector3]:
+	var snapshots: Array[Vector3] = []
+	var mat := Shapes.material(Color("e4bc87"),.7); mat.no_depth_test = true; mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	for id in run.population:
+		if run.eliminated[id]: continue
+		var at := crowd.positions[id]+Vector3.UP*1.1; snapshots.append(at)
+		var marker := Shapes.sphere(effects,at,.14,mat)
+		var tween := marker.create_tween(); tween.tween_interval(8); tween.tween_callback(marker.queue_free)
+	return snapshots
+
+func _tick_items(delta: float) -> void:
+	# Test the beat before decrementing, so the last of six disco pulses is not lost.
+	if loot.disco_left > 0 and loot.disco_beat <= 0:
+		_scan_area(player.position,16,20)
+		_ring(player.position,16,Color.from_hsv(fmod(elapsed*.13,1),.4,.9))
+		loot.disco_beat = 2
+	loot.tick(delta)
+	crowd.frozen = loot.clock_left > 0
+	player.cart_boost = 1.7 if loot.cart_left > 0 else 1.0
+
+func _capture_mall() -> void:
+	start_run(120,912)
+	player.set_physics_process(false)
+	for shot in [
+		["atrium",Vector3(-25,.1,0),Vector3(33,7,0)],
+		["third-floor",Vector3(-20,10.975,-6.5),Vector3(25,6,6.5)],
+		["upper-bookshop",Vector3(-75,5.625,-10),Vector3(-79,6.9,-20)],
+		["speech",Vector3(-72,5.625,-16.3),Vector3(-72,7.1,-19.15)],
+		["reading",Vector3(-80,.1,-27),Vector3(-82,1.3,-31)],
+		["curve",Vector3(10,5.625,-6.5),Vector3(65,6.8,-6.5)]
+	]:
+		player.position = MallCurve.world(shot[1]); player.camera.look_at(MallCurve.world(shot[2]))
+		await get_tree().create_timer(.6).timeout
+		hud.notice_time = 0
+		await get_tree().process_frame
+		get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-%s.png" % shot[0])
+	loot.inventory.hole = 1; loot.inventory.sonar = 2
+	set_mode("inventory")
+	await get_tree().create_timer(.3).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-inventory.png")
+	set_mode("map")
+	await get_tree().create_timer(.3).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-upper-map.png")
+	get_tree().quit()
+
+func _capture_bag() -> void:
+	start_run(120,912)
+	loot.inventory.hole = 1; loot.inventory.sonar = 2
+	set_mode("inventory")
+	await get_tree().create_timer(.3).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-inventory.png")
 	get_tree().quit()

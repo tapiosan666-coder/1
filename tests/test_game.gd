@@ -20,7 +20,7 @@ func run_tests() -> void:
 	var japanese_font: Font = game.hud.font
 	expect(japanese_font.resource_path == "res://assets/fonts/NotoSansCJKjp-Regular.otf", "UI uses the bundled Japanese font")
 	var all_glyphs := true
-	for path in ["hud", "main", "identity_run", "player", "mall"]:
+	for path in ["hud", "main", "identity_run", "player", "mall", "npc_speech", "bookshop", "run_loot", "cache_field"]:
 		var source := FileAccess.get_file_as_string("res://scripts/%s.gd" % path)
 		for character in source:
 			var code := character.unicode_at(0)
@@ -38,7 +38,7 @@ func run_tests() -> void:
 	var counts: Dictionary = {}
 	for role in game.crowd.roles:
 		counts[role] = int(counts.get(role, 0)) + 1
-	for expected in [["staff", 19], ["browsing", 17], ["seated", 32], ["restroom", 6], ["conversation", 16], ["walking", 30]]:
+	for expected in [["staff", 42], ["browsing", 40], ["reading",2], ["seated", 14], ["restroom", 6], ["conversation", 4], ["walking", 12]]:
 		expect(counts.get(expected[0], 0) == expected[1], "Role population: %s" % expected[0])
 	var sitter: int = game.crowd.roles.find("seated")
 	var staff: int = game.crowd.roles.find("staff")
@@ -85,23 +85,23 @@ func run_tests() -> void:
 	await create_timer(0.25).timeout
 	Input.action_release("forward")
 	expect(game.player.position.x > start_x + 0.5, "WASD moves character body")
-	game.player.position = Vector3(89.1, 0.1, 7)
-	game.player.rotation = Vector3.ZERO
+	game.player.position = _world(89.1, 0.1, 7)
+	game.player.rotation = Vector3(0,-MallCurve.angle(89.1),0)
 	Input.action_press("right")
 	await create_timer(0.3).timeout
 	Input.action_release("right")
-	expect(game.player.position.x < 89.6, "Perimeter blocks movement")
+	expect(MallCurve.plan(game.player.position).x < 89.6, "Perimeter blocks movement")
 	for part in game.crowd.parts:
 		expect(part.instances.mesh != null, "Every instanced body part has geometry")
 	var fake: int = (game.run.true_id + 1) % 120
 	for body in game.crowd.bodies:
 		body.collision_layer = 0
-	game.crowd.positions[fake] = Vector3(11, 0, 2)
-	game.crowd.bodies[fake].position = Vector3(11, 0.95, 2)
+	game.crowd.positions[fake] = _world(11, 0, 2)
+	game.crowd.bodies[fake].position = _world(11, 0.95, 2)
 	game.crowd.bodies[fake].collision_layer = 2
-	game.player.position = Vector3(11, 0.1, 5)
+	game.player.position = _world(11, 0.1, 5)
 	game.player.velocity = Vector3.ZERO
-	game.player.camera.look_at(Vector3(11, 1.2, 2))
+	game.player.camera.look_at(_world(11, 1.2, 2))
 	await physics_frame
 	await physics_frame
 	var hit: Dictionary = game.ray_target()
@@ -125,8 +125,8 @@ func run_tests() -> void:
 	expect(game.equip(true), "Owned gun can be equipped")
 	expect(game.player.gun.visible and not game.player.handheld.visible, "Equipment switch updates model")
 	var other: int = (fake + 1) % 120
-	game.crowd.positions[other] = Vector3(11, 0, 2)
-	game.crowd.bodies[other].position = Vector3(11, 0.95, 2)
+	game.crowd.positions[other] = _world(11, 0, 2)
+	game.crowd.bodies[other].position = _world(11, 0.95, 2)
 	game.crowd.bodies[other].collision_layer = 2
 	await physics_frame
 	await physics_frame
@@ -139,11 +139,11 @@ func run_tests() -> void:
 	expect(game.ammo == 30 and game.reload_left == 0, "Gun reload remains one second")
 	# A third identity behind the mall perimeter is neither readable nor shootable.
 	var third: int = (other + 1) % 120
-	game.player.position = Vector3(87, 0.1, 7)
-	game.crowd.positions[third] = Vector3(92, 0, 7)
-	game.crowd.bodies[third].position = Vector3(92, 0.95, 7)
+	game.player.position = _world(87, 0.1, 7)
+	game.crowd.positions[third] = _world(92, 0, 7)
+	game.crowd.bodies[third].position = _world(92, 0.95, 7)
 	game.crowd.bodies[third].collision_layer = 2
-	game.player.camera.look_at(Vector3(92, 1.2, 7))
+	game.player.camera.look_at(_world(92, 1.2, 7))
 	game.equip(false)
 	await physics_frame
 	await physics_frame
@@ -156,9 +156,9 @@ func run_tests() -> void:
 	expect(not hit.is_empty() and not hit.collider.has_meta("identity"), "Wall also blocks pistol")
 	game.run.upgrades.sonar = 1
 	var snapshots: Array[Vector3] = game.sonar()
-	var recorded := Vector3(92, 1.1, 7)
+	var recorded := _world(92, 0, 7) + Vector3.UP * 1.1
 	expect(snapshots.has(recorded), "Sonar sees through wall")
-	game.crowd.positions[third] += Vector3(0, 0, 3)
+	game.crowd.positions[third] += Vector3(0,0,3)
 	expect(snapshots.has(recorded), "Sonar retains snapshot position")
 	expect(game.sonar().is_empty(), "Sonar cooldown enforced")
 	game.resolve(game.run.true_id, IdentityRun.Source.SPECIAL)
@@ -177,12 +177,12 @@ func run_tests() -> void:
 	game._tick_cat(0.02)
 	expect(game.run.located and not game.run.won, "Cat only marks original")
 	game.run.located = false
-	game.cat.position = Vector3(0, 0, 12)
+	game.cat.position = _world(0, 0, 12)
 	game.cat_target = game.run.true_id
 	game.cat_scan_time = 19.99
 	game.cat_retarget = 1
 	game.cat.set_meta("path", PackedVector3Array())
-	game.crowd.positions[game.run.true_id] = Vector3(35, 0, 25)
+	game.crowd.positions[game.run.true_id] = _world(35, 0, 25)
 	game._tick_cat(0.02)
 	expect(not game.run.located, "Cat cannot scan distant target with empty route")
 	game.handheld_scan.tick(1, fake, true)
@@ -198,12 +198,12 @@ func run_tests() -> void:
 	# Approach the real person and finish with the original tool, via actual input.
 	game.crowd.bodies[third].collision_layer = 0
 	var original: int = game.run.true_id
-	game.crowd.positions[original] = Vector3(11, 0, 2)
-	game.crowd.bodies[original].position = Vector3(11, 0.95, 2)
+	game.crowd.positions[original] = _world(11, 0, 2)
+	game.crowd.bodies[original].position = _world(11, 0.95, 2)
 	game.crowd.bodies[original].collision_layer = 2
-	game.player.position = Vector3(11, 0.1, 5)
+	game.player.position = _world(11, 0.1, 5)
 	game.player.velocity = Vector3.ZERO
-	game.player.camera.look_at(Vector3(11, 1.2, 2))
+	game.player.camera.look_at(_world(11, 1.2, 2))
 	game.equip(false)
 	game.cat.set_process(false)
 	await physics_frame
@@ -285,7 +285,7 @@ func _test_new_skills(game: Node3D) -> void:
 	game.start_run(120, 904)
 	game.crowd.set_physics_process(false)
 	for id in 120:
-		game.crowd.positions[id] = Vector3(500 + id * 10, 0, 500)
+		game.crowd.positions[id] = _world(500 + id * 10, 0, 500)
 		game.crowd.bodies[id].collision_layer = 0
 	var ids: Array[int] = []
 	for id in 120:
@@ -299,11 +299,11 @@ func _test_new_skills(game: Node3D) -> void:
 	for index in 3:
 		var id := ids[index]
 		var x: float = [85.0, 87.0, 92.0][index]
-		game.crowd.positions[id] = Vector3(x, 0, 7)
-		game.crowd.bodies[id].position = Vector3(x, .95, 7)
+		game.crowd.positions[id] = _world(x, 0, 7)
+		game.crowd.bodies[id].position = _world(x, .95, 7)
 		game.crowd.bodies[id].collision_layer = 2
-	game.player.position = Vector3(83, .1, 7)
-	game.player.camera.look_at(Vector3(92, 1.2, 7))
+	game.player.position = _world(83, .1, 7)
+	game.player.camera.look_at(_world(92, 1.2, 7))
 	await physics_frame
 	await physics_frame
 	game.fire()
@@ -313,13 +313,13 @@ func _test_new_skills(game: Node3D) -> void:
 	var original: int = game.run.true_id
 	for index in 3:
 		var id: int = ids[index] if index < 2 else original
-		game.crowd.positions[id] = Vector3(11 + index * 3, 0, 7)
-		game.crowd.bodies[id].position = Vector3(11 + index * 3, .95, 7)
+		game.crowd.positions[id] = _world(11 + index * 3, 0, 7)
+		game.crowd.bodies[id].position = _world(11 + index * 3, .95, 7)
 		game.crowd.bodies[id].collision_layer = 2
-	game.crowd.positions[ids[2]] = Vector3(500, 0, 500)
+	game.crowd.positions[ids[2]] = _world(500, 0, 500)
 	game.crowd.bodies[ids[2]].collision_layer = 0
-	game.player.position = Vector3(8, .1, 7)
-	game.player.camera.look_at(Vector3(11, 1.2, 7))
+	game.player.position = _world(8, .1, 7)
+	game.player.camera.look_at(_world(11, 1.2, 7))
 	await physics_frame
 	await physics_frame
 	game.chain_scan()
@@ -329,18 +329,18 @@ func _test_new_skills(game: Node3D) -> void:
 	expect(game.chain_left > 19 and game.run.cleared == cleared, "Chain cooldown prevents repeated activation")
 	game.chain_left = 0
 	game.run.located = false
-	game.crowd.positions[ids[2]] = Vector3(87, 0, 7)
-	game.crowd.bodies[ids[2]].position = Vector3(87, .95, 7)
+	game.crowd.positions[ids[2]] = _world(87, 0, 7)
+	game.crowd.bodies[ids[2]].position = _world(87, .95, 7)
 	game.crowd.bodies[ids[2]].collision_layer = 2
-	game.crowd.positions[original] = Vector3(92, 0, 7)
-	game.crowd.bodies[original].position = Vector3(92, .95, 7)
-	game.player.position = Vector3(85, .1, 7)
-	game.player.camera.look_at(Vector3(87, 1.2, 7))
+	game.crowd.positions[original] = _world(92, 0, 7)
+	game.crowd.bodies[original].position = _world(92, .95, 7)
+	game.player.position = _world(85, .1, 7)
+	game.player.camera.look_at(_world(87, 1.2, 7))
 	await physics_frame
 	await physics_frame
 	game.chain_scan()
 	expect(not game.run.located and game.run.eliminated[ids[2]], "Chain cannot jump through the perimeter wall")
-	game.player.position = Vector3(11, 3, 7)
+	game.player.position = _world(11, 3, 7)
 	game.player.velocity = Vector3(0, -1, 0)
 	await physics_frame
 	Input.action_press("jump")
@@ -350,7 +350,7 @@ func _test_new_skills(game: Node3D) -> void:
 	expect(not game.player.air_jump_used and game.player.velocity.y < 0, "Air jump is unavailable before purchase")
 	game.run.purchase("double_jump")
 	await physics_frame
-	game.player.position = Vector3(11, 3, 7)
+	game.player.position = _world(11, 3, 7)
 	game.player.velocity = Vector3(0, -1, 0)
 	await physics_frame
 	Input.action_press("jump")
@@ -365,7 +365,7 @@ func _test_new_skills(game: Node3D) -> void:
 	await physics_frame
 	Input.action_release("jump")
 	expect(game.player.velocity.y < 0, "Cannot jump a third time before landing")
-	game.player.position = Vector3(11, .02, 7)
+	game.player.position = _world(11, .02, 7)
 	game.player.velocity = Vector3(0, -1, 0)
 	await physics_frame
 	await physics_frame
@@ -377,21 +377,21 @@ func _test_skill_limits(game: Node3D) -> void:
 	game.crowd.set_physics_process(false)
 	var ids: Array[int] = []
 	for id in 120:
-		game.crowd.positions[id] = Vector3(500 + id * 10, 0, 500)
+		game.crowd.positions[id] = _world(500 + id * 10, 0, 500)
 		game.crowd.bodies[id].collision_layer = 0
 		if id != game.run.true_id and ids.size() < 10:
 			ids.append(id)
 	for index in ids.size():
 		var id := ids[index]
-		game.crowd.positions[id] = Vector3(11 + index * 2, 0, 7)
+		game.crowd.positions[id] = _world(-81 + index * 2, 0, 7)
 		game.crowd.bodies[id].position = game.crowd.positions[id] + Vector3.UP * .95
 		game.crowd.bodies[id].collision_layer = 2
 	game.run.ap = 10000
 	for skill in ["gun", "pierce", "chain"]:
 		game.run.purchase(skill)
 	game.equip(true)
-	game.player.position = Vector3(9, .1, 7)
-	game.player.camera.look_at(Vector3(29, 1.5, 7))
+	game.player.position = _world(-83, .1, 7)
+	game.player.camera.look_at(_world(-63, 1.5, 7))
 	await physics_frame
 	await physics_frame
 	game.fire()
@@ -411,18 +411,18 @@ func _test_mall_upgrade(game: Node3D) -> void:
 	expect(head != null and head.get_surface_count() >= 5, "Civilian head includes modeled facial features with distinct materials")
 	expect(hand != null and hand.get_aabb().size.y > .10, "Imported human hand includes fingers below palm")
 	var state := game.get_world_3d().direct_space_state
-	var window := PhysicsRayQueryParameters3D.create(Vector3(-81,1.6,-6),Vector3(-81,1.6,-11),1)
-	var door := PhysicsRayQueryParameters3D.create(Vector3(-75,1.6,-6),Vector3(-75,1.6,-11),1)
+	var window := PhysicsRayQueryParameters3D.create(_world(-81,1.6,-6),_world(-81,1.6,-11),1)
+	var door := PhysicsRayQueryParameters3D.create(_world(-75,1.6,-6),_world(-75,1.6,-11),1)
 	expect(not state.intersect_ray(window).is_empty(), "Shop display glazing has a physical boundary")
 	expect(state.intersect_ray(door).is_empty(), "Shop centre entrance stays open")
-	var route: PackedVector3Array = game.crowd.nav.get_point_path(game.crowd.nav.get_closest_point(Vector3(-81,0,-7)),game.crowd.nav.get_closest_point(Vector3(-81,0,-11)))
+	var route: PackedVector3Array = game.crowd.nav.get_point_path(game.crowd.nav.get_closest_point(_world(-81,0,-7)),game.crowd.nav.get_closest_point(_world(-81,0,-11)))
 	var distance := 0.0
 	for index in range(1,route.size()):
 		distance += route[index-1].distance_to(route[index])
 	expect(distance > 8, "NPC route goes around display glass through the open entrance")
 	for key in Mall.HUBS:
-		expect(Mall.walkable(Mall.HUBS[key]), "Travel hub is on accessible floor: %s" % key)
-	expect(Mall.MARKET.has_point(Vector2(17,24)) and Mall.walkable(Vector3(17,0,24)), "Large grocery anchor has traversable browsing aisles")
+		expect(Mall.walkable(Mall.hub_position(key)), "Travel hub is on accessible floor: %s" % key)
+	expect(Mall.MARKET.has_point(Vector2(17,24)) and Mall.walkable(_world(17,0,24)), "Large grocery anchor has traversable browsing aisles")
 	expect(game.run.visited.has("中央入口") and game.run.visited.size() == 1, "New run records only the visited entrance")
 	game.set_mode("map")
 	expect(not game.fast_travel("中央入口"), "Travel requires purchased skill")
@@ -431,10 +431,10 @@ func _test_mall_upgrade(game: Node3D) -> void:
 	var fixed: int = game.run.true_id
 	expect(not game.fast_travel("食品スーパー") and not game.fast_travel("unknown"), "Cannot travel to unvisited or unknown point")
 	game.set_mode("play")
-	game.player.position = Vector3(24,.1,7)
+	game.player.position = _world(24,.1,7)
 	game._visit_points()
 	expect(not game.run.visited.has("食品スーパー"), "Standing outside the supermarket does not count as visiting its hub")
-	game.player.position = Mall.HUBS["食品スーパー"]
+	game.player.position = Mall.hub_position("食品スーパー")
 	game._visit_points()
 	expect(game.run.visited.has("食品スーパー"), "Actually approaching a hub records it")
 	game.handheld_scan.tick(1,0,true)
@@ -443,3 +443,6 @@ func _test_mall_upgrade(game: Node3D) -> void:
 	expect(game.run.true_id == fixed and not game.run.won and game.handheld_scan.seconds == 0, "Travel preserves true identity and resets partial reader scan")
 	game.start_run(120,904)
 	expect(game.run.visited.size() == 1 and game.run.upgrades.travel == 0, "New run clears visited destinations and travel skill")
+
+func _world(x: float,y: float,z: float) -> Vector3:
+	return MallCurve.world(Vector3(x,y,z))
