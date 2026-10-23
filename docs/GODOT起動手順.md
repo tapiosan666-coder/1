@@ -1,0 +1,26 @@
+# Windowsで開発版をGodotから起動する
+
+Smart App Controlで配布EXEがブロックされる場合の別の起動方法です。
+セキュリティ設定を変更したり、ブロックされたEXEを許可する操作は必要ありません。
+ただし公式Godot自体が端末のポリシーでブロックされる場合もあり、起動は保証できません。
+
+1. https://godotengine.org/download/archive/4.6.3-stable/ を開きます。
+2. Windows向けのGodot Engine「Standard」64-bit版をダウンロードします。.NET版やexport templatesは不要です。
+3. GodotのZIPを「すべて展開」し、Godotの実行ファイルを起動します。
+4. FIND_YOURSELF-Source.zipも、別のフォルダーに「すべて展開」します。
+5. Godotのプロジェクト一覧で「インポート」を押します。
+6. 手順4で展開したフォルダーの中にある FIND_YOURSELF フォルダー内の project.godot を選びます。
+7. プロジェクトを開き、読み込みが終わったらF5を押します。F6ではありません。
+8. ゲーム画面で「探索をはじめる」を押します。
+
+project.godotをWindows上でダブルクリックする必要はありません。
+Godotの「インポート」から選択してください。
+ゲーム用のPython、Node.js、APIキー、export templatesのインストールは不要です。
+ソース版にはゲームのWindows用EXEを含めていません。
+Godotにもブロック表示が出る場合は、そこで止めて表示された文面を確認してください。
+
+## 署名付きEXEについて
+
+現在のゲームEXEは未署名です。信頼されたコード署名証明書・署名サービスは開発環境に設定されていません。
+正式な署名には証明書やサービスの契約、発行者の本人確認などが必要になる場合があります。
+自己署名でWindowsの信頼を得たとは扱いません。正式な署名後もSmart App Controlの許可を保証はできず、Windows実機での確認が必要です。

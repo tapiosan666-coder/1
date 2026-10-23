@@ -16,6 +16,8 @@ Godot 4.6.3 / GDScript。現在のバージョンは **0.4・A館1階のプレ�
 
 ## すぐに遊ぶ
 
+Smart App ControlでEXEがブロックされる場合は、[ソース版ZIP](https://github.com/tapiosan666-coder/1/raw/refs/heads/main/downloads/FIND_YOURSELF-Source.zip)と[Godotからの起動手順](docs/GODOT起動手順.md)を使用できます。公式Godot側の起動可否は端末のポリシーによります。
+
 [Windows版ZIPをダウンロード](https://github.com/tapiosan666-coder/1/raw/refs/heads/main/downloads/FIND_YOURSELF-Windows.zip) → ZIPを右クリックして「すべて展開」→ 展開先の `FIND_YOURSELF.exe` を開いてください。
 
 

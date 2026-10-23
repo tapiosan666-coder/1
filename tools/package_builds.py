@@ -53,6 +53,7 @@ def main() -> None:
         artifacts.append(target)
     source = BUILD / "FIND_YOURSELF-Source.zip"
     with ZipFile(source, "w", ZIP_DEFLATED) as archive:
+        archive.writestr("起動手順.txt", (ROOT / "docs/GODOT起動手順.md").read_text())
         for path in sorted(ROOT.rglob("*")):
             relative = path.relative_to(ROOT)
             if path.is_file() and not any(part in {".git", ".godot", "builds", "downloads", ".venv", "__pycache__"} for part in relative.parts):
