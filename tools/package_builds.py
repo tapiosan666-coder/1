@@ -6,17 +6,17 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
-INSTRUCTIONS = """FIND YOURSELF / Development build 0.2
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.3.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
 Linux: ./FIND_YOURSELF.x86_64（必要なら chmod +x）。
 FIND_YOURSELF.pck は実行ファイルと同じフォルダーに置いてください。
 
-ENTER THE ATRIUMで開始。WASD移動、マウス視点。
+「探索をはじめる」で開始。WASD移動、マウス視点。
 初期装備は手持ちスキャナーです。6m以内の1人を狙い、左クリックを2秒長押し。
 視線を外す・ボタンを離すと最初からやり直しです。
-TabのSCAN PISTOLを400 APで購入すると銃が使えます。
+Tabの「スキャン銃」を400 APで購入すると銃が使えます。
 1で初期スキャナー、2で銃に切替。銃は左クリック射撃、Rリロード。
 右クリック照準、Shiftダッシュ、Spaceジャンプ。
 Tab強化、Fソナー、Q範囲スキャン、M案内図、Esc一時停止。
@@ -24,8 +24,9 @@ Tab強化、Fソナー、Q範囲スキャン、M案内図、Esc一時停止。
 銃・猫・範囲は本物の場所を通知するだけです。
 最後は必ず1の初期スキャナーで本物を2秒スキャンしてクリアします。
 
-現版はA館1階の開発用セクターです。5,000人・15フロアの製品版ではありません。
-写真顔生成、宝箱、セーブ、Steam連携は未実装。UIは英語です。
+現版はA館1階の開発用セクターです。約180mの主通路と15店舗、
+フードコート、お手洗いがあります。店員・着席客・会話中の客などを配置。5,000人・15フロアの製品版ではありません。
+写真顔生成、宝箱、セーブ、Steam連携は未実装。UIは日本語です。日本語フォントを同梱しています。
 Windows版はクロスビルド済みで、Windows実機では未検証です。
 音声は合成効果音です。外部API・インターネット接続は不要です。
 Godot Engineおよび同梱ライブラリのライセンスはthird_party/をご覧ください。

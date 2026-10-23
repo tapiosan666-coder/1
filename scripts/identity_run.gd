@@ -14,16 +14,16 @@ const DISTRIBUTION := {
 	"C": [100, 370, 330, 300, 100],
 }
 const SKILLS := {
-	"gun": {"name": "SCAN PISTOL", "detail": "Unlock ranged scanning / key 2", "cost": 400, "max": 1, "branch": "01 / EQUIPMENT"},
-	"focus": {"name": "SCAN EFFICIENCY", "detail": "One fewer hit per identity", "cost": 60, "max": 4, "branch": "01 / SCANNER"},
-	"magazine": {"name": "EXTENDED CELL", "detail": "+15 shots per magazine", "cost": 50, "max": 3, "branch": "01 / SCANNER"},
-	"reload": {"name": "QUICK RELOAD", "detail": "Reload 20% faster per level", "cost": 40, "max": 3, "branch": "01 / SCANNER"},
-	"range": {"name": "LONG RANGE", "detail": "+15 m scanner reach", "cost": 50, "max": 3, "branch": "01 / SCANNER"},
-	"cat": {"name": "FELINE ASSISTANT", "detail": "A cat scans one identity every 20 s", "cost": 100, "max": 1, "branch": "02 / COMPANION"},
-	"cat_speed": {"name": "QUICK PAWS", "detail": "Cat scanning: 20 s > 12 s > 6 s", "cost": 80, "max": 2, "branch": "02 / COMPANION"},
-	"sonar": {"name": "ECHO SONAR", "detail": "Snapshot radius: 15 / 30 / 50 / 80 / 120 m", "cost": 40, "max": 5, "branch": "03 / EXPLORATION"},
-	"sprint": {"name": "LIGHT FOOTED", "detail": "+25% sprint speed", "cost": 60, "max": 2, "branch": "03 / EXPLORATION"},
-	"pulse": {"name": "RADIAL SCAN", "detail": "Scan identities within 8 / 12 / 16 m", "cost": 120, "max": 3, "branch": "04 / SPECIAL SCAN"},
+	"gun": {"name": "スキャン銃", "detail": "遠距離スキャンを解放（2キー）", "cost": 400, "max": 1, "branch": "01 / 装備"},
+	"focus": {"name": "銃の解析効率", "detail": "銃の必要命中数を1発減らす", "cost": 60, "max": 4, "branch": "01 / 銃の強化"},
+	"magazine": {"name": "弾倉拡張", "detail": "銃の弾倉を15発拡張", "cost": 50, "max": 3, "branch": "01 / 銃の強化"},
+	"reload": {"name": "高速リロード", "detail": "銃のリロード時間を20%短縮", "cost": 40, "max": 3, "branch": "01 / 銃の強化"},
+	"range": {"name": "射程延長", "detail": "銃の射程を15m延長", "cost": 50, "max": 3, "branch": "01 / 銃の強化"},
+	"cat": {"name": "探索猫を配備", "detail": "猫が20秒ごとに1人をスキャン", "cost": 100, "max": 1, "branch": "02 / 猫の探索"},
+	"cat_speed": {"name": "猫パンチ強化", "detail": "スキャン時間：20秒 → 12秒 → 6秒", "cost": 80, "max": 2, "branch": "02 / 猫の探索"},
+	"sonar": {"name": "瞬間ソナー", "detail": "探知半径：15 → 30 → 50 → 80 → 120m", "cost": 40, "max": 5, "branch": "03 / 探索・移動"},
+	"sprint": {"name": "高速ダッシュ", "detail": "ダッシュ速度を25%強化", "cost": 60, "max": 2, "branch": "03 / 探索・移動"},
+	"pulse": {"name": "範囲スキャン", "detail": "周囲をスキャン：8 → 12 → 16m", "cost": 120, "max": 3, "branch": "04 / 特殊スキャン"},
 }
 
 var population: int

@@ -38,7 +38,8 @@ func _ready() -> void:
 	add_child(audio)
 	player = ScannerPlayer.new()
 	add_child(player)
-	player.position = Vector3(0, 0.1, 12)
+	player.position = Mall.ENTRANCE
+	player.rotation.y = -PI / 2
 	player.camera.rotation.x = -0.03
 	player.fired.connect(fire)
 	player.reload_requested.connect(reload_gun)
@@ -80,6 +81,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	crowd.skin_color = selected_skin
 	crowd.hair_color = selected_hair
 	crowd.face_width = selected_width
+	crowd.slots = mall.identity_slots
 	add_child(crowd)
 	crowd.process_mode = Node.PROCESS_MODE_PAUSABLE
 	crowd.setup(run, mall.spawn_points)
@@ -101,11 +103,11 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 
 func start_run(count: int = 120, run_seed: int = -1) -> void:
 	_create_run(count, run_seed)
-	player.position = Vector3(0, 0.1, 12)
-	player.rotation = Vector3.ZERO
+	player.position = Mall.ENTRANCE
+	player.rotation = Vector3(0, -PI / 2, 0)
 	player.camera.rotation = Vector3.ZERO
 	set_mode("play")
-	hud.message("Hold LMB on one person for 2 seconds. TAB: unlock equipment.")
+	hud.message("1人を狙って左クリックを2秒長押し。Tabでスキルを購入。")
 
 func set_mode(mode: String) -> void:
 	hud.show_mode(mode)
@@ -168,9 +170,10 @@ func _physics_process(delta: float) -> void:
 		_tick_handheld(delta, Input.is_action_pressed("fire"))
 	hud.using_gun = using_gun
 	hud.scan_progress = handheld_scan.seconds / IdentityRun.HANDHELD_SECONDS
-	player.reader_screen.text = "READING\n%03d%%" % int(hud.scan_progress * 100) if hud.scan_progress > 0 else "IDENTITY\nREADER"
+	player.reader_screen.text = "スキャン中\n%03d%%" % int(hud.scan_progress * 100) if hud.scan_progress > 0 else "個体識別\nスキャナー"
 	hud.ammo = ammo
 	hud.player_position = player.position
+	hud.location_name = Mall.zone_name(player.position)
 	hud.elapsed = elapsed
 	hud.sonar_cooldown = sonar_left
 	hud.pulse_cooldown = pulse_left
@@ -226,11 +229,11 @@ func resolve(id: int, source: IdentityRun.Source) -> IdentityRun.Result:
 		combo_left = 3.0
 		hud.combo = combo
 		hud.hit_time = 0.2
-		hud.message("IMITATION CLEARED   +10 AP")
+		hud.message("偽物をスキャン完了　+10 AP")
 		audio.play("fall", minf(1.5, 1 + combo * 0.025))
 	elif outcome == IdentityRun.Result.LOCATED:
 		_mark_original()
-		hud.message("ORIGINAL LOCATED. Press 1: finish with the original reader.")
+		hud.message("本物を発見！ 1キーで初期スキャナーに戻って確定しよう。")
 	elif outcome == IdentityRun.Result.FOUND:
 		audio.play("found")
 		set_mode("win")
@@ -238,7 +241,7 @@ func resolve(id: int, source: IdentityRun.Source) -> IdentityRun.Result:
 
 func equip(gun_selected: bool) -> bool:
 	if gun_selected and run.upgrades.gun == 0:
-		hud.message("Unlock SCAN PISTOL in TAB first / %d AP." % run.price("gun"))
+		hud.message("Tabでスキャン銃を購入してください / %d AP" % run.price("gun"))
 		return false
 	using_gun = gun_selected
 	handheld_scan.reset()
@@ -275,7 +278,7 @@ func buy_skill(key: String) -> void:
 func sonar() -> Array[Vector3]:
 	var snapshots: Array[Vector3] = []
 	if run.upgrades.sonar <= 0:
-		hud.message("Unlock ECHO SONAR in the skill panel [TAB].")
+		hud.message("Tabで「瞬間ソナー」を解放してください。")
 		return snapshots
 	if sonar_left > 0:
 		return snapshots
@@ -291,12 +294,12 @@ func sonar() -> Array[Vector3]:
 		get_tree().create_timer(4.0, false).timeout.connect(marker.queue_free)
 	_ring(player.position, radius, Color("b2f09a"))
 	audio.play("sonar")
-	hud.message("ECHO CAPTURED / %d positions / 4 seconds / no tracking" % snapshots.size())
+	hud.message("%d人の位置を記録 / 表示4秒 / 移動には追従しません" % snapshots.size())
 	return snapshots
 
 func pulse() -> void:
 	if run.upgrades.pulse <= 0:
-		hud.message("Unlock RADIAL SCAN in the skill panel [TAB].")
+		hud.message("Tabで「範囲スキャン」を解放してください。")
 		return
 	if pulse_left > 0:
 		return
@@ -317,7 +320,7 @@ func _mark_original() -> void:
 	mat.no_depth_test = true
 	mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	Shapes.sphere(beacon, Vector3.ZERO, 0.25, mat)
-	var label := Shapes.sign_text(beacon, Vector3(0, 0.55, 0), "ORIGINAL\n[1] IDENTITY READER", 28, Color("b6ff94"))
+	var label := Shapes.sign_text(beacon, Vector3(0, 0.55, 0), "本当の自分\n[1] 初期スキャナーで確定", 28, Color("b6ff94"))
 	label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
 	label.no_depth_test = true
 	audio.play("found", 1.3)
@@ -364,7 +367,7 @@ func _tick_cat(delta: float) -> void:
 		cat_retarget = 1.0
 	var path: PackedVector3Array = cat.get_meta("path", PackedVector3Array())
 	var distance := cat.position.distance_to(destination)
-	if distance > 0.9:
+	if distance > 1.1:
 		if path.is_empty():
 			# Final short approach is allowed only inside the walkable region.
 			var step := cat.position.move_toward(destination, delta * 4)
@@ -469,6 +472,16 @@ func _capture() -> void:
 	start_run(120, 912)
 	await get_tree().create_timer(2).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-play.png")
+	player.position = Vector3(47, 0.1, -44)
+	player.velocity = Vector3.ZERO
+	player.camera.look_at(Vector3(68, 1.2, -47))
+	await get_tree().create_timer(0.5).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-food.png")
+	player.position = Vector3(-79, 0.1, 33)
+	player.velocity = Vector3.ZERO
+	player.camera.look_at(Vector3(-86, 1.5, 45))
+	await get_tree().create_timer(0.5).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-restroom.png")
 	# A dedicated development capture exercises a partial original-reader lock.
 	crowd.positions[0] = Vector3(11, 0, 7)
 	crowd.bodies[0].position = Vector3(11, 0.95, 7)
@@ -485,4 +498,8 @@ func _capture() -> void:
 	set_mode("skills")
 	await get_tree().create_timer(0.5).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-skills.png")
+	for screen in ["pause", "map", "win"]:
+		set_mode(screen)
+		await get_tree().create_timer(0.2).timeout
+		get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-%s.png" % screen)
 	get_tree().quit()

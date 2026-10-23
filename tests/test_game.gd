@@ -17,10 +17,57 @@ func run_tests() -> void:
 	_test_lock()
 	var game = load("res://scenes/main.tscn").instantiate()
 	root.add_child(game)
+	var japanese_font: Font = game.hud.font
+	expect(japanese_font.resource_path == "res://assets/fonts/NotoSansCJKjp-Regular.otf", "UI uses the bundled Japanese font")
+	var all_glyphs := true
+	for path in ["hud", "main", "identity_run", "player", "mall"]:
+		var source := FileAccess.get_file_as_string("res://scripts/%s.gd" % path)
+		for character in source:
+			var code := character.unicode_at(0)
+			if code > 127 and not japanese_font.has_char(code):
+				all_glyphs = false
+	expect(all_glyphs, "Bundled font covers all Japanese and symbols used by the UI")
+	expect(game.hud.skin_select.get_item_text(0) == "明るい肌", "Face selection opens in Japanese")
+	expect(game.hud.skin_select.get_theme_font("font") == japanese_font and game.player.reader_screen.font == japanese_font, "Controls and 3D tool display share the bundled font")
 	game.start_run(120, 904)
+	await physics_frame
+	await physics_frame
+	var counts: Dictionary = {}
+	for role in game.crowd.roles:
+		counts[role] = int(counts.get(role, 0)) + 1
+	for expected in [["staff", 19], ["browsing", 15], ["seated", 32], ["restroom", 6], ["conversation", 16], ["walking", 32]]:
+		expect(counts.get(expected[0], 0) == expected[1], "Role population: %s" % expected[0])
+	var sitter: int = game.crowd.roles.find("seated")
+	var staff: int = game.crowd.roles.find("staff")
+	var walker: int = game.crowd.roles.find("walking")
+	var sitting_at: Vector3 = game.crowd.positions[sitter]
+	var staff_at: Vector3 = game.crowd.positions[staff]
+	var walking_from: Vector3 = game.crowd.positions[walker]
+	var start_point: int = game.crowd.nav.get_closest_point(walking_from)
+	game.crowd.paths[walker] = game.crowd.nav.get_point_path(start_point, (start_point + 10) % game.crowd.nav_ids.size())
+	game.crowd.paths[walker].remove_at(0)
+	game.crowd.waits[walker] = 0
+	await create_timer(0.3).timeout
+	expect(game.crowd.positions[sitter] == sitting_at and game.crowd.positions[staff] == staff_at, "Seated patrons and shop staff stay at their assigned stations")
+	expect(game.crowd.positions[walker].distance_to(walking_from) > 0.1, "Walking shoppers still navigate the mall")
 	game.crowd.set_physics_process(false)
-	await physics_frame
-	await physics_frame
+	var reachable_scans := true
+	for id in game.run.population:
+		if game.crowd.roles[id] == "walking":
+			continue
+		var visible := false
+		for point in game.mall.spawn_points:
+			if point.distance_squared_to(game.crowd.positions[id]) > 5.2 * 5.2:
+				continue
+			var head: Vector3 = game.crowd.positions[id] + Vector3.UP * (1.2 if game.crowd.roles[id] == "seated" else 1.65)
+			var query := PhysicsRayQueryParameters3D.create(point + Vector3.UP * 1.65, head, 1)
+			if game.get_world_3d().direct_space_state.intersect_ray(query).is_empty():
+				visible = true
+				break
+		if not visible:
+			reachable_scans = false
+			push_error("No reachable reader vantage for identity %d / %s" % [id, game.crowd.roles[id]])
+	expect(reachable_scans, "Every stationary identity can be read from a reachable public point")
 	expect(not game.using_gun and game.run.upgrades.gun == 0, "Start with handheld, no gun owned")
 	expect(not game.equip(true), "Cannot equip locked gun")
 	expect(game.player.handheld.visible and not game.player.gun.visible, "Correct initial tool model visible")
@@ -30,16 +77,17 @@ func run_tests() -> void:
 		if game.crowd.nav.get_point_path(0, point).is_empty():
 			reachable = false
 	expect(reachable, "NPC grid is connected")
-	var start_z: float = game.player.position.z
+	var start_x: float = game.player.position.x
 	Input.action_press("forward")
 	await create_timer(0.25).timeout
 	Input.action_release("forward")
-	expect(game.player.position.z < start_z - 0.5, "WASD moves character body")
-	game.player.position = Vector3(37.1, 0.1, 7)
+	expect(game.player.position.x > start_x + 0.5, "WASD moves character body")
+	game.player.position = Vector3(89.1, 0.1, 7)
+	game.player.rotation = Vector3.ZERO
 	Input.action_press("right")
 	await create_timer(0.3).timeout
 	Input.action_release("right")
-	expect(game.player.position.x < 37.6, "Perimeter blocks movement")
+	expect(game.player.position.x < 89.6, "Perimeter blocks movement")
 	for part in game.crowd.parts:
 		expect(part.instances.mesh != null, "Every instanced body part has geometry")
 	var fake: int = (game.run.true_id + 1) % 120
@@ -88,11 +136,11 @@ func run_tests() -> void:
 	expect(game.ammo == 30 and game.reload_left == 0, "Gun reload remains one second")
 	# A third identity behind the mall perimeter is neither readable nor shootable.
 	var third: int = (other + 1) % 120
-	game.player.position = Vector3(35, 0.1, 7)
-	game.crowd.positions[third] = Vector3(40, 0, 7)
-	game.crowd.bodies[third].position = Vector3(40, 0.95, 7)
+	game.player.position = Vector3(87, 0.1, 7)
+	game.crowd.positions[third] = Vector3(92, 0, 7)
+	game.crowd.bodies[third].position = Vector3(92, 0.95, 7)
 	game.crowd.bodies[third].collision_layer = 2
-	game.player.camera.look_at(Vector3(40, 1.2, 7))
+	game.player.camera.look_at(Vector3(92, 1.2, 7))
 	game.equip(false)
 	await physics_frame
 	await physics_frame
@@ -105,7 +153,7 @@ func run_tests() -> void:
 	expect(not hit.is_empty() and not hit.collider.has_meta("identity"), "Wall also blocks pistol")
 	game.run.upgrades.sonar = 1
 	var snapshots: Array[Vector3] = game.sonar()
-	var recorded := Vector3(40, 1.1, 7)
+	var recorded := Vector3(92, 1.1, 7)
 	expect(snapshots.has(recorded), "Sonar sees through wall")
 	game.crowd.positions[third] += Vector3(0, 0, 3)
 	expect(snapshots.has(recorded), "Sonar retains snapshot position")

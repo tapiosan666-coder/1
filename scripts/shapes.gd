@@ -58,6 +58,7 @@ static func cylinder(parent: Node3D, pos: Vector3, radius: float, height: float,
 static func sign_text(parent: Node3D, pos: Vector3, message: String, size: int = 90, color: Color = Color("e8e5d9")) -> Label3D:
 	var label := Label3D.new()
 	label.text = message
+	label.font = preload("res://assets/fonts/NotoSansCJKjp-Regular.otf")
 	label.font_size = size
 	label.pixel_size = 0.009
 	label.modulate = color

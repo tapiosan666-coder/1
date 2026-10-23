@@ -60,7 +60,7 @@ func _make_handheld() -> void:
 	Shapes.box(handheld, Vector3(0, -0.075, 0.049), Vector3(0.12, 0.003, 0.002), light)
 	for x in [-0.042, 0.0, 0.042]:
 		Shapes.sphere(handheld, Vector3(x, -0.115, 0.039), 0.012, rubber)
-	reader_screen = Shapes.sign_text(handheld, Vector3(0, 0.068, 0.051), "IDENTITY\nREADER", 26, Color("93e7bb"))
+	reader_screen = Shapes.sign_text(handheld, Vector3(0, 0.068, 0.051), "個体識別\nスキャナー", 26, Color("93e7bb"))
 	reader_screen.pixel_size = 0.00065
 	Shapes.box(handheld, Vector3(0, 0.19, 0), Vector3(0.09, 0.06, 0.055), rubber)
 	Shapes.box(handheld, Vector3(0, 0.218, 0), Vector3(0.065, 0.003, 0.032), light)
@@ -101,7 +101,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = 7
 	move_and_slide()
 	if position.y < -10:
-		position = Vector3(0, 0.1, 12)
+		position = Mall.ENTRANCE
 	recoil = move_toward(recoil, 0, delta * 0.7)
 	var target := Vector3(0.0, -0.14, -0.6) if aiming else Vector3(0.25, -0.18, -0.65)
 	var bob := sin(time * 10) * 0.007 * minf(velocity.length() / 5, 1)
