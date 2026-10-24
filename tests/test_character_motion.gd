@@ -17,7 +17,7 @@ func run_tests() -> void:
 				var motion := CivilianMotion.sample(role,role,tick/30.0,2,moving)
 				for side in ["left","right"]:
 					var arm: Dictionary = motion[side]
-					var shoulder := Vector3(-.215 if side == "left" else .215,1.4,0)
+					var shoulder := Vector3(-.215 if side == "left" else .215,CivilianRig.SHOULDER_Y,0)
 					var upper_start: Vector3 = arm.arm.pos+arm.arm.basis.y*.15
 					var upper_end: Vector3 = arm.arm.pos-arm.arm.basis.y*.15
 					var lower_start: Vector3 = arm.forearm.pos+arm.forearm.basis.y*.145
@@ -63,11 +63,9 @@ func run_tests() -> void:
 			common_tone = material.get_shader_parameter("skin_tint") == game.selected_skin
 	expect(texture_bound and common_tone,"Authored skin maps retain the single shared skin tone rather than using clothing tint")
 	var fabric_bound := false
-	for part in game.crowd.parts:
-		if part.name != "torso": continue
-		for surface in part.instances.mesh.get_surface_count():
-			var material: Material = part.instances.mesh.surface_get_material(surface)
-			if material is ShaderMaterial and material.shader.resource_path == "res://assets/fabric.gdshader": fabric_bound = material.get_shader_parameter("fabric_detail") is Texture2D and material.get_shader_parameter("fabric_normal") is Texture2D
+	for surface in game.crowd.continuous_body.mesh.get_surface_count():
+		var material: Material = game.crowd.continuous_body.mesh.surface_get_material(surface)
+		if material is ShaderMaterial and material.shader.resource_path == "res://assets/civilian_body.gdshader": fabric_bound = material.get_shader_parameter("fabric_detail") is Texture2D and material.get_shader_parameter("fabric_normal") is Texture2D
 	expect(fabric_bound,"Clothing uses the authored textile and tangent-normal maps")
 	for width in [.85,1.0,1.2]:
 		game.selected_width = width; game.start_run(300,912); game.crowd.set_physics_process(false)

@@ -23,11 +23,16 @@ void fragment(){
  vec3 detail=texture(skin_detail,UV).rgb;
  float blush=exp(-pow((abs(local_point.x)-.06)/.028,2.0)-pow((local_point.y+.05)/.032,2.0))*smoothstep(.02,.09,-local_point.z);
  vec3 variation=vec3(1.0+(detail.r-.5)*.16+(detail.g-.5)*.035,1.0+(detail.r-.5)*.12-(detail.g-.5)*.04,1.0+(detail.r-.5)*.12-(detail.g-.5)*.045);
- ALBEDO=skin_tint.rgb*variation*vec3(1.0+.035*blush,1.0-.025*blush,1.0-.018*blush)*mix(1.0,occlusion,.45);
+ ALBEDO=skin_tint.rgb*vec3(1.0+.018*blush,1.0-.012*blush,1.0-.008*blush)*mix(1.0,occlusion,.15);
  AO=occlusion; AO_LIGHT_AFFECT=.3;
- NORMAL_MAP=texture(skin_normal,UV).rgb; NORMAL_MAP_DEPTH=.16;
+ NORMAL_MAP=texture(skin_normal,UV).rgb; NORMAL_MAP_DEPTH=.025;
  float oil=exp(-pow(local_point.x/.04,2.0))*smoothstep(.07,.11,-local_point.z);
  ROUGHNESS=clamp((.57-oil*.08)+(detail.b-.5)*.13,.42,.68);
  if(lip_surface){ ROUGHNESS=.62; NORMAL_MAP_DEPTH=.05; }
- SPECULAR=.3;
+ SPECULAR=.12;
+}
+
+void light(){
+ float band=mix(.55,1.0,smoothstep(.12,.22,dot(NORMAL,LIGHT)));
+ DIFFUSE_LIGHT+=ALBEDO*LIGHT_COLOR*ATTENUATION*band*.318309886;
 }

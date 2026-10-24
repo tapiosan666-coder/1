@@ -1,0 +1,82 @@
+{
+  "engine": "Godot 4.6.3 Standard",
+  "renderer": "OpenGL Compatibility, Mesa llvmpipe (CPU software rasterizer)",
+  "before_commit": "7027142f34bd85400ce2ab0be407279ae559a09d",
+  "after_version": "0.15.0",
+  "fixture": "render-profile-fixture-v014.json",
+  "conditions": {
+    "population": 300,
+    "resolution": [
+      1280,
+      800
+    ],
+    "msaa": false,
+    "shadow_distance_m": 85,
+    "warmup_frames": 12,
+    "sample_frames": 30,
+    "npc_physics": "frozen",
+    "processes": "one Godot process, no simultaneous Blender or Godot"
+  },
+  "before": {
+    "cases": [
+      {
+        "draw_calls": 2549.26666666667,
+        "median_frame_ms": 618.354,
+        "name": "entrance",
+        "p90_frame_ms": 901.654,
+        "primitives": 2931622.0
+      },
+      {
+        "draw_calls": 2034.0,
+        "median_frame_ms": 571.346,
+        "name": "atrium",
+        "p90_frame_ms": 858.932,
+        "primitives": 2481514.0
+      },
+      {
+        "draw_calls": 1619.0,
+        "median_frame_ms": 243.346,
+        "name": "parking",
+        "p90_frame_ms": 373.191,
+        "primitives": 1001818.66666667
+      }
+    ],
+    "population": 300,
+    "sample_frames": 30,
+    "startup_ms": 1179.157,
+    "viewport": "(1280, 800)",
+    "warmup_frames": 12
+  },
+  "after": {
+    "cases": [
+      {
+        "draw_calls": 2532.26666666667,
+        "median_frame_ms": 630.715,
+        "name": "entrance",
+        "p90_frame_ms": 660.971,
+        "primitives": 3357225.0
+      },
+      {
+        "draw_calls": 2035.0,
+        "median_frame_ms": 560.57,
+        "name": "atrium",
+        "p90_frame_ms": 583.401,
+        "primitives": 2693381.2
+      },
+      {
+        "draw_calls": 1562.0,
+        "median_frame_ms": 276.534,
+        "name": "parking",
+        "p90_frame_ms": 290.395,
+        "primitives": 1488892.66666667
+      }
+    ],
+    "population": 300,
+    "sample_frames": 30,
+    "startup_ms": 1212.893,
+    "viewport": "(1280, 800)",
+    "warmup_frames": 12
+  },
+  "hardware_fps_measured": false,
+  "windows_tested": false
+}

@@ -8,7 +8,7 @@ static func segment(top: Vector3,bottom: Vector3) -> Basis:
 	return Basis(x,y,x.cross(y).normalized())
 
 static func arm(side: float,target: Vector3) -> Dictionary:
-	var shoulder := Vector3(side*.215,1.4,0)
+	var shoulder := Vector3(side*.215,CivilianRig.SHOULDER_Y,0)
 	var difference := target-shoulder
 	var distance := clampf(difference.length(),.08,.585)
 	var direction := difference.normalized()
@@ -43,8 +43,8 @@ static func sample(role: String,activity: String,time: float,id: int,moving: boo
 		left=Vector3(-.16,.97,-.28);right=Vector3(.16,.97,-.28)
 	elif role == "seated":
 		drink = pow(maxf(0,sin(phase*.7)),4)
-		left = Vector3(-.23,1.12,-.39)
-		right = Vector3(.16,1.10,-.39).lerp(Vector3(.10,1.50,-.13),drink)
+		left = Vector3(-.23,1.15,-.43)
+		right = Vector3(.16,1.15,-.43).lerp(Vector3(.10,1.50,-.13),drink)
 	elif role == "staff":
 		left = Vector3(-.2,1.13,-.44)
 		right = Vector3(.13,1.16+sin(phase*2.4)*.035,-.48)
@@ -53,6 +53,7 @@ static func sample(role: String,activity: String,time: float,id: int,moving: boo
 	elif role == "restroom":
 		left = Vector3(-.13,1.01,-.32)
 		right = Vector3(.13,1.01,-.32)
+	left.y+=.06;right.y+=.06
 	var l := arm(-1,left)
 	var r := arm(1,right)
 	var gaze := sin(phase*.35)*.055

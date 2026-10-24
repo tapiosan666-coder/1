@@ -11,6 +11,7 @@ var waits: Array[float] = []
 var death_times: Array[float] = []
 var bodies: Array[Area3D] = []
 var parts: Array[Dictionary] = []
+var continuous_body:CivilianBody
 var clock := 0.0
 var render_clock := 0.0
 var detail_distance := 26.0
@@ -105,7 +106,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		cached_nav_hash = key
 		cached_nav_ids = nav_ids
 	for point in nav_ids: floor_nav_ids[Mall.level_at(nav.get_point_position(point).y)].append(point)
-	var palette := [Color("c58a6b"), Color("bcc6b3"), Color("667e8a"), Color("d8c497"), Color("a78b91"), Color("4d6265")]
+	var palette := [Color("3b4149"), Color("8c363b"), Color("324c61"), Color("8b8f7d"), Color("b7ae9a"), Color("656374")]
 	clothing_palette = palette
 	for id in run.population:
 		var candidates: Array = floor_nav_ids[posmod(id-slots.size(),5)-1]
@@ -131,20 +132,16 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		var collision := CollisionShape3D.new()
 		var capsule := CapsuleShape3D.new()
 		capsule.radius = 0.44
-		capsule.height = 1.9 if role not in ["seated","reading"] else 1.4
+		capsule.height = 1.9 if role not in ["seated","reading"] else 1.6
 		collision.shape = capsule
 		area.add_child(collision)
 		add_child(area)
-		area.position = p + Vector3.UP * (0.95 if role not in ["seated","reading"] else 0.7)
+		area.position = p + Vector3.UP * (0.95 if role not in ["seated","reading"] else 0.8)
 		bodies.append(area)
 	var kit: Node3D = preload("res://assets/characters/civilian.glb").instantiate()
-	var offsets := {"torso": Vector3(0,1.13,0), "head": Vector3(0,1.7,0), "hair": Vector3(0,1.81,0), "neck": Vector3(0,1.52,0), "eye_l":Vector3(-.3077*.12,1.7,-(1.2453-.45)*.105), "eye_r":Vector3(.3077*.12,1.7,-(1.2453-.45)*.105)}
-	for side in [-1, 1]:
-		var suffix := "_l" if side < 0 else "_r"
-		for item in [["arm",1.27], ["forearm",.98], ["hand",.79]]:
-			offsets[item[0] + suffix] = Vector3(side * .215, item[1], 0)
-		for item in [["leg",.62,0], ["shin",.22,0], ["shoe",.08,-.035]]:
-			offsets[item[0] + suffix] = Vector3(side * .105, item[1], item[2])
+	# Only facial features and hands remain rigid attachments. Torso, sleeves,
+	# hips and trousers are one connected, weighted garment renderer.
+	var offsets:={"head":Vector3(0,1.7,0),"hair":Vector3(0,1.81,0),"eye_l":Vector3(-.3077*.12,1.7,-(1.2453-.45)*.105),"eye_r":Vector3(.3077*.12,1.7,-(1.2453-.45)*.105),"hand_l":Vector3(-.215,.85,0),"hand_r":Vector3(.215,.85,0)}
 	for node in kit.find_children("*", "MeshInstance3D", true, false):
 		var title: String = node.name
 		if not offsets.has(title):
@@ -156,12 +153,13 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 			var result: Material = material
 			if tag.begins_with("Skin"):
 				material.albedo_color = skin_color; material.roughness = .55; material.vertex_color_use_as_albedo=true
-				if title == "head":
+				if title in ["head","hand_l","hand_r"]:
 					var skin := ShaderMaterial.new(); skin.shader = preload("res://assets/skin.gdshader")
 					skin.set_shader_parameter("skin_tint",skin_color); _skin_textures(skin); result = skin
 			elif tag.begins_with("Hair"):
 				var hair := ShaderMaterial.new(); hair.shader = preload("res://assets/hair.gdshader")
-				hair.set_shader_parameter("hair_tint",hair_color); result = hair
+				hair.set_shader_parameter("hair_tint",hair_color)
+				hair.set_shader_parameter("strand_map",preload("res://assets/characters/textures/hair_strands.png"));hair.set_shader_parameter("strand_normal",preload("res://assets/characters/textures/hair_normal.png"));result = hair
 			elif tag.begins_with("Cloth") or tag.begins_with("Trousers") or tag.begins_with("Shirt"):
 				var fabric := ShaderMaterial.new(); fabric.shader = preload("res://assets/fabric.gdshader")
 				fabric.set_shader_parameter("fabric_detail",preload("res://assets/characters/textures/fabric_detail.png"))
@@ -172,20 +170,25 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 				result = fabric
 			elif tag.begins_with("Lip"):
 				var lip := ShaderMaterial.new(); lip.shader = preload("res://assets/skin.gdshader")
-				lip.set_shader_parameter("skin_tint",skin_color.lerp(Color("805148"),.45)); lip.set_shader_parameter("lip_surface",true); _skin_textures(lip); result = lip
+				lip.set_shader_parameter("skin_tint",skin_color.lerp(Color("a47569"),.10)); lip.set_shader_parameter("lip_surface",true); _skin_textures(lip); result = lip
 			elif tag.begins_with("Eye") or tag.begins_with("Iris"):
-				material.roughness = .22
+				material.roughness = .8;material.shading_mode=BaseMaterial3D.SHADING_MODE_UNSHADED
 			else: material.roughness = .75
+			if title=="hair" or (title=="head" and tag.begins_with("Skin")):
+				var ink:=ShaderMaterial.new();ink.shader=preload("res://assets/civilian_outline.gdshader")
+				if title=="head":ink.set_shader_parameter("low_cut",-.105)
+				result.next_pass=ink
 			mesh.surface_set_material(surface,result)
 
 		var size := Vector3(face_width, 1, 1) if title in ["head", "hair", "eye_l", "eye_r"] else Vector3.ONE
 		_instance_part(title, mesh, offsets[title], size, palette)
 	kit.free()
-	_add_part("apron", Vector3(0,1.00,-.132), Vector3(.29,.38,.018), Color("293d36"))
-	_add_part("badge", Vector3(.13,1.32,-.128), Vector3(.065,.032,.01), Color("e8e3d3"))
-	_add_part("held_book",Vector3(0,1.10,-.36),Vector3(.27,.035,.19),Color("715947"))
-	_add_part("held_pages",Vector3(0,1.122,-.36),Vector3(.25,.012,.17),Color("e6dcc2"))
-	_add_part("held_product",Vector3(0,1.14,-.35),Vector3(.13,.16,.05),Color("536b71"))
+	continuous_body=CivilianBody.new(self,run.population,skin_color,face_width)
+	_instance_part("apron",CivilianBody.apron_mesh(),Vector3.ZERO,Vector3.ONE,[])
+	_add_part("badge", Vector3(.13,1.38,-.138), Vector3(.065,.032,.01), Color("e8e3d3"))
+	_add_part("held_book",Vector3(0,1.16,-.36),Vector3(.27,.035,.19),Color("715947"))
+	_add_part("held_pages",Vector3(0,1.182,-.36),Vector3(.25,.012,.17),Color("e6dcc2"))
+	_add_part("held_product",Vector3(0,1.20,-.35),Vector3(.13,.16,.05),Color("536b71"))
 	var cup := CylinderMesh.new(); cup.top_radius = .048; cup.bottom_radius = .037; cup.height = .10
 	cup.material = Shapes.material(Color("ddd8c7"))
 	_instance_part("held_cup",cup,Vector3.ZERO,Vector3.ONE,[])
@@ -327,6 +330,7 @@ func _render(_force: bool = false) -> void:
 			if death_times[id] >= 0: at.y -= pow(death_times[id]/.8,2)*4
 			mm.set_instance_transform(index,Transform3D(Basis(Vector3.UP,headings[id]),at))
 			mm.set_instance_custom_data(index,clothing_palette[id%clothing_palette.size()])
+	if continuous_body!=null:continuous_body.render(self,detailed_ids,motions,bounds)
 	_render_contact_shadows(bounds)
 	for part in parts:
 		var instances: MultiMesh = part.instances
@@ -377,9 +381,9 @@ func _render(_force: bool = false) -> void:
 				local_offset = motion.right.wrist+Vector3(0,.04,-.035)
 				pose = Basis(Vector3.RIGHT,motion.drink*.35)
 			if not (part.name.begins_with("leg_") or part.name.begins_with("shin_") or part.name.begins_with("shoe_")):
-				local_offset = Vector3(0,.85,0)+motion.body*(local_offset-Vector3(0,.85,0)); pose = motion.body*pose
+				local_offset = Vector3(0,CivilianRig.HIP_Y,0)+motion.body*(local_offset-Vector3(0,CivilianRig.HIP_Y,0)); pose = motion.body*pose
 			var base := positions[id]
-			if role in ["seated","reading"]: base.y -= .42
+			if role in ["seated","reading"]: base.y -= CivilianRig.SEAT_DROP
 			if part.name not in ["shoe_l","shoe_r","shin_l","shin_r"]: base.y += motion.breath
 			if death_times[id] >= 0: base.y -= pow(death_times[id]/.8,2)*4
 			var basis := Basis(Vector3.UP,headings[id])
@@ -410,8 +414,8 @@ func attract(center: Vector3,radius: float,seconds: float) -> void:
 
 func _set_body_pose(id: int,seated: bool) -> void:
 	var collision: CollisionShape3D = bodies[id].get_child(0)
-	collision.shape.height = 1.4 if seated else 1.9
-	bodies[id].position = positions[id]+Vector3.UP*(.7 if seated else .95)
+	collision.shape.height = 1.6 if seated else 1.9
+	bodies[id].position = positions[id]+Vector3.UP*(.8 if seated else .95)
 
 func _tick_attracted(id: int,delta: float) -> void:
 	var data: Dictionary = attracted[id]

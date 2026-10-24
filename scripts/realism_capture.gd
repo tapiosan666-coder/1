@@ -25,6 +25,7 @@ static func capture(game:Node3D,tag:String="after")->void:
 	 ["c-store",Vector3(-402,.1,-84),Vector3(-402,1.5,-77)]
 	]
 	if "--only-bookshop" in OS.get_cmdline_user_args():shots=shots.filter(func(shot:Array):return shot[0]=="bookshop")
+	if "--character-style" in OS.get_cmdline_user_args():shots=shots.filter(func(shot:Array):return shot[0] in ["fashion","dining"])
 	for shot in shots:
 		game.player.position=MallCurve.world(shot[1]);game.player.camera.look_at(MallCurve.world(shot[2]));game.crowd._render()
 		game.hud.player_position=game.player.position;game.hud.location_name=Mall.zone_name(game.player.position);game.hud.notice_time=0;game.hud.queue_redraw()
@@ -38,3 +39,15 @@ static func capture(game:Node3D,tag:String="after")->void:
 		await game.get_tree().create_timer(.3).timeout;await RenderingServer.frame_post_draw
 		game.get_viewport().get_texture().get_image().save_png("/tmp/fy14-%s-%s.png"%[tag,shot[0]])
 		print("REALISM_CAPTURE ",tag," ",shot[0])
+
+	if "--character-style" in OS.get_cmdline_user_args():
+		for id in game.run.population:
+			var plan:Vector3=MallCurve.plan(game.crowd.positions[id])
+			if game.crowd.roles[id]!="seated" or not DiningDetails.FOOD.has_point(Vector2(plan.x,plan.z)):continue
+			var basis:=Basis(Vector3.UP,game.crowd.headings[id])
+			game.player.position=game.crowd.positions[id]+basis*Vector3(1.1,-.25,-2.1)
+			game.player.camera.look_at(game.crowd.positions[id]+Vector3.UP*1.05);game.crowd._render()
+			game.hud.player_position=game.player.position;game.hud.location_name=Mall.zone_name(game.player.position);game.hud.queue_redraw()
+			await game.get_tree().create_timer(.3).timeout;await RenderingServer.frame_post_draw
+			game.get_viewport().get_texture().get_image().save_png("/tmp/fy15-game-seated.png")
+			print("REALISM_CAPTURE seated ",id);break

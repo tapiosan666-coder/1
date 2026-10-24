@@ -96,7 +96,7 @@ static func prepare_plan() -> void:
 	for x in [53.0, 67.0, 81.0]:
 		for z in [-39.0, -47.0, -54.0]:
 			obstacles.append(Rect2(x - 1.3, z - 0.7, 2.6, 1.4))
-			for d in [Vector2(-1.9, 0), Vector2(1.9, 0), Vector2(0, -1.6), Vector2(0, 1.6)]:
+			for d in DiningDetails.CHAIR_OFFSETS:
 				obstacles.append(Rect2(Vector2(x, z) + d - Vector2(0.3, 0.3), Vector2(0.6, 0.6)))
 	for x in [51.0, 62.0, 73.0, 84.0]:
 		obstacles.append(Rect2(x - 4.5, -60, 9, 1))
@@ -259,6 +259,7 @@ func _ready() -> void:
 	CWing.new().build(self)
 	RetailPolish.new().build(self)
 	DiningWing.new().build(self)
+	DiningDetails.new().build(self)
 	MallAtmosphere.new().build(self)
 	FloorContacts.bake(self)
 	for level in [-1,0,1,2,3]:
@@ -388,7 +389,7 @@ func _build_food_court() -> void:
 		for z in [-39.0, -47.0, -54.0]:
 			Shapes.box(self, Vector3(x, 0.78, z), Vector3(2.6, 0.1, 1.4), wood, true)
 			Shapes.cylinder(self, Vector3(x, 0.365, z), 0.15, 0.73, stone)
-			for offset in [Vector2(-1.9, 0), Vector2(1.9, 0), Vector2(0, -1.6), Vector2(0, 1.6)]:
+			for offset in DiningDetails.CHAIR_OFFSETS:
 				var p := Vector3(x + offset.x, 0, z + offset.y)
 				var yaw := atan2(-(-offset.x), -(-offset.y))
 				_chair(p, yaw)

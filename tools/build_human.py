@@ -13,7 +13,7 @@ def mat(name,c):
  m=bpy.data.materials.new(name);m.diffuse_color=(*c,1);m.use_nodes=True
  bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*c,1);bs.inputs['Roughness'].default_value=.72
  return m
-skin=mat('Skin',(.68,.43,.29));cloth=mat('Cloth',(.28,.36,.42));hair=mat('Hair',(.035,.026,.022));white=mat('EyeWhite',(.87,.83,.74));iris=mat('Iris',(.13,.075,.038));black=mat('Ink',(.018,.016,.02));lip=mat('Lip',(.38,.17,.13));inner=mat('Shirt',(.78,.75,.65));shoe=mat('Leather',(.045,.039,.035));metal=mat('Metal',(.25,.26,.24));pants=mat('Trousers',(.075,.095,.115))
+skin=mat('Skin',(.68,.43,.29));cloth=mat('Cloth',(.28,.36,.42));hair=mat('Hair',(.035,.026,.022));white=mat('EyeWhite',(.93,.92,.90));iris=mat('Iris',(.15,.20,.26));black=mat('Ink',(.018,.016,.02));lip=mat('Lip',(.38,.17,.13));inner=mat('Shirt',(.78,.75,.65));shoe=mat('Leather',(.045,.039,.035));metal=mat('Metal',(.25,.26,.24));pants=mat('Trousers',(.075,.095,.115))
 parts={}
 def add(o,m):
  o.data.materials.append(m)
@@ -79,35 +79,101 @@ for line in (root/'tools/source_assets/makehuman-base.obj').read_text().splitlin
  elif active and line.startswith('f '):
   face=[int(v.split('/')[0])-1 for v in line.split()[1:]]
   body_faces.append(face)
-  if all(raw[i][1]>6.25 for i in face):faces.append(face)
+  if all(raw[i][1]>5.85 for i in face):faces.append(face)
 ids=sorted({i for face in faces for i in face}); lookup={old:i for i,old in enumerate(ids)}
-def face_at(v):return (v[0]*.12,1.70+(v[1]-7.2842)*.13,-(v[2]-.45)*.105)
-me=bpy.data.meshes.new('Anatomical head');me.from_pydata([xyz(face_at(raw[i])) for i in ids],[],[tuple(lookup[i] for i in reversed(face)) for face in faces]);me.update()
+def face_at(v):
+ x=v[0]*.12;y=1.70+(v[1]-7.2842)*.13;z=-(v[2]-.45)*.105
+ front=max(0,min(1,(-z-.025)/.060))
+ # A slim V-shaped young-adult lower face, with smooth cheeks and a small nose.
+ jaw=math.exp(-((y-1.625)/.052)**2)*front
+ x*=1-.15*jaw
+ y+=.008*math.exp(-((y-1.61)/.038)**2)*front
+ z+=.004*math.exp(-(x/.025)**2-((y-1.666)/.038)**2)*front
+ eye=math.exp(-((abs(x)-.0369)/.023)**2-((y-1.70)/.020)**2)*front
+ y=1.70+(y-1.70)*(1-.14*eye)
+ # Extend a continuous anatomical neck into the collar. The face and neck
+ # share the head pivot, so the jaw cannot separate during idle head turns.
+ if y<1.54:
+  t=max(0,min(1,(1.54-y)/.027))
+  y-=.035*t*t*(3-2*t)
+  x*=1-.13*t
+ return (x,y,z)
+# Give the open neck one level hem below the jacket, rather than retaining
+# the irregular selection boundary of the source anatomy under the chin.
+from collections import Counter
+edges=Counter(tuple(sorted((f[k],f[(k+1)%len(f)]))) for f in faces for k in range(len(f)))
+boundary={i for edge,count in edges.items() if count==1 for i in edge}
+def head_point(i):
+ x,y,z=face_at(raw[i])
+ if i in boundary:x*=.90;y=1.475
+ return (x,y,z)
+me=bpy.data.meshes.new('Anatomical head');me.from_pydata([xyz(head_point(i)) for i in ids],[],[tuple(lookup[i] for i in reversed(face)) for face in faces]);me.update()
 o=bpy.data.objects.new('Head',me);bpy.context.collection.objects.link(o);add(o,skin);o.data.materials.append(lip)
 for polygon,face in zip(me.polygons,faces):
  center=[sum(raw[i][j] for i in face)/len(face) for j in range(3)]
  if 6.60<center[1]<6.68 and abs(center[0])<.24 and center[2]>1.5:polygon.material_index=1
-# Each eye is a separate movable section; lid skin remains on the head.
+# Smooth silhouette without multiplying the full crowd's geometry unnecessarily.
+bpy.context.view_layer.objects.active=o
+mod=o.modifiers.new('Facial refinement','SUBSURF');mod.levels=1;bpy.ops.object.modifier_apply(modifier=mod.name)
+mod=o.modifiers.new('Facial game mesh','DECIMATE');mod.ratio=.48;bpy.ops.object.modifier_apply(modifier=mod.name)
+# Graphic almond-shaped eyes have shallow curvature, never protruding eyeballs.
+def face_piece(name,points,faces,material):
+ me=bpy.data.meshes.new(name);me.from_pydata([xyz(v) for v in points],[],faces);me.update()
+ o=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(o);return add(o,material)
+def eye_disc(name,center,rx,ry,material):
+ points=[center];count=32
+ for k in range(count):
+  a=math.tau*k/count;points.append((center[0]+math.cos(a)*rx,center[1]+math.sin(a)*ry,center[2]))
+ return face_piece(name,points,[(0,(k+1)%count+1,k+1) for k in range(count)],material)
 for sign,label in [(-1,'l'),(1,'r')]:
  group='eye_'+label
- ex=sign*.3077*.12; ey=1.70; ez=-(1.2453-.45)*.105
- ell((ex,ey,ez),(.0168,.0075,.022),white)
- ell((ex,ey,ez-.023),(.0064,.0064,.0015),iris)
- ell((ex,ey,ez-.025),(.0031,.0036,.0008),black)
- ell((ex-.002,ey+.002,ez-.026),(.0011,.0011,.0006),white)
+ ex=sign*.3077*.12;ey=1.70;ez=-(1.2453-.45)*.105
+ edge=[(-.023,0),(-.012,.009),(.009,.010),(.023,.002),(.010,-.008),(-.011,-.007)]
+ points=[(ex,ey,ez-.027)]
+ for dx,dy in edge:points.append((ex+dx,ey+dy+sign*dx*.12,ez-.027+abs(dx)*.20))
+ face_piece('Almond eye',points,[(0,k+1,(k+1)%len(edge)+1) for k in range(len(edge))],white)
+ eye_disc('Iris',(ex,ey+.001,ez-.029),.0074,.009,iris)
+ eye_disc('Pupil',(ex,ey+.001,ez-.030),.0034,.0068,black)
+ eye_disc('Catchlight',(ex-.0028,ey+.0042,ez-.031),.0018,.0022,white)
+ tube([(ex+dx,ey+dy+sign*dx*.12,ez-.029+abs(dx)*.20) for dx,dy in edge[:4]],.00135,black)
  group='head'
- tube([(sign*.017,1.735,-.106),(sign*.038,1.744,-.112),(sign*.063,1.735,-.103)],.0027,hair)
-# A coherent short side-parted cut, with a scalp surface and smooth swept locks.
+ tube([(sign*.018,1.731,-.108),(sign*.039,1.740,-.112),(sign*.062,1.735,-.102)],.0017,hair)
+# A small drawn mouth line keeps the stylized face clean at normal play distance.
+group='head'
+tube([(-.016,1.622,-.118),(0,1.620,-.120),(.016,1.622,-.118)],.00075,black)
+# A layered side-swept cut. The scalp and shallow ribbon locks share one material.
 group='hair'
-vs=[];fs=[]; n=64; rows=18
+vs=[];fs=[];n=64;rows=18
 for j in range(rows+1):
  for i in range(n):
-  phi=math.tau*i/n; theta=(1.65+.35*math.cos(phi))*j/rows
-  vs.append(xyz((.111*math.sin(theta)*math.sin(phi),1.74+.145*math.cos(theta),.015+.118*math.sin(theta)*math.cos(phi))))
+  phi=math.tau*i/n;t=j/rows;theta=(1.83+.25*math.cos(phi))*t
+  px=.111*math.sin(theta)*math.sin(phi)
+  py=1.744+.145*math.cos(theta)+.012*math.sin(phi)*math.sin(theta)**2+.006*math.sin(phi*5)*t**6
+  pz=.008+.135*math.sin(theta)*math.cos(phi)
+  vs.append(xyz((px,py,pz)))
 for j in range(rows):
  for i in range(n):
   a=j*n+i;b=j*n+(i+1)%n;fs.append((a,b,b+n,a+n))
-me=bpy.data.meshes.new('Scalp');me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new('Scalp',me);bpy.context.collection.objects.link(o);add(o,hair)
+me=bpy.data.meshes.new('Layered scalp');me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new('Scalp',me);bpy.context.collection.objects.link(o);add(o,hair)
+for index in range(9):
+ x=-.082+index*.0205
+ centers=[Vector((x*.50,1.884,.026)),Vector((x+.021,1.883,-.035)),Vector((x+.017,1.795,-.125)),Vector((x+.008,1.718+abs(x)*.18+(index%3)*.006,-.139))]
+ vs=[];fs=[];steps=12
+ for j in range(steps+1):
+  t=j/steps
+  p=centers[0]*(1-t)**3+centers[1]*(3*t*(1-t)**2)+centers[2]*(3*t*t*(1-t))+centers[3]*t**3
+  width=.012*math.sin(math.pi*t)**.65
+  for k in [-1,0,1]:vs.append(xyz(p+Vector((width*k,.003*(1-abs(k)),0))))
+ for j in range(steps):
+  a=j*3
+  fs.extend([(a,a+3,a+4,a+1),(a+1,a+4,a+5,a+2)])
+ me=bpy.data.meshes.new('Swept lock');me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new('Hair lock',me);bpy.context.collection.objects.link(o);add(o,hair)
+# Side layers break the helmet silhouette while retaining a readable dark mass.
+for side in [-1,1]:
+ for layer in range(3):
+  pts=[(side*.094,1.829-layer*.028,.018+layer*.025),(side*.130,1.795-layer*.026,-.002+layer*.025),(side*.118,1.737-layer*.018,-.025+layer*.025),(side*.102,1.768-layer*.024,-.034+layer*.025)]
+  o=face_piece('Side hair layer',pts,[(0,1,2,3)] if side<0 else [(3,2,1,0)],hair)
+  solid=o.modifiers.new('Hair volume','SOLIDIFY');solid.thickness=.006;bpy.context.view_layer.objects.active=o;bpy.ops.object.modifier_apply(modifier=solid.name)
 for sign,label in [(-1,'l'),(1,'r')]:
  x=sign*.215
  group='arm_'+label
@@ -167,6 +233,7 @@ for name,objects in parts.items():
    v=o.data.vertices[o.data.loops[loop_index].vertex_index].co
    game=(v.x,v.z,-v.y)
    if name=='head':coord=(game[0]/.24+.5,(game[1]+.15)/.34)
+   elif name=='hair':coord=(math.atan2(game[0],-game[2])/math.tau+.5,(game[1]+1.81-1.64)/.24)
    else:coord=(math.atan2(game[0],-game[2])/math.tau+.5,game[1]*4)
    uv.data[loop_index].uv=coord
  # Recalculate consistently outward normals after joins.
@@ -195,5 +262,8 @@ for obj in [o for o in bpy.data.objects if o.type=='MESH']:
   for loop_index in polygon.loop_indices:
    amount=values[obj.data.loops[loop_index].vertex_index]
    attr.data[loop_index].color=(amount,amount,amount,1)
-bpy.ops.export_scene.gltf(filepath=str(root/'assets/characters/civilian.glb'),export_format='GLB',export_yup=True,export_materials='EXPORT',export_vertex_color='ACTIVE',export_cameras=False,export_lights=False)
+bpy.ops.object.select_all(action='DESELECT')
+for obj in bpy.data.objects:
+ if obj.name in ['head','hair','eye_l','eye_r','hand_l','hand_r']:obj.select_set(True)
+bpy.ops.export_scene.gltf(use_selection=True,filepath=str(root/'assets/characters/civilian.glb'),export_format='GLB',export_yup=True,export_materials='EXPORT',export_vertex_color='ACTIVE',export_cameras=False,export_lights=False)
 print('Civilian mesh kit generated')
