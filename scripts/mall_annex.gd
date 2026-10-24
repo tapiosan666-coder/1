@@ -135,7 +135,7 @@ func _ramp(x: float,bottom: float,top: float,start: float,end: float) -> void:
 
 func _build_basement() -> void:
 	var y := Mall.floor_height(-1)
-	var tiles := ShaderMaterial.new(); tiles.shader = preload("res://assets/terrazzo.gdshader")
+	var tiles := MallFinishes.stone()
 	slab(BASEMENT,y,tiles)
 	Shapes.box(mall,Vector3(-24,y+5,-.0),Vector3(132,.15,48),wall,true)
 	# Outer walls, with a west-side door into the circulation core.

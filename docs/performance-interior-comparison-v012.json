@@ -1,0 +1,88 @@
+{
+  "engine": "Godot 4.6.3 Standard Compatibility",
+  "renderer": "Linux Xorg + Mesa llvmpipe LLVM 19.1.7 software rendering",
+  "baseline_commit": "4e7348c91871d228a81c89712383d9e581150138",
+  "population": 180,
+  "seed": 912,
+  "fixture": "same initial actor fixture used by v0.8-0.11 comparisons; normal updates can run during sampling",
+  "viewport": [
+    1280,
+    800
+  ],
+  "msaa": false,
+  "sun_shadow_distance_m": 85,
+  "warmup_frames_per_case": 12,
+  "sample_frames_per_case": 30,
+  "cat_purchased": false,
+  "limitations": "Sequential cloud software-renderer comparison. Not Windows/NVIDIA GPU performance; not a 300-person continuous-walking benchmark. Short sample and host variability remain.",
+  "results": {
+    "0.11": {
+      "cases": [
+        {
+          "draw_calls": 2357.26666666667,
+          "median_frame_ms": 426.156,
+          "name": "entrance",
+          "p90_frame_ms": 877.579,
+          "primitives": 1602802.0
+        },
+        {
+          "draw_calls": 2019.0,
+          "median_frame_ms": 429.042,
+          "name": "atrium",
+          "p90_frame_ms": 646.024,
+          "primitives": 1677498.4
+        },
+        {
+          "draw_calls": 1425.0,
+          "median_frame_ms": 190.844,
+          "name": "parking",
+          "p90_frame_ms": 215.296,
+          "primitives": 704056.0
+        }
+      ],
+      "sample_frames": 30,
+      "startup_ms": 760.355,
+      "viewport": "(1280, 800)",
+      "warmup_frames": 12
+    },
+    "0.12": {
+      "cases": [
+        {
+          "draw_calls": 2665.26666666667,
+          "median_frame_ms": 415.842,
+          "name": "entrance",
+          "p90_frame_ms": 437.605,
+          "primitives": 1617480.6
+        },
+        {
+          "draw_calls": 2259.0,
+          "median_frame_ms": 403.946,
+          "name": "atrium",
+          "p90_frame_ms": 419.821,
+          "primitives": 1707752.0
+        },
+        {
+          "draw_calls": 1427.0,
+          "median_frame_ms": 165.023,
+          "name": "parking",
+          "p90_frame_ms": 172.57,
+          "primitives": 568760.0
+        }
+      ],
+      "sample_frames": 30,
+      "startup_ms": 763.215,
+      "viewport": "(1280, 800)",
+      "warmup_frames": 12
+    }
+  },
+  "shadow_bias_by_version": {
+    "0.11": {
+      "bias": 0.05,
+      "normal_bias": 0.2
+    },
+    "0.12": {
+      "bias": 0.1,
+      "normal_bias": 1.5
+    }
+  }
+}

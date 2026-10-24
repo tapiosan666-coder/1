@@ -37,7 +37,12 @@ static func build(root: Node3D) -> Dictionary:
 				signature = "material:"+str(material.get_instance_id())
 				if material is ShaderMaterial:
 					signature = "shader:"+material.shader.resource_path
-					for parameter in material.shader.get_shader_uniform_list(): signature += ":"+str(parameter.name)+"="+var_to_str(material.get_shader_parameter(parameter.name))
+					for parameter in material.shader.get_shader_uniform_list():
+						var value: Variant = material.get_shader_parameter(parameter.name)
+						# Compare texture identity, never serialize an embedded image into
+						# every geometry key (the contact atlas has three million bytes).
+						if value is Resource: value = value.resource_path if not value.resource_path.is_empty() else value.get_instance_id()
+						signature += ":"+str(parameter.name)+"="+var_to_str(value)
 				if not material_cache.has(signature): material_cache[signature] = material
 			var arrays: Array = node.mesh.surface_get_arrays(surface_index)
 			var vertices: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]

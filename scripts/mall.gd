@@ -261,6 +261,7 @@ func _ready() -> void:
 	BWing.new().build(self)
 	CWing.new().build(self)
 	RetailPolish.new().build(self)
+	FloorContacts.bake(self)
 	for level in [-1,0,1,2,3]:
 		var cells: Dictionary = {}
 		for rect in plan_regions(level):
@@ -286,8 +287,7 @@ func _build_floor_and_walls() -> void:
 		var merged := Geometry2D.merge_polygons(outline, _polygon(floor_regions[i]))
 		assert(merged.size() == 1, "All public floor regions must form one connected polygon")
 		outline = merged[0]
-	var floor_mat := ShaderMaterial.new()
-	floor_mat.shader = load("res://assets/terrazzo.gdshader")
+	var floor_mat := MallFinishes.stone()
 	var surface := SurfaceTool.new()
 	surface.begin(Mesh.PRIMITIVE_TRIANGLES)
 	var triangles := Geometry2D.triangulate_polygon(outline)

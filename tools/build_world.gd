@@ -17,10 +17,11 @@ func build() -> void:
 	world.set_meta("schema",WorldCache.SCHEMA)
 	world.set_meta("spawn_points",mall.spawn_points); world.set_meta("identity_slots",mall.identity_slots)
 	world.set_meta("render_stats",mall.render_stats); world.set_meta("nav_positions",positions); world.set_meta("nav_edges",edges)
+	world.set_meta("floor_contacts",mall.get_meta("floor_contacts",{}))
 	var packed := PackedScene.new(); assert(packed.pack(world) == OK)
 	DirAccess.make_dir_recursive_absolute("res://assets/world")
 	assert(ResourceSaver.save(packed,WorldCache.PATH,ResourceSaver.FLAG_COMPRESS) == OK)
-	var manifest := {"fingerprint":WorldCache.fingerprint(),"render":mall.render_stats,"nav_points":positions.size(),"nav_edges":edges.size()/2}
+	var manifest := {"fingerprint":WorldCache.fingerprint(),"render":mall.render_stats,"nav_points":positions.size(),"nav_edges":edges.size()/2,"floor_contacts":mall.get_meta("floor_contacts",{})}
 	var file := FileAccess.open("res://assets/world/manifest.json",FileAccess.WRITE); file.store_string(JSON.stringify(manifest,"  ")); file.close()
 	print("WORLD_CACHE: ",JSON.stringify(manifest))
 	quit()

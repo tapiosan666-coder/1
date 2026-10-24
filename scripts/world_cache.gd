@@ -2,7 +2,7 @@ class_name WorldCache
 extends RefCounted
 const PATH := "res://assets/world/mall.scn"
 const SCHEMA := 1
-const INPUTS := ["mall_finishes","display_meshes","retail_polish","mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
+const INPUTS := ["floor_contacts","mall_finishes","display_meshes","retail_polish","mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
 static var navigation: Dictionary = {}
 static func fingerprint() -> String:
 	var source := ""
@@ -23,4 +23,5 @@ static func mount(mall: Node3D) -> void:
 	mall.spawn_points.assign(world.get_meta("spawn_points"))
 	mall.identity_slots.assign(world.get_meta("identity_slots"))
 	mall.render_stats = world.get_meta("render_stats")
+	mall.set_meta("floor_contacts",world.get_meta("floor_contacts",{}))
 	navigation = {"hash":hash(mall.spawn_points),"positions":world.get_meta("nav_positions"),"edges":world.get_meta("nav_edges")}

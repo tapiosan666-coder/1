@@ -67,7 +67,7 @@ static func zone_name(p: Vector3) -> String:
 func build(root: Node3D) -> void:
 	mall = root
 	Shapes.box(mall,Vector3(-362,-.4,-120),Vector3(180,.1,150),Shapes.material(Color("677963")))
-	var paving := ShaderMaterial.new(); paving.shader = preload("res://assets/terrazzo.gdshader")
+	var paving := MallFinishes.stone(.45)
 	for rect in regions(0): Shapes.box(mall,Vector3(rect.get_center().x,-.175,rect.get_center().y),Vector3(rect.size.x,.35,rect.size.y),paving,true)
 	# Warm paving borders and two planted islands leave a clear route around the court.
 	for z in [-147.0,-93.0]: Shapes.box(mall,Vector3(-362,.012,z),Vector3(102,.024,1.2),stone)

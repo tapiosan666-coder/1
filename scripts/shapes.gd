@@ -14,6 +14,8 @@ static func material(color: Color, glow: float = 0.0) -> StandardMaterial3D:
 static func timber() -> ShaderMaterial:
 	var mat := ShaderMaterial.new()
 	mat.shader = preload("res://assets/wood.gdshader")
+	mat.set_shader_parameter("color_map",preload("res://assets/interiors/oak_color.png"))
+	mat.set_shader_parameter("surface_map",preload("res://assets/interiors/oak_surface.png"))
 	return mat
 
 static func box(parent: Node3D, pos: Vector3, size: Vector3, mat: Material, solid: bool = false) -> MeshInstance3D:
@@ -53,6 +55,7 @@ static func cylinder(parent: Node3D, pos: Vector3, radius: float, height: float,
 	mesh.bottom_radius = radius
 	mesh.height = height
 	mesh.radial_segments = 16
+	mesh.rings = 1 # Straight sides need no redundant vertical subdivisions.
 	var node := MeshInstance3D.new()
 	node.mesh = mesh
 	node.material_override = mat

@@ -71,6 +71,8 @@ func _ready() -> void:
 	set_mode("title")
 	if "--capture-people" in OS.get_cmdline_user_args():
 		_capture_people.call_deferred()
+	if "--capture-interiors" in OS.get_cmdline_user_args():
+		_capture_interiors.call_deferred()
 	if "--capture-art" in OS.get_cmdline_user_args():
 		_capture_art.call_deferred()
 	if "--capture-growth" in OS.get_cmdline_user_args():
@@ -563,8 +565,8 @@ func _setup_environment() -> void:
 	settings.background_color = Color("101f29")
 	settings.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 	settings.ambient_light_color = Color("dde4ec")
-	settings.ambient_light_energy = 0.3
-	settings.tonemap_exposure = 0.85
+	settings.ambient_light_energy = 0.38
+	settings.tonemap_exposure = 1.0
 	settings.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 	environment.environment = settings
 	add_child(environment)
@@ -573,8 +575,8 @@ func _setup_environment() -> void:
 	sun.light_color = Color("fff0d1")
 	sun.light_energy = 0.8
 	sun.shadow_enabled = true
-	sun.shadow_bias = .05
-	sun.shadow_normal_bias = .2
+	sun.shadow_bias = .1
+	sun.shadow_normal_bias = 1.5
 	sun.directional_shadow_max_distance = 85
 	add_child(sun)
 	for x in [-22.0, 0.0, 22.0]:
@@ -893,6 +895,17 @@ func _capture_growth() -> void:
 	crowd._render(); hud.notice_time = 0; hud.queue_redraw()
 	await get_tree().process_frame; await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-cat-scan.png")
+	get_tree().quit()
+
+func _capture_interiors() -> void:
+	start_run(300,912); set_physics_process(false); crowd.set_physics_process(false); player.set_physics_process(false)
+	GraphicsOptions.apply(self,"balanced",false); crowd.clock = .4
+	for shot in [["concourse",Vector3(-70,.1,0),Vector3(-10,7,0)],["fashion",Vector3(-57,.1,-4),Vector3(-57,2,-19)],["materials",Vector3(-55,.1,-7),Vector3(-57,.08,-11)],["upper",Vector3(-25,10.975,5.2),Vector3(35,5.5,-6)],["inside",Vector3(-57,.1,-10),Vector3(-57,2,-22)]]:
+		player.position = MallCurve.world(shot[1]); player.camera.look_at(MallCurve.world(shot[2])); crowd._render()
+		hud.player_position = player.position; hud.location_name = Mall.zone_name(player.position); hud.notice_time = 0; hud.queue_redraw()
+		await get_tree().create_timer(.3).timeout; await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("/tmp/fy12-after-%s.png" % shot[0])
+		print("INTERIOR_CAPTURE native ",shot[0]," draws=",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME))
 	get_tree().quit()
 
 func _capture_art() -> void:

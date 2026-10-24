@@ -97,7 +97,7 @@ static func zone_name(p: Vector3) -> String:
 
 func build(root: Node3D) -> void:
 	mall = root
-	floor_mat = ShaderMaterial.new(); floor_mat.shader = preload("res://assets/terrazzo.gdshader")
+	floor_mat = MallFinishes.stone()
 	for level in [0,1,2]:
 		var y := Mall.floor_height(level)
 		for rect in regions(level):
