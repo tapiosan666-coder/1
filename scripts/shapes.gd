@@ -72,3 +72,8 @@ static func sign_text(parent: Node3D, pos: Vector3, message: String, size: int =
 	parent.add_child(label)
 	label.position = pos
 	return label
+
+static func soft_box(parent: Node3D,pos: Vector3,size: Vector3,mat: Material,solid: bool = false) -> MeshInstance3D:
+	var node := box(parent,pos,size,mat,solid)
+	node.mesh = DisplayMeshes.beveled_box(size)
+	return node

@@ -14,7 +14,7 @@ func at(x: float, y: float, d: float) -> Vector3:
 	return Vector3(origin + x, y, side * d)
 
 func box(x: float, y: float, d: float, size: Vector3, material: Material) -> MeshInstance3D:
-	return Shapes.box(parent, at(x,y,d), size, material)
+	return Shapes.soft_box(parent,at(x,y,d),size,material) if size.x < 4 and minf(size.x,minf(size.y,size.z)) > .07 else Shapes.box(parent,at(x,y,d),size,material)
 
 func build(root: Node3D, x: float, facing: int, kind: int) -> void:
 	parent = root

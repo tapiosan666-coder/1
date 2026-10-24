@@ -1,0 +1,43 @@
+{
+  "engine": "Godot 4.6.3 Standard Compatibility",
+  "renderer": "Mesa llvmpipe LLVM 19.1.7 software rendering, Linux",
+  "population": 180,
+  "seed": 912,
+  "fixture": "same initial actor positions/headings/roles used by v0.8 comparison; actors can update during sampling",
+  "scope": "0.10 final art pass; 180-person shared initial fixture, cat not purchased; standard view locations and controlled shadow distance",
+  "viewport": [
+    1280,
+    800
+  ],
+  "msaa": false,
+  "sun_shadow_distance_m": 85,
+  "warmup_frames_per_case": 2,
+  "sample_frames_per_case": 8,
+  "results": {
+    "cases": [
+      {
+        "draw_calls": 2343.0,
+        "median_frame_ms": 442.708,
+        "name": "entrance",
+        "p90_frame_ms": 461.02,
+        "primitives": 1610384.0
+      },
+      {
+        "draw_calls": 2006.0,
+        "median_frame_ms": 411.232,
+        "name": "atrium",
+        "p90_frame_ms": 423.55,
+        "primitives": 1683320.0
+      },
+      {
+        "draw_calls": 1412.0,
+        "median_frame_ms": 179.834,
+        "name": "parking",
+        "p90_frame_ms": 347.04,
+        "primitives": 706768.0
+      }
+    ],
+    "startup_ms": 627.47,
+    "viewport": "(1280, 800)"
+  }
+}

@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.9.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.10.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -48,6 +48,9 @@ C館1階は屋外広場と8店舗、ベンチ・喫茶席。B館1階西端付近
 人数は300人を維持し、30枠をC館へ配置。地図・宝箱の候補にもC館を追加。
 B館地下/屋上・C館の残る階層、写真顔生成、進行セーブ、Steam連携は未実装。UIは日本語です。日本語フォントを同梱しています。
 Windows版はクロスビルド済みで、Windows実機では未検証です。
+0.10では近距離の顔・体格・材質とA館の天井・床・壁・照明を更新しました。
+A館北側ファッション店が最初の作り込み区画。写実品質や8番出口相当を完成した段階ではありません。
+頭部の土台にCC0の人体メッシュを使用し、ライセンスをthird_party/へ同梱しています。
 音声は合成効果音です。外部API・インターネット接続は不要です。
 Godot Engineおよび同梱ライブラリのライセンスはthird_party/をご覧ください。
 """

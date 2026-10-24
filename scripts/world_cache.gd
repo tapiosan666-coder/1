@@ -2,7 +2,7 @@ class_name WorldCache
 extends RefCounted
 const PATH := "res://assets/world/mall.scn"
 const SCHEMA := 1
-const INPUTS := ["mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
+const INPUTS := ["mall_finishes","display_meshes","retail_polish","mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
 static var navigation: Dictionary = {}
 static func fingerprint() -> String:
 	var source := ""

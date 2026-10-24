@@ -1,8 +1,10 @@
 """Original mall civilian mesh kit. Run: blender -b --python tools/build_human.py
-No downloaded models. Godot coordinates below are converted to Blender axes.
+Head derived from the CC0 MakeHuman base mesh; see tools/source_assets/PROVENANCE.json.
+Godot coordinates below are converted to Blender axes.
 """
 import bpy, math
 from mathutils import Vector
+from mathutils.bvhtree import BVHTree
 from pathlib import Path
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
 root=Path(__file__).resolve().parents[1]
@@ -49,7 +51,7 @@ def rings(profile,m,n=32,opening=0):
  return o
 
 group='torso'
-rings([(.84,.155,.105,0),(.89,.17,.11,0),(1.02,.16,.112,0),(1.22,.20,.125,0),(1.35,.235,.11,.005),(1.42,.20,.09,.01),(1.46,.085,.065,0)],cloth,opening=.28)
+rings([(.84,.155,.105,0),(.89,.17,.11,0),(1.02,.16,.112,0),(1.22,.175,.112,0),(1.35,.195,.102,.005),(1.42,.17,.085,.01),(1.46,.085,.065,0)],cloth,opening=.28)
 # T-shirt inset, open jacket edges, shaped lapels and fabric seams.
 rings([(.85,.14,.095,0),(1.0,.145,.1,0),(1.25,.18,.105,0),(1.40,.15,.075,0),(1.43,.055,.052,0)],inner)
 for sign in [-1,1]:
@@ -60,41 +62,53 @@ for sign in [-1,1]:
 for y in [1.12,1.02,.92]:ell((.065,y,-.12),(.006,.006,.003),metal)
 group='neck';rings([(1.43,.055,.05,0),(1.49,.052,.048,0),(1.59,.05,.05,0)],skin)
 group='head'
-rings([(1.54,.025,.025,-.024),(1.56,.05,.043,-.022),(1.60,.075,.071,-.005),(1.66,.092,.085,0),(1.71,.093,.088,.002),(1.77,.09,.085,.007),(1.82,.06,.061,.012),(1.84,.015,.02,.012)],skin,40)
-# Nose bridge, tip, alae and nostrils are modeled, not painted dots.
-ell((0,1.675,-.086),(.014,.045,.018),skin);ell((0,1.647,-.105),(.018,.014,.018),skin)
+# CC0 MakeHuman hm08 head, pinned source and license in tools/source_assets.
+# Keep only body faces above the lower neck, excluding every helper mesh.
+raw=[]; faces=[]; active=False
+for line in (root/'tools/source_assets/makehuman-base.obj').read_text().splitlines():
+ if line.startswith('v '):raw.append(tuple(map(float,line.split()[1:4])))
+ elif line.startswith('g '):active=line[2:]=='body'
+ elif active and line.startswith('f '):
+  face=[int(v.split('/')[0])-1 for v in line.split()[1:]]
+  if all(raw[i][1]>6.25 for i in face):faces.append(face)
+ids=sorted({i for face in faces for i in face}); lookup={old:i for i,old in enumerate(ids)}
+def face_at(v):return (v[0]*.12,1.70+(v[1]-7.2842)*.13,-(v[2]-.45)*.105)
+me=bpy.data.meshes.new('Anatomical head');me.from_pydata([xyz(face_at(raw[i])) for i in ids],[],[tuple(lookup[i] for i in reversed(face)) for face in faces]);me.update()
+o=bpy.data.objects.new('Head',me);bpy.context.collection.objects.link(o);add(o,skin);o.data.materials.append(lip)
+for polygon,face in zip(me.polygons,faces):
+ center=[sum(raw[i][j] for i in face)/len(face) for j in range(3)]
+ if 6.60<center[1]<6.68 and abs(center[0])<.24 and center[2]>1.5:polygon.material_index=1
+# Small eyeballs sit behind sculpted lids, with an iris, pupil and moist highlight.
 for sign in [-1,1]:
- ell((sign*.014,1.64,-.097),(.011,.009,.012),skin);ell((sign*.012,1.636,-.105),(.005,.003,.004),lip)
- ell((sign*.095,1.69,.008),(.018,.034,.021),skin)
- ell((sign*.104,1.69,-.006),(.008,.021,.009),lip)
- # Almond eyelids, recessed whites and dark upper lash line.
- ell((sign*.039,1.697,-.079),(.028,.014,.009),white)
- ell((sign*.039,1.696,-.088),(.011,.012,.003),iris)
- ell((sign*.039,1.696,-.091),(.005,.009,.002),black)
- ell((sign*.036,1.701,-.094),(.0025,.0025,.001),white)
- tube([(sign*.015,1.698,-.086),(sign*.038,1.709,-.09),(sign*.063,1.7,-.078)],.003,black)
- tube([(sign*.016,1.688,-.084),(sign*.04,1.684,-.088),(sign*.062,1.693,-.079)],.002,skin)
- tube([(sign*.017,1.727,-.082),(sign*.04,1.731,-.084),(sign*.066,1.719,-.074)],.005,hair)
-# Lip bow and subtle chin volume.
-tube([(-.025,1.603,-.071),(-.009,1.605,-.079),(0,1.602,-.081),(.009,1.605,-.079),(.025,1.603,-.071)],.003,lip)
-tube([(-.018,1.6,-.075),(0,1.596,-.081),(.018,1.6,-.075)],.0035,lip)
-# Coherent swept hair cap and tapered locks, rather than separate balls.
+ ex=sign*.3077*.12; ey=1.70; ez=-(1.2453-.45)*.105
+ ell((ex,ey,ez),(.0215,.010,.027),white)
+ ell((ex,ey,ez-.029),(.0085,.0085,.002),iris)
+ ell((ex,ey,ez-.032),(.0045,.005,.001),black)
+ ell((ex-.003,ey+.004,ez-.0335),(.0018,.0018,.0008),white)
+ tube([(sign*.017,1.735,-.106),(sign*.038,1.744,-.112),(sign*.063,1.735,-.103)],.0027,hair)
+# A coherent short side-parted cut, with a scalp surface and smooth swept locks.
 group='hair'
-rings([(1.75,.094,.078,.022),(1.80,.10,.09,.018),(1.85,.085,.078,.022),(1.878,.04,.043,.018),(1.88,.006,.009,.018)],hair,32)
+vs=[];fs=[]; n=40; rows=12
+for j in range(rows+1):
+ for i in range(n):
+  phi=math.tau*i/n; theta=(1.65+.35*math.cos(phi))*j/rows
+  vs.append(xyz((.111*math.sin(theta)*math.sin(phi),1.74+.145*math.cos(theta),.015+.118*math.sin(theta)*math.cos(phi))))
+for j in range(rows):
+ for i in range(n):
+  a=j*n+i;b=j*n+(i+1)%n;fs.append((a,b,b+n,a+n))
+me=bpy.data.meshes.new('Scalp');me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new('Scalp',me);bpy.context.collection.objects.link(o);add(o,hair)
 for i in range(9):
- x=(i-4)*.022
- # Each lock is a smooth pointed prism following the forehead.
- vs=[(x-.016,1.825,-.056),(x+.016,1.825,-.056),(x+.014,1.775,-.095),(x-.004,1.737+(i%3)*.01,-.091),(x-.018,1.775,-.09),(x,1.805,-.105)]
- me=bpy.data.meshes.new('HairLock');me.from_pydata([xyz(v) for v in vs],[],[(0,1,5),(1,2,5),(2,3,5),(3,4,5),(4,0,5),(0,4,3,2,1)]);me.update();o=bpy.data.objects.new('Lock',me);bpy.context.collection.objects.link(o);add(o,hair)
-for sign in [-1,1]:ell((sign*.092,1.737,.01),(.014,.045,.05),hair)
+ x=-.07+i*.017
+ lock=ell((x,1.802-abs(x)*.12,-.106),(.020,.048,.023),hair)
+ lock.rotation_euler[1]=-.42
 for sign,label in [(-1,'l'),(1,'r')]:
- x=sign*.255
+ x=sign*.215
  group='arm_'+label
- rings([(1.11,.059,.065,0),(1.19,.067,.072,0),(1.35,.075,.075,0),(1.42,.055,.061,0)],cloth)
+ rings([(1.11,.046,.052,0),(1.19,.054,.059,0),(1.35,.064,.065,0),(1.42,.052,.055,0)],cloth)
  # Move the section to shoulder x after construction.
  for o in parts[group]:o.location.x+=x
  group='forearm_'+label
- rings([(.83,.043,.045,0),(.87,.05,.05,0),(1.0,.059,.06,0),(1.13,.056,.06,0)],cloth)
+ rings([(.83,.035,.039,0),(.87,.04,.043,0),(1.0,.047,.05,0),(1.13,.046,.052,0)],cloth)
  for o in parts[group]:o.location.x+=x
  cube((x,.85,0),(.092,.035,.10),inner,.006)
  group='hand_'+label
@@ -111,13 +125,13 @@ for sign,label in [(-1,'l'),(1,'r')]:
  for o in parts[group]:o.location.x+=sign*.105
  tube([(sign*.105+.06,.15,0),(sign*.105+.065,.30,0),(sign*.105+.07,.42,0)],.002,black)
  group='shoe_'+label
- ell((sign*.105,.065,-.035),(.078,.063,.145),shoe)
- cube((sign*.105,.025,-.033),(.15,.035,.27),black,.016)
+ ell((sign*.105,.065,-.035),(.067,.06,.14),shoe)
+ cube((sign*.105,.025,-.033),(.135,.032,.265),black,.016)
  for z in [-.03,-.055,-.08]:tube([(sign*.105-.027,.112,z),(sign*.105+.027,.112,z)],.0025,inner)
 # Put each joint section in its own local coordinates. glTF retains multi-materials.
 centers={'torso':(0,1.13,0),'head':(0,1.7,0),'hair':(0,1.81,0),'neck':(0,1.52,0)}
 for sign,label in [(-1,'l'),(1,'r')]:
- for part,y in [('arm',1.27),('forearm',.98),('hand',.79)]:centers[part+'_'+label]=(sign*.255,y,0)
+ for part,y in [('arm',1.27),('forearm',.98),('hand',.79)]:centers[part+'_'+label]=(sign*.215,y,0)
  for part,y,z in [('leg',.62,0),('shin',.22,0),('shoe',.08,-.035)]:centers[part+'_'+label]=(sign*.105,y,z)
 for name,objects in parts.items():
  bpy.ops.object.select_all(action='DESELECT')
@@ -128,5 +142,26 @@ for name,objects in parts.items():
  for v in o.data.vertices:v.co-=center
  # Recalculate consistently outward normals after joins.
  bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_all(action='SELECT');bpy.ops.mesh.normals_make_consistent(inside=False);bpy.ops.object.mode_set(mode='OBJECT')
-bpy.ops.export_scene.gltf(filepath=str(root/'assets/characters/civilian.glb'),export_format='GLB',export_yup=True,export_materials='EXPORT',export_cameras=False,export_lights=False)
+# Bake local self-occlusion into vertex data, without runtime SSAO or image assets.
+head=bpy.data.objects['head']
+bvh=BVHTree.FromObject(head,bpy.context.evaluated_depsgraph_get())
+values=[]
+for vertex in head.data.vertices:
+ n=vertex.normal.normalized(); u=n.cross(Vector((0,0,1)))
+ if u.length<.01:u=n.cross(Vector((0,1,0)))
+ u.normalize();v=n.cross(u); blocked=0.0
+ for i in range(24):
+  z=(i+.5)/24; a=i*2.3999632297; r=math.sqrt(1-z*z)
+  direction=(u*(math.cos(a)*r)+v*(math.sin(a)*r)+n*z).normalized()
+  hit,normal,index,distance=bvh.ray_cast(vertex.co+n*.0007,direction,.09)
+  if hit is not None:blocked+=(1-distance/.09)
+ values.append(max(.50,1-blocked/24))
+for obj in [o for o in bpy.data.objects if o.type=='MESH']:
+ attr=obj.data.color_attributes.new(name='Occlusion',type='FLOAT_COLOR',domain='CORNER')
+ obj.data.color_attributes.active_color=attr
+ for polygon in obj.data.polygons:
+  for loop_index in polygon.loop_indices:
+   amount=values[obj.data.loops[loop_index].vertex_index] if obj==head else 1.0
+   attr.data[loop_index].color=(amount,amount,amount,1)
+bpy.ops.export_scene.gltf(filepath=str(root/'assets/characters/civilian.glb'),export_format='GLB',export_yup=True,export_materials='EXPORT',export_vertex_color='ACTIVE',export_cameras=False,export_lights=False)
 print('Civilian mesh kit generated')

@@ -140,7 +140,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	for side in [-1, 1]:
 		var suffix := "_l" if side < 0 else "_r"
 		for item in [["arm",1.27], ["forearm",.98], ["hand",.79]]:
-			offsets[item[0] + suffix] = Vector3(side * .255, item[1], 0)
+			offsets[item[0] + suffix] = Vector3(side * .215, item[1], 0)
 		for item in [["leg",.62,0], ["shin",.22,0], ["shoe",.08,-.035]]:
 			offsets[item[0] + suffix] = Vector3(side * .105, item[1], item[2])
 	for node in kit.find_children("*", "MeshInstance3D", true, false):
@@ -151,15 +151,24 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		for surface in mesh.get_surface_count():
 			var material: StandardMaterial3D = mesh.surface_get_material(surface).duplicate()
 			var tag := material.resource_name
+			var result: Material = material
 			if tag.begins_with("Skin"):
-				material.albedo_color = skin_color
+				material.albedo_color = skin_color; material.roughness = .55
+				if title == "head":
+					var skin := ShaderMaterial.new(); skin.shader = preload("res://assets/skin.gdshader")
+					skin.set_shader_parameter("skin_tint",skin_color); result = skin
 			elif tag.begins_with("Hair"):
-				material.albedo_color = hair_color
+				var hair := ShaderMaterial.new(); hair.shader = preload("res://assets/hair.gdshader")
+				hair.set_shader_parameter("hair_tint",hair_color); result = hair
 			elif tag.begins_with("Cloth"):
-				material.albedo_color = Color.WHITE
-				material.vertex_color_use_as_albedo = true
-			material.roughness = .8
-			mesh.surface_set_material(surface, material)
+				var fabric := ShaderMaterial.new(); fabric.shader = preload("res://assets/fabric.gdshader"); result = fabric
+			elif tag.begins_with("Lip"):
+				material.albedo_color = skin_color.lerp(Color("805148"),.45); material.roughness = .65
+			elif tag.begins_with("Eye") or tag.begins_with("Iris"):
+				material.roughness = .22
+			else: material.roughness = .75
+			mesh.surface_set_material(surface,result)
+
 		var size := Vector3(face_width, 1, 1) if title in ["head", "hair"] else Vector3.ONE
 		_instance_part(title, mesh, offsets[title], size, palette)
 	kit.free()
@@ -189,6 +198,7 @@ func _instance_part(title: String, mesh: Mesh, offset: Vector3, instance_scale: 
 	var instances := MultiMesh.new()
 	instances.transform_format = MultiMesh.TRANSFORM_3D
 	instances.use_colors = true
+	instances.use_custom_data = true
 	# Explicit sector bounds avoid camera-near clipping of animated instance groups.
 	instances.custom_aabb = AABB(Vector3(-430,-12,-90),Vector3(590,45,230))
 	instances.mesh = mesh
@@ -280,13 +290,14 @@ func _render(_force: bool = false) -> void:
 			var at := positions[id]
 			if death_times[id] >= 0: at.y -= pow(death_times[id]/.8,2)*4
 			mm.set_instance_transform(index,Transform3D(Basis(Vector3.UP,headings[id]),at))
-			mm.set_instance_custom_data(index,clothing_palette[id%clothing_palette.size()].srgb_to_linear())
+			mm.set_instance_custom_data(index,clothing_palette[id%clothing_palette.size()])
 	for part in parts:
 		var instances: MultiMesh = part.instances
 		instances.visible_instance_count = detailed_ids.size(); instances.custom_aabb = bounds
 		for slot in detailed_ids.size():
 			var id := detailed_ids[slot]
-			instances.set_instance_color(slot,part.palette[id%part.palette.size()] if not part.palette.is_empty() else Color.WHITE)
+			instances.set_instance_color(slot,Color.WHITE)
+			instances.set_instance_custom_data(slot,part.palette[id%part.palette.size()] if not part.palette.is_empty() else Color.WHITE)
 			var role := "walking" if attracted.has(id) else roles[id]
 			var motion: Dictionary = motions[id]
 			var hidden: bool = death_times[id] > .8 or (part.name in ["apron","badge"] and role != "staff")

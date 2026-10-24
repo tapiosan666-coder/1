@@ -8,7 +8,7 @@ static func segment(top: Vector3,bottom: Vector3) -> Basis:
 	return Basis(x,y,x.cross(y).normalized())
 
 static func arm(side: float,target: Vector3) -> Dictionary:
-	var shoulder := Vector3(side*.255,1.4,0)
+	var shoulder := Vector3(side*.215,1.4,0)
 	var difference := target-shoulder
 	var distance := clampf(difference.length(),.08,.585)
 	var direction := difference.normalized()
@@ -23,8 +23,8 @@ static func arm(side: float,target: Vector3) -> Dictionary:
 
 static func sample(role: String,activity: String,time: float,id: int) -> Dictionary:
 	var phase := time+id*.73
-	var left := Vector3(-.255,.83,0)
-	var right := Vector3(.255,.83,0)
+	var left := Vector3(-.215,.83,0)
+	var right := Vector3(.215,.83,0)
 	var drink := 0.0
 	var book := (activity == "book" or role == "reading") and role in ["reading","browsing"]
 	if role in ["reading","browsing"]:

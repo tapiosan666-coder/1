@@ -69,6 +69,8 @@ func _ready() -> void:
 	# A preview crowd shares the exact same identity model as a playable run.
 	_create_run(300, 24)
 	set_mode("title")
+	if "--capture-art" in OS.get_cmdline_user_args():
+		_capture_art.call_deferred()
 	if "--capture-growth" in OS.get_cmdline_user_args():
 		_capture_growth.call_deferred()
 	if "--capture-c-wing" in OS.get_cmdline_user_args():
@@ -558,8 +560,8 @@ func _setup_environment() -> void:
 	settings.sky = sky
 	settings.background_color = Color("101f29")
 	settings.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-	settings.ambient_light_color = Color("e2e7d6")
-	settings.ambient_light_energy = 0.32
+	settings.ambient_light_color = Color("dde4ec")
+	settings.ambient_light_energy = 0.3
 	settings.tonemap_exposure = 0.85
 	settings.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 	environment.environment = settings
@@ -569,16 +571,16 @@ func _setup_environment() -> void:
 	sun.light_color = Color("fff0d1")
 	sun.light_energy = 0.8
 	sun.shadow_enabled = true
-	sun.shadow_bias = .25
-	sun.shadow_normal_bias = 2.0
+	sun.shadow_bias = .05
+	sun.shadow_normal_bias = .2
 	sun.directional_shadow_max_distance = 85
 	add_child(sun)
 	for x in [-22.0, 0.0, 22.0]:
 		var light := OmniLight3D.new()
 		light.position = Vector3(x, 5, 0)
 		light.omni_range = 27
-		light.light_color = Color("cfe7d7")
-		light.light_energy = 0.85
+		light.light_color = Color("fff1df")
+		light.light_energy = 0.45
 		add_child(light)
 
 func _capture() -> void:
@@ -889,4 +891,17 @@ func _capture_growth() -> void:
 	crowd._render(); hud.notice_time = 0; hud.queue_redraw()
 	await get_tree().process_frame; await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-cat-scan.png")
+	get_tree().quit()
+
+func _capture_art() -> void:
+	start_run(300,912); set_physics_process(false); crowd.set_physics_process(false); player.set_physics_process(false)
+	GraphicsOptions.apply(self,"balanced",false)
+	# Development-only comparison subject; normal runs keep their original positions.
+	crowd.positions[0] = MallCurve.world(Vector3(-57,0,-13)); crowd.headings[0] = PI; crowd.roles[0] = "walking"; crowd.waits[0] = 30
+	for shot in [["close",Vector3(-57,.1,-12),Vector3(-57,1.69,-13)],["person",Vector3(-57,.1,-10.7),Vector3(-57,1.55,-13)],["atrium",Vector3(-70,.1,0),Vector3(-10,7,0)],["fashion",Vector3(-57,.1,-4),Vector3(-57,2,-19)],["upper",Vector3(-25,10.975,5.2),Vector3(35,5.5,-6)]]:
+		player.position = MallCurve.world(shot[1]); player.camera.look_at(MallCurve.world(shot[2])); crowd._render()
+		hud.player_position = player.position; hud.location_name = Mall.zone_name(player.position); hud.notice_time = 0; hud.queue_redraw()
+		await get_tree().create_timer(.3).timeout; await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("/tmp/fy10-after-%s.png" % shot[0])
+		print("ART_CAPTURE native ",shot[0]," draws=",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME))
 	get_tree().quit()

@@ -26,7 +26,7 @@ var spawn_points: Array[Vector3] = []
 var identity_slots: Array[Dictionary] = []
 var outline := PackedVector2Array()
 var render_stats: Dictionary = {}
-var chalk := Shapes.material(Color("d8d6cf"))
+var chalk := MallFinishes.plaster(Color("d8d6cf"))
 var dark := Shapes.material(Color("25363d"))
 var stone := Shapes.material(Color("88918d"))
 var wood := Shapes.timber()
@@ -83,6 +83,10 @@ static func prepare_plan() -> void:
 			else:
 				obstacles.append(Rect2(x-7.5,-22.5 if side < 0 else 21.2,12,1.3))
 			upper_obstacles.append_array(obstacles.slice(obstacle_start))
+	for x in [-64.5,-49.5]:
+		var plinth := Rect2(x-.75,-10.85,1.5,1.7)
+		obstacles.append(plinth); upper_obstacles.append(plinth)
+
 	for px in [-84.0,-76.0]:
 		obstacles.append(Rect2(px-1.0,-31.5,2,1))
 		obstacles.append(Rect2(px-.3,-30.2,.6,.6))
@@ -256,6 +260,7 @@ func _ready() -> void:
 	MallAnnex.new().build(self)
 	BWing.new().build(self)
 	CWing.new().build(self)
+	RetailPolish.new().build(self)
 	for level in [-1,0,1,2,3]:
 		var cells: Dictionary = {}
 		for rect in plan_regions(level):
@@ -378,7 +383,7 @@ func _build_shops() -> void:
 			var light := OmniLight3D.new()
 			add_child(light)
 			light.position = Vector3(x, 3.4, side * 16)
-			light.light_color = Color("ffdfbc")
+			light.light_color = Color("fff0dd")
 			light.light_energy = 0.65
 			light.omni_range = 11
 
@@ -488,10 +493,10 @@ func _tree(p: Vector3) -> void:
 	add_child(canopy)
 
 func _glass() -> StandardMaterial3D:
-	var material := Shapes.material(Color(.64,.79,.82,.18))
+	var material := Shapes.material(Color(.83,.87,.88,.12))
 	material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 	material.roughness = .12
-	material.metallic = .2
+	material.metallic = .05
 	return material
 
 func _build_frontage(x: float, side: int, kind: int) -> void:
