@@ -30,6 +30,7 @@ var beacon: Node3D
 var selected_skin := Color("cfaa89")
 var selected_hair := Color("33312c")
 var selected_width := 1.0
+var graphics_choice := "balanced"
 
 func _ready() -> void:
 	_configure_input()
@@ -56,11 +57,17 @@ func _ready() -> void:
 	hud.restart_pressed.connect(func(): start_run())
 	hud.skill_pressed.connect(buy_skill)
 	hud.item_selected.connect(_select_item)
+	hud.graphics_selected.connect(_select_graphics)
+	hud.adapter_name = RenderingServer.get_video_adapter_name()
+	if hud.adapter_name.is_empty(): hud.adapter_name = "取得できません"
+	graphics_choice = GraphicsOptions.load_choice()
 	hud.travel_pressed.connect(fast_travel)
 	hud.exit_pressed.connect(func(): get_tree().quit())
 	# A preview crowd shares the exact same identity model as a playable run.
-	_create_run(180, 24)
+	_create_run(300, 24)
 	set_mode("title")
+	if "--capture-b-wing" in OS.get_cmdline_user_args():
+		_capture_b_wing.call_deferred()
 	if "--capture-annex" in OS.get_cmdline_user_args():
 		_capture_annex.call_deferred()
 	if "--capture-bag" in OS.get_cmdline_user_args():
@@ -103,6 +110,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	caches = CacheField.new(); effects.add_child(caches); caches.setup(loot)
 	speech = NpcSpeech.new(); effects.add_child(speech)
 	hud.loot = loot
+	GraphicsOptions.apply(self,graphics_choice,false)
 	player.cart_boost = 1
 	player.cart.visible = false
 	hud.run = run
@@ -124,7 +132,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	hud.notice_time = 0
 	hud.hit_time = 0
 
-func start_run(count: int = 180, run_seed: int = -1) -> void:
+func start_run(count: int = 300, run_seed: int = -1) -> void:
 	_create_run(count, run_seed)
 	player.position = Mall.ENTRANCE
 	player.rotation = Vector3(0, -PI / 2, 0)
@@ -135,6 +143,7 @@ func start_run(count: int = 180, run_seed: int = -1) -> void:
 
 func set_mode(mode: String) -> void:
 	if is_instance_valid(speech): speech.dismiss()
+	hud.player_position = player.position
 	hud.show_mode(mode)
 	player.enabled = mode == "play"
 	_update_equipment()
@@ -780,4 +789,33 @@ func _capture_annex() -> void:
 	set_mode("map")
 	await get_tree().create_timer(.3).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-parking-map.png")
+	get_tree().quit()
+
+func _select_graphics(choice: String) -> void:
+	graphics_choice = choice
+	GraphicsOptions.apply(self,choice)
+	hud.show_mode("pause")
+
+func _capture_b_wing() -> void:
+	start_run(300,912)
+	player.set_physics_process(false)
+	for shot in [
+		["skybridge",Vector3(-115,5.625,-5.5),Vector3(-180,6.8,-5.5)],
+		["b-concourse",Vector3(-200,.1,0),Vector3(-260,8,0)],
+		["b-court",Vector3(-234,.1,1),Vector3(-234,7.5,21)],
+		["b-shop",Vector3(-302,.1,-10),Vector3(-302,1.5,-22)],
+		["b-cinema",Vector3(-391,10.975,1),Vector3(-415.6,15.1,0)],
+		["b-lounge",Vector3(-376,5.625,0),Vector3(-402,6.8,0)]
+	]:
+		player.position = shot[1]; player.camera.look_at(shot[2])
+		await get_tree().create_timer(.5).timeout
+		hud.notice_time = 0; hud.queue_redraw()
+		await get_tree().process_frame; await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-%s.png" % shot[0])
+	set_mode("map"); hud.set_map_floor(2)
+	await get_tree().create_timer(.2).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-b-map.png")
+	set_mode("pause")
+	await get_tree().create_timer(.2).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-graphics.png")
 	get_tree().quit()

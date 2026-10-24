@@ -78,6 +78,7 @@ func run_tests() -> void:
 	_test_motion()
 	await test_loot(game)
 	game.queue_free(); await process_frame
+	await create_timer(.2).timeout
 	print("EXPANSION RESULT: %d checks, %d failures" % [checks,failures]); quit(1 if failures else 0)
 
 func walk_to(game: Node3D,destination: Vector3,seconds: float) -> bool:

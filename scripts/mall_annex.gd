@@ -88,7 +88,7 @@ func _build_core() -> void:
 		var y := Mall.floor_height(level)
 		var height := Mall.floor_height(level+1)-y if level < 3 else 4.2
 		for region in [CORE_FRONT,CORE_LOBBY]: slab(region,y,wall)
-		if level != 0: Shapes.box(mall,Vector3(-110,y+.65,-4.5),Vector3(.1,1.25,3),metal,true)
+		if level not in [0,1]: Shapes.box(mall,Vector3(-110,y+.65,-4.5),Vector3(.1,1.25,3),metal,true)
 		# Edges of the front landing leave both flights open.
 		for span in [[-110.0,-107.4],[-104.6,-101.4],[-98.6,-95.0]]:
 			Shapes.box(mall,Vector3((span[0]+span[1])*.5,y+.65,-6),Vector3(span[1]-span[0],1.25,.10),metal,true)
@@ -96,7 +96,7 @@ func _build_core() -> void:
 		for x in [-112.0,-92.0]:
 			for span in [[-24.0,-8.0],[-3.0,0.0]]:
 				Shapes.box(mall,Vector3(x,y+height/2,(span[0]+span[1])*.5),Vector3(.25,height,span[1]-span[0]),wall,true)
-			if x == -112 and level != 0: Shapes.box(mall,Vector3(x,y+height/2,-5.5),Vector3(.25,height,5),wall,true)
+			if x == -112 and level not in [0,1]: Shapes.box(mall,Vector3(x,y+height/2,-5.5),Vector3(.25,height,5),wall,true)
 		Shapes.box(mall,Vector3(-102,y+height/2,-24),Vector3(20,height,.25),wall,true)
 		Shapes.box(mall,Vector3(-102,y+height/2,0),Vector3(20,height,.25),wall,true)
 		Shapes.box(mall,Vector3(-93.5,y+2.2,-.18),Vector3(2.4,1.1,.16),dark)
@@ -196,7 +196,7 @@ func _build_parking() -> void:
 	slab(PARKING,0,Shapes.material(Color("535d60")))
 	slab(Rect2(-120,-8,10,5),0,wall)
 	# Perimeter barrier and pedestrian route remain separate from the parking bays.
-	for rect in [Rect2(-174,-38,58,.2),Rect2(-174,43.8,58,.2),Rect2(-174,-38,.2,82),Rect2(-116.2,-38,.2,30),Rect2(-116.2,-3,.2,47)]:
+	for rect in [Rect2(-174,-38,58,.2),Rect2(-174,43.8,58,.2),Rect2(-174,-38,.2,30),Rect2(-174,-3,.2,47),Rect2(-116.2,-38,.2,30),Rect2(-116.2,-3,.2,47)]:
 		Shapes.box(mall,Vector3(rect.get_center().x,.7,rect.get_center().y),Vector3(rect.size.x,1.4,rect.size.y),metal,true)
 	for row in [-28.0,-14.0,14.0,28.0]:
 		for col in 15:

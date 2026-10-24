@@ -2,6 +2,7 @@ class_name FindHUD
 extends Control
 
 signal item_selected(key: String)
+signal graphics_selected(key: String)
 signal play_pressed
 signal resume_pressed
 signal restart_pressed
@@ -9,6 +10,12 @@ signal travel_pressed(key: String)
 signal skill_pressed(key: String)
 signal exit_pressed
 var mode := "title"
+var map_level := 0
+var graphics_choice := "balanced"
+var adapter_name := ""
+var redraw_clock := 0.0
+var cached_polygons: Dictionary = {}
+var cached_polygon_bounds: Dictionary = {}
 var loot: RunLoot
 var nearby_cache := -1
 var run: IdentityRun
@@ -53,7 +60,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	notice_time = maxf(0, notice_time - delta)
 	hit_time = maxf(0, hit_time - delta)
-	queue_redraw()
+	redraw_clock += delta
+	if redraw_clock >= 1.0/30 and mode in ["play","title"]:
+		redraw_clock = 0
+		queue_redraw()
 
 func message(text: String) -> void:
 	notice = text
@@ -86,7 +96,7 @@ func _draw() -> void:
 		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
 		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 0.7 ／ 地下・1〜3階・屋上・駐車場 ／ 180人", Vector2(82, 860), 13, muted)
+		_text("日本語開発版 0.8 ／ A・B館を探索 ／ 300人", Vector2(82, 860), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -171,6 +181,8 @@ func _draw() -> void:
 	elif mode == "pause":
 		_text("ひと休みしましょう。", Vector2(460, 325), 52)
 		_text("準備ができたら、探索を再開できます。", Vector2(463, 370), 20, muted)
+		_text("画質設定 / 軽量は影と描画解像度を下げます",Vector2(460,650),16,muted)
+		_text("使用中のGPU："+adapter_name,Vector2(140,790),14,muted)
 	elif mode == "win":
 		_text("本当の自分を見つけた。", Vector2(330, 300), 62, lime)
 		_text("同じ顔の人々の中に、あなたは確かにいた。", Vector2(398, 354), 22)
@@ -180,31 +192,34 @@ func _draw() -> void:
 		_text("探索アイテム / バッグ",Vector2(70,150),40)
 		_text("宝箱で入手した使い切りアイテムです。選んで探索に戻り、Xで使用します。",Vector2(72,193),17,muted)
 	elif mode == "map":
-		_text("A館%s / フロアマップ" % Mall.floor_title(Mall.level_at(player_position.y)), Vector2(100, 160), 40)
+		_text("A・B館 / %sの案内図" % Mall.floor_title(map_level), Vector2(100, 160), 40)
 		_text("訪問した案内ポイントのみ移動できます ／ Tabでファストトラベルを購入", Vector2(102, 201), 16, lime)
-		var frame := Rect2(200, 250, 1040, 375)
+		var frame := Rect2(100, 270, 1240, 325)
 		_draw_plan(frame)
-		if Mall.level_at(player_position.y) == 0:
+		if map_level == 0:
 			_text("フードコート", _plan_point(Vector2(49, -47),frame), 16)
 			_text("食品スーパー", _plan_point(Vector2(7,36),frame),16)
 			_text("お手洗い", _plan_point(Vector2(-87, 42),frame), 16)
 			_text("中央通路", _plan_point(Vector2(-5, 3),frame), 16)
 			_text("西駐車場",_plan_point(Vector2(-168,4),frame),16)
-		elif Mall.level_at(player_position.y) == -1:
+		elif map_level == -1:
 			_text("食品街",_plan_point(Vector2(-78,0),frame),16)
-		elif Mall.level_at(player_position.y) == 3:
+		elif map_level == 3:
 			_text("庭園・休憩",_plan_point(Vector2(-82,-16),frame),16)
 		_text("西側階段",_plan_point(Vector2(-111,-18),frame),13)
-		draw_circle(_map_point(Vector2(player_position.x, player_position.z), frame), 6, lime)
+		if map_level == Mall.level_at(player_position.y): draw_circle(_map_point(Vector2(player_position.x, player_position.z), frame), 6, lime)
 		for key in Mall.HUBS:
 			var p: Vector3 = Mall.hub_position(key)
-			if Mall.level_at(p.y) != Mall.level_at(player_position.y): continue
+			if Mall.level_at(p.y) != map_level: continue
 			draw_circle(_map_point(Vector2(p.x,p.z),frame),5,lime if run.visited.has(key) else muted)
-		_text("地下・屋上は西側階段 ／ 駐車場は西側階段の1階から",Vector2(420,646),15,muted)
+		if map_level in [0,1,2]:
+			_text("B館",_plan_point(Vector2(-340,0),frame),16)
+			_text("B館奥の売り場",_plan_point(Vector2(-414,0),frame),13)
+		_text("A・B館は2階連絡通路、または1階の駐車場側歩行路で移動できます",Vector2(360,626),15,muted)
 
 func _draw_minimap() -> void:
 	draw_rect(Rect2(30, 712, 250, 153), Color(0.035, 0.07, 0.085, 0.9))
-	_text("現在地 / A館%s" % Mall.floor_title(Mall.level_at(player_position.y)), Vector2(48, 738), 13, lime)
+	_text("現在地 / %s%s" % [Mall.building_name(player_position),Mall.floor_title(Mall.level_at(player_position.y))], Vector2(48, 738), 13, lime)
 	var frame := Rect2(49, 751, 212, 86)
 	_draw_plan(frame)
 	var here := _map_point(Vector2(player_position.x, player_position.z), frame)
@@ -216,7 +231,7 @@ func _plan_point(p: Vector2,frame: Rect2) -> Vector2:
 	return _map_point(Vector2(q.x,q.z),frame)
 
 func _map_point(p: Vector2, frame: Rect2) -> Vector2:
-	var level := Mall.level_at(player_position.y)
+	var level := map_level if mode == "map" else Mall.level_at(player_position.y)
 	if not cached_map_bounds.has(level):
 		var bounds := Rect2()
 		for region in Mall.plan_regions(level):
@@ -225,12 +240,14 @@ func _map_point(p: Vector2, frame: Rect2) -> Vector2:
 				else: bounds = bounds.expand(at)
 		cached_map_bounds[level] = bounds.grow(6)
 	var bounds: Rect2 = cached_map_bounds[level]
+	if frame.size.x < 400: bounds = Rect2(Vector2(player_position.x-60,player_position.z-30),Vector2(120,60))
 	var scale_factor := minf(frame.size.x / bounds.size.x, frame.size.y / bounds.size.y)
 	return frame.position + (frame.size - bounds.size * scale_factor) / 2 + (p - bounds.position) * scale_factor
 
 func _draw_plan(frame: Rect2) -> void:
 	draw_rect(frame, Color("14272d"))
-	var level := Mall.level_at(player_position.y)
+	var level := map_level if mode == "map" else Mall.level_at(player_position.y)
+	for region in BWing.regions(level): _draw_region(region,frame,Color("6b807e"),true)
 	_draw_region(Rect2(-112,-24,22,24),frame,Color("344b50"),true)
 	for x in [-107.2,-101.2]: _draw_region(Rect2(x,-20,2.4,14),frame,Color("758a84"))
 	for region in MallAnnex.regions(level): _draw_region(region,frame,Color("7e897a"),true)
@@ -252,13 +269,26 @@ func _draw_plan(frame: Rect2) -> void:
 				_text(Mall.CATEGORIES[Mall.SHOP_CENTERS.find(x)],_map_point(Vector2(point.x,point.z),frame),10)
 
 func _draw_region(rect: Rect2,frame: Rect2,color: Color,border: bool = false) -> void:
+	if not cached_polygons.has(rect):
+		cached_polygons[rect] = MallCurve.polygon(rect)
+		var bounds := Rect2(cached_polygons[rect][0],Vector2(.001,.001))
+		for point in cached_polygons[rect]: bounds = bounds.expand(point)
+		cached_polygon_bounds[rect] = bounds
+	if frame.size.x < 400 and not Rect2(Vector2(player_position.x-60,player_position.z-30),Vector2(120,60)).intersects(cached_polygon_bounds[rect]): return
 	var polygon := PackedVector2Array()
-	for point in MallCurve.polygon(rect): polygon.append(_map_point(point,frame))
-	draw_colored_polygon(polygon,color)
-	if border:
+	for point in cached_polygons[rect]: polygon.append(_map_point(point,frame))
+	var limit := PackedVector2Array([frame.position,Vector2(frame.end.x,frame.position.y),frame.end,Vector2(frame.position.x,frame.end.y)])
+	for clipped in Geometry2D.intersect_polygons(polygon,limit): draw_colored_polygon(clipped,color)
+	if border and frame.size.x > 400:
 		polygon.append(polygon[0]); draw_polyline(polygon,Color("839796"),1,true)
 
+func set_map_floor(level: int) -> void:
+	if level not in [-1,0,1,2,3]: return
+	map_level = level
+	show_mode("map")
+
 func show_mode(next: String) -> void:
+	if next == "map" and mode != "map": map_level = Mall.level_at(player_position.y)
 	mode = next
 	for child in buttons.get_children():
 		buttons.remove_child(child)
@@ -280,6 +310,10 @@ func show_mode(next: String) -> void:
 			_button("探索を再開", Rect2(460, 420, 520, 58), func(): resume_pressed.emit(), true)
 			_button("最初からやり直す", Rect2(460, 498, 520, 54), func(): restart_pressed.emit())
 			_button("ゲームを終了", Rect2(460, 572, 520, 54), func(): exit_pressed.emit())
+			var i := 0
+			for key in GraphicsOptions.PRESETS:
+				_button(GraphicsOptions.PRESETS[key].name,Rect2(460+i*180,670,160,45),func(): graphics_selected.emit(key),graphics_choice == key)
+				i += 1
 		"skills":
 			var i := 0
 			for key in IdentityRun.SKILLS:
@@ -322,10 +356,13 @@ func show_mode(next: String) -> void:
 				index += 1
 			_button("探索に戻る / I",Rect2(70,780,420,56),func(): resume_pressed.emit(),true)
 		"map":
+			for i in 5:
+				var level := i-1
+				_button(Mall.floor_title(level),Rect2(100+i*250,218,238,34),func(): set_map_floor(level),level == map_level)
 			var index := 0
 			for key in Mall.HUBS:
 				var label: String = key + (" / 移動" if run.can_travel(key) else " / 要スキル" if run.visited.has(key) else " / 未訪問")
-				var button := _button(label,Rect2(100+(index%4)*310,666+(index/4)*50,300,42),func(): travel_pressed.emit(key))
+				var button := _button(label,Rect2(100+(index%4)*310,650+(index/4)*44,300,40),func(): travel_pressed.emit(key))
 				button.add_theme_font_size_override("font_size",15)
 				button.disabled = not run.can_travel(key)
 				index += 1

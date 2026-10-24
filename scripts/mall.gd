@@ -13,7 +13,7 @@ const FOOD := Rect2(46, -62, 46, 30)
 const RESTROOM := Rect2(-90, 26, 38, 30)
 const PROMENADE := Rect2(-47, -36, 127, 8)
 const MARKET := Rect2(6, 8, 36, 40)
-const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5)}
+const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5), "A・B連絡通路":Vector3(-150,5.625,-5.5), "B館東入口":Vector3(-194,.1,-5.5), "B館2階ラウンジ":Vector3(-194,5.625,0), "B館3階シネマ":Vector3(-380,10.975,0), "B館家電売場":Vector3(-402,.1,0)}
 const ENTRANCE := Vector3(-82, 0.1, 0)
 static var floor_regions: Array[Rect2] = []
 static var obstacles: Array[Rect2] = []
@@ -25,6 +25,7 @@ const UPPER_TOP := .175
 var spawn_points: Array[Vector3] = []
 var identity_slots: Array[Dictionary] = []
 var outline := PackedVector2Array()
+var render_stats: Dictionary = {}
 var chalk := Shapes.material(Color("d8d6cf"))
 var dark := Shapes.material(Color("25363d"))
 var stone := Shapes.material(Color("88918d"))
@@ -148,6 +149,7 @@ static func plan_regions(level: int) -> Array[Rect2]:
 	if level == 0: regions.append_array(floor_regions)
 	elif level in [1,2]: regions.append_array(upper_regions())
 	regions.append_array(MallAnnex.regions(level))
+	regions.append_array(BWing.regions(level))
 	cached_regions[level] = regions
 	return regions
 
@@ -165,6 +167,8 @@ static func plan_walkable(p: Vector3) -> bool:
 	if level == 0: blocks = obstacles
 	elif level in [1,2]: blocks = upper_obstacles
 	for obstacle in blocks:
+		if obstacle.grow(.35).has_point(v): return false
+	for obstacle in BWing.obstacles(level):
 		if obstacle.grow(.35).has_point(v): return false
 	for obstacle in MallAnnex.obstacles(level):
 		if obstacle.grow(.35).has_point(v): return false
@@ -186,10 +190,16 @@ static func plan_segment_walkable(a: Vector3,b: Vector3) -> bool:
 static func segment_walkable(a: Vector3,b: Vector3) -> bool:
 	return plan_segment_walkable(MallCurve.plan(a),MallCurve.plan(b))
 
+static func building_name(p: Vector3) -> String:
+	var plan := MallCurve.plan(p)
+	return "B館" if plan.x < -190 else "連絡通路" if plan.x < -112 and Mall.level_at(p.y) == 1 else "A館"
+
 static func zone_name(p: Vector3) -> String:
 	var plan := MallCurve.plan(p)
 	var v := Vector2(plan.x, plan.z)
 	var level := level_at(p.y)
+	if plan.x < -190 or (level == 1 and plan.x < -112): return BWing.zone_name(plan)
+	if plan.x < -174: return BWing.zone_name(plan)
 	if plan.x < -90: return "A館%s / %s" % [floor_title(level),"西駐車場" if level == 0 and plan.x < -115 else "西側階段"]
 	if level == -1: return "A館地下1階 / 食品街"
 	if level == 3: return "A館屋上 / 庭園・休憩テラス"
@@ -210,6 +220,9 @@ static func zone_name(p: Vector3) -> String:
 
 func _ready() -> void:
 	prepare_plan()
+	if WorldCache.can_load():
+		WorldCache.mount(self)
+		return
 	_build_floor_and_walls()
 	_build_concourse()
 	_build_architecture()
@@ -236,15 +249,22 @@ func _ready() -> void:
 	identity_slots = ground_slots
 	for level in [1,2]: _build_upper_shops(level)
 	MallAnnex.new().build(self)
+	BWing.new().build(self)
 	for level in [-1,0,1,2,3]:
-		for z in range(-61, 57, 2):
-			for x in range(-173, 93, 2):
-				var p := Vector3(x, floor_height(level), z)
-				if plan_walkable(p): spawn_points.append(MallCurve.world(p))
+		var cells: Dictionary = {}
+		for rect in plan_regions(level):
+			for z in range(floori(rect.position.y/2)*2+1,ceili(rect.end.y),2):
+				for x in range(floori(rect.position.x/2)*2+1,ceili(rect.end.x),2): cells[Vector2i(x,z)] = true
+		var ordered := cells.keys()
+		ordered.sort_custom(func(a: Vector2i,b: Vector2i): return a.y < b.y or (a.y == b.y and a.x < b.x))
+		for cell in ordered:
+			var p := Vector3(cell.x,floor_height(level),cell.y)
+			if plan_walkable(p): spawn_points.append(MallCurve.world(p))
 	for slot in identity_slots:
 		slot.yaw -= MallCurve.angle(slot.pos.x)
 		slot.pos = MallCurve.world(slot.pos)
 	MallCurve.bake(self)
+	render_stats = RenderChunks.build(self)
 
 func _polygon(rect: Rect2) -> PackedVector2Array:
 	return PackedVector2Array([rect.position, rect.position + Vector2(rect.size.x, 0), rect.end, rect.position + Vector2(0, rect.size.y)])
@@ -624,7 +644,7 @@ static func gallery_regions() -> Array[Rect2]:
 
 static func escalator_carry(position: Vector3) -> Vector3:
 	var p := MallCurve.plan(position)
-	for flight in [[-43.5,0.0,1.0],[-35.0,5.525,-1.0]]:
+	for flight in [[-43.5,0.0,1.0],[-35.0,5.525,-1.0],[-241.5,0.0,1.0],[-227.0,5.525,-1.0]]:
 		if absf(p.x-flight[0]) < .88 and p.z >= 9 and p.z <= 21:
 			var t: float = (p.z-9)/12 if flight[2] > 0 else (21-p.z)/12
 			var y: float = flight[1]+t*(5.525 if flight[1] == 0 else 5.35)
@@ -703,9 +723,9 @@ func _escalator(x: float,y: float,start: float,end: float) -> void:
 	var ramp := Shapes.box(self,Vector3(x,y+rise/2-.075/cos(angle),(start+end)/2),Vector3(1.8,.15,length),material,true)
 	ramp.rotation.x = angle
 	for side in [-1,1]:
-		var panel := Shapes.box(self,Vector3(x+side*1.0,y+rise/2+.35,15),Vector3(.12,.85,length),_glass(),true)
+		var panel := Shapes.box(self,Vector3(x+side*1.0,y+rise/2+.35,(start+end)/2),Vector3(.12,.85,length),_glass(),true)
 		panel.rotation.x = angle
-		var rail := Shapes.box(self,Vector3(x+side*1.0,y+rise/2+.85,15),Vector3(.16,.10,length),dark)
+		var rail := Shapes.box(self,Vector3(x+side*1.0,y+rise/2+.85,(start+end)/2),Vector3(.16,.10,length),dark)
 		rail.rotation.x = angle
 
 func _build_upper_shops(level: int) -> void:

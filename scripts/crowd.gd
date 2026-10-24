@@ -11,6 +11,13 @@ var death_times: Array[float] = []
 var bodies: Array[Area3D] = []
 var parts: Array[Dictionary] = []
 var clock := 0.0
+var render_clock := 0.0
+var detail_distance := 26.0
+var draw_distance := 140.0
+var rendered_ids: Array[int] = []
+var detailed_ids: Array[int] = []
+var lod_meshes: Array[MultiMesh] = []
+var clothing_palette: Array = []
 var nav := AStar3D.new()
 var nav_ids: Array[int] = []
 var rng := RandomNumberGenerator.new()
@@ -37,60 +44,67 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		nav = cached_nav
 		nav_ids = cached_nav_ids
 	else:
-		for i in points.size():
-			nav.add_point(i, points[i])
-			nav_ids.append(i)
-		var lookup: Dictionary = {}
-		for i in points.size():
-			lookup[Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))] = i
-		for i in points.size():
-			var cell := Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))
-			for offset in [Vector3i(2, 0, 0), Vector3i(0, 0, 2)]:
-				if lookup.has(cell + offset):
-					var other: int = lookup[cell + offset]
-					if Mall.plan_segment_walkable(Vector3(cell.x,Mall.floor_height(cell.y),cell.z),Vector3((cell+offset).x,Mall.floor_height(cell.y),(cell+offset).z)):
-						nav.connect_points(i, other)
-		# Explicit inclined links connect the same graph used by cats and item attraction.
-		for flight in [[-43.5,0,9.0,21.0],[-35.0,1,21.0,9.0]]:
-			var previous := -1
-			for step in range(14):
-				var t := clampf((step-.5)/12,0,1)
-				var p := MallCurve.world(Vector3(flight[0],lerpf(Mall.floor_height(flight[1]),Mall.floor_height(flight[1]+1),t),lerpf(flight[2],flight[3],t)))
-				var id := nav.get_point_count()
-				if step == 0 or step == 13:
-					var nearest := INF
-					for candidate in nav_ids:
-						var at := nav.get_point_position(candidate)
-						if Mall.level_at(at.y) != int(flight[1])+(1 if step == 13 else 0): continue
-						# Landings extend beyond the ramp, never through its side glass.
-						var plan := MallCurve.plan(at)
-						if absf(plan.x-flight[0]) > .6: continue
-						if (flight[3] > flight[2] and (plan.z < flight[3]+.4 if step == 13 else plan.z > flight[2]-.4)) or (flight[3] < flight[2] and (plan.z > flight[3]-.4 if step == 13 else plan.z < flight[2]+.4)): continue
-						if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
-					assert(nearest < INF,"Escalator must meet a public landing")
-				else: nav.add_point(id,p)
-				if previous >= 0 and id != previous: nav.connect_points(previous,id)
-				previous = id
-		for route in MallAnnex.core_routes():
-			var previous := -1
-			for step in route.size():
-				var p := MallCurve.world(route[step])
-				var id := nav.get_point_count()
-				if step == 0 or step == route.size()-1:
-					var nearest := INF
-					for candidate in nav_ids:
-						var at := nav.get_point_position(candidate)
-						if absf(at.y-p.y) > .1: continue
-						if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
-					assert(nearest < 4,"West core route must connect to its floor landing")
-				else: nav.add_point(id,p)
-				if previous >= 0: nav.connect_points(previous,id)
-				previous = id
+		if WorldCache.navigation.get("hash",-1) == key:
+			var data := WorldCache.navigation
+			for i in data.positions.size(): nav.add_point(i,data.positions[i])
+			for i in points.size(): nav_ids.append(i)
+			for index in range(0,data.edges.size(),2): nav.connect_points(data.edges[index],data.edges[index+1])
+		else:
+			for i in points.size():
+				nav.add_point(i, points[i])
+				nav_ids.append(i)
+			var lookup: Dictionary = {}
+			for i in points.size():
+				lookup[Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))] = i
+			for i in points.size():
+				var cell := Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))
+				for offset in [Vector3i(2, 0, 0), Vector3i(0, 0, 2)]:
+					if lookup.has(cell + offset):
+						var other: int = lookup[cell + offset]
+						if Mall.plan_segment_walkable(Vector3(cell.x,Mall.floor_height(cell.y),cell.z),Vector3((cell+offset).x,Mall.floor_height(cell.y),(cell+offset).z)):
+							nav.connect_points(i, other)
+			# Explicit inclined links connect the same graph used by cats and item attraction.
+			for flight in [[-43.5,0,9.0,21.0],[-35.0,1,21.0,9.0]]+BWing.escalators():
+				var previous := -1
+				for step in range(14):
+					var t := clampf((step-.5)/12,0,1)
+					var p := MallCurve.world(Vector3(flight[0],lerpf(Mall.floor_height(flight[1]),Mall.floor_height(flight[1]+1),t),lerpf(flight[2],flight[3],t)))
+					var id := nav.get_point_count()
+					if step == 0 or step == 13:
+						var nearest := INF
+						for candidate in nav_ids:
+							var at := nav.get_point_position(candidate)
+							if Mall.level_at(at.y) != int(flight[1])+(1 if step == 13 else 0): continue
+							# Landings extend beyond the ramp, never through its side glass.
+							var plan := MallCurve.plan(at)
+							if absf(plan.x-flight[0]) > .6: continue
+							if (flight[3] > flight[2] and (plan.z < flight[3]+.4 if step == 13 else plan.z > flight[2]-.4)) or (flight[3] < flight[2] and (plan.z > flight[3]-.4 if step == 13 else plan.z < flight[2]+.4)): continue
+							if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
+						assert(nearest < INF,"Escalator must meet a public landing")
+					else: nav.add_point(id,p)
+					if previous >= 0 and id != previous: nav.connect_points(previous,id)
+					previous = id
+			for route in MallAnnex.core_routes():
+				var previous := -1
+				for step in route.size():
+					var p := MallCurve.world(route[step])
+					var id := nav.get_point_count()
+					if step == 0 or step == route.size()-1:
+						var nearest := INF
+						for candidate in nav_ids:
+							var at := nav.get_point_position(candidate)
+							if absf(at.y-p.y) > .1: continue
+							if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
+						assert(nearest < 4,"West core route must connect to its floor landing")
+					else: nav.add_point(id,p)
+					if previous >= 0: nav.connect_points(previous,id)
+					previous = id
 		cached_nav = nav
 		cached_nav_hash = key
 		cached_nav_ids = nav_ids
 	for point in nav_ids: floor_nav_ids[Mall.level_at(nav.get_point_position(point).y)].append(point)
 	var palette := [Color("c58a6b"), Color("bcc6b3"), Color("667e8a"), Color("d8c497"), Color("a78b91"), Color("4d6265")]
+	clothing_palette = palette
 	for id in run.population:
 		var candidates: Array = floor_nav_ids[posmod(id-slots.size(),5)-1]
 		var p := nav.get_point_position(candidates[rng.randi_range(0,candidates.size()-1)])
@@ -157,7 +171,8 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	var cup := CylinderMesh.new(); cup.top_radius = .048; cup.bottom_radius = .037; cup.height = .10
 	cup.material = Shapes.material(Color("ddd8c7"))
 	_instance_part("held_cup",cup,Vector3.ZERO,Vector3.ONE,[])
-	_render()
+	_make_lods()
+	_render(true)
 
 func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, palette: Array = []) -> void:
 	var mesh := BoxMesh.new()
@@ -175,7 +190,7 @@ func _instance_part(title: String, mesh: Mesh, offset: Vector3, instance_scale: 
 	instances.transform_format = MultiMesh.TRANSFORM_3D
 	instances.use_colors = true
 	# Explicit sector bounds avoid camera-near clipping of animated instance groups.
-	instances.custom_aabb = AABB(Vector3(-180,-12,-90),Vector3(340,45,230))
+	instances.custom_aabb = AABB(Vector3(-430,-12,-90),Vector3(590,45,230))
 	instances.mesh = mesh
 	instances.instance_count = run.population
 	for id in run.population:
@@ -183,7 +198,7 @@ func _instance_part(title: String, mesh: Mesh, offset: Vector3, instance_scale: 
 	var node := MultiMeshInstance3D.new()
 	node.multimesh = instances
 	add_child(node)
-	parts.append({"name": title, "offset": offset, "scale": instance_scale, "instances": instances})
+	parts.append({"name": title, "offset": offset, "scale": instance_scale, "instances": instances,"palette":palette})
 
 func _physics_process(delta: float) -> void:
 	if run == null:
@@ -223,15 +238,55 @@ func _physics_process(delta: float) -> void:
 			positions[id] += difference.normalized() * speed * delta
 			headings[id] = lerp_angle(headings[id], atan2(-difference.x, -difference.z), minf(1.0, delta * 6))
 		bodies[id].position = positions[id] + Vector3.UP * 0.95
-	_render()
+	render_clock += delta
+	if render_clock >= 1.0/30.0:
+		render_clock = 0
+		_render()
 
-func _render() -> void:
-	var motions: Array[Dictionary] = []
+func _make_lods() -> void:
+	for seated in [false,true]:
+		var mm := MultiMesh.new(); mm.transform_format = MultiMesh.TRANSFORM_3D; mm.use_custom_data = true
+		mm.mesh = CivilianLod.mesh_for(seated,skin_color,hair_color,face_width)
+		mm.instance_count = run.population; mm.visible_instance_count = 0
+		var node := MultiMeshInstance3D.new(); node.multimesh = mm; node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		add_child(node); lod_meshes.append(mm)
+
+func _render(_force: bool = false) -> void:
+	var camera := get_viewport().get_camera_3d()
+	var motions: Dictionary = {}
+	detailed_ids.clear(); rendered_ids.clear()
+	var far: Array[Array] = [[],[]]
+	var bounds := AABB(); var first := true
 	for id in run.population:
-		motions.append(CivilianMotion.sample("walking" if attracted.has(id) else roles[id],activities[id],clock,id))
+		if death_times[id] > .8: continue
+		var distance := positions[id].distance_squared_to(camera.global_position) if camera != null else 0.0
+		if distance > draw_distance*draw_distance: continue
+		var detail := distance < detail_distance*detail_distance
+		if detail and camera != null:
+			var center := positions[id]+Vector3.UP
+			detail = camera.is_position_in_frustum(center) or camera.is_position_in_frustum(center+camera.global_basis.x*.7) or camera.is_position_in_frustum(center-camera.global_basis.x*.7) or camera.is_position_in_frustum(center+Vector3.UP)
+		rendered_ids.append(id)
+		var box := AABB(positions[id]-Vector3(1,5,1),Vector3(2,8,2))
+		bounds = box if first else bounds.merge(box); first = false
+		if detail:
+			detailed_ids.append(id)
+			motions[id] = CivilianMotion.sample("walking" if attracted.has(id) else roles[id],activities[id],clock,id)
+		else: far[1 if roles[id] in ["seated","reading"] and not attracted.has(id) else 0].append(id)
+	for group in 2:
+		var mm := lod_meshes[group]
+		mm.visible_instance_count = far[group].size(); mm.custom_aabb = bounds
+		for index in far[group].size():
+			var id: int = far[group][index]
+			var at := positions[id]
+			if death_times[id] >= 0: at.y -= pow(death_times[id]/.8,2)*4
+			mm.set_instance_transform(index,Transform3D(Basis(Vector3.UP,headings[id]),at))
+			mm.set_instance_custom_data(index,clothing_palette[id%clothing_palette.size()].srgb_to_linear())
 	for part in parts:
 		var instances: MultiMesh = part.instances
-		for id in run.population:
+		instances.visible_instance_count = detailed_ids.size(); instances.custom_aabb = bounds
+		for slot in detailed_ids.size():
+			var id := detailed_ids[slot]
+			instances.set_instance_color(slot,part.palette[id%part.palette.size()] if not part.palette.is_empty() else Color.WHITE)
 			var role := "walking" if attracted.has(id) else roles[id]
 			var motion: Dictionary = motions[id]
 			var hidden: bool = death_times[id] > .8 or (part.name in ["apron","badge"] and role != "staff")
@@ -239,7 +294,7 @@ func _render() -> void:
 			hidden = hidden or (part.name == "held_product" and not motion.inspect)
 			hidden = hidden or (part.name == "held_cup" and role != "seated")
 			if hidden:
-				instances.set_instance_transform(id,Transform3D(Basis().scaled(Vector3.ZERO),Vector3(0,-20,0)))
+				instances.set_instance_transform(slot,Transform3D(Basis().scaled(Vector3.ZERO),Vector3(0,-20,0)))
 				continue
 			var local_offset: Vector3 = part.offset
 			var pose := Basis.IDENTITY
@@ -278,7 +333,7 @@ func _render() -> void:
 			if part.name not in ["shoe_l","shoe_r","shin_l","shin_r"]: base.y += motion.breath
 			if death_times[id] >= 0: base.y -= pow(death_times[id]/.8,2)*4
 			var basis := Basis(Vector3.UP,headings[id])
-			instances.set_instance_transform(id,Transform3D((basis*pose).scaled_local(part.scale),base+basis*local_offset))
+			instances.set_instance_transform(slot,Transform3D((basis*pose).scaled_local(part.scale),base+basis*local_offset))
 
 func fall(id: int) -> void:
 	death_times[id] = 0

@@ -3,7 +3,7 @@ extends RefCounted
 ## Logical retail plan -> a straight west wing flowing into a 60-degree arc.
 const START := -35.0
 const RADIUS := 130.0
-const EDGE := 3.0
+const EDGE := 5.0
 
 static func angle(x: float) -> float:
 	return maxf(0,(x-START)/RADIUS)
@@ -37,6 +37,8 @@ static func polygon(rect: Rect2) -> PackedVector2Array:
 	return result
 
 static func _faces(a: Vector3,b: Vector3,c: Vector3,out: PackedVector3Array) -> void:
+	if maxf(a.x,maxf(b.x,c.x)) <= START:
+		out.append_array(PackedVector3Array([a,b,c])); return
 	var ab := a.distance_squared_to(b)
 	var bc := b.distance_squared_to(c)
 	var ca := c.distance_squared_to(a)
@@ -55,7 +57,7 @@ static func _faces(a: Vector3,b: Vector3,c: Vector3,out: PackedVector3Array) -> 
 static func _triangle(vertices: Array,normals: Array,uvs: Array,surface: SurfaceTool) -> void:
 	var distances := [vertices[0].distance_squared_to(vertices[1]),vertices[1].distance_squared_to(vertices[2]),vertices[2].distance_squared_to(vertices[0])]
 	var edge: int = distances.find(distances.max())
-	if distances[edge] > EDGE*EDGE:
+	if distances[edge] > EDGE*EDGE and maxf(vertices[0].x,maxf(vertices[1].x,vertices[2].x)) > START:
 		var other := (edge+1)%3
 		var last := (edge+2)%3
 		var v: Vector3 = (vertices[edge]+vertices[other])*.5

@@ -58,6 +58,8 @@ func update_nearby(crowd: Crowd,camera: Camera3D,enabled: bool) -> int:
 	if crowd.activities[best] == "book" and crowd.roles[best] == "browsing": label.text = "この本、面白そうだな。"
 	if crowd.activities[best] == "garden": label.text = "風が気持ちいいね。" if crowd.roles[best] != "seated" else "ここで少し休もう。"
 	if crowd.activities[best] == "parking": label.text = "車はこの辺りだったかな。"
+	if crowd.activities[best] == "cinema": label.text = "この席からよく見えるね。"
+	if crowd.activities[best] == "cinema_staff": label.text = "上映室は中央の通路からです。"
 	if crowd.activities[best] == "deli": label.text = "お惣菜はいかがですか？"
 	panel.global_position = crowd.positions[best]+Vector3.UP*(1.88 if crowd.roles[best] in ["seated","reading"] else 2.3)
 	panel.global_basis = camera.global_basis

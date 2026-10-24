@@ -1,0 +1,70 @@
+{
+  "engine": "Godot 4.6.3 Standard Compatibility",
+  "renderer": "Mesa llvmpipe LLVM 19.1.7, software rendering on Linux",
+  "population": 180,
+  "seed": 912,
+  "viewport": [
+    1280,
+    800
+  ],
+  "msaa": false,
+  "sun_shadow_distance_m": 85,
+  "warmup_frames_per_case": 2,
+  "sample_frames_per_case": 8,
+  "baseline_commit": "a27a96639da74c850c873f8306b3f2bb52e80bb8",
+  "scope": "0.8 rendering optimization before cinema cosmetic refinement; same A-area camera locations and initial actor fixture; actors may update while sampling",
+  "before": {
+    "cases": [
+      {
+        "draw_calls": 13162.0,
+        "median_frame_ms": 2471.351,
+        "name": "entrance",
+        "p90_frame_ms": 2643.966,
+        "primitives": 3209512.0
+      },
+      {
+        "draw_calls": 8991.0,
+        "median_frame_ms": 2460.592,
+        "name": "atrium",
+        "p90_frame_ms": 3159.035,
+        "primitives": 3131708.0
+      },
+      {
+        "draw_calls": 1717.0,
+        "median_frame_ms": 1096.626,
+        "name": "parking",
+        "p90_frame_ms": 1227.986,
+        "primitives": 1617188.0
+      }
+    ],
+    "startup_ms": 5509.63,
+    "viewport": "(1280, 800)"
+  },
+  "after": {
+    "cases": [
+      {
+        "draw_calls": 1767.0,
+        "median_frame_ms": 393.344,
+        "name": "entrance",
+        "p90_frame_ms": 592.68,
+        "primitives": 1304520.0
+      },
+      {
+        "draw_calls": 1528.0,
+        "median_frame_ms": 430.955,
+        "name": "atrium",
+        "p90_frame_ms": 1091.157,
+        "primitives": 1423818.0
+      },
+      {
+        "draw_calls": 1296.0,
+        "median_frame_ms": 165.854,
+        "name": "parking",
+        "p90_frame_ms": 183.715,
+        "primitives": 671937.0
+      }
+    ],
+    "startup_ms": 1037.769,
+    "viewport": "(1280, 800)"
+  }
+}
