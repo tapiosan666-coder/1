@@ -20,7 +20,7 @@ func run_tests() -> void:
 	var japanese_font: Font = game.hud.font
 	expect(japanese_font.resource_path == "res://assets/fonts/NotoSansCJKjp-Regular.otf", "UI uses the bundled Japanese font")
 	var all_glyphs := true
-	for path in ["hud", "main", "identity_run", "player", "mall", "npc_speech", "bookshop", "run_loot", "cache_field", "mall_annex", "b_wing", "graphics_options"]:
+	for path in ["hud", "main", "identity_run", "player", "mall", "npc_speech", "bookshop", "run_loot", "cache_field", "mall_annex", "b_wing", "c_wing", "graphics_options", "skill_panel"]:
 		var source := FileAccess.get_file_as_string("res://scripts/%s.gd" % path)
 		for character in source:
 			var code := character.unicode_at(0)

@@ -26,6 +26,9 @@ var cat: Node3D
 var cat_target := -1
 var cat_scan_time := 0.0
 var cat_retarget := 0.0
+var cat_clock := 0.0
+var cat_skipped: Dictionary = {}
+var cat_planned_at := Vector3.ZERO
 var beacon: Node3D
 var selected_skin := Color("cfaa89")
 var selected_hair := Color("33312c")
@@ -66,6 +69,10 @@ func _ready() -> void:
 	# A preview crowd shares the exact same identity model as a playable run.
 	_create_run(300, 24)
 	set_mode("title")
+	if "--capture-growth" in OS.get_cmdline_user_args():
+		_capture_growth.call_deferred()
+	if "--capture-c-wing" in OS.get_cmdline_user_args():
+		_capture_c_wing.call_deferred()
 	if "--capture-b-wing" in OS.get_cmdline_user_args():
 		_capture_b_wing.call_deferred()
 	if "--capture-annex" in OS.get_cmdline_user_args():
@@ -93,9 +100,11 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 		effects.remove_child(child)
 		child.queue_free()
 	cat = null
+	hud.cat_status = ""
 	beacon = null
 	cat_target = -1
 	cat_retarget = 0
+	cat_clock = 0; cat_skipped.clear()
 	cat_scan_time = 0
 	run = IdentityRun.new(count, run_seed)
 	crowd = Crowd.new()
@@ -421,7 +430,7 @@ func _mark_original() -> void:
 func _make_cat() -> void:
 	cat = Node3D.new()
 	effects.add_child(cat)
-	cat.position = player.position + Vector3(1, 0, 1)
+	cat.position = crowd.nav.get_point_position(crowd.nav.get_closest_point(player.position))
 	var fur := Shapes.material(Color("c68c56"))
 	var dark := Shapes.material(Color("34424a"))
 	Shapes.box(cat, Vector3(0, 0.35, 0), Vector3(0.32, 0.35, 0.65), fur)
@@ -430,7 +439,8 @@ func _make_cat() -> void:
 		Shapes.box(cat, Vector3(x, 0.77, -0.27), Vector3(0.1, 0.15, 0.12), fur)
 		Shapes.box(cat, Vector3(x, 0.58, -0.425), Vector3(0.035, 0.055, 0.015), dark)
 		for z in [-0.2, 0.2]:
-			Shapes.box(cat, Vector3(x, 0.12, z), Vector3(0.08, 0.24, 0.08), fur)
+			var paw := Shapes.box(cat, Vector3(x, 0.12, z), Vector3(0.08, 0.24, 0.08), fur)
+			if z < 0: paw.name = "PawLeft" if x < 0 else "PawRight"
 	var tail := Shapes.box(cat, Vector3(0, 0.51, 0.44), Vector3(0.08, 0.5, 0.08), fur)
 	tail.rotation.x = 0.5
 	cat_scan_time = 0
@@ -438,49 +448,59 @@ func _make_cat() -> void:
 
 func _tick_cat(delta: float) -> void:
 	if not is_instance_valid(cat):
+		hud.cat_status = ""
 		return
-	if cat_target < 0 or run.eliminated[cat_target] or (cat_target == run.true_id and run.located):
-		cat_target = -1
-		var nearest := INF
-		for id in run.population:
-			if run.eliminated[id] or (id == run.true_id and run.located):
-				continue
-			var dist := cat.position.distance_squared_to(crowd.positions[id])
-			if dist < nearest:
-				nearest = dist
-				cat_target = id
-		cat_scan_time = 0
-		cat_retarget = 0
+	cat_clock += delta; cat_retarget -= delta
+	var state := get_world_3d().direct_space_state
+	if cat_target >= 0 and (run.eliminated[cat_target] or (cat_target == run.true_id and run.located)):
+		cat_target = -1; cat_retarget = 0
 	if cat_target < 0:
-		return
+		hud.cat_status = "猫 / 次の相手を探索中"
+		if cat_retarget > 0: return
+		var candidates: Array[int] = []
+		for id in run.population:
+			if run.eliminated[id] or (id == run.true_id and run.located) or cat_skipped.get(id,0.0) > cat_clock: continue
+			candidates.append(id)
+		candidates.sort_custom(func(a: int,b: int): return cat.position.distance_squared_to(crowd.positions[a]) < cat.position.distance_squared_to(crowd.positions[b]))
+		for id in candidates.slice(0,12):
+			var route := CatSearch.route(crowd,cat.position,id,state)
+			if route.is_empty(): cat_skipped[id] = cat_clock+5; continue
+			cat_target = id; cat_scan_time = 0; cat_planned_at = crowd.positions[id]
+			cat.set_meta("path",route); cat_retarget = 1; break
+		if cat_target < 0: cat_retarget = 1; return
 	var destination := crowd.positions[cat_target]
-	cat_retarget -= delta
-	if cat_retarget <= 0:
-		cat.set_meta("path", crowd.nav.get_point_path(crowd.nav.get_closest_point(cat.position), crowd.nav.get_closest_point(destination)))
-		cat_retarget = 1.0
-	var path: PackedVector3Array = cat.get_meta("path", PackedVector3Array())
-	var distance := cat.position.distance_to(destination)
-	if distance > 1.1:
-		if path.is_empty():
-			# Final short approach is allowed only inside the walkable region.
-			var step := cat.position.move_toward(destination, delta * 4)
-			if Mall.walkable(step):
-				cat.position = step
-		elif cat.position.distance_to(path[0]) < 0.15:
-			path.remove_at(0)
-			cat.set_meta("path", path)
-		elif not path.is_empty():
-			var direction := path[0] - cat.position
-			cat.position = cat.position.move_toward(path[0], delta * 4)
-			cat.rotation.y = atan2(-direction.x, -direction.z)
-	else:
+	var seated: bool = crowd.roles[cat_target] in ["seated","reading"]
+	if CatSearch.can_scan(cat.position,destination,seated,state):
 		cat_scan_time += delta
-		cat.rotation.z = sin(cat_scan_time * 8) * 0.1
-		var seconds: float = [20.0, 12.0, 6.0][run.upgrades.cat_speed]
+		cat.rotation.z = sin(cat_scan_time*8)*.1
+		cat.rotation.y = atan2(cat.position.x-destination.x,cat.position.z-destination.z)
+		cat.get_node("PawRight").position.z = -.2-absf(sin(cat_scan_time*8))*.25
+		var seconds: float = [20.0,12.0,6.0][run.upgrades.cat_speed]
+		hud.cat_status = "猫 / スキャン中 %d / %d秒" % [mini(ceili(cat_scan_time),int(seconds)),int(seconds)]
 		if cat_scan_time >= seconds:
-			resolve(cat_target, IdentityRun.Source.SPECIAL)
-			cat_target = -1
-			cat.rotation.z = 0
+			resolve(cat_target,IdentityRun.Source.SPECIAL)
+			cat_target = -1; cat_retarget = 0; cat_scan_time = 0
+		return
+	cat.rotation.z = 0; cat.get_node("PawRight").position.z = -.2
+	hud.cat_status = "猫 / 相手の近くへ移動中"
+	var path: PackedVector3Array = cat.get_meta("path",PackedVector3Array())
+	if cat_retarget <= 0 and (path.is_empty() or destination.distance_to(cat_planned_at) > .75):
+		path = CatSearch.route(crowd,cat.position,cat_target,state)
+		cat_planned_at = destination; cat_retarget = 1
+		if path.is_empty():
+			cat_skipped[cat_target] = cat_clock+5; cat_target = -1; cat_scan_time = 0
+			return
+	# Consume all reached waypoints so repathing cannot pull the cat back each second.
+	var remaining := delta*4
+	while not path.is_empty() and remaining > 0:
+		var distance := cat.position.distance_to(path[0])
+		if distance < .05: path.remove_at(0); continue
+		var direction := path[0]-cat.position
+		var step := minf(remaining,distance)
+		cat.position += direction.normalized()*step; remaining -= step
+		cat.rotation.y = atan2(-direction.x,-direction.z)
+		if step >= distance: path.remove_at(0)
+	cat.set_meta("path",path)
 
 func _spark(at: Vector3) -> void:
 	var spark := Shapes.sphere(effects, at, 0.09, Shapes.material(Color("b6ff94"), 1))
@@ -818,4 +838,55 @@ func _capture_b_wing() -> void:
 	set_mode("pause")
 	await get_tree().create_timer(.2).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-graphics.png")
+	get_tree().quit()
+
+func _capture_c_wing() -> void:
+	start_run(300,912)
+	player.set_physics_process(false)
+	crowd.set_physics_process(false)
+	for shot in [
+		["c-link",Vector3(-370,.1,-30),Vector3(-370,2,-85)],
+		["c-plaza",Vector3(-370,.1,-89),Vector3(-360,3,-140)],
+		["c-terrace",Vector3(-338,.1,-97),Vector3(-338,1.6,-112)],
+		["c-shop",Vector3(-400,.1,-147),Vector3(-400,1.8,-165)],
+		["c-court",Vector3(-311,.1,-100),Vector3(-393,3,-139)]
+	]:
+		player.position = shot[1]; player.camera.look_at(shot[2]); crowd._render()
+		await get_tree().create_timer(.5).timeout
+		hud.notice_time = 0; hud.queue_redraw()
+		await get_tree().process_frame; await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-%s.png" % shot[0])
+		print("C_CAPTURE: ",shot[0]," draws=",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME))
+	set_mode("map"); hud.set_map_floor(0)
+	await get_tree().create_timer(.2).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-c-map.png")
+	get_tree().quit()
+
+func _capture_growth() -> void:
+	start_run(300,912); set_physics_process(false); crowd.set_physics_process(false); player.set_physics_process(false)
+	run.ap = 1200; hud.skill_branch = 0; hud.skill_selected = "focus"; set_mode("skills")
+	await get_tree().process_frame; await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-skill-gun.png")
+	buy_skill("gun"); buy_skill("cat"); buy_skill("cat_speed")
+	hud.skill_branch = 1; hud.skill_selected = "cat_speed"; hud.show_mode("skills")
+	await get_tree().process_frame; await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-skill-cat.png")
+	hud.skill_branch = 2; hud.skill_selected = "sonar"; hud.show_mode("skills")
+	await get_tree().process_frame; await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-skill-explore.png")
+	set_mode("play")
+	var state := get_world_3d().direct_space_state
+	for id in run.population:
+		if id == run.true_id or crowd.roles[id] == "walking": continue
+		var approach := crowd.nav.get_point_position(crowd.nav.get_closest_point(crowd.positions[id]))
+		if approach.distance_to(crowd.positions[id]) <= 1.12 or not CatSearch.can_scan(approach,crowd.positions[id],crowd.roles[id] == "seated",state): continue
+		cat.position = approach; cat_target = id; _tick_cat(4)
+		for point in mall.spawn_points:
+			if point.distance_to(crowd.positions[id]) < 2.7 or point.distance_to(crowd.positions[id]) > 4 or absf(point.y-crowd.positions[id].y) > .1: continue
+			if not state.intersect_ray(PhysicsRayQueryParameters3D.create(point+Vector3.UP*1.68,crowd.positions[id]+Vector3.UP,1)).is_empty(): continue
+			player.position = point+Vector3.UP*.1; player.camera.look_at(crowd.positions[id]+Vector3.UP*.7); break
+		break
+	crowd._render(); hud.notice_time = 0; hud.queue_redraw()
+	await get_tree().process_frame; await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-cat-scan.png")
 	get_tree().quit()

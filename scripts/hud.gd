@@ -10,6 +10,9 @@ signal travel_pressed(key: String)
 signal skill_pressed(key: String)
 signal exit_pressed
 var mode := "title"
+var skill_branch := 0
+var skill_selected := "gun"
+var cat_status := ""
 var map_level := 0
 var graphics_choice := "balanced"
 var adapter_name := ""
@@ -96,7 +99,7 @@ func _draw() -> void:
 		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
 		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 0.8 ／ A・B館を探索 ／ 300人", Vector2(82, 860), 13, muted)
+		_text("日本語開発版 0.9 ／ A・B・C館を探索 ／ 300人", Vector2(82, 860), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -168,6 +171,7 @@ func _draw() -> void:
 			_text("%03d%%" % int(scan_progress * 100), Vector2(1150, 825), 35)
 			_text("単体 / 2秒 / 射程6m", Vector2(1152, 850), 13, muted)
 		draw_rect(Rect2(310, 818, 780, 70), Color(0.035, 0.07, 0.085, 0.9))
+		if not cat_status.is_empty(): _text(cat_status,Vector2(48,142),17,lime)
 		_text("Tab / スキル購入", Vector2(325, 846), 14, muted)
 		_text("F / ソナー " + ("未解放" if run.upgrades.sonar == 0 else ("使用可能" if sonar_cooldown <= 0 else "%d秒" % ceili(sonar_cooldown))), Vector2(535, 846), 14, lime if run.upgrades.sonar > 0 else muted)
 		_text("E / 連鎖スキャン " + ("未解放" if run.upgrades.chain == 0 else ("使用可能" if chain_cooldown <= 0 else "%d秒" % ceili(chain_cooldown))), Vector2(800, 870), 14, lime if run.upgrades.chain > 0 else muted)
@@ -177,7 +181,7 @@ func _draw() -> void:
 	if mode == "skills":
 		_text("探索する力を、手に入れよう。", Vector2(70, 90), 36)
 		_text("スキル購入・強化　／　所持 %d AP" % run.ap, Vector2(72, 130), 19, lime)
-		_text("購入した能力は今回のプレイ中ずっと有効です。この画面ではゲームが一時停止します。", Vector2(72, 163), 16, muted)
+		_text("4系統から選び、右側で効果と購入条件を確認。この画面ではゲームが一時停止します。", Vector2(72, 163), 16, muted)
 	elif mode == "pause":
 		_text("ひと休みしましょう。", Vector2(460, 325), 52)
 		_text("準備ができたら、探索を再開できます。", Vector2(463, 370), 20, muted)
@@ -192,7 +196,7 @@ func _draw() -> void:
 		_text("探索アイテム / バッグ",Vector2(70,150),40)
 		_text("宝箱で入手した使い切りアイテムです。選んで探索に戻り、Xで使用します。",Vector2(72,193),17,muted)
 	elif mode == "map":
-		_text("A・B館 / %sの案内図" % Mall.floor_title(map_level), Vector2(100, 160), 40)
+		_text("A・B・C館 / %sの案内図" % Mall.floor_title(map_level), Vector2(100, 160), 40)
 		_text("訪問した案内ポイントのみ移動できます ／ Tabでファストトラベルを購入", Vector2(102, 201), 16, lime)
 		var frame := Rect2(100, 270, 1240, 325)
 		_draw_plan(frame)
@@ -215,7 +219,8 @@ func _draw() -> void:
 		if map_level in [0,1,2]:
 			_text("B館",_plan_point(Vector2(-340,0),frame),16)
 			_text("B館奥の売り場",_plan_point(Vector2(-414,0),frame),13)
-		_text("A・B館は2階連絡通路、または1階の駐車場側歩行路で移動できます",Vector2(360,626),15,muted)
+		if map_level == 0: _text("C館 / 屋外広場",_plan_point(Vector2(-410,-143),frame),15)
+		_text("A↔B：2階連絡通路・1階歩行路 ／ B↔C：B館1階の北西連絡通路",Vector2(120,626),15,muted)
 
 func _draw_minimap() -> void:
 	draw_rect(Rect2(30, 712, 250, 153), Color(0.035, 0.07, 0.085, 0.9))
@@ -247,6 +252,7 @@ func _map_point(p: Vector2, frame: Rect2) -> Vector2:
 func _draw_plan(frame: Rect2) -> void:
 	draw_rect(frame, Color("14272d"))
 	var level := map_level if mode == "map" else Mall.level_at(player_position.y)
+	for region in CWing.regions(level): _draw_region(region,frame,Color("879781"),true)
 	for region in BWing.regions(level): _draw_region(region,frame,Color("6b807e"),true)
 	_draw_region(Rect2(-112,-24,22,24),frame,Color("344b50"),true)
 	for x in [-107.2,-101.2]: _draw_region(Rect2(x,-20,2.4,14),frame,Color("758a84"))
@@ -264,9 +270,7 @@ func _draw_plan(frame: Rect2) -> void:
 			if not Mall.has_shop(x,side): continue
 			var rect := Rect2(x-9,-24 if side < 0 else 8,18,16)
 			_draw_region(rect,frame,Color("394f58"),true)
-			if frame.size.x > 400:
-				var point := MallCurve.world(Vector3(x-7,0,side*16))
-				_text(Mall.CATEGORIES[Mall.SHOP_CENTERS.find(x)],_map_point(Vector2(point.x,point.z),frame),10)
+
 
 func _draw_region(rect: Rect2,frame: Rect2,color: Color,border: bool = false) -> void:
 	if not cached_polygons.has(rect):
@@ -315,18 +319,7 @@ func show_mode(next: String) -> void:
 				_button(GraphicsOptions.PRESETS[key].name,Rect2(460+i*180,670,160,45),func(): graphics_selected.emit(key),graphics_choice == key)
 				i += 1
 		"skills":
-			var i := 0
-			for key in IdentityRun.SKILLS:
-				var skill: Dictionary = IdentityRun.SKILLS[key]
-				var col := i % 4
-				var row := i / 4
-				var maxed: bool = run.upgrades[key] >= skill.max
-				var text := "%s\n%s  [%d/%d]\n%s\n%s" % [skill.branch, skill.name, run.upgrades[key], skill.max, skill.detail, "最大レベル" if maxed else "%d AP" % run.price(key)]
-				var button := _button(text, Rect2(70 + col * 330, 192 + row * 137, 312, 126), func(): skill_pressed.emit(key))
-				button.add_theme_font_size_override("font_size", 14)
-				button.disabled = maxed or run.ap < run.price(key) or (key == "cat_speed" and run.upgrades.cat == 0) or (key in ["focus", "magazine", "reload", "range", "pierce"] and run.upgrades.gun == 0)
-				i += 1
-			_button("探索に戻る / Tab", Rect2(70, 772, 420, 56), func(): resume_pressed.emit(), true)
+			SkillPanel.build(self)
 		"win":
 			_button("もう一度探す", Rect2(460, 530, 520, 62), func(): restart_pressed.emit(), true)
 			_button("ゲームを終了", Rect2(460, 612, 520, 54), func(): exit_pressed.emit())
@@ -362,8 +355,8 @@ func show_mode(next: String) -> void:
 			var index := 0
 			for key in Mall.HUBS:
 				var label: String = key + (" / 移動" if run.can_travel(key) else " / 要スキル" if run.visited.has(key) else " / 未訪問")
-				var button := _button(label,Rect2(100+(index%4)*310,650+(index/4)*44,300,40),func(): travel_pressed.emit(key))
-				button.add_theme_font_size_override("font_size",15)
+				var button := _button(label,Rect2(100+(index%5)*250,650+(index/5)*44,240,40),func(): travel_pressed.emit(key))
+				button.add_theme_font_size_override("font_size",14)
 				button.disabled = not run.can_travel(key)
 				index += 1
 			_button("探索に戻る / M", Rect2(510, 844, 420, 45), func(): resume_pressed.emit(), true)

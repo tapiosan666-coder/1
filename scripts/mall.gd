@@ -13,7 +13,7 @@ const FOOD := Rect2(46, -62, 46, 30)
 const RESTROOM := Rect2(-90, 26, 38, 30)
 const PROMENADE := Rect2(-47, -36, 127, 8)
 const MARKET := Rect2(6, 8, 36, 40)
-const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5), "A・B連絡通路":Vector3(-150,5.625,-5.5), "B館東入口":Vector3(-194,.1,-5.5), "B館2階ラウンジ":Vector3(-194,5.625,0), "B館3階シネマ":Vector3(-380,10.975,0), "B館家電売場":Vector3(-402,.1,0)}
+const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5), "A・B連絡通路":Vector3(-150,5.625,-5.5), "B館東入口":Vector3(-194,.1,-5.5), "B館2階ラウンジ":Vector3(-194,5.625,0), "B館3階シネマ":Vector3(-380,10.975,0), "B館家電売場":Vector3(-402,.1,0), "B・C連絡通路":Vector3(-370,.1,-52), "C館屋外広場":Vector3(-362,.1,-116), "C館テラス":Vector3(-338,.1,-98)}
 const ENTRANCE := Vector3(-82, 0.1, 0)
 static var floor_regions: Array[Rect2] = []
 static var obstacles: Array[Rect2] = []
@@ -150,6 +150,7 @@ static func plan_regions(level: int) -> Array[Rect2]:
 	elif level in [1,2]: regions.append_array(upper_regions())
 	regions.append_array(MallAnnex.regions(level))
 	regions.append_array(BWing.regions(level))
+	regions.append_array(CWing.regions(level))
 	cached_regions[level] = regions
 	return regions
 
@@ -169,6 +170,8 @@ static func plan_walkable(p: Vector3) -> bool:
 	for obstacle in blocks:
 		if obstacle.grow(.35).has_point(v): return false
 	for obstacle in BWing.obstacles(level):
+		if obstacle.grow(.35).has_point(v): return false
+	for obstacle in CWing.obstacles(level):
 		if obstacle.grow(.35).has_point(v): return false
 	for obstacle in MallAnnex.obstacles(level):
 		if obstacle.grow(.35).has_point(v): return false
@@ -192,12 +195,14 @@ static func segment_walkable(a: Vector3,b: Vector3) -> bool:
 
 static func building_name(p: Vector3) -> String:
 	var plan := MallCurve.plan(p)
+	if CWing.contains(plan): return "連絡通路" if plan.z > -80 else "C館"
 	return "B館" if plan.x < -190 else "連絡通路" if plan.x < -112 and Mall.level_at(p.y) == 1 else "A館"
 
 static func zone_name(p: Vector3) -> String:
 	var plan := MallCurve.plan(p)
 	var v := Vector2(plan.x, plan.z)
 	var level := level_at(p.y)
+	if CWing.contains(plan): return CWing.zone_name(plan)
 	if plan.x < -190 or (level == 1 and plan.x < -112): return BWing.zone_name(plan)
 	if plan.x < -174: return BWing.zone_name(plan)
 	if plan.x < -90: return "A館%s / %s" % [floor_title(level),"西駐車場" if level == 0 and plan.x < -115 else "西側階段"]
@@ -250,6 +255,7 @@ func _ready() -> void:
 	for level in [1,2]: _build_upper_shops(level)
 	MallAnnex.new().build(self)
 	BWing.new().build(self)
+	CWing.new().build(self)
 	for level in [-1,0,1,2,3]:
 		var cells: Dictionary = {}
 		for rect in plan_regions(level):
@@ -519,24 +525,24 @@ func _build_architecture() -> void:
 	for level in [1,2]:
 		var y: float = level*5.35
 		for side in [-1,1]:
-			Shapes.box(self,Vector3(0,y,side*6.5),Vector3(180,.35,3),ivory,true)
-			Shapes.box(self,Vector3(0,y-.25,side*5),Vector3(180,.18,.16),bronze)
-			Shapes.box(self,Vector3(0,y-.35,side*5.1),Vector3(178,.035,.06),light)
+			Shapes.box(self,Vector3(0,y,side*6),Vector3(180,.35,4),ivory,true)
+			Shapes.box(self,Vector3(0,y-.25,side*4),Vector3(180,.18,.16),bronze)
+			Shapes.box(self,Vector3(0,y-.35,side*4.1),Vector3(178,.035,.06),light)
 			for span in [[-90.0,-61.6],[-58.4,-48.0],[-45.0,-33.0],[-30.0,8.4],[11.6,60.4],[63.6,90.0]]:
 				var middle: float = (span[0]+span[1])*.5
 				var width: float = span[1]-span[0]
-				Shapes.box(self,Vector3(middle,y+.65,side*4.95),Vector3(width,1.05,.06),glass,true)
-				Shapes.box(self,Vector3(middle,y+1.21,side*4.95),Vector3(width,.045,.065),bronze)
+				Shapes.box(self,Vector3(middle,y+.65,side*3.95),Vector3(width,1.05,.06),glass,true)
+				Shapes.box(self,Vector3(middle,y+1.21,side*3.95),Vector3(width,.045,.065),bronze)
 			for x in range(-84,90,12):
-				Shapes.box(self,Vector3(x,y+.65,side*4.95),Vector3(.045,1.15,.07),bronze)
+				Shapes.box(self,Vector3(x,y+.65,side*3.95),Vector3(.045,1.15,.07),bronze)
 				Shapes.box(self,Vector3(x,y-.22,side*6.5),Vector3(5,.035,.18),light)
 		# Blank fronts only where the lower-floor side wings have no upper store.
 		for span in [[-75.0,1,18.0],[24.0,1,36.0],[69.0,-1,18.0],[-87.0,-1,6.0],[84.0,-1,12.0],[-87.0,1,6.0],[84.0,1,12.0]]:
 			Shapes.box(self,Vector3(span[0],y+2.5,span[1]*8.5),Vector3(span[2],4.8,.25),ivory,true)
 		for x in [-60.0,10.0,62.0]:
-			Shapes.box(self,Vector3(x,y,0),Vector3(3.2,.35,10),ivory,true)
+			Shapes.box(self,Vector3(x,y,0),Vector3(3.2,.35,8),ivory,true)
 			for edge in [-1.6,1.6]:
-				Shapes.box(self,Vector3(x+edge,y+.65,0),Vector3(.06,1.1,10),glass,true)
+				Shapes.box(self,Vector3(x+edge,y+.65,0),Vector3(.06,1.1,8),glass,true)
 	for side in [-1,1]:
 		Shapes.box(self,Vector3(0,16.1,side*5.5),Vector3(180,.24,5),ivory)
 	Shapes.box(self,Vector3(0,16.35,0),Vector3(180,.08,6),Shapes.material(Color("b4cbd0"),.2))
@@ -640,7 +646,7 @@ func _build_market() -> void:
 	Shapes.sign_text(self,Vector3(24,3.0,47.7),"毎日の食卓に  /  FOOD & DAILY",46,Color("344d40"))
 
 static func gallery_regions() -> Array[Rect2]:
-	return [Rect2(-90,-8,180,3),Rect2(-90,5,180,3),Rect2(-48,-15,3,39),Rect2(-33,-15,3,39),Rect2(-48,21,18,3),Rect2(-48,-15,18,3),Rect2(-48,6.5,18,3),Rect2(-61.6,-5,3.2,10),Rect2(8.4,-5,3.2,10),Rect2(60.4,-5,3.2,10)]
+	return [Rect2(-90,-8,180,4),Rect2(-90,4,180,4),Rect2(-48,-15,3,39),Rect2(-33,-15,3,39),Rect2(-48,21,18,3),Rect2(-48,-15,18,3),Rect2(-48,6.5,18,3),Rect2(-61.6,-4,3.2,8),Rect2(8.4,-4,3.2,8),Rect2(60.4,-4,3.2,8)]
 
 static func escalator_carry(position: Vector3) -> Vector3:
 	var p := MallCurve.plan(position)
@@ -690,7 +696,7 @@ func _build_reading_and_court() -> void:
 			for piece in pieces:
 				Shapes.box(self,Vector3(piece.get_center().x,y,piece.get_center().y),Vector3(piece.size.x,.35,piece.size.y),ivory,true)
 		for x in [-45.0,-33.0]:
-			for segment in [[-12.0,-8.0],[-5.0,5.0],[9.5,21.0]]:
+			for segment in [[-12.0,-8.0],[-4.0,4.0],[9.5,21.0]]:
 				var middle: float = (segment[0]+segment[1])*.5
 				var length: float = segment[1]-segment[0]
 				Shapes.box(self,Vector3(x,y+.65,middle),Vector3(.06,1.1,length),glass,true)

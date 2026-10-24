@@ -14,8 +14,8 @@ func run_tests() -> void:
 	expect(game.run.price("gun") == 1000,"Gun price retains the population formula for 300 identities")
 	var people_in_b := 0
 	for p in game.crowd.positions:
-		if p.x < -190: people_in_b += 1
-	expect(people_in_b >= 122,"B's shop staff, shoppers and cinema patrons are present from the start")
+		if p.x < -190 and p.z >= -26: people_in_b += 1
+	expect(people_in_b >= 92,"B keeps at least 92 fixed staff and patrons while C reuses thirty slots")
 	expect(WorldCache.can_load() and game.mall.render_stats.source_meshes > game.mall.render_stats.sectors*10,"Prebuilt spatial rendering replaces thousands of individual static nodes")
 	expect(WorldCache.navigation.positions.size() == game.crowd.nav.get_point_count(),"Precomputed navigation restores all points, including vertical links")
 	var state: PhysicsDirectSpaceState3D = game.get_world_3d().direct_space_state
@@ -36,7 +36,7 @@ func run_tests() -> void:
 			var head: Vector3 = game.crowd.positions[id]+Vector3.UP*(1.2 if game.crowd.roles[id] == "seated" else 1.7)
 			if state.intersect_ray(PhysicsRayQueryParameters3D.create(point+Vector3.UP*1.68,head,1)).is_empty(): visible = true; break
 		if not visible: accessible = false; push_error("No scanner vantage for B identity %d" % id)
-	expect(accessible,"Every stationary B identity can be reached with a handheld scanner, including cinema seats")
+	expect(accessible,"Every redistributed stationary B/C identity can be reached with a handheld scanner, including cinema seats")
 	game.player.position = Vector3(-106,5.575,-5); game.player.velocity = Vector3.ZERO
 	expect(await walk_to(game,Vector3(-194,5.525,-5),15),"Walk from A's 2F landing across the entire skybridge into B")
 	expect(absf(game.player.position.y-5.525) < .1,"Skybridge traversal preserves the actual 2F height")
@@ -61,7 +61,7 @@ func run_tests() -> void:
 	var fit := true
 	for button in game.hud.buttons.get_children():
 		if button is Button and (button.position.x+button.size.x > 1440 or button.position.y+button.size.y > 900): fit = false
-	expect(fit,"All fifteen travel buttons and five floor tabs fit on-screen")
+	expect(fit,"All eighteen travel buttons and five floor tabs fit on-screen")
 	expect(not game.fast_travel("B館3階シネマ"),"Viewing B's map does not unlock an unvisited cinema")
 	game.set_mode("play"); game.player.position = Mall.hub_position("B館3階シネマ"); game._visit_points()
 	game.set_mode("map")

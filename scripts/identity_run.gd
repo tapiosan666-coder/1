@@ -22,7 +22,7 @@ const SKILLS := {
 	"pierce": {"name": "貫通スキャン", "detail": "銃弾が最大3人に命中（壁で停止）", "cost": 150, "max": 1, "branch": "01 / 銃の強化"},
 	"chain": {"name": "連鎖スキャン", "detail": "E：照準の相手から最大8人・間隔5m", "cost": 180, "max": 1, "branch": "04 / 特殊スキャン"},
 	"double_jump": {"name": "二段ジャンプ", "detail": "空中でもう一度Spaceでジャンプ", "cost": 80, "max": 1, "branch": "03 / 探索・移動"},
-	"cat": {"name": "探索猫を配備", "detail": "猫が20秒ごとに1人をスキャン", "cost": 100, "max": 1, "branch": "02 / 猫の探索"},
+	"cat": {"name": "探索猫を配備", "detail": "近づいた相手を20秒でスキャン", "cost": 100, "max": 1, "branch": "02 / 猫の探索"},
 	"cat_speed": {"name": "猫パンチ強化", "detail": "スキャン時間：20秒 → 12秒 → 6秒", "cost": 80, "max": 2, "branch": "02 / 猫の探索"},
 	"sonar": {"name": "瞬間ソナー", "detail": "探知半径：15 → 30 → 50 → 80 → 120m", "cost": 40, "max": 5, "branch": "03 / 探索・移動"},
 	"travel": {"name":"ファストトラベル","detail":"M：訪問した案内ポイントへ移動","cost":100,"max":1,"branch":"03 / 探索・移動"},
@@ -97,17 +97,22 @@ func price(key: String) -> int:
 		return maxi(400, roundi(float(population) / 3.0) * 10)
 	return int(SKILLS[key].cost) * (int(upgrades[key]) + 1)
 
+static func prerequisite(key: String) -> String:
+	if key == "cat_speed": return "cat"
+	if key in ["focus","magazine","reload","range","pierce"]: return "gun"
+	return ""
+
+func purchase_reason(key: String) -> String:
+	if not SKILLS.has(key): return "このスキルは購入できません"
+	if upgrades[key] >= SKILLS[key].max: return "最大レベルまで取得済み"
+	var required := prerequisite(key)
+	if not required.is_empty() and upgrades[required] == 0: return "先に「%s」を購入してください" % SKILLS[required].name
+	if ap < price(key): return "あと %d AP 必要です" % (price(key)-ap)
+	return ""
+
 func purchase(key: String) -> bool:
-	if not SKILLS.has(key):
-		return false
-	if key == "cat_speed" and upgrades.cat == 0:
-		return false
-	if key in ["focus", "magazine", "reload", "range", "pierce"] and upgrades.gun == 0:
-		return false
-	if int(upgrades[key]) >= int(SKILLS[key].max) or ap < price(key):
-		return false
-	ap -= price(key)
-	upgrades[key] += 1
+	if not purchase_reason(key).is_empty(): return false
+	ap -= price(key); upgrades[key] += 1
 	return true
 
 func can_travel(key: String) -> bool:

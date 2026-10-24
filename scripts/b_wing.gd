@@ -40,8 +40,8 @@ static func regions(level: int) -> Array[Rect2]:
 		result.append_array([ANCHOR,WEST,EAST])
 		if level == 0: result.append_array([MAIN,COURT,GROUND_LINK])
 		else:
-			result.append_array([Rect2(-374,-8,184,5),Rect2(-374,3,184,5),Rect2(-246,8,3,20),Rect2(-225,8,3,20),Rect2(-246,21,24,7),FRONT])
-			for x in BRIDGES: result.append(Rect2(x-2,-3,4,6))
+			result.append_array([Rect2(-374,-8,184,6),Rect2(-374,2,184,6),Rect2(-246,8,3,20),Rect2(-225,8,3,20),Rect2(-246,21,24,7),FRONT])
+			for x in BRIDGES: result.append(Rect2(x-2,-2,4,4))
 			if level == 1: result.append(SKY_LINK)
 		for store in STORES: result.append(Rect2(store.x-store.w/2,-26 if store.side < 0 else 8,store.w,18))
 	cached_regions[level] = result
@@ -124,7 +124,11 @@ func _glass() -> StandardMaterial3D:
 func _shell(level: int) -> void:
 	var y := Mall.floor_height(level)
 	var height := Mall.floor_height(level+1)-y
-	for z in [-26.0,26.0]: Shapes.box(mall,Vector3(-303,y+height/2,z),Vector3(226,height,.25),ivory,true)
+	for z in [-26.0,26.0]:
+		if level == 0 and z < 0:
+			for span in [[-416.0,-374.0],[-366.0,-190.0]]: Shapes.box(mall,Vector3((span[0]+span[1])/2,y+height/2,z),Vector3(span[1]-span[0],height,.25),ivory,true)
+			Shapes.box(mall,Vector3(-370,4.6,z),Vector3(8,1.85,.25),ivory,true)
+		else: Shapes.box(mall,Vector3(-303,y+height/2,z),Vector3(226,height,.25),ivory,true)
 	Shapes.box(mall,Vector3(-416,y+height/2,0),Vector3(.25,height,52),ivory,true)
 	if level < 2:
 		for span in [[-26.0,-8.0],[-3.0,26.0]]:
@@ -247,10 +251,10 @@ func _gallery(level: int) -> void:
 	var y := Mall.floor_height(level)
 	for side in [-1,1]:
 		for span in [[-366.0,-344.0],[-340.0,-284.0],[-280.0,-224.0],[-220.0,-198.0]]:
-			Shapes.box(mall,Vector3((span[0]+span[1])/2,y+.65,side*3),Vector3(span[1]-span[0],1.1,.08),_glass(),true)
-			Shapes.box(mall,Vector3((span[0]+span[1])/2,y+1.23,side*3),Vector3(span[1]-span[0],.05,.1),steel)
+			Shapes.box(mall,Vector3((span[0]+span[1])/2,y+.65,side*2),Vector3(span[1]-span[0],1.1,.08),_glass(),true)
+			Shapes.box(mall,Vector3((span[0]+span[1])/2,y+1.23,side*2),Vector3(span[1]-span[0],.05,.1),steel)
 	for x in BRIDGES:
-		for edge in [-2.0,2.0]: Shapes.box(mall,Vector3(x+edge,y+.65,0),Vector3(.08,1.1,6),_glass(),true)
+		for edge in [-2.0,2.0]: Shapes.box(mall,Vector3(x+edge,y+.65,0),Vector3(.08,1.1,4),_glass(),true)
 
 func _court() -> void:
 	for level in [0,1,2]:
