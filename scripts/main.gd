@@ -38,12 +38,15 @@ var selected_skin := Color("cfaa89")
 var selected_hair := Color("33312c")
 var selected_width := 1.0
 var graphics_choice := "balanced"
+var doors: DoorField
+var store_signs: StoreSigns
 
 func _ready() -> void:
 	_configure_input()
 	_setup_environment()
 	mall = Mall.new()
 	add_child(mall)
+	store_signs=StoreSigns.new();add_child(store_signs);store_signs.setup(mall)
 	effects = Node3D.new()
 	add_child(effects)
 	audio = ScanAudio.new()
@@ -55,6 +58,7 @@ func _ready() -> void:
 	player.camera.rotation.x = -0.03
 	player.fired.connect(fire)
 	player.reload_requested.connect(reload_gun)
+	doors=DoorField.new();add_child(doors);doors.setup(self)
 	var canvas := CanvasLayer.new()
 	add_child(canvas)
 	hud = FindHUD.new()
@@ -131,6 +135,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	add_child(crowd)
 	crowd.process_mode = Node.PROCESS_MODE_PAUSABLE
 	crowd.setup(run, mall.spawn_points)
+	doors.reset()
 	loot = RunLoot.new(mall.spawn_points,run_seed)
 	caches = CacheField.new(); effects.add_child(caches); caches.setup(loot)
 	speech = NpcSpeech.new(); effects.add_child(speech)
@@ -207,7 +212,9 @@ func _input(event: InputEvent) -> void:
 	elif event.keycode == KEY_X and hud.mode == "play":
 		use_item()
 	elif event.keycode == KEY_F and hud.mode == "play":
-		sonar()
+		var interaction:=doors.interact(player.camera)
+		if interaction==DoorField.Interaction.NONE:sonar()
+		elif interaction==DoorField.Interaction.BLOCKED:hud.message("扉の動く範囲を空けてください")
 	elif event.keycode == KEY_E and hud.mode == "play":
 		chain_scan()
 	elif event.keycode == KEY_Q and hud.mode == "play":
@@ -238,6 +245,7 @@ func _physics_process(delta: float) -> void:
 	_visit_points()
 	_tick_items(delta)
 	hud.nearby_cache = caches.nearest(player.camera)
+	hud.interaction_hint=doors.hint(player.camera)
 	speech.update_nearby(crowd,player.camera,not Input.is_action_pressed("fire"))
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
@@ -677,21 +685,23 @@ func _capture() -> void:
 	get_tree().quit()
 
 func _visit_points(announce: bool = true) -> void:
-	for key in Mall.HUBS:
-		if not run.visited.has(key) and player.position.distance_to(Mall.hub_position(key)) <= 2.0:
+	for point in MallLayout.travel_points():
+		var key: String = point.legacy_key
+		if not run.visited.has(key) and player.position.distance_to(point.position) <= 2.0:
 			run.visited[key] = true
 			if announce:
 				hud.message("案内ポイントを記録：%s ／ Mで確認" % key)
 
 func fast_travel(key: String) -> bool:
-	if hud.mode != "map" or not Mall.HUBS.has(key) or not run.can_travel(key):
+	var point := MallLayout.travel_point(key)
+	if hud.mode != "map" or point.is_empty() or not run.can_travel(point.legacy_key):
 		return false
-	player.position = Mall.hub_position(key)
+	player.position = point.position
 	player.velocity = Vector3.ZERO
 	player.air_jump_used = false
 	handheld_scan.reset()
 	set_mode("play")
-	hud.message("%sへ移動しました" % key)
+	hud.message("%sへ移動しました" % point.legacy_key)
 	return true
 
 func _capture_overview() -> void:

@@ -1,0 +1,129 @@
+{
+  "date_jst": "2026-10-25",
+  "version": "0.17.0",
+  "total_checks": 671,
+  "total_failures": 0,
+  "suites": [
+    {
+      "suite": "game",
+      "checks": 146,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "mall_layout",
+      "checks": 130,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "upper_and_restrooms",
+      "checks": 41,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "expansion",
+      "checks": 59,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "annex",
+      "checks": 62,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "wing_b",
+      "checks": 43,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "wing_c",
+      "checks": 40,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "cat_and_skills",
+      "checks": 33,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "scan_and_paths",
+      "checks": 22,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "retail_detail",
+      "checks": 6,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "dining_layout",
+      "checks": 26,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "visual_access",
+      "checks": 2,
+      "failures": 0,
+      "mode": "headless"
+    },
+    {
+      "suite": "world_art",
+      "checks": 6,
+      "failures": 0,
+      "mode": "real renderer (Mesa llvmpipe)"
+    },
+    {
+      "suite": "render_materials",
+      "checks": 10,
+      "failures": 0,
+      "mode": "real renderer (Mesa llvmpipe)"
+    },
+    {
+      "suite": "character_motion",
+      "checks": 15,
+      "failures": 0,
+      "mode": "real renderer (Mesa llvmpipe)"
+    },
+    {
+      "suite": "continuous_civilian",
+      "checks": 11,
+      "failures": 0,
+      "mode": "real renderer (Mesa llvmpipe)"
+    },
+    {
+      "suite": "face_presentation",
+      "checks": 7,
+      "failures": 0,
+      "mode": "real renderer (Mesa llvmpipe)"
+    },
+    {
+      "suite": "store_signs",
+      "checks": 12,
+      "failures": 0,
+      "mode": "headless; atlas mipmaps and runtime geometry"
+    }
+  ],
+  "windows_execution_tested": false,
+  "rtx_fps_tested": false,
+  "population_tested": 300,
+  "store_signs": {
+    "brands": 42,
+    "boards": 68,
+    "shared_atlas": [
+      4096,
+      1408
+    ],
+    "distance_limit_m": 75,
+    "collision_added": false
+  }
+}

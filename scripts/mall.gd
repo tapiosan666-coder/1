@@ -109,12 +109,7 @@ static func prepare_plan() -> void:
 		for z in [-7.4, 7.4]:
 			obstacles.append(Rect2(x - 0.175, z - 0.175, 0.35, 0.35))
 	obstacles.append_array(DiningWing.obstacles())
-	# Basins and the rear partitions leave a continuous public aisle.
-	obstacles.append(Rect2(-89, 39, 1.5, 14))
-	for x in [-67.0, -62.0, -57.0]:
-		obstacles.append(Rect2(x - 0.14, 46, 0.28, 9))
-		obstacles.append(Rect2(x - 2.45, 51.85, 0.7, 0.7))
-		obstacles.append(Rect2(x - 2.45, 54.2, 0.7, 0.4))
+	obstacles.append_array(RestroomWing.obstacles())
 
 static func inside_floor(p: Vector2) -> bool:
 	prepare_plan()
@@ -167,7 +162,7 @@ static func plan_walkable(p: Vector3) -> bool:
 		if not inside: return false
 	var blocks: Array[Rect2] = []
 	if level == 0: blocks = obstacles
-	elif level in [1,2]: blocks = upper_obstacles
+	elif level in [1,2]: blocks = UpperRetail.obstacles(level)
 	for obstacle in blocks:
 		if obstacle.grow(.35).has_point(v): return false
 	for obstacle in BWing.obstacles(level):
@@ -432,27 +427,7 @@ func _chair(at: Vector3, yaw: float) -> void:
 			Shapes.box(chair, Vector3(x, 0.22, z), Vector3(0.04, 0.44, 0.04), dark)
 
 func _build_restroom() -> void:
-	Shapes.box(self, Vector3(-88.25, 0.45, 46), Vector3(1.5, 0.9, 14), stone, true)
-	for z in [40.5, 45.0, 49.5]:
-		Shapes.sphere(self, Vector3(-88, 0.94, z), 0.35, chalk).scale.y = 0.15
-		Shapes.box(self, Vector3(-88.4, 1.04, z), Vector3(0.1, 0.22, 0.06), dark)
-		Shapes.box(self, Vector3(-89.75, 1.75, z), Vector3(0.04, 0.9, 1.7), Shapes.material(Color("8aadb5")))
-		identity_slots.append({"pos": Vector3(-86.3, 0, z), "yaw": PI / 2, "role": "restroom"})
-	for x in [-67.0, -62.0, -57.0]:
-		Shapes.box(self, Vector3(x, 1.2, 50.5), Vector3(0.25, 2.4, 9), wood, true)
-		identity_slots.append({"pos": Vector3(x - 1.6, 0, 42), "yaw": 0.0, "role": "restroom"})
-		Shapes.cylinder(self, Vector3(x - 2.1, 0.27, 52.2), 0.3, 0.54, chalk)
-		Shapes.box(self, Vector3(x - 2.1, 0.65, 54.4), Vector3(0.65, 0.9, 0.3), chalk)
-		Shapes.sign_text(self, Vector3(x - 2.1, 2.6, 46.1), "個室", 32).rotation.y = PI
-	Shapes.box(self, Vector3(-71, 4.9, 41), Vector3(38, 0.15, 30), chalk)
-	Shapes.sign_text(self, Vector3(-71, 3.4, 55.7), "お手洗い", 90).rotation.y = PI
-	for z in [31.0, 43.0, 51.0]:
-		Shapes.box(self, Vector3(-72, 4.5, z), Vector3(13, 0.07, 0.2), warm)
-		var light := OmniLight3D.new()
-		add_child(light)
-		light.position = Vector3(-72, 3.5, z)
-		light.light_energy = 0.8
-		light.omni_range = 13
+	RestroomWing.build(self)
 
 func _build_conversations() -> void:
 	for x in [-63.0, -45.0, -27.0, -9.0, 9.0, 27.0, 45.0, 63.0]:
@@ -718,21 +693,5 @@ func _escalator(x: float,y: float,start: float,end: float) -> void:
 		rail.rotation.x = angle
 
 func _build_upper_shops(level: int) -> void:
-	var child_start := get_child_count()
-	var slot_start := identity_slots.size()
-	_build_shops()
-	var height := floor_height(level)
-	for index in range(child_start,get_child_count()):
-		var node := get_child(index) as Node3D
-		node.position.y += height
-		if node is Label3D and "READING LOUNGE" in node.text: node.text = "BOOK FAIR / 新刊のご案内"
-	for index in range(slot_start,identity_slots.size()): identity_slots[index].pos.y += height
-	for side in [-1,1]:
-		for x in SHOP_CENTERS:
-			if not has_shop(x,side): continue
-			Shapes.box(self,Vector3(x,height-.175,side*16),Vector3(18,.35,16),chalk,true)
-			# The reused bookshop's rear lounge is closed on the upper floors.
-			if x == -75 and side == -1:
-				Shapes.box(self,Vector3(x,height+2.4,-23.6),Vector3(4,4.8,.25),chalk,true)
-	_direction_sign(Vector3(-39,height+3,22.8),"A館 %dF  /  ショッピング
-エスカレーターで各階へ" % (level+1),PI)
+	UpperRetail.build_floor(self,level)
+	_direction_sign(Vector3(-39,floor_height(level)+3,22.8),"A館 %dF / %s\nエスカレーターで各階へ" % [level+1,TenantCatalog.summary(level)],PI)

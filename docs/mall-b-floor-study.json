@@ -1,0 +1,38 @@
+{
+  "status": "設計検討用。未実装。実施設の実測図ではない",
+  "floor_id": "B/1F",
+  "units": "metres",
+  "envelope": [300, 180],
+  "boundary": [[10,70],[64,70],[113,35],[180,22],[218,5],[292,5],[295,66],[272,89],[276,123],[294,143],[294,179],[214,179],[191,164],[145,170],[100,160],[55,174],[22,157],[35,125],[10,125]],
+  "paths": [
+    {"id":"main","label":"主回廊 10m","width":10,"points":[[42,167.3],[55,155],[80,132],[145,95],[230,55]]},
+    {"id":"loop","label":"副回廊 8m","width":8,"points":[[80,132],[150,151],[236,127],[230,55]]},
+    {"id":"neck","label":"橋側ロビーへの接続 8m","width":8,"points":[[230,55],[222,28],[218,8]]},
+    {"id":"market","label":"大型店への接続 8m","width":8,"points":[[236,127],[247,145]]},
+    {"id":"core-west","label":"サービス接続 6m","width":6,"points":[[68,143],[59,132]]},
+    {"id":"core-middle","label":"サービス接続 6m","width":6,"points":[[138,99],[134,83]]},
+    {"id":"core-east","label":"サービス接続 6m","width":6,"points":[[233,84],[253,84]]}
+  ],
+  "plazas": [
+    {"id":"light","label":"光の広場","center":[80,132],"radius":[14,11]},
+    {"id":"time","label":"時の広場","center":[145,95],"radius":[12,9]},
+    {"id":"wing","label":"翼の広場","center":[230,55],"radius":[14,10]}
+  ],
+  "tenants": [
+    {"id":"anchor-west","label":"大型服飾","kind":"anchor","polygon":[[10,70],[64,70],[75,87],[64,116],[10,116]]},
+    {"id":"anchor-east","label":"大型スポーツ","kind":"anchor","polygon":[[250,10],[290,10],[292,62],[250,62]]},
+    {"id":"anchor-market","label":"食品・日用品","kind":"anchor","polygon":[[218,147],[268,137],[291,151],[291,176],[218,176]]},
+    {"id":"north-west","label":"専門店群 A","kind":"retail","polygon":[[88,65],[114,41],[122,47],[126,74],[106,86]]},
+    {"id":"north-middle","label":"専門店群 B","kind":"retail","polygon":[[151,39],[179,29],[183,61],[151,65]]},
+    {"id":"north-east","label":"専門店群 C","kind":"retail","polygon":[[187,29],[211,18],[212,44],[187,54]]},
+    {"id":"island-west","label":"店舗島 D","kind":"retail","polygon":[[113,123],[145,110],[161,114],[151,136],[137,138]]},
+    {"id":"island-middle","label":"店舗島 E","kind":"retail","polygon":[[158,135],[170,110],[190,107],[207,115],[200,126]]},
+    {"id":"island-east","label":"店舗島 F","kind":"retail","polygon":[[167,94],[202,78],[219,83],[220,99],[205,108],[189,100]]}
+  ],
+  "cores": [
+    {"id":"west","rect":[40,121,18,14]},
+    {"id":"middle","rect":[125,68,18,14]},
+    {"id":"east","rect":[253,77,18,14]}
+  ],
+  "section": {"width":72,"retail_depth":18,"gallery_width":6,"void_width":24,"floor_heights":[0,5.525,10.875],"roof_height":16.4,"slab":0.35,"rail_height":1.2}
+}

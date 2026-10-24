@@ -15,7 +15,9 @@ func build(mall: Node3D) -> void:
 			for index in Mall.SHOP_CENTERS.size():
 				var x: float=Mall.SHOP_CENTERS[index]
 				if not Mall.has_shop(x,side):continue
-				_tenant(Vector3(x,y,0),0,18,side,index)
+				var category: int=TenantCatalog.category(TenantCatalog.tenant(level,index,side).kind) if level>0 else index
+				var tint: Color=TenantCatalog.tenant(level,index,side).color if level>0 else Color.TRANSPARENT
+				_tenant(Vector3(x,y,0),0,18,side,category,false,tint)
 		# Glazed balustrades get a solid fascia with a restrained shadow reveal.
 		if level>0:
 			for side in [-1,1]:
@@ -51,7 +53,7 @@ func _ceiling(at: Vector3,size: Vector2) -> void:
 	Shapes.box(root,at+Vector3(0,-.067,0),Vector3(1.15,.015,.36),led)
 	Shapes.box(root,at+Vector3(2,-.045,0),Vector3(.6,.03,.38),metal)
 	for i in 5: Shapes.box(root,at+Vector3(1.75+i*.12,-.065,0),Vector3(.03,.02,.34),cream)
-func _tenant(origin: Vector3,yaw: float,width: float,side: int,kind: int,outlet: bool=false) -> void:
+func _tenant(origin: Vector3,yaw: float,width: float,side: int,kind: int,outlet: bool=false,tint: Color=Color.TRANSPARENT) -> void:
 	kind=maxi(0,kind)
 	# Use the existing legal furniture areas; every added detail is against a wall,
 	# above head height, or inside an existing collision envelope.
@@ -60,6 +62,7 @@ func _tenant(origin: Vector3,yaw: float,width: float,side: int,kind: int,outlet:
 	var front:=0.0 if outlet else 8.5
 	var depth:=(back-front)
 	var feature: Material=oak if kind in [0,1,5,6] else MallFinishes.plaster(PALETTE[kind])
+	if tint.a>0: feature=MallFinishes.plaster(tint.lightened(.2))
 	var reading_access:=is_equal_approx(origin.x,-75) and origin.y<.1 and side<0 and not outlet
 	var spans:Array=[[-width*.5+.25,width*.5-.25]]
 	if reading_access:spans=[[-width*.5+.25,-2.15],[2.15,width*.5-.25]]

@@ -2,7 +2,15 @@
 
 **巨大モールにいる、自分と同じ顔の5,000人。その中の「本当の自分」を見つけるPCゲーム。**
 
-Godot 4.6.3 / GDScript。現在は **0.16・髪の束と横顔、肩・襟・袖、視線と口元を更新する日本語開発版**です。Steam販売版は開発中です。
+Godot 4.6.3 / GDScript。現在は **0.17・A館上階の店舗と1階トイレを更新した日本語開発版**です。Steam販売版は開発中です。
+
+2階は服飾・コスメ・住まい、3階はキッズ・文具・楽器・ホビーを中心に各12店舗へ。1階トイレは入口の目隠し、男女別区画、洗面12台、個室9、多機能/ベビー室を作り直しました。個室・試着室など13枚の扉は近づいて狙い、Fで開閉します。扉を狙っていないときのFは従来のソナーです。[実画面・変更内容・検証](docs/MALL_PHASE2.md)。
+
+全68専門店の看板を、42の架空ブランドのロゴ・配色・図形・文字組みを持つデザインへ変更しました。[看板一覧](assets/retail/store_signs.png)。人物モデル自体は0.16を継続しています。
+
+モール全体は[構造解析と15フロア案](docs/MALL_REDESIGN_PROPOSAL.md)、[寸法図・吹き抜け断面・第1工程](docs/MALL_PHASE1.md)をもとに段階改修中。B館の新外形や不足フロアはまだ実装していません。300人・訪問済み18地点と、初期スキャナーだけで本物を確定する仕様を維持しています。
+
+以下は0.16以前の制作記録です。以前の個数・比較画像を含みます。
 
 髪は22の立体的な束を前髪・側面・後頭部へ配置し、髪の流れに沿う陰影へ変更。細かい束の輪郭線が過剰に出るのを抑えました。服は肩を首から外へ傾斜させ、肘の折れと丸首の襟を調整。目の輪郭を固定したまま黒目とハイライトが動き、会話中は口元の線と眉も動きます。
 
@@ -28,9 +36,9 @@ A館36・B館24・C館8の計68店舗に、新しい商品・小物モデル2,77
 
 ## すぐに遊ぶ
 
-Smart App ControlでEXEがブロックされる場合は、[ソース版ZIP](https://github.com/tapiosan666-coder/1/raw/refs/heads/main/downloads/FIND_YOURSELF-Source.zip)と[Godotからの起動手順](docs/GODOT起動手順.md)を使用できます。公式Godot側の起動可否は端末のポリシーによります。
+Smart App ControlでEXEがブロックされる場合は、[ソース版ZIP](https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/downloads/FIND_YOURSELF-Source.zip)と[Godotからの起動手順](docs/GODOT起動手順.md)を使用できます。公式Godot側の起動可否は端末のポリシーによります。
 
-[Windows版ZIPをダウンロード](https://github.com/tapiosan666-coder/1/raw/refs/heads/main/downloads/FIND_YOURSELF-Windows.zip) → ZIPを右クリックして「すべて展開」→ 展開先の `FIND_YOURSELF.exe` を開いてください。
+[Windows版ZIPをダウンロード](https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/downloads/FIND_YOURSELF-Windows.zip) → ZIPを右クリックして「すべて展開」→ 展開先の `FIND_YOURSELF.exe` を開いてください。
 
 
 Windows用配布ビルドは `builds/FIND_YOURSELF-Windows.zip`、Linux用は `builds/FIND_YOURSELF-Linux.zip`。ZIPをすべて展開し、Windowsでは `FIND_YOURSELF.exe` をダブルクリックしてください。Linuxでは `./FIND_YOURSELF.x86_64` で起動します。PCKファイルを実行ファイルと同じフォルダーに置いてください。
@@ -89,6 +97,9 @@ Windowsバイナリはクロスビルド済みですが、このクラウド環�
 # リポジトリのルートで実行
 godot --headless --editor --import --quit
 godot --headless --script res://tests/test_game.gd
+godot --headless --script res://tests/test_mall_layout.gd
+godot --headless --script res://tests/test_upper_and_restrooms.gd
+godot --headless --script res://tests/test_store_signs.gd
 godot --headless --script res://tests/test_expansion.gd
 godot --headless --script res://tests/test_annex.gd
 godot --headless --script res://tests/test_wing_b.gd

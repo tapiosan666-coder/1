@@ -5,10 +5,12 @@ import json
 import re
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.16.0
+SOURCE_HISTORY_URL = "https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/"
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.17.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -27,6 +29,8 @@ E連鎖スキャン（最大8人・5m間隔・再使用20秒）。
 ファストトラベルは100 APで購入後、訪問済み案内ポイントへMから移動。
 入口・中央広場・食品スーパー・フードコート・お手洗い前・2階/3階アトリウム・地下食品街・屋上庭園・西駐車場、各2m以内で訪問記録。
 Tab強化（4系統から選択し、右側の購入ボタンで確定）、Fソナー、Q範囲スキャン、M案内図、Esc一時停止。
+近くの個室・多機能室・試着室の扉を狙うと、Fは扉の開閉になります。画面の案内に従ってください。
+扉の動く範囲に人がいる場合は操作を止めます。少し離れてから操作してください。
 近くの宝箱をGで開け、Iでバッグ、Xで選択アイテムを使用。
 近くの人には日本語の吹き出しが出ます。
 猫は通行可能な位置から自動でスキャンし、探索・移動・スキャン状態と秒数を左上へ表示。
@@ -48,6 +52,11 @@ C館1階は屋外広場と8店舗、ベンチ・喫茶席。B館1階西端付近
 人数は300人を維持し、30枠をC館へ配置。地図・宝箱の候補にもC館を追加。
 B館地下/屋上・C館の残る階層、写真顔生成、進行セーブ、Steam連携は未実装。UIは日本語です。日本語フォントを同梱しています。
 Windows版はクロスビルド済みで、Windows実機では未検証です。
+0.17ではA館2階を服飾・コスメ・生活、3階をキッズ・文具・楽器・ホビー中心の各12店舗へ変更。
+全68専門店の看板を、ロゴ・配色・図形・文字組みを持つ42の架空ブランドへ更新。
+1階トイレを入口の目隠し・男女別・洗面12台・個室9・多機能/ベビー室へ更新。
+13枚の扉はFで開閉。NPCと宝箱は空の個室・試着室へ配置せず、猫の経路も通しません。
+300人・18移動地点・初期スキャナーのみで最終確認する仕様は維持。docs/MALL_PHASE2.mdを参照。
 0.16では髪を前・横・後ろまで22の束で作り直し、肩の傾斜・袖の折れ・丸首の襟を調整。
 黒目と口元の線・眉が視線や役割に応じて動きます。全員の基礎の顔と本物のIDは維持。
 変更前後の近接画面は docs/CHARACTER_POLISH.md。写真生成や音声に合わせた口パクの実装ではありません。
@@ -69,7 +78,27 @@ A館北側ファッション店が最初の作り込み区画。写実品質や8
 頭部の土台にCC0の人体メッシュを使用し、ライセンスをthird_party/へ同梱しています。
 音声は合成効果音です。外部API・インターネット接続は不要です。
 Godot Engineおよび同梱ライブラリのライセンスはthird_party/をご覧ください。
+ソースZIPにはゲームの全コード・素材・ツール・テストを収録しています。
+過去版の比較画像は容量を抑えるためGitHubリンクにし、0.17の比較画像は同梱しています。
+ゲームの起動にネット接続は不要です。
 """
+
+
+def historical_screenshot(relative: Path) -> bool:
+    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall17-")
+
+
+def source_markdown(path: Path) -> str:
+    """Keep runnable sources intact; link omitted historical images on GitHub."""
+    def target(match: re.Match) -> str:
+        link = match.group(1)
+        if "://" in link or link.startswith("#"):
+            return match.group(0)
+        resolved = (path.parent / link.split("#", 1)[0]).resolve()
+        if resolved.is_relative_to(ROOT) and historical_screenshot(resolved.relative_to(ROOT)):
+            return f"]({SOURCE_HISTORY_URL}{quote(resolved.relative_to(ROOT).as_posix())})"
+        return match.group(0)
+    return re.sub(r"\]\(([^)]+)\)", target, path.read_text())
 
 
 def main() -> None:
@@ -103,12 +132,19 @@ def main() -> None:
                 archive.write(path, f"third_party/{path.name}")
         artifacts.append(target)
     source = BUILD / "FIND_YOURSELF-Source.zip"
-    with ZipFile(source, "w", ZIP_DEFLATED) as archive:
+    with ZipFile(source, "w", ZIP_DEFLATED, compresslevel=9) as archive:
         archive.writestr("起動手順.txt", (ROOT / "docs/GODOT起動手順.md").read_text())
         for path in sorted(ROOT.rglob("*")):
             relative = path.relative_to(ROOT)
             if path.is_file() and not any(part in {".git", ".godot", "builds", "downloads", ".venv", "__pycache__"} for part in relative.parts):
-                archive.write(path, f"FIND_YOURSELF/{relative}")
+                if historical_screenshot(relative):
+                    continue
+                if path.suffix == ".md":
+                    archive.writestr(f"FIND_YOURSELF/{relative}", source_markdown(path))
+                else:
+                    archive.write(path, f"FIND_YOURSELF/{relative}")
+    if source.stat().st_size >= 100 * 1024 * 1024:
+        raise ValueError("Source ZIP exceeds GitHub's 100 MiB individual file limit")
     artifacts.append(source)
     lines = []
     for path in artifacts:

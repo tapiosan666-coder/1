@@ -39,16 +39,17 @@ func build(mall: Node3D) -> void:
 			for index in Mall.SHOP_CENTERS.size():
 				var x: float = Mall.SHOP_CENTERS[index]
 				if not Mall.has_shop(x,side): continue
+				var width: float = TenantCatalog.entry_width(TenantCatalog.tenant(level,index,side).kind) if level>0 else 6.0
 				var frame: Material = oak if index in [0,1,5,6] else trim
-				for dx in [-3.12,3.12]:
+				for dx in [-width*.5-.12,width*.5+.12]:
 					Shapes.box(mall,Vector3(x+dx,y+1.86,side*8.48),Vector3(.18,3.72,.42),frame)
-				Shapes.box(mall,Vector3(x,y+3.69,side*8.48),Vector3(6.42,.12,.42),frame)
-				Shapes.box(mall,Vector3(x,y+.03,side*8.55),Vector3(5.98,.018,.62),stone)
+				Shapes.box(mall,Vector3(x,y+3.69,side*8.48),Vector3(width+.42,.12,.42),frame)
+				Shapes.box(mall,Vector3(x,y+.03,side*8.55),Vector3(width-.02,.018,.62),stone)
 				Shapes.box(mall,Vector3(x,y+.1,side*23.4),Vector3(17.6,.16,.07),dark)
 				for dx in [-8.8,8.8]:
 					Shapes.box(mall,Vector3(x+dx,y+.1,side*16.1),Vector3(.07,.16,14.4),dark)
 	# A fashion unit serves as the first detailed retail reference.
-	for level in [0,1,2]:
+	for level in [0]:
 		var y := Mall.floor_height(level)
 		Shapes.box(mall,Vector3(-57,y+2.08,-23.49),Vector3(15.2,3.92,.08),oak)
 		# Recessed fabric display panels give the rear wall a composed retail scale.

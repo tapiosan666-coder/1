@@ -23,6 +23,7 @@ var cached_polygons: Dictionary = {}
 var cached_polygon_bounds: Dictionary = {}
 var loot: RunLoot
 var nearby_cache := -1
+var interaction_hint := ""
 var run: IdentityRun
 var ammo := 30
 var reload_progress := -1.0
@@ -153,6 +154,9 @@ func _draw() -> void:
 		if nearby_cache >= 0:
 			draw_rect(Rect2(500,505,440,45),Color(.04,.09,.10,.94))
 			_text("G / %s宝箱を開ける" % loot.chests[nearby_cache].rarity,Vector2(545,535),18,orange)
+		if not interaction_hint.is_empty():
+			draw_rect(Rect2(500,558,540,40),Color(.04,.09,.10,.94))
+			_text(interaction_hint,Vector2(520,585),18,lime)
 		if loot != null:
 			_text("I / バッグ　 X / %s ×%d" % [RunLoot.ITEMS[loot.selected].name,loot.inventory[loot.selected]],Vector2(335,792),18,orange)
 			var active := ""
@@ -215,8 +219,9 @@ func _draw() -> void:
 			_text("庭園・休憩",_plan_point(Vector2(-82,-16),frame),16)
 		_text("西側階段",_plan_point(Vector2(-111,-18),frame),13)
 		if map_level == Mall.level_at(player_position.y): draw_circle(_map_point(Vector2(player_position.x, player_position.z), frame), 6, lime)
-		for key in Mall.HUBS:
-			var p: Vector3 = Mall.hub_position(key)
+		for point in MallLayout.travel_points():
+			var key: String = point.legacy_key
+			var p: Vector3 = point.position
 			if Mall.level_at(p.y) != map_level: continue
 			draw_circle(_map_point(Vector2(p.x,p.z),frame),5,lime if run.visited.has(key) else muted)
 		if map_level in [0,1,2]:
@@ -235,15 +240,15 @@ func _draw_minimap() -> void:
 	_text("M / フロアマップ", Vector2(48, 854), 12, muted)
 
 func _plan_point(p: Vector2,frame: Rect2) -> Vector2:
-	var q := MallCurve.world(Vector3(p.x,0,p.y))
+	var q := MallLayout.to_world(Vector3(p.x,0,p.y))
 	return _map_point(Vector2(q.x,q.z),frame)
 
 func _map_point(p: Vector2, frame: Rect2) -> Vector2:
 	var level := map_level if mode == "map" else Mall.level_at(player_position.y)
 	if not cached_map_bounds.has(level):
 		var bounds := Rect2()
-		for region in Mall.plan_regions(level):
-			for at in MallCurve.polygon(region):
+		for region in MallLayout.overview_regions(level):
+			for at in MallLayout.polygon(region):
 				if bounds.size == Vector2.ZERO: bounds = Rect2(at,Vector2(.001,.001))
 				else: bounds = bounds.expand(at)
 		cached_map_bounds[level] = bounds.grow(6)
@@ -255,16 +260,16 @@ func _map_point(p: Vector2, frame: Rect2) -> Vector2:
 func _draw_plan(frame: Rect2) -> void:
 	draw_rect(frame, Color("14272d"))
 	var level := map_level if mode == "map" else Mall.level_at(player_position.y)
-	for region in CWing.regions(level): _draw_region(region,frame,Color("879781"),true)
-	for region in BWing.regions(level): _draw_region(region,frame,Color("6b807e"),true)
+	for region in MallLayout.floor_data("C",level).regions: _draw_region(region,frame,Color("879781"),true)
+	for region in MallLayout.floor_data("B",level).regions: _draw_region(region,frame,Color("6b807e"),true)
 	_draw_region(Rect2(-112,-24,22,24),frame,Color("344b50"),true)
 	for x in [-107.2,-101.2]: _draw_region(Rect2(x,-20,2.4,14),frame,Color("758a84"))
-	for region in MallAnnex.regions(level): _draw_region(region,frame,Color("7e897a"),true)
+	for region in MallLayout.floor_data("A",level).annex_regions: _draw_region(region,frame,Color("7e897a"),true)
 	if level != 0:
 		if level in [1,2]:
-			for region in Mall.upper_regions(): _draw_region(region,frame,Color("899387"),true)
+			for region in MallLayout.floor_data("A",level).retail_regions: _draw_region(region,frame,Color("899387"),true)
 		return
-	for region in Mall.floor_regions:
+	for region in MallLayout.floor_data("A",level).retail_regions:
 		_draw_region(region,frame,Color("42535a"))
 	for area in [Mall.MAIN,DiningWing.INFO,DiningWing.FOYER,Mall.FOOD,Mall.RESTROOM,Mall.MARKET,Mall.COURT,Mall.READING,Mall.STOCK]:
 		_draw_region(area,frame,Color("677d70") if area in [Mall.FOOD,Mall.MARKET] else Color("486e82") if area == Mall.RESTROOM else Color("899387"))
@@ -277,7 +282,7 @@ func _draw_plan(frame: Rect2) -> void:
 
 func _draw_region(rect: Rect2,frame: Rect2,color: Color,border: bool = false) -> void:
 	if not cached_polygons.has(rect):
-		cached_polygons[rect] = MallCurve.polygon(rect)
+		cached_polygons[rect] = MallLayout.polygon(rect)
 		var bounds := Rect2(cached_polygons[rect][0],Vector2(.001,.001))
 		for point in cached_polygons[rect]: bounds = bounds.expand(point)
 		cached_polygon_bounds[rect] = bounds
@@ -285,9 +290,37 @@ func _draw_region(rect: Rect2,frame: Rect2,color: Color,border: bool = false) ->
 	var polygon := PackedVector2Array()
 	for point in cached_polygons[rect]: polygon.append(_map_point(point,frame))
 	var limit := PackedVector2Array([frame.position,Vector2(frame.end.x,frame.position.y),frame.end,Vector2(frame.position.x,frame.end.y)])
-	for clipped in Geometry2D.intersect_polygons(polygon,limit): draw_colored_polygon(clipped,color)
+	for clipped in Geometry2D.intersect_polygons(polygon,limit):
+		# Clipping a moving minimap can produce duplicate/collinear vertices or
+		# zero-area slivers on the frame edge. Normalize before triangulation,
+		# and submit the resulting indices rather than triangulating in Canvas.
+		var fill := clean_map_polygon(clipped)
+		if fill.size()<3: continue
+		var indices := Geometry2D.triangulate_polygon(fill)
+		if indices.is_empty():
+			push_error("Non-degenerate map polygon could not be triangulated")
+			continue
+		RenderingServer.canvas_item_add_triangle_array(get_canvas_item(),indices,fill,PackedColorArray([color]))
 	if border and frame.size.x > 400:
 		polygon.append(polygon[0]); draw_polyline(polygon,Color("839796"),1,true)
+
+static func clean_map_polygon(polygon: PackedVector2Array) -> PackedVector2Array:
+	var result := PackedVector2Array()
+	for point in polygon:
+		var rounded := point.snapped(Vector2(.001,.001))
+		if result.is_empty() or rounded!=result[-1]: result.append(rounded)
+	if result.size()>1 and result[0]==result[-1]: result.remove_at(result.size()-1)
+	var changed := true
+	while changed and result.size()>=3:
+		changed=false
+		for i in result.size():
+			var a := result[i]-result[(i-1+result.size())%result.size()]
+			var b := result[(i+1)%result.size()]-result[i]
+			if absf(a.cross(b))<.00001 and a.dot(b)>=0:
+				result.remove_at(i); changed=true; break
+	var twice_area := 0.0
+	for i in result.size(): twice_area+=result[i].cross(result[(i+1)%result.size()])
+	return PackedVector2Array() if absf(twice_area)<.01 else result
 
 func set_map_floor(level: int) -> void:
 	if level not in [-1,0,1,2,3]: return
@@ -356,7 +389,8 @@ func show_mode(next: String) -> void:
 				var level := i-1
 				_button(Mall.floor_title(level),Rect2(100+i*250,218,238,34),func(): set_map_floor(level),level == map_level)
 			var index := 0
-			for key in Mall.HUBS:
+			for point in MallLayout.travel_points():
+				var key: String = point.legacy_key
 				var label: String = key + (" / 移動" if run.can_travel(key) else " / 要スキル" if run.visited.has(key) else " / 未訪問")
 				var button := _button(label,Rect2(100+(index%5)*250,650+(index/5)*44,240,40),func(): travel_pressed.emit(key))
 				button.add_theme_font_size_override("font_size",14)
