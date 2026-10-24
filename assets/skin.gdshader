@@ -1,4 +1,5 @@
 shader_type spatial;
+#include "res://assets/civilian_expression.gdshaderinc"
 uniform vec4 skin_tint : source_color = vec4(.8,.66,.53,1.0);
 uniform sampler2D skin_detail : filter_linear_mipmap, repeat_disable;
 uniform sampler2D skin_normal : hint_normal, filter_linear_mipmap, repeat_disable;
@@ -15,9 +16,7 @@ void vertex(){
  float lid=eye_x*eye_y*front*blink;
  VERTEX.y=mix(VERTEX.y,-.001,lid);
  VERTEX.z-=lid*.019;
- float mouth=exp(-pow((VERTEX.y+.083)/.018,2.0))*front;
- float corners=smoothstep(.006,.03,abs(VERTEX.x))*(1.0-smoothstep(.035,.06,abs(VERTEX.x)));
- VERTEX.y+=mouth*corners*expression*.0035;
+ animate_mouth(VERTEX,expression);
 }
 void fragment(){
  vec3 detail=texture(skin_detail,UV).rgb;
@@ -25,10 +24,10 @@ void fragment(){
  vec3 variation=vec3(1.0+(detail.r-.5)*.16+(detail.g-.5)*.035,1.0+(detail.r-.5)*.12-(detail.g-.5)*.04,1.0+(detail.r-.5)*.12-(detail.g-.5)*.045);
  ALBEDO=skin_tint.rgb*vec3(1.0+.018*blush,1.0-.012*blush,1.0-.008*blush)*mix(1.0,occlusion,.15);
  AO=occlusion; AO_LIGHT_AFFECT=.3;
- NORMAL_MAP=texture(skin_normal,UV).rgb; NORMAL_MAP_DEPTH=.025;
+ NORMAL_MAP=texture(skin_normal,UV).rgb; NORMAL_MAP_DEPTH=.0;
  float oil=exp(-pow(local_point.x/.04,2.0))*smoothstep(.07,.11,-local_point.z);
  ROUGHNESS=clamp((.57-oil*.08)+(detail.b-.5)*.13,.42,.68);
- if(lip_surface){ ROUGHNESS=.62; NORMAL_MAP_DEPTH=.05; }
+ if(lip_surface){ ROUGHNESS=.62; NORMAL_MAP_DEPTH=.0; }
  SPECULAR=.12;
 }
 

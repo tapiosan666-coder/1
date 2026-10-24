@@ -17,3 +17,5 @@ Limestone, oak and paint maps are authored from numeric fields in this project (
 Retail prop meshes, fictional posters, price cards and display artwork are authored in this project (`scripts/retail_models.gd`, `tools/build_retail_art.py`) from numeric geometry, original graphic shapes and the bundled Noto font. No photographs, external product models or commercial logos are incorporated. Optional Pillow authoring is not needed to play.
 
 Hair strand maps, stylized hair/eye/clothing geometry and dining fixture meshes/artwork are original project assets (`tools/build_hair_texture.py`, `tools/build_civilian_body.py`, `scripts/dining_details.gd`, `tools/build_dining_details_art.py`). No Persona 5 character meshes, textures, costumes or logos are included.
+
+The 0.16 swept hair clumps and flow UVs (`tools/civilian_hair.py`), gaze materials and expression deformation are original project work. The anatomical base attribution above still applies; no new third-party character or motion assets were added.

@@ -54,6 +54,9 @@ func run_tests() -> void:
 	expect(closed and head.get_instance_custom_data(slot).r > .99,"Blink data closes the skin lids and hides the eyeballs together")
 	game.crowd.clock = .4; game.crowd._render(); await process_frame
 	expect(eyes[0].get_instance_transform(slot).basis.determinant() > .5 and head.get_instance_custom_data(slot).r < .01,"Eyes restore their visible shape after blinking")
+	var relative_eye:Basis=head.get_instance_transform(slot).basis.inverse()*eyes[0].get_instance_transform(slot).basis
+	var gaze:Color=game.crowd.continuous_body.face.texture.get_image().get_pixel(0,slot)
+	expect(relative_eye.is_equal_approx(Basis.IDENTITY) and absf(gaze.r)>.001,"The playable crowd keeps its white eye attachments fixed while the shared gaze texture moves the iris")
 	expect(game.crowd.positions == snapshot and game.run.true_id == original and game.run.ap == 0 and game.run.cleared == 0,"Facial and body rendering never moves identities, changes truth or awards AP")
 	var texture_bound := false; var common_tone := true
 	for surface in head.mesh.get_surface_count():

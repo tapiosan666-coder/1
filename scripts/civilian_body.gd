@@ -7,6 +7,7 @@ var pose_bytes:PackedByteArray
 var pose_width:=CivilianRig.BONE_COUNT*6
 var capacity:int
 var mesh:Mesh
+var face:CivilianFace
 func _init(parent:Node3D,population:int,skin:Color,width:float)->void:
 	capacity=maxi(1,population)
 	pose_bytes.resize(pose_width*capacity*16)
@@ -25,6 +26,9 @@ func _init(parent:Node3D,population:int,skin:Color,width:float)->void:
 		mesh.surface_set_material(s,mat)
 	instances=MultiMesh.new();instances.transform_format=MultiMesh.TRANSFORM_3D;instances.use_custom_data=true;instances.use_colors=true;instances.mesh=mesh;instances.instance_count=population
 	var node:=MultiMeshInstance3D.new();node.name="ContinuousCivilianBody";node.multimesh=instances;parent.add_child(node)
+	face=CivilianFace.new(population)
+	var attachments:Variant=parent.get("parts")
+	if attachments is Array:face.install(attachments)
 func write_pose(row:int,transforms:Array)->void:
 	for bone in transforms.size():
 		var t:Transform3D=transforms[bone]
@@ -36,6 +40,7 @@ func write_pose(row:int,transforms:Array)->void:
 			var offset:=((row*pose_width)+(bone*6)+3+axis)*16
 			pose_bytes.encode_float(offset,normal.x[axis]);pose_bytes.encode_float(offset+4,normal.y[axis]);pose_bytes.encode_float(offset+8,normal.z[axis]);pose_bytes.encode_float(offset+12,0)
 func render(crowd:Node3D,ids:Array[int],motions:Dictionary,bounds:AABB)->void:
+	face.update(ids,motions)
 	instances.visible_instance_count=ids.size();instances.custom_aabb=bounds
 	for slot in ids.size():
 		var id:=ids[slot];var role:String="walking" if crowd.attracted.has(id) else crowd.roles[id]

@@ -23,7 +23,8 @@ void fragment(){
  vec2 uv=vec2(rest_point.x+rest_point.z,rest_point.y)*8.0;
  vec3 detail=texture(fabric_detail,uv).rgb;
  vec3 base=cloth_tint;
- float tee=(1.0-smoothstep(.055,.058,abs(rest_point.x)))*smoothstep(.96,.98,rest_point.y)*(1.0-smoothstep(1.435,1.45,rest_point.y))*(1.0-smoothstep(-.070,-.060,rest_point.z));
+ float neckline=1.475-.018*sqrt(max(0.0,1.0-pow(rest_point.x/.058,2.0)));
+ float tee=(1.0-smoothstep(.055,.058,abs(rest_point.x)))*smoothstep(.96,.98,rest_point.y)*(1.0-smoothstep(neckline-.002,neckline+.002,rest_point.y))*(1.0-smoothstep(-.070,-.060,rest_point.z));
  if(surface_kind==0){base=mix(base,tee_tint.rgb,tee);}
  if(surface_kind==1){base=trouser_tint.rgb;}
  if(surface_kind==2){float skin_mask=smoothstep(1.498,1.505,rest_point.y)*(1.0-smoothstep(.061,.069,abs(rest_point.x)));base=mix(cloth_tint,skin_tint.rgb,skin_mask);}

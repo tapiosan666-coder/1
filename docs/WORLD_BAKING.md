@@ -32,3 +32,13 @@ godot --headless --path . --editor --import
 人物の重み付きメッシュは`assets/characters/civilian_body.res`。12関節のうち10/11が左右の足で、UV2へ関節番号と2重みを格納。1関節につき位置3行と逆転置法線3行のRGBA浮動小数テクスチャを使う。近距離の表示スロットへ書き、遠距離は従来の簡易メッシュへ切り替える。Compatibilityではインスタンス色をWHITEに初期化し、服の色を二重に線形化しない。
 
 中間JSONとBlender確認ファイルは`/tmp/fy15-body.json`、`/tmp/fy15-civilian_body.blend`。完成素材を同梱しており、ソースZIPを開く利用者にBlender/Pythonは不要。`tools/preview_civilian.gd`は実際のCrowdと材質で固定カメラの姿勢を撮影する開発用ツール。FPSを測る道具ではない。
+
+## 0.16の髪・顔用の描画
+
+`tools/build_human.py`は`tools/civilian_hair.py`を使い、前/側面/後頭部の22束を生成します。両方とも開発者のBlender用で、配布素材はGLBです。髪の幅/長さ方向のUVは結合後も維持します。衣服は同じ再生成手順と5材質/12関節を使います。
+
+`scripts/civilian_face.gd`は既存の目/口元の材質へ描画設定を適用。顔用RGBAFテクスチャは1×人数で、詳細表示スロットに対応する視線・表情・まばたきを格納します。黒目/反射点を動かしても目の輪郭を固定し、口元の線と肌は`assets/civilian_expression.gdshaderinc`を共用します。写真や外部サービスは使いません。
+
+今回の変更は建物/衝突/経路を変更しないため、0.15の検証済みマップキャッシュを継続使用します。`WorldCache.INPUTS`のハッシュが一致することを確認します。
+
+近接比較は`tools/preview_civilian.gd -- --portrait-pass`。同じスクリプトを0.15の保存ソースへ渡し、`--before`を加えると同じカメラで撮影できます。出力は`/tmp/fy16-{before,after}-{face,profile,talk,upper-body}.png`。撮影用の位置と時計を固定し、ゲームのFPS測定とは区別します。

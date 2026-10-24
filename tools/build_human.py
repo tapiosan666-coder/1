@@ -141,39 +141,12 @@ for sign,label in [(-1,'l'),(1,'r')]:
 # A small drawn mouth line keeps the stylized face clean at normal play distance.
 group='head'
 tube([(-.016,1.622,-.118),(0,1.620,-.120),(.016,1.622,-.118)],.00075,black)
-# A layered side-swept cut. The scalp and shallow ribbon locks share one material.
+# Original swept clumps with authored flow UVs, including crown and nape.
 group='hair'
-vs=[];fs=[];n=64;rows=18
-for j in range(rows+1):
- for i in range(n):
-  phi=math.tau*i/n;t=j/rows;theta=(1.83+.25*math.cos(phi))*t
-  px=.111*math.sin(theta)*math.sin(phi)
-  py=1.744+.145*math.cos(theta)+.012*math.sin(phi)*math.sin(theta)**2+.006*math.sin(phi*5)*t**6
-  pz=.008+.135*math.sin(theta)*math.cos(phi)
-  vs.append(xyz((px,py,pz)))
-for j in range(rows):
- for i in range(n):
-  a=j*n+i;b=j*n+(i+1)%n;fs.append((a,b,b+n,a+n))
-me=bpy.data.meshes.new('Layered scalp');me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new('Scalp',me);bpy.context.collection.objects.link(o);add(o,hair)
-for index in range(9):
- x=-.082+index*.0205
- centers=[Vector((x*.50,1.884,.026)),Vector((x+.021,1.883,-.035)),Vector((x+.017,1.795,-.125)),Vector((x+.008,1.718+abs(x)*.18+(index%3)*.006,-.139))]
- vs=[];fs=[];steps=12
- for j in range(steps+1):
-  t=j/steps
-  p=centers[0]*(1-t)**3+centers[1]*(3*t*(1-t)**2)+centers[2]*(3*t*t*(1-t))+centers[3]*t**3
-  width=.012*math.sin(math.pi*t)**.65
-  for k in [-1,0,1]:vs.append(xyz(p+Vector((width*k,.003*(1-abs(k)),0))))
- for j in range(steps):
-  a=j*3
-  fs.extend([(a,a+3,a+4,a+1),(a+1,a+4,a+5,a+2)])
- me=bpy.data.meshes.new('Swept lock');me.from_pydata(vs,[],fs);me.update();o=bpy.data.objects.new('Hair lock',me);bpy.context.collection.objects.link(o);add(o,hair)
-# Side layers break the helmet silhouette while retaining a readable dark mass.
-for side in [-1,1]:
- for layer in range(3):
-  pts=[(side*.094,1.829-layer*.028,.018+layer*.025),(side*.130,1.795-layer*.026,-.002+layer*.025),(side*.118,1.737-layer*.018,-.025+layer*.025),(side*.102,1.768-layer*.024,-.034+layer*.025)]
-  o=face_piece('Side hair layer',pts,[(0,1,2,3)] if side<0 else [(3,2,1,0)],hair)
-  solid=o.modifiers.new('Hair volume','SOLIDIFY');solid.thickness=.006;bpy.context.view_layer.objects.active=o;bpy.ops.object.modifier_apply(modifier=solid.name)
+import sys
+sys.path.insert(0,str(root/'tools'))
+from civilian_hair import build as build_hair
+build_hair(add,hair,xyz)
 for sign,label in [(-1,'l'),(1,'r')]:
  x=sign*.215
  group='arm_'+label
@@ -227,13 +200,13 @@ for name,objects in parts.items():
  center=Vector(xyz(centers[name]))
  for v in o.data.vertices:v.co-=center
  # UVs for authored skin maps and tileable textile normals.
- uv=o.data.uv_layers.new(name='SurfaceUV')
+ uv=o.data.uv_layers.active if name=='hair' else o.data.uv_layers.new(name='SurfaceUV')
  for polygon in o.data.polygons:
   for loop_index in polygon.loop_indices:
    v=o.data.vertices[o.data.loops[loop_index].vertex_index].co
    game=(v.x,v.z,-v.y)
    if name=='head':coord=(game[0]/.24+.5,(game[1]+.15)/.34)
-   elif name=='hair':coord=(math.atan2(game[0],-game[2])/math.tau+.5,(game[1]+1.81-1.64)/.24)
+   elif name=='hair':continue # Keep each clump's width/length flow coordinates.
    else:coord=(math.atan2(game[0],-game[2])/math.tau+.5,game[1]*4)
    uv.data[loop_index].uv=coord
  # Recalculate consistently outward normals after joins.

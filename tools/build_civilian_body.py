@@ -95,7 +95,7 @@ for side in [-1,1]:
  vs=[];fs=[];n=28
  for y,rx,rz in profile:
   for i in range(n):
-   a=math.tau*i/n;fold=.0025*math.sin(y*110+a*3)*math.exp(-((y-1.16)/.13)**2)
+   a=math.tau*i/n;fold=(.0035*math.exp(-((y-1.11)/.024)**2)-.0025*math.exp(-((y-1.16)/.019)**2)+.0030*math.exp(-((y-1.21)/.026)**2))*(.5+.5*math.cos(a))
    vs.append((side*(.215+(1.46-y)*.29+math.sin(a)*(rx+fold)),y,math.cos(a)*(rz+fold)+.008))
  for j in range(len(profile)-1):
   for i in range(n):
@@ -109,6 +109,12 @@ body=unify([body]+sleeves,'Continuous shirt and neck')
 for v in body.data.vertices:
  p=game(v.co)
  if p.y>1.49 and abs(p.x)<.12:v.co.z=1.49+(p.y-1.49)*.08
+ # A modest slope away from the neck removes the padded horizontal shoulder.
+ if p.y>1.34:
+  outer=max(0,min(1,(abs(p.x)-.085)/.17));upper=max(0,min(1,(p.y-1.34)/.12))
+  v.co.z-=.020*outer*outer*(3-2*outer)*upper
+ if p.z<-.04 and .97<p.y<1.35:
+  v.co.y+=.0025*math.sin((p.y-1.04)*65+abs(p.x)*26)*math.exp(-((p.y-1.07)/.10)**2)
 for f in body.data.polygons:f.material_index=0
 # A low stand collar and visible crew-neck inset give a youthful street jacket.
 vs=[];fs=[];segments=40

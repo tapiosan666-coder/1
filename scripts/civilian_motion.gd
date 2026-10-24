@@ -58,6 +58,6 @@ static func sample(role: String,activity: String,time: float,id: int,moving: boo
 	var r := arm(1,right)
 	var gaze := sin(phase*.35)*.055
 	var nod := -.13 if book else -.04 if role == "staff" else sin(phase*.8)*.025
-	var expression := (.15+.2*maxf(0,sin(phase*.8))) if role == "conversation" else .1 if role == "staff" else 0.0
+	var expression := (.25+.4*maxf(0,sin(phase*.8))) if role == "conversation" else .12 if role == "staff" else 0.0
 	var body := Basis(Vector3.UP,sin(time*5.5+id)*.018)*Basis(Vector3.FORWARD,sin(time*5.5+id)*.012) if moving else Basis.IDENTITY
-	return {"blink":blink_amount(time,id),"expression":expression,"eyes":Vector2(sin(phase*.53)*.045,sin(phase*.39)*.018),"body":body,"left":l,"right":r,"book":book,"inspect":role == "browsing" and not book,"drink":drink,"head":Basis(Vector3.UP,gaze)*Basis(Vector3.RIGHT,nod),"breath":sin(phase*.85)*.003}
+	return {"blink":blink_amount(time,id),"expression":expression,"eyes":Vector2.ZERO,"iris":Vector2(sin(phase*.53)*.045,sin(phase*.39)*.018),"body":body,"left":l,"right":r,"book":book,"inspect":role == "browsing" and not book,"drink":drink,"head":Basis(Vector3.UP,gaze)*Basis(Vector3.RIGHT,nod),"breath":sin(phase*.85)*.003}
