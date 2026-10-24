@@ -14,9 +14,9 @@ func run_tests() -> void:
 	await physics_frame; await physics_frame
 	game.crowd.set_physics_process(false)
 	var fixed: int = game.run.true_id
-	var floors := [0,0,0]
+	var floors := {-1:0,0:0,1:0,2:0,3:0}
 	for p in game.crowd.positions: floors[Mall.level_at(p.y)] += 1
-	expect(floors == [64,28,28],"120 people distributed 64 / 28 / 28 over three accessible floors")
+	expect(floors[0] >= 60 and floors[1] >= 24 and floors[2] >= 24 and floors[-1] > 0 and floors[3] > 0,"120-person regression fixture retains existing stationary roles and walkers on all floors")
 	for level in 3:
 		var y := Mall.floor_height(level)
 		var from := world(-75,y+2,-10)

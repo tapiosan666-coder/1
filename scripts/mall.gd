@@ -13,12 +13,13 @@ const FOOD := Rect2(46, -62, 46, 30)
 const RESTROOM := Rect2(-90, 26, 38, 30)
 const PROMENADE := Rect2(-47, -36, 127, 8)
 const MARKET := Rect2(6, 8, 36, 40)
-const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8)}
+const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5)}
 const ENTRANCE := Vector3(-82, 0.1, 0)
 static var floor_regions: Array[Rect2] = []
 static var obstacles: Array[Rect2] = []
 static var upper_obstacles: Array[Rect2] = []
 static var cached_upper_regions: Array[Rect2] = []
+static var cached_regions: Dictionary = {}
 const STOREY := 5.35
 const UPPER_TOP := .175
 var spawn_points: Array[Vector3] = []
@@ -121,9 +122,11 @@ static func inside_floor(p: Vector2) -> bool:
 	return false
 
 static func level_at(height: float) -> int:
-	return clampi(roundi((height-UPPER_TOP)/STOREY),0,2)
+	return clampi(roundi((height-UPPER_TOP)/STOREY),-1,3)
 
 static func floor_height(level: int) -> float:
+	if level == -1: return -5.35
+	if level == 3: return 16.4
 	return 0.0 if level == 0 else level*STOREY+UPPER_TOP
 
 static func upper_regions() -> Array[Rect2]:
@@ -135,24 +138,36 @@ static func upper_regions() -> Array[Rect2]:
 	cached_upper_regions = regions
 	return cached_upper_regions
 
+static func floor_title(level: int) -> String:
+	return "地下1階" if level == -1 else "屋上" if level == 3 else "%d階" % (level+1)
+
+static func plan_regions(level: int) -> Array[Rect2]:
+	if cached_regions.has(level): return cached_regions[level]
+	prepare_plan()
+	var regions: Array[Rect2] = []
+	if level == 0: regions.append_array(floor_regions)
+	elif level in [1,2]: regions.append_array(upper_regions())
+	regions.append_array(MallAnnex.regions(level))
+	cached_regions[level] = regions
+	return regions
+
 static func plan_walkable(p: Vector3) -> bool:
 	prepare_plan()
-	var v := Vector2(p.x, p.z).snapped(Vector2(.0001,.0001))
-	if level_at(p.y) > 0:
-		for offset in [Vector2.ZERO,Vector2(.42,0),Vector2(-.42,0),Vector2(0,.42),Vector2(0,-.42)]:
-			var inside := false
-			for region in upper_regions():
-				if region.has_point(v+offset): inside = true; break
-			if not inside: return false
-		for obstacle in upper_obstacles:
-			if obstacle.grow(.35).has_point(v): return false
-		return true
-	for offset in [Vector2.ZERO, Vector2(0.42, 0), Vector2(-0.42, 0), Vector2(0, 0.42), Vector2(0, -0.42)]:
-		if not inside_floor(v + offset):
-			return false
-	for obstacle in obstacles:
-		if obstacle.grow(0.35).has_point(v):
-			return false
+	var v := Vector2(p.x,p.z).snapped(Vector2(.0001,.0001))
+	var level := level_at(p.y)
+	var regions := plan_regions(level)
+	for offset in [Vector2.ZERO,Vector2(.42,0),Vector2(-.42,0),Vector2(0,.42),Vector2(0,-.42)]:
+		var inside := false
+		for region in regions:
+			if region.has_point(v+offset): inside = true; break
+		if not inside: return false
+	var blocks: Array[Rect2] = []
+	if level == 0: blocks = obstacles
+	elif level in [1,2]: blocks = upper_obstacles
+	for obstacle in blocks:
+		if obstacle.grow(.35).has_point(v): return false
+	for obstacle in MallAnnex.obstacles(level):
+		if obstacle.grow(.35).has_point(v): return false
 	return true
 
 static func walkable(p: Vector3) -> bool:
@@ -174,7 +189,11 @@ static func segment_walkable(a: Vector3,b: Vector3) -> bool:
 static func zone_name(p: Vector3) -> String:
 	var plan := MallCurve.plan(p)
 	var v := Vector2(plan.x, plan.z)
-	if p.y >= 4.7:
+	var level := level_at(p.y)
+	if plan.x < -90: return "A館%s / %s" % [floor_title(level),"西駐車場" if level == 0 and plan.x < -115 else "西側階段"]
+	if level == -1: return "A館地下1階 / 食品街"
+	if level == 3: return "A館屋上 / 庭園・休憩テラス"
+	if level in [1,2]:
 		return "A館%d階 / %s" % [level_at(p.y)+1,"店舗エリア" if absf(plan.z) > 8 and not COURT.has_point(v) else "吹き抜け回廊"]
 	if READING.has_point(v): return "A館1階 / 書店の読書コーナー"
 	if STOCK.has_point(v): return "A館1階 / バックヤード"
@@ -199,6 +218,8 @@ func _ready() -> void:
 	_build_market()
 	_build_food_court()
 	_build_restroom()
+	_direction_sign(Vector3(-85,3.25,-4),"← 西側階段 / 地下・屋上
+西駐車場はこちら",PI/2)
 	_build_conversations()
 	# Keep 120 identities in this slice, spreading stationary people over all floors.
 	var ground_slots: Array[Dictionary] = []
@@ -214,9 +235,10 @@ func _ready() -> void:
 		ground_slots.append(slot)
 	identity_slots = ground_slots
 	for level in [1,2]: _build_upper_shops(level)
-	for level in 3:
+	MallAnnex.new().build(self)
+	for level in [-1,0,1,2,3]:
 		for z in range(-61, 57, 2):
-			for x in range(-89, 93, 2):
+			for x in range(-173, 93, 2):
 				var p := Vector3(x, floor_height(level), z)
 				if plan_walkable(p): spawn_points.append(MallCurve.world(p))
 	for slot in identity_slots:
@@ -258,6 +280,12 @@ func _build_floor_and_walls() -> void:
 		var b := outline[(i + 1) % outline.size()]
 		var middle := (a + b) / 2
 		var size := Vector3(absf(a.x - b.x) + 0.3, 5.2, absf(a.y - b.y) + 0.3)
+		if is_equal_approx(a.x,-90) and is_equal_approx(b.x,-90) and minf(a.y,b.y) <= -8 and maxf(a.y,b.y) >= -5:
+			for segment in [[minf(a.y,b.y),-8.0],[-5.0,maxf(a.y,b.y)]]:
+				if segment[1]-segment[0] < .01: continue
+				Shapes.box(self,Vector3(-90,2.6,(segment[0]+segment[1])*.5),Vector3(.3,5.2,segment[1]-segment[0]),chalk,true)
+			Shapes.box(self,Vector3(-90,4.1,-6.5),Vector3(.3,2.2,3),chalk,true)
+			continue
 		if is_equal_approx(a.x,92) and is_equal_approx(b.x,92) and middle.y < -30:
 			Shapes.box(self,Vector3(middle.x,2.6,middle.y),size,_glass(),true)
 			Shapes.box(self,Vector3(92,.55,middle.y),Vector3(.32,1.1,size.z),chalk)
@@ -498,8 +526,8 @@ func _build_architecture() -> void:
 	Shapes.box(self,Vector3(-73,4.95,18.5),Vector3(12,.18,23),ivory)
 	Shapes.box(self,Vector3(70,4.95,-24.5),Vector3(20,.18,35),ivory)
 	for x in [-90.0,90.0]:
-		Shapes.box(self,Vector3(x,10.4,0),Vector3(.30,10.4,16),ivory)
-		Shapes.box(self,Vector3(x*.998,7.6,0),Vector3(.04,3.5,11),Shapes.material(Color("aabec2")))
+		Shapes.box(self,Vector3(x,10.4,1.5 if x < 0 else 0),Vector3(.30,10.4,13 if x < 0 else 16),ivory,true)
+		Shapes.box(self,Vector3(x*.998,7.6,1.5 if x < 0 else 0),Vector3(.04,3.5,10 if x < 0 else 11),Shapes.material(Color("aabec2")))
 	# Floor inlays clarify circulation, junctions and the connection to the dining wing.
 	for side in [-1,1]:
 		Shapes.box(self,Vector3(0,.018,side*4.7),Vector3(179,.025,.18),bronze)

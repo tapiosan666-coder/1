@@ -27,7 +27,7 @@ var slots: Array[Dictionary] = []
 static var cached_nav: AStar3D
 static var cached_nav_hash := 0
 static var cached_nav_ids: Array[int] = []
-var floor_nav_ids: Array[Array] = [[],[],[]]
+var floor_nav_ids: Dictionary = {-1:[],0:[],1:[],2:[],3:[]}
 
 func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	run = state
@@ -71,13 +71,28 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 				else: nav.add_point(id,p)
 				if previous >= 0 and id != previous: nav.connect_points(previous,id)
 				previous = id
+		for route in MallAnnex.core_routes():
+			var previous := -1
+			for step in route.size():
+				var p := MallCurve.world(route[step])
+				var id := nav.get_point_count()
+				if step == 0 or step == route.size()-1:
+					var nearest := INF
+					for candidate in nav_ids:
+						var at := nav.get_point_position(candidate)
+						if absf(at.y-p.y) > .1: continue
+						if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
+					assert(nearest < 4,"West core route must connect to its floor landing")
+				else: nav.add_point(id,p)
+				if previous >= 0: nav.connect_points(previous,id)
+				previous = id
 		cached_nav = nav
 		cached_nav_hash = key
 		cached_nav_ids = nav_ids
 	for point in nav_ids: floor_nav_ids[Mall.level_at(nav.get_point_position(point).y)].append(point)
 	var palette := [Color("c58a6b"), Color("bcc6b3"), Color("667e8a"), Color("d8c497"), Color("a78b91"), Color("4d6265")]
 	for id in run.population:
-		var candidates: Array = floor_nav_ids[(posmod(id-slots.size(),3))]
+		var candidates: Array = floor_nav_ids[posmod(id-slots.size(),5)-1]
 		var p := nav.get_point_position(candidates[rng.randi_range(0,candidates.size()-1)])
 		var heading := rng.randf_range(-PI, PI)
 		var role := "walking"
@@ -160,7 +175,7 @@ func _instance_part(title: String, mesh: Mesh, offset: Vector3, instance_scale: 
 	instances.transform_format = MultiMesh.TRANSFORM_3D
 	instances.use_colors = true
 	# Explicit sector bounds avoid camera-near clipping of animated instance groups.
-	instances.custom_aabb = AABB(Vector3(-110,-10,-90),Vector3(270,40,230))
+	instances.custom_aabb = AABB(Vector3(-180,-12,-90),Vector3(340,45,230))
 	instances.mesh = mesh
 	instances.instance_count = run.population
 	for id in run.population:

@@ -59,8 +59,10 @@ func _ready() -> void:
 	hud.travel_pressed.connect(fast_travel)
 	hud.exit_pressed.connect(func(): get_tree().quit())
 	# A preview crowd shares the exact same identity model as a playable run.
-	_create_run(120, 24)
+	_create_run(180, 24)
 	set_mode("title")
+	if "--capture-annex" in OS.get_cmdline_user_args():
+		_capture_annex.call_deferred()
 	if "--capture-bag" in OS.get_cmdline_user_args():
 		_capture_bag.call_deferred()
 	if "--capture-mall" in OS.get_cmdline_user_args():
@@ -93,7 +95,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	crowd.skin_color = selected_skin
 	crowd.hair_color = selected_hair
 	crowd.face_width = selected_width
-	crowd.slots = mall.identity_slots
+	crowd.slots = mall.identity_slots.slice(0,mini(mall.identity_slots.size(),maxi(0,count-12)))
 	add_child(crowd)
 	crowd.process_mode = Node.PROCESS_MODE_PAUSABLE
 	crowd.setup(run, mall.spawn_points)
@@ -122,7 +124,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	hud.notice_time = 0
 	hud.hit_time = 0
 
-func start_run(count: int = 120, run_seed: int = -1) -> void:
+func start_run(count: int = 180, run_seed: int = -1) -> void:
 	_create_run(count, run_seed)
 	player.position = Mall.ENTRANCE
 	player.rotation = Vector3(0, -PI / 2, 0)
@@ -742,7 +744,7 @@ func _capture_mall() -> void:
 		player.position = MallCurve.world(shot[1]); player.camera.look_at(MallCurve.world(shot[2]))
 		await get_tree().create_timer(.6).timeout
 		hud.notice_time = 0
-		await get_tree().process_frame
+		await RenderingServer.frame_post_draw
 		get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-%s.png" % shot[0])
 	loot.inventory.hole = 1; loot.inventory.sonar = 2
 	set_mode("inventory")
@@ -759,4 +761,23 @@ func _capture_bag() -> void:
 	set_mode("inventory")
 	await get_tree().create_timer(.3).timeout
 	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-inventory.png")
+	get_tree().quit()
+
+func _capture_annex() -> void:
+	start_run(180,912)
+	player.set_physics_process(false)
+	for shot in [
+		["basement",Vector3(-82,-5.25,-6.5),Vector3(-45,-3.9,-17)],
+		["garden",Vector3(-87,16.5,-12),Vector3(-64,17.5,-17)],
+		["parking",Vector3(-125,.1,-5.5),Vector3(-151,1,-20)],
+		["west-core",Vector3(-94,.1,-5.2),Vector3(-104,4,-15)]
+	]:
+		player.position = MallCurve.world(shot[1]); player.camera.look_at(MallCurve.world(shot[2]))
+		await get_tree().create_timer(.6).timeout
+		hud.notice_time = 0
+		await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-%s.png" % shot[0])
+	set_mode("map")
+	await get_tree().create_timer(.3).timeout
+	get_viewport().get_texture().get_image().save_png("/tmp/find-yourself-parking-map.png")
 	get_tree().quit()

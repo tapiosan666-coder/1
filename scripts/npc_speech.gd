@@ -2,6 +2,7 @@ class_name NpcSpeech
 extends Node3D
 ## One reusable, world-occluded bubble. Text never depends on identity truth.
 const LINES := {
+ "resting":["少し待ってから戻ろう。","案内を確認しておこう。"],
  "staff":["いらっしゃいませ。","お探しの商品はございますか？","どうぞ、ゆっくりご覧ください。"],
  "browsing":["これも良さそうだな。","もう少し見てから決めよう。","どちらの色にしようかな。"],
  "reading":["続きが気になる……。","この本、買って帰ろうかな。"],
@@ -55,6 +56,9 @@ func update_nearby(crowd: Crowd,camera: Camera3D,enabled: bool) -> int:
 	var lines: Array = LINES.get(crowd.roles[best],LINES.walking)
 	label.text = lines[best % lines.size()]
 	if crowd.activities[best] == "book" and crowd.roles[best] == "browsing": label.text = "この本、面白そうだな。"
+	if crowd.activities[best] == "garden": label.text = "風が気持ちいいね。" if crowd.roles[best] != "seated" else "ここで少し休もう。"
+	if crowd.activities[best] == "parking": label.text = "車はこの辺りだったかな。"
+	if crowd.activities[best] == "deli": label.text = "お惣菜はいかがですか？"
 	panel.global_position = crowd.positions[best]+Vector3.UP*(1.88 if crowd.roles[best] in ["seated","reading"] else 2.3)
 	panel.global_basis = camera.global_basis
 	panel.visible = true
