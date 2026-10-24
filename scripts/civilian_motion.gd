@@ -12,7 +12,7 @@ static func arm(side: float,target: Vector3) -> Dictionary:
 	var difference := target-shoulder
 	var distance := clampf(difference.length(),.08,.585)
 	var direction := difference.normalized()
-	var pole := Vector3(side*.7,-.7,.1)
+	var pole := Vector3(side*.35,-.1,1.0)
 	pole = (pole-direction*pole.dot(direction)).normalized()
 	var along := (.30*.30-.29*.29+distance*distance)/(2*distance)
 	var elbow := shoulder+direction*along+pole*sqrt(maxf(0,.30*.30-along*along))
@@ -21,13 +21,22 @@ static func arm(side: float,target: Vector3) -> Dictionary:
 	var lower := segment(elbow,wrist)
 	return {"arm":{"pos":(shoulder+elbow)*.5,"basis":upper},"forearm":{"pos":(elbow+wrist)*.5,"basis":lower},"hand":{"pos":wrist-lower.y*.04,"basis":lower},"wrist":wrist}
 
-static func sample(role: String,activity: String,time: float,id: int) -> Dictionary:
+static func blink_amount(time: float,id: int) -> float:
+	var cycle := 3.6+float(id%7)*.41
+	var at := fposmod(time+id*.73,cycle)
+	return pow(maxf(0,sin(PI*at/.18)),.7) if at < .18 else 0.0
+
+static func sample(role: String,activity: String,time: float,id: int,moving: bool = false) -> Dictionary:
 	var phase := time+id*.73
 	var left := Vector3(-.215,.83,0)
 	var right := Vector3(.215,.83,0)
 	var drink := 0.0
 	var book := (activity == "book" or role == "reading") and role in ["reading","browsing"]
-	if role in ["reading","browsing"]:
+	if role == "walking" and moving:
+		var swing := sin(time*5.5+id)*.13
+		left = Vector3(-.215,.86,-.06+swing)
+		right = Vector3(.215,.86,-.06-swing)
+	elif role in ["reading","browsing"]:
 		left = Vector3(-.13,1.12,-.34)
 		right = Vector3(.13,1.12+sin(phase*.7)*.018,-.34)
 	elif role == "seated":
@@ -46,4 +55,6 @@ static func sample(role: String,activity: String,time: float,id: int) -> Diction
 	var r := arm(1,right)
 	var gaze := sin(phase*.35)*.055
 	var nod := -.13 if book else -.04 if role == "staff" else sin(phase*.8)*.025
-	return {"left":l,"right":r,"book":book,"inspect":role == "browsing" and not book,"drink":drink,"head":Basis(Vector3.UP,gaze)*Basis(Vector3.RIGHT,nod),"breath":sin(phase*.85)*.003}
+	var expression := (.15+.2*maxf(0,sin(phase*.8))) if role == "conversation" else .1 if role == "staff" else 0.0
+	var body := Basis(Vector3.UP,sin(time*5.5+id)*.018)*Basis(Vector3.FORWARD,sin(time*5.5+id)*.012) if moving else Basis.IDENTITY
+	return {"blink":blink_amount(time,id),"expression":expression,"eyes":Vector2(sin(phase*.53)*.045,sin(phase*.39)*.018),"body":body,"left":l,"right":r,"book":book,"inspect":role == "browsing" and not book,"drink":drink,"head":Basis(Vector3.UP,gaze)*Basis(Vector3.RIGHT,nod),"breath":sin(phase*.85)*.003}

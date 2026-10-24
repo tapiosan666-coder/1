@@ -405,10 +405,12 @@ func _test_mall_upgrade(game: Node3D) -> void:
 	await physics_frame
 	var head: Mesh
 	var hand: Mesh
+	var eyes := 0
 	for part in game.crowd.parts:
 		if part.name == "head": head = part.instances.mesh
 		if part.name == "hand_l": hand = part.instances.mesh
-	expect(head != null and head.get_surface_count() >= 5, "Civilian head includes modeled facial features with distinct materials")
+		if part.name in ["eye_l","eye_r"] and part.instances.mesh.get_surface_count() >= 3: eyes += 1
+	expect(head != null and head.get_surface_count() >= 3 and eyes == 2, "Civilian head and two independent eyes retain distinct skin, iris and pupil materials")
 	expect(hand != null and hand.get_aabb().size.y > .10, "Imported human hand includes fingers below palm")
 	var state := game.get_world_3d().direct_space_state
 	var window := PhysicsRayQueryParameters3D.create(_world(-81,1.6,-6),_world(-81,1.6,-11),1)

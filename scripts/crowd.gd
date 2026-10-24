@@ -136,7 +136,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		area.position = p + Vector3.UP * (0.95 if role not in ["seated","reading"] else 0.7)
 		bodies.append(area)
 	var kit: Node3D = preload("res://assets/characters/civilian.glb").instantiate()
-	var offsets := {"torso": Vector3(0,1.13,0), "head": Vector3(0,1.7,0), "hair": Vector3(0,1.81,0), "neck": Vector3(0,1.52,0)}
+	var offsets := {"torso": Vector3(0,1.13,0), "head": Vector3(0,1.7,0), "hair": Vector3(0,1.81,0), "neck": Vector3(0,1.52,0), "eye_l":Vector3(-.3077*.12,1.7,-(1.2453-.45)*.105), "eye_r":Vector3(.3077*.12,1.7,-(1.2453-.45)*.105)}
 	for side in [-1, 1]:
 		var suffix := "_l" if side < 0 else "_r"
 		for item in [["arm",1.27], ["forearm",.98], ["hand",.79]]:
@@ -156,20 +156,23 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 				material.albedo_color = skin_color; material.roughness = .55
 				if title == "head":
 					var skin := ShaderMaterial.new(); skin.shader = preload("res://assets/skin.gdshader")
-					skin.set_shader_parameter("skin_tint",skin_color); result = skin
+					skin.set_shader_parameter("skin_tint",skin_color); _skin_textures(skin); result = skin
 			elif tag.begins_with("Hair"):
 				var hair := ShaderMaterial.new(); hair.shader = preload("res://assets/hair.gdshader")
 				hair.set_shader_parameter("hair_tint",hair_color); result = hair
 			elif tag.begins_with("Cloth"):
-				var fabric := ShaderMaterial.new(); fabric.shader = preload("res://assets/fabric.gdshader"); result = fabric
+				var fabric := ShaderMaterial.new(); fabric.shader = preload("res://assets/fabric.gdshader")
+				fabric.set_shader_parameter("fabric_detail",preload("res://assets/characters/textures/fabric_detail.png"))
+				fabric.set_shader_parameter("fabric_normal",preload("res://assets/characters/textures/fabric_normal.png")); result = fabric
 			elif tag.begins_with("Lip"):
-				material.albedo_color = skin_color.lerp(Color("805148"),.45); material.roughness = .65
+				var lip := ShaderMaterial.new(); lip.shader = preload("res://assets/skin.gdshader")
+				lip.set_shader_parameter("skin_tint",skin_color.lerp(Color("805148"),.45)); lip.set_shader_parameter("lip_surface",true); _skin_textures(lip); result = lip
 			elif tag.begins_with("Eye") or tag.begins_with("Iris"):
 				material.roughness = .22
 			else: material.roughness = .75
 			mesh.surface_set_material(surface,result)
 
-		var size := Vector3(face_width, 1, 1) if title in ["head", "hair"] else Vector3.ONE
+		var size := Vector3(face_width, 1, 1) if title in ["head", "hair", "eye_l", "eye_r"] else Vector3.ONE
 		_instance_part(title, mesh, offsets[title], size, palette)
 	kit.free()
 	_add_part("apron", Vector3(0,1.00,-.132), Vector3(.29,.38,.018), Color("293d36"))
@@ -182,6 +185,10 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	_instance_part("held_cup",cup,Vector3.ZERO,Vector3.ONE,[])
 	_make_lods()
 	_render(true)
+
+func _skin_textures(material: ShaderMaterial) -> void:
+	material.set_shader_parameter("skin_detail",preload("res://assets/characters/textures/skin_detail.png"))
+	material.set_shader_parameter("skin_normal",preload("res://assets/characters/textures/skin_normal.png"))
 
 func _add_part(title: String, offset: Vector3, size: Vector3, color: Color, palette: Array = []) -> void:
 	var mesh := BoxMesh.new()
@@ -280,7 +287,8 @@ func _render(_force: bool = false) -> void:
 		bounds = box if first else bounds.merge(box); first = false
 		if detail:
 			detailed_ids.append(id)
-			motions[id] = CivilianMotion.sample("walking" if attracted.has(id) else roles[id],activities[id],clock,id)
+			var moving: bool = roles[id] == "walking" and waits[id] <= 0 and not paths[id].is_empty() or attracted.has(id)
+			motions[id] = CivilianMotion.sample("walking" if attracted.has(id) else roles[id],activities[id],clock,id,moving)
 		else: far[1 if roles[id] in ["seated","reading"] and not attracted.has(id) else 0].append(id)
 	for group in 2:
 		var mm := lod_meshes[group]
@@ -297,13 +305,14 @@ func _render(_force: bool = false) -> void:
 		for slot in detailed_ids.size():
 			var id := detailed_ids[slot]
 			instances.set_instance_color(slot,Color.WHITE)
-			instances.set_instance_custom_data(slot,part.palette[id%part.palette.size()] if not part.palette.is_empty() else Color.WHITE)
+			instances.set_instance_custom_data(slot,Color(motions[id].blink,motions[id].expression,0,1) if part.name == "head" else part.palette[id%part.palette.size()] if not part.palette.is_empty() else Color.WHITE)
 			var role := "walking" if attracted.has(id) else roles[id]
 			var motion: Dictionary = motions[id]
 			var hidden: bool = death_times[id] > .8 or (part.name in ["apron","badge"] and role != "staff")
 			hidden = hidden or (part.name in ["held_book","held_pages"] and not motion.book)
 			hidden = hidden or (part.name == "held_product" and not motion.inspect)
 			hidden = hidden or (part.name == "held_cup" and role != "seated")
+			hidden = hidden or (part.name in ["eye_l","eye_r"] and motion.blink > .96)
 			if hidden:
 				instances.set_instance_transform(slot,Transform3D(Basis().scaled(Vector3.ZERO),Vector3(0,-20,0)))
 				continue
@@ -329,16 +338,17 @@ func _render(_force: bool = false) -> void:
 				var key: String = str(part.name).get_slice("_",0)
 				var joint: Dictionary = motion[side][key]
 				pose = joint.basis; local_offset = joint.pos
-				if moving:
-					var swing := sin(clock*5.5+id+(0 if side == "left" else PI))*.28
-					pose = Basis(Vector3.RIGHT,-swing)
-					local_offset = Vector3(local_offset.x,1.4,0)+pose*Vector3(0,-.15 if key == "arm" else -.44 if key == "forearm" else -.61,0)
-			if part.name in ["head","hair"]:
+			if part.name in ["head","hair","eye_l","eye_r"]:
 				pose = motion.head
-				local_offset = Vector3(0,1.5,0)+pose*(local_offset-Vector3(0,1.5,0))
+				if part.name in ["eye_l","eye_r"]:
+					local_offset.x *= face_width
+					pose = pose*Basis(Vector3.UP,motion.eyes.x)*Basis(Vector3.RIGHT,motion.eyes.y)*Basis().scaled(Vector3(1,maxf(.08,1.0-motion.blink),1))
+				local_offset = Vector3(0,1.5,0)+motion.head*(local_offset-Vector3(0,1.5,0))
 			if part.name == "held_cup":
 				local_offset = motion.right.wrist+Vector3(0,.04,-.035)
 				pose = Basis(Vector3.RIGHT,motion.drink*.35)
+			if not (part.name.begins_with("leg_") or part.name.begins_with("shin_") or part.name.begins_with("shoe_")):
+				local_offset = Vector3(0,.85,0)+motion.body*(local_offset-Vector3(0,.85,0)); pose = motion.body*pose
 			var base := positions[id]
 			if role in ["seated","reading"]: base.y -= .42
 			if part.name not in ["shoe_l","shoe_r","shin_l","shin_r"]: base.y += motion.breath

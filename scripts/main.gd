@@ -69,6 +69,8 @@ func _ready() -> void:
 	# A preview crowd shares the exact same identity model as a playable run.
 	_create_run(300, 24)
 	set_mode("title")
+	if "--capture-people" in OS.get_cmdline_user_args():
+		_capture_people.call_deferred()
 	if "--capture-art" in OS.get_cmdline_user_args():
 		_capture_art.call_deferred()
 	if "--capture-growth" in OS.get_cmdline_user_args():
@@ -904,4 +906,29 @@ func _capture_art() -> void:
 		await get_tree().create_timer(.3).timeout; await RenderingServer.frame_post_draw
 		get_viewport().get_texture().get_image().save_png("/tmp/fy10-after-%s.png" % shot[0])
 		print("ART_CAPTURE native ",shot[0]," draws=",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME))
+	get_tree().quit()
+
+func _capture_people() -> void:
+	start_run(300,912); set_physics_process(false); crowd.set_physics_process(false); player.set_physics_process(false)
+	GraphicsOptions.apply(self,"balanced",false)
+	crowd.positions[0] = MallCurve.world(Vector3(-57,0,-13)); crowd.headings[0] = PI; crowd.roles[0] = "walking"; crowd.waits[0] = 30
+	for shot in [["face",Vector3(-57,.1,-12),Vector3(-57,1.69,-13),.4],["closed",Vector3(-57,.1,-12),Vector3(-57,1.69,-13),.09],["body",Vector3(-57,.1,-10.7),Vector3(-57,1.4,-13),.4]]:
+		player.position = MallCurve.world(shot[1]); player.camera.look_at(MallCurve.world(shot[2])); crowd.clock = shot[3]; crowd._render()
+		hud.player_position = player.position; hud.location_name = Mall.zone_name(player.position); hud.notice_time = 0; hud.queue_redraw()
+		await get_tree().create_timer(.3).timeout; await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("/tmp/fy11-after-%s.png" % shot[0])
+		print("PEOPLE_CAPTURE native ",shot[0]," draws=",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME))
+	if "--people-movie" in OS.get_cmdline_user_args():
+		DirAccess.make_dir_recursive_absolute("/tmp/fy11-frames")
+		for frame in 144:
+			var walking := frame >= 48 and frame < 96
+			var conversation := frame >= 96
+			crowd.roles[0] = "conversation" if conversation else "walking"; crowd.waits[0] = 0 if walking else 30
+			crowd.paths[0] = PackedVector3Array([crowd.positions[0]+Vector3.BACK*5]) if walking else PackedVector3Array()
+			crowd.clock = (3.2 if frame < 48 else 7.0 if walking else 4.0)+float(frame%48)/24.0
+			player.position = MallCurve.world(Vector3(-57,.1,-10.7 if walking else -12))
+			player.camera.look_at(crowd.positions[0]+Vector3.UP*(1.4 if walking else 1.69)); crowd._render()
+			hud.player_position = player.position; hud.queue_redraw()
+			await get_tree().process_frame; await RenderingServer.frame_post_draw
+			get_viewport().get_texture().get_image().save_png("/tmp/fy11-frames/%04d.png" % frame)
 	get_tree().quit()

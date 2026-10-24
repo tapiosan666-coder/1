@@ -1,16 +1,26 @@
-# 開発版0.10の検証記録
+# 開発版0.11の検証記録
 
 Godot `4.6.3.stable.official.7d41c59c4` Standard、Linux x86_64、Compatibility renderer。画面確認はXorg dummy displayとMesa llvmpipe。GPU実機の性能結果ではない。音声はDummy出力で、実スピーカーでの聴取は未実施。
 
 ## 自動検証
 
-- `godot --headless --script res://tests/test_game.gd`：156チェック、0失敗、終了コード0。
+- `godot --headless --script res://tests/test_game.gd`：158チェック、0失敗、終了コード0。
 - `godot --headless --script res://tests/test_expansion.gd`：59チェック、0失敗、終了コード0。
 - `godot --headless --script res://tests/test_annex.gd`：62チェック、0失敗、終了コード0。
 - `godot --headless --script res://tests/test_wing_b.gd`：43チェック、0失敗、終了コード0。
 - `godot --headless --script res://tests/test_wing_c.gd`：40チェック、0失敗、終了コード0。
 - `godot --headless --script res://tests/test_cat_and_skills.gd`：32チェック、0失敗、終了コード0。
-- 合計392チェック。チェック数は製品品質やパフォーマンスの保証ではない。
+- `godot --script res://tests/test_character_motion.gd`：14チェック、0失敗、終了コード0（実描画）。
+- 合計408チェック。チェック数は製品品質やパフォーマンスの保証ではない。
+
+### 0.11の人物更新
+
+- 肩・肘・手首の接続と到達範囲が、歩行・待機・読書・着席・接客・会話・買い物・お手洗いの姿勢を通じて有限で連続すること。
+- まばたきの開始・全閉・再開、ほとんどの時間は目が開き、個体別に時刻が異なること。まぶた用のデータと眼球の非表示が同期すること。
+- 顔幅0.85/1.0/1.2で目の位置が頭の幅と向きに追従すること。肌の基本色を全員で共有し、肌と布に対応したテクスチャが結び付いていること。
+- 表情や姿勢を描画しても位置・正解ID・AP・消去数を変更しないこと。
+- 新しい14項目はMultiMeshの実際の描画データを検査する。Godotのヘッドレス用Dummy rendererは変換データを既定値で返すため、この検査には使わず、Xorg+Mesa llvmpipeで`--headless`なしに実行する。これはWindows/NVIDIA GPUの実機検証とは異なる。
+- Linux release exportから同じカメラで顔・まばたき・全身を撮影。別に960×600の144フレームを24fps・6秒のMP4へ符号化。人物を固定したモーションプレビューであり、プレイFPSの記録ではない。
 
 ### 0.10の美術更新
 
