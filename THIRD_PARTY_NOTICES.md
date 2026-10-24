@@ -13,3 +13,5 @@ The civilian head topology is adapted from the MakeHuman hm08 base mesh, release
 Skin and textile detail/normal maps are authored procedurally in this project (`tools/build_character_textures.py`), without face photographs or third-party texture images. Asset authoring optionally uses NumPy and Pillow; these Python libraries are not bundled with the game and are not required to play.
 
 Limestone, oak and paint maps are authored from numeric fields in this project (`tools/build_interior_textures.py`), without source photographs or third-party texture images. The static floor-contact mask is generated from the project's collider geometry. Optional NumPy/Pillow authoring tools are not bundled with or required by the game.
+
+Retail prop meshes, fictional posters, price cards and display artwork are authored in this project (`scripts/retail_models.gd`, `tools/build_retail_art.py`) from numeric geometry, original graphic shapes and the bundled Noto font. No photographs, external product models or commercial logos are incorporated. Optional Pillow authoring is not needed to play.

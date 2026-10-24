@@ -54,7 +54,7 @@ static func _faces(a: Vector3,b: Vector3,c: Vector3,out: PackedVector3Array) -> 
 		var middle := (c+a)*.5
 		_faces(a,b,middle,out); _faces(middle,b,c,out)
 
-static func _triangle(vertices: Array,normals: Array,uvs: Array,surface: SurfaceTool) -> void:
+static func _triangle(vertices: Array,normals: Array,uvs: Array,colors: Array,surface: SurfaceTool) -> void:
 	var distances := [vertices[0].distance_squared_to(vertices[1]),vertices[1].distance_squared_to(vertices[2]),vertices[2].distance_squared_to(vertices[0])]
 	var edge: int = distances.find(distances.max())
 	if distances[edge] > EDGE*EDGE and maxf(vertices[0].x,maxf(vertices[1].x,vertices[2].x)) > START:
@@ -63,12 +63,14 @@ static func _triangle(vertices: Array,normals: Array,uvs: Array,surface: Surface
 		var v: Vector3 = (vertices[edge]+vertices[other])*.5
 		var n: Vector3 = (normals[edge]+normals[other]).normalized()
 		var uv: Vector2 = (uvs[edge]+uvs[other])*.5
-		_triangle([vertices[edge],v,vertices[last]],[normals[edge],n,normals[last]],[uvs[edge],uv,uvs[last]],surface)
-		_triangle([v,vertices[other],vertices[last]],[n,normals[other],normals[last]],[uv,uvs[other],uvs[last]],surface)
+		var color: Color = colors[edge].lerp(colors[other],.5)
+		_triangle([vertices[edge],v,vertices[last]],[normals[edge],n,normals[last]],[uvs[edge],uv,uvs[last]],[colors[edge],color,colors[last]],surface)
+		_triangle([v,vertices[other],vertices[last]],[n,normals[other],normals[last]],[uv,uvs[other],uvs[last]],[color,colors[other],colors[last]],surface)
 		return
 	for i in 3:
 		surface.set_normal((jacobian(vertices[i]).inverse().transposed()*normals[i]).normalized())
 		surface.set_uv(uvs[i])
+		surface.set_color(colors[i])
 		surface.add_vertex(world(vertices[i]))
 
 static func bend_mesh(mesh: Mesh, transform: Transform3D) -> ArrayMesh:
@@ -81,13 +83,14 @@ static func bend_mesh(mesh: Mesh, transform: Transform3D) -> ArrayMesh:
 		var surface := SurfaceTool.new()
 		surface.begin(Mesh.PRIMITIVE_TRIANGLES)
 		for triangle in range(0,count,3):
-			var vs: Array = []; var ns: Array = []; var uv: Array = []
+			var vs: Array = []; var ns: Array = []; var uv: Array = []; var colors: Array = []
 			for offset in 3:
 				var id := indices[triangle+offset] if not indices.is_empty() else triangle+offset
 				vs.append(transform*points[id])
 				ns.append((transform.basis.inverse().transposed()*arrays[Mesh.ARRAY_NORMAL][id]).normalized())
 				uv.append(arrays[Mesh.ARRAY_TEX_UV][id] if arrays[Mesh.ARRAY_TEX_UV] != null else Vector2.ZERO)
-			_triangle(vs,ns,uv,surface)
+				colors.append(arrays[Mesh.ARRAY_COLOR][id] if arrays[Mesh.ARRAY_COLOR] != null else Color.WHITE)
+			_triangle(vs,ns,uv,colors,surface)
 		surface.set_material(mesh.surface_get_material(index))
 		surface.commit(result)
 	return result

@@ -1,4 +1,4 @@
-# 開発版0.12の検証記録
+# 開発版0.13の検証記録
 
 Godot `4.6.3.stable.official.7d41c59c4` Standard、Linux x86_64、Compatibility renderer。画面確認はXorg dummy displayとMesa llvmpipe。GPU実機の性能結果ではない。音声はDummy出力で、実スピーカーでの聴取は未実施。
 
@@ -9,10 +9,24 @@ Godot `4.6.3.stable.official.7d41c59c4` Standard、Linux x86_64、Compatibility 
 - `godot --headless --script res://tests/test_annex.gd`：62チェック、0失敗、終了コード0。
 - `godot --headless --script res://tests/test_wing_b.gd`：43チェック、0失敗、終了コード0。
 - `godot --headless --script res://tests/test_wing_c.gd`：40チェック、0失敗、終了コード0。
-- `godot --headless --script res://tests/test_cat_and_skills.gd`：32チェック、0失敗、終了コード0。
+- `godot --headless --script res://tests/test_cat_and_skills.gd`：33チェック、0失敗、終了コード0。
 - `godot --script res://tests/test_character_motion.gd`：14チェック、0失敗、終了コード0（実描画）。
 - `godot --script res://tests/test_render_materials.gd`：8チェック、0失敗、終了コード0（実描画）。
-- 合計416チェック。チェック数は製品品質やパフォーマンスの保証ではない。
+- `godot --headless --script res://tests/test_scan_and_paths.gd`：22チェック、0失敗。
+- `godot --headless --script res://tests/test_retail_detail.gd`：6チェック、0失敗。
+- 合計445チェック。チェック数は製品品質やパフォーマンスの保証ではない。
+
+### 0.13の猫・初期スキャナー・経路・店舗
+
+- スキャン可能な終点の4cm手前へ猫を置く再現条件では、旧コードは点だけを消費して射程外に残る。新コードは点へ到着し、接近後の20秒を満たすと偽物を処理・APを1回だけ加算する。
+- プレイヤーが猫と相手の間に立つことで、旧レイがプレイヤーに遮られる条件を再現。プレイヤーだけを除外して再投射し、その奥の実際の壁は引き続き検出する。
+- 遠い相手への移動中にも、その場から届く固定客へ解析を開始する。実配置300人で歩行者を動かしながら220秒相当を固定刻みで更新し、猫が複数人を処理する。本物を変更・自動勝利させない。実時間のプレイテストとは区別する。
+- 猫のA*探索は1更新最大2回、歩行NPCの新経路要求は最大1回。計算量を分散する上限を検証。全ての実GPUの引っ掛かりを再現した試験ではない。
+- 初期解析時間は未強化2秒、購入後1.5/1/.6秒。銃なしで購入でき、最大3段階・60/120/180 AP。対象切替・解放で途中解析を取り消す。15スキル全体が選択可能で画面内に収まり、購入だけがAPを消費する。
+- 旧半径32cmの外側・新44cmの内側となる39cmずれた照準で対象を取得する。新しいカプセルが壁の手前へはみ出す再現条件でも、遮蔽の再確認によって処理できない。
+- キャッシュへ68店舗の小物・距離設定・色・材質数・影の設定を保持し、通常の静止描画へ重複統合しない。回転体と取っ手の表裏の向き、湾曲に伴う色の補間を検証。
+- 経路18,540点・32,062辺、床・通路と固定NPCへの見通しを維持。Linux配布版から店舗7カメラ、初期スキャナー強化画面、猫の解析表示を撮影。
+- ワールド生成に失敗した場合は空の描画データでキャッシュを上書きせず、配布ZIP作成時も正の描画数を要求する。
 
 ### 0.12の内装素材とキャッシュ
 

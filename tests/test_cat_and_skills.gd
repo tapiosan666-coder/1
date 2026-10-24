@@ -23,7 +23,7 @@ func run_tests() -> void:
 	if blocked_id >= 0:
 		game.cat.position = approach; game.cat_target = blocked_id; game.cat_scan_time = 0
 		for tick in 199: game._tick_cat(.1)
-		expect(not game.run.eliminated[blocked_id] and game.hud.cat_status.contains("スキャン中"),"Cat visibly reports progress and does not finish before the twenty-second requirement")
+		expect(not game.run.eliminated[blocked_id] and game.hud.cat_status.contains("解析中"),"Cat visibly reports progress and does not finish before the twenty-second requirement")
 		game._tick_cat(.2)
 		expect(game.run.eliminated[blocked_id] and game.run.ap == 910,"Cat completes the formerly stuck target and awards exactly ten AP")
 	game.start_run(300,912); game.crowd.set_physics_process(false); game.set_physics_process(false)
@@ -78,7 +78,7 @@ func test_skill_panel(game: Node3D) -> void:
 			expect(game.hud.skill_selected == key and game.hud.buttons.get_node("SkillDetailTitle").text == IdentityRun.SKILLS[key].name,"Selecting %s shows its own details without buying it" % key)
 		for node in game.hud.buttons.get_children():
 			if node is Control and (node.position.x+node.size.x > 1440 or node.position.y+node.size.y > 900): fits = false
-	expect(all_keys.size() == 14 and fits and game.run.ap == 0,"Four branches expose all fourteen skills, fit on-screen and never spend AP on selection")
+	expect(all_keys.size() == IdentityRun.SKILLS.size() and fits and game.run.ap == 0,"Four branches expose all fifteen skills, fit on-screen and never spend AP on selection")
 	game.hud.skill_branch = 1; game.hud.skill_selected = "cat_speed"; game.hud.show_mode("skills")
 	expect(game.hud.buttons.get_node("SkillPurchaseReason").text.contains("探索猫"),"Cat speed explains its cat prerequisite")
 	game.hud.skill_selected = "cat"; game.hud.show_mode("skills")

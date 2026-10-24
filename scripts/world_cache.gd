@@ -2,7 +2,7 @@ class_name WorldCache
 extends RefCounted
 const PATH := "res://assets/world/mall.scn"
 const SCHEMA := 1
-const INPUTS := ["floor_contacts","mall_finishes","display_meshes","retail_polish","mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
+const INPUTS := ["retail_batch","retail_models","retail_details","floor_contacts","mall_finishes","display_meshes","retail_polish","mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
 static var navigation: Dictionary = {}
 static func fingerprint() -> String:
 	var source := ""
@@ -15,6 +15,7 @@ static func can_load() -> bool:
 		var manifest := FileAccess.get_file_as_string("res://assets/world/manifest.json")
 		var data: Variant = JSON.parse_string(manifest)
 		if not data is Dictionary or data.get("fingerprint","") != fingerprint(): return false
+		if data.get("render",{}).get("triangles",0) <= 0: return false
 	return true
 static func mount(mall: Node3D) -> void:
 	var world: Node3D = load(PATH).instantiate()
@@ -24,4 +25,5 @@ static func mount(mall: Node3D) -> void:
 	mall.identity_slots.assign(world.get_meta("identity_slots"))
 	mall.render_stats = world.get_meta("render_stats")
 	mall.set_meta("floor_contacts",world.get_meta("floor_contacts",{}))
+	mall.set_meta("retail_stock",world.get_meta("retail_stock",{}))
 	navigation = {"hash":hash(mall.spawn_points),"positions":world.get_meta("nav_positions"),"edges":world.get_meta("nav_edges")}

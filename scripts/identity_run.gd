@@ -14,6 +14,7 @@ const DISTRIBUTION := {
 	"C": [100, 370, 330, 300, 100],
 }
 const SKILLS := {
+	"handheld_speed": {"name":"初期スキャナー高速化","detail":"単体解析：2 → 1.5 → 1 → 0.6秒","cost":60,"max":3,"branch":"01 / 装備"},
 	"gun": {"name": "スキャン銃", "detail": "遠距離スキャンを解放（2キー）", "cost": 400, "max": 1, "branch": "01 / 装備"},
 	"focus": {"name": "銃の解析効率", "detail": "銃の必要命中数を1発減らす", "cost": 60, "max": 4, "branch": "01 / 銃の強化"},
 	"magazine": {"name": "弾倉拡張", "detail": "銃の弾倉を15発拡張", "cost": 50, "max": 3, "branch": "01 / 銃の強化"},
@@ -57,6 +58,9 @@ func _init(count: int = 120, run_seed: int = -1) -> void:
 
 func required_hits() -> int:
 	return 5 - int(upgrades.focus)
+
+func handheld_seconds() -> float:
+	return [2.0,1.5,1.0,.6][int(upgrades.handheld_speed)]
 
 func magazine_size() -> int:
 	return 30 + 15 * int(upgrades.magazine)

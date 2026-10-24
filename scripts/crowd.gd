@@ -6,6 +6,7 @@ extends Node3D
 var positions: Array[Vector3] = []
 var headings: Array[float] = []
 var paths: Array[PackedVector3Array] = []
+var path_requests_last_tick := 0
 var waits: Array[float] = []
 var death_times: Array[float] = []
 var bodies: Array[Area3D] = []
@@ -128,7 +129,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 		area.set_meta("identity", id)
 		var collision := CollisionShape3D.new()
 		var capsule := CapsuleShape3D.new()
-		capsule.radius = 0.32
+		capsule.radius = 0.44
 		capsule.height = 1.9 if role not in ["seated","reading"] else 1.4
 		collision.shape = capsule
 		area.add_child(collision)
@@ -223,6 +224,8 @@ func _physics_process(delta: float) -> void:
 	if not frozen:
 		clock += delta
 		attraction_left = maxf(0,attraction_left-delta)
+	var plans := 0
+	path_requests_last_tick = 0
 	for id in run.population:
 		if death_times[id] >= 0:
 			death_times[id] += delta
@@ -237,6 +240,10 @@ func _physics_process(delta: float) -> void:
 		if waits[id] > 0:
 			continue
 		if paths[id].is_empty():
+			# Spread path requests across physics ticks rather than one burst.
+			if plans >= 1: continue
+			plans += 1
+			path_requests_last_tick += 1
 			var start := nav.get_closest_point(positions[id])
 			var candidates: Array = floor_nav_ids[Mall.level_at(positions[id].y)]
 			var goal: int = candidates[rng.randi_range(0, candidates.size() - 1)]

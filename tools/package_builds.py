@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.12.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.13.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -48,6 +48,9 @@ C館1階は屋外広場と8店舗、ベンチ・喫茶席。B館1階西端付近
 人数は300人を維持し、30枠をC館へ配置。地図・宝箱の候補にもC館を追加。
 B館地下/屋上・C館の残る階層、写真顔生成、進行セーブ、Steam連携は未実装。UIは日本語です。日本語フォントを同梱しています。
 Windows版はクロスビルド済みで、Windows実機では未検証です。
+0.13では店の商品・小物と値札・ポスターを増やし、猫の終点到着と経路計算を修正。
+初期スキャナー高速化はTabから60/120/180 APで購入し、1.5/1/0.6秒へ短縮。
+照準判定を広げ、壁越しのスキャンは防止します。docs/STORE_COMPARISON.mdを参照。
 0.12では石・木・塗装面の素材、A館上階の床、店舗入口と天井設備を更新。
 比較はソース同梱のdocs/INTERIOR_COMPARISON.md。
 0.11では肌・布のテクスチャ、まばたき、視線と口元、歩行中の腕の動きを更新しました。
@@ -67,6 +70,8 @@ def main() -> None:
         raise ValueError("World cache input list is empty")
     fingerprint = sha256("".join((ROOT / f"scripts/{name}.gd").read_text() for name in names).encode()).hexdigest()
     manifest = json.loads((ROOT / "assets/world/manifest.json").read_text())
+    if manifest.get("render", {}).get("triangles", 0) <= 0:
+        raise ValueError("World cache has no validated render geometry")
     if manifest["fingerprint"] != fingerprint or not (ROOT / "assets/world/mall.scn").is_file():
         raise ValueError("World cache is stale: run tools/build_world.gd before exporting and packaging")
     artifacts = []

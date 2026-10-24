@@ -149,6 +149,7 @@ func _shell(level: int) -> void:
 	sign_at(Vector3(-190.2,y+3.2,0),"B館 %s\nA館・駐車場 →" % Mall.floor_title(level),-PI/2)
 
 func _store(store: Dictionary,y: float) -> void:
+	RetailDetails.wing_b(mall,store,y)
 	var x: float = store.x; var w: float = store.w; var side: int = store.side
 	var accent := Shapes.material(Color("526d70") if side < 0 else Color("876f58"))
 	Shapes.box(mall,Vector3(x,y+4.15,side*8.5),Vector3(w-.2,.85,.22),accent)
@@ -177,7 +178,7 @@ func _store(store: Dictionary,y: float) -> void:
 			_display(p,store.kind,2,2.5)
 		Shapes.box(mall,Vector3(x-w*.15,y+.9,side*24.5),Vector3(w*.55,1.8,1),wood,true)
 		for i in 12:
-			Shapes.box(mall,Vector3(x-w*.4+i*w*.045,y+1.15,side*23.9),Vector3(.3,.45,.3),Shapes.material(Color.from_hsv(i*.071,.2,.62)))
+			if store.kind == "books": Shapes.box(mall,Vector3(x-w*.4+i*w*.045,y+1.15,side*23.9),Vector3(.3,.45,.3),Shapes.material(Color.from_hsv(i*.071,.2,.62)))
 		for dx in [-.16,.16]: mall.identity_slots.append({"pos":Vector3(x+w*dx,y,side*20),"yaw":0.0 if side < 0 else PI,"role":"browsing","activity":"book" if store.kind == "books" else "inspect"})
 
 func _display(p: Vector3,kind: String,width: float,depth: float) -> void:
@@ -194,7 +195,7 @@ func _display(p: Vector3,kind: String,width: float,depth: float) -> void:
 	elif kind == "home":
 		Shapes.box(mall,p+Vector3(0,1.32,0),Vector3(width*.75,.42,depth*.6),Shapes.material(Color("818d85")))
 		Shapes.box(mall,p+Vector3(0,1.64,depth*.25),Vector3(width*.75,.48,.18),ivory)
-	else:
+	elif kind == "books":
 		for row in 2:
 			for i in 6:
 				var size := Vector3(.12,.32,.25) if kind == "books" else Vector3(.23,.2,.35)

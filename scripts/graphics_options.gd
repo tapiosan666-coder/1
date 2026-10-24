@@ -18,6 +18,8 @@ static func apply(game: Node3D,choice: String,save: bool = true) -> void:
 	for node in game.get_children():
 		if node is DirectionalLight3D: node.shadow_enabled = preset.shadow; node.directional_shadow_max_distance = maxf(1,preset.shadow_range)
 	game.crowd.detail_distance = preset.detail; game.crowd.draw_distance = preset.distance
+	for node in game.mall.find_children("*","MeshInstance3D",true,false):
+		if node.get_meta("retail_detail",false): node.visibility_range_end = {"low":28.0,"balanced":40.0,"high":55.0}[choice]
 	game.hud.graphics_choice = choice
 	if save:
 		var config := ConfigFile.new(); config.set_value("graphics","preset",choice); config.save("user://graphics.cfg")

@@ -29,6 +29,10 @@ var cat_retarget := 0.0
 var cat_clock := 0.0
 var cat_skipped: Dictionary = {}
 var cat_planned_at := Vector3.ZERO
+var cat_candidates: Array[int] = []
+var frame_samples := PackedFloat32Array()
+var last_frame_usec := 0
+var frame_report_left := 0.0
 var beacon: Node3D
 var selected_skin := Color("cfaa89")
 var selected_hair := Color("33312c")
@@ -73,6 +77,8 @@ func _ready() -> void:
 		_capture_people.call_deferred()
 	if "--capture-interiors" in OS.get_cmdline_user_args():
 		_capture_interiors.call_deferred()
+	if "--capture-stores" in OS.get_cmdline_user_args():
+		_capture_stores.call_deferred()
 	if "--capture-art" in OS.get_cmdline_user_args():
 		_capture_art.call_deferred()
 	if "--capture-growth" in OS.get_cmdline_user_args():
@@ -99,6 +105,7 @@ func _from_title() -> void:
 	start_run()
 
 func _create_run(count: int, run_seed: int = -1) -> void:
+	frame_samples.clear(); last_frame_usec = 0; frame_report_left = 0
 	if is_instance_valid(crowd):
 		remove_child(crowd)
 		crowd.queue_free()
@@ -111,6 +118,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	cat_target = -1
 	cat_retarget = 0
 	cat_clock = 0; cat_skipped.clear()
+	cat_candidates.clear()
 	cat_scan_time = 0
 	run = IdentityRun.new(count, run_seed)
 	crowd = Crowd.new()
@@ -207,6 +215,21 @@ func _input(event: InputEvent) -> void:
 	elif event.keycode == KEY_2 and hud.mode == "play":
 		equip(true)
 
+func _process(delta: float) -> void:
+	var now := Time.get_ticks_usec()
+	if is_instance_valid(hud) and hud.mode == "play" and last_frame_usec > 0:
+		frame_samples.append((now-last_frame_usec)/1000.0)
+		if frame_samples.size() > 180: frame_samples.remove_at(0)
+		frame_report_left -= delta
+		if frame_report_left <= 0:
+			var sorted := frame_samples.duplicate(); sorted.sort()
+			var total := 0.0
+			for sample in frame_samples: total += sample
+			hud.play_fps = 1000.0*frame_samples.size()/maxf(.001,total)
+			hud.play_worst_ms = sorted[-1]
+			frame_report_left = .5
+	last_frame_usec = now
+
 func _physics_process(delta: float) -> void:
 	if hud.mode != "play":
 		return
@@ -229,9 +252,9 @@ func _physics_process(delta: float) -> void:
 	target = ray_target()
 	hud.target_id = int(target.collider.get_meta("identity")) if not target.is_empty() and target.collider.has_meta("identity") else -1
 	if not using_gun:
-		_tick_handheld(delta, Input.is_action_pressed("fire"))
+		_tick_handheld(delta, Input.is_action_pressed("fire"),target)
 	hud.using_gun = using_gun
-	hud.scan_progress = handheld_scan.seconds / IdentityRun.HANDHELD_SECONDS
+	hud.scan_progress = handheld_scan.seconds / run.handheld_seconds()
 	player.reader_screen.text = "スキャン中\n%03d%%" % int(hud.scan_progress * 100) if hud.scan_progress > 0 else "個体識別\nスキャナー"
 	hud.ammo = ammo
 	hud.player_position = player.position
@@ -253,9 +276,7 @@ func ray_target() -> Dictionary:
 	var from := player.camera.global_position
 	var reach := run.scan_range() if using_gun else IdentityRun.HANDHELD_RANGE
 	var to := from - player.camera.global_transform.basis.z * reach
-	var query := PhysicsRayQueryParameters3D.create(from, to, 3, [player.get_rid()])
-	query.collide_with_areas = true
-	return get_world_3d().direct_space_state.intersect_ray(query)
+	return ScanAim.ray(get_world_3d().direct_space_state,from,to,[player.get_rid()],crowd)
 
 func fire() -> void:
 	if not using_gun or run.upgrades.gun == 0 or hud.mode != "play" or reload_left > 0 or shot_cooldown > 0:
@@ -271,9 +292,7 @@ func fire() -> void:
 	var end := origin - player.camera.global_transform.basis.z * run.scan_range()
 	var excluded: Array[RID] = [player.get_rid()]
 	for step in (3 if run.upgrades.pierce > 0 else 1):
-		var query := PhysicsRayQueryParameters3D.create(origin, end, 3, excluded)
-		query.collide_with_areas = true
-		var hit := get_world_3d().direct_space_state.intersect_ray(query)
+		var hit := ScanAim.ray(get_world_3d().direct_space_state,origin,end,excluded,crowd)
 		if hit.is_empty():
 			break
 		_spark(hit.position)
@@ -361,17 +380,17 @@ func _update_equipment() -> void:
 	player.handheld.visible = hud.mode == "play" and not using_gun
 	player.cart.visible = hud.mode == "play" and player.cart_boost > 1
 
-func _tick_handheld(delta: float, held: bool) -> void:
+func _tick_handheld(delta: float, held: bool,known_hit: Variant = null) -> void:
 	if hud.mode != "play" or using_gun:
 		handheld_scan.reset()
 		return
-	var hit := ray_target()
+	var hit: Dictionary = ray_target() if known_hit == null else known_hit
 	var id := -1
 	if not hit.is_empty() and hit.collider.has_meta("identity"):
 		id = int(hit.collider.get_meta("identity"))
 		if run.eliminated[id]:
 			id = -1
-	var finished := handheld_scan.tick(delta, id, held)
+	var finished := handheld_scan.tick(delta,id,held,run.handheld_seconds())
 	if finished >= 0:
 		resolve(finished, IdentityRun.Source.HANDHELD)
 		audio.play("hit", 1.25)
@@ -463,32 +482,44 @@ func _tick_cat(delta: float) -> void:
 	if cat_target < 0:
 		hud.cat_status = "猫 / 次の相手を探索中"
 		if cat_retarget > 0: return
-		var candidates: Array[int] = []
-		for id in run.population:
-			if run.eliminated[id] or (id == run.true_id and run.located) or cat_skipped.get(id,0.0) > cat_clock: continue
-			candidates.append(id)
-		candidates.sort_custom(func(a: int,b: int): return cat.position.distance_squared_to(crowd.positions[a]) < cat.position.distance_squared_to(crowd.positions[b]))
-		for id in candidates.slice(0,12):
+		if cat_candidates.is_empty():
+			for id in run.population:
+				if run.eliminated[id] or (id == run.true_id and run.located) or cat_skipped.get(id,0.0) > cat_clock: continue
+				cat_candidates.append(id)
+			cat_candidates.sort_custom(func(a: int,b: int): return _cat_target_cost(a) < _cat_target_cost(b))
+		if not cat_candidates.is_empty():
+			var id: int = cat_candidates.pop_front()
 			var route := CatSearch.route(crowd,cat.position,id,state)
-			if route.is_empty(): cat_skipped[id] = cat_clock+5; continue
-			cat_target = id; cat_scan_time = 0; cat_planned_at = crowd.positions[id]
-			cat.set_meta("path",route); cat_retarget = 1; break
-		if cat_target < 0: cat_retarget = 1; return
+			if route.is_empty(): cat_skipped[id] = cat_clock+5
+			else:
+				cat_target = id; cat_scan_time = 0; cat_planned_at = crowd.positions[id]
+				cat.set_meta("path",route); cat_retarget = 1; cat_candidates.clear()
+		if cat_target < 0:
+			cat_retarget = .05 if not cat_candidates.is_empty() else 1.0
+			return
 	var destination := crowd.positions[cat_target]
 	var seated: bool = crowd.roles[cat_target] in ["seated","reading"]
+	# A cat passing a reachable shopper may work on that person rather than
+	# walking past everyone toward an obstructed or distant commitment.
+	if cat_retarget <= 0 and not CatSearch.can_scan(cat.position,destination,seated,state):
+		for id in run.population:
+			if run.eliminated[id] or (id == run.true_id and run.located) or crowd.roles[id] == "walking": continue
+			if not CatSearch.can_scan(cat.position,crowd.positions[id],crowd.roles[id] in ["seated","reading"],state): continue
+			cat_target = id; destination = crowd.positions[id]; seated = crowd.roles[id] in ["seated","reading"]
+			cat_scan_time = 0; cat.set_meta("path",PackedVector3Array()); break
 	if CatSearch.can_scan(cat.position,destination,seated,state):
 		cat_scan_time += delta
 		cat.rotation.z = sin(cat_scan_time*8)*.1
 		cat.rotation.y = atan2(cat.position.x-destination.x,cat.position.z-destination.z)
 		cat.get_node("PawRight").position.z = -.2-absf(sin(cat_scan_time*8))*.25
 		var seconds: float = [20.0,12.0,6.0][run.upgrades.cat_speed]
-		hud.cat_status = "猫 / スキャン中 %d / %d秒" % [mini(ceili(cat_scan_time),int(seconds)),int(seconds)]
+		hud.cat_status = "猫 / 相手 #%04d を解析中・あと %.1f秒" % [cat_target+1,maxf(0,seconds-cat_scan_time)]
 		if cat_scan_time >= seconds:
 			resolve(cat_target,IdentityRun.Source.SPECIAL)
 			cat_target = -1; cat_retarget = 0; cat_scan_time = 0
 		return
 	cat.rotation.z = 0; cat.get_node("PawRight").position.z = -.2
-	hud.cat_status = "猫 / 相手の近くへ移動中"
+	hud.cat_status = "猫 / 相手 #%04d へ移動中・%.1fm" % [cat_target+1,cat.position.distance_to(destination)]
 	var path: PackedVector3Array = cat.get_meta("path",PackedVector3Array())
 	if cat_retarget <= 0 and (path.is_empty() or destination.distance_to(cat_planned_at) > .75):
 		path = CatSearch.route(crowd,cat.position,cat_target,state)
@@ -500,13 +531,19 @@ func _tick_cat(delta: float) -> void:
 	var remaining := delta*4
 	while not path.is_empty() and remaining > 0:
 		var distance := cat.position.distance_to(path[0])
-		if distance < .05: path.remove_at(0); continue
+		if distance < .05:
+			cat.position = path[0]; path.remove_at(0); continue
 		var direction := path[0]-cat.position
 		var step := minf(remaining,distance)
 		cat.position += direction.normalized()*step; remaining -= step
 		cat.rotation.y = atan2(-direction.x,-direction.z)
 		if step >= distance: path.remove_at(0)
 	cat.set_meta("path",path)
+
+func _cat_target_cost(id: int) -> float:
+	var at: Vector3 = crowd.positions[id]
+	var floor_penalty := 200.0 if absf(at.y-cat.position.y) > .6 else 0.0
+	return cat.position.distance_squared_to(at)+floor_penalty+(8.0 if crowd.roles[id] == "walking" else 0.0)
 
 func _spark(at: Vector3) -> void:
 	var spark := Shapes.sphere(effects, at, 0.09, Shapes.material(Color("b6ff94"), 1))
@@ -906,6 +943,20 @@ func _capture_interiors() -> void:
 		await get_tree().create_timer(.3).timeout; await RenderingServer.frame_post_draw
 		get_viewport().get_texture().get_image().save_png("/tmp/fy12-after-%s.png" % shot[0])
 		print("INTERIOR_CAPTURE native ",shot[0]," draws=",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME))
+	get_tree().quit()
+
+func _capture_stores() -> void:
+	start_run(300,912); set_physics_process(false); crowd.set_physics_process(false); player.set_physics_process(false)
+	GraphicsOptions.apply(self,"balanced",false); crowd.clock = .4
+	for shot in [["fashion",Vector3(-57,.1,-9.5),Vector3(-57,1.6,-19)],["daily",Vector3(-21,.1,-10),Vector3(-21,1.5,-22)],["wares",Vector3(-27,.1,-19.4),Vector3(-27,1.8,-22.1)],["digital",Vector3(-3,.1,-11),Vector3(-7.5,1.25,-13.5)],["cafe",Vector3(15,.1,-11),Vector3(10.5,1,-13.5)],["b-clothes",Vector3(-346,.1,-10),Vector3(-346,1.6,-22)],["c-shoes",Vector3(-402,.1,-84),Vector3(-402,1.5,-77)]]:
+		player.position = MallCurve.world(shot[1]); player.camera.look_at(MallCurve.world(shot[2])); crowd._render()
+		hud.player_position = player.position; hud.location_name = Mall.zone_name(player.position); hud.notice_time = 0; hud.queue_redraw()
+		await get_tree().create_timer(.3).timeout; await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("/tmp/fy13-after-%s.png" % shot[0])
+		print("STOCK_CAPTURE native ",shot[0])
+	hud.skill_branch = 0; hud.skill_selected = "handheld_speed"; set_mode("skills")
+	await get_tree().create_timer(.2).timeout; await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("/tmp/fy13-reader-skill.png")
 	get_tree().quit()
 
 func _capture_art() -> void:

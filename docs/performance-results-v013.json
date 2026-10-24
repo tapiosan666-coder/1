@@ -1,0 +1,117 @@
+{
+  "engine": "Godot 4.6.3 Standard Compatibility",
+  "renderer": "Linux Mesa llvmpipe LLVM 19.1.7 software rendering",
+  "baseline_commit": "251e8c0ff37049f54b3964ec0cdbc541ade70005",
+  "path_benchmark": {
+    "population": 300,
+    "run_seed": 912,
+    "movement_rng_seed": 13013,
+    "initial_fixture": "docs/path-profile-fixture-v013.json",
+    "scope": "240 simulated seconds, 2400 fixed 0.1-second logic updates; pose rendering disabled; not real game FPS or average playtime",
+    "results": {
+      "0.12": {
+        "cat_max_ms": 2.204,
+        "cat_p95_ms": 0.035,
+        "cat_ticks_over_10ms": 0,
+        "cleared": 5,
+        "crowd_max_ms": 2.05,
+        "crowd_p95_ms": 0.078,
+        "crowd_ticks_over_10ms": 0,
+        "population": 300,
+        "pose_rendering": false,
+        "simulated_seconds": 240,
+        "step_seconds": 0.1,
+        "won": false
+      },
+      "0.13": {
+        "cat_max_ms": 4.114,
+        "cat_p95_ms": 0.287,
+        "cat_ticks_over_10ms": 0,
+        "cleared": 7,
+        "crowd_max_ms": 1.62,
+        "crowd_p95_ms": 0.132,
+        "crowd_ticks_over_10ms": 0,
+        "population": 300,
+        "pose_rendering": false,
+        "simulated_seconds": 240,
+        "step_seconds": 0.1,
+        "won": false
+      }
+    }
+  },
+  "render_benchmark": {
+    "population": 180,
+    "initial_fixture": "docs/render-profile-fixture-v013.json",
+    "viewport": [
+      1280,
+      800
+    ],
+    "warmup_frames": 12,
+    "sample_frames": 30,
+    "sun_shadow_range_m": 85,
+    "cat_purchased": false,
+    "msaa": false,
+    "crowd_frozen": true,
+    "scope": "Fixed-camera software renderer, frozen crowd, not continuous walking or RTX performance",
+    "results": {
+      "0.12": {
+        "cases": [
+          {
+            "draw_calls": 2665.26666666667,
+            "median_frame_ms": 437.707,
+            "name": "entrance",
+            "p90_frame_ms": 465.188,
+            "primitives": 1622201.4
+          },
+          {
+            "draw_calls": 2259.0,
+            "median_frame_ms": 406.987,
+            "name": "atrium",
+            "p90_frame_ms": 419.399,
+            "primitives": 1709422.4
+          },
+          {
+            "draw_calls": 1427.0,
+            "median_frame_ms": 163.185,
+            "name": "parking",
+            "p90_frame_ms": 167.479,
+            "primitives": 566156.0
+          }
+        ],
+        "sample_frames": 30,
+        "startup_ms": 862.194,
+        "viewport": "(1280, 800)",
+        "warmup_frames": 12
+      },
+      "0.13": {
+        "cases": [
+          {
+            "draw_calls": 2692.26666666667,
+            "median_frame_ms": 415.445,
+            "name": "entrance",
+            "p90_frame_ms": 429.574,
+            "primitives": 1477433.0
+          },
+          {
+            "draw_calls": 2295.0,
+            "median_frame_ms": 445.402,
+            "name": "atrium",
+            "p90_frame_ms": 466.686,
+            "primitives": 1590553.2
+          },
+          {
+            "draw_calls": 1427.0,
+            "median_frame_ms": 173.926,
+            "name": "parking",
+            "p90_frame_ms": 182.98,
+            "primitives": 546970.0
+          }
+        ],
+        "sample_frames": 30,
+        "startup_ms": 1052.788,
+        "viewport": "(1280, 800)",
+        "warmup_frames": 12
+      }
+    }
+  }
+}

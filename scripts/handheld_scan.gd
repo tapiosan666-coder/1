@@ -9,7 +9,7 @@ func reset() -> void:
 	target_id = -1
 	seconds = 0
 
-func tick(delta: float, aimed_id: int, held: bool) -> int:
+func tick(delta: float, aimed_id: int, held: bool,required_seconds: float = IdentityRun.HANDHELD_SECONDS) -> int:
 	if not held or aimed_id < 0:
 		reset()
 		return -1
@@ -17,7 +17,7 @@ func tick(delta: float, aimed_id: int, held: bool) -> int:
 		target_id = aimed_id
 		seconds = 0
 	seconds += delta
-	if seconds + 0.000001 >= IdentityRun.HANDHELD_SECONDS:
+	if seconds + 0.000001 >= required_seconds:
 		var completed := target_id
 		reset()
 		return completed

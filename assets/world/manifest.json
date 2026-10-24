@@ -1,5 +1,5 @@
 {
-  "fingerprint": "66126b713dad50fb528509b75277af31924f6e043448d5776419c2d7970a4897",
+  "fingerprint": "8f6e924575129af9369ff88e4202306d6cc0775c4108de4016a147271b49af7c",
   "floor_contacts": {
     "floors": 3,
     "height": 1024,
@@ -9,9 +9,38 @@
   "nav_edges": 32062,
   "nav_points": 18540,
   "render": {
+    "detail_meshes": 68,
+    "detail_surfaces": 200,
+    "detail_triangles": 705064,
     "sectors": 402,
-    "source_meshes": 12295,
-    "surfaces": 1452,
-    "triangles": 500297
+    "source_meshes": 10395,
+    "static_surfaces": 1452,
+    "static_triangles": 395753,
+    "surfaces": 1652,
+    "triangles": 1100817
+  },
+  "retail_stock": {
+    "by_kind": {
+      "bag": 72,
+      "book_stack": 60,
+      "bottle": 645,
+      "bowl": 360,
+      "coffee_machine": 9,
+      "folded": 68,
+      "headphones": 42,
+      "keyboard": 42,
+      "lamp": 35,
+      "mouse": 42,
+      "mug": 692,
+      "paper_bag": 68,
+      "pastry": 28,
+      "plant": 48,
+      "posters": 136,
+      "price_cards": 201,
+      "shoe": 522,
+      "tablet": 42
+    },
+    "items": 2775,
+    "stores": 68
   }
 }

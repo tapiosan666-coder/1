@@ -10,9 +10,16 @@ static func build(root: Node3D) -> Dictionary:
 	var sources := root.find_children("*","MeshInstance3D",true,false)
 	var input_meshes := 0
 	var triangles := 0
+	var detail_meshes := 0; var detail_surfaces := 0; var detail_triangles := 0
 	for node in sources:
 		if not node.is_visible_in_tree() or node.mesh == null: continue
 		input_meshes += 1
+		if node.get_meta("retail_detail",false):
+			detail_meshes += 1; detail_surfaces += node.mesh.get_surface_count()
+			for i in node.mesh.get_surface_count():
+				var data: Array = node.mesh.surface_get_arrays(i)
+				detail_triangles += (data[Mesh.ARRAY_INDEX].size() if data[Mesh.ARRAY_INDEX] != null and not data[Mesh.ARRAY_INDEX].is_empty() else data[Mesh.ARRAY_VERTEX].size())/3
+			continue
 		var transform: Transform3D = node.global_transform
 		var normal_basis := transform.basis.inverse().transposed()
 		for surface_index in node.mesh.get_surface_count():
@@ -73,6 +80,7 @@ static func build(root: Node3D) -> Dictionary:
 		var node := MeshInstance3D.new(); node.name = "Sector_%d_%d_%d" % [cell.x,cell.y,cell.z]
 		node.mesh = cells[cell]; node.extra_cull_margin = .15; root.add_child(node)
 	for node in sources:
+		if node.get_meta("retail_detail",false): continue
 		# Retain non-mesh children (labels, lights) at their original world transforms.
 		for child in node.get_children():
 			if child is Node3D and child not in sources: child.reparent(root,true)
@@ -86,4 +94,4 @@ static func build(root: Node3D) -> Dictionary:
 	for label in root.find_children("*","Label3D",true,false): label.visibility_range_end = 65
 	for light in root.find_children("*","OmniLight3D",true,false):
 		light.distance_fade_enabled = true; light.distance_fade_begin = 28; light.distance_fade_length = 12
-	return {"source_meshes":input_meshes,"sectors":cells.size(),"surfaces":groups.size(),"triangles":triangles}
+	return {"source_meshes":input_meshes,"sectors":cells.size(),"surfaces":groups.size()+detail_surfaces,"static_surfaces":groups.size(),"triangles":triangles+detail_triangles,"static_triangles":triangles,"detail_triangles":detail_triangles,"detail_meshes":detail_meshes,"detail_surfaces":detail_surfaces}

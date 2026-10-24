@@ -379,6 +379,7 @@ func _build_shops() -> void:
 			else:
 				Shapes.box(self,Vector3(x-1.5,.65,side*21.85),Vector3(12,1.3,1.3),chalk,true).visible = false
 			MallFitout.new().build(self,x,side,index)
+			RetailDetails.wing_a(self,x,side,index)
 			_build_frontage(x,side,index)
 			var light := OmniLight3D.new()
 			add_child(light)

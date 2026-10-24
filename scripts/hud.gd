@@ -1,5 +1,7 @@
 class_name FindHUD
 extends Control
+var play_fps := 0.0
+var play_worst_ms := 0.0
 
 signal item_selected(key: String)
 signal graphics_selected(key: String)
@@ -99,7 +101,7 @@ func _draw() -> void:
 		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
 		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 0.12 ／ A・B・C館を探索 ／ 300人", Vector2(82, 860), 13, muted)
+		_text("日本語開発版 0.13 ／ A・B・C館を探索 ／ 300人", Vector2(82, 860), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -134,7 +136,7 @@ func _draw() -> void:
 				for i in run.required_hits():
 					draw_rect(Rect2(765 + i * 19, 455, 14, 4), lime if i < count else Color("52686a"))
 			else:
-				_text("左クリック長押し / 残り %.1f秒" % (2.0 * (1 - scan_progress)), Vector2(765, 467), 14, lime)
+				_text("左クリック長押し / 残り %.1f秒" % (run.handheld_seconds() * (1 - scan_progress)), Vector2(765, 467), 14, lime)
 		if not using_gun and scan_progress > 0:
 			draw_arc(center, 25, -PI / 2, -PI / 2 + TAU * scan_progress, 64, lime, 3, true)
 		if run.located:
@@ -169,7 +171,7 @@ func _draw() -> void:
 		else:
 			_text("[1] 初期スキャナー", Vector2(1152, 779), 14, lime)
 			_text("%03d%%" % int(scan_progress * 100), Vector2(1150, 825), 35)
-			_text("単体 / 2秒 / 射程6m", Vector2(1152, 850), 13, muted)
+			_text("単体 / %.1f秒 / 射程6m" % run.handheld_seconds(), Vector2(1152, 850), 13, muted)
 		draw_rect(Rect2(310, 818, 780, 70), Color(0.035, 0.07, 0.085, 0.9))
 		if not cat_status.is_empty(): _text(cat_status,Vector2(48,142),17,lime)
 		_text("Tab / スキル購入", Vector2(325, 846), 14, muted)
@@ -187,6 +189,7 @@ func _draw() -> void:
 		_text("準備ができたら、探索を再開できます。", Vector2(463, 370), 20, muted)
 		_text("画質設定 / 軽量は影と描画解像度を下げます",Vector2(460,650),16,muted)
 		_text("使用中のGPU："+adapter_name,Vector2(140,790),14,muted)
+		_text("直近のプレイ：%.1f FPS ／ 最大フレーム時間 %.1f ms" % [play_fps,play_worst_ms],Vector2(140,819),14,muted)
 	elif mode == "win":
 		_text("本当の自分を見つけた。", Vector2(330, 300), 62, lime)
 		_text("同じ顔の人々の中に、あなたは確かにいた。", Vector2(398, 354), 22)

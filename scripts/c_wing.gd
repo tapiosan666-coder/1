@@ -114,6 +114,7 @@ func _shop(store: Dictionary,index: int) -> void:
 	Shapes.box(root,Vector3(5,.56,-12.4),Vector3(3,1.12,1.4),wood,true)
 	Shapes.box(root,Vector3(5,1.25,-12.4),Vector3(.5,.3,.12),dark)
 	var fitout := MallFitout.new(); fitout.parent = root; fitout.origin = 0; fitout.side = -1
+	RetailDetails.wing_c(root,store)
 	for x in [-4.0,4.0]:
 		if store.kind == "cafe":
 			Shapes.box(root,Vector3(x,.76,-7),Vector3(2,.12,2),wood,true)

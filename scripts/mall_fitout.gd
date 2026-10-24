@@ -69,6 +69,8 @@ func shelf(x: float, d: float, kind: int, width: float, depth: float) -> void:
 	for tier in 3:
 		var y := .3+tier*.47
 		box(x,y,d,Vector3(width,.045,depth),wood)
+		# These categories now use the independently culled curved retail goods.
+		if kind in [2,3,7,8]: continue
 		var count := (50 if kind == 0 else 18) if width > 5 else (10 if kind == 0 else 5)
 		for index in count:
 			var px := x-width/2+.16+(width-.32)*index/maxi(1,count-1)

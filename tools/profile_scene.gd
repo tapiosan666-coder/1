@@ -14,7 +14,8 @@ func measure() -> void:
 			var at: Vector3 = game.crowd.positions[id]
 			actors.append([at.x,at.y,at.z,game.crowd.headings[id],game.crowd.roles[id],game.crowd.activities[id]])
 		var file := FileAccess.open(fixture_path,FileAccess.WRITE); file.store_string(JSON.stringify(actors)); file.close()
-	elif FileAccess.file_exists(fixture_path):
+	else:
+		if not FileAccess.file_exists(fixture_path): fixture_path = "res://docs/render-profile-fixture-v013.json"
 		var actors: Array = JSON.parse_string(FileAccess.get_file_as_string(fixture_path))
 		for id in actors.size():
 			var actor: Array = actors[id]

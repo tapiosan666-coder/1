@@ -1,7 +1,7 @@
 class_name SkillPanel
 extends RefCounted
 const BRANCHES := [
- {"name":"01 / 装備・スキャン銃","keys":["gun","focus","magazine","reload","range","pierce"]},
+ {"name":"01 / 装備・スキャン銃","keys":["handheld_speed","gun","focus","magazine","reload","range","pierce"]},
  {"name":"02 / 猫の探索","keys":["cat","cat_speed"]},
  {"name":"03 / 探索・移動","keys":["sonar","sprint","double_jump","travel"]},
  {"name":"04 / 特殊スキャン","keys":["pulse","chain"]}
@@ -14,6 +14,7 @@ static func copy(hud: Control,text: String,rect: Rect2,size: int,color: Color,na
 	hud.buttons.add_child(label); return label
 static func effect(run: IdentityRun,key: String,level: int) -> String:
 	match key:
+		"handheld_speed": return "1人を %.1f秒で解析" % [2.0,1.5,1.0,.6][level]
 		"gun": return "銃を使用可能" if level > 0 else "初期スキャナーのみ"
 		"focus": return "%d発で銃のスキャン完了" % (5-level)
 		"magazine": return "弾倉 %d発" % (30+15*level)
@@ -44,16 +45,17 @@ static func build(hud: Control) -> void:
 		var key: String = keys[index]; var skill: Dictionary = IdentityRun.SKILLS[key]
 		var level: int = run.upgrades[key]; var reason := run.purchase_reason(key)
 		var selected: bool = key == hud.skill_selected
-		var rect := Rect2(70+(index%2)*402,278+(index/2)*150,386,134)
+		var compact := keys.size() > 6
+		var rect := Rect2(70+(index%2)*402,278+(index/2)*(118 if compact else 150),386,104 if compact else 134)
 		var button: Button = hud._button("",rect,func(): hud.skill_selected = key; hud.show_mode("skills"))
 		button.name = "SkillCard_"+key
 		var style: StyleBoxFlat = button.get_theme_stylebox("normal").duplicate()
 		style.border_color = hud.lime if selected else Color("4e686b"); style.set_border_width_all(2 if selected else 1)
 		button.add_theme_stylebox_override("normal",style)
 		copy(hud,skill.name,Rect2(rect.position+Vector2(16,12),Vector2(355,32)),21,hud.ink)
-		copy(hud,"レベル %d / %d" % [level,skill.max],Rect2(rect.position+Vector2(16,48),Vector2(180,24)),15,hud.lime if level > 0 else hud.muted)
+		copy(hud,"レベル %d / %d" % [level,skill.max],Rect2(rect.position+Vector2(16,42 if compact else 48),Vector2(180,24)),15,hud.lime if level > 0 else hud.muted)
 		var state := "最大レベル" if level >= skill.max else "前提スキルが必要" if not IdentityRun.prerequisite(key).is_empty() and run.upgrades[IdentityRun.prerequisite(key)] == 0 else "AP不足" if not reason.is_empty() else "購入できます"
-		copy(hud,state,Rect2(rect.position+Vector2(16,80),Vector2(240,35)),16,hud.lime if reason.is_empty() else hud.muted)
+		copy(hud,state,Rect2(rect.position+Vector2(16,70 if compact else 80),Vector2(240,28)),15,hud.lime if reason.is_empty() else hud.muted)
 		if level < skill.max: copy(hud,"%d AP" % run.price(key),Rect2(rect.position+Vector2(250,48),Vector2(120,30)),19,hud.orange)
 	var key: String = hud.skill_selected; var skill: Dictionary = IdentityRun.SKILLS[key]
 	var level: int = run.upgrades[key]; var maximum: bool = level >= skill.max
