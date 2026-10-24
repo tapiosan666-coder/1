@@ -101,7 +101,7 @@ func _draw() -> void:
 		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
 		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 0.13 ／ A・B・C館を探索 ／ 300人", Vector2(82, 860), 13, muted)
+		_text("日本語開発版 0.14 ／ A・B・C館を探索 ／ 300人", Vector2(82, 860), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -266,7 +266,7 @@ func _draw_plan(frame: Rect2) -> void:
 		return
 	for region in Mall.floor_regions:
 		_draw_region(region,frame,Color("42535a"))
-	for area in [Mall.MAIN,Mall.PROMENADE,Mall.FOOD,Mall.RESTROOM,Mall.MARKET,Mall.COURT,Mall.READING,Mall.STOCK]:
+	for area in [Mall.MAIN,DiningWing.INFO,DiningWing.FOYER,Mall.FOOD,Mall.RESTROOM,Mall.MARKET,Mall.COURT,Mall.READING,Mall.STOCK]:
 		_draw_region(area,frame,Color("677d70") if area in [Mall.FOOD,Mall.MARKET] else Color("486e82") if area == Mall.RESTROOM else Color("899387"))
 	for side in [-1,1]:
 		for x in Mall.SHOP_CENTERS:

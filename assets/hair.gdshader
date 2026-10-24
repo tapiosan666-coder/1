@@ -5,5 +5,5 @@ void vertex(){ local_point=VERTEX; }
 void fragment(){
  float phase=local_point.x*1100.0+local_point.y*140.0;
  float strand=sin(phase)*.06*(1.0-smoothstep(.6,3.0,fwidth(phase)));
- ALBEDO=hair_tint.rgb*(.92+strand); ROUGHNESS=.48; SPECULAR=.42;
+ ALBEDO=hair_tint.rgb*(.92+strand); ROUGHNESS=.72; SPECULAR=.18;
 }

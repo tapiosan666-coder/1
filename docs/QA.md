@@ -1,20 +1,34 @@
-# 開発版0.13の検証記録
+# 開発版0.14の検証記録
 
 Godot `4.6.3.stable.official.7d41c59c4` Standard、Linux x86_64、Compatibility renderer。画面確認はXorg dummy displayとMesa llvmpipe。GPU実機の性能結果ではない。音声はDummy出力で、実スピーカーでの聴取は未実施。
 
 ## 自動検証
 
-- `godot --headless --script res://tests/test_game.gd`：158チェック、0失敗、終了コード0。
-- `godot --headless --script res://tests/test_expansion.gd`：59チェック、0失敗、終了コード0。
-- `godot --headless --script res://tests/test_annex.gd`：62チェック、0失敗、終了コード0。
-- `godot --headless --script res://tests/test_wing_b.gd`：43チェック、0失敗、終了コード0。
-- `godot --headless --script res://tests/test_wing_c.gd`：40チェック、0失敗、終了コード0。
-- `godot --headless --script res://tests/test_cat_and_skills.gd`：33チェック、0失敗、終了コード0。
-- `godot --script res://tests/test_character_motion.gd`：14チェック、0失敗、終了コード0（実描画）。
-- `godot --script res://tests/test_render_materials.gd`：8チェック、0失敗、終了コード0（実描画）。
-- `godot --headless --script res://tests/test_scan_and_paths.gd`：22チェック、0失敗。
-- `godot --headless --script res://tests/test_retail_detail.gd`：6チェック、0失敗。
-- 合計445チェック。チェック数は製品品質やパフォーマンスの保証ではない。
+| 検証 | チェック数 | 失敗 |
+| --- | ---: | ---: |
+| `tests/test_game.gd` | 158 | 0 |
+| `tests/test_expansion.gd` | 59 | 0 |
+| `tests/test_annex.gd` | 62 | 0 |
+| `tests/test_wing_b.gd` | 43 | 0 |
+| `tests/test_wing_c.gd` | 40 | 0 |
+| `tests/test_cat_and_skills.gd` | 33 | 0 |
+| `tests/test_scan_and_paths.gd` | 22 | 0 |
+| `tests/test_retail_detail.gd` | 6 | 0 |
+| `tests/test_dining_layout.gd` | 26 | 0 |
+| `tests/test_visual_access.gd` | 2 | 0 |
+| `tests/test_character_motion.gd` | 14 | 0 |
+| `tests/test_render_materials.gd` | 10 | 0 |
+| `tests/test_world_art.gd` | 6 | 0 |
+
+合計481チェック。[機械可読な記録](qa-results-v014.json)。`character_motion`・`render_materials`・`world_art`は実描画が必要で、ヘッドレスでは実行を拒否します。チェック数は製品品質や実GPUのFPSを保証しません。
+
+### 0.14の動線・仕上げ・陰影・保存
+
+- 閉鎖した北側裏通路に公開経路点を作らず、既存の267固定枠と33歩行者を維持。待合客4人・フードコート店員4人に猫と初期スキャナーの見通しがあること。正面入口からフードコート、アトリウムから案内ラウンジへ実際の移動入力で歩くこと。
+- 書店奥の読書席への開口を、追加した壁面が見た目だけ塞ぐ問題を再現。物理レイは通るが描画用の三角形に当たる状態を修正し、両方の通過を検査。
+- 配布マップを実描画で生成・保存・再読込し、樹木・書籍・商品ラベルなど44組・1,672個の変換が有限かつ非ゼロであること。色違いの塗装を1材質へ統合しても、元の色が頂点に残ること。
+- 静的な局所遮蔽を24方向・2.4mで事前計算し、強さ0.65で保存。静的な形状の細分化と区画の分け直しは生成時のみ。実際のGIや反射の実装として扱わない。74個の店舗スポット照明が湾曲に追従することも検査。
+- 旧版と同じカメラ・歩行者の固定配置で撮影。配布するLinux release exportからも撮影し、公開するSource/Windows ZIPのSHA-256とCRCを確認する。Windowsはクロスビルドで、Windows実機の起動・FPS・音声の聴取は未検証。
 
 ### 0.13の猫・初期スキャナー・経路・店舗
 

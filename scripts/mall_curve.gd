@@ -134,8 +134,10 @@ static func bake(root: Node3D) -> void:
 	for job in labels:
 		var t: Transform3D = job.transform
 		job.node.global_transform = Transform3D(Basis(Vector3.UP,-angle(t.origin.x))*t.basis,world(t.origin))
-	for light in root.find_children("*","OmniLight3D",true,false):
-		light.global_position = world(light.global_position)
+	for light in root.find_children("*","Light3D",true,false):
+		var t:Transform3D=light.global_transform
+		if light is SpotLight3D:light.set_meta("plan_origin",t.origin)
+		light.global_transform=Transform3D(Basis(Vector3.UP,-angle(t.origin.x))*t.basis,world(t.origin))
 	for body in bodies:
 		body.get_parent().remove_child(body); body.queue_free()
 	var body := StaticBody3D.new()

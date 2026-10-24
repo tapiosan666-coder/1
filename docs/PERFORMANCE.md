@@ -30,7 +30,8 @@ Godot 4.6.3 Standard、Compatibility、Mesa 25.0.7 llvmpipe LLVM 19.1.7、1280×
 建物・什器・経路・描画統合に関わるスクリプトを変更したら、次を実行し、生成された`assets/world/mall.scn`と`manifest.json`を一緒に保存する。
 
 ```bash
-godot --headless --path . --script res://tools/build_world.gd -- --rebuild-world
+godot --path . --script res://tools/build_world.gd -- --rebuild-world --emit-occlusion
+# 続けて docs/WORLD_BAKING.md の陰影計算と適用を実行する。実描画が必要。
 ```
 
 入力ファイルは`WorldCache.INPUTS`が定義する。エディター実行ではハッシュ不一致時に手続き生成へ戻る。配布実行ファイルは同梱キャッシュを読むため、更新後はLinux/Windowsを両方再エクスポートする。`tools/package_builds.py`はキャッシュと現在の入力のハッシュ不一致を拒否する。キャッシュのない状態を診断する場合は開発用引数`-- --uncached-world`を使える。
@@ -115,3 +116,19 @@ godot --headless --path . --script res://tools/build_world.gd -- --rebuild-world
 Escには直近最大180フレームの壁時計によるFPSと最大フレーム時間、使用GPU名を表示する。メニュー中の時間は集計に含めず、プレイ直前の値を残す。ウィンドウ操作や端末側の処理もフレーム間隔へ影響する。Windows実機での継続計測、GPUメモリ、長時間移動のQAは残る。
 
 0.13の初期配置データは`docs/path-profile-fixture-v013.json`（CPU経路比較）と`docs/render-profile-fixture-v013.json`（描画比較）へ同梱。測定ツールは一時フォルダーにfixtureがない場合、この同梱データを読む。
+
+## 0.14：仕上げ・陰影・描画区画
+
+色違いの塗装を頂点色へ移し、材質を共有。陰影に必要な面を生成時に細分化した後、再度区画へ振り分け、大きな壁や床の元の重心だけで区画を決める状態を修正した。AOの計算は生成時のみで、プレイ中に追加の遮蔽レイを投射しない。店舗のスポット照明も湾曲へ追従させる。
+
+比較は旧版06649d1と0.14の保存ソース、Linux・Mesa llvmpipeのCPUソフトウェア描画。300人、同じ位置・向き・役割の固定fixture、1280×800、描画解像度100%、MSAAなし、太陽の影85m、各カメラ12フレームの準備と30フレームの測定。静止カメラの描画比較であり、Windows移動中の引っ掛かりの再現試験ではない。
+
+| 画面 | 0.13 描画命令 | 0.14 描画命令 | 0.13 中央値ms | 0.14 中央値ms |
+| --- | ---: | ---: | ---: | ---: |
+| 中央入口 | 2692.3 | 2549.3 | 375.846 | 603.091 |
+| アトリウム | 2295.0 | 2034.0 | 407.963 | 548.656 |
+| 駐車場 | 1427.0 | 1619.0 | 171.237 | 227.319 |
+
+入口の描画命令は約5%、アトリウムは約11%減った。一方、陰影用の頂点、追加した内装、修正によって表示される樹木・書籍などが増え、このソフトウェア描画でのフレーム時間は増加している。駐車場は描画命令も増えた。実GPUで軽くなった、ユーザーの移動中の重さが解消した、60 FPSを達成したという結果にはしない。RTX 4060 Laptopを含むWindows実機は未測定。
+
+[生データ](performance-results-v014.json)、[共通fixture](render-profile-fixture-v014.json)、`tools/profile_scene.gd -- --steady-profile --profile-300`で条件を確認できる。以前の180人版の比較と今回の300人比較の数値を直接混ぜない。

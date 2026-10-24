@@ -58,21 +58,23 @@ func _make_handheld() -> void:
 	metal.roughness = 0.3
 	var screen := Shapes.material(Color("102d32"), 0.3)
 	var light := Shapes.material(Color("93e7bb"), 0.5)
-	var shell := Shapes.sphere(handheld, Vector3.ZERO, 1, rubber)
-	shell.scale = Vector3(0.115, 0.18, 0.047)
-	Shapes.box(handheld, Vector3(0, 0.01, 0.022), Vector3(0.19, 0.28, 0.035), metal)
-	Shapes.box(handheld, Vector3(0, 0.03, 0.043), Vector3(0.158, 0.19, 0.009), screen)
-	Shapes.box(handheld, Vector3(0, -0.075, 0.049), Vector3(0.12, 0.003, 0.002), light)
+	Shapes.soft_box(handheld,Vector3(0,0,0),Vector3(.215,.345,.075),rubber)
+	Shapes.soft_box(handheld, Vector3(0, 0.01, 0.022), Vector3(0.19, 0.28, 0.035), metal)
+	Shapes.soft_box(handheld, Vector3(0, 0.03, 0.043), Vector3(0.158, 0.19, 0.009), screen)
+	Shapes.soft_box(handheld, Vector3(0, -0.075, 0.049), Vector3(0.12, 0.003, 0.002), light)
 	for x in [-0.042, 0.0, 0.042]:
 		Shapes.sphere(handheld, Vector3(x, -0.115, 0.039), 0.012, rubber)
 	reader_screen = Shapes.sign_text(handheld, Vector3(0, 0.068, 0.051), "個体識別\nスキャナー", 26, Color("93e7bb"))
 	reader_screen.pixel_size = 0.00065
-	Shapes.box(handheld, Vector3(0, 0.19, 0), Vector3(0.09, 0.06, 0.055), rubber)
-	Shapes.box(handheld, Vector3(0, 0.218, 0), Vector3(0.065, 0.003, 0.032), light)
+	Shapes.soft_box(handheld, Vector3(0, 0.19, 0), Vector3(0.09, 0.06, 0.055), rubber)
+	Shapes.soft_box(handheld, Vector3(0, 0.218, 0), Vector3(0.065, 0.003, 0.032), light)
 	# A first-person gloved hand and sleeve anchor the instrument to the player.
 	var glove := Shapes.material(Color("333b3d"))
 	var palm := Shapes.sphere(handheld, Vector3(0.09, -0.13, -0.005), 0.055, glove)
 	palm.scale = Vector3(0.65, 1.2, 0.8)
+	for i in 4:
+		var finger:=Shapes.sphere(handheld,Vector3(.094,-.065-i*.025,.032),.018,glove)
+		finger.scale=Vector3(1.35,.53,.75)
 	var sleeve := Shapes.cylinder(handheld, Vector3(0.09, -0.26, -0.005), 0.045, 0.2, Shapes.material(Color("4c5756")))
 	sleeve.rotation.z = -0.12
 

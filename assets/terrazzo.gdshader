@@ -42,4 +42,5 @@ void fragment(){
  NORMAL=normalize((VIEW_MATRIX*vec4(n,0.0)).xyz);
  ROUGHNESS=mix(clamp(surface.b+.08,0.0,1.0),.77,grout); SPECULAR=.3;
  }
+ ALBEDO *= COLOR.rgb;
 }

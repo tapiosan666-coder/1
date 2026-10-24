@@ -36,4 +36,5 @@ void fragment(){
  vec3 n=normalize(vec3(bump.y*cos(a)-bump.x*sin(a),1.0,bump.y*sin(a)+bump.x*cos(a)));
  NORMAL=normalize((VIEW_MATRIX*vec4(n,0.0)).xyz);
  ROUGHNESS=mix(surface.b,.8,joint); SPECULAR=.32;
+ ALBEDO *= COLOR.rgb;
 }

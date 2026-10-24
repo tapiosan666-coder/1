@@ -4,10 +4,11 @@ func measure() -> void:
 	var started := Time.get_ticks_usec()
 	var game = load("res://scenes/main.tscn").instantiate()
 	root.add_child(game)
-	game.start_run(180,912)
+	var full := "--profile-300" in OS.get_cmdline_user_args()
+	game.start_run(300 if full else 180,912)
 	game.player.set_physics_process(false)
 	game.crowd.frozen = true
-	var fixture_path := "/tmp/fy08-profile-fixture.json"
+	var fixture_path := "/tmp/fy14-render-fixture.json" if full else "/tmp/fy08-profile-fixture.json"
 	if "--save-fixture" in OS.get_cmdline_user_args():
 		var actors: Array = []
 		for id in game.run.population:
@@ -15,7 +16,7 @@ func measure() -> void:
 			actors.append([at.x,at.y,at.z,game.crowd.headings[id],game.crowd.roles[id],game.crowd.activities[id]])
 		var file := FileAccess.open(fixture_path,FileAccess.WRITE); file.store_string(JSON.stringify(actors)); file.close()
 	else:
-		if not FileAccess.file_exists(fixture_path): fixture_path = "res://docs/render-profile-fixture-v013.json"
+		if not FileAccess.file_exists(fixture_path): fixture_path = "res://docs/render-profile-fixture-v014.json" if full else "res://docs/render-profile-fixture-v013.json"
 		var actors: Array = JSON.parse_string(FileAccess.get_file_as_string(fixture_path))
 		for id in actors.size():
 			var actor: Array = actors[id]
@@ -30,7 +31,7 @@ func measure() -> void:
 	var steady := "--steady-profile" in OS.get_cmdline_user_args()
 	var warmup := 12 if steady else 2
 	var samples := 30 if steady else 8
-	var report := {"startup_ms":startup,"viewport":str(root.size),"warmup_frames":warmup,"sample_frames":samples,"cases":[]}
+	var report := {"population":game.run.population,"startup_ms":startup,"viewport":str(root.size),"warmup_frames":warmup,"sample_frames":samples,"cases":[]}
 	for shot in [["entrance",Vector3(-82,.1,0),Vector3(-25,1.7,0)],["atrium",Vector3(-25,.1,0),Vector3(33,7,0)],["parking",Vector3(-125,.1,-5.5),Vector3(-151,1,-20)]]:
 		game.player.position = MallCurve.world(shot[1]); game.player.camera.look_at(MallCurve.world(shot[2]))
 		for frame in warmup: await process_frame

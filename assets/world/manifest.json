@@ -1,46 +1,62 @@
 {
-  "fingerprint": "8f6e924575129af9369ff88e4202306d6cc0775c4108de4016a147271b49af7c",
+  "fingerprint": "300abf9c42a5f53f4e791ac52d7cc8055716efd50048931db6dcc004acef3873",
   "floor_contacts": {
-    "floors": 3,
-    "height": 1024,
-    "static_footprints": 523,
-    "width": 1024
+    "floors": 3.0,
+    "height": 1024.0,
+    "static_footprints": 525.0,
+    "width": 1024.0
   },
-  "nav_edges": 32062,
-  "nav_points": 18540,
+  "nav_edges": 31435.0,
+  "nav_points": 18214.0,
   "render": {
-    "detail_meshes": 68,
-    "detail_surfaces": 200,
-    "detail_triangles": 705064,
-    "sectors": 402,
-    "source_meshes": 10395,
-    "static_surfaces": 1452,
-    "static_triangles": 395753,
-    "surfaces": 1652,
-    "triangles": 1100817
+    "detail_meshes": 68.0,
+    "detail_surfaces": 200.0,
+    "detail_triangles": 705064.0,
+    "sectors": 438.0,
+    "source_meshes": 13626.0,
+    "static_surfaces": 1653.0,
+    "static_triangles": 1143607.0,
+    "surfaces": 1853.0,
+    "triangles": 1848671.0
   },
   "retail_stock": {
     "by_kind": {
-      "bag": 72,
-      "book_stack": 60,
-      "bottle": 645,
-      "bowl": 360,
-      "coffee_machine": 9,
-      "folded": 68,
-      "headphones": 42,
-      "keyboard": 42,
-      "lamp": 35,
-      "mouse": 42,
-      "mug": 692,
-      "paper_bag": 68,
-      "pastry": 28,
-      "plant": 48,
-      "posters": 136,
-      "price_cards": 201,
-      "shoe": 522,
-      "tablet": 42
+      "bag": 72.0,
+      "book_stack": 60.0,
+      "bottle": 645.0,
+      "bowl": 360.0,
+      "coffee_machine": 9.0,
+      "folded": 68.0,
+      "headphones": 42.0,
+      "keyboard": 42.0,
+      "lamp": 35.0,
+      "mouse": 42.0,
+      "mug": 692.0,
+      "paper_bag": 68.0,
+      "pastry": 28.0,
+      "plant": 48.0,
+      "posters": 136.0,
+      "price_cards": 201.0,
+      "shoe": 522.0,
+      "tablet": 42.0
     },
-    "items": 2775,
-    "stores": 68
+    "items": 2775.0,
+    "stores": 68.0
+  },
+  "static_instancing": {
+    "instances": 1672,
+    "invalid_transforms": 0,
+    "nodes": 44,
+    "verified_with_renderer": true
+  },
+  "world_occlusion": {
+    "applied": true,
+    "mean": 0.744805935354856,
+    "method": "static vertex ambient occlusion",
+    "min": 0.610000003874302,
+    "radius_m": 2.4,
+    "rays": 24,
+    "strength": 0.65,
+    "vertices": 3055754
   }
 }

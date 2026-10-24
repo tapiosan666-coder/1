@@ -8,7 +8,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.13.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.14.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -34,7 +34,7 @@ Tab強化（4系統から選択し、右側の購入ボタンで確定）、Fソ
 2・3階の主回廊はA館4m、B館6mに拡張し、吹き抜けを維持。
 300人のうち本物は1人。偽物を処理すると10 AP。
 銃・猫・範囲は本物の場所を通知するだけです。
-最後は必ず1の初期スキャナーで本物を2秒スキャンしてクリアします。
+最後は必ず1の初期スキャナーで本物を規定時間（未強化2秒）スキャンしてクリアします。
 
 現版はA館の地下・1〜3階・屋上と西駐車場の開発用セクターです。湾曲した約180mの主通路、3層吹き抜け、
 各階12専門店、1階の大型食品スーパー・フードコート・お手洗い・読書席・倉庫があります。
@@ -48,6 +48,9 @@ C館1階は屋外広場と8店舗、ベンチ・喫茶席。B館1階西端付近
 人数は300人を維持し、30枠をC館へ配置。地図・宝箱の候補にもC館を追加。
 B館地下/屋上・C館の残る階層、写真顔生成、進行セーブ、Steam連携は未実装。UIは日本語です。日本語フォントを同梱しています。
 Windows版はクロスビルド済みで、Windows実機では未検証です。
+0.14ではA/B/C館の店舗仕上げ・天井設備と人物の手・肩・襟・目・髪・衣服を更新。
+フードコート近くの不要な裏通路と横断壁を撤去し、待合・手洗い給水・返却口・館内案内ラウンジへ整理。
+静的な陰影を同梱し、樹木や書籍の一括描画データが潰れる配布工程を修正。docs/REALISM_COMPARISON.mdを参照。
 0.13では店の商品・小物と値札・ポスターを増やし、猫の終点到着と経路計算を修正。
 初期スキャナー高速化はTabから60/120/180 APで購入し、1.5/1/0.6秒へ短縮。
 照準判定を広げ、壁越しのスキャンは防止します。docs/STORE_COMPARISON.mdを参照。
@@ -72,6 +75,10 @@ def main() -> None:
     manifest = json.loads((ROOT / "assets/world/manifest.json").read_text())
     if manifest.get("render", {}).get("triangles", 0) <= 0:
         raise ValueError("World cache has no validated render geometry")
+    if not manifest.get("world_occlusion", {}).get("applied"):
+        raise ValueError("Offline world occlusion is missing: bake and apply it before export")
+    if not manifest.get("static_instancing", {}).get("verified_with_renderer"):
+        raise ValueError("Static instancing has not been validated with a real renderer")
     if manifest["fingerprint"] != fingerprint or not (ROOT / "assets/world/mall.scn").is_file():
         raise ValueError("World cache is stale: run tools/build_world.gd before exporting and packaging")
     artifacts = []

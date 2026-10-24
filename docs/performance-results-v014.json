@@ -1,0 +1,71 @@
+{
+  "kind": "static camera rendering comparison",
+  "population": 300,
+  "gpu": "Mesa llvmpipe software renderer; not Windows or RTX GPU",
+  "cases": {
+    "v013": {
+      "cases": [
+        {
+          "draw_calls": 2692.26666666667,
+          "median_frame_ms": 375.846,
+          "name": "entrance",
+          "p90_frame_ms": 393.979,
+          "primitives": 1467958.2
+        },
+        {
+          "draw_calls": 2295.0,
+          "median_frame_ms": 407.963,
+          "name": "atrium",
+          "p90_frame_ms": 445.529,
+          "primitives": 1567756.0
+        },
+        {
+          "draw_calls": 1427.0,
+          "median_frame_ms": 171.237,
+          "name": "parking",
+          "p90_frame_ms": 177.953,
+          "primitives": 558302.0
+        }
+      ],
+      "population": 300,
+      "sample_frames": 30,
+      "startup_ms": 1097.454,
+      "viewport": "(1280, 800)",
+      "warmup_frames": 12
+    },
+    "v014": {
+      "cases": [
+        {
+          "draw_calls": 2549.26666666667,
+          "median_frame_ms": 603.091,
+          "name": "entrance",
+          "p90_frame_ms": 638.99,
+          "primitives": 2931391.0
+        },
+        {
+          "draw_calls": 2034.0,
+          "median_frame_ms": 548.656,
+          "name": "atrium",
+          "p90_frame_ms": 576.625,
+          "primitives": 2481514.0
+        },
+        {
+          "draw_calls": 1619.0,
+          "median_frame_ms": 227.319,
+          "name": "parking",
+          "p90_frame_ms": 236.407,
+          "primitives": 1002409.0
+        }
+      ],
+      "population": 300,
+      "sample_frames": 30,
+      "startup_ms": 1085.512,
+      "viewport": "(1280, 800)",
+      "warmup_frames": 12
+    }
+  },
+  "fixture": "docs/render-profile-fixture-v014.json",
+  "viewport": "1280x800",
+  "shadow_distance_m": 85,
+  "msaa": false
+}

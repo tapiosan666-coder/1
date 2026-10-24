@@ -39,6 +39,8 @@ static func sample(role: String,activity: String,time: float,id: int,moving: boo
 	elif role in ["reading","browsing"]:
 		left = Vector3(-.13,1.12,-.34)
 		right = Vector3(.13,1.12+sin(phase*.7)*.018,-.34)
+	elif role == "seated" and activity == "food_wait":
+		left=Vector3(-.16,.97,-.28);right=Vector3(.16,.97,-.28)
 	elif role == "seated":
 		drink = pow(maxf(0,sin(phase*.7)),4)
 		left = Vector3(-.23,1.12,-.39)

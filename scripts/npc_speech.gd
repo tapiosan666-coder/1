@@ -60,6 +60,7 @@ func update_nearby(crowd: Crowd,camera: Camera3D,enabled: bool) -> int:
 	if crowd.activities[best] == "parking": label.text = "車はこの辺りだったかな。"
 	if crowd.activities[best] == "cinema": label.text = "この席からよく見えるね。"
 	if crowd.activities[best] == "cinema_staff": label.text = "上映室は中央の通路からです。"
+	if crowd.activities[best] == "food_wait": label.text = "ここで待ち合わせをしているんです。"
 	if crowd.activities[best] == "terrace": label.text = "外のベンチも気持ちいいね。"
 	if crowd.activities[best] == "outlet_cafe": label.text = "歩いたあとのお茶はおいしいね。"
 	if crowd.activities[best] == "outlet_staff": label.text = "どうぞ、ゆっくりご覧ください。"

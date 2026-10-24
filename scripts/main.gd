@@ -73,6 +73,8 @@ func _ready() -> void:
 	# A preview crowd shares the exact same identity model as a playable run.
 	_create_run(300, 24)
 	set_mode("title")
+	if "--capture-realism" in OS.get_cmdline_user_args():
+		_capture_realism.call_deferred()
 	if "--capture-people" in OS.get_cmdline_user_args():
 		_capture_people.call_deferred()
 	if "--capture-interiors" in OS.get_cmdline_user_args():
@@ -995,4 +997,8 @@ func _capture_people() -> void:
 			hud.player_position = player.position; hud.queue_redraw()
 			await get_tree().process_frame; await RenderingServer.frame_post_draw
 			get_viewport().get_texture().get_image().save_png("/tmp/fy11-frames/%04d.png" % frame)
+	get_tree().quit()
+
+func _capture_realism()->void:
+	await RealismCapture.capture(self)
 	get_tree().quit()

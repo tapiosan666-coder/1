@@ -1,0 +1,89 @@
+{
+  "version": "0.14.0",
+  "engine": "Godot 4.6.3 Standard",
+  "platform": "Linux x86_64",
+  "checks": 481,
+  "failures": 0,
+  "tests": [
+    {
+      "test": "tests/test_game.gd",
+      "checks": 158,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_expansion.gd",
+      "checks": 59,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_annex.gd",
+      "checks": 62,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_wing_b.gd",
+      "checks": 43,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_wing_c.gd",
+      "checks": 40,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_cat_and_skills.gd",
+      "checks": 33,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_scan_and_paths.gd",
+      "checks": 22,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_retail_detail.gd",
+      "checks": 6,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_dining_layout.gd",
+      "checks": 26,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_visual_access.gd",
+      "checks": 2,
+      "failures": 0,
+      "renderer": "headless"
+    },
+    {
+      "test": "tests/test_character_motion.gd",
+      "checks": 14,
+      "failures": 0,
+      "renderer": "OpenGL llvmpipe"
+    },
+    {
+      "test": "tests/test_render_materials.gd",
+      "checks": 10,
+      "failures": 0,
+      "renderer": "OpenGL llvmpipe"
+    },
+    {
+      "test": "tests/test_world_art.gd",
+      "checks": 6,
+      "failures": 0,
+      "renderer": "OpenGL llvmpipe"
+    }
+  ],
+  "windows_tested": false,
+  "hardware_fps_measured": false
+}

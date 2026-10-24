@@ -49,5 +49,19 @@ func verify() -> void:
 			var mat: ShaderMaterial = node.get_active_material(i)
 			retained[mat.get_shader_parameter("contact_map").get_instance_id()] = true
 	expect(retained.has(a.get_instance_id()) and retained.has(b.get_instance_id()),"Both embedded textures survive geometry batching")
+	var painted:=Node3D.new();root.add_child(painted)
+	var tones:=[Color("a18469"),Color("708b79"),Color("8794a3")]
+	for i in tones.size():Shapes.box(painted,Vector3(2+i,1,1),Vector3(.5,.5,.5),MallFinishes.plaster(tones[i]))
+	var paint_stats:=RenderChunks.build(painted)
+	expect(paint_stats.surfaces==1,"Paint colours share one material state per sector")
+	var paint_found:Dictionary={}
+	for paint_node in painted.find_children("*","MeshInstance3D",true,false):
+		for paint_surface in paint_node.mesh.get_surface_count():
+			var paint_arrays:Array=paint_node.mesh.surface_get_arrays(paint_surface)
+			for paint_vertex:Color in paint_arrays[Mesh.ARRAY_COLOR]:
+				for paint_tone:Color in tones:
+					var paint_linear:=paint_tone.srgb_to_linear()
+					if Vector3(paint_vertex.r,paint_vertex.g,paint_vertex.b).distance_to(Vector3(paint_linear.r,paint_linear.g,paint_linear.b))<.005:paint_found[paint_tone]=true
+	expect(paint_found.size()==3,"Vertex tint preserves each original paint colour while batching")
 	print("RENDER_MATERIAL_TESTS: ",checks," checks, ",failures," failures")
 	quit(1 if failures else 0)

@@ -15,4 +15,5 @@ void fragment(){
  vec3 normal=normalize(n+((surface.r-.5)*u+(surface.g-.5)*v)*.25);
  NORMAL=normalize((VIEW_MATRIX*vec4(normal,0.0)).xyz);
  ROUGHNESS=surface.b; SPECULAR=.3;
+ ALBEDO *= COLOR.rgb;
 }

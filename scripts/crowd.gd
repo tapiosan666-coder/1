@@ -18,6 +18,7 @@ var draw_distance := 140.0
 var rendered_ids: Array[int] = []
 var detailed_ids: Array[int] = []
 var lod_meshes: Array[MultiMesh] = []
+var contact_shadows:MultiMesh
 var clothing_palette: Array = []
 var nav := AStar3D.new()
 var nav_ids: Array[int] = []
@@ -154,17 +155,21 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 			var tag := material.resource_name
 			var result: Material = material
 			if tag.begins_with("Skin"):
-				material.albedo_color = skin_color; material.roughness = .55
+				material.albedo_color = skin_color; material.roughness = .55; material.vertex_color_use_as_albedo=true
 				if title == "head":
 					var skin := ShaderMaterial.new(); skin.shader = preload("res://assets/skin.gdshader")
 					skin.set_shader_parameter("skin_tint",skin_color); _skin_textures(skin); result = skin
 			elif tag.begins_with("Hair"):
 				var hair := ShaderMaterial.new(); hair.shader = preload("res://assets/hair.gdshader")
 				hair.set_shader_parameter("hair_tint",hair_color); result = hair
-			elif tag.begins_with("Cloth"):
+			elif tag.begins_with("Cloth") or tag.begins_with("Trousers") or tag.begins_with("Shirt"):
 				var fabric := ShaderMaterial.new(); fabric.shader = preload("res://assets/fabric.gdshader")
 				fabric.set_shader_parameter("fabric_detail",preload("res://assets/characters/textures/fabric_detail.png"))
-				fabric.set_shader_parameter("fabric_normal",preload("res://assets/characters/textures/fabric_normal.png")); result = fabric
+				fabric.set_shader_parameter("fabric_normal",preload("res://assets/characters/textures/fabric_normal.png"))
+				if not tag.begins_with("Cloth"):
+					fabric.set_shader_parameter("use_palette",false)
+					fabric.set_shader_parameter("garment_tint",Color("35414b") if tag.begins_with("Trousers") else Color("d0ccc0"))
+				result = fabric
 			elif tag.begins_with("Lip"):
 				var lip := ShaderMaterial.new(); lip.shader = preload("res://assets/skin.gdshader")
 				lip.set_shader_parameter("skin_tint",skin_color.lerp(Color("805148"),.45)); lip.set_shader_parameter("lip_surface",true); _skin_textures(lip); result = lip
@@ -185,6 +190,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 	cup.material = Shapes.material(Color("ddd8c7"))
 	_instance_part("held_cup",cup,Vector3.ZERO,Vector3.ONE,[])
 	_make_lods()
+	_make_contact_shadows()
 	_render(true)
 
 func _skin_textures(material: ShaderMaterial) -> void:
@@ -267,6 +273,21 @@ func _physics_process(delta: float) -> void:
 		render_clock = 0
 		_render()
 
+func _make_contact_shadows() -> void:
+	var mesh:=QuadMesh.new();mesh.size=Vector2(.9,.75)
+	var material:=ShaderMaterial.new();material.shader=preload("res://assets/contact_shadow.gdshader");mesh.material=material
+	contact_shadows=MultiMesh.new();contact_shadows.transform_format=MultiMesh.TRANSFORM_3D;contact_shadows.mesh=mesh;contact_shadows.instance_count=run.population
+	var node:=MultiMeshInstance3D.new();node.name="CharacterContactShadows";node.multimesh=contact_shadows;node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;add_child(node)
+func _render_contact_shadows(bounds:AABB) -> void:
+	if contact_shadows==null:return
+	contact_shadows.custom_aabb=bounds
+	contact_shadows.visible_instance_count=rendered_ids.size()
+	for i in rendered_ids.size():
+		var id:=rendered_ids[i]
+		var scale:=Vector3.ZERO if death_times[id]>=0 else Vector3.ONE
+		var basis:=Basis(Vector3.UP,headings[id])*Basis(Vector3.RIGHT,-PI/2)
+		contact_shadows.set_instance_transform(i,Transform3D(basis.scaled_local(scale),positions[id]+Vector3.UP*.028))
+
 func _make_lods() -> void:
 	for seated in [false,true]:
 		var mm := MultiMesh.new(); mm.transform_format = MultiMesh.TRANSFORM_3D; mm.use_custom_data = true
@@ -306,6 +327,7 @@ func _render(_force: bool = false) -> void:
 			if death_times[id] >= 0: at.y -= pow(death_times[id]/.8,2)*4
 			mm.set_instance_transform(index,Transform3D(Basis(Vector3.UP,headings[id]),at))
 			mm.set_instance_custom_data(index,clothing_palette[id%clothing_palette.size()])
+	_render_contact_shadows(bounds)
 	for part in parts:
 		var instances: MultiMesh = part.instances
 		instances.visible_instance_count = detailed_ids.size(); instances.custom_aabb = bounds
@@ -318,7 +340,7 @@ func _render(_force: bool = false) -> void:
 			var hidden: bool = death_times[id] > .8 or (part.name in ["apron","badge"] and role != "staff")
 			hidden = hidden or (part.name in ["held_book","held_pages"] and not motion.book)
 			hidden = hidden or (part.name == "held_product" and not motion.inspect)
-			hidden = hidden or (part.name == "held_cup" and role != "seated")
+			hidden = hidden or (part.name == "held_cup" and (role != "seated" or activities[id] == "food_wait"))
 			hidden = hidden or (part.name in ["eye_l","eye_r"] and motion.blink > .96)
 			if hidden:
 				instances.set_instance_transform(slot,Transform3D(Basis().scaled(Vector3.ZERO),Vector3(0,-20,0)))

@@ -45,12 +45,17 @@ static func build(root: Node3D) -> Dictionary:
 				if material is ShaderMaterial:
 					signature = "shader:"+material.shader.resource_path
 					for parameter in material.shader.get_shader_uniform_list():
+						if material.shader.resource_path=="res://assets/plaster.gdshader" and parameter.name=="paint_tint":continue
 						var value: Variant = material.get_shader_parameter(parameter.name)
 						# Compare texture identity, never serialize an embedded image into
 						# every geometry key (the contact atlas has three million bytes).
 						if value is Resource: value = value.resource_path if not value.resource_path.is_empty() else value.get_instance_id()
 						signature += ":"+str(parameter.name)+"="+var_to_str(value)
-				if not material_cache.has(signature): material_cache[signature] = material
+				if material is ShaderMaterial and material.shader.resource_path=="res://assets/plaster.gdshader":
+					tint=Color(material.get_shader_parameter("paint_tint")).srgb_to_linear()
+					if not material_cache.has(signature):
+						var shared:ShaderMaterial=material.duplicate();shared.set_shader_parameter("paint_tint",Color.WHITE);material_cache[signature]=shared
+				elif not material_cache.has(signature):material_cache[signature]=material
 			var arrays: Array = node.mesh.surface_get_arrays(surface_index)
 			var vertices: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
 			var indices: PackedInt32Array = arrays[Mesh.ARRAY_INDEX] if arrays[Mesh.ARRAY_INDEX] != null else PackedInt32Array()
@@ -67,7 +72,7 @@ static func build(root: Node3D) -> Dictionary:
 				for id in ids:
 					builder.set_normal((normal_basis*arrays[Mesh.ARRAY_NORMAL][id]).normalized())
 					builder.set_uv(arrays[Mesh.ARRAY_TEX_UV][id] if arrays[Mesh.ARRAY_TEX_UV] != null else Vector2.ZERO)
-					var color: Color = arrays[Mesh.ARRAY_COLOR][id] if arrays[Mesh.ARRAY_COLOR] != null and material is StandardMaterial3D and material.vertex_color_use_as_albedo else Color.WHITE
+					var color: Color = arrays[Mesh.ARRAY_COLOR][id] if arrays[Mesh.ARRAY_COLOR] != null and (material is ShaderMaterial or (material is StandardMaterial3D and material.vertex_color_use_as_albedo)) else Color.WHITE
 					builder.set_color(tint*color)
 					builder.add_vertex(transform*vertices[id])
 				triangles += 1
@@ -76,15 +81,15 @@ static func build(root: Node3D) -> Dictionary:
 		if not cells.has(group.cell): cells[group.cell] = ArrayMesh.new()
 		group.builder.index()
 		group.builder.commit(cells[group.cell])
-	for cell in cells:
-		var node := MeshInstance3D.new(); node.name = "Sector_%d_%d_%d" % [cell.x,cell.y,cell.z]
-		node.mesh = cells[cell]; node.extra_cull_margin = .15; root.add_child(node)
 	for node in sources:
 		if node.get_meta("retail_detail",false): continue
 		# Retain non-mesh children (labels, lights) at their original world transforms.
 		for child in node.get_children():
 			if child is Node3D and child not in sources: child.reparent(root,true)
 		node.get_parent().remove_child(node); node.queue_free()
+	for cell in cells:
+		var node := MeshInstance3D.new(); node.name = "Sector_%d_%d_%d" % [cell.x,cell.y,cell.z]
+		node.mesh = cells[cell]; node.extra_cull_margin = .15; root.add_child(node)
 	for node in root.find_children("*","MultiMeshInstance3D",true,false):
 		var bounds := AABB(); var first := true
 		for index in node.multimesh.instance_count:

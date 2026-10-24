@@ -2,7 +2,13 @@
 
 **巨大モールにいる、自分と同じ顔の5,000人。その中の「本当の自分」を見つけるPCゲーム。**
 
-Godot 4.6.3 / GDScript。現在は **0.13・店舗の商品と小物、猫・スキャナー・経路計算を更新する日本語開発版**です。Steam販売版は開発中です。
+Godot 4.6.3 / GDScript。現在は **0.14・モール全域の仕上げ、フードコートの間取り、人物と陰影を更新する日本語開発版**です。Steam販売版は開発中です。
+
+A・B・C館の68店舗へ背面の仕上げ・巾木・照明レール・業種ごとの色を追加し、B館の回廊天井も整えました。動いている最中に計算しない静的な陰影を事前生成し、人物の足元にも軽い接地影を追加。配布マップの一括描画データが潰れて樹木の葉などが消えていた生成工程を修正しています。
+
+1階フードコート近くの用途のない裏通路と、入口を横切っていた不要な壁を撤去。正面の導線へ待合席・手洗い給水・食器返却を集め、アトリウム北端は館内案内ラウンジへ変更しました。人物は同じ顔を保って手の形、肩、襟元、目元、髪、衣服を調整しています。
+
+[変更前後の実画面と範囲](docs/REALISM_COMPARISON.md)。『8番出口』相当の写実品質や、連続したスキンメッシュの全身モデルを完成した段階ではありません。
 
 A館36・B館24・C館8の計68店舗に、新しい商品・小物モデル2,775点と、ポスター136枚・商品札201枚を配置。カップ・器・ボトル・靴・鞄・畳んだ衣類・ヘッドホン・タブレット・ランプ・植物などを業種に合わせて使い、従来の箱状の商品も一部置き換えました。個数は小物モデルの配置数で、旧版からの純増数ではありません。小物は店舗ごとにまとめ、標準40m・軽量28m・高画質55mの距離で描画します。
 
@@ -10,7 +16,7 @@ A館36・B館24・C館8の計68店舗に、新しい商品・小物モデル2,77
 
 初期スキャナーの高速化をスキル画面へ追加。2→1.5→1→0.6秒、60/120/180 AP、銃の購入は不要。射程6mと単体の連続スキャンは維持します。NPCの判定半径を32→44cmに拡張し、壁越しの誤判定を防ぐ見通しの再確認を加えました。
 
-![更新した店舗の商品](docs/screenshots/store-after-wares.png)
+![更新したモール](docs/screenshots/realism-after-entrance.png)
 
 [0.12との店舗比較・新しいスキル画面](docs/STORE_COMPARISON.md)。[0.12の内装比較](docs/INTERIOR_COMPARISON.md)、[人物比較](docs/CHARACTER_COMPARISON.md)も保持。『8番出口』のような現実感は目標であり、同等品質へ到達した扱いにはしません。連続した全身モデルと衣服変形、施設全域の造形・照明・反射は制作途中です。
 
@@ -88,9 +94,12 @@ godot --headless --script res://tests/test_wing_c.gd
 godot --headless --script res://tests/test_cat_and_skills.gd
 godot --headless --script res://tests/test_scan_and_paths.gd
 godot --headless --script res://tests/test_retail_detail.gd
+godot --headless --script res://tests/test_dining_layout.gd
+godot --headless --script res://tests/test_visual_access.gd
 # 次は実際の描画環境が必要。--headlessを付けない
 godot --script res://tests/test_character_motion.gd
 godot --script res://tests/test_render_materials.gd
+godot --script res://tests/test_world_art.gd
 godot --path .
 
 # 設計シミュレーションのみPythonが必要
@@ -99,7 +108,7 @@ python3 -m venv .venv  # ローカルで任意。クラウドでは以下のsetu
 .venv/bin/python tools/simulate_balance.py --trials 100000 --seed 20261023
 ```
 
-建物・什器・群衆経路を変更した場合、`godot --headless --path . --script res://tools/build_world.gd -- --rebuild-world` で事前生成データを更新してください。配布ZIP作成時には入力スクリプトのハッシュ一致を検査します。
+建物・什器・群衆経路を変更した場合、[マップの事前生成手順](docs/WORLD_BAKING.md) で事前生成データを更新してください。配布ZIP作成時には入力スクリプトのハッシュ一致を検査します。
 
 クラウドでの再セットアップは `bash tools/setup_cloud.sh`。現在のチェックアウトをそのまま使います。公開用にソースをZIP化する際、`.godot/`、`.git/`、`builds/`、仮想環境を含めないでください。
 

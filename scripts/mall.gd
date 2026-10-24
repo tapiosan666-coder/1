@@ -1,6 +1,6 @@
 class_name Mall
 extends Node3D
-## Fictional, connected mall floor: long concourse, a second promenade,
+## Fictional, connected mall floor: curved concourse, dining foyer,
 ## shop interiors, a food court and a restroom wing. Not a real-site replica.
 
 const CATEGORIES := ["書店","服飾","靴・鞄","生活雑貨","家電","喫茶","家具","日用品","スポーツ"]
@@ -11,7 +11,6 @@ const STOCK := Rect2(-66,-36,18,12)
 const MAIN := Rect2(-90, -8, 180, 16)
 const FOOD := Rect2(46, -62, 46, 30)
 const RESTROOM := Rect2(-90, 26, 38, 30)
-const PROMENADE := Rect2(-47, -36, 127, 8)
 const MARKET := Rect2(6, 8, 36, 40)
 const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5), "A・B連絡通路":Vector3(-150,5.625,-5.5), "B館東入口":Vector3(-194,.1,-5.5), "B館2階ラウンジ":Vector3(-194,5.625,0), "B館3階シネマ":Vector3(-380,10.975,0), "B館家電売場":Vector3(-402,.1,0), "B・C連絡通路":Vector3(-370,.1,-52), "C館屋外広場":Vector3(-362,.1,-116), "C館テラス":Vector3(-338,.1,-98)}
 const ENTRANCE := Vector3(-82, 0.1, 0)
@@ -46,9 +45,6 @@ static func prepare_plan() -> void:
 	# Add connecting pieces before their destination for polygon union.
 	floor_regions.append(Rect2(60, -42, 20, 35))
 	floor_regions.append(FOOD)
-	floor_regions.append(Rect2(-48, -29, 18, 22))
-	floor_regions.append(Rect2(-48, -29, 128, 5))
-	floor_regions.append(PROMENADE)
 	floor_regions.append(Rect2(-79, 7, 12, 23))
 	floor_regions.append(RESTROOM)
 	floor_regions.append(Rect2(6,7.9,36,40.1))
@@ -112,6 +108,7 @@ static func prepare_plan() -> void:
 	for x in range(-84, 90, 12):
 		for z in [-7.4, 7.4]:
 			obstacles.append(Rect2(x - 0.175, z - 0.175, 0.35, 0.35))
+	obstacles.append_array(DiningWing.obstacles())
 	# Basins and the rear partitions leave a continuous public aisle.
 	obstacles.append(Rect2(-89, 39, 1.5, 14))
 	for x in [-67.0, -62.0, -57.0]:
@@ -216,6 +213,8 @@ static func zone_name(p: Vector3) -> String:
 		return "A館%d階 / %s" % [level_at(p.y)+1,"店舗エリア" if absf(plan.z) > 8 and not COURT.has_point(v) else "吹き抜け回廊"]
 	if READING.has_point(v): return "A館1階 / 書店の読書コーナー"
 	if STOCK.has_point(v): return "A館1階 / バックヤード"
+	if DiningWing.INFO.has_point(v): return "A館1階 / 館内案内・休憩"
+	if DiningWing.FOYER.has_point(v): return "A館1階 / フードコート入口・待合"
 	if COURT.has_point(v): return "A館1階 / センターアトリウム"
 	if MARKET.has_point(v):
 		return "A館1階 / 食品スーパー"
@@ -223,8 +222,6 @@ static func zone_name(p: Vector3) -> String:
 		return "A館1階 / フードコート"
 	if RESTROOM.has_point(v) or Rect2(-79, 8, 12, 18).has_point(v):
 		return "A館1階 / お手洗い方面"
-	if PROMENADE.has_point(v):
-		return "A館1階 / 北側連絡通路"
 	return "A館1階 / ショッピングモール"
 
 func _ready() -> void:
@@ -261,6 +258,8 @@ func _ready() -> void:
 	BWing.new().build(self)
 	CWing.new().build(self)
 	RetailPolish.new().build(self)
+	DiningWing.new().build(self)
+	MallAtmosphere.new().build(self)
 	FloorContacts.bake(self)
 	for level in [-1,0,1,2,3]:
 		var cells: Dictionary = {}
@@ -335,13 +334,9 @@ func _build_concourse() -> void:
 		_tree(Vector3(x, 0.7, 0))
 	# Properly directed hanging wayfinding at junctions.
 	_direction_sign(Vector3(-65, 3.6, 0), "お手洗い　→\nフードコート　直進", -PI / 2)
-	_direction_sign(Vector3(57, 3.6, 0), "←　フードコート\n北側連絡通路", -PI / 2)
+	_direction_sign(Vector3(57, 3.6, 0), "←　フードコート\nお食事・休憩", -PI / 2)
 	_direction_sign(Vector3(72, 3.6, -29), "フードコート\nお食事・休憩", 0)
 	_direction_sign(Vector3(-73, 3.1, 25), "お手洗い\n洗面・個室", PI)
-	for x in range(-39, 73, 14):
-		Shapes.box(self, Vector3(x, 4.5, -32), Vector3(3, 0.06, 0.2), warm)
-	Shapes.box(self, Vector3(16, 5.0, -32), Vector3(127, 0.15, 8), chalk)
-	_direction_sign(Vector3(0, 3.3, -32), "フードコート　→\n←　ショッピングエリア", 0)
 	Shapes.sign_text(self, Vector3(-89.7, 2.5, 0), "FIND YOURSELF\nA館 / 中央入口", 80).rotation.y = PI / 2
 
 func _direction_sign(at: Vector3, text: String, angle: float) -> void:
@@ -392,7 +387,7 @@ func _build_food_court() -> void:
 	for x in [53.0, 67.0, 81.0]:
 		for z in [-39.0, -47.0, -54.0]:
 			Shapes.box(self, Vector3(x, 0.78, z), Vector3(2.6, 0.1, 1.4), wood, true)
-			Shapes.cylinder(self, Vector3(x, 0.35, z), 0.15, 0.7, stone)
+			Shapes.cylinder(self, Vector3(x, 0.365, z), 0.15, 0.73, stone)
 			for offset in [Vector2(-1.9, 0), Vector2(1.9, 0), Vector2(0, -1.6), Vector2(0, 1.6)]:
 				var p := Vector3(x + offset.x, 0, z + offset.y)
 				var yaw := atan2(-(-offset.x), -(-offset.y))
@@ -403,12 +398,9 @@ func _build_food_court() -> void:
 				tray.rotation.y = yaw
 				Shapes.cylinder(self, tray.position + Vector3(0.1, 0.08, 0), 0.055, 0.14, chalk)
 	Shapes.box(self, Vector3(69, 4.9, -47), Vector3(46, 0.15, 30), chalk)
-	var menus := ["うどん・そば", "定食・ごはん", "カレー", "飲みもの"]
 	for index in 4:
 		var x: float = [51.0, 62.0, 73.0, 84.0][index]
 		Shapes.box(self, Vector3(x, 0.5, -59.5), Vector3(9, 1, 1), wood, true)
-		Shapes.box(self, Vector3(x, 2.9, -61.7), Vector3(9, 1.0, 0.15), dark)
-		Shapes.sign_text(self, Vector3(x, 2.9, -61.58), menus[index], 64)
 		identity_slots.append({"pos": Vector3(x, 0, -60.6), "yaw": PI, "role": "staff"})
 		for offset in [-2.0, 0.0, 2.0]:
 			Shapes.cylinder(self, Vector3(x + offset, 1.06, -59.4), 0.24, 0.08, chalk)
@@ -471,15 +463,7 @@ func _tree(p: Vector3) -> void:
 	var leaves := MultiMesh.new()
 	leaves.transform_format = MultiMesh.TRANSFORM_3D
 	leaves.use_colors = true
-	var mesh := SphereMesh.new()
-	mesh.radius = 0.65
-	mesh.height = 1.3
-	mesh.radial_segments = 12
-	mesh.rings = 6
-	var material := Shapes.material(Color("456d42"))
-	material.vertex_color_use_as_albedo = true
-	mesh.material = material
-	leaves.mesh = mesh
+	leaves.mesh = PlantMeshes.cluster()
 	leaves.instance_count = 34
 	var random := RandomNumberGenerator.new()
 	random.seed = 7919
@@ -556,7 +540,7 @@ func _build_architecture() -> void:
 	for z in [-3.0,0.0,3.0]: Shapes.box(self,Vector3(0,16.2,z),Vector3(180,.12,.1),bronze)
 	# Covered junctions keep indoor circulation enclosed between the larger rooms.
 	Shapes.box(self,Vector3(-73,4.95,18.5),Vector3(12,.18,23),ivory)
-	Shapes.box(self,Vector3(70,4.95,-24.5),Vector3(20,.18,35),ivory)
+	Shapes.box(self,Vector3(70,4.95,-20),Vector3(20,.18,24),ivory)
 	for x in [-90.0,90.0]:
 		Shapes.box(self,Vector3(x,10.4,1.5 if x < 0 else 0),Vector3(.30,10.4,13 if x < 0 else 16),ivory,true)
 		Shapes.box(self,Vector3(x*.998,7.6,1.5 if x < 0 else 0),Vector3(.04,3.5,10 if x < 0 else 11),Shapes.material(Color("aabec2")))
@@ -567,12 +551,6 @@ func _build_architecture() -> void:
 			Shapes.box(self,Vector3(x,.38,side*3.4),Vector3(3,.45,.62),wood,true)
 			for dx in [-1.1,1.1]:
 				Shapes.box(self,Vector3(x+dx,.17,side*3.4),Vector3(.12,.34,.5),stone)
-	# A continuous, finished loop behind the north retail row.
-	for z in [-35.8]:
-		Shapes.box(self,Vector3(16,2.3,z),Vector3(127,4.6,.16),ivory, z < -35)
-		Shapes.box(self,Vector3(16,.15,z),Vector3(127,.3,.20),stone)
-	for x in range(-39,74,14):
-		Shapes.box(self,Vector3(x,4.84,-32),Vector3(4,.04,.32),light)
 	# A planted exterior court is visible through the food court's glazed east wall.
 	Shapes.box(self,Vector3(105,-.1,-47),Vector3(26,.2,40),Shapes.material(Color("788569")))
 	for z in [-59.0,-48.0,-37.0]:
@@ -587,8 +565,6 @@ func _build_architecture() -> void:
 	for x in [51.0,62.0,73.0,84.0]:
 		Shapes.box(self,Vector3(x,1.8,-61.8),Vector3(8,.8,.15),Shapes.material(Color("8e9690")))
 		Shapes.box(self,Vector3(x,2.25,-59.7),Vector3(8,.1,1.5),stone)
-		for dx in [-2.4,0,2.4]:
-			Shapes.box(self,Vector3(x+dx,3.45,-61.5),Vector3(2.1,.75,.08),Shapes.material(Color("e1d5b7"),.1))
 	# Public information kiosk and distinct court signage.
 	Shapes.box(self,Vector3(-82,1.1,-5.7),Vector3(1.5,2.2,.2),dark)
 	Shapes.sign_text(self,Vector3(-82,1.45,-5.55),"A館  1F\n館内案内\n食品・生活・ファッション",24)
