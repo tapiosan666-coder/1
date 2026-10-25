@@ -29,4 +29,4 @@ for f in json.loads((ROOT/'docs/structure-floor-plans.json').read_text()):
     title=f"{f['building']}館 {f['level']+1}F / ゲームの床・店舗定義から出力（ゲーム画面ではありません）"
     dr.text((35,15),title,font=font,fill='white')
     dr.text((35,722),'灰緑：床　青：売場　濃色：開口・屋外・非公開区画　／　実施設の実測図ではありません',font=small,fill='#c8d6cc')
-    im.save(ROOT/f"docs/images/mall22-{f['building'].lower()}-{f['level']+1}f.png")
+    im.save(ROOT/f"docs/images/mall23-{f['building'].lower()}-{f['level']+1}f.png")

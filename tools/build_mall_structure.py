@@ -47,8 +47,8 @@ def compile_plan(source):
     for p in b['plazas']:concourse=concourse.union(ellipse(p['at'],p['radius']))
     base=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8,join_style='round'),rect(b['anchor']),rect(b['court'])]+[store_shape(s) for s in b['stores']+b['rear_stores']])
     # Public cross-passages make the inner stores actual islands in the circulation network.
-    for path in b['cross_paths']:base=base.union(LineString(path).buffer(4,quad_segs=8))
-    public=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8)]+[LineString(path).buffer(4,quad_segs=8) for path in b['cross_paths']])
+    for path in b['cross_paths']:base=base.union(LineString(path).buffer(b['cross_width']/2,quad_segs=8))
+    public=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8)]+[LineString(path).buffer(b['cross_width']/2,quad_segs=8) for path in b['cross_paths']])
     from shapely.ops import nearest_points
     for st in b['stores']:
         x,w,side=st['legacy'];front=move(Point(0,side*9.2),st['placement']);target=nearest_points(front,public)[1]
@@ -61,7 +61,7 @@ def compile_plan(source):
     void=void.intersection(box(-446,-100,-202,150))
     for p in b['plazas']:void=void.union(ellipse(p['at'],[r-b['gallery_width'] for r in p['radius']]))
     # Crossings at the transitions between courts, away from the main openings.
-    bridges=unary_union([move(box(-2.5,-17,2.5,17),x) for x in b['bridges']])
+    bridges=unary_union([move(box(-b['bridge_width']/2,-17,b['bridge_width']/2,17),x) for x in b['bridges']])
     court_upper=unary_union([rect(r) for r in b['court_upper']])
     ports=[box(-201,-8.1,-169,-2.9),box(-374.2,-30,-365.8,-22)]
     wall_cut=unary_union(ports)
@@ -69,13 +69,20 @@ def compile_plan(source):
     bank_public=[];shafts=[];north_ports=[];south_ports=[]
     for bank in b['escalator_banks']:
         cx,cz=bank['at'];side=bank['side'];lo=min(cx+side*11.5,cx+side*23);hi=max(cx+side*11.5,cx+side*23)
-        bank_public.extend([box(lo,cz-9,hi,cz-6),box(lo,cz+6,hi,cz+9),box(cx+side*21.5-1.5,cz-9,cx+side*21.5+1.5,cz+9)])
+        inner=cx+side*5;outer=cx+side*23;lo,hi=sorted([inner,outer])
+        bank_public.extend([box(lo,cz-12,hi,cz-6),box(lo,cz+6,hi,cz+12),box(cx+side*20-2.5,cz-12,cx+side*20+2.5,cz+12)])
         for offset in [13.5,16.5]:
             x=cx+side*offset;shafts.append(box(x-1.2,cz-6,x+1.2,cz+6))
             north_ports.append(box(x-1.4,cz-6.3,x+1.4,cz-5.7));south_ports.append(box(x-1.4,cz+5.7,x+1.4,cz+6.3))
     bank_public=unary_union(bank_public).intersection(base);shafts=unary_union(shafts)
     north_ports=unary_union(north_ports);south_ports=unary_union(south_ports)
 
+    # Reserve complete tenant floors and an eight-metre promenade along every facade.
+    # Otherwise the long atrium can cut through a rotated storefront and put a guardrail in its entrance.
+    protected=[]
+    for st in b['stores']:
+        x,w,side=st['legacy'];protected.extend([store_shape(st),move(box(-w/2,-8 if side<0 else 0,w/2,0 if side<0 else 8),st['placement'])])
+    void=void.difference(unary_union(protected))
     walls=[];floor=[];rails=[];b_geometries=[]
     for level in range(3):
         shell=base
@@ -125,16 +132,25 @@ def compile_plan(source):
     upper_rails=[list(line.coords) for line in (list(rail.geoms) if hasattr(rail,'geoms') else [rail]) if line.geom_type=='LineString']
     d['C']={'floors':[floor_data(cf),floor_data(uf)],'stores':c['stores'],'plazas':c['plazas'],'upper_stores':upper_stores,'upper_rails':upper_rails,'bridge':upper['bridge'],'stair_shaft':upper['stair_shaft'],'supports':upper['supports']}
 
-    a=source['A'];ap=unary_union([rect(r) for r in a['rects']]+[ellipse(p['at'],p['radius']).intersection(box(-100,-100,100,-24)) for p in a['plazas']])
-    av=ellipse(a['void']['at'],a['void']['radius'])
-    existing_gallery=unary_union([rect([-48,-15,3,7]),rect([-33,-15,3,7]),rect([-48,-15,18,3])])
-    af=[ap,ap.difference(av).difference(existing_gallery),ap.difference(av).difference(existing_gallery)]
-    # Interface to A's existing north gallery remains open. Ground outer walls are rebuilt by Mall.
-    ports=unary_union([box(-49,-9,-29,-7),box(59,-9,79,-7),box(45,-45,79,-23)])
+    a=source['A'];ap=unary_union([rect(a['central_court'])]+[rect(r) for r in a['rects']]+[ellipse(p['at'],p['radius']).intersection(box(-100,-100,100,-24)) for p in a['plazas']])
+    av=unary_union([ellipse(a['void']['at'],a['void']['radius'])]+[rect(v) for v in a['central_voids']])
+    public=[];shafts=[];north=[];south=[]
+    for bank in a['escalator_banks']:
+        cx,cz=bank['at'];side=bank['side'];lo,hi=sorted([cx+side*11.5,cx+side*23])
+        public.extend([box(lo,cz-12,hi,cz-6),box(lo,cz+6,hi,cz+12),box(cx+side*21.5-2,cz-12,cx+side*21.5+2,cz+12)])
+        for offset in [13.5,16.5]:
+            x=cx+side*offset;shafts.append(box(x-1.2,cz-6,x+1.2,cz+6))
+            north.append(box(x-1.4,cz-6.3,x+1.4,cz-5.7));south.append(box(x-1.4,cz+5.7,x+1.4,cz+6.3))
+    public=unary_union(public).intersection(ap);shafts=unary_union(shafts);north=unary_union(north);south=unary_union(south)
+    af=[ap]+[ap.difference(av).union(public).difference(shafts) for _ in [1,2]]
+    ports=unary_union([box(-49,-16,-29,9),box(59,-9,79,-7),box(45,-45,79,-23)])
     aw=ap.boundary.difference(ports)
     lines=[list(line.coords) for line in (list(aw.geoms) if hasattr(aw,'geoms') else [aw])]
-    rails=[[],[list(av.exterior.coords)],[list(av.exterior.coords)]]
-    d['A']={'floors':[floor_data(g) for g in af],'walls':[[],lines,lines],'rails':rails,'roof':floor_data(ap),'plazas':a['plazas'],'stores':a['stores'],'private':a['private']}
+    rails=[[]]
+    for level in [1,2]:
+        rail=af[level].boundary.difference(ap.boundary.buffer(.10)).difference(north.union(south) if level==1 else south)
+        rails.append([list(line.coords) for line in (list(rail.geoms) if hasattr(rail,'geoms') else [rail]) if line.geom_type=='LineString'])
+    d['A']={'floors':[floor_data(g) for g in af],'walls':[[],lines,lines],'rails':rails,'roof':floor_data(ap),'plazas':a['plazas'],'stores':a['stores'],'private':a['private'],'escalator_banks':a['escalator_banks']}
     return d
 
 def main():

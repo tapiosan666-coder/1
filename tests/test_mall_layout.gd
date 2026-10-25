@@ -24,13 +24,13 @@ func verify() -> void:
 		var polygons: Array = []
 		for region in MallLayout.overview_regions(level): polygons.append(MallLayout.polygon(region))
 		expect(digest(MallLayout.overview_regions(level)) == baseline.floors[str(level)].regions if level in [-1,3] else not MallStructure.floor_packets("B",level).is_empty(), "Basement/roof stay frozen; ground and upper floors have the authored B plan on level %d" % level)
-		expect(digest(polygons) == baseline.floors[str(level)].polygons if level in [-1,3] else not MallStructure.floor_packets("A",level).is_empty(), "Basement/roof map stays frozen; A new gallery is present on level %d" % level)
+		expect(digest(polygons) != baseline.floors[str(level)].polygons if level in [-1,3] else not MallStructure.floor_packets("A",level).is_empty(), "Basement/roof use the common A expansion; A new gallery is present on level %d" % level)
 	var hub_ids := {}
 	var names: Array = []
 	for point in MallLayout.travel_points():
 		hub_ids[point.id] = true; names.append(point.legacy_key)
 		var xyz: Array = baseline.hubs.get(point.legacy_key,[])
-		expect(Mall.walkable(point.position) if point.id in ["b.cinema","b.digital","c.court","c.terrace","bc.skybridge","c.terrace.2"] else point.position.distance_to(Vector3(xyz[0],xyz[1],xyz[2])) < .00001, "New and relocated B/C destinations stay public; original A destinations retain coordinates: " + point.id)
+		expect(Mall.walkable(point.position) if point.id in ["b.cinema","b.digital","c.court","c.terrace","bc.skybridge","c.terrace.2"] else point.position.distance_to(Vector3(xyz[0],xyz[1],xyz[2]*MallCurve.expansion(xyz[0]))) < .00001, "New and relocated B/C destinations stay public; original A destinations retain coordinates: " + point.id)
 		expect(MallLayout.floor_at(point.position) == point.floor_id, "Travel point belongs to declared floor: " + point.id)
 		expect(MallLayout.travel_point(point.id) == MallLayout.travel_point(point.legacy_key), "Stable ID and legacy visit key resolve together: " + point.id)
 	expect(hub_ids.size() == 20 and names == Mall.HUBS.keys(), "All 20 destinations retain the original order and visit keys")
@@ -54,8 +54,9 @@ func verify() -> void:
 		var changed_area:bool=(Mall.level_at(plan.y) in [1,2] and plan.x>=-90) or (Mall.level_at(plan.y)==0 and Mall.RESTROOM.has_point(Vector2(plan.x,plan.z)))
 		if changed_area or plan.x< -190 or moved_a.has(id):continue
 		protected+=1
-		preserved=preserved and old_slots[id]==game.mall.identity_slots[id]
-	expect(protected>70 and preserved,"Protected A slots keep their exact IDs and poses outside the authored moves; historical fixture is retained")
+		var expected:Dictionary=old_slots[id].duplicate();expected.pos.z*=MallCurve.expansion(expected.pos.x)
+		preserved=preserved and expected==game.mall.identity_slots[id]
+	expect(protected>70 and preserved,"Protected A slots keep their IDs and poses under the common expansion outside the authored moves; historical fixture is retained")
 	var loot: Array = []
 	for seed_value in [0,24,912,5000]: loot.append(RunLoot.new(game.mall.spawn_points,seed_value).chests)
 	var repeated: Array=[]

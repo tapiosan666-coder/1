@@ -1,26 +1,26 @@
 {
-  "version": "0.22.0",
+  "version": "0.23.0",
   "artifacts": {
     "Windows": {
-      "bytes": 100137904,
-      "sha256": "137f78bb6d99010da9edbdc71e96cb0b5009abacfdd6055399d39c79cf4e0f86",
+      "bytes": 103009441,
+      "sha256": "77de275af2d08402dc107554f58977098f8339a2fe0395d0bd3884d8a06a9fbd",
       "crc_ok": true
     },
     "Linux": {
-      "bytes": 91388346,
-      "sha256": "ae0dd441f3990fc6f972b3dbf4436ccf3979292e04ed25da20bda0d2bcf5701c",
+      "bytes": 94259883,
+      "sha256": "8639f6f1bb6066429660404a27b01a7f0530595c16209192a62d9eaed3f4bf88",
       "crc_ok": true
     },
     "Source": {
-      "bytes": 72916612,
-      "sha256": "6b6c133e8471f1d91ff78d97fde86d128e28faa19fd53651260de6ddb76e442f",
+      "bytes": 74512998,
+      "sha256": "76ed1eae11cf683c500753d2d3a3661b9a8ca739844f6f4723240e719a69e15a",
       "crc_ok": true
     }
   },
   "native_linux": {
     "frames": 30,
     "exit_code": 0,
-    "elapsed_seconds": 47.68,
+    "elapsed_seconds": 38.16,
     "renderer": "Mesa llvmpipe; actual Linux native export using Windows-exported shared PCK",
     "population": 1000,
     "fixed": 900,
@@ -33,31 +33,38 @@
     "import": {
       "exit_code": 0,
       "errors": [],
-      "seconds": 5.8
+      "seconds": 13.63
     },
     "population": {
       "exit_code": 0,
       "errors": [],
-      "seconds": 9.93,
+      "seconds": 12.55,
       "checks": 22,
       "failures": 0
     },
-    "b_circulation": {
+    "upper_access": {
       "exit_code": 0,
       "errors": [],
-      "seconds": 65.11,
-      "checks": 167,
+      "seconds": 95.31,
+      "checks": 113,
+      "failures": 0
+    },
+    "floor_integrity": {
+      "exit_code": 0,
+      "errors": [],
+      "seconds": 4.76,
+      "checks": 3,
       "failures": 0
     },
     "world_art": {
       "exit_code": 0,
       "errors": [],
-      "seconds": 1.92,
+      "seconds": 2.44,
       "checks": 6,
       "failures": 0
     }
   },
-  "test_suites": 27,
-  "unique_checks": 1118,
+  "test_suites": 29,
+  "unique_checks": 1238,
   "test_failures": 0
 }

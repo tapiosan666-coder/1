@@ -49,7 +49,7 @@ func verify()->void:
   var rise:float=game.crowd.nav.get_point_position(b).y-game.crowd.nav.get_point_position(a).y
   if rise>0:up+=1
   elif rise<0:down+=1
- expect(one_way.size()==312 and up==78 and down==78 and directions,"All 156 directed escalator edges retain their up/down direction after cache restoration")
+ expect(one_way.size()==520 and up==130 and down==130 and directions,"All 260 directed escalator edges retain their up/down direction after cache restoration")
  expect(BWing.escalators().size()==12 and MallStructureData.DATA.B.escalator_banks.size()==3,"Three atrium banks each have paired up/down flights for both floor connections")
  for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
   for lower in [0,1]:

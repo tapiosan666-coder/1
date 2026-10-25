@@ -5,7 +5,7 @@ extends Node3D
 
 const CATEGORIES := ["書店","服飾","靴・鞄","生活雑貨","家電","喫茶","家具","日用品","スポーツ"]
 const SHOP_CENTERS := [-75.0, -57.0, -39.0, -21.0, -3.0, 15.0, 33.0, 51.0, 69.0]
-const COURT := Rect2(-48,-15,18,39)
+const COURT := Rect2(-48,-15,18,44)
 const READING := Rect2(-90,-36,24,12)
 const STOCK := Rect2(-66,-36,18,12)
 const MAIN := Rect2(-90, -8, 180, 16)
@@ -93,8 +93,7 @@ static func prepare_plan() -> void:
 	obstacles.append(Rect2(-66.15,-36,.3,2.5))
 	obstacles.append(Rect2(-66.15,-30.5,.3,6.5))
 	# Escalator structures occupy the rear of the ground-floor court.
-	obstacles.append(Rect2(-44.6,9,2.2,12))
-	obstacles.append(Rect2(-36.1,9,2.2,12))
+
 	for x in [53.0, 67.0, 81.0]:
 		for z in [-39.0, -47.0, -54.0]:
 			obstacles.append(Rect2(x - 1.3, z - 0.7, 2.6, 1.4))
@@ -180,7 +179,7 @@ static func plan_walkable(p: Vector3) -> bool:
 	elif level in [1,2]: blocks = UpperRetail.obstacles(level)
 	for obstacle in blocks:
 		if obstacle.grow(.35).has_point(v): return false
-	if BWing.blocked(p):return false
+	if BWing.blocked(p) or MallEscalators.blocked(p):return false
 	for obstacle in AExtension.obstacles(level):
 		if obstacle.grow(.35).has_point(v):return false
 	for obstacle in CWing.obstacles(level):
@@ -280,6 +279,7 @@ func _ready() -> void:
 	DiningDetails.new().build(self)
 	MallAtmosphere.new().build(self)
 	RetailDensity.build(self)
+	ShopAccess.build(self)
 	FloorContacts.bake(self)
 	for level in [-1,0,1,2,3]:
 		var cells: Dictionary = {}
@@ -489,10 +489,11 @@ func _tree(p: Vector3) -> void:
 	add_child(canopy)
 
 func _glass() -> StandardMaterial3D:
-	var material := Shapes.material(Color(.83,.87,.88,.12))
+	var material := Shapes.material(Color(.65,.78,.81,.23))
 	material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-	material.roughness = .12
+	material.roughness = .20
 	material.metallic = .05
+	material.cull_mode = BaseMaterial3D.CULL_DISABLED
 	return material
 
 func _build_frontage(x: float, side: int, kind: int) -> void:
@@ -639,11 +640,11 @@ func _build_market() -> void:
 	Shapes.sign_text(self,Vector3(24,3.0,47.7),"毎日の食卓に  /  FOOD & DAILY",46,Color("344d40"))
 
 static func gallery_regions() -> Array[Rect2]:
-	return [Rect2(-90,-8,180,4),Rect2(-90,4,180,4),Rect2(-48,-15,3,39),Rect2(-33,-15,3,39),Rect2(-48,21,18,3),Rect2(-48,-15,18,3),Rect2(-48,6.5,18,3),Rect2(-61.6,-4,3.2,8),Rect2(8.4,-4,3.2,8),Rect2(60.4,-4,3.2,8)]
+	return [Rect2(-90,-8,180,4),Rect2(-90,4,180,4),Rect2(-61.6,-4,3.2,8),Rect2(8.4,-4,3.2,8),Rect2(60.4,-4,3.2,8)]
 
 static func escalator_carry(position:Vector3)->Vector3:
 	var p:=MallCurve.plan(position)
-	for flight in [[-43.5,0,9.0,21.0],[-35.0,1,21.0,9.0]]+BWing.escalators():
+	for flight in MallEscalators.all_flights():
 		if absf(p.x-flight[0])>=.88 or p.z<minf(flight[2],flight[3]) or p.z>maxf(flight[2],flight[3]):continue
 		var t:float=(p.z-flight[2])/(flight[3]-flight[2])
 		var y:=lerpf(floor_height(flight[1]),floor_height(flight[1]+1),t)
@@ -677,39 +678,13 @@ func _build_reading_and_court() -> void:
 		for y in [.5,1.5]:
 			Shapes.box(self,Vector3(-64+i*1.1,y,-34.5),Vector3(.8,.7,.6),Shapes.material(Color("a28b69")))
 	Shapes.sign_text(self,Vector3(-57,2.8,-35.7),"バックヤード / 商品保管",30)
-	# A three-storey court interrupts the retail row and opens the long concourse.
-	for y in [5.35,10.7]:
-		for index in range(2,7):
-			var rect: Rect2 = gallery_regions()[index]
-			# Notch the top landing: a slab must not cut through the last ramp metre.
-			var pieces: Array[Rect2] = [rect]
-			if index == 6 and y > 10:
-				pieces = [Rect2(-48,6.5,11.8,3),Rect2(-33.8,6.5,3.8,3),Rect2(-36.2,6.5,2.4,2.5)]
-			for piece in pieces:
-				Shapes.box(self,Vector3(piece.get_center().x,y,piece.get_center().y),Vector3(piece.size.x,.35,piece.size.y),ivory,true)
-		for x in [-45.0,-33.0]:
-			for segment in [[-4.0,4.0],[9.5,21.0]]:
-				var middle: float = (segment[0]+segment[1])*.5
-				var length: float = segment[1]-segment[0]
-				Shapes.box(self,Vector3(x,y+.65,middle),Vector3(.06,1.1,length),glass,true)
-				Shapes.box(self,Vector3(x,y+1.23,middle),Vector3(.07,.055,length),dark)
-		for x in [-48.0,-30.0]:
-			Shapes.box(self,Vector3(x,y+.65,0),Vector3(.06,1.1,10),glass,true)
-		# Open landings let both escalators connect to the galleries.
-		for edge in [[-40.25,3.7],[-32.75,1.7]]:
-			Shapes.box(self,Vector3(edge[0],y+.65,21),Vector3(edge[1],1.1,.06),glass,true)
-		for edge in [[-42.25,7.5],[-31.25,1.5]]:
-			Shapes.box(self,Vector3(edge[0],y+.65,9.5),Vector3(edge[1],1.1,.06),glass,true)
-		for x in [-48.0,-30.0]:
-			Shapes.box(self,Vector3(x,y+2.5,16),Vector3(.3,4.6,16),ivory,true)
-		Shapes.box(self,Vector3(-39,y+2.5,24),Vector3(18,4.6,.3),ivory,true)
-		Shapes.box(self,Vector3(-39,y-.3,22.4),Vector3(15,.04,.12),warm)
+	# Floors, openings and guards now come from the same compiled plan.
+	MallEscalators.build(self,"A")
 	Shapes.box(self,Vector3(-39,16.35,4.5),Vector3(18,.15,39),Shapes.material(Color("c4d7db"),.2))
 	for x in [-48.0,-42.0,-36.0,-30.0]: Shapes.box(self,Vector3(x,16.05,4.5),Vector3(.15,.32,39),ivory)
 	for z in [-15.0,0.0,12.0,24.0]: Shapes.box(self,Vector3(-39,16.05,z),Vector3(18,.32,.15),ivory)
 	Shapes.sign_text(self,Vector3(-39,3.2,23.7),"CENTER ATRIUM\n2F・3F 回廊へ",45)
-	_escalator(-43.5,0,9,21)
-	_escalator(-35,5.525,21,9)
+
 
 func _escalator(x: float,y: float,start: float,end: float,direction:float=1.0) -> void:
 	var rise := 5.525 if y == 0 else 5.35

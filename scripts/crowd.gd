@@ -69,7 +69,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 						if Mall.plan_segment_walkable(Vector3(cell.x,Mall.floor_height(cell.y),cell.z),Vector3((cell+offset).x,Mall.floor_height(cell.y),(cell+offset).z)):
 							nav.connect_points(i, other)
 			# Explicit inclined links connect the same graph used by cats and item attraction.
-			for flight in [[-43.5,0,9.0,21.0],[-35.0,1,21.0,9.0]]+BWing.escalators():
+			for flight in MallEscalators.all_flights():
 				var previous := -1
 				for step in range(14):
 					var t := clampf((step-.5)/12,0,1)

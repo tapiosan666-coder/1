@@ -50,8 +50,9 @@ func verify()->void:
    if p.x>=-90 and Mall.level_at(p.y)==level and before[id].role=="browsing" and chosen<3:moved_a[id]=true;chosen+=1
  for id in before.size():
   if MallCurve.plan(before[id].pos).x< -190 or moved_a.has(id):continue
-  slots_same=slots_same and before[id]==game.mall.identity_slots[id]
- expect(before.size()==267 and game.mall.identity_slots.size()==267 and slots_same,"All fixed identity IDs remain ordered; A slots outside the nine department-store moves stay unchanged")
+  var expected:Dictionary=before[id].duplicate();expected.pos.z*=MallCurve.expansion(expected.pos.x)
+  slots_same=slots_same and expected==game.mall.identity_slots[id]
+ expect(before.size()==267 and game.mall.identity_slots.size()==267 and slots_same,"All fixed identity IDs remain ordered; A slots outside the nine department-store moves retain their roles and logical layout through the common expansion")
  expect(WorldCache.can_load() and game.mall.get_meta("stocking_plan",[]).size()==101,"Saved world contains the complete merchandising plan with a valid input fingerprint")
  var saved:=0;var bounded:=true;var stock:=0;var kept:Dictionary={}
  for node:MeshInstance3D in game.mall.find_children("*","MeshInstance3D",true,false):

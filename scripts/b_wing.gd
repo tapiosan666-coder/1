@@ -35,12 +35,7 @@ var steel := Shapes.material(Color("6c797d"))
 var warm := Shapes.material(Color("f6e7cc"),.65)
 var floor_mat: ShaderMaterial
 
-static func escalators() -> Array:
-	var result:Array=[]
-	for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
-		for level in [0,1]:
-			for lane in [0,1]:result.append([bank.at[0]+bank.side*[13.5,16.5][lane],level,bank.at[1]-6.0,bank.at[1]+6.0,1.0 if lane==0 else -1.0])
-	return result
+static func escalators() -> Array:return MallEscalators.flights("B")
 
 static func regions(level:int)->Array[Rect2]:
 	if level not in [0,1,2]:return []
@@ -335,21 +330,4 @@ func _cinema_chair(at: Vector3) -> void:
 		Shapes.box(root,Vector3(side*.4,.65,0),Vector3(.11,.14,.74),dark)
 		Shapes.box(root,Vector3(side*.23,.2,0),Vector3(.07,.4,.35),steel)
 
-func _build_escalator_banks()->void:
-	for flight:Array in escalators():
-		var y:=Mall.floor_height(flight[1]);var rise:=Mall.floor_height(flight[1]+1)-y
-		mall._escalator(flight[0],y,flight[2],flight[3],flight[4])
-		var angle:=-atan2(rise,flight[3]-flight[2]);var length:=Vector2(flight[3]-flight[2],rise).length()
-		var skirt:=Shapes.box(mall,Vector3(flight[0],y+rise*.5-.38/cos(angle),(flight[2]+flight[3])*.5),Vector3(1.75,.55,length),steel,true);skirt.rotation.x=angle
-		for upper in [false,true]:
-			var at_y:=Mall.floor_height(flight[1]+(1 if upper else 0));var z:float=flight[3]+.45 if upper else flight[2]-.45
-			Shapes.box(mall,Vector3(flight[0],at_y+.008,z),Vector3(1.8,.016,.8),steel)
-	for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
-		for level in [0,1]:_bank_sign(bank,level,-7.6,"%dF ↑ 上り  ｜  下り ↓"%[level+2])
-		for level in [1,2]:_bank_sign(bank,level,7.6,"↓ %dF 下り  ｜  上り到着"%level)
-func _bank_sign(bank:Dictionary,level:int,offset:float,text:String)->void:
-	var x:float=bank.at[0]+bank.side*15.0;var y:=Mall.floor_height(level);var z:float=bank.at[1]+offset
-	Shapes.box(mall,Vector3(x,y+3.8,z),Vector3(6,.65,.12),dark)
-	var ceiling:=Mall.floor_height(level+1)-.35 if level<2 else 16.4
-	for dx in [-2.5,2.5]:Shapes.box(mall,Vector3(x+dx,(ceiling+y+3.8)*.5,z),Vector3(.035,ceiling-y-3.8,.035),steel)
-	var front:=Shapes.sign_text(mall,Vector3(x,y+3.8,z+(.075 if offset>0 else -.075)),text+"\n"+str(bank.name),32);front.rotation.y=0 if offset>0 else PI;front.pixel_size=.0045
+func _build_escalator_banks()->void:MallEscalators.build(mall,"B")

@@ -10,7 +10,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
 SOURCE_HISTORY_URL = "https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.22.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.23.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -95,13 +95,15 @@ B館には広場と背面回遊路の展示・読書・休憩・案内拠点を�
 0.21時点は10/15フロア・89店舗・20移動地点。既定1000人（滞在900/歩行100）、比較用300人を選択できます。追加633人を接続済みの売場・通路へ分散し、B館の滞在客は450人です。docs/POPULATION_1000.mdを参照。NPC本体のモデルは変更していません。docs/C_UPPER.mdを参照。
 0.22ではB館1〜3階へ各階4店舗を追加し、全101店舗/売場へ。光・時・翼の吹き抜け広場に上下対のエスカレーターを配置しました。旧側面広場の2本は撤去しています。
 NPCと猫は上り/下りの向きを守って使います。既定1000人・比較用300人、10/15フロア、訪問済み20地点を維持。docs/B_REAR_AND_ESCALATORS.mdを参照。
-過去版の比較画像は容量を抑えるためGitHubリンクにし、0.22の比較画像は同梱しています。
+0.23ではA館の奥行きを約20%拡張。A館の中央/木もれび、B館の光/時/翼に上下対の昇降口を分散し、B上階の主回廊を10m・背面通路を14mへ拡幅。店前の床を吹き抜けより先に確保しました。
+ガラスに目印と入口表示、壁上端に隙間を閉じる部材を追加。タイトルの「デバッグ：スキャン系スキルを全解放」は任意でONにできます。通常開始は従来の成長を維持します。
+過去版の比較画像は容量を抑えるためGitHubリンクにし、0.23の比較画像は同梱しています。
 ゲームの起動にネット接続は不要です。
 """
 
 
 def historical_screenshot(relative: Path) -> bool:
-    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall22-")
+    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall23-")
 
 
 def source_markdown(path: Path) -> str:

@@ -65,6 +65,7 @@ func build() -> void:
 	world.set_meta("stocking_plan",mall.get_meta("stocking_plan",[]))
 	world.set_meta("b_concourse",mall.get_meta("b_concourse",{}))
 	world.set_meta("b_rear_retail",mall.get_meta("b_rear_retail",{}))
+	world.set_meta("shop_access",mall.get_meta("shop_access",{}))
 	var stock := {"stores":0,"items":0,"by_kind":{}}
 	for node in world.find_children("*","MeshInstance3D",true,false):
 		if not node.get_meta("retail_detail",false): continue

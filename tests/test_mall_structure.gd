@@ -29,7 +29,7 @@ func verify()->void:
    var p:=Vector3(at.x,y,at.y)
    var hit:=state.intersect_ray(PhysicsRayQueryParameters3D.create(p+Vector3.UP*.10,p-Vector3.UP*.15,1))
    expect(hit.is_empty() if level>0 else not hit.is_empty(),"Three B courts have solid 1F and open 2F/3F centres: %d %s"%[level,at])
-  var north:=MallCurve.world(Vector3(-39,y,-38))
+  var north:=MallCurve.world(Vector3(-32,y,-40))
   var hole:=state.intersect_ray(PhysicsRayQueryParameters3D.create(north+Vector3.UP*.1,north-Vector3.UP*.15,1))
   expect(hole.is_empty() if level>0 else not hole.is_empty(),"A north court opens through three levels")
   var destination:=MallCurve.world(Vector3(6,y,-40))

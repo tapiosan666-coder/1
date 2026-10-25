@@ -8,12 +8,18 @@ const EDGE := 5.0
 static func angle(x: float) -> float:
 	return maxf(0,(x-START)/RADIUS)
 
-static func world(p: Vector3) -> Vector3:
+static func expansion(x:float)->float:return 1.0+.2*clampf((x+190.0)/100.0,0,1)
+
+static func raw_world(p: Vector3) -> Vector3:
 	if p.x <= START: return p
 	var a := angle(p.x)
 	return Vector3(START+(RADIUS-p.z)*sin(a),p.y,RADIUS-(RADIUS-p.z)*cos(a))
 
-static func plan(p: Vector3) -> Vector3:
+static func world(p:Vector3)->Vector3:
+	var q:=raw_world(p);q.z*=expansion(q.x);return q
+
+static func plan(at: Vector3) -> Vector3:
+	var p:=Vector3(at.x,at.y,at.z/expansion(at.x))
 	if p.x <= START: return p
 	var dx := p.x-START
 	var dz := RADIUS-p.z
@@ -21,7 +27,9 @@ static func plan(p: Vector3) -> Vector3:
 
 static func jacobian(p: Vector3) -> Basis:
 	var a := angle(p.x)
-	return Basis(Vector3(cos(a),0,sin(a))*(1-p.z/RADIUS if p.x > START else 1.0),Vector3.UP,Vector3(-sin(a),0,cos(a)))
+	var raw:=Basis(Vector3(cos(a),0,sin(a))*(1-p.z/RADIUS if p.x > START else 1.0),Vector3.UP,Vector3(-sin(a),0,cos(a)))
+	var q:=raw_world(p);var derivative:=.002 if q.x> -190 and q.x< -90 else 0.0
+	return Basis(Vector3(1,0,q.z*derivative),Vector3.UP,Vector3(0,0,expansion(q.x)))*raw
 
 static func polygon(rect: Rect2) -> PackedVector2Array:
 	var corners := [rect.position,Vector2(rect.end.x,rect.position.y),rect.end,Vector2(rect.position.x,rect.end.y)]
@@ -37,7 +45,7 @@ static func polygon(rect: Rect2) -> PackedVector2Array:
 	return result
 
 static func _faces(a: Vector3,b: Vector3,c: Vector3,out: PackedVector3Array) -> void:
-	if maxf(a.x,maxf(b.x,c.x)) <= START:
+	if maxf(a.x,maxf(b.x,c.x)) <= -190.0:
 		out.append_array(PackedVector3Array([a,b,c])); return
 	var ab := a.distance_squared_to(b)
 	var bc := b.distance_squared_to(c)
@@ -57,7 +65,7 @@ static func _faces(a: Vector3,b: Vector3,c: Vector3,out: PackedVector3Array) -> 
 static func _triangle(vertices: Array,normals: Array,uvs: Array,colors: Array,surface: SurfaceTool) -> void:
 	var distances := [vertices[0].distance_squared_to(vertices[1]),vertices[1].distance_squared_to(vertices[2]),vertices[2].distance_squared_to(vertices[0])]
 	var edge: int = distances.find(distances.max())
-	if distances[edge] > EDGE*EDGE and maxf(vertices[0].x,maxf(vertices[1].x,vertices[2].x)) > START:
+	if distances[edge] > EDGE*EDGE and maxf(vertices[0].x,maxf(vertices[1].x,vertices[2].x)) > -190.0:
 		var other := (edge+1)%3
 		var last := (edge+2)%3
 		var v: Vector3 = (vertices[edge]+vertices[other])*.5

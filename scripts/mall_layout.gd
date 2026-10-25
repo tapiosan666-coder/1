@@ -4,7 +4,7 @@ extends RefCounted
 ## and travel aliases while upper-floor fit-outs can define their own obstacles.
 ## This file does not generate or invalidate baked world geometry.
 
-const VERSION := "v022-b-rear-banks-1"
+const VERSION := "v023-upper-access-1"
 const BUILDINGS := ["A", "B", "C"]
 const LEVELS := [-1, 0, 1, 2, 3]
 const FLOOR_KEYS := ["B1", "1F", "2F", "3F", "RF"]

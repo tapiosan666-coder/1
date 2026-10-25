@@ -130,6 +130,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	cat_candidates.clear()
 	cat_scan_time = 0
 	run = IdentityRun.new(count, run_seed)
+	if hud.debug_scan_skills:run.enable_debug_scan_skills()
 	crowd = Crowd.new()
 	crowd.skin_color = selected_skin
 	crowd.hair_color = selected_hair
@@ -173,7 +174,7 @@ func start_run(count: int = 1000, run_seed: int = -1) -> void:
 	player.camera.rotation = Vector3.ZERO
 	_visit_points(false)
 	set_mode("play")
-	hud.message("1人を狙って左クリックを2秒長押し。Tabでスキルを購入。")
+	hud.message("デバッグ：スキャン系スキル解放済み。1：初期スキャナー／2：銃。" if run.debug_scan_skills else "1人を狙って左クリックを2秒長押し。Tabでスキルを購入。")
 
 func set_mode(mode: String) -> void:
 	if is_instance_valid(speech): speech.dismiss()

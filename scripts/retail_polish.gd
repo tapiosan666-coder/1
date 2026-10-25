@@ -15,11 +15,7 @@ func build(mall: Node3D) -> void:
 		# Thin non-solid overlays preserve slabs, railing gaps and the open atrium.
 		if level > 0:
 			for rect in Mall.gallery_regions():
-				# The northern escalator landing has an existing ramp notch.
-				if rect == Mall.gallery_regions()[6] and level == 2:
-					for piece in [Rect2(-48,6.5,11.8,3),Rect2(-33.8,6.5,3.8,3),Rect2(-36.2,6.5,2.4,2.5)]:
-						_floor(mall,piece,y,stone)
-				else: _floor(mall,rect,y,stone)
+				_floor(mall,rect,y,stone)
 		for side in [-1,1]:
 			# Ceiling panels, recessed dark housings and warm white diffusers.
 			for x in range(-84,90,6):

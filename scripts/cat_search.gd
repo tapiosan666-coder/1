@@ -27,10 +27,19 @@ static func route(crowd: Crowd,from: Vector3,id: int,state: PhysicsDirectSpaceSt
 			seen[next] = true; candidates.append(next)
 	var start := crowd.nav.get_closest_point(from)
 	var approaches: Array[int] = []
+	var refined:Dictionary={}
 	for point in candidates:
 		var at := crowd.nav.get_point_position(point)
-		if not can_scan(at,target,crowd.roles[id] in ["seated","reading"],state): continue
-		approaches.append(point)
+		if can_scan(at,target,crowd.roles[id] in ["seated","reading"],state):
+			approaches.append(point);continue
+		# A stretched aisle can leave the nearest grid sample just outside reach.
+		# Refine the last metre on verified floor instead of increasing scan reach.
+		if at.distance_squared_to(target)>pow(REACH+.9,2):continue
+		var direction:=target-at;direction.y=0;direction=direction.normalized()
+		for distance in [.3,.6,.9]:
+			var end:Vector3=at+direction*float(distance)
+			if Mall.segment_walkable(at,end) and can_scan(end,target,crowd.roles[id] in ["seated","reading"],state):
+				refined[point]=end;approaches.append(point);break
 	approaches.sort_custom(func(a: int,b: int): return from.distance_squared_to(crowd.nav.get_point_position(a)) < from.distance_squared_to(crowd.nav.get_point_position(b)))
 	# The connected graph only needs one successful route, not a full A* search
 	# for every visible approach around the same person.
@@ -38,5 +47,6 @@ static func route(crowd: Crowd,from: Vector3,id: int,state: PhysicsDirectSpaceSt
 		path_searches += 1
 		var path := crowd.nav.get_point_path(start,point)
 		if path.is_empty(): continue
+		if refined.has(point):path.append(refined[point])
 		return path
 	return PackedVector3Array()

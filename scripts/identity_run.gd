@@ -31,6 +31,13 @@ const SKILLS := {
 	"pulse": {"name": "範囲スキャン", "detail": "周囲をスキャン：8 → 12 → 16m", "cost": 120, "max": 3, "branch": "04 / 特殊スキャン"},
 }
 
+var debug_scan_skills := false
+const DEBUG_SCAN_KEYS := ["handheld_speed","gun","focus","magazine","reload","range","pierce","chain","pulse","sonar"]
+func enable_debug_scan_skills()->void:
+	debug_scan_skills=true
+	for key in DEBUG_SCAN_KEYS:
+		if SKILLS.has(key):upgrades[key]=SKILLS[key].max
+
 var population: int
 var true_id: int
 var hits := PackedInt32Array()

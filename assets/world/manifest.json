@@ -1,28 +1,28 @@
 {
-  "fingerprint": "b386f294289d887f89ef390eef0180ab1ee6e69869cd6c5e8f3ad3a51b2c8b04",
+  "fingerprint": "4c9018eae3f6710a0e3ee135dc3ea6d3d51279d5eb74c2bd3844f5a17cc78a00",
   "floor_contacts": {
     "floors": 3.0,
     "height": 1024.0,
-    "static_footprints": 1087.0,
+    "static_footprints": 1102.0,
     "width": 1024.0
   },
-  "nav_edges": 286703.0,
-  "nav_one_way_arcs": 156.0,
-  "nav_points": 45566.0,
+  "nav_edges": 294717.0,
+  "nav_one_way_arcs": 260.0,
+  "nav_points": 47678.0,
   "navigation_validation": {
-    "connected": 45566.0,
+    "connected": 47678.0,
     "unreachable": 0.0
   },
   "render": {
     "detail_meshes": 101.0,
     "detail_surfaces": 220.0,
     "detail_triangles": 1423188.0,
-    "sectors": 687.0,
-    "source_meshes": 15832.0,
-    "static_surfaces": 3075.0,
-    "static_triangles": 1875838.0,
-    "surfaces": 3295.0,
-    "triangles": 3299026.0
+    "sectors": 739.0,
+    "source_meshes": 16613.0,
+    "static_surfaces": 3337.0,
+    "static_triangles": 2098429.0,
+    "surfaces": 3557.0,
+    "triangles": 3521617.0
   },
   "retail_stock": {
     "by_kind": {
@@ -78,12 +78,12 @@
   },
   "world_occlusion": {
     "applied": true,
-    "mean": 0.729368463131533,
+    "mean": 0.728688677963994,
     "method": "static vertex ambient occlusion",
     "min": 0.610000003874302,
     "radius_m": 2.4,
     "rays": 24,
     "strength": 0.65,
-    "vertices": 5960238
+    "vertices": 6129518
   }
 }

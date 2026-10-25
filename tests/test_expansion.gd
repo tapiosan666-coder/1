@@ -38,12 +38,16 @@ func run_tests() -> void:
 	game.player.velocity = Vector3.ZERO
 	expect(await walk_to(game,world(-43.5,5.525,22.7),6),"Walk up first escalator without jumping or teleporting")
 	expect(absf(game.player.position.y-5.525) < .15,"First escalator lands on 2F")
-	expect(await walk_to(game,world(-35,5.525,22.7),4),"Walk between escalators on the 2F landing")
-	expect(await walk_to(game,world(-35,10.875,7.8),6),"Walk up second escalator onto 3F")
+	expect(await walk_to(game,world(-35,5.525,25),4),"The enlarged rear landing exits into the east gallery")
+	expect(await walk_to(game,world(-35,5.525,7.5),6),"Walk along the gallery beside the stacked flights")
+	expect(await walk_to(game,world(-43.5,5.525,7.5),4),"Reach the next up flight through the north landing")
+	expect(await walk_to(game,world(-43.5,10.875,22.7),6),"Walk up the second paired bank onto 3F")
 	expect(absf(game.player.position.y-10.875) < .15,"Second escalator lands on 3F")
-	expect(await walk_to(game,world(-35,5.525,22.7),6),"Can walk down from 3F")
-	expect(await walk_to(game,world(-43.5,5.525,22.7),4),"Can cross 2F rear landing")
-	expect(await walk_to(game,world(-43.5,0,7.5),6),"Can return to 1F down the escalator")
+	expect(await walk_to(game,world(-40.5,10.875,22.7),4),"Cross the 3F arrival landing to the down flight")
+	expect(await walk_to(game,world(-40.5,5.525,7.5),6),"Use the dedicated down flight from 3F")
+	expect(await walk_to(game,world(-35,5.525,7.5),4) and await walk_to(game,world(-35,5.525,25),6),"Return through the east gallery to the 2F down landing")
+	expect(await walk_to(game,world(-40.5,5.525,22.7),4),"Reach the ground-floor down flight")
+	expect(await walk_to(game,world(-40.5,0,7.5),6),"Return to 1F using the dedicated down flight")
 	for level in [1,2]:
 		game.player.position = world(-60,Mall.floor_height(level)+.1,-6.5)
 		game.player.velocity = Vector3.ZERO

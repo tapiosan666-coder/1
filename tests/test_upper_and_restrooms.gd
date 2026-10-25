@@ -85,24 +85,25 @@ func verify()->void:
 func test_doors(game:Node3D,state:PhysicsDirectSpaceState3D)->void:
 	var original:int=game.run.true_id
 	var door:Dictionary=game.doors.doors[0]
-	var hinge:Vector3=door.spec.hinge
-	var outside:=hinge+Vector3(door.spec.width*.5,-hinge.y,-1.6)
+	var base:Transform3D=door.base
+	var hinge:=Vector3.ZERO
+	var outside:=base*Vector3(door.spec.width*.5,0,-1.6)
 	game.player.position=outside+Vector3.UP*.05;game.player.velocity=Vector3.ZERO
-	game.player.camera.look_at(hinge+Vector3(door.spec.width*.5,1,0))
+	game.player.camera.look_at(base*Vector3(door.spec.width*.5,1,0))
 	await physics_frame;await physics_frame
 	expect(game.doors.focused(game.player.camera)==0 and not game.doors.hint(game.player.camera).is_empty(),"Close visible door has a contextual F prompt")
-	var ray:=PhysicsRayQueryParameters3D.create(hinge+Vector3(.45,1,-1),hinge+Vector3(.45,1,1),1,[game.player.get_rid()])
+	var ray:=PhysicsRayQueryParameters3D.create(base*Vector3(.45,1,-1),base*Vector3(.45,1,1),1,[game.player.get_rid()])
 	var hit:=state.intersect_ray(ray)
 	expect(not hit.is_empty() and hit.collider.has_meta("interactive_door"),"Closed runtime door blocks scanner and cat sight rays")
-	game.player.position=hinge+Vector3(.45,-hinge.y,.5)
+	game.player.position=base*Vector3(.45,-hinge.y,.5)
 	expect(not game.doors._clear_between(door,0,door.spec.open_angle),"Door cannot swing into the player")
 	game.player.position=outside+Vector3.UP*.05
 	var fake:int=(original+1)%game.run.population;var saved:Vector3=game.crowd.positions[fake]
-	game.crowd.positions[fake]=hinge+Vector3(.45,-hinge.y,.5)
+	game.crowd.positions[fake]=base*Vector3(.45,-hinge.y,.5)
 	expect(not game.doors._clear_between(door,0,door.spec.open_angle),"Door cannot swing into an NPC")
 	game.crowd.positions[fake]=saved
 	game.run.ap=1000;game.run.purchase("sonar")
-	game.player.camera.look_at(hinge+Vector3(.45,1,0));await physics_frame
+	game.player.camera.look_at(base*Vector3(.45,1,0));await physics_frame
 	var event:=InputEventKey.new();event.keycode=KEY_F;event.pressed=true
 	game._input(event)
 	expect(door.moving and door.open and game.sonar_left==0,"F operates the focused door without consuming sonar")
@@ -115,7 +116,7 @@ func test_doors(game:Node3D,state:PhysicsDirectSpaceState3D)->void:
 	hit=state.intersect_ray(ray)
 	expect(hit.is_empty(),"Open door clears the same physical line through its doorway")
 	game.player.set_physics_process(true)
-	expect(await walk_to(game,hinge+Vector3(.45,-hinge.y,.9),4),"Player capsule can physically enter the open cubicle without teleporting")
+	expect(await walk_to(game,base*Vector3(.45,-hinge.y,.9),4),"Player capsule can physically enter the open cubicle without teleporting")
 	game.player.set_physics_process(false)
 	game.player.camera.look_at(game.player.camera.global_position+Vector3(0,0,-5))
 	game._input(event)

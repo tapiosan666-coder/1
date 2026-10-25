@@ -47,6 +47,7 @@ var buttons: Control
 var face_slider: HSlider
 var population_select: OptionButton
 var selected_population := 1000
+var debug_scan_skills := false
 var skin_select: OptionButton
 var hair_select: OptionButton
 var font: Font
@@ -102,11 +103,11 @@ func _draw() -> void:
 		_text("髪の色", Vector2(258, 558), 13, muted)
 		_text("顔の幅", Vector2(434, 558), 13, muted)
 		_text("探索人数", Vector2(454, 626), 13, muted)
-		_text("WASD：移動　マウス：視点　Shift：ダッシュ", Vector2(82, 730), 16, muted)
-		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
-		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
-		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 %s ／ A・B・C館を探索 ／ %d人" % [ProjectSettings.get_setting("application/config/version"),selected_population], Vector2(82, 860), 13, muted)
+		_text("WASD：移動　マウス：視点　Shift：ダッシュ", Vector2(82, 774), 16, muted)
+		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 798), 16, muted)
+		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 822), 16, muted)
+		_line(Vector2(82, 848), Vector2(610, 848))
+		_text("日本語開発版 %s ／ A・B・C館を探索 ／ %d人" % [ProjectSettings.get_setting("application/config/version"),selected_population], Vector2(82, 878), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -118,6 +119,7 @@ func _draw() -> void:
 	_text("FIND YOURSELF", Vector2(55, 62), 24)
 	_text(location_name, Vector2(55, 90), 14, muted)
 	_text("残りの人数", Vector2(550, 51), 13, muted)
+	if run.debug_scan_skills:_text("デバッグ：スキャンスキル解放",Vector2(82,125),15,Color("edc686"))
 	_text("%d" % (run.population - run.cleared), Vector2(550, 91), 35)
 	_text("/ %d" % run.population, Vector2(650, 88), 18, muted)
 	_text("アビリティポイント", Vector2(855, 51), 13, muted)
@@ -352,8 +354,8 @@ func _draw_structure(building:String,level:int,frame:Rect2,color:Color)->void:
 			var at:=_plan_point(station.at,frame)
 			if frame.grow(-3).has_point(at):draw_circle(at,2.8,Color("dfbf87"))
 			if frame.size.x>400:draw_string(font,at+Vector2(-24,-6),str(station.name).split(" / ")[-1],HORIZONTAL_ALIGNMENT_LEFT,-1,9,Color("dfbf87"))
-	if building=="B" and level in [0,1,2]:
-		for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
+	if building in ["A","B"] and level in [0,1,2]:
+		for bank:Dictionary in MallStructureData.DATA[building].escalator_banks:
 			for lane in [0,1]:
 				var x:float=bank.at[0]+bank.side*[13.5,16.5][lane]
 				var a:=_plan_point(Vector2(x,bank.at[1]-6),frame);var b:=_plan_point(Vector2(x,bank.at[1]+6),frame)
@@ -436,6 +438,7 @@ func show_mode(next: String) -> void:
 			population_select.select(0 if selected_population==1000 else 1)
 			population_select.item_selected.connect(_population_changed)
 			buttons.add_child(population_select)
+			var debug:=CheckButton.new();debug.name="DebugScanSkills";debug.text="デバッグ：スキャン系スキルを全解放";debug.position=Vector2(82,708);debug.size=Vector2(510,38);debug.button_pressed=debug_scan_skills;debug.add_theme_font_size_override("font_size",18);debug.toggled.connect(func(value:bool):debug_scan_skills=value);buttons.add_child(debug)
 		"pause":
 			_button("探索を再開", Rect2(460, 420, 520, 58), func(): resume_pressed.emit(), true)
 			_button("最初からやり直す", Rect2(460, 498, 520, 54), func(): restart_pressed.emit())
