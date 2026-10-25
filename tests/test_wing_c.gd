@@ -12,12 +12,12 @@ func run_tests() -> void:
 	var fixed: int = game.run.true_id
 	var ids: Array[int] = []
 	for id in game.run.population:
-		if CWing.contains(game.crowd.positions[id]) and game.crowd.roles[id] != "walking": ids.append(id)
+		if Mall.level_at(game.crowd.positions[id].y)==0 and CWing.contains(game.crowd.positions[id]) and game.crowd.roles[id] != "walking": ids.append(id)
 	expect(game.run.population == 300 and game.crowd.roles.count("walking") == 33,"C reuses fixed slots and keeps the 300-person population and 33 walkers")
 	expect(ids.size() == 30,"Thirty fixed C shopkeepers, shoppers and seated visitors exist before the area is visited")
 	expect(game.run.price("gun") == 1000 and game.run.true_id == fixed,"C does not alter the economy formula or selected original")
 	expect(WorldCache.can_load() and game.mall.identity_slots.size() == 267,"The prebuilt world includes C without adding fixed-slot overhead")
-	expect(CWing.regions(-1).is_empty() and CWing.regions(1).is_empty(),"C only advertises the implemented ground floor")
+	expect(CWing.regions(-1).is_empty() and not CWing.regions(1).is_empty() and CWing.regions(2).is_empty(),"C advertises only its implemented ground and second floors")
 	var state: PhysicsDirectSpaceState3D = game.get_world_3d().direct_space_state
 	for store in CWing.SHOPS:
 		var center: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(2.2,0,-5)
@@ -65,7 +65,7 @@ func run_tests() -> void:
 	var fit := true
 	for button in game.hud.buttons.get_children():
 		if button is Button and (button.position.x+button.size.x > 1440 or button.position.y+button.size.y > 900): fit = false
-	expect(Mall.HUBS.size() == 18 and fit,"All eighteen travel destinations fit with the five floor tabs")
+	expect(Mall.HUBS.size() == 20 and fit,"All twenty travel destinations fit with the five floor tabs")
 	game.set_mode("play"); game.player.position = Mall.hub_position("C館テラス"); game._visit_points(); game.set_mode("map")
 	expect(game.fast_travel("C館テラス") and game.player.position == Mall.hub_position("C館テラス"),"C travel requires a real visit and preserves the ground-floor location")
 	var has_c_chest := false; var legal_chests := true

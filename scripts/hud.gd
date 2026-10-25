@@ -5,7 +5,7 @@ var play_worst_ms := 0.0
 
 signal item_selected(key: String)
 signal graphics_selected(key: String)
-signal play_pressed
+signal play_pressed(population: int)
 signal resume_pressed
 signal restart_pressed
 signal travel_pressed(key: String)
@@ -45,6 +45,8 @@ var using_gun := false
 var scan_progress := 0.0
 var buttons: Control
 var face_slider: HSlider
+var population_select: OptionButton
+var selected_population := 1000
 var skin_select: OptionButton
 var hair_select: OptionButton
 var font: Font
@@ -99,11 +101,12 @@ func _draw() -> void:
 		_text("肌の色", Vector2(82, 558), 13, muted)
 		_text("髪の色", Vector2(258, 558), 13, muted)
 		_text("顔の幅", Vector2(434, 558), 13, muted)
+		_text("探索人数", Vector2(454, 626), 13, muted)
 		_text("WASD：移動　マウス：視点　Shift：ダッシュ", Vector2(82, 730), 16, muted)
 		_text("左クリック長押し：2秒スキャン　右クリック：照準", Vector2(82, 758), 16, muted)
 		_text("1：初期スキャナー　2：購入済みの銃　Esc：一時停止", Vector2(82, 786), 16, muted)
 		_line(Vector2(82, 831), Vector2(610, 831))
-		_text("日本語開発版 %s ／ A・B・C館を探索 ／ 300人" % ProjectSettings.get_setting("application/config/version"), Vector2(82, 860), 13, muted)
+		_text("日本語開発版 %s ／ A・B・C館を探索 ／ %d人" % [ProjectSettings.get_setting("application/config/version"),selected_population], Vector2(82, 860), 13, muted)
 		_text("A館 / 中央通路", Vector2(1000, 790), 30)
 		_text("店舗・フードコート・お手洗い", Vector2(1000, 820), 14, lime)
 		return
@@ -115,8 +118,8 @@ func _draw() -> void:
 	_text("FIND YOURSELF", Vector2(55, 62), 24)
 	_text(location_name, Vector2(55, 90), 14, muted)
 	_text("残りの人数", Vector2(550, 51), 13, muted)
-	_text("%03d" % (run.population - run.cleared), Vector2(550, 91), 35)
-	_text("/ %03d" % run.population, Vector2(630, 88), 18, muted)
+	_text("%d" % (run.population - run.cleared), Vector2(550, 91), 35)
+	_text("/ %d" % run.population, Vector2(650, 88), 18, muted)
 	_text("アビリティポイント", Vector2(855, 51), 13, muted)
 	_text("%04d AP" % run.ap, Vector2(855, 91), 35, lime)
 	_text("経過時間", Vector2(1210, 51), 13, muted)
@@ -320,8 +323,8 @@ func _structure_shapes(building:String,level:int,color:Color)->Array:
 		elif building=="A":
 			_cache_structure_shape(records,MallCurve.polygon(Rect2(-30,-36,90,12)),Color("2b3d43"))
 			_cache_structure_shape(records,MallCurve.polygon(Rect2(-24,-68,60,24)),Color("3d5c65"))
-		elif building=="C" and level==0:
-			for shop:Dictionary in CWing.SHOPS:
+		elif building=="C" and level in [0,1]:
+			for shop:Dictionary in (CWing.SHOPS if level==0 else CUpper.SHOPS):
 				var points:=PackedVector2Array()
 				for p in [Vector3(-10,0,-18),Vector3(10,0,-18),Vector3(10,0,0),Vector3(-10,0,0)]:
 					var w:Vector3=shop.at+Basis(Vector3.UP,shop.yaw)*p;points.append(Vector2(w.x,w.z))
@@ -335,8 +338,19 @@ func _draw_structure(building:String,level:int,frame:Rect2,color:Color)->void:
 		_draw_map_polygon(record.points,frame,record.color,true)
 	if frame.size.x>400 and not MallStructure.floor_packets(building,level).is_empty():
 		for plaza:Dictionary in MallStructureData.DATA[building].plazas:
+			if building=="C" and level==1 and plaza.id=="terrace":continue
 			var at:=_plan_point(Vector2(plaza.at[0],plaza.at[1]),frame)
 			draw_string(font,at+Vector2(-25,4),plaza.name,HORIZONTAL_ALIGNMENT_LEFT,-1,11,Color("e5ede4"))
+
+	if building=="B":
+		for station:Dictionary in BConcourse.stations(level):
+			var at:=_plan_point(station.at,frame)
+			if frame.grow(-3).has_point(at):draw_circle(at,2.8,Color("dfbf87"))
+			if frame.size.x>400:draw_string(font,at+Vector2(-24,-6),str(station.name).split(" / ")[-1],HORIZONTAL_ALIGNMENT_LEFT,-1,9,Color("dfbf87"))
+	if building=="C" and level in [0,1]:
+		var a:=_plan_point(Vector2(-382,-89),frame);var b:=_plan_point(Vector2(-357,-89),frame)
+		if frame.has_point(a) and frame.has_point(b):draw_line(a,b,Color("e1b77f"),2.0)
+		if frame.size.x>400:draw_string(font,(a+b)*.5+Vector2(-14,-5),"階段",HORIZONTAL_ALIGNMENT_LEFT,-1,10,Color("e1b77f"))
 
 func _draw_map_polygon(points:PackedVector2Array,frame:Rect2,color:Color,border:bool=false)->void:
 	var polygon := PackedVector2Array()
@@ -397,7 +411,17 @@ func show_mode(next: String) -> void:
 			face_slider.step = 0.01
 			face_slider.value = 1.0
 			buttons.add_child(face_slider)
-			_button("探索をはじめる　→", Rect2(82, 638, 400, 58), func(): play_pressed.emit(), true)
+			_button("探索をはじめる　→", Rect2(82, 638, 350, 58), func(): play_pressed.emit(selected_population), true)
+			population_select = OptionButton.new()
+			population_select.name = "PopulationChoice"
+			population_select.position = Vector2(454, 638)
+			population_select.size = Vector2(156, 58)
+			population_select.add_theme_font_size_override("font_size",18)
+			population_select.add_item("1,000人",1000)
+			population_select.add_item("300人",300)
+			population_select.select(0 if selected_population==1000 else 1)
+			population_select.item_selected.connect(_population_changed)
+			buttons.add_child(population_select)
 		"pause":
 			_button("探索を再開", Rect2(460, 420, 520, 58), func(): resume_pressed.emit(), true)
 			_button("最初からやり直す", Rect2(460, 498, 520, 54), func(): restart_pressed.emit())
@@ -450,6 +474,15 @@ func show_mode(next: String) -> void:
 				index += 1
 			_button("探索に戻る / M", Rect2(510, 844, 420, 45), func(): resume_pressed.emit(), true)
 	queue_redraw()
+
+func set_population_choice(count: int) -> void:
+	if count not in [1000,300]: return
+	selected_population = count
+	if is_instance_valid(population_select): population_select.select(0 if count==1000 else 1)
+	queue_redraw()
+
+func _population_changed(index: int) -> void:
+	set_population_choice(population_select.get_item_id(index))
 
 func _option(at: Vector2, options: Array) -> OptionButton:
 	var option := OptionButton.new()

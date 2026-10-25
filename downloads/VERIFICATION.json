@@ -1,0 +1,42 @@
+{
+  "version": "0.21.0",
+  "artifacts": {
+    "Windows": {
+      "bytes": 101246350,
+      "sha256": "99bb682ebdc4b421d9a5815ada4e612f8914e5de85f9b77f2ce311c85c676d0f",
+      "crc_ok": true
+    },
+    "Linux": {
+      "bytes": 92496792,
+      "sha256": "d7e33c472c6d07f1c97a448748ff176116c665c0ecce8c0cc9ab2a046bc06500",
+      "crc_ok": true
+    },
+    "Source": {
+      "bytes": 76272775,
+      "sha256": "231b8ebdd5b103e13dc0ab70554ecf82eac2f83f8b8e2bdcba3b4fb52ebd2040",
+      "crc_ok": true
+    }
+  },
+  "native_linux": {
+    "frames": 30,
+    "exit_code": 0,
+    "elapsed_seconds": 52.36,
+    "renderer": "Mesa llvmpipe; actual Linux native export using Windows-exported shared PCK",
+    "population": 1000,
+    "fixed": 900,
+    "walking": 100,
+    "runtime_errors": 0,
+    "population_log_present": true,
+    "not_an_fps_benchmark": true
+  },
+  "fresh_source_extract": {
+    "population_checks": 22,
+    "population_failures": 0,
+    "world_art_checks": 6,
+    "world_art_failures": 0,
+    "new_import_errors": 0
+  },
+  "test_suites": 25,
+  "unique_checks": 944,
+  "test_failures": 0
+}

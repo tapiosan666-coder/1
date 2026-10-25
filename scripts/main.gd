@@ -65,7 +65,7 @@ func _ready() -> void:
 	canvas.add_child(hud)
 	hud.play_pressed.connect(_from_title)
 	hud.resume_pressed.connect(func(): set_mode("play"))
-	hud.restart_pressed.connect(func(): start_run())
+	hud.restart_pressed.connect(func(): start_run(run.population))
 	hud.skill_pressed.connect(buy_skill)
 	hud.item_selected.connect(_select_item)
 	hud.graphics_selected.connect(_select_graphics)
@@ -77,6 +77,9 @@ func _ready() -> void:
 	# A preview crowd shares the exact same identity model as a playable run.
 	_create_run(300, 24)
 	set_mode("title")
+	if "--population-smoke" in OS.get_cmdline_user_args():
+		start_run(1000,912)
+		print("POPULATION_SMOKE identities=",run.population," fixed=",crowd.slots.size()," walking=",crowd.roles.count("walking"))
 	if "--capture-realism" in OS.get_cmdline_user_args():
 		_capture_realism.call_deferred()
 	if "--capture-people" in OS.get_cmdline_user_args():
@@ -104,11 +107,11 @@ func _ready() -> void:
 	if "--capture" in OS.get_cmdline_user_args():
 		_capture.call_deferred()
 
-func _from_title() -> void:
+func _from_title(population:int) -> void:
 	selected_skin = [Color("cfaa89"), Color("815f49"), Color("d9b0a1")][hud.skin_select.selected]
 	selected_hair = [Color("33312c"), Color("6c4735"), Color("bdc2bb")][hud.hair_select.selected]
 	selected_width = hud.face_slider.value
-	start_run()
+	start_run(population)
 
 func _create_run(count: int, run_seed: int = -1) -> void:
 	frame_samples.clear(); last_frame_usec = 0; frame_report_left = 0
@@ -131,7 +134,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	crowd.skin_color = selected_skin
 	crowd.hair_color = selected_hair
 	crowd.face_width = selected_width
-	crowd.slots = mall.identity_slots.slice(0,mini(mall.identity_slots.size(),maxi(0,count-12)))
+	crowd.slots = PopulationLayout.slots(mall,count)
 	add_child(crowd)
 	crowd.process_mode = Node.PROCESS_MODE_PAUSABLE
 	crowd.setup(run, mall.spawn_points)
@@ -163,7 +166,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	hud.notice_time = 0
 	hud.hit_time = 0
 
-func start_run(count: int = 300, run_seed: int = -1) -> void:
+func start_run(count: int = 1000, run_seed: int = -1) -> void:
 	_create_run(count, run_seed)
 	player.position = Mall.ENTRANCE
 	player.rotation = Vector3(0, -PI / 2, 0)
@@ -214,7 +217,10 @@ func _input(event: InputEvent) -> void:
 		use_item()
 	elif event.keycode == KEY_F and hud.mode == "play":
 		var interaction:=doors.interact(player.camera)
-		if interaction==DoorField.Interaction.NONE:sonar()
+		if interaction==DoorField.Interaction.NONE:
+			if MallGuide.targeted(player.camera):
+				set_mode("map");hud.set_map_floor(Mall.level_at(player.position.y))
+			else:sonar()
 		elif interaction==DoorField.Interaction.BLOCKED:hud.message("扉の動く範囲を空けてください")
 	elif event.keycode == KEY_E and hud.mode == "play":
 		chain_scan()
@@ -247,6 +253,7 @@ func _physics_process(delta: float) -> void:
 	_tick_items(delta)
 	hud.nearby_cache = caches.nearest(player.camera)
 	hud.interaction_hint=doors.hint(player.camera)
+	if hud.interaction_hint.is_empty() and MallGuide.targeted(player.camera):hud.interaction_hint="F：館内案内図を見る"
 	speech.update_nearby(crowd,player.camera,not Input.is_action_pressed("fire"))
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)

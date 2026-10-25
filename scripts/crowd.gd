@@ -87,7 +87,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 					else: nav.add_point(id,p)
 					if previous >= 0 and id != previous: nav.connect_points(previous,id)
 					previous = id
-			for route in MallAnnex.core_routes():
+			for route in MallAnnex.core_routes()+CUpper.core_routes():
 				var previous := -1
 				for step in route.size():
 					var p := MallCurve.world(route[step])
@@ -98,7 +98,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 							var at := nav.get_point_position(candidate)
 							if absf(at.y-p.y) > .1: continue
 							if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
-						assert(nearest < 4,"West core route must connect to its floor landing")
+						assert(nearest < 4,"Stair route must connect to its floor landing")
 					else: nav.add_point(id,p)
 					if previous >= 0: nav.connect_points(previous,id)
 					previous = id

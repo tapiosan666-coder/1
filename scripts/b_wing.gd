@@ -79,6 +79,7 @@ static func blocked(p:Vector3)->bool:
 			for f:Dictionary in RetailDensity.fixtures(u):rects.append(f.rect)
 			groups.append({"inverse":u.t.affine_inverse(),"bounds":Rect2(-u.half-.8,u.front-.8,u.half*2+1.6,u.back-u.front+1.6),"rects":rects,"sign":-1.0})
 		var fixed:Array[Rect2]=[]
+		fixed.append_array(BConcourse.obstacles(level))
 		if level in [0,1]:
 			var link:Rect2=GROUND_LINK if level==0 else SKY_LINK
 			for z in [link.position.y,link.end.y]:fixed.append(Rect2(link.position.x,z-.07,link.size.x,.14))

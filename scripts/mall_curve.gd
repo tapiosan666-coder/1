@@ -99,7 +99,9 @@ static func bake(root: Node3D) -> void:
 	# Capture original transforms before any parent transforms are reset.
 	var collisions := PackedVector3Array()
 	var bodies := root.find_children("*","StaticBody3D",true,false)
+	var guide_collisions:Array[PackedVector3Array]=[]
 	for body in bodies:
+		var target:=PackedVector3Array() if body.get_meta("mall_guide",false) else collisions
 		for child in body.get_children():
 			if not child is CollisionShape3D: continue
 			var faces := PackedVector3Array()
@@ -108,7 +110,8 @@ static func bake(root: Node3D) -> void:
 			elif child.shape is ConcavePolygonShape3D:
 				faces = child.shape.get_faces()
 			for i in range(0,faces.size(),3):
-				_faces(child.global_transform*faces[i],child.global_transform*faces[i+1],child.global_transform*faces[i+2],collisions)
+				_faces(child.global_transform*faces[i],child.global_transform*faces[i+1],child.global_transform*faces[i+2],target)
+		if body.get_meta("mall_guide",false):guide_collisions.append(target)
 	var jobs: Array[Dictionary] = []
 	for node in root.find_children("*","MeshInstance3D",true,false):
 		jobs.append({"node":node,"transform":node.global_transform})
@@ -148,3 +151,9 @@ static func bake(root: Node3D) -> void:
 	var shape := ConcavePolygonShape3D.new(); shape.set_faces(collisions)
 	var collision := CollisionShape3D.new(); collision.shape = shape
 	body.add_child(collision); root.add_child(body)
+	# Interactive terminals retain a separate collider and their semantic tag.
+	# Folding them into the architectural body loses per-terminal interaction.
+	for faces:PackedVector3Array in guide_collisions:
+		var guide:=StaticBody3D.new();guide.set_meta("mall_guide",true)
+		var guide_shape:=ConcavePolygonShape3D.new();guide_shape.set_faces(faces)
+		var collider:=CollisionShape3D.new();collider.shape=guide_shape;guide.add_child(collider);root.add_child(guide)

@@ -16,7 +16,7 @@ func verify()->void:
    fixtures+=1
    for prior in used:footprint_ok=footprint_ok and not prior.grow(.54).intersects(f.rect)
    used.append(f.rect)
- expect(units.size()==86 and names.size()==86,"Every implemented outlet has one merchandising plan")
+ expect(units.size()==89 and names.size()==89,"Every implemented outlet has one merchandising plan")
  var signs:Dictionary={}
  for s in StoreSigns.specifications():
   var id:String=s.get("outlet",s.id)
@@ -52,7 +52,7 @@ func verify()->void:
   if MallCurve.plan(before[id].pos).x< -190 or moved_a.has(id):continue
   slots_same=slots_same and before[id]==game.mall.identity_slots[id]
  expect(before.size()==267 and game.mall.identity_slots.size()==267 and slots_same,"All fixed identity IDs remain ordered; A slots outside the nine department-store moves stay unchanged")
- expect(WorldCache.can_load() and game.mall.get_meta("stocking_plan",[]).size()==86,"Saved world contains the complete merchandising plan with a valid input fingerprint")
+ expect(WorldCache.can_load() and game.mall.get_meta("stocking_plan",[]).size()==89,"Saved world contains the complete merchandising plan with a valid input fingerprint")
  var saved:=0;var bounded:=true;var stock:=0;var kept:Dictionary={}
  for node:MeshInstance3D in game.mall.find_children("*","MeshInstance3D",true,false):
   if not node.has_meta("stocking_unit"):continue
@@ -60,7 +60,7 @@ func verify()->void:
   bounded=bounded and node.mesh.get_surface_count()<=4 and node.visibility_range_end in [28.0,40.0,55.0] and node.cast_shadow==GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
   for key in node.get_meta("stock_counts"):
    if key not in ["posters","price_cards"]:stock+=int(node.get_meta("stock_counts")[key])
- expect(saved==86 and kept==names,"Stock is baked into one shared-material detail mesh per outlet")
+ expect(saved==89 and kept==names,"Stock is baked into one shared-material detail mesh per outlet")
  expect(bounded and stock>=10000,"Dense stock retains the material, distance-culling and shadow budget")
  var instance_count:=0;var groups:=0;var instancing_ok:=true;var stored_meshes:Dictionary={}
  for node:MultiMeshInstance3D in game.mall.find_children("*","MultiMeshInstance3D",true,false):

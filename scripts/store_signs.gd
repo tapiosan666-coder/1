@@ -27,6 +27,9 @@ static func specifications() -> Array[Dictionary]:
 	for i in CWing.SHOPS.size():
 		var store: Dictionary=CWing.SHOPS[i]
 		result.append({"id":"c_0_%d"%i,"text":store.name,"at":store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,3.8,.17),"yaw":store.yaw,"width":9.2})
+	for i in CUpper.SHOPS.size():
+		var store:Dictionary=CUpper.SHOPS[i]
+		result.append({"id":"c_1_%d"%i,"text":store.name,"at":store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,3.8,.17),"yaw":store.yaw,"width":9.2})
 	for source: Dictionary in StoreSignCatalog.DATA.additional_boards:
 		var spec := source.duplicate()
 		spec.at=Vector3(source.at[0],source.at[1],source.at[2])

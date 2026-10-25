@@ -29,6 +29,9 @@ static func units()->Array[Dictionary]:
  for i in CWing.SHOPS.size():
   var s:Dictionary=CWing.SHOPS[i]
   unit_cache.append({"id":"c_0_%d"%i,"building":"C","level":0,"kind":s.kind,"half":10.0,"front":0.0,"back":18.0,"t":Transform3D(Basis(Vector3.UP,s.yaw),s.at),"mirror":1,"legacy":"c"})
+ for i in CUpper.SHOPS.size():
+  var s:Dictionary=CUpper.SHOPS[i]
+  unit_cache.append({"id":"c_1_%d"%i,"building":"C","level":1,"kind":s.kind,"half":10.0,"front":0.0,"back":18.0,"t":Transform3D(Basis(Vector3.UP,s.yaw),s.at),"mirror":1,"legacy":"c"})
  for level in [0,1]:
   unit_cache.append({"id":"b_anchor_%d"%level,"building":"B","level":level,"kind":"digital" if level==0 else "home","half":26.0,"front":0.0,"back":42.0,"t":BWing.anchor_transform()*Transform3D(Basis(Vector3.UP,PI/2),Vector3(-374,Mall.floor_height(level),0)),"legacy":"anchor","mirror":1})
  unit_cache.append({"id":"a_market","building":"A","level":0,"kind":"grocery","half":18.0,"front":8.4,"back":47.7,"t":Transform3D(Basis(Vector3.UP,PI),Vector3(24,0,0)),"legacy":"market","mirror":1})

@@ -17,8 +17,8 @@ func verify() -> void:
 		ids[floor.id] = true
 		if floor.implemented: implemented += 1
 		expect(floor.regions.is_read_only() and floor.obstacles.is_read_only() and floor.is_read_only(), "Floor snapshot cannot mutate legacy geometry: " + floor.id)
-	expect(ids.size() == 15 and implemented == 9, "15 unique floor IDs distinguish the nine implemented floors")
-	expect(not MallLayout.floor_data("B",-1).implemented and not MallLayout.floor_data("B",3).implemented and not MallLayout.floor_data("C",1).implemented, "Unbuilt floors are declared without inventing walkable space")
+	expect(ids.size() == 15 and implemented == 10, "15 unique floor IDs distinguish the ten implemented floors")
+	expect(not MallLayout.floor_data("B",-1).implemented and not MallLayout.floor_data("B",3).implemented and not MallLayout.floor_data("C",2).implemented, "Unbuilt floors are declared without inventing walkable space")
 	expect(MallLayout.floor_id("D",0).is_empty() and MallLayout.floor_data("A",9).is_empty(), "Unknown floors cannot alias a real floor")
 	for level in MallLayout.LEVELS:
 		var polygons: Array = []
@@ -29,11 +29,11 @@ func verify() -> void:
 	var names: Array = []
 	for point in MallLayout.travel_points():
 		hub_ids[point.id] = true; names.append(point.legacy_key)
-		var xyz: Array = baseline.hubs[point.legacy_key]
-		expect(Mall.walkable(point.position) if point.id in ["b.cinema","b.digital","c.court","c.terrace"] else point.position.distance_to(Vector3(xyz[0],xyz[1],xyz[2])) < .00001, "Only four relocated B/C destinations move; every landing stays public: " + point.id)
+		var xyz: Array = baseline.hubs.get(point.legacy_key,[])
+		expect(Mall.walkable(point.position) if point.id in ["b.cinema","b.digital","c.court","c.terrace","bc.skybridge","c.terrace.2"] else point.position.distance_to(Vector3(xyz[0],xyz[1],xyz[2])) < .00001, "New and relocated B/C destinations stay public; original A destinations retain coordinates: " + point.id)
 		expect(MallLayout.floor_at(point.position) == point.floor_id, "Travel point belongs to declared floor: " + point.id)
 		expect(MallLayout.travel_point(point.id) == MallLayout.travel_point(point.legacy_key), "Stable ID and legacy visit key resolve together: " + point.id)
-	expect(hub_ids.size() == 18 and names == Mall.HUBS.keys(), "All 18 destinations retain button order and visit keys")
+	expect(hub_ids.size() == 20 and names == Mall.HUBS.keys(), "All 20 destinations retain the original order and visit keys")
 	expect(MallLayout.travel_point("unknown").is_empty(), "Unknown destination is rejected")
 	var game = load("res://scenes/main.tscn").instantiate(); root.add_child(game)
 	expect(WorldCache.can_load(), "Compatibility adapter keeps the validated world cache usable")

@@ -4,7 +4,7 @@ extends RefCounted
 ## and travel aliases while upper-floor fit-outs can define their own obstacles.
 ## This file does not generate or invalidate baked world geometry.
 
-const VERSION := "v020-structure-1"
+const VERSION := "v021-c-upper-1"
 const BUILDINGS := ["A", "B", "C"]
 const LEVELS := [-1, 0, 1, 2, 3]
 const FLOOR_KEYS := ["B1", "1F", "2F", "3F", "RF"]
@@ -29,6 +29,8 @@ const HUBS := [
 	["bc.walkway", "B・C連絡通路", "C/1F"],
 	["c.court", "C館屋外広場", "C/1F"],
 	["c.terrace", "C館テラス", "C/1F"],
+	["bc.skybridge", "B・C2階連絡橋", "C/2F"],
+	["c.terrace.2", "C館2階テラス", "C/2F"],
 ]
 static var _floors: Dictionary = {}
 static var _hubs: Array[Dictionary] = []

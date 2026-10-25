@@ -1,0 +1,370 @@
+{
+  "version": "0.21.0",
+  "date_jst": "2026-10-25",
+  "baseline": "590b368943f85e7575dcb2d152fce9ac8fa22f7a",
+  "suites": [
+    {
+      "suite": "b_concourse",
+      "mode": "headless",
+      "checks": 28,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 14.06
+    },
+    {
+      "suite": "c_upper",
+      "mode": "headless",
+      "checks": 47,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 28.46
+    },
+    {
+      "suite": "mall_structure",
+      "mode": "headless",
+      "checks": 123,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 158.44
+    },
+    {
+      "suite": "game",
+      "mode": "headless",
+      "checks": 148,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 10.17
+    },
+    {
+      "suite": "mall_layout",
+      "mode": "headless",
+      "checks": 140,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 6.7
+    },
+    {
+      "suite": "upper_and_restrooms",
+      "mode": "headless",
+      "checks": 41,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 25.44
+    },
+    {
+      "suite": "expansion",
+      "mode": "headless",
+      "checks": 59,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 27.66
+    },
+    {
+      "suite": "annex",
+      "mode": "headless",
+      "checks": 62,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 101.23
+    },
+    {
+      "suite": "wing_b",
+      "mode": "headless",
+      "checks": 42,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 34.75
+    },
+    {
+      "suite": "wing_c",
+      "mode": "headless",
+      "checks": 40,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 33.91
+    },
+    {
+      "suite": "cat_and_skills",
+      "mode": "headless",
+      "checks": 33,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 13.4
+    },
+    {
+      "suite": "scan_and_paths",
+      "mode": "headless",
+      "checks": 22,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 2.97
+    },
+    {
+      "suite": "retail_detail",
+      "mode": "headless",
+      "checks": 6,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 1.29
+    },
+    {
+      "suite": "dining_layout",
+      "mode": "headless",
+      "checks": 26,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 7.15
+    },
+    {
+      "suite": "visual_access",
+      "mode": "headless",
+      "checks": 2,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 1.57
+    },
+    {
+      "suite": "store_signs",
+      "mode": "headless",
+      "checks": 20,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 2.22
+    },
+    {
+      "suite": "retail_density",
+      "mode": "actual_gl_no_render_loop",
+      "checks": 17,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 21.74
+    },
+    {
+      "suite": "apparel_finish",
+      "mode": "actual_gl_no_render_loop",
+      "checks": 8,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 12.36
+    },
+    {
+      "suite": "render_materials",
+      "mode": "actual_gl_no_render_loop",
+      "checks": 10,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 12.31
+    },
+    {
+      "suite": "character_motion",
+      "mode": "actual_gl_no_render_loop",
+      "checks": 15,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 17.46
+    },
+    {
+      "suite": "world_art",
+      "mode": "actual_gl_no_render_loop",
+      "checks": 6,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 12.27
+    },
+    {
+      "suite": "continuous_civilian",
+      "mode": "actual_gl_active",
+      "checks": 11,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 12.27
+    },
+    {
+      "suite": "face_presentation",
+      "mode": "actual_gl_active",
+      "checks": 7,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 12.32
+    },
+    {
+      "suite": "population",
+      "mode": "headless",
+      "checks": 22,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 9.41
+    },
+    {
+      "suite": "population_ui",
+      "mode": "headless",
+      "checks": 9,
+      "failures": 0,
+      "exit_code": 0,
+      "seconds": 0.92
+    }
+  ],
+  "suite_count": 25,
+  "total_checks": 944,
+  "total_failures": 0,
+  "floor_count": {
+    "implemented": 10,
+    "target": 15
+  },
+  "population": {
+    "default": 1000,
+    "comparison": 300,
+    "fixed": 900,
+    "walking": 100,
+    "fixed_by_building": {
+      "A": 300,
+      "B": 450,
+      "C": 150
+    },
+    "original_fixed_retained": 267,
+    "additional_fixed": 633,
+    "additional_fixed_cat_routes_verified": 633,
+    "startup_example_cloud_cpu_ms": 945.604,
+    "not_an_fps_measurement": true
+  },
+  "world": {
+    "fingerprint": "1d518f7de8a0ad95ae60a4f1aea5e8879cf554ab8e1664f67c84ea11417b7e8e",
+    "floor_contacts": {
+      "floors": 3.0,
+      "height": 1024.0,
+      "static_footprints": 1087.0,
+      "width": 1024.0
+    },
+    "nav_edges": 275743.0,
+    "nav_points": 43630.0,
+    "navigation_validation": {
+      "connected": 43630.0,
+      "unreachable": 0.0
+    },
+    "render": {
+      "detail_meshes": 89.0,
+      "detail_surfaces": 191.0,
+      "detail_triangles": 1068252.0,
+      "sectors": 675.0,
+      "source_meshes": 15385.0,
+      "static_surfaces": 2869.0,
+      "static_triangles": 1803756.0,
+      "surfaces": 3060.0,
+      "triangles": 2872008.0
+    },
+    "retail_stock": {
+      "by_kind": {
+        "bag": 684.0,
+        "book_stack": 2994.0,
+        "bottle": 911.0,
+        "bowl": 2678.0,
+        "carton": 4157.0,
+        "coffee_bag": 789.0,
+        "coffee_machine": 3.0,
+        "cosmetics": 994.0,
+        "fold_stack": 3015.0,
+        "folded": 142.0,
+        "food_pack": 180.0,
+        "fridge": 8.0,
+        "glasses": 234.0,
+        "guitar": 4.0,
+        "headphones": 1420.0,
+        "jacket": 458.0,
+        "jewelry": 468.0,
+        "keyboard": 306.0,
+        "knit": 378.0,
+        "lamp": 6.0,
+        "mannequin": 33.0,
+        "model_car": 1506.0,
+        "mouse": 14.0,
+        "mug": 3700.0,
+        "paper_bag": 47.0,
+        "pastry": 80.0,
+        "plant": 22.0,
+        "popcorn": 9.0,
+        "posters": 94.0,
+        "price_cards": 2734.0,
+        "shirt": 418.0,
+        "shoe": 2337.0,
+        "shoe_box": 1654.0,
+        "stationery": 784.0,
+        "suitcase": 546.0,
+        "tablet": 18.0,
+        "television": 8.0,
+        "toy": 230.0,
+        "trousers": 589.0,
+        "washer": 8.0
+      },
+      "items": 31832.0,
+      "stores": 89.0
+    },
+    "static_instancing": {
+      "instances": 29740,
+      "invalid_transforms": 0,
+      "nodes": 262,
+      "verified_with_renderer": true
+    },
+    "world_occlusion": {
+      "applied": true,
+      "mean": 0.736822264162352,
+      "method": "static vertex ambient occlusion",
+      "min": 0.610000003874302,
+      "radius_m": 2.4,
+      "rays": 24,
+      "strength": 0.65,
+      "vertices": 4812776
+    }
+  },
+  "geometry_baseline": {
+    "baseline": "590b368943f85e7575dcb2d152fce9ac8fa22f7a",
+    "a_compiled_geometry_unchanged": true,
+    "b_floor_polygons_unchanged": true,
+    "c_ground_floor_polygon_unchanged": true,
+    "b_wall_change": "C/2F bridge opening only",
+    "b_plan_centreline_metres": {
+      "main_polyline": 281.3156712348104,
+      "curved_rear": 357.0306137750585,
+      "method": "Authoring coordinates; main LineString and rear Chaikin curve after two subdivisions; planar geometry, not player travel time"
+    }
+  },
+  "captures": {
+    "renderer": "Mesa llvmpipe; Linux",
+    "quality": "balanced",
+    "original_rng_seed": 912,
+    "comparison_population": 300,
+    "population_capture": 1000,
+    "normal_game_render": true,
+    "npc_motion_frozen": true,
+    "hud_and_handheld_hidden_for_comparison": true,
+    "walkers_initial_positions": "Existing independently randomized initial points; original-ID seed does not fix the walker RNG"
+  },
+  "b_concourse": {
+    "stations": 12,
+    "reassigned_existing_people": 15,
+    "guide_terminals": 8,
+    "additional_independent_tenants": 0,
+    "retail_density_and_rear_route_length_still_need_revision": true
+  },
+  "runtime_path_policy": {
+    "query_weight": 0.8,
+    "walking_path_requests_per_tick": 1
+  },
+  "limitations": [
+    "Windows and RTX 4060 Laptop FPS not measured",
+    "Not all 15 floors or 5000 identities implemented",
+    "NPC character models unchanged in this release",
+    "B tenant density and rear circulation length remain open design work"
+  ],
+  "linux_export_startup": {
+    "frames": 30,
+    "exit_code": 0,
+    "elapsed_seconds": 52.36,
+    "renderer": "Mesa llvmpipe; actual Linux native export using Windows-exported shared PCK",
+    "population": 1000,
+    "fixed": 900,
+    "walking": 100,
+    "runtime_errors": 0,
+    "population_log_present": true,
+    "not_an_fps_benchmark": true
+  }
+}

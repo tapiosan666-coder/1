@@ -29,6 +29,11 @@ func _initialize()->void:
     f.shops.append({"id":u.id,"kind":u.kind,"polygon":world_polygon(points)})
    if building=="A":f.private=world_polygon(PackedVector2Array([Vector2(-30,-36),Vector2(60,-36),Vector2(60,-24),Vector2(-30,-24)]))
    for plaza:Dictionary in MallStructureData.DATA[building].plazas:
+    if building=="C" and level==1 and plaza.id=="terrace":continue
     var p:=MallCurve.world(Vector3(plaza.at[0],0,plaza.at[1]));f.plazas.append({"name":plaza.name,"at":[p.x,p.z]})
+   if building=="B":
+    f.destinations=[]
+    for station:Dictionary in BConcourse.stations(level):f.destinations.append({"name":station.name,"at":[station.at.x,station.at.y]})
+   if building=="C" and level in [0,1]:f.stairs=[[-382,-89],[-357,-89]]
    floors.append(f)
  var out:=FileAccess.open("res://docs/structure-floor-plans.json",FileAccess.WRITE);out.store_string(JSON.stringify(floors,"  "));out.close();print("FLOOR_PLAN_EXPORT ",floors.size());quit()

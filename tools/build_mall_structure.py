@@ -62,7 +62,7 @@ def compile_plan(source):
     court_upper=unary_union([rect(r) for r in b['court_upper']])
     ports=[box(-201,-8.1,-169,-2.9),box(-374.2,-30,-365.8,-22)]
     wall_cut=unary_union(ports)
-    walls=[];floor=[];rails=[]
+    walls=[];floor=[];rails=[];b_geometries=[]
     for level in range(3):
         shell=base
         if level==0:shell=shell.union(LineString(b['c_access']).buffer(4,quad_segs=4,cap_style='flat'))
@@ -71,12 +71,12 @@ def compile_plan(source):
         if level==2:f=f.difference(box(-317.7,54,-315.3,66))
         f=f.union(rect(b['ground_link'] if level==0 else b['sky_link'])) if level<2 else f
         assert len(polys(f))==1, 'B floor must be connected'
-        floor.append(floor_data(f))
+        floor.append(floor_data(f));b_geometries.append(f)
         rail=f.boundary.difference(shell.boundary.buffer(.10))
         if level==1:rail=rail.difference(unary_union([box(-332.4,65.8,-329.6,66.2),box(-317.9,65.8,-315.1,66.2)]))
         if level==2:rail=rail.difference(box(-317.9,53.8,-315.1,54.8))
         rails.append([list(line.coords) for line in (list(rail.geoms) if hasattr(rail,'geoms') else [rail]) if line.geom_type=='LineString'])
-        wall=shell.boundary.difference(wall_cut)
+        wall=shell.boundary.difference(wall_cut.union(rect(source['C']['upper']['bridge_port'])) if level==1 else wall_cut)
         # Upper openings have physical guardrails; service courtyards are enclosed by the shell walls.
         walls.append([list(line.coords) for line in (list(wall.geoms) if hasattr(wall,'geoms') else [wall])])
     d['B']={'floors':floor,'walls':walls,'rails':rails,'voids':packet(void.difference(bridges).difference(court_upper)),'roof':floor_data(base.difference(box(-496,-26,-466,26))),'ground_roof':floor_data(LineString(b['c_access']).buffer(4,quad_segs=4,cap_style='flat').difference(base)),'stores':b['stores'],'plazas':b['plazas'],'main':b['main'],'loop':b['loop'],'c_access':b['c_access']}
@@ -90,7 +90,27 @@ def compile_plan(source):
         approaches.append(LineString([front,target]).buffer(3.5,quad_segs=4))
     cf=unary_union([street,rect([-374,-80,8,54])]+approaches+[store_shape(st) for st in c['stores']])
     assert len(polys(cf))==1,'C must be connected'
-    d['C']={'floors':[floor_data(cf)],'stores':c['stores'],'plazas':c['plazas']}
+    upper=c['upper'];upper_plazas=[p for p in c['plazas'] if p['id'] in upper['plazas']]
+    rings=[ellipse(p['at'],p['radius']) for p in upper_plazas]
+    holes=unary_union([ellipse(p['at'],[v-upper['gallery_width'] for v in p['radius']]) for p in upper_plazas])
+    upper_stores=[]
+    for spec in upper['stores']:
+        upper_stores.append(dict(c['stores'][spec['ground_index']],**spec))
+    path=curve(upper['street']).buffer(upper['gallery_width']/2,quad_segs=8,cap_style='flat')
+    upper_public=unary_union(rings+[path])
+    upper_approaches=[]
+    for st in upper_stores:
+        front=Point(st['placement'][:2]);target=nearest_points(front,upper_public)[1]
+        upper_approaches.append(LineString([front,target]).buffer(3.5,quad_segs=4))
+    bridge=LineString(upper['bridge']).buffer(upper['bridge_width']/2,quad_segs=8,cap_style='flat')
+    uf=unary_union([upper_public,bridge]+upper_approaches+[store_shape(st) for st in upper_stores]).difference(holes).difference(rect(upper['stair_shaft'])).difference(b_geometries[1])
+    assert len(polys(uf))==1,'C upper floor must be connected'
+    # Railings stop at the real B landing, storefront walls, and the upper stair landing.
+    rail_cut=unary_union([b_geometries[1].buffer(.08),rect([-360.4,-91.1,1.5,4.2])]+[store_shape(st).buffer(.20) for st in upper_stores])
+    rail=uf.boundary.difference(rail_cut)
+    upper_rails=[list(line.coords) for line in (list(rail.geoms) if hasattr(rail,'geoms') else [rail]) if line.geom_type=='LineString']
+    d['C']={'floors':[floor_data(cf),floor_data(uf)],'stores':c['stores'],'plazas':c['plazas'],'upper_stores':upper_stores,'upper_rails':upper_rails,'bridge':upper['bridge'],'stair_shaft':upper['stair_shaft'],'supports':upper['supports']}
+
     a=source['A'];ap=unary_union([rect(r) for r in a['rects']]+[ellipse(p['at'],p['radius']).intersection(box(-100,-100,100,-24)) for p in a['plazas']])
     av=ellipse(a['void']['at'],a['void']['radius'])
     existing_gallery=unary_union([rect([-48,-15,3,7]),rect([-33,-15,3,7]),rect([-48,-15,18,3])])

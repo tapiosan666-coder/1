@@ -39,22 +39,16 @@ static func transformed(rect: Rect2,store: Dictionary) -> Rect2:
 	return Rect2(result.position.round(),result.size.round())
 
 static func regions(level:int)->Array[Rect2]:
-	if level!=0:return []
-	return [MallStructure.bounds("C",0)]
+	if level not in [0,1]:return []
+	return [MallStructure.bounds("C",level)]
 
 static func obstacles(level: int) -> Array[Rect2]:
+	if level == 1: return CUpper.obstacles()
 	if level != 0: return []
 	if obstacle_cache.is_empty():
-		for store in SHOPS:
-			var local: Array[Rect2] = [Rect2(-10.15,-18,.3,18),Rect2(9.85,-18,.3,18),Rect2(-10,-18.15,20,.3),Rect2(-10,-.08,7,.16),Rect2(3,-.08,7,.16),Rect2(3.5,-13.1,3,1.4)]
-			for x in [-4.0,4.0]:
-				if store.kind == "cafe": local.append_array([Rect2(x-1,-8,2,2),Rect2(x-.3,-10.3,.6,.6)])
-				else: local.append(Rect2(x-1,-9.4,2,2.8))
-			# Preserve fractional fixture dimensions when transforming right angles.
-			for rect in local:
-				var center: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(rect.get_center().x,0,rect.get_center().y)
-				var size := rect.size if absf(sin(store.yaw)) < .5 else Vector2(rect.size.y,rect.size.x)
-				obstacle_cache.append(Rect2(Vector2(center.x,center.z)-size/2,size))
+		for store in SHOPS: obstacle_cache.append_array(shop_obstacles(store))
+		obstacle_cache.append(CUpper.STAIR_BLOCK)
+		for at:Vector2 in CUpper.supports():obstacle_cache.append(Rect2(at-Vector2(.25,.25),Vector2(.5,.5)))
 		for at in [Vector2(-432,-134),Vector2(-320,-164)]:
 			obstacle_cache.append(Rect2(at-Vector2(5,4),Vector2(10,8)))
 			obstacle_cache.append(Rect2(at+Vector2(-2,8.65),Vector2(4,.7)))
@@ -63,11 +57,26 @@ static func obstacles(level: int) -> Array[Rect2]:
 		obstacle_cache.append_array(RetailDensity.obstacles("C",level))
 	return obstacle_cache
 
+static func shop_obstacles(store:Dictionary)->Array[Rect2]:
+	var result:Array[Rect2]=[]
+	var local: Array[Rect2] = [Rect2(-10.15,-18,.3,18),Rect2(9.85,-18,.3,18),Rect2(-10,-18.15,20,.3),Rect2(-10,-.08,7,.16),Rect2(3,-.08,7,.16),Rect2(3.5,-13.1,3,1.4)]
+	for x in [-4.0,4.0]:
+		if store.kind == "cafe": local.append_array([Rect2(x-1,-8,2,2),Rect2(x-.3,-10.3,.6,.6)])
+		else: local.append(Rect2(x-1,-9.4,2,2.8))
+	# Preserve fractional fixture dimensions when transforming right angles.
+	for rect in local:
+		var center: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(rect.get_center().x,0,rect.get_center().y)
+		var size := rect.size if absf(sin(store.yaw)) < .5 else Vector2(rect.size.y,rect.size.x)
+		result.append(Rect2(Vector2(center.x,center.z)-size/2,size))
+	return result
+
 static func contains(p:Vector3)->bool:
-	return Mall.level_at(p.y)==0 and MallStructure.contains("C",0,Vector2(p.x,p.z))
+	return MallStructure.contains("C",Mall.level_at(p.y),Vector2(p.x,p.z))
 static func zone_contains(p:Vector3)->bool:
 	return contains(p) or (Mall.level_at(p.y)==0 and Rect2(-495,-225,240,150).has_point(Vector2(p.x,p.z)))
 static func zone_name(p:Vector3)->String:
+	if Mall.level_at(p.y)==1:
+		return "B・C館 / 2階ガーデンブリッジ" if p.z> -100 else "C館2階 / ガーデンテラス"
 	if p.z> -80:return "B・C館 / 屋根付き連絡通路"
 	var nearest:Dictionary=MallStructureData.DATA.C.plazas[0];var distance:=INF
 	for plaza:Dictionary in MallStructureData.DATA.C.plazas:
