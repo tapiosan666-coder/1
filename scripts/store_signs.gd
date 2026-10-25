@@ -23,6 +23,11 @@ static func specifications() -> Array[Dictionary]:
 	for i in CWing.SHOPS.size():
 		var store: Dictionary=CWing.SHOPS[i]
 		result.append({"id":"c_0_%d"%i,"text":store.name,"at":store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,3.8,.17),"yaw":store.yaw,"width":9.2})
+	for source: Dictionary in StoreSignCatalog.DATA.additional_boards:
+		var spec := source.duplicate()
+		spec.at=Vector3(source.at[0],source.at[1],source.at[2])
+		spec.yaw=deg_to_rad(source.yaw)
+		result.append(spec)
 	return result
 
 func setup(mall: Node3D) -> void:
@@ -30,12 +35,13 @@ func setup(mall: Node3D) -> void:
 	var atlas: Texture2D=preload("res://assets/retail/store_signs.png")
 	var material := ShaderMaterial.new(); material.shader=preload("res://assets/store_signs.gdshader");material.set_shader_parameter("sign_atlas",atlas)
 	for spec in specifications():
-		var anchor := MallCurve.world(spec.at)
-		var found := false
-		for label: Label3D in labels:
-			if label.text==spec.text and label.global_position.distance_squared_to(anchor)<.001:
-				label.visible=false;hidden_labels.append(label);found=true;break
-		if not found: push_error("Facade sign label not found: "+spec.id)
+		if spec.get("replace_label",true):
+			var anchor := MallCurve.world(spec.at)
+			var found := false
+			for label: Label3D in labels:
+				if label.text==spec.text and label.global_position.distance_squared_to(anchor)<.001:
+					label.visible=false;hidden_labels.append(label);found=true;break
+			if not found: push_error("Facade sign label not found: "+spec.id)
 		_add_board(spec)
 	for key: Vector3i in _groups:
 		var record: Dictionary=_groups[key]

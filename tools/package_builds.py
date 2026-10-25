@@ -10,7 +10,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
 SOURCE_HISTORY_URL = "https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.17.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.17.1
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -54,6 +54,8 @@ B館地下/屋上・C館の残る階層、写真顔生成、進行セーブ、St
 Windows版はクロスビルド済みで、Windows実機では未検証です。
 0.17ではA館2階を服飾・コスメ・生活、3階をキッズ・文具・楽器・ホビー中心の各12店舗へ変更。
 全68専門店の看板を、ロゴ・配色・図形・文字組みを持つ42の架空ブランドへ更新。
+0.17.1ではスーパー・地下食品街・フードコート・家電/家具/映画館も含む全83店舗へ拡張。
+補助看板を含む88枚、58ブランド。メニューと価格、館内案内は維持。docs/MALL_SIGNAGE.mdを参照。
 1階トイレを入口の目隠し・男女別・洗面12台・個室9・多機能/ベビー室へ更新。
 13枚の扉はFで開閉。NPCと宝箱は空の個室・試着室へ配置せず、猫の経路も通しません。
 300人・18移動地点・初期スキャナーのみで最終確認する仕様は維持。docs/MALL_PHASE2.mdを参照。
