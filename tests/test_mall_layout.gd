@@ -30,7 +30,7 @@ func verify() -> void:
 	for point in MallLayout.travel_points():
 		hub_ids[point.id] = true; names.append(point.legacy_key)
 		var xyz: Array = baseline.hubs.get(point.legacy_key,[])
-		expect(Mall.walkable(point.position) if point.id in ["b.cinema","b.digital","c.court","c.terrace","bc.skybridge","c.terrace.2"] else point.position.distance_to(Vector3(xyz[0],xyz[1],xyz[2]*MallCurve.expansion(xyz[0]))) < .00001, "New and relocated B/C destinations stay public; original A destinations retain coordinates: " + point.id)
+		expect(Mall.walkable(point.position) if point.id in ["b.lounge","b.cinema","b.digital","c.court","c.terrace","bc.skybridge","c.terrace.2"] else point.position.distance_to(Vector3(xyz[0],xyz[1],xyz[2]*MallCurve.expansion(xyz[0]))) < .00001, "New and relocated B/C destinations stay public; original A destinations retain coordinates: " + point.id)
 		expect(MallLayout.floor_at(point.position) == point.floor_id, "Travel point belongs to declared floor: " + point.id)
 		expect(MallLayout.travel_point(point.id) == MallLayout.travel_point(point.legacy_key), "Stable ID and legacy visit key resolve together: " + point.id)
 	expect(hub_ids.size() == 20 and names == Mall.HUBS.keys(), "All 20 destinations retain the original order and visit keys")

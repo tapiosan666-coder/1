@@ -71,9 +71,27 @@ static func build(building:String,root:Node3D)->void:
     if a.distance_to(b)<.01 or (building=="B" and minf(a.x,b.x)>-190):continue
     segment(root,a,b,y+.65,1.12,.08,glass,true)
     segment(root,a,b,y+1.24,.055,.12,metal)
+    if building=="B":
+     segment(root,a,b,y-.16,.32,.32,plaster)
+     segment(root,a,b,y-.34,.045,.38,metal)
  var roof:=Shapes.material(Color("cbdcde"));roof.roughness=.34;roof.cull_mode=BaseMaterial3D.CULL_DISABLED
  surface(root,data.roof.triangles,16.4,roof,false)
  if building=="B":
+  # Real roof apertures over the three courts: glazing and ribs, no opaque lid
+  # over an otherwise correctly opened 2F/3F atrium.
+  var skylight:=Shapes.material(Color("b7d4df"));skylight.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA
+  skylight.albedo_color.a=.28;skylight.roughness=.22;skylight.cull_mode=BaseMaterial3D.CULL_DISABLED
+  surface(root,data.skylights.triangles,17.2,skylight,false)
+  for packet:Dictionary in data.skylights.polygons:
+   var ring:=poly(packet.outer)
+   for i in ring.size():
+    segment(root,ring[i],ring[(i+1)%ring.size()],16.7,.8,.22,plaster)
+    segment(root,ring[i],ring[(i+1)%ring.size()],17.17,.10,.30,metal)
+  for plaza:Dictionary in data.plazas:
+   var cx:float=plaza.at[0];var cz:float=plaza.at[1];var radius:Array=plaza.void_radius
+   for offset in [-.6,-.3,0.0,.3,.6]:
+    var span:float=radius[0]*sqrt(1-offset*offset)
+    segment(root,Vector2(cx-span,cz+offset*radius[1]),Vector2(cx+span,cz+offset*radius[1]),17.10,.18,.09,metal)
   surface(root,data.ground_roof.triangles,5.3,glass,false)
   var path:Array=MallStructureData.DATA.B.c_access
   for i in path.size()-1:

@@ -1,0 +1,71 @@
+{
+  "B_body_bounds": [
+    -690,
+    -61.5,
+    -182,
+    83
+  ],
+  "floor_heights": [
+    0,
+    5.525,
+    10.875
+  ],
+  "floor_polygon_areas": [
+    33850.295,
+    31899.132,
+    31538.336
+  ],
+  "concourse_width": 16,
+  "north_south_loop_width": 14,
+  "cross_width": 10,
+  "fitted_outlets_per_floor": [
+    13,
+    13,
+    13
+  ],
+  "atria": [
+    {
+      "id": "light",
+      "name": "光の広場",
+      "centre_xz": [
+        -218,
+        0
+      ],
+      "nominal_span": [
+        35.0,
+        28
+      ],
+      "nominal_area_m2": 768.454,
+      "open_area_inside_nominal_after_landings_m2": 671.624
+    },
+    {
+      "id": "time",
+      "name": "時の広場",
+      "centre_xz": [
+        -414,
+        26
+      ],
+      "nominal_span": [
+        30,
+        30
+      ],
+      "nominal_area_m2": 705.723,
+      "open_area_inside_nominal_after_landings_m2": 624.349
+    },
+    {
+      "id": "wing",
+      "name": "翼の広場",
+      "centre_xz": [
+        -624,
+        0
+      ],
+      "nominal_span": [
+        35.0,
+        30
+      ],
+      "nominal_area_m2": 994.488,
+      "open_area_inside_nominal_after_landings_m2": 850.176
+    }
+  ],
+  "note": "Game design metres, not measured LakeTown dimensions. Open areas above exclude landing footprints within the nominal outline; escalator shafts can extend outside that outline."
+}

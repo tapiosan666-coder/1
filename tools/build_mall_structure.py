@@ -15,6 +15,11 @@ def coords(r):return [[round(x,5),round(y,5)] for x,y in list(r.coords)[:-1]]
 def packet(g):
     return [{'outer':coords(p.exterior),'holes':[coords(r) for r in p.interiors]} for p in polys(g)]
 def ellipse(at,r):return scale(Point(at).buffer(1,quad_segs=16),*r,origin=tuple(at))
+def court(p,opening=False):
+    r=p.get('void_radius',p['radius']) if opening else p['radius']
+    if p.get('shape')!='rounded':return ellipse(p['at'],r)
+    x,z=p['at'];corner=p.get('void_corner',8) if opening else p.get('corner',12)
+    return box(x-r[0]+corner,z-r[1]+corner,x+r[0]-corner,z+r[1]-corner).buffer(corner,quad_segs=12)
 def rect(r):return box(r[0],r[1],r[0]+r[2],r[1]+r[3])
 def move(g,t):
     x,z,yaw=t;a=math.cos(yaw);b=math.sin(yaw)
@@ -44,11 +49,15 @@ def curve(points):
 def compile_plan(source):
     d={};b=source['B'];main=LineString(b['main']);loop=curve(b['loop'])
     concourse=main.buffer(b['main_width']/2,quad_segs=8,join_style='round')
-    for p in b['plazas']:concourse=concourse.union(ellipse(p['at'],p['radius']))
-    base=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8,join_style='round'),rect(b['anchor']),rect(b['court'])]+[store_shape(s) for s in b['stores']+b['rear_stores']])
+    for p in b['plazas']:concourse=concourse.union(court(p))
+    north=curve(b['north_loop']).buffer(b['north_width']/2,quad_segs=8,join_style='round')
+    base=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8,join_style='round'),north,rect(b['anchor']),rect(b['court'])]+[rect(r) for r in b['landings']]+[store_shape(s) for s in b['stores']+b['rear_stores']])
+    # A real twelve-metre foyer connects the lounge's open front to the time
+    # court. Its rear is enclosed; touching its rear slab does not give access.
+    c=b['court'];base=base.union(box(c[0]+6,c[1]-6,c[0]+c[2]-6,c[1]+2))
     # Public cross-passages make the inner stores actual islands in the circulation network.
     for path in b['cross_paths']:base=base.union(LineString(path).buffer(b['cross_width']/2,quad_segs=8))
-    public=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8)]+[LineString(path).buffer(b['cross_width']/2,quad_segs=8) for path in b['cross_paths']])
+    public=unary_union([concourse,north,loop.buffer(b['loop_width']/2,quad_segs=8)]+[LineString(path).buffer(b['cross_width']/2,quad_segs=8) for path in b['cross_paths']])
     from shapely.ops import nearest_points
     for st in b['stores']:
         x,w,side=st['legacy'];front=move(Point(0,side*9.2),st['placement']);target=nearest_points(front,public)[1]
@@ -56,14 +65,14 @@ def compile_plan(source):
     for st in b['rear_stores']:
         front=Point(st['placement'][:2]);target=nearest_points(front,public)[1]
         base=base.union(LineString([front,target]).buffer(3.5,quad_segs=4))
-    void=main.buffer((b['main_width']-2*b['gallery_width'])/2,quad_segs=8)
-    # Keep foyer and anchor approach as solid upper-floor landings.
-    void=void.intersection(box(-446,-100,-202,150))
-    for p in b['plazas']:void=void.union(ellipse(p['at'],[r-b['gallery_width'] for r in p['radius']]))
+    # Independent large atria, not a continuous thin slit cut out of every corridor.
+    void=unary_union([court(p,True) for p in b['plazas']])
     # Crossings at the transitions between courts, away from the main openings.
     bridges=unary_union([move(box(-b['bridge_width']/2,-17,b['bridge_width']/2,17),x) for x in b['bridges']])
     court_upper=unary_union([rect(r) for r in b['court_upper']])
-    ports=[box(-201,-8.1,-169,-2.9),box(-374.2,-30,-365.8,-22)]
+    # The north loop now crosses the old C walkway. Clear the actual junction,
+    # not just the historical doorway at Z=-26.
+    ports=[box(-201,-8.1,-169,-2.9),box(-374.2,-80,-365.8,-22)]
     wall_cut=unary_union(ports)
     rear_walls=unary_union([store_shape(st).buffer(.22) for st in b['rear_stores']])
     bank_public=[];shafts=[];north_ports=[];south_ports=[]
@@ -77,12 +86,9 @@ def compile_plan(source):
     bank_public=unary_union(bank_public).intersection(base);shafts=unary_union(shafts)
     north_ports=unary_union(north_ports);south_ports=unary_union(south_ports)
 
-    # Reserve complete tenant floors and an eight-metre promenade along every facade.
-    # Otherwise the long atrium can cut through a rotated storefront and put a guardrail in its entrance.
-    protected=[]
-    for st in b['stores']:
-        x,w,side=st['legacy'];protected.extend([store_shape(st),move(box(-w/2,-8 if side<0 else 0,w/2,0 if side<0 else 8),st['placement'])])
-    void=void.difference(unary_union(protected))
+    # A tenant must be placed outside the large, deliberately authored opening.
+    # Do not silently shrink the atrium around an incorrectly placed shop.
+    assert void.intersection(unary_union([store_shape(st) for st in b['stores']])).area<.001, 'A real tenant may not occupy an atrium'
     walls=[];floor=[];rails=[];b_geometries=[]
     for level in range(3):
         shell=base
@@ -100,7 +106,8 @@ def compile_plan(source):
         wall=wall.difference(rear_walls)
         # Upper openings have physical guardrails; service courtyards are enclosed by the shell walls.
         walls.append([list(line.coords) for line in (list(wall.geoms) if hasattr(wall,'geoms') else [wall])])
-    d['B']={'floors':floor,'walls':walls,'rails':rails,'voids':packet(void.difference(bridges).difference(court_upper).difference(bank_public).union(shafts.intersection(base))),'roof':floor_data(base.difference(box(-496,-26,-466,26))),'ground_roof':floor_data(LineString(b['c_access']).buffer(4,quad_segs=4,cap_style='flat').difference(base)),'stores':b['stores'],'rear_stores':b['rear_stores'],'escalator_banks':b['escalator_banks'],'plazas':b['plazas'],'main':b['main'],'loop':b['loop'],'c_access':b['c_access']}
+    skylights=unary_union([court(p,True).buffer(1.5) for p in b['plazas']])
+    d['B']={'floors':floor,'walls':walls,'rails':rails,'voids':packet(void.difference(bridges).difference(court_upper).difference(bank_public).union(shafts.intersection(base))),'roof':floor_data(base.difference(rect(b['anchor'])).difference(skylights)),'skylights':floor_data(skylights),'ground_roof':floor_data(LineString(b['c_access']).buffer(4,quad_segs=4,cap_style='flat').difference(base)),'stores':b['stores'],'rear_stores':b['rear_stores'],'escalator_banks':b['escalator_banks'],'plazas':b['plazas'],'main':b['main'],'loop':b['loop'],'north_loop':b['north_loop'],'c_access':b['c_access'],'anchor':b['anchor'],'court':b['court'],'back_destinations':b['back_destinations'],'guide_points':b['guide_points'],'ground_destinations':b['ground_destinations']}
     c=source['C']
     street=unary_union([curve(points).buffer(c['width']/2,quad_segs=8,join_style='round',cap_style='flat') for points in c['streets']]+[ellipse(p['at'],p['radius']) for p in c['plazas']])
     # Each entrance gets a short public approach; no detached shop floors.
@@ -130,7 +137,19 @@ def compile_plan(source):
     rail_cut=unary_union([b_geometries[1].buffer(.08),rect([-360.4,-91.1,1.5,4.2])]+[store_shape(st).buffer(.20) for st in upper_stores])
     rail=uf.boundary.difference(rail_cut)
     upper_rails=[list(line.coords) for line in (list(rail.geoms) if hasattr(rail,'geoms') else [rail]) if line.geom_type=='LineString']
-    d['C']={'floors':[floor_data(cf),floor_data(uf)],'stores':c['stores'],'plazas':c['plazas'],'upper_stores':upper_stores,'upper_rails':upper_rails,'bridge':upper['bridge'],'stair_shaft':upper['stair_shaft'],'supports':upper['supports']}
+    link_rails=[]
+    for x in [-374,-366]:
+        line=LineString([(x,-80),(x,-26)]).difference(b_geometries[0].buffer(.35))
+        for piece in (list(line.geoms) if hasattr(line,'geoms') else [line]):
+            if piece.is_empty or piece.length<.1:continue
+            z0,z1=sorted([piece.coords[0][1],piece.coords[-1][1]])
+            link_rails.append([x-.06,z0,.12,z1-z0])
+    # The walkway already owns its glass. Do not generate a second, uncut
+    # balustrade over the new B junction from C's complete outer boundary.
+    ground_rail=cf.boundary.difference(rect([-374.1,-80.1,8.2,54.2])).difference(b_geometries[0].buffer(.12))
+    ground_rail=ground_rail.difference(unary_union([store_shape(st).buffer(.25) for st in c['stores']]))
+    ground_rails=[list(line.coords) for line in (list(ground_rail.geoms) if hasattr(ground_rail,'geoms') else [ground_rail]) if line.geom_type=='LineString']
+    d['C']={'floors':[floor_data(cf),floor_data(uf)],'stores':c['stores'],'plazas':c['plazas'],'upper_stores':upper_stores,'upper_rails':upper_rails,'bridge':upper['bridge'],'stair_shaft':upper['stair_shaft'],'supports':upper['supports'],'link_rails':link_rails,'ground_rails':ground_rails}
 
     a=source['A'];ap=unary_union([rect(a['central_court'])]+[rect(r) for r in a['rects']]+[ellipse(p['at'],p['radius']).intersection(box(-100,-100,100,-24)) for p in a['plazas']])
     av=unary_union([ellipse(a['void']['at'],a['void']['radius'])]+[rect(v) for v in a['central_voids']])

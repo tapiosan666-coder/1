@@ -53,7 +53,7 @@ static func obstacles(level: int) -> Array[Rect2]:
 			obstacle_cache.append(Rect2(at-Vector2(5,4),Vector2(10,8)))
 			obstacle_cache.append(Rect2(at+Vector2(-2,8.65),Vector2(4,.7)))
 
-		obstacle_cache.append_array([Rect2(-374.06,-80,.12,54),Rect2(-366.06,-80,.12,54)])
+		obstacle_cache.append_array(link_rails())
 		obstacle_cache.append_array(RetailDensity.obstacles("C",level))
 	return obstacle_cache
 
@@ -101,19 +101,11 @@ func build(root:Node3D)->void:
 		for dx in [-1.0,1.0]:identities.append({"pos":p+Vector3(dx,0,0),"yaw":0.0,"role":"seated","activity":"terrace"})
 	for x in [-374.0,-372.0]:identities.append({"pos":Vector3(x,0,-93),"yaw":-PI/2 if x< -373 else PI/2,"role":"conversation","activity":"plaza_talk"})
 	_link()
-	for floor:Dictionary in MallStructure.floor_packets("C",0):
-		var rings:Array=[floor.outer];rings.append_array(floor.holes)
-		for ring:PackedVector2Array in rings:
-			for i in ring.size():
-				var a:Vector2=ring[i];var b:Vector2=ring[(i+1)%ring.size()]
-				if minf(a.y,b.y)>-80:continue
-				var mid:Vector2=(a+b)*.5;var storefront:=false
-				for shop:Dictionary in SHOPS:
-					var q:Vector3=Basis(Vector3.UP,shop.yaw).inverse()*(Vector3(mid.x,0,mid.y)-shop.at)
-					if Rect2(-10.2,-18.2,20.4,18.4).has_point(Vector2(q.x,q.z)):storefront=true;break
-				if storefront:continue
-				MallStructure.segment(mall,a,b,.55,1.1,.10,mall._glass(),true)
-				MallStructure.segment(mall,a,b,1.12,.055,.13,dark)
+	for line:Array in MallStructureData.DATA.C.ground_rails:
+		for i in line.size()-1:
+			var a:=Vector2(line[i][0],line[i][1]);var b:=Vector2(line[i+1][0],line[i+1][1])
+			MallStructure.segment(mall,a,b,.55,1.1,.10,mall._glass(),true)
+			MallStructure.segment(mall,a,b,1.12,.055,.13,dark)
 	for plaza:Dictionary in MallStructureData.DATA.C.plazas:
 		var label:=Shapes.sign_text(mall,Vector3(plaza.at[0],3,plaza.at[1]-15),plaza.name,40);label.pixel_size=.006
 	var candidates:Array[int]=[]
@@ -166,13 +158,19 @@ func _island(x: float) -> void:
 			var leaves := Shapes.sphere(mall,Vector3(x+dx,0,-122)+offset,1.8,soil); leaves.scale = Vector3(1,.8,1)
 
 func _link() -> void:
-	for x in [-374.0,-366.0]:
-		Shapes.box(mall,Vector3(x,1.5,-53),Vector3(.12,3,54),mall._glass(),true)
-		for z in range(-77,-25,8): Shapes.box(mall,Vector3(x,1.7,z),Vector3(.12,3.4,.12),dark)
+	for rail:Rect2 in link_rails():
+		var centre:=rail.get_center()
+		Shapes.box(mall,Vector3(centre.x,1.5,centre.y),Vector3(rail.size.x,3,rail.size.y),mall._glass(),true)
+		for z in range(ceili(rail.position.y)+3,floori(rail.end.y),8):Shapes.box(mall,Vector3(centre.x,1.7,z),Vector3(.12,3.4,.12),dark)
 	Shapes.box(mall,Vector3(-370,3.5,-53),Vector3(8.4,.18,54),ivory)
 	for z in range(-77,-25,8): Shapes.box(mall,Vector3(-370,3.35,z),Vector3(2,.04,.2),Shapes.material(Color("fff1d7"),.4))
 	var sign := Shapes.sign_text(mall,Vector3(-370,2.8,-28),"C館 アウトレット ↑\n屋根付き連絡通路",36,Color("33484a")); sign.rotation.y = PI; sign.pixel_size = .005
 	var back := Shapes.sign_text(mall,Vector3(-370,2.8,-77),"B館はこちら\nA館はB館2階連絡通路から",32,Color("33484a")); back.pixel_size = .005
+
+static func link_rails()->Array[Rect2]:
+	var result:Array[Rect2]=[]
+	for r:Array in MallStructureData.DATA.C.link_rails:result.append(Rect2(r[0],r[1],r[2],r[3]))
+	return result
 
 func _boundary() -> void:
 	# Split exposed edges of the connected floor union; retain the open B doorway.

@@ -52,7 +52,7 @@ func test_wider_walkways(game: Node3D) -> void:
 	game.player.set_physics_process(true)
 	for level in [1,2]:
 		var y := Mall.floor_height(level)
-		for route in [[Vector3(-82,y+.05,4.45),Vector3(-67,y,4.45)],[Vector3(-300,y+.05,2.5),Vector3(-289,y,2.5)]]:
+		for route in [[Vector3(-82,y+.05,4.45),Vector3(-67,y,4.45)],[Vector3(-520,y+.05,12.875),Vector3(-509,y,14.237)]]:
 			game.player.position = MallCurve.world(route[0]); game.player.velocity = Vector3.ZERO
 			var target := MallCurve.world(route[1]); Input.action_press("sprint"); Input.action_press("forward")
 			var arrived := false

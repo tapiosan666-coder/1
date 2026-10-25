@@ -1,3 +1,7 @@
+0.24ではB館1〜3階の床・開口・上下動線とB/C接続を再生成しています。[比較・施工結果](MAP_MASTER_IMPLEMENTATION.md)を参照。以下は過去版の記録も含みます。
+
+0.24のWindows用ZIPは通常の圧縮ではGitHubの100MiB制限を超えるため、EXEを標準DeflateのままZopfliで強く圧縮する。ゲームの形状・画像・EXEの内容を削る処理ではない。開発者が再配布ファイルを作る場合のみ、`python -m pip install -r tools/requirements-packaging.txt`、`python tools/compress_windows_zip.py`、`python tools/package_builds.py --windows-deflate builds/windows-exe.deflate`を順に実行する。生Deflateを展開したバイト列が現在のEXEと一致しなければ梱包を拒否する。EXEを再ビルドした場合は圧縮データも作り直す。遊ぶ側にZopfliのインストールは不要。
+
 0.23ではA館拡張、上階の回廊と乗降後の歩行、ガラスの入口表示、壁上端の隙間、任意のデバッグ開始設定を更新。今回の内容は [上階の動線](UPPER_ACCESS.md) を参照。以下は過去版の記録も含む。
 
 0.22ではB館へ12店舗を追加し、3つの吹き抜けに上下対のエスカレーターを分散。全101店舗/売場、10/15フロア、1000/300人選択。今回の実装と検証は [B館の更新](B_REAR_AND_ESCALATORS.md)。以下には過去版の記録を含む。

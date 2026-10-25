@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+ <rect width="1600" height="1050" fill="#f6f7f4"/>
+ <style>text{font-family:'Noto Sans CJK JP','Yu Gothic',sans-serif;fill:#152d37}.title{font-size:34px;font-weight:700}.sub{font-size:18px;fill:#56717a}.head{font-size:24px;font-weight:700}.small{font-size:15px}.tiny{font-size:13px}.store{fill:#abcbdc;stroke:#467e99;stroke-width:2}.walk{fill:none;stroke:#b4d7b9;stroke-width:24;stroke-linejoin:round;stroke-linecap:round}.atrium{fill:#fbe3a6;stroke:#bc9853;stroke-width:3}.es{fill:#de7655;stroke:#a34b31;stroke-width:2}.bridge{fill:none;stroke:#3d6481;stroke-width:17;stroke-linecap:round}</style>
+ <text x="50" y="60" class="title">FIND YOURSELF | Mall Master Layout</text>
+ <text x="50" y="90" class="sub">Concept geometry — game-design dimensions, NOT measured floor plan of AEON LakeTown</text>
+ <rect x="32" y="120" width="1536" height="470" rx="16" fill="#fff" stroke="#d0d9d7"/>
+ <text x="54" y="160" class="head">01 — Three-building connection diagram</text>
+ <!-- building B -->
+ <path d="M90 325 Q250 250 420 305 L670 350 Q690 430 620 488 Q400 550 145 470 Z" fill="#e1e9ed" stroke="#7392a0" stroke-width="4"/>
+ <path d="M125 359 Q270 308 419 349 L625 381 M120 442 Q300 500 611 445" class="walk"/>
+ <path d="M165 360 L160 444 M350 336 L340 483 M550 370 L544 466" class="walk" style="stroke-width:16"/>
+ <ellipse cx="220" cy="401" rx="43" ry="32" class="atrium"/><circle cx="394" cy="402" r="34" class="atrium"/><rect x="510" y="386" width="77" height="42" rx="14" class="atrium"/>
+ <text x="325" y="290" class="head">Building B</text><text x="274" y="314" class="small">Long spine + two loops</text>
+ <!-- building A -->
+ <path d="M1180 250 L1460 475 L1178 520 Z" fill="#e2ecdf" stroke="#7e9d78" stroke-width="4"/>
+ <path d="M1226 296 L1390 461 L1214 482 Z" class="walk" style="stroke-width:27"/>
+ <circle cx="1285" cy="421" r="37" class="atrium"/><text x="1284" y="310" class="head">Building A</text><text x="1292" y="336" class="small">Triangular loop</text>
+ <!-- building C -->
+ <path d="M780 180 Q885 132 975 217 Q1037 260 1004 335 Q951 375 896 338 Q836 355 788 303 Q738 249 780 180Z" fill="#ebeadc" stroke="#b6aa80" stroke-width="4"/>
+ <path d="M807 219 Q880 174 951 244 Q965 279 940 309 Q868 324 808 272" class="walk"/>
+ <ellipse cx="889" cy="256" rx="45" ry="38" class="atrium"/>
+ <text x="846" y="170" class="head">Building C</text><text x="807" y="189" class="small">Outdoor outlet</text>
+ <!-- bridges -->
+ <path d="M652 406 L1172 405" class="bridge"/><path d="M638 348 Q726 307 777 293" class="bridge"/>
+ <rect x="811" y="391" width="177" height="26" rx="6" fill="#fff"/><text x="820" y="409" class="small">A/B 2F bridge</text>
+ <rect x="666" y="270" width="150" height="28" rx="6" fill="#fff"/><text x="671" y="289" class="small">B/C 2F bridge</text>
+ <text x="87" y="555" class="tiny">Diagrammatic position only. Resolve exact coordinates and bridge endpoints against the existing game.</text>
+ <!-- lower B floor diagram -->
+ <rect x="32" y="610" width="1536" height="396" rx="16" fill="#fff" stroke="#d0d9d7"/>
+ <text x="55" y="652" class="head">02 — Building B: common 1F / 2F / 3F void locations</text>
+ <text x="55" y="676" class="sub">Game target envelope ~500×160m. Align atrium voids precisely on every floor.</text>
+ <!-- store rows and concourses -->
+ <g>
+  <rect x="70" y="711" width="1415" height="54" rx="5" class="store"/>
+  <rect x="70" y="889" width="1415" height="54" rx="5" class="store"/>
+  <path d="M70 785 H1480 M70 865 H1480 M70 825 H1480" class="walk"/>
+  <path d="M195 785 V865 M418 785 V865 M635 785 V865 M855 785 V865 M1070 785 V865 M1320 785 V865" class="walk" style="stroke-width:17"/>
+  <path d="M195 711 V944 M418 711 V944 M635 711 V944 M855 711 V944 M1070 711 V944 M1320 711 V944" stroke="#467e99" stroke-width="3" stroke-dasharray="8 6"/>
+  <ellipse cx="327" cy="825" rx="66" ry="48" class="atrium"/><circle cx="750" cy="825" r="51" class="atrium"/><rect x="1150" y="781" width="130" height="88" rx="24" class="atrium"/>
+  <rect x="254" y="804" width="17" height="42" rx="3" class="es"/><rect x="376" y="804" width="17" height="42" rx="3" class="es"/>
+  <rect x="687" y="807" width="16" height="40" rx="3" class="es"/><rect x="798" y="807" width="16" height="40" rx="3" class="es"/>
+  <rect x="1126" y="810" width="16" height="42" rx="3" class="es"/><rect x="1288" y="810" width="16" height="42" rx="3" class="es"/>
+  <text x="294" y="826" class="small">LIGHT</text><text x="716" y="827" class="small">TIME</text><text x="1183" y="827" class="small">WING</text>
+  <text x="65" y="973" class="tiny">GREEN = circulation (main 12m, loops 8m)  |  BLUE = shop bays  |  GOLD = open atrium voids  |  RED = paired escalators</text>
+ </g>
+</svg>

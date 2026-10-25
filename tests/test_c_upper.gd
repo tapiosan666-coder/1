@@ -23,7 +23,7 @@ func verify()->void:
    if game.crowd.roles[id]=="staff":staff+=1
    if game.crowd.roles[id]=="seated":seated+=1
  expect(ids.size()==9 and staff==3 and seated==2,"Three upper tenants have nine assigned staff/shoppers/cafe visitors before visiting")
- for at in [Vector3(-442,y,-35),Vector3(-442,y,-65),Vector3(-442,y,-90),Vector3(-432,y,-117),Vector3(-448,y,-126),Vector3(-355,y,-94)]:
+ for at in [Vector3(-442,y,-58),Vector3(-442,y,-65),Vector3(-442,y,-90),Vector3(-432,y,-117),Vector3(-448,y,-126),Vector3(-355,y,-94)]:
   expect(Mall.walkable(at) and MallLayout.floor_at(at)=="C/2F","Bridge/gallery point agrees with floor ownership and navigation: "+str(at))
   var hit:=state.intersect_ray(PhysicsRayQueryParameters3D.create(at+Vector3.UP*.15,at-Vector3.UP*.2,1))
   expect(not hit.is_empty() and absf(hit.position.y-y)<.03,"Bridge/gallery has a real physical floor: "+str(at))

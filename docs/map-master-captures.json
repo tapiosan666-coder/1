@@ -1,0 +1,152 @@
+{
+  "captures": [
+    {
+      "camera_metres": [
+        -224.0,
+        1.67999994754791,
+        -12.0
+      ],
+      "caption": "光の広場 / 1階から上階と昇降機を見上げる",
+      "height": 1000.0,
+      "id": "b-light-1f",
+      "path": "res://docs/screenshots/mall24-b-light-1f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -215.0,
+        12.5550003051758,
+        20.0
+      ],
+      "caption": "光の広場 / 3階の回廊から1階を見る",
+      "height": 1000.0,
+      "id": "b-light-3f",
+      "path": "res://docs/screenshots/mall24-b-light-3f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -408.0,
+        1.67999994754791,
+        14.0
+      ],
+      "caption": "時の広場 / 1階から上階と昇降機を見上げる",
+      "height": 1000.0,
+      "id": "b-time-1f",
+      "path": "res://docs/screenshots/mall24-b-time-1f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -411.0,
+        12.5550003051758,
+        46.0
+      ],
+      "caption": "時の広場 / 3階の回廊から1階を見る",
+      "height": 1000.0,
+      "id": "b-time-3f",
+      "path": "res://docs/screenshots/mall24-b-time-3f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -618.0,
+        1.67999994754791,
+        -12.0
+      ],
+      "caption": "翼の広場 / 1階から上階と昇降機を見上げる",
+      "height": 1000.0,
+      "id": "b-wing-1f",
+      "path": "res://docs/screenshots/mall24-b-wing-1f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -621.0,
+        12.5550003051758,
+        20.0
+      ],
+      "caption": "翼の広場 / 3階の回廊から1階を見る",
+      "height": 1000.0,
+      "id": "b-wing-3f",
+      "path": "res://docs/screenshots/mall24-b-wing-3f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -594.0,
+        1.67999994754791,
+        3.70000004768372
+      ],
+      "caption": "B館1階 / 主通路と店舗前",
+      "height": 1000.0,
+      "id": "b-main",
+      "path": "res://docs/screenshots/mall24-b-main.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -525.0,
+        7.20499992370605,
+        -40.0
+      ],
+      "caption": "B館2階 / 新しい北側回遊路",
+      "height": 1000.0,
+      "id": "b-north-2f",
+      "path": "res://docs/screenshots/mall24-b-north-2f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -530.0,
+        12.5550003051758,
+        63.0
+      ],
+      "caption": "B館3階 / 南側回遊路",
+      "height": 1000.0,
+      "id": "b-south-3f",
+      "path": "res://docs/screenshots/mall24-b-south-3f.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -442.0,
+        7.20499992370605,
+        -35.0
+      ],
+      "caption": "B館2階 / C館ガーデンブリッジへの分岐",
+      "height": 1000.0,
+      "id": "bc-junction",
+      "path": "res://docs/screenshots/mall24-bc-junction.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -570.0,
+        1.67999994754791,
+        6.69000005722046
+      ],
+      "caption": "B館1階 / 移設した既存店舗の入口と陳列",
+      "height": 1000.0,
+      "id": "b-store",
+      "path": "res://docs/screenshots/mall24-b-store.png",
+      "width": 1600.0
+    },
+    {
+      "camera_metres": [
+        -410.0,
+        7.25499963760376,
+        46.0
+      ],
+      "caption": "実際のゲーム内案内図 / 2階",
+      "height": 1000,
+      "id": "map-2f",
+      "path": "res://docs/screenshots/mall24-map-2f.png",
+      "width": 1600
+    }
+  ],
+  "conditions": "Godot 4.6.3 Compatibility, balanced, Linux Mesa llvmpipe. NPC clock frozen; HUD/tool hidden for architecture views. Actual game geometry, materials and lighting, no cutaway. Not an FPS benchmark.",
+  "population": 1000,
+  "seed": 912,
+  "version": "0.24.0"
+}

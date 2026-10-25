@@ -4,17 +4,22 @@ extends RefCounted
 ## merchandising / waiting plan; no new identities or shop leases are created.
 static var station_cache:Dictionary={}
 static var obstacle_cache:Dictionary={}
-const BACK := [Vector2(-386.8,88.3),Vector2(-320.8,102.6),Vector2(-254.1,92.7)]
-const GUIDES := [Vector2(-426,-20),Vector2(-320,21.7),Vector2(-224,-20)]
+static var BACK:Array[Vector2]=plan_points("back_destinations")
+static var GUIDES:Array[Vector2]=plan_points("guide_points")
+static func plan_points(key:String)->Array[Vector2]:
+ var result:Array[Vector2]=[]
+ for p:Array in MallStructureData.DATA.B[key]:result.append(Vector2(p[0],p[1]))
+ return result
 
 static func stations(level:int)->Array[Dictionary]:
  if station_cache.has(level):return station_cache[level]
  var result:Array[Dictionary]=[]
  if level not in [0,1,2]:return result
  if level==0:
-  result.append(_station("b.info","光の広場 / 総合案内",level,Vector2(-218,10),"information"))
-  result.append(_station("b.event","時の広場 / 季節の催事",level,Vector2(-325,39),"event"))
-  result.append(_station("b.demo","翼の広場 / 家電体験",level,Vector2(-430,8),"digital"))
+  var at:=plan_points("ground_destinations")
+  result.append(_station("b.info","光の広場 / 総合案内",level,at[0],"information"))
+  result.append(_station("b.event","時の広場 / 季節の催事",level,at[1],"event"))
+  result.append(_station("b.demo","翼の広場 / 家電体験",level,at[2],"digital"))
  var names:Array=[
   ["旅の道具 / 比較展示","回遊路 / 休憩ラウンジ","暮らしの道具 / 比較展示"],
   ["読書ラウンジ","家具 / 座り心地の展示","季節のスタイル展示"],

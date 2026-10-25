@@ -60,16 +60,16 @@ func verify()->void:
  # Former long blank walls now have destinations reached along the actual rear lane.
  for level in [0,1,2]:
   var y:=Mall.floor_height(level)
-  game.player.position=Vector3(-402,y+.05,80);game.player.velocity=Vector3.ZERO
-  expect(await follow_nav(game,Vector3(-386.8,y,85.2),12),"Player walks the rear concourse to its western public destination on floor "+str(level+1))
- game.player.position=Vector3(-340,.05,49);game.player.velocity=Vector3.ZERO
- expect(await follow_nav(game,Vector3(-328,0,35.5),12),"Player approaches the central event stalls around their real collisions")
+  game.player.position=Vector3(-560,y+.05,61);game.player.velocity=Vector3.ZERO
+  expect(await follow_nav(game,Vector3(-552,y,58.9),12),"Player walks the rear concourse to its western public destination on floor "+str(level+1))
+ game.player.position=Vector3(-433,.05,19);game.player.velocity=Vector3.ZERO
+ expect(await follow_nav(game,Vector3(-417,0,18.5),12),"Player approaches the central event stalls around their real collisions")
  for level in [1,2]:
-  var at:=Vector3(-325,Mall.floor_height(level),43)
+  var at:=Vector3(-414,Mall.floor_height(level),26)
   expect(state.intersect_ray(PhysicsRayQueryParameters3D.create(at+Vector3.UP*.1,at-Vector3.UP*.2,1)).is_empty(),"The public fit-out preserves the upper central atrium opening")
  # The information terminals are usable by the player, not only visual props.
  for level in [0,1]:
-  var at:=Vector3(-219.5,0,9.0) if level==0 else Vector3(-426,Mall.floor_height(1),-20)
+  var at:=Vector3(-219.5,0,8.0) if level==0 else Vector3(-624,Mall.floor_height(1),-20)
   game.set_mode("play");game.player.position=at+Vector3(0,.05,-2.7 if level==0 else 2.0);game.player.velocity=Vector3.ZERO
   game.player.camera.look_at(at+Vector3.UP*1.5)
   var hit:=state.intersect_ray(PhysicsRayQueryParameters3D.create(game.player.camera.global_position,at+Vector3.UP*1.5,1))

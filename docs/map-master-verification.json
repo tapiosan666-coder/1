@@ -1,0 +1,342 @@
+{
+  "version": "0.24.0",
+  "baseline_commit": "66f816da215973da0f85a23d589d332eec451748",
+  "client_date": "2026-10-26",
+  "suites": [
+    {
+      "name": "test_annex.gd",
+      "exit": 0,
+      "seconds": 18.57,
+      "checks": 62,
+      "failures": 0
+    },
+    {
+      "name": "test_b_circulation.gd",
+      "exit": 0,
+      "seconds": 14.55,
+      "checks": 167,
+      "failures": 0
+    },
+    {
+      "name": "test_b_concourse.gd",
+      "exit": 0,
+      "seconds": 6.33,
+      "checks": 28,
+      "failures": 0
+    },
+    {
+      "name": "test_c_upper.gd",
+      "exit": 0,
+      "seconds": 7.13,
+      "checks": 47,
+      "failures": 0
+    },
+    {
+      "name": "test_cat_and_skills.gd",
+      "exit": 0,
+      "seconds": 7.89,
+      "checks": 33,
+      "failures": 0
+    },
+    {
+      "name": "test_dining_layout.gd",
+      "exit": 0,
+      "seconds": 3.37,
+      "checks": 26,
+      "failures": 0
+    },
+    {
+      "name": "test_expansion.gd",
+      "exit": 0,
+      "seconds": 7.57,
+      "checks": 63,
+      "failures": 0
+    },
+    {
+      "name": "test_floor_integrity.gd",
+      "exit": 0,
+      "seconds": 5.13,
+      "checks": 3,
+      "failures": 0
+    },
+    {
+      "name": "test_game.gd",
+      "exit": 0,
+      "seconds": 7.47,
+      "checks": 148,
+      "failures": 0
+    },
+    {
+      "name": "test_mall_layout.gd",
+      "exit": 0,
+      "seconds": 9.54,
+      "checks": 140,
+      "failures": 0,
+      "rerun_after_expected_landing_update": true
+    },
+    {
+      "name": "test_mall_structure.gd",
+      "exit": 0,
+      "seconds": 17.66,
+      "checks": 123,
+      "failures": 0
+    },
+    {
+      "name": "test_population.gd",
+      "exit": 0,
+      "seconds": 9.25,
+      "checks": 22,
+      "failures": 0
+    },
+    {
+      "name": "test_population_ui.gd",
+      "exit": 0,
+      "seconds": 1.02,
+      "checks": 9,
+      "failures": 0
+    },
+    {
+      "name": "test_retail_detail.gd",
+      "exit": 0,
+      "seconds": 1.67,
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "name": "test_scan_and_paths.gd",
+      "exit": 0,
+      "seconds": 3.73,
+      "checks": 22,
+      "failures": 0
+    },
+    {
+      "name": "test_store_signs.gd",
+      "exit": 0,
+      "seconds": 2.82,
+      "checks": 20,
+      "failures": 0
+    },
+    {
+      "name": "test_upper_access.gd",
+      "exit": 0,
+      "seconds": 13.26,
+      "checks": 113,
+      "failures": 0
+    },
+    {
+      "name": "test_upper_and_restrooms.gd",
+      "exit": 0,
+      "seconds": 11.53,
+      "checks": 41,
+      "failures": 0
+    },
+    {
+      "name": "test_visual_access.gd",
+      "exit": 0,
+      "seconds": 1.97,
+      "checks": 2,
+      "failures": 0
+    },
+    {
+      "name": "test_wing_b.gd",
+      "exit": 0,
+      "seconds": 6.53,
+      "checks": 47,
+      "failures": 0
+    },
+    {
+      "name": "test_wing_c.gd",
+      "exit": 0,
+      "seconds": 5.43,
+      "checks": 40,
+      "failures": 0
+    },
+    {
+      "name": "test_map_ui.gd",
+      "exit": 0,
+      "checks": 101,
+      "failures": 0,
+      "polygon_packets": 664
+    },
+    {
+      "name": "test_escalator_render.gd",
+      "exit": 0,
+      "seconds": 3.03,
+      "checks": 2,
+      "failures": 0
+    },
+    {
+      "name": "test_render_materials.gd",
+      "exit": 0,
+      "seconds": 3.19,
+      "checks": 10,
+      "failures": 0
+    },
+    {
+      "name": "test_world_art.gd",
+      "exit": 0,
+      "seconds": 5.19,
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "name": "test_apparel_finish.gd",
+      "exit": 0,
+      "seconds": 3.16,
+      "checks": 8,
+      "failures": 0
+    },
+    {
+      "name": "test_character_motion.gd",
+      "exit": 0,
+      "seconds": 23.96,
+      "checks": 15,
+      "failures": 0
+    },
+    {
+      "name": "test_continuous_civilian.gd",
+      "exit": 0,
+      "seconds": 0.99,
+      "checks": 11,
+      "failures": 0
+    },
+    {
+      "name": "test_face_presentation.gd",
+      "exit": 0,
+      "seconds": 1.04,
+      "checks": 7,
+      "failures": 0
+    },
+    {
+      "name": "test_retail_density.gd",
+      "exit": 0,
+      "seconds": 14.83,
+      "checks": 17,
+      "failures": 0
+    },
+    {
+      "name": "test_map_master.gd",
+      "exit": 0,
+      "checks": 111,
+      "failures": 0
+    }
+  ],
+  "total_checks": 1450,
+  "total_failures": 0,
+  "world": {
+    "fingerprint": "b8a766176c80b049422d40b336db8cc85e233b5a8c8a372f0a8d6758364da933",
+    "floor_contacts": {
+      "floors": 3.0,
+      "height": 1024.0,
+      "static_footprints": 1102.0,
+      "width": 1024.0
+    },
+    "nav_edges": 320569.0,
+    "nav_one_way_arcs": 260.0,
+    "nav_points": 54819.0,
+    "navigation_validation": {
+      "connected": 54819.0,
+      "unreachable": 0.0
+    },
+    "render": {
+      "detail_meshes": 101.0,
+      "detail_surfaces": 220.0,
+      "detail_triangles": 1423188.0,
+      "sectors": 957.0,
+      "source_meshes": 18930.0,
+      "static_surfaces": 4006.0,
+      "static_triangles": 2393621.0,
+      "surfaces": 4226.0,
+      "triangles": 3816809.0
+    },
+    "retail_stock": {
+      "by_kind": {
+        "bag": 812.0,
+        "book_stack": 2994.0,
+        "bottle": 911.0,
+        "bowl": 2962.0,
+        "carton": 4533.0,
+        "coffee_bag": 789.0,
+        "coffee_machine": 3.0,
+        "cosmetics": 1294.0,
+        "fold_stack": 3123.0,
+        "folded": 144.0,
+        "food_pack": 180.0,
+        "fridge": 8.0,
+        "glasses": 468.0,
+        "guitar": 8.0,
+        "headphones": 1692.0,
+        "jacket": 458.0,
+        "jewelry": 702.0,
+        "keyboard": 372.0,
+        "knit": 378.0,
+        "lamp": 6.0,
+        "mannequin": 33.0,
+        "model_car": 1662.0,
+        "mouse": 14.0,
+        "mug": 3836.0,
+        "paper_bag": 47.0,
+        "pastry": 80.0,
+        "plant": 22.0,
+        "popcorn": 9.0,
+        "posters": 94.0,
+        "price_cards": 3034.0,
+        "shirt": 418.0,
+        "shoe": 2519.0,
+        "shoe_box": 1716.0,
+        "stationery": 1008.0,
+        "suitcase": 650.0,
+        "tablet": 22.0,
+        "television": 8.0,
+        "toy": 420.0,
+        "trousers": 589.0,
+        "washer": 8.0
+      },
+      "items": 34898.0,
+      "stores": 101.0
+    },
+    "static_instancing": {
+      "instances": 31948,
+      "invalid_transforms": 0,
+      "nodes": 285,
+      "verified_with_renderer": true
+    },
+    "world_occlusion": {
+      "applied": true,
+      "mean": 0.733373983237615,
+      "method": "static vertex ambient occlusion",
+      "min": 0.610000003874302,
+      "radius_m": 2.4,
+      "rays": 24,
+      "strength": 0.65,
+      "vertices": 6366406
+    }
+  },
+  "floor_audit": "samples=54416 missing=0 horizontal_midpoints=320427 missing=0 implemented_floors=10",
+  "movement_summary": "B館の南北回廊を各階で通行。売場出入り、昇降後の離脱、館間接続。102経路、失敗0。",
+  "systems_summary": "101売場、1000/300人、20訪問地点、猫の接近、宝箱、スキャン最終確認の回帰検証。",
+  "world_sha256": "3bf511e139b972cc7d6796bfbed020d8a536e41eb958d7c0a530cad3fdcd3d4c",
+  "implemented_floors": 10,
+  "target_floors": 15,
+  "npc_modes": [
+    1000,
+    300
+  ],
+  "B_fitted_outlets": [
+    13,
+    13,
+    13
+  ],
+  "physical_conditions": "Godot 4.6.3, fixed 60 Hz headless simulation, real CharacterBody3D input/collision; separate actual GL renderer validation; frozen NPC motion for route tests.",
+  "not_measured": [
+    "Windows native operation",
+    "RTX 4060 Laptop FPS",
+    "5000 NPC rendering or congestion",
+    "three-hour mean live playtime"
+  ],
+  "resolved_initial_failures": [
+    "C1 link wall and glazing at the new north loop crossing",
+    "lounge front foyer missing after walls were reflected in navigation",
+    "b.lounge travel point overlapping the moved light-court escalator"
+  ]
+}

@@ -21,13 +21,13 @@ func run_tests() -> void:
 	var state: PhysicsDirectSpaceState3D = game.get_world_3d().direct_space_state
 	for level in [0,1,2]:
 		var y := Mall.floor_height(level)
-		var floor_hit: Dictionary = state.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(-430,y+.12,-20),Vector3(-430,y-.12,-20),1))
+		var floor_hit: Dictionary = state.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(-624,y+.12,-20),Vector3(-624,y-.12,-20),1))
 		expect(not floor_hit.is_empty() and absf(floor_hit.position.y-y) < .05,"B gallery floor is physical on level %d" % level)
 		var t:=BWing.store_transform(BWing.STORES[0])
 		var entrance := PhysicsRayQueryParameters3D.create(t*Vector3(-346,y+1.6,-6),t*Vector3(-346,y+1.6,-11),1)
 		expect(state.intersect_ray(entrance).is_empty(),"B shop entrance is open on level %d" % level)
 		if level > 0:
-			var hole := PhysicsRayQueryParameters3D.create(Vector3(-430,y+.1,0),Vector3(-430,y-.5,0),1)
+			var hole := PhysicsRayQueryParameters3D.create(Vector3(-624,y+.1,0),Vector3(-624,y-.5,0),1)
 			expect(state.intersect_ray(hole).is_empty(),"B upper concourse keeps the open atrium")
 	var accessible := true
 	for id in range(145,267):
@@ -41,21 +41,21 @@ func run_tests() -> void:
 	game.player.position = Vector3(-106,5.575,-5); game.player.velocity = Vector3.ZERO
 	expect(await walk_to(game,Vector3(-194,5.525,-5),15),"Walk from A's 2F landing across the entire skybridge into B")
 	expect(absf(game.player.position.y-5.525) < .1,"Skybridge traversal preserves the actual 2F height")
-	var b_north:=Vector3(-274.85,5.575,8.94)
+	var b_north:=Vector3(-500,5.575,15.35)
 	game.player.position=b_north;game.player.velocity=Vector3.ZERO
-	expect(await walk_to(game,Vector3(-265.15,5.525,33.06),6),"Cross the relocated diagonal atrium bridge with open landings")
-	game.player.position = Vector3(-311.5,.05,35.5); game.player.velocity = Vector3.ZERO
-	expect(await walk_to(game,Vector3(-311.5,5.525,50.5),5),"Walk up the paired escalator beside B's time-court atrium")
-	expect(await walk_to(game,Vector3(-303.5,5.525,50.5),3),"Leave the escalator onto its south landing")
-	expect(await walk_to(game,Vector3(-303.5,5.525,35.5),4),"Use the side gallery to reach the next upward flight")
-	expect(await walk_to(game,Vector3(-311.5,5.525,35.5),3),"Reach the north landing around the open shaft")
-	expect(await walk_to(game,Vector3(-311.5,10.875,50.5),5),"Walk from B's second floor onto the third-floor landing")
+	expect(await walk_to(game,Vector3(-460,5.525,20.3),6),"Walk the solid main concourse between independent atria")
+	game.player.position = Vector3(-427.5,.05,18.5); game.player.velocity = Vector3.ZERO
+	expect(await walk_to(game,Vector3(-427.5,5.525,33.5),5),"Walk up the paired escalator beside B's time-court atrium")
+	expect(await walk_to(game,Vector3(-435.5,5.525,33.5),3),"Leave the escalator onto its south landing")
+	expect(await walk_to(game,Vector3(-435.5,5.525,18.5),4),"Use the side gallery to reach the next upward flight")
+	expect(await walk_to(game,Vector3(-427.5,5.525,18.5),3),"Reach the north landing around the open shaft")
+	expect(await walk_to(game,Vector3(-427.5,10.875,33.5),5),"Walk from B's second floor onto the third-floor landing")
 	expect(absf(game.player.position.y-10.875) < .12,"B's top landing has the expected height")
-	expect(await walk_to(game,Vector3(-308.5,10.875,50.5),2),"Cross the top landing to the downward escalator")
-	expect(await walk_to(game,Vector3(-308.5,5.525,35.5),5),"Use the dedicated downward flight to the second floor")
-	for point in [Vector3(-303.5,5.525,35.5),Vector3(-303.5,5.525,50.5),Vector3(-308.5,5.525,50.5)]:
+	expect(await walk_to(game,Vector3(-430.5,10.875,33.5),2),"Cross the top landing to the downward escalator")
+	expect(await walk_to(game,Vector3(-430.5,5.525,18.5),5),"Use the dedicated downward flight to the second floor")
+	for point in [Vector3(-435.5,5.525,18.5),Vector3(-435.5,5.525,33.5),Vector3(-430.5,5.525,33.5)]:
 		expect(await walk_to(game,point,4),"Follow the second-floor gallery to the ground-floor downward flight")
-	expect(await walk_to(game,Vector3(-308.5,0,35.5),5),"Use the dedicated downward flight to B's ground floor")
+	expect(await walk_to(game,Vector3(-430.5,0,18.5),5),"Use the dedicated downward flight to B's ground floor")
 	game.player.position = Vector3(-194,.05,-5); game.player.velocity = Vector3.ZERO
 	expect(await walk_to(game,Vector3(-170,0,-5),5),"Walk through the ground link and the opened parking fence")
 	expect(game.run.true_id == original and not game.run.won,"Travelling between buildings never changes the selected original")

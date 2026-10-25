@@ -235,7 +235,7 @@ func _draw() -> void:
 			var anchor:Vector3=BWing.anchor_transform()*Vector3(-401,0,0)
 			_text(["家電売場","家具・暮らし","シネマ"][map_level],_plan_point(Vector2(anchor.x,anchor.z),frame)+Vector2(-25,0),12)
 		if map_level == 0: _text("C館 / 屋外街路",_plan_point(Vector2(MallStructureData.DATA.C.plazas[1].at[0]-18,MallStructureData.DATA.C.plazas[1].at[1]-42),frame),15)
-		_text("A↔B：2階連絡通路・1階歩行路 ／ B↔C：B館1階の北西連絡通路",Vector2(120,626),15,muted)
+		_text("A↔B：1階歩道・2階連絡通路 ／ B↔C：1階歩道・2階ガーデンブリッジ",Vector2(120,626),15,muted)
 
 func _draw_minimap() -> void:
 	draw_rect(Rect2(30, 712, 250, 153), Color(0.035, 0.07, 0.085, 0.9))
@@ -376,15 +376,27 @@ func _draw_map_polygon(points:PackedVector2Array,frame:Rect2,color:Color,border:
 		# Clipping a moving minimap can produce duplicate/collinear vertices or
 		# zero-area slivers on the frame edge. Normalize before triangulation,
 		# and submit the resulting indices rather than triangulating in Canvas.
-		var fill := clean_map_polygon(clipped)
-		if fill.size()<3: continue
-		var indices := Geometry2D.triangulate_polygon(fill)
+		var packet:=map_triangles(clipped)
+		if packet.is_empty():continue
+		var fill:PackedVector2Array=packet.points
+		var indices:PackedInt32Array=packet.indices
 		if indices.is_empty():
 			push_error("Non-degenerate map polygon could not be triangulated")
 			continue
 		RenderingServer.canvas_item_add_triangle_array(get_canvas_item(),indices,fill,PackedColorArray([color]))
 	if border and frame.size.x > 400:
 		polygon.append(polygon[0]); draw_polyline(polygon,Color("839796"),1,true)
+
+static func map_triangles(clipped:PackedVector2Array)->Dictionary:
+	var fill:=clean_map_polygon(clipped)
+	if fill.size()<3:return {}
+	var indices:=Geometry2D.triangulate_polygon(fill)
+	# Pixel snapping can turn a valid narrow corner into a self-touching ring.
+	# Keep the exact clipped coordinates when their triangulation is valid.
+	if indices.is_empty():
+		var original_indices:=Geometry2D.triangulate_polygon(clipped)
+		if not original_indices.is_empty():fill=clipped;indices=original_indices
+	return {"points":fill,"indices":indices}
 
 static func clean_map_polygon(polygon: PackedVector2Array) -> PackedVector2Array:
 	var result := PackedVector2Array()

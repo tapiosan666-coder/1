@@ -42,4 +42,5 @@ func _initialize()->void:
     for station:Dictionary in BConcourse.stations(level):f.destinations.append({"name":station.name,"at":[station.at.x,station.at.y]})
    if building=="C" and level in [0,1]:f.stairs=[[-382,-89],[-357,-89]]
    floors.append(f)
- var out:=FileAccess.open("res://docs/structure-floor-plans.json",FileAccess.WRITE);out.store_string(JSON.stringify(floors,"  "));out.close();print("FLOOR_PLAN_EXPORT ",floors.size());quit()
+ var target:="res://docs/map-master-floor-plans.json" if "--map-master" in OS.get_cmdline_user_args() else "res://docs/structure-floor-plans.json"
+ var out:=FileAccess.open(target,FileAccess.WRITE);out.store_string(JSON.stringify(floors,"  "));out.close();print("FLOOR_PLAN_EXPORT ",floors.size());quit()

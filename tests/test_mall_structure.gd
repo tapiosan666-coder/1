@@ -21,11 +21,11 @@ func verify()->void:
  expect(seen.size()==game.crowd.nav.get_point_count(),"Every navigation point connects to the original entrance")
  for level in [0,1,2]:
   var y:=Mall.floor_height(level)
-  for at in [Vector2(-430,-20),Vector2(-325,22),Vector2(-218,-20),Vector2(-400,80),Vector2(-282,95)]:
+  for at in [Vector2(-624,-20),Vector2(-414,46),Vector2(-218,-20),Vector2(-552,60),Vector2(-337,72)]:
    var p:=Vector3(at.x,y,at.y)
    var hit:=state.intersect_ray(PhysicsRayQueryParameters3D.create(p+Vector3.UP*.12,p-Vector3.UP*.12,1))
    expect(not hit.is_empty(),"B physical gallery/loop floor %d at %s"%[level,at])
-  for at in [Vector2(-430,0),Vector2(-325,43),Vector2(-218,0)]:
+  for at in [Vector2(-624,0),Vector2(-414,26),Vector2(-218,0)]:
    var p:=Vector3(at.x,y,at.y)
    var hit:=state.intersect_ray(PhysicsRayQueryParameters3D.create(p+Vector3.UP*.10,p-Vector3.UP*.15,1))
    expect(hit.is_empty() if level>0 else not hit.is_empty(),"Three B courts have solid 1F and open 2F/3F centres: %d %s"%[level,at])
@@ -46,8 +46,8 @@ func verify()->void:
   expect(Mall.walkable(at),"C courts and return street have public floors at %s"%at)
   var path:PackedVector3Array=game.crowd.nav.get_point_path(game.crowd.nav.get_closest_point(Mall.hub_position("中央入口")),game.crowd.nav.get_closest_point(at))
   expect(not path.is_empty(),"C street connects to A's entrance")
- expect(Mall.escalator_carry(Vector3(-311.5,2.7625,43)).z>.8,"B time-court upward escalator follows its new position")
- expect(Mall.escalator_carry(Vector3(-308.5,8.2,43)).z<-.8,"B paired downward escalator moves in the opposite direction")
+ expect(Mall.escalator_carry(Vector3(-427.5,2.7625,26)).z>.8,"B time-court upward escalator follows its new position")
+ expect(Mall.escalator_carry(Vector3(-430.5,8.2,26)).z<-.8,"B paired downward escalator moves in the opposite direction")
  expect(Mall.escalator_carry(Vector3(-241.5,0,9))==Vector3.ZERO,"No conveyor motion remains at the former B escalator")
  # Access all fixed identities through the same path and sight queries used by cats.
  var accessible:=true
@@ -75,7 +75,7 @@ func verify()->void:
    expect(await follow_nav(game,MallCurve.world(Vector3(6,Mall.floor_height(level),-40)),25),"Player enters A's new north gallery on floor %d"%level)
    expect(await follow_nav(game,MallCurve.world(Vector3(69,Mall.floor_height(level),-6)),30),"Player returns through A's east gallery on floor %d"%level)
   game.player.position=Vector3(-194,.05,-5);game.player.velocity=Vector3.ZERO
-  expect(await follow_nav(game,Vector3(-282,0,95),45),"Player reaches B's island shops along the new public circulation")
+  expect(await follow_nav(game,Vector3(-337,0,72),45),"Player reaches B's island shops along the new public circulation")
   expect(await follow_nav(game,Vector3(-432,0,-120),65),"Player walks through B to the redesigned C garden court")
  expect(game.run.true_id==truth and not game.run.won and game.run.cleared==0,"Walking all new structures preserves the true identity and unresolved NPCs")
  game.queue_free();await process_frame

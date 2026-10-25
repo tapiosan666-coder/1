@@ -56,8 +56,12 @@ static func store_index(store:Dictionary)->int:
 	for i in STORES.size():
 		if STORES[i].x==store.x and STORES[i].side==store.side:return i
 	return -1
-static func anchor_transform()->Transform3D:return Transform3D(Basis.IDENTITY,Vector3(-80,0,0))
-static func court_transform()->Transform3D:return Transform3D(Basis.IDENTITY,Vector3(-89.5,0,45))
+static func anchor_transform()->Transform3D:
+	var r:Array=MallStructureData.DATA.B.anchor
+	return Transform3D(Basis.IDENTITY,Vector3(r[0]+416,0,r[1]+26))
+static func court_transform()->Transform3D:
+	var r:Array=MallStructureData.DATA.B.court
+	return Transform3D(Basis.IDENTITY,Vector3(r[0]+246,0,r[1]-8))
 
 static func obstacles(_level:int)->Array[Rect2]:return [] # Oriented blocks are queried without inflating them to AABBs.
 static func blocked(p:Vector3)->bool:
@@ -80,13 +84,20 @@ static func blocked(p:Vector3)->bool:
 			groups.append({"inverse":u.t.affine_inverse(),"bounds":Rect2(-u.half-.8,u.front-.8,u.half*2+1.6,u.back-u.front+1.6),"rects":rects,"sign":-1.0})
 		var fixed:Array[Rect2]=[]
 		fixed.append_array(BConcourse.obstacles(level))
+		# The lounge's three walls are real colliders, including when a new rear
+		# promenade passes behind it. They may never be traversed by AI routes.
+		var lounge:Array=MallStructureData.DATA.B.court
+		for x in [lounge[0],lounge[0]+lounge[2]]:fixed.append(Rect2(x-.125,lounge[1],.25,lounge[3]))
+		fixed.append(Rect2(lounge[0],lounge[1]+lounge[3]-.125,lounge[2],.25))
 		if level in [0,1]:
 			var link:Rect2=GROUND_LINK if level==0 else SKY_LINK
 			for z in [link.position.y,link.end.y]:fixed.append(Rect2(link.position.x,z-.07,link.size.x,.14))
 		if level<2:
 			for flight:Array in escalators():
 				if flight[1]==level:fixed.append(Rect2(flight[0]-1.1,flight[2],2.2,flight[3]-flight[2]))
-		if level==0:fixed.append(Rect2(-327.5,69.7,8,.6))
+		if level==0:
+			var c:Array=MallStructureData.DATA.B.court
+			fixed.append(Rect2(c[0]+8,c[1]+16.7,8,.6))
 		for plaza:Dictionary in MallStructureData.DATA.B.plazas:
 			for side in [-1,1]:fixed.append(Rect2(plaza.at[0]+side*(plaza.radius[0]-3)-.25,plaza.at[1]-.25,.5,.5))
 		groups.append({"inverse":Transform3D.IDENTITY,"bounds":MallStructure.bounds("B",level).grow(1),"rects":fixed,"sign":1.0})
@@ -152,7 +163,7 @@ static func legacy_obstacles(level: int) -> Array[Rect2]:
 static func zone_name(p:Vector3)->String:
 	var level:=Mall.level_at(p.y)
 	if p.x> -190:return "A・B館 / 2階連絡通路" if level==1 else "A・B館 / 駐車場側歩行路"
-	if p.x< -454:return "B館%s / %s"%[Mall.floor_title(level),["家電量販店","ホーム＆リビング","シネマ"][clampi(level,0,2)]]
+	if p.x< MallStructureData.DATA.B.anchor[0]+42:return "B館%s / %s"%[Mall.floor_title(level),["家電量販店","ホーム＆リビング","シネマ"][clampi(level,0,2)]]
 	var name:="回遊モール";var distance:=INF
 	for plaza:Dictionary in MallStructureData.DATA.B.plazas:
 		var d:=Vector2(p.x,p.z).distance_squared_to(Vector2(plaza.at[0],plaza.at[1]))
@@ -173,8 +184,9 @@ func build(root:Node3D)->void:
 	_court();relocate(mall,nodes,slots,court_transform())
 	_build_escalator_banks()
 	_link(0,GROUND_LINK);_link(1,SKY_LINK)
-	for z in [-26.0,26.0]:Shapes.box(mall,Vector3(-481,17.8,z),Vector3(30,2.8,.25),ivory,true)
-	Shapes.box(mall,Vector3(-496,17.8,0),Vector3(.25,2.8,52),ivory,true)
+	var anchor:Array=MallStructureData.DATA.B.anchor
+	for z in [-26.0,26.0]:Shapes.box(mall,Vector3(anchor[0]+15,17.8,z),Vector3(30,2.8,.25),ivory,true)
+	Shapes.box(mall,Vector3(anchor[0],17.8,0),Vector3(.25,2.8,52),ivory,true)
 static func relocate(root:Node3D,nodes:int,slots:int,t:Transform3D)->void:
 	for i in range(nodes,root.get_child_count()):
 		var child:Node=root.get_child(i)

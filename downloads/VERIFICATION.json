@@ -1,70 +1,131 @@
 {
-  "version": "0.23.0",
-  "artifacts": {
-    "Windows": {
-      "bytes": 103009441,
-      "sha256": "77de275af2d08402dc107554f58977098f8339a2fe0395d0bd3884d8a06a9fbd",
-      "crc_ok": true
-    },
-    "Linux": {
-      "bytes": 94259883,
-      "sha256": "8639f6f1bb6066429660404a27b01a7f0530595c16209192a62d9eaed3f4bf88",
-      "crc_ok": true
-    },
-    "Source": {
-      "bytes": 74512998,
-      "sha256": "76ed1eae11cf683c500753d2d3a3661b9a8ca739844f6f4723240e719a69e15a",
-      "crc_ok": true
-    }
+  "version": "0.24.0",
+  "game_qa": {
+    "suites": 31,
+    "checks": 1450,
+    "failures": 0
+  },
+  "world_fingerprint": "b8a766176c80b049422d40b336db8cc85e233b5a8c8a372f0a8d6758364da933",
+  "world_sha256": "3bf511e139b972cc7d6796bfbed020d8a536e41eb958d7c0a530cad3fdcd3d4c",
+  "navigation": {
+    "connected": 54819.0,
+    "unreachable": 0.0
+  },
+  "floor_audit": "samples=54416 missing=0 horizontal_midpoints=320427 missing=0 implemented_floors=10",
+  "distribution": {
+    "implemented_floors": 10,
+    "target_floors": 15,
+    "outlets": 101,
+    "B_outlets": [
+      13,
+      13,
+      13
+    ],
+    "population_modes": [
+      1000,
+      300
+    ],
+    "travel_points": 20
+  },
+  "fresh_source": {
+    "source_zip_sha256": "85ae67a642d6ae4d27cf68f1b63a29dd1483288511cc1da33cedb6532c8d4e4a",
+    "suites": [
+      {
+        "suite": "test_population.gd",
+        "exit": 0,
+        "checks": 22,
+        "failures": 0
+      },
+      {
+        "suite": "test_upper_access.gd",
+        "exit": 0,
+        "checks": 113,
+        "failures": 0
+      },
+      {
+        "suite": "test_map_ui.gd",
+        "exit": 0,
+        "checks": 101,
+        "failures": 0
+      },
+      {
+        "suite": "test_floor_integrity.gd",
+        "exit": 0,
+        "checks": 3,
+        "failures": 0
+      },
+      {
+        "suite": "test_world_art.gd",
+        "exit": 0,
+        "checks": 6,
+        "failures": 0
+      }
+    ],
+    "zip_crc": true,
+    "fresh_import_exit": 0,
+    "native_linux": "Separate real-GL 1000-population / 30-frame launch, exit 0",
+    "not_tested": "Windows native runtime, RTX FPS"
   },
   "native_linux": {
+    "exit": 0,
+    "real_renderer": true,
     "frames": 30,
-    "exit_code": 0,
-    "elapsed_seconds": 38.16,
-    "renderer": "Mesa llvmpipe; actual Linux native export using Windows-exported shared PCK",
     "population": 1000,
     "fixed": 900,
     "walking": 100,
-    "runtime_errors": 0,
-    "population_log_present": true,
-    "not_an_fps_benchmark": true
+    "fps_benchmark": false
   },
-  "fresh_source_extract": {
-    "import": {
-      "exit_code": 0,
-      "errors": [],
-      "seconds": 13.63
+  "native_windows": {
+    "cross_export_success": true,
+    "runtime_tested": false,
+    "signed": false
+  },
+  "windows_zip_compression": {
+    "source_sha256": "0463e27d449646973df71972ffca9bc6b3d16d68c11a6121666473a9acc22d7f",
+    "compressed_sha256": "adc7318475adafd97c8926ddf600fcd5a099a640340d84e48cbabe8ef91df53e",
+    "method": "standard ZIP Deflate (Zopfli optimal encoding)",
+    "iterations": 5,
+    "compressed_bytes": 34761921,
+    "uncompressed_bytes": 104551936,
+    "seconds": 248.18197512626648
+  },
+  "review": {
+    "pdf_pages": 15,
+    "bookmarks": 15,
+    "new_game_screenshots": 12,
+    "new_maps": 4,
+    "strict_pdf_reader": true,
+    "zip_crc": true,
+    "browser_overflows": 0,
+    "broken_images": 0,
+    "html_assets_embedded": true
+  },
+  "artifacts": {
+    "FIND_YOURSELF-Windows.zip": {
+      "bytes": 104639950,
+      "sha256": "ff56dffa0d54419d7bd04a702d5d64e40d43b3ac36b3ea896f0fa15648278175"
     },
-    "population": {
-      "exit_code": 0,
-      "errors": [],
-      "seconds": 12.55,
-      "checks": 22,
-      "failures": 0
+    "FIND_YOURSELF-Source.zip": {
+      "bytes": 88595883,
+      "sha256": "85ae67a642d6ae4d27cf68f1b63a29dd1483288511cc1da33cedb6532c8d4e4a"
     },
-    "upper_access": {
-      "exit_code": 0,
-      "errors": [],
-      "seconds": 95.31,
-      "checks": 113,
-      "failures": 0
+    "FIND_YOURSELF-v0.24-Map-Review.pdf": {
+      "bytes": 2797088,
+      "sha256": "9d9ae71e4922022a28c0288948d14c3c44cf6ffcc5ea0fea39307f189a373401"
     },
-    "floor_integrity": {
-      "exit_code": 0,
-      "errors": [],
-      "seconds": 4.76,
-      "checks": 3,
-      "failures": 0
+    "FIND_YOURSELF-v0.24-Map-Review.html": {
+      "bytes": 4001103,
+      "sha256": "e969b8af336fef83da34c002c3b207a459c328cc1c765048be79915bb9bccf2c"
     },
-    "world_art": {
-      "exit_code": 0,
-      "errors": [],
-      "seconds": 2.44,
-      "checks": 6,
-      "failures": 0
+    "FIND_YOURSELF-v0.24-Map-Review.zip": {
+      "bytes": 16526950,
+      "sha256": "2bb72104ee40974b41991a2c6a40b8aa01f2a2b2aa504aa8fa58313e773c5d9d"
     }
   },
-  "test_suites": 29,
-  "unique_checks": 1238,
-  "test_failures": 0
+  "not_tested": [
+    "Windows native operation",
+    "RTX 4060 Laptop FPS",
+    "5000 NPC rendering or congestion",
+    "three-hour mean live playtime"
+  ]
 }

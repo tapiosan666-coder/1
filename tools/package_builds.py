@@ -3,6 +3,9 @@
 from hashlib import sha256
 import json
 import re
+import argparse
+import struct
+import zlib
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 from urllib.parse import quote
@@ -10,100 +13,54 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
 SOURCE_HISTORY_URL = "https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.23.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.24.0
 
-旧版とは別フォルダーにZIP全体を展開してから起動してください。
-Windows: FIND_YOURSELF.exe をダブルクリック。
-Linux: ./FIND_YOURSELF.x86_64（必要なら chmod +x）。
-FIND_YOURSELF.pck は実行ファイルと同じフォルダーに置いてください。
+旧版とは別フォルダーにZIP全体を展開してください。
+Windows: FIND_YOURSELF.exe / Linux: ./FIND_YOURSELF.x86_64
+FIND_YOURSELF.pck は実行ファイルと同じフォルダーに置きます。
 
-タイトルの「探索人数」で1,000人（既定）/300人を選び、「探索をはじめる」で開始。WASD移動、マウス視点。
-初期装備は手持ちスキャナーです。6m以内の1人を狙い、左クリックを2秒長押し。
-視線を外す・ボタンを離すと最初からやり直しです。
-Tabの「スキャン銃」を購入すると銃が使えます。1000人版は3,330AP、300人版は1,000AP。
-1で初期スキャナー、2で銃に切替。銃は左クリック射撃、Rリロード。
-右クリック照準、Shiftダッシュ、Spaceジャンプ。
-購入後は空中でSpaceを再度押すと二段ジャンプ。
-E連鎖スキャン（最大8人・5m間隔・再使用20秒）。
-貫通スキャン購入後は銃弾が最大3人に命中、壁で止まります。
-ファストトラベルは100 APで購入後、訪問済み案内ポイントへMから移動。
-入口・中央広場・食品スーパー・フードコート・お手洗い前・2階/3階アトリウム・地下食品街・屋上庭園・西駐車場、各2m以内で訪問記録。
-Tab強化（4系統から選択し、右側の購入ボタンで確定）、Fソナー、Q範囲スキャン、M案内図、Esc一時停止。
-近くの個室・多機能室・試着室の扉を狙うと、Fは扉の開閉になります。画面の案内に従ってください。
-扉の動く範囲に人がいる場合は操作を止めます。少し離れてから操作してください。
-近くの宝箱をGで開け、Iでバッグ、Xで選択アイテムを使用。
-近くの人には日本語の吹き出しが出ます。
-猫は通行可能な位置から自動でスキャンし、探索・移動・スキャン状態と秒数を左上へ表示。
-初期は接近後20秒、移動時間は別。メニュー中は猫も止まります。
-2・3階はA館4m、B館6.5mの回廊で吹き抜けを維持。C館2階は8mの回廊です。
-選んだ人数のうち本物は1人。偽物を処理すると10 AP。
-銃・猫・範囲は本物の場所を通知するだけです。
-最後は必ず1の初期スキャナーで本物を規定時間（未強化2秒）スキャンしてクリアします。
+WindowsのSmart App Controlが未署名EXEをブロックする場合：
+公式Godot 4.6.3 Standardを使用し、別配布のSource.zipを展開。
+Godotの「インポート」で FIND_YOURSELF/project.godot を選び、F5で実行。
+詳しくはSource.zipの「起動手順.txt」をご覧ください。
 
-現版はA館の地下・1〜3階・屋上と西駐車場、B館1〜3階、C館1・2階の開発用区画です。湾曲した約180mの主通路、3層吹き抜け、
-各階12専門店、1階の大型食品スーパー・フードコート・お手洗い・読書席・倉庫があります。
-中央広場のエスカレーターから2・3階へ行けます。入口後方の西側階段は地下から屋上まで接続。
-西駐車場へは西側階段の1階出口から行けます。店員・着席客・休憩客と歩行者を計300人配置。
-宝箱10個と使い切りアイテム8種類を実装。5,000人・15フロアの製品版ではありません。
-B館1〜3階は3広場と回遊路、階ごとに異なる8店舗、西側の家電・生活用品・映画館。A館2階の西側階段からガラス張り連絡通路へ、
-または西駐車場の1階歩行路からB館へ行けます。訪問済み移動は20地点、地図の階切替だけでは訪問扱いになりません。
-Escから軽量・標準・高画質を選択でき、使用中のGPU名を確認できます。選択した画質は次回も保持。
-C館1階は3つの中庭を屋外街路で結び、8店舗とベンチ・喫茶席を配置。B館1階西端付近から北側の屋根付き連絡通路で接続。
-人数は300人を維持し、30枠をC館へ配置。地図・宝箱の候補にもC館を追加。
-B館地下/屋上・C館地下/3階/屋上、写真顔生成、進行セーブ、Steam連携は未実装。UIは日本語です。日本語フォントを同梱しています。
-Windows版はクロスビルド済みで、Windows実機では未検証です。
-0.17ではA館2階を服飾・コスメ・生活、3階をキッズ・文具・楽器・ホビー中心の各12店舗へ変更。
-全68専門店の看板を、ロゴ・配色・図形・文字組みを持つ42の架空ブランドへ更新。
-0.17.1ではスーパー・地下食品街・フードコート・家電/家具/映画館も含む全83店舗へ拡張。
-補助看板を含む88枚、58ブランド。メニューと価格、館内案内は維持。docs/MALL_SIGNAGE.mdを参照。
-0.18では店舗の陳列を更新。壁面棚、中央ラック、入口平台とマネキンを追加。
-同じ商品モデルを共有する描画方式を使用し、棚と経路の占有範囲を対応させています。
-変更前後の実画面と検証条件はdocs/RETAIL_DENSITY.mdを参照。
-0.19では服と展示用マネキンを立体形状へ更新し、布の織り目と法線、丸い金属ラック、衣料品店の局所照明を追加。
-NPC本体のモデルは変更していません。docs/RETAIL_FINISH.mdを参照。
-0.20ではA館1〜3階へ北側の回遊路、木もれびの広場の3層開口、階ごとの大型売場を追加。
-B館1〜3階を斜めの主回廊・湾曲した副回廊・3広場・店舗島へ、C館1階を3中庭と屋外街路へ改修しました。
-床・衝突・経路・看板・宝箱候補・案内図・訪問済み移動を新配置へ対応しています。
-0.20時点は9/15フロア・300人・86店舗/売場。全15フロアや5,000人の完成ではありません。docs/MALL_STRUCTURE_IMPLEMENTATION.mdを参照。
-1階トイレを入口の目隠し・男女別・洗面12台・個室9・多機能/ベビー室へ更新。
-13枚の扉はFで開閉。NPCと宝箱は空の個室・試着室へ配置せず、猫の経路も通しません。
-300人・20移動地点・初期スキャナーのみで最終確認する仕様は維持。docs/MALL_PHASE2.mdを参照。
-0.16では髪を前・横・後ろまで22の束で作り直し、肩の傾斜・袖の折れ・丸首の襟を調整。
-黒目と口元の線・眉が視線や役割に応じて動きます。全員の基礎の顔と本物のIDは維持。
-変更前後の近接画面は docs/CHARACTER_POLISH.md。写真生成や音声に合わせた口パクの実装ではありません。
-0.15では人物を若い成人のアニメ調へ変更。細い顎、切れ長の目、レイヤー髪、短いジャケットへ更新。
-衣服を連続した変形メッシュに置換し、肩・肘・膝・座り姿勢を調整。実写やペルソナ5相当の完成品質に到達したという意味ではありません。
-フードコートの椅子・テーブル・食器・カウンターを更新し、着席位置と料理の距離も調整。
-変更前後の実描画は docs/CHARACTER_STYLE.md を参照。
-0.14ではA/B/C館の店舗仕上げ・天井設備と人物の手・肩・襟・目・髪・衣服を更新。
-フードコート近くの不要な裏通路と横断壁を撤去し、待合・手洗い給水・返却口・館内案内ラウンジへ整理。
-静的な陰影を同梱し、樹木や書籍の一括描画データが潰れる配布工程を修正。docs/REALISM_COMPARISON.mdを参照。
-0.13では店の商品・小物と値札・ポスターを増やし、猫の終点到着と経路計算を修正。
-初期スキャナー高速化はTabから60/120/180 APで購入し、1.5/1/0.6秒へ短縮。
-照準判定を広げ、壁越しのスキャンは防止します。docs/STORE_COMPARISON.mdを参照。
-0.12では石・木・塗装面の素材、A館上階の床、店舗入口と天井設備を更新。
-比較はソース同梱のdocs/INTERIOR_COMPARISON.md。
-0.11では肌・布のテクスチャ、まばたき、視線と口元、歩行中の腕の動きを更新しました。
-0.10の近距離の顔・体格とA館の天井・床・壁・照明も維持しています。
-A館北側ファッション店が最初の作り込み区画。写実品質や8番出口相当を完成した段階ではありません。
-頭部の土台にCC0の人体メッシュを使用し、ライセンスをthird_party/へ同梱しています。
-音声は合成効果音です。外部API・インターネット接続は不要です。
-Godot Engineおよび同梱ライブラリのライセンスはthird_party/をご覧ください。
-ソースZIPにはゲームの全コード・素材・ツール・テストを収録しています。
-0.21ではC館2階に回廊と書店・生活雑貨店・カフェ、ゲートコートの通常階段、B館2階からのガーデンブリッジを追加。
-B館には広場と背面回遊路の展示・読書・休憩・案内拠点を追加。総合案内端末と上階案内板は近づき、Fで館内案内図を開けます。
-0.21時点は10/15フロア・89店舗・20移動地点。既定1000人（滞在900/歩行100）、比較用300人を選択できます。追加633人を接続済みの売場・通路へ分散し、B館の滞在客は450人です。docs/POPULATION_1000.mdを参照。NPC本体のモデルは変更していません。docs/C_UPPER.mdを参照。
-0.22ではB館1〜3階へ各階4店舗を追加し、全101店舗/売場へ。光・時・翼の吹き抜け広場に上下対のエスカレーターを配置しました。旧側面広場の2本は撤去しています。
-NPCと猫は上り/下りの向きを守って使います。既定1000人・比較用300人、10/15フロア、訪問済み20地点を維持。docs/B_REAR_AND_ESCALATORS.mdを参照。
-0.23ではA館の奥行きを約20%拡張。A館の中央/木もれび、B館の光/時/翼に上下対の昇降口を分散し、B上階の主回廊を10m・背面通路を14mへ拡幅。店前の床を吹き抜けより先に確保しました。
-ガラスに目印と入口表示、壁上端に隙間を閉じる部材を追加。タイトルの「デバッグ：スキャン系スキルを全解放」は任意でONにできます。通常開始は従来の成長を維持します。
-過去版の比較画像は容量を抑えるためGitHubリンクにし、0.23の比較画像は同梱しています。
-ゲームの起動にネット接続は不要です。
+0.24：B館1〜3階の骨格を改修。本体約508×145m、主軸16m、南北回廊14m。
+光（楕円）、時（円）、翼（角丸長方形）の3吹き抜けを2/3階で揃え、
+各広場へ上下対、B館計12本のエスカレーターを配置。各階13売場は移設して維持。
+北回廊からC館1階への接続、C館2階への橋も更新しています。
+A館とC館の売場・中庭は従来を維持。全体は101売場、10/15階層。
+B館地下/屋上、C館地下/3階/屋上、B館のトイレ・階段・EV、回廊沿いの
+新しい店舗区画は未施工です。全館・全店の完成版ではありません。
+構想・比較・実画面・検証は docs/MAP_MASTER_PLAN.md / MAP_MASTER_IMPLEMENTATION.md。
+
+WASD移動、マウス視点、Shiftダッシュ、Spaceジャンプ、Esc設定。
+初期スキャナー：6m以内の1人を狙って左クリックを2秒長押し。
+Tabで強化を購入。初期スキャナーの速度も強化できます。
+銃はスキルで購入（1000人3330 AP / 300人1000 AP）。1で初期、2で銃、Rリロード、右クリック照準。
+E連鎖、Q範囲、Fソナー（各スキル購入後）。Fは近い扉・案内端末の操作を優先。
+M案内図。移動スキル購入後も訪問済みの20地点に限りワープできます。
+G宝箱開封、Iバッグ、X選択アイテム。宝箱は10個、使い切りアイテム8種類。
+猫は接近後20秒で解析し、移動時間は別です。NPCに近づくと日本語の吹き出し。
+
+タイトルで1000人（既定）/300人を選択。デバッグのチェックをONにすると、
+スキャン系スキルを最初から解放します。OFFなら従来のAP成長です。
+本物の固定抽選、偽物10 APは従来通り。銃・猫・特殊は本物の位置通知だけです。
+最終確認は必ず初期スキャナーで行います。他のNPCは勝手に消えません。
+
+A館は地下・1〜3階・屋上庭園と西駐車場。西側通常階段から地下/屋上へ移動。
+B館は1〜3階。A/Bは1階歩道と2階連絡橋、B/Cは1階歩道と2階橋で接続。
+C館は1・2階。ゲートコートの通常階段でも上階へ行けます。
+
+画質はEscで軽量/標準/高画質を選択し、GPU名を確認できます。
+Windows実機/RTX 4060 LaptopのFPS、5000人、3時間の実プレイは未検証。
+ゲーム起動にPython、Blender、APIキー、ネット接続は不要です。
+写真顔生成、進行セーブ、Steam連携は未実装です。
+ライセンスはthird_party/とTHIRD_PARTY_NOTICES.mdを参照してください。
 """
 
 
 def historical_screenshot(relative: Path) -> bool:
-    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall23-")
+    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith(("mall23-", "mall24-"))
 
 
 def source_markdown(path: Path) -> str:
@@ -119,7 +76,31 @@ def source_markdown(path: Path) -> str:
     return re.sub(r"\]\(([^)]+)\)", target, path.read_text())
 
 
+def seed_deflated_zip(target: Path, name: str, data: bytes, compressed: bytes) -> None:
+    """Start a standard Deflate ZIP with an optimally encoded, verified member.
+
+    zipfile can read standard raw Deflate but cannot accept precompressed input
+    through writestr. Write this one ordinary ZIP member, then append the rest
+    with zipfile. No nonstandard compression or runtime decompressor is needed.
+    """
+    if zlib.decompress(compressed, -15) != data:
+        raise ValueError("Precompressed executable does not match the current build")
+    encoded = name.encode("ascii")
+    crc = zlib.crc32(data) & 0xFFFFFFFF
+    date = ((2026 - 1980) << 9) | (10 << 5) | 26
+    local = struct.pack("<I5H3I2H", 0x04034B50, 20, 0, 8, 0, date, crc, len(compressed), len(data), len(encoded), 0)
+    central = struct.pack("<I6H3I5H2I", 0x02014B50, (3 << 8) | 20, 20, 0, 8, 0, date, crc, len(compressed), len(data), len(encoded), 0, 0, 0, 0, 0o100755 << 16, 0) + encoded
+    offset = len(local) + len(encoded) + len(compressed)
+    end = struct.pack("<I4H2IH", 0x06054B50, 0, 0, 1, 1, len(central), offset, 0)
+    with target.open("wb") as handle:
+        handle.write(local); handle.write(encoded); handle.write(compressed); handle.write(central); handle.write(end)
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source-only", action="store_true")
+    parser.add_argument("--windows-deflate", type=Path, help="Verified raw standard Deflate stream of the current Windows executable")
+    args = parser.parse_args()
     cache_script = (ROOT / "scripts/world_cache.gd").read_text()
     inputs = re.search(r'const INPUTS := \[(.*?)\]', cache_script).group(1)
     names = re.findall(r'"([a-z_]+)"', inputs)
@@ -137,9 +118,16 @@ def main() -> None:
         raise ValueError("World cache is stale: run tools/build_world.gd before exporting and packaging")
     artifacts = []
     for platform, executable in [("Windows", "FIND_YOURSELF.exe"), ("Linux", "FIND_YOURSELF.x86_64")]:
+        if args.source_only:
+            continue
         target = BUILD / f"FIND_YOURSELF-{platform}.zip"
-        with ZipFile(target, "w", ZIP_DEFLATED, compresslevel=9) as archive:
+        optimized = platform == "Windows" and args.windows_deflate is not None
+        if optimized:
+            seed_deflated_zip(target, executable, (BUILD / executable).read_bytes(), args.windows_deflate.read_bytes())
+        with ZipFile(target, "a" if optimized else "w", ZIP_DEFLATED, compresslevel=9) as archive:
             for name in [executable, "FIND_YOURSELF.pck"]:
+                if optimized and name == executable:
+                    continue
                 path = BUILD / name
                 if not path.is_file():
                     raise FileNotFoundError(path)
