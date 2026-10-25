@@ -44,6 +44,7 @@ static func obstacles(level:int)->Array[Rect2]:
 		for f in fixtures(s.kind):blocks.append(f.rect)
 		if s.kind=="fashion":blocks.append(fitting_rect()) # Private fitting rooms are player-only navigation.
 		for b in blocks:result.append(_rect_in_plan(b,s))
+	result.append_array(RetailDensity.obstacles("A",level))
 	obstacle_cache[level]=result;return result
 static func door_specs()->Array[Dictionary]:
 	var result:Array[Dictionary]=[]

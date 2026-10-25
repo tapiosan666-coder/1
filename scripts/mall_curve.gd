@@ -126,11 +126,15 @@ static func bake(root: Node3D) -> void:
 			node.global_transform = Transform3D(jacobian(t.origin)*t.basis,world(t.origin))
 	for node in root.find_children("*","MultiMeshInstance3D",true,false):
 		var original: Transform3D = node.global_transform
+		var bounds := AABB()
 		for index in node.multimesh.instance_count:
 			var t: Transform3D = original*node.multimesh.get_instance_transform(index)
-			node.multimesh.set_instance_transform(index,Transform3D(jacobian(t.origin)*t.basis,world(t.origin)))
+			var bent := Transform3D(jacobian(t.origin)*t.basis,world(t.origin))
+			node.multimesh.set_instance_transform(index,bent)
+			var item_bounds: AABB = bent*node.multimesh.mesh.get_aabb()
+			bounds=item_bounds if index==0 else bounds.merge(item_bounds)
 		node.global_transform = Transform3D.IDENTITY
-		node.multimesh.custom_aabb = AABB(Vector3(-110,-10,-90),Vector3(270,40,230))
+		node.multimesh.custom_aabb = bounds.grow(.15)
 	for job in labels:
 		var t: Transform3D = job.transform
 		job.node.global_transform = Transform3D(Basis(Vector3.UP,-angle(t.origin.x))*t.basis,world(t.origin))

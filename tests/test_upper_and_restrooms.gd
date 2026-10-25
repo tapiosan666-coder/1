@@ -73,7 +73,12 @@ func verify()->void:
 	game.player.set_physics_process(true)
 	for position in [Vector3(-57,Mall.floor_height(1),-6),Vector3(15,Mall.floor_height(2),-6)]:
 		game.player.position=MallCurve.world(position+Vector3.UP*.05);game.player.velocity=Vector3.ZERO
-		expect(await walk_to(game,MallCurve.world(position+Vector3(0,0,-11)),4),"Physically walk through the refitted shop entrance without a hidden collision")
+		# Enter through the unchanged doorway, then follow the aisle around the
+		# new central merchandising table instead of walking through that table.
+		var walked:=true
+		for offset in [Vector3(0,0,-4),Vector3(2.2,0,-4),Vector3(2.2,0,-10),Vector3(0,0,-10)]:
+			walked=(await walk_to(game,MallCurve.world(position+offset),4)) and walked
+		expect(walked,"Physically enter the shop and walk around its central display without a hidden collision")
 	game.queue_free();await process_frame
 	print("UPPER/RESTROOM RESULT: %d checks, %d failures"%[checks,failures]);quit(1 if failures else 0)
 

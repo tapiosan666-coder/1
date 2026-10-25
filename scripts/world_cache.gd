@@ -2,7 +2,7 @@ class_name WorldCache
 extends RefCounted
 const PATH := "res://assets/world/mall.scn"
 const SCHEMA := 1
-const INPUTS := ["tenant_catalog","tenant_products","upper_retail","restroom_wing","dining_details","plant_meshes","world_occlusion","dining_wing","mall_atmosphere","retail_batch","retail_models","retail_details","floor_contacts","mall_finishes","display_meshes","retail_polish","mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
+const INPUTS := ["retail_density","stock_models","tenant_catalog","tenant_products","upper_retail","restroom_wing","dining_details","plant_meshes","world_occlusion","dining_wing","mall_atmosphere","retail_batch","retail_models","retail_details","floor_contacts","mall_finishes","display_meshes","retail_polish","mall","mall_curve","mall_annex","b_wing","c_wing","bookshop","mall_fitout","shapes","render_chunks","world_cache","crowd"]
 static var navigation: Dictionary = {}
 static func fingerprint() -> String:
 	var source := ""
@@ -31,4 +31,5 @@ static func mount(mall: Node3D) -> void:
 	mall.set_meta("retail_stock",world.get_meta("retail_stock",{}))
 	mall.set_meta("upper_tenants",world.get_meta("upper_tenants",[]))
 	mall.set_meta("restroom_layout",world.get_meta("restroom_layout",{}))
+	mall.set_meta("stocking_plan",world.get_meta("stocking_plan",[]))
 	navigation = {"hash":hash(mall.spawn_points),"positions":world.get_meta("nav_positions"),"edges":world.get_meta("nav_edges")}

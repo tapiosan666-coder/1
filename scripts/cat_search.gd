@@ -5,7 +5,8 @@ const REACH := 2.2
 static var path_searches := 0
 static func can_scan(from: Vector3,to: Vector3,seated: bool,state: PhysicsDirectSpaceState3D) -> bool:
 	if absf(from.y-to.y) > .6 or from.distance_squared_to(to) > REACH*REACH: return false
-	var ray := PhysicsRayQueryParameters3D.create(from+Vector3.UP*.55,to+Vector3.UP*(.85 if seated else 1.0),1)
+	# Aim at a standing person's visible upper body, above checkout counters.
+	var ray := PhysicsRayQueryParameters3D.create(from+Vector3.UP*.55,to+Vector3.UP*(.85 if seated else 1.5),1)
 	var hit := state.intersect_ray(ray)
 	# The player is not an architectural obstacle for the cat's analysis beam.
 	# Recast past the player so furniture or glass behind them still blocks it.

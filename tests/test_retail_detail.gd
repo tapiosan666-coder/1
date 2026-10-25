@@ -19,7 +19,7 @@ func verify() -> void:
 			if data[Mesh.ARRAY_COLOR] != null:
 				for color in data[Mesh.ARRAY_COLOR]:
 					if color.r < .8 and color.g < .8: colors = true; break
-	expect(detail_count == 68 and items >= 1200,"All 68 implemented shops retain over 1,200 additional goods in the baked scene")
+	expect(detail_count == 83 and items >= 10000,"All 83 implemented outlets retain dense stock in the baked scene")
 	expect(bounded,"Stock batches retain their material budget, distance culling and no-shadow setting after packing")
 	expect(colors,"Bending and caching retain colored merchandise instead of turning it white")
 	var bad := 0; var total := 0

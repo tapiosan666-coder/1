@@ -110,6 +110,7 @@ static func prepare_plan() -> void:
 			obstacles.append(Rect2(x - 0.175, z - 0.175, 0.35, 0.35))
 	obstacles.append_array(DiningWing.obstacles())
 	obstacles.append_array(RestroomWing.obstacles())
+	obstacles.append_array(RetailDensity.obstacles("A",0))
 
 static func inside_floor(p: Vector2) -> bool:
 	prepare_plan()
@@ -256,6 +257,7 @@ func _ready() -> void:
 	DiningWing.new().build(self)
 	DiningDetails.new().build(self)
 	MallAtmosphere.new().build(self)
+	RetailDensity.build(self)
 	FloorContacts.bake(self)
 	for level in [-1,0,1,2,3]:
 		var cells: Dictionary = {}
@@ -267,6 +269,13 @@ func _ready() -> void:
 		for cell in ordered:
 			var p := Vector3(cell.x,floor_height(level),cell.y)
 			if plan_walkable(p): spawn_points.append(MallCurve.world(p))
+	# Shelves create walkable aisles between the old two-metre samples.
+	var sampled:Dictionary={}
+	for point in spawn_points:
+		var p:=MallCurve.plan(point);sampled[Vector3i(roundi(p.x),level_at(p.y),roundi(p.z))]=true
+	for p in RetailDensity.sample_plan_points():
+		var key:=Vector3i(roundi(p.x),level_at(p.y),roundi(p.z))
+		if not sampled.has(key) and plan_walkable(p):spawn_points.append(MallCurve.world(p));sampled[key]=true
 	for slot in identity_slots:
 		slot.yaw -= MallCurve.angle(slot.pos.x)
 		slot.pos = MallCurve.world(slot.pos)

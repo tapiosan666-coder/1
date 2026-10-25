@@ -20,7 +20,7 @@ func run_tests() -> void:
 	expect(CWing.regions(-1).is_empty() and CWing.regions(1).is_empty(),"C only advertises the implemented ground floor")
 	var state: PhysicsDirectSpaceState3D = game.get_world_3d().direct_space_state
 	for store in CWing.SHOPS:
-		var center: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,0,-5)
+		var center: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(2.2,0,-5)
 		var floor_hit: Dictionary = state.intersect_ray(PhysicsRayQueryParameters3D.create(center+Vector3.UP,center-Vector3.UP,1))
 		expect(not floor_hit.is_empty() and absf(floor_hit.position.y) < .05,"Physical floor in C shop %s" % store.name)
 		var doorway: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,1.6,3)
@@ -48,8 +48,15 @@ func run_tests() -> void:
 	expect(await walk_to(game,Vector3(-370,0,-90),14),"Walk from B's west foyer through its north doorway and the entire covered C link")
 	expect(await walk_to(game,Vector3(-370,0,-144),10),"Walk along C's clear central route between the planted islands")
 	expect(await walk_to(game,Vector3(-376,0,-147),3),"Approach the north sports shop from the public court")
-	expect(await walk_to(game,Vector3(-376,0,-158),3),"Enter the north shop without jumping or teleporting")
-	expect(await walk_to(game,Vector3(-376,0,-147),3),"Leave the C shop through the same public doorway")
+	# Follow the public aisle around the new entrance display, in both directions.
+	var entered:=true
+	for point in [Vector3(-376,0,-153.5),Vector3(-373.8,0,-153.5),Vector3(-373.8,0,-158),Vector3(-376,0,-158)]:
+		entered=(await walk_to(game,point,3)) and entered
+	expect(entered,"Enter the north shop around its display without jumping or teleporting")
+	var left_shop:=true
+	for point in [Vector3(-373.8,0,-158),Vector3(-373.8,0,-153.5),Vector3(-376,0,-153.5),Vector3(-376,0,-147)]:
+		left_shop=(await walk_to(game,point,3)) and left_shop
+	expect(left_shop,"Leave the C shop around its display through the same public doorway")
 	expect(game.run.true_id == fixed and not game.run.won,"Physical travel to C preserves the selected original")
 	game.run.ap = 1000; game.run.purchase("travel"); game.run.visited.erase("C館テラス")
 	game.set_mode("map"); game.hud.set_map_floor(0)

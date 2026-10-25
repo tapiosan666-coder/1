@@ -83,6 +83,7 @@ static func obstacles(level: int) -> Array[Rect2]:
 		if level == 0:
 			for x in [-241.5,-227.0]: result.append(Rect2(x-1.1,9,2.2,12))
 			result.append(Rect2(-238,24.7,8,.6))
+	result.append_array(RetailDensity.obstacles("B",level))
 	cached_obstacles[level] = result
 	return result
 

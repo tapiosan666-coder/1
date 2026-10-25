@@ -56,6 +56,7 @@ static func obstacles(level: int) -> Array[Rect2]:
 			obstacle_cache.append(Rect2(x-2,-102.35,4,.7))
 		for x in [-407.0,-317.0]:
 			for z in [-141.0,-99.0]: obstacle_cache.append(Rect2(x-.18,z-.18,.36,.36))
+		obstacle_cache.append_array(RetailDensity.obstacles("C",level))
 	return obstacle_cache
 
 static func contains(p: Vector3) -> bool:

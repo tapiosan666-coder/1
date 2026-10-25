@@ -127,9 +127,7 @@ static func wing_b(root: Node3D,store: Dictionary,y: float) -> void:
 			detail.item("mug",Vector3(px+.4,.82,-13.5))
 	else:
 		for fraction in [-.3,-.1,.1,.3]: detail.cluster(kind,store.w*fraction,1.11,-14.5,1.0,true)
-		for i in 8:
-			var px: float = mirror*(-store.w*.4+i*store.w*.065)
-			detail.item("book_stack" if kind == "books" else "lamp" if kind == "home" else "bag" if kind in ["shoes","clothes"] else "bottle",Vector3(px,1.82,-24.5))
+		# Rear merchandise now belongs to RetailDensity's open shelving.
 	detail.item("paper_bag",Vector3(mirror*store.w*.3+.8,1.13,-22))
 	detail.finish(root,Vector3(store.x,y,0),Basis(Vector3.UP,PI if store.side > 0 else 0.0),kind)
 
