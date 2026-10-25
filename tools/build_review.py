@@ -198,7 +198,7 @@ def build():
  maps={f['id']:draw_map(f) for f in SNAP['floors'] if f['implemented']};site=draw_site();content(maps,site);assert len(PAGES)==30,len(PAGES)
  html=html_document();(OUT/(STEM+'.html')).write_text(html)
  with (OUT/(STEM+'-stores.csv')).open('w',encoding='utf-8-sig',newline='') as handle:
-  writer=csv.writer(handle);writer.writerow(['図の番号','建物','フロア','店舗・売場名','カテゴリ','内部ID'])
+  writer=csv.writer(handle,lineterminator="\n");writer.writerow(['図の番号','建物','フロア','店舗・売場名','カテゴリ','内部ID'])
   for u in UNITS:writer.writerow([f'{u["number"]:03}',u['building'],FLOOR_NAMES[u['level']],u['name'],cat(u),u['id']])
  print('HTML_READY',len(PAGES),'pages',len(html),'characters',flush=True)
  manifest={'version':VERSION,'game_source_commit':REV,'pages':len(PAGES),'screenshots':SNAP['captures'],'maps':[p.name for p in maps.values()]+[site.name],'outlets':len(UNITS),'font_license':'third_party/noto-cjk-COPYRIGHT.txt','notes':['Screens are actual game renders; preparation is disclosed per image.','Maps are diagrams exported from the same current geometry definitions.','The game and its downloadable build ZIPs are not modified by this documentation task.']}
