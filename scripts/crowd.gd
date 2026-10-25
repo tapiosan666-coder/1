@@ -61,7 +61,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 				lookup[Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))] = i
 			for i in points.size():
 				var cell := Vector3i(roundi(MallCurve.plan(points[i]).x), Mall.level_at(points[i].y), roundi(MallCurve.plan(points[i]).z))
-				for offset in [Vector3i(1,0,0),Vector3i(0,0,1),Vector3i(2,0,0),Vector3i(0,0,2)]:
+				for offset in [Vector3i(1,0,0),Vector3i(0,0,1),Vector3i(2,0,0),Vector3i(0,0,2),Vector3i(1,0,1),Vector3i(1,0,-1),Vector3i(2,0,2),Vector3i(2,0,-2),Vector3i(1,0,2),Vector3i(1,0,-2),Vector3i(2,0,1),Vector3i(2,0,-1)]:
 					if lookup.has(cell + offset):
 						var other: int = lookup[cell + offset]
 						if Mall.plan_segment_walkable(Vector3(cell.x,Mall.floor_height(cell.y),cell.z),Vector3((cell+offset).x,Mall.floor_height(cell.y),(cell+offset).z)):
@@ -102,6 +102,7 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 					else: nav.add_point(id,p)
 					if previous >= 0: nav.connect_points(previous,id)
 					previous = id
+		Mall.segment_probe_cache.clear()
 		cached_nav = nav
 		cached_nav_hash = key
 		cached_nav_ids = nav_ids

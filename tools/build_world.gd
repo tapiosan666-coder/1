@@ -29,6 +29,18 @@ func build() -> void:
 	var instancing:=check_instancing(mall)
 	var crowd := Crowd.new(); crowd.process_mode = Node.PROCESS_MODE_DISABLED; root.add_child(crowd)
 	crowd.setup(IdentityRun.new(1,1),mall.spawn_points)
+	var origin:=crowd.nav.get_closest_point(Mall.hub_position("中央入口"))
+	var reached:Dictionary={origin:true};var pending:Array[int]=[origin];var cursor:=0
+	while cursor<pending.size():
+		var id:=pending[cursor];cursor+=1
+		for next in crowd.nav.get_point_connections(id):
+			if not reached.has(next):reached[next]=true;pending.append(next)
+	if reached.size()!=crowd.nav.get_point_count():
+		push_error("Navigation has unreachable samples; previous saved world will not be overwritten.")
+		for id in crowd.nav_ids:
+			if not reached.has(id):print("UNREACHABLE_SAMPLE ",MallCurve.plan(crowd.nav.get_point_position(id)))
+		quit(1);return
+	print("NAV_CONNECTED ",reached.size())
 	var positions := PackedVector3Array(); var edges := PackedInt32Array()
 	for id in crowd.nav.get_point_ids():
 		positions.append(crowd.nav.get_point_position(id))
@@ -38,6 +50,7 @@ func build() -> void:
 	for child in mall.get_children(): child.reparent(world,true)
 	assign_owner(world,world)
 	world.set_meta("static_instancing",instancing)
+	world.set_meta("navigation_validation",{"connected":reached.size(),"unreachable":0})
 	if "--emit-occlusion" in OS.get_cmdline_user_args():world.set_meta("occlusion_input_sha256",FileAccess.get_sha256("/tmp/fy14-ao-in.bin"))
 	world.set_meta("schema",WorldCache.SCHEMA)
 	world.set_meta("spawn_points",mall.spawn_points); world.set_meta("identity_slots",mall.identity_slots)
@@ -60,7 +73,7 @@ func build() -> void:
 	var packed := PackedScene.new(); assert(packed.pack(world) == OK)
 	DirAccess.make_dir_recursive_absolute("res://assets/world")
 	assert(ResourceSaver.save(packed,WorldCache.PATH,ResourceSaver.FLAG_COMPRESS) == OK)
-	var manifest := {"static_instancing":instancing,"fingerprint":WorldCache.fingerprint(),"render":mall.render_stats,"nav_points":positions.size(),"nav_edges":edges.size()/2,"floor_contacts":mall.get_meta("floor_contacts",{}),"retail_stock":stock}
+	var manifest := {"navigation_validation":{"connected":reached.size(),"unreachable":0},"static_instancing":instancing,"fingerprint":WorldCache.fingerprint(),"render":mall.render_stats,"nav_points":positions.size(),"nav_edges":edges.size()/2,"floor_contacts":mall.get_meta("floor_contacts",{}),"retail_stock":stock}
 	var file := FileAccess.open("res://assets/world/manifest.json",FileAccess.WRITE); file.store_string(JSON.stringify(manifest,"  ")); file.close()
 	print("WORLD_CACHE: ",JSON.stringify(manifest))
 	quit()

@@ -1,9 +1,9 @@
 class_name DiningWing
 extends RefCounted
-## Public dining approach, not a second unoccupied loop behind retail units.
+## Dining waiting area and a public junction into the furnished north shopping gallery.
 const INFO := Rect2(-48,-24,18,9)
 const FOYER := Rect2(60,-32,20,24)
-const CLOSED_REAR := Rect2(-48,-36,94,12)
+const CLOSED_REAR := Rect2(-30,-36,90,12)
 const WAIT_SEATS := [Vector3(62.35,0,-20.9),Vector3(62.35,0,-19.3),Vector3(77.65,0,-20.9),Vector3(77.65,0,-19.3)]
 var root: Node3D
 var oak := Shapes.timber()
@@ -26,7 +26,7 @@ func build(mall: Node3D) -> void:
 	_foyer()
 	_tenants()
 	_garden()
-	mall.set_meta("dining_layout",{"closed_rear_m2":1128,"waiting_seats":4,"main_aisle_m":8,"tenants":4})
+	mall.set_meta("dining_layout",{"closed_rear_m2":1080,"waiting_seats":4,"main_aisle_m":8,"tenants":4})
 func _label(at: Vector3,text: String,size: int=30,yaw: float=0) -> void:
 	var label := Shapes.sign_text(root,at,text,size,Color("f1ead8")); label.rotation.y=yaw; label.pixel_size=.0045
 func _bench(x: float,z: float,length: float,yaw: float=0) -> void:
@@ -38,14 +38,21 @@ func _bench(x: float,z: float,length: float,yaw: float=0) -> void:
 func _lounge() -> void:
 	Shapes.box(root,Vector3(-39,4.9,-19.5),Vector3(18,.14,9),cream)
 	for x in [-45.0,-33.0]: _bench(x,-23.0,5.0)
+	var board_start:=root.get_child_count()
 	Shapes.box(root,Vector3(-39,2.15,-23.80),Vector3(4.0,3.4,.12),oak)
 	Shapes.box(root,Vector3(-39,2.35,-23.70),Vector3(3.35,2.5,.04),dark)
 	_label(Vector3(-39,3.05,-23.65),"A館  1F / 館内案内",44)
 	_label(Vector3(-39,2.45,-23.65),"2F　ファッション・生活雑貨\n3F　専門店・回廊\n1F　食品・フードコート\nB1F 食品街　RF 屋上庭園",25)
-	# This rear boundary is physically closed; it never looks like an empty route.
+	var turn:=Basis(Vector3.UP,PI/2)
+	BWing.relocate(root,board_start,root.identity_slots.size(),Transform3D(turn,Vector3(-47.78,0,-20)-turn*Vector3(-39,0,-23.80)))
+	# Keep the central approach clear; the staff panel belongs on the private strip wall.
+	var staff_start:=root.get_child_count()
 	Shapes.box(root,Vector3(-31.5,1.15,-23.79),Vector3(1.05,2.3,.10),Shapes.material(Color("a5a6a0")))
 	_label(Vector3(-31.5,1.65,-23.7),"スタッフ専用",16)
 	Shapes.box(root,Vector3(-31.88,1.0,-23.65),Vector3(.035,.10,.04),steel)
+	var staff_turn:=Basis(Vector3.UP,-PI/2)
+	BWing.relocate(root,staff_start,root.identity_slots.size(),Transform3D(staff_turn,Vector3(-30.17,0,-30)-staff_turn*Vector3(-31.5,0,-23.79)))
+	_label(Vector3(-39,3.2,-23.7),"木もれびの広場・北側回廊 ↑",28)
 	_planter(Vector3(-46.6,0,-17.3),1.8)
 	for x in [-45.0,-39.0,-33.0]:
 		Shapes.box(root,Vector3(x,4.78,-19),Vector3(1.5,.08,.5),dark)

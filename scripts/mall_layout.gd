@@ -4,7 +4,7 @@ extends RefCounted
 ## and travel aliases while upper-floor fit-outs can define their own obstacles.
 ## This file does not generate or invalidate baked world geometry.
 
-const VERSION := "v017-compat-1"
+const VERSION := "v020-structure-1"
 const BUILDINGS := ["A", "B", "C"]
 const LEVELS := [-1, 0, 1, 2, 3]
 const FLOOR_KEYS := ["B1", "1F", "2F", "3F", "RF"]
@@ -50,6 +50,7 @@ static func floor_data(building: String, level: int) -> Dictionary:
 	if building == "A":
 		if level == 0: retail.append_array(Mall.floor_regions); obstacles.append_array(Mall.obstacles)
 		elif level in [1,2]: retail.append_array(Mall.upper_regions()); obstacles.append_array(UpperRetail.obstacles(level))
+		retail.append_array(AExtension.regions(level));obstacles.append_array(AExtension.obstacles(level))
 		annex.append_array(MallAnnex.regions(level))
 		obstacles.append_array(MallAnnex.obstacles(level))
 	elif building == "B":
@@ -90,7 +91,9 @@ static func floor_at(point: Vector3) -> String:
 	var plan := to_plan(point)
 	var level := Mall.level_at(point.y)
 	for building in ["C", "B", "A"]:
+		if MallStructure.contains(building,level,Vector2(plan.x,plan.z)):return floor_id(building,level)
 		for region in floor_data(building, level).regions:
+			if region==MallStructure.bounds(building,level):continue
 			if region.has_point(Vector2(plan.x, plan.z)): return floor_id(building, level)
 	return ""
 

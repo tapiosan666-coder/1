@@ -38,7 +38,7 @@ func run_tests() -> void:
 	var counts: Dictionary = {}
 	for role in game.crowd.roles:
 		counts[role] = int(counts.get(role, 0)) + 1
-	for expected in [["staff", 42], ["browsing", 40], ["reading",2], ["seated", 14], ["restroom", 6], ["conversation", 4], ["walking", 12]]:
+	for expected in [["staff", 45], ["browsing", 37], ["reading",2], ["seated", 14], ["restroom", 6], ["conversation", 4], ["walking", 12]]:
 		expect(counts.get(expected[0], 0) == expected[1], "Role population: %s" % expected[0])
 	var sitter: int = game.crowd.roles.find("seated")
 	var staff: int = game.crowd.roles.find("staff")
@@ -75,10 +75,14 @@ func run_tests() -> void:
 	expect(not game.equip(true), "Cannot equip locked gun")
 	expect(game.player.handheld.visible and not game.player.gun.visible, "Correct initial tool model visible")
 	expect(game.crowd.positions.size() == 120, "120 scene identities created")
-	var reachable := true
-	for point in game.crowd.nav_ids:
-		if game.crowd.nav.get_point_path(0, point).is_empty():
-			reachable = false
+	# A single graph traversal proves connectivity without tens of thousands
+	# of independent long-distance A* queries after a larger map is authored.
+	var connected:Dictionary={0:true};var pending:Array[int]=[0];var cursor:=0
+	while cursor<pending.size():
+		var point:=pending[cursor];cursor+=1
+		for next in game.crowd.nav.get_point_connections(point):
+			if not connected.has(next):connected[next]=true;pending.append(next)
+	var reachable:bool=connected.size()==game.crowd.nav.get_point_count()
 	expect(reachable, "NPC grid is connected")
 	var start_x: float = game.player.position.x
 	Input.action_press("forward")

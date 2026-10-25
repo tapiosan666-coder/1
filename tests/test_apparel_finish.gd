@@ -50,13 +50,13 @@ func verify()->void:
     correct=correct and transform.origin.is_finite() and absf(transform.basis.determinant())>.00001 and node.multimesh.custom_aabb.encloses(transform*node.multimesh.mesh.get_aabb())
   expect(found.size()==6 and total>3000 and correct,"Saved stores use volumetric apparel with valid instancing, culling and bounds")
   var stock:Dictionary=world.get_meta("retail_stock")
-  expect(stock.stores==83 and int(stock.by_kind.get("garment",0))==0 and stock.by_kind.shirt>0 and stock.by_kind.knit>0,"All outlets remain stocked and the old upper-floor flat shirts are replaced")
+  expect(stock.stores==86 and int(stock.by_kind.get("garment",0))==0 and stock.by_kind.shirt>0 and stock.by_kind.knit>0,"All outlets remain stocked and the old upper-floor flat shirts are replaced")
   var washes:=0;var displays:=0;var bounded:=true
   for light:SpotLight3D in world.find_children("*","SpotLight3D",true,false):
    if light.get_meta("apparel_wall_wash",false):washes+=1
    elif light.get_meta("apparel_display_key",false):displays+=1
    else:continue
    bounded=bounded and not light.shadow_enabled and light.spot_range<=7 and light.distance_fade_enabled and light.distance_fade_begin+light.distance_fade_length<=28
-  expect(washes==20 and displays==10 and bounded,"Fashion lighting uses 20 wall washes and 10 display lights with bounded ranges and no extra shadow maps")
+  expect(washes==22 and displays==11 and bounded,"Fashion lighting uses 22 wall washes and 11 display lights with bounded ranges and no extra shadow maps")
   world.queue_free();await process_frame
  print("APPAREL FINISH RESULT: %d checks, %d failures"%[checks,failures]);quit(1 if failures else 0)

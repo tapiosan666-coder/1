@@ -10,7 +10,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
 SOURCE_HISTORY_URL = "https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.19.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.20.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -40,15 +40,15 @@ Tab強化（4系統から選択し、右側の購入ボタンで確定）、Fソ
 銃・猫・範囲は本物の場所を通知するだけです。
 最後は必ず1の初期スキャナーで本物を規定時間（未強化2秒）スキャンしてクリアします。
 
-現版はA館の地下・1〜3階・屋上と西駐車場の開発用セクターです。湾曲した約180mの主通路、3層吹き抜け、
+現版はA館の地下・1〜3階・屋上と西駐車場、B館1〜3階、C館1階の開発用区画です。湾曲した約180mの主通路、3層吹き抜け、
 各階12専門店、1階の大型食品スーパー・フードコート・お手洗い・読書席・倉庫があります。
 中央広場のエスカレーターから2・3階へ行けます。入口後方の西側階段は地下から屋上まで接続。
 西駐車場へは西側階段の1階出口から行けます。店員・着席客・休憩客と歩行者を計300人配置。
 宝箱10個と使い切りアイテム8種類を実装。5,000人・15フロアの製品版ではありません。
-B館1〜3階、各階8店舗、家電・生活用品・映画館を追加。A館2階の西側階段からガラス張り連絡通路へ、
+B館1〜3階は3広場と回遊路、階ごとに異なる8店舗、西側の家電・生活用品・映画館。A館2階の西側階段からガラス張り連絡通路へ、
 または西駐車場の1階歩行路からB館へ行けます。訪問済み移動は18地点、地図の階切替だけでは訪問扱いになりません。
 Escから軽量・標準・高画質を選択でき、使用中のGPU名を確認できます。選択した画質は次回も保持。
-C館1階は屋外広場と8店舗、ベンチ・喫茶席。B館1階西端付近から北側の屋根付き連絡通路で接続。
+C館1階は3つの中庭を屋外街路で結び、8店舗とベンチ・喫茶席を配置。B館1階西端付近から北側の屋根付き連絡通路で接続。
 人数は300人を維持し、30枠をC館へ配置。地図・宝箱の候補にもC館を追加。
 B館地下/屋上・C館の残る階層、写真顔生成、進行セーブ、Steam連携は未実装。UIは日本語です。日本語フォントを同梱しています。
 Windows版はクロスビルド済みで、Windows実機では未検証です。
@@ -61,7 +61,10 @@ Windows版はクロスビルド済みで、Windows実機では未検証です。
 変更前後の実画面と検証条件はdocs/RETAIL_DENSITY.mdを参照。
 0.19では服と展示用マネキンを立体形状へ更新し、布の織り目と法線、丸い金属ラック、衣料品店の局所照明を追加。
 NPC本体のモデルは変更していません。docs/RETAIL_FINISH.mdを参照。
-建物外形・通路の骨格は従来のままです。B館の構造改修は次工程で、現版への実装はまだです。docs/MALL_STRUCTURE_NEXT.mdを参照。
+0.20ではA館1〜3階へ北側の回遊路、木もれびの広場の3層開口、階ごとの大型売場を追加。
+B館1〜3階を斜めの主回廊・湾曲した副回廊・3広場・店舗島へ、C館1階を3中庭と屋外街路へ改修しました。
+床・衝突・経路・看板・宝箱候補・案内図・訪問済み移動を新配置へ対応しています。
+現在は9/15フロア・300人・86店舗/売場。全15フロアや5,000人の完成ではありません。docs/MALL_STRUCTURE_IMPLEMENTATION.mdを参照。
 1階トイレを入口の目隠し・男女別・洗面12台・個室9・多機能/ベビー室へ更新。
 13枚の扉はFで開閉。NPCと宝箱は空の個室・試着室へ配置せず、猫の経路も通しません。
 300人・18移動地点・初期スキャナーのみで最終確認する仕様は維持。docs/MALL_PHASE2.mdを参照。
@@ -87,13 +90,13 @@ A館北側ファッション店が最初の作り込み区画。写実品質や8
 音声は合成効果音です。外部API・インターネット接続は不要です。
 Godot Engineおよび同梱ライブラリのライセンスはthird_party/をご覧ください。
 ソースZIPにはゲームの全コード・素材・ツール・テストを収録しています。
-過去版の比較画像は容量を抑えるためGitHubリンクにし、0.19の比較画像は同梱しています。
+過去版の比較画像は容量を抑えるためGitHubリンクにし、0.20の比較画像は同梱しています。
 ゲームの起動にネット接続は不要です。
 """
 
 
 def historical_screenshot(relative: Path) -> bool:
-    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall19-")
+    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall20-")
 
 
 def source_markdown(path: Path) -> str:
@@ -138,6 +141,8 @@ def main() -> None:
             archive.write(ROOT / "THIRD_PARTY_NOTICES.md", "THIRD_PARTY_NOTICES.md")
             for path in sorted((ROOT / "third_party").glob("*")):
                 archive.write(path, f"third_party/{path.name}")
+        if target.stat().st_size >= 100 * 1024 * 1024:
+            raise ValueError(f"{platform} ZIP exceeds GitHub's 100 MiB individual file limit")
         artifacts.append(target)
     source = BUILD / "FIND_YOURSELF-Source.zip"
     with ZipFile(source, "w", ZIP_DEFLATED, compresslevel=9) as archive:

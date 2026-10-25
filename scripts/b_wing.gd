@@ -1,6 +1,6 @@
 class_name BWing
 extends RefCounted
-## B: straight retail spine, three accessible floors and two physical links to A.
+## B: branched three-court mall. Legacy shop-local fit-outs are placed by the shared plan.
 const MAIN := Rect2(-374,-8,184,16)
 const ANCHOR := Rect2(-416,-26,42,52)
 const COURT := Rect2(-246,8,24,20)
@@ -11,17 +11,22 @@ const GROUND_LINK := Rect2(-190,-8,16,5)
 const SKY_LINK := Rect2(-194,-8,84,5)
 const BRIDGES := [-342.0,-282.0,-222.0]
 const STORES := [
- {"x":-346.0,"w":40.0,"side":-1,"kind":"clothes","name":"CLOSET / ファッション"},
- {"x":-302.0,"w":48.0,"side":-1,"kind":"digital","name":"DIGITAL / 家電と暮らし"},
- {"x":-260.0,"w":36.0,"side":-1,"kind":"sport","name":"FIELD / スポーツ"},
- {"x":-220.0,"w":44.0,"side":-1,"kind":"home","name":"LIVING / インテリア"},
- {"x":-348.0,"w":36.0,"side":1,"kind":"shoes","name":"WALK / 靴と鞄"},
- {"x":-308.0,"w":44.0,"side":1,"kind":"daily","name":"日々の道具 / 生活雑貨"},
- {"x":-266.0,"w":40.0,"side":1,"kind":"books","name":"ページの庭 / 書店・文具"},
- {"x":-210.0,"w":24.0,"side":1,"kind":"cafe","name":"喫茶 リズム"}
+	{"x":-346.0,"w":40.0,"side":-1,"kind":"clothes","name":"CLOSET / ファッション"},
+	{"x":-302.0,"w":48.0,"side":-1,"kind":"digital","name":"DIGITAL / 家電と暮らし"},
+	{"x":-260.0,"w":36.0,"side":-1,"kind":"sport","name":"FIELD / スポーツ"},
+	{"x":-220.0,"w":44.0,"side":-1,"kind":"home","name":"LIVING / インテリア"},
+	{"x":-348.0,"w":36.0,"side":1,"kind":"shoes","name":"WALK / 靴と鞄"},
+	{"x":-308.0,"w":44.0,"side":1,"kind":"daily","name":"日々の道具 / 生活雑貨"},
+	{"x":-266.0,"w":40.0,"side":1,"kind":"books","name":"ページの庭 / 書店・文具"},
+	{"x":-210.0,"w":24.0,"side":1,"kind":"cafe","name":"喫茶 リズム"}
+]
+const TENANTS := [
+	[["NOVA / レディース","clothes"],["KITCHEN LAB / キッチン用品","daily"],["ORBIT / バッグと旅行","travel"],["ROOM / 寝具と暮らし","home"],["STUDIO / メンズ","clothes"],["LUMI / コスメとケア","beauty"],["ページの庭 / 書店・文具","books"],["MELLOW / カフェ","cafe"]],
+	[["KIDS CLOSET / こども服","kids"],["PLAY / ゲームコーナー","arcade"],["ACTIVE / スポーツ","sport"],["COLOR / 画材と文具","stationery"],["HOBBY BASE / 模型","hobby"],["STORY / 児童書","books"],["SOUND / 楽器","music"],["SWEET / デザートカフェ","cafe"]]
 ]
 static var cached_regions: Dictionary = {}
 static var cached_obstacles: Dictionary = {}
+static var block_groups:Dictionary={}
 var mall: Node3D
 var ivory := Shapes.material(Color("d8d6ce"))
 var dark := Shapes.material(Color("35484e"))
@@ -31,24 +36,79 @@ var warm := Shapes.material(Color("f6e7cc"),.65)
 var floor_mat: ShaderMaterial
 
 static func escalators() -> Array:
-	return [[-241.5,0,9.0,21.0],[-227.0,1,21.0,9.0]]
+	return [[-331.0,0,54.0,66.0],[-316.5,1,66.0,54.0]]
 
-static func regions(level: int) -> Array[Rect2]:
-	if cached_regions.has(level): return cached_regions[level]
-	var result: Array[Rect2] = []
-	if level in [0,1,2]:
-		result.append_array([ANCHOR,WEST,EAST])
-		if level == 0: result.append_array([MAIN,COURT,GROUND_LINK])
-		else:
-			result.append_array([Rect2(-374,-8,184,6),Rect2(-374,2,184,6),Rect2(-246,8,3,20),Rect2(-225,8,3,20),Rect2(-246,21,24,7),FRONT])
-			for x in BRIDGES: result.append(Rect2(x-2,-2,4,4))
-			if level == 1: result.append(SKY_LINK)
-		for store in STORES: result.append(Rect2(store.x-store.w/2,-26 if store.side < 0 else 8,store.w,18))
-	cached_regions[level] = result
+static func regions(level:int)->Array[Rect2]:
+	if level not in [0,1,2]:return []
+	return [MallStructure.bounds("B",level)]
+
+static func store_for(level:int,base:Dictionary)->Dictionary:
+	var result:=base.duplicate();var index:=STORES.find(base)
+	if level>0:
+		var rows:Array=TENANTS[level-1];result.name=rows[index][0];result.kind=rows[index][1]
 	return result
 
-static func obstacles(level: int) -> Array[Rect2]:
-	if cached_obstacles.has(level): return cached_obstacles[level]
+static func store_transform(store:Dictionary)->Transform3D:
+	var record:Dictionary=MallStructureData.DATA.B.stores[STORES.find(store) if STORES.has(store) else store_index(store)]
+	var a:Array=record.placement
+	var basis:=Basis(Vector3.UP,a[2])
+	return Transform3D(basis,Vector3(a[0],0,a[1])-basis*Vector3(store.x,0,0))
+static func store_index(store:Dictionary)->int:
+	for i in STORES.size():
+		if STORES[i].x==store.x and STORES[i].side==store.side:return i
+	return -1
+static func anchor_transform()->Transform3D:return Transform3D(Basis.IDENTITY,Vector3(-80,0,0))
+static func court_transform()->Transform3D:return Transform3D(Basis.IDENTITY,Vector3(-89.5,0,45))
+
+static func obstacles(_level:int)->Array[Rect2]:return [] # Oriented blocks are queried without inflating them to AABBs.
+static func blocked(p:Vector3)->bool:
+	var level:=Mall.level_at(p.y)
+	if level not in [0,1,2] or not MallStructure.bounds("B",level).grow(1).has_point(Vector2(p.x,p.z)):return false
+	if not block_groups.has(level):
+		var groups:Array=[]
+		for base:Dictionary in STORES:
+			var region:=Rect2(base.x-base.w*.5-.7,-27 if base.side<0 else 7,base.w+1.4,20)
+			groups.append({"inverse":store_transform(base).affine_inverse(),"bounds":region,"rects":canonical_store_blocks(store_for(level,base)),"sign":1.0})
+		var anchor_blocks:Array[Rect2]=[]
+		for r:Rect2 in legacy_obstacles(level):
+			if r.position.x< -373.8:anchor_blocks.append(r)
+		groups.append({"inverse":anchor_transform().affine_inverse(),"bounds":Rect2(-417,-27,44,54),"rects":anchor_blocks,"sign":1.0})
+		for u:Dictionary in RetailDensity.units():
+			if u.building!="B" or u.level!=level:continue
+			var rects:Array[Rect2]=[]
+			for f:Dictionary in RetailDensity.fixtures(u):rects.append(f.rect)
+			groups.append({"inverse":u.t.affine_inverse(),"bounds":Rect2(-u.half-.8,u.front-.8,u.half*2+1.6,u.back-u.front+1.6),"rects":rects,"sign":-1.0})
+		var fixed:Array[Rect2]=[]
+		if level in [0,1]:
+			var link:Rect2=GROUND_LINK if level==0 else SKY_LINK
+			for z in [link.position.y,link.end.y]:fixed.append(Rect2(link.position.x,z-.07,link.size.x,.14))
+		if level==0:fixed.append_array([Rect2(-332.1,54,2.2,12),Rect2(-317.6,54,2.2,12),Rect2(-327.5,69.7,8,.6)])
+		for plaza:Dictionary in MallStructureData.DATA.B.plazas:
+			for side in [-1,1]:fixed.append(Rect2(plaza.at[0]+side*(plaza.radius[0]-3)-.25,plaza.at[1]-.25,.5,.5))
+		groups.append({"inverse":Transform3D.IDENTITY,"bounds":MallStructure.bounds("B",level).grow(1),"rects":fixed,"sign":1.0})
+		block_groups[level]=groups
+	for group:Dictionary in block_groups[level]:
+		var local:Vector3=group.inverse*p;var v:=Vector2(local.x,local.z*group.sign)
+		if not group.bounds.has_point(v):continue
+		for r:Rect2 in group.rects:
+			if r.grow(.35).has_point(v):return true
+	return false
+
+static func canonical_store_blocks(store:Dictionary)->Array[Rect2]:
+	var result:Array[Rect2]=[];var x:float=store.x;var w:float=store.w;var side:int=store.side
+	for edge in [-w/2,w/2]:result.append(Rect2(x+edge-.125,-26 if side<0 else 8,.25,18))
+	result.append(Rect2(x-w/2,side*25.85-.15,w,.3))
+	var window:float=(w-6)/2
+	for edge in [-1,1]:result.append(Rect2(x+edge*(w+6)/4-window/2,side*8.5-.08,window,.16))
+	result.append(Rect2(x+w*.3-1.5,side*22-.65,3,1.3))
+	if store.kind=="cafe":
+		for dx in [-4.0,4.0]:result.append(Rect2(x+dx-1,13,2,2));result.append(Rect2(x+dx-.3,15.7,.6,.6))
+	else:
+		for dx in [-.3,-.1,.1,.3]:result.append(Rect2(x+w*dx-1,side*14.5-1.25,2,2.5))
+		result.append(Rect2(x-w*.425,side*24.5-.5,w*.55,1))
+	return result
+
+static func legacy_obstacles(level: int) -> Array[Rect2]:
 	var result: Array[Rect2] = []
 	if level in [0,1,2]:
 		for store in STORES:
@@ -83,35 +143,39 @@ static func obstacles(level: int) -> Array[Rect2]:
 		if level == 0:
 			for x in [-241.5,-227.0]: result.append(Rect2(x-1.1,9,2.2,12))
 			result.append(Rect2(-238,24.7,8,.6))
-	result.append_array(RetailDensity.obstacles("B",level))
-	cached_obstacles[level] = result
 	return result
 
-static func zone_name(p: Vector3) -> String:
-	var level := Mall.level_at(p.y)
-	if p.x > -190: return "A・B館 / 2階連絡通路" if level == 1 else "A・B館 / 駐車場側歩行路"
-	var area := "ロングモール"
-	if p.x < -374: area = ["家電量販店","ホーム＆リビング","シネマ"][clampi(level,0,2)]
-	elif COURT.has_point(Vector2(p.x,p.z)): area = "南側アトリウム"
-	elif absf(p.z) > 8: area = "店舗エリア"
-	return "B館%s / %s" % [Mall.floor_title(level),area]
+static func zone_name(p:Vector3)->String:
+	var level:=Mall.level_at(p.y)
+	if p.x> -190:return "A・B館 / 2階連絡通路" if level==1 else "A・B館 / 駐車場側歩行路"
+	if p.x< -454:return "B館%s / %s"%[Mall.floor_title(level),["家電量販店","ホーム＆リビング","シネマ"][clampi(level,0,2)]]
+	var name:="回遊モール";var distance:=INF
+	for plaza:Dictionary in MallStructureData.DATA.B.plazas:
+		var d:=Vector2(p.x,p.z).distance_squared_to(Vector2(plaza.at[0],plaza.at[1]))
+		if d<distance:distance=d;name=plaza.name
+	return "B館%s / %s"%[Mall.floor_title(level),name]
 
-func build(root: Node3D) -> void:
-	mall = root
-	floor_mat = MallFinishes.stone()
+func build(root:Node3D)->void:
+	mall=root;floor_mat=MallFinishes.stone()
+	MallStructure.build("B",mall)
 	for level in [0,1,2]:
-		var y := Mall.floor_height(level)
-		for rect in regions(level):
-			if rect == FRONT and level == 2:
-				for piece in [Rect2(-246,6.5,17.8,3),Rect2(-225.8,6.5,3.8,3),Rect2(-228.2,6.5,2.4,2.5)]: slab(piece,y)
-			else: slab(rect,y)
-		_shell(level)
-		for store in STORES: _store(store,y)
-		_anchor(level)
-		if level > 0: _gallery(level)
-	_court()
-	_link(0,GROUND_LINK)
-	_link(1,SKY_LINK)
+		var y:=Mall.floor_height(level)
+		for base:Dictionary in STORES:
+			var nodes:=mall.get_child_count();var slots:int=mall.identity_slots.size()
+			_store(store_for(level,base),y);relocate(mall,nodes,slots,store_transform(base))
+		var nodes:=mall.get_child_count();var slots:int=mall.identity_slots.size()
+		_anchor(level);relocate(mall,nodes,slots,anchor_transform())
+	var nodes:=mall.get_child_count();var slots:int=mall.identity_slots.size()
+	_court();relocate(mall,nodes,slots,court_transform())
+	_link(0,GROUND_LINK);_link(1,SKY_LINK)
+	for z in [-26.0,26.0]:Shapes.box(mall,Vector3(-481,17.8,z),Vector3(30,2.8,.25),ivory,true)
+	Shapes.box(mall,Vector3(-496,17.8,0),Vector3(.25,2.8,52),ivory,true)
+static func relocate(root:Node3D,nodes:int,slots:int,t:Transform3D)->void:
+	for i in range(nodes,root.get_child_count()):
+		var child:Node=root.get_child(i)
+		if child is Node3D:child.transform=t*child.transform
+	for i in range(slots,root.identity_slots.size()):
+		var slot:Dictionary=root.identity_slots[i];slot.pos=t*slot.pos;slot.yaw+=t.basis.get_euler().y
 
 func slab(rect: Rect2,y: float) -> void:
 	Shapes.box(mall,Vector3(rect.get_center().x,y-.175,rect.get_center().y),Vector3(rect.size.x,.35,rect.size.y),floor_mat,true)
@@ -122,32 +186,6 @@ func sign_at(at: Vector3,text: String,yaw: float = 0,size: int = 36) -> void:
 func _glass() -> StandardMaterial3D:
 	return mall._glass()
 
-func _shell(level: int) -> void:
-	var y := Mall.floor_height(level)
-	var height := Mall.floor_height(level+1)-y
-	for z in [-26.0,26.0]:
-		if level == 0 and z < 0:
-			for span in [[-416.0,-374.0],[-366.0,-190.0]]: Shapes.box(mall,Vector3((span[0]+span[1])/2,y+height/2,z),Vector3(span[1]-span[0],height,.25),ivory,true)
-			Shapes.box(mall,Vector3(-370,4.6,z),Vector3(8,1.85,.25),ivory,true)
-		else: Shapes.box(mall,Vector3(-303,y+height/2,z),Vector3(226,height,.25),ivory,true)
-	Shapes.box(mall,Vector3(-416,y+height/2,0),Vector3(.25,height,52),ivory,true)
-	if level < 2:
-		for span in [[-26.0,-8.0],[-3.0,26.0]]:
-			Shapes.box(mall,Vector3(-190,y+height/2,(span[0]+span[1])/2),Vector3(.25,height,span[1]-span[0]),ivory,true)
-	else: Shapes.box(mall,Vector3(-190,y+height/2,0),Vector3(.25,height,52),ivory,true)
-	if level == 2:
-		Shapes.box(mall,Vector3(-282,16.4,0),Vector3(184,.15,16),Shapes.material(Color("bdcdd0")))
-		Shapes.box(mall,Vector3(-380,16.4,0),Vector3(12,.18,52),ivory)
-		Shapes.box(mall,Vector3(-401,19.2,0),Vector3(30,.18,52),ivory)
-		for z in [-26.0,26.0]: Shapes.box(mall,Vector3(-401,17.8,z),Vector3(30,2.8,.25),ivory,true)
-		Shapes.box(mall,Vector3(-416,17.8,0),Vector3(.25,2.8,52),ivory,true)
-		for x in range(-374,-189,8): Shapes.box(mall,Vector3(x,16.2,0),Vector3(.12,.3,16),ivory)
-	for x in [-356.0,-308.0,-260.0,-212.0]:
-		for side in [-1,1]:
-			Shapes.box(mall,Vector3(x,y+4.6,side*6),Vector3(8,.06,.2),warm)
-			var light := OmniLight3D.new(); mall.add_child(light); light.position = Vector3(x,y+3.6,side*12)
-			light.light_color = Color("f5e6d0"); light.light_energy = .7; light.omni_range = 23
-	sign_at(Vector3(-190.2,y+3.2,0),"B館 %s\nA館・駐車場 →" % Mall.floor_title(level),-PI/2)
 
 func _store(store: Dictionary,y: float) -> void:
 	RetailDetails.wing_b(mall,store,y)
@@ -188,7 +226,7 @@ func _display(p: Vector3,kind: String,width: float,depth: float) -> void:
 		for side in [-1,1]:
 			Shapes.box(mall,p+Vector3(side*width*.23,1.37,0),Vector3(.7,.5,.08),dark)
 			Shapes.box(mall,p+Vector3(side*width*.23,1.37,-.045),Vector3(.62,.42,.01),Shapes.material(Color("658d9c"),.18))
-	elif kind == "clothes":
+	elif kind in ["clothes","fashion","kids"]:
 		for x in [-width*.42,width*.42]:Shapes.box(mall,p+Vector3(x,1.57,0),Vector3(.035,.95,.035),steel)
 		Shapes.box(mall,p+Vector3(0,2.05,0),Vector3(width,.035,.035),steel)
 		# Garments belong to RetailDensity's shared apparel groups.
@@ -248,14 +286,6 @@ func _cinema(y: float) -> void:
 	light.light_color = Color("91b8ca"); light.light_energy = .45; light.omni_range = 22
 	sign_at(Vector3(-385.7,y+3.5,0),"上映室 / 中央通路へ",PI/2,30)
 
-func _gallery(level: int) -> void:
-	var y := Mall.floor_height(level)
-	for side in [-1,1]:
-		for span in [[-366.0,-344.0],[-340.0,-284.0],[-280.0,-224.0],[-220.0,-198.0]]:
-			Shapes.box(mall,Vector3((span[0]+span[1])/2,y+.65,side*2),Vector3(span[1]-span[0],1.1,.08),_glass(),true)
-			Shapes.box(mall,Vector3((span[0]+span[1])/2,y+1.23,side*2),Vector3(span[1]-span[0],.05,.1),steel)
-	for x in BRIDGES:
-		for edge in [-2.0,2.0]: Shapes.box(mall,Vector3(x+edge,y+.65,0),Vector3(.08,1.1,4),_glass(),true)
 
 func _court() -> void:
 	for level in [0,1,2]:
@@ -272,7 +302,7 @@ func _court() -> void:
 	mall._escalator(-241.5,0,9,21); mall._escalator(-227,5.525,21,9)
 	Shapes.box(mall,Vector3(-234,.42,25),Vector3(8,.15,.6),wood,true)
 	for x in [-237.0,-235.0,-233.0,-231.0]: mall.identity_slots.append({"pos":Vector3(x,0,25),"yaw":0.0,"role":"seated","activity":"lounge"})
-	sign_at(Vector3(-234,3.3,27.8),"B館 南側アトリウム\nエスカレーターで2・3階へ",0,38)
+	sign_at(Vector3(-234,3.3,27.8),"B館 時の広場\nエスカレーターで2・3階へ",0,38)
 
 func _link(level: int,rect: Rect2) -> void:
 	var y := Mall.floor_height(level)

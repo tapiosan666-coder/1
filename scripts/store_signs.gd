@@ -18,8 +18,12 @@ static func specifications() -> Array[Dictionary]:
 		for spec in TenantCatalog.all_for_floor(level):
 			result.append({"id":"a_%d_%d_%d"%[level,spec.index,spec.side],"text":spec.name,"at":TenantCatalog.transform(spec)*Vector3(0,4.22,-8.30),"yaw":PI if spec.side>0 else 0.0,"width":9.2})
 	for level in [0,1,2]:
-		for store in BWing.STORES:
-			result.append({"id":"b_%d_%d_%d"%[level,int(store.x),store.side],"text":store.name,"at":Vector3(store.x,Mall.floor_height(level)+4.15,store.side*8.34),"yaw":PI if store.side>0 else 0.0,"width":minf(10.4,store.w*.45)})
+		for base in BWing.STORES:
+			var store:=BWing.store_for(level,base)
+			var t:=BWing.store_transform(base)
+			result.append({"id":"b_%d_%d_%d"%[level,int(store.x),store.side],"text":store.name,"at":t*Vector3(store.x,Mall.floor_height(level)+4.15,store.side*8.34),"yaw":t.basis.get_euler().y+(PI if store.side>0 else 0.0),"width":minf(10.4,store.w*.45)})
+	for level in [0,1,2]:
+		result.append({"id":"a_extension_%d"%level,"text":AExtension.NAMES[level],"at":Vector3(6,Mall.floor_height(level)+4.15,-43.84),"yaw":0.0,"width":12.8})
 	for i in CWing.SHOPS.size():
 		var store: Dictionary=CWing.SHOPS[i]
 		result.append({"id":"c_0_%d"%i,"text":store.name,"at":store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,3.8,.17),"yaw":store.yaw,"width":9.2})
@@ -27,6 +31,7 @@ static func specifications() -> Array[Dictionary]:
 		var spec := source.duplicate()
 		spec.at=Vector3(source.at[0],source.at[1],source.at[2])
 		spec.yaw=deg_to_rad(source.yaw)
+		if str(spec.id).begins_with("b_anchor_"):spec.at=BWing.anchor_transform()*spec.at
 		result.append(spec)
 	return result
 

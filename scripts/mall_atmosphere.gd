@@ -22,12 +22,12 @@ func build(mall: Node3D) -> void:
 		if level>0:
 			for side in [-1,1]:
 				Shapes.box(root,Vector3(0,y-.13,side*4.02),Vector3(180,.24,.09),cream)
-		for store in BWing.STORES:
-			_tenant(Vector3(store.x,y,0),0,store.w,store.side,["books","clothes","shoes","daily","digital","cafe","home","home","sport"].find(store.kind))
-		# Complete B's gallery ceilings rather than leaving the undersides bare.
-		for side in [-1,1]:
-			for x in range(-368,-194,8):
-				_ceiling(Vector3(x,y+4.75,side*5),Vector2(7.9,5.7))
+		for base in BWing.STORES:
+			var store:=BWing.store_for(level,base)
+			var first:=root.get_child_count()
+			_tenant(Vector3(store.x,y,0),0,store.w,store.side,TenantCatalog.category(store.kind) if store.kind!="clothes" else 1)
+			BWing.relocate(root,first,root.identity_slots.size(),BWing.store_transform(base))
+
 	for store in CWing.SHOPS:
 		_tenant(store.at,store.yaw,20,-1,["books","clothes","shoes","daily","digital","cafe","home","home","sport"].find(store.kind),true)
 	# The old atrium outlet now terminates in a furnished information alcove.
@@ -44,9 +44,8 @@ func build(mall: Node3D) -> void:
 		for z in [-2.9,2.9]:
 			Shapes.box(root,Vector3(x,16.06,z),Vector3(5.82,.16,.065),metal)
 		Shapes.box(root,Vector3(x,15.88,0),Vector3(.055,.32,5.9),metal)
-	for x in range(-370,-190,8):
-		for z in [-6.5,0,6.5]: Shapes.box(root,Vector3(x,16.15,z),Vector3(7.9,.12,.06),metal)
-	mall.set_meta("atmosphere",{"retail_interiors":68,"b_gallery_ceiling_panels":132,"static_only":true})
+
+	mall.set_meta("atmosphere",{"retail_interiors":68,"b_gallery_ceiling_panels":0,"static_only":true})
 func _ceiling(at: Vector3,size: Vector2) -> void:
 	Shapes.box(root,at,Vector3(size.x,.06,size.y),cream)
 	Shapes.box(root,at+Vector3(0,-.045,0),Vector3(1.25,.035,.46),metal)

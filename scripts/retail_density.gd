@@ -21,20 +21,22 @@ static func units()->Array[Dictionary]:
     if not Mall.has_shop(x,side):continue
     var kind:String=RetailDetails.KINDS[index] if level==0 else TenantCatalog.tenant(level,index,side).kind
     unit_cache.append({"id":"a_%d_%d_%d"%[level,index,side],"building":"A","level":level,"kind":kind,"half":9.0,"front":8.5,"back":23.5,"t":Transform3D(Basis(Vector3.UP,PI if side>0 else 0.0),Vector3(x,Mall.floor_height(level),0)),"mirror":-side,"index":index,"legacy":"a" if level==0 else "upper"})
+ for level in [0,1,2]:unit_cache.append(AExtension.unit(level))
  for level in [0,1,2]:
-  for store in BWing.STORES:
-   unit_cache.append({"id":"b_%d_%d_%d"%[level,int(store.x),store.side],"building":"B","level":level,"kind":store.kind,"half":store.w*.5,"front":8.5,"back":25.85,"t":Transform3D(Basis(Vector3.UP,PI if store.side>0 else 0.0),Vector3(store.x,Mall.floor_height(level),0)),"mirror":-store.side,"legacy":"b"})
+  for base in BWing.STORES:
+   var store:=BWing.store_for(level,base)
+   unit_cache.append({"id":"b_%d_%d_%d"%[level,int(store.x),store.side],"building":"B","level":level,"kind":store.kind,"half":store.w*.5,"front":8.5,"back":25.85,"t":BWing.store_transform(base)*Transform3D(Basis(Vector3.UP,PI if store.side>0 else 0.0),Vector3(store.x,Mall.floor_height(level),0)),"mirror":-store.side,"legacy":"b"})
  for i in CWing.SHOPS.size():
   var s:Dictionary=CWing.SHOPS[i]
   unit_cache.append({"id":"c_0_%d"%i,"building":"C","level":0,"kind":s.kind,"half":10.0,"front":0.0,"back":18.0,"t":Transform3D(Basis(Vector3.UP,s.yaw),s.at),"mirror":1,"legacy":"c"})
  for level in [0,1]:
-  unit_cache.append({"id":"b_anchor_%d"%level,"building":"B","level":level,"kind":"digital" if level==0 else "home","half":26.0,"front":0.0,"back":42.0,"t":Transform3D(Basis(Vector3.UP,PI/2),Vector3(-374,Mall.floor_height(level),0)),"legacy":"anchor","mirror":1})
+  unit_cache.append({"id":"b_anchor_%d"%level,"building":"B","level":level,"kind":"digital" if level==0 else "home","half":26.0,"front":0.0,"back":42.0,"t":BWing.anchor_transform()*Transform3D(Basis(Vector3.UP,PI/2),Vector3(-374,Mall.floor_height(level),0)),"legacy":"anchor","mirror":1})
  unit_cache.append({"id":"a_market","building":"A","level":0,"kind":"grocery","half":18.0,"front":8.4,"back":47.7,"t":Transform3D(Basis(Vector3.UP,PI),Vector3(24,0,0)),"legacy":"market","mirror":1})
  for i in 7:
   unit_cache.append({"id":"a_basement_%d"%i,"building":"A","level":-1,"kind":"food","half":5.0,"front":0.0,"back":0.0,"t":Transform3D(Basis.IDENTITY,Vector3(-75+i*18,Mall.floor_height(-1),-17)),"legacy":"counter","mirror":1})
  for i in 4:
   unit_cache.append({"id":"a_food_%d"%i,"building":"A","level":0,"kind":"cafe" if i==3 else "food","half":4.5,"front":0.0,"back":0.0,"t":Transform3D(Basis.IDENTITY,Vector3(51+i*11,0,-59.5)),"legacy":"counter","mirror":1})
- unit_cache.append({"id":"b_anchor_2","building":"B","level":2,"kind":"cinema","half":2.5,"front":0.0,"back":0.0,"t":Transform3D(Basis.IDENTITY,Vector3(-380,Mall.floor_height(2),-18)),"legacy":"counter","mirror":1})
+ unit_cache.append({"id":"b_anchor_2","building":"B","level":2,"kind":"cinema","half":2.5,"front":0.0,"back":0.0,"t":BWing.anchor_transform()*Transform3D(Basis.IDENTITY,Vector3(-380,Mall.floor_height(2),-18)),"legacy":"counter","mirror":1})
  return unit_cache
 
 static func old_blocks(u:Dictionary)->Array[Rect2]:
@@ -74,6 +76,9 @@ static func old_blocks(u:Dictionary)->Array[Rect2]:
    for x in [-20.0,-7.0,7.0,20.0]:b.append(Rect2(x-1.5,6.45,3,3.8))
    if u.level==1:
     for d in [27.0,35.0]:b.append(Rect2(-2.3,d-1.5,4.6,3))
+  "new":
+   b.append(Rect2(16.5,19.35,3,1.3));b.append(Rect2(17.35,20.55,1.3,1.3))
+   for x in [-8.0,8.0]:b.append(Rect2(x-.65,12.35,1.3,1.3))
   "market":
    for x in [-8.0,2.0,12.0]:
     for d in [23.0,35.0]:b.append(Rect2(x-1.2,d-3.5,2.4,7))
@@ -86,7 +91,12 @@ static func fixtures(u:Dictionary)->Array[Dictionary]:
  if fixture_cache.has(u.id):return fixture_cache[u.id]
  if u.legacy=="counter":return []
  var proposals:Array[Dictionary]=[];var half:float=u.half
- if u.legacy=="anchor":
+ if u.legacy=="new":
+  for side in [-1,1]:proposals.append({"rect":Rect2(side*(half-.8)-.4,3,.8,18),"type":"wall","yaw":-side*PI/2})
+  proposals.append({"rect":Rect2(-24,22.5,48,.7),"type":"wall","yaw":0.0})
+  for x in [-20.0,-10.0,0.0,10.0,20.0]:
+   for d in [6.0,15.0]:proposals.append({"rect":Rect2(x-1.6,d-.9,3.2,1.8),"type":"island","yaw":0.0})
+ elif u.legacy=="anchor":
   for side in [-1,1]:proposals.append({"rect":Rect2(side*(half-.8)-.4,10,.8,29),"type":"wall","yaw":-side*PI/2})
   proposals.append({"rect":Rect2(-22,40.3,44,.7),"type":"wall","yaw":0.0})
   for x in [-12.0,12.0]:
@@ -131,8 +141,10 @@ static func plan_rect(r:Rect2,u:Dictionary)->Rect2:
  return Rect2(low,high-low)
 static func obstacles(building:String,level:int)->Array[Rect2]:
  var result:Array[Rect2]=[]
+ if building=="B":return result
  for u in units():
-  if u.building==building and u.level==level:
+  if (u.building==building or (building=="A-extension" and u.legacy=="new")) and u.level==level:
+   if building=="A" and u.legacy=="new":continue
    for f in fixtures(u):result.append(plan_rect(f.rect,u))
  return result
 
@@ -140,9 +152,20 @@ static func sample_plan_points()->Array[Vector3]:
  var result:Array[Vector3]=[]
  for u in units():
   if u.legacy=="counter":continue
-  for d in range(ceili(u.front+.65),floori(u.back-.65)+1):
-   for x in range(ceili(-u.half+.65),floori(u.half-.65)+1):
-    result.append(u.t*Vector3(x,0,-d))
+  if u.building=="B":
+   # Sample the logical metre grid directly. Rounding a rotated local grid
+   # omits valid cells in narrow window aisles and leaves isolated chest cells.
+   var bounds:=plan_rect(Rect2(-u.half,u.front,u.half*2,u.back-u.front),u)
+   var inverse:Transform3D=u.t.affine_inverse()
+   for z in range(ceili(bounds.position.y),floori(bounds.end.y)+1):
+    for x in range(ceili(bounds.position.x),floori(bounds.end.x)+1):
+     var p:=Vector3(x,Mall.floor_height(u.level),z);var q:Vector3=inverse*p
+     if absf(q.x)<u.half-.65 and -q.z>u.front+.65 and -q.z<u.back-.65:result.append(p)
+  else:
+   for d in range(ceili(u.front+.65),floori(u.back-.65)+1):
+    for x in range(ceili(-u.half+.65),floori(u.half-.65)+1):
+     var p:Vector3=u.t*Vector3(x,0,-d)
+     result.append(Vector3(roundf(p.x),p.y,roundf(p.z)))
  return result
 
 static func build(mall:Node3D)->void:

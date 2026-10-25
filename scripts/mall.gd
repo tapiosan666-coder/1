@@ -12,13 +12,15 @@ const MAIN := Rect2(-90, -8, 180, 16)
 const FOOD := Rect2(46, -62, 46, 30)
 const RESTROOM := Rect2(-90, 26, 38, 30)
 const MARKET := Rect2(6, 8, 36, 40)
-const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5), "A・B連絡通路":Vector3(-150,5.625,-5.5), "B館東入口":Vector3(-194,.1,-5.5), "B館2階ラウンジ":Vector3(-194,5.625,0), "B館3階シネマ":Vector3(-380,10.975,0), "B館家電売場":Vector3(-402,.1,0), "B・C連絡通路":Vector3(-370,.1,-52), "C館屋外広場":Vector3(-362,.1,-116), "C館テラス":Vector3(-338,.1,-98)}
+const HUBS := {"中央入口": Vector3(-82,.1,0), "中央広場": Vector3(-39,.1,3), "食品スーパー": Vector3(24,.1,11), "フードコート": Vector3(69,.1,-34), "お手洗い前": Vector3(-73,.1,32), "2階アトリウム": Vector3(-39,5.625,22.5), "3階アトリウム": Vector3(-39,10.975,7.8), "地下食品街":Vector3(-82,-5.25,-6.5), "屋上庭園":Vector3(-87,16.5,-12), "西駐車場":Vector3(-120,.1,-5.5), "A・B連絡通路":Vector3(-150,5.625,-5.5), "B館東入口":Vector3(-194,.1,-5.5), "B館2階ラウンジ":Vector3(-194,5.625,0), "B館3階シネマ":Vector3(-460,10.975,0), "B館家電売場":Vector3(-482,.1,0), "B・C連絡通路":Vector3(-370,.1,-52), "C館屋外広場":Vector3(-370,.1,-94), "C館テラス":Vector3(-432,.1,-121)}
 const ENTRANCE := Vector3(-82, 0.1, 0)
 static var floor_regions: Array[Rect2] = []
 static var obstacles: Array[Rect2] = []
 static var upper_obstacles: Array[Rect2] = []
 static var cached_upper_regions: Array[Rect2] = []
 static var cached_regions: Dictionary = {}
+static var plain_regions_cache:Dictionary={}
+static var segment_probe_cache:Dictionary={}
 const STOREY := 5.35
 const UPPER_TOP := .175
 var spawn_points: Array[Vector3] = []
@@ -117,7 +119,7 @@ static func inside_floor(p: Vector2) -> bool:
 	for region in floor_regions:
 		if region.has_point(p):
 			return true
-	return false
+	return MallStructure.contains("A",0,p) and not Rect2(-30,-36,90,12).has_point(p)
 
 static func level_at(height: float) -> int:
 	return clampi(roundi((height-UPPER_TOP)/STOREY),-1,3)
@@ -145,29 +147,42 @@ static func plan_regions(level: int) -> Array[Rect2]:
 	var regions: Array[Rect2] = []
 	if level == 0: regions.append_array(floor_regions)
 	elif level in [1,2]: regions.append_array(upper_regions())
+	regions.append_array(AExtension.regions(level))
 	regions.append_array(MallAnnex.regions(level))
 	regions.append_array(BWing.regions(level))
 	regions.append_array(CWing.regions(level))
 	cached_regions[level] = regions
 	return regions
 
+static func plain_regions(level:int)->Array[Rect2]:
+	if plain_regions_cache.has(level):return plain_regions_cache[level]
+	var shapes:Array=[MallStructure.bounds("A",level),MallStructure.bounds("B",level),MallStructure.bounds("C",level)]
+	var result:Array[Rect2]=[]
+	for r:Rect2 in plan_regions(level):
+		if r not in shapes:result.append(r)
+	plain_regions_cache[level]=result;return result
+
 static func plan_walkable(p: Vector3) -> bool:
 	prepare_plan()
 	var v := Vector2(p.x,p.z).snapped(Vector2(.0001,.0001))
 	var level := level_at(p.y)
-	var regions := plan_regions(level)
+	var regions := plain_regions(level)
 	for offset in [Vector2.ZERO,Vector2(.42,0),Vector2(-.42,0),Vector2(0,.42),Vector2(0,-.42)]:
 		var inside := false
 		for region in regions:
 			if region.has_point(v+offset): inside = true; break
+		if not inside:
+			for building in ["A","B","C"]:
+				if MallStructure.contains(building,level,v+offset):inside=true;break
 		if not inside: return false
 	var blocks: Array[Rect2] = []
 	if level == 0: blocks = obstacles
 	elif level in [1,2]: blocks = UpperRetail.obstacles(level)
 	for obstacle in blocks:
 		if obstacle.grow(.35).has_point(v): return false
-	for obstacle in BWing.obstacles(level):
-		if obstacle.grow(.35).has_point(v): return false
+	if BWing.blocked(p):return false
+	for obstacle in AExtension.obstacles(level):
+		if obstacle.grow(.35).has_point(v):return false
 	for obstacle in CWing.obstacles(level):
 		if obstacle.grow(.35).has_point(v): return false
 	for obstacle in MallAnnex.obstacles(level):
@@ -183,8 +198,11 @@ static func hub_position(key: String) -> Vector3:
 static func plan_segment_walkable(a: Vector3,b: Vector3) -> bool:
 	var steps := maxi(1,ceili(a.distance_to(b)/.2))
 	for index in range(steps+1):
-		if not plan_walkable(a.lerp(b,float(index)/steps)):
-			return false
+		var point:=a.lerp(b,float(index)/steps)
+		var snapped:=Vector2(point.x,point.z).snapped(Vector2(.0001,.0001))
+		var key:=Vector3i(roundi(snapped.x*10000),level_at(point.y),roundi(snapped.y*10000))
+		if not segment_probe_cache.has(key):segment_probe_cache[key]=plan_walkable(point)
+		if not segment_probe_cache[key]:return false
 	return true
 
 static func segment_walkable(a: Vector3,b: Vector3) -> bool:
@@ -192,14 +210,14 @@ static func segment_walkable(a: Vector3,b: Vector3) -> bool:
 
 static func building_name(p: Vector3) -> String:
 	var plan := MallCurve.plan(p)
-	if CWing.contains(plan): return "連絡通路" if plan.z > -80 else "C館"
+	if CWing.zone_contains(plan): return "連絡通路" if plan.z > -80 else "C館"
 	return "B館" if plan.x < -190 else "連絡通路" if plan.x < -112 and Mall.level_at(p.y) == 1 else "A館"
 
 static func zone_name(p: Vector3) -> String:
 	var plan := MallCurve.plan(p)
 	var v := Vector2(plan.x, plan.z)
 	var level := level_at(p.y)
-	if CWing.contains(plan): return CWing.zone_name(plan)
+	if CWing.zone_contains(plan): return CWing.zone_name(plan)
 	if plan.x < -190 or (level == 1 and plan.x < -112): return BWing.zone_name(plan)
 	if plan.x < -174: return BWing.zone_name(plan)
 	if plan.x < -90: return "A館%s / %s" % [floor_title(level),"西駐車場" if level == 0 and plan.x < -115 else "西側階段"]
@@ -250,6 +268,7 @@ func _ready() -> void:
 		ground_slots.append(slot)
 	identity_slots = ground_slots
 	for level in [1,2]: _build_upper_shops(level)
+	AExtension.build(self)
 	MallAnnex.new().build(self)
 	BWing.new().build(self)
 	CWing.new().build(self)
@@ -291,6 +310,10 @@ func _build_floor_and_walls() -> void:
 		var merged := Geometry2D.merge_polygons(outline, _polygon(floor_regions[i]))
 		assert(merged.size() == 1, "All public floor regions must form one connected polygon")
 		outline = merged[0]
+	for extension:Dictionary in MallStructure.floor_packets("A",0):
+		var merged:=Geometry2D.merge_polygons(outline,extension.outer)
+		assert(merged.size()==1,"North gallery must connect without an unclassified courtyard")
+		outline=merged[0]
 	var floor_mat := MallFinishes.stone()
 	var surface := SurfaceTool.new()
 	surface.begin(Mesh.PRIMITIVE_TRIANGLES)
@@ -512,7 +535,7 @@ func _build_architecture() -> void:
 				Shapes.box(self,Vector3(x,y+.65,side*3.95),Vector3(.045,1.15,.07),bronze)
 				Shapes.box(self,Vector3(x,y-.22,side*6.5),Vector3(5,.035,.18),light)
 		# Blank fronts only where the lower-floor side wings have no upper store.
-		for span in [[-75.0,1,18.0],[24.0,1,36.0],[69.0,-1,18.0],[-87.0,-1,6.0],[84.0,-1,12.0],[-87.0,1,6.0],[84.0,1,12.0]]:
+		for span in [[-75.0,1,18.0],[24.0,1,36.0],[-87.0,-1,6.0],[84.0,-1,12.0],[-87.0,1,6.0],[84.0,1,12.0]]:
 			Shapes.box(self,Vector3(span[0],y+2.5,span[1]*8.5),Vector3(span[2],4.8,.25),ivory,true)
 		for x in [-60.0,10.0,62.0]:
 			Shapes.box(self,Vector3(x,y,0),Vector3(3.2,.35,8),ivory,true)
@@ -615,14 +638,13 @@ func _build_market() -> void:
 static func gallery_regions() -> Array[Rect2]:
 	return [Rect2(-90,-8,180,4),Rect2(-90,4,180,4),Rect2(-48,-15,3,39),Rect2(-33,-15,3,39),Rect2(-48,21,18,3),Rect2(-48,-15,18,3),Rect2(-48,6.5,18,3),Rect2(-61.6,-4,3.2,8),Rect2(8.4,-4,3.2,8),Rect2(60.4,-4,3.2,8)]
 
-static func escalator_carry(position: Vector3) -> Vector3:
-	var p := MallCurve.plan(position)
-	for flight in [[-43.5,0.0,1.0],[-35.0,5.525,-1.0],[-241.5,0.0,1.0],[-227.0,5.525,-1.0]]:
-		if absf(p.x-flight[0]) < .88 and p.z >= 9 and p.z <= 21:
-			var t: float = (p.z-9)/12 if flight[2] > 0 else (21-p.z)/12
-			var y: float = flight[1]+t*(5.525 if flight[1] == 0 else 5.35)
-			if absf(p.y-y) < .35:
-				return Basis(Vector3.UP,-MallCurve.angle(p.x))*Vector3(0,0,.9*flight[2])
+static func escalator_carry(position:Vector3)->Vector3:
+	var p:=MallCurve.plan(position)
+	for flight in [[-43.5,0,9.0,21.0],[-35.0,1,21.0,9.0]]+BWing.escalators():
+		if absf(p.x-flight[0])>=.88 or p.z<minf(flight[2],flight[3]) or p.z>maxf(flight[2],flight[3]):continue
+		var t:float=(p.z-flight[2])/(flight[3]-flight[2])
+		var y:=lerpf(floor_height(flight[1]),floor_height(flight[1]+1),t)
+		if absf(p.y-y)<.35:return Basis(Vector3.UP,-MallCurve.angle(p.x))*Vector3(0,0,.9*signf(flight[3]-flight[2]))
 	return Vector3.ZERO
 
 func _build_reading_and_court() -> void:
@@ -663,20 +685,18 @@ func _build_reading_and_court() -> void:
 			for piece in pieces:
 				Shapes.box(self,Vector3(piece.get_center().x,y,piece.get_center().y),Vector3(piece.size.x,.35,piece.size.y),ivory,true)
 		for x in [-45.0,-33.0]:
-			for segment in [[-12.0,-8.0],[-4.0,4.0],[9.5,21.0]]:
+			for segment in [[-4.0,4.0],[9.5,21.0]]:
 				var middle: float = (segment[0]+segment[1])*.5
 				var length: float = segment[1]-segment[0]
 				Shapes.box(self,Vector3(x,y+.65,middle),Vector3(.06,1.1,length),glass,true)
 				Shapes.box(self,Vector3(x,y+1.23,middle),Vector3(.07,.055,length),dark)
 		for x in [-48.0,-30.0]:
 			Shapes.box(self,Vector3(x,y+.65,0),Vector3(.06,1.1,10),glass,true)
-		Shapes.box(self,Vector3(-39,y+.65,-12),Vector3(12,1.1,.06),glass,true)
 		# Open landings let both escalators connect to the galleries.
 		for edge in [[-40.25,3.7],[-32.75,1.7]]:
 			Shapes.box(self,Vector3(edge[0],y+.65,21),Vector3(edge[1],1.1,.06),glass,true)
 		for edge in [[-42.25,7.5],[-31.25,1.5]]:
 			Shapes.box(self,Vector3(edge[0],y+.65,9.5),Vector3(edge[1],1.1,.06),glass,true)
-		Shapes.box(self,Vector3(-39,y+2.5,-15),Vector3(18,4.6,.25),ivory,true)
 		for x in [-48.0,-30.0]:
 			Shapes.box(self,Vector3(x,y+2.5,16),Vector3(.3,4.6,16),ivory,true)
 		Shapes.box(self,Vector3(-39,y+2.5,24),Vector3(18,4.6,.3),ivory,true)

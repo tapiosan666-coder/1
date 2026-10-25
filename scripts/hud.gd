@@ -39,6 +39,7 @@ var pulse_cooldown := 0.0
 var target_distance := 0.0
 var player_position := Vector3.ZERO
 var cached_map_bounds: Dictionary = {}
+var cached_structure_shapes:Dictionary={}
 var location_name := "A館1階 / ショッピングモール"
 var using_gun := false
 var scan_progress := 0.0
@@ -225,9 +226,10 @@ func _draw() -> void:
 			if Mall.level_at(p.y) != map_level: continue
 			draw_circle(_map_point(Vector2(p.x,p.z),frame),5,lime if run.visited.has(key) else muted)
 		if map_level in [0,1,2]:
-			_text("B館",_plan_point(Vector2(-340,0),frame),16)
-			_text("B館奥の売り場",_plan_point(Vector2(-414,0),frame),13)
-		if map_level == 0: _text("C館 / 屋外広場",_plan_point(Vector2(-410,-143),frame),15)
+			_text("B館",_plan_point(Vector2(MallStructureData.DATA.B.main[2][0],MallStructureData.DATA.B.main[2][1]-65),frame),16)
+			var anchor:Vector3=BWing.anchor_transform()*Vector3(-401,0,0)
+			_text(["家電売場","家具・暮らし","シネマ"][map_level],_plan_point(Vector2(anchor.x,anchor.z),frame)+Vector2(-25,0),12)
+		if map_level == 0: _text("C館 / 屋外街路",_plan_point(Vector2(MallStructureData.DATA.C.plazas[1].at[0]-18,MallStructureData.DATA.C.plazas[1].at[1]-42),frame),15)
 		_text("A↔B：2階連絡通路・1階歩行路 ／ B↔C：B館1階の北西連絡通路",Vector2(120,626),15,muted)
 
 func _draw_minimap() -> void:
@@ -260,17 +262,19 @@ func _map_point(p: Vector2, frame: Rect2) -> Vector2:
 func _draw_plan(frame: Rect2) -> void:
 	draw_rect(frame, Color("14272d"))
 	var level := map_level if mode == "map" else Mall.level_at(player_position.y)
-	for region in MallLayout.floor_data("C",level).regions: _draw_region(region,frame,Color("879781"),true)
-	for region in MallLayout.floor_data("B",level).regions: _draw_region(region,frame,Color("6b807e"),true)
+	_draw_structure("C",level,frame,Color("879781"))
+	_draw_structure("B",level,frame,Color("6b807e"))
+	_draw_structure("A",level,frame,Color("899387"))
 	_draw_region(Rect2(-112,-24,22,24),frame,Color("344b50"),true)
 	for x in [-107.2,-101.2]: _draw_region(Rect2(x,-20,2.4,14),frame,Color("758a84"))
 	for region in MallLayout.floor_data("A",level).annex_regions: _draw_region(region,frame,Color("7e897a"),true)
 	if level != 0:
 		if level in [1,2]:
-			for region in MallLayout.floor_data("A",level).retail_regions: _draw_region(region,frame,Color("899387"),true)
+			for region in MallLayout.floor_data("A",level).retail_regions:
+				if region!=MallStructure.bounds("A",level):_draw_region(region,frame,Color("899387"),true)
 		return
 	for region in MallLayout.floor_data("A",level).retail_regions:
-		_draw_region(region,frame,Color("42535a"))
+		if region!=MallStructure.bounds("A",level):_draw_region(region,frame,Color("42535a"))
 	for area in [Mall.MAIN,DiningWing.INFO,DiningWing.FOYER,Mall.FOOD,Mall.RESTROOM,Mall.MARKET,Mall.COURT,Mall.READING,Mall.STOCK]:
 		_draw_region(area,frame,Color("677d70") if area in [Mall.FOOD,Mall.MARKET] else Color("486e82") if area == Mall.RESTROOM else Color("899387"))
 	for side in [-1,1]:
@@ -287,8 +291,56 @@ func _draw_region(rect: Rect2,frame: Rect2,color: Color,border: bool = false) ->
 		for point in cached_polygons[rect]: bounds = bounds.expand(point)
 		cached_polygon_bounds[rect] = bounds
 	if frame.size.x < 400 and not Rect2(Vector2(player_position.x-60,player_position.z-30),Vector2(120,60)).intersects(cached_polygon_bounds[rect]): return
+	_draw_map_polygon(cached_polygons[rect],frame,color,border)
+
+func _cache_structure_shape(records:Array,points:PackedVector2Array,color:Color)->void:
+	if points.is_empty():return
+	var bounds:=Rect2(points[0],Vector2.ZERO)
+	for p:Vector2 in points:bounds=bounds.expand(p)
+	records.append({"points":points,"bounds":bounds,"color":color})
+
+func _structure_shapes(building:String,level:int,color:Color)->Array:
+	var key:=building+str(level)
+	if cached_structure_shapes.has(key):return cached_structure_shapes[key]
+	var records:Array=[]
+	for packet:Dictionary in MallStructure.floor_packets(building,level):
+		var rings:Array=[packet.outer];rings.append_array(packet.holes)
+		for i in rings.size():
+			var points:=PackedVector2Array()
+			for p:Vector2 in rings[i]:
+				var w:=MallCurve.world(Vector3(p.x,0,p.y));points.append(Vector2(w.x,w.z))
+			_cache_structure_shape(records,points,color if i==0 else Color("14272d"))
+	if level in [0,1,2]:
+		if building=="B":
+			for shop:Dictionary in BWing.STORES:
+				var t:=BWing.store_transform(shop);var points:=PackedVector2Array()
+				for p in [Vector2(shop.x-shop.w*.5,-26 if shop.side<0 else 8),Vector2(shop.x+shop.w*.5,-26 if shop.side<0 else 8),Vector2(shop.x+shop.w*.5,-8 if shop.side<0 else 26),Vector2(shop.x-shop.w*.5,-8 if shop.side<0 else 26)]:
+					var w:Vector3=t*Vector3(p.x,0,p.y);points.append(Vector2(w.x,w.z))
+				_cache_structure_shape(records,points,Color("3d5c65"))
+		elif building=="A":
+			_cache_structure_shape(records,MallCurve.polygon(Rect2(-30,-36,90,12)),Color("2b3d43"))
+			_cache_structure_shape(records,MallCurve.polygon(Rect2(-24,-68,60,24)),Color("3d5c65"))
+		elif building=="C" and level==0:
+			for shop:Dictionary in CWing.SHOPS:
+				var points:=PackedVector2Array()
+				for p in [Vector3(-10,0,-18),Vector3(10,0,-18),Vector3(10,0,0),Vector3(-10,0,0)]:
+					var w:Vector3=shop.at+Basis(Vector3.UP,shop.yaw)*p;points.append(Vector2(w.x,w.z))
+				_cache_structure_shape(records,points,Color("4a6965"))
+	cached_structure_shapes[key]=records;return records
+
+func _draw_structure(building:String,level:int,frame:Rect2,color:Color)->void:
+	var window:=Rect2(Vector2(player_position.x-60,player_position.z-30),Vector2(120,60))
+	for record:Dictionary in _structure_shapes(building,level,color):
+		if frame.size.x<400 and not window.intersects(record.bounds):continue
+		_draw_map_polygon(record.points,frame,record.color,true)
+	if frame.size.x>400 and not MallStructure.floor_packets(building,level).is_empty():
+		for plaza:Dictionary in MallStructureData.DATA[building].plazas:
+			var at:=_plan_point(Vector2(plaza.at[0],plaza.at[1]),frame)
+			draw_string(font,at+Vector2(-25,4),plaza.name,HORIZONTAL_ALIGNMENT_LEFT,-1,11,Color("e5ede4"))
+
+func _draw_map_polygon(points:PackedVector2Array,frame:Rect2,color:Color,border:bool=false)->void:
 	var polygon := PackedVector2Array()
-	for point in cached_polygons[rect]: polygon.append(_map_point(point,frame))
+	for point in points: polygon.append(_map_point(point,frame))
 	var limit := PackedVector2Array([frame.position,Vector2(frame.end.x,frame.position.y),frame.end,Vector2(frame.position.x,frame.end.y)])
 	for clipped in Geometry2D.intersect_polygons(polygon,limit):
 		# Clipping a moving minimap can produce duplicate/collinear vertices or

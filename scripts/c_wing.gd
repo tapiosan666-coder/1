@@ -4,16 +4,23 @@ extends RefCounted
 const PLAZA := Rect2(-414,-152,104,64)
 const ENTRY := Rect2(-378,-88,16,8)
 const LINK := Rect2(-374,-80,8,54)
-const SHOPS := [
- {"at":Vector3(-400,0,-152),"yaw":0.0,"kind":"clothes","name":"CLOSET / アウトレット"},
- {"at":Vector3(-376,0,-152),"yaw":0.0,"kind":"sport","name":"FIELD / スポーツ"},
- {"at":Vector3(-352,0,-152),"yaw":0.0,"kind":"home","name":"暮らしの道具"},
- {"at":Vector3(-328,0,-152),"yaw":0.0,"kind":"books","name":"ページの庭 / 書籍"},
- {"at":Vector3(-402,0,-88),"yaw":PI,"kind":"shoes","name":"WALK / 靴と鞄"},
- {"at":Vector3(-322,0,-88),"yaw":PI,"kind":"cafe","name":"木かげの喫茶"},
- {"at":Vector3(-414,0,-120),"yaw":PI/2,"kind":"clothes","name":"日々の服"},
- {"at":Vector3(-310,0,-120),"yaw":-PI/2,"kind":"home","name":"ホーム・セレクト"}
+const ORIGINAL_SHOPS := [
+	{"at":Vector3(-400,0,-152),"yaw":0.0,"kind":"clothes","name":"CLOSET / アウトレット"},
+	{"at":Vector3(-376,0,-152),"yaw":0.0,"kind":"sport","name":"FIELD / スポーツ"},
+	{"at":Vector3(-352,0,-152),"yaw":0.0,"kind":"home","name":"暮らしの道具"},
+	{"at":Vector3(-328,0,-152),"yaw":0.0,"kind":"books","name":"ページの庭 / 書籍"},
+	{"at":Vector3(-402,0,-88),"yaw":PI,"kind":"shoes","name":"WALK / 靴と鞄"},
+	{"at":Vector3(-322,0,-88),"yaw":PI,"kind":"cafe","name":"木かげの喫茶"},
+	{"at":Vector3(-414,0,-120),"yaw":PI/2,"kind":"clothes","name":"日々の服"},
+	{"at":Vector3(-310,0,-120),"yaw":-PI/2,"kind":"home","name":"ホーム・セレクト"}
 ]
+static var SHOPS:Array=make_shops()
+static func make_shops()->Array:
+	var result:Array=[]
+	for i in ORIGINAL_SHOPS.size():
+		var shop:Dictionary=ORIGINAL_SHOPS[i].duplicate();var at:Array=MallStructureData.DATA.C.stores[i].placement
+		shop.at=Vector3(at[0],0,at[1]);shop.yaw=at[2];result.append(shop)
+	return result
 static var region_cache: Array[Rect2] = []
 static var obstacle_cache: Array[Rect2] = []
 var mall: Node3D
@@ -31,12 +38,9 @@ static func transformed(rect: Rect2,store: Dictionary) -> Rect2:
 		else: result = result.expand(Vector2(p.x,p.z))
 	return Rect2(result.position.round(),result.size.round())
 
-static func regions(level: int) -> Array[Rect2]:
-	if level != 0: return []
-	if region_cache.is_empty():
-		region_cache.append_array([PLAZA,ENTRY,LINK])
-		for store in SHOPS: region_cache.append(transformed(Rect2(-10,-18,20,18),store))
-	return region_cache
+static func regions(level:int)->Array[Rect2]:
+	if level!=0:return []
+	return [MallStructure.bounds("C",0)]
 
 static func obstacles(level: int) -> Array[Rect2]:
 	if level != 0: return []
@@ -51,51 +55,63 @@ static func obstacles(level: int) -> Array[Rect2]:
 				var center: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(rect.get_center().x,0,rect.get_center().y)
 				var size := rect.size if absf(sin(store.yaw)) < .5 else Vector2(rect.size.y,rect.size.x)
 				obstacle_cache.append(Rect2(Vector2(center.x,center.z)-size/2,size))
-		for x in [-386.0,-338.0]:
-			obstacle_cache.append(Rect2(x-5,-126,10,8))
-			obstacle_cache.append(Rect2(x-2,-102.35,4,.7))
-		for x in [-407.0,-317.0]:
-			for z in [-141.0,-99.0]: obstacle_cache.append(Rect2(x-.18,z-.18,.36,.36))
+		for at in [Vector2(-432,-134),Vector2(-320,-164)]:
+			obstacle_cache.append(Rect2(at-Vector2(5,4),Vector2(10,8)))
+			obstacle_cache.append(Rect2(at+Vector2(-2,8.65),Vector2(4,.7)))
+
+		obstacle_cache.append_array([Rect2(-374.06,-80,.12,54),Rect2(-366.06,-80,.12,54)])
 		obstacle_cache.append_array(RetailDensity.obstacles("C",level))
 	return obstacle_cache
 
-static func contains(p: Vector3) -> bool:
-	return Mall.level_at(p.y) == 0 and p.z < -26 and p.x < -290
-
-static func zone_name(p: Vector3) -> String:
-	return "B・C館 / 屋根付き連絡通路" if p.z > -80 else "C館1階 / 屋外アウトレット"
-
-func build(root: Node3D) -> void:
-	mall = root
-	Shapes.box(mall,Vector3(-362,-.4,-120),Vector3(180,.1,150),Shapes.material(Color("677963")))
-	var paving := MallFinishes.stone(.45)
-	for rect in regions(0): Shapes.box(mall,Vector3(rect.get_center().x,-.175,rect.get_center().y),Vector3(rect.size.x,.35,rect.size.y),paving,true)
-	# Warm paving borders and two planted islands leave a clear route around the court.
-	for z in [-147.0,-93.0]: Shapes.box(mall,Vector3(-362,.012,z),Vector3(102,.024,1.2),stone)
-	for x in [-386.0,-338.0]: _island(x)
-	for index in SHOPS.size(): _shop(SHOPS[index],index)
-	for x in [-386.0,-338.0]:
-		Shapes.box(mall,Vector3(x,.47,-102),Vector3(4,.12,.7),wood,true)
-		Shapes.box(mall,Vector3(x,.87,-101.7),Vector3(4,.7,.12),wood)
-		for dx in [-1.3,1.3]: Shapes.box(mall,Vector3(x+dx,.22,-102),Vector3(.12,.44,.5),dark)
-		for dx in [-1.0,1.0]: identities.append({"pos":Vector3(x+dx,0,-102),"yaw":0.0,"role":"seated","activity":"terrace"})
-	for x in [-355.0,-353.0]: identities.append({"pos":Vector3(x,0,-138),"yaw":-PI/2 if x < -354 else PI/2,"role":"conversation","activity":"plaza_talk"})
-	for x in [-407.0,-317.0]:
-		for z in [-141.0,-99.0]:
-			Shapes.box(mall,Vector3(x,2.4,z),Vector3(.14,4.8,.14),dark,true)
-			Shapes.box(mall,Vector3(x,4.8,z),Vector3(1,.12,.6),Shapes.material(Color("f1e1b7"),.4))
+static func contains(p:Vector3)->bool:
+	return Mall.level_at(p.y)==0 and MallStructure.contains("C",0,Vector2(p.x,p.z))
+static func zone_contains(p:Vector3)->bool:
+	return contains(p) or (Mall.level_at(p.y)==0 and Rect2(-495,-225,240,150).has_point(Vector2(p.x,p.z)))
+static func zone_name(p:Vector3)->String:
+	if p.z> -80:return "B・C館 / 屋根付き連絡通路"
+	var nearest:Dictionary=MallStructureData.DATA.C.plazas[0];var distance:=INF
+	for plaza:Dictionary in MallStructureData.DATA.C.plazas:
+		var v:=Vector2(plaza.at[0],plaza.at[1]);var d:=v.distance_squared_to(Vector2(p.x,p.z))
+		if d<distance:distance=d;nearest=plaza
+	return "C館1階 / "+str(nearest.name)
+func build(root:Node3D)->void:
+	mall=root
+	Shapes.box(mall,Vector3(-375,-.55,-150),Vector3(240,.20,150),Shapes.material(Color("6c8065")),true)
+	var water:=Shapes.material(Color("597e7d"));water.roughness=.22
+	Shapes.box(mall,Vector3(-370,-.40,-164),Vector3(40,.05,20),water)
+	for at in [Vector3(-402,-.45,-163),Vector3(-390,-.45,-156),Vector3(-347,-.45,-172),Vector3(-352,-.45,-184)]:mall._tree(at)
+	MallStructure.surface(mall,MallStructureData.DATA.C.floors[0].triangles,0,MallFinishes.stone(.45),true)
+	for at in [Vector2(-432,-134),Vector2(-320,-164)]:
+		var first:=mall.get_child_count();_island(at.x)
+		BWing.relocate(mall,first,mall.identity_slots.size(),Transform3D(Basis.IDENTITY,Vector3(0,0,at.y+122)))
+	for i in SHOPS.size():_shop(SHOPS[i],i)
+	for at in [Vector2(-432,-134),Vector2(-320,-164)]:
+		var p:=Vector3(at.x,0,at.y+9)
+		Shapes.soft_box(mall,p+Vector3(0,.47,0),Vector3(4,.12,.7),wood,true)
+		Shapes.box(mall,p+Vector3(0,.87,.3),Vector3(4,.7,.12),wood)
+		for dx in [-1.0,1.0]:identities.append({"pos":p+Vector3(dx,0,0),"yaw":0.0,"role":"seated","activity":"terrace"})
+	for x in [-374.0,-372.0]:identities.append({"pos":Vector3(x,0,-93),"yaw":-PI/2 if x< -373 else PI/2,"role":"conversation","activity":"plaza_talk"})
 	_link()
-	_boundary()
-	var sign := Shapes.sign_text(mall,Vector3(-370,3,-84),"C館 / オープンテラス\nアウトレット・休憩広場",42,Color("33484a")); sign.pixel_size = .006
-	# Reuse 30 browsing slots in B rather than increasing the 300-person budget.
-	var candidates: Array[int] = []
+	for floor:Dictionary in MallStructure.floor_packets("C",0):
+		var rings:Array=[floor.outer];rings.append_array(floor.holes)
+		for ring:PackedVector2Array in rings:
+			for i in ring.size():
+				var a:Vector2=ring[i];var b:Vector2=ring[(i+1)%ring.size()]
+				if minf(a.y,b.y)>-80:continue
+				var mid:Vector2=(a+b)*.5;var storefront:=false
+				for shop:Dictionary in SHOPS:
+					var q:Vector3=Basis(Vector3.UP,shop.yaw).inverse()*(Vector3(mid.x,0,mid.y)-shop.at)
+					if Rect2(-10.2,-18.2,20.4,18.4).has_point(Vector2(q.x,q.z)):storefront=true;break
+				if storefront:continue
+				MallStructure.segment(mall,a,b,.55,1.1,.10,mall._glass(),true)
+				MallStructure.segment(mall,a,b,1.12,.055,.13,dark)
+	for plaza:Dictionary in MallStructureData.DATA.C.plazas:
+		var label:=Shapes.sign_text(mall,Vector3(plaza.at[0],3,plaza.at[1]-15),plaza.name,40);label.pixel_size=.006
+	var candidates:Array[int]=[]
 	for id in mall.identity_slots.size():
-		var slot: Dictionary = mall.identity_slots[id]
-		if slot.pos.x < -190 and slot.role == "browsing": candidates.append(id)
-	assert(identities.size() == 30 and candidates.size() >= identities.size())
-	for index in identities.size():
-		var selected := candidates[floori(float(index)*candidates.size()/identities.size())]
-		mall.identity_slots[selected] = identities[index]
+		if mall.identity_slots[id].pos.x< -190 and mall.identity_slots[id].role=="browsing":candidates.append(id)
+	assert(identities.size()==30 and candidates.size()>=identities.size())
+	for i in identities.size():mall.identity_slots[candidates[floori(float(i)*candidates.size()/identities.size())]]=identities[i]
 
 func _shop(store: Dictionary,index: int) -> void:
 	var root := Node3D.new(); mall.add_child(root); root.position = store.at; root.rotation.y = store.yaw

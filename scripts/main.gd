@@ -135,6 +135,7 @@ func _create_run(count: int, run_seed: int = -1) -> void:
 	add_child(crowd)
 	crowd.process_mode = Node.PROCESS_MODE_PAUSABLE
 	crowd.setup(run, mall.spawn_points)
+	NavigationPolicy.configure(crowd.nav)
 	doors.reset()
 	loot = RunLoot.new(mall.spawn_points,run_seed)
 	caches = CacheField.new(); effects.add_child(caches); caches.setup(loot)

@@ -26,9 +26,9 @@ func run_tests() -> void:
 		var doorway: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,1.6,3)
 		var inside: Vector3 = store.at+Basis(Vector3.UP,store.yaw)*Vector3(0,1.6,-3)
 		expect(state.intersect_ray(PhysicsRayQueryParameters3D.create(doorway,inside,1)).is_empty(),"Open public doorway in C shop %s" % store.name)
-	var roof_query := PhysicsRayQueryParameters3D.create(Vector3(-362,1.7,-116),Vector3(-362,20,-116),1)
+	var roof_query := PhysicsRayQueryParameters3D.create(Vector3(-370,1.7,-94),Vector3(-370,20,-94),1)
 	expect(state.intersect_ray(roof_query).is_empty(),"C's central court remains open to the sky")
-	expect(not state.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(-392,.3,-122),Vector3(-386,.3,-122),1)).is_empty(),"Raised planted islands block walking and low scanner rays")
+	expect(not state.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(-438,.3,-134),Vector3(-432,.3,-134),1)).is_empty(),"Raised planted islands block walking and low scanner rays")
 	var all_readable := true
 	for id in ids:
 		var readable := false
@@ -44,17 +44,17 @@ func run_tests() -> void:
 		var target: int = game.crowd.nav.get_closest_point(game.crowd.positions[id])
 		if game.crowd.nav.get_point_path(source,target).is_empty(): connected = false
 	expect(connected,"C shop approaches are connected to A's entrance through the same cat and walking graph")
-	game.player.position = Vector3(-370,.05,-18); game.player.velocity = Vector3.ZERO
+	game.player.position = Vector3(-370,.05,-24); game.player.velocity = Vector3.ZERO
 	expect(await walk_to(game,Vector3(-370,0,-90),14),"Walk from B's west foyer through its north doorway and the entire covered C link")
-	expect(await walk_to(game,Vector3(-370,0,-144),10),"Walk along C's clear central route between the planted islands")
-	expect(await walk_to(game,Vector3(-376,0,-147),3),"Approach the north sports shop from the public court")
+	expect(await follow_nav(game,Vector3(-432,0,-120),22),"Walk along the branched street to the garden court")
+	expect(await follow_nav(game,Vector3(-432,0,-149),12),"Approach the sports shop around the planted garden island")
 	# Follow the public aisle around the new entrance display, in both directions.
 	var entered:=true
-	for point in [Vector3(-376,0,-153.5),Vector3(-373.8,0,-153.5),Vector3(-373.8,0,-158),Vector3(-376,0,-158)]:
+	for point in [Vector3(-432,0,-154.5),Vector3(-429.8,0,-154.5),Vector3(-429.8,0,-159),Vector3(-432,0,-159)]:
 		entered=(await walk_to(game,point,3)) and entered
 	expect(entered,"Enter the north shop around its display without jumping or teleporting")
 	var left_shop:=true
-	for point in [Vector3(-373.8,0,-158),Vector3(-373.8,0,-153.5),Vector3(-376,0,-153.5),Vector3(-376,0,-147)]:
+	for point in [Vector3(-429.8,0,-159),Vector3(-429.8,0,-154.5),Vector3(-432,0,-154.5),Vector3(-432,0,-149)]:
 		left_shop=(await walk_to(game,point,3)) and left_shop
 	expect(left_shop,"Leave the C shop around its display through the same public doorway")
 	expect(game.run.true_id == fixed and not game.run.won,"Physical travel to C preserves the selected original")
@@ -112,3 +112,19 @@ func walk_to(game: Node3D,target: Vector3,seconds: float) -> bool:
 		game.player.rotation.y = atan2(-difference.x,-difference.z); await physics_frame
 	Input.action_release("forward"); Input.action_release("sprint")
 	push_error("C route stuck at %s wanted %s" % [game.player.position,target]); return false
+
+func follow_nav(game:Node3D,target:Vector3,seconds:float)->bool:
+	var nav:AStar3D=game.crowd.nav
+	var path:=nav.get_point_path(nav.get_closest_point(game.player.position),nav.get_closest_point(target))
+	if path.is_empty():return false
+	var index:=0
+	Input.action_press("sprint");Input.action_press("forward")
+	for frame in ceili(seconds*60):
+		if index>=path.size():break
+		var d:Vector3=path[index]-game.player.position;d.y=0
+		if d.length()<.42:index+=1;continue
+		game.player.rotation.y=atan2(-d.x,-d.z)
+		await physics_frame
+	Input.action_release("forward");Input.action_release("sprint");await physics_frame
+	if index<path.size():push_error("Route stopped at %s, next %s, destination %s"%[game.player.position,path[index],target])
+	return index>=path.size()

@@ -17,9 +17,9 @@ func verify()->void:
 		if Mall.level_at(plan.y)==0 and DiningWing.CLOSED_REAR.has_point(Vector2(plan.x,plan.z)):empty=false
 	expect(empty,"Removed rear loop has no public spawn points or treasure candidates")
 	for p in [Vector2(-40,-30),Vector2(0,-30),Vector2(35,-33)]:
-		expect(not Mall.inside_floor(p),"Closed back-of-house space is no longer public floor: %s"%p)
+		expect(Mall.inside_floor(p) if p.x< -30 else not Mall.inside_floor(p),"North branch reopens while the stock strip stays non-public: %s"%p)
 	var boundary:=PhysicsRayQueryParameters3D.create(MallCurve.world(Vector3(-39,1.6,-21)),MallCurve.world(Vector3(-39,1.6,-27)),1,[game.player.get_rid()])
-	expect(not state.intersect_ray(boundary).is_empty(),"Information lounge physically closes the former rear passage")
+	expect(state.intersect_ray(boundary).is_empty(),"The information board moves to the side, leaving the new north branch physically open")
 	var original:int=game.run.true_id
 	var waits:Array[int]=[];var staff:Array[int]=[]
 	for id in game.crowd.slots.size():
