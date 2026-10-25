@@ -10,7 +10,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "builds"
 SOURCE_HISTORY_URL = "https://github.com/tapiosan666-coder/1/raw/refs/heads/codex/mall-phase2-interiors/"
-INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.18.0
+INSTRUCTIONS = """FIND YOURSELF / 日本語開発版 0.19.0
 
 旧版とは別フォルダーにZIP全体を展開してから起動してください。
 Windows: FIND_YOURSELF.exe をダブルクリック。
@@ -59,6 +59,9 @@ Windows版はクロスビルド済みで、Windows実機では未検証です。
 0.18では店舗の陳列を更新。壁面棚、中央ラック、入口平台とマネキンを追加。
 同じ商品モデルを共有する描画方式を使用し、棚と経路の占有範囲を対応させています。
 変更前後の実画面と検証条件はdocs/RETAIL_DENSITY.mdを参照。
+0.19では服と展示用マネキンを立体形状へ更新し、布の織り目と法線、丸い金属ラック、衣料品店の局所照明を追加。
+NPC本体のモデルは変更していません。docs/RETAIL_FINISH.mdを参照。
+建物外形・通路の骨格は従来のままです。B館の構造改修は次工程で、現版への実装はまだです。docs/MALL_STRUCTURE_NEXT.mdを参照。
 1階トイレを入口の目隠し・男女別・洗面12台・個室9・多機能/ベビー室へ更新。
 13枚の扉はFで開閉。NPCと宝箱は空の個室・試着室へ配置せず、猫の経路も通しません。
 300人・18移動地点・初期スキャナーのみで最終確認する仕様は維持。docs/MALL_PHASE2.mdを参照。
@@ -84,13 +87,13 @@ A館北側ファッション店が最初の作り込み区画。写実品質や8
 音声は合成効果音です。外部API・インターネット接続は不要です。
 Godot Engineおよび同梱ライブラリのライセンスはthird_party/をご覧ください。
 ソースZIPにはゲームの全コード・素材・ツール・テストを収録しています。
-過去版の比較画像は容量を抑えるためGitHubリンクにし、0.18の比較画像は同梱しています。
+過去版の比較画像は容量を抑えるためGitHubリンクにし、0.19の比較画像は同梱しています。
 ゲームの起動にネット接続は不要です。
 """
 
 
 def historical_screenshot(relative: Path) -> bool:
-    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall18-")
+    return relative.parts[:2] == ("docs", "screenshots") and not relative.name.startswith("mall19-")
 
 
 def source_markdown(path: Path) -> str:

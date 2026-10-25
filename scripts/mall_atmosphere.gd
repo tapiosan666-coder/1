@@ -101,3 +101,22 @@ func _tenant(origin: Vector3,yaw: float,width: float,side: int,kind: int,outlet:
 	spot.spot_angle=55;spot.spot_range=10;spot.light_energy=.65
 	spot.light_color=Color("ffe6c9") if kind in [0,1,5,6] else Color("e5eef1")
 	spot.distance_fade_enabled=true;spot.distance_fade_begin=16;spot.distance_fade_length=8
+
+	# Short wall washes reveal hanging garments and shelf depth in fashion units.
+	# They fade by distance and cast no realtime shadows.
+	if kind==1:
+		var display_key:=SpotLight3D.new();node.add_child(display_key)
+		display_key.position=Vector3(0,4.12,side*(front+.9))
+		display_key.look_at(node.to_global(Vector3(0,1.35,side*(front+4.0))))
+		display_key.spot_angle=43;display_key.spot_range=7;display_key.light_energy=1.30
+		display_key.light_color=Color("fff0dd");display_key.shadow_enabled=false
+		display_key.distance_fade_enabled=true;display_key.distance_fade_begin=16;display_key.distance_fade_length=8
+		display_key.set_meta("apparel_display_key",true)
+		for dx in [-width*.27,width*.27]:
+			var wash:=SpotLight3D.new();node.add_child(wash)
+			wash.position=Vector3(dx,4.1,side*(back-3.1))
+			wash.look_at(node.to_global(Vector3(dx,1.4,side*(back-.35))))
+			wash.spot_angle=40;wash.spot_range=6;wash.spot_attenuation=1.1
+			wash.light_energy=1.05;wash.light_color=Color("ffe9d3");wash.shadow_enabled=false
+			wash.distance_fade_enabled=true;wash.distance_fade_begin=20;wash.distance_fade_length=8
+			wash.set_meta("apparel_wall_wash",true)

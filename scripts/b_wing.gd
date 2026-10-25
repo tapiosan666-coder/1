@@ -189,10 +189,9 @@ func _display(p: Vector3,kind: String,width: float,depth: float) -> void:
 			Shapes.box(mall,p+Vector3(side*width*.23,1.37,0),Vector3(.7,.5,.08),dark)
 			Shapes.box(mall,p+Vector3(side*width*.23,1.37,-.045),Vector3(.62,.42,.01),Shapes.material(Color("658d9c"),.18))
 	elif kind == "clothes":
-		Shapes.box(mall,p+Vector3(0,1.65,0),Vector3(width,.04,.04),steel)
-		for i in 5:
-			var color := Shapes.material(Color.from_hsv(.04+i*.14,.2,.55))
-			Shapes.box(mall,p+Vector3(-width*.35+i*width*.175,1.34,0),Vector3(.25,.52,.15),color)
+		for x in [-width*.42,width*.42]:Shapes.box(mall,p+Vector3(x,1.57,0),Vector3(.035,.95,.035),steel)
+		Shapes.box(mall,p+Vector3(0,2.05,0),Vector3(width,.035,.035),steel)
+		# Garments belong to RetailDensity's shared apparel groups.
 	elif kind == "home":
 		Shapes.box(mall,p+Vector3(0,1.32,0),Vector3(width*.75,.42,depth*.6),Shapes.material(Color("818d85")))
 		Shapes.box(mall,p+Vector3(0,1.64,depth*.25),Vector3(width*.75,.48,.18),ivory)

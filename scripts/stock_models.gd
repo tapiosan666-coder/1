@@ -9,35 +9,10 @@ static func outline(points:Array,depth:float)->ArrayMesh:
  if area<0:vertices.reverse()
  return TenantProducts.extrude(vertices,depth)
 static func make(kind:String)->ArrayMesh:
+ if kind in ["jacket","shirt","knit","trousers","fold_stack","mannequin"]:return ApparelModels.make(kind)
  if cache.has(kind):return cache[kind]
  var b:=RetailBatch.new();var cream:=Color("e7e1d5");var ink:=Color("303b48");var steel:=Color("919b99")
  match kind:
-  "jacket":
-   var profile:Array=[Vector2(-.20,0),Vector2(.20,0),Vector2(.19,.40),Vector2(.27,.13),Vector2(.38,.18),Vector2(.29,.62),Vector2(.13,.72),Vector2(.065,.67),Vector2(-.065,.67),Vector2(-.13,.72),Vector2(-.29,.62),Vector2(-.38,.18),Vector2(-.27,.13),Vector2(-.19,.40)]
-   b.append(outline(profile,.09),Transform3D.IDENTITY,Color("596476"),0)
-   for side in [-1,1]:
-    b.append(outline([Vector2(side*.065,.68),Vector2(side*.16,.60),Vector2(side*.045,.37)],.014),Transform3D(Basis.IDENTITY,Vector3(0,0,.054)),Color("c2bbb0"),0)
-    b.box(Vector3(side*.115,.20,.056),Vector3(.105,.025,.014),ink)
-    TenantProducts.rod(b,Vector3(0,.78,0),Vector3(side*.24,.62,0),.009,steel)
-   b.box(Vector3(0,.32,.055),Vector3(.012,.57,.012),ink)
-   b.append(RetailModels.arc(Vector3(0,.82,0),.035,.007,-PI*.2,PI*1.25),Transform3D.IDENTITY,steel,1)
-  "trousers":
-   b.append(outline([Vector2(-.18,.77),Vector2(.18,.77),Vector2(.20,.54),Vector2(.16,0),Vector2(.035,0),Vector2(0,.45),Vector2(-.035,0),Vector2(-.16,0),Vector2(-.20,.54)],.075),Transform3D.IDENTITY,Color("616773"),0)
-   b.box(Vector3(0,.75,.045),Vector3(.37,.035,.018),ink)
-   for side in [-1,1]:b.box(Vector3(side*.092,.25,.041),Vector3(.006,.45,.006),Color("c4c0b7"))
-  "fold_stack":
-   for i in 4:
-    b.append(RetailModels.make("folded"),Transform3D(Basis.IDENTITY.scaled(Vector3(.85,.8,.85)),Vector3(0,i*.05,0)),[Color("c9c5ba"),Color("7c8b91"),Color("e0d9c8"),Color("536475")][i])
-  "mannequin":
-   b.box(Vector3(0,.025,0),Vector3(.62,.05,.48),Color("69716e"),1)
-   for side in [-1,1]:
-    TenantProducts.rod(b,Vector3(side*.10,.11,0),Vector3(side*.10,.82,0),.065,ink,0)
-    b.append(RetailModels.make("shoe"),Transform3D(Basis.IDENTITY,Vector3(side*.10,.05,.055)),Color("b6b4ab"))
-    TenantProducts.rod(b,Vector3(side*.23,1.37,0),Vector3(side*.30,.91,.02),.045,cream,0)
-    TenantProducts.ellipsoid(b,Vector3(side*.30,.88,.02),Vector3(.04,.065,.025),cream)
-   b.append(make("jacket"),Transform3D(Basis.IDENTITY.scaled(Vector3(.85,.85,1.3)),Vector3(0,.79,0)),Color("b9b3a8"))
-   TenantProducts.rod(b,Vector3(0,1.40,0),Vector3(0,1.55,0),.045,cream,0)
-   TenantProducts.ellipsoid(b,Vector3(0,1.66,0),Vector3(.085,.12,.075),cream)
   "carton","food_pack","coffee_bag","shoe_box":
    var size:=Vector3(.23,.30,.19)
    if kind=="shoe_box":size=Vector3(.36,.13,.24)

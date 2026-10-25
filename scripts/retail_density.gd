@@ -156,8 +156,12 @@ static func build(mall:Node3D)->void:
  mall.set_meta("stocking_plan",records)
 
 func _box(at:Vector3,size:Vector3,color:Color,channel:int=0)->void:fixed.append(_box_mesh(size),local*Transform3D(Basis.IDENTITY,at),color,channel)
-static func _box_mesh(size:Vector3)->BoxMesh:
+static func _box_mesh(size:Vector3)->Mesh:
+ if minf(size.x,minf(size.y,size.z))>.08 and maxf(size.x,maxf(size.y,size.z))<6:return DisplayMeshes.beveled_box(size,.008)
  var mesh:=BoxMesh.new();mesh.size=size;return mesh
+func _rod(a:Vector3,b:Vector3,radius:float,color:Color)->void:
+ var m:=CylinderMesh.new();m.top_radius=radius;m.bottom_radius=radius;m.height=a.distance_to(b);m.radial_segments=10;m.rings=0
+ fixed.append(m,local*Transform3D(CivilianMotion.segment(a,b),(a+b)*.5),color,1)
 func _item(kind:String,at:Vector3,yaw:float=0.0,scale:float=1.0,tint:Color=Color.WHITE)->void:
  var transform:=local*Transform3D(Basis(Vector3.UP,yaw).scaled_local(Vector3.ONE*scale),at)
  if unit.legacy=="counter":goods.append(StockModels.make(kind),transform,tint)
@@ -217,16 +221,21 @@ func _build(mall:Node3D,old:Array)->void:
   for x in [-7.5,7.5]:
    _item("mannequin",Vector3(x,.56,-10.0),.15)
    _mannequin_solid(mall,unit.t*Vector3(x,.56,-10.0),unit.t.basis.get_euler().y+.15,1.0)
- # Add color and folded stock to the existing islands without adding blockers.
+ # Refill original racks with the same shared, volumetric apparel templates.
  if unit.kind in ["fashion","clothes","kids"]:
   local=Transform3D.IDENTITY
-  if unit.legacy=="upper":
-   for x in [-4.6,4.6]:
-    for i in 8:_item("jacket",Vector3(x-.70+i*.20,.96,-14.1),PI/2,.85)
+  if unit.legacy=="a":
+   for x in [-4.5,4.5]:_old_rack(x,13.5,1.62,1.0)
+   for x in [-5.0,-1.5,2.0]:_old_rack(x*unit.mirror,22,1.62,1.0)
+  elif unit.legacy=="upper":
+   for x in [-4.6,4.6]:_old_rack(x,14.1,1.35 if unit.kind=="kids" else 1.75,.75 if unit.kind=="kids" else 1.0)
   elif unit.legacy=="b":
    for f in [-.3,-.1,.1,.3]:
+    _old_rack(unit.half*2*f,14.5,2.05,1.0)
     for z in [-.65,.65]:
      for i in 3:_item("fold_stack",Vector3(unit.half*2*f-.6+i*.6,1.11,-14.5+z),0,.8)
+  elif unit.legacy=="c":
+   for x in [-4.0,4.0]:_old_rack(x,8,1.62,1.0)
  if unit.legacy=="counter":
   local=Transform3D.IDENTITY
   var top:float=1.11 if unit.level==-1 else 1.05
@@ -255,6 +264,9 @@ func _build(mall:Node3D,old:Array)->void:
   var node:=MultiMeshInstance3D.new();node.name="StockInstances_"+kind;node.multimesh=mesh;root.add_child(node)
   node.set_meta("retail_detail",true);node.set_meta("retail_stock_instances",true);node.set_meta("stocking_unit",unit.id)
   node.visibility_range_end=40;node.visibility_range_end_margin=3;node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+
+func _old_rack(x:float,depth:float,height:float,scale:float)->void:
+ for i in 8:_item(ApparelModels.variant(i),Vector3(x-.70+i*.20,height-.84*scale,-depth),PI/2,scale)
 
 func _mannequin_solid(mall:Node3D,at:Vector3,yaw:float,scale:float)->void:
  # Keep empty air above a display table clear for scanner rays and jumps.
@@ -290,19 +302,19 @@ func _fixture(type:String,w:float,d:float,kind:String)->void:
   if type=="wall":
    _box(Vector3(0,h*.5,-d*.43),Vector3(w,h,.07),pale)
    for y in [.26,2.36]:_box(Vector3(0,y,0),Vector3(w,.05,d),oak,3)
-   for x in [-w*.46,w*.46]:_box(Vector3(x,1.1,0),Vector3(.035,1.9,.035),metal,1)
-   _box(Vector3(0,1.89,d*.20),Vector3(w*.94,.035,.035),metal,1)
+   for x in [-w*.46,w*.46]:_rod(Vector3(x,.08,0),Vector3(x,1.89,0),.017,metal)
+   _rod(Vector3(-w*.47,1.89,d*.20),Vector3(w*.47,1.89,d*.20),.017,metal)
    var count:=maxi(3,int(w/.55))
    for i in count:
     var x:float=-w*.44+i*w*.88/maxi(1,count-1)
-    _item("jacket" if i%3 else "trousers",Vector3(x,1.05 if i%3 else 1.10,d*.21),0,1.0,[Color("d1cbbb"),Color("8b9b9b"),Color("c8b7a0"),Color.WHITE][i%4])
+    _item(ApparelModels.variant(floori(i/3.0)) if i%3 else "trousers",Vector3(x,1.05 if i%3 else 1.10,d*.21),0,1.0,[Color("d1cbbb"),Color("8b9b9b"),Color("c8b7a0"),Color.WHITE][i%4])
     _item("fold_stack",Vector3(x,2.39,0),0,.72)
     _item("shoe_box",Vector3(x,.29,0),0)
   else:
-   for x in [-w*.44,w*.44]:_box(Vector3(x,.92,0),Vector3(.035,1.84,d*.8),metal,1)
+   for x in [-w*.44,w*.44]:_rod(Vector3(x,.06,0),Vector3(x,1.89,0),.017,metal)
    for z in [-d*.28,d*.28]:
-    _box(Vector3(0,1.89,z),Vector3(w*.92,.035,.035),metal,1)
-    for i in 10:_item("jacket" if i%3 else "trousers",Vector3(-w*.38+i*w*.76/9,1.08,z),PI/2,.95,[Color("d3c5af"),Color("a2b1b2"),Color.WHITE][i%3])
+    _rod(Vector3(-w*.46,1.89,z),Vector3(w*.46,1.89,z),.017,metal)
+    for i in 10:_item(ApparelModels.variant(floori(i/3.0)) if i%3 else "trousers",Vector3(-w*.38+i*w*.76/9,1.08,z),PI/2,.95,[Color("d3c5af"),Color("a2b1b2"),Color.WHITE][i%3])
   _price(Vector3(w*.32,1.98,d*.45));return
  var tiers:=4 if type=="wall" else 3
  for x in [-w*.49,w*.49]:_box(Vector3(x,h*.5,0),Vector3(.045,h,d),metal,1)

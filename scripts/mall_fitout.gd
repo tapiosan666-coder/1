@@ -86,18 +86,16 @@ func shelf(x: float, d: float, kind: int, width: float, depth: float) -> void:
 			else:
 				box(px,y+.16,d,Vector3(.2,.28,.25),Shapes.material(color))
 
+func tube(a:Vector3,b:Vector3,radius:float)->void:
+	var node:=Shapes.cylinder(parent,(a+b)*.5,radius,a.distance_to(b),steel)
+	node.basis=CivilianMotion.segment(a,b);(node.mesh as CylinderMesh).radial_segments=10
+
 func clothing_rack(x: float, d: float) -> void:
 	for edge in [-.85,.85]:
-		box(x+edge,.82,d,Vector3(.035,1.64,.035),steel)
+		tube(at(x+edge,.06,d),at(x+edge,1.62,d),.017)
 		box(x+edge,.06,d,Vector3(.12,.08,.75),black)
-	box(x,1.62,d,Vector3(1.75,.035,.035),steel)
-	for index in 5:
-		var px := x-.65+index*.32
-		var cloth := Shapes.material(Color.from_hsv(.04+index*.12,.18,.5+index*.07))
-		box(px,1.29,d,Vector3(.25,.55,.16),cloth)
-		box(px-.14,1.42,d,Vector3(.12,.24,.15),cloth).rotation.z = -.3
-		box(px+.14,1.42,d,Vector3(.12,.24,.15),cloth).rotation.z = .3
-		box(px,1.59,d,Vector3(.018,.08,.018),steel)
+	tube(at(x-.86,1.62,d),at(x+.86,1.62,d),.017)
+	# Clothing is instanced by RetailDensity after the fixture has been placed.
 
 func electronics(x: float, d: float) -> void:
 	box(x,.45,d,Vector3(2,.9,2.8),white)

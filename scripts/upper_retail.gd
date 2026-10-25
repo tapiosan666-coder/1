@@ -108,7 +108,7 @@ func _fixture(f:Dictionary,kind:String)->void:
 		"rack":
 			for x in [-w*.38,w*.38]:_rod(p+Vector3(x,.06,0),p+Vector3(x,h,0),.018,metal);_box(p+Vector3(x,.035,0),Vector3(.12,.07,d*.8),ink)
 			_rod(p+Vector3(-w*.38,h,0),p+Vector3(w*.38,h,0),.02,metal)
-			for i in 5:_item("garment",p+Vector3(-w*.29+i*w*.145,h-.68,0),0,.75 if kind=="kids" else 1.0)
+			# Volumetric clothes share models through RetailDensity.
 			_box(p+Vector3(0,.19,-d*.32),Vector3(w*.8,.06,.65),wood,3)
 			for x in [-.5,.5]:_item("folded",p+Vector3(x,.22,-d*.32),0,.8)
 		"optical","vitrine":
