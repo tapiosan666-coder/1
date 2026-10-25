@@ -26,6 +26,7 @@ static func units()->Array[Dictionary]:
   for base in BWing.STORES:
    var store:=BWing.store_for(level,base)
    unit_cache.append({"id":"b_%d_%d_%d"%[level,int(store.x),store.side],"building":"B","level":level,"kind":store.kind,"half":store.w*.5,"front":8.5,"back":25.85,"t":BWing.store_transform(base)*Transform3D(Basis(Vector3.UP,PI if store.side>0 else 0.0),Vector3(store.x,Mall.floor_height(level),0)),"mirror":-store.side,"legacy":"b"})
+ unit_cache.append_array(BRearRetail.units())
  for i in CWing.SHOPS.size():
   var s:Dictionary=CWing.SHOPS[i]
   unit_cache.append({"id":"c_0_%d"%i,"building":"C","level":0,"kind":s.kind,"half":10.0,"front":0.0,"back":18.0,"t":Transform3D(Basis(Vector3.UP,s.yaw),s.at),"mirror":1,"legacy":"c"})
@@ -55,7 +56,7 @@ static func old_blocks(u:Dictionary)->Array[Rect2]:
    if u.index==1 and m==1:
     for x in [-7.5,7.5]:b.append(Rect2(x-.85,9.1,1.7,1.8))
   "upper":
-   for f in UpperRetail.fixtures(u.kind):b.append(f.rect)
+   for f in (BRearRetail.fixtures(u.kind) if u.get("rear",false) else UpperRetail.fixtures(u.kind)):b.append(f.rect)
    b.append(Rect2(2.35,19.35,1.3,1.3));b.append(Rect2(-3.65,19.65,1.3,1.3))
    if u.kind=="fashion":b.append(UpperRetail.fitting_rect())
   "b":

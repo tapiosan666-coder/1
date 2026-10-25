@@ -10,6 +10,14 @@ func probe()->void:
  var sampled:Dictionary={}
  for p:Vector3 in points:
   var plan:=MallCurve.plan(p);sampled[Vector3i(roundi(plan.x),Mall.level_at(p.y),roundi(plan.z))]=true
+ for level in [-1,0,1,2,3]:
+  for rect:Rect2 in Mall.plan_regions(level):
+   for z in range(floori(rect.position.y/2)*2+1,ceili(rect.end.y),2):
+    for x in range(floori(rect.position.x/2)*2+1,ceili(rect.end.x),2):
+     var key:=Vector3i(x,level,z)
+     if sampled.has(key):continue
+     var p:=Vector3(x,Mall.floor_height(level),z)
+     if Mall.plan_walkable(p):points.append(MallCurve.world(p));sampled[key]=true
  for p:Vector3 in RetailDensity.sample_plan_points():
   var key:=Vector3i(roundi(p.x),Mall.level_at(p.y),roundi(p.z))
   if not sampled.has(key) and Mall.plan_walkable(p):points.append(MallCurve.world(p));sampled[key]=true

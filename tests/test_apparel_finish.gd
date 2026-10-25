@@ -50,7 +50,7 @@ func verify()->void:
     correct=correct and transform.origin.is_finite() and absf(transform.basis.determinant())>.00001 and node.multimesh.custom_aabb.encloses(transform*node.multimesh.mesh.get_aabb())
   expect(found.size()==6 and total>3000 and correct,"Saved stores use volumetric apparel with valid instancing, culling and bounds")
   var stock:Dictionary=world.get_meta("retail_stock")
-  expect(stock.stores==89 and int(stock.by_kind.get("garment",0))==0 and stock.by_kind.shirt>0 and stock.by_kind.knit>0,"All outlets remain stocked and the old upper-floor flat shirts are replaced")
+  expect(stock.stores==101 and int(stock.by_kind.get("garment",0))==0 and stock.by_kind.shirt>0 and stock.by_kind.knit>0,"All outlets remain stocked and the old upper-floor flat shirts are replaced")
   var washes:=0;var displays:=0;var bounded:=true
   for light:SpotLight3D in world.find_children("*","SpotLight3D",true,false):
    if light.get_meta("apparel_wall_wash",false):washes+=1

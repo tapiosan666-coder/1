@@ -41,11 +41,13 @@ func build() -> void:
 			if not reached.has(id):print("UNREACHABLE_SAMPLE ",MallCurve.plan(crowd.nav.get_point_position(id)))
 		quit(1);return
 	print("NAV_CONNECTED ",reached.size())
-	var positions := PackedVector3Array(); var edges := PackedInt32Array()
+	var positions := PackedVector3Array(); var edges := PackedInt32Array();var one_way:=PackedInt32Array()
 	for id in crowd.nav.get_point_ids():
 		positions.append(crowd.nav.get_point_position(id))
 		for other in crowd.nav.get_point_connections(id):
-			if other > id: edges.append(id); edges.append(other)
+			if crowd.nav.are_points_connected(other,id,false):
+				if other > id: edges.append(id); edges.append(other)
+			else:one_way.append(id);one_way.append(other)
 	var world := Node3D.new(); world.name = "MallWorld"; root.add_child(world)
 	for child in mall.get_children(): child.reparent(world,true)
 	assign_owner(world,world)
@@ -54,7 +56,7 @@ func build() -> void:
 	if "--emit-occlusion" in OS.get_cmdline_user_args():world.set_meta("occlusion_input_sha256",FileAccess.get_sha256("/tmp/fy14-ao-in.bin"))
 	world.set_meta("schema",WorldCache.SCHEMA)
 	world.set_meta("spawn_points",mall.spawn_points); world.set_meta("identity_slots",mall.identity_slots)
-	world.set_meta("render_stats",mall.render_stats); world.set_meta("nav_positions",positions); world.set_meta("nav_edges",edges)
+	world.set_meta("render_stats",mall.render_stats); world.set_meta("nav_positions",positions); world.set_meta("nav_edges",edges);world.set_meta("nav_one_way",one_way)
 	world.set_meta("dining_layout",mall.get_meta("dining_layout",{}))
 	world.set_meta("atmosphere",mall.get_meta("atmosphere",{}))
 	world.set_meta("floor_contacts",mall.get_meta("floor_contacts",{}))
@@ -62,6 +64,7 @@ func build() -> void:
 	world.set_meta("restroom_layout",mall.get_meta("restroom_layout",{}))
 	world.set_meta("stocking_plan",mall.get_meta("stocking_plan",[]))
 	world.set_meta("b_concourse",mall.get_meta("b_concourse",{}))
+	world.set_meta("b_rear_retail",mall.get_meta("b_rear_retail",{}))
 	var stock := {"stores":0,"items":0,"by_kind":{}}
 	for node in world.find_children("*","MeshInstance3D",true,false):
 		if not node.get_meta("retail_detail",false): continue
@@ -74,7 +77,7 @@ func build() -> void:
 	var packed := PackedScene.new(); assert(packed.pack(world) == OK)
 	DirAccess.make_dir_recursive_absolute("res://assets/world")
 	assert(ResourceSaver.save(packed,WorldCache.PATH,ResourceSaver.FLAG_COMPRESS) == OK)
-	var manifest := {"navigation_validation":{"connected":reached.size(),"unreachable":0},"static_instancing":instancing,"fingerprint":WorldCache.fingerprint(),"render":mall.render_stats,"nav_points":positions.size(),"nav_edges":edges.size()/2,"floor_contacts":mall.get_meta("floor_contacts",{}),"retail_stock":stock}
+	var manifest := {"navigation_validation":{"connected":reached.size(),"unreachable":0},"static_instancing":instancing,"fingerprint":WorldCache.fingerprint(),"render":mall.render_stats,"nav_points":positions.size(),"nav_edges":edges.size()/2,"nav_one_way_arcs":one_way.size()/2,"floor_contacts":mall.get_meta("floor_contacts",{}),"retail_stock":stock}
 	var file := FileAccess.open("res://assets/world/manifest.json",FileAccess.WRITE); file.store_string(JSON.stringify(manifest,"  ")); file.close()
 	print("WORLD_CACHE: ",JSON.stringify(manifest))
 	quit()

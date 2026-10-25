@@ -45,13 +45,16 @@ def compile_plan(source):
     d={};b=source['B'];main=LineString(b['main']);loop=curve(b['loop'])
     concourse=main.buffer(b['main_width']/2,quad_segs=8,join_style='round')
     for p in b['plazas']:concourse=concourse.union(ellipse(p['at'],p['radius']))
-    base=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8,join_style='round'),rect(b['anchor']),rect(b['court'])]+[store_shape(s) for s in b['stores']])
+    base=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8,join_style='round'),rect(b['anchor']),rect(b['court'])]+[store_shape(s) for s in b['stores']+b['rear_stores']])
     # Public cross-passages make the inner stores actual islands in the circulation network.
     for path in b['cross_paths']:base=base.union(LineString(path).buffer(4,quad_segs=8))
     public=unary_union([concourse,loop.buffer(b['loop_width']/2,quad_segs=8)]+[LineString(path).buffer(4,quad_segs=8) for path in b['cross_paths']])
     from shapely.ops import nearest_points
     for st in b['stores']:
         x,w,side=st['legacy'];front=move(Point(0,side*9.2),st['placement']);target=nearest_points(front,public)[1]
+        base=base.union(LineString([front,target]).buffer(3.5,quad_segs=4))
+    for st in b['rear_stores']:
+        front=Point(st['placement'][:2]);target=nearest_points(front,public)[1]
         base=base.union(LineString([front,target]).buffer(3.5,quad_segs=4))
     void=main.buffer((b['main_width']-2*b['gallery_width'])/2,quad_segs=8)
     # Keep foyer and anchor approach as solid upper-floor landings.
@@ -62,24 +65,35 @@ def compile_plan(source):
     court_upper=unary_union([rect(r) for r in b['court_upper']])
     ports=[box(-201,-8.1,-169,-2.9),box(-374.2,-30,-365.8,-22)]
     wall_cut=unary_union(ports)
+    rear_walls=unary_union([store_shape(st).buffer(.22) for st in b['rear_stores']])
+    bank_public=[];shafts=[];north_ports=[];south_ports=[]
+    for bank in b['escalator_banks']:
+        cx,cz=bank['at'];side=bank['side'];lo=min(cx+side*11.5,cx+side*23);hi=max(cx+side*11.5,cx+side*23)
+        bank_public.extend([box(lo,cz-9,hi,cz-6),box(lo,cz+6,hi,cz+9),box(cx+side*21.5-1.5,cz-9,cx+side*21.5+1.5,cz+9)])
+        for offset in [13.5,16.5]:
+            x=cx+side*offset;shafts.append(box(x-1.2,cz-6,x+1.2,cz+6))
+            north_ports.append(box(x-1.4,cz-6.3,x+1.4,cz-5.7));south_ports.append(box(x-1.4,cz+5.7,x+1.4,cz+6.3))
+    bank_public=unary_union(bank_public).intersection(base);shafts=unary_union(shafts)
+    north_ports=unary_union(north_ports);south_ports=unary_union(south_ports)
+
     walls=[];floor=[];rails=[];b_geometries=[]
     for level in range(3):
         shell=base
         if level==0:shell=shell.union(LineString(b['c_access']).buffer(4,quad_segs=4,cap_style='flat'))
         f=shell if level==0 else shell.difference(void).union(bridges.intersection(shell)).union(court_upper)
-        if level==1:f=f.difference(box(-332.2,54,-329.8,66))
-        if level==2:f=f.difference(box(-317.7,54,-315.3,66))
+        if level>0:f=f.union(bank_public).difference(shafts)
         f=f.union(rect(b['ground_link'] if level==0 else b['sky_link'])) if level<2 else f
         assert len(polys(f))==1, 'B floor must be connected'
         floor.append(floor_data(f));b_geometries.append(f)
         rail=f.boundary.difference(shell.boundary.buffer(.10))
-        if level==1:rail=rail.difference(unary_union([box(-332.4,65.8,-329.6,66.2),box(-317.9,65.8,-315.1,66.2)]))
-        if level==2:rail=rail.difference(box(-317.9,53.8,-315.1,54.8))
+        if level==1:rail=rail.difference(north_ports.union(south_ports))
+        if level==2:rail=rail.difference(south_ports)
         rails.append([list(line.coords) for line in (list(rail.geoms) if hasattr(rail,'geoms') else [rail]) if line.geom_type=='LineString'])
         wall=shell.boundary.difference(wall_cut.union(rect(source['C']['upper']['bridge_port'])) if level==1 else wall_cut)
+        wall=wall.difference(rear_walls)
         # Upper openings have physical guardrails; service courtyards are enclosed by the shell walls.
         walls.append([list(line.coords) for line in (list(wall.geoms) if hasattr(wall,'geoms') else [wall])])
-    d['B']={'floors':floor,'walls':walls,'rails':rails,'voids':packet(void.difference(bridges).difference(court_upper)),'roof':floor_data(base.difference(box(-496,-26,-466,26))),'ground_roof':floor_data(LineString(b['c_access']).buffer(4,quad_segs=4,cap_style='flat').difference(base)),'stores':b['stores'],'plazas':b['plazas'],'main':b['main'],'loop':b['loop'],'c_access':b['c_access']}
+    d['B']={'floors':floor,'walls':walls,'rails':rails,'voids':packet(void.difference(bridges).difference(court_upper).difference(bank_public).union(shafts.intersection(base))),'roof':floor_data(base.difference(box(-496,-26,-466,26))),'ground_roof':floor_data(LineString(b['c_access']).buffer(4,quad_segs=4,cap_style='flat').difference(base)),'stores':b['stores'],'rear_stores':b['rear_stores'],'escalator_banks':b['escalator_banks'],'plazas':b['plazas'],'main':b['main'],'loop':b['loop'],'c_access':b['c_access']}
     c=source['C']
     street=unary_union([curve(points).buffer(c['width']/2,quad_segs=8,join_style='round',cap_style='flat') for points in c['streets']]+[ellipse(p['at'],p['radius']) for p in c['plazas']])
     # Each entrance gets a short public approach; no detached shop floors.

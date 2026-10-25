@@ -46,8 +46,8 @@ func verify()->void:
   expect(Mall.walkable(at),"C courts and return street have public floors at %s"%at)
   var path:PackedVector3Array=game.crowd.nav.get_point_path(game.crowd.nav.get_closest_point(Mall.hub_position("中央入口")),game.crowd.nav.get_closest_point(at))
   expect(not path.is_empty(),"C street connects to A's entrance")
- expect(Mall.escalator_carry(Vector3(-331,2.7625,60)).z>.8,"B first escalator conveyor follows its new position")
- expect(Mall.escalator_carry(Vector3(-316.5,8.2,60)).z<-.8,"B return-direction escalator conveyor follows the new upper flight")
+ expect(Mall.escalator_carry(Vector3(-311.5,2.7625,43)).z>.8,"B time-court upward escalator follows its new position")
+ expect(Mall.escalator_carry(Vector3(-308.5,8.2,43)).z<-.8,"B paired downward escalator moves in the opposite direction")
  expect(Mall.escalator_carry(Vector3(-241.5,0,9))==Vector3.ZERO,"No conveyor motion remains at the former B escalator")
  # Access all fixed identities through the same path and sight queries used by cats.
  var accessible:=true

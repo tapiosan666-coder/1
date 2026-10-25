@@ -21,10 +21,12 @@ for f in json.loads((ROOT/'docs/structure-floor-plans.json').read_text()):
     for destination in f.get("destinations",[]):
         x,y=xy(destination["at"]);dr.ellipse((x-4,y-4,x+4,y+4),fill="#dfbf87")
         dr.text((x,y-8),destination["name"].split(" / ")[-1],font=small,fill="#dfbf87",anchor="mb",stroke_width=1,stroke_fill="#14272d")
+    for flight in f.get("escalators",[]):
+        dr.line([xy(p) for p in flight["points"]],fill="#e5c476" if flight["up"] else "#8fc6c8",width=3)
     if f.get("stairs"):
         dr.line([xy(p) for p in f["stairs"]],fill="#e1b77f",width=3)
         dr.text(xy(f["stairs"][0]),"階段 1F↔2F",font=small,fill="#e1b77f",stroke_width=1,stroke_fill="#14272d")
     title=f"{f['building']}館 {f['level']+1}F / ゲームの床・店舗定義から出力（ゲーム画面ではありません）"
     dr.text((35,15),title,font=font,fill='white')
     dr.text((35,722),'灰緑：床　青：売場　濃色：開口・屋外・非公開区画　／　実施設の実測図ではありません',font=small,fill='#c8d6cc')
-    im.save(ROOT/f"docs/images/mall21-{f['building'].lower()}-{f['level']+1}f.png")
+    im.save(ROOT/f"docs/images/mall22-{f['building'].lower()}-{f['level']+1}f.png")

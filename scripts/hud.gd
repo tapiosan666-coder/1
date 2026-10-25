@@ -320,6 +320,11 @@ func _structure_shapes(building:String,level:int,color:Color)->Array:
 				for p in [Vector2(shop.x-shop.w*.5,-26 if shop.side<0 else 8),Vector2(shop.x+shop.w*.5,-26 if shop.side<0 else 8),Vector2(shop.x+shop.w*.5,-8 if shop.side<0 else 26),Vector2(shop.x-shop.w*.5,-8 if shop.side<0 else 26)]:
 					var w:Vector3=t*Vector3(p.x,0,p.y);points.append(Vector2(w.x,w.z))
 				_cache_structure_shape(records,points,Color("3d5c65"))
+			for store:Dictionary in BRearRetail.stores(level):
+				var points:=PackedVector2Array()
+				for p in [Vector3(-9,0,-24),Vector3(9,0,-24),Vector3(9,0,-8),Vector3(-9,0,-8)]:
+					var w:Vector3=store.t*p;points.append(Vector2(w.x,w.z))
+				_cache_structure_shape(records,points,Color("547a80"))
 		elif building=="A":
 			_cache_structure_shape(records,MallCurve.polygon(Rect2(-30,-36,90,12)),Color("2b3d43"))
 			_cache_structure_shape(records,MallCurve.polygon(Rect2(-24,-68,60,24)),Color("3d5c65"))
@@ -347,6 +352,15 @@ func _draw_structure(building:String,level:int,frame:Rect2,color:Color)->void:
 			var at:=_plan_point(station.at,frame)
 			if frame.grow(-3).has_point(at):draw_circle(at,2.8,Color("dfbf87"))
 			if frame.size.x>400:draw_string(font,at+Vector2(-24,-6),str(station.name).split(" / ")[-1],HORIZONTAL_ALIGNMENT_LEFT,-1,9,Color("dfbf87"))
+	if building=="B" and level in [0,1,2]:
+		for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
+			for lane in [0,1]:
+				var x:float=bank.at[0]+bank.side*[13.5,16.5][lane]
+				var a:=_plan_point(Vector2(x,bank.at[1]-6),frame);var b:=_plan_point(Vector2(x,bank.at[1]+6),frame)
+				if frame.has_point(a) and frame.has_point(b):draw_line(a,b,Color("e5c476") if lane==0 else Color("8fc6c8"),2.2)
+			if frame.size.x>400:
+				var at:=_plan_point(Vector2(bank.at[0]+bank.side*16,bank.at[1]-11),frame)
+				draw_string(font,at+Vector2(-9,0),"↑↓",HORIZONTAL_ALIGNMENT_LEFT,-1,12,Color("e5c476"))
 	if building=="C" and level in [0,1]:
 		var a:=_plan_point(Vector2(-382,-89),frame);var b:=_plan_point(Vector2(-357,-89),frame)
 		if frame.has_point(a) and frame.has_point(b):draw_line(a,b,Color("e1b77f"),2.0)

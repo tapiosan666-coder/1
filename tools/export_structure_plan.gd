@@ -32,6 +32,11 @@ func _initialize()->void:
     if building=="C" and level==1 and plaza.id=="terrace":continue
     var p:=MallCurve.world(Vector3(plaza.at[0],0,plaza.at[1]));f.plazas.append({"name":plaza.name,"at":[p.x,p.z]})
    if building=="B":
+    f.escalators=[]
+    for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
+     for lane in [0,1]:
+      var x:float=bank.at[0]+bank.side*[13.5,16.5][lane]
+      f.escalators.append({"up":lane==0,"points":[[x,bank.at[1]-6],[x,bank.at[1]+6]]})
     f.destinations=[]
     for station:Dictionary in BConcourse.stations(level):f.destinations.append({"name":station.name,"at":[station.at.x,station.at.y]})
    if building=="C" and level in [0,1]:f.stairs=[[-382,-89],[-357,-89]]

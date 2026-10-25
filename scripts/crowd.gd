@@ -52,6 +52,8 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 			for i in data.positions.size(): nav.add_point(i,data.positions[i])
 			for i in points.size(): nav_ids.append(i)
 			for index in range(0,data.edges.size(),2): nav.connect_points(data.edges[index],data.edges[index+1])
+			var one_way:PackedInt32Array=data.get("one_way",PackedInt32Array())
+			for index in range(0,one_way.size(),2):nav.connect_points(one_way[index],one_way[index+1],false)
 		else:
 			for i in points.size():
 				nav.add_point(i, points[i])
@@ -85,7 +87,11 @@ func setup(state: IdentityRun, points: Array[Vector3]) -> void:
 							if at.distance_squared_to(p) < nearest: nearest = at.distance_squared_to(p); id = candidate
 						assert(nearest < INF,"Escalator must meet a public landing")
 					else: nav.add_point(id,p)
-					if previous >= 0 and id != previous: nav.connect_points(previous,id)
+					if previous >= 0 and id != previous:
+						if flight.size()>4:
+							if flight[4]>0:nav.connect_points(previous,id,false)
+							else:nav.connect_points(id,previous,false)
+						else:nav.connect_points(previous,id)
 					previous = id
 			for route in MallAnnex.core_routes()+CUpper.core_routes():
 				var previous := -1

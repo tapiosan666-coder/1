@@ -23,6 +23,8 @@ static func specifications() -> Array[Dictionary]:
 			var t:=BWing.store_transform(base)
 			result.append({"id":"b_%d_%d_%d"%[level,int(store.x),store.side],"text":store.name,"at":t*Vector3(store.x,Mall.floor_height(level)+4.15,store.side*8.34),"yaw":t.basis.get_euler().y+(PI if store.side>0 else 0.0),"width":minf(10.4,store.w*.45)})
 	for level in [0,1,2]:
+		for store:Dictionary in BRearRetail.stores(level):result.append({"id":store.id,"text":store.name,"at":store.t*Vector3(0,4.22,-8.30),"yaw":store.t.basis.get_euler().y,"width":9.2})
+	for level in [0,1,2]:
 		result.append({"id":"a_extension_%d"%level,"text":AExtension.NAMES[level],"at":Vector3(6,Mall.floor_height(level)+4.15,-43.84),"yaw":0.0,"width":12.8})
 	for i in CWing.SHOPS.size():
 		var store: Dictionary=CWing.SHOPS[i]
@@ -40,6 +42,10 @@ static func specifications() -> Array[Dictionary]:
 
 func setup(mall: Node3D) -> void:
 	var labels := mall.find_children("*","Label3D",true,false)
+	# Escalator lightbox lettering stays legible beneath the atrium slabs.
+	for label:Label3D in labels:
+		if label.text.contains("上り") and label.text.contains("下り"):
+			label.shaded=false;label.visibility_range_end=75
 	var atlas: Texture2D=preload("res://assets/retail/store_signs.png")
 	var material := ShaderMaterial.new(); material.shader=preload("res://assets/store_signs.gdshader");material.set_shader_parameter("sign_atlas",atlas)
 	for spec in specifications():

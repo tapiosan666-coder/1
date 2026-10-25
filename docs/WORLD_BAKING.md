@@ -1,3 +1,5 @@
+0.22ではB館へ12店舗を追加し、3つの吹き抜けに上下対のエスカレーターを分散。全101店舗/売場、10/15フロア、1000/300人選択。今回の実装と検証は [B館の更新](B_REAR_AND_ESCALATORS.md)。以下には過去版の記録を含む。
+
 0.21ではC館2階・通常階段・B/C館2階連絡橋を追加。現在10/15フロア・89店舗・20移動地点。今回の変更と検証は [C館2階](C_UPPER.md) を参照。以下には過去版の制作記録も含む。
 
 0.20の構造・実装範囲と検証は [A/B/C館の構造改修](MALL_STRUCTURE_IMPLEMENTATION.md) を参照。以下は各版の制作記録も含む。
@@ -52,3 +54,5 @@ godot --headless --path . --editor --import
 今回の変更は建物/衝突/経路を変更しないため、0.15の検証済みマップキャッシュを継続使用します。`WorldCache.INPUTS`のハッシュが一致することを確認します。
 
 近接比較は`tools/preview_civilian.gd -- --portrait-pass`。同じスクリプトを0.15の保存ソースへ渡し、`--before`を加えると同じカメラで撮影できます。出力は`/tmp/fy16-{before,after}-{face,profile,talk,upper-body}.png`。撮影用の位置と時計を固定し、ゲームのFPS測定とは区別します。
+
+0.22では `compression/formats/zstd/compression_level=19` で保存時の可逆圧縮率を上げ、配布サイズを抑えている。ポリゴンや材質を削る処理ではなく、FPS改善の根拠にはしない。

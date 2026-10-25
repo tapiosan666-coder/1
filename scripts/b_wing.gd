@@ -36,7 +36,11 @@ var warm := Shapes.material(Color("f6e7cc"),.65)
 var floor_mat: ShaderMaterial
 
 static func escalators() -> Array:
-	return [[-331.0,0,54.0,66.0],[-316.5,1,66.0,54.0]]
+	var result:Array=[]
+	for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
+		for level in [0,1]:
+			for lane in [0,1]:result.append([bank.at[0]+bank.side*[13.5,16.5][lane],level,bank.at[1]-6.0,bank.at[1]+6.0,1.0 if lane==0 else -1.0])
+	return result
 
 static func regions(level:int)->Array[Rect2]:
 	if level not in [0,1,2]:return []
@@ -69,6 +73,7 @@ static func blocked(p:Vector3)->bool:
 		for base:Dictionary in STORES:
 			var region:=Rect2(base.x-base.w*.5-.7,-27 if base.side<0 else 7,base.w+1.4,20)
 			groups.append({"inverse":store_transform(base).affine_inverse(),"bounds":region,"rects":canonical_store_blocks(store_for(level,base)),"sign":1.0})
+		for store:Dictionary in BRearRetail.stores(level):groups.append({"inverse":store.t.affine_inverse(),"bounds":Rect2(-9.7,7.8,19.4,16.8),"rects":BRearRetail.canonical_blocks(store),"sign":-1.0})
 		var anchor_blocks:Array[Rect2]=[]
 		for r:Rect2 in legacy_obstacles(level):
 			if r.position.x< -373.8:anchor_blocks.append(r)
@@ -83,7 +88,10 @@ static func blocked(p:Vector3)->bool:
 		if level in [0,1]:
 			var link:Rect2=GROUND_LINK if level==0 else SKY_LINK
 			for z in [link.position.y,link.end.y]:fixed.append(Rect2(link.position.x,z-.07,link.size.x,.14))
-		if level==0:fixed.append_array([Rect2(-332.1,54,2.2,12),Rect2(-317.6,54,2.2,12),Rect2(-327.5,69.7,8,.6)])
+		if level<2:
+			for flight:Array in escalators():
+				if flight[1]==level:fixed.append(Rect2(flight[0]-1.1,flight[2],2.2,flight[3]-flight[2]))
+		if level==0:fixed.append(Rect2(-327.5,69.7,8,.6))
 		for plaza:Dictionary in MallStructureData.DATA.B.plazas:
 			for side in [-1,1]:fixed.append(Rect2(plaza.at[0]+side*(plaza.radius[0]-3)-.25,plaza.at[1]-.25,.5,.5))
 		groups.append({"inverse":Transform3D.IDENTITY,"bounds":MallStructure.bounds("B",level).grow(1),"rects":fixed,"sign":1.0})
@@ -168,6 +176,7 @@ func build(root:Node3D)->void:
 		_anchor(level);relocate(mall,nodes,slots,anchor_transform())
 	var nodes:=mall.get_child_count();var slots:int=mall.identity_slots.size()
 	_court();relocate(mall,nodes,slots,court_transform())
+	_build_escalator_banks()
 	_link(0,GROUND_LINK);_link(1,SKY_LINK)
 	for z in [-26.0,26.0]:Shapes.box(mall,Vector3(-481,17.8,z),Vector3(30,2.8,.25),ivory,true)
 	Shapes.box(mall,Vector3(-496,17.8,0),Vector3(.25,2.8,52),ivory,true)
@@ -295,15 +304,14 @@ func _court() -> void:
 		Shapes.box(mall,Vector3(-234,y+height/2,28),Vector3(24,height,.25),ivory,true)
 		if level == 0: continue
 		for x in [-243.0,-225.0]: Shapes.box(mall,Vector3(x,y+.65,15.25),Vector3(.08,1.1,11.5),_glass(),true)
-		var rear: Array = [[-246.0,-242.8],[-240.2,-228.3],[-225.7,-222.0]] if level == 1 else [[-243.0,-225.0]]
+		var rear: Array = [[-246.0,-222.0]]
 		for span in rear: Shapes.box(mall,Vector3((span[0]+span[1])/2,y+.65,21),Vector3(span[1]-span[0],1.1,.08),_glass(),true)
-		var front: Array = [[-243.0,-228.3],[-225.7,-225.0]] if level == 2 else [[-243.0,-225.0]]
+		var front: Array = [[-243.0,-225.0]]
 		for span in front: Shapes.box(mall,Vector3((span[0]+span[1])/2,y+.65,9.5),Vector3(span[1]-span[0],1.1,.08),_glass(),true)
 	Shapes.box(mall,Vector3(-234,16.4,18),Vector3(24,.15,20),Shapes.material(Color("bdcdd0")))
-	mall._escalator(-241.5,0,9,21); mall._escalator(-227,5.525,21,9)
 	Shapes.box(mall,Vector3(-234,.42,25),Vector3(8,.15,.6),wood,true)
 	for x in [-237.0,-235.0,-233.0,-231.0]: mall.identity_slots.append({"pos":Vector3(x,0,25),"yaw":0.0,"role":"seated","activity":"lounge"})
-	sign_at(Vector3(-234,3.3,27.8),"B館 時の広場\nエスカレーターで2・3階へ",0,38)
+	sign_at(Vector3(-234,3.3,27.8),"B館 回廊ラウンジ\n昇降口は各吹き抜け広場へ",0,38)
 
 func _link(level: int,rect: Rect2) -> void:
 	var y := Mall.floor_height(level)
@@ -326,3 +334,22 @@ func _cinema_chair(at: Vector3) -> void:
 	for side in [-1,1]:
 		Shapes.box(root,Vector3(side*.4,.65,0),Vector3(.11,.14,.74),dark)
 		Shapes.box(root,Vector3(side*.23,.2,0),Vector3(.07,.4,.35),steel)
+
+func _build_escalator_banks()->void:
+	for flight:Array in escalators():
+		var y:=Mall.floor_height(flight[1]);var rise:=Mall.floor_height(flight[1]+1)-y
+		mall._escalator(flight[0],y,flight[2],flight[3],flight[4])
+		var angle:=-atan2(rise,flight[3]-flight[2]);var length:=Vector2(flight[3]-flight[2],rise).length()
+		var skirt:=Shapes.box(mall,Vector3(flight[0],y+rise*.5-.38/cos(angle),(flight[2]+flight[3])*.5),Vector3(1.75,.55,length),steel,true);skirt.rotation.x=angle
+		for upper in [false,true]:
+			var at_y:=Mall.floor_height(flight[1]+(1 if upper else 0));var z:float=flight[3]+.45 if upper else flight[2]-.45
+			Shapes.box(mall,Vector3(flight[0],at_y+.008,z),Vector3(1.8,.016,.8),steel)
+	for bank:Dictionary in MallStructureData.DATA.B.escalator_banks:
+		for level in [0,1]:_bank_sign(bank,level,-7.6,"%dF ↑ 上り  ｜  下り ↓"%[level+2])
+		for level in [1,2]:_bank_sign(bank,level,7.6,"↓ %dF 下り  ｜  上り到着"%level)
+func _bank_sign(bank:Dictionary,level:int,offset:float,text:String)->void:
+	var x:float=bank.at[0]+bank.side*15.0;var y:=Mall.floor_height(level);var z:float=bank.at[1]+offset
+	Shapes.box(mall,Vector3(x,y+3.8,z),Vector3(6,.65,.12),dark)
+	var ceiling:=Mall.floor_height(level+1)-.35 if level<2 else 16.4
+	for dx in [-2.5,2.5]:Shapes.box(mall,Vector3(x+dx,(ceiling+y+3.8)*.5,z),Vector3(.035,ceiling-y-3.8,.035),steel)
+	var front:=Shapes.sign_text(mall,Vector3(x,y+3.8,z+(.075 if offset>0 else -.075)),text+"\n"+str(bank.name),32);front.rotation.y=0 if offset>0 else PI;front.pixel_size=.0045

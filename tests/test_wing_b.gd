@@ -44,14 +44,18 @@ func run_tests() -> void:
 	var b_north:=Vector3(-274.85,5.575,8.94)
 	game.player.position=b_north;game.player.velocity=Vector3.ZERO
 	expect(await walk_to(game,Vector3(-265.15,5.525,33.06),6),"Cross the relocated diagonal atrium bridge with open landings")
-	game.player.position = Vector3(-331,.05,52); game.player.velocity = Vector3.ZERO
-	expect(await walk_to(game,Vector3(-331,5.525,68),5),"Walk up B's first escalator")
-	expect(await walk_to(game,Vector3(-316.5,5.525,68),4),"Walk across B's 2F rear landing")
-	expect(await walk_to(game,Vector3(-316.5,10.875,52.8),5),"Walk up B's second escalator onto 3F")
+	game.player.position = Vector3(-311.5,.05,35.5); game.player.velocity = Vector3.ZERO
+	expect(await walk_to(game,Vector3(-311.5,5.525,50.5),5),"Walk up the paired escalator beside B's time-court atrium")
+	expect(await walk_to(game,Vector3(-303.5,5.525,50.5),3),"Leave the escalator onto its south landing")
+	expect(await walk_to(game,Vector3(-303.5,5.525,35.5),4),"Use the side gallery to reach the next upward flight")
+	expect(await walk_to(game,Vector3(-311.5,5.525,35.5),3),"Reach the north landing around the open shaft")
+	expect(await walk_to(game,Vector3(-311.5,10.875,50.5),5),"Walk from B's second floor onto the third-floor landing")
 	expect(absf(game.player.position.y-10.875) < .12,"B's top landing has the expected height")
-	expect(await walk_to(game,Vector3(-316.5,5.525,68),5),"Walk down B's second escalator")
-	expect(await walk_to(game,Vector3(-331,5.525,68),4),"Return to the first escalator")
-	expect(await walk_to(game,Vector3(-331,0,52),5),"Walk down to B's ground floor")
+	expect(await walk_to(game,Vector3(-308.5,10.875,50.5),2),"Cross the top landing to the downward escalator")
+	expect(await walk_to(game,Vector3(-308.5,5.525,35.5),5),"Use the dedicated downward flight to the second floor")
+	for point in [Vector3(-303.5,5.525,35.5),Vector3(-303.5,5.525,50.5),Vector3(-308.5,5.525,50.5)]:
+		expect(await walk_to(game,point,4),"Follow the second-floor gallery to the ground-floor downward flight")
+	expect(await walk_to(game,Vector3(-308.5,0,35.5),5),"Use the dedicated downward flight to B's ground floor")
 	game.player.position = Vector3(-194,.05,-5); game.player.velocity = Vector3.ZERO
 	expect(await walk_to(game,Vector3(-170,0,-5),5),"Walk through the ground link and the opened parking fence")
 	expect(game.run.true_id == original and not game.run.won,"Travelling between buildings never changes the selected original")
@@ -63,7 +67,7 @@ func run_tests() -> void:
 	var fit := true
 	for button in game.hud.buttons.get_children():
 		if button is Button and (button.position.x+button.size.x > 1440 or button.position.y+button.size.y > 900): fit = false
-	expect(fit,"All eighteen travel buttons and five floor tabs fit on-screen")
+	expect(fit,"All twenty travel buttons and five floor tabs fit on-screen")
 	expect(not game.fast_travel("B館3階シネマ"),"Viewing B's map does not unlock an unvisited cinema")
 	game.set_mode("play"); game.player.position = Mall.hub_position("B館3階シネマ"); game._visit_points()
 	game.set_mode("map")

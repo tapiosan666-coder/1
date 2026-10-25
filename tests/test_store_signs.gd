@@ -7,7 +7,7 @@ func expect(ok:bool,message:String)->void:
 func _initialize()->void:call_deferred("verify")
 func verify()->void:
 	var specs:=StoreSigns.specifications()
-	expect(specs.size()==94,"All storefronts and secondary brand boards have designed signs")
+	expect(specs.size()==106,"All storefronts and secondary brand boards have designed signs")
 	expect(StoreSignCatalog.DATA.brands.size()==58,"Atlas provides 58 fictional brand identities, including food and anchors")
 	var covered:=true
 	for spec in specs:covered=covered and StoreSignCatalog.DATA.aliases.has(spec.text)
@@ -16,7 +16,7 @@ func verify()->void:
 	expect(atlas.get_width()==4096 and atlas.get_height()==1920,"Shared atlas dimensions match its grid")
 	expect(atlas.get_image().has_mipmaps(),"Sign lettering uses mipmaps for distant and oblique views")
 	var game=load("res://scenes/main.tscn").instantiate();root.add_child(game)
-	expect(game.store_signs.boards==94 and game.store_signs.hidden_labels.size()==90,"All 90 legacy labels replaced, four food logos added without deleting menus")
+	expect(game.store_signs.boards==106 and game.store_signs.hidden_labels.size()==102,"All 102 legacy labels replaced, four food logos added without deleting menus")
 	var hidden:=true
 	for label in game.store_signs.hidden_labels:hidden=hidden and not label.visible
 	expect(hidden,"Original facade lettering does not render behind the new identity")
@@ -58,10 +58,10 @@ func verify()->void:
 				orientation=orientation and normal.dot(expected)>.99
 			valid_outlets=valid_outlets and match_found
 	expect(unique_ids,"Each physical sign has its own identifier")
-	expect(outlets.size()==89,"Every implemented outlet is covered: A39+B24+C11, market1, basement7, food4, anchors3")
+	expect(outlets.size()==101,"Every implemented outlet is covered: A39+B36+C11, market1, basement7, food4, anchors3")
 	expect(basement==7 and food==4 and anchors==3 and ids.has("a_market"),"Food and anchor categories cannot fall back to plain lettering")
 	expect(food_visible,"Food logos fit the existing fascia and remain in front of its beam")
-	expect(valid_outlets and expected_labels==90,"Every intended replacement matches a real baked label at its own location")
+	expect(valid_outlets and expected_labels==102,"Every intended replacement matches a real baked label at its own location")
 	expect(orientation,"Signs on opposite walls, rotated anchors and curved facades face the original direction")
 	var readable_wayfinding:=false;var readable_categories:=false;var food_menus:=0
 	for label:Label3D in game.mall.find_children("*","Label3D",true,false):

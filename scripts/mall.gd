@@ -274,6 +274,7 @@ func _ready() -> void:
 	CWing.new().build(self)
 	CUpper.build(self)
 	BConcourse.build(self)
+	BRearRetail.build(self)
 	RetailPolish.new().build(self)
 	DiningWing.new().build(self)
 	DiningDetails.new().build(self)
@@ -646,7 +647,7 @@ static func escalator_carry(position:Vector3)->Vector3:
 		if absf(p.x-flight[0])>=.88 or p.z<minf(flight[2],flight[3]) or p.z>maxf(flight[2],flight[3]):continue
 		var t:float=(p.z-flight[2])/(flight[3]-flight[2])
 		var y:=lerpf(floor_height(flight[1]),floor_height(flight[1]+1),t)
-		if absf(p.y-y)<.35:return Basis(Vector3.UP,-MallCurve.angle(p.x))*Vector3(0,0,.9*signf(flight[3]-flight[2]))
+		if absf(p.y-y)<.35:return Basis(Vector3.UP,-MallCurve.angle(p.x))*Vector3(0,0,.9*signf(flight[3]-flight[2])*(flight[4] if flight.size()>4 else 1.0))
 	return Vector3.ZERO
 
 func _build_reading_and_court() -> void:
@@ -710,11 +711,11 @@ func _build_reading_and_court() -> void:
 	_escalator(-43.5,0,9,21)
 	_escalator(-35,5.525,21,9)
 
-func _escalator(x: float,y: float,start: float,end: float) -> void:
+func _escalator(x: float,y: float,start: float,end: float,direction:float=1.0) -> void:
 	var rise := 5.525 if y == 0 else 5.35
-	var length := sqrt(12*12+rise*rise)
+	var length := Vector2(end-start,rise).length()
 	var angle := -atan2(rise,end-start) if end > start else atan2(rise,start-end)
-	var material := ShaderMaterial.new(); material.shader = preload("res://assets/escalator.gdshader")
+	var material := ShaderMaterial.new(); material.shader = preload("res://assets/escalator.gdshader");material.set_shader_parameter("direction",direction)
 	var ramp := Shapes.box(self,Vector3(x,y+rise/2-.075/cos(angle),(start+end)/2),Vector3(1.8,.15,length),material,true)
 	ramp.rotation.x = angle
 	for side in [-1,1]:

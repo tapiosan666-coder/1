@@ -1,0 +1,488 @@
+{
+  "version": "0.22.0",
+  "date_jst": "2026-10-25",
+  "baseline": "64a32add7d8c3df22d5dd29c8db0793f653b70cb",
+  "suite_count": 27,
+  "total_checks": 1118,
+  "total_failures": 0,
+  "suites": [
+    {
+      "suite": "b_circulation",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 68.87,
+      "result": [
+        "B CIRCULATION RESULT: 167 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 167,
+      "failures": 0
+    },
+    {
+      "suite": "population",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 14.01,
+      "result": [
+        "POPULATION RESULT: 22 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 22,
+      "failures": 0
+    },
+    {
+      "suite": "population_ui",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 1.89,
+      "result": [
+        "POPULATION UI RESULT: 9 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 9,
+      "failures": 0
+    },
+    {
+      "suite": "b_concourse",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 14.93,
+      "result": [
+        "B CONCOURSE RESULT: 28 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 28,
+      "failures": 0
+    },
+    {
+      "suite": "c_upper",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 28.93,
+      "result": [
+        "C UPPER RESULT: 47 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 47,
+      "failures": 0
+    },
+    {
+      "suite": "mall_structure",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 160.37,
+      "result": [
+        "MALL STRUCTURE RESULT: 123 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 123,
+      "failures": 0
+    },
+    {
+      "suite": "game",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 10.08,
+      "result": [
+        "RESULT: 148 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 148,
+      "failures": 0
+    },
+    {
+      "suite": "mall_layout",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 6.53,
+      "result": [
+        "MALL LAYOUT RESULT: 140 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 140,
+      "failures": 0
+    },
+    {
+      "suite": "upper_and_restrooms",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 22.71,
+      "result": [
+        "UPPER/RESTROOM RESULT: 41 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 41,
+      "failures": 0
+    },
+    {
+      "suite": "expansion",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 29.37,
+      "result": [
+        "EXPANSION RESULT: 59 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 59,
+      "failures": 0
+    },
+    {
+      "suite": "annex",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 101.87,
+      "result": [
+        "ANNEX RESULT: 62 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 62,
+      "failures": 0
+    },
+    {
+      "suite": "wing_b",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 37.81,
+      "result": [
+        "WING B RESULT: 47 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 47,
+      "failures": 0
+    },
+    {
+      "suite": "wing_c",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 34.21,
+      "result": [
+        "WING C RESULT: 40 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 40,
+      "failures": 0
+    },
+    {
+      "suite": "cat_and_skills",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 14.08,
+      "result": [
+        "CAT/SKILLS RESULT: 33 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 33,
+      "failures": 0
+    },
+    {
+      "suite": "scan_and_paths",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 3.83,
+      "result": [
+        "SCAN/PATH RESULT: 22 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 22,
+      "failures": 0
+    },
+    {
+      "suite": "retail_detail",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 2.54,
+      "result": [
+        "RETAIL DETAIL RESULT: 6 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "suite": "dining_layout",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 8.28,
+      "result": [
+        "DINING RESULT: 26 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 26,
+      "failures": 0
+    },
+    {
+      "suite": "visual_access",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 3.24,
+      "result": [
+        "VISUAL ACCESS RESULT: 2 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 2,
+      "failures": 0
+    },
+    {
+      "suite": "store_signs",
+      "mode": "headless",
+      "exit_code": 0,
+      "seconds": 2.4,
+      "result": [
+        "STORE SIGNS RESULT: 20 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 20,
+      "failures": 0
+    },
+    {
+      "suite": "escalator_render",
+      "mode": "actual_gl_no_render_loop",
+      "exit_code": 0,
+      "seconds": 13.88,
+      "result": [
+        "ESCALATOR RENDER RESULT: 2 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 2,
+      "failures": 0
+    },
+    {
+      "suite": "retail_density",
+      "mode": "actual_gl_no_render_loop",
+      "exit_code": 0,
+      "seconds": 22.76,
+      "result": [
+        "RETAIL DENSITY RESULT: 17 checks, 0 failures; 678 new fixtures, 34898 stock items"
+      ],
+      "errors": [],
+      "checks": 17,
+      "failures": 0
+    },
+    {
+      "suite": "apparel_finish",
+      "mode": "actual_gl_no_render_loop",
+      "exit_code": 0,
+      "seconds": 14.47,
+      "result": [
+        "APPAREL FINISH RESULT: 8 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 8,
+      "failures": 0
+    },
+    {
+      "suite": "render_materials",
+      "mode": "actual_gl_no_render_loop",
+      "exit_code": 0,
+      "seconds": 14.4,
+      "result": [
+        "RENDER_MATERIAL_TESTS: 10 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 10,
+      "failures": 0
+    },
+    {
+      "suite": "character_motion",
+      "mode": "actual_gl_no_render_loop",
+      "exit_code": 0,
+      "seconds": 12.82,
+      "result": [
+        "CHARACTER RESULT: 15 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 15,
+      "failures": 0
+    },
+    {
+      "suite": "world_art",
+      "mode": "actual_gl_no_render_loop",
+      "exit_code": 0,
+      "seconds": 12.28,
+      "result": [
+        "WORLD ART RESULT: 6 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "suite": "continuous_civilian",
+      "mode": "actual_gl_active",
+      "exit_code": 0,
+      "seconds": 12.29,
+      "result": [
+        "CONTINUOUS CIVILIAN RESULT: 11 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 11,
+      "failures": 0
+    },
+    {
+      "suite": "face_presentation",
+      "mode": "actual_gl_active",
+      "exit_code": 0,
+      "seconds": 13.24,
+      "result": [
+        "FACE PRESENTATION RESULT: 7 checks, 0 failures"
+      ],
+      "errors": [],
+      "checks": 7,
+      "failures": 0
+    }
+  ],
+  "geometry_unchanged": {
+    "A": true,
+    "C": true
+  },
+  "floor_count": {
+    "implemented": 10,
+    "target": 15
+  },
+  "population": {
+    "default": 1000,
+    "comparison": 300,
+    "fixed": 900,
+    "walking": 100,
+    "fixed_by_building": {
+      "A": 300,
+      "B": 450,
+      "C": 150
+    },
+    "original_fixed_retained": 267,
+    "new_shop_clerks_within_existing_1000_budget": 12
+  },
+  "b_retail": {
+    "new_shops": 12,
+    "new_shops_per_floor": 4,
+    "total_outlets": 101,
+    "boards": 106
+  },
+  "b_escalators": {
+    "banks": 3,
+    "flights": 12,
+    "directional_navigation_arcs": 156
+  },
+  "world": {
+    "fingerprint": "b386f294289d887f89ef390eef0180ab1ee6e69869cd6c5e8f3ad3a51b2c8b04",
+    "floor_contacts": {
+      "floors": 3.0,
+      "height": 1024.0,
+      "static_footprints": 1087.0,
+      "width": 1024.0
+    },
+    "nav_edges": 286703.0,
+    "nav_one_way_arcs": 156.0,
+    "nav_points": 45566.0,
+    "navigation_validation": {
+      "connected": 45566.0,
+      "unreachable": 0.0
+    },
+    "render": {
+      "detail_meshes": 101.0,
+      "detail_surfaces": 220.0,
+      "detail_triangles": 1423188.0,
+      "sectors": 687.0,
+      "source_meshes": 15832.0,
+      "static_surfaces": 3075.0,
+      "static_triangles": 1875838.0,
+      "surfaces": 3295.0,
+      "triangles": 3299026.0
+    },
+    "retail_stock": {
+      "by_kind": {
+        "bag": 812.0,
+        "book_stack": 2994.0,
+        "bottle": 911.0,
+        "bowl": 2962.0,
+        "carton": 4533.0,
+        "coffee_bag": 789.0,
+        "coffee_machine": 3.0,
+        "cosmetics": 1294.0,
+        "fold_stack": 3123.0,
+        "folded": 144.0,
+        "food_pack": 180.0,
+        "fridge": 8.0,
+        "glasses": 468.0,
+        "guitar": 8.0,
+        "headphones": 1692.0,
+        "jacket": 458.0,
+        "jewelry": 702.0,
+        "keyboard": 372.0,
+        "knit": 378.0,
+        "lamp": 6.0,
+        "mannequin": 33.0,
+        "model_car": 1662.0,
+        "mouse": 14.0,
+        "mug": 3836.0,
+        "paper_bag": 47.0,
+        "pastry": 80.0,
+        "plant": 22.0,
+        "popcorn": 9.0,
+        "posters": 94.0,
+        "price_cards": 3034.0,
+        "shirt": 418.0,
+        "shoe": 2519.0,
+        "shoe_box": 1716.0,
+        "stationery": 1008.0,
+        "suitcase": 650.0,
+        "tablet": 22.0,
+        "television": 8.0,
+        "toy": 420.0,
+        "trousers": 589.0,
+        "washer": 8.0
+      },
+      "items": 34898.0,
+      "stores": 101.0
+    },
+    "static_instancing": {
+      "instances": 31948,
+      "invalid_transforms": 0,
+      "nodes": 285,
+      "verified_with_renderer": true
+    },
+    "world_occlusion": {
+      "applied": true,
+      "mean": 0.729368463131533,
+      "method": "static vertex ambient occlusion",
+      "min": 0.610000003874302,
+      "radius_m": 2.4,
+      "rays": 24,
+      "strength": 0.65,
+      "vertices": 5960238
+    }
+  },
+  "world_encoding": {
+    "zstd_level": 19,
+    "lossless": true,
+    "bytes": 46675729
+  },
+  "captures": {
+    "renderer": "Mesa llvmpipe; Linux",
+    "population": 1000,
+    "seed": 912,
+    "quality": "balanced",
+    "normal_game_render": true,
+    "npc_motion_frozen": true,
+    "hud_and_handheld_hidden": true,
+    "not_an_fps_measurement": true
+  },
+  "limitations": [
+    "Windows and RTX 4060 Laptop FPS not measured",
+    "10 of 15 floors and 1000 identities implemented",
+    "NPC character models unchanged in this release",
+    "Rear circulation centerline remains approximately 357 m"
+  ],
+  "native_linux": {
+    "frames": 30,
+    "exit_code": 0,
+    "elapsed_seconds": 47.68,
+    "renderer": "Mesa llvmpipe; actual Linux native export using Windows-exported shared PCK",
+    "population": 1000,
+    "fixed": 900,
+    "walking": 100,
+    "runtime_errors": 0,
+    "population_log_present": true,
+    "not_an_fps_benchmark": true
+  }
+}

@@ -13,6 +13,7 @@ static func slots(mall:Node3D,count:int)->Array[Dictionary]:
  if not cached.is_empty():return cached.duplicate(true)
  occupied.clear()
  var result:Array[Dictionary]=[];result.assign(mall.identity_slots.duplicate(true))
+ result.append_array(BRearRetail.staff_slots())
  var present:={"A":0,"B":0,"C":0}
  for slot:Dictionary in result:
   _occupy(slot.pos)
