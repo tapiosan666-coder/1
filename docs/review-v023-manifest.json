@@ -1,0 +1,267 @@
+{
+  "version": "0.23.0",
+  "game_source_commit": "40ccc24b350373fbc40d14489ea1a46a5207737d",
+  "pages": 30,
+  "screenshots": [
+    {
+      "caption": "A館1階・中央吹き抜けと上下対の昇降口",
+      "height": 1000,
+      "id": "a-center",
+      "image": "review23-a-center.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館1階・木もれびの広場",
+      "height": 1000,
+      "id": "a-north",
+      "image": "review23-a-north.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館1階・衣料品店の入口と陳列",
+      "height": 1000,
+      "id": "a-entry",
+      "image": "review23-a-entry.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館2階・コスメ売場",
+      "height": 1000,
+      "id": "a-2f",
+      "image": "review23-a-2f.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館3階・楽器売場",
+      "height": 1000,
+      "id": "a-3f",
+      "image": "review23-a-3f.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館1階・フードコート",
+      "height": 1000,
+      "id": "a-food",
+      "image": "review23-a-food.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館1階・洗面と個室",
+      "height": 1000,
+      "id": "a-restroom",
+      "image": "review23-a-restroom.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館地下1階・食品街",
+      "height": 1000,
+      "id": "a-basement",
+      "image": "review23-a-basement.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館屋上・庭園と休憩席",
+      "height": 1000,
+      "id": "a-roof",
+      "image": "review23-a-roof.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "西駐車場・静止車両と歩行路",
+      "height": 1000,
+      "id": "parking",
+      "image": "review23-parking.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "A館・B館2階連絡通路",
+      "height": 1000,
+      "id": "ab-bridge",
+      "image": "review23-ab-bridge.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "B館1階・時の広場と主回廊",
+      "height": 1000,
+      "id": "b-1f",
+      "image": "review23-b-1f.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "B館2階・昇降口から店舗前回廊へ",
+      "height": 1000,
+      "id": "b-2f",
+      "image": "review23-b-2f.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "B館3階・時の広場側の回廊",
+      "height": 1000,
+      "id": "b-3f",
+      "image": "review23-b-3f.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "B館3階・映画館",
+      "height": 1000,
+      "id": "b-cinema",
+      "image": "review23-b-cinema.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "C館1階・ゲートコートからガーデンコートへ",
+      "height": 1000,
+      "id": "c-1f",
+      "image": "review23-c-1f.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "C館2階・ガーデンテラスと店舗",
+      "height": 1000,
+      "id": "c-2f",
+      "image": "review23-c-2f.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "B館・C館2階ガーデンブリッジ",
+      "height": 1000,
+      "id": "bc-bridge",
+      "image": "review23-bc-bridge.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "現在の人物モデル・同じ役割人物の近接記録",
+      "height": 1000,
+      "id": "person-0",
+      "image": "review23-person-0.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "現在の人物モデル・同じ役割人物の近接記録",
+      "height": 1000,
+      "id": "person-1",
+      "image": "review23-person-1.png",
+      "setup": "固定視点・人物の位置/動作を停止。建築・照明・材質は通常ゲームのまま。",
+      "width": 1600
+    },
+    {
+      "caption": "近づいたNPCの日本語吹き出し",
+      "height": 1000,
+      "id": "speech",
+      "image": "review23-speech.png",
+      "setup": "既存NPCを実際の距離・遮蔽判定で注視。人物位置の差し替えなし。",
+      "width": 1600
+    },
+    {
+      "caption": "初期スキャナーで単体を解析している画面",
+      "height": 1000,
+      "id": "scanner",
+      "image": "review23-scanner.png",
+      "setup": "実際の照準判定と初期スキャナー処理を0.9秒進めて撮影。通常の2秒設定。",
+      "width": 1600
+    },
+    {
+      "caption": "偽物の解析完了・落下とAP獲得",
+      "height": 1000,
+      "id": "fall",
+      "image": "review23-fall.png",
+      "setup": "同じ対象へ初期スキャナーの残り時間を進め、実際の判定・落下処理を記録。",
+      "width": 1600
+    },
+    {
+      "caption": "スキルツリー・AP購入画面",
+      "height": 1000,
+      "id": "skills",
+      "image": "review23-skills.png",
+      "setup": "説明用に20,000 APを付与。スキルの表示/購入処理は通常ゲームと同じ。",
+      "width": 1600
+    },
+    {
+      "caption": "購入したスキャン銃と瞬間ソナー",
+      "height": 1000,
+      "id": "gun-sonar",
+      "image": "review23-gun-sonar.png",
+      "setup": "説明用APで銃・猫・ソナー等を正規購入。ソナーの通常処理を実行。",
+      "width": 1600
+    },
+    {
+      "caption": "自動探索を担当する猫",
+      "height": 1000,
+      "id": "cat",
+      "image": "review23-cat.png",
+      "setup": "説明用APで猫を正規購入し、通常の猫探索処理を90ステップ進めた状態。",
+      "width": 1600
+    },
+    {
+      "caption": "実際に抽選配置された伝説の宝箱",
+      "height": 1000,
+      "id": "chest",
+      "image": "review23-chest.png",
+      "setup": "実行中のランの宝箱。場所や中身は撮影用に置き換えていない。",
+      "width": 1600
+    },
+    {
+      "caption": "宝箱アイテムのバッグ画面",
+      "height": 1000,
+      "id": "inventory",
+      "image": "review23-inventory.png",
+      "setup": "説明用にこのランの宝箱10個を開封。入手品の種類は実際の抽選結果。",
+      "width": 1600
+    },
+    {
+      "caption": "ゲーム内案内図・2階と移動地点",
+      "height": 1000,
+      "id": "map",
+      "image": "review23-map.png",
+      "setup": "説明用APで移動スキル購入済み。未訪問地点へのワープ条件は通常のまま。",
+      "width": 1600
+    },
+    {
+      "caption": "タイトル・探索人数とデバッグ開始設定",
+      "height": 1000,
+      "id": "title",
+      "image": "review23-title.png",
+      "setup": "通常のタイトルUI。デバッグのチェックはOFF。",
+      "width": 1600
+    }
+  ],
+  "maps": [
+    "review23-a-b1.png",
+    "review23-a-1f.png",
+    "review23-a-2f.png",
+    "review23-a-3f.png",
+    "review23-a-rf.png",
+    "review23-b-1f.png",
+    "review23-b-2f.png",
+    "review23-b-3f.png",
+    "review23-c-1f.png",
+    "review23-c-2f.png",
+    "review23-site.png"
+  ],
+  "outlets": 101,
+  "font_license": "third_party/noto-cjk-COPYRIGHT.txt",
+  "notes": [
+    "Screens are actual game renders; preparation is disclosed per image.",
+    "Maps are diagrams exported from the same current geometry definitions.",
+    "The game and its downloadable build ZIPs are not modified by this documentation task."
+  ]
+}
