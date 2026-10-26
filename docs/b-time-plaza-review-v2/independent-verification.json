@@ -1,0 +1,1566 @@
+{
+  "checks": [
+    {
+      "id": "protected-originals.json-unchanged",
+      "status": "PASS",
+      "files": 1490,
+      "changed": []
+    },
+    {
+      "id": "protected-v1-project.json-unchanged",
+      "status": "PASS",
+      "files": 142,
+      "changed": []
+    },
+    {
+      "id": "1F-shell-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-public-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-void-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-shafts-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-floor_plate-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-001-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-003-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-004-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-005-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-007-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-008-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-009-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-010-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-011-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-012-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-013-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-014-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-015-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-016-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-017-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-018-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-019-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-020-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-021-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-022-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-024-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-025-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-026-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-027-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-028-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-029-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-030-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-032-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-033-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-034-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-036-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-037-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-038-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-039-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-040-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-042-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-043-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-045-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-046-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-047-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-048-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-050-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-051-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-052-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-053-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-054-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-055-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-057-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-059-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-060-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-061-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-063-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-065-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-066-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-067-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-AW1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-AE1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-SW11-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-SW12-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-SW31-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-SW32-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-W1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-W2-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-W3-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-W4-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-shell-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-public-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-void-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-shafts-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-floor_plate-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-001-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-003-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-004-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-005-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-006-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-007-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-008-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-009-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-010-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-011-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-012-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-013-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-014-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-015-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-016-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-017-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-018-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-019-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-020-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-021-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-022-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-023-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-024-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-025-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-026-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-027-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-028-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-030-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-031-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-032-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-033-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-034-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-036-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-037-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-038-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-040-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-042-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-043-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-044-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-045-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-047-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-050-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-051-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-052-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-054-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-055-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-056-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-057-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-061-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-062-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-064-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-065-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-067-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-068-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-069-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-070-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-AW1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-AE1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-SW11-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-SW12-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-SW31-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-SW32-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-W1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-W2-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-W3-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-W4-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-shell-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-public-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-void-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-shafts-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-floor_plate-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-001-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-003-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-004-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-005-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-007-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-008-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-009-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-010-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-011-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-012-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-013-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-014-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-015-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-016-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-017-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-018-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-019-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-021-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-022-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-023-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-025-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-027-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-028-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-029-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-030-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-031-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-032-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-034-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-035-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-036-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-037-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-038-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-040-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-041-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-043-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-044-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-045-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-046-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-047-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-049-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-052-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-053-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-054-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-055-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-057-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-058-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-059-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-060-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-AW1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-AE1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-SW12-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-SW31-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-SW32-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-W1-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-W2-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-W3-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-W4-tenant-plot-and-entry-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-004-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-008-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-014-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-017-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-018-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-022-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-026-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-027-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-030-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-039-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-040-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-043-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-048-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-051-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-055-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-061-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-066-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW11-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW12-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW31-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW32-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-003-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-004-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-008-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-009-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-014-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-017-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-018-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-022-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-027-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-028-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-031-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-032-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-038-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-045-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-052-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-057-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-062-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-065-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-068-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-069-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-070-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW11-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW12-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW31-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW32-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-003-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-004-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-008-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-009-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-014-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-017-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-018-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-022-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-027-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-028-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-031-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-032-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-038-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-041-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-047-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-055-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-057-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-SW12-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-SW31-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-SW32-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "static-collider-vs-model-stone",
+      "status": "PASS",
+      "triangles": 121952,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-plaster",
+      "status": "PASS",
+      "triangles": 21659,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_sand",
+      "status": "PASS",
+      "triangles": 6196,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-dark_stone",
+      "status": "PASS",
+      "triangles": 26040,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-glass",
+      "status": "PASS",
+      "triangles": 6568,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-bronze",
+      "status": "PASS",
+      "triangles": 7110,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wood",
+      "status": "PASS",
+      "triangles": 1992,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-walnut",
+      "status": "PASS",
+      "triangles": 11996,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-oak",
+      "status": "PASS",
+      "triangles": 30942,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_sage",
+      "status": "PASS",
+      "triangles": 6902,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-black",
+      "status": "PASS",
+      "triangles": 9996,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-metal",
+      "status": "PASS",
+      "triangles": 9860,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-fabric_sage",
+      "status": "PASS",
+      "triangles": 13320,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_chalk",
+      "status": "PASS",
+      "triangles": 7604,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_taupe",
+      "status": "PASS",
+      "triangles": 8330,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-fabric_cream",
+      "status": "PASS",
+      "triangles": 864,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-quartz",
+      "status": "PASS",
+      "triangles": 2760,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-leather_0",
+      "status": "PASS",
+      "triangles": 5520,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-leather_1",
+      "status": "PASS",
+      "triangles": 2760,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-soil",
+      "status": "PASS",
+      "triangles": 324,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-scope_wall",
+      "status": "PASS",
+      "triangles": 180,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-step",
+      "status": "PASS",
+      "triangles": 24,
+      "unmatched_triangles": 0,
+      "exception": "step is the explicitly documented continuous support under animated treads"
+    },
+    {
+      "id": "1F-actual-slab-geometry",
+      "status": "PASS",
+      "symmetric_difference_m2": 0.0006147086712306402,
+      "tolerance_m2": 0.001
+    },
+    {
+      "id": "1F-no-slab-in-void",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "2F-actual-slab-geometry",
+      "status": "PASS",
+      "symmetric_difference_m2": 0.0006147086712761149,
+      "tolerance_m2": 0.001
+    },
+    {
+      "id": "2F-no-slab-in-void",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "3F-actual-slab-geometry",
+      "status": "PASS",
+      "symmetric_difference_m2": 0.0006147086712647462,
+      "tolerance_m2": 0.001
+    },
+    {
+      "id": "3F-no-slab-in-void",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "physical-tests",
+      "status": "PASS",
+      "passed": 919,
+      "total": 919,
+      "failed": 0
+    },
+    {
+      "id": "runtime-version-geometry_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-main_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-player_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-staff_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-animation_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "same-eight-camera-positions",
+      "status": "PASS",
+      "cameras": 8
+    },
+    {
+      "id": "08-1F-bookshop-interior.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "03-2F-crossing-bridge.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "04-2F-storefront.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "02-1F-west-escalators.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "05-3F-void-and-roof.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "06-1F-north-shopping-street.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "07-1F-cafe-interior.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "01-1F-time-plaza.png-untouched-before",
+      "status": "PASS"
+    }
+  ],
+  "pass": 314,
+  "fail": 0,
+  "review_and_not_tested": [
+    {
+      "id": "1F-unassigned-floor-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidate_area_m2": 2109.0746915594796,
+      "note": "独自分類。用途確定と区画変更は未承認。広場はこの数値から除外。"
+    },
+    {
+      "id": "1F-short-boundary-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidates": 22,
+      "note": "入口等は除外済みだが、すべてを不要と判定していない。数値検出を目視確認・図面修正案へ回す。"
+    },
+    {
+      "id": "2F-unassigned-floor-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidate_area_m2": 2068.5826414801386,
+      "note": "独自分類。用途確定と区画変更は未承認。広場はこの数値から除外。"
+    },
+    {
+      "id": "2F-short-boundary-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidates": 35,
+      "note": "入口等は除外済みだが、すべてを不要と判定していない。数値検出を目視確認・図面修正案へ回す。"
+    },
+    {
+      "id": "3F-unassigned-floor-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidate_area_m2": 2569.1234169986237,
+      "note": "独自分類。用途確定と区画変更は未承認。広場はこの数値から除外。"
+    },
+    {
+      "id": "3F-short-boundary-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidates": 39,
+      "note": "入口等は除外済みだが、すべてを不要と判定していない。数値検出を目視確認・図面修正案へ回す。"
+    },
+    {
+      "id": "B1-008",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B1-017",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B1-027",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B1-043",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B2-022",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-028",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-028",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B2-031",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-070",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-003",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-008",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-009",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-017",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-027",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-028",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-041",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-057",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B3-057",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B3-057",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B3-SW12",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-026-multipart-plot-outside-crop",
+      "status": "REVIEW_REQUIRED",
+      "note": "元図面に1.67048㎡の離れた部分。今回の3D範囲外。原本は変更していない。"
+    },
+    {
+      "id": "anchor-internal-design",
+      "status": "NOT_TESTED",
+      "note": "6核店は範囲外。シネマの上映室・段床、フードホールの厨房等は詳細化されていない。"
+    },
+    {
+      "id": "human-operation-on-Windows",
+      "status": "NOT_TESTED",
+      "note": "自動物理歩行・Viewport目視評価と区別。RTX4060の性能未測定。"
+    }
+  ],
+  "overall": "IMPLEMENTATION_CHECKS_PASS_WITH_ARCHITECTURAL_REVIEW_PENDING",
+  "no_blanket_architectural_pass": true
+}

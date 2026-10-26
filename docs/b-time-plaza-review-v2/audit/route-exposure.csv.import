@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b3yh1q2dr82ay"
+
+[deps]
+
+files=["res://source/audit/route-exposure.route.translation", "res://source/audit/route-exposure.name.translation", "res://source/audit/route-exposure.role.translation", "res://source/audit/route-exposure.length.translation", "res://source/audit/route-exposure.width.translation", "res://source/audit/route-exposure.entries.translation", "res://source/audit/route-exposure.maximum.translation", "res://source/audit/route-exposure.interval.translation", "res://source/audit/route-exposure.interval.translation", "res://source/audit/route-exposure.status.translation", "res://source/audit/route-exposure.note.translation"]
+
+source_file="res://source/audit/route-exposure.csv"
+dest_files=["res://source/audit/route-exposure.route.translation", "res://source/audit/route-exposure.name.translation", "res://source/audit/route-exposure.role.translation", "res://source/audit/route-exposure.length.translation", "res://source/audit/route-exposure.width.translation", "res://source/audit/route-exposure.entries.translation", "res://source/audit/route-exposure.maximum.translation", "res://source/audit/route-exposure.interval.translation", "res://source/audit/route-exposure.interval.translation", "res://source/audit/route-exposure.status.translation", "res://source/audit/route-exposure.note.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
