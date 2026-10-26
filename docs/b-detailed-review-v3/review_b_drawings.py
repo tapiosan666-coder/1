@@ -513,7 +513,7 @@ for c in CORES:
  ],x=820,y=160,size=12,gap=43)
  text(p,80,820,f"設備中心 Local({c['centre'][0]},{c['centre'][1]}) = World{world(c['centre'])}",13)
  text(p,80,850,'共用前室の4m開口へ外部アクセス8m。トイレ扉1.5m、階段1.5m。寸法はゲーム用仮設計。',12)
-p=newpage('階段・EV 断面 / 上下階の整合','平面図と同じ階高を使用。階段踏面0.30m、32蹴上げ、2方向折返し。EVシャフトは全階同じXZ。')
+p=newpage('階段断面・EV上下階対応','平面図と同じ階高を使用。階段踏面0.30m、32蹴上げ、2方向折返し。EVシャフトは全階同じXZ。')
 for panel,(lo,hi) in enumerate([(1,2),(2,3)]):
  x=100+panel*800;base=580;sc=42;rise=HEIGHT[hi]-HEIGHT[lo];riser=rise/32
  # Unfold the two flights along the section axis to show all actual risers.
