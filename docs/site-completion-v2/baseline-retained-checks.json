@@ -1,0 +1,22 @@
+{
+  "source_sha256": "0e77b809b513bdf079198d6b6c476ab24b09b15fbb5f847791a7039010f8f328",
+  "existing_public_closed_band_checks": [
+    {
+      "floor": 1,
+      "overlap_m2": 0.0,
+      "pass_": true
+    },
+    {
+      "floor": 2,
+      "overlap_m2": 0.0,
+      "pass_": true
+    },
+    {
+      "floor": 3,
+      "overlap_m2": 0.0,
+      "pass_": true
+    }
+  ],
+  "note": "前回v4.1で解消した共用床/閉鎖帯重複は今も3階とも0㎡。今回65件のうち3件は店舗/共用床という別の分類。",
+  "source_modified": false
+}

@@ -1,0 +1,315 @@
+[
+  {
+    "facility": "P-A-E",
+    "id": "P-A-E-VEH-G",
+    "type": "vehicle",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      465,
+      31
+    ],
+    "width_m": 6.0,
+    "normal": [
+      1,
+      0
+    ]
+  },
+  {
+    "facility": "P-A-E",
+    "id": "P-A-E-PED-G",
+    "type": "pedestrian",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      315,
+      100
+    ],
+    "width_m": 3.0,
+    "normal": [
+      -1,
+      0
+    ]
+  },
+  {
+    "facility": "P-A-E",
+    "id": "P-A-E-PED-L2",
+    "type": "pedestrian_bridge_receiver",
+    "level": 2,
+    "height": 5.525,
+    "point": [
+      315,
+      100
+    ],
+    "width_m": 3.0,
+    "normal": [
+      -1,
+      0
+    ],
+    "status": "受け口のみ。モールへの橋線形はroot統合設計"
+  },
+  {
+    "facility": "P-A-E",
+    "id": "P-A-E-PED-L4",
+    "type": "pedestrian_bridge_receiver",
+    "level": 4,
+    "height": 10.875,
+    "point": [
+      315,
+      100
+    ],
+    "width_m": 3.0,
+    "normal": [
+      -1,
+      0
+    ],
+    "status": "受け口のみ。モールへの橋線形はroot統合設計"
+  },
+  {
+    "facility": "P-A-E",
+    "id": "P-A-E-PED-L6",
+    "type": "pedestrian_bridge_receiver",
+    "level": 6,
+    "height": 16.4,
+    "point": [
+      315,
+      100
+    ],
+    "width_m": 3.0,
+    "normal": [
+      -1,
+      0
+    ],
+    "status": "受け口のみ。モールへの橋線形はroot統合設計"
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-VEH-G",
+    "type": "vehicle",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -677,
+      170
+    ],
+    "width_m": 6.0,
+    "normal": [
+      0,
+      -1
+    ]
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-PED-G",
+    "type": "pedestrian",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -630,
+      170
+    ],
+    "width_m": 3.0,
+    "normal": [
+      0,
+      -1
+    ]
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-PED-L2",
+    "type": "pedestrian_bridge_receiver",
+    "level": 2,
+    "height": 5.525,
+    "point": [
+      -630,
+      170
+    ],
+    "width_m": 3.0,
+    "normal": [
+      0,
+      -1
+    ],
+    "status": "受け口のみ。モールへの橋線形はroot統合設計"
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-PED-L4",
+    "type": "pedestrian_bridge_receiver",
+    "level": 4,
+    "height": 10.875,
+    "point": [
+      -630,
+      170
+    ],
+    "width_m": 3.0,
+    "normal": [
+      0,
+      -1
+    ],
+    "status": "受け口のみ。モールへの橋線形はroot統合設計"
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-PED-L6",
+    "type": "pedestrian_bridge_receiver",
+    "level": 6,
+    "height": 16.4,
+    "point": [
+      -630,
+      170
+    ],
+    "width_m": 3.0,
+    "normal": [
+      0,
+      -1
+    ],
+    "status": "受け口のみ。モールへの橋線形はroot統合設計"
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-VEH-B1-G0",
+    "type": "vehicle_basement_ramp_receiver",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -540,
+      170
+    ],
+    "width_m": 7.0,
+    "normal": [
+      0,
+      -1
+    ],
+    "status": "B館新地下への外部車両スロープ受け口。斜路本体はroot設計"
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-PED-RF-NEAR-B",
+    "type": "pedestrian_bridge_receiver",
+    "level": 6,
+    "height": 16.4,
+    "point": [
+      -548,
+      170
+    ],
+    "width_m": 4.0,
+    "normal": [
+      0,
+      -1
+    ],
+    "status": "B館RF歩行橋受口、車口と分離"
+  },
+  {
+    "facility": "P-B-S",
+    "id": "P-B-S-VEH-RF",
+    "type": "vehicle_bridge_receiver",
+    "level": 6,
+    "height": 16.4,
+    "point": [
+      -540,
+      170
+    ],
+    "width_m": 7.0,
+    "normal": [
+      0,
+      -1
+    ],
+    "status": "B館RF車両橋の受け口"
+  },
+  {
+    "facility": "P-C-N",
+    "id": "P-C-N-VEH-G",
+    "type": "vehicle",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -583,
+      -600
+    ],
+    "width_m": 6.0,
+    "normal": [
+      0,
+      -1
+    ]
+  },
+  {
+    "facility": "P-C-N",
+    "id": "P-C-N-PED-G",
+    "type": "pedestrian",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -468,
+      -498
+    ],
+    "width_m": 3.0,
+    "normal": [
+      0,
+      1
+    ]
+  },
+  {
+    "facility": "P-B-W",
+    "id": "P-B-W-VEH-G",
+    "type": "vehicle",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -1063,
+      0
+    ],
+    "width_m": 6.0,
+    "normal": [
+      0,
+      -1
+    ]
+  },
+  {
+    "facility": "P-B-W",
+    "id": "P-B-W-PED-G",
+    "type": "pedestrian",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -872,
+      60
+    ],
+    "width_m": 3.0,
+    "normal": [
+      1,
+      0
+    ]
+  },
+  {
+    "facility": "P-A-S",
+    "id": "P-A-S-VEH-G",
+    "type": "vehicle",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      -63,
+      330
+    ],
+    "width_m": 6.0,
+    "normal": [
+      0,
+      -1
+    ]
+  },
+  {
+    "facility": "P-A-S",
+    "id": "P-A-S-PED-G",
+    "type": "pedestrian",
+    "level": 0,
+    "height": 0.0,
+    "point": [
+      38,
+      330
+    ],
+    "width_m": 3.0,
+    "normal": [
+      0,
+      -1
+    ]
+  }
+]

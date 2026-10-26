@@ -1,0 +1,646 @@
+[
+  {
+    "kind": "arrival_no_private_overlap",
+    "id": "B-NEW-SW-CUSTOMER-1F",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "arrival_reaches_original_public",
+    "id": "B-NEW-SW-CUSTOMER-1F",
+    "pass_": true,
+    "value": 8.99999998299439,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "arrival_no_private_overlap",
+    "id": "A-NEW-EAST-2F",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "arrival_reaches_original_public",
+    "id": "A-NEW-EAST-2F",
+    "pass_": true,
+    "value": 6.000000012329616,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "arrival_no_private_overlap",
+    "id": "A-NEW-SOUTH-2F",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "arrival_reaches_original_public",
+    "id": "A-NEW-SOUTH-2F",
+    "pass_": true,
+    "value": 5.999999993445705,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "A_loading_route_no_other_private",
+    "id": "A-NEW-DELIVERY-1F",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "A_loading_route_enters_backroom",
+    "id": "A-NEW-DELIVERY-1F",
+    "pass_": true,
+    "value": 2.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "yard_to_service_external_gate",
+    "id": "Y-BE",
+    "pass_": true,
+    "value": null,
+    "status": "design_check"
+  },
+  {
+    "kind": "yard_to_service_external_gate",
+    "id": "Y-BW",
+    "pass_": true,
+    "value": null,
+    "status": "design_check"
+  },
+  {
+    "kind": "yard_to_service_external_gate",
+    "id": "Y-C",
+    "pass_": true,
+    "value": null,
+    "status": "design_check"
+  },
+  {
+    "kind": "yard_to_service_external_gate",
+    "id": "Y-A",
+    "pass_": true,
+    "value": null,
+    "status": "design_check"
+  },
+  {
+    "kind": "customer_delivery_roads_separate",
+    "id": "all",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "customer_roads_outside_mall",
+    "id": "all",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "delivery_roads_outside_mall",
+    "id": "all",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-PBS",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-PBW-1",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-PBW-2",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-PCN-1",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-PCN-2",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-PAS",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-OFFSITE-A",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "grade_walk_delivery_separation",
+    "id": "W-A22",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "overpass_truck_clearance",
+    "id": "BR-PAE",
+    "pass_": true,
+    "value": {
+      "road_projection_overlap_m2": 43.48233664374544,
+      "clear_height_m": 5.205,
+      "minimum_m": 4.7
+    },
+    "status": "design_check"
+  },
+  {
+    "kind": "upper_bridge_no_store_overlap",
+    "id": "BR-PAE",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "overpass_truck_clearance",
+    "id": "BR-PAS",
+    "pass_": true,
+    "value": {
+      "road_projection_overlap_m2": 32.0,
+      "clear_height_m": 5.205,
+      "minimum_m": 4.7
+    },
+    "status": "design_check"
+  },
+  {
+    "kind": "upper_bridge_no_store_overlap",
+    "id": "BR-PAS",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "overpass_truck_clearance",
+    "id": "BR-PCN",
+    "pass_": true,
+    "value": {
+      "road_projection_overlap_m2": 32.0,
+      "clear_height_m": 5.205,
+      "minimum_m": 4.7
+    },
+    "status": "design_check"
+  },
+  {
+    "kind": "overpass_truck_clearance",
+    "id": "BR-PBW",
+    "pass_": true,
+    "value": {
+      "road_projection_overlap_m2": 0.0,
+      "clear_height_m": 5.205,
+      "minimum_m": 4.7
+    },
+    "status": "design_check"
+  },
+  {
+    "kind": "overpass_truck_clearance",
+    "id": "BR-PBS-RF-PED",
+    "pass_": true,
+    "value": {
+      "road_projection_overlap_m2": 0.0,
+      "clear_height_m": 16.08,
+      "minimum_m": 4.7
+    },
+    "status": "design_check"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-PBS",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-PBW-1",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-PBW-2",
+    "pass_": true,
+    "value": 0.0,
+    "status": "conditional_proposal"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-PCN-1",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-PCN-2",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-PAS",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-OFFSITE-A",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "walk_does_not_enter_private",
+    "id": "all-W-A22",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "parking_port_to_external_gate",
+    "id": "P-A-E",
+    "pass_": true,
+    "value": [
+      465,
+      31
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "parking_port_to_external_gate",
+    "id": "P-B-S",
+    "pass_": true,
+    "value": [
+      -677,
+      170
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "parking_port_to_external_gate",
+    "id": "P-C-N",
+    "pass_": true,
+    "value": [
+      -583,
+      -600
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "parking_port_to_external_gate",
+    "id": "P-B-W",
+    "pass_": true,
+    "value": [
+      -1063,
+      0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "parking_port_to_external_gate",
+    "id": "P-A-S",
+    "pass_": true,
+    "value": [
+      -63,
+      330
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_width_matched",
+    "id": "BR-PAE",
+    "pass_": true,
+    "value": [
+      3.0,
+      3.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_receiver_supported",
+    "id": "BR-PAE",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_width_matched",
+    "id": "W-PBS",
+    "pass_": true,
+    "value": [
+      3.0,
+      3.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_receiver_supported",
+    "id": "W-PBS",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_width_matched",
+    "id": "W-PBW-1",
+    "pass_": true,
+    "value": [
+      3.0,
+      3.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_receiver_supported",
+    "id": "W-PBW-1",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_width_matched",
+    "id": "W-PCN-1",
+    "pass_": true,
+    "value": [
+      3.0,
+      3.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_receiver_supported",
+    "id": "W-PCN-1",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_width_matched",
+    "id": "W-PAS",
+    "pass_": true,
+    "value": [
+      3.0,
+      3.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "actual_walk_port_receiver_supported",
+    "id": "W-PAS",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "C_truck_ramp_matches_B1_yard",
+    "id": "D-C",
+    "pass_": true,
+    "value": null,
+    "status": "design_check"
+  },
+  {
+    "kind": "PB_full_width_bridge_apron",
+    "id": "B1-car-ramp-PB",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "PB_bridge_matches_correct_surface",
+    "id": "B1-car-ramp-PB",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "PB_full_width_bridge_apron",
+    "id": "RF-car-PB",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "PB_bridge_matches_correct_surface",
+    "id": "RF-car-PB",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "PB_full_width_bridge_apron",
+    "id": "RF-ped-PB",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "PB_bridge_matches_correct_surface",
+    "id": "RF-ped-PB",
+    "pass_": true,
+    "value": 0.0,
+    "status": "design_check"
+  },
+  {
+    "kind": "RF_car_ped_bridges_separate",
+    "id": "B-S",
+    "pass_": true,
+    "value": null,
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "A-B1",
+    "pass_": true,
+    "value": [
+      -5.35,
+      -5.35
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "A-1F",
+    "pass_": true,
+    "value": [
+      0.0,
+      0.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "A-2F",
+    "pass_": true,
+    "value": [
+      5.525,
+      5.525
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "A-3F",
+    "pass_": true,
+    "value": [
+      10.875,
+      10.875
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "A-RF",
+    "pass_": true,
+    "value": [
+      16.4,
+      16.4
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "C-B1",
+    "pass_": true,
+    "value": [
+      -5.35,
+      -5.35
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "C-1F",
+    "pass_": true,
+    "value": [
+      0.0,
+      0.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "C-2F",
+    "pass_": true,
+    "value": [
+      5.525,
+      5.525
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "C-3F",
+    "pass_": true,
+    "value": [
+      10.875,
+      10.875
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "C-RF",
+    "pass_": true,
+    "value": [
+      16.4,
+      16.4
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "B-B1",
+    "pass_": true,
+    "value": [
+      -5.35,
+      -5.35
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "B-RF",
+    "pass_": true,
+    "value": [
+      16.4,
+      16.4
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "B-1F",
+    "pass_": true,
+    "value": [
+      0.0,
+      0.0
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "B-2F",
+    "pass_": true,
+    "value": [
+      5.525,
+      5.525
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "mall_level_datum",
+    "id": "B-3F",
+    "pass_": true,
+    "value": [
+      10.875,
+      10.875
+    ],
+    "status": "design_check"
+  },
+  {
+    "kind": "protected_files_unchanged",
+    "id": "all",
+    "pass_": true,
+    "value": {
+      "checked": 418,
+      "changed": []
+    },
+    "status": "design_check"
+  },
+  {
+    "kind": "stall_id_unique",
+    "id": "all",
+    "pass_": true,
+    "value": 6699,
+    "status": "design_check"
+  }
+]

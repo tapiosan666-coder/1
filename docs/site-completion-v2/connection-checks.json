@@ -1,0 +1,110 @@
+[
+  {
+    "id": "AB-1",
+    "from_wing": "B",
+    "to_wing": "A",
+    "level": 0,
+    "height": 0.0,
+    "width_m": 5,
+    "world_points": [
+      [
+        -264,
+        16
+      ],
+      [
+        -240,
+        -5.5
+      ],
+      [
+        -174,
+        -5.5
+      ]
+    ],
+    "source_changed": false,
+    "public_overlap_m2": 0.0,
+    "endpoint_distance_m": 0.0
+  },
+  {
+    "id": "BC-1",
+    "from_wing": "B",
+    "to_wing": "C",
+    "level": 0,
+    "height": 0.0,
+    "width_m": 8,
+    "world_points": [
+      [
+        -437,
+        -2
+      ],
+      [
+        -437,
+        -65
+      ],
+      [
+        -370,
+        -65
+      ],
+      [
+        -370,
+        -80
+      ]
+    ],
+    "source_changed": false,
+    "public_overlap_m2": 8.0,
+    "endpoint_distance_m": 0.0
+  },
+  {
+    "id": "AB-2",
+    "from_wing": "B",
+    "to_wing": "A",
+    "level": 1,
+    "height": 5.525,
+    "width_m": 5,
+    "world_points": [
+      [
+        -264,
+        16
+      ],
+      [
+        -240,
+        -5.5
+      ],
+      [
+        -110,
+        -5.5
+      ]
+    ],
+    "source_changed": false,
+    "public_overlap_m2": 158.10526315789474,
+    "endpoint_distance_m": 0.0
+  },
+  {
+    "id": "BC-2",
+    "from_wing": "B",
+    "to_wing": "C",
+    "level": 1,
+    "height": 5.525,
+    "width_m": 5,
+    "world_points": [
+      [
+        -437,
+        -2
+      ],
+      [
+        -437,
+        -65
+      ],
+      [
+        -432,
+        -65
+      ],
+      [
+        -432,
+        -117
+      ]
+    ],
+    "source_changed": false,
+    "public_overlap_m2": 5.0,
+    "endpoint_distance_m": 0.0
+  }
+]

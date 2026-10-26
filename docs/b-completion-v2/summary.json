@@ -1,0 +1,38 @@
+{
+  "floors": [
+    {
+      "level": -1,
+      "label": "B1",
+      "stalls": 193,
+      "categories": {
+        "EV": 9,
+        "standard": 166,
+        "staff": 15,
+        "accessible": 3
+      },
+      "public_m2": 3195.992968436118,
+      "vehicle_m2": 11448.871669215216,
+      "designated_crossing_m2": 54.861674886462936,
+      "service_roof_program_m2": 31903.023774562484
+    },
+    {
+      "level": 3,
+      "label": "RF",
+      "stalls": 115,
+      "categories": {
+        "EV": 5,
+        "standard": 99,
+        "staff": 8,
+        "accessible": 3
+      },
+      "public_m2": 2556.5883086823487,
+      "vehicle_m2": 6731.738317456389,
+      "designated_crossing_m2": 56.838825976834165,
+      "service_roof_program_m2": 33748.24299951697
+    }
+  ],
+  "checks": 1091,
+  "failed": [],
+  "baseline_core_opening_proposals": 24,
+  "baseline_opening_not_applied": true
+}

@@ -1,0 +1,626 @@
+{
+  "files": [
+    {
+      "path": "downloads/FIND_YOURSELF-Site-Complete-v2.pdf",
+      "sha256": "9755ddb2a9ff7a67a26f9edf2d7842145c8b9ca108bfa4dd3dc85f7d7704e39b",
+      "bytes": 22252359
+    },
+    {
+      "path": "docs/site-completion-v2/15-floor-dimensions.csv",
+      "sha256": "4ac7e9a2d6951766af262e3a1502193689bdf5fc8fc2904faa8ff92a7b733deb",
+      "bytes": 1177
+    },
+    {
+      "path": "docs/site-completion-v2/independent-verification.json",
+      "sha256": "9374aaa95eee19d08cf4831910bfcce507f7f0f46b8bf5bba7d80a536db25e15",
+      "bytes": 10020
+    },
+    {
+      "path": "docs/site-completion-v2/pdf-verification.json",
+      "sha256": "d3bda1ef3a11c0ef4f64600952ec55dcc39caf3bb1dcb2d5dca08690a7470478",
+      "bytes": 323
+    },
+    {
+      "path": "docs/site-completion-v2/whole-site-drawing-preview.png",
+      "sha256": "7e5b0e138f770abbf471c09dc0997ebc5a692e555c0cf06663369baa0e2fd1eb",
+      "bytes": 105475
+    },
+    {
+      "path": "docs/site-completion-v2/design-circulation-graph.json",
+      "sha256": "fdc2ff6e7dd8ed6cf81b290b06f82d6e2ef72d14d6796e73de54f3c81ed82ee1",
+      "bytes": 21685
+    },
+    {
+      "path": "docs/site-completion-v2/approval-conditions.json",
+      "sha256": "dd6584453c29b5675755f3638db173b4d5c289a7bfc78edc2737f4d171a46b39",
+      "bytes": 7407
+    },
+    {
+      "path": "docs/site-completion-v2/road-path-register.csv",
+      "sha256": "40b0949c9a7e22464c113d13a9d275566080a824122aa0c77492e74829b2565f",
+      "bytes": 3907
+    },
+    {
+      "path": "docs/site-completion-v2/pdf-source.json",
+      "sha256": "8c3d3a079e676dc61cb1b077a0157f97fcc699929e60616dc75ac9374fb1ace2",
+      "bytes": 859
+    },
+    {
+      "path": "docs/site-completion-v2/B-basement-drawing-preview.png",
+      "sha256": "dbfa475b3f77f140d50ce03fa060f39602dca99b1e0a04bd7afd33e094b1bac3",
+      "bytes": 140040
+    },
+    {
+      "path": "docs/site-completion-v2/all-fixed-B-issues.csv",
+      "sha256": "78ae9b6fe6b3a5cbf75f6848babb2dc669b1eefcfcb8cee7de502d16e38c641d",
+      "bytes": 4597
+    },
+    {
+      "path": "docs/site-completion-v2/independent-checks.json",
+      "sha256": "0954f2d54a486161914b997aa253c195b79203d35b528fff7cffa31cad4e8c9d",
+      "bytes": 423526
+    },
+    {
+      "path": "docs/site-completion-v2/design-circulation-checks.json",
+      "sha256": "4439ccbebcaffc62ad77921576a0c6d36846eb4a3579e5f510e8ae84add02cd5",
+      "bytes": 2703
+    },
+    {
+      "path": "docs/site-completion-v2/baseline-retained-checks.json",
+      "sha256": "526c169220cef4af43be341eab0649e53cd55a04d46584545fec9efc9e9f626f",
+      "bytes": 548
+    },
+    {
+      "path": "docs/site-completion-v2/capacity.json",
+      "sha256": "37e1a3d7d5f54373f01282d0da7f7d8ff3b66e8c26ac06bee0f7576b9ed93b02",
+      "bytes": 1675
+    },
+    {
+      "path": "docs/site-completion-v2/B-v4.1-local-cleanup-UNAPPLIED.json",
+      "sha256": "b629ed79c6f34d9d4dc1ffc6ecd237cd0832994b5615d5fd3adaceff21799d15",
+      "bytes": 1572085
+    },
+    {
+      "path": "docs/site-completion-v2/connection-checks.json",
+      "sha256": "ab5454a96397e8a303fa64a2fd86f04e97547f7aa431cff6887f748574c72202",
+      "bytes": 1584
+    },
+    {
+      "path": "docs/site-completion-v2/complete-pdf-verification.json",
+      "sha256": "8da20db1da7e31290e30301196cefa92c9481f35ee41e3b8c00c47dde80b92f2",
+      "bytes": 681
+    },
+    {
+      "path": "docs/site-completion-v2/all-15-floor-unit-ledger.csv",
+      "sha256": "f7bc466bd42c48597d28c7c81bcfd89ebad04ae260c4467df24dae21116de174",
+      "bytes": 58989
+    },
+    {
+      "path": "docs/site-completion-v2/parking-ledger.csv",
+      "sha256": "5badd46c100c20fa4ceed0223a55f2c7bc1f12ca1489c967dd69e6ff994de069",
+      "bytes": 1611679
+    },
+    {
+      "path": "docs/site-completion-v2/atlas-pages.json",
+      "sha256": "978314d920ac09483a2babf4af68f964ca35fb3371ec928f4ecf0602b94fda65",
+      "bytes": 1466
+    },
+    {
+      "path": "docs/site-completion-v2/parking-capacity-by-use.csv",
+      "sha256": "4964d434180f1c72715fada784a0012cb0b9b9a073361e4bd812f1a939cec43c",
+      "bytes": 2036
+    },
+    {
+      "path": "docs/site-completion-v2/C-area-map-drawing-preview.png",
+      "sha256": "ba5b156dbc62b11dcc98b16bf294d33d8c18c95c2c3e970d0739cbdc10b71ebb",
+      "bytes": 126999
+    },
+    {
+      "path": "docs/site-completion-v2/connection-ledger.csv",
+      "sha256": "711fd5ca8459c16c1cebdb2d0b10699bae181391e8739b24f921aff4937b1c34",
+      "bytes": 267
+    },
+    {
+      "path": "docs/site-completion-v2/pdf-checks.json",
+      "sha256": "cb606738eb4bd964a1ab91b45f9061791a11b0e8c580d379e61e875ae5c0baae",
+      "bytes": 86090
+    },
+    {
+      "path": "docs/site-completion-v2/summary.json",
+      "sha256": "1846075e775fd49bea54eb4a4f55820ecd62e50baaf65e330d796253bcdb0867",
+      "bytes": 2327
+    },
+    {
+      "path": "docs/site-completion-v2/B-v4.1-local-cleanup-proposal-checks.json",
+      "sha256": "7bcbbcd1c1b48a0e7a5e9243b258d6049a34057845f529f8e556b5522abe1119",
+      "bytes": 644
+    },
+    {
+      "path": "docs/site-completion-v2/README.md",
+      "sha256": "9ca20cdf1a84687d02e21c71040b6101d0e7a73295e5aa376297b20755f13b81",
+      "bytes": 8229
+    },
+    {
+      "path": "docs/site-completion-v2/checks.json",
+      "sha256": "c3306b65ef818fb2370906bb13825d9cb0c8a389ef9fead8dd00fcf26875f7eb",
+      "bytes": 12181
+    },
+    {
+      "path": "docs/site-completion-v2/protected-baseline-hashes.json",
+      "sha256": "b62ac56ec43806d3d3d2ebc213e3dd98cab2854cc87a430dd37753831f7f0685",
+      "bytes": 46053
+    },
+    {
+      "path": "docs/site-completion-v2/B-v4.1-local-cleanup-proposal-ledger.csv",
+      "sha256": "67fc79d57315ea5bfb9d00789233ee303aed3120efe05d25a3a4bbd9681c4926",
+      "bytes": 420
+    },
+    {
+      "path": "docs/site-completion-v2/geometry.json",
+      "sha256": "f6f3e71ed6678c30f393c854643f39ee043565fcadd799a8d09192c441af4b7f",
+      "bytes": 1184433
+    },
+    {
+      "path": "docs/b-completion-v2/core-opening-proposals.json",
+      "sha256": "72ab4239e6e76b0574ce06644bc9c7d44d19d2c4a1835a6a5ed0ec8cec7bd35b",
+      "bytes": 50366
+    },
+    {
+      "path": "docs/b-completion-v2/parking-ledger.csv",
+      "sha256": "bf4a5732037ab6590d943755fa8e26966c5bcea72c16d158edf4442bed220d5b",
+      "bytes": 58781
+    },
+    {
+      "path": "docs/b-completion-v2/service-program-ledger.csv",
+      "sha256": "ace77a1e087884f207fadcdc9e0ef5fd391556e61e85885a47d96a9b9de8a28d",
+      "bytes": 36016
+    },
+    {
+      "path": "docs/b-completion-v2/summary.json",
+      "sha256": "a41c1a3a9f09ef6d997bb61383bc6b63c609ef466f827c356da11308d524bfe3",
+      "bytes": 879
+    },
+    {
+      "path": "docs/b-completion-v2/core-opening-proposals.csv",
+      "sha256": "3a82340ccad12afb95819472bb187d28627c6ca7f34de36dda700ba71fc9ca90",
+      "bytes": 1370
+    },
+    {
+      "path": "docs/b-completion-v2/README.md",
+      "sha256": "654d7c02580b28f28aa3ec65c0071d89efa90607c01cd435cad5a9e3915a96a3",
+      "bytes": 408
+    },
+    {
+      "path": "docs/b-completion-v2/checks.json",
+      "sha256": "193387c859f6a718e85a8fce8d06f1c531048cb43a95e155a12253a2f1eee066",
+      "bytes": 137531
+    },
+    {
+      "path": "docs/b-completion-v2/geometry.json",
+      "sha256": "557b3c9954979f3b3077a5de00dc302f74e2f875a8cecee270daa3b232efff4e",
+      "bytes": 7147422
+    },
+    {
+      "path": "docs/c-area-audit-v2/nominal-overlaps.json",
+      "sha256": "cb747f5d5cb6a2f31e62f789a9f38f924d47055d7d638434ea3763604c3af267",
+      "bytes": 3280767
+    },
+    {
+      "path": "docs/c-area-audit-v2/area-polygons.json",
+      "sha256": "92de329e0b13ba5c71cc93fc5a1313ac4defbcb7b59c980a0484cdccf8320650",
+      "bytes": 680000
+    },
+    {
+      "path": "docs/c-area-audit-v2/exclusive-area-zones.geojson",
+      "sha256": "79761e57dde1d975f7a40a1c0a73acab4fba2fcf956a3b652a66079395aaed18",
+      "bytes": 510298
+    },
+    {
+      "path": "docs/c-area-audit-v2/all-floor-metrics.csv",
+      "sha256": "a62fb6ca41c263fe99431eb857f50f9d4bec89ef8677815fc7eb74a846951185",
+      "bytes": 1324
+    },
+    {
+      "path": "docs/c-area-audit-v2/raw-source-vs-audit-precision.json",
+      "sha256": "0b731a5baab5641b3449d65c6144203b7af1ae94f746458cd4a64c98a4cf9cd4",
+      "bytes": 9696
+    },
+    {
+      "path": "docs/c-area-audit-v2/all-unit-area-ledger.csv",
+      "sha256": "583e8c948095dd2ef2fdbb0815ad002276a12142914090f7b9150f289f51301d",
+      "bytes": 12527
+    },
+    {
+      "path": "docs/c-area-audit-v2/exclusive-area-ledger.csv",
+      "sha256": "b74333166a926b1cca53ef3c6e27218b5e448cf1da9c0da1d8478f9150286f02",
+      "bytes": 15892
+    },
+    {
+      "path": "docs/c-area-audit-v2/README.md",
+      "sha256": "9773462030c1605961c3f8e15e385852defb2381db65366be9ad81f5e1c17123",
+      "bytes": 419
+    },
+    {
+      "path": "docs/c-area-audit-v2/checks.json",
+      "sha256": "d278b2038a80aed96ef458fd47968b33157b03fec97f8a111cf108fde1680086",
+      "bytes": 204105
+    },
+    {
+      "path": "docs/c-area-audit-v2/unit-area-ledger.json",
+      "sha256": "a4c74c2f928523df019d733c0061eedf73bc5a48582382eac6ddcd6c397b30e7",
+      "bytes": 36451
+    },
+    {
+      "path": "docs/c-area-audit-v2/verification.json",
+      "sha256": "8aa3a5223500539077525c1794d7080c33ecac3fea612aed2695b0dec40ae31c",
+      "bytes": 489
+    },
+    {
+      "path": "docs/c-area-audit-v2/core-area-ledger.csv",
+      "sha256": "427ac66a49753202a0cc59ad27ec1c4ae2c2af493415dd55e5cc08538eb07bed",
+      "bytes": 3089
+    },
+    {
+      "path": "docs/parking-blocks-v2/ports.json",
+      "sha256": "ecd3505b2fe69d99a0e27583416c240784b60f27890fad60b82236cfacd3c85d",
+      "bytes": 5083
+    },
+    {
+      "path": "docs/parking-blocks-v2/pdf-source.json",
+      "sha256": "6de608ac72890430b5a5e7eab3f3550fefc596127500ba5765c9ed087aaf0d02",
+      "bytes": 366
+    },
+    {
+      "path": "docs/parking-blocks-v2/stall-ledger.csv",
+      "sha256": "947480e89619365c4baf6917af2298414ced8fe6de7eba033e0739d2705e4113",
+      "bytes": 1741768
+    },
+    {
+      "path": "docs/parking-blocks-v2/capacity.json",
+      "sha256": "74453f515e2a406d53f076a2ce6ad6b28a43a6c884bdea32bc0e848efa13ef64",
+      "bytes": 3632
+    },
+    {
+      "path": "docs/parking-blocks-v2/pdf-deck-pages.json",
+      "sha256": "dd44c163fe8fce38af19ad653ad1ce3e34dc164ccbcb5bfb4cdce67eda412355",
+      "bytes": 1882
+    },
+    {
+      "path": "docs/parking-blocks-v2/README.md",
+      "sha256": "620270b16822cf232c31dd8e61f37219cf78dcfe36a7f659f12bdfcf5dfc13d1",
+      "bytes": 483
+    },
+    {
+      "path": "docs/parking-blocks-v2/checks.json",
+      "sha256": "ab77a1cdd28c23cb65986f14ec96ac43afd1121f1a25e5a5d2eef46681c630b4",
+      "bytes": 5282861
+    },
+    {
+      "path": "docs/parking-blocks-v2/verification.json",
+      "sha256": "6ae6c538c4256baa814f790baf5e05b53cdee0d60d5dd50007f6769db30f612d",
+      "bytes": 5839701
+    },
+    {
+      "path": "docs/parking-blocks-v2/geometry.json",
+      "sha256": "1eafbe895aa7f67779142c351d8104ff9cdfad80524a7d7e6565cbcf2ddf69fe",
+      "bytes": 17974896
+    },
+    {
+      "path": "docs/a-detailed-design-v1/pdf-verification.json",
+      "sha256": "dc399df6b4d1da0f8b1843d59ddb5cb25bdf50e442d43f06f036fb2ae21ea469",
+      "bytes": 309005
+    },
+    {
+      "path": "docs/a-detailed-design-v1/pdf-source.json",
+      "sha256": "22d144d948f3a91f7423d3d4aa348b1601fd317a4f5f8ac17280446ff4d1d340",
+      "bytes": 281
+    },
+    {
+      "path": "docs/a-detailed-design-v1/visual-review.md",
+      "sha256": "3a33a0a2c5458cd928900de13ae0f791bfbebe92fdcee819d3257d2aca87bac7",
+      "bytes": 1100
+    },
+    {
+      "path": "docs/a-detailed-design-v1/legacy-id-coordinate-map.csv",
+      "sha256": "64fce6518e7e17ae838b4349b71854418a11b7c11af2acd7abe6d07f767f317a",
+      "bytes": 15706
+    },
+    {
+      "path": "docs/a-detailed-design-v1/route-register.csv",
+      "sha256": "fced0b437ec8b1c436824ede870b055fe77da66093af9d324b87d72df214ee79",
+      "bytes": 5081
+    },
+    {
+      "path": "docs/a-detailed-design-v1/summary.json",
+      "sha256": "e23ece1181ec706fd87e0ff14c4bf33cc9e51104fc4011966eae3b3bc7529d81",
+      "bytes": 919
+    },
+    {
+      "path": "docs/a-detailed-design-v1/service-program.csv",
+      "sha256": "75f7f1860abade7a49862c82c580e0a9e891fc1bbb1182d8bddf58330ed8d872",
+      "bytes": 7832
+    },
+    {
+      "path": "docs/a-detailed-design-v1/README.md",
+      "sha256": "5147b8f17eee8fe46624996d45b714bf80f0a0d57c061388f1294279b4ed3d9e",
+      "bytes": 967
+    },
+    {
+      "path": "docs/a-detailed-design-v1/checks.json",
+      "sha256": "d9395cbf43581570248203dc45a8f8f2c457a9fdaeaf0215a39b104524ac2017",
+      "bytes": 735108
+    },
+    {
+      "path": "docs/a-detailed-design-v1/geometry.json",
+      "sha256": "c68d4a3161073bce3c74bd4421206232d4166157606be9703756fe964564f546",
+      "bytes": 10302661
+    },
+    {
+      "path": "docs/a-detailed-design-v1/tenant-ledger.csv",
+      "sha256": "90ff21c2705a7ba52ba04b36430fcc3ea23b5fba9fc4685fb68ffcc37dc54833",
+      "bytes": 48621
+    },
+    {
+      "path": "docs/c-detailed-design-v1/dimensions.csv",
+      "sha256": "da0561481b3e00722ef6750afcc554096ae58c629cca2f31e0e5b4ef08d5627a",
+      "bytes": 802
+    },
+    {
+      "path": "docs/c-detailed-design-v1/dead-end-review.csv",
+      "sha256": "90f3bf9e1fcd162c4dac9641c4b58f14579e78ff5d6532ec2fe484db97f7f3db",
+      "bytes": 3404
+    },
+    {
+      "path": "docs/c-detailed-design-v1/independent-checks.json",
+      "sha256": "ef098bbf4d903710b935d2e875187ab20bbf7a3771f6a93b4235f246751a4715",
+      "bytes": 38266
+    },
+    {
+      "path": "docs/c-detailed-design-v1/delivery-verification.json",
+      "sha256": "29d50695c8aec60c012c5acd8c93a8f2e78790d4436d00e049c621bb0001d0e1",
+      "bytes": 705
+    },
+    {
+      "path": "docs/c-detailed-design-v1/id-migration.json",
+      "sha256": "c5eef8d6d9b3d83f5a21c72b78c639c440497db83522d2e3ad94d8f25e8ba3df",
+      "bytes": 3870
+    },
+    {
+      "path": "docs/c-detailed-design-v1/route-register.csv",
+      "sha256": "bdcf432c8802e427dc360ae5dba051c401e52cfa082c2464159f8352aefc89c1",
+      "bytes": 4737
+    },
+    {
+      "path": "docs/c-detailed-design-v1/check-summary.csv",
+      "sha256": "0a6676f048c62e9c08f05a7e393ed45a7bd9e8ea4aa0ca61ecae9095f00de509",
+      "bytes": 908
+    },
+    {
+      "path": "docs/c-detailed-design-v1/README.md",
+      "sha256": "b9de31ff22dcf8b9a5c6fd0900a686e5b3e6482d5480c775cab9186cea96357d",
+      "bytes": 2426
+    },
+    {
+      "path": "docs/c-detailed-design-v1/checks.json",
+      "sha256": "b526970c607bb89c43bdc1d541f185ca39ed0c6216216ab322c2dbd1d3ef24e4",
+      "bytes": 273163
+    },
+    {
+      "path": "docs/c-detailed-design-v1/id-migration.csv",
+      "sha256": "3f4aacaf39e76afdb90459e40ba3458fa5df7f887d69aa800bbf483319e3e7eb",
+      "bytes": 1771
+    },
+    {
+      "path": "docs/c-detailed-design-v1/verification.json",
+      "sha256": "21b2b09d2269c80304f74dac3ceb79e03068e83fe9bf373212398ca31419045f",
+      "bytes": 332
+    },
+    {
+      "path": "docs/c-detailed-design-v1/equipment-register.csv",
+      "sha256": "27fb3c00de34518d531b99edf7992c299f1ec6a1da32504ed35ae9301396b3f1",
+      "bytes": 3070
+    },
+    {
+      "path": "docs/c-detailed-design-v1/geometry.json",
+      "sha256": "99035288f4230f47f2cc48258b33bec37616e570b9d9af0a9cbd59d5a47e7838",
+      "bytes": 7174706
+    },
+    {
+      "path": "docs/c-detailed-design-v1/tenant-ledger.csv",
+      "sha256": "ad17b692e74235714c649575c44806184ed613935652b50d7354fb6617473d0e",
+      "bytes": 11043
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/changes.json",
+      "sha256": "a8d29be871a8a05a94712f0c17d50d42c02b48c6462f4cdae6c50c309d011ed9",
+      "bytes": 109286
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/removed-components.csv",
+      "sha256": "dd5742ac92e6ae0bb593cb2dc62aaf6974a2081de93eb8421372a37c5e218026",
+      "bytes": 31608
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/unchanged-v4-final-finish-schedule.csv",
+      "sha256": "efbe27f98ae5c107f70ed248aa7b0600e93dac03540b9538b9628e96797ecf66",
+      "bytes": 8565
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/unchanged-v4-space-register.csv",
+      "sha256": "385a04fa925941ed3775449f4d718b750cacff66ac721d32636027b384bbc5c6",
+      "bytes": 13808
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/unchanged-v4-equipment-register.csv",
+      "sha256": "c1c411a3a1cc5ebd93c175c4f463d1408d30a0443cdfe53e387a3c7404ab5a8e",
+      "bytes": 2867
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/comparison-view-locations.json",
+      "sha256": "c83ccf763487259fce43e0ebd8758540c354e8dd15ac05a7fba685c623efe966",
+      "bytes": 2814
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/protected-game-hashes.json",
+      "sha256": "bd8f0b9906b8892776874ff69b5aa6007ce6f333453cbe4bbba712388d21b624",
+      "bytes": 24220
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/delivery-verification.json",
+      "sha256": "6f1c6e59a8dbf3c6453c45eebbce9db7453bc3b5236d0cfa38dc0a1eb8dbd96a",
+      "bytes": 7109
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/check-summary.csv",
+      "sha256": "6c1c88420b13586688d5fa21d9675975a4f9327208ff61a0ac1c7ee07f6d0fcc",
+      "bytes": 1565
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/comparison.json",
+      "sha256": "dbdf07d793ca9ae4565896cec22eb54fa853162edb6f80fe9143c979a049ab00",
+      "bytes": 3103
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/unchanged-v4-tenant-ledger.csv",
+      "sha256": "ac43fcee6f940f045725a47d2e1977e0023a1b0e375827dd4323818e31a519fc",
+      "bytes": 35574
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/route-paths.json",
+      "sha256": "5db77303e3a070bc7051f42b69515bb7743236122bb5bdb1bc8615d1f75db403",
+      "bytes": 5235939
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/added-components.csv",
+      "sha256": "45bbea869c1d1329c0af9f61540ee368ee4802e0e088ab50f7f668f12c43eed0",
+      "bytes": 2623
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/unchanged-v4-store-internal-routes.csv",
+      "sha256": "671e9b1980ff9e2a3c20c54c1d5571d2c1a4d4a0ee5c9a3d02a704f4c429e837",
+      "bytes": 71107
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/README.md",
+      "sha256": "afae185f4122149f294c6dfbca5beb7327668b2e54ff4cc45e95814fcb48d743",
+      "bytes": 3950
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/geometry.patch.json",
+      "sha256": "db01826e5c8326bc406c72b88b2528190fd7ca64c5200c93f0596ae0f986fd0c",
+      "bytes": 443807
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/checks.json",
+      "sha256": "be9224125375560de317bb2e550663b2395447ccc88068aa553e416af2848a04",
+      "bytes": 1070955
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/verification.json",
+      "sha256": "32bc2590f2850d0e47269e063b04e3e078bc93a5aa273c13031d6eafafbc8c33",
+      "bytes": 1229
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/geometry.json",
+      "sha256": "0e77b809b513bdf079198d6b6c476ab24b09b15fbb5f847791a7039010f8f328",
+      "bytes": 6597774
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/comparison.csv",
+      "sha256": "1ffab5e3e60f6559fc1202162ad30f72f2464cf7dae710e34beca2f2d2a74c86",
+      "bytes": 736
+    },
+    {
+      "path": "docs/b-v4-overlap-correction/revision.json",
+      "sha256": "7279c2ca86e3a947c23a3a6ae61cb8e756968801332c86a2a9da0e3812333727",
+      "bytes": 985
+    },
+    {
+      "path": "third_party/noto-cjk-COPYRIGHT.txt",
+      "sha256": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b",
+      "bytes": 14712
+    },
+    {
+      "path": "tools/site_v2_common.py",
+      "sha256": "12c48b6b5cd739eaa1fb162af53bbf52c9f4f05b5cd310d3629469d5b7c334cb",
+      "bytes": 2658
+    },
+    {
+      "path": "tools/design_b_completion_v2.py",
+      "sha256": "e78f1597681bd41638105717a64a52dd766ad66437804af538850e21652ae677",
+      "bytes": 16812
+    },
+    {
+      "path": "tools/refine_b_completion_v2.py",
+      "sha256": "176fd56aa9adb3efa2ce7324026d5266dccdaa7e1a94ac1d4889b53b9ebb688c",
+      "bytes": 6802
+    },
+    {
+      "path": "tools/complete_b_service_v2.py",
+      "sha256": "bce6338db6905cd0b37dfa32b53561294ec9f210f9468c191f2872057929055d",
+      "bytes": 3219
+    },
+    {
+      "path": "tools/design_site_completion_v2.py",
+      "sha256": "589fd1d826a8c38fe307cb636032cd9770a60d5c031c378fc94f0c6b6f4e8781",
+      "bytes": 20285
+    },
+    {
+      "path": "tools/check_site_completion_v2.py",
+      "sha256": "5b95a2ca13de8006d633bf13438fee3612c87b7117ced61a085f787335b63cb5",
+      "bytes": 7817
+    },
+    {
+      "path": "tools/propose_b_baseline_cleanup_v2.py",
+      "sha256": "062dfbb35d27551b6f958af3ca486810adda91c9b1a7461cbb6a79cfd6f5b4a5",
+      "bytes": 4138
+    },
+    {
+      "path": "tools/site_reachability_v2.py",
+      "sha256": "a4aab7b00c575c307f88a4a7448a45fbf52608ec43b1c6800b0fb719864a247b",
+      "bytes": 4126
+    },
+    {
+      "path": "tools/draw_site_completion_v2.py",
+      "sha256": "2653e91ad07d00f8247c00f234b7d84e013b12260ea036a7cee4f8a6774fa7ab",
+      "bytes": 38217
+    },
+    {
+      "path": "tools/verify_site_pdf_v2.py",
+      "sha256": "2d88a1337c6be7bdb5afec6b62c2353d3d0cb2899af2f712e8ef4a04ca840eb3",
+      "bytes": 2920
+    },
+    {
+      "path": "tools/package_site_completion_v2.py",
+      "sha256": "523f5a3103238511173afdb809823d7546e1047def5a75ab9ff47f28370e0b2c",
+      "bytes": 17430
+    },
+    {
+      "path": "tools/design_parking_v2.py",
+      "sha256": "aec32b91ba2d2dda1695cacb766661dabc416097991df1ea955c340a2c10ee1c",
+      "bytes": 20988
+    },
+    {
+      "path": "tools/draw_parking_v2.py",
+      "sha256": "23e4aed7881238cd50c762242cae5b4467214fd3d244a6eb0d7c9c7fe8911461",
+      "bytes": 22105
+    },
+    {
+      "path": "tools/verify_parking_v2.py",
+      "sha256": "3840984ce71c6eb2a0c0b1fea08fd7f9c6a38f4e75894449bf9a39c387ab5fa4",
+      "bytes": 7937
+    },
+    {
+      "path": "tools/audit_c_area_v2.py",
+      "sha256": "ddbf7613a616c7870776eaa107af376cd6b6de2acacbcdfe8fd24a3d977f2d38",
+      "bytes": 16962
+    },
+    {
+      "path": "tools/design_b_v4.py",
+      "sha256": "232720ef6bec0d6812aa80bd72c1e9ac728c42233b2a8f4030d55e41113f6e07",
+      "bytes": 37733
+    }
+  ],
+  "game_implemented": false,
+  "original_B_issues_retained": 65
+}

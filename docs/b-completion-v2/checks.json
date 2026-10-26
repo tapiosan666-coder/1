@@ -1,0 +1,7517 @@
+[
+  {
+    "kind": "accessible_bay_provided",
+    "id": "K1",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "accessible_bay_provided",
+    "id": "K2",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "accessible_bay_provided",
+    "id": "K3",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "floor_geometry_valid",
+    "id": "B1",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "floor_excludes_openings",
+    "id": "B1",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "public_on_supported_floor",
+    "id": "B1",
+    "pass_": true,
+    "value": 2.1316282072799774e-15,
+    "level": -1
+  },
+  {
+    "kind": "core_reaches_public",
+    "id": "K1",
+    "pass_": true,
+    "value": 0.34999999999999964,
+    "level": -1
+  },
+  {
+    "kind": "core_reaches_public",
+    "id": "K2",
+    "pass_": true,
+    "value": 0.3499999999999943,
+    "level": -1
+  },
+  {
+    "kind": "core_reaches_public",
+    "id": "K3",
+    "pass_": true,
+    "value": 0.3499999999999943,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-12-UP-B1-1F0",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-12-UP-B1-1F1",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-12-DOWN-B1-1F0",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-12-DOWN-B1-1F1",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-12-UP-B1-1F0",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-12-UP-B1-1F1",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-12-DOWN-B1-1F0",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-12-DOWN-B1-1F1",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-12-UP-B1-1F0",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-12-UP-B1-1F1",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-12-DOWN-B1-1F0",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-12-DOWN-B1-1F1",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "retail_entry_access",
+    "id": "BB1-MARKET",
+    "pass_": true,
+    "value": 0.35000000000002274,
+    "level": -1
+  },
+  {
+    "kind": "retail_entry_access",
+    "id": "BB1-PICKUP",
+    "pass_": true,
+    "value": 0.34999999999999437,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0001",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0001",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0001",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0002",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0002",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0002",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0003",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0003",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0003",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0004",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0004",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0004",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0005",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0005",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0005",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0006",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0006",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0006",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0007",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0007",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0007",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0008",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0008",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0008",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0009",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0009",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0009",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0010",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0010",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0010",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0011",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0011",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0011",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0012",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0012",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0012",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0013",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0013",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0013",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0014",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0014",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0014",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0015",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0015",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0015",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0016",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0016",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0016",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0017",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0017",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0017",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0018",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0018",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0018",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0019",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0019",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0019",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0020",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0020",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0020",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0021",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0021",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0021",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0022",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0022",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0022",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0023",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0023",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0023",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0024",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0024",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0024",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0025",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0025",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0025",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0026",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0026",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0026",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0027",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0027",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0027",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0028",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0028",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0028",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0029",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0029",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0029",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0030",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0030",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0030",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0031",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0031",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0031",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0032",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0032",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0032",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0033",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0033",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0033",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0034",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0034",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0034",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0035",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0035",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0035",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0036",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0036",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0036",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0037",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0037",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0037",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0038",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0038",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0038",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0039",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0039",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0039",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0040",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0040",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0040",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0041",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0041",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0041",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0042",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0042",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0042",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0043",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0043",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0043",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0044",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0044",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0044",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0045",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0045",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0045",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0046",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0046",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0046",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0047",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0047",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0047",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0048",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0048",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0048",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0049",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0049",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0049",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0050",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0050",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0050",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0051",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0051",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0051",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0052",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0052",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0052",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0053",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0053",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0053",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0054",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0054",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0054",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0055",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0055",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0055",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0056",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0056",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0056",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0057",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0057",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0057",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0058",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0058",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0058",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0059",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0059",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0059",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0060",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0060",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0060",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0061",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0061",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0061",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0062",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0062",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0062",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0063",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0063",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0063",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0064",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0064",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0064",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0065",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0065",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0065",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0066",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0066",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0066",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0067",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0067",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0067",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0068",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0068",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0068",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0069",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0069",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0069",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0070",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0070",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0070",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0071",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0071",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0071",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0072",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0072",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0072",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0073",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0073",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0073",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0074",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0074",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0074",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0075",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0075",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0075",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0076",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0076",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0076",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0077",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0077",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0077",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0078",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0078",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0078",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0079",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0079",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0079",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0080",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0080",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0080",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0081",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0081",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0081",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0082",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0082",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0082",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0083",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0083",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0083",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0084",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0084",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0084",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0085",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0085",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0085",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0086",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0086",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0086",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0087",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0087",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0087",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0088",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0088",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0088",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0089",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0089",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0089",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0090",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0090",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0090",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0091",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0091",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0091",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0092",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0092",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0092",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0093",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0093",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0093",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0094",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0094",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0094",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0095",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0095",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0095",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0096",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0096",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0096",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0097",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0097",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0097",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0098",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0098",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0098",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0099",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0099",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0099",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0100",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0100",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0100",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0101",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0101",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0101",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0102",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0102",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0102",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0103",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0103",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0103",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0104",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0104",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0104",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0105",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0105",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0105",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0106",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0106",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0106",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0107",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0107",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0107",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0108",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0108",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0108",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0109",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0109",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0109",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0110",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0110",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0110",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0111",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0111",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0111",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0112",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0112",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0112",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0113",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0113",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0113",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0114",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0114",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0114",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0115",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0115",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0115",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0116",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0116",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0116",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0117",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0117",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0117",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0118",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0118",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0118",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0119",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0119",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0119",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0120",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0120",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0120",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0121",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0121",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0121",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0122",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0122",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0122",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0123",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0123",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0123",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0124",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0124",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0124",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0125",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0125",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0125",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0126",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0126",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0126",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0127",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0127",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0127",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0128",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0128",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0128",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0129",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0129",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0129",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0130",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0130",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0130",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0131",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0131",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0131",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0132",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0132",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0132",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0133",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0133",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0133",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0134",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0134",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0134",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0135",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0135",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0135",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0136",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0136",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0136",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0137",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0137",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0137",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0138",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0138",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0138",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0139",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0139",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0139",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0140",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0140",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0140",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0141",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0141",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0141",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0142",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0142",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0142",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0143",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0143",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0143",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0144",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0144",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0144",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0145",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0145",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0145",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0146",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0146",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0146",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0147",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0147",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0147",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0148",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0148",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0148",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0149",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0149",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0149",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0150",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0150",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0150",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0151",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0151",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0151",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0152",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0152",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0152",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0153",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0153",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0153",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0154",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0154",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0154",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0155",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0155",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0155",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0156",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0156",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0156",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0157",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0157",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0157",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0158",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0158",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0158",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0159",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0159",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0159",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0160",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0160",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0160",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0161",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0161",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0161",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0162",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0162",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0162",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0163",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0163",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0163",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0164",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0164",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0164",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0165",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0165",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0165",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0166",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0166",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0166",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0167",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0167",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0167",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0168",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0168",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0168",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0169",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0169",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0169",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0170",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0170",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0170",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0171",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0171",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0171",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0172",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0172",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0172",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0173",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0173",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0173",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0174",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0174",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0174",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0175",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0175",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0175",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0176",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0176",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0176",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0177",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0177",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0177",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0178",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0178",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0178",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0179",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0179",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0179",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0180",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0180",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0180",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0181",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0181",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0181",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0182",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0182",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0182",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0183",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0183",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0183",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0184",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0184",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0184",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0185",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0185",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0185",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0186",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0186",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0186",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0187",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0187",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0187",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0188",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0188",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0188",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0189",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0189",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0189",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0190",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0190",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0190",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0191",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0191",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0191",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0192",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0192",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0192",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-B1-0193",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-B1-0193",
+    "pass_": true,
+    "value": null,
+    "level": -1
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-B1-0193",
+    "pass_": true,
+    "value": 0.0,
+    "level": -1
+  },
+  {
+    "kind": "accessible_bay_provided",
+    "id": "K1",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "accessible_bay_provided",
+    "id": "K2",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "accessible_bay_provided",
+    "id": "K3",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "floor_geometry_valid",
+    "id": "RF",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "floor_excludes_openings",
+    "id": "RF",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "public_on_supported_floor",
+    "id": "RF",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "core_reaches_public",
+    "id": "K1",
+    "pass_": true,
+    "value": 0.34999999999999964,
+    "level": 3
+  },
+  {
+    "kind": "core_reaches_public",
+    "id": "K2",
+    "pass_": true,
+    "value": 0.3499999999999943,
+    "level": 3
+  },
+  {
+    "kind": "core_reaches_public",
+    "id": "K3",
+    "pass_": true,
+    "value": 0.3499999999999943,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-23-UP-3F-RF0",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-23-UP-3F-RF1",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-23-DOWN-3F-RF0",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E1-23-DOWN-3F-RF1",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-23-UP-3F-RF0",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-23-UP-3F-RF1",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-23-DOWN-3F-RF0",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E2-23-DOWN-3F-RF1",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-23-UP-3F-RF0",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-23-UP-3F-RF1",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-23-DOWN-3F-RF0",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "escalator_landing_access",
+    "id": "E3-23-DOWN-3F-RF1",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "retail_entry_access",
+    "id": "BRF-CAFE",
+    "pass_": true,
+    "value": 0.35000000000002274,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0001",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0001",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0001",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0002",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0002",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0002",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0003",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0003",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0003",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0004",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0004",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0004",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0005",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0005",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0005",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0006",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0006",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0006",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0007",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0007",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0007",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0008",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0008",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0008",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0009",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0009",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0009",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0010",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0010",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0010",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0011",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0011",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0011",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0012",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0012",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0012",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0013",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0013",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0013",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0014",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0014",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0014",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0015",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0015",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0015",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0016",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0016",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0016",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0017",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0017",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0017",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0018",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0018",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0018",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0019",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0019",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0019",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0020",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0020",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0020",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0021",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0021",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0021",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0022",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0022",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0022",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0023",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0023",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0023",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0024",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0024",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0024",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0025",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0025",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0025",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0026",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0026",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0026",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0027",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0027",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0027",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0028",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0028",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0028",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0029",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0029",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0029",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0030",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0030",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0030",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0031",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0031",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0031",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0032",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0032",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0032",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0033",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0033",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0033",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0034",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0034",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0034",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0035",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0035",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0035",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0036",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0036",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0036",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0037",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0037",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0037",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0038",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0038",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0038",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0039",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0039",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0039",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0040",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0040",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0040",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0041",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0041",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0041",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0042",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0042",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0042",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0043",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0043",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0043",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0044",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0044",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0044",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0045",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0045",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0045",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0046",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0046",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0046",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0047",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0047",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0047",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0048",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0048",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0048",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0049",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0049",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0049",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0050",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0050",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0050",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0051",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0051",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0051",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0052",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0052",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0052",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0053",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0053",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0053",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0054",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0054",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0054",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0055",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0055",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0055",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0056",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0056",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0056",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0057",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0057",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0057",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0058",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0058",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0058",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0059",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0059",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0059",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0060",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0060",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0060",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0061",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0061",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0061",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0062",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0062",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0062",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0063",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0063",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0063",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0064",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0064",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0064",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0065",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0065",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0065",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0066",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0066",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0066",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0067",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0067",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0067",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0068",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0068",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0068",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0069",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0069",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0069",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0070",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0070",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0070",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0071",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0071",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0071",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0072",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0072",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0072",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0073",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0073",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0073",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0074",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0074",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0074",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0075",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0075",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0075",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0076",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0076",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0076",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0077",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0077",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0077",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0078",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0078",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0078",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0079",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0079",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0079",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0080",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0080",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0080",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0081",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0081",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0081",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0082",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0082",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0082",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0083",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0083",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0083",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0084",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0084",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0084",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0085",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0085",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0085",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0086",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0086",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0086",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0087",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0087",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0087",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0088",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0088",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0088",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0089",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0089",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0089",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0090",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0090",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0090",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0091",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0091",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0091",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0092",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0092",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0092",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0093",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0093",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0093",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0094",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0094",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0094",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0095",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0095",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0095",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0096",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0096",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0096",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0097",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0097",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0097",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0098",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0098",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0098",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0099",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0099",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0099",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0100",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0100",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0100",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0101",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0101",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0101",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0102",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0102",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0102",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0103",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0103",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0103",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0104",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0104",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0104",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0105",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0105",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0105",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0106",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0106",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0106",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0107",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0107",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0107",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0108",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0108",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0108",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0109",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0109",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0109",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0110",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0110",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0110",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0111",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0111",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0111",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0112",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0112",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0112",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0113",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0113",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0113",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0114",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0114",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0114",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "parking_vehicle_front_access",
+    "id": "P-B-RF-0115",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_rear_ped_access",
+    "id": "P-B-RF-0115",
+    "pass_": true,
+    "value": null,
+    "level": 3
+  },
+  {
+    "kind": "parking_not_in_aisle",
+    "id": "P-B-RF-0115",
+    "pass_": true,
+    "value": 0.0,
+    "level": 3
+  },
+  {
+    "kind": "refined_all_stall_ped_connected",
+    "id": "B1",
+    "pass_": true,
+    "value": []
+  },
+  {
+    "kind": "refined_core_connected",
+    "id": "B1K1",
+    "pass_": true,
+    "value": 0.2000000000000002
+  },
+  {
+    "kind": "refined_core_connected",
+    "id": "B1K2",
+    "pass_": true,
+    "value": 0.20000000000000281
+  },
+  {
+    "kind": "refined_core_connected",
+    "id": "B1K3",
+    "pass_": true,
+    "value": 0.20000000000000281
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-12-UP-B1-1F0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-12-UP-B1-1F1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-12-DOWN-B1-1F0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-12-DOWN-B1-1F1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-12-UP-B1-1F0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-12-UP-B1-1F1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-12-DOWN-B1-1F0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-12-DOWN-B1-1F1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-12-UP-B1-1F0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-12-UP-B1-1F1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-12-DOWN-B1-1F0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-12-DOWN-B1-1F1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_ped_not_in_stalls",
+    "id": "B1",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "refined_all_stall_ped_connected",
+    "id": "RF",
+    "pass_": true,
+    "value": []
+  },
+  {
+    "kind": "refined_core_connected",
+    "id": "RFK1",
+    "pass_": true,
+    "value": 0.2000000000000002
+  },
+  {
+    "kind": "refined_core_connected",
+    "id": "RFK2",
+    "pass_": true,
+    "value": 0.20000000000000281
+  },
+  {
+    "kind": "refined_core_connected",
+    "id": "RFK3",
+    "pass_": true,
+    "value": 0.20000000000000281
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-23-UP-3F-RF0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-23-UP-3F-RF1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-23-DOWN-3F-RF0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E1-23-DOWN-3F-RF1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-23-UP-3F-RF0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-23-UP-3F-RF1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-23-DOWN-3F-RF0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E2-23-DOWN-3F-RF1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-23-UP-3F-RF0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-23-UP-3F-RF1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-23-DOWN-3F-RF0",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_landing_connected",
+    "id": "E3-23-DOWN-3F-RF1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "refined_ped_not_in_stalls",
+    "id": "RF",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-1/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-3/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-13/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-15/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-24/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-36/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-71/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-78/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-79/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-92/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-109/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-111/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-157/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-178/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-179/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-181/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-209/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-210/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-211/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-212/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-213/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-217/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-218/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "B1-PROGRAM-222/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-3",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-13",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-15",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-24",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-36",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-71",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-78",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-79",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-92",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-109",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-111",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-157",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-178",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-179",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-181",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-209",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-210",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-211",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-212",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-213",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-217",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-218",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "B1-PROGRAM-222",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "staff_route_not_in_stalls_or_void",
+    "id": "B1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-1/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-2/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-8/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-17/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-22/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-23/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-24/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-26/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-29/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-30/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-64/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-65/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-67/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-70/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-82/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-84/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-96/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-97/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_bay_route_exists",
+    "id": "RF-PROGRAM-117/0",
+    "pass_": true,
+    "value": null
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-1",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-2",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-8",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-17",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-22",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-23",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-24",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-26",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-29",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-30",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-64",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-65",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-67",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-70",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-82",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-84",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-96",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-97",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "service_zone_reaches_public_via_staff",
+    "id": "RF-PROGRAM-117",
+    "pass_": true,
+    "value": 0.0
+  },
+  {
+    "kind": "staff_route_not_in_stalls_or_void",
+    "id": "RF",
+    "pass_": true,
+    "value": 0.0
+  }
+]
