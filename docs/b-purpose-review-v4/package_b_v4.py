@@ -1,0 +1,188 @@
+"""Validate and package the drawing-only B v4 review. Refuse stale illustrations."""
+from pathlib import Path
+import sys,json,csv,collections,hashlib,subprocess,zipfile
+sys.path.append('/workspace/.venvs/find-yourself/lib/python3.12/site-packages')
+import fitz
+from shapely.geometry import shape,Point,LineString
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'docs/b-purpose-review-v4';BASE=ROOT/'docs/b-detailed-review-v3';DL=ROOT/'downloads'
+r=json.loads((OUT/'geometry.json').read_text());old=json.loads((BASE/'geometry.json').read_text());checks=json.loads((OUT/'checks.json').read_text());assert not[c for c in checks if not c['pass_']]
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+# Verify the 3D views were rendered from the CURRENT exact local mesh, not a previous draft.
+model=json.loads((OUT/'view-model.json').read_text());views=[]
+for court in model['courts']:
+ meta=json.loads((OUT/'views'/f"{court['id']}-manifest.json").read_text());assert meta['model_sha256']==hashlib.sha256(json.dumps(court,sort_keys=True).encode()).hexdigest(),court['id'];assert meta['render_script_sha256']==sha(ROOT/'tools/render_b_v4_views.py')
+ for camera in court['cameras']:
+  p=OUT/'views'/f"{court['id']}-{camera['id']}.png";im=fitz.Pixmap(str(p));assert im.width==1400 and im.height==900
+  views.append(dict(id=court['id']+'-'+camera['id'],sha256=sha(p),width=im.width,height=im.height,design_only=True,not_game_screenshot=True))
+# Actual game resources are frozen against the user's v3 baseline, including tracked asset data.
+protected=['scripts','scenes','assets','project.godot','export_presets.cfg']
+assert not subprocess.check_output(['git','diff','--name-only',r['baseline_commit'],'--',*protected],cwd=ROOT,text=True).strip()
+files=subprocess.check_output(['git','ls-files','--',*protected],cwd=ROOT,text=True).splitlines();hashes={p:sha(ROOT/p)for p in files if(ROOT/p).is_file()}
+assert hashes==json.loads((BASE/'game-file-hashes.json').read_text())
+(OUT/'game-file-hashes.json').write_text(json.dumps(hashes,indent=2))
+# All legacy game aliases survive, even when a v3 planning partition is retired.
+ids=lambda floors:{s['legacy_id']for f in floors for s in f['stores']if s.get('legacy_id')}
+assert ids(r['floors'])==ids(old['floors'])and len(ids(r['floors']))==38
+assert all(any(s['kind']=='anchor'and'AW'in s['id']for s in f['stores'])and any(s['kind']=='anchor'and'AE'in s['id']for s in f['stores'])for f in r['floors'])
+# The complete role register includes galleries, bridges and operating routes, not just retail streets.
+space=[]
+for f in r['floors']:
+ for route in r['routes']:
+  if f['floor']in route['levels']:space.append([f['floor'],route['id'],route['name'],route['role'],' / '.join(route['links']),str(route['width'])+'m',route['reason']])
+ for p in r['plazas']:space.append([f['floor'],p['id'],p['name']+(' 広場床'if f['floor']==1 else' 回廊・休憩'),'店舗街の中継・休憩・待ち合わせ',' / '.join((name+'（他館は2F経由）'if f['floor']==3 and('A館'in name or'C館'in name)else name)for name in p['gateways']),'不整形・詳細図参照',p['landscape']])
+ if f['floor']>1:space.append([f['floor'],'BR-T','時の横断橋','東西回廊の短絡・上階アクセス','時西回廊 / 時東回廊','4m','開口北側の同一位置に2/3Fの橋を揃える'])
+ for z in f['service_zones']:space.append([f['floor'],z['id'],z['name'],'館運営・共用保管','共用通路 / '+z['id']+'入口','入口1.5m','小さな余りを無理に部屋にせず、有効入口が取れる大区画に限定'])
+for e in r['egress']:space.append([1,e['id'],'階段背面放流','階段から外部へ放流',e['stair']+' / 外部地盤','3m','1F限定。上階に放流用の袋小路を追加しない'])
+for id,pos in[('D-W',r['delivery']['west_dock']),('D-E',r['delivery']['east_dock'])]:space.append([1,id,'核店裏搬入口','地上搬入 / 閉館後共用','外部 / 核店バックルーム / 共用通路','入口1.8m','Local '+str(pos)])
+with(OUT/'space-register.csv').open('w',encoding='utf-8-sig',newline='')as fp:w=csv.writer(fp);w.writerow(['階','ID','名称','用途','接続先','幅','理由']);w.writerows(space)
+with(OUT/'equipment-register.csv').open('w',encoding='utf-8-sig',newline='')as fp:
+ w=csv.writer(fp);w.writerow(['階','核','入口ID','用途','localX','localZ','worldX','worldY','worldZ','幅m'])
+ for f in r['floors']:
+  for c in r['cores']:
+   for d in c['doors']:
+    x,z=d['p'];w.writerow([f['floor'],c['id'],d['id'],dict(ST='階段',EV='EV',AWC='多目的WC',W='女性WC',M='男性WC',CORE='共用前室')[d['id']],x,z,x-714,f['height'],z-30,d['w']])
+with(OUT/'wayfinding-register.csv').open('w',encoding='utf-8-sig',newline='')as fp:
+ w=csv.writer(fp);w.writerow(['階','ID','広場','localX','localZ','下端WorldY','上端WorldY','横幅m','設置形式','表示案'])
+ for f in r['floors']:
+  for b in f.get('wayfinding',[]):w.writerow([f['floor'],b['id'],b['plaza'],*b['point'],b['bottom_y'],b['top_y'],b['width'],b['mount'],b['text']])
+with(OUT/'store-internal-routes.csv').open('w',encoding='utf-8-sig',newline='')as fp:
+ w=csv.writer(fp);w.writerow(['階','経路ID','名称','接続','計画幅','経路長m','入口Local','バックルーム入口Local','全主路座標JSON','搬入運用'])
+ for f in r['floors']:
+  for ss in f['stores']:w.writerow([f['floor'],ss['id']+'/MAIN',ss['id']+' 店内主路','共用通路→売場→専用バックルーム','2.4m計画・局所は図面参照',round(LineString(ss['main_route']).length,2),ss['entry'],ss['back_door'],json.dumps(ss['main_route']),ss['service_mode']])
+with(OUT/'camera-register.csv').open('w',encoding='utf-8-sig',newline='')as fp:
+ w=csv.writer(fp);w.writerow(['広場','視点','localX','localZ','高さm','worldX','worldZ','ゲーム画面か'])
+ for c in model['courts']:
+  for camera in c['cameras']:
+   x=camera['p'][0]+c['model_origin'][0];z=camera['p'][1]+c['model_origin'][1];w.writerow([c['id'],camera['id'],x,z,camera['p'][2],x-714,z-30,'いいえ・設計モデル'])
+summary=collections.Counter(c['kind']for c in checks)
+with(OUT/'check-summary.csv').open('w',encoding='utf-8-sig',newline='')as fp:w=csv.writer(fp);w.writerow(['検査','件数','不合格']);w.writerows([k,v,0]for k,v in sorted(summary.items()))
+# Independent area and endpoint audit, kept separate from the generator's own checks.
+independent=[]
+for f in r['floors']:
+ pub=shape(f['public']);body=shape(f['shell']);legacy_count=sum(bool(s.get('legacy_id'))for s in f['stores']);areas=[]
+ for s in f['stores']:
+  overlap=shape(s['polygon']).intersection(pub).area;assert overlap<.06,(s['id'],overlap);areas.append(overlap)
+ for c in f['connectors']:
+  expected={'AB-1':[-174,-5.5],'AB-2':[-110,-5.5],'BC-1':[-370,-80],'BC-2':[-432,-117]}[c['id']];end=c['route'][-1];assert [end[0]-714,end[1]-30]==expected
+ independent.append(dict(floor=f['floor'],stores=len(f['stores']),retained_legacy_ids=legacy_count,body_bounds=list(body.bounds),body_width=body.bounds[2]-body.bounds[0],body_depth=body.bounds[3]-body.bounds[1],body_area_m2=body.area,public_area_in_body_m2=pub.intersection(body).area,tenant_area_m2=sum(shape(s['polygon']).area for s in f['stores']),closed_service_structure_area_m2=shape(f['residual']).area,largest_tenant_public_numerical_overlap_m2=max(areas),benches=sum(g['kind']=='bench'for g in f['furniture']),waiting_points=len(f['waiting']),common_store_rooms=len(f['service_zones'])))
+(OUT/'dimensions-and-independent-audit.json').write_text(json.dumps(independent,ensure_ascii=False,indent=2))
+pdf=DL/'FIND_YOURSELF-B-Purpose-Review-v4.pdf';doc=fitz.open(pdf);texts=[];images=set()
+for i,page in enumerate(doc):
+ page.get_pixmap(matrix=fitz.Matrix(.20,.20));texts.append(page.get_text())
+ for item in page.get_images():images.add(item[0])
+assert len(doc.get_toc())==len(doc)
+alltext='\n'.join(texts);assert '立体レンダー未生成'not in alltext
+assert len(images)==6,len(images)
+def rgbhash(pix):
+ q=fitz.Pixmap(fitz.csRGB,pix)
+ if q.alpha:q=fitz.Pixmap(q,0)
+ return hashlib.sha256(q.samples).hexdigest()
+expected_pixels={rgbhash(fitz.Pixmap(str(OUT/'views'/f"{c['id']}-{v['id']}.png")))for c in model['courts']for v in c['cameras']}
+embedded_pixels={rgbhash(fitz.Pixmap(doc,xref))for xref in images}
+assert embedded_pixels==expected_pixels,'PDF illustrations are stale'
+
+for f in r['floors']:
+ for s in f['stores']:assert s['id']in alltext,s['id']
+for index,name in[(4,'B-1F-overview'),(8,'B-2F-overview'),(12,'B-3F-overview')]:doc[index].get_pixmap(matrix=fitz.Matrix(1,1)).save(OUT/(name+'.png'))
+assert not fitz.TOOLS.mupdf_warnings(),fitz.TOOLS.mupdf_warnings()
+pages=len(doc);doc.close()
+verification=dict(design_only=True,game_modified=False,baseline_commit=r['baseline_commit'],protected_game_files=len(hashes),protected_hashes_match_v3=True,geometric_assertions=len(checks),failed_assertions=0,independent_audit_passed=True,legacy_ids_retained=38,shop_counts=[len(f['stores'])for f in r['floors']],named_space_records=len(space),drawn_equipment_portals=3*sum(len(c['doors'])for c in r['cores']),pdf_pages=pages,pdf_all_pages_rendered=True,pdf_all_store_ids_present=True,embedded_design_views=len(images),embedded_image_pixels_match_current_views=True,view_provenance=views,game_runtime_walking_tests=0)
+(OUT/'verification.json').write_text(json.dumps(verification,ensure_ascii=False,indent=2))
+report=f'''# FIND YOURSELF B館 v4 — 用途から見直す詳細設計
+
+2026-10-26。**提出対象は図面・設計モデルのみ。Godot本体はv0.24のまま。承認待ちで終了する。**
+
+## 読む順番
+1. `FIND_YOURSELF-B-Purpose-Review-v4.pdf`（{pages}ページ）：v3比較→各階全体/店舗拡大→3広場の平面/立体→断面/設備核→用途一覧→検査→台帳/ID移行。
+2. `space-register.csv`：各階の通路・広場・回廊・橋・倉庫・搬入口・放流路の用途と接続。{len(space)}行。
+3. `tenant-ledger.csv` / `v3-v4-migration.csv` / `equipment-register.csv`：ID、寸法、入口、世界座標。
+4. `geometry.json` / `route-paths.json`：正確な計画座標と、階段までの図面上の経路。
+5. `checks.json` / `check-summary.csv` / `dimensions-and-independent-audit.json`：検査値と不合格数。
+6. `views/`：同じ計画データから生成した3広場×2視点。ゲーム内スクリーンショットではない。
+
+## 修正理由と前後の比較
+- **旧西端の余り**：v3の旧接続の継ぎ足しで残った西端の折返しを廃止。核店の入口と専門店街/広場へ素直に接続する。
+- **設備の孤立枝**：K1/K2/K3を店舗街の近くへ寄せた。前室までの枝は18m/11m/約14m。トイレ/EV/階段という具体的な終点があるため、必要な行き止まりとして残す。
+- **翼の裏壁問題**：初回の立体検討で広場が店舗の裏面に囲まれることを確認した。西核店をL字の区画にして広場へ正面を向け、北/南の店舗は広場向きに再区画。広場中央は店舗で埋めない。
+- **時の構造**：2/3Fに同じ4m横断橋。西側と東側の回廊を直結し、南西の待合前庭を通過帯からずらす。時計/ベンチは主流の外へ。
+- **光の端部**：曲面の吹き抜けで、東核店・A館・南東街を受ける。北西と南東へ向きを変えた昇降機、外周の休憩、床を塞がない上部モビールで構造から違いを作る。
+- **南西の空廊下**：そのままつなぐと入口が付かない区間を検出。接続を約35.6mへ短縮し、街路沿いにカフェ/雑貨の店頭を4つ計画。単なる名称変更ではない。
+- **EV前の狭窄**：v3設備図のEV前1mの隙間を解消。多目的WCをずらし、6×3mの待合と2mアクセス路へ整理した。
+- **昇降機の機器間**：2台の間の1.6mを機器帯として歩行域から除外。細い抜け道としてプレイヤーを入れない。
+- **無理な小区画**：入口幅/売場/店内通路が成立しないv3区画や新規候補は採用しない。廃止した計画IDを記録し、既存ゲームの38店舗IDは別名移設で維持する。
+
+旧v3の全体平面図と新案を同一範囲・同一縮尺でPDFに並べた。`changes.json`には公開床の減少/追加面積と個別理由、`v3-v4-migration.csv`には廃止も含む全204の旧計画区画を記録。
+
+## 広場ごとの設計判断
+|広場|構造|接続と見え方|休憩・物体|
+|---|---|---|---|
+|翼|長さ52mの細長い吹き抜け。北側/南側の昇降機と連続ギャラリー|西核店のL字正面、中央専門店街、南西街、北側店舗列。16mの街路から開く|翼オブジェ、ベンチ/植栽を通行帯の外へ|
+|時|偏心した矩形開口と上下共通の4m横断橋。南西待合前庭|中央/北/C館/東/南西の分配。橋は上空を一部隠すが、左右の縦抜けで階数を読ませる|南の時計、待ち合わせ、回廊の休憩島|
+|光|曲面の端部吹き抜け。対角の昇降機と湾曲した回廊|東街、南東街、東核店、A館。端部で選択が見える|曲面外周の休憩島、上部モビール（床に柱を増やさない）|
+
+広場を広いという理由だけで埋めていない。通行の帯を先に予約し、ベンチ/植栽/オブジェを避けて共用域が連結することを確認した。店舗の店頭は共用部へガラス面を向ける計画で、広場を店の裏壁だけで囲まない。各階の広場出口に吊り下げ誘導案内を計画し、下端は床上3.4m。表示内容と位置はwayfinding-register.csvへ記録した。文字サイズと実照明での視認距離は未検証。
+
+## 寸法・面積・配置数
+'''
+for a in independent:
+ report+=f"- {a['floor']}F：{a['stores']}区画、建物外接{a['body_width']:.1f}×{a['body_depth']:.1f}m、区画面積{a['tenant_area_m2']:.0f}㎡、ベンチ{a['benches']}基、待ち合わせ点{a['waiting_points']}、共用倉庫{a['common_store_rooms']}室。\n"
+report+='''
+主軸16m、枝道9m、設備前8m、通常店入口2.4m、核店6m。広場の回廊幅は不整形/機器で変化するため詳細図を見る。幅を全域で一定と偽っていない。外接寸法は単純な長方形の床面積ではない。
+灰色帯は躯体・配管/設備等の閉鎖帯で、公開の空き通路や宝箱候補ではない。小さな余りを多数の目的不明な部屋にしていない。共用倉庫は有効入口と内部経路を取れる各館域1室に限定する。設備機器そのものの割付は未設計。
+
+## 座標・旧システムとの整合
+World X=Local X−714 / World Z=Local Z−30、床高0 / 5.525 / 10.875m。建物の変形や非一様縮尺は使わない。
+A/B1F端World(-174,-5.5)、A/B2F端(-110,-5.5)、B/C1F端(-370,-80)、B/C2F端(-432,-117)を維持した。3Fに存在しない橋は捏造していない。3Fの館間誘導は2Fへ降りる案内で、直接他館へ出る出口ではない。
+既存ゲームカタログのID38個を別名として全件保持。3F映画館の空間機能も西核店に保持。新計画の区画IDと既存ゲームIDは区別する。`v3-v4-migration.csv`では旧と新をどちらも「入口」で比較する。元のv0.24重心座標の対応はv3資料の対応表を参照。
+
+## 搬入と階段放流
+'''
+report+=f"地上搬入口D-W={r['delivery']['west_dock']}、D-E={r['delivery']['east_dock']}。どちらも核店バックルームに開口1.8mを設ける。\n"
+report+='''
+核店バックルーム→店内主路→共用部（閉館後）→K1/K2/K3兼用EV→各店主路→専用バックルーム、という運用案。カート幅0.8m、EV開口1.4mを仮定する。**全店へ営業中も使える独立した裏回廊を作った計画ではない。** 車両動線と貨物運転は未検証。
+1Fの階段は背面の開口から幅3mのEX-K1/2/3へ出す。図面上で背面開口への到達と放流路終端が建物外であることを検査。上階に外へ出る袋小路を追加しない。防火・消防・避難容量まで認定した資料ではない。
+
+## 自動検査と設計評価を分ける
+'''
+report+=f"図面アサーション{len(checks):,}件、不合格0。うち区画相互の重複は{summary['store_pair_no_overlap']:,}件。全{sum(len(f['stores'])for f in r['floors'])}店舗×3階段前への{summary['sampled_route_to_stair']}経路を保存。\n"
+report+='''
+- 共用床を半径0.45mで縮め、家具/機器間帯込みで連結性を検査。
+- 入口が自店舗境界にあり、共用成分から0.8m未満に接近できることを検査。
+- 店内は入口から0.8m以降の経路を半径0.45mで膨らませ、区画外/壁/棚の干渉を検査。
+- 共用経路は1m格子の各辺を実図形で判定し、経路全体も線分で再確認。経路長はこの格子の概算値。
+- 設備核では壁・洗面・スクリーン・個室壁を差し引き、階段/EV/WC入口への接近を検査。ドアは開いた状態の仮定。
+- 吹き抜け・横断橋・手すりの基準線・乗降床・機器間帯を上下で整合。境界の数値処理は1mmの丸め/2mmの照合を使用。
+- 独立監査で店舗と共用部の重複（数値許容0.06㎡未満）、A/C端点、既存ID、ゲームファイル不変を別確認。
+
+設計評価では、3広場を同じ平面の装飾違いにせず、長軸/横断橋/曲面端部の違いを設けた。接近点からの立体図を目視し、翼の裏壁問題を実際に修正した。これは「テストに通ったから自然」と判断したものではない。
+立体画像は同じ座標の別モデル。鳥瞰は屋根を外し、透明面の反射/透過は省略して枠で開口を示す。商品の完成モデル、最終マテリアル、最終サインデザインを表していない。構造柱や天井設備も簡略化している。広場と前後の店舗街を含む局所モデルであり、表示範囲の端は切断している。切断面から見える白地を、実際の屋外や通路終端として扱わない。
+
+## 残る問題・未検証（承認前に把握してほしい点）
+- 新マップのゲーム内実歩行0回。Godotの実装/動作テストは今回未実施。
+- 橋の下面と梁、昇降機の頭上2.4m、扉/階段/EV/手すりの3D衝突、乗降後の移動は実装後に検証。
+- 店頭照明/反射/看板の視認距離、実人数の待ち列と渋滞は未検証。植栽は1.4m以下の計画だが、実際の葉のモデルでも確認する。
+- 構造柱・梁・配管/設備の割付、荷重、法定の避難適合は未設計。閉鎖設備帯を探索空間として開放しない。
+- B3F映画館の客席内部高さと将来屋上との取り合いは未設計。本資料で確定するのは区画/ロビー/入口位置。
+- B1-AE1は食品核店と日用品部門の併設案。旧ID b_0_-308_1（日々の道具）は日用品側の追跡用で、部門の棚割りを完成したとは扱わない。
+- 専用裏回廊を全店へ通す案ではない。営業時間外搬入という前提を承認するか、別の物流設計が必要。
+- NPC/猫の実経路、宝箱、ソナーの階判定、ファストトラベルの着地点、1000/5000人の負荷・滞在時間は未検証。
+- B地下・屋上、全15フロアの仕上げを今回完成したとは扱わない。進行セーブは現行未実装で、今回追加していない。
+
+## 承認後の施工順（今回は実行しない）
+1. 新旧ID別名/座標層とB1Fの床/外壁、A/C接続端を実装。既存機能を回帰確認。
+2. 2/3Fの床開口・橋・昇降機・設備核。全乗降口から共用通路へ歩く試験を先に行う。
+3. 新店頭/店内主路へ内装を再配置し、NPC/猫/宝箱/案内図/訪問地点を移設。
+4. 全店の入口と3階段、スキャン、特殊/猫の通知、負荷、視認性を実ゲームで検証し、スクリーンショットを提出。
+
+図面と設計資料のみを提出し、ユーザーの承認を待つ。ゲームのシーン、ロジック、現在の配布ゲームは変更していない。
+'''
+(OUT/'README.md').write_text(report)
+for name in['design_b_v4.py','prepare_b_v4_views.py','render_b_v4_views.py','draw_b_v4.py','package_b_v4.py']:(OUT/name).write_bytes((ROOT/'tools'/name).read_bytes())
+(OUT/'SHA256SUMS.txt').write_text('\n'.join(f'{sha(p)}  {p.relative_to(OUT)}'for p in sorted(OUT.rglob('*'))if p.is_file()and p.name!='SHA256SUMS.txt')+'\n'+sha(pdf)+'  '+pdf.name+'\n')
+zpath=DL/'FIND_YOURSELF-B-Purpose-Review-v4.zip'
+with zipfile.ZipFile(zpath,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9)as z:
+ z.write(pdf,pdf.name)
+ for p in sorted(OUT.rglob('*')):
+  if p.is_file():z.write(p,'review/'+str(p.relative_to(OUT)))
+with zipfile.ZipFile(zpath)as z:assert z.testzip()is None
+print(json.dumps(dict(pdf_pages=pages,checks=len(checks),protected_game_files=len(hashes),pdf=dict(bytes=pdf.stat().st_size,sha256=sha(pdf)),zip=dict(bytes=zpath.stat().st_size,sha256=sha(zpath))),indent=2))
