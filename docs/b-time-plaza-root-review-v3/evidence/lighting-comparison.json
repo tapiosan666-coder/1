@@ -1,0 +1,91 @@
+{
+  "comparisons": [
+    {
+      "id": "01-1F-time-plaza.png",
+      "measurement": "sRGB code-value luma, central y=100..650; NOT nits/lux; no HDR photometry",
+      "camera_resolution_quality_fixed": true,
+      "before": {
+        "mean_srgb_luma": 0.6878519850713012,
+        "median_srgb_luma": 0.7102760784313725,
+        "p95_srgb_luma": 1.0,
+        "near_white_percent": 15.308948863636363,
+        "sha256": "a890471a3f1d336f574ea645f5a9ce4fa922acfc929f58b329439108a9f3a341"
+      },
+      "after": {
+        "mean_srgb_luma": 0.6350216725345366,
+        "median_srgb_luma": 0.7002462745098039,
+        "p95_srgb_luma": 0.85788,
+        "near_white_percent": 0.30298295454545454,
+        "sha256": "907a2d7dc46fcfbbe6e0624d2175329dc69d86f72c329332285aaabd62d41289"
+      }
+    },
+    {
+      "id": "03-2F-crossing-bridge.png",
+      "measurement": "sRGB code-value luma, central y=100..650; NOT nits/lux; no HDR photometry",
+      "camera_resolution_quality_fixed": true,
+      "before": {
+        "mean_srgb_luma": 0.6617378304200088,
+        "median_srgb_luma": 0.6853623529411764,
+        "p95_srgb_luma": 1.0,
+        "near_white_percent": 7.617329545454546,
+        "sha256": "42acd2149dda491f712dd61d69dc5278487eb7a3564b8426286e8decff120100"
+      },
+      "after": {
+        "mean_srgb_luma": 0.6067961101715688,
+        "median_srgb_luma": 0.6440298039215686,
+        "p95_srgb_luma": 0.837438431372549,
+        "near_white_percent": 0.178125,
+        "sha256": "e2a6a9bd5fb305e21198acee1e2af35bb9e49cdff6184b813caeb060b34dd50e"
+      }
+    },
+    {
+      "id": "05-3F-void-and-roof.png",
+      "measurement": "sRGB code-value luma, central y=100..650; NOT nits/lux; no HDR photometry",
+      "camera_resolution_quality_fixed": true,
+      "before": {
+        "mean_srgb_luma": 0.6730443994206773,
+        "median_srgb_luma": 0.6707772549019607,
+        "p95_srgb_luma": 0.991789019607843,
+        "near_white_percent": 4.30596590909091,
+        "sha256": "2ebbff572246a0783f65f7adc91390cb74804a941eabeece39c6147f6d0f018f"
+      },
+      "after": {
+        "mean_srgb_luma": 0.6091835566421568,
+        "median_srgb_luma": 0.6282580392156862,
+        "p95_srgb_luma": 0.8503560784313725,
+        "near_white_percent": 0.0296875,
+        "sha256": "f368147621039cdd6d8e0433c5f1ffbe7ec29390daf84879b71aacdc99b53082"
+      }
+    },
+    {
+      "id": "27-3F-daylight-corridor.png",
+      "measurement": "sRGB code-value luma, central y=100..650; NOT nits/lux; no HDR photometry",
+      "camera_resolution_quality_fixed": true,
+      "before": {
+        "mean_srgb_luma": 0.8066379033611853,
+        "median_srgb_luma": 0.7291286274509804,
+        "p95_srgb_luma": 1.0,
+        "near_white_percent": 27.32272727272727,
+        "sha256": "3ba3312fe307652735e249f3dfa2fff20fc80ff068a2018105c28115a20bcade"
+      },
+      "after": {
+        "mean_srgb_luma": 0.7052532065842245,
+        "median_srgb_luma": 0.7002462745098039,
+        "p95_srgb_luma": 0.8733145098039216,
+        "near_white_percent": 0.006676136363636363,
+        "sha256": "19cce954c218f8b16d9785008bce92650d23a4ebdf5b50275b0502ebf965ad27"
+      }
+    }
+  ],
+  "limitations": "Not isolated lighting-only experiment: some shops/geometry also changed. Same camera/quality; no physical luminance or human discomfort pass.",
+  "light_settings": {
+    "sun_before": 0.65,
+    "sun_after": 0.12,
+    "ambient_before": 0.78,
+    "ambient_after": 0.7,
+    "exposure_both": 0.9,
+    "filmic_both": true,
+    "floor_min_roughness_after": 0.58,
+    "floor_specular_after": 0.26
+  }
+}

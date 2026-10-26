@@ -1,0 +1,702 @@
+{
+  "normal_count": 20,
+  "diagnostic_count": 3,
+  "runtime": {
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "animation_script_sha256": "21426e73edbb8e803aa274ad1a9a17b68614c321b756fcb8f1adef4b76f3ea94",
+    "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+    "geometry_sha256": "84c999adc34838175933381b273cb8081dc85ec50369b610253555d69eec61f4",
+    "godot_version": {
+      "build": "official",
+      "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+      "hex": 263683,
+      "major": 4,
+      "minor": 6,
+      "patch": 3,
+      "status": "stable",
+      "string": "4.6.3-stable (official)",
+      "timestamp": 0
+    },
+    "graphics_revision": "v3",
+    "main_game_loaded": false,
+    "main_script_sha256": "6a603ef1f864eb7ab15073dd4f073b77d0b0f2ee28068ea351492acd5b839184",
+    "measurement_source": "separate final-version reference run, 20 frames static + 20 frames moving; software GPU",
+    "msaa": "4x",
+    "performance": [
+      {
+        "fps_from_mean_frame_time": 0.43469558452961,
+        "id": "01-1F-time-plaza",
+        "mean_ms": 2300.46045,
+        "p50_ms": 2122.08,
+        "p95_ms": 3102.725,
+        "sample_frames": 20,
+        "samples_ms": [
+          2041.693,
+          2054.408,
+          2039.296,
+          2652.814,
+          2509.0,
+          2081.211,
+          2161.748,
+          2071.949,
+          2124.815,
+          3102.725,
+          2291.874,
+          2315.558,
+          2053.489,
+          2022.454,
+          3185.1,
+          2081.288,
+          2080.74,
+          2122.08,
+          2051.264,
+          2965.703
+        ],
+        "warmup_frames": 12
+      }
+    ],
+    "player_script_sha256": "b23df5c7df696097215b839de749ac00e2f7449174c1e9ba4ddb9817108697e4",
+    "renderer": "gl_compatibility",
+    "resolution": [
+      1280,
+      720
+    ],
+    "scene_build_seconds": 17.907503,
+    "software_gpu": true,
+    "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+    "staff_script_sha256": "f3a5127d7753953958d307b35d0324e2be1a960bd19704063546c2f81f7b9e33",
+    "walking_performance": {
+      "actual_travel_m": 11.1083310395479,
+      "fps_from_mean_frame_time": 0.59594654442929,
+      "mean_ms": 1678.00285,
+      "p50_ms": 1597.199,
+      "p95_ms": 2322.06,
+      "path": "1F public court out-and-back; actual CharacterBody3D movement",
+      "sample_frames": 20,
+      "samples_ms": [
+        1.033,
+        1648.801,
+        1618.976,
+        1597.199,
+        2322.06,
+        2105.065,
+        1614.48,
+        1564.143,
+        1571.618,
+        1584.318,
+        1520.216,
+        2196.564,
+        2167.027,
+        1533.291,
+        1554.822,
+        1497.832,
+        1505.559,
+        1511.244,
+        2091.775,
+        2354.034
+      ]
+    },
+    "capture_run": "20 final camera captures through capture_inspection.gd; first eight poses unchanged; separate final-version measurement",
+    "screenshot_kind": "actual Godot 3D viewport; no image generation or retouch",
+    "npc_count": 0,
+    "camera_contract": "source/final-cameras.json"
+  },
+  "normal": [
+    {
+      "id": "01-1F-time-plaza",
+      "camera": {
+        "id": "01-1F-time-plaza",
+        "p": [
+          4.0,
+          1.65,
+          12.0
+        ],
+        "look": [
+          -14.0,
+          7.5,
+          -12.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "a890471a3f1d336f574ea645f5a9ce4fa922acfc929f58b329439108a9f3a341",
+      "after_sha256": "907a2d7dc46fcfbbe6e0624d2175329dc69d86f72c329332285aaabd62d41289",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "02-1F-west-escalators",
+      "camera": {
+        "id": "02-1F-west-escalators",
+        "p": [
+          -9.0,
+          1.65,
+          22.0
+        ],
+        "look": [
+          -22.0,
+          4.3,
+          16.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "cb0c7d2982efffbbf8f298743f137999cfc5af5a3e08e502687541a43ab0b9b6",
+      "after_sha256": "c232976f1a51bfc06d8b3f1db3aad2722f34641e8b9493089089065ba574b791",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "03-2F-crossing-bridge",
+      "camera": {
+        "id": "03-2F-crossing-bridge",
+        "p": [
+          16.0,
+          7.175,
+          3.0
+        ],
+        "look": [
+          -14.0,
+          8.2,
+          -5.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "42acd2149dda491f712dd61d69dc5278487eb7a3564b8426286e8decff120100",
+      "after_sha256": "e2a6a9bd5fb305e21198acee1e2af35bb9e49cdff6184b813caeb060b34dd50e",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "04-2F-storefront",
+      "camera": {
+        "id": "04-2F-storefront",
+        "p": [
+          -31.0,
+          7.175,
+          27.0
+        ],
+        "look": [
+          -19.0,
+          7.8,
+          35.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "69efee42a1dc6ce212776903754ddfc50861dc99c80f25929136ef0143f63b12",
+      "after_sha256": "a8b5c0b38643cb2273f248fbd391371b34cffe12388194d54fdc0dfdc86d9a84",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "05-3F-void-and-roof",
+      "camera": {
+        "id": "05-3F-void-and-roof",
+        "p": [
+          14.0,
+          12.525,
+          0.0
+        ],
+        "look": [
+          -14.0,
+          8.8,
+          -4.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "2ebbff572246a0783f65f7adc91390cb74804a941eabeece39c6147f6d0f018f",
+      "after_sha256": "f368147621039cdd6d8e0433c5f1ffbe7ec29390daf84879b71aacdc99b53082",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "06-1F-north-shopping-street",
+      "camera": {
+        "id": "06-1F-north-shopping-street",
+        "p": [
+          -2.0,
+          1.65,
+          -28.0
+        ],
+        "look": [
+          8.0,
+          2.4,
+          -35.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "be034a6e30da63df6ed73c94259b555c71067c137940f2e3bfb1d91af3fb2327",
+      "after_sha256": "ef58bf5b15aac20ed8b46c69f7eacb4833b961044a9bb90ab0ea020476ed1386",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "07-1F-cafe-interior",
+      "camera": {
+        "id": "07-1F-cafe-interior",
+        "p": [
+          -20.68,
+          1.65,
+          -34.0
+        ],
+        "look": [
+          -13.0,
+          1.65,
+          -40.5
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "8f5178e29aa223e647218349d0c2cc6868fcdfab918e21998755c64227977b83",
+      "after_sha256": "16009ae1c2a76b70237fe8207833486dc2dbba084f6ca33c2b48a32c434619fb",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "08-1F-bookshop-interior",
+      "camera": {
+        "id": "08-1F-bookshop-interior",
+        "p": [
+          -70.59,
+          1.65,
+          2.02
+        ],
+        "look": [
+          -72.0,
+          1.6,
+          -4.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "before_sha256": "11c43301727ea7a2321b423adda689a8b5863b50fc87d91121e95a170a4b3bdb",
+      "after_sha256": "724b1960920eb8e8f94e56cfc68e7e3c37262c8210992618875366a9599847cd",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "12-fashion-interior",
+      "camera": {
+        "id": "12-fashion-interior",
+        "p": [
+          -47.35620378840588,
+          1.65,
+          -3.533315153623562
+        ],
+        "look": [
+          -48.39887652783074,
+          1.4,
+          -8.576827528241381
+        ],
+        "fov_deg": 75,
+        "kind": "v2 additional representative view, no before/after claim",
+        "store": "B1-043",
+        "hud_visible": false
+      },
+      "before_sha256": "eb9eaccabd87fddca8c8a8780a8896c12c3d6e068e9c314c84c68b74ac67b983",
+      "after_sha256": "9dcb549e40d0f6bb8e76ac2a96e62604aa999e148ab0f755b3bae48af23a72e6",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "16-bookshop-wall-collection",
+      "camera": {
+        "id": "16-bookshop-wall-collection",
+        "store": "B1-017",
+        "p": [
+          -70.76147057701928,
+          1.65,
+          1.1335992572539055
+        ],
+        "look": [
+          -77.5,
+          1.75,
+          -8.5
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+      },
+      "before_sha256": "6e7a6d5209645fc6cec6712d53966eb76213f69d842e4f23e965382fba174329",
+      "after_sha256": "058c77ac94da6b7a64bbba85c4fa44456df3dc79bcd50a5b55061db77869d946",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "17-cafe-service-and-seating",
+      "camera": {
+        "id": "17-cafe-service-and-seating",
+        "store": "B1-040",
+        "p": [
+          -20.304832300134137,
+          1.65,
+          -34.05198733721037
+        ],
+        "look": [
+          -26.0,
+          1.6,
+          -34.5
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+      },
+      "before_sha256": "2c7f1083038e923bcf09ca380dcf08e770e0c2400a31fba2798bab9b94c3f72c",
+      "after_sha256": "94033cd5fb3c7d1f034d0ed3b632ad47f86eae84007429d45b848b9cc17003e7",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "18-fashion-wall-and-fitout",
+      "camera": {
+        "id": "18-fashion-wall-and-fitout",
+        "store": "B1-043",
+        "p": [
+          -47.99095320465301,
+          1.65,
+          -6.618869775273339
+        ],
+        "look": [
+          -52.69999999999999,
+          1.6,
+          -11.5
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+      },
+      "before_sha256": "6c27136ff352dbe55c74d9cd3dce82162c9097d60b84cae26460fb546a36c9d8",
+      "after_sha256": "969baf5e1ce71ff750fee1704f7e7e458edb20877f57b31a627fc5eeecb539df",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "19-gap-B1-066",
+      "camera": {
+        "id": "19-gap-B1-066",
+        "store": "B1-066",
+        "p": [
+          -22.43190709411988,
+          1.65,
+          -47.81626522186724
+        ],
+        "look": [
+          -23.440604107280365,
+          1.3,
+          -57.14906044989555
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "issue_id": "B-1F-ISSUE-0036",
+        "kind": "unapproved enclosure ownership proposal; matched protected v2 camera"
+      },
+      "before_sha256": "2affe9cda0312f28e9c046140bd2f858c483c58c8786278b12f6a4eea42c924a",
+      "after_sha256": "4edd32d7c29efd2e8f88b949d5678b4094b8c396ef20af4fb31230bbce939c78",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "20-gap-B2-022",
+      "camera": {
+        "id": "20-gap-B2-022",
+        "store": "B2-022",
+        "p": [
+          -28.527786920536244,
+          7.175000000000001,
+          34.145195736048464
+        ],
+        "look": [
+          -25.12339995786101,
+          6.825,
+          37.4055
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "issue_id": "B-2F-ISSUE-0038",
+        "kind": "unapproved enclosure ownership proposal; matched protected v2 camera"
+      },
+      "before_sha256": "e1ab36ba97865e037ad0f581cd05c2c704f53f478320172e8ea1a2abad770457",
+      "after_sha256": "4a3f0df039bb3d0f68aa29459fa9bc99ecd093e9239881d70f272c201b2eff3b",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "21-gap-B3-028",
+      "camera": {
+        "id": "21-gap-B3-028",
+        "store": "B3-028",
+        "p": [
+          -2.3996496216701644,
+          12.525,
+          -37.47165508495509
+        ],
+        "look": [
+          6.7871414326040735,
+          12.175,
+          -41.61305123136973
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "issue_id": "B-3F-ISSUE-0027",
+        "kind": "unapproved enclosure ownership proposal; matched protected v2 camera"
+      },
+      "before_sha256": "0756bd7d839d2cfb2c7ba2f7385cd33e57d2f33cefeb6527f5cfb8797cc21c32",
+      "after_sha256": "7c11ae172f1f9405b7e562d3e632dd3b95e1905040057f49cb5b788e83a6a1e5",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "22-stock-connection-B2-022",
+      "camera": {
+        "id": "22-stock-connection-B2-022",
+        "store": "B2-022",
+        "p": [
+          -11.942853410688599,
+          7.175000000000001,
+          40.24183699509916
+        ],
+        "look": [
+          -15.805487713095658,
+          7.025,
+          40.014999999999986
+        ],
+        "fov_deg": 75,
+        "hud_visible": false,
+        "open_staff": true,
+        "kind": "inside existing stock room, actual viewport; staff doors automatically opened; not human-operated test"
+      },
+      "before_sha256": "48181d8f2a29c6dac74598ed41c21c319c8b4f2b2e237d25c8f1e0eda08b83eb",
+      "after_sha256": "3117c90c589236aef5067a665d586f5998fdcceee8224129657619dfff9e68ad",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": true
+    },
+    {
+      "id": "23-stock-connection-B3-028",
+      "camera": {
+        "id": "23-stock-connection-B3-028",
+        "store": "B3-028",
+        "p": [
+          19.69662861212879,
+          12.525,
+          -46.140486911750806
+        ],
+        "look": [
+          20.842151052114446,
+          12.375,
+          -39.97267749084132
+        ],
+        "fov_deg": 75,
+        "hud_visible": false,
+        "open_staff": true,
+        "kind": "inside existing stock room, actual viewport; staff doors automatically opened; not human-operated test"
+      },
+      "before_sha256": "8b061260ace1a7b30be1016b461a384ebc7bc8f36ea3b03616947961d5114004",
+      "after_sha256": "43d7bef671d497256515328dc7b8a327a6b41b317efd7c9e274a68f61913fcff",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": true
+    },
+    {
+      "id": "27-3F-daylight-corridor",
+      "camera": {
+        "id": "27-3F-daylight-corridor",
+        "p": [
+          14,
+          12.525,
+          0
+        ],
+        "look": [
+          14,
+          12.2,
+          -25
+        ],
+        "fov_deg": 75,
+        "hud_visible": false,
+        "kind": "3F glare comparison; actual eye-height viewport; same quality and pose"
+      },
+      "before_sha256": "3ba3312fe307652735e249f3dfa2fff20fc80ff068a2018105c28115a20bcade",
+      "after_sha256": "19cce954c218f8b16d9785008bce92650d23a4ebdf5b50275b0502ebf965ad27",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "28-privacy-B1-040",
+      "camera": {
+        "id": "28-privacy-B1-040",
+        "store": "B1-040",
+        "p": [
+          -7.732448712899782,
+          1.65,
+          -43.52332239593677
+        ],
+        "look": [
+          -11.415446734439172,
+          1.4,
+          -41.96270534703059
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "kind": "stock-facing glass from public circulation; same baseline/revised camera"
+      },
+      "before_sha256": "13b07794516eb182c1ea1cf9a54a761ed8f3f886ea8e192d8584d08edd8b9220",
+      "after_sha256": "228a5444d0ea9b3cebb808e4f4c9f20c1c983dfb98b8fd7b3bf994730f2dbc95",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    },
+    {
+      "id": "29-privacy-B2-070",
+      "camera": {
+        "id": "29-privacy-B2-070",
+        "store": "B2-070",
+        "p": [
+          -29.09272935683674,
+          7.175000000000001,
+          -44.75737810856129
+        ],
+        "look": [
+          -28.764443359825805,
+          6.925000000000001,
+          -40.77087233229977
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "kind": "stock-facing glass from public circulation; same baseline/revised camera"
+      },
+      "before_sha256": "0e584104bf4492455cc017aee86d6477002e0b16685e244f5ce9e9c70ff54657",
+      "after_sha256": "7e7c66f422d8c3d4f6e22337754ab34653e58b661be8bd405becf5751ec5e47f",
+      "kind": "actual normal Godot Viewport; no repainting/generation",
+      "automated_staff_open": false
+    }
+  ],
+  "technical": [
+    {
+      "id": "24-cutaway-B1-066",
+      "camera": {
+        "id": "24-cutaway-B1-066",
+        "p": [
+          -12.7275182679478,
+          27,
+          -42.71367116557543
+        ],
+        "look": [
+          -19.7275182679478,
+          0,
+          -59.71367116557543
+        ],
+        "floor_y": 0,
+        "bounds": [
+          -25.12099999999998,
+          -69.156,
+          -14.33403653589562,
+          -50.27134233115085
+        ],
+        "size": 25.105822086061433,
+        "kind": "actual Godot inspection view; flat shading and cut plane; not player view"
+      },
+      "before_sha256": "e07cda488e3670bee7acad0393e6d88b4485f16e5edd5bfdd4dbbfc132175eb9",
+      "after_sha256": "9865afadca49a6b7ab58dd5b7e0adb21af37d6697249fe10c9832a015edf9f05",
+      "kind": "actual diagnostic Godot Viewport; 1.25m clip/orthographic; NOT ordinary gameplay graphics"
+    },
+    {
+      "id": "25-cutaway-B2-022",
+      "camera": {
+        "id": "25-cutaway-B2-022",
+        "p": [
+          -8.932999999999993,
+          32.525,
+          54.456500000000005
+        ],
+        "look": [
+          -15.932999999999993,
+          5.525,
+          37.456500000000005
+        ],
+        "floor_y": 5.525,
+        "bounds": [
+          -27.0,
+          32.0,
+          -4.8659999999999854,
+          42.913
+        ],
+        "size": 29.167500000000018,
+        "kind": "actual Godot inspection view; flat shading and cut plane; not player view"
+      },
+      "before_sha256": "472d8b2a3c28715e14ed3955e0c8575e13347c9f40fb540530fb92270f1716c3",
+      "after_sha256": "adde0f75f15762464047766edf97c3d85043fb06380495ea179741ad29be4a05",
+      "kind": "actual diagnostic Godot Viewport; 1.25m clip/orthographic; NOT ordinary gameplay graphics"
+    },
+    {
+      "id": "26-cutaway-B3-028",
+      "camera": {
+        "id": "26-cutaway-B3-028",
+        "p": [
+          18.89562090084155,
+          37.875,
+          -23.819000000000003
+        ],
+        "look": [
+          11.89562090084155,
+          10.875,
+          -40.819
+        ],
+        "floor_y": 10.875,
+        "bounds": [
+          -0.32675819831689523,
+          -49.638000000000005,
+          24.117999999999995,
+          -32.0
+        ],
+        "size": 32.05594774789611,
+        "kind": "actual Godot inspection view; flat shading and cut plane; not player view"
+      },
+      "before_sha256": "79f73b5e82a770b1f6d97e0653f75c9ea9bef8f25bc970bf364afb9d591af402",
+      "after_sha256": "5b3700345f98b1230922e0d2a55bc0844fe2e2c93563f3e65e269297590bc070",
+      "kind": "actual diagnostic Godot Viewport; 1.25m clip/orthographic; NOT ordinary gameplay graphics"
+    }
+  ],
+  "materials": {
+    "stone.gdshader": "b2452cd32a7db2a17558c049deb116542e75d521c18d1b34bbd061e28320f66d",
+    "material_library.gd": "0da5d4ffdd6ce8287ac4258ee68f0042f34831be70052c542994a57b932c006c"
+  },
+  "limitations": [
+    "Not human operation",
+    "Software renderer llvmpipe, not RTX4060",
+    "B1/RF and 18 large/anchor plots are plan-only",
+    "Current elevator functional count zero; proposals not implemented"
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "geometry_sha256": "84c999adc34838175933381b273cb8081dc85ec50369b610253555d69eec61f4",
+  "main_script_sha256": "6a603ef1f864eb7ab15073dd4f073b77d0b0f2ee28068ea351492acd5b839184",
+  "cameras": [
+    {
+      "id": "01-1F-time-plaza",
+      "p": [
+        4.0,
+        1.65,
+        12.0
+      ],
+      "look": [
+        -14.0,
+        7.5,
+        -12.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "02-1F-west-escalators",
+      "p": [
+        -9.0,
+        1.65,
+        22.0
+      ],
+      "look": [
+        -22.0,
+        4.3,
+        16.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "03-2F-crossing-bridge",
+      "p": [
+        16.0,
+        7.175,
+        3.0
+      ],
+      "look": [
+        -14.0,
+        8.2,
+        -5.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "04-2F-storefront",
+      "p": [
+        -31.0,
+        7.175,
+        27.0
+      ],
+      "look": [
+        -19.0,
+        7.8,
+        35.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "05-3F-void-and-roof",
+      "p": [
+        14.0,
+        12.525,
+        0.0
+      ],
+      "look": [
+        -14.0,
+        8.8,
+        -4.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "06-1F-north-shopping-street",
+      "p": [
+        -2.0,
+        1.65,
+        -28.0
+      ],
+      "look": [
+        8.0,
+        2.4,
+        -35.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "07-1F-cafe-interior",
+      "p": [
+        -20.68,
+        1.65,
+        -34.0
+      ],
+      "look": [
+        -13.0,
+        1.65,
+        -40.5
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "08-1F-bookshop-interior",
+      "p": [
+        -70.59,
+        1.65,
+        2.02
+      ],
+      "look": [
+        -72.0,
+        1.6,
+        -4.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "12-fashion-interior",
+      "p": [
+        -47.35620378840588,
+        1.65,
+        -3.533315153623562
+      ],
+      "look": [
+        -48.39887652783074,
+        1.4,
+        -8.576827528241381
+      ],
+      "fov_deg": 75,
+      "kind": "v2 additional representative view, no before/after claim",
+      "store": "B1-043",
+      "hud_visible": false
+    },
+    {
+      "id": "16-bookshop-wall-collection",
+      "store": "B1-017",
+      "p": [
+        -70.76147057701928,
+        1.65,
+        1.1335992572539055
+      ],
+      "look": [
+        -77.5,
+        1.75,
+        -8.5
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+    },
+    {
+      "id": "17-cafe-service-and-seating",
+      "store": "B1-040",
+      "p": [
+        -20.304832300134137,
+        1.65,
+        -34.05198733721037
+      ],
+      "look": [
+        -26.0,
+        1.6,
+        -34.5
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+    },
+    {
+      "id": "18-fashion-wall-and-fitout",
+      "store": "B1-043",
+      "p": [
+        -47.99095320465301,
+        1.65,
+        -6.618869775273339
+      ],
+      "look": [
+        -52.69999999999999,
+        1.6,
+        -11.5
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+    },
+    {
+      "id": "19-gap-B1-066",
+      "store": "B1-066",
+      "p": [
+        -22.43190709411988,
+        1.65,
+        -47.81626522186724
+      ],
+      "look": [
+        -23.440604107280365,
+        1.3,
+        -57.14906044989555
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "issue_id": "B-1F-ISSUE-0036",
+      "kind": "unapproved enclosure ownership proposal; matched protected v2 camera"
+    },
+    {
+      "id": "20-gap-B2-022",
+      "store": "B2-022",
+      "p": [
+        -28.527786920536244,
+        7.175000000000001,
+        34.145195736048464
+      ],
+      "look": [
+        -25.12339995786101,
+        6.825,
+        37.4055
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "issue_id": "B-2F-ISSUE-0038",
+      "kind": "unapproved enclosure ownership proposal; matched protected v2 camera"
+    },
+    {
+      "id": "21-gap-B3-028",
+      "store": "B3-028",
+      "p": [
+        -2.3996496216701644,
+        12.525,
+        -37.47165508495509
+      ],
+      "look": [
+        6.7871414326040735,
+        12.175,
+        -41.61305123136973
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "issue_id": "B-3F-ISSUE-0027",
+      "kind": "unapproved enclosure ownership proposal; matched protected v2 camera"
+    },
+    {
+      "id": "22-stock-connection-B2-022",
+      "store": "B2-022",
+      "p": [
+        -11.942853410688599,
+        7.175000000000001,
+        40.24183699509916
+      ],
+      "look": [
+        -15.805487713095658,
+        7.025,
+        40.014999999999986
+      ],
+      "fov_deg": 75,
+      "hud_visible": false,
+      "open_staff": true,
+      "kind": "inside existing stock room, actual viewport; staff doors automatically opened; not human-operated test"
+    },
+    {
+      "id": "23-stock-connection-B3-028",
+      "store": "B3-028",
+      "p": [
+        19.69662861212879,
+        12.525,
+        -46.140486911750806
+      ],
+      "look": [
+        20.842151052114446,
+        12.375,
+        -39.97267749084132
+      ],
+      "fov_deg": 75,
+      "hud_visible": false,
+      "open_staff": true,
+      "kind": "inside existing stock room, actual viewport; staff doors automatically opened; not human-operated test"
+    },
+    {
+      "id": "27-3F-daylight-corridor",
+      "p": [
+        14,
+        12.525,
+        0
+      ],
+      "look": [
+        14,
+        12.2,
+        -25
+      ],
+      "fov_deg": 75,
+      "hud_visible": false,
+      "kind": "3F glare comparison; actual eye-height viewport; same quality and pose"
+    },
+    {
+      "id": "28-privacy-B1-040",
+      "store": "B1-040",
+      "p": [
+        -7.732448712899782,
+        1.65,
+        -43.52332239593677
+      ],
+      "look": [
+        -11.415446734439172,
+        1.4,
+        -41.96270534703059
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "kind": "stock-facing glass from public circulation; same baseline/revised camera"
+    },
+    {
+      "id": "29-privacy-B2-070",
+      "store": "B2-070",
+      "p": [
+        -29.09272935683674,
+        7.175000000000001,
+        -44.75737810856129
+      ],
+      "look": [
+        -28.764443359825805,
+        6.925000000000001,
+        -40.77087233229977
+      ],
+      "fov_deg": 65,
+      "hud_visible": false,
+      "kind": "stock-facing glass from public circulation; same baseline/revised camera"
+    }
+  ],
+  "images": [
+    {
+      "file": "01-1F-time-plaza.png",
+      "sha256": "907a2d7dc46fcfbbe6e0624d2175329dc69d86f72c329332285aaabd62d41289"
+    },
+    {
+      "file": "02-1F-west-escalators.png",
+      "sha256": "c232976f1a51bfc06d8b3f1db3aad2722f34641e8b9493089089065ba574b791"
+    },
+    {
+      "file": "03-2F-crossing-bridge.png",
+      "sha256": "e2a6a9bd5fb305e21198acee1e2af35bb9e49cdff6184b813caeb060b34dd50e"
+    },
+    {
+      "file": "04-2F-storefront.png",
+      "sha256": "a8b5c0b38643cb2273f248fbd391371b34cffe12388194d54fdc0dfdc86d9a84"
+    },
+    {
+      "file": "05-3F-void-and-roof.png",
+      "sha256": "f368147621039cdd6d8e0433c5f1ffbe7ec29390daf84879b71aacdc99b53082"
+    },
+    {
+      "file": "06-1F-north-shopping-street.png",
+      "sha256": "ef58bf5b15aac20ed8b46c69f7eacb4833b961044a9bb90ab0ea020476ed1386"
+    },
+    {
+      "file": "07-1F-cafe-interior.png",
+      "sha256": "16009ae1c2a76b70237fe8207833486dc2dbba084f6ca33c2b48a32c434619fb"
+    },
+    {
+      "file": "08-1F-bookshop-interior.png",
+      "sha256": "724b1960920eb8e8f94e56cfc68e7e3c37262c8210992618875366a9599847cd"
+    },
+    {
+      "file": "12-fashion-interior.png",
+      "sha256": "9dcb549e40d0f6bb8e76ac2a96e62604aa999e148ab0f755b3bae48af23a72e6"
+    },
+    {
+      "file": "16-bookshop-wall-collection.png",
+      "sha256": "058c77ac94da6b7a64bbba85c4fa44456df3dc79bcd50a5b55061db77869d946"
+    },
+    {
+      "file": "17-cafe-service-and-seating.png",
+      "sha256": "94033cd5fb3c7d1f034d0ed3b632ad47f86eae84007429d45b848b9cc17003e7"
+    },
+    {
+      "file": "18-fashion-wall-and-fitout.png",
+      "sha256": "969baf5e1ce71ff750fee1704f7e7e458edb20877f57b31a627fc5eeecb539df"
+    },
+    {
+      "file": "19-gap-B1-066.png",
+      "sha256": "4edd32d7c29efd2e8f88b949d5678b4094b8c396ef20af4fb31230bbce939c78"
+    },
+    {
+      "file": "20-gap-B2-022.png",
+      "sha256": "4a3f0df039bb3d0f68aa29459fa9bc99ecd093e9239881d70f272c201b2eff3b"
+    },
+    {
+      "file": "21-gap-B3-028.png",
+      "sha256": "7c11ae172f1f9405b7e562d3e632dd3b95e1905040057f49cb5b788e83a6a1e5"
+    },
+    {
+      "file": "22-stock-connection-B2-022.png",
+      "sha256": "3117c90c589236aef5067a665d586f5998fdcceee8224129657619dfff9e68ad"
+    },
+    {
+      "file": "23-stock-connection-B3-028.png",
+      "sha256": "43d7bef671d497256515328dc7b8a327a6b41b317efd7c9e274a68f61913fcff"
+    },
+    {
+      "file": "27-3F-daylight-corridor.png",
+      "sha256": "19cce954c218f8b16d9785008bce92650d23a4ebdf5b50275b0502ebf965ad27"
+    },
+    {
+      "file": "28-privacy-B1-040.png",
+      "sha256": "228a5444d0ea9b3cebb808e4f4c9f20c1c983dfb98b8fd7b3bf994730f2dbc95"
+    },
+    {
+      "file": "29-privacy-B2-070.png",
+      "sha256": "7e7c66f422d8c3d4f6e22337754ab34653e58b661be8bd405becf5751ec5e47f"
+    }
+  ]
+}

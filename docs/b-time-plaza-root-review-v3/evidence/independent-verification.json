@@ -1,0 +1,2735 @@
+{
+  "checks": [
+    {
+      "id": "protected-originals.json-unchanged",
+      "status": "PASS",
+      "files": 1605,
+      "changed": []
+    },
+    {
+      "id": "protected-v1-project.json-unchanged",
+      "status": "PASS",
+      "files": 142,
+      "changed": []
+    },
+    {
+      "id": "protected-v2-project.json-unchanged",
+      "status": "PASS",
+      "files": 289,
+      "changed": []
+    },
+    {
+      "id": "production-export-is-correctly-blocked",
+      "status": "PASS",
+      "unresolved_floors": [
+        {
+          "floor": "B1",
+          "unowned_m2": 7.104030793550683
+        },
+        {
+          "floor": "1F",
+          "unowned_m2": 6703.764660013924
+        },
+        {
+          "floor": "2F",
+          "unowned_m2": 7292.1481177281685
+        },
+        {
+          "floor": "3F",
+          "unowned_m2": 7960.297692073474
+        },
+        {
+          "floor": "RF",
+          "unowned_m2": 1.5952058746308122
+        }
+      ]
+    },
+    {
+      "id": "1F-shell-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-public-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-void-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-shafts-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "1F-floor_plate-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-001-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-001-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-003-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-003-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-004-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-004-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-005-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-005-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-007-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-007-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-008-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-008-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-009-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-009-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-010-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-010-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-011-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-011-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-012-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-012-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-013-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-013-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-014-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-014-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-015-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-015-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-016-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-016-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-017-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-017-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-018-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-018-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-019-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-019-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-020-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-020-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-021-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-021-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-022-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-022-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 2.3634384897959393
+    },
+    {
+      "id": "B1-024-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-024-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-025-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-025-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-026-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-026-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-027-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-027-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-028-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-028-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-029-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-029-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-030-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-030-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-032-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-032-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-033-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-033-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-034-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-034-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-036-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-036-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-037-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-037-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-038-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-038-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 2.639000541246503
+    },
+    {
+      "id": "B1-039-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-039-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-040-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-040-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-042-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-042-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-043-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-043-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-045-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-045-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-046-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-046-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-047-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-047-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-048-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-048-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-050-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-050-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-051-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-051-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-052-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-052-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-053-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-053-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-054-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-054-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-055-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-055-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-057-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": true
+    },
+    {
+      "id": "B1-057-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-057-no-proposal-public-overlap",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-059-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-059-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-060-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-060-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-061-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-061-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-063-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-063-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-065-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-065-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-066-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": true
+    },
+    {
+      "id": "B1-066-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-066-no-proposal-public-overlap",
+      "status": "PASS"
+    },
+    {
+      "id": "B1-067-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-067-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-AW1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-AW1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-AE1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-AE1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-SW11-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-SW11-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-SW12-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-SW12-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-SW31-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-SW31-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-SW32-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-SW32-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-W1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-W1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-W2-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-W2-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-W3-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-W3-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-W4-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B1-W4-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "2F-shell-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-public-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-void-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-shafts-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "2F-floor_plate-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-001-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-001-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-003-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-003-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-004-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-004-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-005-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-005-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-006-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": true
+    },
+    {
+      "id": "B2-006-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-006-no-proposal-public-overlap",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-007-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-007-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-008-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-008-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-009-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-009-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-010-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-010-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-011-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-011-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-012-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-012-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-013-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-013-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-014-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-014-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-015-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-015-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-016-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-016-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-017-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-017-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-018-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-018-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-019-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-019-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-020-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-020-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-021-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-021-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-022-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": true
+    },
+    {
+      "id": "B2-022-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-022-no-proposal-public-overlap",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-023-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-023-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-024-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-024-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-025-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-025-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-026-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-026-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-027-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-027-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-028-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-028-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-030-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-030-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-031-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-031-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-032-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-032-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-033-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-033-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-034-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-034-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-036-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-036-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-037-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-037-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-038-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-038-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-040-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-040-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-042-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-042-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-043-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-043-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-044-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": true
+    },
+    {
+      "id": "B2-044-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-044-no-proposal-public-overlap",
+      "status": "PASS"
+    },
+    {
+      "id": "B2-045-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-045-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-047-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-047-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-050-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-050-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-051-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-051-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-052-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-052-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-054-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-054-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-055-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-055-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-056-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-056-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-057-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-057-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-061-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-061-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-062-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-062-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-064-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-064-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-065-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-065-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-067-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-067-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-068-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-068-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-069-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-069-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-070-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-070-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-AW1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-AW1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-AE1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-AE1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-SW11-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-SW11-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-SW12-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-SW12-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-SW31-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-SW31-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-SW32-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-SW32-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-W1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-W1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-W2-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-W2-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-W3-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-W3-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B2-W4-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B2-W4-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "3F-shell-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-public-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-void-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-shafts-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "3F-floor_plate-layout-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-001-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-001-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-003-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-003-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-004-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-004-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-005-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-005-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-007-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-007-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-008-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-008-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 3.648332936085353
+    },
+    {
+      "id": "B3-009-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-009-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-010-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-010-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-011-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-011-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-012-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-012-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-013-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-013-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-014-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-014-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-015-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-015-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-016-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-016-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-017-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-017-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-018-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-018-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-019-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-019-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-021-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-021-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-022-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-022-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-023-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-023-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-025-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-025-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-027-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-027-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-028-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": true
+    },
+    {
+      "id": "B3-028-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-028-no-proposal-public-overlap",
+      "status": "PASS"
+    },
+    {
+      "id": "B3-029-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-029-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-030-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-030-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-031-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-031-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-032-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-032-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-034-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-034-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-035-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-035-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-036-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-036-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-037-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-037-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-038-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-038-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-040-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-040-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-041-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-041-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-043-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-043-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-044-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-044-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-045-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-045-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-046-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-046-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-047-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-047-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-049-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-049-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-052-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-052-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-053-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-053-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-054-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-054-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-055-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-055-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-057-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-057-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-058-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-058-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-059-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-059-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-060-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-060-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-AW1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-AW1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-AE1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-AE1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-SW12-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-SW12-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-SW31-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-SW31-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-SW32-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-SW32-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-W1-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-W1-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-W2-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-W2-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-W3-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-W3-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B3-W4-plot-matches-declared-proposal-and-entry-fixed",
+      "status": "PASS",
+      "intentional_proposal": false
+    },
+    {
+      "id": "B3-W4-original-sales-area-retained",
+      "status": "PASS",
+      "sales_delta_m2": 0.0
+    },
+    {
+      "id": "B1-004-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-008-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-014-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-017-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-018-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-022-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-026-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-027-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-030-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-039-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-040-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-043-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-048-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-051-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-055-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-061-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-066-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW11-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW12-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW31-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-SW32-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-003-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-004-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-008-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-009-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-014-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-017-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-018-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-022-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-027-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-028-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-031-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-032-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-038-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-045-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-052-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-057-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-062-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-065-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-068-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-069-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-070-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW11-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW12-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW31-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-SW32-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-003-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-004-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-008-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-009-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-014-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-017-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-018-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-022-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-027-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-028-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-031-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-032-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-038-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-041-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-047-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-055-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-057-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-SW12-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-SW31-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-SW32-fixtures-vs-canonical-aisle",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "static-collider-vs-model-stone",
+      "status": "PASS",
+      "triangles": 121952,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-plaster",
+      "status": "PASS",
+      "triangles": 21659,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_sand",
+      "status": "PASS",
+      "triangles": 6198,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-dark_stone",
+      "status": "PASS",
+      "triangles": 26708,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-glass",
+      "status": "PASS",
+      "triangles": 6416,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-bronze",
+      "status": "PASS",
+      "triangles": 7574,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wood",
+      "status": "PASS",
+      "triangles": 1992,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-walnut",
+      "status": "PASS",
+      "triangles": 12056,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-oak",
+      "status": "PASS",
+      "triangles": 30440,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_sage",
+      "status": "PASS",
+      "triangles": 7040,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-black",
+      "status": "PASS",
+      "triangles": 9612,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-metal",
+      "status": "PASS",
+      "triangles": 9840,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-fabric_sage",
+      "status": "PASS",
+      "triangles": 13116,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_chalk",
+      "status": "PASS",
+      "triangles": 7662,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-wall_taupe",
+      "status": "PASS",
+      "triangles": 8490,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-fabric_cream",
+      "status": "PASS",
+      "triangles": 864,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-quartz",
+      "status": "PASS",
+      "triangles": 2760,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-leather_0",
+      "status": "PASS",
+      "triangles": 5520,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-leather_1",
+      "status": "PASS",
+      "triangles": 2760,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-soil",
+      "status": "PASS",
+      "triangles": 324,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-scope_wall",
+      "status": "PASS",
+      "triangles": 180,
+      "unmatched_triangles": 0,
+      "exception": null
+    },
+    {
+      "id": "static-collider-vs-model-step",
+      "status": "PASS",
+      "triangles": 24,
+      "unmatched_triangles": 0,
+      "exception": "step is the explicitly documented continuous support under animated treads"
+    },
+    {
+      "id": "1F-actual-slab-geometry",
+      "status": "PASS",
+      "symmetric_difference_m2": 0.0006147086712306402,
+      "tolerance_m2": 0.001
+    },
+    {
+      "id": "1F-no-slab-in-void",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "2F-actual-slab-geometry",
+      "status": "PASS",
+      "symmetric_difference_m2": 0.0006147086712761149,
+      "tolerance_m2": 0.001
+    },
+    {
+      "id": "2F-no-slab-in-void",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "3F-actual-slab-geometry",
+      "status": "PASS",
+      "symmetric_difference_m2": 0.0006147086712647462,
+      "tolerance_m2": 0.001
+    },
+    {
+      "id": "3F-no-slab-in-void",
+      "status": "PASS",
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "physical-tests",
+      "status": "PASS",
+      "passed": 1273,
+      "total": 1273,
+      "failed": 0
+    },
+    {
+      "id": "runtime-version-geometry_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-main_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-player_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-staff_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-version-animation_script_sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "same-eight-camera-positions",
+      "status": "PASS",
+      "cameras": 8
+    },
+    {
+      "id": "08-1F-bookshop-interior.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "03-2F-crossing-bridge.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "04-2F-storefront.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "02-1F-west-escalators.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "05-3F-void-and-roof.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "06-1F-north-shopping-street.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "07-1F-cafe-interior.png-untouched-before",
+      "status": "PASS"
+    },
+    {
+      "id": "01-1F-time-plaza.png-untouched-before",
+      "status": "PASS"
+    }
+  ],
+  "pass": 510,
+  "fail": 0,
+  "review_and_not_tested": [
+    {
+      "id": "1F-unassigned-floor-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidate_area_m2": 2109.0746915594796,
+      "note": "独自分類。用途確定と区画変更は未承認。広場はこの数値から除外。"
+    },
+    {
+      "id": "1F-short-boundary-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidates": 22,
+      "note": "入口等は除外済みだが、すべてを不要と判定していない。数値検出を目視確認・図面修正案へ回す。"
+    },
+    {
+      "id": "2F-unassigned-floor-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidate_area_m2": 2068.5826414801386,
+      "note": "独自分類。用途確定と区画変更は未承認。広場はこの数値から除外。"
+    },
+    {
+      "id": "2F-short-boundary-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidates": 35,
+      "note": "入口等は除外済みだが、すべてを不要と判定していない。数値検出を目視確認・図面修正案へ回す。"
+    },
+    {
+      "id": "3F-unassigned-floor-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidate_area_m2": 2569.1234169986237,
+      "note": "独自分類。用途確定と区画変更は未承認。広場はこの数値から除外。"
+    },
+    {
+      "id": "3F-short-boundary-candidates",
+      "status": "REVIEW_REQUIRED",
+      "candidates": 39,
+      "note": "入口等は除外済みだが、すべてを不要と判定していない。数値検出を目視確認・図面修正案へ回す。"
+    },
+    {
+      "id": "B1-008",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B1-017",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B1-027",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-028",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-028",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B2-031",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-070",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-003",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-009",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-017",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-027",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-028",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-041",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B3-057",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B3-057",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B3-057",
+      "status": "REVIEW_REQUIRED",
+      "reason": "target has no conservative sampled route"
+    },
+    {
+      "id": "B3-SW12",
+      "status": "REVIEW_REQUIRED",
+      "reason": "conservative free-space fragments; not proof of physical inaccessibility"
+    },
+    {
+      "id": "B2-026-multipart-plot-outside-crop",
+      "status": "REVIEW_REQUIRED",
+      "note": "元図面に1.67048㎡の離れた部分。今回の3D範囲外。原本は変更していない。"
+    },
+    {
+      "id": "anchor-internal-design",
+      "status": "NOT_TESTED",
+      "note": "6核店は3D範囲外。上映室・段床・厨房の平面案は作成済みだが、3D・営業運用・設備能力は未検証。"
+    },
+    {
+      "id": "human-operation-on-Windows",
+      "status": "NOT_TESTED",
+      "note": "自動物理歩行・Viewport目視評価と区別。RTX4060の性能未測定。"
+    }
+  ],
+  "overall": "REVIEW_PROTOTYPE_CHECKS_PASS_BUT_FULL_B_DESIGN_UNRESOLVED",
+  "no_blanket_architectural_pass": true
+}

@@ -1,0 +1,279 @@
+{
+  "checks": [
+    {
+      "id": "B1-057-single-valid-plot",
+      "pass": true
+    },
+    {
+      "id": "B1-057-retains-original-plot",
+      "pass": true,
+      "removed_m2": 3.26405569239796e-14
+    },
+    {
+      "id": "B1-057-public-void-shafts-preserved",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-057-no-neighbor-invasion",
+      "pass": true
+    },
+    {
+      "id": "B1-057-stock-connected-to-own-door",
+      "pass": true,
+      "stock_components": 1
+    },
+    {
+      "id": "B1-057-entry-and-staff-anchor-fixed",
+      "pass": true
+    },
+    {
+      "id": "B1-057-internal-role-coverage",
+      "pass": true,
+      "difference_m2": 0.0
+    },
+    {
+      "id": "B1-057-no-sales-stock-overlap",
+      "pass": true
+    },
+    {
+      "id": "B1-057-architectural-complexity-screen",
+      "pass": true,
+      "old_vertices": 7,
+      "new_vertices": 5,
+      "perimeter_delta_m": 0.00027763421329041194,
+      "note": "数値による棄却基準。建築品質の完成判定ではない。"
+    },
+    {
+      "id": "B1-066-single-valid-plot",
+      "pass": true
+    },
+    {
+      "id": "B1-066-retains-original-plot",
+      "pass": true,
+      "removed_m2": 5.3269241302080804e-15
+    },
+    {
+      "id": "B1-066-public-void-shafts-preserved",
+      "pass": true,
+      "intersection_m2": 1.261239800184199e-15
+    },
+    {
+      "id": "B1-066-no-neighbor-invasion",
+      "pass": true
+    },
+    {
+      "id": "B1-066-stock-connected-to-own-door",
+      "pass": true,
+      "stock_components": 1
+    },
+    {
+      "id": "B1-066-entry-and-staff-anchor-fixed",
+      "pass": true
+    },
+    {
+      "id": "B1-066-internal-role-coverage",
+      "pass": true,
+      "difference_m2": 4.799404299140166e-15
+    },
+    {
+      "id": "B1-066-no-sales-stock-overlap",
+      "pass": true
+    },
+    {
+      "id": "B1-066-architectural-complexity-screen",
+      "pass": true,
+      "old_vertices": 7,
+      "new_vertices": 10,
+      "perimeter_delta_m": 0.14673420365388523,
+      "note": "数値による棄却基準。建築品質の完成判定ではない。"
+    },
+    {
+      "id": "B2-044-single-valid-plot",
+      "pass": true
+    },
+    {
+      "id": "B2-044-retains-original-plot",
+      "pass": true,
+      "removed_m2": 0.0
+    },
+    {
+      "id": "B2-044-public-void-shafts-preserved",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-044-no-neighbor-invasion",
+      "pass": true
+    },
+    {
+      "id": "B2-044-stock-connected-to-own-door",
+      "pass": true,
+      "stock_components": 1
+    },
+    {
+      "id": "B2-044-entry-and-staff-anchor-fixed",
+      "pass": true
+    },
+    {
+      "id": "B2-044-internal-role-coverage",
+      "pass": true,
+      "difference_m2": 1.464485224216958e-18
+    },
+    {
+      "id": "B2-044-no-sales-stock-overlap",
+      "pass": true
+    },
+    {
+      "id": "B2-044-architectural-complexity-screen",
+      "pass": true,
+      "old_vertices": 7,
+      "new_vertices": 7,
+      "perimeter_delta_m": 0.6748303586548516,
+      "note": "数値による棄却基準。建築品質の完成判定ではない。"
+    },
+    {
+      "id": "B2-006-single-valid-plot",
+      "pass": true
+    },
+    {
+      "id": "B2-006-retains-original-plot",
+      "pass": true,
+      "removed_m2": 0.0
+    },
+    {
+      "id": "B2-006-public-void-shafts-preserved",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-006-no-neighbor-invasion",
+      "pass": true
+    },
+    {
+      "id": "B2-006-stock-connected-to-own-door",
+      "pass": true,
+      "stock_components": 1
+    },
+    {
+      "id": "B2-006-entry-and-staff-anchor-fixed",
+      "pass": true
+    },
+    {
+      "id": "B2-006-internal-role-coverage",
+      "pass": true,
+      "difference_m2": 1.5946359711488598e-14
+    },
+    {
+      "id": "B2-006-no-sales-stock-overlap",
+      "pass": true
+    },
+    {
+      "id": "B2-006-architectural-complexity-screen",
+      "pass": true,
+      "old_vertices": 8,
+      "new_vertices": 5,
+      "perimeter_delta_m": 0.35419464372995435,
+      "note": "数値による棄却基準。建築品質の完成判定ではない。"
+    },
+    {
+      "id": "B2-022-single-valid-plot",
+      "pass": true
+    },
+    {
+      "id": "B2-022-retains-original-plot",
+      "pass": true,
+      "removed_m2": 0.0
+    },
+    {
+      "id": "B2-022-public-void-shafts-preserved",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B2-022-no-neighbor-invasion",
+      "pass": true
+    },
+    {
+      "id": "B2-022-stock-connected-to-own-door",
+      "pass": true,
+      "stock_components": 1
+    },
+    {
+      "id": "B2-022-entry-and-staff-anchor-fixed",
+      "pass": true
+    },
+    {
+      "id": "B2-022-internal-role-coverage",
+      "pass": true,
+      "difference_m2": 0.0
+    },
+    {
+      "id": "B2-022-no-sales-stock-overlap",
+      "pass": true
+    },
+    {
+      "id": "B2-022-architectural-complexity-screen",
+      "pass": true,
+      "old_vertices": 28,
+      "new_vertices": 10,
+      "perimeter_delta_m": -2.2210601067963793,
+      "note": "数値による棄却基準。建築品質の完成判定ではない。"
+    },
+    {
+      "id": "B3-028-single-valid-plot",
+      "pass": true
+    },
+    {
+      "id": "B3-028-retains-original-plot",
+      "pass": true,
+      "removed_m2": 0.0
+    },
+    {
+      "id": "B3-028-public-void-shafts-preserved",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B3-028-no-neighbor-invasion",
+      "pass": true
+    },
+    {
+      "id": "B3-028-stock-connected-to-own-door",
+      "pass": true,
+      "stock_components": 1
+    },
+    {
+      "id": "B3-028-entry-and-staff-anchor-fixed",
+      "pass": true
+    },
+    {
+      "id": "B3-028-internal-role-coverage",
+      "pass": true,
+      "difference_m2": 1.1102230246251565e-15
+    },
+    {
+      "id": "B3-028-no-sales-stock-overlap",
+      "pass": true
+    },
+    {
+      "id": "B3-028-architectural-complexity-screen",
+      "pass": true,
+      "old_vertices": 22,
+      "new_vertices": 12,
+      "perimeter_delta_m": -0.4414081430033434,
+      "note": "数値による棄却基準。建築品質の完成判定ではない。"
+    },
+    {
+      "id": "actual-default-production-export-rejected",
+      "pass": true,
+      "returncode": 1,
+      "output": "PRODUCTION_EXPORT_BLOCKED: unowned floor remains. See root-gap-review. Use --review-draft only for a clearly labelled comparison prototype."
+    }
+  ],
+  "passed": 55,
+  "failed": 0,
+  "production_design_status": "BLOCKED; unallocated floor remains on all five B-wing levels",
+  "proposal_only": true,
+  "human_operation_tested": false
+}

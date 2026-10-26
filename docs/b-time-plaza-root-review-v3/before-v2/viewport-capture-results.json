@@ -1,0 +1,336 @@
+{
+  "geometry_sha256": "54598cd6cc86e860637f194688f594e11630826e57d817c2b02133b95f2e0e18",
+  "main_script_sha256": "3ca85e5e8fd934deaaa8af842759cd26b89796499cfef19e1e19c2aea0bf364a",
+  "cameras": [
+    {
+      "id": "01-1F-time-plaza",
+      "p": [
+        4.0,
+        1.65,
+        12.0
+      ],
+      "look": [
+        -14.0,
+        7.5,
+        -12.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "02-1F-west-escalators",
+      "p": [
+        -9.0,
+        1.65,
+        22.0
+      ],
+      "look": [
+        -22.0,
+        4.3,
+        16.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "03-2F-crossing-bridge",
+      "p": [
+        16.0,
+        7.175,
+        3.0
+      ],
+      "look": [
+        -14.0,
+        8.2,
+        -5.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "04-2F-storefront",
+      "p": [
+        -31.0,
+        7.175,
+        27.0
+      ],
+      "look": [
+        -19.0,
+        7.8,
+        35.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "05-3F-void-and-roof",
+      "p": [
+        14.0,
+        12.525,
+        0.0
+      ],
+      "look": [
+        -14.0,
+        8.8,
+        -4.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "06-1F-north-shopping-street",
+      "p": [
+        -2.0,
+        1.65,
+        -28.0
+      ],
+      "look": [
+        8.0,
+        2.4,
+        -35.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "07-1F-cafe-interior",
+      "p": [
+        -20.68,
+        1.65,
+        -34.0
+      ],
+      "look": [
+        -13.0,
+        1.65,
+        -40.5
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "08-1F-bookshop-interior",
+      "p": [
+        -70.59,
+        1.65,
+        2.02
+      ],
+      "look": [
+        -72.0,
+        1.6,
+        -4.0
+      ],
+      "fov_deg": 75,
+      "resolution": [
+        1280,
+        720
+      ],
+      "hud_visible": false
+    },
+    {
+      "id": "09-store-wall-ceiling-joint",
+      "p": [
+        -17.980500000000006,
+        1.65,
+        -30.7002
+      ],
+      "look": [
+        -17.980500000000006,
+        4.65,
+        -33.0002
+      ],
+      "fov_deg": 55,
+      "kind": "eye-height construction inspection",
+      "hud_visible": false
+    },
+    {
+      "id": "10-glass-floor-shoe",
+      "p": [
+        -29.91782564633735,
+        0.45,
+        -31.9
+      ],
+      "look": [
+        -29.91782564633735,
+        0.08,
+        -33.0
+      ],
+      "fov_deg": 55,
+      "kind": "technical low inspection view; not a normal standing eye",
+      "hud_visible": false
+    },
+    {
+      "id": "11-shop-boundary",
+      "p": [
+        -31,
+        1.65,
+        34.400000000000006
+      ],
+      "look": [
+        -29.80000000000001,
+        2.1,
+        39
+      ],
+      "fov_deg": 70,
+      "kind": "eye-height plot boundary inspection",
+      "hud_visible": false
+    },
+    {
+      "id": "12-fashion-interior",
+      "p": [
+        -47.35620378840588,
+        1.65,
+        -3.533315153623562
+      ],
+      "look": [
+        -48.39887652783074,
+        1.4,
+        -8.576827528241381
+      ],
+      "fov_deg": 75,
+      "kind": "v2 additional representative view, no before/after claim",
+      "store": "B1-043",
+      "hud_visible": false
+    },
+    {
+      "id": "13-beauty-interior",
+      "p": [
+        56.66867549209235,
+        1.65,
+        17.294934733220927
+      ],
+      "look": [
+        59.27184640923889,
+        1.4,
+        12.850500001367571
+      ],
+      "fov_deg": 75,
+      "kind": "v2 additional representative view, no before/after claim",
+      "store": "B1-018",
+      "hud_visible": false
+    },
+    {
+      "id": "14-shoes-interior",
+      "p": [
+        74.96792361947195,
+        7.175000000000001,
+        50.85562613687533
+      ],
+      "look": [
+        71.20828697733293,
+        6.925000000000001,
+        54.37808711967469
+      ],
+      "fov_deg": 75,
+      "kind": "v2 additional representative view, no before/after claim",
+      "store": "B2-009",
+      "hud_visible": false
+    },
+    {
+      "id": "15-music-interior",
+      "p": [
+        -69.22472975119695,
+        12.525,
+        1.9336913375083427
+      ],
+      "look": [
+        -69.21172744341169,
+        12.275,
+        -3.222191485834685
+      ],
+      "fov_deg": 75,
+      "kind": "v2 additional representative view, no before/after claim",
+      "store": "B3-017",
+      "hud_visible": false
+    }
+  ],
+  "images": [
+    {
+      "file": "01-1F-time-plaza.png",
+      "sha256": "a890471a3f1d336f574ea645f5a9ce4fa922acfc929f58b329439108a9f3a341"
+    },
+    {
+      "file": "02-1F-west-escalators.png",
+      "sha256": "cb0c7d2982efffbbf8f298743f137999cfc5af5a3e08e502687541a43ab0b9b6"
+    },
+    {
+      "file": "03-2F-crossing-bridge.png",
+      "sha256": "42acd2149dda491f712dd61d69dc5278487eb7a3564b8426286e8decff120100"
+    },
+    {
+      "file": "04-2F-storefront.png",
+      "sha256": "69efee42a1dc6ce212776903754ddfc50861dc99c80f25929136ef0143f63b12"
+    },
+    {
+      "file": "05-3F-void-and-roof.png",
+      "sha256": "2ebbff572246a0783f65f7adc91390cb74804a941eabeece39c6147f6d0f018f"
+    },
+    {
+      "file": "06-1F-north-shopping-street.png",
+      "sha256": "be034a6e30da63df6ed73c94259b555c71067c137940f2e3bfb1d91af3fb2327"
+    },
+    {
+      "file": "07-1F-cafe-interior.png",
+      "sha256": "8f5178e29aa223e647218349d0c2cc6868fcdfab918e21998755c64227977b83"
+    },
+    {
+      "file": "08-1F-bookshop-interior.png",
+      "sha256": "11c43301727ea7a2321b423adda689a8b5863b50fc87d91121e95a170a4b3bdb"
+    },
+    {
+      "file": "09-store-wall-ceiling-joint.png",
+      "sha256": "62abaac8b8a49ff79104a3c73a206bc067189968a14bb0fb1b102900bfed900b"
+    },
+    {
+      "file": "10-glass-floor-shoe.png",
+      "sha256": "e9600e0cb0f1ef16cd2398aae3613b50f4c746b3d642385b8655c5539954a361"
+    },
+    {
+      "file": "11-shop-boundary.png",
+      "sha256": "e0173570447360554ad9d719f929e136d1ba4eff39e28c81ddf3dfe643efd05f"
+    },
+    {
+      "file": "12-fashion-interior.png",
+      "sha256": "eb9eaccabd87fddca8c8a8780a8896c12c3d6e068e9c314c84c68b74ac67b983"
+    },
+    {
+      "file": "13-beauty-interior.png",
+      "sha256": "40dfc6384c1741098b5490cfdb015da37a62ada6063194e7d3f804e311096e21"
+    },
+    {
+      "file": "14-shoes-interior.png",
+      "sha256": "3a85c141867b417b22b043b21340ae95e42ae35b100568596cc640ea8fff9374"
+    },
+    {
+      "file": "15-music-interior.png",
+      "sha256": "e981c6cd9f1ce61a1d64c33caa8d01d15cd7e478196c7dec53d3ea1698a2a4d4"
+    }
+  ]
+}

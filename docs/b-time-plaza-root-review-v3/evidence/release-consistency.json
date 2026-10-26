@@ -1,0 +1,163 @@
+{
+  "checks": [
+    {
+      "id": "walking-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "walking-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "render-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "render-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "transfer-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "transfer-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "all-physical-samples-pass",
+      "pass": true
+    },
+    {
+      "id": "independent-results-no-fail",
+      "pass": true
+    },
+    {
+      "id": "privacy-80-stores-five-corrections-zero-residual",
+      "pass": true
+    },
+    {
+      "id": "privacy-real-mesh-version",
+      "pass": true
+    },
+    {
+      "id": "all-191-ledger-no-sales-loss",
+      "pass": true
+    },
+    {
+      "id": "all-80-private-audit-IDs",
+      "pass": true
+    },
+    {
+      "id": "exact-current-20-cameras",
+      "pass": true
+    },
+    {
+      "id": "01-1F-time-plaza-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "02-1F-west-escalators-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "03-2F-crossing-bridge-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "04-2F-storefront-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "05-3F-void-and-roof-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "06-1F-north-shopping-street-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "07-1F-cafe-interior-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "08-1F-bookshop-interior-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "12-fashion-interior-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "16-bookshop-wall-collection-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "17-cafe-service-and-seating-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "18-fashion-wall-and-fitout-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "19-gap-B1-066-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "20-gap-B2-022-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "21-gap-B3-028-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "22-stock-connection-B2-022-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "23-stock-connection-B3-028-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "27-3F-daylight-corridor-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "28-privacy-B1-040-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "29-privacy-B2-070-PNG-provenance",
+      "pass": true
+    },
+    {
+      "id": "no-runtime-lift-misreport",
+      "pass": true
+    },
+    {
+      "id": "vertical-proposals-not-implemented",
+      "pass": true
+    },
+    {
+      "id": "production-export-remains-blocked",
+      "pass": true
+    },
+    {
+      "id": "functional-stock-requirement-failures-retained",
+      "pass": true
+    },
+    {
+      "id": "shared-protected-original-source-hash",
+      "pass": true
+    }
+  ],
+  "passed": 38,
+  "failed": 0,
+  "architecture_complete": false,
+  "human_operation_tested": false,
+  "integration_performed": false,
+  "physical_clock": "--fixed-fps 60, physics 60 Hz. Automated deterministic simulation; not realtime FPS measurement.",
+  "date_jst": "2026-10-27"
+}
