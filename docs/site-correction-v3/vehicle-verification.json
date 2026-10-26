@@ -1,0 +1,38 @@
+{
+  "status_counts": {
+    "PASS_2D_SAMPLED": 10,
+    "PASS_DIMENSION": 34,
+    "NOT_TESTED": 6737
+  },
+  "checks": 6781,
+  "failures": [],
+  "all_vehicle_movements_verified": false,
+  "unverified_is_not_pass": true,
+  "models": {
+    "car": {
+      "length_m": 4.8,
+      "width_m": 1.9,
+      "wheelbase_m": 2.8,
+      "rear_overhang_m": 1.0,
+      "radius_m": 6,
+      "height_m": 2.1
+    },
+    "truck": {
+      "length_m": 12.0,
+      "width_m": 2.5,
+      "wheelbase_m": 6.0,
+      "rear_overhang_m": 3.0,
+      "radius_m": 12,
+      "height_m": 4.2
+    }
+  },
+  "sampling": {
+    "straight_step_m": 0.25,
+    "arc_step_degrees": 0.5,
+    "conservative_envelope_buffer_m": 0.02
+  },
+  "original_parking_capacity": 6699,
+  "vehicle_verified_capacity": null,
+  "arrival_routes": 10,
+  "actual_vehicle_tests": 0
+}
