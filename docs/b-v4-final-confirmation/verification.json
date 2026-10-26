@@ -1,0 +1,263 @@
+{
+  "baseline_commit": "0c82bc9b6250bbcba9458730db9aa76fe11f338b",
+  "protected_game_files_checked": 238,
+  "protected_game_mismatch": [],
+  "prior_v4_files_changed": [],
+  "source_geometry_sha256": "51983f07b90c39b005c68329b35bf626abdb74e77215cc5e1e7f6b227d64aa12",
+  "routes": 58,
+  "closed_faces": 314,
+  "finish_faces": 24,
+  "new_drawing_checks_passed": 28,
+  "new_drawing_checks_failed": [
+    {
+      "kind": "closed_band_disjoint_public",
+      "id": "F1",
+      "pass_": false,
+      "value": 0.03884224023739671
+    },
+    {
+      "kind": "closed_band_disjoint_public",
+      "id": "F2",
+      "pass_": false,
+      "value": 0.033556701413439596
+    }
+  ],
+  "camera_count": 18,
+  "runtime_walk_tests": 0,
+  "pdf_pages": 23,
+  "pdf_sha256": "3243fc3a897db8e747f4b5179c31a27b15e835327b54009cf4e2f4cb4afc9dc5",
+  "page_checks": [
+    {
+      "page": 1,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 2,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 3,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 4,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 5,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 6,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 7,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 8,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 9,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 10,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 11,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 12,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 13,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 14,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 15,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 16,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 17,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 18,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 19,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 20,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 21,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 22,
+      "rendered": true,
+      "text_inside_page": true
+    },
+    {
+      "page": 23,
+      "rendered": true,
+      "text_inside_page": true
+    }
+  ],
+  "image_pixel_provenance": [
+    {
+      "file": "P-L-approach-before.png",
+      "png_sha256": "aa5df14962e3d09863bf5581606cd9d82cfe08c752490932bd4075e412a114bc",
+      "rgb_sha256": "1a76ce5f43d0ce0d4ae0356f3d7a2eee1f163ebd98b29f76decca25b355937af",
+      "pdf_xref": 1358
+    },
+    {
+      "file": "P-L-approach.png",
+      "png_sha256": "b95feeb4f28e5132026629b0e29eeec971e4e277bd14067181a3efeef7142211",
+      "rgb_sha256": "31d1ea4f9286079521d6ed6fd0571f33efac6d766e0e6720a60e1fb55748bf4f",
+      "pdf_xref": 1326
+    },
+    {
+      "file": "P-L-court.png",
+      "png_sha256": "a08e646ca4750fb850d6523a7353c746896c6aa787fad96849907ba175f3244a",
+      "rgb_sha256": "f725cc11bc92304a2e8b8e641242880bdeabc47121cc88d559779c516916ce80",
+      "pdf_xref": 1327
+    },
+    {
+      "file": "P-L-exit.png",
+      "png_sha256": "a69a3c9c2a7b2da90a75fab4cda406a6d067bea3426be1e7b4227271424594fe",
+      "rgb_sha256": "51ffb92f69bf755d15276ebf8e4a56eac4b08bc4a581f4570348c79c6e1c13f0",
+      "pdf_xref": 1328
+    },
+    {
+      "file": "P-L-upper2.png",
+      "png_sha256": "670ee0d31173ad9567b6087723f5a5bfadc49320ce230a38efaff2e73be9bc1b",
+      "rgb_sha256": "a73ae862db542569e2d050afd8b3b65db4f58191b345c2b5122e1516ea351adc",
+      "pdf_xref": 1338
+    },
+    {
+      "file": "P-L-upper3.png",
+      "png_sha256": "24f9df11bbeff612d194bf5a5e2dc0821cd691fbf66bbc676f842f68cb91f74c",
+      "rgb_sha256": "42bd7ec9f97a75b7e59dd6cc5fd95dfe8aa487097ae7d8332d9e4a5eefa1ea8d",
+      "pdf_xref": 1339
+    },
+    {
+      "file": "P-T-approach.png",
+      "png_sha256": "315bb8ea359c4b7b18a3594b2f14243eb298bc7b59bd16d4680fa1bc591a04f6",
+      "rgb_sha256": "fd78cc27dfe1f44bb74bd8558a821d52dd7688ed81e53f2d4f30a3bde7ff44e8",
+      "pdf_xref": 1306
+    },
+    {
+      "file": "P-T-court.png",
+      "png_sha256": "1d84cac7fe993b61d9efa96a9b7057fe6a9e4aef54c7245382f2c72df9f68073",
+      "rgb_sha256": "f62558189ff5531528ac94a9d531366639bb5cc32c9be4c2a75eaf1f03d5c791",
+      "pdf_xref": 1307
+    },
+    {
+      "file": "P-T-exit.png",
+      "png_sha256": "2c1d0ea691fbf8cf0a918042ee1fed31f947b3a37aecfe9c270b61d7b567faf4",
+      "rgb_sha256": "2153ac32f2f94dbc329342731fb07ffb9951e850ef669b82049007ee30bc159e",
+      "pdf_xref": 1308
+    },
+    {
+      "file": "P-T-upper2.png",
+      "png_sha256": "f690f501052705f365e5f4cd5c646374775e62466d1bb009bf114f5cd1f694a3",
+      "rgb_sha256": "c403c0f5e712850e475b3bb95eed06b4f9cff266b824df7b625a7e6d085ab04a",
+      "pdf_xref": 1319
+    },
+    {
+      "file": "P-T-upper3.png",
+      "png_sha256": "93d65300944354feac8bd0fadaa187821b65d1b7beb0879655a31862a2c38df5",
+      "rgb_sha256": "800050e0bb7a92cf330bf0ee6bec01998c04d10493625edf3cf734f9495bf221",
+      "pdf_xref": 1320
+    },
+    {
+      "file": "P-W-approach.png",
+      "png_sha256": "149dad98df8bd0e325d8c60e089cb160975c1bbc3dc68a219e14ce76ba06e7a3",
+      "rgb_sha256": "4359aba85f5230529e7626ac7b99617b773e710891340c43f769f1ae0fa17047",
+      "pdf_xref": 1271
+    },
+    {
+      "file": "P-W-court.png",
+      "png_sha256": "77b14e47781c2ffefffec753f363279164844f0af2ad17397c82d499cd7726a7",
+      "rgb_sha256": "d87c7a10db649195034831e8ed92da3b29fb9e26775707532c157284c76ac945",
+      "pdf_xref": 1277
+    },
+    {
+      "file": "P-W-exit.png",
+      "png_sha256": "964294447d9b01faae0e28d5361b68ab70b20a410744ef72d24bda83e5fc6eb6",
+      "rgb_sha256": "5fc3d26065575c051828bb9c3ee6478ddc6eb9c700a45db82b2a6d51f4fc64aa",
+      "pdf_xref": 1280
+    },
+    {
+      "file": "P-W-nw-after.png",
+      "png_sha256": "b26e8766573557f5e906693294ca3c8d1abd60bba440b1b2fb8618b8d72eea1f",
+      "rgb_sha256": "bf352d4ddcfc74d4c4a1c4351e57014feb1d4aac519b6377cf8008aaa8170363",
+      "pdf_xref": 1348
+    },
+    {
+      "file": "P-W-nw-before.png",
+      "png_sha256": "9947f12e77eb905fd19bb1c704e9d227611d56016b5123f562a36b347ee7e1fb",
+      "rgb_sha256": "2b2678f23573bd59a0e5887e09757d93f6f00656f5bf1d49c7f45f720f577e24",
+      "pdf_xref": 1345
+    },
+    {
+      "file": "P-W-upper2.png",
+      "png_sha256": "a2b6b7e8787f902379cf1eea84501c9d156c3028f8c8c044c4de7fda495a4496",
+      "rgb_sha256": "b01517fa5f9c8279b8786179b76392aded20fb9048d5205b6f00c21d474d5a49",
+      "pdf_xref": 1292
+    },
+    {
+      "file": "P-W-upper3.png",
+      "png_sha256": "a49612c55706af6ebae31e6c16fa107e11362d1e0d3776d7628090f230af488c",
+      "rgb_sha256": "a76fe33a122a9696da33af2de1cf71c258bf8ee77f50547c44f1b7480523da38",
+      "pdf_xref": 1295
+    }
+  ],
+  "original_v4_7810_checks_rerun": false,
+  "render_source_files": {
+    "tools/prepare_b_v4_views.py": "66a5ce674be735f8bf58dea8ba9703cb1c1def9360fac82770c674534d182cb9",
+    "tools/render_b_v4_views.py": "d15fb702cc1553e78e5c126b75ff85ffe739bae0f37197c29457d6544ec37bb5",
+    "tools/prepare_b_v4_final.py": "01f565675569f1aecd49c624138f56493ed7a9efd326924ed6c34c98f27a6071",
+    "tools/render_b_v4_final.py": "c86d99bcf8ed1f82cb3e9e4d00c819824fd9d1e90c394f8ca400c2a44ca688ad"
+  }
+}

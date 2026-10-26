@@ -1,0 +1,416 @@
+[
+  {
+    "plaza": "P-W",
+    "id": "approach",
+    "floor": 1,
+    "nominal": [
+      27.550420881646577,
+      80.78324255493898
+    ],
+    "actual": [
+      27.550420881646577,
+      80.78324255493898
+    ],
+    "world": [
+      -686.4495791183534,
+      1.65,
+      50.78324255493898
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "M-W → 翼の広場"
+  },
+  {
+    "plaza": "P-W",
+    "id": "court",
+    "floor": 1,
+    "nominal": [
+      64,
+      67
+    ],
+    "actual": [
+      64.0,
+      67.0
+    ],
+    "world": [
+      -650.0,
+      1.65,
+      37.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "翼の広場入口"
+  },
+  {
+    "plaza": "P-W",
+    "id": "exit",
+    "floor": 1,
+    "nominal": [
+      146.88765972826346,
+      82.07695294109173
+    ],
+    "actual": [
+      146.88765972826346,
+      82.07695294109173
+    ],
+    "world": [
+      -567.1123402717366,
+      1.65,
+      52.07695294109173
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "翼 → 中央専門店街"
+  },
+  {
+    "plaza": "P-W",
+    "id": "upper2",
+    "floor": 2,
+    "nominal": [
+      126,
+      60
+    ],
+    "actual": [
+      126.0,
+      60.0
+    ],
+    "world": [
+      -588.0,
+      7.175000000000001,
+      30.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "2F回廊から西側店頭"
+  },
+  {
+    "plaza": "P-W",
+    "id": "upper3",
+    "floor": 3,
+    "nominal": [
+      139.33259583695806,
+      79.44617176465505
+    ],
+    "actual": [
+      139.33259583695806,
+      79.44617176465505
+    ],
+    "world": [
+      -574.667404163042,
+      12.525,
+      49.44617176465505
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "3F中央専門店街へ"
+  },
+  {
+    "plaza": "P-W",
+    "id": "nw-before",
+    "floor": 1,
+    "nominal": [
+      187.17192928218444,
+      71.21053038361677
+    ],
+    "actual": [
+      187.17192928218444,
+      71.21053038361677
+    ],
+    "world": [
+      -526.8280707178155,
+      1.65,
+      41.21053038361677
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "before",
+    "caption": "北専門店街・閉鎖面補完/未仕上げ"
+  },
+  {
+    "plaza": "P-W",
+    "id": "nw-after",
+    "floor": 1,
+    "nominal": [
+      187.17192928218444,
+      71.21053038361677
+    ],
+    "actual": [
+      187.17192928218444,
+      71.21053038361677
+    ],
+    "world": [
+      -526.8280707178155,
+      1.65,
+      41.21053038361677
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "北専門店街・仕上げ追補"
+  },
+  {
+    "plaza": "P-T",
+    "id": "approach",
+    "floor": 1,
+    "nominal": [
+      277.7878385971583,
+      29.838290060036115
+    ],
+    "actual": [
+      277.7878385971583,
+      29.838290060036115
+    ],
+    "world": [
+      -436.2121614028417,
+      1.65,
+      -0.1617099399638846
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "北専門店街 → 時の広場"
+  },
+  {
+    "plaza": "P-T",
+    "id": "court",
+    "floor": 1,
+    "nominal": [
+      285,
+      57
+    ],
+    "actual": [
+      285.0,
+      57.0
+    ],
+    "world": [
+      -429.0,
+      1.65,
+      27.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "時の広場入口"
+  },
+  {
+    "plaza": "P-T",
+    "id": "exit",
+    "floor": 1,
+    "nominal": [
+      328.337547678328,
+      96.73209596329828
+    ],
+    "actual": [
+      328.337547678328,
+      96.73209596329828
+    ],
+    "world": [
+      -385.662452321672,
+      1.65,
+      66.73209596329828
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "時 → 東専門店街"
+  },
+  {
+    "plaza": "P-T",
+    "id": "upper2",
+    "floor": 2,
+    "nominal": [
+      263,
+      70
+    ],
+    "actual": [
+      263.0,
+      70.0
+    ],
+    "world": [
+      -451.0,
+      7.175000000000001,
+      40.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "2F横断橋と東回廊"
+  },
+  {
+    "plaza": "P-T",
+    "id": "upper3",
+    "floor": 3,
+    "nominal": [
+      306,
+      80
+    ],
+    "actual": [
+      306.0,
+      80.0
+    ],
+    "world": [
+      -408.0,
+      12.525,
+      50.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "3F北街側（他館は2F経由）"
+  },
+  {
+    "plaza": "P-L",
+    "id": "approach",
+    "floor": 1,
+    "nominal": [
+      370.9672900529017,
+      102.9907514395973
+    ],
+    "actual": [
+      370.9672900529017,
+      102.9907514395973
+    ],
+    "world": [
+      -343.0327099470983,
+      1.65,
+      72.9907514395973
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "東専門店街 → 光の広場"
+  },
+  {
+    "plaza": "P-L",
+    "id": "court",
+    "floor": 1,
+    "nominal": [
+      410,
+      88
+    ],
+    "actual": [
+      410.0,
+      88.0
+    ],
+    "world": [
+      -304.0,
+      1.65,
+      58.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "光の広場入口"
+  },
+  {
+    "plaza": "P-L",
+    "id": "exit",
+    "floor": 1,
+    "nominal": [
+      459.33737001290916,
+      112.504579983294
+    ],
+    "actual": [
+      459.33737001290916,
+      112.504579983294
+    ],
+    "world": [
+      -254.66262998709084,
+      1.65,
+      82.504579983294
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "光 → 南東専門店街"
+  },
+  {
+    "plaza": "P-L",
+    "id": "upper2",
+    "floor": 2,
+    "nominal": [
+      470,
+      75
+    ],
+    "actual": [
+      470.0,
+      75.0
+    ],
+    "world": [
+      -244.0,
+      7.175000000000001,
+      45.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "2F東核店前と曲面回廊"
+  },
+  {
+    "plaza": "P-L",
+    "id": "upper3",
+    "floor": 3,
+    "nominal": [
+      470,
+      68
+    ],
+    "actual": [
+      470.0,
+      68.0
+    ],
+    "world": [
+      -244.0,
+      12.525,
+      38.0
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "after",
+    "caption": "3F案内側（A館へは2Fへ）"
+  },
+  {
+    "plaza": "P-L",
+    "id": "approach-before",
+    "floor": 1,
+    "nominal": [
+      370.9672900529017,
+      102.9907514395973
+    ],
+    "actual": [
+      370.9672900529017,
+      102.9907514395973
+    ],
+    "world": [
+      -343.0327099470983,
+      1.65,
+      72.9907514395973
+    ],
+    "eye_above_floor": 1.65,
+    "adjustment_m": 0.0,
+    "within_half_metre_eroded_walk": true,
+    "phase": "before",
+    "caption": "東専門店街・閉鎖面補完/未仕上げ"
+  }
+]
