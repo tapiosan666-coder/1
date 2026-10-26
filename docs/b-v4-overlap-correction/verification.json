@@ -1,0 +1,31 @@
+{
+  "design_only": true,
+  "runtime_walking_tests": 0,
+  "v4_checks_freshly_rerun": 7810,
+  "total_assertions": 8377,
+  "passed": 8377,
+  "failed": [],
+  "area_epsilon_for_new_zero_checks_m2": 1e-08,
+  "protected_game_files": 238,
+  "protected_game_mismatches": [],
+  "store_counts": [
+    65,
+    66,
+    57
+  ],
+  "primary_entrances": 188,
+  "secondary_entrances": 3,
+  "sampled_store_to_stair_routes": 564,
+  "navigation_grid_m": 1.0,
+  "navigation_clearance_radius_m": 0.45,
+  "baseline_check_thresholds_preserved": true,
+  "v4_validation_source_sha256": "232720ef6bec0d6812aa80bd72c1e9ac728c42233b2a8f4030d55e41113f6e07",
+  "corrected_geometry_sha256": "0e77b809b513bdf079198d6b6c476ab24b09b15fbb5f847791a7039010f8f328",
+  "all_other_geometry_fields_unchanged": true,
+  "remaining_unchanged_tenant_public_intersections_max_m2": {
+    "1": 0.005200995512902344,
+    "2": 0.006318146510422289,
+    "3": 0.006102718446328558
+  },
+  "note": "Existing tenant/public interfaces retain the prior v4 0.06 m² area criterion; store-pair, interior wall, portal and navigation criteria are also unchanged. New residual/opening checks use 1e-8 m². This is not a claim that every intentional polygon intersection in the mall is zero."
+}

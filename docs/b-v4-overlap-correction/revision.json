@@ -1,0 +1,23 @@
+{
+  "revision": "B-v4.1-overlap-correction",
+  "design_only": true,
+  "game_implemented": false,
+  "source_commit": "38a6391c4383fc7a91f3dc4b8fa570208d8996f9",
+  "source_geometry_sha256": "51983f07b90c39b005c68329b35bf626abdb74e77215cc5e1e7f6b227d64aa12",
+  "corrected_geometry_sha256": "0e77b809b513bdf079198d6b6c476ab24b09b15fbb5f847791a7039010f8f328",
+  "changed_fields": [
+    "floors/0/residual",
+    "floors/0/floor_plate",
+    "floors/1/residual",
+    "floors/1/floor_plate",
+    "floors/2/residual",
+    "floors/2/floor_plate"
+  ],
+  "method": "Serialized source coordinates, difference overlay without snapping, global offsets, buffering, or runtime auto-correction. Public, shops, court, openings and routes unchanged. Slab micro-gaps filled only under existing public floor.",
+  "numerical_area_epsilon_m2": 1e-08,
+  "python": "3.12.14",
+  "shapely": "2.2.0",
+  "geos": "3.14.1",
+  "original_internal_version_field_retained": true,
+  "rendered_3d_views_regenerated": false
+}

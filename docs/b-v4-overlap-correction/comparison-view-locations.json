@@ -1,0 +1,146 @@
+[
+  {
+    "floor": 1,
+    "kind": "residual/public",
+    "case": 1,
+    "centre_local": [
+      233.4613289359242,
+      36.1006614899872
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.00975294478184334
+  },
+  {
+    "floor": 1,
+    "kind": "residual/public",
+    "case": 2,
+    "centre_local": [
+      191.48663458869203,
+      72.90050000000001
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.006673176527410264
+  },
+  {
+    "floor": 1,
+    "kind": "residual/public",
+    "case": 3,
+    "centre_local": [
+      207.0634954861462,
+      97.4796913774247
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.0044186596557926824
+  },
+  {
+    "floor": 2,
+    "kind": "residual/public",
+    "case": 1,
+    "centre_local": [
+      191.88311795591687,
+      69.92703199127503
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.0075136584369634545
+  },
+  {
+    "floor": 2,
+    "kind": "residual/public",
+    "case": 2,
+    "centre_local": [
+      207.0634954861462,
+      97.4796913774247
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.0044186596557926824
+  },
+  {
+    "floor": 2,
+    "kind": "residual/public",
+    "case": 3,
+    "centre_local": [
+      199.82409670390376,
+      82.7985
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.004029238594393873
+  },
+  {
+    "floor": 3,
+    "kind": "residual/public",
+    "case": 1,
+    "centre_local": [
+      207.0634954861462,
+      97.4796913774247
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.0044186596557926824
+  },
+  {
+    "floor": 3,
+    "kind": "residual/public",
+    "case": 2,
+    "centre_local": [
+      191.75105223099968,
+      70.91801418075755
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.003112647302081137
+  },
+  {
+    "floor": 3,
+    "kind": "residual/public",
+    "case": 3,
+    "centre_local": [
+      249.21937402076145,
+      70.44930365594969
+    ],
+    "extent_m": 0.01,
+    "source_component_area_m2": 0.002377671776667256
+  },
+  {
+    "floor": 1,
+    "kind": "floor_plate/shafts",
+    "centre_local": [
+      424.3999063932425,
+      43.528913406670625
+    ],
+    "extent_m": 0.01
+  },
+  {
+    "floor": 2,
+    "kind": "floor_plate/shafts",
+    "centre_local": [
+      424.3999063932425,
+      43.528913406670625
+    ],
+    "extent_m": 0.01
+  },
+  {
+    "floor": 3,
+    "kind": "floor_plate/shafts",
+    "centre_local": [
+      460.53430018390725,
+      94.89167709633291
+    ],
+    "extent_m": 0.01
+  },
+  {
+    "floor": "1/2/3",
+    "kind": "slab-support-gap",
+    "centre_local": [
+      350.5812015725628,
+      98.49839801812453
+    ],
+    "extent_m": 0.01
+  },
+  {
+    "floor": "1/2/3",
+    "kind": "slab-support-gap",
+    "centre_local": [
+      131.68774531504283,
+      115.8861541501976
+    ],
+    "extent_m": 0.01
+  }
+]
