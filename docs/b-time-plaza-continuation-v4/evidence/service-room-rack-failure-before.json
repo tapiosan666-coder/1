@@ -1,0 +1,258 @@
+{
+  "adapter": "",
+  "animation_script_sha256": "21426e73edbb8e803aa274ad1a9a17b68614c321b756fcb8f1adef4b76f3ea94",
+  "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+  "checks": [
+    {
+      "id": "S-1-T-closed-leaf",
+      "kind": "actual closed door collider",
+      "pass": true
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-1-T-aperture--0.25",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.0009348324383609,
+      "pass": true,
+      "position": "(-55.2667, 0.000842, -38.72277)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-1-T-aperture-0.0",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000896940124221146,
+      "pass": true,
+      "position": "(-55.51586, 0.000843, -38.70227)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-1-T-aperture-0.25",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000895142322406173,
+      "pass": true,
+      "position": "(-55.76501, 0.000829, -38.68173)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 353,
+      "id": "S-1-T-source-route",
+      "kind": "actual CharacterBody3D source staff route, corrected coordinates",
+      "max_vertical_difference_m": 0.000935602583922446,
+      "pass": true,
+      "position": "(-59.36167, 0.000836, -23.22063)",
+      "ticks": 353
+    },
+    {
+      "id": "S-1-T-wall-51",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-wall-102",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-wall-153",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-wall-204",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "hit": "none",
+      "id": "S-1-T-rack-shelf-collider",
+      "kind": "rack shelf actual metal collider at body height",
+      "pass": false
+    },
+    {
+      "id": "S-2-L-closed-leaf",
+      "kind": "actual closed door collider",
+      "pass": true
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-2-L-aperture--0.25",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000920295715332031,
+      "pass": true,
+      "position": "(54.51479, 5.525841, 35.90376)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-2-L-aperture-0.0",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(54.28922, 5.52583, 35.79596)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-2-L-aperture-0.25",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000907421112060547,
+      "pass": true,
+      "position": "(54.06368, 5.525836, 35.68814)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 266,
+      "id": "S-2-L-source-route",
+      "kind": "actual CharacterBody3D source staff route, corrected coordinates",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(54.82508, 5.525841, 47.40933)",
+      "ticks": 266
+    },
+    {
+      "id": "S-2-L-wall-0",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-wall-31",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-wall-62",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-wall-93",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-wall-124",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-wall-155",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "hit": "none",
+      "id": "S-2-L-rack-shelf-collider",
+      "kind": "rack shelf actual metal collider at body height",
+      "pass": false
+    },
+    {
+      "id": "S-3-T-closed-leaf",
+      "kind": "actual closed door collider",
+      "pass": true
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-3-T-aperture--0.25",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-40.88271, 10.87581, -39.90676)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-3-T-aperture-0.0",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-41.13186, 10.87583, -39.88624)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 56,
+      "id": "S-3-T-aperture-0.25",
+      "kind": "actual CharacterBody3D door traversal",
+      "max_vertical_difference_m": 0.000924110412597656,
+      "pass": true,
+      "position": "(-41.38102, 10.87584, -39.86568)",
+      "ticks": 56
+    },
+    {
+      "contact_ticks": 362,
+      "id": "S-3-T-source-route",
+      "kind": "actual CharacterBody3D source staff route, corrected coordinates",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-37.6548, 10.87593, -23.87283)",
+      "ticks": 362
+    },
+    {
+      "id": "S-3-T-wall-0",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-wall-38",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-wall-76",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-wall-114",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-wall-152",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-wall-190",
+      "kind": "actual opaque service-room perimeter collider",
+      "pass": true
+    },
+    {
+      "hit": "none",
+      "id": "S-3-T-rack-shelf-collider",
+      "kind": "rack shelf actual metal collider at body height",
+      "pass": false
+    }
+  ],
+  "failed": 3,
+  "geometry_sha256": "2d163a638b428096cd9c6e135484ae971e2331f9d79f06af73ed46018f22b73d",
+  "godot_version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "graphics_revision": "v4",
+  "kind": "automated Godot collision tests; not human operation; no inventory/delivery-operation certification",
+  "main_game_loaded": false,
+  "main_script_sha256": "7825f44a873a43e2ae87b0dce52dadf4ca18150424b5d7f819a82671845b0f3b",
+  "msaa": "4x",
+  "passed": 31,
+  "player_script_sha256": "b23df5c7df696097215b839de749ac00e2f7449174c1e9ba4ddb9817108697e4",
+  "renderer": "gl_compatibility",
+  "resolution": [
+    1280,
+    720
+  ],
+  "scene_build_seconds": 16.274232,
+  "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+  "staff_script_sha256": "6b8148db806f7a0fd1d8a0cae335078e741fcb5af0d30bbb31880b6251e757d9",
+  "total": 34,
+  "diagnostic_note": "Initial rack ray probes used the structural-only mask, which excluded metal. This diagnostic is NOT a controlled before/after comparison. The final probes use the metal collision layer; the final model includes real rendered shelf and post collider triangles. Treat final 34/34 as current-state verification."
+}

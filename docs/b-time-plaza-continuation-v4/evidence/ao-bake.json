@@ -1,0 +1,15 @@
+{
+  "method": "12-ray cosine-hemisphere vertex AO via Blender BVH; not lightmap GI",
+  "occluders": "actual opaque static collision surfaces",
+  "radius_m": 2.8,
+  "samples_per_point": 12,
+  "cached_points": 738315,
+  "range": [
+    0.38,
+    1.0
+  ],
+  "seconds": 85.42085647583008,
+  "input_sha256": "7b6a21f16ee76ebd18f077fb4e8d59278a8795fd178fb8b88ba355b9179fcc3c",
+  "output_sha256": "a0aac2390ed12e75e6cc401ddf34ac0a09d92ec3f6055e50115dd92f185d74de",
+  "geometry_positions_changed": false
+}

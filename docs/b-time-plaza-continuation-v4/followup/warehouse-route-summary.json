@@ -1,0 +1,13 @@
+{
+  "all_stores": 191,
+  "plan_routes_found": 188,
+  "no_plan_route_ids": [
+    "BB1-MARKET",
+    "BB1-PICKUP",
+    "BRF-CAFE"
+  ],
+  "previous_nearest_warehouse_selection_requires_replacement": true,
+  "excluded_management_cleaning_rooms": true,
+  "route_method": "0.75m raster / exact segment containment / radius .30 / no point projection / corrected explicit source entries",
+  "operational_delivery_and_inventory_not_verified": true
+}

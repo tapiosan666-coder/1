@@ -1,0 +1,21 @@
+{
+  "previous_failed": 56,
+  "remaining_geometric_screen_fail": 48,
+  "annex_candidates": 2,
+  "annex_rectangle_studies": 24,
+  "annex_rejected_boundary_complexity": 22,
+  "status_counts": {
+    "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED": 24,
+    "ANNEX_REJECTED_BOUNDARY_COMPLEXITY": 22,
+    "EXISTING_ROOM_LAYOUT_FITS": 8,
+    "ANNEX_CANDIDATE_NEEDS_APPROVAL": 2
+  },
+  "service_entries_corrected": 9,
+  "service_entry_boundaries_pass": true,
+  "no_original_modified": true,
+  "sales_loss_m2": 0,
+  "caution": "Multi-orientation sampled rectangle placement is a planar screen. 4 cases recovered by orientation and 4 by finer sampling. Not proof of impossibility, inventory operation or legal compliance.",
+  "layout_recovered": 8,
+  "rotation_recovered": 4,
+  "sampling_refinement_recovered": 4
+}

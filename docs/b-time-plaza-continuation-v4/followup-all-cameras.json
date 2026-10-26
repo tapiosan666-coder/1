@@ -1,0 +1,225 @@
+[
+  {
+    "id": "S-1-T-closed",
+    "p": [
+      -57.029177709620534,
+      1.65,
+      -42.457387807588894
+    ],
+    "look": [
+      -55.587,
+      1.25,
+      -39.566
+    ],
+    "fov_deg": 75,
+    "open_staff": false
+  },
+  {
+    "id": "S-1-T-open",
+    "p": [
+      -57.029177709620534,
+      1.65,
+      -42.457387807588894
+    ],
+    "look": [
+      -55.587,
+      1.25,
+      -39.566
+    ],
+    "fov_deg": 75,
+    "open_staff": true
+  },
+  {
+    "id": "S-2-L-closed",
+    "p": [
+      54.87412155502298,
+      7.175000000000001,
+      31.789805885340545
+    ],
+    "look": [
+      54.663,
+      6.775,
+      35.014
+    ],
+    "fov_deg": 75,
+    "open_staff": false
+  },
+  {
+    "id": "S-2-L-open",
+    "p": [
+      54.87412155502298,
+      7.175000000000001,
+      31.789805885340545
+    ],
+    "look": [
+      54.663,
+      6.775,
+      35.014
+    ],
+    "fov_deg": 75,
+    "open_staff": true
+  },
+  {
+    "id": "S-3-T-closed",
+    "p": [
+      -42.64515472666779,
+      12.525,
+      -43.64139927100181
+    ],
+    "look": [
+      -41.203,
+      12.125,
+      -40.75
+    ],
+    "fov_deg": 75,
+    "open_staff": false
+  },
+  {
+    "id": "S-3-T-open",
+    "p": [
+      -42.64515472666779,
+      12.525,
+      -43.64139927100181
+    ],
+    "look": [
+      -41.203,
+      12.125,
+      -40.75
+    ],
+    "fov_deg": 75,
+    "open_staff": true
+  },
+  {
+    "id": "S-1-T-interior",
+    "p": [
+      -59.37700000000001,
+      1.65,
+      -23.156999999999996
+    ],
+    "look": [
+      -55.587,
+      1.25,
+      -39.566
+    ],
+    "fov_deg": 75,
+    "open_staff": true
+  },
+  {
+    "id": "S-2-L-interior",
+    "p": [
+      54.827999999999975,
+      7.175000000000001,
+      47.501999999999995
+    ],
+    "look": [
+      54.663,
+      6.775,
+      35.014
+    ],
+    "fov_deg": 75,
+    "open_staff": true
+  },
+  {
+    "id": "S-3-T-interior",
+    "p": [
+      -37.641999999999996,
+      12.525,
+      -23.813000000000002
+    ],
+    "look": [
+      -41.203,
+      12.125,
+      -40.75
+    ],
+    "fov_deg": 75,
+    "open_staff": true
+  },
+  {
+    "id": "01-1F-time-plaza",
+    "p": [
+      4.0,
+      1.65,
+      12.0
+    ],
+    "look": [
+      -14.0,
+      7.5,
+      -12.0
+    ],
+    "fov_deg": 75,
+    "resolution": [
+      1280,
+      720
+    ],
+    "hud_visible": false
+  },
+  {
+    "id": "08-1F-bookshop-interior",
+    "p": [
+      -70.59,
+      1.65,
+      2.02
+    ],
+    "look": [
+      -72.0,
+      1.6,
+      -4.0
+    ],
+    "fov_deg": 75,
+    "resolution": [
+      1280,
+      720
+    ],
+    "hud_visible": false
+  },
+  {
+    "id": "16-bookshop-wall-collection",
+    "store": "B1-017",
+    "p": [
+      -70.76147057701928,
+      1.65,
+      1.1335992572539055
+    ],
+    "look": [
+      -77.5,
+      1.75,
+      -8.5
+    ],
+    "fov_deg": 65,
+    "hud_visible": false,
+    "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+  },
+  {
+    "id": "17-cafe-service-and-seating",
+    "store": "B1-040",
+    "p": [
+      -20.304832300134137,
+      1.65,
+      -34.05198733721037
+    ],
+    "look": [
+      -26.0,
+      1.6,
+      -34.5
+    ],
+    "fov_deg": 65,
+    "hud_visible": false,
+    "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+  },
+  {
+    "id": "27-3F-daylight-corridor",
+    "p": [
+      14,
+      12.525,
+      0
+    ],
+    "look": [
+      14,
+      12.2,
+      -25
+    ],
+    "fov_deg": 75,
+    "hud_visible": false,
+    "kind": "3F glare comparison; actual eye-height viewport; same quality and pose"
+  }
+]

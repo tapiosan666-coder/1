@@ -1,0 +1,3558 @@
+[
+  {
+    "id": "B1-001",
+    "floor": "1F",
+    "category": "衣料",
+    "stock_m2": 18.373763000000046,
+    "connected_stock_m2": 18.373763000000046,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": -7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-003",
+    "floor": "1F",
+    "category": "靴・鞄",
+    "stock_m2": 17.93890765351574,
+    "connected_stock_m2": 17.93890765351574,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 11.507606565477698,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -521.0148582466736,
+            32.82052508246195
+          ],
+          [
+            -517.5223452461505,
+            31.947396832331144
+          ],
+          [
+            -517.0130204335742,
+            33.98469608263634
+          ],
+          [
+            -520.5055334340973,
+            34.857824332767144
+          ],
+          [
+            -521.0148582466736,
+            32.82052508246195
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -520.0899680159314,
+            35.11470472046724
+          ],
+          [
+            -520.153,
+            34.782
+          ],
+          [
+            -519.7087080342342,
+            34.79616775575933
+          ],
+          [
+            -518.9915118630586,
+            34.81903798742613
+          ],
+          [
+            -518.9168273584019,
+            34.82141955608484
+          ],
+          [
+            -518.9005105698227,
+            34.82193987221292
+          ],
+          [
+            -518.4093684957218,
+            34.83760160252807
+          ],
+          [
+            -518.4047703074871,
+            34.69340529335614
+          ],
+          [
+            -516.5885830897605,
+            34.23935848892448
+          ],
+          [
+            -517.179599703608,
+            31.87529203353505
+          ],
+          [
+            -518.5076193791992,
+            31.83294362335177
+          ],
+          [
+            -521.124764704535,
+            32.48722995468573
+          ],
+          [
+            -521.2410060238806,
+            33.35902094260082
+          ],
+          [
+            -520.7601958403854,
+            35.28226167658075
+          ],
+          [
+            -520.0899680159314,
+            35.11470472046724
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 8,
+    "plot_perimeter_delta_m": 9.949214777162773,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-008",
+    "floor": "1F",
+    "category": "生活雑貨",
+    "stock_m2": 10.457165747459984,
+    "connected_stock_m2": 10.457165747459984,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": -1,
+    "plot_perimeter_delta_m": -7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-015",
+    "floor": "1F",
+    "category": "靴・鞄",
+    "stock_m2": 21.314303094748016,
+    "connected_stock_m2": 21.314303094748016,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-022",
+    "floor": "1F",
+    "category": "食品・カフェ",
+    "stock_m2": 10.468008898304232,
+    "connected_stock_m2": 10.468008898304232,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": false,
+    "annex_candidate_m2": 6.896193431854658,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -441.50514244585463,
+            86.913
+          ],
+          [
+            -445.10514244585465,
+            86.913
+          ],
+          [
+            -445.10514244585465,
+            84.813
+          ],
+          [
+            -441.50514244585463,
+            84.813
+          ],
+          [
+            -441.50514244585463,
+            86.913
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -444.328,
+            84.547
+          ],
+          [
+            -444.445,
+            84.529
+          ],
+          [
+            -444.562,
+            84.523
+          ],
+          [
+            -444.68,
+            84.528
+          ],
+          [
+            -444.796,
+            84.545
+          ],
+          [
+            -444.911,
+            84.573
+          ],
+          [
+            -445.022,
+            84.612
+          ],
+          [
+            -445.129,
+            84.662
+          ],
+          [
+            -445.23,
+            84.722
+          ],
+          [
+            -445.325,
+            84.792
+          ],
+          [
+            -445.4551424458547,
+            84.89795668158081
+          ],
+          [
+            -445.4551424458547,
+            87.26299999999999
+          ],
+          [
+            -441.76713131998645,
+            87.26299999999999
+          ],
+          [
+            -442.99206109128454,
+            85.75826134388683
+          ],
+          [
+            -443.1506314504134,
+            85.56346899359386
+          ],
+          [
+            -443.637,
+            84.966
+          ],
+          [
+            -443.715,
+            84.878
+          ],
+          [
+            -443.803,
+            84.798
+          ],
+          [
+            -443.896,
+            84.728
+          ],
+          [
+            -443.997,
+            84.667
+          ],
+          [
+            -444.103,
+            84.616
+          ],
+          [
+            -444.214,
+            84.576
+          ],
+          [
+            -444.328,
+            84.547
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": -12,
+    "plot_perimeter_delta_m": 7.298099690293952,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-024",
+    "floor": "1F",
+    "category": "美容・ケア",
+    "stock_m2": 9.271023301621462,
+    "connected_stock_m2": 9.271023301621462,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 2.384272682477368,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -229.2998495902408,
+            82.55432568013467
+          ],
+          [
+            -231.25648159368325,
+            85.0864376845896
+          ],
+          [
+            -232.91818009660682,
+            83.80239793233048
+          ],
+          [
+            -230.96154809316437,
+            81.27028592787555
+          ],
+          [
+            -229.2998495902408,
+            82.55432568013467
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -230.0708169220977,
+              84.12446029442715
+            ],
+            [
+              -228.808893214377,
+              82.49138255502392
+            ],
+            [
+              -230.20769283687613,
+              81.41049193763821
+            ],
+            [
+              -230.74260268402827,
+              81.23222072418986
+            ],
+            [
+              -231.24505604932526,
+              81.0647663921943
+            ],
+            [
+              -231.63648828821954,
+              81.57132576017514
+            ],
+            [
+              -231.5320014461306,
+              81.62700187206782
+            ],
+            [
+              -229.584,
+              82.665
+            ],
+            [
+              -230.0708169220977,
+              84.12446029442715
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -231.1935384685725,
+              85.57739406045339
+            ],
+            [
+              -231.08653423794559,
+              85.43891799728914
+            ],
+            [
+              -231.24739657910695,
+              85.38532696490778
+            ],
+            [
+              -231.5896547623849,
+              85.27130419705291
+            ],
+            [
+              -231.1935384685725,
+              85.57739406045339
+            ]
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 7,
+    "plot_perimeter_delta_m": 1.846311259566761,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-025",
+    "floor": "1F",
+    "category": "衣料",
+    "stock_m2": 20.35338067395334,
+    "connected_stock_m2": 20.35338067395334,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-027",
+    "floor": "1F",
+    "category": "靴・鞄",
+    "stock_m2": 16.939149191769275,
+    "connected_stock_m2": 16.939149191769275,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 1,
+    "plot_perimeter_delta_m": 1.4210854715202004e-14,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-032",
+    "floor": "1F",
+    "category": "生活雑貨",
+    "stock_m2": 17.733941104748375,
+    "connected_stock_m2": 17.733941104748375,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": 0,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -248.0078548827938,
+            6.759078798721049
+          ],
+          [
+            -246.17344881147596,
+            9.381092216976615
+          ],
+          [
+            -247.8941451172062,
+            10.584921201278949
+          ],
+          [
+            -249.72855118852402,
+            7.9629077830233825
+          ],
+          [
+            -248.0078548827938,
+            6.759078798721049
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B1-037",
+    "floor": "1F",
+    "category": "衣料",
+    "stock_m2": 25.205299000000124,
+    "connected_stock_m2": 25.205299000000124,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 10.968346528001241,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -238.6829817699666,
+            60.81612254808683
+          ],
+          [
+            -235.83431316188543,
+            63.01727841747292
+          ],
+          [
+            -237.11832075236066,
+            64.67900177218694
+          ],
+          [
+            -239.96698936044183,
+            62.47784590280085
+          ],
+          [
+            -238.6829817699666,
+            60.81612254808683
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -238.6498326435559,
+            63.83872245214804
+          ],
+          [
+            -238.01600000000002,
+            64.05
+          ],
+          [
+            -237.65117325308128,
+            64.17160891563958
+          ],
+          [
+            -236.56397337645075,
+            64.53400887451642
+          ],
+          [
+            -235.34335800435392,
+            62.954325790099794
+          ],
+          [
+            -238.0193291464978,
+            60.88661262433237
+          ],
+          [
+            -238.9420898160894,
+            60.5790257344685
+          ],
+          [
+            -240.45794451797337,
+            62.54079853017399
+          ],
+          [
+            -238.8756084568576,
+            63.763463847714135
+          ],
+          [
+            -238.6498326435559,
+            63.83872245214803
+          ],
+          [
+            -238.6498326435559,
+            63.83872245214804
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 6,
+    "plot_perimeter_delta_m": 8.392934859821068,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-043",
+    "floor": "1F",
+    "category": "衣料",
+    "stock_m2": 12.608456780590044,
+    "connected_stock_m2": 12.608456780590044,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-045",
+    "floor": "1F",
+    "category": "靴・鞄",
+    "stock_m2": 9.046356999999972,
+    "connected_stock_m2": 9.046356999999972,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": false,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": -7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-048",
+    "floor": "1F",
+    "category": "美容・ケア",
+    "stock_m2": 13.856610185458843,
+    "connected_stock_m2": 13.856610185458843,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 5.046462016368703,
+    "status": "ANNEX_CANDIDATE_NEEDS_APPROVAL",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -487.16685236329425,
+            -21.954303141790167
+          ],
+          [
+            -483.9776298580492,
+            -22.21671467362298
+          ],
+          [
+            -483.80542229028396,
+            -20.12378740455595
+          ],
+          [
+            -486.994644795529,
+            -19.861375872723137
+          ],
+          [
+            -487.16685236329425,
+            -21.954303141790167
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -487.5195125942652,
+            -21.97225946133402
+          ],
+          [
+            -487.41690715243453,
+            -20.725242678338724
+          ],
+          [
+            -484.106,
+            -20.997999999999998
+          ],
+          [
+            -483.98900000000003,
+            -21.012999999999998
+          ],
+          [
+            -483.874,
+            -21.04
+          ],
+          [
+            -483.76300000000003,
+            -21.078
+          ],
+          [
+            -483.696,
+            -21.108
+          ],
+          [
+            -483.656,
+            -21.127000000000002
+          ],
+          [
+            -483.554,
+            -21.185000000000002
+          ],
+          [
+            -483.5422516463498,
+            -21.193444129186044
+          ],
+          [
+            -483.65750990783226,
+            -22.594237146428366
+          ],
+          [
+            -484.2826150787529,
+            -22.542803041348485
+          ],
+          [
+            -484.25800000000004,
+            -22.244
+          ],
+          [
+            -487.5195125942652,
+            -21.97225946133402
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": -1,
+    "plot_perimeter_delta_m": 2.931573382319499,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-051",
+    "floor": "1F",
+    "category": "靴・鞄",
+    "stock_m2": 10.276536227942163,
+    "connected_stock_m2": 10.276536227942163,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 2.9789607574553836,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -381.96160980764205,
+            103.78053258333759
+          ],
+          [
+            -383.1638306726974,
+            100.38720604561306
+          ],
+          [
+            -381.184390192358,
+            99.68591054099744
+          ],
+          [
+            -379.9821693273027,
+            103.07923707872197
+          ],
+          [
+            -381.96160980764205,
+            103.78053258333759
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -383.18648785854026,
+              100.23755189933023
+            ],
+            [
+              -383.40590710425806,
+              100.75199394222582
+            ],
+            [
+              -382.78922556640583,
+              102.4926074089721
+            ],
+            [
+              -381.52581074075465,
+              99.53208632232608
+            ],
+            [
+              -381.4772777986446,
+              99.41836057240084
+            ],
+            [
+              -383.07914792653366,
+              99.9858867651935
+            ],
+            [
+              -383.18648785854026,
+              100.23755189933023
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -382.1746339702627,
+              104.22732191416341
+            ],
+            [
+              -381.33116408078297,
+              103.92848916438084
+            ],
+            [
+              -381.3918297332807,
+              103.90260379612535
+            ],
+            [
+              -382.4495800349046,
+              103.45127334878654
+            ],
+            [
+              -382.1746339702627,
+              104.22732191416341
+            ]
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 7,
+    "plot_perimeter_delta_m": 1.5386419288339965,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-063",
+    "floor": "1F",
+    "category": "靴・鞄",
+    "stock_m2": 28.93941941977771,
+    "connected_stock_m2": 28.93941941977771,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": 0,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -308.2617238329697,
+            95.82438030156618
+          ],
+          [
+            -309.80951373273535,
+            92.57409624841274
+          ],
+          [
+            -307.9135147017292,
+            91.67121880688279
+          ],
+          [
+            -306.36572480196355,
+            94.92150286003623
+          ],
+          [
+            -308.2617238329697,
+            95.82438030156618
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B1-065",
+    "floor": "1F",
+    "category": "書籍・文具",
+    "stock_m2": 27.939205002148608,
+    "connected_stock_m2": 27.939205002148608,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B1-SW32",
+    "floor": "1F",
+    "category": "旅行・雑貨",
+    "stock_m2": 10.539199999999946,
+    "connected_stock_m2": 10.539199999999946,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-001",
+    "floor": "2F",
+    "category": "衣料",
+    "stock_m2": 22.10176799999993,
+    "connected_stock_m2": 22.10176799999993,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-005",
+    "floor": "2F",
+    "category": "書籍・文具",
+    "stock_m2": 8.001227447509168,
+    "connected_stock_m2": 8.001227447509168,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": false,
+    "annex_candidate_m2": 8.892330719009024,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -343.00069232744374,
+            42.39155219532164
+          ],
+          [
+            -339.98431247898714,
+            41.32316433980061
+          ],
+          [
+            -339.34995718977154,
+            43.11413987482173
+          ],
+          [
+            -342.36633703822815,
+            44.182527730342755
+          ],
+          [
+            -343.00069232744374,
+            42.39155219532164
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -341.116,
+            44.036
+          ],
+          [
+            -341.0329096432275,
+            44.081539907077214
+          ],
+          [
+            -338.903185722149,
+            43.32720149904906
+          ],
+          [
+            -339.65033290060165,
+            41.2177805792306
+          ],
+          [
+            -339.82498215702657,
+            41.21665380983431
+          ],
+          [
+            -340.0938406352854,
+            40.990652687302166
+          ],
+          [
+            -343.06044117085264,
+            42.04140893937166
+          ],
+          [
+            -343.22140994272604,
+            42.4664432741207
+          ],
+          [
+            -343.28551673247415,
+            42.63571577596292
+          ],
+          [
+            -342.6394850451616,
+            44.45965729027718
+          ],
+          [
+            -342.154,
+            43.178
+          ],
+          [
+            -341.213,
+            43.968999999999994
+          ],
+          [
+            -341.116,
+            44.036
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 6,
+    "plot_perimeter_delta_m": 8.117786773286817,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-006",
+    "floor": "2F",
+    "category": "美容・ケア",
+    "stock_m2": 10.80556099999986,
+    "connected_stock_m2": 10.80556099999986,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-008",
+    "floor": "2F",
+    "category": "生活雑貨",
+    "stock_m2": 13.119527152295552,
+    "connected_stock_m2": 13.119527152295552,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-015",
+    "floor": "2F",
+    "category": "靴・鞄",
+    "stock_m2": 23.311276847797238,
+    "connected_stock_m2": 23.311276847797238,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": -7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-016",
+    "floor": "2F",
+    "category": "食品・カフェ",
+    "stock_m2": 10.962224760328766,
+    "connected_stock_m2": 10.962224760328766,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": false,
+    "annex_candidate_m2": 8.884669740943517,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -554.368683549277,
+            22.08728152187957
+          ],
+          [
+            -550.9696427419888,
+            23.273250151477036
+          ],
+          [
+            -551.6614577759206,
+            25.256023955728512
+          ],
+          [
+            -555.0604985832088,
+            24.070055326131047
+          ],
+          [
+            -554.368683549277,
+            22.08728152187957
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -552.7345784837572,
+            24.74247298030104
+          ],
+          [
+            -552.7012256718891,
+            24.701815151840414
+          ],
+          [
+            -552.21,
+            24.103
+          ],
+          [
+            -551.508,
+            24.348
+          ],
+          [
+            -551.1574848638887,
+            24.874037044390274
+          ],
+          [
+            -550.6199547224003,
+            23.333450859841058
+          ],
+          [
+            -553.0457012129274,
+            22.487807304803283
+          ],
+          [
+            -554.3828754818962,
+            22.021652738804043
+          ],
+          [
+            -554.9633888239489,
+            22.729311570497163
+          ],
+          [
+            -555.5062633895727,
+            24.28521512118431
+          ],
+          [
+            -553.059731137256,
+            25.138841384312627
+          ],
+          [
+            -552.7345784837572,
+            24.74247298030104
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 5,
+    "plot_perimeter_delta_m": 10.735195261771622,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-017",
+    "floor": "2F",
+    "category": "書籍・文具",
+    "stock_m2": 13.197349724992769,
+    "connected_stock_m2": 13.197349724992769,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": 15,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -493.3832769385756,
+            27.427123522351845
+          ],
+          [
+            -490.18373299677194,
+            27.481147262202217
+          ],
+          [
+            -490.2158095923081,
+            29.380876477648147
+          ],
+          [
+            -493.4153535341118,
+            29.326852737797775
+          ],
+          [
+            -493.3832769385756,
+            27.427123522351845
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B2-025",
+    "floor": "2F",
+    "category": "衣料",
+    "stock_m2": 16.440921741432945,
+    "connected_stock_m2": 16.440921741432945,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-027",
+    "floor": "2F",
+    "category": "靴・鞄",
+    "stock_m2": 11.696003711849858,
+    "connected_stock_m2": 11.696003711849858,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 6.922610213457053,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -507.5904575597602,
+            -25.285717198020635
+          ],
+          [
+            -504.0026042264954,
+            -25.581197246383827
+          ],
+          [
+            -503.8302408649502,
+            -23.488282801979366
+          ],
+          [
+            -507.418094198215,
+            -23.192802753616174
+          ],
+          [
+            -507.5904575597602,
+            -25.285717198020635
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -503.6578662344104,
+            -25.65947882960064
+          ],
+          [
+            -504.5526661852044,
+            -25.585760613864768
+          ],
+          [
+            -507.94334738465085,
+            -25.306418881748485
+          ],
+          [
+            -507.7381860453582,
+            -22.815256452624563
+          ],
+          [
+            -506.6897853785532,
+            -22.90159818707045
+          ],
+          [
+            -506.423,
+            -24.177
+          ],
+          [
+            -503.55522126009515,
+            -24.41311679845904
+          ],
+          [
+            -503.6578662344104,
+            -25.65947882960064
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 4,
+    "plot_perimeter_delta_m": 4.921639434876667,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-028",
+    "floor": "2F",
+    "category": "食品・カフェ",
+    "stock_m2": 14.507143016708243,
+    "connected_stock_m2": 14.507143016708243,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-030",
+    "floor": "2F",
+    "category": "美容・ケア",
+    "stock_m2": 11.05887374236761,
+    "connected_stock_m2": 11.05887374236761,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": 15,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -547.8048492989261,
+            29.867820477927776
+          ],
+          [
+            -545.1592021601219,
+            31.667973587232037
+          ],
+          [
+            -546.3405526381028,
+            33.40417952207221
+          ],
+          [
+            -548.986199776907,
+            31.604026412767954
+          ],
+          [
+            -547.8048492989261,
+            29.867820477927776
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B2-031",
+    "floor": "2F",
+    "category": "衣料",
+    "stock_m2": 17.45633275177411,
+    "connected_stock_m2": 17.45633275177411,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 11.503754439094566,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -488.60710716064006,
+            25.096635560329716
+          ],
+          [
+            -485.1145557267934,
+            24.223661057875248
+          ],
+          [
+            -484.6053206003616,
+            26.260982727619137
+          ],
+          [
+            -488.09787203420825,
+            27.133957230073605
+          ],
+          [
+            -488.60710716064006,
+            25.096635560329716
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -486.928609252088,
+            27.202463996279356
+          ],
+          [
+            -486.82942574991824,
+            27.64181967148045
+          ],
+          [
+            -486.0302644338677,
+            27.46141089881988
+          ],
+          [
+            -485.5613364230714,
+            27.35555151199168
+          ],
+          [
+            -485.6670791065364,
+            26.887140465043256
+          ],
+          [
+            -484.18089446766567,
+            26.515663818171166
+          ],
+          [
+            -484.7835773627141,
+            24.104481128026467
+          ],
+          [
+            -488.97912755753794,
+            25.05161663882004
+          ],
+          [
+            -488.3537191752805,
+            27.553718287896075
+          ],
+          [
+            -488.342,
+            27.555
+          ],
+          [
+            -488.34186518407824,
+            27.555711877502734
+          ],
+          [
+            -486.928609252088,
+            27.202463996279356
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 10,
+    "plot_perimeter_delta_m": 14.386259216228112,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-032",
+    "floor": "2F",
+    "category": "生活雑貨",
+    "stock_m2": 14.891573500000131,
+    "connected_stock_m2": 14.891573500000131,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 1.4210854715202004e-14,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-033",
+    "floor": "2F",
+    "category": "靴・鞄",
+    "stock_m2": 28.277459999999884,
+    "connected_stock_m2": 28.277459999999884,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": 15,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -240.93214673540908,
+            4.127579274974749
+          ],
+          [
+            -239.70221439550204,
+            7.510960193412817
+          ],
+          [
+            -241.67585326459093,
+            8.228420725025249
+          ],
+          [
+            -242.90578560449796,
+            4.845039806587181
+          ],
+          [
+            -240.93214673540908,
+            4.127579274974749
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B2-036",
+    "floor": "2F",
+    "category": "美容・ケア",
+    "stock_m2": 16.14767949999977,
+    "connected_stock_m2": 16.14767949999977,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 2.0488787901531667,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -224.34915771458492,
+            69.92339256464767
+          ],
+          [
+            -225.89505863256818,
+            72.72521167939767
+          ],
+          [
+            -227.73375242662286,
+            71.71071420197116
+          ],
+          [
+            -226.1878515086396,
+            68.90889508722115
+          ],
+          [
+            -224.34915771458492,
+            69.92339256464767
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -224.05522684589204,
+              69.83013791917122
+            ],
+            [
+              -224.14280545025085,
+              69.63750692666297
+            ],
+            [
+              -224.17166742204444,
+              69.62158236234843
+            ],
+            [
+              -224.16802915197852,
+              69.62958470141629
+            ],
+            [
+              -223.99603525392163,
+              70.00788358108127
+            ],
+            [
+              -223.98418250686308,
+              69.98640144539934
+            ],
+            [
+              -224.05522684589204,
+              69.83013791917122
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -224.99400000000003,
+              70.791
+            ],
+            [
+              -225.10399999999998,
+              70.819
+            ],
+            [
+              -225.212,
+              70.858
+            ],
+            [
+              -225.315,
+              70.907
+            ],
+            [
+              -225.414,
+              70.965
+            ],
+            [
+              -225.50599999999997,
+              71.032
+            ],
+            [
+              -225.591,
+              71.108
+            ],
+            [
+              -225.66899999999998,
+              71.191
+            ],
+            [
+              -225.73899999999998,
+              71.282
+            ],
+            [
+              -225.8,
+              71.379
+            ],
+            [
+              -225.851,
+              71.481
+            ],
+            [
+              -225.892,
+              71.588
+            ],
+            [
+              -226.32538455832184,
+              72.88752007181007
+            ],
+            [
+              -225.75769257979684,
+              73.20074355797787
+            ],
+            [
+              -224.40315282440733,
+              70.74575091634715
+            ],
+            [
+              -224.88099999999997,
+              70.774
+            ],
+            [
+              -224.99400000000003,
+              70.791
+            ]
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": -3,
+    "plot_perimeter_delta_m": 4.2872165437776175,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-037",
+    "floor": "2F",
+    "category": "衣料",
+    "stock_m2": 16.72870973243553,
+    "connected_stock_m2": 16.72870973243553,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 10.173116542434228,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -498.4779497760339,
+            12.37450914737927
+          ],
+          [
+            -498.95378204047614,
+            15.942923873292692
+          ],
+          [
+            -501.03535729725894,
+            15.665355052368055
+          ],
+          [
+            -500.5595250328167,
+            12.096940326454632
+          ],
+          [
+            -498.4779497760339,
+            12.37450914737927
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -500.17260264832134,
+            16.133497526428272
+          ],
+          [
+            -498.65311430116645,
+            16.3361145529106
+          ],
+          [
+            -498.12172955234774,
+            12.351094400834238
+          ],
+          [
+            -500.89716625240237,
+            11.98102532010307
+          ],
+          [
+            -501.2936931394508,
+            14.954704258463552
+          ],
+          [
+            -501.0280171646734,
+            14.990128760761264
+          ],
+          [
+            -500.44399999999996,
+            15.067999999999998
+          ],
+          [
+            -500.17260264832134,
+            16.133497526428272
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 7,
+    "plot_perimeter_delta_m": 13.309962702243055,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-042",
+    "floor": "2F",
+    "category": "美容・ケア",
+    "stock_m2": 19.69361200000015,
+    "connected_stock_m2": 19.69361200000015,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": 0,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -333.3272699500339,
+            78.3310911802119
+          ],
+          [
+            -331.4922949934028,
+            80.95270650449895
+          ],
+          [
+            -333.2127300499662,
+            82.1569088197881
+          ],
+          [
+            -335.04770500659725,
+            79.53529349550105
+          ],
+          [
+            -333.3272699500339,
+            78.3310911802119
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B2-050",
+    "floor": "2F",
+    "category": "生活雑貨",
+    "stock_m2": 11.055153884873079,
+    "connected_stock_m2": 11.055153884873079,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": 0,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -530.0914736165181,
+            116.49742692289884
+          ],
+          [
+            -533.2538029488177,
+            116.00786263286359
+          ],
+          [
+            -532.932526383482,
+            113.93258400854201
+          ],
+          [
+            -529.7701970511824,
+            114.42214829857726
+          ],
+          [
+            -530.0914736165181,
+            116.49742692289884
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 1.4210854715202004e-14,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B2-068",
+    "floor": "2F",
+    "category": "生活雑貨",
+    "stock_m2": 17.843968542674283,
+    "connected_stock_m2": 17.843968542674283,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 8.782134968868764,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -480.90612900711216,
+            24.569790921362706
+          ],
+          [
+            -484.09535319997394,
+            24.832181941912534
+          ],
+          [
+            -484.2675473072098,
+            22.739253565346996
+          ],
+          [
+            -481.078323114348,
+            22.476862544797168
+          ],
+          [
+            -480.90612900711216,
+            24.569790921362706
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -480.952,
+            23.393
+          ],
+          [
+            -480.99392722287996,
+            22.88399401231721
+          ],
+          [
+            -481.0565377859648,
+            22.12388758710461
+          ],
+          [
+            -484.34546362185836,
+            22.39448148530856
+          ],
+          [
+            -484.1156139735253,
+            25.18503146800354
+          ],
+          [
+            -481.1257162799879,
+            24.93903988519077
+          ],
+          [
+            -481.16318724896945,
+            24.48411375151415
+          ],
+          [
+            -481.251,
+            23.418
+          ],
+          [
+            -481.251,
+            23.417999999999996
+          ],
+          [
+            -480.952,
+            23.393
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 2,
+    "plot_perimeter_delta_m": 6.000393851869106,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-069",
+    "floor": "2F",
+    "category": "靴・鞄",
+    "stock_m2": 15.130425139376017,
+    "connected_stock_m2": 15.130425139376017,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 5.3357101953226165,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -460.46997024419977,
+            32.096100422361864
+          ],
+          [
+            -464.05781640736,
+            32.39166752049096
+          ],
+          [
+            -464.2302305479353,
+            30.298757258647495
+          ],
+          [
+            -460.6423843847751,
+            30.003190160518404
+          ],
+          [
+            -460.46997024419977,
+            32.096100422361864
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -461.55205664917537,
+            29.90011090426094
+          ],
+          [
+            -461.5424140415211,
+            30.017034108549783
+          ],
+          [
+            -461.43899999999996,
+            31.271
+          ],
+          [
+            -464.26773291422944,
+            32.76014608748177
+          ],
+          [
+            -460.09241617713,
+            32.41618310923989
+          ],
+          [
+            -460.32230169789705,
+            29.625636093448616
+          ],
+          [
+            -461.56624133041765,
+            29.72811195520854
+          ],
+          [
+            -461.55205664917537,
+            29.90011090426094
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 4,
+    "plot_perimeter_delta_m": 6.588978241706343,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B2-SW32",
+    "floor": "2F",
+    "category": "旅行・雑貨",
+    "stock_m2": 10.538818050034987,
+    "connected_stock_m2": 10.538818050034987,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-001",
+    "floor": "3F",
+    "category": "キッズ",
+    "stock_m2": 23.58714449999995,
+    "connected_stock_m2": 23.58714449999995,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": -7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-008",
+    "floor": "3F",
+    "category": "ホビー",
+    "stock_m2": 11.45260361926615,
+    "connected_stock_m2": 11.45260361926615,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 1.4752833197793795,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -445.61,
+            82.30000000000001
+          ],
+          [
+            -445.61,
+            85.5
+          ],
+          [
+            -447.71000000000004,
+            85.5
+          ],
+          [
+            -447.71000000000004,
+            82.30000000000001
+          ],
+          [
+            -445.61,
+            82.30000000000001
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -445.70297644564835,
+              81.95000000000002
+            ],
+            [
+              -446.0898363374189,
+              81.95000000000002
+            ],
+            [
+              -445.26,
+              82.9699229065131
+            ],
+            [
+              -445.26,
+              82.49448653734801
+            ],
+            [
+              -445.70297644564835,
+              81.95000000000002
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -446.313,
+              85.597
+            ],
+            [
+              -446.6241192910702,
+              85.85
+            ],
+            [
+              -445.26,
+              85.85
+            ],
+            [
+              -445.26,
+              84.35285093167701
+            ],
+            [
+              -446.354,
+              85.243
+            ],
+            [
+              -446.313,
+              85.597
+            ]
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 7,
+    "plot_perimeter_delta_m": 4.565648768417681,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-009",
+    "floor": "3F",
+    "category": "飲食",
+    "stock_m2": 22.002844809434876,
+    "connected_stock_m2": 22.002844809434876,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 1.4921048016501337,
+    "status": "ANNEX_CANDIDATE_NEEDS_APPROVAL",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -368.32934574854227,
+            103.84876841312894
+          ],
+          [
+            -370.39354441337787,
+            100.89934747469187
+          ],
+          [
+            -368.6730488659562,
+            99.6952315868711
+          ],
+          [
+            -366.6088502011206,
+            102.64465252530817
+          ],
+          [
+            -368.32934574854227,
+            103.84876841312894
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -368.92,
+            102.53800000000001
+          ],
+          [
+            -368.999,
+            102.45400000000001
+          ],
+          [
+            -369.087,
+            102.37700000000001
+          ],
+          [
+            -369.181,
+            102.31
+          ],
+          [
+            -369.281,
+            102.25200000000001
+          ],
+          [
+            -369.387,
+            102.203
+          ],
+          [
+            -369.497,
+            102.166
+          ],
+          [
+            -369.61,
+            102.13900000000001
+          ],
+          [
+            -369.724,
+            102.12299999999999
+          ],
+          [
+            -369.971631796173,
+            102.11260177527733
+          ],
+          [
+            -368.41540902514237,
+            104.336203652336
+          ],
+          [
+            -367.9048052871026,
+            103.9788495898534
+          ],
+          [
+            -368.849,
+            102.63
+          ],
+          [
+            -368.92,
+            102.53800000000001
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": -7,
+    "plot_perimeter_delta_m": 0.39935823836532336,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-011",
+    "floor": "3F",
+    "category": "楽器",
+    "stock_m2": 16.436075936879767,
+    "connected_stock_m2": 16.436075936879767,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 3.9026850823473738,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -236.34730349269026,
+            90.94907224603826
+          ],
+          [
+            -238.30402599417468,
+            93.48111431760509
+          ],
+          [
+            -239.96567860364044,
+            92.19701517600593
+          ],
+          [
+            -238.00895610215602,
+            89.6649731044391
+          ],
+          [
+            -236.34730349269026,
+            90.94907224603826
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -236.19071582707073,
+            90.627750021434
+          ],
+          [
+            -237.239271290976,
+            89.8174427625944
+          ],
+          [
+            -238.01388864749822,
+            92.14176132861174
+          ],
+          [
+            -238.54547937369483,
+            93.7368536461514
+          ],
+          [
+            -238.24110041619693,
+            93.97207294278257
+          ],
+          [
+            -236.5958654781179,
+            91.84310264798222
+          ],
+          [
+            -236.42752911006014,
+            91.33813356672101
+          ],
+          [
+            -236.19071582707073,
+            90.627750021434
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 6,
+    "plot_perimeter_delta_m": 3.950648635005379,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-012",
+    "floor": "3F",
+    "category": "生活雑貨",
+    "stock_m2": 30.66425004486804,
+    "connected_stock_m2": 30.66425004486804,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 10.405257337012362,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -548.3102351245913,
+            11.05399044180421
+          ],
+          [
+            -547.8872457198474,
+            7.88206989370177
+          ],
+          [
+            -545.8056728601551,
+            8.15965669056489
+          ],
+          [
+            -546.228662264899,
+            11.33157723866733
+          ],
+          [
+            -548.3102351245913,
+            11.05399044180421
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -545.509,
+            11.077
+          ],
+          [
+            -545.509,
+            11.076999999999998
+          ],
+          [
+            -545.0615256502945,
+            10.60554829902139
+          ],
+          [
+            -545.6981640800957,
+            10.001288378479119
+          ],
+          [
+            -545.4392514106439,
+            8.059749400935198
+          ],
+          [
+            -548.0861209960248,
+            7.706823566184556
+          ],
+          [
+            -548.5748722161894,
+            11.371798312103731
+          ],
+          [
+            -545.9279979210941,
+            11.724770514759888
+          ],
+          [
+            -545.8959864985522,
+            11.484722684257239
+          ],
+          [
+            -545.509,
+            11.077
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 8,
+    "plot_perimeter_delta_m": 13.328802271853974,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-015",
+    "floor": "3F",
+    "category": "飲食",
+    "stock_m2": 20.16225027201731,
+    "connected_stock_m2": 20.16225027201731,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-017",
+    "floor": "3F",
+    "category": "楽器",
+    "stock_m2": 12.805714257546642,
+    "connected_stock_m2": 12.805714257546642,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 10.684820116169236,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -499.68421134990865,
+            26.90194151604475
+          ],
+          [
+            -496.5797797808975,
+            26.12572979664919
+          ],
+          [
+            -496.0703908400442,
+            28.16301301381275
+          ],
+          [
+            -499.1748224090553,
+            28.939224733208313
+          ],
+          [
+            -499.68421134990865,
+            26.90194151604475
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -500.0245607805305,
+            26.98363119103689
+          ],
+          [
+            -499.42947145510703,
+            29.3636700928778
+          ],
+          [
+            -497.7233555427517,
+            28.9370840540561
+          ],
+          [
+            -497.6685955619532,
+            29.01937250676351
+          ],
+          [
+            -497.43755732901764,
+            28.865624942153907
+          ],
+          [
+            -497.4375573290176,
+            28.865624942153893
+          ],
+          [
+            -497.094,
+            28.637
+          ],
+          [
+            -497.06818383463315,
+            28.773269214929215
+          ],
+          [
+            -495.77930827558305,
+            28.451007218960694
+          ],
+          [
+            -495.83000000000004,
+            27.796
+          ],
+          [
+            -495.80809191083966,
+            27.769163093719058
+          ],
+          [
+            -496.3251307348458,
+            25.7012844369797
+          ],
+          [
+            -499.16433097223467,
+            26.4111794528566
+          ],
+          [
+            -500.0245607805305,
+            26.98363119103689
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 11,
+    "plot_perimeter_delta_m": 12.425923008802606,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-019",
+    "floor": "3F",
+    "category": "キッズ",
+    "stock_m2": 18.61373500000002,
+    "connected_stock_m2": 18.61373500000002,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": -1.4210854715202004e-14,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-022",
+    "floor": "3F",
+    "category": "体験・ゲーム",
+    "stock_m2": 11.150707000000004,
+    "connected_stock_m2": 11.150707000000004,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-025",
+    "floor": "3F",
+    "category": "キッズ",
+    "stock_m2": 15.378936199748471,
+    "connected_stock_m2": 15.378936199748471,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 3.8484732512724538,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -227.56522048215302,
+            79.97904287572538
+          ],
+          [
+            -229.76626079323725,
+            82.82780077154283
+          ],
+          [
+            -231.4280362324641,
+            81.54386059007703
+          ],
+          [
+            -229.22699592137988,
+            78.69510269425959
+          ],
+          [
+            -227.56522048215302,
+            79.97904287572538
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -228.59359941106575,
+            78.74218681197222
+          ],
+          [
+            -228.92700000000002,
+            79.742
+          ],
+          [
+            -228.642,
+            79.837
+          ],
+          [
+            -229.78208354779431,
+            83.25787363985722
+          ],
+          [
+            -229.70328825027707,
+            83.3187533749916
+          ],
+          [
+            -227.56083763152657,
+            80.54582682483772
+          ],
+          [
+            -227.37271433082,
+            79.98156845827187
+          ],
+          [
+            -227.29421903872753,
+            79.74612912070512
+          ],
+          [
+            -228.59359941106575,
+            78.74218681197222
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 5,
+    "plot_perimeter_delta_m": 10.448127840218483,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-028",
+    "floor": "3F",
+    "category": "体験・ゲーム",
+    "stock_m2": 40.611854419108866,
+    "connected_stock_m2": 40.611854419108866,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": -15,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "EXISTING_ROOM_LAYOUT_FITS",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -410.24399951773705,
+            -0.5881116454394903
+          ],
+          [
+            -407.15303687361205,
+            -1.4163325897675567
+          ],
+          [
+            -406.6095168788968,
+            0.6121116454394868
+          ],
+          [
+            -409.7004795230218,
+            1.4403325897675532
+          ],
+          [
+            -410.24399951773705,
+            -0.5881116454394903
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": true
+  },
+  {
+    "id": "B3-032",
+    "floor": "3F",
+    "category": "ホビー",
+    "stock_m2": 14.183818799546856,
+    "connected_stock_m2": 14.183818799546856,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 0.0,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-046",
+    "floor": "3F",
+    "category": "体験・ゲーム",
+    "stock_m2": 9.56104099129139,
+    "connected_stock_m2": 9.56104099129139,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 1.4210854715202004e-14,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-055",
+    "floor": "3F",
+    "category": "キッズ",
+    "stock_m2": 11.120828971547592,
+    "connected_stock_m2": 11.120828971547592,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 8.112811088598978,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -468.55393248385104,
+            -28.499181707127487
+          ],
+          [
+            -464.96605526688154,
+            -28.794371605246045
+          ],
+          [
+            -464.7938611596457,
+            -26.701443228680507
+          ],
+          [
+            -468.3817383766152,
+            -26.40625333056195
+          ],
+          [
+            -468.55393248385104,
+            -28.499181707127487
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -464.41634074567884,
+            -26.38132085045889
+          ],
+          [
+            -464.62131804950474,
+            -28.872711657124007
+          ],
+          [
+            -467.2497895287728,
+            -28.656143299654868
+          ],
+          [
+            -468.9067963757016,
+            -28.519617088895135
+          ],
+          [
+            -468.70186075483684,
+            -26.028732916595057
+          ],
+          [
+            -468.18605956812036,
+            -26.071170071087447
+          ],
+          [
+            -467.832,
+            -27.355
+          ],
+          [
+            -465.96000000000004,
+            -27.509
+          ],
+          [
+            -465.8573886012103,
+            -26.262759722545603
+          ],
+          [
+            -464.41634074567884,
+            -26.38132085045889
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 5,
+    "plot_perimeter_delta_m": 9.302946568886561,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-057",
+    "floor": "3F",
+    "category": "飲食",
+    "stock_m2": 11.701431784472737,
+    "connected_stock_m2": 11.701431784472737,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": false,
+    "annex_candidate_m2": 9.475353024109127,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -380.0326659619919,
+            101.78871156699714
+          ],
+          [
+            -381.2348868270472,
+            98.3953850292726
+          ],
+          [
+            -379.25544634670786,
+            97.69408952465699
+          ],
+          [
+            -378.05322548165253,
+            101.08741606238152
+          ],
+          [
+            -380.0326659619919,
+            101.78871156699714
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -381.53629404771675,
+            98.59270890405773
+          ],
+          [
+            -380.2456901246125,
+            102.23550089782296
+          ],
+          [
+            -379.4083457772691,
+            101.93883836493059
+          ],
+          [
+            -379.4083457772691,
+            101.93883836493058
+          ],
+          [
+            -379.00966299756493,
+            100.61043919969313
+          ],
+          [
+            -378.99150175753385,
+            100.54992648802079
+          ],
+          [
+            -378.6078065110038,
+            99.2714653375937
+          ],
+          [
+            -378.59723045086497,
+            99.23622621974069
+          ],
+          [
+            -378.4782364447595,
+            98.83974173025251
+          ],
+          [
+            -379.04242218408723,
+            97.24730019383117
+          ],
+          [
+            -381.3811882759278,
+            98.07590108526792
+          ],
+          [
+            -381.53629404771675,
+            98.59270890405773
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 6,
+    "plot_perimeter_delta_m": 12.620071129943888,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-058",
+    "floor": "3F",
+    "category": "体験・ゲーム",
+    "stock_m2": 11.648572393502404,
+    "connected_stock_m2": 11.648572393502404,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 5.795199100549005,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -296.87270982159066,
+            88.74803929609332
+          ],
+          [
+            -300.02403316502006,
+            88.19201664803225
+          ],
+          [
+            -299.65914330222995,
+            86.12396070390669
+          ],
+          [
+            -296.50781995880055,
+            86.67998335196776
+          ],
+          [
+            -296.87270982159066,
+            88.74803929609332
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -300.31480780074315,
+            87.82570944187995
+          ],
+          [
+            -300.06417826852925,
+            88.54033965193118
+          ],
+          [
+            -296.736356403185,
+            89.12750387603475
+          ],
+          [
+            -297.7708607789441,
+            87.87039350955833
+          ],
+          [
+            -298.0653820050643,
+            87.51249682475078
+          ],
+          [
+            -298.07213196456235,
+            87.50429440023025
+          ],
+          [
+            -298.150134707622,
+            87.40950692594635
+          ],
+          [
+            -299.3354855420637,
+            85.96909076454074
+          ],
+          [
+            -299.33556023424427,
+            85.969
+          ],
+          [
+            -299.47356606937586,
+            85.80129789061948
+          ],
+          [
+            -299.9430043157859,
+            85.71846973608741
+          ],
+          [
+            -300.31480780074315,
+            87.82570944187995
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 6,
+    "plot_perimeter_delta_m": 10.626130277738092,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-SW12",
+    "floor": "3F",
+    "category": "旅行・雑貨",
+    "stock_m2": 17.37301203051756,
+    "connected_stock_m2": 17.37301203051756,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 2.6971453749638474,
+    "status": "ANNEX_REJECTED_BOUNDARY_COMPLEXITY",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -490.9674312942047,
+            64.88086609137196
+          ],
+          [
+            -488.451237258534,
+            62.90380575469649
+          ],
+          [
+            -487.1537914125907,
+            64.55505809060537
+          ],
+          [
+            -489.6699854482614,
+            66.53211842728084
+          ],
+          [
+            -490.9674312942047,
+            64.88086609137196
+          ]
+        ]
+      ]
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -489.72895319658903,
+            67.02356812425619
+          ],
+          [
+            -487.1940543275951,
+            65.03181075565743
+          ],
+          [
+            -488.49778379773215,
+            65.2787844835884
+          ],
+          [
+            -490.76275624586737,
+            65.70785255483334
+          ],
+          [
+            -489.72895319658903,
+            67.02356812425619
+          ]
+        ]
+      ]
+    },
+    "plot_vertices_delta": 4,
+    "plot_perimeter_delta_m": 2.219844284818052,
+    "local_boundary_guard_pass": false,
+    "boundary_assessment": "境界の再設計が必要。面積・矩形だけで施工可能と判定しない。",
+    "layout_geometry_pass": false
+  },
+  {
+    "id": "B3-SW32",
+    "floor": "3F",
+    "category": "旅行・雑貨",
+    "stock_m2": 10.538562727959341,
+    "connected_stock_m2": 10.538562727959341,
+    "old_fixed_orientation_pass": false,
+    "rotation_deg": null,
+    "minimum_area_pass": true,
+    "annex_candidate_m2": 0.0,
+    "status": "SHARED_WAREHOUSE_OR_BLOCK_REDESIGN_REQUIRED",
+    "sales_loss_m2": 0,
+    "plan_only": true,
+    "operational_capacity_verified": false,
+    "rectangle": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "annex": {
+      "type": "Polygon",
+      "coordinates": []
+    },
+    "plot_vertices_delta": 0,
+    "plot_perimeter_delta_m": 7.105427357601002e-15,
+    "local_boundary_guard_pass": true,
+    "boundary_assessment": "局所の角数・壁長の暫定条件内。建築的自然さと実歩行は未検証。",
+    "layout_geometry_pass": false
+  }
+]

@@ -1,0 +1,3503 @@
+{
+  "passed": 859,
+  "failed": 0,
+  "checks": [
+    {
+      "id": "protected-originals.json-unchanged",
+      "pass": true,
+      "files": 1605,
+      "changed": []
+    },
+    {
+      "id": "protected-v1-project.json-unchanged",
+      "pass": true,
+      "files": 142,
+      "changed": []
+    },
+    {
+      "id": "protected-v2-project.json-unchanged",
+      "pass": true,
+      "files": 289,
+      "changed": []
+    },
+    {
+      "id": "protected-v3-project.json-unchanged",
+      "pass": true,
+      "files": 490,
+      "changed": []
+    },
+    {
+      "id": "1F-shell-unchanged",
+      "pass": true
+    },
+    {
+      "id": "1F-floor_plate-unchanged",
+      "pass": true
+    },
+    {
+      "id": "1F-public-unchanged",
+      "pass": true
+    },
+    {
+      "id": "1F-void-unchanged",
+      "pass": true
+    },
+    {
+      "id": "1F-shafts-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-001-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-001-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-001-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-001-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-003-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-003-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-003-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-003-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-004-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-004-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-004-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-004-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-005-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-005-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-005-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-005-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-007-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-007-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-007-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-007-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-008-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-008-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-008-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-008-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-009-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-009-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-009-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-009-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-010-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-010-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-010-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-010-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-011-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-011-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-011-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-011-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-012-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-012-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-012-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-012-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-013-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-013-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-013-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-013-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-014-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-014-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-014-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-014-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-015-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-015-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-015-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-015-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-016-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-016-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-016-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-016-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-017-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-017-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-017-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-017-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-018-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-018-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-018-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-018-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-019-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-019-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-019-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-019-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-020-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-020-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-020-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-020-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-021-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-021-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-021-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-021-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-022-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-022-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-022-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-022-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-024-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-024-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-024-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-024-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-025-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-025-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-025-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-025-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-026-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-026-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-026-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-026-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-027-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-027-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-027-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-027-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-028-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-028-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-028-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-028-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-029-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-029-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-029-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-029-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-030-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-030-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-030-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-030-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-032-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-032-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-032-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-032-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-033-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-033-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-033-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-033-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-034-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-034-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-034-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-034-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-036-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-036-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-036-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-036-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-037-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-037-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-037-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-037-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-038-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-038-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-038-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-038-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-039-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-039-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-039-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-039-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-040-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-040-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-040-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-040-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-042-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-042-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-042-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-042-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-043-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-043-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-043-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-043-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-045-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-045-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-045-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-045-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-046-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-046-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-046-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-046-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-047-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-047-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-047-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-047-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-048-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-048-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-048-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-048-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-050-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-050-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-050-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-050-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-051-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-051-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-051-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-051-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-052-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-052-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-052-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-052-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-053-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-053-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-053-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-053-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-054-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-054-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-054-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-054-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-055-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-055-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-055-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-055-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-057-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-057-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-057-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-057-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-059-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-059-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-059-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-059-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-060-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-060-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-060-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-060-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-061-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-061-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-061-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-061-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-063-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-063-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-063-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-063-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-065-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-065-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-065-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-065-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-066-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-066-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-066-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-066-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-067-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-067-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-067-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-067-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W2-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W2-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W2-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W2-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W3-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W3-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W3-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W3-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W4-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W4-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W4-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B1-W4-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "S-1-W-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-1-W-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-1-W-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-1-W-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-1-W-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "S-1-L-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-1-L-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-1-L-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-1-L-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-1-L-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "2F-shell-unchanged",
+      "pass": true
+    },
+    {
+      "id": "2F-floor_plate-unchanged",
+      "pass": true
+    },
+    {
+      "id": "2F-public-unchanged",
+      "pass": true
+    },
+    {
+      "id": "2F-void-unchanged",
+      "pass": true
+    },
+    {
+      "id": "2F-shafts-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-001-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-001-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-001-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-001-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-003-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-003-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-003-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-003-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-004-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-004-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-004-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-004-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-005-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-005-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-005-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-005-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-006-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-006-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-006-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-006-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-007-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-007-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-007-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-007-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-008-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-008-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-008-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-008-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-009-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-009-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-009-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-009-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-010-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-010-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-010-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-010-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-011-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-011-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-011-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-011-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-012-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-012-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-012-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-012-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-013-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-013-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-013-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-013-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-014-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-014-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-014-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-014-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-015-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-015-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-015-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-015-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-016-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-016-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-016-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-016-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-017-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-017-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-017-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-017-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-018-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-018-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-018-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-018-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-019-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-019-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-019-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-019-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-020-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-020-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-020-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-020-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-021-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-021-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-021-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-021-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-022-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-022-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-022-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-022-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-023-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-023-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-023-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-023-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-024-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-024-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-024-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-024-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-025-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-025-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-025-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-025-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-026-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-026-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-026-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-026-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-027-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-027-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-027-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-027-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-028-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-028-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-028-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-028-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-030-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-030-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-030-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-030-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-031-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-031-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-031-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-031-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-032-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-032-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-032-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-032-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-033-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-033-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-033-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-033-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-034-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-034-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-034-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-034-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-036-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-036-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-036-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-036-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-037-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-037-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-037-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-037-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-038-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-038-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-038-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-038-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-040-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-040-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-040-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-040-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-042-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-042-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-042-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-042-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-043-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-043-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-043-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-043-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-044-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-044-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-044-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-044-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-045-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-045-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-045-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-045-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-047-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-047-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-047-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-047-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-050-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-050-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-050-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-050-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-051-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-051-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-051-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-051-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-052-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-052-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-052-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-052-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-054-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-054-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-054-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-054-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-055-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-055-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-055-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-055-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-056-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-056-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-056-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-056-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-057-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-057-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-057-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-057-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-061-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-061-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-061-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-061-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-062-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-062-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-062-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-062-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-064-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-064-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-064-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-064-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-065-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-065-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-065-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-065-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-067-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-067-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-067-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-067-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-068-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-068-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-068-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-068-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-069-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-069-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-069-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-069-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-070-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-070-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-070-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-070-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W2-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W2-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W2-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W2-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W3-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W3-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W3-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W3-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W4-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W4-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W4-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B2-W4-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "S-2-W-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-2-W-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-2-W-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-2-W-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-2-W-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "S-2-T-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-2-T-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-2-T-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-2-T-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-2-T-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "3F-shell-unchanged",
+      "pass": true
+    },
+    {
+      "id": "3F-floor_plate-unchanged",
+      "pass": true
+    },
+    {
+      "id": "3F-public-unchanged",
+      "pass": true
+    },
+    {
+      "id": "3F-void-unchanged",
+      "pass": true
+    },
+    {
+      "id": "3F-shafts-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-001-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-001-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-001-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-001-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-003-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-003-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-003-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-003-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-004-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-004-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-004-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-004-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-005-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-005-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-005-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-005-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-007-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-007-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-007-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-007-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-008-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-008-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-008-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-008-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-009-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-009-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-009-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-009-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-010-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-010-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-010-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-010-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-011-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-011-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-011-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-011-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-012-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-012-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-012-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-012-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-013-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-013-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-013-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-013-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-014-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-014-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-014-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-014-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-015-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-015-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-015-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-015-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-016-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-016-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-016-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-016-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-017-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-017-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-017-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-017-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-018-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-018-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-018-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-018-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-019-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-019-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-019-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-019-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-021-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-021-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-021-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-021-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-022-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-022-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-022-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-022-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-023-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-023-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-023-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-023-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-025-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-025-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-025-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-025-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-027-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-027-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-027-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-027-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-028-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-028-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-028-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-028-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-029-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-029-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-029-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-029-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-030-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-030-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-030-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-030-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-031-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-031-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-031-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-031-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-032-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-032-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-032-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-032-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-034-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-034-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-034-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-034-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-035-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-035-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-035-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-035-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-036-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-036-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-036-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-036-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-037-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-037-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-037-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-037-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-038-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-038-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-038-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-038-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-040-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-040-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-040-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-040-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-041-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-041-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-041-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-041-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-043-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-043-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-043-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-043-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-044-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-044-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-044-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-044-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-045-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-045-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-045-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-045-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-046-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-046-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-046-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-046-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-047-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-047-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-047-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-047-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-049-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-049-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-049-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-049-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-052-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-052-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-052-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-052-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-053-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-053-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-053-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-053-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-054-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-054-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-054-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-054-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-055-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-055-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-055-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-055-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-057-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-057-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-057-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-057-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-058-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-058-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-058-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-058-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-059-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-059-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-059-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-059-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-060-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-060-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-060-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-060-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W1-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W1-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W1-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W1-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W2-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W2-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W2-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W2-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W3-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W3-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W3-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W3-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W4-polygon-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W4-sales-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W4-backroom-unchanged",
+      "pass": true
+    },
+    {
+      "id": "B3-W4-customer-entry-unchanged",
+      "pass": true
+    },
+    {
+      "id": "S-3-W-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-3-W-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-3-W-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-3-W-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-3-W-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "S-3-L-same-outline",
+      "pass": true
+    },
+    {
+      "id": "S-3-L-entry-on-boundary",
+      "pass": true
+    },
+    {
+      "id": "S-3-L-idempotent-transform",
+      "pass": true
+    },
+    {
+      "id": "S-3-L-direction-not-translated",
+      "pass": true
+    },
+    {
+      "id": "S-3-L-reject-unmarked-already-world",
+      "pass": true
+    },
+    {
+      "id": "actual-static-collider-matches-stone",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-plaster",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-metal",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-wall_sand",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-dark_stone",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-glass",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-bronze",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-wood",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-walnut",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-oak",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-wall_sage",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-black",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-fabric_sage",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-wall_chalk",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-wall_taupe",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-fabric_cream",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-quartz",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-leather_0",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-leather_1",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-soil",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-scope_wall",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": null
+    },
+    {
+      "id": "actual-static-collider-matches-step",
+      "pass": true,
+      "unmatched": 0,
+      "documented_proxy": "step uses continuous ramp support"
+    },
+    {
+      "id": "walk-results.json-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "walk-results.json-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "walk-results.json-staff_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "walk-results.json-no-physical-failures",
+      "pass": true,
+      "passed": 1279,
+      "total": 1279
+    },
+    {
+      "id": "service-room-walk.json-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "service-room-walk.json-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "service-room-walk.json-staff_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "service-room-walk.json-no-physical-failures",
+      "pass": true,
+      "passed": 34,
+      "total": 34
+    },
+    {
+      "id": "profile-results.json-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "profile-results.json-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "profile-results.json-staff_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "unresolved-production-output-blocked",
+      "pass": true
+    },
+    {
+      "id": "source-room-restoration-three-only",
+      "pass": true
+    },
+    {
+      "id": "lighting-settings-identical-to-v3",
+      "pass": true
+    },
+    {
+      "id": "escalator-equipment-definitions-unchanged",
+      "pass": true
+    },
+    {
+      "id": "existing-tenant-staff-doors-unchanged",
+      "pass": true
+    },
+    {
+      "id": "render-physics-configuration-unchanged",
+      "pass": true
+    },
+    {
+      "id": "annex-proposals-not-implemented",
+      "pass": true
+    },
+    {
+      "id": "B1-048-boundary-guard",
+      "pass": true
+    },
+    {
+      "id": "B3-009-boundary-guard",
+      "pass": true
+    },
+    {
+      "id": "request-register-46-items",
+      "pass": true
+    }
+  ],
+  "architecture_complete": false,
+  "human_operation_tested": false,
+  "integration_performed": false,
+  "unapproved_equipment_moved": false,
+  "graph_tests_are_not_actual_delivery": true
+}

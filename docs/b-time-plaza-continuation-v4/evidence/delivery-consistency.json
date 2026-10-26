@@ -1,0 +1,676 @@
+{
+  "date_jst": "2026-10-27",
+  "checks": [
+    {
+      "id": "profile-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "profile-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "profile-staff_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "walk-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "walk-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "walk-staff_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "service-geometry_sha256",
+      "pass": true
+    },
+    {
+      "id": "service-main_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "service-staff_script_sha256",
+      "pass": true
+    },
+    {
+      "id": "walk-all-pass",
+      "pass": true
+    },
+    {
+      "id": "service-including-racks-all-pass",
+      "pass": true
+    },
+    {
+      "id": "independent-all-pass",
+      "pass": true
+    },
+    {
+      "id": "privacy-all-80-no-residual",
+      "pass": true
+    },
+    {
+      "id": "privacy-current-geometry",
+      "pass": true
+    },
+    {
+      "id": "layout-recovery-split-4-rotation-4-refined-grid",
+      "pass": true
+    },
+    {
+      "id": "boundary-candidate-count-two",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-closed-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-closed-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-closed-same-before-camera",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-closed-before-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-open-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-open-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-open-same-before-camera",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-open-before-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-closed-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-closed-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-closed-same-before-camera",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-closed-before-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-open-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-open-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-open-same-before-camera",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-open-before-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-closed-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-closed-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-closed-same-before-camera",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-closed-before-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-open-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-open-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-open-same-before-camera",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-open-before-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-interior-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-1-T-interior-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-interior-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-2-L-interior-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-interior-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "S-3-T-interior-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "01-1F-time-plaza-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "01-1F-time-plaza-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "01-1F-time-plaza-protected-v3-copied-before",
+      "pass": true
+    },
+    {
+      "id": "08-1F-bookshop-interior-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "08-1F-bookshop-interior-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "08-1F-bookshop-interior-protected-v3-copied-before",
+      "pass": true
+    },
+    {
+      "id": "16-bookshop-wall-collection-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "16-bookshop-wall-collection-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "16-bookshop-wall-collection-protected-v3-copied-before",
+      "pass": true
+    },
+    {
+      "id": "17-cafe-service-and-seating-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "17-cafe-service-and-seating-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "17-cafe-service-and-seating-protected-v3-copied-before",
+      "pass": true
+    },
+    {
+      "id": "27-3F-daylight-corridor-camera-proof",
+      "pass": true
+    },
+    {
+      "id": "27-3F-daylight-corridor-PNG-proof",
+      "pass": true
+    },
+    {
+      "id": "27-3F-daylight-corridor-protected-v3-copied-before",
+      "pass": true
+    },
+    {
+      "id": "fourteen-actual-viewport-captures",
+      "pass": true
+    },
+    {
+      "id": "all-191-ledger",
+      "pass": true
+    },
+    {
+      "id": "188-corrected-warehouse-plan-routes",
+      "pass": true
+    },
+    {
+      "id": "all-sales-preserved",
+      "pass": true
+    },
+    {
+      "id": "remaining-48-not-marked-complete",
+      "pass": true
+    }
+  ],
+  "passed": 66,
+  "failed": 0,
+  "camera_metadata_float_tolerance_m": 1e-09,
+  "actual_Godot_Viewport_records": [
+    {
+      "id": "S-1-T-closed",
+      "camera": {
+        "id": "S-1-T-closed",
+        "p": [
+          -57.029177709620534,
+          1.65,
+          -42.457387807588894
+        ],
+        "look": [
+          -55.587,
+          1.25,
+          -39.566
+        ],
+        "fov_deg": 75,
+        "open_staff": false
+      },
+      "after_sha256": "6db433bf51810faf20b5487e7c733bf2165fb0f99217d980f7d79ad99ead9a54",
+      "before_sha256": "9017ddc5626c9cb5fa0b57e9f629ae94b7a357090df7d84b4105ab42d227a445"
+    },
+    {
+      "id": "S-1-T-open",
+      "camera": {
+        "id": "S-1-T-open",
+        "p": [
+          -57.029177709620534,
+          1.65,
+          -42.457387807588894
+        ],
+        "look": [
+          -55.587,
+          1.25,
+          -39.566
+        ],
+        "fov_deg": 75,
+        "open_staff": true
+      },
+      "after_sha256": "965dd61d743a2baffbf96181f742baab085f75a629be5772a946d6bcc070196f",
+      "before_sha256": "9017ddc5626c9cb5fa0b57e9f629ae94b7a357090df7d84b4105ab42d227a445"
+    },
+    {
+      "id": "S-2-L-closed",
+      "camera": {
+        "id": "S-2-L-closed",
+        "p": [
+          54.87412155502298,
+          7.175000000000001,
+          31.789805885340545
+        ],
+        "look": [
+          54.663,
+          6.775,
+          35.014
+        ],
+        "fov_deg": 75,
+        "open_staff": false
+      },
+      "after_sha256": "93d0d6f02fd3c7bd921566f9390338cc25ec162e9b93dcb4aae6dde3222befa8",
+      "before_sha256": "ca70a4cfc480d4bed6c08e0186bbf58be63c86eaba66a8067f657396b6532b96"
+    },
+    {
+      "id": "S-2-L-open",
+      "camera": {
+        "id": "S-2-L-open",
+        "p": [
+          54.87412155502298,
+          7.175000000000001,
+          31.789805885340545
+        ],
+        "look": [
+          54.663,
+          6.775,
+          35.014
+        ],
+        "fov_deg": 75,
+        "open_staff": true
+      },
+      "after_sha256": "9ff651e214991042482dfadaf7b3e73292a40689d92d8f1f544b91b4fe70360e",
+      "before_sha256": "ca70a4cfc480d4bed6c08e0186bbf58be63c86eaba66a8067f657396b6532b96"
+    },
+    {
+      "id": "S-3-T-closed",
+      "camera": {
+        "id": "S-3-T-closed",
+        "p": [
+          -42.64515472666779,
+          12.525,
+          -43.64139927100181
+        ],
+        "look": [
+          -41.203,
+          12.125,
+          -40.75
+        ],
+        "fov_deg": 75,
+        "open_staff": false
+      },
+      "after_sha256": "de3888d1dc960124fa5fb6ba3f483fb283cd36a629b4256212865daa04e2d7f1",
+      "before_sha256": "1a4856910ed943d9ce18eefbc471f35978b8ed80ac3239333221ace0771878ab"
+    },
+    {
+      "id": "S-3-T-open",
+      "camera": {
+        "id": "S-3-T-open",
+        "p": [
+          -42.64515472666779,
+          12.525,
+          -43.64139927100181
+        ],
+        "look": [
+          -41.203,
+          12.125,
+          -40.75
+        ],
+        "fov_deg": 75,
+        "open_staff": true
+      },
+      "after_sha256": "3bfc8b120e3fbbf8b02d3cb7d92016e53eaf95c120737a1d0118053b42789888",
+      "before_sha256": "1a4856910ed943d9ce18eefbc471f35978b8ed80ac3239333221ace0771878ab"
+    },
+    {
+      "id": "S-1-T-interior",
+      "camera": {
+        "id": "S-1-T-interior",
+        "p": [
+          -59.37700000000001,
+          1.65,
+          -23.156999999999996
+        ],
+        "look": [
+          -55.587,
+          1.25,
+          -39.566
+        ],
+        "fov_deg": 75,
+        "open_staff": true
+      },
+      "after_sha256": "630f7f503cdc943d476ee4bcfe34b2ee2f2a2f2701a79283ee3226fccf1d7b42",
+      "before_status": "after only; room was a sealed proxy in v3"
+    },
+    {
+      "id": "S-2-L-interior",
+      "camera": {
+        "id": "S-2-L-interior",
+        "p": [
+          54.827999999999975,
+          7.175000000000001,
+          47.501999999999995
+        ],
+        "look": [
+          54.663,
+          6.775,
+          35.014
+        ],
+        "fov_deg": 75,
+        "open_staff": true
+      },
+      "after_sha256": "49b6bf73361821df3d123da8876e7ee87f9c182d975e71dbb2bcf3d0197f681c",
+      "before_status": "after only; room was a sealed proxy in v3"
+    },
+    {
+      "id": "S-3-T-interior",
+      "camera": {
+        "id": "S-3-T-interior",
+        "p": [
+          -37.641999999999996,
+          12.525,
+          -23.813000000000002
+        ],
+        "look": [
+          -41.203,
+          12.125,
+          -40.75
+        ],
+        "fov_deg": 75,
+        "open_staff": true
+      },
+      "after_sha256": "5dc24f5e625dba2848315d6f5b65e080bd7298065058ceba9f10971ea0cacee1",
+      "before_status": "after only; room was a sealed proxy in v3"
+    },
+    {
+      "id": "01-1F-time-plaza",
+      "camera": {
+        "id": "01-1F-time-plaza",
+        "p": [
+          4.0,
+          1.65,
+          12.0
+        ],
+        "look": [
+          -14.0,
+          7.5,
+          -12.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "after_sha256": "1c3ac5a7a3585ef613b7db54563667a5f7e6513f417c219c505acbdb6f649560",
+      "before_sha256": "907a2d7dc46fcfbbe6e0624d2175329dc69d86f72c329332285aaabd62d41289"
+    },
+    {
+      "id": "08-1F-bookshop-interior",
+      "camera": {
+        "id": "08-1F-bookshop-interior",
+        "p": [
+          -70.59,
+          1.65,
+          2.02
+        ],
+        "look": [
+          -72.0,
+          1.6,
+          -4.0
+        ],
+        "fov_deg": 75,
+        "resolution": [
+          1280,
+          720
+        ],
+        "hud_visible": false
+      },
+      "after_sha256": "f26ef1e957b30c4b9036f7916d0933310a723a473cbba3c1eb9fd94b7d75bfc8",
+      "before_sha256": "724b1960920eb8e8f94e56cfc68e7e3c37262c8210992618875366a9599847cd"
+    },
+    {
+      "id": "16-bookshop-wall-collection",
+      "camera": {
+        "id": "16-bookshop-wall-collection",
+        "store": "B1-017",
+        "p": [
+          -70.76147057701928,
+          1.65,
+          1.1335992572539055
+        ],
+        "look": [
+          -77.5,
+          1.75,
+          -8.5
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+      },
+      "after_sha256": "7c10e84090c2ad1493ffd116fbfcca3d71f3a7575c0d42e88435d8418ee4d17d",
+      "before_sha256": "058c77ac94da6b7a64bbba85c4fa44456df3dc79bcd50a5b55061db77869d946"
+    },
+    {
+      "id": "17-cafe-service-and-seating",
+      "camera": {
+        "id": "17-cafe-service-and-seating",
+        "store": "B1-040",
+        "p": [
+          -20.304832300134137,
+          1.65,
+          -34.05198733721037
+        ],
+        "look": [
+          -26.0,
+          1.6,
+          -34.5
+        ],
+        "fov_deg": 65,
+        "hud_visible": false,
+        "kind": "same camera in protected v2 and new v3; eye height 1.65m"
+      },
+      "after_sha256": "f3cdd9347aee68b780511c14640d473241ed9f7d7ef9226c8722f102909c8605",
+      "before_sha256": "94033cd5fb3c7d1f034d0ed3b632ad47f86eae84007429d45b848b9cc17003e7"
+    },
+    {
+      "id": "27-3F-daylight-corridor",
+      "camera": {
+        "id": "27-3F-daylight-corridor",
+        "p": [
+          14,
+          12.525,
+          0
+        ],
+        "look": [
+          14,
+          12.2,
+          -25
+        ],
+        "fov_deg": 75,
+        "hud_visible": false,
+        "kind": "3F glare comparison; actual eye-height viewport; same quality and pose"
+      },
+      "after_sha256": "ab4164dceafe8f5f6d3d5754a7ccb93013707ffeb4ca69bf968e16d7e0b18066",
+      "before_sha256": "19cce954c218f8b16d9785008bce92650d23a4ebdf5b50275b0502ebf965ad27"
+    }
+  ],
+  "runtime": {
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "animation_script_sha256": "21426e73edbb8e803aa274ad1a9a17b68614c321b756fcb8f1adef4b76f3ea94",
+    "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+    "geometry_sha256": "a0aac2390ed12e75e6cc401ddf34ac0a09d92ec3f6055e50115dd92f185d74de",
+    "godot_version": {
+      "build": "official",
+      "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+      "hex": 263683,
+      "major": 4,
+      "minor": 6,
+      "patch": 3,
+      "status": "stable",
+      "string": "4.6.3-stable (official)",
+      "timestamp": 0
+    },
+    "graphics_revision": "v4",
+    "main_game_loaded": false,
+    "main_script_sha256": "7825f44a873a43e2ae87b0dce52dadf4ca18150424b5d7f819a82671845b0f3b",
+    "measurement_source": "separate final-version reference run, 20 frames static + 20 frames moving; software GPU",
+    "msaa": "4x",
+    "performance": [
+      {
+        "fps_from_mean_frame_time": 0.46802445240554,
+        "id": "01-1F-time-plaza",
+        "mean_ms": 2136.6405,
+        "p50_ms": 2130.894,
+        "p95_ms": 2223.842,
+        "sample_frames": 20,
+        "samples_ms": [
+          2080.124,
+          2130.894,
+          2076.154,
+          2094.841,
+          2059.933,
+          2064.183,
+          2116.179,
+          2139.03,
+          2118.141,
+          2105.125,
+          2150.353,
+          2223.842,
+          2190.034,
+          2246.449,
+          2099.813,
+          2183.714,
+          2197.693,
+          2211.822,
+          2096.225,
+          2148.261
+        ],
+        "warmup_frames": 12
+      }
+    ],
+    "player_script_sha256": "b23df5c7df696097215b839de749ac00e2f7449174c1e9ba4ddb9817108697e4",
+    "renderer": "gl_compatibility",
+    "resolution": [
+      1280,
+      720
+    ],
+    "scene_build_seconds": 22.497026,
+    "software_gpu": true,
+    "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+    "staff_script_sha256": "6b8148db806f7a0fd1d8a0cae335078e741fcb5af0d30bbb31880b6251e757d9",
+    "walking_performance": {
+      "actual_travel_m": 11.1083310395479,
+      "fps_from_mean_frame_time": 0.651775338255106,
+      "mean_ms": 1534.271,
+      "p50_ms": 1623.598,
+      "p95_ms": 1677.064,
+      "path": "1F public court out-and-back; actual CharacterBody3D movement",
+      "sample_frames": 20,
+      "samples_ms": [
+        0.969,
+        1717.67,
+        1677.064,
+        1665.83,
+        1637.722,
+        1623.598,
+        1653.082,
+        1624.344,
+        1587.24,
+        1608.729,
+        1565.385,
+        1579.397,
+        1540.158,
+        1523.931,
+        1553.215,
+        1568.8,
+        1600.137,
+        1656.082,
+        1643.204,
+        1658.863
+      ]
+    }
+  },
+  "architecture_complete": false,
+  "human_operation_tested": false,
+  "main_game_modified": false,
+  "original_drawings_modified": false,
+  "integration_performed": false,
+  "unapproved_equipment_moved": false,
+  "limitations": [
+    "188 warehouse paths are CAD only",
+    "room capacity and operational logistics unverified",
+    "2 annex plans not implemented; 22 rejected",
+    "remaining unassigned floor approximately 22000m2",
+    "Windows RTX4060 / 1000-5000 NPC not measured"
+  ]
+}
