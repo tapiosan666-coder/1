@@ -1,0 +1,30 @@
+{
+  "design_only": true,
+  "not_implemented": true,
+  "source_commit": "f99d1d7a7cbedc010be030ce80f2e720a1dd3edc",
+  "game_tracked_files_unchanged": true,
+  "game_tracked_hash_count": 238,
+  "geometric_assertions": 9508,
+  "geometric_failures": 0,
+  "gameplay_movement_tests": 0,
+  "pdf_pages": 34,
+  "pdf_all_pages_rendered": true,
+  "pdf_all_tenant_ids_present": true,
+  "python": "3.12.14",
+  "shapely": "2.2.0",
+  "pymupdf": "1.26.6",
+  "shop_counts": [
+    70,
+    72,
+    62
+  ],
+  "known_limits": [
+    "No new Godot walking test",
+    "No 3D headroom or collision test",
+    "No NPC/chest/sonar/travel integration test",
+    "Service delivery through shared public aisles outside opening hours",
+    "Structural, fire and legal accessibility compliance not evaluated",
+    "Reserved service areas not fitted out",
+    "B1/RF not designed in this issue"
+  ]
+}
