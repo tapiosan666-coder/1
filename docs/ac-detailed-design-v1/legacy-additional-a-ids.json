@@ -1,0 +1,225 @@
+[
+  {
+    "id": "a_basement_0",
+    "wing": "A",
+    "level": -1,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      -75,
+      -5.35,
+      -17
+    ],
+    "old_world_xyz_source_derived": [
+      -75,
+      -5.35,
+      -20.4
+    ]
+  },
+  {
+    "id": "a_basement_1",
+    "wing": "A",
+    "level": -1,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      -57,
+      -5.35,
+      -17
+    ],
+    "old_world_xyz_source_derived": [
+      -57,
+      -5.35,
+      -20.4
+    ]
+  },
+  {
+    "id": "a_basement_2",
+    "wing": "A",
+    "level": -1,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      -39,
+      -5.35,
+      -17
+    ],
+    "old_world_xyz_source_derived": [
+      -39,
+      -5.35,
+      -20.4
+    ]
+  },
+  {
+    "id": "a_basement_3",
+    "wing": "A",
+    "level": -1,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      -21,
+      -5.35,
+      -17
+    ],
+    "old_world_xyz_source_derived": [
+      -19.199812938770656,
+      -5.35,
+      -19.37807698773364
+    ]
+  },
+  {
+    "id": "a_basement_4",
+    "wing": "A",
+    "level": -1,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      -3,
+      -5.35,
+      -17
+    ],
+    "old_world_xyz_source_derived": [
+      0.8203061875587423,
+      -5.35,
+      -15.082740675576451
+    ]
+  },
+  {
+    "id": "a_basement_5",
+    "wing": "A",
+    "level": -1,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      15,
+      -5.35,
+      -17
+    ],
+    "old_world_xyz_source_derived": [
+      20.154789262262774,
+      -5.35,
+      -7.51271167364008
+    ]
+  },
+  {
+    "id": "a_basement_6",
+    "wing": "A",
+    "level": -1,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      33,
+      -5.35,
+      -17
+    ],
+    "old_world_xyz_source_derived": [
+      38.433555176426665,
+      -5.35,
+      3.1871121836348153
+    ]
+  },
+  {
+    "id": "a_food_0",
+    "wing": "A",
+    "level": 0,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      51,
+      0,
+      -59.5
+    ],
+    "old_world_xyz_source_derived": [
+      81.4158189801347,
+      0,
+      -23.42952435790963
+    ]
+  },
+  {
+    "id": "a_food_1",
+    "wing": "A",
+    "level": 0,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      62,
+      0,
+      -59.5
+    ],
+    "old_world_xyz_source_derived": [
+      93.63630231908252,
+      0,
+      -10.980988393798873
+    ]
+  },
+  {
+    "id": "a_food_2",
+    "wing": "A",
+    "level": 0,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      73,
+      0,
+      -59.5
+    ],
+    "old_world_xyz_source_derived": [
+      104.93632956386077,
+      0,
+      2.6623787774175978
+    ]
+  },
+  {
+    "id": "a_food_3",
+    "wing": "A",
+    "level": 0,
+    "kind": "food-counter",
+    "basis": "retail_density.gd Transform3D origin; not a portal coordinate",
+    "old_logical_xyz": [
+      84,
+      0,
+      -59.5
+    ],
+    "old_world_xyz_source_derived": [
+      115.2350434544719,
+      0,
+      17.40295214451561
+    ]
+  },
+  {
+    "id": "a_market_rear",
+    "wing": "A",
+    "level": 0,
+    "kind": "auxiliary-sign-not-store",
+    "parent_legacy_id": "a_market",
+    "basis": "store_sign_catalog.gd board centre including sign height, not store entrance",
+    "old_logical_xyz": [
+      24,
+      3.0,
+      47.7
+    ],
+    "old_world_xyz_source_derived": [
+      1.0824241198121882,
+      3.0,
+      67.23772150131164
+    ]
+  },
+  {
+    "id": "a_reading",
+    "wing": "A",
+    "level": 0,
+    "kind": "auxiliary-sign-not-store",
+    "parent_legacy_id": "a_0_0_-1",
+    "basis": "store_sign_catalog.gd board centre including sign height, not store entrance",
+    "old_logical_xyz": [
+      -81,
+      2.9,
+      -35.7
+    ],
+    "old_world_xyz_source_derived": [
+      -81,
+      2.9,
+      -42.84
+    ]
+  }
+]

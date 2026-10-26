@@ -1,0 +1,30 @@
+{
+  "design_only": true,
+  "game_modified": false,
+  "B_modified": false,
+  "source_geometry_sha256": {
+    "A": "c68d4a3161073bce3c74bd4421206232d4166157606be9703756fe964564f546",
+    "C": "99035288f4230f47f2cc48258b33bec37616e570b9d9af0a9cbd59d5a47e7838",
+    "B": "0e77b809b513bdf079198d6b6c476ab24b09b15fbb5f847791a7039010f8f328"
+  },
+  "total_checks": 8408,
+  "failed": [],
+  "defined_floor_surfaces": 13,
+  "connected_defined_floor_surfaces": 13,
+  "unplanned_B_levels": [
+    {
+      "level": -1,
+      "label": "B1",
+      "status": "B v4.1詳細データ対象外・新規設計していない"
+    },
+    {
+      "level": 3,
+      "label": "RF",
+      "status": "B v4.1詳細データ対象外・新規設計していない"
+    }
+  ],
+  "runtime_walking_tests": 0,
+  "area_tolerance_m2": 1e-08,
+  "protected_file_count": 354,
+  "protected_mismatches": []
+}

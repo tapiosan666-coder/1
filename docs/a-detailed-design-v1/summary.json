@@ -1,0 +1,44 @@
+{
+  "floors": [
+    {
+      "level": -1,
+      "label": "B1",
+      "stores": 31,
+      "shell_area_m2": 53092.47260740316,
+      "public_area_m2": 20966.61987671005
+    },
+    {
+      "level": 0,
+      "label": "1F",
+      "stores": 52,
+      "shell_area_m2": 57606.651928095365,
+      "public_area_m2": 21021.17153085419
+    },
+    {
+      "level": 1,
+      "label": "2F",
+      "stores": 52,
+      "shell_area_m2": 57167.260853590975,
+      "public_area_m2": 18408.644194103792
+    },
+    {
+      "level": 2,
+      "label": "3F",
+      "stores": 51,
+      "shell_area_m2": 57150.50633005061,
+      "public_area_m2": 18310.538930945924
+    },
+    {
+      "level": 3,
+      "label": "RF",
+      "stores": 15,
+      "shell_area_m2": 57168.746330050584,
+      "public_area_m2": 47207.02706222101
+    }
+  ],
+  "checks": 5782,
+  "failed": [],
+  "legacy_ids": 51,
+  "auxiliary_role_links": 2,
+  "runtime_walking_tests": 0
+}

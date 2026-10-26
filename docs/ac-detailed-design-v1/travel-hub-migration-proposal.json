@@ -1,0 +1,587 @@
+[
+  {
+    "id": "a.entrance",
+    "legacy_visited_key": "中央入口",
+    "old_floor_id": "A/1F",
+    "old_logical_xyz": [
+      -82.0,
+      0.1,
+      0.0
+    ],
+    "old_world_xyz_source_derived": [
+      -82.0,
+      0.1,
+      0.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "A館西到着口",
+    "requested_target_xz": [
+      -153,
+      -5.5
+    ],
+    "new_world_xyz": [
+      -153.0,
+      0.1,
+      -5.5
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.central",
+    "legacy_visited_key": "中央広場",
+    "old_floor_id": "A/1F",
+    "old_logical_xyz": [
+      -39.0,
+      0.1,
+      3.0
+    ],
+    "old_world_xyz_source_derived": [
+      -39.0,
+      0.1,
+      3.5999999999999996
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "風のゲート",
+    "requested_target_xz": [
+      -88.0,
+      13.5
+    ],
+    "new_world_xyz": [
+      -88.0,
+      0.1,
+      13.5
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.market",
+    "legacy_visited_key": "食品スーパー",
+    "old_floor_id": "A/1F",
+    "old_logical_xyz": [
+      24.0,
+      0.1,
+      11.0
+    ],
+    "old_world_xyz_source_derived": [
+      17.172642408962943,
+      0.1,
+      27.656000712710625
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "食品スーパー",
+    "requested_target_xz": [
+      20.308386682689076,
+      40.07874372890349
+    ],
+    "new_world_xyz": [
+      20.906009305877753,
+      0.1,
+      40.132102891688184
+    ],
+    "target_adjustment_m": 0.5999999999999991,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.food",
+    "legacy_visited_key": "フードコート",
+    "old_floor_id": "A/1F",
+    "old_logical_xyz": [
+      69.0,
+      0.1,
+      -34.0
+    ],
+    "old_world_xyz_source_derived": [
+      82.64639890752174,
+      0.1,
+      18.888119600477857
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "光のコート・飲食側",
+    "requested_target_xz": [
+      52.06535904714965,
+      176.58580063102573
+    ],
+    "new_world_xyz": [
+      52.06535904714965,
+      0.1,
+      176.58580063102573
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.restroom",
+    "legacy_visited_key": "お手洗い前",
+    "old_floor_id": "A/1F",
+    "old_logical_xyz": [
+      -73.0,
+      0.1,
+      32.0
+    ],
+    "old_world_xyz_source_derived": [
+      -73.0,
+      0.1,
+      38.4
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "西トイレ・EV前",
+    "requested_target_xz": [
+      -85.0,
+      74.0
+    ],
+    "new_world_xyz": [
+      -84.24000000000001,
+      0.1,
+      74.0
+    ],
+    "target_adjustment_m": 0.7599999999999909,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.atrium.2",
+    "legacy_visited_key": "2階アトリウム",
+    "old_floor_id": "A/2F",
+    "old_logical_xyz": [
+      -39.0,
+      5.625,
+      22.5
+    ],
+    "old_world_xyz_source_derived": [
+      -39.0,
+      5.625,
+      27.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/2F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "2F風のゲート回廊",
+    "requested_target_xz": [
+      -88.0,
+      13.5
+    ],
+    "new_world_xyz": [
+      -86.03595090817667,
+      5.625,
+      1.566924848160329
+    ],
+    "target_adjustment_m": 12.09362523871752,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.atrium.3",
+    "legacy_visited_key": "3階アトリウム",
+    "old_floor_id": "A/3F",
+    "old_logical_xyz": [
+      -39.0,
+      10.975,
+      7.8
+    ],
+    "old_world_xyz_source_derived": [
+      -39.0,
+      10.975,
+      9.36
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/3F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "3F風のゲート回廊",
+    "requested_target_xz": [
+      -88.0,
+      13.5
+    ],
+    "new_world_xyz": [
+      -86.03595090817667,
+      10.975,
+      1.566924848160329
+    ],
+    "target_adjustment_m": 12.09362523871752,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.basement",
+    "legacy_visited_key": "地下食品街",
+    "old_floor_id": "A/B1",
+    "old_logical_xyz": [
+      -82.0,
+      -5.25,
+      -6.5
+    ],
+    "old_world_xyz_source_derived": [
+      -82.0,
+      -5.25,
+      -7.8
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/B1",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "地下食品街",
+    "requested_target_xz": [
+      -44.78274544922793,
+      -5.8682291936476485
+    ],
+    "new_world_xyz": [
+      -44.68136716016143,
+      -5.25,
+      -5.276855840759688
+    ],
+    "target_adjustment_m": 0.5999999999999998,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.roof",
+    "legacy_visited_key": "屋上庭園",
+    "old_floor_id": "A/RF",
+    "old_logical_xyz": [
+      -87.0,
+      16.5,
+      -12.0
+    ],
+    "old_world_xyz_source_derived": [
+      -87.0,
+      16.5,
+      -14.399999999999999
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/RF",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "屋上庭園",
+    "requested_target_xz": [
+      52.06535904714965,
+      176.58580063102573
+    ],
+    "new_world_xyz": [
+      52.06535904714965,
+      16.5,
+      166.24
+    ],
+    "target_adjustment_m": 10.345800631025725,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "a.parking",
+    "legacy_visited_key": "西駐車場",
+    "old_floor_id": "A/1F",
+    "old_logical_xyz": [
+      -120.0,
+      0.1,
+      -5.5
+    ],
+    "old_world_xyz_source_derived": [
+      -120.0,
+      0.1,
+      -6.27
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "A/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "西駐車場歩行者ゲート",
+    "requested_target_xz": [
+      -153,
+      -16
+    ],
+    "new_world_xyz": [
+      -153.0,
+      0.1,
+      -16.0
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "ab.skybridge",
+    "legacy_visited_key": "A・B連絡通路",
+    "old_floor_id": "B/2F",
+    "old_logical_xyz": [
+      -150.0,
+      5.625,
+      -5.5
+    ],
+    "old_world_xyz_source_derived": [
+      -150.0,
+      5.625,
+      -5.94
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "B/2F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_world_xyz": null,
+    "decision": "B館側のハブは今回変更しない。新設計での実装時照合はB館の承認範囲で別途実施。"
+  },
+  {
+    "id": "b.entrance",
+    "legacy_visited_key": "B館東入口",
+    "old_floor_id": "B/1F",
+    "old_logical_xyz": [
+      -194.0,
+      0.1,
+      -5.5
+    ],
+    "old_world_xyz_source_derived": [
+      -194.0,
+      0.1,
+      -5.5
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "B/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_world_xyz": null,
+    "decision": "B館側のハブは今回変更しない。新設計での実装時照合はB館の承認範囲で別途実施。"
+  },
+  {
+    "id": "b.lounge",
+    "legacy_visited_key": "B館2階ラウンジ",
+    "old_floor_id": "B/2F",
+    "old_logical_xyz": [
+      -192.0,
+      5.625,
+      -5.5
+    ],
+    "old_world_xyz_source_derived": [
+      -192.0,
+      5.625,
+      -5.5
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "B/2F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_world_xyz": null,
+    "decision": "B館側のハブは今回変更しない。新設計での実装時照合はB館の承認範囲で別途実施。"
+  },
+  {
+    "id": "b.cinema",
+    "legacy_visited_key": "B館3階シネマ",
+    "old_floor_id": "B/3F",
+    "old_logical_xyz": [
+      -654.0,
+      10.975,
+      0.0
+    ],
+    "old_world_xyz_source_derived": [
+      -654.0,
+      10.975,
+      0.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "B/3F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_world_xyz": null,
+    "decision": "B館側のハブは今回変更しない。新設計での実装時照合はB館の承認範囲で別途実施。"
+  },
+  {
+    "id": "b.digital",
+    "legacy_visited_key": "B館家電売場",
+    "old_floor_id": "B/1F",
+    "old_logical_xyz": [
+      -676.0,
+      0.1,
+      0.0
+    ],
+    "old_world_xyz_source_derived": [
+      -676.0,
+      0.1,
+      0.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "B/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_world_xyz": null,
+    "decision": "B館側のハブは今回変更しない。新設計での実装時照合はB館の承認範囲で別途実施。"
+  },
+  {
+    "id": "bc.walkway",
+    "legacy_visited_key": "B・C連絡通路",
+    "old_floor_id": "C/1F",
+    "old_logical_xyz": [
+      -370.0,
+      0.1,
+      -52.0
+    ],
+    "old_world_xyz_source_derived": [
+      -370.0,
+      0.1,
+      -52.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "C/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "B・C地上連絡到着口",
+    "requested_target_xz": [
+      -370,
+      -80
+    ],
+    "new_world_xyz": [
+      -370.0,
+      0.1,
+      -80.0
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "c.court",
+    "legacy_visited_key": "C館屋外広場",
+    "old_floor_id": "C/1F",
+    "old_logical_xyz": [
+      -370.0,
+      0.1,
+      -94.0
+    ],
+    "old_world_xyz_source_derived": [
+      -370.0,
+      0.1,
+      -94.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "C/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "南の迎賓庭",
+    "requested_target_xz": [
+      -430.8981441519206,
+      -159.43389440368293
+    ],
+    "new_world_xyz": [
+      -430.8981441519206,
+      0.1,
+      -159.43389440368293
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "c.terrace",
+    "legacy_visited_key": "C館テラス",
+    "old_floor_id": "C/1F",
+    "old_logical_xyz": [
+      -432.0,
+      0.1,
+      -121.0
+    ],
+    "old_world_xyz_source_derived": [
+      -432.0,
+      0.1,
+      -121.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "C/1F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "木陰の中庭",
+    "requested_target_xz": [
+      -464.48590533553727,
+      -244.7815915188146
+    ],
+    "new_world_xyz": [
+      -464.48590533553727,
+      0.1,
+      -244.7815915188146
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "bc.skybridge",
+    "legacy_visited_key": "B・C2階連絡橋",
+    "old_floor_id": "C/2F",
+    "old_logical_xyz": [
+      -442.0,
+      5.625,
+      -65.0
+    ],
+    "old_world_xyz_source_derived": [
+      -442.0,
+      5.625,
+      -65.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "C/2F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "B・C2F連絡到着口",
+    "requested_target_xz": [
+      -432,
+      -117
+    ],
+    "new_world_xyz": [
+      -432.0,
+      5.625,
+      -117.0
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  },
+  {
+    "id": "c.terrace.2",
+    "legacy_visited_key": "C館2階テラス",
+    "old_floor_id": "C/2F",
+    "old_logical_xyz": [
+      -432.0,
+      5.625,
+      -117.0
+    ],
+    "old_world_xyz_source_derived": [
+      -432.0,
+      5.625,
+      -117.0
+    ],
+    "basis": "Mall.HUBS through MallCurve.world; static source-derived landing reference, runtime untested",
+    "new_floor_id": "C/2F",
+    "visited_alias_preserved": true,
+    "implementation_status": "design proposal only; no visited flags or runtime entries edited",
+    "new_display_name": "2F屋外デッキ・北庭側",
+    "requested_target_xz": [
+      -474,
+      -294
+    ],
+    "new_world_xyz": [
+      -474.0,
+      5.625,
+      -294.0
+    ],
+    "target_adjustment_m": 0.0,
+    "decision": "同じ施設機能に対応する新しい計画地点",
+    "new_reference": "新計画の共用歩行域上の足元候補、床上0.1m。Godotでのテレポート検証ではない。"
+  }
+]

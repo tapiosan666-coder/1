@@ -1,0 +1,627 @@
+{
+  "design_only": true,
+  "game_modified": false,
+  "B_v4_1_modified": false,
+  "source_baseline_commit": "9dd0b1a712340118586c266f1c8c172bf64edea1",
+  "source_geometry_sha256": {
+    "A": "c68d4a3161073bce3c74bd4421206232d4166157606be9703756fe964564f546",
+    "C": "99035288f4230f47f2cc48258b33bec37616e570b9d9af0a9cbd59d5a47e7838",
+    "B": "0e77b809b513bdf079198d6b6c476ab24b09b15fbb5f847791a7039010f8f328"
+  },
+  "combined_pdf_sha256": "bb0cc191707886f755762ee17ddf4b482b1b604d7b3082063d1c2a20870da213",
+  "pdf_pages": 102,
+  "bookmarks": 105,
+  "all_pages_rendered": true,
+  "all_A_C_unit_ids_present": true,
+  "design_views_embedded": 12,
+  "standalone_render_PNGs_in_ZIP": false,
+  "render_mesh_cache_in_ZIP": false,
+  "image_pixels_match_current_models": true,
+  "view_provenance": [
+    {
+      "file": "docs/ac-detailed-design-v1/views/A-PW-axon.png",
+      "png_sha256": "8651c860fb6cb470a77f6b2f4e331bbd6e91d84379e6c5803b3d4e6c6a6e0f71",
+      "pixel_rgb_sha256": "13e6f7351b1c61a8e8497fa36183761bd1d9de3e1377f4148bab4d7016238ed0",
+      "pdf_xref": 807
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/A-PW-eye.png",
+      "png_sha256": "3a730f628af0c71b65af3d99d29071aa9d8c61e4af604bed1c19020072b9f673",
+      "pixel_rgb_sha256": "aefafdc4177fbeb2132bfddaf918ee59858ee370489994dd2dd2cb2da43c7972",
+      "pdf_xref": 811
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/A-PE-axon.png",
+      "png_sha256": "d310f8db9e5c624781b7fa4fcefe313199c5bee2ea8f93c9fa6eb8590077183e",
+      "pixel_rgb_sha256": "fb03a8de29d2a266f5092d2c5c6f28d051ec1940781fd8d89ca944038aa6276b",
+      "pdf_xref": 819
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/A-PE-eye.png",
+      "png_sha256": "1822ac229c9b844fa308e6f721672fc855c905932b6596d690275f6d5c8a1453",
+      "pixel_rgb_sha256": "23696a6c10228621115c3e767e2821a550542adc03b4b8a3f4d23fad840d05a3",
+      "pdf_xref": 820
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/A-PS-axon.png",
+      "png_sha256": "d0e86bf28c5bdc45e8e3a6690f33189ac2aa959fb44cd6450062049d4c3625f7",
+      "pixel_rgb_sha256": "e8165e39846d8777abcfa009c4078ed4576ca06e2a05977f1a2e972d65b9bdfe",
+      "pdf_xref": 828
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/A-PS-eye.png",
+      "png_sha256": "35d749cd8425ab6deed192cf92368a8b09dbce84454f4b97dc9dd196faad79f2",
+      "pixel_rgb_sha256": "94045bb0d7f92e7b19c0f59f87a30786dd670c69d83781a5894057e12f97c316",
+      "pdf_xref": 829
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/C-GATE-axon.png",
+      "png_sha256": "80d9511de31566d523dd84653d0036a57a15d896896f6f438f9a4a2b39b7ab69",
+      "pixel_rgb_sha256": "43d93d1b2fdf311a13df603fd026f19ad1f90d37729a74d599d5788734b5035d",
+      "pdf_xref": 837
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/C-GATE-eye.png",
+      "png_sha256": "13c4ed8863f6121bdc91dffa76aa0302de3d4b2aa47b3d2d8fa8823d58bada22",
+      "pixel_rgb_sha256": "32923ad882bce69f4cf8336ae544a50bc9d490020f24fed79e5b6dd96a3b9db4",
+      "pdf_xref": 838
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/C-CENTRAL-axon.png",
+      "png_sha256": "7c62f9551ada458e4aa4fad7e1eb194be3af95ad70c90d763256013697fd764c",
+      "pixel_rgb_sha256": "dbdb10f58d8c5178a3008b0a7c510f11f954153665cdcc00601aa1f5aef723a7",
+      "pdf_xref": 846
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/C-CENTRAL-eye.png",
+      "png_sha256": "dd3fcfb8a70c023a498fbf89b16101376ccf50bcedb3a9d22bf86acffccc6cae",
+      "pixel_rgb_sha256": "a7daa97447e643e56e82d0a2cf5b528f4d32d5f31572ea6a141be33c6d2699d6",
+      "pdf_xref": 847
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/C-NORTH-GARDEN-axon.png",
+      "png_sha256": "ace6359bd2aebc4585f1771c7359797eea6349d96c9be7ede9e49a5a96b92443",
+      "pixel_rgb_sha256": "5d895b603114545bf239ded107a6248c4f5332908f3687bb31e03830bc7d2ef1",
+      "pdf_xref": 855
+    },
+    {
+      "file": "docs/ac-detailed-design-v1/views/C-NORTH-GARDEN-eye.png",
+      "png_sha256": "ac29ccd7dcfd3a8cccf36734aea77dd7526f0cfe89191e456d3629d54c189e7f",
+      "pixel_rgb_sha256": "003706c2a2ca726dd604fe1c4b1326ed1db3d5dfe87d51de3584169c30a0be47",
+      "pdf_xref": 856
+    }
+  ],
+  "protected_files": 354,
+  "protected_mismatches": [],
+  "old_game_or_B_files_changed": [],
+  "integration_checks": 8408,
+  "integration_failed": [],
+  "A_source_checks": 5782,
+  "A_independent_checks": 2261,
+  "C_source_checks": 2087,
+  "C_independent_checks": 350,
+  "runtime_walk_tests": 0,
+  "defined_network_floor_surfaces": 13,
+  "B_B1_RF_defined": false,
+  "page_checks": [
+    {
+      "page": 1,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 2,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 3,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 4,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 5,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 6,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 7,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 8,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 9,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 10,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 11,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 12,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 13,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 14,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 15,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 16,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 17,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 18,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 19,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 20,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 21,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 22,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 23,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 24,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 25,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 26,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 27,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 28,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 29,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 30,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 31,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 32,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 33,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 34,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 35,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 36,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 37,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 38,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 39,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 40,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 41,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 42,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 43,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 44,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 45,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 46,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 47,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 48,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 49,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 50,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 51,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 52,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 53,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 54,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 55,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 56,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 57,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 58,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 59,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 60,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 61,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 62,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 63,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 64,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 65,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 66,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 67,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 68,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 69,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 70,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 71,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 72,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 73,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 74,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 75,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 76,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 77,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 78,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 79,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 80,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 81,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 82,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 83,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 84,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 85,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 86,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 87,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 88,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 89,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 90,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 91,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 92,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 93,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 94,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 95,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 96,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 97,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 98,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 99,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 100,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 101,
+      "rendered": true,
+      "text_in_sheet": true
+    },
+    {
+      "page": 102,
+      "rendered": true,
+      "text_in_sheet": true
+    }
+  ],
+  "tools_sha256": {
+    "tools/draw_ac_detail_v1_master.py": "2091767bb34785cc9b6348f8118a0439b5594b3dbae6487ad81004eac913fba4",
+    "tools/check_ac_detail_v1.py": "1af589fd7cb5483f23c5b52a4827abedda757583ea256fa8c460ab75aa9cf563",
+    "tools/package_ac_detail_v1.py": "97b24f170757fa4db2a51a1d12d90684b3b91cc5f9513fc5a7df1e85451ec656",
+    "tools/render_ac_detail_v1_views.py": "f6721bba8fcd0d57faf1fbed03df027a211cf58d4a343f96ea51aaedc85cdf83",
+    "tools/map_ac_detail_v1_hubs.py": "b649b0348e7d10d1133ef33c92d3a1f465a2e89224adb4347661b8132913c066",
+    "tools/prepare_ac_detail_v1_views.py": "5bf109151e36217f5725bb5d0a4c722d7d4fd25a4893e3ba2080ece280943d78",
+    "tools/extract_ac_legacy_v1.py": "eaef54c1a888fb5e3630220416aec1996657ddd76ee046eb4af8681d3231429b"
+  }
+}
