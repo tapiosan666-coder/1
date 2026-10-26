@@ -1,0 +1,1059 @@
+{
+  "adapter": "",
+  "capsule_height_m": 1.8,
+  "capsule_radius_m": 0.3,
+  "checks": [
+    {
+      "contact_ticks": 623,
+      "distance_m": 51.8937729704702,
+      "id": "B1-004",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157331079244614,
+      "pass": true,
+      "position": "(45.57201, 0.000805, 11.96018)",
+      "ticks": 623
+    },
+    {
+      "contact_ticks": 363,
+      "distance_m": 30.0898577542809,
+      "id": "B1-008",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000935903575737029,
+      "pass": true,
+      "position": "(-27.37476, 0.000829, 38.89154)",
+      "ticks": 363
+    },
+    {
+      "contact_ticks": 865,
+      "distance_m": 72.2047143918383,
+      "id": "B1-014",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0178785640746355,
+      "pass": true,
+      "position": "(0.100475, 0.000842, -42.74548)",
+      "ticks": 865
+    },
+    {
+      "contact_ticks": 942,
+      "distance_m": 78.6521907891643,
+      "id": "B1-017",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.018144529312849,
+      "pass": true,
+      "position": "(-70.53983, 0.000842, 2.222431)",
+      "ticks": 942
+    },
+    {
+      "contact_ticks": 741,
+      "distance_m": 61.7175779567132,
+      "id": "B1-018",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000936190888751298,
+      "pass": true,
+      "position": "(56.67756, 0.000836, 17.2722)",
+      "ticks": 741
+    },
+    {
+      "contact_ticks": 245,
+      "distance_m": 20.4894848521836,
+      "id": "B1-022",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000884698238223791,
+      "pass": true,
+      "position": "(-21.27728, 0.000835, 33.92209)",
+      "ticks": 245
+    },
+    {
+      "contact_ticks": 1703,
+      "distance_m": 142.142373701792,
+      "id": "B1-026",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0159968212246895,
+      "pass": true,
+      "position": "(-77.68855, 0.000842, -47.62231)",
+      "ticks": 1703
+    },
+    {
+      "contact_ticks": 773,
+      "distance_m": 64.4370101540615,
+      "id": "B1-027",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157314632087946,
+      "pass": true,
+      "position": "(13.22066, 0.000842, -33.9008)",
+      "ticks": 773
+    },
+    {
+      "contact_ticks": 789,
+      "distance_m": 65.8611952952037,
+      "id": "B1-030",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0160012990236282,
+      "pass": true,
+      "position": "(-57.13061, 0.000842, -1.131364)",
+      "ticks": 789
+    },
+    {
+      "contact_ticks": 1563,
+      "distance_m": 130.422814146406,
+      "id": "B1-039",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0149971758946776,
+      "pass": true,
+      "position": "(-65.93049, 0.000842, -48.6001)",
+      "ticks": 1563
+    },
+    {
+      "contact_ticks": 778,
+      "distance_m": 64.8307407563167,
+      "id": "B1-040",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0179130919277668,
+      "pass": true,
+      "position": "(-20.68031, 0.000842, -33.9234)",
+      "ticks": 778
+    },
+    {
+      "contact_ticks": 684,
+      "distance_m": 57.1352207374146,
+      "id": "B1-043",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017878582701087,
+      "pass": true,
+      "position": "(-47.35453, 0.000836, -3.53773)",
+      "ticks": 684
+    },
+    {
+      "contact_ticks": 1432,
+      "distance_m": 119.487965472346,
+      "id": "B1-048",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0149971758946776,
+      "pass": true,
+      "position": "(-54.92317, 0.000842, -49.56809)",
+      "ticks": 1432
+    },
+    {
+      "contact_ticks": 900,
+      "distance_m": 75.0806612019318,
+      "id": "B1-051",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000936190888751298,
+      "pass": true,
+      "position": "(62.5692, 0.000829, 41.38157)",
+      "ticks": 900
+    },
+    {
+      "contact_ticks": 1284,
+      "distance_m": 107.168174097054,
+      "id": "B1-055",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0149971758946776,
+      "pass": true,
+      "position": "(-42.40913, 0.000842, -50.52887)",
+      "ticks": 1284
+    },
+    {
+      "contact_ticks": 1127,
+      "distance_m": 93.9934873384267,
+      "id": "B1-061",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0149971758946776,
+      "pass": true,
+      "position": "(-28.66279, 0.000842, -51.7307)",
+      "ticks": 1127
+    },
+    {
+      "contact_ticks": 1031,
+      "distance_m": 86.0449554462878,
+      "id": "B1-066",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0149971758946776,
+      "pass": true,
+      "position": "(-19.14069, 0.000699, -52.47446)",
+      "ticks": 1031
+    },
+    {
+      "contact_ticks": 725,
+      "distance_m": 60.5280782615122,
+      "id": "B1-SW11",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0159968659281731,
+      "pass": true,
+      "position": "(-61.28426, 0.000818, 39.19631)",
+      "ticks": 725
+    },
+    {
+      "contact_ticks": 559,
+      "distance_m": 46.6887444364452,
+      "id": "B1-SW12",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0148282656446099,
+      "pass": true,
+      "position": "(-48.84585, 0.00079, 29.48507)",
+      "ticks": 559
+    },
+    {
+      "contact_ticks": 705,
+      "distance_m": 58.8836073538508,
+      "id": "B1-SW31",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000894509255886078,
+      "pass": true,
+      "position": "(-54.69645, 0.00083, 47.72569)",
+      "ticks": 705
+    },
+    {
+      "contact_ticks": 450,
+      "distance_m": 37.5762711381349,
+      "id": "B1-SW32",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000931368849705905,
+      "pass": true,
+      "position": "(-37.33648, 0.000829, 38.89947)",
+      "ticks": 450
+    },
+    {
+      "contact_ticks": 699,
+      "distance_m": 58.3,
+      "id": "0-北店舗街",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157314725220203,
+      "pass": true,
+      "position": "(-3.0, 0.000842, -29.86642)",
+      "ticks": 699
+    },
+    {
+      "contact_ticks": 475,
+      "distance_m": 39.6733439645125,
+      "id": "0-東側回廊",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000874760095030069,
+      "pass": true,
+      "position": "(26.86835, 0.000842, 3.086325)",
+      "ticks": 475
+    },
+    {
+      "contact_ticks": 514,
+      "distance_m": 42.8339526935727,
+      "id": "0-西側回廊",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000884776818566024,
+      "pass": true,
+      "position": "(-30.94234, 0.000842, -3.940267)",
+      "ticks": 514
+    },
+    {
+      "contact_ticks": 941,
+      "distance_m": 78.5241932650412,
+      "id": "B2-003",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157322883605957,
+      "pass": true,
+      "position": "(-70.06165, 5.525842, 2.07715)",
+      "ticks": 941
+    },
+    {
+      "contact_ticks": 657,
+      "distance_m": 54.8106169618183,
+      "id": "B2-004",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000928878784179688,
+      "pass": true,
+      "position": "(48.26952, 5.525922, 13.27887)",
+      "ticks": 657
+    },
+    {
+      "contact_ticks": 363,
+      "distance_m": 30.0898577542809,
+      "id": "B2-008",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000935077667236328,
+      "pass": true,
+      "position": "(-27.37476, 5.525842, 38.89227)",
+      "ticks": 363
+    },
+    {
+      "contact_ticks": 1086,
+      "distance_m": 90.5785250818116,
+      "id": "B2-009",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157394409179688,
+      "pass": true,
+      "position": "(74.95515, 5.525829, 50.86239)",
+      "ticks": 1086
+    },
+    {
+      "contact_ticks": 935,
+      "distance_m": 78.0304230814702,
+      "id": "B2-014",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0159974098205566,
+      "pass": true,
+      "position": "(0.673385, 5.525834, -41.35961)",
+      "ticks": 935
+    },
+    {
+      "contact_ticks": 833,
+      "distance_m": 69.5023580494578,
+      "id": "B2-017",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0160017013549805,
+      "pass": true,
+      "position": "(-60.66027, 5.525842, -0.27376)",
+      "ticks": 833
+    },
+    {
+      "contact_ticks": 769,
+      "distance_m": 64.0418177830271,
+      "id": "B2-018",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000927925109863281,
+      "pass": true,
+      "position": "(58.71743, 5.525829, 18.22877)",
+      "ticks": 769
+    },
+    {
+      "contact_ticks": 205,
+      "distance_m": 17.2208637984388,
+      "id": "B2-022",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000872135162353516,
+      "pass": true,
+      "position": "(-17.91725, 5.52579, 33.84113)",
+      "ticks": 205
+    },
+    {
+      "contact_ticks": 1730,
+      "distance_m": 143.823693818256,
+      "id": "B2-027",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017911434173584,
+      "pass": true,
+      "position": "(-73.71049, 5.525842, -48.02784)",
+      "ticks": 1730
+    },
+    {
+      "contact_ticks": 835,
+      "distance_m": 69.6148993549738,
+      "id": "B2-028",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.00767278671264648,
+      "pass": true,
+      "position": "(13.02655, 5.525835, -33.90727)",
+      "ticks": 835
+    },
+    {
+      "contact_ticks": 732,
+      "distance_m": 61.0775948361317,
+      "id": "B2-031",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0177783966064453,
+      "pass": true,
+      "position": "(-51.49934, 5.525836, -2.55625)",
+      "ticks": 732
+    },
+    {
+      "contact_ticks": 408,
+      "distance_m": 34.0376284648855,
+      "id": "B2-032",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000932216644287109,
+      "pass": true,
+      "position": "(30.87944, 5.525791, 29.8529)",
+      "ticks": 408
+    },
+    {
+      "contact_ticks": 1598,
+      "distance_m": 132.8864188057,
+      "id": "B2-038",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017911434173584,
+      "pass": true,
+      "position": "(-62.69166, 5.525823, -48.86625)",
+      "ticks": 1598
+    },
+    {
+      "contact_ticks": 1449,
+      "distance_m": 120.539666763673,
+      "id": "B2-045",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017911434173584,
+      "pass": true,
+      "position": "(-50.18886, 5.525842, -49.94986)",
+      "ticks": 1449
+    },
+    {
+      "contact_ticks": 1284,
+      "distance_m": 106.848494704192,
+      "id": "B2-052",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.018193244934082,
+      "pass": true,
+      "position": "(-36.43414, 5.525842, -51.07031)",
+      "ticks": 1284
+    },
+    {
+      "contact_ticks": 1177,
+      "distance_m": 98.006693451495,
+      "id": "B2-057",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.018193244934082,
+      "pass": true,
+      "position": "(-26.91797, 5.525842, -51.86449)",
+      "ticks": 1177
+    },
+    {
+      "contact_ticks": 1089,
+      "distance_m": 90.8326129169727,
+      "id": "B2-062",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.018193244934082,
+      "pass": true,
+      "position": "(-17.89198, 5.524759, -52.54497)",
+      "ticks": 1089
+    },
+    {
+      "contact_ticks": 1569,
+      "distance_m": 130.373727546972,
+      "id": "B2-065",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017911434173584,
+      "pass": true,
+      "position": "(-59.06903, 5.525841, -38.38097)",
+      "ticks": 1569
+    },
+    {
+      "contact_ticks": 1453,
+      "distance_m": 120.699233180793,
+      "id": "B2-068",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017911434173584,
+      "pass": true,
+      "position": "(-49.55142, 5.525842, -39.15831)",
+      "ticks": 1453
+    },
+    {
+      "contact_ticks": 1344,
+      "distance_m": 111.613882491886,
+      "id": "B2-069",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017911434173584,
+      "pass": true,
+      "position": "(-40.53154, 5.525829, -39.89227)",
+      "ticks": 1344
+    },
+    {
+      "contact_ticks": 809,
+      "distance_m": 67.4817789070168,
+      "id": "B2-070",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0159854888916016,
+      "pass": true,
+      "position": "(-25.29902, 5.525829, -33.85979)",
+      "ticks": 809
+    },
+    {
+      "contact_ticks": 725,
+      "distance_m": 60.5280782615122,
+      "id": "B2-SW11",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0159969329833984,
+      "pass": true,
+      "position": "(-61.28428, 5.525835, 39.19629)",
+      "ticks": 725
+    },
+    {
+      "contact_ticks": 559,
+      "distance_m": 46.6887444364452,
+      "id": "B2-SW12",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157346725463867,
+      "pass": true,
+      "position": "(-48.84586, 5.525817, 29.48507)",
+      "ticks": 559
+    },
+    {
+      "contact_ticks": 705,
+      "distance_m": 58.8836073538508,
+      "id": "B2-SW31",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0150399208068848,
+      "pass": true,
+      "position": "(-54.69644, 5.525824, 47.72569)",
+      "ticks": 705
+    },
+    {
+      "contact_ticks": 450,
+      "distance_m": 37.5762711381349,
+      "id": "B2-SW32",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157308578491211,
+      "pass": true,
+      "position": "(-37.33648, 5.525823, 38.89946)",
+      "ticks": 450
+    },
+    {
+      "contact_ticks": 793,
+      "distance_m": 66.1443955163727,
+      "id": "1-北店舗街",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0159969329833984,
+      "pass": true,
+      "position": "(-3.065918, 5.525829, -29.92019)",
+      "ticks": 793
+    },
+    {
+      "contact_ticks": 476,
+      "distance_m": 39.5029876705252,
+      "id": "1-東側回廊",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(26.89122, 5.525803, 3.067412)",
+      "ticks": 476
+    },
+    {
+      "contact_ticks": 518,
+      "distance_m": 43.1798667885437,
+      "id": "1-西側回廊",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000934123992919922,
+      "pass": true,
+      "position": "(-30.94083, 5.525835, -3.937504)",
+      "ticks": 518
+    },
+    {
+      "contact_ticks": 1014,
+      "distance_m": 84.6260483675116,
+      "id": "B3-003",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181741714477539,
+      "pass": true,
+      "position": "(-78.59424, 10.87584, 4.285625)",
+      "ticks": 1014
+    },
+    {
+      "contact_ticks": 622,
+      "distance_m": 51.9319943210881,
+      "id": "B3-004",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0147457122802734,
+      "pass": true,
+      "position": "(43.977, 10.87584, 11.23547)",
+      "ticks": 622
+    },
+    {
+      "contact_ticks": 348,
+      "distance_m": 29.0261089344349,
+      "id": "B3-008",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-25.14637, 10.87584, 36.16299)",
+      "ticks": 348
+    },
+    {
+      "contact_ticks": 1059,
+      "distance_m": 88.3285214118775,
+      "id": "B3-009",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0178775787353516,
+      "pass": true,
+      "position": "(73.66425, 10.87583, 49.01907)",
+      "ticks": 1059
+    },
+    {
+      "contact_ticks": 952,
+      "distance_m": 79.476946637551,
+      "id": "B3-014",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181970596313477,
+      "pass": true,
+      "position": "(-0.223352, 10.87583, -43.422)",
+      "ticks": 952
+    },
+    {
+      "contact_ticks": 905,
+      "distance_m": 75.4915873116556,
+      "id": "B3-017",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.018193244934082,
+      "pass": true,
+      "position": "(-69.23627, 10.87584, 1.882888)",
+      "ticks": 905
+    },
+    {
+      "contact_ticks": 730,
+      "distance_m": 60.802867549266,
+      "id": "B3-018",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.015995979309082,
+      "pass": true,
+      "position": "(55.18779, 10.87584, 16.56021)",
+      "ticks": 730
+    },
+    {
+      "contact_ticks": 119,
+      "distance_m": 9.98190786369536,
+      "id": "B3-022",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000842094421386719,
+      "pass": true,
+      "position": "(-10.19155, 10.87584, 33.89928)",
+      "ticks": 119
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_plaster",
+          "normal": "(0.919127, 0.0, -0.393963)",
+          "point": "(-10.82273, 12.37563, -43.16206)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-10.54663, 10.875, -43.2818)"
+        }
+      ],
+      "distance_m": 143.080014640664,
+      "id": "B3-027",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "pass": false,
+      "position": "(-10.54594, 10.87509, -43.28019)",
+      "reason": "not reached within physical tick budget",
+      "target": "(-72.82282, 10.875, -46.3749)",
+      "ticks": 1935
+    },
+    {
+      "contact_ticks": 835,
+      "distance_m": 69.6063112519155,
+      "id": "B3-028",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157308578491211,
+      "pass": true,
+      "position": "(13.22103, 10.87583, -33.91581)",
+      "ticks": 835
+    },
+    {
+      "contact_ticks": 799,
+      "distance_m": 66.6654265609113,
+      "id": "B3-031",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181598663330078,
+      "pass": true,
+      "position": "(-60.43465, 10.87584, -0.290936)",
+      "ticks": 799
+    },
+    {
+      "contact_ticks": 408,
+      "distance_m": 34.0084510810439,
+      "id": "B3-032",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0143470764160156,
+      "pass": true,
+      "position": "(30.90842, 10.87581, 29.02898)",
+      "ticks": 408
+    },
+    {
+      "contact_ticks": 1571,
+      "distance_m": 130.665327053444,
+      "id": "B3-038",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181570053100586,
+      "pass": true,
+      "position": "(-60.44818, 10.87581, -49.04625)",
+      "ticks": 1571
+    },
+    {
+      "contact_ticks": 681,
+      "distance_m": 56.6723791336474,
+      "id": "B3-041",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181922912597656,
+      "pass": true,
+      "position": "(-48.56726, 10.87584, -3.227155)",
+      "ticks": 681
+    },
+    {
+      "contact_ticks": 1408,
+      "distance_m": 117.120665521673,
+      "id": "B3-047",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181570053100586,
+      "pass": true,
+      "position": "(-46.70147, 10.87584, -50.2452)",
+      "ticks": 1408
+    },
+    {
+      "contact_ticks": 1293,
+      "distance_m": 107.562799339546,
+      "id": "B3-055",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.017913818359375,
+      "pass": true,
+      "position": "(-37.18471, 10.87584, -51.03885)",
+      "ticks": 1293
+    },
+    {
+      "contact_ticks": 904,
+      "distance_m": 75.4671444829699,
+      "id": "B3-057",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157394409179688,
+      "pass": true,
+      "position": "(62.57019, 10.87583, 41.38087)",
+      "ticks": 904
+    },
+    {
+      "contact_ticks": 559,
+      "distance_m": 46.6887444364452,
+      "id": "B3-SW12",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.015995979309082,
+      "pass": true,
+      "position": "(-48.84579, 10.87584, 29.48514)",
+      "ticks": 559
+    },
+    {
+      "contact_ticks": 705,
+      "distance_m": 58.8836073538508,
+      "id": "B3-SW31",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.00092315673828125,
+      "pass": true,
+      "position": "(-54.69644, 10.87583, 47.7257)",
+      "ticks": 705
+    },
+    {
+      "contact_ticks": 450,
+      "distance_m": 37.5762711381349,
+      "id": "B3-SW32",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0157346725463867,
+      "pass": true,
+      "position": "(-37.33647, 10.87584, 38.89944)",
+      "ticks": 450
+    },
+    {
+      "contact_ticks": 792,
+      "distance_m": 66.1443955163727,
+      "id": "2-北店舗街",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181970596313477,
+      "pass": true,
+      "position": "(-3.099967, 10.87584, -29.87828)",
+      "ticks": 792
+    },
+    {
+      "contact_ticks": 476,
+      "distance_m": 39.5029876705252,
+      "id": "2-東側回廊",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(26.88885, 10.87582, 3.068892)",
+      "ticks": 476
+    },
+    {
+      "contact_ticks": 518,
+      "distance_m": 43.1798667885437,
+      "id": "2-西側回廊",
+      "kind": "capsule_move_and_slide_to_shop_or_public_waypoint",
+      "max_vertical_difference_m": 0.0181970596313477,
+      "pass": true,
+      "position": "(-30.9409, 10.87581, -3.937571)",
+      "ticks": 518
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-20.0, 0.0, 9.13917)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-20.0, 0.0, 9.137868)"
+        }
+      ],
+      "id": "E2-12-UP-up",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(-20.0, -0.000776, 9.137868)",
+      "reason": "not reached within physical tick budget",
+      "target": "(-20.0, 5.525, 24.9)",
+      "ticks": 742
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-20.0, 5.525, 24.86053)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-20.0, 5.525, 24.86193)"
+        }
+      ],
+      "id": "E2-12-UP-down",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(-20.0, 5.524514, 24.86193)",
+      "reason": "not reached within physical tick budget",
+      "target": "(-20.0, 0.0, 9.1)",
+      "ticks": 742
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_plaster",
+          "normal": "(0.0, 0.0, -1.0)",
+          "point": "(-24.0, 1.500074, 9.44)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-24.0, 0.0, 9.138804)"
+        }
+      ],
+      "id": "E2-12-DOWN-up",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(-24.0, -0.00116, 9.138804)",
+      "reason": "not reached within physical tick budget",
+      "target": "(-24.0, 5.525, 24.9)",
+      "ticks": 742
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-24.0, 5.525, 24.86053)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(-24.0, 5.525, 24.86193)"
+        }
+      ],
+      "id": "E2-12-DOWN-down",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(-24.0, 5.524514, 24.86193)",
+      "reason": "not reached within physical tick budget",
+      "target": "(-24.0, 0.0, 9.1)",
+      "ticks": 742
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_plaster",
+          "normal": "(0.0, 0.0, -1.0)",
+          "point": "(23.0, 6.396873, 9.44)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(23.0, 5.525, 9.138573)"
+        }
+      ],
+      "id": "E2-23-UP-up",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(23.0, 5.524652, 9.138573)",
+      "reason": "not reached within physical tick budget",
+      "target": "(23.0, 10.875, 24.9)",
+      "ticks": 740
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(23.0, 10.875, 24.86035)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(23.0, 10.875, 24.86184)"
+        }
+      ],
+      "id": "E2-23-UP-down",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(23.0, 10.87448, 24.86184)",
+      "reason": "not reached within physical tick budget",
+      "target": "(23.0, 5.525, 9.1)",
+      "ticks": 740
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(19.0, 5.525, 9.13993)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(19.0, 5.525, 9.138433)"
+        }
+      ],
+      "id": "E2-23-DOWN-up",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(19.0, 5.524453, 9.138433)",
+      "reason": "not reached within physical tick budget",
+      "target": "(19.0, 10.875, 24.9)",
+      "ticks": 740
+    },
+    {
+      "colliders": [
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(19.0, 10.875, 24.86034)"
+        },
+        {
+          "name": "Collision_stone",
+          "normal": "(0.0, 1.0, 0.0)",
+          "point": "(19.0, 10.875, 24.86184)"
+        }
+      ],
+      "id": "E2-23-DOWN-down",
+      "kind": "physical_escalator_slope_walk",
+      "pass": false,
+      "position": "(19.0, 10.87448, 24.86184)",
+      "reason": "not reached within physical tick budget",
+      "target": "(19.0, 5.525, 9.1)",
+      "ticks": 740
+    },
+    {
+      "id": "E2-12-UP-belt",
+      "kind": "automatic_conveyor_without_movement_input",
+      "pass": true,
+      "position": "(-19.9999, 5.529836, 23.95733)",
+      "target": "(-20.0, 5.525, 24.25)",
+      "ticks": 1196
+    },
+    {
+      "id": "E2-12-DOWN-belt",
+      "kind": "automatic_conveyor_without_movement_input",
+      "pass": true,
+      "position": "(-23.99987, 0.004824, 10.04688)",
+      "target": "(-24.0, 0.0, 9.75)",
+      "ticks": 594
+    },
+    {
+      "id": "E2-23-UP-belt",
+      "kind": "automatic_conveyor_without_movement_input",
+      "pass": true,
+      "position": "(23.0003, 10.87981, 23.95159)",
+      "target": "(23.0, 10.875, 24.25)",
+      "ticks": 1163
+    },
+    {
+      "id": "E2-23-DOWN-belt",
+      "kind": "automatic_conveyor_without_movement_input",
+      "pass": true,
+      "position": "(19.00032, 5.529824, 10.04268)",
+      "target": "(19.0, 5.525, 9.75)",
+      "ticks": 593
+    },
+    {
+      "end": "(-12.46094, 5.523849, 0.0)",
+      "id": "2F-void-guard-west",
+      "kind": "guardrail_prevents_fall",
+      "pass": true
+    },
+    {
+      "end": "(-12.46035, 10.87582, 0.0)",
+      "id": "3F-void-guard-west",
+      "kind": "guardrail_prevents_fall",
+      "pass": true
+    },
+    {
+      "hit": true,
+      "hit_position": "(-20.0, 0.0, 17.0)",
+      "id": "1F-departure-underfloor-support",
+      "kind": "actual_3D_floor_or_void_raycast",
+      "pass": true
+    },
+    {
+      "hit": true,
+      "hit_position": "(23.0, 5.525, 17.0)",
+      "id": "2F-departure-underfloor-support",
+      "kind": "actual_3D_floor_or_void_raycast",
+      "pass": true
+    },
+    {
+      "hit": false,
+      "hit_position": null,
+      "id": "2F-void-has-no-floor",
+      "kind": "actual_3D_floor_or_void_raycast",
+      "pass": true
+    },
+    {
+      "hit": false,
+      "hit_position": null,
+      "id": "3F-void-has-no-floor",
+      "kind": "actual_3D_floor_or_void_raycast",
+      "pass": true
+    },
+    {
+      "hit": true,
+      "hit_position": "(0.0, 5.525, -6.0)",
+      "id": "2F-crossing-bridge-floor",
+      "kind": "actual_3D_floor_or_void_raycast",
+      "pass": true
+    },
+    {
+      "hit": true,
+      "hit_position": "(0.0, 10.875, -6.0)",
+      "id": "3F-crossing-bridge-floor",
+      "kind": "actual_3D_floor_or_void_raycast",
+      "pass": true
+    },
+    {
+      "hit": true,
+      "hit_position": "(-1.0, 0.0, 2.0)",
+      "id": "1F-under-void-ground-floor",
+      "kind": "actual_3D_floor_or_void_raycast",
+      "pass": true
+    }
+  ],
+  "failed": 9,
+  "geometry_sha256": "1a3c270a36262271367db12c50dc3563908fd3ceb83df950f0b69dd5909053af",
+  "godot_version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "kind": "Godot CharacterBody3D collision walking, automated; not a human playtest",
+  "main_game_loaded": false,
+  "main_script_sha256": "c4a4c30bb9e81308f772cdb92586c0e7141f1bdfd83fb03fa62a4c9251b48a76",
+  "msaa": "4x",
+  "passed": 87,
+  "physics_hz": 60,
+  "player_script_sha256": "394687f8f7a4cda5dd6523b7e3e96f54c922c71ef1208d50b3ffb0a29403af6c",
+  "projection_or_teleport_during_route": false,
+  "renderer": "gl_compatibility",
+  "resolution": [
+    1280,
+    720
+  ],
+  "scene_build_seconds": 4.201879,
+  "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+  "total": 96
+}

@@ -1,0 +1,507 @@
+{
+  "kind": "independent frozen-original vs generated 3D collider geometry check",
+  "checks": [
+    {
+      "id": "frozen-source-sha256",
+      "pass": true
+    },
+    {
+      "id": "all-original-tracked-files-unchanged",
+      "pass": true,
+      "files": 1466,
+      "changed": []
+    },
+    {
+      "id": "0-slab-collider-vs-original-footprint",
+      "pass": true,
+      "source_original_m2": 15587.575940087583,
+      "isolated_scene_with_departure_underfloor_m2": 15658.615940087582,
+      "mesh_union_m2": 15658.615948071701,
+      "symmetric_difference_m2": 0.00011166035187715893,
+      "tolerance_m2": 0.001,
+      "triangles": 56
+    },
+    {
+      "id": "0-slab-no-duplicate-overlapping-triangles",
+      "pass": true,
+      "overlap_m2": -1.8189894035458565e-12
+    },
+    {
+      "id": "0-no-collider-in-designed-void",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "1-slab-collider-vs-original-footprint",
+      "pass": true,
+      "source_original_m2": 14868.855940087584,
+      "isolated_scene_with_departure_underfloor_m2": 14939.895940087583,
+      "mesh_union_m2": 14939.8959480717,
+      "symmetric_difference_m2": 0.00011166035192263367,
+      "tolerance_m2": 0.001,
+      "triangles": 78
+    },
+    {
+      "id": "1-slab-no-duplicate-overlapping-triangles",
+      "pass": true,
+      "overlap_m2": 0.0
+    },
+    {
+      "id": "1-no-collider-in-designed-void",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "2-slab-collider-vs-original-footprint",
+      "pass": true,
+      "source_original_m2": 14963.575940087583,
+      "isolated_scene_with_departure_underfloor_m2": 14963.575940087583,
+      "mesh_union_m2": 14963.575948071702,
+      "symmetric_difference_m2": 0.00011166035191734722,
+      "tolerance_m2": 0.001,
+      "triangles": 72
+    },
+    {
+      "id": "2-slab-no-duplicate-overlapping-triangles",
+      "pass": true,
+      "overlap_m2": -1.8189894035458565e-12
+    },
+    {
+      "id": "2-no-collider-in-designed-void",
+      "pass": true,
+      "intersection_m2": 0.0
+    },
+    {
+      "id": "B1-003-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-004-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-008-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-009-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-013-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-014-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-017-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-018-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-022-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-026-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-027-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-030-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-038-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-039-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-040-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-043-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-048-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-051-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-055-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-059-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-061-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-066-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-SW11-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-SW12-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-SW31-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B1-SW32-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-003-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-004-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-008-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-009-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-013-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-014-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-017-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-018-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-022-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-023-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-027-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-028-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-031-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-032-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-037-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-038-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-045-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-052-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-055-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-057-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-062-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-065-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-068-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-069-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-070-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-SW11-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-SW12-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-SW31-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B2-SW32-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-003-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-004-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-008-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-009-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-013-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-014-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-017-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-018-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-022-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-023-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-027-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-028-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-031-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-032-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-037-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-038-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-041-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-046-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-047-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-055-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-057-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-059-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-SW12-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-SW31-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "B3-SW32-clear-opening-dimension",
+      "pass": true,
+      "width_m": 2.4
+    },
+    {
+      "id": "3D-generated-route-targets-no-unreachable-fallback",
+      "pass": true,
+      "unreachable": []
+    },
+    {
+      "id": "runtime-uses-shipped-geometry",
+      "pass": true
+    },
+    {
+      "id": "runtime-uses-shipped-main-script",
+      "pass": true
+    },
+    {
+      "id": "runtime-uses-shipped-player-script",
+      "pass": true
+    },
+    {
+      "id": "runtime-tests-finished",
+      "pass": true,
+      "total": 96
+    },
+    {
+      "id": "runtime-tests-no-failure",
+      "pass": true,
+      "passed": 96,
+      "failed": 0
+    }
+  ],
+  "total": 97,
+  "passed": 97,
+  "failed": 0,
+  "tolerance_note": "頂点は小数点5桁mで出力。面積許容0.001㎡は切出し全床の境界量子化差。設計原本は変更しない。"
+}
