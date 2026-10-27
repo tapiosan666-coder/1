@@ -1,0 +1,50 @@
+[
+  {
+    "source": "base-b-v8.pack.gz",
+    "target": "base-b-v8-indexed.pack.gz",
+    "vertices_before": 1725759,
+    "vertices_after": 823104,
+    "triangle_attribute_hash_before": "127c7ccec4da0eff05318cb97b9ee2699471814cedfe567a7952d9f676d89ef6",
+    "triangle_attribute_hash_after": "127c7ccec4da0eff05318cb97b9ee2699471814cedfe567a7952d9f676d89ef6",
+    "triangles_identical": true,
+    "collider_data_unchanged": true,
+    "source_bytes": 9793581,
+    "target_bytes": 10047943
+  },
+  {
+    "source": "base-site-v8.pack.gz",
+    "target": "base-site-v8-indexed.pack.gz",
+    "vertices_before": 3447207,
+    "vertices_after": 1481350,
+    "triangle_attribute_hash_before": "f1cc7d56785817e38d3643ac231159f07172bc9a22bdca8b40ba180aa0776c39",
+    "triangle_attribute_hash_after": "f1cc7d56785817e38d3643ac231159f07172bc9a22bdca8b40ba180aa0776c39",
+    "triangles_identical": true,
+    "collider_data_unchanged": true,
+    "source_bytes": 18536263,
+    "target_bytes": 17153150
+  },
+  {
+    "source": "fitout-v8.pack.gz",
+    "target": "fitout-v8-indexed.pack.gz",
+    "vertices_before": 6266010,
+    "vertices_after": 3730683,
+    "triangle_attribute_hash_before": "b005c55b8dab2f07c80b3e7960a66e5e8b27113e8e06f6297b17d041dfbc40e6",
+    "triangle_attribute_hash_after": "b005c55b8dab2f07c80b3e7960a66e5e8b27113e8e06f6297b17d041dfbc40e6",
+    "triangles_identical": true,
+    "collider_data_unchanged": true,
+    "source_bytes": 20311250,
+    "target_bytes": 25303995
+  },
+  {
+    "source": "art-v9.pack.gz",
+    "target": "art-v9-indexed.pack.gz",
+    "vertices_before": 161247,
+    "vertices_after": 99337,
+    "triangle_attribute_hash_before": "61173d2fc34ee07658864583608f9173f4aff4e8b0a5e5b9c12135626369a199",
+    "triangle_attribute_hash_after": "61173d2fc34ee07658864583608f9173f4aff4e8b0a5e5b9c12135626369a199",
+    "triangles_identical": true,
+    "collider_data_unchanged": true,
+    "source_bytes": 542473,
+    "target_bytes": 668184
+  }
+]

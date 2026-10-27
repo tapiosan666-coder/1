@@ -1,0 +1,128 @@
+{
+  "scope": "A1F/B1F/C1F representative areas only",
+  "stores_added": 0,
+  "existing_review_stores": 42,
+  "vendor_chairs": 24,
+  "outdoor_cafe_tables": 4,
+  "full_mall_finished": false,
+  "FF15_quality_achieved": false,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "main_game_modified": false,
+  "integrated": false,
+  "Windows_real_machine_test": false,
+  "human_playtest": false,
+  "NPC_count": 0,
+  "144FPS_verified": false,
+  "physics": {
+    "pass": 945,
+    "fail": 0
+  },
+  "EV": {
+    "pass": 119,
+    "fail": 0
+  },
+  "controls": {
+    "pass": 11,
+    "fail": 0
+  },
+  "FPS": [
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.148975466850473,
+      "elapsed_seconds": 53.700117,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "01-A-plaza",
+      "max_frame_ms": 8951.077,
+      "median_frame_ms": 6114.609,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 8951.077,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.193053384207726,
+      "elapsed_seconds": 41.439315,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "03-B-time-plaza",
+      "max_frame_ms": 5794.567,
+      "median_frame_ms": 5170.918,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 5794.567,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.123479605267189,
+      "elapsed_seconds": 64.788027,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "05-C-storefront",
+      "max_frame_ms": 9602.111,
+      "median_frame_ms": 8898.14,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 9602.111,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    }
+  ],
+  "visual_remaining": [
+    "simplified product/garment/plant models",
+    "glass and reflected light need further art review",
+    "distant wall and ceiling variation not final",
+    "C courtyard overhead decks still reduce the outdoor feeling; structural change requires separate review",
+    "other floors and parking retain v8 finish"
+  ],
+  "visual_judgment": "Visible differences in ceiling design, facade materials, floor/contact detail, lounge seating and outdoor cafe; does not establish FF15-level realism."
+}
