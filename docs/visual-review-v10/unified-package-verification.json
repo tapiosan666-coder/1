@@ -1,0 +1,68 @@
+{
+  "single_source_archive": true,
+  "manifest_files": 785,
+  "all_file_hashes_match": true,
+  "unchanged_original_v10_files": 769,
+  "source_archive_CRC_pass": true,
+  "compression_decode_check": {
+    "checks": [
+      {
+        "decoded_bytes": 3275805,
+        "file": "architecture.pack.zst",
+        "pass": true,
+        "sha256": "c1946da2d8ff4b3bdfc53b53fbc233e42e40ca3fe43916f281c535acb7c5d17c"
+      },
+      {
+        "decoded_bytes": 368416,
+        "file": "art.pack.zst",
+        "pass": true,
+        "sha256": "01b30bd7ad4f01364ab7aa4cb59ccd0052c66226b3c26c91d8645680d1d6dd1b"
+      },
+      {
+        "decoded_bytes": 61513176,
+        "file": "base-b.pack.zst",
+        "pass": true,
+        "sha256": "a663761a7c2f98397a6a32189c63a42775af3e8fa5c3d111c8577768b9e904c5"
+      },
+      {
+        "decoded_bytes": 106693987,
+        "file": "base-site-C-option.pack.zst",
+        "pass": true,
+        "sha256": "cc19f76d5cada2717c70d059be32c355d193245ff14c1abfd03eafd64d8e445b"
+      },
+      {
+        "decoded_bytes": 103155131,
+        "file": "base-site.pack.zst",
+        "pass": true,
+        "sha256": "5c6a63677bbf7857a36200fb9bf8c946e83939cd3d026d5ca7b3c174f365263c"
+      },
+      {
+        "decoded_bytes": 28129115,
+        "file": "fitout.pack.zst",
+        "pass": true,
+        "sha256": "188c06a53f506b432cc2f7f3479e348559b6745dcc2a5f03c9c21d802333b380"
+      }
+    ],
+    "failed": 0,
+    "passed": 6,
+    "scope": "Godot Zstandard decoding reproduces original v10 geometry/collision metadata bytes exactly"
+  },
+  "original_game_modified": false,
+  "visual_content_reduced": false,
+  "new_physics_or_FPS_benchmark": false,
+  "Windows_real_machine_test": false,
+  "Windows_single_archive": true,
+  "Windows_archive_extracted": true,
+  "Windows_exe_hash_matches_export": true,
+  "Windows_exe_sha256": "06067e05196b5a565bc596a9987af392ab7522a947dfec9160bf747a83ccb448",
+  "fresh_single_ZIP_import_pass": true,
+  "fresh_single_ZIP_normal_start_pass": true,
+  "fresh_single_ZIP_C_option_start_pass": true,
+  "Godot_version": "4.6.3",
+  "startup_renderer": "headless GL Compatibility",
+  "Linux_export_with_same_resource_filters_start_pass": true,
+  "Windows_execution_tested": false,
+  "package_content": "v10 visual content unchanged; single archives; lossless geometry compression and loader update only",
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "C_structural_option": "UNAPPROVED"
+}

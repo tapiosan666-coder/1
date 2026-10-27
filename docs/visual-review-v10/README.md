@@ -1,12 +1,18 @@
-配布ファイルは容量制限のため2個に分かれています。Windows版は `FIND_YOURSELF-v10-Windows.zip` と `FIND_YOURSELF-v10-Windows-Data.zip` の両方を展開し、中の `FIND_YOURSELF-v10` を同じフォルダへまとめてください。`START-v10.cmd` を開くと、同梱の2分割ファイルからEXEを復元して起動します。インターネットからの追加取得はありません。Godot版も `Godot.zip` と `Godot-Data.zip` の中身を同じプロジェクトフォルダへまとめます。
-
 # FIND YOURSELF v10｜環境グラフィック再設計・独立検証版
+
+配布修正版：必要なデータを含む1ファイルです。
+
+- [Godot統合版ZIP](../../downloads/FIND_YOURSELF-v10-Godot-All-in-One.zip)：新しいフォルダにすべて展開し、中の `project.godot` を開いてF5。
+- [Windows統合版7z](../../downloads/FIND_YOURSELF-v10-Windows-All-in-One.7z)：すべて展開し、中の `FIND_YOURSELF_v10.exe` を起動。
+
+どちらも追加データのコピーや、分割ファイルの結合は不要です。Windows 11では7zを右クリックして「すべて展開」できます。以前の分割配布は旧配布形式です。
+
 
 ゲーム本体には統合していません。写真相当の商業施設表現・FF15級の最終品質を達成した完成版とは扱いません。
 
 ## 起動
 
-Windows用ZIPをすべて展開し `FIND_YOURSELF_v10.exe` を起動します。
+Windows統合版を新しいフォルダへすべて展開し、`FIND_YOURSELF_v10.exe` を起動します。データの追加コピー・CMDによるEXE復元は不要です。Godot統合版はZIPをすべて展開し、同じフォルダにある `project.godot` を開いてF5で起動します。
 
 - F1：A館、F2：B館、F3：C館の代表地点
 - WASD：移動、マウス：視点、Shift：速歩、Esc：カーソル／UIを閉じる
@@ -69,3 +75,9 @@ Godot 4.6.3で `project.godot` をインポートしてF5で起動します。�
 `authoring` にBlender・形状生成のスクリプト、`source/v10` に設計差分と配置を収録。形状生成をやり直す場合のみ、比較ZIPの `authoring-inputs/assets` 内にあるv9入力packをプロジェクトの `assets` へコピーします。輸入モデルを再変換する場合は公式出典の原GLBを取得してください。VoxelGIの再ベイクはForward+描画経路で `-- --bake-gi`、C館案は `-- --bake-gi --single=C --c-open-proposal`。
 
 `-- --capture` はv9と同一の9視点、`-- --capture --single=C --c-open-proposal` はC館案の3視点、`-- --capture --single=EXTRA` は追加視点。`-- --benchmark-v8` は引数名の互換を残したv10描画計測です。`--draft` は制作中だけの描画スケール0.5で、提出画像・FPS計測には使用しません。
+
+## 統合版の配布修正
+
+以前の本体・データ分割は廃止しました。この1ファイルに必要なマップデータを収録しています。容量制限に収めるため地形データの圧縮を変更していますが、展開後の幾何・衝突・メタデータは元のv10とバイト単位で同一です。内容や画質を削減していません。新規グラフィック改修ではありません。旧v10の検証結果とFPSは旧版の測定値で、統合版の再測定値とは区別します。統合版ではデータ同一性と展開後の起動を別途確認します。
+
+Blenderの生成処理で `.pack.gz` を再生成した場合は、同梱の `authoring/unified_compression_v10.py` を実行して `.pack.zst` へ変換します。通常起動にはPythonは不要です。
