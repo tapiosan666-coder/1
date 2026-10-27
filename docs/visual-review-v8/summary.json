@@ -1,0 +1,131 @@
+{
+  "fitout_review_stores": 42,
+  "A": 16,
+  "B": 19,
+  "C": 7,
+  "remaining_visual_issues": [
+    "product/equipment models still include simplified geometry",
+    "large ceiling and wall surfaces remain repetitive",
+    "individual shop facade and lighting refinement incomplete",
+    "other floors and parking finishes not developed in this pass"
+  ],
+  "full_mall_finished": false,
+  "FF15_quality_achieved": false,
+  "main_game_modified": false,
+  "integrated": false,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "human_playtest": false,
+  "Windows_real_machine_test": false,
+  "NPC_count": 0,
+  "FPS_144_achieved_on_target_hardware": false,
+  "source": {
+    "geometry_sha256": "0d7c3b600f1ed76ca9d9906043c40aa3f8946dfee37996764199766b28316a57",
+    "context_geometry_sha256": "3d760343415b175fc1458a7c13c3131907894913cf1ff0072cdd9829f34e5cd8",
+    "fitout_sha256": "313e5509e394a39d7073a3f2705445ea681dcd3136b0b0dc698c21016c640972"
+  },
+  "Godot_screenshots": 18,
+  "automatic_routes": {
+    "passed": 945,
+    "failed": 0
+  },
+  "EV": {
+    "passed": 119,
+    "failed": 0
+  },
+  "controls": {
+    "passed": 11,
+    "failed": 0
+  },
+  "FPS": [
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.144959978905424,
+      "elapsed_seconds": 55.187646,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "01-A-plaza",
+      "max_frame_ms": 7297.877,
+      "median_frame_ms": 6889.203,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 7297.877,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.196462780948837,
+      "elapsed_seconds": 40.720181,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "03-B-time-plaza",
+      "max_frame_ms": 5822.627,
+      "median_frame_ms": 4980.126,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 5822.627,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.14551605906133,
+      "elapsed_seconds": 54.97675,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "05-C-storefront",
+      "max_frame_ms": 8869.739,
+      "median_frame_ms": 6302.779,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 8869.739,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "source": "geometry.json.gz",
+    "source_sha256": "aee0dd8fc80fc9aaa542b036fc023e664a9fa352043f57e50b0590b0cdb77eae",
+    "destination": "base-b-v8.json.gz",
+    "removed_old_fixture_visual_triangles": 10124,
+    "removed_old_fixture_collision_triangles": 5916,
+    "wall_top_join_repairs": [],
+    "floor_plan_and_openings_changed": false
+  },
+  {
+    "source": "site-v7.json.gz",
+    "source_sha256": "94a40bd5d10dec31f42a7a62ff02ff1839078f9492c518c0ee1bd6a16951c7bb",
+    "destination": "base-site-v8.json.gz",
+    "removed_old_fixture_visual_triangles": 980,
+    "removed_old_fixture_collision_triangles": 840,
+    "wall_top_join_repairs": [
+      {
+        "old_wall_top_y_m": -0.75,
+        "slab_underside_y_m": -0.38,
+        "visual_vertex_occurrences": 38388,
+        "collision_vertex_occurrences": 38388,
+        "floor_and_openings_changed": false
+      },
+      {
+        "old_wall_top_y_m": 4.6,
+        "slab_underside_y_m": 5.145,
+        "visual_vertex_occurrences": 31761,
+        "collision_vertex_occurrences": 31761,
+        "floor_and_openings_changed": false
+      },
+      {
+        "old_wall_top_y_m": 10.125,
+        "slab_underside_y_m": 10.495,
+        "visual_vertex_occurrences": 31398,
+        "collision_vertex_occurrences": 31398,
+        "floor_and_openings_changed": false
+      },
+      {
+        "old_wall_top_y_m": 15.475,
+        "slab_underside_y_m": 16.02,
+        "visual_vertex_occurrences": 31263,
+        "collision_vertex_occurrences": 31263,
+        "floor_and_openings_changed": false
+      }
+    ],
+    "floor_plan_and_openings_changed": false
+  }
+]
