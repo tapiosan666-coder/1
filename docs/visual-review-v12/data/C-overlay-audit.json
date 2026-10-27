@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "pack": "base-b",
+      "unsupported_flat_finish_candidates": {}
+    },
+    {
+      "pack": "C-outlet",
+      "unsupported_flat_finish_candidates": {}
+    },
+    {
+      "pack": "fitout",
+      "unsupported_flat_finish_candidates": {
+        "v8_pavers@@FINISH-C-2F": 13,
+        "v8_pavers@@FINISH-C-3F": 8
+      }
+    },
+    {
+      "pack": "art",
+      "unsupported_flat_finish_candidates": {}
+    },
+    {
+      "pack": "architecture",
+      "unsupported_flat_finish_candidates": {}
+    },
+    {
+      "pack": "repairs",
+      "unsupported_flat_finish_candidates": {}
+    },
+    {
+      "pack": "es-safety",
+      "unsupported_flat_finish_candidates": {}
+    },
+    {
+      "pack": "retail",
+      "unsupported_flat_finish_candidates": {}
+    }
+  ],
+  "method": "Centroid screening of horizontal render faces at floor +/-.085m, >.10m inside removed structural floor. Instanced props checked separately. Not an exhaustive visual certification.",
+  "phase": "BEFORE supported-finish overlay; not a final failure list",
+  "superseded_by": "C-supported-finish.json"
+}

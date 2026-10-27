@@ -1,0 +1,27 @@
+{
+  "player.gd": {
+    "unchanged_from_v11": true,
+    "sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140"
+  },
+  "escalator_v2.gd": {
+    "unchanged_from_v11": true,
+    "sha256": "4fc49fde6e53316184251730898ff5a8139c7946f050e9826f2a84285aec4739"
+  },
+  "elevators_v11.gd": {
+    "unchanged_from_v11": true,
+    "sha256": "9a79ab4ff50041047a35e04b42dc13730ccc039bab8807a41f5d6ada43053d74"
+  },
+  "fresh_archive": {
+    "files_verified": 918,
+    "packs_decoded_verified": 14,
+    "floors": 15,
+    "store_ids": 480,
+    "normal_boot": true,
+    "C_option_boot": true,
+    "ES_study_boot": true,
+    "main_game_integrated": false,
+    "human_playtest": false,
+    "Windows_GPU_FPS_measured": false,
+    "method": "Fresh unzip; compare every release-manifest file hash; Godot initial editor import; native ZSTD decode/hash; headless normal/C/module startup. No old cache/data was copied."
+  }
+}

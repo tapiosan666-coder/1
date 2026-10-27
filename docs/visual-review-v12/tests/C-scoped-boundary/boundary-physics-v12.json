@@ -1,0 +1,2299 @@
+{
+  "checks": [
+    {
+      "id": "AB1-001",
+      "samples": 720,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-002",
+      "samples": 676,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-003",
+      "samples": 187,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-004",
+      "samples": 135,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-005",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-006",
+      "samples": 157,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-007",
+      "samples": 184,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-008",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-009",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-010",
+      "samples": 135,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-011",
+      "samples": 131,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-012",
+      "samples": 85,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-013",
+      "samples": 121,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-014",
+      "samples": 130,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-015",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-016",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-017",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-018",
+      "samples": 186,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-019",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-020",
+      "samples": 177,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-021",
+      "samples": 138,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-022",
+      "samples": 186,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-023",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-024",
+      "samples": 186,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-025",
+      "samples": 184,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-026",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-027",
+      "samples": 160,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-028",
+      "samples": 146,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-029",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-030",
+      "samples": 284,
+      "uncovered": 0
+    },
+    {
+      "id": "AB1-031",
+      "samples": 324,
+      "uncovered": 0
+    },
+    {
+      "id": "BB1-MARKET",
+      "samples": 264,
+      "uncovered": 0
+    },
+    {
+      "id": "BB1-PICKUP",
+      "samples": 328,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CW-2",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CW-3",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CNW-1",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CNW-2",
+      "samples": 200,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CNW-3",
+      "samples": 184,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CNE-1",
+      "samples": 192,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CNE-2",
+      "samples": 229,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CNE-3",
+      "samples": 215,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CE-1",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CE-2",
+      "samples": 196,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CE-3",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CSE-1",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CSE-2",
+      "samples": 200,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CSE-3",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CSW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CSW-2",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "CB1-CSW-3",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-001",
+      "samples": 718,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-002",
+      "samples": 676,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-003",
+      "samples": 125,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-004",
+      "samples": 67,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-005",
+      "samples": 149,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-006",
+      "samples": 98,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-007",
+      "samples": 149,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-008",
+      "samples": 113,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-009",
+      "samples": 186,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-010",
+      "samples": 135,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-011",
+      "samples": 140,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-012",
+      "samples": 114,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-013",
+      "samples": 206,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-014",
+      "samples": 122,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-015",
+      "samples": 136,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-016",
+      "samples": 126,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-017",
+      "samples": 146,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-018",
+      "samples": 110,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-019",
+      "samples": 205,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-020",
+      "samples": 161,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-021",
+      "samples": 99,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-022",
+      "samples": 111,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-023",
+      "samples": 169,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-024",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-025",
+      "samples": 146,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-026",
+      "samples": 128,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-027",
+      "samples": 204,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-028",
+      "samples": 205,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-029",
+      "samples": 133,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-030",
+      "samples": 133,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-031",
+      "samples": 219,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-032",
+      "samples": 210,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-033",
+      "samples": 117,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-034",
+      "samples": 209,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-035",
+      "samples": 115,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-036",
+      "samples": 137,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-037",
+      "samples": 132,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-038",
+      "samples": 142,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-039",
+      "samples": 134,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-040",
+      "samples": 217,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-041",
+      "samples": 221,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-042",
+      "samples": 132,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-043",
+      "samples": 132,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-044",
+      "samples": 143,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-045",
+      "samples": 142,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-046",
+      "samples": 66,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-047",
+      "samples": 129,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-048",
+      "samples": 140,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-049",
+      "samples": 144,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-050",
+      "samples": 70,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-051",
+      "samples": 268,
+      "uncovered": 0
+    },
+    {
+      "id": "A1F-052",
+      "samples": 324,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-AE1",
+      "samples": 627,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-011",
+      "samples": 96,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-024",
+      "samples": 139,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-032",
+      "samples": 145,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-037",
+      "samples": 153,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-045",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-AW1",
+      "samples": 613,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-001",
+      "samples": 82,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-015",
+      "samples": 86,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-028",
+      "samples": 114,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-003",
+      "samples": 126,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-017",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-030",
+      "samples": 153,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-038",
+      "samples": 192,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-040",
+      "samples": 227,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-043",
+      "samples": 119,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-N01",
+      "samples": 152,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-013",
+      "samples": 125,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-026",
+      "samples": 148,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-039",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-048",
+      "samples": 153,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-055",
+      "samples": 143,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-061",
+      "samples": 138,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-066",
+      "samples": 92,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-010",
+      "samples": 180,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-052",
+      "samples": 204,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-063",
+      "samples": 220,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-N02",
+      "samples": 148,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-007",
+      "samples": 133,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-021",
+      "samples": 160,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-034",
+      "samples": 171,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-046",
+      "samples": 144,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-053",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-059",
+      "samples": 170,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-009",
+      "samples": 332,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-051",
+      "samples": 296,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-N03",
+      "samples": 253,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-036",
+      "samples": 114,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-047",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-054",
+      "samples": 170,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-060",
+      "samples": 149,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-065",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-012",
+      "samples": 160,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-016",
+      "samples": 161,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-025",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-029",
+      "samples": 113,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-042",
+      "samples": 118,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-W4",
+      "samples": 176,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-020",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-033",
+      "samples": 128,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-050",
+      "samples": 195,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-057",
+      "samples": 129,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-N04",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-W3",
+      "samples": 176,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-067",
+      "samples": 113,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-W2",
+      "samples": 187,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-W1",
+      "samples": 183,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-004",
+      "samples": 136,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-018",
+      "samples": 169,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-005",
+      "samples": 149,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-019",
+      "samples": 216,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-008",
+      "samples": 136,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-022",
+      "samples": 77,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-SW32",
+      "samples": 115,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-014",
+      "samples": 127,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-027",
+      "samples": 112,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-SW12",
+      "samples": 195,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-SW31",
+      "samples": 116,
+      "uncovered": 0
+    },
+    {
+      "id": "B1-SW11",
+      "samples": 115,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CW-2",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CW-3",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CNW-1",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CNW-2",
+      "samples": 178,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CNW-3",
+      "samples": 184,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CNE-1",
+      "samples": 192,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CNE-2",
+      "samples": 209,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CNE-3",
+      "samples": 215,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CE-1",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CE-2",
+      "samples": 174,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CE-3",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CSE-1",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CSE-2",
+      "samples": 178,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CSE-3",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CSW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CSW-2",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "C1F-CSW-3",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-001",
+      "samples": 758,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-002",
+      "samples": 676,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-003",
+      "samples": 98,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-004",
+      "samples": 100,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-005",
+      "samples": 195,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-006",
+      "samples": 171,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-007",
+      "samples": 165,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-008",
+      "samples": 121,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-009",
+      "samples": 193,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-010",
+      "samples": 160,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-011",
+      "samples": 177,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-012",
+      "samples": 104,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-013",
+      "samples": 132,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-014",
+      "samples": 139,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-015",
+      "samples": 194,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-016",
+      "samples": 170,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-017",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-018",
+      "samples": 104,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-019",
+      "samples": 141,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-020",
+      "samples": 146,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-021",
+      "samples": 91,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-022",
+      "samples": 151,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-023",
+      "samples": 207,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-024",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-025",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-026",
+      "samples": 170,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-027",
+      "samples": 131,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-028",
+      "samples": 131,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-029",
+      "samples": 179,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-030",
+      "samples": 170,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-031",
+      "samples": 131,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-032",
+      "samples": 129,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-033",
+      "samples": 79,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-034",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-035",
+      "samples": 166,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-036",
+      "samples": 132,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-037",
+      "samples": 132,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-038",
+      "samples": 136,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-039",
+      "samples": 177,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-040",
+      "samples": 165,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-041",
+      "samples": 130,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-042",
+      "samples": 142,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-043",
+      "samples": 202,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-044",
+      "samples": 173,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-045",
+      "samples": 162,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-046",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-047",
+      "samples": 130,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-048",
+      "samples": 155,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-049",
+      "samples": 148,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-050",
+      "samples": 64,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-051",
+      "samples": 284,
+      "uncovered": 0
+    },
+    {
+      "id": "A2F-052",
+      "samples": 324,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-AE1",
+      "samples": 635,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-011",
+      "samples": 109,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-025",
+      "samples": 141,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-033",
+      "samples": 177,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-036",
+      "samples": 138,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-AW1",
+      "samples": 615,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-001",
+      "samples": 113,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-015",
+      "samples": 141,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-003",
+      "samples": 143,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-017",
+      "samples": 119,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-031",
+      "samples": 141,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-037",
+      "samples": 146,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-065",
+      "samples": 210,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-068",
+      "samples": 125,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-069",
+      "samples": 191,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-070",
+      "samples": 114,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-N01",
+      "samples": 140,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-013",
+      "samples": 141,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-027",
+      "samples": 210,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-038",
+      "samples": 108,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-045",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-052",
+      "samples": 142,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-057",
+      "samples": 129,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-062",
+      "samples": 98,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-010",
+      "samples": 171,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-024",
+      "samples": 142,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-042",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-054",
+      "samples": 184,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-007",
+      "samples": 113,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-021",
+      "samples": 182,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-034",
+      "samples": 157,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-043",
+      "samples": 128,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-050",
+      "samples": 165,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-055",
+      "samples": 177,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-009",
+      "samples": 250,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-023",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-032",
+      "samples": 254,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-N02",
+      "samples": 284,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-044",
+      "samples": 74,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-051",
+      "samples": 179,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-056",
+      "samples": 132,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-061",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-064",
+      "samples": 124,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-067",
+      "samples": 99,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-012",
+      "samples": 176,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-016",
+      "samples": 148,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-026",
+      "samples": 207,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-030",
+      "samples": 157,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-W4",
+      "samples": 233,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-006",
+      "samples": 77,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-020",
+      "samples": 130,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-040",
+      "samples": 154,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-047",
+      "samples": 204,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-N03",
+      "samples": 206,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-W3",
+      "samples": 256,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-W2",
+      "samples": 187,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-W1",
+      "samples": 183,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-004",
+      "samples": 190,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-018",
+      "samples": 142,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-005",
+      "samples": 124,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-019",
+      "samples": 236,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-008",
+      "samples": 99,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-022",
+      "samples": 155,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-SW32",
+      "samples": 128,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-014",
+      "samples": 148,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-028",
+      "samples": 112,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-SW12",
+      "samples": 199,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-SW31",
+      "samples": 129,
+      "uncovered": 0
+    },
+    {
+      "id": "B2-SW11",
+      "samples": 128,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CW-2",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CW-3",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CNW-1",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CNW-2",
+      "samples": 200,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CNW-3",
+      "samples": 184,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CNE-1",
+      "samples": 192,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CNE-2",
+      "samples": 229,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CNE-3",
+      "samples": 215,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CE-1",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CE-2",
+      "samples": 196,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CE-3",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CSE-1",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CSE-2",
+      "samples": 200,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CSE-3",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CSW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CSW-2",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "C2F-CSW-3",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-001",
+      "samples": 724,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-002",
+      "samples": 676,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-003",
+      "samples": 228,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-004",
+      "samples": 88,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-005",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-006",
+      "samples": 117,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-007",
+      "samples": 231,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-008",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-009",
+      "samples": 152,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-010",
+      "samples": 108,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-011",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-012",
+      "samples": 123,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-013",
+      "samples": 136,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-014",
+      "samples": 123,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-015",
+      "samples": 152,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-016",
+      "samples": 124,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-017",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-018",
+      "samples": 109,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-019",
+      "samples": 131,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-020",
+      "samples": 85,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-021",
+      "samples": 152,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-022",
+      "samples": 150,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-023",
+      "samples": 166,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-024",
+      "samples": 152,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-025",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-026",
+      "samples": 174,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-027",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-028",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-029",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-030",
+      "samples": 162,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-031",
+      "samples": 153,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-032",
+      "samples": 161,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-033",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-034",
+      "samples": 89,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-035",
+      "samples": 162,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-036",
+      "samples": 157,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-037",
+      "samples": 138,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-038",
+      "samples": 133,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-039",
+      "samples": 173,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-040",
+      "samples": 178,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-041",
+      "samples": 160,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-042",
+      "samples": 160,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-043",
+      "samples": 135,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-044",
+      "samples": 136,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-045",
+      "samples": 170,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-046",
+      "samples": 169,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-047",
+      "samples": 130,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-048",
+      "samples": 166,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-049",
+      "samples": 129,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-050",
+      "samples": 284,
+      "uncovered": 0
+    },
+    {
+      "id": "A3F-051",
+      "samples": 324,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-AE1",
+      "samples": 579,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-011",
+      "samples": 145,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-019",
+      "samples": 227,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-025",
+      "samples": 271,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-AW1",
+      "samples": 613,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-001",
+      "samples": 104,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-015",
+      "samples": 70,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-029",
+      "samples": 101,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-003",
+      "samples": 151,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-017",
+      "samples": 122,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-031",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-037",
+      "samples": 173,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-041",
+      "samples": 199,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-046",
+      "samples": 198,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-N01",
+      "samples": 278,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-013",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-027",
+      "samples": 211,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-038",
+      "samples": 197,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-047",
+      "samples": 155,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-055",
+      "samples": 147,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-010",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-043",
+      "samples": 211,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-052",
+      "samples": 188,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-058",
+      "samples": 121,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-007",
+      "samples": 160,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-021",
+      "samples": 156,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-035",
+      "samples": 123,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-044",
+      "samples": 156,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-053",
+      "samples": 206,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-059",
+      "samples": 158,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-009",
+      "samples": 208,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-023",
+      "samples": 219,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-032",
+      "samples": 214,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-057",
+      "samples": 303,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-036",
+      "samples": 192,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-045",
+      "samples": 139,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-054",
+      "samples": 200,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-060",
+      "samples": 151,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-012",
+      "samples": 230,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-016",
+      "samples": 146,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-030",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-040",
+      "samples": 131,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-W4",
+      "samples": 232,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-034",
+      "samples": 162,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-049",
+      "samples": 156,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-N02",
+      "samples": 359,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-W3",
+      "samples": 256,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-W2",
+      "samples": 187,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-W1",
+      "samples": 183,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-004",
+      "samples": 138,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-018",
+      "samples": 186,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-005",
+      "samples": 285,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-008",
+      "samples": 133,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-022",
+      "samples": 91,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-SW32",
+      "samples": 141,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-014",
+      "samples": 140,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-028",
+      "samples": 144,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-SW12",
+      "samples": 199,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-SW31",
+      "samples": 129,
+      "uncovered": 0
+    },
+    {
+      "id": "B3-N03",
+      "samples": 125,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CW-2",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CW-3",
+      "samples": 175,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CNW-1",
+      "samples": 167,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CNW-2",
+      "samples": 200,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CNW-3",
+      "samples": 184,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CNE-1",
+      "samples": 192,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CNE-2",
+      "samples": 229,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CNE-3",
+      "samples": 215,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CE-1",
+      "samples": 164,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CE-2",
+      "samples": 196,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CE-3",
+      "samples": 181,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CSE-1",
+      "samples": 168,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CSE-2",
+      "samples": 200,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CSE-3",
+      "samples": 185,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CSW-1",
+      "samples": 159,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CSW-2",
+      "samples": 189,
+      "uncovered": 0
+    },
+    {
+      "id": "C3F-CSW-3",
+      "samples": 175,
+      "uncovered": 0
+    }
+  ],
+  "flags": [],
+  "human_playtest": false,
+  "method": "Godot direct_space_state rays across actual visible-boundary sample points; excludes declared customer/staff openings. Two perpendicular rays, 0.68m each. No human visual approval.",
+  "samples": 82491,
+  "stores": 458
+}

@@ -1,0 +1,217 @@
+{
+  "runtime": {
+    "EV_v11_sha256": "9a79ab4ff50041047a35e04b42dc13730ccc039bab8807a41f5d6ada43053d74",
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "animation_script_sha256": "4fc49fde6e53316184251730898ff5a8139c7946f050e9826f2a84285aec4739",
+    "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+    "architecture_v10_sha256": "17ec97347fcd0cb0c9b3945be3e2346d632d9ac976b0b3c480fa41126803b2f2",
+    "art_v10_sha256": "293f36b279d8daa9320da9db553bcde9f81353b6c48558e29168737782515094",
+    "context_geometry_sha256": "11accf37dc1ed9dc7e2cca2a56b0965def5c89629e5d5a389bcc1f465eb9bce2",
+    "context_included": true,
+    "draft": false,
+    "fitout_sha256": "ec923f49631607abd0f05679501851a1fef595f8424a62212be71b281a140569",
+    "geometry_sha256": "2f31971ffc245f4d47c684e992d092ea4ec7b2b37f74f7d479dca8a445752503",
+    "godot_version": {
+      "build": "official",
+      "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+      "hex": 263683,
+      "major": 4,
+      "minor": 6,
+      "patch": 3,
+      "status": "stable",
+      "string": "4.6.3-stable (official)",
+      "timestamp": 0
+    },
+    "graphics_revision": "v11-safety-and-retail-repair",
+    "main_game_loaded": false,
+    "main_script_sha256": "b89a84c0a3b1be4db8319af59357a3debf929cb4c27532cb52573952451f1c13",
+    "map_v11_sha256": "94f614ab1d628746d2cce53f0bdb52148c52a6402d528c18fa540f20640bb354",
+    "msaa": "4x",
+    "player_script_sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+    "proposal_C": false,
+    "render_scale": 1.0,
+    "renderer": "forward_plus",
+    "repairs_v11_sha256": "f9c9870eedd50b1d393cbb79403b6af874572e09a91599deb79ace274a1d6ffb",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "retail_v10_sha256": "ab0a9f1fad0dc160aa05a6ec64ed270f94cfd85abb620dfe4258a3ac816d5a5d",
+    "scene_build_seconds": 30.807404,
+    "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+    "staff_script_sha256": "d4758204dd2e76df2bb59191c4c70ba55597a1c96bb6bf9b83787d18b4716aaa"
+  },
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        -187.7,
+        7.175,
+        -34.8
+      ],
+      "fov": 75.0,
+      "id": "01-ES-upper-B",
+      "look": [
+        -199.0,
+        5.8,
+        -38.0
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        -91.0,
+        1.65,
+        -258.0
+      ],
+      "fov": 75.0,
+      "id": "02-C-courtyard",
+      "look": [
+        -100.0,
+        6.6,
+        -305.0
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        -88.0,
+        7.175,
+        -225.0
+      ],
+      "fov": 75.0,
+      "id": "03-C-upper",
+      "look": [
+        -110.0,
+        6.5,
+        -280.0
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        -160.172770524457,
+        1.65,
+        -326.054274851385
+      ],
+      "fov": 75.0,
+      "id": "shop-apparel-C1F-CW-1",
+      "look": [
+        -167.787029593892,
+        1.45,
+        -324.362217280399
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        385.839585612312,
+        1.65,
+        -53.3638480662246
+      ],
+      "fov": 75.0,
+      "id": "shop-homeware-A1F-005",
+      "look": [
+        384.521667854447,
+        1.45,
+        -61.0517016537681
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        -60.127007039833,
+        1.65,
+        -0.701366898851276
+      ],
+      "fov": 75.0,
+      "id": "shop-beauty-B1-030",
+      "look": [
+        -62.0184328233843,
+        1.45,
+        -8.26856641421477
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        397.405650305752,
+        1.65,
+        -55.3466020136715
+      ],
+      "fov": 75.0,
+      "id": "shop-book-A1F-007",
+      "look": [
+        396.087732547888,
+        1.45,
+        -63.034455601215
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        46.2899162675963,
+        1.65,
+        32.3403506645686
+      ],
+      "fov": 75.0,
+      "id": "shop-electronics-B1-N03",
+      "look": [
+        42.925809868517,
+        1.45,
+        39.3775936002412
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "eye": [
+        -91.214352326413,
+        1.65,
+        -211.886924403942
+      ],
+      "fov": 75.0,
+      "id": "shop-cafe-C1F-CSW-3",
+      "look": [
+        -92.9064098973985,
+        1.45,
+        -204.272665334507
+      ],
+      "resolution": [
+        1920,
+        1080
+      ]
+    }
+  ]
+}
