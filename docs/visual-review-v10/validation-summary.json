@@ -1,0 +1,114 @@
+{
+  "default_physics": {
+    "pass": 945,
+    "fail": 0
+  },
+  "C_option_physics": {
+    "pass": 945,
+    "fail": 0
+  },
+  "EV": {
+    "pass": 119,
+    "fail": 0
+  },
+  "controls": {
+    "pass": 11,
+    "fail": 0
+  },
+  "human_playtest": false,
+  "Windows_real_machine_test": false,
+  "144FPS_verified": false,
+  "measurement": [
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.0983124870511702,
+      "elapsed_seconds": 81.373183,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "01-A-plaza",
+      "max_frame_ms": 12719.844,
+      "median_frame_ms": 10159.084,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 12719.844,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.123213067830118,
+      "elapsed_seconds": 64.928178,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "03-B-time-plaza",
+      "max_frame_ms": 9898.08,
+      "median_frame_ms": 7866.757,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 9898.08,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "actual_wall_clock_rendering": true,
+      "average_fps": 0.101071547917073,
+      "elapsed_seconds": 79.15185,
+      "frames": 8,
+      "human_playtest": false,
+      "id": "05-C-storefront",
+      "max_frame_ms": 13040.637,
+      "median_frame_ms": 9506.903,
+      "not_fixed_fps": true,
+      "p99_frame_ms": 13040.637,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "settings": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      }
+    }
+  ],
+  "automatic_pass_is_not_architectural_or_visual_quality_approval": true
+}
