@@ -1,0 +1,144 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "animation_script_sha256": "21426e73edbb8e803aa274ad1a9a17b68614c321b756fcb8f1adef4b76f3ea94",
+  "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+  "baseline_reconstruction": false,
+  "geometry_sha256": "4aa3eb3d25de7e911063d290789f964726c3e83f47bb956a7523f4e933c90689",
+  "godot_version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "graphics_revision": "v5-reconfigured",
+  "human_playtest": false,
+  "main_game_loaded": false,
+  "main_script_sha256": "8defe6fee3a3022310ebafb81cc4f1cf485d0b1d27be73fdf488c13120ef35f7",
+  "msaa": "4x",
+  "npc_count": 0,
+  "performance": [
+    {
+      "camera": {
+        "eye_local": [
+          -42.5073508616413,
+          1.65,
+          -46.6630262873127
+        ],
+        "id": "01-1F-B1-N01",
+        "label": "B1-N01 店舗街・旧未帰属区画",
+        "look_local": [
+          -39.5288793327885,
+          1.8,
+          -34.8677430201836
+        ]
+      },
+      "draw_calls": 2369.0,
+      "fps": 0.347384988574073,
+      "id": "01-1F-B1-N01",
+      "mean_ms": 2878.65058333333,
+      "p95_ms": 4125.365,
+      "sample_frames": 12,
+      "samples_ms": [
+        0.289,
+        2776.149,
+        3800.134,
+        2975.161,
+        2926.117,
+        3018.532,
+        3541.218,
+        3069.324,
+        3540.027,
+        4125.365,
+        2387.718,
+        2383.773
+      ]
+    },
+    {
+      "camera": {
+        "eye_local": [
+          4.0,
+          1.65,
+          12.0
+        ],
+        "id": "07-1F-time-plaza",
+        "label": "時の広場・基本構造維持",
+        "look_local": [
+          -14.0,
+          4.0,
+          -12.0
+        ]
+      },
+      "draw_calls": 2381.0,
+      "fps": 0.588973705465244,
+      "id": "07-1F-time-plaza",
+      "mean_ms": 1697.86866666667,
+      "p95_ms": 2296.854,
+      "sample_frames": 12,
+      "samples_ms": [
+        1.986,
+        2006.14,
+        1855.794,
+        1911.411,
+        1761.106,
+        1730.254,
+        1920.425,
+        2296.854,
+        1749.211,
+        1733.989,
+        1720.987,
+        1686.267
+      ]
+    },
+    {
+      "camera": {
+        "eye_local": [
+          4.0,
+          12.525,
+          12.0
+        ],
+        "id": "09-3F-time-plaza",
+        "label": "時の広場・基本構造維持",
+        "look_local": [
+          -14.0,
+          14.875,
+          -12.0
+        ]
+      },
+      "draw_calls": 2324.0,
+      "fps": 0.592845686467136,
+      "id": "09-3F-time-plaza",
+      "mean_ms": 1686.77958333333,
+      "p95_ms": 2455.502,
+      "sample_frames": 12,
+      "samples_ms": [
+        0.489,
+        2404.479,
+        1970.824,
+        1668.083,
+        1749.418,
+        1718.595,
+        1661.432,
+        1634.702,
+        2455.502,
+        1647.137,
+        1671.397,
+        1659.297
+      ]
+    }
+  ],
+  "player_script_sha256": "59a0636debb0c59943a2a2d992394a7e1b6ed62b0ce7fe1f5844b58c6727d2d2",
+  "renderer": "gl_compatibility",
+  "resolution": [
+    1280,
+    720
+  ],
+  "scene_build_seconds": 9.605008,
+  "screenshot_kind": "Actual Godot Viewport, no generated imagery",
+  "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+  "staff_script_sha256": "6b8148db806f7a0fd1d8a0cae335078e741fcb5af0d30bbb31880b6251e757d9"
+}

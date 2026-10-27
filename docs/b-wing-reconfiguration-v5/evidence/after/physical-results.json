@@ -1,0 +1,2117 @@
+{
+  "adapter": "",
+  "animation_script_sha256": "21426e73edbb8e803aa274ad1a9a17b68614c321b756fcb8f1adef4b76f3ea94",
+  "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+  "checks": [
+    {
+      "contact_ticks": 581,
+      "id": "B1-AE1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935413991101086,
+      "pass": true,
+      "position": "(243.4962, 0.000836, -46.76555)",
+      "ticks": 581
+    },
+    {
+      "contact_ticks": 149,
+      "id": "B1-011",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932686030864716,
+      "pass": true,
+      "position": "(188.6566, 0.000846, 47.68591)",
+      "ticks": 149
+    },
+    {
+      "contact_ticks": 159,
+      "id": "B1-024",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934835756197572,
+      "pass": true,
+      "position": "(197.6325, 0.000842, 37.4027)",
+      "ticks": 159
+    },
+    {
+      "contact_ticks": 254,
+      "id": "B1-032",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000911271141376346,
+      "pass": true,
+      "position": "(184.1761, 0.000836, -23.18123)",
+      "ticks": 254
+    },
+    {
+      "contact_ticks": 250,
+      "id": "B1-037",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.0009343774872832,
+      "pass": true,
+      "position": "(198.4408, 0.000806, 31.34453)",
+      "ticks": 250
+    },
+    {
+      "contact_ticks": 336,
+      "id": "B1-045",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00093521794769913,
+      "pass": true,
+      "position": "(193.7804, 0.000829, -46.71889)",
+      "ticks": 336
+    },
+    {
+      "contact_ticks": 908,
+      "id": "B1-AW1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936180353164673,
+      "pass": true,
+      "position": "(-318.4505, 0.000806, -29.15913)",
+      "ticks": 908
+    },
+    {
+      "contact_ticks": 109,
+      "id": "B1-001",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000860031577758491,
+      "pass": true,
+      "position": "(-274.722, 0.000836, -8.669349)",
+      "ticks": 109
+    },
+    {
+      "contact_ticks": 88,
+      "id": "B1-015",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000898336758837104,
+      "pass": true,
+      "position": "(-265.3481, 0.000816, -8.725935)",
+      "ticks": 88
+    },
+    {
+      "contact_ticks": 58,
+      "id": "B1-028",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000919052341487259,
+      "pass": true,
+      "position": "(-252.3328, 0.000836, -8.691624)",
+      "ticks": 58
+    },
+    {
+      "contact_ticks": 190,
+      "id": "B1-003",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000930966169107705,
+      "pass": true,
+      "position": "(-80.70788, 0.000804, 3.521043)",
+      "ticks": 190
+    },
+    {
+      "contact_ticks": 292,
+      "id": "B1-017",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933295115828514,
+      "pass": true,
+      "position": "(-68.76608, 0.000836, -21.65881)",
+      "ticks": 292
+    },
+    {
+      "contact_ticks": 257,
+      "id": "B1-030",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000920324178878218,
+      "pass": true,
+      "position": "(-65.07735, 0.000835, -23.66981)",
+      "ticks": 257
+    },
+    {
+      "contact_ticks": 320,
+      "id": "B1-038",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00092745159054175,
+      "pass": true,
+      "position": "(-89.91021, 0.000841, -13.04598)",
+      "ticks": 320
+    },
+    {
+      "contact_ticks": 172,
+      "id": "B1-040",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000909639173187315,
+      "pass": true,
+      "position": "(-41.37345, 0.000816, -22.07418)",
+      "ticks": 172
+    },
+    {
+      "contact_ticks": 187,
+      "id": "B1-043",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000928098859731108,
+      "pass": true,
+      "position": "(-50.11536, 0.000829, -20.06604)",
+      "ticks": 187
+    },
+    {
+      "contact_ticks": 184,
+      "id": "B1-N01",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935229239985347,
+      "pass": true,
+      "position": "(-45.45559, 0.000803, -24.63384)",
+      "ticks": 184
+    },
+    {
+      "contact_ticks": 232,
+      "id": "B1-013",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932749710045755,
+      "pass": true,
+      "position": "(-87.94418, 0.000836, -67.96879)",
+      "ticks": 232
+    },
+    {
+      "contact_ticks": 240,
+      "id": "B1-026",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934669049456716,
+      "pass": true,
+      "position": "(-77.47158, 0.000829, -68.85635)",
+      "ticks": 240
+    },
+    {
+      "contact_ticks": 208,
+      "id": "B1-039",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935084593947977,
+      "pass": true,
+      "position": "(-62.86409, 0.000836, -65.06155)",
+      "ticks": 208
+    },
+    {
+      "contact_ticks": 234,
+      "id": "B1-048",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000927471497561783,
+      "pass": true,
+      "position": "(-52.84945, 0.000823, -70.3261)",
+      "ticks": 234
+    },
+    {
+      "contact_ticks": 260,
+      "id": "B1-055",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935744494199753,
+      "pass": true,
+      "position": "(-38.74702, 0.000823, -72.06314)",
+      "ticks": 260
+    },
+    {
+      "contact_ticks": 240,
+      "id": "B1-061",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000929143163375556,
+      "pass": true,
+      "position": "(-27.89446, 0.000841, -72.93362)",
+      "ticks": 240
+    },
+    {
+      "contact_ticks": 161,
+      "id": "B1-066",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935105374082923,
+      "pass": true,
+      "position": "(-19.92374, 0.000823, -66.59521)",
+      "ticks": 161
+    },
+    {
+      "contact_ticks": 291,
+      "id": "B1-010",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934787385631353,
+      "pass": true,
+      "position": "(139.1514, 0.000835, 37.01049)",
+      "ticks": 291
+    },
+    {
+      "contact_ticks": 307,
+      "id": "B1-052",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000928577792365104,
+      "pass": true,
+      "position": "(113.8316, 0.000818, 49.98551)",
+      "ticks": 307
+    },
+    {
+      "contact_ticks": 396,
+      "id": "B1-063",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935002812184393,
+      "pass": true,
+      "position": "(97.48791, 0.000835, 33.67484)",
+      "ticks": 396
+    },
+    {
+      "contact_ticks": 111,
+      "id": "B1-N02",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000926700013224036,
+      "pass": true,
+      "position": "(138.164, 0.000815, 40.45147)",
+      "ticks": 111
+    },
+    {
+      "contact_ticks": 210,
+      "id": "B1-007",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934771145693958,
+      "pass": true,
+      "position": "(-145.985, 0.000829, 58.1612)",
+      "ticks": 210
+    },
+    {
+      "contact_ticks": 232,
+      "id": "B1-021",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934593030251563,
+      "pass": true,
+      "position": "(-130.5468, 0.000838, 65.65306)",
+      "ticks": 232
+    },
+    {
+      "contact_ticks": 217,
+      "id": "B1-034",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000931186834350228,
+      "pass": true,
+      "position": "(-118.3821, 0.000836, 65.49745)",
+      "ticks": 217
+    },
+    {
+      "contact_ticks": 247,
+      "id": "B1-046",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935498799663037,
+      "pass": true,
+      "position": "(-110.8221, 0.000838, 68.54607)",
+      "ticks": 247
+    },
+    {
+      "contact_ticks": 189,
+      "id": "B1-053",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000930284732021391,
+      "pass": true,
+      "position": "(-98.27496, 0.000823, 65.43871)",
+      "ticks": 189
+    },
+    {
+      "contact_ticks": 244,
+      "id": "B1-059",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933809846173972,
+      "pass": true,
+      "position": "(-89.85734, 0.000816, 71.16817)",
+      "ticks": 244
+    },
+    {
+      "contact_ticks": 237,
+      "id": "B1-009",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934278534259647,
+      "pass": true,
+      "position": "(63.26806, 0.000835, 69.59625)",
+      "ticks": 237
+    },
+    {
+      "contact_ticks": 242,
+      "id": "B1-051",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00092959514586255,
+      "pass": true,
+      "position": "(53.76073, 0.000791, 59.02954)",
+      "ticks": 242
+    },
+    {
+      "contact_ticks": 216,
+      "id": "B1-N03",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933266303036362,
+      "pass": true,
+      "position": "(32.73755, 0.000842, 46.15801)",
+      "ticks": 216
+    },
+    {
+      "contact_ticks": 107,
+      "id": "B1-036",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934969692025334,
+      "pass": true,
+      "position": "(113.343, 0.000816, 71.91051)",
+      "ticks": 107
+    },
+    {
+      "contact_ticks": 227,
+      "id": "B1-047",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933347502723336,
+      "pass": true,
+      "position": "(126.5082, 0.000836, 81.71909)",
+      "ticks": 227
+    },
+    {
+      "contact_ticks": 243,
+      "id": "B1-054",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935209216549993,
+      "pass": true,
+      "position": "(130.3476, 0.000836, 80.26572)",
+      "ticks": 243
+    },
+    {
+      "contact_ticks": 223,
+      "id": "B1-060",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933370727580041,
+      "pass": true,
+      "position": "(145.3457, 0.000829, 76.28862)",
+      "ticks": 223
+    },
+    {
+      "contact_ticks": 177,
+      "id": "B1-065",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935039424803108,
+      "pass": true,
+      "position": "(166.9687, 0.000841, 67.57462)",
+      "ticks": 177
+    },
+    {
+      "contact_ticks": 238,
+      "id": "B1-012",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933853792957962,
+      "pass": true,
+      "position": "(-115.817, 0.000835, -26.37882)",
+      "ticks": 238
+    },
+    {
+      "contact_ticks": 235,
+      "id": "B1-016",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00093574624042958,
+      "pass": true,
+      "position": "(-127.3759, 0.000829, -21.49563)",
+      "ticks": 235
+    },
+    {
+      "contact_ticks": 244,
+      "id": "B1-025",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935668998863548,
+      "pass": true,
+      "position": "(-119.7542, 0.000818, -38.72276)",
+      "ticks": 244
+    },
+    {
+      "contact_ticks": 198,
+      "id": "B1-029",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933780916966498,
+      "pass": true,
+      "position": "(-118.2642, 0.000835, -15.07558)",
+      "ticks": 198
+    },
+    {
+      "contact_ticks": 173,
+      "id": "B1-042",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935592281166464,
+      "pass": true,
+      "position": "(-110.6699, 0.000845, -9.652829)",
+      "ticks": 173
+    },
+    {
+      "contact_ticks": 299,
+      "id": "B1-W4",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932752038352191,
+      "pass": true,
+      "position": "(-193.7614, 0.000829, 35.15653)",
+      "ticks": 299
+    },
+    {
+      "contact_ticks": 239,
+      "id": "B1-020",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000939782534260303,
+      "pass": true,
+      "position": "(-180.2578, 0.000842, 39.23106)",
+      "ticks": 239
+    },
+    {
+      "contact_ticks": 234,
+      "id": "B1-033",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936039781663567,
+      "pass": true,
+      "position": "(-174.1504, 0.000925, 47.02808)",
+      "ticks": 234
+    },
+    {
+      "contact_ticks": 148,
+      "id": "B1-050",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000930156093090773,
+      "pass": true,
+      "position": "(-135.6617, 0.000842, 28.88218)",
+      "ticks": 148
+    },
+    {
+      "contact_ticks": 143,
+      "id": "B1-057",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935251824557781,
+      "pass": true,
+      "position": "(-119.5691, 0.000822, 32.9542)",
+      "ticks": 143
+    },
+    {
+      "contact_ticks": 49,
+      "id": "B1-N04",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000931918795686215,
+      "pass": true,
+      "position": "(-97.146, 0.000829, 31.33639)",
+      "ticks": 49
+    },
+    {
+      "contact_ticks": 298,
+      "id": "B1-W3",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000907228270079941,
+      "pass": true,
+      "position": "(-219.7685, 0.000857, 35.10768)",
+      "ticks": 298
+    },
+    {
+      "contact_ticks": 114,
+      "id": "B1-067",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935749150812626,
+      "pass": true,
+      "position": "(-225.7946, 0.000812, 22.33223)",
+      "ticks": 114
+    },
+    {
+      "contact_ticks": 215,
+      "id": "B1-W2",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000898058002348989,
+      "pass": true,
+      "position": "(-191.1369, 0.000829, -68.47803)",
+      "ticks": 215
+    },
+    {
+      "contact_ticks": 215,
+      "id": "B1-W1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932155991904438,
+      "pass": true,
+      "position": "(-218.7613, 0.000815, -68.48112)",
+      "ticks": 215
+    },
+    {
+      "contact_ticks": 213,
+      "id": "B1-004",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000937637232709676,
+      "pass": true,
+      "position": "(50.30986, 0.000841, -7.268313)",
+      "ticks": 213
+    },
+    {
+      "contact_ticks": 228,
+      "id": "B1-018",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00092538062017411,
+      "pass": true,
+      "position": "(64.13554, 0.000837, -1.585705)",
+      "ticks": 228
+    },
+    {
+      "contact_ticks": 198,
+      "id": "B1-005",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000922720530070364,
+      "pass": true,
+      "position": "(89.57608, 0.000806, -0.748281)",
+      "ticks": 198
+    },
+    {
+      "contact_ticks": 228,
+      "id": "B1-019",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00092882348690182,
+      "pass": true,
+      "position": "(97.9294, 0.000836, -8.843425)",
+      "ticks": 228
+    },
+    {
+      "contact_ticks": 189,
+      "id": "B1-008",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935545889660716,
+      "pass": true,
+      "position": "(-26.34668, 0.000809, 49.57258)",
+      "ticks": 189
+    },
+    {
+      "contact_ticks": 174,
+      "id": "B1-022",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935389136429876,
+      "pass": true,
+      "position": "(-16.92675, 0.000829, 40.10548)",
+      "ticks": 174
+    },
+    {
+      "contact_ticks": 178,
+      "id": "B1-SW32",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935692340135574,
+      "pass": true,
+      "position": "(-36.34841, 0.00082, 53.04551)",
+      "ticks": 178
+    },
+    {
+      "contact_ticks": 225,
+      "id": "B1-014",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932099064812064,
+      "pass": true,
+      "position": "(17.67761, 0.000822, -54.03393)",
+      "ticks": 225
+    },
+    {
+      "contact_ticks": 211,
+      "id": "B1-027",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000929902715142816,
+      "pass": true,
+      "position": "(20.09848, 0.000815, -48.91711)",
+      "ticks": 211
+    },
+    {
+      "contact_ticks": 178,
+      "id": "B1-SW12",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000930516514927149,
+      "pass": true,
+      "position": "(-60.76219, 0.000841, 19.55917)",
+      "ticks": 178
+    },
+    {
+      "contact_ticks": 171,
+      "id": "B1-SW31",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00092696986394003,
+      "pass": true,
+      "position": "(-41.26225, 0.000835, 56.5177)",
+      "ticks": 171
+    },
+    {
+      "contact_ticks": 212,
+      "id": "B1-SW11",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00092307006707415,
+      "pass": true,
+      "position": "(-66.95946, 0.000829, 23.8156)",
+      "ticks": 212
+    },
+    {
+      "contact_ticks": 133,
+      "id": "S-1-W",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.00087959534721449,
+      "pass": true,
+      "position": "(-126.3804, 0.00083, 22.60196)",
+      "ticks": 133
+    },
+    {
+      "contact_ticks": 160,
+      "id": "S-1-L",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000930099282413721,
+      "pass": true,
+      "position": "(49.26899, 0.000835, 48.94929)",
+      "ticks": 160
+    },
+    {
+      "contact_ticks": 246,
+      "id": "S-1-T",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000936139491386712,
+      "pass": true,
+      "position": "(-66.70708, 0.000842, -28.12047)",
+      "ticks": 246
+    },
+    {
+      "contact_ticks": 611,
+      "id": "B2-AE1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932693481445312,
+      "pass": true,
+      "position": "(243.4144, 5.525836, -46.78448)",
+      "ticks": 611
+    },
+    {
+      "contact_ticks": 165,
+      "id": "B2-011",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935077667236328,
+      "pass": true,
+      "position": "(188.0929, 5.52582, 48.68758)",
+      "ticks": 165
+    },
+    {
+      "contact_ticks": 155,
+      "id": "B2-025",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000926017761230469,
+      "pass": true,
+      "position": "(198.5844, 5.525804, 31.7141)",
+      "ticks": 155
+    },
+    {
+      "contact_ticks": 299,
+      "id": "B2-033",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932693481445312,
+      "pass": true,
+      "position": "(186.1326, 5.525834, -21.65186)",
+      "ticks": 299
+    },
+    {
+      "contact_ticks": 225,
+      "id": "B2-036",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(197.0741, 5.525829, 27.20442)",
+      "ticks": 225
+    },
+    {
+      "contact_ticks": 908,
+      "id": "B2-AW1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(-318.45, 5.525842, -29.15917)",
+      "ticks": 908
+    },
+    {
+      "contact_ticks": 108,
+      "id": "B2-001",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000856876373291016,
+      "pass": true,
+      "position": "(-274.6922, 5.525857, -8.691317)",
+      "ticks": 108
+    },
+    {
+      "contact_ticks": 68,
+      "id": "B2-015",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000924587249755859,
+      "pass": true,
+      "position": "(-258.2032, 5.525835, -8.688552)",
+      "ticks": 68
+    },
+    {
+      "contact_ticks": 247,
+      "id": "B2-003",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-71.84977, 5.525792, -17.4954)",
+      "ticks": 247
+    },
+    {
+      "contact_ticks": 188,
+      "id": "B2-017",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933170318603516,
+      "pass": true,
+      "position": "(-64.8427, 5.525829, -16.42889)",
+      "ticks": 188
+    },
+    {
+      "contact_ticks": 156,
+      "id": "B2-031",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935077667236328,
+      "pass": true,
+      "position": "(-53.21584, 5.525837, -16.10286)",
+      "ticks": 156
+    },
+    {
+      "contact_ticks": 233,
+      "id": "B2-037",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(-89.19243, 5.525829, -17.41952)",
+      "ticks": 233
+    },
+    {
+      "contact_ticks": 203,
+      "id": "B2-065",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935077667236328,
+      "pass": true,
+      "position": "(-60.09629, 5.525842, -20.15669)",
+      "ticks": 203
+    },
+    {
+      "contact_ticks": 213,
+      "id": "B2-068",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000915050506591797,
+      "pass": true,
+      "position": "(-47.46441, 5.525816, -20.31907)",
+      "ticks": 213
+    },
+    {
+      "contact_ticks": 192,
+      "id": "B2-069",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000928878784179688,
+      "pass": true,
+      "position": "(-43.15155, 5.525829, -20.28121)",
+      "ticks": 192
+    },
+    {
+      "contact_ticks": 100,
+      "id": "B2-070",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933170318603516,
+      "pass": true,
+      "position": "(-24.1066, 5.525806, -39.71298)",
+      "ticks": 100
+    },
+    {
+      "contact_ticks": 179,
+      "id": "B2-N01",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000904083251953125,
+      "pass": true,
+      "position": "(-81.17462, 5.525804, -1.839912)",
+      "ticks": 179
+    },
+    {
+      "contact_ticks": 241,
+      "id": "B2-013",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933170318603516,
+      "pass": true,
+      "position": "(-84.332, 5.525836, -68.28522)",
+      "ticks": 241
+    },
+    {
+      "contact_ticks": 232,
+      "id": "B2-027",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.0009307861328125,
+      "pass": true,
+      "position": "(-77.21984, 5.525842, -68.90936)",
+      "ticks": 232
+    },
+    {
+      "contact_ticks": 189,
+      "id": "B2-038",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933170318603516,
+      "pass": true,
+      "position": "(-61.27248, 5.525835, -65.20613)",
+      "ticks": 189
+    },
+    {
+      "contact_ticks": 253,
+      "id": "B2-045",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000899791717529297,
+      "pass": true,
+      "position": "(-45.286, 5.525842, -70.67336)",
+      "ticks": 253
+    },
+    {
+      "contact_ticks": 245,
+      "id": "B2-052",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-33.67578, 5.525804, -72.51035)",
+      "ticks": 245
+    },
+    {
+      "contact_ticks": 230,
+      "id": "B2-057",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(-28.07612, 5.525792, -72.91257)",
+      "ticks": 230
+    },
+    {
+      "contact_ticks": 127,
+      "id": "B2-062",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000901222229003906,
+      "pass": true,
+      "position": "(-14.95695, 5.525829, -61.26595)",
+      "ticks": 127
+    },
+    {
+      "contact_ticks": 317,
+      "id": "B2-010",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933170318603516,
+      "pass": true,
+      "position": "(119.9169, 5.525909, 48.89711)",
+      "ticks": 317
+    },
+    {
+      "contact_ticks": 88,
+      "id": "B2-024",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000880718231201172,
+      "pass": true,
+      "position": "(151.0302, 5.525829, 39.23462)",
+      "ticks": 88
+    },
+    {
+      "contact_ticks": 272,
+      "id": "B2-042",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000914096832275391,
+      "pass": true,
+      "position": "(107.0028, 5.525817, 52.72642)",
+      "ticks": 272
+    },
+    {
+      "contact_ticks": 291,
+      "id": "B2-054",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(95.00932, 5.525822, 34.65252)",
+      "ticks": 291
+    },
+    {
+      "contact_ticks": 188,
+      "id": "B2-007",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000913619995117188,
+      "pass": true,
+      "position": "(-145.9549, 5.525829, 58.15387)",
+      "ticks": 188
+    },
+    {
+      "contact_ticks": 208,
+      "id": "B2-021",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932216644287109,
+      "pass": true,
+      "position": "(-131.5459, 5.52583, 62.52761)",
+      "ticks": 208
+    },
+    {
+      "contact_ticks": 234,
+      "id": "B2-034",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(-123.2426, 5.525842, 65.03842)",
+      "ticks": 234
+    },
+    {
+      "contact_ticks": 234,
+      "id": "B2-043",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000919342041015625,
+      "pass": true,
+      "position": "(-106.9742, 5.525828, 69.35136)",
+      "ticks": 234
+    },
+    {
+      "contact_ticks": 245,
+      "id": "B2-050",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000928401947021484,
+      "pass": true,
+      "position": "(-102.9344, 5.525835, 69.934)",
+      "ticks": 245
+    },
+    {
+      "contact_ticks": 160,
+      "id": "B2-055",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(-89.55245, 5.525822, 51.81197)",
+      "ticks": 160
+    },
+    {
+      "contact_ticks": 236,
+      "id": "B2-009",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(56.00884, 5.525841, 60.6112)",
+      "ticks": 236
+    },
+    {
+      "contact_ticks": 254,
+      "id": "B2-023",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.0009307861328125,
+      "pass": true,
+      "position": "(60.21647, 5.525842, 66.12767)",
+      "ticks": 254
+    },
+    {
+      "contact_ticks": 238,
+      "id": "B2-032",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932693481445312,
+      "pass": true,
+      "position": "(31.31721, 5.525835, 49.06125)",
+      "ticks": 238
+    },
+    {
+      "contact_ticks": 326,
+      "id": "B2-N02",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934123992919922,
+      "pass": true,
+      "position": "(41.91586, 5.525829, 42.90926)",
+      "ticks": 326
+    },
+    {
+      "contact_ticks": 105,
+      "id": "B2-044",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(111.8209, 5.525862, 71.84401)",
+      "ticks": 105
+    },
+    {
+      "contact_ticks": 231,
+      "id": "B2-051",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935077667236328,
+      "pass": true,
+      "position": "(126.1741, 5.52581, 82.131)",
+      "ticks": 231
+    },
+    {
+      "contact_ticks": 224,
+      "id": "B2-056",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.0009307861328125,
+      "pass": true,
+      "position": "(135.4162, 5.525804, 79.33754)",
+      "ticks": 224
+    },
+    {
+      "contact_ticks": 251,
+      "id": "B2-061",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(141.5504, 5.525842, 77.68684)",
+      "ticks": 251
+    },
+    {
+      "contact_ticks": 153,
+      "id": "B2-064",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932693481445312,
+      "pass": true,
+      "position": "(159.5841, 5.525836, 66.69469)",
+      "ticks": 153
+    },
+    {
+      "contact_ticks": 172,
+      "id": "B2-067",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934123992919922,
+      "pass": true,
+      "position": "(167.4548, 5.525842, 67.02338)",
+      "ticks": 172
+    },
+    {
+      "contact_ticks": 268,
+      "id": "B2-012",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-120.1491, 5.525898, -18.96306)",
+      "ticks": 268
+    },
+    {
+      "contact_ticks": 231,
+      "id": "B2-016",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932693481445312,
+      "pass": true,
+      "position": "(-127.2818, 5.525829, -21.44798)",
+      "ticks": 231
+    },
+    {
+      "contact_ticks": 274,
+      "id": "B2-026",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934123992919922,
+      "pass": true,
+      "position": "(-119.8, 5.525816, -38.72982)",
+      "ticks": 274
+    },
+    {
+      "contact_ticks": 185,
+      "id": "B2-030",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000928878784179688,
+      "pass": true,
+      "position": "(-120.1811, 5.525832, -13.00245)",
+      "ticks": 185
+    },
+    {
+      "contact_ticks": 289,
+      "id": "B2-W4",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-176.2569, 5.525823, 42.83211)",
+      "ticks": 289
+    },
+    {
+      "contact_ticks": 79,
+      "id": "B2-006",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000860214233398438,
+      "pass": true,
+      "position": "(-170.0849, 5.525842, 26.96078)",
+      "ticks": 79
+    },
+    {
+      "contact_ticks": 158,
+      "id": "B2-020",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000929355621337891,
+      "pass": true,
+      "position": "(-167.3936, 5.525803, 43.3801)",
+      "ticks": 158
+    },
+    {
+      "contact_ticks": 177,
+      "id": "B2-040",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(-144.2466, 5.525842, 29.41379)",
+      "ticks": 177
+    },
+    {
+      "contact_ticks": 316,
+      "id": "B2-047",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(-139.5998, 5.525834, 30.23661)",
+      "ticks": 316
+    },
+    {
+      "contact_ticks": 204,
+      "id": "B2-N03",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000929355621337891,
+      "pass": true,
+      "position": "(-116.7054, 5.525835, 29.54209)",
+      "ticks": 204
+    },
+    {
+      "contact_ticks": 298,
+      "id": "B2-W3",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000907421112060547,
+      "pass": true,
+      "position": "(-219.7685, 5.525856, 35.10773)",
+      "ticks": 298
+    },
+    {
+      "contact_ticks": 215,
+      "id": "B2-W2",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000908374786376953,
+      "pass": true,
+      "position": "(-191.1369, 5.525829, -68.47803)",
+      "ticks": 215
+    },
+    {
+      "contact_ticks": 215,
+      "id": "B2-W1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000927925109863281,
+      "pass": true,
+      "position": "(-218.7613, 5.525839, -68.48112)",
+      "ticks": 215
+    },
+    {
+      "contact_ticks": 221,
+      "id": "B2-004",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000913143157958984,
+      "pass": true,
+      "position": "(53.65561, 5.525804, -6.050277)",
+      "ticks": 221
+    },
+    {
+      "contact_ticks": 223,
+      "id": "B2-018",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(65.15426, 5.525837, -1.228791)",
+      "ticks": 223
+    },
+    {
+      "contact_ticks": 192,
+      "id": "B2-005",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000925064086914062,
+      "pass": true,
+      "position": "(88.57375, 5.525836, -0.358921)",
+      "ticks": 192
+    },
+    {
+      "contact_ticks": 241,
+      "id": "B2-019",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(97.92932, 5.525835, -8.81646)",
+      "ticks": 241
+    },
+    {
+      "contact_ticks": 182,
+      "id": "B2-008",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934123992919922,
+      "pass": true,
+      "position": "(-25.7023, 5.525804, 49.81378)",
+      "ticks": 182
+    },
+    {
+      "contact_ticks": 245,
+      "id": "B2-022",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934123992919922,
+      "pass": true,
+      "position": "(-20.02726, 5.525828, 45.12762)",
+      "ticks": 245
+    },
+    {
+      "contact_ticks": 181,
+      "id": "B2-SW32",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(-36.36103, 5.525836, 53.00374)",
+      "ticks": 181
+    },
+    {
+      "contact_ticks": 225,
+      "id": "B2-014",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935077667236328,
+      "pass": true,
+      "position": "(17.69229, 5.525816, -53.99529)",
+      "ticks": 225
+    },
+    {
+      "contact_ticks": 178,
+      "id": "B2-028",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000897407531738281,
+      "pass": true,
+      "position": "(20.74686, 5.525842, -46.76862)",
+      "ticks": 178
+    },
+    {
+      "contact_ticks": 178,
+      "id": "B2-SW12",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000929355621337891,
+      "pass": true,
+      "position": "(-60.76216, 5.525835, 19.55918)",
+      "ticks": 178
+    },
+    {
+      "contact_ticks": 171,
+      "id": "B2-SW31",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000926971435546875,
+      "pass": true,
+      "position": "(-41.26224, 5.525841, 56.51771)",
+      "ticks": 171
+    },
+    {
+      "contact_ticks": 212,
+      "id": "B2-SW11",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000926494598388672,
+      "pass": true,
+      "position": "(-66.95945, 5.525829, 23.81562)",
+      "ticks": 212
+    },
+    {
+      "contact_ticks": 133,
+      "id": "S-2-W",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000885009765625,
+      "pass": true,
+      "position": "(-126.3804, 5.525842, 22.60195)",
+      "ticks": 133
+    },
+    {
+      "contact_ticks": 160,
+      "id": "S-2-L",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000922679901123047,
+      "pass": true,
+      "position": "(49.26898, 5.525835, 48.94931)",
+      "ticks": 160
+    },
+    {
+      "contact_ticks": 246,
+      "id": "S-2-T",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(-66.70709, 5.525842, -28.12047)",
+      "ticks": 246
+    },
+    {
+      "contact_ticks": 348,
+      "id": "B3-AE1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(198.7304, 10.87584, -52.40538)",
+      "ticks": 348
+    },
+    {
+      "contact_ticks": 180,
+      "id": "B3-011",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(188.1471, 10.87584, 47.91452)",
+      "ticks": 180
+    },
+    {
+      "contact_ticks": 305,
+      "id": "B3-019",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000926971435546875,
+      "pass": true,
+      "position": "(190.5825, 10.87584, -51.68028)",
+      "ticks": 305
+    },
+    {
+      "contact_ticks": 413,
+      "id": "B3-025",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(193.4775, 10.87583, 35.29896)",
+      "ticks": 413
+    },
+    {
+      "contact_ticks": 908,
+      "id": "B3-AW1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-318.45, 10.87581, -29.15917)",
+      "ticks": 908
+    },
+    {
+      "contact_ticks": 108,
+      "id": "B3-001",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000896453857421875,
+      "pass": true,
+      "position": "(-274.7046, 10.87583, -8.691545)",
+      "ticks": 108
+    },
+    {
+      "contact_ticks": 80,
+      "id": "B3-015",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-259.8811, 10.87584, -8.723556)",
+      "ticks": 80
+    },
+    {
+      "contact_ticks": 58,
+      "id": "B3-029",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000928878784179688,
+      "pass": true,
+      "position": "(-249.4849, 10.87583, -9.100525)",
+      "ticks": 58
+    },
+    {
+      "contact_ticks": 198,
+      "id": "B3-003",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-75.4293, 10.87584, 0.019156)",
+      "ticks": 198
+    },
+    {
+      "contact_ticks": 220,
+      "id": "B3-017",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(-70.08229, 10.87582, -17.51983)",
+      "ticks": 220
+    },
+    {
+      "contact_ticks": 279,
+      "id": "B3-031",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-60.20546, 10.87584, -25.73706)",
+      "ticks": 279
+    },
+    {
+      "contact_ticks": 208,
+      "id": "B3-037",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-73.09653, 10.87582, -20.57596)",
+      "ticks": 208
+    },
+    {
+      "contact_ticks": 315,
+      "id": "B3-041",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-54.72545, 10.87582, -32.16025)",
+      "ticks": 315
+    },
+    {
+      "contact_ticks": 166,
+      "id": "B3-046",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000925064086914062,
+      "pass": true,
+      "position": "(-68.3845, 10.87584, -25.13586)",
+      "ticks": 166
+    },
+    {
+      "contact_ticks": 285,
+      "id": "B3-N01",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-53.05619, 10.87583, -37.75451)",
+      "ticks": 285
+    },
+    {
+      "contact_ticks": 262,
+      "id": "B3-013",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-78.30722, 10.87581, -68.3294)",
+      "ticks": 262
+    },
+    {
+      "contact_ticks": 198,
+      "id": "B3-027",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000944137573242188,
+      "pass": true,
+      "position": "(-63.87864, 10.87581, -63.77097)",
+      "ticks": 198
+    },
+    {
+      "contact_ticks": 284,
+      "id": "B3-038",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-45.26471, 10.87582, -71.55104)",
+      "ticks": 284
+    },
+    {
+      "contact_ticks": 252,
+      "id": "B3-047",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000932693481445312,
+      "pass": true,
+      "position": "(-30.39605, 10.87582, -72.37761)",
+      "ticks": 252
+    },
+    {
+      "contact_ticks": 212,
+      "id": "B3-055",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-25.66651, 10.87584, -71.32811)",
+      "ticks": 212
+    },
+    {
+      "contact_ticks": 122,
+      "id": "B3-010",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000929832458496094,
+      "pass": true,
+      "position": "(142.3192, 10.87584, 38.40797)",
+      "ticks": 122
+    },
+    {
+      "contact_ticks": 333,
+      "id": "B3-043",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(116.0298, 10.87583, 48.63073)",
+      "ticks": 333
+    },
+    {
+      "contact_ticks": 174,
+      "id": "B3-052",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(115.739, 10.87582, 43.81903)",
+      "ticks": 174
+    },
+    {
+      "contact_ticks": 217,
+      "id": "B3-058",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(122.4155, 10.87582, 46.94193)",
+      "ticks": 217
+    },
+    {
+      "contact_ticks": 223,
+      "id": "B3-007",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-147.1562, 10.87584, 57.5929)",
+      "ticks": 223
+    },
+    {
+      "contact_ticks": 240,
+      "id": "B3-021",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-132.1672, 10.87582, 64.49619)",
+      "ticks": 240
+    },
+    {
+      "contact_ticks": 231,
+      "id": "B3-035",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(-117.9796, 10.87584, 67.61077)",
+      "ticks": 231
+    },
+    {
+      "contact_ticks": 227,
+      "id": "B3-044",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-106.9153, 10.87583, 68.62708)",
+      "ticks": 227
+    },
+    {
+      "contact_ticks": 250,
+      "id": "B3-053",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-102.8921, 10.87583, 69.35869)",
+      "ticks": 250
+    },
+    {
+      "contact_ticks": 235,
+      "id": "B3-059",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-89.07623, 10.87582, 70.46599)",
+      "ticks": 235
+    },
+    {
+      "contact_ticks": 244,
+      "id": "B3-009",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(54.23633, 10.87584, 60.38474)",
+      "ticks": 244
+    },
+    {
+      "contact_ticks": 262,
+      "id": "B3-023",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(59.52328, 10.87593, 65.0569)",
+      "ticks": 262
+    },
+    {
+      "contact_ticks": 239,
+      "id": "B3-032",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(31.37876, 10.87584, 49.22543)",
+      "ticks": 239
+    },
+    {
+      "contact_ticks": 244,
+      "id": "B3-057",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(47.45729, 10.87584, 57.29251)",
+      "ticks": 244
+    },
+    {
+      "contact_ticks": 224,
+      "id": "B3-036",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.00093841552734375,
+      "pass": true,
+      "position": "(123.2144, 10.87582, 82.17538)",
+      "ticks": 224
+    },
+    {
+      "contact_ticks": 240,
+      "id": "B3-045",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000924110412597656,
+      "pass": true,
+      "position": "(127.4169, 10.87584, 81.21672)",
+      "ticks": 240
+    },
+    {
+      "contact_ticks": 244,
+      "id": "B3-054",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000925064086914062,
+      "pass": true,
+      "position": "(140.9196, 10.87582, 76.24891)",
+      "ticks": 244
+    },
+    {
+      "contact_ticks": 175,
+      "id": "B3-060",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000931739807128906,
+      "pass": true,
+      "position": "(167.5422, 10.87584, 67.30434)",
+      "ticks": 175
+    },
+    {
+      "contact_ticks": 338,
+      "id": "B3-012",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-119.7855, 10.87582, -38.71316)",
+      "ticks": 338
+    },
+    {
+      "contact_ticks": 227,
+      "id": "B3-016",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-127.502, 10.87583, -21.49449)",
+      "ticks": 227
+    },
+    {
+      "contact_ticks": 247,
+      "id": "B3-030",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-117.9927, 10.87584, -19.9073)",
+      "ticks": 247
+    },
+    {
+      "contact_ticks": 211,
+      "id": "B3-040",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000934600830078125,
+      "pass": true,
+      "position": "(-108.8716, 10.87584, -13.4611)",
+      "ticks": 211
+    },
+    {
+      "contact_ticks": 294,
+      "id": "B3-W4",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-175.8841, 10.87583, 43.35085)",
+      "ticks": 294
+    },
+    {
+      "contact_ticks": 147,
+      "id": "B3-034",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(-165.8772, 10.87584, 44.00906)",
+      "ticks": 147
+    },
+    {
+      "contact_ticks": 179,
+      "id": "B3-049",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000933647155761719,
+      "pass": true,
+      "position": "(-145.1035, 10.87584, 28.44863)",
+      "ticks": 179
+    },
+    {
+      "contact_ticks": 418,
+      "id": "B3-N02",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-136.0749, 10.87584, 19.73492)",
+      "ticks": 418
+    },
+    {
+      "contact_ticks": 298,
+      "id": "B3-W3",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000912666320800781,
+      "pass": true,
+      "position": "(-219.7685, 10.87582, 35.10762)",
+      "ticks": 298
+    },
+    {
+      "contact_ticks": 215,
+      "id": "B3-W2",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000906944274902344,
+      "pass": true,
+      "position": "(-191.1369, 10.87583, -68.47795)",
+      "ticks": 215
+    },
+    {
+      "contact_ticks": 215,
+      "id": "B3-W1",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000928878784179688,
+      "pass": true,
+      "position": "(-218.7613, 10.8758, -68.48116)",
+      "ticks": 215
+    },
+    {
+      "contact_ticks": 215,
+      "id": "B3-004",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000922203063964844,
+      "pass": true,
+      "position": "(49.89643, 10.87583, -7.702402)",
+      "ticks": 215
+    },
+    {
+      "contact_ticks": 253,
+      "id": "B3-018",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(69.3056, 10.87584, 1.28863)",
+      "ticks": 253
+    },
+    {
+      "contact_ticks": 291,
+      "id": "B3-005",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(97.92801, 10.87584, -8.814547)",
+      "ticks": 291
+    },
+    {
+      "contact_ticks": 170,
+      "id": "B3-008",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-24.09247, 10.87584, 48.459)",
+      "ticks": 170
+    },
+    {
+      "contact_ticks": 167,
+      "id": "B3-022",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000935554504394531,
+      "pass": true,
+      "position": "(-15.67334, 10.87583, 40.38986)",
+      "ticks": 167
+    },
+    {
+      "contact_ticks": 173,
+      "id": "B3-SW32",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000912666320800781,
+      "pass": true,
+      "position": "(-36.56128, 10.8758, 52.47377)",
+      "ticks": 173
+    },
+    {
+      "contact_ticks": 194,
+      "id": "B3-014",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(14.80694, 10.87584, -52.84892)",
+      "ticks": 194
+    },
+    {
+      "contact_ticks": 239,
+      "id": "B3-028",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(18.81748, 10.87584, -50.2314)",
+      "ticks": 239
+    },
+    {
+      "contact_ticks": 179,
+      "id": "B3-SW12",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-62.3701, 10.87582, 19.98285)",
+      "ticks": 179
+    },
+    {
+      "contact_ticks": 171,
+      "id": "B3-SW31",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000925064086914062,
+      "pass": true,
+      "position": "(-41.26226, 10.87582, 56.51769)",
+      "ticks": 171
+    },
+    {
+      "contact_ticks": 205,
+      "id": "B3-N03",
+      "kind": "customer doorway -> sales -> actual sliding staff door -> working stock module",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-67.70455, 10.87584, 24.22969)",
+      "ticks": 205
+    },
+    {
+      "contact_ticks": 133,
+      "id": "S-3-W",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000864982604980469,
+      "pass": true,
+      "position": "(-126.3804, 10.87584, 22.60196)",
+      "ticks": 133
+    },
+    {
+      "contact_ticks": 160,
+      "id": "S-3-L",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000928878784179688,
+      "pass": true,
+      "position": "(49.26898, 10.87584, 48.94931)",
+      "ticks": 160
+    },
+    {
+      "contact_ticks": 246,
+      "id": "S-3-T",
+      "kind": "service receiving doorway and real interior working aisle",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(-66.70709, 10.87584, -28.12047)",
+      "ticks": 246
+    },
+    {
+      "contact_ticks": 437,
+      "id": "E1-12-UP-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52419498685049,
+      "pass": true,
+      "position": "(-190.4429, 5.525835, -38.00001)",
+      "ticks": 437
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E1-12-UP-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52586650848389,
+      "pass": true,
+      "position": "(-203.5417, 0.000806, -38.00001)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 437,
+      "id": "E1-12-DOWN-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52420630981214,
+      "pass": true,
+      "position": "(-190.4419, 5.525835, -34.00001)",
+      "ticks": 437
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E1-12-DOWN-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52586650848389,
+      "pass": true,
+      "position": "(-203.5419, 0.00081, -33.99999)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 437,
+      "id": "E2-12-UP-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52418273233343,
+      "pass": true,
+      "position": "(-20.00001, 5.525822, 23.54627)",
+      "ticks": 437
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E2-12-UP-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.5258674621582,
+      "pass": true,
+      "position": "(-20.00001, 0.000836, 10.45924)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 437,
+      "id": "E2-12-DOWN-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.5241831355961,
+      "pass": true,
+      "position": "(-23.99999, 5.525806, 23.54579)",
+      "ticks": 437
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E2-12-DOWN-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52586650848389,
+      "pass": true,
+      "position": "(-24.00001, 0.000834, 10.45929)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 437,
+      "id": "E3-12-UP-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52418403903721,
+      "pass": true,
+      "position": "(145.6687, 5.52583, -34.70493)",
+      "ticks": 437
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E3-12-UP-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52588510513306,
+      "pass": true,
+      "position": "(134.3356, 0.000829, -28.16168)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 437,
+      "id": "E3-12-DOWN-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.52418374881381,
+      "pass": true,
+      "position": "(147.6673, 5.525836, -31.23999)",
+      "ticks": 437
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E3-12-DOWN-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.5258674621582,
+      "pass": true,
+      "position": "(136.3355, 0.000829, -24.69754)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 435,
+      "id": "E1-23-UP-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.34917688369751,
+      "pass": true,
+      "position": "(-180.4538, 10.87584, 3.000001)",
+      "ticks": 435
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E1-23-UP-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.35086107254028,
+      "pass": true,
+      "position": "(-193.5532, 5.525816, 3.00001)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 435,
+      "id": "E1-23-DOWN-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.34918355941772,
+      "pass": true,
+      "position": "(-180.4551, 10.87584, 7.000021)",
+      "ticks": 435
+    },
+    {
+      "contact_ticks": 393,
+      "id": "E1-23-DOWN-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.35088491439819,
+      "pass": true,
+      "position": "(-193.554, 5.525817, 6.999998)",
+      "ticks": 393
+    },
+    {
+      "contact_ticks": 435,
+      "id": "E2-23-UP-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.34919404983521,
+      "pass": true,
+      "position": "(23.0, 10.87584, 23.55768)",
+      "ticks": 435
+    },
+    {
+      "contact_ticks": 392,
+      "id": "E2-23-UP-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.35088586807251,
+      "pass": true,
+      "position": "(23.0, 5.525836, 10.43813)",
+      "ticks": 392
+    },
+    {
+      "contact_ticks": 436,
+      "id": "E2-23-DOWN-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.349196434021,
+      "pass": true,
+      "position": "(19.0, 10.87584, 23.57113)",
+      "ticks": 436
+    },
+    {
+      "contact_ticks": 392,
+      "id": "E2-23-DOWN-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.3508677482605,
+      "pass": true,
+      "position": "(19.0, 5.525836, 10.43989)",
+      "ticks": 392
+    },
+    {
+      "contact_ticks": 435,
+      "id": "E3-23-UP-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.34919595718384,
+      "pass": true,
+      "position": "(174.7356, 10.87584, 19.25458)",
+      "ticks": 435
+    },
+    {
+      "contact_ticks": 392,
+      "id": "E3-23-UP-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.35088396072388,
+      "pass": true,
+      "position": "(164.6825, 5.525829, 27.6901)",
+      "ticks": 392
+    },
+    {
+      "contact_ticks": 435,
+      "id": "E3-23-DOWN-up",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.34918928146362,
+      "pass": true,
+      "position": "(177.3046, 10.87583, 22.32054)",
+      "ticks": 435
+    },
+    {
+      "contact_ticks": 392,
+      "id": "E3-23-DOWN-down",
+      "kind": "physical incline, no teleport, conveyor disabled",
+      "max_vertical_difference_m": 5.35088396072388,
+      "pass": true,
+      "position": "(167.2547, 5.525842, 30.7534)",
+      "ticks": 392
+    }
+  ],
+  "failed": 0,
+  "geometry_sha256": "4aa3eb3d25de7e911063d290789f964726c3e83f47bb956a7523f4e933c90689",
+  "godot_version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "graphics_revision": "v5-reconfigured",
+  "human_playtest": false,
+  "main_game_loaded": false,
+  "main_script_sha256": "8defe6fee3a3022310ebafb81cc4f1cf485d0b1d27be73fdf488c13120ef35f7",
+  "mode": "headless fixed 60Hz automated CharacterBody3D move_and_slide",
+  "msaa": "4x",
+  "not_fps_benchmark": true,
+  "passed": 231,
+  "player_script_sha256": "59a0636debb0c59943a2a2d992394a7e1b6ed62b0ce7fe1f5844b58c6727d2d2",
+  "renderer": "gl_compatibility",
+  "resolution": [
+    1280,
+    720
+  ],
+  "scene_build_seconds": 9.515953,
+  "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+  "staff_doors": "Opened through real door transforms; not removed",
+  "staff_script_sha256": "6b8148db806f7a0fd1d8a0cae335078e741fcb5af0d30bbb31880b6251e757d9"
+}

@@ -1,0 +1,65 @@
+{
+  "adapter": "",
+  "animation_script_sha256": "21426e73edbb8e803aa274ad1a9a17b68614c321b756fcb8f1adef4b76f3ea94",
+  "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+  "checks": [
+    {
+      "contact_ticks": 4347,
+      "id": "PUBLIC-1F-WEST-TO-EAST",
+      "kind": "entire public concourse west anchor -> all three plaza districts -> east anchor, source bench/planter footprints avoided",
+      "max_vertical_difference_m": 0.000941484060604125,
+      "pass": true,
+      "position": "(194.4521, 0.000834, -18.04722)",
+      "ticks": 4347
+    },
+    {
+      "contact_ticks": 4516,
+      "id": "PUBLIC-2F-WEST-TO-EAST",
+      "kind": "entire public concourse west anchor -> all three plaza districts -> east anchor, source bench/planter footprints avoided",
+      "max_vertical_difference_m": 0.000936031341552734,
+      "pass": true,
+      "position": "(190.9752, 5.525829, -18.03455)",
+      "ticks": 4516
+    },
+    {
+      "contact_ticks": 4515,
+      "id": "PUBLIC-3F-WEST-TO-EAST",
+      "kind": "entire public concourse west anchor -> all three plaza districts -> east anchor, source bench/planter footprints avoided",
+      "max_vertical_difference_m": 0.000936508178710938,
+      "pass": true,
+      "position": "(193.8357, 10.87584, -18.03359)",
+      "ticks": 4515
+    }
+  ],
+  "failed": 0,
+  "geometry_sha256": "4aa3eb3d25de7e911063d290789f964726c3e83f47bb956a7523f4e933c90689",
+  "godot_version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "graphics_revision": "v5-reconfigured",
+  "human_playtest": false,
+  "main_game_loaded": false,
+  "main_script_sha256": "8defe6fee3a3022310ebafb81cc4f1cf485d0b1d27be73fdf488c13120ef35f7",
+  "mode": "headless fixed 60Hz automated CharacterBody3D move_and_slide",
+  "msaa": "4x",
+  "not_fps_benchmark": true,
+  "passed": 3,
+  "player_script_sha256": "59a0636debb0c59943a2a2d992394a7e1b6ed62b0ce7fe1f5844b58c6727d2d2",
+  "renderer": "gl_compatibility",
+  "resolution": [
+    1280,
+    720
+  ],
+  "scene_build_seconds": 10.415502,
+  "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+  "staff_doors": "Opened through real door transforms; not removed",
+  "staff_script_sha256": "6b8148db806f7a0fd1d8a0cae335078e741fcb5af0d30bbb31880b6251e757d9"
+}

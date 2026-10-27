@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "scope": "originals",
+      "files_checked": 1605,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "scope": "v1",
+      "files_checked": 142,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "scope": "v2",
+      "files_checked": 289,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "scope": "v3",
+      "files_checked": 490,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "scope": "v4 frozen release",
+      "files_checked": 507,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "scope": "repository vs start HEAD",
+      "changed_paths": [],
+      "unexpected_paths": [],
+      "pass": true
+    }
+  ],
+  "main_game_modified": false,
+  "original_design_modified": false,
+  "v1_to_v4_modified": false,
+  "all_passed": true
+}
