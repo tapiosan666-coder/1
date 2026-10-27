@@ -1,0 +1,34 @@
+{
+  "artifacts": [
+    {
+      "name": "FIND_YOURSELF-B-Wing-Local-Review-v6.pdf",
+      "bytes": 26288137,
+      "sha256": "7be3bafe70736cc6025d13118bcd2af8aec1a7ea4895491441422c4bc3d8d286"
+    },
+    {
+      "name": "FIND_YOURSELF-B-Wing-Local-Review-v6-Review.zip",
+      "bytes": 51013105,
+      "sha256": "cf119c478ee3d23a96232e222b2493e19b557e7668168ffae2539d1f96c716a5"
+    },
+    {
+      "name": "FIND_YOURSELF-B-Wing-Local-Review-v6-Godot.zip",
+      "bytes": 66224056,
+      "sha256": "141471a640c7f828d4b69d18fdabcee40d6bbbca40708a34268fbf30d094290f"
+    }
+  ],
+  "pdf_pages": 49,
+  "viewport_images": 28,
+  "CAD_checks_passed": 1222,
+  "CAD_checks_failed": 0,
+  "automated_physics_checks_passed": 248,
+  "automated_physics_checks_failed": 0,
+  "human_playtest": false,
+  "structural_capacity_verified": false,
+  "support_geometry_unresolved": [
+    "RF-SUPPORT-16"
+  ],
+  "main_game_modified": false,
+  "original_design_modified": false,
+  "integration_performed": false,
+  "architecture_complete": false
+}

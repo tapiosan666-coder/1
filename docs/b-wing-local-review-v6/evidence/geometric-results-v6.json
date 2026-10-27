@@ -1,0 +1,8573 @@
+{
+  "checks": [
+    {
+      "id": "198 IDs preserved",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "1F shop overlap",
+      "measured": 2.1828600438311696e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "1F shops public overlap",
+      "measured": 1.8334737737525713e-05,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "1F service overlap",
+      "measured": 4.324733350324905e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "1F atrium unchanged",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "1F old common floor retained",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "1F roles missing",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "1F openings have no slab",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AE1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-011 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-011 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-011 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-011 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-011 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-011 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-024 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-024 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-024 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-024 plot programme uncovered",
+      "measured": 3.348491333099446e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-024 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-024 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-032 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-032 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-032 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-032 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-032 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-032 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-037 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-037 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-037 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-037 plot programme uncovered",
+      "measured": 2.724551233512784e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-037 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-037 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-045 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-045 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-045 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-045 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-045 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-045 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-AW1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-001 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-001 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-001 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-001 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-001 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-001 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-015 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-015 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-015 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-015 plot programme uncovered",
+      "measured": 2.5275325210571964e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-015 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-015 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-028 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-028 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-028 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-028 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-028 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-028 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-003 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-003 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-003 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-003 plot programme uncovered",
+      "measured": 2.9104259224865814e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-003 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-003 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-017 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-017 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-017 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-017 plot programme uncovered",
+      "measured": 2.577976978557217e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-017 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-017 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-030 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-030 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-030 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-030 plot programme uncovered",
+      "measured": 5.235461308927825e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-030 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-030 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-038 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-038 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-038 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-038 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-038 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-038 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-040 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-040 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-040 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-040 plot programme uncovered",
+      "measured": 8.358955874143703e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-040 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-040 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-043 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-043 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-043 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-043 plot programme uncovered",
+      "measured": 3.4501068002512625e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-043 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-043 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N01 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N01 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N01 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N01 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N01 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N01 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-013 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-013 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-013 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-013 plot programme uncovered",
+      "measured": 3.567347830468748e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-013 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-013 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-026 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-026 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-026 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-026 plot programme uncovered",
+      "measured": 2.561581343707431e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-026 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-026 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-039 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-039 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-039 sales/stock overlap",
+      "measured": 2.4802792683480102e-14,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-039 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-039 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-039 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-048 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-048 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-048 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-048 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-048 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-048 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-055 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-055 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-055 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-055 plot programme uncovered",
+      "measured": 6.106607095546224e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-055 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-055 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-061 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-061 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-061 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-061 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-061 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-061 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-066 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-066 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-066 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-066 plot programme uncovered",
+      "measured": 1.6166755500979235e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-066 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-066 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-010 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-010 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-010 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-010 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-010 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-010 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-052 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-052 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-052 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-052 plot programme uncovered",
+      "measured": 6.205667091307987e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-052 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-052 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-063 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-063 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-063 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-063 plot programme uncovered",
+      "measured": 6.575493927130083e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-063 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-063 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N02 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N02 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N02 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N02 plot programme uncovered",
+      "measured": 4.805633828652844e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N02 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N02 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-007 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-007 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-007 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-007 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-007 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-007 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-021 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-021 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-021 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-021 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-021 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-021 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-034 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-034 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-034 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-034 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-034 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-034 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-046 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-046 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-046 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-046 plot programme uncovered",
+      "measured": 3.944589543891652e-09,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-046 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-046 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-053 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-053 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-053 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-053 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-053 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-053 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-059 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-059 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-059 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-059 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-059 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-059 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-009 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-009 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-009 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-009 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-009 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-009 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-051 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-051 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-051 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-051 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-051 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-051 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N03 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N03 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N03 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N03 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N03 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N03 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-036 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-036 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-036 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-036 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-036 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-036 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-047 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-047 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-047 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-047 plot programme uncovered",
+      "measured": 4.5824970129615394e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-047 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-047 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-054 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-054 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-054 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-054 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-054 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-054 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-060 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-060 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-060 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-060 plot programme uncovered",
+      "measured": 6.374833709799077e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-060 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-060 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-065 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-065 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-065 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-065 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-065 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-065 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-012 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-012 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-012 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-012 plot programme uncovered",
+      "measured": 1.2954260153463792e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-012 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-012 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-016 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-016 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-016 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-016 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-016 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-016 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-025 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-025 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-025 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-025 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-025 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-025 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-029 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-029 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-029 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-029 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-029 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-029 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-042 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-042 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-042 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-042 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-042 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-042 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W4 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W4 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W4 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W4 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W4 v4 effective sales budget retained",
+      "measured": 1.4483703125733882e-10,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W4 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-020 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-020 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-020 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-020 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-020 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-020 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-033 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-033 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-033 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-033 plot programme uncovered",
+      "measured": 1.2297492446577962e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-033 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-033 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-050 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-050 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-050 sales/stock overlap",
+      "measured": 7.693263168069156e-14,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-050 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-050 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-050 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-057 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-057 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-057 sales/stock overlap",
+      "measured": 6.456601729366808e-14,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-057 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-057 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-057 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N04 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N04 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-N04 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N04 plot programme uncovered",
+      "measured": 1.0835002406395233e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N04 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-N04 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W3 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W3 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W3 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W3 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W3 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W3 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-067 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-067 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-067 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-067 plot programme uncovered",
+      "measured": 1.5984973700255978e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-067 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-067 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W2 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W2 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W2 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W2 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W2 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W2 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-W1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-W1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-004 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-004 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-004 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-004 plot programme uncovered",
+      "measured": 2.751000920397928e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-004 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-004 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-018 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-018 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-018 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-018 plot programme uncovered",
+      "measured": 9.870007300349926e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-018 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-018 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-005 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-005 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-005 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-005 plot programme uncovered",
+      "measured": 2.3467355703132853e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-005 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-005 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-019 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-019 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-019 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-019 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-019 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-019 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-008 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-008 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-008 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-008 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-008 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-008 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-022 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-022 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-022 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-022 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-022 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-022 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32 plot programme uncovered",
+      "measured": 9.418593549526122e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW32 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-014 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-014 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-014 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-014 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-014 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-014 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-027 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-027 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-027 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-027 plot programme uncovered",
+      "measured": 2.53021578560525e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-027 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-027 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW12 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31 plot programme uncovered",
+      "measured": 1.313998332364008e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW31 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11 plot programme uncovered",
+      "measured": 7.032497073566901e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B1-SW11 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "2F shop overlap",
+      "measured": 1.5934347175061703e-09,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "2F shops public overlap",
+      "measured": 2.148846983114396e-05,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "2F service overlap",
+      "measured": 1.540792338601554e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "2F atrium unchanged",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "2F old common floor retained",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "2F roles missing",
+      "measured": 2.676154784297891e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "2F openings have no slab",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AE1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-011 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-011 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-011 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-011 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-011 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-011 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-025 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-025 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-025 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-025 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-025 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-025 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-033 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-033 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-033 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-033 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-033 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-033 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-036 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-036 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-036 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-036 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-036 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-036 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-AW1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-001 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-001 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-001 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-001 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-001 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-001 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-015 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-015 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-015 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-015 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-015 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-015 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-003 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-003 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-003 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-003 plot programme uncovered",
+      "measured": 1.3272942656072928e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-003 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-003 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-017 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-017 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-017 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-017 plot programme uncovered",
+      "measured": 2.6644682149523646e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-017 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-017 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-031 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-031 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-031 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-031 plot programme uncovered",
+      "measured": 1.4680527371524477e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-031 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-031 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-037 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-037 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-037 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-037 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-037 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-037 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-065 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-065 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-065 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-065 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-065 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-065 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-068 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-068 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-068 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-068 plot programme uncovered",
+      "measured": 6.130447305352504e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-068 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-068 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-069 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-069 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-069 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-069 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-069 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-069 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-070 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-070 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-070 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-070 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-070 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-070 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-N01 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N01 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-N01 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N01 plot programme uncovered",
+      "measured": 4.3116333614534597e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N01 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N01 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-013 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-013 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-013 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-013 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-013 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-013 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-027 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-027 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-027 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-027 plot programme uncovered",
+      "measured": 3.4755372124717354e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-027 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-027 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-038 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-038 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-038 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-038 plot programme uncovered",
+      "measured": 3.1385346632717415e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-038 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-038 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-045 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-045 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-045 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-045 plot programme uncovered",
+      "measured": 1.2580237562787033e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-045 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-045 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-052 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-052 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-052 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-052 plot programme uncovered",
+      "measured": 8.156325921326868e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-052 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-052 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-057 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-057 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-057 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-057 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-057 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-057 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-062 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-062 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-062 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-062 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-062 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-062 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-010 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-010 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-010 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-010 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-010 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-010 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-024 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-024 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-024 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-024 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-024 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-024 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-042 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-042 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-042 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-042 plot programme uncovered",
+      "measured": 1.6403481184479318e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-042 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-042 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-054 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-054 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-054 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-054 plot programme uncovered",
+      "measured": 5.524650115162899e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-054 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-054 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-007 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-007 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-007 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-007 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-007 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-007 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-021 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-021 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-021 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-021 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-021 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-021 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-034 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-034 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-034 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-034 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-034 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-034 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-043 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-043 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-043 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-043 plot programme uncovered",
+      "measured": 4.831212959050847e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-043 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-043 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-050 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-050 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-050 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-050 plot programme uncovered",
+      "measured": 8.776614190963983e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-050 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-050 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-055 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-055 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-055 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-055 plot programme uncovered",
+      "measured": 1.1856750789518422e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-055 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-055 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-009 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-009 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-009 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-009 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-009 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-009 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-023 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-023 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-023 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-023 plot programme uncovered",
+      "measured": 2.1866891408706124e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-023 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-023 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-032 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-032 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-032 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-032 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-032 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-032 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-N02 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N02 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-N02 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N02 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N02 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N02 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-044 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-044 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-044 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-044 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-044 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-044 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-051 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-051 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-051 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-051 plot programme uncovered",
+      "measured": 1.0499996649926402e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-051 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-051 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-056 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-056 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-056 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-056 plot programme uncovered",
+      "measured": 3.2349611966964176e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-056 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-056 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-061 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-061 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-061 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-061 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-061 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-061 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-064 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-064 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-064 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-064 plot programme uncovered",
+      "measured": 2.9187402716956967e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-064 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-064 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-067 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-067 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-067 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-067 plot programme uncovered",
+      "measured": 4.143003771162057e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-067 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-067 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-012 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-012 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-012 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-012 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-012 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-012 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-016 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-016 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-016 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-016 plot programme uncovered",
+      "measured": 2.584200673449999e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-016 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-016 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-026 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-026 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-026 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-026 plot programme uncovered",
+      "measured": 3.274998441882282e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-026 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-026 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-030 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-030 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-030 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-030 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-030 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-030 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W4 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W4 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W4 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W4 plot programme uncovered",
+      "measured": 2.5000236547612076e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W4 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W4 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-006 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-006 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-006 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-006 plot programme uncovered",
+      "measured": 2.550607103302127e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-006 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-006 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-020 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-020 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-020 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-020 plot programme uncovered",
+      "measured": 8.035768672698396e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-020 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-020 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-040 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-040 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-040 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-040 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-040 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-040 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-047 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-047 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-047 sales/stock overlap",
+      "measured": 2.5882461064883334e-14,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-047 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-047 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-047 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-N03 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N03 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-N03 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N03 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N03 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-N03 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W3 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W3 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W3 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W3 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W3 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W3 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W2 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W2 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W2 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W2 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W2 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W2 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-W1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-W1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-004 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-004 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-004 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-004 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-004 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-004 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-018 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-018 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-018 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-018 plot programme uncovered",
+      "measured": 5.952280518473074e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-018 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-018 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-005 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-005 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-005 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-005 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-005 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-005 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-019 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-019 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-019 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-019 plot programme uncovered",
+      "measured": 3.974995121946989e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-019 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-019 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-008 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-008 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-008 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-008 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-008 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-008 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-022 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-022 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-022 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-022 plot programme uncovered",
+      "measured": 5.560002502846828e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-022 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-022 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32 plot programme uncovered",
+      "measured": 1.932501021428834e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW32 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-014 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-014 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-014 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-014 plot programme uncovered",
+      "measured": 5.742001008002262e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-014 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-014 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-028 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-028 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-028 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-028 plot programme uncovered",
+      "measured": 2.484795020851749e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-028 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-028 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW12 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31 plot programme uncovered",
+      "measured": 1.313998332364008e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW31 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11 plot programme uncovered",
+      "measured": 7.032497073566901e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B2-SW11 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "3F shop overlap",
+      "measured": 2.834058250300586e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "3F shops public overlap",
+      "measured": 6.273592349651433e-06,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "3F service overlap",
+      "measured": 6.744005133230146e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "3F atrium unchanged",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "3F old common floor retained",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "3F roles missing",
+      "measured": 1.4262557633926376e-06,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "3F openings have no slab",
+      "measured": 3.686591952545282e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AE1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-011 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-011 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-011 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-011 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-011 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-011 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-019 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-019 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-019 sales/stock overlap",
+      "measured": 2.386331409725913e-14,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-019 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-019 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-019 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-025 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-025 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-025 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-025 plot programme uncovered",
+      "measured": 1.6334992913868973e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-025 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-025 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-AW1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-001 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-001 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-001 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-001 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-001 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-001 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-015 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-015 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-015 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-015 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-015 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-015 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-029 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-029 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-029 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-029 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-029 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-029 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-003 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-003 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-003 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-003 plot programme uncovered",
+      "measured": 5.567593729938203e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-003 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-003 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-017 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-017 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-017 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-017 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-017 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-017 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-031 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-031 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-031 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-031 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-031 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-031 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-037 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-037 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-037 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-037 plot programme uncovered",
+      "measured": 1.5921767371196438e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-037 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-037 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-041 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-041 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-041 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-041 plot programme uncovered",
+      "measured": 8.542370864006443e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-041 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-041 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-046 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-046 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-046 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-046 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-046 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-046 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-N01 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N01 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-N01 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N01 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N01 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N01 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-013 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-013 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-013 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-013 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-013 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-013 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-027 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-027 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-027 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-027 plot programme uncovered",
+      "measured": 5.81573737612473e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-027 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-027 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-038 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-038 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-038 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-038 plot programme uncovered",
+      "measured": 8.752402269282013e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-038 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-038 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-047 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-047 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-047 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-047 plot programme uncovered",
+      "measured": 1.6306400674181987e-16,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-047 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-047 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-055 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-055 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-055 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-055 plot programme uncovered",
+      "measured": 2.6655149909515785e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-055 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-055 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-010 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-010 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-010 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-010 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-010 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-010 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-043 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-043 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-043 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-043 plot programme uncovered",
+      "measured": 3.4330037124163937e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-043 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-043 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-052 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-052 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-052 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-052 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-052 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-052 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-058 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-058 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-058 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-058 plot programme uncovered",
+      "measured": 2.6259738561407175e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-058 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-058 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-007 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-007 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-007 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-007 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-007 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-007 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-021 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-021 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-021 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-021 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-021 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-021 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-035 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-035 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-035 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-035 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-035 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-035 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-044 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-044 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-044 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-044 plot programme uncovered",
+      "measured": 2.906642251332414e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-044 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-044 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-053 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-053 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-053 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-053 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-053 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-053 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-059 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-059 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-059 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-059 plot programme uncovered",
+      "measured": 4.828115040544922e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-059 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-059 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-009 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-009 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-009 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-009 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-009 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-009 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-023 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-023 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-023 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-023 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-023 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-023 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-032 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-032 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-032 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-032 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-032 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-032 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-057 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-057 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-057 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-057 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-057 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-057 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-036 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-036 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-036 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-036 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-036 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-036 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-045 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-045 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-045 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-045 plot programme uncovered",
+      "measured": 3.3867804916098976e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-045 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-045 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-054 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-054 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-054 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-054 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-054 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-054 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-060 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-060 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-060 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-060 plot programme uncovered",
+      "measured": 5.034119765490175e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-060 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-060 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-012 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-012 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-012 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-012 plot programme uncovered",
+      "measured": 1.8620186281737006e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-012 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-012 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-016 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-016 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-016 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-016 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-016 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-016 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-030 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-030 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-030 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-030 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-030 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-030 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-040 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-040 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-040 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-040 plot programme uncovered",
+      "measured": 1.5909388739743235e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-040 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-040 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W4 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W4 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W4 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W4 plot programme uncovered",
+      "measured": 6.740765474688715e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W4 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W4 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-034 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-034 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-034 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-034 plot programme uncovered",
+      "measured": 1.324077558706449e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-034 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-034 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-049 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-049 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-049 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-049 plot programme uncovered",
+      "measured": 7.653070142055185e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-049 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-049 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-N02 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N02 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-N02 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N02 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N02 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N02 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W3 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W3 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W3 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W3 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W3 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W3 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W2 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W2 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W2 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W2 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W2 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W2 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W1 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W1 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-W1 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W1 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W1 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-W1 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-004 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-004 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-004 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-004 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-004 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-004 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-018 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-018 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-018 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-018 plot programme uncovered",
+      "measured": 2.787499986389719e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-018 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-018 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-005 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-005 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-005 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-005 plot programme uncovered",
+      "measured": 5.83499732420556e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-005 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-005 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-008 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-008 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-008 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-008 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-008 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-008 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-022 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-022 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-022 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-022 plot programme uncovered",
+      "measured": 1.1700016511184685e-08,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-022 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-022 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32 plot programme uncovered",
+      "measured": 1.0955012186286694e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW32 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-014 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-014 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-014 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-014 plot programme uncovered",
+      "measured": 3.8319219441973473e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-014 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-014 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-028 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-028 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-028 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-028 plot programme uncovered",
+      "measured": 1.925175663330947e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-028 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-028 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW12 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31 plot programme uncovered",
+      "measured": 1.313998332364008e-07,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-SW31 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-N03 module outside actual stock",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N03 plot connected",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "B3-N03 sales/stock overlap",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N03 plot programme uncovered",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N03 v4 effective sales budget retained",
+      "measured": 0.0,
+      "limit": 0.02,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "B3-N03 true acute tip",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "RF stalls retained",
+      "measured": 0.0,
+      "limit": 0,
+      "unit": "count",
+      "pass": true
+    },
+    {
+      "id": "RF stall unsupported deck area",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "RF vehicle aisle on deck",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "RF protected pedestrian on deck",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "AB-1 floor gaps after",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "AB-1 floor height mismatch",
+      "measured": 0.0,
+      "limit": 0.001,
+      "unit": "m",
+      "pass": true
+    },
+    {
+      "id": "BC-1 floor gaps after",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "BC-1 floor height mismatch",
+      "measured": 0.0,
+      "limit": 0.001,
+      "unit": "m",
+      "pass": true
+    },
+    {
+      "id": "AB-2 floor gaps after",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "AB-2 floor height mismatch",
+      "measured": 0.0,
+      "limit": 0.001,
+      "unit": "m",
+      "pass": true
+    },
+    {
+      "id": "BC-2 floor gaps after",
+      "measured": 0.0,
+      "limit": 0.0001,
+      "unit": "sqm",
+      "pass": true
+    },
+    {
+      "id": "BC-2 floor height mismatch",
+      "measured": 0.0,
+      "limit": 0.001,
+      "unit": "m",
+      "pass": true
+    }
+  ],
+  "passed": 1222,
+  "failed": 0,
+  "corner_cases_reviewed": 17,
+  "remaining_true_acute_cases": 0,
+  "roof_removed_m2": 3137.075993140219,
+  "roof_remaining_projection_overhang_m2": 229.6257309603381,
+  "roof_parking_stalls": 115,
+  "structural_capacity_verified": false,
+  "support_geometry_still_unresolved": [
+    "RF-SUPPORT-16"
+  ],
+  "human_playtest": false,
+  "main_game_modified": false,
+  "all_198_modules_preserved": true,
+  "notes": "CAD tolerance1e-4sqm. V5 before/after net area changes are explicit; original v4 effective-sales budgets retained. Other-wing preview slabs are separated from owned B-floor accounting. No structural/vehicle/human approval inferred from CAD."
+}

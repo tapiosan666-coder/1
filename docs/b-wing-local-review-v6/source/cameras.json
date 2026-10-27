@@ -1,0 +1,320 @@
+[
+  {
+    "id": "01-B1-010-entry",
+    "scope": "main",
+    "eye_local": [
+      170.26561868054722,
+      1.65,
+      40.955609566261785
+    ],
+    "look_local": [
+      163.32387300826787,
+      1.6,
+      36.855345303876945
+    ],
+    "label": "B1-010 / entry"
+  },
+  {
+    "id": "02-B2-024-entry",
+    "scope": "main",
+    "eye_local": [
+      151.1774251163714,
+      7.175000000000001,
+      48.981536326394576
+    ],
+    "look_local": [
+      148.47624503999845,
+      7.125,
+      41.38524603474525
+    ],
+    "label": "B2-024 / entry"
+  },
+  {
+    "id": "03-B1-034-backroom",
+    "scope": "main",
+    "eye_local": [
+      -118.38670232705647,
+      1.65,
+      65.57518109536237
+    ],
+    "look_local": [
+      -113.09858103400597,
+      1.6,
+      69.54671538067115
+    ],
+    "label": "B1-034 / backroom"
+  },
+  {
+    "id": "04-B1-053-backroom",
+    "scope": "main",
+    "eye_local": [
+      -98.28315824999993,
+      1.65,
+      65.50466779999999
+    ],
+    "look_local": [
+      -91.79074994704581,
+      1.6,
+      68.29436684371741
+    ],
+    "label": "B1-053 / backroom"
+  },
+  {
+    "id": "05-B2-047-corner",
+    "scope": "main",
+    "eye_local": [
+      -122.87036441291514,
+      7.175,
+      39.15306536941608
+    ],
+    "look_local": [
+      -122.25860999999998,
+      7.125,
+      35.2001226
+    ],
+    "label": "B2-047 / corner"
+  },
+  {
+    "id": "06-B3-054-backroom",
+    "scope": "main",
+    "eye_local": [
+      140.89698716104664,
+      12.525,
+      76.31039583022313
+    ],
+    "look_local": [
+      139.183,
+      12.475,
+      75.183
+    ],
+    "label": "B3-054 / backroom"
+  },
+  {
+    "id": "07-B1-022-entry",
+    "scope": "main",
+    "eye_local": [
+      -4.527246130668345,
+      1.65,
+      29.0
+    ],
+    "look_local": [
+      -3.5272461306683454,
+      1.6,
+      37.0
+    ],
+    "label": "B1-022 / entry"
+  },
+  {
+    "id": "08-2F-time-plaza",
+    "scope": "main",
+    "eye_local": [
+      4,
+      7.175,
+      12
+    ],
+    "look_local": [
+      -14,
+      9.5,
+      -12
+    ],
+    "label": "時の広場・開放感と床の視認性"
+  },
+  {
+    "id": "09-AB-2-bridge",
+    "scope": "main",
+    "eye_local": [
+      273,
+      7.175,
+      -51.5
+    ],
+    "look_local": [
+      309,
+      7.175,
+      -51.5
+    ],
+    "label": "AB-2 実橋梁部分とA館床プレビュー"
+  },
+  {
+    "id": "10-BC-2-bridge",
+    "scope": "main",
+    "eye_local": [
+      -8.0,
+      7.175000000000001,
+      -73.2
+    ],
+    "look_local": [
+      -3,
+      7.175000000000001,
+      -111
+    ],
+    "label": "BC-2 実連絡通路・他館内部は未施工"
+  },
+  {
+    "id": "11-RF-pedestrian",
+    "scope": "context",
+    "after_only": true,
+    "eye_local": [
+      -118.99913338142869,
+      18.05,
+      63.99970265645176
+    ],
+    "look_local": [
+      -111,
+      18.1,
+      99
+    ],
+    "label": "RF 歩車分離と連絡橋（既存立体P内部は未施工）"
+  },
+  {
+    "id": "12-RF-parking-aerial",
+    "scope": "context",
+    "after_only": true,
+    "eye_local": [
+      -176,
+      42,
+      59
+    ],
+    "look_local": [
+      -176,
+      16.4,
+      19
+    ],
+    "label": "RF115台と屋上通路・実Godot俯瞰"
+  },
+  {
+    "id": "13-B1-market",
+    "scope": "main",
+    "after_only": true,
+    "eye_local": [
+      -279,
+      -3.7,
+      -9
+    ],
+    "look_local": [
+      -287,
+      -3.7,
+      -9
+    ],
+    "label": "B1躯体・入口の整合検証。詳細内装未施工"
+  },
+  {
+    "id": "14-support-reservation",
+    "scope": "main",
+    "after_only": true,
+    "eye_local": [
+      -74.95321702812493,
+      1.65,
+      20.352439911193287
+    ],
+    "look_local": [
+      -71.86421231910526,
+      10.0,
+      24.284112571481074
+    ],
+    "label": "支持位置検討用の外部カメラ。耐荷重・基礎は未検証"
+  },
+  {
+    "id": "WALK-B1-010-entry",
+    "scope": "main",
+    "after_only": true,
+    "eye_local": [
+      166.568176269531,
+      1.650829376920592,
+      39.3622741699219
+    ],
+    "look_local": [
+      165.69773613669173,
+      1.6,
+      38.68967729332424
+    ],
+    "label": "B1-010 / 自動歩行到達点 entry",
+    "grounded_checkpoint": {
+      "on_floor": true,
+      "position": [
+        166.568176269531,
+        0.00082937692059204,
+        39.3622741699219
+      ]
+    },
+    "source_actual_physics_run": "evidence/after/physical-results.json",
+    "human_control": false
+  },
+  {
+    "id": "WALK-B1-010-stock",
+    "scope": "main",
+    "after_only": true,
+    "eye_local": [
+      139.151473999023,
+      1.6508352631120942,
+      37.0105056762695
+    ],
+    "look_local": [
+      146.46317817166073,
+      1.6,
+      37.84029182382865
+    ],
+    "label": "B1-010 / 自動歩行到達点 stock",
+    "grounded_checkpoint": {
+      "on_floor": true,
+      "position": [
+        139.151473999023,
+        0.000835263112094253,
+        37.0105056762695
+      ]
+    },
+    "source_actual_physics_run": "evidence/after/physical-results.json",
+    "human_control": false
+  },
+  {
+    "id": "WALK-B2-047-entry",
+    "scope": "main",
+    "after_only": true,
+    "eye_local": [
+      -115.405288696289,
+      7.1758417129516605,
+      22.3494434356689
+    ],
+    "look_local": [
+      -115.76703694361436,
+      7.125,
+      23.388263051886
+    ],
+    "label": "B2-047 / 自動歩行到達点 entry",
+    "grounded_checkpoint": {
+      "on_floor": true,
+      "position": [
+        -115.405288696289,
+        5.52584171295166,
+        22.3494434356689
+      ]
+    },
+    "source_actual_physics_run": "evidence/after/physical-results.json",
+    "human_control": false
+  },
+  {
+    "id": "WALK-B2-047-stock",
+    "scope": "main",
+    "after_only": true,
+    "eye_local": [
+      -139.603393554688,
+      7.175816440582279,
+      30.2375812530518
+    ],
+    "look_local": [
+      -138.50690653553534,
+      7.125,
+      29.84990763369707
+    ],
+    "label": "B2-047 / 自動歩行到達点 stock",
+    "grounded_checkpoint": {
+      "on_floor": true,
+      "position": [
+        -139.603393554688,
+        5.52581644058228,
+        30.2375812530518
+      ]
+    },
+    "source_actual_physics_run": "evidence/after/physical-results.json",
+    "human_control": false
+  }
+]

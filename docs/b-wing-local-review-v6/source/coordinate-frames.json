@@ -1,0 +1,10 @@
+{
+  "units": "metres",
+  "geometry_polygons": "World XZ",
+  "store_entry_back_door_front_and_paths": "World XZ",
+  "service_entry_main_route": "World XZ, normalized from v4",
+  "cores_escalators_vertical_devices": "World XZ with height",
+  "legacy_connector_route_waiting_point_wayfinding_point": "B-local XZ; World = local + (-714,-30); kept as source provenance; drawing converts explicitly",
+  "viewport": "Local XYZ; World XZ = local XZ + (-429,46)",
+  "integration_warning": "Normalize typed legacy numeric points once before future NPC/sign/bridge integration. Do not translate u/n directions or already-world geometry."
+}
