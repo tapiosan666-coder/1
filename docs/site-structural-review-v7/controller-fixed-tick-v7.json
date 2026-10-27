@@ -1,0 +1,37 @@
+{
+  "NPCs_present": false,
+  "checks": [
+    {
+      "distance_m": 8.60000324249268,
+      "pass": true,
+      "physics_ticks": 120,
+      "requested_cap": 30
+    },
+    {
+      "distance_m": 8.60000324249268,
+      "pass": true,
+      "physics_ticks": 120,
+      "requested_cap": 60
+    },
+    {
+      "distance_m": 8.60000324249268,
+      "pass": true,
+      "physics_ticks": 120,
+      "requested_cap": 120
+    },
+    {
+      "distance_m": 8.60000324249268,
+      "pass": true,
+      "physics_ticks": 120,
+      "requested_cap": 144
+    },
+    {
+      "distance_m": 8.60000324249268,
+      "pass": true,
+      "physics_ticks": 120,
+      "requested_cap": 0
+    }
+  ],
+  "fixed_physics_Hz": 60,
+  "not_actual_render_FPS_measurement": true
+}

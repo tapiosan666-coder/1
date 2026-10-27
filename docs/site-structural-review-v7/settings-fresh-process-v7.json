@@ -1,0 +1,18 @@
+{
+  "fresh_process": true,
+  "observed": {
+    "fps_limit": 0,
+    "note": "VSync and display refresh can impose a lower real FPS",
+    "physics_ticks": 60,
+    "requested_resolution": [
+      3840,
+      2160
+    ],
+    "vsync_requested": false,
+    "window_size": [
+      3840,
+      2160
+    ]
+  },
+  "pass": true
+}

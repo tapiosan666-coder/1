@@ -1,0 +1,54 @@
+{
+  "revision": "v7 standalone whole-site structural validation",
+  "date_JST": "2026-10-27",
+  "main_game_modified": false,
+  "integrated": false,
+  "drawing_checks": {
+    "passed": 1897,
+    "failed": 0
+  },
+  "physics": {
+    "physics-all.json": {
+      "count": 945,
+      "passed": 945
+    },
+    "physics-EV.json": {
+      "count": 119,
+      "passed": 119
+    },
+    "vehicle-clearance-v7.json": {
+      "count": 24,
+      "passed": 24
+    },
+    "vehicle-clearance-2_1m-v7.json": {
+      "count": 24,
+      "passed": 24
+    },
+    "ui-interaction-v7.json": {
+      "count": 34,
+      "passed": 34
+    }
+  },
+  "PDF_pages": 67,
+  "screenshots": 30,
+  "stores": 480,
+  "B_1_to_3F_preserved_stores": 198,
+  "parking_stalls": 6699,
+  "elevators": 21,
+  "settings_default": {
+    "resolution": [
+      1920,
+      1080
+    ],
+    "FPS_cap": 144,
+    "VSync_requested": true
+  },
+  "human_playtest": false,
+  "Windows_real_machine_test": false,
+  "structural_safety_verified": false,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "A_C_detailed_finish_complete": false,
+  "commercial_graphics_quality_complete": false,
+  "out_of_site_W_OFFSITE_A": "external continuation not verified; planner boundary exception",
+  "source_inputs_originals_modified": false
+}
