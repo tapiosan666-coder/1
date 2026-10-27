@@ -1,0 +1,93 @@
+{
+  "version": "v11 independent mall validation",
+  "main_game_integrated": false,
+  "store_IDs_preserved": 480,
+  "floors_preserved": 15,
+  "human_playtest": false,
+  "Windows_GPU_tested": false,
+  "60FPS_verified": false,
+  "144FPS_verified": false,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "C_structure": "UNAPPROVED / UNBUILT v11 support frame study; normal geometry retained",
+  "ES_relocation": "UNBUILT proposal, no bank moved",
+  "tests": {
+    "指定経路945": {
+      "passed": 945,
+      "failed": 0,
+      "file": "tests/指定経路945.json"
+    },
+    "EV乗降119": {
+      "passed": 119,
+      "failed": 0,
+      "file": "tests/EV乗降119.json"
+    },
+    "乗降口安全296": {
+      "passed": 296,
+      "failed": 0,
+      "file": "tests/乗降口安全296.json"
+    },
+    "屋上104": {
+      "passed": 104,
+      "failed": 0,
+      "file": "tests/屋上104.json"
+    },
+    "手すり18": {
+      "passed": 18,
+      "failed": 0,
+      "file": "tests/手すり18.json"
+    },
+    "A-B-C連続移動": {
+      "pass": true,
+      "file": "tests/A-B-C連続移動.json"
+    },
+    "操作・設定": {
+      "passed": 11,
+      "failed": 0,
+      "file": "tests/操作・設定.json"
+    },
+    "C別案348": {
+      "passed": 348,
+      "failed": 0,
+      "file": "tests/C別案348.json"
+    },
+    "ES修正前": {
+      "passed": 3,
+      "failed": 3,
+      "file": "tests/ES修正前.json"
+    },
+    "ES修正後60": {
+      "passed": 6,
+      "failed": 0,
+      "file": "tests/ES修正後60.json"
+    },
+    "ES描画ステップ30": {
+      "passed": 1,
+      "failed": 0,
+      "file": "tests/ES描画ステップ30.json"
+    },
+    "ES描画ステップ144": {
+      "passed": 1,
+      "failed": 0,
+      "file": "tests/ES描画ステップ144.json"
+    },
+    "配布ZIP検証": {
+      "manifest_checked": 840,
+      "zip_crc": true,
+      "file": "tests/配布ZIP検証.json"
+    },
+    "描画性能": {
+      "NPC_count": 0,
+      "file": "tests/描画性能.json"
+    }
+  },
+  "method_notes": [
+    "Geometry checks are not architectural approval.",
+    "945 route tests include the final mechanical casing. EV119 and C-option348 were rechecked with the casing. Shaft296/RF104/guard18 predate the casing; the last guard finish changes only render geometry and preserves every collision-array hash. Recorded test hashes are retained.",
+    "30/60/144 fixed render steps are timing simulations, not measured GPU FPS.",
+    "Native 1920x1080 screenshots are in screenshots; plans are separate vector drawings."
+  ],
+  "geometry": {
+    "inventory": [],
+    "partition_issues": []
+  }
+}
