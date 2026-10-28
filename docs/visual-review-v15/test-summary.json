@@ -1,0 +1,136 @@
+{
+  "version": "v15",
+  "tests": [
+    {
+      "name": "通常建築・移動処理の保護",
+      "passed": 28,
+      "failed": 0,
+      "method": "18建築パック＋10主要コード・データのSHA比較。",
+      "source": "source/preservation-audit.json"
+    },
+    {
+      "name": "閉鎖店舗の境界断面",
+      "passed": 458,
+      "failed": 0,
+      "method": "実描画・実衝突、床+1.15m、辺サンプル間隔0.5m以下。屋上22区画は別評価。",
+      "source": "source/boundary-audit.json"
+    },
+    {
+      "name": "通常版の指定歩行経路",
+      "passed": 945,
+      "failed": 0,
+      "method": "実衝突のカプセル自動経路追従。人間の操作ではありません。",
+      "source": "tests/normal-945.json"
+    },
+    {
+      "name": "C館別案の入口・設備経路",
+      "passed": 186,
+      "failed": 0,
+      "method": "B1〜RFのC館経路を別案で再実行。屋上6入口を含みます。",
+      "source": "tests/C-186.json"
+    },
+    {
+      "name": "ES敷地案の乗降・乗継・接続",
+      "passed": 16,
+      "failed": 0,
+      "method": "6機械＋2乗継＋8通路接続。W入力注入、1F〜RFのみ。",
+      "source": "tests/ES-site-input.json"
+    },
+    {
+      "name": "新ES開口のガードへの入力",
+      "passed": 12,
+      "failed": 0,
+      "method": "2F・3F・RFの4方向。見える柵へ160tick進み、落下・通過を検査。",
+      "source": "tests/ES-edge-input.json"
+    },
+    {
+      "name": "C館新回廊のガードへの入力",
+      "passed": 22,
+      "failed": 0,
+      "method": "2Fの回廊・必要アクセス橋と3Fの独立棟端部。床端の代表位置。全境界の連続保証ではありません。",
+      "source": "tests/C-edge-input.json"
+    },
+    {
+      "name": "C館別案の回廊・アクセス橋",
+      "passed": 8,
+      "failed": 0,
+      "method": "8経路の実W入力。2階回遊6経路とES降り場への接続2経路。",
+      "source": "tests/C-gallery-input.json"
+    },
+    {
+      "name": "C館別案のES乗降",
+      "passed": 4,
+      "failed": 0,
+      "method": "既存C館4機械の乗場・フライト・退出。",
+      "source": "tests/C-ES-approach.json"
+    },
+    {
+      "name": "C館別案の館間・駐車場接続",
+      "passed": 14,
+      "failed": 0,
+      "method": "A/B・B/Cと駐車場橋を含む指定接続経路。",
+      "source": "tests/C-external-connections.json"
+    },
+    {
+      "name": "代表店舗の設備への到達",
+      "passed": 7,
+      "failed": 0,
+      "method": "既存什器を避けた経路で実衝突を検査。",
+      "source": "tests/service-walk.json"
+    },
+    {
+      "name": "既存ESの乗降・退出",
+      "passed": 40,
+      "failed": 0,
+      "method": "通常版40機械。W入力で乗場・フライト・降場を通過。",
+      "source": "tests/normal-ES-approach.json"
+    },
+    {
+      "name": "既存EVの連続昇降・乗降",
+      "passed": 119,
+      "failed": 0,
+      "method": "通常版119ケース。かごの連続移動、床との位置差、退出を検査。",
+      "source": "tests/normal-EV-rides.json"
+    },
+    {
+      "name": "F9・M・表示位置",
+      "passed": 33,
+      "failed": 0,
+      "method": "更新後の28行先など33チェック。地下照明天井支持247点は別記。",
+      "source": "tests/controls.json"
+    },
+    {
+      "name": "通常版の間接光キャッシュ",
+      "passed": 6,
+      "failed": 0,
+      "method": "最終スクリプト・アセットと6キャッシュの署名照合。",
+      "source": "tests/cache-normal.json"
+    },
+    {
+      "name": "C別案の間接光キャッシュ",
+      "passed": 1,
+      "failed": 0,
+      "method": "C代表エリア1キャッシュを別案で再ベイク・照合。",
+      "source": "tests/cache-C-option.json"
+    },
+    {
+      "name": "配布ZIPの新規展開と起動",
+      "passed": 5,
+      "failed": 0,
+      "method": "既存.godotなし。新規インポート、19パック検証、通常/C/ESの起動。",
+      "source": "tests/fresh-package-smoke.json"
+    }
+  ],
+  "no_combined_quality_pass_count": true,
+  "ES_max_per_physics_frame_vertical_motion_m": 0.0460333824157715,
+  "human_playtest": false,
+  "Windows_GPU_FPS": null,
+  "FPS_144_reached": null,
+  "renderer_for_screenshots": "Godot 4.6.3 Forward+ / Linux llvmpipe (software Vulkan)",
+  "main_game_integrated": false,
+  "normal_building_preserved": true,
+  "C_variant": "UNAPPROVED",
+  "ES_site_variant": "UNAPPROVED, 1F-RF only; B1 not installed",
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "quality_status": "Architectural and representative-service validation; not full-mall or FF16 quality completion"
+}
