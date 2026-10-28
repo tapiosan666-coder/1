@@ -1,0 +1,53 @@
+{
+  "version": "v14",
+  "rows": [
+    {
+      "label": "トイレ・地下・屋上のWキー入力",
+      "result": "738/738・植栽槽施工後の屋上26/26 合格",
+      "method": "物理W入力",
+      "source": "input/toilet-input.json"
+    },
+    {
+      "label": "店舗・階段・館間・駐車場",
+      "result": "945/945・植栽槽施工後の屋上48/48 合格",
+      "method": "CharacterBody自動経路追従",
+      "source": "regression/physics-all.json"
+    },
+    {
+      "label": "EVの実乗降・連続移動",
+      "result": "119/119 合格",
+      "method": "物理キャリアへの自動乗降",
+      "source": "EV/physics-EV.json"
+    },
+    {
+      "label": "ESの乗車・昇降・退出",
+      "result": "40/40 合格",
+      "method": "物理W入力",
+      "source": "ES/es-approach-input.json"
+    },
+    {
+      "label": "トイレ扉",
+      "result": "300/300 合格",
+      "method": "物理F入力",
+      "source": "doors/door-input.json"
+    },
+    {
+      "label": "マップ・確認メニュー",
+      "result": "26/26 合格",
+      "method": "キー入力とUIイベント",
+      "source": "controls/controls-amenities.json"
+    },
+    {
+      "label": "屋上植栽の全占有範囲と既存衝突床",
+      "result": "168/168 合格・槽は17区画施工／1区画見送り",
+      "method": "幾何差分＋中心レイ",
+      "source": "source/v14/roof-full-footprint.json"
+    }
+  ],
+  "human_playtest": false,
+  "Windows_GPU_FPS": null,
+  "normal_144FPS_cap": true,
+  "VSync_default": true,
+  "test_physics_Hz": 60,
+  "actual_Godot_native_screenshots_required": true
+}

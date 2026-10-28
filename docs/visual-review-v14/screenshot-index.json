@@ -1,0 +1,338 @@
+[
+  {
+    "id": "01-A-plaza",
+    "camera": {
+      "id": "01-A-plaza",
+      "eye": [
+        325.439758300781,
+        1.650829086115118,
+        -63.7521171569824
+      ],
+      "look": [
+        373.439758300781,
+        3.000829086115118,
+        -56.7521171569824
+      ],
+      "note": "v7 published identical camera",
+      "fov": 75,
+      "ui": ""
+    },
+    "before_sha256": "67288690707509869a4fb394bb4b2fa73a1f29ff980b1036f938b8888921928b",
+    "after_sha256": "185db77bc7e7c3e1314d4fc890d700c35869abbe515039d27390add32458999d",
+    "after_white_clip_fraction": 0.0003587962962962963,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "03-B-time-plaza",
+    "camera": {
+      "id": "03-B-time-plaza",
+      "eye": [
+        -3.52724623680115,
+        1.6502343729138373,
+        32.0999984741211
+      ],
+      "look": [
+        10.472753763198849,
+        5.000234372913837,
+        2.099998474121101
+      ],
+      "note": "v7 published identical camera",
+      "fov": 75,
+      "ui": ""
+    },
+    "before_sha256": "346c1888aa63709aeabe81534ead277bdc670dcb43abf9ada95210bc76703734",
+    "after_sha256": "b3cfa521a3d2e2700d51e4f9f9fd64895db4d9725d33f071a2d9cec38052561f",
+    "after_white_clip_fraction": 0.0004504243827160494,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "05-C-storefront",
+    "camera": {
+      "id": "05-C-storefront",
+      "eye": [
+        -94.53338833103835,
+        1.65,
+        -220.00012352636
+      ],
+      "look": [
+        -90.95403577703053,
+        2.5,
+        -213.05834887616302
+      ],
+      "note": "Outdoor public lane faces southwest store row",
+      "fov": 75,
+      "ui": ""
+    },
+    "before_sha256": "d350db98d53dcd84ca38c252b24edee72724535dc7e305689e114a26349214bf",
+    "after_sha256": "708bcc8812e107d9e04be698dd0c110424e0f2dd08c02944e17d23eced34439b",
+    "after_white_clip_fraction": 0.0002744020061728395,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "shop-apparel-C1F-CW-1",
+    "camera": {
+      "id": "shop-apparel-C1F-CW-1",
+      "eye": [
+        -160.1727705244573,
+        1.65,
+        -326.054274851385
+      ],
+      "look": [
+        -167.78702959389204,
+        1.45,
+        -324.3622172803995
+      ],
+      "fov": 75
+    },
+    "before_sha256": "bf941fe17d71e0364a73c43b810749f144cef463e7586db37affb00eafa2be5f",
+    "after_sha256": "9fe4453e9b1346d24e9c69e93116a2733874bfef638c0f12e5767a4b8ecada11",
+    "after_white_clip_fraction": 0.00032648533950617285,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "shop-book-A1F-007",
+    "camera": {
+      "id": "shop-book-A1F-007",
+      "eye": [
+        397.40565030575215,
+        1.65,
+        -55.34660201367153
+      ],
+      "look": [
+        396.0877325478876,
+        1.45,
+        -63.034455601215015
+      ],
+      "fov": 75
+    },
+    "before_sha256": "bc56b5c53f185a78c15966fc90107c89019d0ea2cfbd2247632f03b586ac774f",
+    "after_sha256": "169aa87bc59ebf1c91dff00c5a57bc8318692ddb1ba13707bb45ea1f7026cd1d",
+    "after_white_clip_fraction": 0.0002748842592592593,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "shop-cafe-C1F-CSW-3",
+    "camera": {
+      "id": "shop-cafe-C1F-CSW-3",
+      "eye": [
+        -91.21435232641295,
+        1.65,
+        -211.8869244039423
+      ],
+      "look": [
+        -92.90640989739848,
+        1.45,
+        -204.27266533450745
+      ],
+      "fov": 75
+    },
+    "before_sha256": "0801bde6c497308af7c1b1dc43f7e3e4874ca385f60fb299694791091783fabf",
+    "after_sha256": "29818d1f2c4aacc2d46e4a00c004873e7f5188a350045dd1d43a73f903952a7d",
+    "after_white_clip_fraction": 0.0002744020061728395,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "C-1F-toilet",
+    "camera": {
+      "id": "C-1F-toilet",
+      "eye": [
+        -147.60553244057803,
+        1.65,
+        -252.2150576165045
+      ],
+      "look": [
+        -156.1715738936923,
+        1.2,
+        -250.31149284914582
+      ],
+      "fov": 78,
+      "title": "C館 女性トイレ"
+    },
+    "before_sha256": "8e285d2889f6c45e8230475f1bac5ae4207cfc49989d02e1eef38af48d21369d",
+    "after_sha256": "d96fe6355c72c7f2ff302d75adaf1f7cae157b3166ec9af44adc6725fe67c268",
+    "after_white_clip_fraction": 0.00028838734567901235,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "B-1F-toilet",
+    "camera": {
+      "id": "B-1F-toilet",
+      "eye": [
+        -106.5,
+        1.65,
+        -46.1
+      ],
+      "look": [
+        -106.5,
+        1.2,
+        -52.5
+      ],
+      "fov": 78,
+      "title": "B館 女性トイレ"
+    },
+    "before_sha256": "e802c6e9a25d182d635427e52b20210ae6dfa3bc002e01d4aad8d4260d13dc75",
+    "after_sha256": "09c1ec514c887526dc4395e6d1a19db7c30e64fde66f72e5e4970602e5fb292b",
+    "after_white_clip_fraction": 0.0002961033950617284,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "BB1-MARKET-interior",
+    "camera": {
+      "id": "BB1-MARKET-interior",
+      "eye": [
+        -283.5,
+        -3.6999999999999997,
+        -9.0
+      ],
+      "look": [
+        -294,
+        -4.1499999999999995,
+        -9
+      ],
+      "fov": 76,
+      "title": "地下食品スーパー / 地下店舗"
+    },
+    "before_sha256": "30b45d0e9332a12b9c35dde277377c2d52b9809f53030d68b00e8f76894de18e",
+    "after_sha256": "58e44524ebbb0dcd47ebc75d6a39267aa3fb4f8517cd3d18554e32a630d0d23c",
+    "after_white_clip_fraction": 0.00030671296296296295,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "CB1-CW-1-interior",
+    "camera": {
+      "id": "CB1-CW-1-interior",
+      "eye": [
+        -160.46562664251246,
+        -3.6999999999999997,
+        -325.9891957140394
+      ],
+      "look": [
+        -170.71559077444397,
+        -4.1499999999999995,
+        -323.7114259069435
+      ],
+      "fov": 76,
+      "title": "サービス・修理 / 地下店舗"
+    },
+    "before_sha256": "4922b39189824049ee395c4da5e959d6953d274e93762b0e2e46fbcf5c6246e4",
+    "after_sha256": "96d76104ca6cf888a754a4327257d92f9002916e33bc756be18d5271cb5f5fc1",
+    "after_white_clip_fraction": 0.00030623070987654324,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "B-RF-garden",
+    "camera": {
+      "id": "B-RF-garden",
+      "eye": [
+        -188.0200000000001,
+        18.05,
+        -30.82
+      ],
+      "look": [
+        -191.82000000000005,
+        17.15,
+        -30.82
+      ],
+      "fov": 72,
+      "title": "B館屋上前庭 / 休憩テラス"
+    },
+    "before_sha256": "66426be167e68feccf76f9237a87ac77001657f2b3a4a4568d316b00d27c13e5",
+    "after_sha256": "5821bae85b6ac57d954d1e061b5a84183e01cb79dc1a0b0bcfd0c44ebfaea5ba",
+    "after_white_clip_fraction": 0.00038821373456790123,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  },
+  {
+    "id": "ARF-002-terrace",
+    "camera": {
+      "id": "ARF-002-terrace",
+      "eye": [
+        398.8554315030171,
+        18.049999999999997,
+        -36.62235005232495
+      ],
+      "look": [
+        400.4605877465701,
+        17.7,
+        -27.258938631598916
+      ],
+      "fov": 72,
+      "title": "屋上カフェ / 屋外席"
+    },
+    "before_sha256": "7719ceed023b9999e8081e1e396de6152b519696da1c233eadbd7364c2a54099",
+    "after_sha256": "26e5fa58300ed26e32828178e58f0a556543a7ab59bbf43c24750f4b51ef17a0",
+    "after_white_clip_fraction": 0.00045090663580246915,
+    "actual_Godot_Viewport": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 4,
+    "visual_review_required": true
+  }
+]
