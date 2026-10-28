@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "id": "F8 freezes movement",
+      "pass": true
+    },
+    {
+      "id": "pilot アパレル / C1F-CW-1",
+      "pass": true,
+      "position": [
+        -160.172775268555,
+        0.000193063169717789,
+        -326.125915527344
+      ]
+    },
+    {
+      "id": "pilot 生活雑貨 / A1F-005",
+      "pass": true,
+      "position": [
+        385.839599609375,
+        0.000149664701893926,
+        -53.3638496398926
+      ]
+    },
+    {
+      "id": "pilot 美容・化粧品 / B1-030",
+      "pass": true,
+      "position": [
+        -60.1270065307617,
+        -0.000143304117955267,
+        -0.701366901397705
+      ]
+    },
+    {
+      "id": "pilot 書店 / A1F-007",
+      "pass": true,
+      "position": [
+        397.405639648438,
+        0.000149664701893926,
+        -55.3466033935547
+      ]
+    },
+    {
+      "id": "pilot 家電 / B1-N03",
+      "pass": true,
+      "position": [
+        46.2899169921875,
+        0.000149664701893926,
+        32.3403511047363
+      ]
+    },
+    {
+      "id": "pilot カフェ / C1F-CSW-3",
+      "pass": true,
+      "position": [
+        -91.21435546875,
+        0.000149664701893926,
+        -211.886917114258
+      ]
+    },
+    {
+      "id": "planned B1/RF ES marked unavailable",
+      "pass": true,
+      "planned_items": 12
+    },
+    {
+      "id": "F4 C option",
+      "pass": true
+    },
+    {
+      "id": "F7 independent ES study",
+      "pass": true
+    },
+    {
+      "id": "F4 returns from study",
+      "pass": true
+    }
+  ],
+  "failed": 0,
+  "human_playtest": false,
+  "passed": 11,
+  "synthetic_key_and_Button_pressed_events": true
+}

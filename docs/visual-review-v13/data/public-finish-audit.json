@@ -1,0 +1,529 @@
+{
+  "zones": [
+    {
+      "id": "A-B1",
+      "existing_declared_public_m2": 20973.56542948578,
+      "declared_garden_m2": 0.0,
+      "render_finish_m2": 20973.564650826454,
+      "uncovered_candidate_m2": 0.0007786593710493445,
+      "structural_floor_added": false,
+      "material": "basement tile"
+    },
+    {
+      "id": "A-RF",
+      "existing_declared_public_m2": 47209.15205045631,
+      "declared_garden_m2": 0.0,
+      "render_finish_m2": 47209.15205045627,
+      "uncovered_candidate_m2": 0.0,
+      "structural_floor_added": false,
+      "material": "roof terrace pavers"
+    },
+    {
+      "id": "B-B1",
+      "existing_declared_public_m2": 3195.992968436166,
+      "declared_garden_m2": 0.0,
+      "render_finish_m2": 3195.988686757064,
+      "uncovered_candidate_m2": 0.004281679063494472,
+      "structural_floor_added": false,
+      "material": "basement tile"
+    },
+    {
+      "id": "B-RF",
+      "existing_declared_public_m2": 2556.5883086823183,
+      "declared_garden_m2": 3644.703019619581,
+      "render_finish_m2": 5620.92491906578,
+      "uncovered_candidate_m2": 0.0,
+      "structural_floor_added": false,
+      "material": "roof terrace pavers"
+    },
+    {
+      "id": "V13-BRF-GARDEN-1-bench-1",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -621.97,
+              14.83
+            ],
+            [
+              -619.6700000000001,
+              14.83
+            ],
+            [
+              -619.6700000000001,
+              15.53
+            ],
+            [
+              -621.97,
+              15.53
+            ],
+            [
+              -621.97,
+              14.83
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        -191.82000000000005,
+        16.4,
+        -30.82
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-1-bench-2",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -621.97,
+              45.83
+            ],
+            [
+              -619.6700000000001,
+              45.83
+            ],
+            [
+              -619.6700000000001,
+              46.53
+            ],
+            [
+              -621.97,
+              46.53
+            ],
+            [
+              -621.97,
+              45.83
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        -191.82000000000005,
+        16.4,
+        0.17999999999999972
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-1-bench-3",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -627.97,
+              14.83
+            ],
+            [
+              -625.6700000000001,
+              14.83
+            ],
+            [
+              -625.6700000000001,
+              15.53
+            ],
+            [
+              -627.97,
+              15.53
+            ],
+            [
+              -627.97,
+              14.83
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        -197.82000000000005,
+        16.4,
+        -30.82
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-1-bench-4",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -615.97,
+              14.83
+            ],
+            [
+              -613.6700000000001,
+              14.83
+            ],
+            [
+              -613.6700000000001,
+              15.53
+            ],
+            [
+              -615.97,
+              15.53
+            ],
+            [
+              -615.97,
+              14.83
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        -185.82000000000005,
+        16.4,
+        -30.82
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-2-bench-1",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -443.46999999999997,
+              45.03
+            ],
+            [
+              -443.46999999999997,
+              47.33
+            ],
+            [
+              -444.17,
+              47.33
+            ],
+            [
+              -444.17,
+              45.03
+            ],
+            [
+              -443.46999999999997,
+              45.03
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        -14.819999999999993,
+        16.4,
+        0.17999999999999972
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-2-bench-2",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -413.46999999999997,
+              45.03
+            ],
+            [
+              -413.46999999999997,
+              47.33
+            ],
+            [
+              -414.17,
+              47.33
+            ],
+            [
+              -414.17,
+              45.03
+            ],
+            [
+              -413.46999999999997,
+              45.03
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        15.180000000000007,
+        16.4,
+        0.17999999999999972
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-2-bench-3",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -443.46999999999997,
+              39.03
+            ],
+            [
+              -443.46999999999997,
+              41.33
+            ],
+            [
+              -444.17,
+              41.33
+            ],
+            [
+              -444.17,
+              39.03
+            ],
+            [
+              -443.46999999999997,
+              39.03
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        -14.819999999999993,
+        16.4,
+        -5.82
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-2-bench-4",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -443.46999999999997,
+              51.03
+            ],
+            [
+              -443.46999999999997,
+              53.33
+            ],
+            [
+              -444.17,
+              53.33
+            ],
+            [
+              -444.17,
+              51.03
+            ],
+            [
+              -443.46999999999997,
+              51.03
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        -14.819999999999993,
+        16.4,
+        6.18
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-3-bench-1",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -288.9647009287082,
+              21.838045612945557
+            ],
+            [
+              -286.66470092870827,
+              21.838045612945557
+            ],
+            [
+              -286.66470092870827,
+              22.53804561294556
+            ],
+            [
+              -288.9647009287082,
+              22.53804561294556
+            ],
+            [
+              -288.9647009287082,
+              21.838045612945557
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        141.18529907129175,
+        16.4,
+        -23.811954387054442
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-3-bench-2",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -284.9647009287082,
+              71.83804561294556
+            ],
+            [
+              -282.66470092870827,
+              71.83804561294556
+            ],
+            [
+              -282.66470092870827,
+              72.53804561294555
+            ],
+            [
+              -284.9647009287082,
+              72.53804561294555
+            ],
+            [
+              -284.9647009287082,
+              71.83804561294556
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        145.18529907129175,
+        16.4,
+        26.188045612945558
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-3-bench-3",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -274.9647009287082,
+              71.83804561294556
+            ],
+            [
+              -272.66470092870827,
+              71.83804561294556
+            ],
+            [
+              -272.66470092870827,
+              72.53804561294555
+            ],
+            [
+              -274.9647009287082,
+              72.53804561294555
+            ],
+            [
+              -274.9647009287082,
+              71.83804561294556
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        155.18529907129175,
+        16.4,
+        26.188045612945558
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "V13-BRF-GARDEN-3-bench-4",
+      "kind": "roof-garden-bench",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -295.9647009287082,
+              24.838045612945557
+            ],
+            [
+              -293.66470092870827,
+              24.838045612945557
+            ],
+            [
+              -293.66470092870827,
+              25.53804561294556
+            ],
+            [
+              -295.9647009287082,
+              25.53804561294556
+            ],
+            [
+              -295.9647009287082,
+              24.838045612945557
+            ]
+          ]
+        ]
+      },
+      "world_point": [
+        134.18529907129175,
+        16.4,
+        -20.811954387054442
+      ],
+      "reserved_route_overlap_m2": 0.0,
+      "supported": true,
+      "private_plant_zone_reassigned": false
+    },
+    {
+      "id": "C-B1",
+      "existing_declared_public_m2": 20057.086171604813,
+      "declared_garden_m2": 0.0,
+      "render_finish_m2": 20057.078867219556,
+      "uncovered_candidate_m2": 0.007304385241023319,
+      "structural_floor_added": false,
+      "material": "basement tile"
+    },
+    {
+      "id": "C-RF",
+      "existing_declared_public_m2": 16923.91074991205,
+      "declared_garden_m2": 0.0,
+      "render_finish_m2": 12464.268159871666,
+      "uncovered_candidate_m2": 4459.454383236213,
+      "structural_floor_added": false,
+      "material": "roof terrace pavers"
+    }
+  ],
+  "C_RF_unsafe_prop_candidates_omitted": [],
+  "unassigned_service_rooms_completed": false,
+  "existing_floor_15_layers_unchanged": true
+}

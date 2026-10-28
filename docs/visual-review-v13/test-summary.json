@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "label": "通常配置：トイレ・売場・屋上のW入力",
+      "result": "738/738",
+      "raw": "frozen-input/toilet-input.json"
+    },
+    {
+      "label": "C館別案：同じW入力経路",
+      "result": "738/738",
+      "raw": "frozen-C-input/toilet-input.json"
+    },
+    {
+      "label": "全館の既定経路・物理追従",
+      "result": "945/945",
+      "raw": "frozen-regression/physics-all.json"
+    },
+    {
+      "label": "EVの乗降・連続移動",
+      "result": "119/119",
+      "raw": "frozen-EV/physics-EV.json"
+    },
+    {
+      "label": "トイレ個室・多目的トイレのF入力",
+      "result": "300/300",
+      "raw": "frozen-doors/door-input.json"
+    },
+    {
+      "label": "F9・館内マップ・移動先の床支持",
+      "result": "20/20、旧機能11/11、照明の天井支持247/247",
+      "raw": "controls-final/controls-amenities.json"
+    },
+    {
+      "label": "既存ESの外から乗車・退出",
+      "result": "40/40",
+      "raw": "frozen-ES/es-approach-input.json"
+    }
+  ],
+  "human_playtest": false,
+  "Windows_GPU_FPS_measured": false
+}
