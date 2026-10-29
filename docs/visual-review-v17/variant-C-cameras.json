@@ -1,0 +1,74 @@
+[
+  {
+    "actual_Godot_Viewport": true,
+    "actual_camera_global": [
+      -104.0,
+      1.64999997615814,
+      -296.0
+    ],
+    "actual_look_direction": [
+      -0.422883540391922,
+      0.00302060157991946,
+      -0.906179010868073
+    ],
+    "draw_calls": 1622.0,
+    "eye": [
+      -104.0,
+      1.65,
+      -296.0
+    ],
+    "fov": 75.0,
+    "id": "V16-C-kids",
+    "look": [
+      -111.0,
+      1.7,
+      -311.0
+    ],
+    "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+    "primitives": 1469486.0,
+    "reference_fps_1s_window": 1.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "title": "C館 こもれび遊び場",
+    "ui": "",
+    "warmup_frames": 2
+  },
+  {
+    "actual_Godot_Viewport": true,
+    "actual_camera_global": [
+      -68.5434036254883,
+      1.64999997615814,
+      -289.502197265625
+    ],
+    "actual_look_direction": [
+      -0.988168597221375,
+      0.153371661901474,
+      2.34851704590255e-05
+    ],
+    "draw_calls": 1481.0,
+    "eye": [
+      -68.5434,
+      1.65,
+      -289.5022
+    ],
+    "fov": 75.0,
+    "id": "V16-C-courtyard",
+    "look": [
+      -161.0,
+      16.0,
+      -289.5
+    ],
+    "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+    "primitives": 1896935.0,
+    "reference_fps_1s_window": 1.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "title": "C館 中庭・屋外動線",
+    "ui": "",
+    "warmup_frames": 2
+  }
+]

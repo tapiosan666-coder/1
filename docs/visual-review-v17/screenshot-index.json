@@ -1,0 +1,715 @@
+[
+  {
+    "id": "V16-A-visitor",
+    "title": "A館 西広場の案内と休憩",
+    "variant": "通常版",
+    "floor": "A館1F",
+    "before": "before/V16-A-visitor.png",
+    "after": "after/V16-A-visitor.png",
+    "eye": [
+      339.0,
+      1.65,
+      -47.0
+    ],
+    "look": [
+      355.0,
+      1.4,
+      -40.0
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "既存広場の開放感を維持。実在する不透明壁の広告・造作、店舗正面、樹木を更新。広場全体の天井・柱・什器の専用モデル化は未完成。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 6221.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "8fdfe17fc8d4d6ac40fcd76cbc0f7f2cc42eabcda926a81d69d14b6a5a279fe3",
+    "after_sha256": "30d3e56ba5cf4e0675848a0b2dd49a30f4a593d597b3672c23e1191eaea859a1"
+  },
+  {
+    "id": "AB1-003-interior",
+    "title": "食品専門店 / 地下店舗",
+    "variant": "通常版",
+    "floor": "A館B1",
+    "before": "before/AB1-003-interior.png",
+    "after": "after/AB1-003-interior.png",
+    "eye": [
+      383.963808828106,
+      -3.7,
+      -53.3466625758675
+    ],
+    "look": [
+      382.189688769442,
+      -4.15,
+      -63.6956962514069
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "既存食品売場に専用ベーカリーケースと調理機器を追加。保護した店内主路を維持。全面的な食品部門再編ではない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 2941.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "f5c9c67822844fd3baf2a508671ad943f45d0f5bb4b8e0c8b0ad2618ee228198",
+    "after_sha256": "f22d9c4f11b186063cf8664b1184c2da8d09bbd7a60df35795e4fe004407b354"
+  },
+  {
+    "id": "BB1-MARKET-interior",
+    "title": "地下食品スーパー / 地下店舗",
+    "variant": "通常版",
+    "floor": "B館B1",
+    "before": "before/BB1-MARKET-interior.png",
+    "after": "after/BB1-MARKET-interior.png",
+    "eye": [
+      -283.5,
+      -3.7,
+      -9.0
+    ],
+    "look": [
+      -294.0,
+      -4.15,
+      -9.0
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "青果・既存食品棚を保持し、専用のパン・惣菜ケースを追加。冷蔵・加工食品すべての商品モデルの個別制作は未完成。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 519.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "042dc106976769a29be55cd8a22fff7f9de7acdf71766e396b8f492a690201ff",
+    "after_sha256": "a140c1cc5ef85083ddcaa32caee63e7b5a003266b260e1667dad3611c439d2ba"
+  },
+  {
+    "id": "B-RF-garden",
+    "title": "B館屋上前庭 / 休憩テラス",
+    "variant": "通常版",
+    "floor": "B館RF",
+    "before": "before/B-RF-garden.png",
+    "after": "after/B-RF-garden.png",
+    "eye": [
+      -188.02,
+      18.05,
+      -30.82
+    ],
+    "look": [
+      -191.82,
+      17.15,
+      -30.82
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "既存の庭と支持確認済み施設を維持。休憩・展示什器を更新。RF-SUPPORT-16等の支持未確認箇所は未承認。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 1130.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "5fb2e9002080fdeebbefe1c8396cdf8c26508b85d1e6a99b46a7935f0391a8b1",
+    "after_sha256": "96369063a0d76a80924040e8858fdf033e69a1274e467c36efd8af438c9310c7"
+  },
+  {
+    "id": "ARF-002-terrace",
+    "title": "屋上カフェ / 屋外席",
+    "variant": "通常版",
+    "floor": "A館RF",
+    "before": "before/ARF-002-terrace.png",
+    "after": "after/ARF-002-terrace.png",
+    "eye": [
+      398.855431503017,
+      18.05,
+      -36.6223500523249
+    ],
+    "look": [
+      400.46058774657,
+      17.7,
+      -27.2589386315989
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "休憩・飲食エリアに什器を追加し、カフェ席の浮いた背もたれを実接合モデルへ変更。屋上全域の景観完成ではない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 3516.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "af46274f994af9477a560219419b07ac0b5ed237c797e3b18634148a1b5f6605",
+    "after_sha256": "b3f02205814943bc30be63f61f273543e544166659d15f4065c5e06034035af6"
+  },
+  {
+    "id": "v15-B1-030-beauty_tester_bar",
+    "title": "B1-030 beauty_tester_bar",
+    "variant": "通常版",
+    "floor": "B館1F",
+    "before": "before/v15-B1-030-beauty_tester_bar.png",
+    "after": "after/v15-B1-030-beauty_tester_bar.png",
+    "eye": [
+      -54.0248737997028,
+      1.65,
+      -6.18558130104837
+    ],
+    "look": [
+      -53.8679212138561,
+      1.15,
+      -4.94581641382752
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "化粧品専用のテスター台・鏡・展示什器を追加。店舗の奥行きと主通路を維持。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 3058.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "39bac63f4560d500883084528e5b2a3f3b461bd500939c7d5580d547626846c7",
+    "after_sha256": "5cd06b722f08c463df9cdb9deac3113409ca484464f962dd7ba86818fa1340b2"
+  },
+  {
+    "id": "v15-B1-N03-electronics_media_demo",
+    "title": "B1-N03 electronics_media_demo",
+    "variant": "通常版",
+    "floor": "B館1F",
+    "before": "before/v15-B1-N03-electronics_media_demo.png",
+    "after": "after/v15-B1-N03-electronics_media_demo.png",
+    "eye": [
+      34.6540286894651,
+      1.65,
+      38.8123868333631
+    ],
+    "look": [
+      34.2764215826274,
+      1.15,
+      39.8426247991399
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "実機、キーボード、支持ヒンジ、盗難防止コードを含む家電デモ台を追加。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 796.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "c56fef50162884496c17203518f53b0c8315427cd9ebe959c0b2bdcd12bb7d59",
+    "after_sha256": "9846a6eb54511777a684dda8c01d39c1784c7192608a166377daf85cf438bf48"
+  },
+  {
+    "id": "V17-A-long-street",
+    "title": "A館1F 長い専門店街",
+    "variant": "通常版",
+    "floor": "A館1F",
+    "before": "before/V17-A-long-street.png",
+    "after": "after/V17-A-long-street.png",
+    "eye": [
+      339.0,
+      1.65,
+      -40.0
+    ],
+    "look": [
+      339.0,
+      1.65,
+      -4.0
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "実際の店舗境界に沿うファサード・架空ブランド・商品広告を更新。店舗入口と保護動線は維持。まだ長い無地面と反復する造作が残る。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 3426.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "da45f06d3185ad07218d52d6f2a4bf8645fc220473506facdba873cb2c406d46",
+    "after_sha256": "376c52946ea2751c8b4e9e5191ef67b660d1e3f882b105c2bb5c726620cb68ef"
+  },
+  {
+    "id": "shop-apparel-C1F-CW-1",
+    "title": "代表店舗の素材確認",
+    "variant": "通常版",
+    "floor": "C館1F",
+    "before": "before/shop-apparel-C1F-CW-1.png",
+    "after": "after/shop-apparel-C1F-CW-1.png",
+    "eye": [
+      -160.172770524457,
+      1.65,
+      -326.054274851385
+    ],
+    "look": [
+      -167.787029593892,
+      1.45,
+      -324.362217280399
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "服飾専用ラック、ハンガー、衣服形状と縫い目を持つ展示を追加。既存試着・レジ動線を維持。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 833.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "c74ef713b624c37409a762ed7e0a85ed2a5a6033791b0d98a303cc7f80f3779a",
+    "after_sha256": "61a831ab85413a9d0e12af7b92f0d2b0505dbac7acab6520a90e4bc9b540a837"
+  },
+  {
+    "id": "shop-book-A1F-007",
+    "title": "代表店舗の素材確認",
+    "variant": "通常版",
+    "floor": "A館1F",
+    "before": "before/shop-book-A1F-007.png",
+    "after": "after/shop-book-A1F-007.png",
+    "eye": [
+      397.405650305752,
+      1.65,
+      -55.3466020136715
+    ],
+    "look": [
+      396.087732547888,
+      1.45,
+      -63.034455601215
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "ジャンル壁棚の背表紙と面陳列を追加。店舗面積や入口を変更せず、既存中央通路を保護。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 2802.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "7ca450f6bb28fdb62427a59f4dbd169c0b3fa14c1b9839d51ee9888e16d3bdf9",
+    "after_sha256": "1c78f8201d1ab31be4fefe78f1db6649f558f6716806e6c3ba32f7681ab06bd5"
+  },
+  {
+    "id": "shop-cafe-C1F-CSW-3",
+    "title": "代表店舗の素材確認",
+    "variant": "通常版",
+    "floor": "C館1F",
+    "before": "before/shop-cafe-C1F-CSW-3.png",
+    "after": "after/shop-cafe-C1F-CSW-3.png",
+    "eye": [
+      -91.214352326413,
+      1.65,
+      -211.886924403942
+    ],
+    "look": [
+      -92.9064098973985,
+      1.45,
+      -204.272665334507
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "専用のエスプレッソ機器・バックバー・パンケースで既存カフェの用途を補強。厨房の全設備完成ではない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 5823.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "aeeb7a5da4d089fe22cd192224fb16b53b971e0c4d022f5c1fcbeed40afa58da",
+    "after_sha256": "4128e015b42b4160477133f2d3917182769a3733084c3e8ab398f9e4c6e7bf7a"
+  },
+  {
+    "id": "V16-C-kids",
+    "title": "C館 こもれび遊び場",
+    "variant": "通常版",
+    "floor": "C館1F",
+    "before": "before/V16-C-kids.png",
+    "after": "after/V16-C-kids.png",
+    "eye": [
+      -104.0,
+      1.65,
+      -296.0
+    ],
+    "look": [
+      -111.0,
+      1.7,
+      -311.0
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "既存遊具と保護者スペースを維持。周辺店舗の正面と樹木表示を更新。遊具本体の新規追加はなし。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 1829.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "033347e0d41184acf3ebe67d520d2b5b3df59d8eaba8403e951361a58fefebd7",
+    "after_sha256": "bae6418bdfd56074b927719fbeea6cf76cebce1ebbd9a19bcffe2fc7118710de"
+  },
+  {
+    "id": "V16-C-dog",
+    "title": "C館 二重ゲート・ドッグラン",
+    "variant": "通常版",
+    "floor": "C館1F",
+    "before": "before/V16-C-dog.png",
+    "after": "after/V16-C-dog.png",
+    "eye": [
+      -116.0,
+      1.65,
+      -280.0
+    ],
+    "look": [
+      -118.0,
+      1.2,
+      -265.0
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "既存二重ゲートと設備を保持。周辺景観の仕上げを更新。ドッグランの運営・犬の挙動は今回の対象外。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 6498.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "a22b651148964cc372d7f3ef463413739d6b8bbc4ef9e6d1e7f39199792495bd",
+    "after_sha256": "544390b7b944ccefe53ce4fb94f0839f04614f4f1462186f92944ab31a3570eb"
+  },
+  {
+    "id": "V16-C-melon",
+    "title": "C館 焼きたてメロンパン",
+    "variant": "通常版",
+    "floor": "C館1F",
+    "before": "before/V16-C-melon.png",
+    "after": "after/V16-C-melon.png",
+    "eye": [
+      -86.0,
+      1.65,
+      -317.0
+    ],
+    "look": [
+      -88.0,
+      1.5,
+      -324.0
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "既存メロンパン車両の手前へ注文・受取カウンターと図案入りメニューを配置。営業動作や商品購入機能は未実装。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 1502.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "2bc6b0d6ffe7da4290a74c1d3300dd1827583ff667185df89f7e9c865bd53601",
+    "after_sha256": "15a2ff89d36f3fab8799c5e899db3617d210d3f890db1664dc17885ed269250c"
+  },
+  {
+    "id": "V16-C-courtyard",
+    "title": "C館 中庭・屋外動線",
+    "variant": "通常版",
+    "floor": "C館1F",
+    "before": "before/V16-C-courtyard.png",
+    "after": "after/V16-C-courtyard.png",
+    "eye": [
+      -68.5434,
+      1.65,
+      -289.5022
+    ],
+    "look": [
+      -161.0,
+      16.0,
+      -289.5
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "屋外の店舗正面と壁面広告を更新。通常版の上階デッキは維持。空の見え方を変えるF4は別案のまま。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 1678.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "834d0f9479e796dfdd50add28df2608a7d74204f021055ca791117d78eed4163",
+    "after_sha256": "dbb188714b60feb332d2302908aa293ef4cc4c1384f56cd6b5302f567278b51b"
+  },
+  {
+    "id": "V16-B-aichi",
+    "title": "B館 時の広場・あいち催事",
+    "variant": "通常版",
+    "floor": "B館1F",
+    "before": "before/V16-B-aichi.png",
+    "after": "after/V16-B-aichi.png",
+    "eye": [
+      -3.527,
+      1.6502,
+      32.1
+    ],
+    "look": [
+      10.473,
+      5.0002,
+      2.1
+    ],
+    "resolution": [
+      1920,
+      1080
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "既存の愛知県フェアを維持し、各屋台の図案入り告知と周辺壁面広告、店舗正面、樹木表示を更新。催事全体の再制作ではない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 6489.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "c09de98561e92eba657e78d6436214d97f114f4bb96a4a035355a74c34005fb5",
+    "after_sha256": "53b77a8750b7bc9736ac47337a228c78f33f7945768454f0abb7ee2b6d52eb59"
+  },
+  {
+    "id": "V16-B-fair-close",
+    "title": "B館 食と手しごとの屋台",
+    "variant": "通常版",
+    "floor": "B館1F",
+    "before": "before/V16-B-fair-close.png",
+    "after": "after/V16-B-fair-close.png",
+    "eye": [
+      7.0,
+      1.65,
+      11.0
+    ],
+    "look": [
+      20.0,
+      1.65,
+      9.0
+    ],
+    "resolution": [
+      1920,
+      1080
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "9既存ブースの告知表現を更新。F11で今回の掲示も連動。食器・屋台形状・ステージの全面再制作は行っていない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 7489.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "b6e00099d553aac176b2dfc04959e4eaeb6ca67a698b40febd3e0871ebd8c32f",
+    "after_sha256": "d4d3ac74b939d35c421d197970f1ce4ae5b5ab2cac9034f48293492e6fdc2a61"
+  },
+  {
+    "id": "V17-B2-gallery",
+    "title": "B館2F 共用通路",
+    "variant": "通常版",
+    "floor": "B館2F",
+    "before": "before/V17-B2-gallery.png",
+    "after": "after/V17-B2-gallery.png",
+    "eye": [
+      -3.0,
+      7.175,
+      31.8
+    ],
+    "look": [
+      36.0,
+      7.0,
+      31.8
+    ],
+    "resolution": [
+      1920,
+      1080
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "2F専門店街の造作、各店のロゴと商品広告、店頭照明。床開口・乗降設備・店舗境界は変更なし。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 7268.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "bbba1c94b3ae0a1d23f1f3b16ddc32ae02d05a3a40df011aec7c86e2c52dbb0a",
+    "after_sha256": "4dee5bce507adba4b830889408d744537b7c834ac3a8b5619adc6a9dd3ad4e6a"
+  },
+  {
+    "id": "V17-B3-gallery",
+    "title": "B館3F 共用通路",
+    "variant": "通常版",
+    "floor": "B館3F",
+    "before": "before/V17-B3-gallery.png",
+    "after": "after/V17-B3-gallery.png",
+    "eye": [
+      -3.0,
+      12.525,
+      31.8
+    ],
+    "look": [
+      36.0,
+      12.35,
+      31.8
+    ],
+    "resolution": [
+      1920,
+      1080
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "3Fも実在する入口と区画に沿って正面を更新。全館の天井造作を完成したという評価ではない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 7192.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "d3d93731488cb60dacd79cb67e28d0c13119315272ce7f969703a8ca18c1f169",
+    "after_sha256": "1f74afe10062572d71254765e69c6e2f662fc5b96b620212d20f01e9dc07f531"
+  },
+  {
+    "id": "V16-C-kids",
+    "title": "C館 こもれび遊び場",
+    "variant": "C館F4・未承認",
+    "floor": "C館1F",
+    "before": "before-C-option/V16-C-kids.png",
+    "after": "after-C-option/V16-C-kids.png",
+    "eye": [
+      -104.0,
+      1.65,
+      -296.0
+    ],
+    "look": [
+      -111.0,
+      1.7,
+      -311.0
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "F4の未承認構造を維持した比較。店舗正面・樹木・広告の仕上げを更新。新たなデッキ削除や支持構造の承認はしていない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 1622.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "4520223f31c4bb6a7cc1780af8669fff343af603c3a982d83198c62b7bc5cef9",
+    "after_sha256": "a90782e566e48d4da4c9b710ab540d1e539895cbb6df310dd88ad39ee0c495ac"
+  },
+  {
+    "id": "V16-C-courtyard",
+    "title": "C館 中庭・屋外動線",
+    "variant": "C館F4・未承認",
+    "floor": "C館1F",
+    "before": "before-C-option/V16-C-courtyard.png",
+    "after": "after-C-option/V16-C-courtyard.png",
+    "eye": [
+      -68.5434,
+      1.65,
+      -289.5022
+    ],
+    "look": [
+      -161.0,
+      16.0,
+      -289.5
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "F4の未承認構造を維持した比較。店舗正面・樹木・広告の仕上げを更新。新たなデッキ削除や支持構造の承認はしていない。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 1481.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "71ca1ec3cd441b4e705b27e7db8095de23d1cbc09779856b3c53784a95fbaf87",
+    "after_sha256": "a9fcbc117b3aa5d5012eed66d5b19714f5e79d7387640e0e4758fe554b504218"
+  },
+  {
+    "id": "ES-west-site",
+    "title": "ES-west-site",
+    "variant": "B館F6・未承認",
+    "floor": "B館1F",
+    "before": "before-ES-option/ES-west-site.png",
+    "after": "after-ES-option/ES-west-site.png",
+    "eye": [
+      -212.0,
+      1.65,
+      -15.5
+    ],
+    "look": [
+      -187.0,
+      6.0,
+      -15.5
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "F6未承認別案。機械配置は維持し、乗り継ぎ案内の図案を改善。8.4m経路と短縮候補を別資料で比較。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 10029.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "c446bfee0531106400a26fc9b54c17baa19ebc95c37d52c31e5ba8d30b6b3b50",
+    "after_sha256": "e9fd25f3520a6bd8e0a7855eff7476598b456ec17fe2fba92be7b11b7d29c85c"
+  },
+  {
+    "id": "ES-west-upper",
+    "title": "ES-west-upper",
+    "variant": "B館F6・未承認",
+    "floor": "B館2F",
+    "before": "before-ES-option/ES-west-upper.png",
+    "after": "after-ES-option/ES-west-upper.png",
+    "eye": [
+      -221.0,
+      7.175,
+      -15.5
+    ],
+    "look": [
+      -192.0,
+      11.0,
+      -15.5
+    ],
+    "resolution": [
+      1920.0,
+      1080.0
+    ],
+    "native_Godot_Viewport": true,
+    "actual_camera_match": true,
+    "change": "F6未承認別案。7.53m候補は中央と中間部±35cmの自動歩行を通過。6.4m直線候補は手すり側の余裕が不足し不採用。",
+    "capture_fps_observation": 1.0,
+    "draw_calls": 9885.0,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "Windows_GPU": false,
+    "before_sha256": "12ce9c8442781abc154678cc2a1d05e38726af38f97c21dea9a7e8b020d54b07",
+    "after_sha256": "e275f8d10ba66bc96c3755d697d78caac46c9be386cee0dfff10437cdfdd0f0a"
+  }
+]

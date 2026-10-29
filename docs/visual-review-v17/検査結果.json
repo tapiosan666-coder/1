@@ -1,0 +1,137 @@
+{
+  "tests": [
+    {
+      "name": "Defined pedestrian routes",
+      "passed": 945,
+      "failed": 0,
+      "method": "60Hz CharacterBody3D auto steering / actual collisions, NOT human play",
+      "source": "tests/core-final/physics-all.json",
+      "failures": []
+    },
+    {
+      "name": "Escalator routes",
+      "passed": 163,
+      "failed": 0,
+      "method": "60Hz CharacterBody3D auto steering / actual collisions, NOT human play",
+      "source": "tests/core-final/physics-ES.json",
+      "failures": []
+    },
+    {
+      "name": "EV / access routes",
+      "passed": 119,
+      "failed": 0,
+      "method": "60Hz CharacterBody3D auto steering / actual collisions, NOT human play",
+      "source": "tests/core-final/physics-EV.json",
+      "failures": []
+    },
+    {
+      "name": "C F4 connectors",
+      "passed": 8,
+      "failed": 0,
+      "method": "Automated physical W input with per-tick steering; not human operation",
+      "source": "tests/retained-test-output/physics-C.json",
+      "failures": []
+    },
+    {
+      "name": "F6 equipment + transfers + public connectors",
+      "passed": 18,
+      "failed": 0,
+      "method": "Automated physical W input with per-tick steering; not human operation",
+      "source": "tests/retained-test-output/physics-ES.json",
+      "failures": []
+    },
+    {
+      "name": "C F4 edge guard input",
+      "passed": 22,
+      "failed": 0,
+      "method": "Automated physical W input with per-tick steering; not human operation",
+      "source": "tests/retained-test-output/edges-C.json",
+      "failures": []
+    },
+    {
+      "name": "F6 opening guard input",
+      "passed": 12,
+      "failed": 0,
+      "method": "Automated physical W input with per-tick steering; not human operation",
+      "source": "tests/retained-test-output/edges-ES.json",
+      "failures": []
+    },
+    {
+      "name": "New fitted bays / floor support / event linked graphics",
+      "passed": 68,
+      "failed": 0,
+      "method": "Automated test; see individual method / no human operation",
+      "source": "tests/scenery.json",
+      "failures": []
+    },
+    {
+      "name": "F4/F6 keyboard scene navigation",
+      "passed": 3,
+      "failed": 0,
+      "method": "Automated test; see individual method / no human operation",
+      "source": "tests/navigation.json",
+      "failures": []
+    },
+    {
+      "name": "Settings save and restore",
+      "passed": 31,
+      "failed": 0,
+      "method": "Automated test; see individual method / no human operation",
+      "source": "tests/settings.json",
+      "failures": []
+    },
+    {
+      "name": "F9 / M / F11 controls",
+      "passed": 45,
+      "failed": 0,
+      "method": "Automated test; see individual method / no human operation",
+      "source": "tests/retained-test-output/controls/controls-amenities.json",
+      "failures": []
+    },
+    {
+      "name": "Fresh standalone ZIP startup normal",
+      "passed": 6,
+      "failed": 0,
+      "method": "Imported and booted from a fresh extracted folder with Godot 4.6.3",
+      "source": "tests/fresh/normal.json",
+      "failures": []
+    },
+    {
+      "name": "Fresh standalone ZIP startup C",
+      "passed": 6,
+      "failed": 0,
+      "method": "Imported and booted from a fresh extracted folder with Godot 4.6.3",
+      "source": "tests/fresh/C.json",
+      "failures": []
+    },
+    {
+      "name": "Fresh standalone ZIP startup ES",
+      "passed": 6,
+      "failed": 0,
+      "method": "Imported and booted from a fresh extracted folder with Godot 4.6.3",
+      "source": "tests/fresh/ES.json",
+      "failures": []
+    },
+    {
+      "name": "Settings restore across two Godot processes",
+      "passed": 1,
+      "failed": 0,
+      "method": "Write then exit one Godot process; restore in a second process using an isolated test config",
+      "source": "tests/settings-cross-process.json",
+      "failures": []
+    }
+  ],
+  "reported_regression_failures": 0,
+  "all_scene_quality_complete": false,
+  "human_playtest": false,
+  "Windows_GPU_FPS_measured": false,
+  "144FPS_confirmed": false,
+  "FF16_quality_confirmed": false,
+  "F6_rejected_candidates_are_not_regression_passes": true,
+  "limits": [
+    "Defined-route tests do not prove every possible player movement or every architectural joint",
+    "Wall support rays are sampled, not exact topology proofs",
+    "No structural-engineering approval for decks, roof loads or RF-SUPPORT-16",
+    "C F4 / B F6 remain unapproved separate variants; water garden remains design only"
+  ]
+}

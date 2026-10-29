@@ -1,0 +1,8293 @@
+[
+  {
+    "id": "A-B1-GAP-001",
+    "wing": "A",
+    "floor": "B1",
+    "world_center": [
+      493.008104566263,
+      -5.35,
+      -27.929094773594027
+    ],
+    "area_m2": 1.3182067912900668,
+    "neighbors": [
+      "AB1-008",
+      "AB1-010"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            64.48742607292917,
+            16.859928176132573
+          ],
+          [
+            63.79067438448726,
+            16.786795169170016
+          ],
+          [
+            63.74621324137261,
+            20.565992333915332
+          ],
+          [
+            64.48742607292917,
+            16.859928176132573
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "AB1-010",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-B1-GAP-002",
+    "wing": "A",
+    "floor": "B1",
+    "world_center": [
+      367.68819616085756,
+      -5.35,
+      26.895957346542943
+    ],
+    "area_m2": 0.39610278601759374,
+    "neighbors": [
+      "AB1-027",
+      "AB1-029"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -60.54720369874744,
+            72.435700893382
+          ],
+          [
+            -61.7876269670859,
+            72.8370143037268
+          ],
+          [
+            -61.728073637977175,
+            73.02108823006286
+          ],
+          [
+            -61.600580851593975,
+            73.41515684252002
+          ],
+          [
+            -60.54720369874744,
+            72.435700893382
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "AB1-027",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-B1-GAP-003",
+    "wing": "A",
+    "floor": "B1",
+    "world_center": [
+      392.17287833372404,
+      -5.35,
+      10.085473793870541
+    ],
+    "area_m2": 4.730014007523957,
+    "neighbors": [
+      "AB1-001",
+      "AB1-027"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -39.85646652612985,
+            53.19694527673758
+          ],
+          [
+            -31.390187469808797,
+            62.30218879013947
+          ],
+          [
+            -31.385642907606012,
+            62.29796314458249
+          ],
+          [
+            -31.38564290760601,
+            62.29796314458249
+          ],
+          [
+            -39.303798011922154,
+            52.68306051791288
+          ],
+          [
+            -39.85646652612985,
+            53.19694527673758
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "AB1-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-B1-GAP-004",
+    "wing": "A",
+    "floor": "B1",
+    "world_center": [
+      452.69495334812217,
+      -5.35,
+      83.39379654348969
+    ],
+    "area_m2": 0.3002953750507908,
+    "neighbors": [
+      "AB1-001",
+      "AB1-023"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            23.47278201563103,
+            128.91176483708458
+          ],
+          [
+            23.196093128812034,
+            129.2125421682306
+          ],
+          [
+            24.415984899923373,
+            130.05708262515387
+          ],
+          [
+            23.47278201563103,
+            128.91176483708458
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "AB1-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-ACCESS-002",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      344.1223582639832,
+      0.0,
+      15.069355689963942
+    ],
+    "area_m2": 0.15946417515708333,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.75,
+            60.75
+          ],
+          [
+            -85.0,
+            60.75
+          ],
+          [
+            -85.0,
+            61.42829787709892
+          ],
+          [
+            -84.75,
+            61.347415524157746
+          ],
+          [
+            -84.75,
+            60.75
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-1F-ACCESS-003",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      531.3875754143535,
+      0.0,
+      59.37839280831511
+    ],
+    "area_m2": 14.861514086868022,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            110.62072013342697,
+            110.47971835439058
+          ],
+          [
+            110.8726556466989,
+            110.04782890392437
+          ],
+          [
+            110.94823629978269,
+            109.91826206881917
+          ],
+          [
+            94.53643718217019,
+            100.3447125839973
+          ],
+          [
+            94.13334036229318,
+            101.03573570458029
+          ],
+          [
+            106.637518020233,
+            108.32983933837852
+          ],
+          [
+            110.62054099624112,
+            110.48002544670825
+          ],
+          [
+            110.62072013342697,
+            110.47971835439058
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-1F-ACCESS-004",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      436.1533244561679,
+      0.0,
+      83.43909400576925
+    ],
+    "area_m2": 14.861514090177085,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            12.134887297389296,
+            121.55478428441343
+          ],
+          [
+            1.3198976995815999,
+            137.17643592569124
+          ],
+          [
+            1.4432265281723597,
+            137.26181742238492
+          ],
+          [
+            1.8543226246452926,
+            137.54642241271233
+          ],
+          [
+            1.854614931176233,
+            137.5466247787722
+          ],
+          [
+            4.552682083455528,
+            133.91231522017043
+          ],
+          [
+            12.792641050458851,
+            122.01015226783227
+          ],
+          [
+            12.134887297389296,
+            121.55478428441343
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-1F-GAP-000",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      376.0162220581824,
+      0.0,
+      -69.83517130731063
+    ],
+    "area_m2": 7.848999036291909,
+    "neighbors": [
+      "A1F-003",
+      "A1F-005"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -52.56167189652545,
+            -19.0
+          ],
+          [
+            -51.750001912316776,
+            -19.0
+          ],
+          [
+            -53.4193340285019,
+            -28.73777067774656
+          ],
+          [
+            -40.606244715929435,
+            -30.934300274187557
+          ],
+          [
+            -54.20783183252185,
+            -28.602599626645613
+          ],
+          [
+            -52.56167189652545,
+            -19.0
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-005",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-001",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      434.6335202329895,
+      0.0,
+      -67.69981320899895
+    ],
+    "area_m2": 19.199999999380598,
+    "neighbors": [
+      "A1F-009",
+      "A1F-011"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            5.092381210177392,
+            -9.705349129737238
+          ],
+          [
+            5.242370830656152,
+            -9.70358454597015
+          ],
+          [
+            5.8923258526019415,
+            -9.695938016292995
+          ],
+          [
+            6.174659255801544,
+            -33.69427728825923
+          ],
+          [
+            5.374714613376982,
+            -33.70368840170235
+          ],
+          [
+            5.092381210177392,
+            -9.705349129737238
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-011",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-002",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      390.81556996743154,
+      0.0,
+      -65.17441874100592
+    ],
+    "area_m2": 19.19999999319449,
+    "neighbors": [
+      "A1F-005",
+      "A1F-007"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -40.606244715929435,
+            -30.934300274187557
+          ],
+          [
+            -36.55111315326914,
+            -7.279366158669156
+          ],
+          [
+            -36.40326981478325,
+            -7.304710730635275
+          ],
+          [
+            -35.910458688471536,
+            -7.389192638517283
+          ],
+          [
+            -35.76261534944501,
+            -7.414537210912327
+          ],
+          [
+            -39.81774691263163,
+            -31.069471326131843
+          ],
+          [
+            -40.606244715929435,
+            -30.934300274187557
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-005",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-003",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      434.1998788274203,
+      0.0,
+      -30.83786197122178
+    ],
+    "area_m2": 14.18320268305729,
+    "neighbors": [
+      "A1F-001",
+      "A1F-010",
+      "A1F-012"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            4.695641611719459,
+            24.017516739187045
+          ],
+          [
+            5.495496759071299,
+            24.034534933811553
+          ],
+          [
+            5.704103583789767,
+            6.302954832741764
+          ],
+          [
+            5.554113963322562,
+            6.301190248969899
+          ],
+          [
+            5.054148561207429,
+            6.295308302968545
+          ],
+          [
+            4.9041589413657185,
+            6.293543719254998
+          ],
+          [
+            4.695641611719459,
+            24.017516739187045
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-012",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-004",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      396.81898162523896,
+      0.0,
+      -30.15857296909371
+    ],
+    "area_m2": 12.042703897923055,
+    "neighbors": [
+      "A1F-001",
+      "A1F-006",
+      "A1F-008"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -31.31728737620659,
+            23.251284207529043
+          ],
+          [
+            -30.502646055875122,
+            23.26861700157865
+          ],
+          [
+            -33.0591943076363,
+            8.355418866305117
+          ],
+          [
+            -33.20703764616919,
+            8.380763438627122
+          ],
+          [
+            -33.69984877379135,
+            8.465245345733777
+          ],
+          [
+            -33.847692111495604,
+            8.490589918343112
+          ],
+          [
+            -31.31728737620659,
+            23.251284207529043
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-008",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-005",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      382.9920546525874,
+      0.0,
+      -29.142228870268127
+    ],
+    "area_m2": 9.90745069478164,
+    "neighbors": [
+      "A1F-001",
+      "A1F-004",
+      "A1F-006"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -46.8086247621766,
+            10.71246408662839
+          ],
+          [
+            -47.301435889744965,
+            10.796945994554397
+          ],
+          [
+            -47.44927922791869,
+            10.822290566872784
+          ],
+          [
+            -45.369850151924304,
+            22.952293510173348
+          ],
+          [
+            -44.55520883159284,
+            22.969626304222952
+          ],
+          [
+            -46.66078142406807,
+            10.687119514784106
+          ],
+          [
+            -46.8086247621766,
+            10.71246408662839
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-006",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-006",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      411.53608269622913,
+      0.0,
+      -28.690023960369086
+    ],
+    "area_m2": 1.3991721835339452,
+    "neighbors": [
+      "A1F-008",
+      "A1F-010"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -17.92281876175625,
+            16.035317524610083
+          ],
+          [
+            -17.257623271779234,
+            19.915624549476014
+          ],
+          [
+            -17.211309877777076,
+            15.978986044806641
+          ],
+          [
+            -17.92281876175625,
+            16.035317524610083
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-008",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-008",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      326.73779057443056,
+      0.0,
+      1.8984159916433967
+    ],
+    "area_m2": 9.834500117020045,
+    "neighbors": [
+      "A1F-048",
+      "A1F-050"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -108.25729659945014,
+            49.40349548545782
+          ],
+          [
+            -108.01104037128628,
+            50.164651099770346
+          ],
+          [
+            -95.13848242654157,
+            46.0
+          ],
+          [
+            -97.73740146438968,
+            46.0
+          ],
+          [
+            -108.25729659945014,
+            49.40349548545782
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-048",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-009",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      370.5872027077248,
+      0.0,
+      6.4061424508283835
+    ],
+    "area_m2": 15.199999999707321,
+    "neighbors": [
+      "A1F-047",
+      "A1F-049"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -67.3745651470852,
+            55.56829629103052
+          ],
+          [
+            -67.32839210403193,
+            55.71101296957983
+          ],
+          [
+            -49.25094625201601,
+            49.8624275468688
+          ],
+          [
+            -49.49720248034774,
+            49.10127193202526
+          ],
+          [
+            -67.57464833272667,
+            54.94985735485374
+          ],
+          [
+            -67.52847528997192,
+            55.092574032380654
+          ],
+          [
+            -67.3745651470852,
+            55.56829629103052
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-049",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-010",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      345.73235891163404,
+      0.0,
+      14.446796475468958
+    ],
+    "area_m2": 2.5957670037844407,
+    "neighbors": [
+      "A1F-046",
+      "A1F-048"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -81.65458174575916,
+            60.159795128
+          ],
+          [
+            -81.65458174681515,
+            60.159795128
+          ],
+          [
+            -81.84631611167026,
+            59.56716163627668
+          ],
+          [
+            -85.50236196317871,
+            60.75
+          ],
+          [
+            -85.50236196087289,
+            60.75
+          ],
+          [
+            -85.0,
+            60.58747113079082
+          ],
+          [
+            -85.0,
+            60.75
+          ],
+          [
+            -84.75,
+            60.75
+          ],
+          [
+            -84.75,
+            61.347415524157746
+          ],
+          [
+            -81.60005988286599,
+            60.32831725096733
+          ],
+          [
+            -81.65458174575916,
+            60.159795128
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-048",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-011",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      392.26633132884706,
+      0.0,
+      40.66070287956762
+    ],
+    "area_m2": 15.199999999946833,
+    "neighbors": [
+      "A1F-043",
+      "A1F-045"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -43.52062213264033,
+            93.3127523919726
+          ],
+          [
+            -43.41848057103555,
+            93.4226027506089
+          ],
+          [
+            -29.50410177523489,
+            80.48467158960128
+          ],
+          [
+            -30.048856771320764,
+            79.89880300857008
+          ],
+          [
+            -43.96323556699818,
+            92.83673416946313
+          ],
+          [
+            -43.86109400505341,
+            92.94658452852833
+          ],
+          [
+            -43.52062213264033,
+            93.3127523919726
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-045",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-012",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      422.15318069193285,
+      0.0,
+      46.61618948832127
+    ],
+    "area_m2": 8.232374119511126,
+    "neighbors": [
+      "A1F-001",
+      "A1F-041"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -10.843673554432359,
+            88.80503327776094
+          ],
+          [
+            0.4177987912856814,
+            100.91642806466525
+          ],
+          [
+            -10.11458316105471,
+            88.12710712253764
+          ],
+          [
+            -10.843673554432359,
+            88.80503327776094
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-013",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      405.0680737404343,
+      0.0,
+      54.4286145304787
+    ],
+    "area_m2": 15.200000000022392,
+    "neighbors": [
+      "A1F-041",
+      "A1F-043"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -30.71887972128862,
+            107.08066404227536
+          ],
+          [
+            -30.616738159091145,
+            107.19051440119063
+          ],
+          [
+            -16.702359363536576,
+            94.25258324041181
+          ],
+          [
+            -17.247114359772674,
+            93.66671465952031
+          ],
+          [
+            -31.16149315534411,
+            106.6046458203148
+          ],
+          [
+            -31.059351594025657,
+            106.71449617955818
+          ],
+          [
+            -30.71887972128862,
+            107.08066404227536
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-043",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-014",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      367.3669166415712,
+      0.0,
+      63.812790220378915
+    ],
+    "area_m2": 15.199999999744819,
+    "neighbors": [
+      "A1F-042",
+      "A1F-044"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -68.31789525825782,
+            116.57469009135943
+          ],
+          [
+            -54.40351646245715,
+            103.63675893035179
+          ],
+          [
+            -54.50565802397434,
+            103.52690857144182
+          ],
+          [
+            -54.84612989671139,
+            103.16074070872462
+          ],
+          [
+            -54.94827145876845,
+            103.05089034953022
+          ],
+          [
+            -68.8626502545511,
+            115.98882151056762
+          ],
+          [
+            -68.31789525825782,
+            116.57469009135943
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-044",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-015",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      424.16318709345535,
+      0.0,
+      75.7260506574093
+    ],
+    "area_m2": 0.8354868765338384,
+    "neighbors": [
+      "A1F-039",
+      "A1F-041"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -3.625968503199566,
+            120.32766431582627
+          ],
+          [
+            -5.669872021781195,
+            122.2281360085708
+          ],
+          [
+            -5.214598194653163,
+            122.62235164783078
+          ],
+          [
+            -3.625968503199566,
+            120.32766431582627
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-039",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-016",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      380.1686590537032,
+      0.0,
+      77.58070187077529
+    ],
+    "area_m2": 15.199999999179495,
+    "neighbors": [
+      "A1F-040",
+      "A1F-042"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -41.703915611957264,
+            117.2948202224602
+          ],
+          [
+            -42.04438748471139,
+            116.92865235972462
+          ],
+          [
+            -42.14652904700014,
+            116.81880200027567
+          ],
+          [
+            -56.06090784196293,
+            129.7567331605042
+          ],
+          [
+            -55.51615284568159,
+            130.34260174135366
+          ],
+          [
+            -41.60177405054227,
+            117.40467058096095
+          ],
+          [
+            -41.703915611957264,
+            117.2948202224602
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-042",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-017",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      431.79498282244106,
+      0.0,
+      90.36358130266487
+    ],
+    "area_m2": 0.3384859098335666,
+    "neighbors": [
+      "A1F-037"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            1.9776514526913995,
+            137.63180390905194
+          ],
+          [
+            4.552682083455528,
+            133.91231522017043
+          ],
+          [
+            1.854614931176233,
+            137.5466247787722
+          ],
+          [
+            1.9776514526913995,
+            137.63180390905194
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-037",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-018",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      416.7031300949897,
+      0.0,
+      111.54782861236464
+    ],
+    "area_m2": 15.19999999940066,
+    "neighbors": [
+      "A1F-036",
+      "A1F-038"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -7.094923153766502,
+            149.59470029789605
+          ],
+          [
+            -7.218251983093561,
+            149.50931880066645
+          ],
+          [
+            -18.033241580326752,
+            165.13097044111672
+          ],
+          [
+            -17.375487827056865,
+            165.58633842424388
+          ],
+          [
+            -6.560498229771628,
+            149.96468678372074
+          ],
+          [
+            -6.683827058250782,
+            149.8793052865608
+          ],
+          [
+            -7.094923153766502,
+            149.59470029789605
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-036",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-019",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      432.1603432952558,
+      0.0,
+      122.24897621658027
+    ],
+    "area_m2": 15.200000004566743,
+    "neighbors": [
+      "A1F-034",
+      "A1F-036"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -1.9182746252191998,
+            176.28748602772882
+          ],
+          [
+            8.896714973131413,
+            160.66583438573053
+          ],
+          [
+            8.773386144720217,
+            160.5804528885407
+          ],
+          [
+            8.362290049233499,
+            160.29584789989605
+          ],
+          [
+            8.238961219816378,
+            160.21046640266627
+          ],
+          [
+            -2.576028377959471,
+            175.83211804389808
+          ],
+          [
+            -10.052286247446009,
+            170.65624721117663
+          ],
+          [
+            -1.9182746252191998,
+            176.28748602772882
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-036",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-020",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      477.20116271253437,
+      0.0,
+      -64.69884441339215
+    ],
+    "area_m2": 15.200000003182337,
+    "neighbors": [
+      "A1F-013",
+      "A1F-015"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            48.00705849789098,
+            -36.2023390203716
+          ],
+          [
+            47.689433419283546,
+            -9.204207338739488
+          ],
+          [
+            47.83942303967131,
+            -9.20244275496997
+          ],
+          [
+            48.339388441792565,
+            -9.196560808968545
+          ],
+          [
+            48.48937806170699,
+            -9.194796225200221
+          ],
+          [
+            48.71289200590786,
+            -28.193481482274684
+          ],
+          [
+            47.912947364393006,
+            -28.20289259568075
+          ],
+          [
+            48.00705849789098,
+            -36.2023390203716
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-013",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-021",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      448.4325653148126,
+      0.0,
+      -67.5374715020283
+    ],
+    "area_m2": 19.199999999503596,
+    "neighbors": [
+      "A1F-011",
+      "A1F-013"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            19.691370934423254,
+            -9.53359630919617
+          ],
+          [
+            19.973704337625243,
+            -33.53193558136542
+          ],
+          [
+            19.17375969520068,
+            -33.54134669480854
+          ],
+          [
+            18.891426291999924,
+            -9.543007422744239
+          ],
+          [
+            19.041415912677436,
+            -9.5412428389699
+          ],
+          [
+            19.541381313807864,
+            -9.535360892968365
+          ],
+          [
+            19.691370934423254,
+            -9.53359630919617
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-011",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-022",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      514.0038457841115,
+      0.0,
+      -63.39530889762642
+    ],
+    "area_m2": 19.200000000066204,
+    "neighbors": [
+      "A1F-017",
+      "A1F-019"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            86.96500713547661,
+            -29.240723459898504
+          ],
+          [
+            82.25821989220222,
+            -5.706787243526616
+          ],
+          [
+            82.40530699383982,
+            -5.677369823199098
+          ],
+          [
+            82.89559733233982,
+            -5.5793117550990985
+          ],
+          [
+            83.04268443271293,
+            -5.54989433520587
+          ],
+          [
+            87.74947167607534,
+            -29.083830552017872
+          ],
+          [
+            86.96500713547661,
+            -29.240723459898504
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-019",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-023",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      476.79454759123246,
+      0.0,
+      -30.134181654405403
+    ],
+    "area_m2": 14.507286766905654,
+    "neighbors": [
+      "A1F-002",
+      "A1F-014",
+      "A1F-016"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            48.08778335555679,
+            24.94075379756656
+          ],
+          [
+            48.30115579289596,
+            6.804096623736833
+          ],
+          [
+            48.151166172349335,
+            6.8023320399702145
+          ],
+          [
+            47.65120077119214,
+            6.796450093968364
+          ],
+          [
+            47.501211150472535,
+            6.7946855101962615
+          ],
+          [
+            47.28792820820494,
+            24.923735602942052
+          ],
+          [
+            48.08778335555679,
+            24.94075379756656
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-016",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-024",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      506.9637406764537,
+      0.0,
+      -28.197848595849724
+    ],
+    "area_m2": 12.631318588857557,
+    "neighbors": [
+      "A1F-002",
+      "A1F-018",
+      "A1F-020"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.12036172990763,
+            9.982503567946415
+          ],
+          [
+            76.00989419106654,
+            25.534841262151872
+          ],
+          [
+            76.82228035085929,
+            25.552126074062357
+          ],
+          [
+            79.90482627038331,
+            10.139396476442311
+          ],
+          [
+            79.75773916916607,
+            10.109979056200277
+          ],
+          [
+            79.26744883066019,
+            10.0119209880991
+          ],
+          [
+            79.12036172990763,
+            9.982503567946415
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-018",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-025",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      493.00810456601477,
+      0.0,
+      -27.929094773606764
+    ],
+    "area_m2": 1.3182067898833576,
+    "neighbors": [
+      "A1F-016",
+      "A1F-018"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            63.7906743844873,
+            16.786795169166144
+          ],
+          [
+            63.74621324137261,
+            20.565992333915332
+          ],
+          [
+            64.4874260721844,
+            16.85992817609824
+          ],
+          [
+            63.7906743844873,
+            16.786795169166144
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-016",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-026",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      550.9655105110749,
+      0.0,
+      6.420386785014195
+    ],
+    "area_m2": 18.926297005786253,
+    "neighbors": [
+      "A1F-002",
+      "A1F-022",
+      "A1F-024"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            110.3965779284152,
+            51.05087063212969
+          ],
+          [
+            109.95553639203533,
+            51.816890142684194
+          ],
+          [
+            134.2373058109553,
+            53.840370927594186
+          ],
+          [
+            134.23784272503582,
+            53.83392796130265
+          ],
+          [
+            134.23784272507265,
+            53.8339279599038
+          ],
+          [
+            133.25866508854097,
+            52.956044562140164
+          ],
+          [
+            110.3965779284152,
+            51.05087063212969
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-024",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-027",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      591.6574768119949,
+      0.0,
+      9.813274388704784
+    ],
+    "area_m2": 16.811599387452787,
+    "neighbors": [
+      "A1F-021",
+      "A1F-023"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            153.15722606865936,
+            54.61425797715003
+          ],
+          [
+            151.35714189591096,
+            55.21428603473284
+          ],
+          [
+            151.23057093605257,
+            55.25647635468563
+          ],
+          [
+            176.09222765715853,
+            57.32828108144446
+          ],
+          [
+            173.1025903821992,
+            57.07914464086091
+          ],
+          [
+            173.1690267660535,
+            56.28190803526621
+          ],
+          [
+            153.15722606865936,
+            54.61425797715003
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-023",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-029",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      560.7782819097029,
+      0.0,
+      27.471923876133232
+    ],
+    "area_m2": 0.29645102047450345,
+    "neighbors": [
+      "A1F-024",
+      "A1F-026"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            132.277954986762,
+            73.35303003399747
+          ],
+          [
+            131.04684557547637,
+            73.250437583057
+          ],
+          [
+            132.01004516668948,
+            73.81230401126464
+          ],
+          [
+            132.07127888540893,
+            73.70733192242152
+          ],
+          [
+            132.277954986762,
+            73.35303003399747
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-024",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-030",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      543.8928266140119,
+      0.0,
+      33.3404889770878
+    ],
+    "area_m2": 19.20000000011578,
+    "neighbors": [
+      "A1F-026",
+      "A1F-028"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            104.72902821345592,
+            72.94852511044903
+          ],
+          [
+            104.32593139288015,
+            73.63954823107649
+          ],
+          [
+            125.0566250144571,
+            85.73245284366304
+          ],
+          [
+            125.13220566840936,
+            85.60288600842077
+          ],
+          [
+            125.38414118169891,
+            85.17099655792437
+          ],
+          [
+            125.45972183487638,
+            85.04142972294429
+          ],
+          [
+            104.72902821345592,
+            72.94852511044903
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-028",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-031",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      577.5802037490558,
+      0.0,
+      52.991458972532925
+    ],
+    "area_m2": 19.200000000360717,
+    "neighbors": [
+      "A1F-025",
+      "A1F-027"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            138.0133085279336,
+            93.29051822652433
+          ],
+          [
+            158.74400215014998,
+            105.3834228394839
+          ],
+          [
+            159.14709896991528,
+            104.69239971838364
+          ],
+          [
+            138.41640534835287,
+            92.59949510580559
+          ],
+          [
+            138.34082469458397,
+            92.72906194059065
+          ],
+          [
+            138.08888918163112,
+            93.16095139150984
+          ],
+          [
+            138.0133085279336,
+            93.29051822652433
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-027",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-032",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      538.2677328319459,
+      0.0,
+      63.8063833248749
+    ],
+    "area_m2": 0.3384859098504466,
+    "neighbors": [
+      "A1F-030"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            110.54513947936343,
+            110.60928518953793
+          ],
+          [
+            110.62054099624112,
+            110.48002544670825
+          ],
+          [
+            106.637518020233,
+            108.32983933837852
+          ],
+          [
+            110.54513947936343,
+            110.60928518953793
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-030",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-035",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      560.9092709608483,
+      0.0,
+      76.60861375419609
+    ],
+    "area_m2": 15.19999999628304,
+    "neighbors": [
+      "A1F-027",
+      "A1F-029"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            139.91362210975035,
+            127.74090005726363
+          ],
+          [
+            140.31671892998526,
+            127.04987693686702
+          ],
+          [
+            123.90491981327557,
+            117.47632745169003
+          ],
+          [
+            123.8293391595848,
+            117.60589428658923
+          ],
+          [
+            123.57740364663114,
+            118.03778373750983
+          ],
+          [
+            123.50182299291832,
+            118.16735057244495
+          ],
+          [
+            139.91362210975035,
+            127.74090005726363
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-029",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-036",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      452.69495334810574,
+      0.0,
+      83.39379654357799
+    ],
+    "area_m2": 0.3002953748551498,
+    "neighbors": [
+      "A1F-001",
+      "A1F-037"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            23.19609312886585,
+            129.21254216826787
+          ],
+          [
+            24.415984899923327,
+            130.0570826251538
+          ],
+          [
+            23.472782015527965,
+            128.91176483731223
+          ],
+          [
+            23.19609312886585,
+            129.21254216826787
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-037",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-037",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      451.1687915507315,
+      0.0,
+      94.79083524788581
+    ],
+    "area_m2": 14.232875183440454,
+    "neighbors": [
+      "A1F-001",
+      "A1F-035",
+      "A1F-037"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            26.968546231825137,
+            133.1566213853203
+          ],
+          [
+            16.77711090252701,
+            147.87758352763984
+          ],
+          [
+            16.900439731212185,
+            147.96296502441248
+          ],
+          [
+            17.311535827645294,
+            148.24757001471232
+          ],
+          [
+            17.434864655633834,
+            148.33295151100484
+          ],
+          [
+            27.497165780987626,
+            133.79851655216046
+          ],
+          [
+            26.968546231825137,
+            133.1566213853203
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-037",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-1F-GAP-038",
+    "wing": "A",
+    "floor": "1F",
+    "world_center": [
+      497.7303261244032,
+      0.0,
+      94.5117673066168
+    ],
+    "area_m2": 18.311872477341353,
+    "neighbors": [
+      "A1F-002",
+      "A1F-032",
+      "A1F-033"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            63.25339852794748,
+            132.93112959083678
+          ],
+          [
+            61.092027595407316,
+            136.68508963156444
+          ],
+          [
+            63.60735644351692,
+            134.62709330129294
+          ],
+          [
+            75.63887445837294,
+            149.33228198611698
+          ],
+          [
+            75.7549680533441,
+            149.23729631750857
+          ],
+          [
+            76.14194670368677,
+            148.92067742222824
+          ],
+          [
+            76.25804029776758,
+            148.82569175395025
+          ],
+          [
+            63.25339852794748,
+            132.93112959083678
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A1F-033",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-ACCESS-000",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      589.4525427849721,
+      5.525,
+      15.862314050463134
+    ],
+    "area_m2": 0.9969900998835515,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            162.50553537658263,
+            62.0
+          ],
+          [
+            162.5159340211981,
+            61.75
+          ],
+          [
+            157.75,
+            61.75
+          ],
+          [
+            157.75,
+            61.820559399410726
+          ],
+          [
+            159.90328720707132,
+            62.0
+          ],
+          [
+            162.50553537658263,
+            62.0
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-2F-ACCESS-007",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      506.61422456167736,
+      5.525,
+      89.44150745569104
+    ],
+    "area_m2": 12.350000005570475,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            68.59017199963692,
+            123.66199671895512
+          ],
+          [
+            68.5901719993141,
+            123.66199671951584
+          ],
+          [
+            71.9660952741275,
+            127.78812516682684
+          ],
+          [
+            61.4351570416338,
+            136.4043473571745
+          ],
+          [
+            61.43515704163505,
+            136.40434735717557
+          ],
+          [
+            71.34692943555014,
+            128.2947153987203
+          ],
+          [
+            83.37844745043813,
+            142.99990408358343
+          ],
+          [
+            83.83832718630819,
+            142.62363884514428
+          ],
+          [
+            83.88151969489044,
+            142.58829951987974
+          ],
+          [
+            71.85000168003228,
+            127.88311083505312
+          ],
+          [
+            71.96609527491279,
+            127.7881251665145
+          ],
+          [
+            68.59017199963692,
+            123.66199671895512
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-2F-ACCESS-011",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      536.372551558058,
+      5.525,
+      46.23238907299341
+    ],
+    "area_m2": 15.599999999820326,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            97.17096283068798,
+            85.90520862397999
+          ],
+          [
+            96.84344666410449,
+            86.46666490956815
+          ],
+          [
+            117.57414028542442,
+            98.55956952200478
+          ],
+          [
+            117.90165645201508,
+            97.99811323642079
+          ],
+          [
+            97.17096283068798,
+            85.90520862397999
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-2F-ACCESS-024",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      383.3379382920738,
+      5.525,
+      28.855643692539175
+    ],
+    "area_m2": 14.300000019489097,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -53.496448001488,
+            82.58403400419503
+          ],
+          [
+            -37.385062027630205,
+            67.60327160745005
+          ],
+          [
+            -36.94244859317468,
+            68.07928982941165
+          ],
+          [
+            -36.942448593174674,
+            68.07928982941165
+          ],
+          [
+            -20.361468394725414,
+            85.91166475981936
+          ],
+          [
+            -20.361468394383955,
+            85.9116647595315
+          ],
+          [
+            -37.92981702342231,
+            67.01740302649026
+          ],
+          [
+            -32.02250098390698,
+            61.52463548108121
+          ],
+          [
+            -9.793715874670372,
+            88.51673168457576
+          ],
+          [
+            -32.02250098384695,
+            61.52463548057563
+          ],
+          [
+            -32.07113121512499,
+            61.56985306404469
+          ],
+          [
+            -34.81564726715429,
+            64.12177149838773
+          ],
+          [
+            -37.92981702388316,
+            67.01740302657423
+          ],
+          [
+            -37.82767546208572,
+            67.12725338548846
+          ],
+          [
+            -53.93906143614951,
+            82.10801578242497
+          ],
+          [
+            -53.93906143603429,
+            82.10801578254889
+          ],
+          [
+            -53.59858956328861,
+            82.47418364527537
+          ],
+          [
+            -53.496448001488,
+            82.58403400419503
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-2F-GAP-002",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      583.9517783246253,
+      5.525,
+      15.154537863040979
+    ],
+    "area_m2": 9.79427497956337,
+    "neighbors": [
+      "A2F-019",
+      "A2F-021"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            162.52982224513642,
+            61.4161049480023
+          ],
+          [
+            148.75365568982286,
+            60.268091068309815
+          ],
+          [
+            148.74119886786008,
+            60.41757293189395
+          ],
+          [
+            148.6996761278502,
+            60.91584581101249
+          ],
+          [
+            148.68721930585852,
+            61.06532767489894
+          ],
+          [
+            157.75,
+            61.820559399410726
+          ],
+          [
+            157.75,
+            61.75
+          ],
+          [
+            162.5159340211981,
+            61.75
+          ],
+          [
+            162.52982224513642,
+            61.4161049480023
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-019",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-004",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      558.389915832155,
+      5.525,
+      80.9275082586597
+    ],
+    "area_m2": 15.200000002883037,
+    "neighbors": [
+      "A2F-025",
+      "A2F-027"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            137.39426698228974,
+            132.059794561849
+          ],
+          [
+            137.79736380281653,
+            131.368771441193
+          ],
+          [
+            121.38556468563876,
+            121.79522195617263
+          ],
+          [
+            121.30998403159042,
+            121.92478879157962
+          ],
+          [
+            121.05804851830109,
+            122.35667824207563
+          ],
+          [
+            117.5561448913343,
+            128.35994160281322
+          ],
+          [
+            117.55614489158415,
+            128.35994160295897
+          ],
+          [
+            120.98246786521949,
+            122.48624507689138
+          ],
+          [
+            137.39426698228974,
+            132.059794561849
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-027",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-006",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      570.0221383665526,
+      5.525,
+      65.94814248738089
+    ],
+    "area_m2": 19.20000000620975,
+    "neighbors": [
+      "A2F-023",
+      "A2F-025"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            151.589033587054,
+            117.64908323186015
+          ],
+          [
+            130.85833996549158,
+            105.55617861928208
+          ],
+          [
+            130.7827593115856,
+            105.68574545458786
+          ],
+          [
+            130.5308237983011,
+            106.11763490507562
+          ],
+          [
+            126.77698465853642,
+            112.55278771643684
+          ],
+          [
+            126.77698465874649,
+            112.55278771655938
+          ],
+          [
+            130.4552431450723,
+            106.24720174000083
+          ],
+          [
+            153.77727346933,
+            119.85171942915116
+          ],
+          [
+            147.38131285317226,
+            130.81622334256446
+          ],
+          [
+            153.77727346983428,
+            119.85171942894438
+          ],
+          [
+            151.18593676684193,
+            118.34010635194882
+          ],
+          [
+            151.589033587054,
+            117.64908323186015
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-025",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-009",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      472.7950481755129,
+      5.525,
+      -30.20025492387265
+    ],
+    "area_m2": 14.476856336916232,
+    "neighbors": [
+      "A2F-002",
+      "A2F-012",
+      "A2F-014"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            43.288652471445744,
+            24.83864462981952
+          ],
+          [
+            44.08850761879759,
+            24.855662824444025
+          ],
+          [
+            44.30143258077069,
+            6.757041056731054
+          ],
+          [
+            43.50908949,
+            6.7477193733568335
+          ],
+          [
+            43.50908949,
+            6.747719372380868
+          ],
+          [
+            41.12097030281297,
+            6.719623852761452
+          ],
+          [
+            41.120970302811116,
+            6.719623852919062
+          ],
+          [
+            43.501487938352454,
+            6.74762994274896
+          ],
+          [
+            43.288652471445744,
+            24.83864462981952
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-012",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-014",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      493.39517668490475,
+      5.525,
+      101.27412413555425
+    ],
+    "area_m2": 13.940224456470725,
+    "neighbors": [
+      "A2F-002",
+      "A2F-032",
+      "A2F-033"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            70.22117336398168,
+            153.7649465179569
+          ],
+          [
+            59.090715220029715,
+            140.16105323090449
+          ],
+          [
+            58.66377334229455,
+            140.90258386065503
+          ],
+          [
+            69.60200752461901,
+            154.2715367501627
+          ],
+          [
+            69.71810111935518,
+            154.17655108149953
+          ],
+          [
+            70.10507976968674,
+            153.85993218622824
+          ],
+          [
+            70.22117336398168,
+            153.7649465179569
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-032",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-015",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      506.92380748490893,
+      5.525,
+      89.18821234320606
+    ],
+    "area_m2": 2.8499999999966983,
+    "neighbors": [
+      "A2F-030"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            83.99761328980078,
+            142.49331385137762
+          ],
+          [
+            71.96609527491279,
+            127.7881251665145
+          ],
+          [
+            71.85000168003228,
+            127.88311083505312
+          ],
+          [
+            83.88151969489044,
+            142.58829951987974
+          ],
+          [
+            83.88151969490802,
+            142.58829951986536
+          ],
+          [
+            83.99761328980078,
+            142.49331385137762
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-030",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-023",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      529.0214332033459,
+      5.525,
+      63.795893391147956
+    ],
+    "area_m2": 15.199999999865506,
+    "neighbors": [
+      "A2F-026",
+      "A2F-028"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            108.42888117216226,
+            114.23715657331134
+          ],
+          [
+            92.01708205509202,
+            104.66360708835371
+          ],
+          [
+            91.61398523467275,
+            105.35463020907245
+          ],
+          [
+            108.02578435141749,
+            114.9281796938402
+          ],
+          [
+            108.10136500541073,
+            114.79861285841842
+          ],
+          [
+            108.35330051869893,
+            114.36672340792435
+          ],
+          [
+            108.42888117216226,
+            114.23715657331134
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-028",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-024",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      536.1710031481554,
+      5.525,
+      46.57790063352195
+    ],
+    "area_m2": 3.6000000000622068,
+    "neighbors": [
+      "A2F-024",
+      "A2F-026"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            117.90165645201508,
+            97.99811323642079
+          ],
+          [
+            117.57414028542442,
+            98.55956952200478
+          ],
+          [
+            96.84344666410449,
+            86.46666490956815
+          ],
+          [
+            96.76786601027753,
+            86.59623174470389
+          ],
+          [
+            117.49855963159581,
+            98.68913635713955
+          ],
+          [
+            117.5741402854186,
+            98.55956952240493
+          ],
+          [
+            117.82607579836888,
+            98.12768007149016
+          ],
+          [
+            117.90165645201508,
+            97.99811323642079
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-026",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-025",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      560.7782819097029,
+      5.525,
+      27.471923876133232
+    ],
+    "area_m2": 0.29645102047450067,
+    "neighbors": [
+      "A2F-022",
+      "A2F-024"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            131.04684557547637,
+            73.250437583057
+          ],
+          [
+            132.01004516668948,
+            73.81230401126464
+          ],
+          [
+            132.07127888541686,
+            73.7073319224079
+          ],
+          [
+            132.277954986762,
+            73.35303003399747
+          ],
+          [
+            131.04684557547637,
+            73.250437583057
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-022",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-026",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      550.8137020265738,
+      5.525,
+      12.424481415530508
+    ],
+    "area_m2": 19.20000000277236,
+    "neighbors": [
+      "A2F-020",
+      "A2F-022"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            134.23784272509837,
+            53.83392796071854
+          ],
+          [
+            134.23784272487805,
+            53.83392796052101
+          ],
+          [
+            133.80546931571584,
+            59.02240887046756
+          ],
+          [
+            109.88837111783873,
+            57.0293173539778
+          ],
+          [
+            109.82193473395574,
+            57.826553960573705
+          ],
+          [
+            133.73903293183284,
+            59.81964547706346
+          ],
+          [
+            133.34409388260025,
+            64.5589140678545
+          ],
+          [
+            133.34409388266286,
+            64.55891406785972
+          ],
+          [
+            133.75148975414356,
+            59.67016361306249
+          ],
+          [
+            133.7930124941498,
+            59.17189073398751
+          ],
+          [
+            134.23784272509837,
+            53.83392796071854
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-020",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-030",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      521.934093917101,
+      5.525,
+      -26.564945786687545
+    ],
+    "area_m2": 10.495725369486824,
+    "neighbors": [
+      "A2F-002",
+      "A2F-016",
+      "A2F-018"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            93.82907186531307,
+            12.924245594811069
+          ],
+          [
+            91.24213468718058,
+            25.85893148547345
+          ],
+          [
+            92.05452084697333,
+            25.876216297383937
+          ],
+          [
+            94.6135364058658,
+            13.081138502921615
+          ],
+          [
+            97.36483024042808,
+            13.63139726983407
+          ],
+          [
+            94.46644930407953,
+            13.05172108218297
+          ],
+          [
+            93.97615896766018,
+            12.953663015299098
+          ],
+          [
+            93.82907186531307,
+            12.924245594811069
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-018",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-040",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      528.2023562316772,
+      5.525,
+      115.70856279827521
+    ],
+    "area_m2": 15.19999999921059,
+    "neighbors": [
+      "A2F-029",
+      "A2F-031"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            93.3800865497126,
+            154.19765900844504
+          ],
+          [
+            92.87701430480733,
+            154.60926357225688
+          ],
+          [
+            104.90853231918506,
+            169.31445225649634
+          ],
+          [
+            105.52769815843439,
+            168.80786202415203
+          ],
+          [
+            93.49618014426021,
+            154.10267334016135
+          ],
+          [
+            93.3800865497126,
+            154.19765900844504
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-031",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-044",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      528.7125559154651,
+      5.525,
+      -60.45356687560885
+    ],
+    "area_m2": 19.200000006767226,
+    "neighbors": [
+      "A2F-015",
+      "A2F-017"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            96.96693002756604,
+            -2.765045216453854
+          ],
+          [
+            97.11401712883982,
+            -2.7356277961990982
+          ],
+          [
+            97.60430746733982,
+            -2.637569728099098
+          ],
+          [
+            97.75139456807673,
+            -2.6081523081331097
+          ],
+          [
+            102.45818181144261,
+            -26.142088524944416
+          ],
+          [
+            74.21745835135928,
+            -31.79023321696108
+          ],
+          [
+            74.21745835149466,
+            -31.790233216694894
+          ],
+          [
+            101.67371727084043,
+            -26.29898143282574
+          ],
+          [
+            96.96693002756604,
+            -2.765045216453854
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-015",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-048",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      425.63414300558645,
+      5.525,
+      -67.80568823741683
+    ],
+    "area_m2": 19.200000002347608,
+    "neighbors": [
+      "A2F-007",
+      "A2F-009"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -3.1070513746805983,
+            -9.801813041999878
+          ],
+          [
+            -2.824717971477443,
+            -33.80015231426809
+          ],
+          [
+            -3.624662613660866,
+            -33.809563427678604
+          ],
+          [
+            -3.554079262661011,
+            -39.809148246666275
+          ],
+          [
+            -9.419784823380708,
+            -39.878156547071754
+          ],
+          [
+            -3.5540792630943443,
+            -39.809148246362504
+          ],
+          [
+            -3.906996017101661,
+            -9.811224155740588
+          ],
+          [
+            -3.757006396343556,
+            -9.809459571970146
+          ],
+          [
+            -3.2570409951921384,
+            -9.803577625968366
+          ],
+          [
+            -3.1070513746805983,
+            -9.801813041999878
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-007",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-049",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      454.4321501321451,
+      5.525,
+      -67.46688815360893
+    ],
+    "area_m2": 19.20000000364933,
+    "neighbors": [
+      "A2F-009",
+      "A2F-011"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            25.690955752604843,
+            -9.463012958149463
+          ],
+          [
+            25.973289155819405,
+            -33.461352231387316
+          ],
+          [
+            11.123764992363586,
+            -33.63605251516321
+          ],
+          [
+            25.173344513388926,
+            -33.470763344327615
+          ],
+          [
+            24.891011110180244,
+            -9.472424071589751
+          ],
+          [
+            25.041000730671318,
+            -9.470659487969971
+          ],
+          [
+            25.540966131807863,
+            -9.464777541968365
+          ],
+          [
+            25.690955752604843,
+            -9.463012958149463
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-009",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-052",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      473.201439504543,
+      5.525,
+      -64.74589998209287
+    ],
+    "area_m2": 15.20000000684851,
+    "neighbors": [
+      "A2F-011",
+      "A2F-013"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            44.48965484958285,
+            -9.241851792302661
+          ],
+          [
+            44.71316879378972,
+            -28.240537049886804
+          ],
+          [
+            61.71199244531236,
+            -28.040550889280656
+          ],
+          [
+            61.71199244534545,
+            -28.0405508896987
+          ],
+          [
+            43.91322415139226,
+            -28.24994816369815
+          ],
+          [
+            43.68971020715824,
+            -9.251262905742951
+          ],
+          [
+            43.83969982757013,
+            -9.249498321971162
+          ],
+          [
+            44.33966522880787,
+            -9.243616375968365
+          ],
+          [
+            44.48965484958285,
+            -9.241851792302661
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-013",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-054",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      370.8950229923816,
+      5.525,
+      7.357586969514905
+    ],
+    "area_m2": 15.200000001078166,
+    "neighbors": [
+      "A2F-047",
+      "A2F-049"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -48.94312596660134,
+            50.81387206542321
+          ],
+          [
+            -49.189382194933074,
+            50.05271645057969
+          ],
+          [
+            -49.18938219453634,
+            50.052716450451335
+          ],
+          [
+            -49.189382194540045,
+            50.052716450439895
+          ],
+          [
+            -67.2668280474669,
+            55.90130187345827
+          ],
+          [
+            -68.34521474767435,
+            52.568106618271635
+          ],
+          [
+            -68.34521474780689,
+            52.56810661831452
+          ],
+          [
+            -67.22065500492839,
+            56.04401855151524
+          ],
+          [
+            -67.06674486208522,
+            56.519740810030505
+          ],
+          [
+            -67.02057181913517,
+            56.6624574883018
+          ],
+          [
+            -48.94312596660134,
+            50.81387206542321
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-049",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-055",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      367.68819616073097,
+      5.525,
+      26.895957346804565
+    ],
+    "area_m2": 0.39610278620075945,
+    "neighbors": [
+      "A2F-046",
+      "A2F-047"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -61.37576035054469,
+            74.11005657245477
+          ],
+          [
+            -61.600580851593975,
+            73.41515684252002
+          ],
+          [
+            -60.54720369874744,
+            72.435700893382
+          ],
+          [
+            -61.7876269670859,
+            72.8370143037268
+          ],
+          [
+            -61.72807363793834,
+            73.02108823048447
+          ],
+          [
+            -61.587543781866046,
+            73.45545324070791
+          ],
+          [
+            -61.37576035054469,
+            74.11005657245477
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-046",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-057",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      392.134059584561,
+      5.525,
+      10.041121169289262
+    ],
+    "area_m2": 4.693709078250508,
+    "neighbors": [
+      "A2F-001",
+      "A2F-046",
+      "A2F-047"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -9.793189414606815,
+            88.51737095751007
+          ],
+          [
+            -39.303798012173246,
+            52.68306051760799
+          ],
+          [
+            -39.30379801192216,
+            52.683060517912885
+          ],
+          [
+            -46.24907227469774,
+            59.14094711312527
+          ],
+          [
+            -39.85646652612985,
+            53.19694527673758
+          ],
+          [
+            -32.07113121512499,
+            61.56985306404469
+          ],
+          [
+            -32.02250098384695,
+            61.52463548057563
+          ],
+          [
+            -9.793715874670372,
+            88.51673168457576
+          ],
+          [
+            -9.793189414606815,
+            88.51737095751007
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-058",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      383.06556076997833,
+      5.525,
+      28.562709404504517
+    ],
+    "area_m2": 3.2999999999982492,
+    "neighbors": [
+      "A2F-046"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -54.04120299796815,
+            81.99816542353045
+          ],
+          [
+            -53.93906143614951,
+            82.10801578242497
+          ],
+          [
+            -37.82767546208572,
+            67.12725338548846
+          ],
+          [
+            -37.92981702388316,
+            67.01740302657423
+          ],
+          [
+            -34.81564726715429,
+            64.12177149838773
+          ],
+          [
+            -54.04120299796815,
+            81.99816542353045
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-046",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-059",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      399.75671252729325,
+      5.525,
+      48.71639586663632
+    ],
+    "area_m2": 15.199999999829934,
+    "neighbors": [
+      "A2F-042",
+      "A2F-044"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -35.92809937230486,
+            101.47829573741653
+          ],
+          [
+            -22.013720576756782,
+            88.54036457664375
+          ],
+          [
+            -22.558475573009733,
+            87.95449599576794
+          ],
+          [
+            -20.361468394725414,
+            85.91166475981936
+          ],
+          [
+            -36.472854368810395,
+            100.89242715677558
+          ],
+          [
+            -36.37071280703435,
+            101.00227751554883
+          ],
+          [
+            -36.03024093428861,
+            101.36844537827538
+          ],
+          [
+            -35.92809937230486,
+            101.47829573741653
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-044",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-062",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      411.87751119278073,
+      5.525,
+      61.7519717930425
+    ],
+    "area_m2": 15.20000000202706,
+    "neighbors": [
+      "A2F-040",
+      "A2F-042"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -18.83641136532121,
+            119.8599224628163
+          ],
+          [
+            -18.836411365128377,
+            119.859922462637
+          ],
+          [
+            -23.80730070592924,
+            114.51387166213834
+          ],
+          [
+            -9.892921910528159,
+            101.57594050145364
+          ],
+          [
+            -10.437676906719892,
+            100.9900719205695
+          ],
+          [
+            -24.352055702182188,
+            113.92800308126253
+          ],
+          [
+            -24.24991414007107,
+            114.03785344050934
+          ],
+          [
+            -23.90944226764033,
+            114.4040213039726
+          ],
+          [
+            -18.83641136532121,
+            119.8599224628163
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-040",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-064",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      447.49908020252633,
+      5.525,
+      91.30003128965433
+    ],
+    "area_m2": 15.484190818077073,
+    "neighbors": [
+      "A2F-001",
+      "A2F-036",
+      "A2F-038"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            22.91457964338486,
+            129.0176482164003
+          ],
+          [
+            22.91457964317146,
+            129.01764821663227
+          ],
+          [
+            23.481139541827975,
+            129.40988199262625
+          ],
+          [
+            12.666149944052119,
+            145.03153363385806
+          ],
+          [
+            10.11776103548699,
+            143.26726438946682
+          ],
+          [
+            10.11776103523372,
+            143.26726438983266
+          ],
+          [
+            12.75455243716329,
+            145.09273536044742
+          ],
+          [
+            12.754552438236145,
+            145.09273535937456
+          ],
+          [
+            13.323903697862532,
+            145.48690161620675
+          ],
+          [
+            24.193293598722153,
+            129.78667175940953
+          ],
+          [
+            23.255119811563507,
+            128.64746073214545
+          ],
+          [
+            23.255119811240913,
+            128.64746073249614
+          ],
+          [
+            23.472782013540865,
+            128.91176483528426
+          ],
+          [
+            23.196093126746014,
+            129.21254216641208
+          ],
+          [
+            22.91457964338486,
+            129.0176482164003
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-038",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-070",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      425.2010051486774,
+      5.525,
+      -30.98652682670334
+    ],
+    "area_m2": 14.114734214443725,
+    "neighbors": [
+      "A2F-001",
+      "A2F-008",
+      "A2F-010"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -4.095218285910983,
+            6.187668693051743
+          ],
+          [
+            -4.302728795988743,
+            23.82606204966134
+          ],
+          [
+            -3.5028736486369008,
+            23.843080244285844
+          ],
+          [
+            -3.295273643489308,
+            6.197079806740445
+          ],
+          [
+            -3.4452632636859426,
+            6.1953152229698
+          ],
+          [
+            -3.945228665792572,
+            6.189433276968544
+          ],
+          [
+            -4.095218285910983,
+            6.187668693051743
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-010",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-073",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      379.4172159994612,
+      5.525,
+      -33.49833537332135
+    ],
+    "area_m2": 1.0870983194658526,
+    "neighbors": [
+      "A2F-006",
+      "A2F-050"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -54.0,
+            11.945271270690514
+          ],
+          [
+            -50.169349959897936,
+            11.288588406640654
+          ],
+          [
+            -48.961353863457276,
+            15.022394522911803
+          ],
+          [
+            -49.61764818850787,
+            11.194010960116643
+          ],
+          [
+            -38.90731529138074,
+            9.357953892037706
+          ],
+          [
+            -49.61440099219307,
+            11.193454297631215
+          ],
+          [
+            -50.258302654233184,
+            11.303837439638091
+          ],
+          [
+            -54.0,
+            11.945271270690514
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-006",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-074",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      426.5458534304131,
+      5.525,
+      51.635067455226036
+    ],
+    "area_m2": 1.286624651920754,
+    "neighbors": [
+      "A2F-001",
+      "A2F-040"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -3.746002398794931,
+            95.86038376226713
+          ],
+          [
+            -3.74600239886833,
+            95.86038376233539
+          ],
+          [
+            -3.74600239874934,
+            95.86038376247987
+          ],
+          [
+            -4.034236101370375,
+            96.12839053860118
+          ],
+          [
+            0.4177987912856562,
+            100.91642806466521
+          ],
+          [
+            -3.746002398794931,
+            95.86038376226713
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-077",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      441.22501653192336,
+      5.525,
+      133.39323978850234
+    ],
+    "area_m2": 16.79092018016655,
+    "neighbors": [
+      "A2F-034",
+      "A2F-035"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            18.2,
+            170.06642800369195
+          ],
+          [
+            5.924173972981271,
+            187.79817670938567
+          ],
+          [
+            6.581927726284315,
+            188.25354469246727
+          ],
+          [
+            18.2,
+            171.47188474154459
+          ],
+          [
+            18.2,
+            170.06642800369195
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-035",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-079",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      428.0493823339461,
+      5.525,
+      119.40292632320276
+    ],
+    "area_m2": 15.200000008259671,
+    "neighbors": [
+      "A2F-035",
+      "A2F-037"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            4.128000261597486,
+            157.36441650851472
+          ],
+          [
+            -6.68698933617836,
+            172.98606814974653
+          ],
+          [
+            -20.664256594208936,
+            163.3094985096959
+          ],
+          [
+            -6.029235583389562,
+            173.4414361335709
+          ],
+          [
+            4.785754014912515,
+            157.819784491579
+          ],
+          [
+            4.6624251857502435,
+            157.7344029945615
+          ],
+          [
+            4.2513290906251235,
+            157.4497980054749
+          ],
+          [
+            4.128000261597486,
+            157.36441650851472
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-037",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-080",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      356.19044562031604,
+      5.525,
+      53.99563710548439
+    ],
+    "area_m2": 17.60000001562736,
+    "neighbors": [
+      "A2F-043",
+      "A2F-045"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -80.59286986722176,
+            107.77895258110537
+          ],
+          [
+            -64.48148389313678,
+            92.79819018414915
+          ],
+          [
+            -64.58362545495284,
+            92.68833982546495
+          ],
+          [
+            -64.92409732771138,
+            92.32217196272462
+          ],
+          [
+            -65.02623888972086,
+            92.2123216035812
+          ],
+          [
+            -81.137624864212,
+            107.19308400091508
+          ],
+          [
+            -63.56927623454249,
+            126.08734573355962
+          ],
+          [
+            -63.56927623431698,
+            126.08734573347468
+          ],
+          [
+            -80.59286986722176,
+            107.77895258110537
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-043",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-081",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      374.8572978400699,
+      5.525,
+      71.86848320657056
+    ],
+    "area_m2": 15.200000003900158,
+    "neighbors": [
+      "A2F-041",
+      "A2F-043"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -46.91313526397904,
+            111.69245191739427
+          ],
+          [
+            -47.01527682595338,
+            111.58260155846436
+          ],
+          [
+            -47.35574869835967,
+            111.2164336950274
+          ],
+          [
+            -54.81208270956341,
+            103.19735749461734
+          ],
+          [
+            -54.81208270964685,
+            103.19735749469493
+          ],
+          [
+            -47.45789026023199,
+            111.10658333651845
+          ],
+          [
+            -61.372269056337345,
+            124.0445144978094
+          ],
+          [
+            -56.720176816531556,
+            129.0477080381216
+          ],
+          [
+            -60.8275140597797,
+            124.6303830784019
+          ],
+          [
+            -46.91313526397904,
+            111.69245191739427
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-043",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-083",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      386.97809650675794,
+      5.525,
+      84.9040591318508
+    ],
+    "area_m2": 15.20000000032433,
+    "neighbors": [
+      "A2F-039",
+      "A2F-041"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -34.894478158951316,
+            124.61817748346658
+          ],
+          [
+            -35.23495003231418,
+            124.25200961907633
+          ],
+          [
+            -35.33709159360377,
+            124.1421592610054
+          ],
+          [
+            -49.25147038891528,
+            137.08009042155822
+          ],
+          [
+            -48.70671539256384,
+            137.6659590024684
+          ],
+          [
+            -34.79233659735083,
+            124.72802784188121
+          ],
+          [
+            -34.894478158951316,
+            124.61817748346658
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-041",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-087",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      359.38434638277704,
+      5.525,
+      -67.43033090903052
+    ],
+    "area_m2": 3.944999029300762,
+    "neighbors": [
+      "A2F-003",
+      "A2F-004"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -70.42835808299371,
+            -23.792763022169144
+          ],
+          [
+            -69.60674156490757,
+            -19.0
+          ],
+          [
+            -68.79507158069889,
+            -19.0
+          ],
+          [
+            -69.63986027911082,
+            -23.927934074069636
+          ],
+          [
+            -70.42835808299371,
+            -23.792763022169144
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-004",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-088",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      373.0159590071629,
+      5.525,
+      -69.58172993446573
+    ],
+    "area_m2": 7.4375704579329085,
+    "neighbors": [
+      "A2F-004",
+      "A2F-005"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -57.164698596788746,
+            -28.095708179535613
+          ],
+          [
+            -55.60543433730797,
+            -19.0
+          ],
+          [
+            -54.7937643530993,
+            -19.0
+          ],
+          [
+            -56.37620079281352,
+            -28.230879231666286
+          ],
+          [
+            -57.164698596788746,
+            -28.095708179535613
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-005",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-2F-GAP-096",
+    "wing": "A",
+    "floor": "2F",
+    "world_center": [
+      380.9003657894119,
+      5.525,
+      -23.25667359374377
+    ],
+    "area_m2": 0.31475208503331736,
+    "neighbors": [
+      "A2F-001",
+      "A2F-006",
+      "A2F-050"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -49.00079217600223,
+            22.875039424554668
+          ],
+          [
+            -47.610113782835825,
+            22.904628326536933
+          ],
+          [
+            -47.68799667292608,
+            22.450311467677093
+          ],
+          [
+            -49.00079217600223,
+            22.875039424554668
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A2F-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-ACCESS-000",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      507.3881818644385,
+      10.875,
+      88.80826966906096
+    ],
+    "area_m2": 12.350000000000218,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            72.12088673475347,
+            127.66147760846306
+          ],
+          [
+            84.15240474964146,
+            142.36666629332618
+          ],
+          [
+            84.65547699412362,
+            141.95506172965895
+          ],
+          [
+            72.62395897923565,
+            127.24987304479583
+          ],
+          [
+            72.12088673475347,
+            127.66147760846306
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-3F-ACCESS-001",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      534.4108015668464,
+      10.875,
+      54.19571940243432
+    ],
+    "area_m2": 14.861514090164334,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            97.55966333585697,
+            95.16203917847093
+          ],
+          [
+            97.1565665154377,
+            95.85306229918969
+          ],
+          [
+            109.66074417337752,
+            103.14716593298792
+          ],
+          [
+            113.64376714921296,
+            105.29735204122443
+          ],
+          [
+            113.8958817990986,
+            104.86515549856334
+          ],
+          [
+            113.97146245292721,
+            104.73558866342857
+          ],
+          [
+            97.55966333585697,
+            95.16203917847093
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-3F-ACCESS-003",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      395.0411770909018,
+      10.875,
+      43.644970963503354
+    ],
+    "area_m2": 12.349999999999866,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -26.780326793970122,
+            83.41401449398035
+          ],
+          [
+            -27.22294022842565,
+            82.93799627201875
+          ],
+          [
+            -41.13731902422631,
+            95.87592743302639
+          ],
+          [
+            -40.69470558977079,
+            96.35194565498799
+          ],
+          [
+            -26.780326793970122,
+            83.41401449398035
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-3F-ACCESS-004",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      435.2957415976429,
+      10.875,
+      83.06677486649801
+    ],
+    "area_m2": 12.349999999999895,
+    "neighbors": [],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            11.970448858815079,
+            121.44094228900195
+          ],
+          [
+            11.43602393424663,
+            121.07095580276226
+          ],
+          [
+            0.6210343364707707,
+            136.69260744399406
+          ],
+          [
+            0.6210343364707736,
+            136.69260744399406
+          ],
+          [
+            1.1554592610392254,
+            137.06259393023376
+          ],
+          [
+            11.970448858815079,
+            121.44094228900195
+          ]
+        ]
+      ]
+    },
+    "status": "RETAINED / PROTECTED",
+    "reason": "Existing declared access route / entrance / service clearance. Automatic route existence is not architectural approval."
+  },
+  {
+    "id": "A-3F-GAP-000",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      563.9324971147291,
+      10.875,
+      71.42594034912807
+    ],
+    "area_m2": 15.200000000000037,
+    "neighbors": [
+      "A3F-025",
+      "A3F-027"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            143.33994508347396,
+            121.86720353124751
+          ],
+          [
+            126.9281459664037,
+            112.29365404628986
+          ],
+          [
+            126.60062979981305,
+            112.85511033187385
+          ],
+          [
+            126.52504914598444,
+            112.98467716700861
+          ],
+          [
+            142.93684826305469,
+            122.55822665196625
+          ],
+          [
+            143.33994508347396,
+            121.86720353124751
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-025",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-001",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      575.060848621304,
+      10.875,
+      57.31035347694613
+    ],
+    "area_m2": 19.200000000000127,
+    "neighbors": [
+      "A3F-023",
+      "A3F-025"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            135.56953405414177,
+            97.47984589588174
+          ],
+          [
+            135.49395340031316,
+            97.60941273101649
+          ],
+          [
+            156.22464702187557,
+            109.70231734359454
+          ],
+          [
+            156.62774384229485,
+            109.0112942228758
+          ],
+          [
+            135.89705022073244,
+            96.91838961029774
+          ],
+          [
+            135.56953405414177,
+            97.47984589588174
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-025",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-002",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      507.69776478412007,
+      10.875,
+      88.55497455295836
+    ],
+    "area_m2": 2.8499999999996106,
+    "neighbors": [
+      "A3F-030"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            72.74005257411612,
+            127.15488737625726
+          ],
+          [
+            72.62395897923565,
+            127.24987304479583
+          ],
+          [
+            84.65547699412362,
+            141.95506172965895
+          ],
+          [
+            84.77157058900411,
+            141.86007606112037
+          ],
+          [
+            72.74005257411612,
+            127.15488737625726
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-030",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-004",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      541.2909589850328,
+      10.875,
+      58.623709919453205
+    ],
+    "area_m2": 0.3384859098357842,
+    "neighbors": [
+      "A3F-028"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            113.56836563250795,
+            105.42661178414733
+          ],
+          [
+            113.64376714921296,
+            105.29735204122443
+          ],
+          [
+            109.66074417337752,
+            103.14716593298792
+          ],
+          [
+            113.56836563250795,
+            105.42661178414733
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-028",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-005",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      541.3734714862651,
+      10.875,
+      37.659383481506794
+    ],
+    "area_m2": 19.200000000000244,
+    "neighbors": [
+      "A3F-024",
+      "A3F-026"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            102.20967308569357,
+            77.2674196148584
+          ],
+          [
+            101.80657626527429,
+            77.95844273557715
+          ],
+          [
+            122.53726988683667,
+            90.0513473481552
+          ],
+          [
+            122.61285054066528,
+            89.92178051302044
+          ],
+          [
+            122.94036670725595,
+            89.36032422743645
+          ],
+          [
+            102.20967308569357,
+            77.2674196148584
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-024",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-006",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      529.718655646218,
+      10.875,
+      -25.7158387200857
+    ],
+    "area_m2": 9.385216894270362,
+    "neighbors": [
+      "A3F-002",
+      "A3F-018",
+      "A3F-020"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            99.16289974515988,
+            26.02745840160067
+          ],
+          [
+            99.97528590495263,
+            26.044743213511154
+          ],
+          [
+            102.26206567625498,
+            14.61084435699945
+          ],
+          [
+            102.11497857490133,
+            14.581426936728722
+          ],
+          [
+            101.47760113570223,
+            14.453951448888901
+          ],
+          [
+            99.16289974515988,
+            26.02745840160067
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-018",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-007",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      511.9538632837766,
+      10.875,
+      -27.653547129311182
+    ],
+    "area_m2": 11.919454182405868,
+    "neighbors": [
+      "A3F-002",
+      "A3F-016",
+      "A3F-018"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            81.08730768977122,
+            25.6428713365924
+          ],
+          [
+            81.89969384956397,
+            25.660156148502885
+          ],
+          [
+            84.8077296489566,
+            11.119977151539775
+          ],
+          [
+            84.1703522097575,
+            10.992501663699956
+          ],
+          [
+            84.02326510840386,
+            10.963084243429229
+          ],
+          [
+            81.08730768977122,
+            25.6428713365924
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-016",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-008",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      493.008104566263,
+      10.875,
+      -27.929094773594027
+    ],
+    "area_m2": 1.3182067912900668,
+    "neighbors": [
+      "A3F-014",
+      "A3F-016"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            64.48742607292917,
+            16.859928176132573
+          ],
+          [
+            63.79067438448726,
+            16.786795169170016
+          ],
+          [
+            63.74621324137261,
+            20.565992333915332
+          ],
+          [
+            64.48742607292917,
+            16.859928176132573
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-016",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-009",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      476.79454759123473,
+      10.875,
+      -30.134181654554094
+    ],
+    "area_m2": 14.507286767143588,
+    "neighbors": [
+      "A3F-002",
+      "A3F-012",
+      "A3F-014"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            47.28792820820494,
+            24.923735602942052
+          ],
+          [
+            48.08778335555679,
+            24.94075379756656
+          ],
+          [
+            48.30115579290003,
+            6.804096623390696
+          ],
+          [
+            47.83589737938851,
+            6.7986229949964425
+          ],
+          [
+            47.50121115047543,
+            6.794685509950407
+          ],
+          [
+            47.28792820820494,
+            24.923735602942052
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-014",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-012",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      518.9067491625494,
+      10.875,
+      -62.41472822186127
+    ],
+    "area_m2": 19.199999999999918,
+    "neighbors": [
+      "A3F-015",
+      "A3F-017"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            92.65237505448395,
+            -28.103249876097035
+          ],
+          [
+            91.86791051393122,
+            -28.26014278420758
+          ],
+          [
+            87.1611232706148,
+            -4.726206567625497
+          ],
+          [
+            87.30821037196843,
+            -4.696789147354771
+          ],
+          [
+            87.94558781116753,
+            -4.56931365951495
+          ],
+          [
+            92.65237505448395,
+            -28.103249876097035
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-015",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-013",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      535.8707948520023,
+      10.875,
+      -56.47240932717429
+    ],
+    "area_m2": 15.20000000000023,
+    "neighbors": [
+      "A3F-017",
+      "A3F-019"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            109.12613040609142,
+            -19.70947929218276
+          ],
+          [
+            108.34166586553867,
+            -19.866372200293313
+          ],
+          [
+            104.61545929791316,
+            -1.2353393621658235
+          ],
+          [
+            104.76254639926681,
+            -1.2059219418950944
+          ],
+          [
+            105.39992383846591,
+            -1.078446454055274
+          ],
+          [
+            109.12613040609142,
+            -19.70947929218276
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-017",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-014",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      528.9763135306257,
+      10.875,
+      115.07532500770463
+    ],
+    "area_m2": 15.199999999999914,
+    "neighbors": [
+      "A3F-029",
+      "A3F-031"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.30165545775104,
+            168.17462423403327
+          ],
+          [
+            94.27013744286305,
+            153.46943554917016
+          ],
+          [
+            93.92503492544051,
+            153.75179215433405
+          ],
+          [
+            93.6509716035004,
+            153.97602578137597
+          ],
+          [
+            105.68248961838839,
+            168.68121446623908
+          ],
+          [
+            106.30165545775104,
+            168.17462423403327
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-029",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-015",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      440.6331050511726,
+      10.875,
+      -67.62922985808353
+    ],
+    "area_m2": 19.199999999999996,
+    "neighbors": [
+      "A3F-007",
+      "A3F-009"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            11.374299431564653,
+            -33.633105051172606
+          ],
+          [
+            11.091966028355973,
+            -9.634765778434742
+          ],
+          [
+            11.891910670780568,
+            -9.625354664994454
+          ],
+          [
+            12.174244073989248,
+            -33.62369393773232
+          ],
+          [
+            11.374299431564653,
+            -33.633105051172606
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-009",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-016",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      459.4318041481506,
+      10.875,
+      -67.40806869223674
+    ],
+    "area_m2": 19.20000000000008,
+    "neighbors": [
+      "A3F-009",
+      "A3F-011"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.17299852854265,
+            -33.41194388532581
+          ],
+          [
+            29.890665125333967,
+            -9.413604612587944
+          ],
+          [
+            30.690609767758566,
+            -9.404193499147654
+          ],
+          [
+            30.97294317096725,
+            -33.402532771885525
+          ],
+          [
+            30.17299852854265,
+            -33.41194388532581
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-011",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-017",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      477.20116271259695,
+      10.875,
+      -64.69884441061343
+    ],
+    "area_m2": 15.200000000000195,
+    "neighbors": [
+      "A3F-011",
+      "A3F-013"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            47.91294736348809,
+            -28.202892596125647
+          ],
+          [
+            47.689433419281215,
+            -9.204207338541504
+          ],
+          [
+            48.48937806170582,
+            -9.194796225101216
+          ],
+          [
+            48.71289200591269,
+            -28.193481482685357
+          ],
+          [
+            47.91294736348809,
+            -28.202892596125647
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-011",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-018",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      367.68819616085756,
+      10.875,
+      26.895957346542943
+    ],
+    "area_m2": 0.39610278601759374,
+    "neighbors": [
+      "A3F-046",
+      "A3F-048"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -60.54720369874744,
+            72.435700893382
+          ],
+          [
+            -61.7876269670859,
+            72.8370143037268
+          ],
+          [
+            -61.728073637977175,
+            73.02108823006286
+          ],
+          [
+            -61.600580851593975,
+            73.41515684252002
+          ],
+          [
+            -60.54720369874744,
+            72.435700893382
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-046",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-019",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      386.01064246846556,
+      10.875,
+      31.730061419869372
+    ],
+    "area_m2": 17.60000000000001,
+    "neighbors": [
+      "A3F-044",
+      "A3F-046"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -34.661287046365445,
+            70.53261451182914
+          ],
+          [
+            -34.68782450220456,
+            70.50407422913425
+          ],
+          [
+            -35.2060420426184,
+            69.94674593095333
+          ],
+          [
+            -51.31742801670338,
+            84.92750832790954
+          ],
+          [
+            -51.215286454905936,
+            85.03735868682377
+          ],
+          [
+            -50.772673020450426,
+            85.51337690878536
+          ],
+          [
+            -34.661287046365445,
+            70.53261451182914
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-044",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-020",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      394.7687995927753,
+      10.875,
+      43.35203667306547
+    ],
+    "area_m2": 2.8499999999999917,
+    "neighbors": [
+      "A3F-044"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -27.325081790223077,
+            82.82814591310454
+          ],
+          [
+            -41.23946058602374,
+            95.76607707411218
+          ],
+          [
+            -41.13731902422631,
+            95.87592743302639
+          ],
+          [
+            -27.22294022842565,
+            82.93799627201875
+          ],
+          [
+            -27.325081790223077,
+            82.82814591310454
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-044",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-021",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      412.5584549391608,
+      10.875,
+      62.484307517291384
+    ],
+    "area_m2": 15.199999999999946,
+    "neighbors": [
+      "A3F-040",
+      "A3F-042"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -9.211978164812379,
+            102.30827622722548
+          ],
+          [
+            -9.756733161065327,
+            101.72240764634967
+          ],
+          [
+            -23.671111956865992,
+            114.66033880735729
+          ],
+          [
+            -23.568970395068554,
+            114.77018916627152
+          ],
+          [
+            -23.12635696061304,
+            115.24620738823312
+          ],
+          [
+            -9.211978164812379,
+            102.30827622722548
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-042",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-022",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      424.1631870932551,
+      10.875,
+      75.7260506576571
+    ],
+    "area_m2": 0.8354868769259685,
+    "neighbors": [
+      "A3F-038",
+      "A3F-040"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -5.669872022152518,
+            122.22813600888777
+          ],
+          [
+            -5.214598194882585,
+            122.6223516482573
+          ],
+          [
+            -3.625968503199564,
+            120.32766431582625
+          ],
+          [
+            -5.669872022152518,
+            122.22813600888777
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-038",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-023",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      434.9668647209854,
+      10.875,
+      82.8390908749659
+    ],
+    "area_m2": 2.8500000000002976,
+    "neighbors": [
+      "A3F-038"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            11.312695105500051,
+            120.9855743059377
+          ],
+          [
+            0.4977055077241981,
+            136.6072259471695
+          ],
+          [
+            0.6210343364707707,
+            136.69260744399406
+          ],
+          [
+            11.43602393424663,
+            121.07095580276226
+          ],
+          [
+            11.312695105500051,
+            120.9855743059377
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-038",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-024",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      455.6176247756033,
+      10.875,
+      98.9055104076711
+    ],
+    "area_m2": 12.871681153803607,
+    "neighbors": [
+      "A3F-001",
+      "A3F-034",
+      "A3F-036"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            31.46181239970619,
+            138.61273030346157
+          ],
+          [
+            30.933192850543705,
+            137.97083513662142
+          ],
+          [
+            21.710264052133684,
+            151.29284340099147
+          ],
+          [
+            22.077747201078804,
+            151.54725481179963
+          ],
+          [
+            22.368017805448705,
+            151.7482113840557
+          ],
+          [
+            31.46181239970619,
+            138.61273030346157
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-036",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-025",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      440.1991279473235,
+      10.875,
+      -30.73875206749595
+    ],
+    "area_m2": 14.22884832870497,
+    "neighbors": [
+      "A3F-001",
+      "A3F-008",
+      "A3F-010"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            10.694555216858259,
+            24.145153198870847
+          ],
+          [
+            11.494410364210099,
+            24.162171393495356
+          ],
+          [
+            11.70368840197478,
+            6.373538183497457
+          ],
+          [
+            11.553698781520168,
+            6.371773599727403
+          ],
+          [
+            10.903743759550185,
+            6.364127070057168
+          ],
+          [
+            10.694555216858259,
+            24.145153198870847
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-010",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-026",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      385.99790315941055,
+      10.875,
+      -29.36317285852341
+    ],
+    "area_m2": 10.371636173583925,
+    "neighbors": [
+      "A3F-001",
+      "A3F-004",
+      "A3F-006"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -42.31494520068132,
+            23.017291487859367
+          ],
+          [
+            -41.50030388034986,
+            23.034624281908975
+          ],
+          [
+            -43.70391465962827,
+            10.18022806945157
+          ],
+          [
+            -43.851757997850264,
+            10.205572641718199
+          ],
+          [
+            -44.492412463478885,
+            10.315399121540246
+          ],
+          [
+            -42.31494520068132,
+            23.017291487859367
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-006",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-027",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      392.1732476464024,
+      10.875,
+      10.085895754570672
+    ],
+    "area_m2": 4.730333857594677,
+    "neighbors": [
+      "A3F-001",
+      "A3F-046"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -39.303798011922154,
+            52.68306051791288
+          ],
+          [
+            -39.85646652612985,
+            53.19694527673758
+          ],
+          [
+            -31.319992522740915,
+            62.37768146906153
+          ],
+          [
+            -39.303798011922154,
+            52.68306051791288
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-028",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      452.6949533481221,
+      10.875,
+      83.39379654348966
+    ],
+    "area_m2": 0.3002953750507913,
+    "neighbors": [
+      "A3F-001",
+      "A3F-036"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            23.472782015631005,
+            128.91176483708455
+          ],
+          [
+            23.19609312881201,
+            129.21254216823058
+          ],
+          [
+            24.41598489992335,
+            130.05708262515384
+          ],
+          [
+            23.472782015631005,
+            128.91176483708455
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-029",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      426.985120704241,
+      10.875,
+      52.13695525194926
+    ],
+    "area_m2": 0.9231426328980827,
+    "neighbors": [
+      "A3F-001",
+      "A3F-040"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -3.109144322508419,
+            96.6337114264867
+          ],
+          [
+            -3.3532923560541974,
+            96.86072626469593
+          ],
+          [
+            0.41779879128561426,
+            100.91642806466517
+          ],
+          [
+            -3.109144322508419,
+            96.6337114264867
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-001",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-030",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      415.8809379030392,
+      10.875,
+      110.97861863397421
+    ],
+    "area_m2": 15.199999999999989,
+    "neighbors": [
+      "A3F-035",
+      "A3F-037"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -7.750173570360523,
+            149.14106539408226
+          ],
+          [
+            -8.040444174730435,
+            148.9401088218262
+          ],
+          [
+            -18.855433772506284,
+            164.561760463058
+          ],
+          [
+            -18.197680019191257,
+            165.01712844612223
+          ],
+          [
+            -7.382690421415405,
+            149.39547680489042
+          ],
+          [
+            -7.750173570360523,
+            149.14106539408226
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-035",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-031",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      437.0934964474487,
+      10.875,
+      125.6642360877961
+    ],
+    "area_m2": 15.199999999999822,
+    "neighbors": [
+      "A3F-033",
+      "A3F-035"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            13.462384974048998,
+            163.8266828479042
+          ],
+          [
+            13.172114369679054,
+            163.62572627564813
+          ],
+          [
+            2.357124771903198,
+            179.24737791687994
+          ],
+          [
+            3.0148785252182098,
+            179.70274589994418
+          ],
+          [
+            13.829868122994077,
+            164.08109425871237
+          ],
+          [
+            13.462384974048998,
+            163.8266828479042
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-033",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-032",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      358.914220602959,
+      10.875,
+      56.92497999656845
+    ],
+    "area_m2": 17.59999999999997,
+    "neighbors": [
+      "A3F-043",
+      "A3F-045"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -62.200322346327546,
+            95.25151486656664
+          ],
+          [
+            -62.30246390812498,
+            95.14166450765242
+          ],
+          [
+            -78.41384988220997,
+            110.12242690460864
+          ],
+          [
+            -77.86909488595701,
+            110.70829548548446
+          ],
+          [
+            -61.75770891187202,
+            95.72753308852823
+          ],
+          [
+            -62.200322346327546,
+            95.25151486656664
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-045",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-033",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      370.0906916227808,
+      10.875,
+      66.74213312479677
+    ],
+    "area_m2": 15.19999999999988,
+    "neighbors": [
+      "A3F-041",
+      "A3F-043"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -51.78188304298981,
+            106.45625147581664
+          ],
+          [
+            -52.224496477445335,
+            105.98023325385505
+          ],
+          [
+            -66.138875273246,
+            118.91816441486269
+          ],
+          [
+            -65.59412027699305,
+            119.5040329957385
+          ],
+          [
+            -51.67974148119238,
+            106.56610183473086
+          ],
+          [
+            -51.78188304298981,
+            106.45625147581664
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-043",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-034",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      387.6590402519385,
+      10.875,
+      85.63639485804194
+    ],
+    "area_m2": 15.200000000000024,
+    "neighbors": [
+      "A3F-039",
+      "A3F-041"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -34.213534413832065,
+            125.35051320906177
+          ],
+          [
+            -34.65614784828758,
+            124.87449498710018
+          ],
+          [
+            -48.570526644088254,
+            137.81242614810782
+          ],
+          [
+            -48.02577164783529,
+            138.39829472898364
+          ],
+          [
+            -34.11139285203463,
+            125.46036356797599
+          ],
+          [
+            -34.213534413832065,
+            125.35051320906177
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-041",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-035",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      380.1708496153427,
+      10.875,
+      -63.349609539275576
+    ],
+    "area_m2": 19.20000000000019,
+    "neighbors": [
+      "A3F-003",
+      "A3F-005"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -50.4624672640621,
+            -29.2446621230791
+          ],
+          [
+            -51.25096506791272,
+            -29.10949107099042
+          ],
+          [
+            -47.19583350525242,
+            -5.454556955472021
+          ],
+          [
+            -46.5551790396238,
+            -5.56438343529407
+          ],
+          [
+            -46.407335701401806,
+            -5.589728007560698
+          ],
+          [
+            -50.4624672640621,
+            -29.2446621230791
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-003",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "A-3F-GAP-036",
+    "wing": "A",
+    "floor": "3F",
+    "world_center": [
+      336.08334707879857,
+      10.875,
+      10.211920525103992
+    ],
+    "area_m2": 15.20000000000004,
+    "neighbors": [
+      "A3F-047",
+      "A3F-049"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -83.80097492358084,
+            53.52548894330329
+          ],
+          [
+            -84.00105810910037,
+            52.90705000624292
+          ],
+          [
+            -102.07850396163418,
+            58.755635429121504
+          ],
+          [
+            -101.83224773330245,
+            59.516791043965036
+          ],
+          [
+            -83.75480188076864,
+            53.66820562108645
+          ],
+          [
+            -83.80097492358084,
+            53.52548894330329
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "A3F-049",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-000",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      151.2743896043392,
+      -5.35,
+      -271.97629746685396
+    ],
+    "area_m2": 12.174999999999898,
+    "neighbors": [
+      "CB1-CE-2",
+      "CB1-CE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ],
+          [
+            -265.7602641431847,
+            -223.71275730631885
+          ],
+          [
+            -289.5879514076119,
+            -228.72911251988248
+          ],
+          [
+            -289.66570103278445,
+            -228.35980180031288
+          ],
+          [
+            -289.6909566481369,
+            -228.2398376273891
+          ],
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-001",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      156.6944590480686,
+      -5.35,
+      -297.72162732456843
+    ],
+    "area_m2": 12.174999999999914,
+    "neighbors": [
+      "CB1-CE-1",
+      "CB1-CE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ],
+          [
+            -260.4431999399803,
+            -248.96881227153997
+          ],
+          [
+            -260.3401946994553,
+            -249.45808716403334
+          ],
+          [
+            -284.16788196388256,
+            -254.47444237759697
+          ],
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-002",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      66.39840424009549,
+      -5.35,
+      -381.1755927658251
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "CB1-CNE-2",
+      "CB1-CNE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ],
+          [
+            -357.335953293672,
+            -346.155853892857
+          ],
+          [
+            -357.79113653240324,
+            -346.3627553650076
+          ],
+          [
+            -367.8672382261371,
+            -324.19533163879316
+          ],
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CNE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-003",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      34.6639706053723,
+      -5.35,
+      -395.60033532706285
+    ],
+    "area_m2": 12.175000000000281,
+    "neighbors": [
+      "CB1-CNE-1",
+      "CB1-CNE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ],
+          [
+            -389.5255701671264,
+            -360.78749792624535
+          ],
+          [
+            -399.6016718608602,
+            -338.6200742000309
+          ],
+          [
+            -399.1464886221289,
+            -338.4131727278803
+          ],
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CNE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-004",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      49.60000000000002,
+      -5.35,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "CB1-CSE-2",
+      "CB1-CSE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -379.65,
+            -149.85
+          ],
+          [
+            -379.65,
+            -125.5
+          ],
+          [
+            -379.15,
+            -125.5
+          ],
+          [
+            -379.15,
+            -149.85
+          ],
+          [
+            -379.65,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CSE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-005",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      76.95999999999998,
+      -5.35,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "CB1-CSE-1",
+      "CB1-CSE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -352.29,
+            -149.85
+          ],
+          [
+            -352.29,
+            -125.5
+          ],
+          [
+            -351.79,
+            -125.5
+          ],
+          [
+            -351.79,
+            -149.85
+          ],
+          [
+            -352.29,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CSE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-006",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      -81.94514975374523,
+      -5.35,
+      -198.58437934126172
+    ],
+    "area_m2": 12.175000000000303,
+    "neighbors": [
+      "CB1-CSW-2",
+      "CB1-CSW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ],
+          [
+            -508.5480681948491,
+            -164.52368941345603
+          ],
+          [
+            -513.8303248427334,
+            -140.7535344979768
+          ],
+          [
+            -513.4677576993431,
+            -140.67296402166787
+          ],
+          [
+            -513.3422313126414,
+            -140.64506926906745
+          ],
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CSW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-007",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      -57.97940595373461,
+      -5.35,
+      -193.2586584968149
+    ],
+    "area_m2": 12.175000000000239,
+    "neighbors": [
+      "CB1-CSW-1",
+      "CB1-CSW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ],
+          [
+            -484.5823243948385,
+            -159.19796856900922
+          ],
+          [
+            -489.86458104272276,
+            -135.42781365352997
+          ],
+          [
+            -489.3764875126308,
+            -135.31934842462064
+          ],
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CSW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-008",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      -118.79837945915835,
+      -5.35,
+      -384.35703202693617
+    ],
+    "area_m2": 12.174999999998612,
+    "neighbors": [
+      "CB1-CNW-1",
+      "CB1-CNW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ],
+          [
+            -544.3705007208077,
+            -326.67188023694365
+          ],
+          [
+            -543.8937093882407,
+            -326.8224459209122
+          ],
+          [
+            -551.2262581975091,
+            -350.04218381692857
+          ],
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CNW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-009",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      -92.83733368591743,
+      -5.35,
+      -392.55525700795954
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "CB1-CNW-2",
+      "CB1-CNW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ],
+          [
+            -525.265212424268,
+            -358.24040879795206
+          ],
+          [
+            -525.4307765457644,
+            -358.18812539116374
+          ],
+          [
+            -525.7420037568351,
+            -358.0898431139835
+          ],
+          [
+            -518.4094549475667,
+            -334.8701052179671
+          ],
+          [
+            -518.2438908260704,
+            -334.92238862475546
+          ],
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CNW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-010",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      -168.74134150318503,
+      -5.35,
+      -314.0205940462654
+    ],
+    "area_m2": 12.175000000000523,
+    "neighbors": [
+      "CB1-CW-1",
+      "CB1-CW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ],
+          [
+            -585.9104966599001,
+            -270.9057691352535
+          ],
+          [
+            -609.6806515753793,
+            -265.6235124873692
+          ],
+          [
+            -609.57218634647,
+            -265.13541895727724
+          ],
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-B1-GAP-011",
+    "wing": "C",
+    "floor": "B1",
+    "world_center": [
+      -163.41562065873836,
+      -5.35,
+      -290.05485024625466
+    ],
+    "area_m2": 12.175000000000537,
+    "neighbors": [
+      "CB1-CW-2",
+      "CB1-CW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ],
+          [
+            -580.5847758154533,
+            -246.94002533524286
+          ],
+          [
+            -604.3549307309326,
+            -241.65776868735858
+          ],
+          [
+            -604.2464655020232,
+            -241.1696751572666
+          ],
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "CB1-CW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-000",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      151.2743896043392,
+      0.0,
+      -271.97629746685396
+    ],
+    "area_m2": 12.174999999999898,
+    "neighbors": [
+      "C1F-CE-2",
+      "C1F-CE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ],
+          [
+            -265.7602641431847,
+            -223.71275730631885
+          ],
+          [
+            -289.5879514076119,
+            -228.72911251988248
+          ],
+          [
+            -289.66570103278445,
+            -228.35980180031288
+          ],
+          [
+            -289.6909566481369,
+            -228.2398376273891
+          ],
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-001",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      156.6944590480686,
+      0.0,
+      -297.72162732456843
+    ],
+    "area_m2": 12.174999999999914,
+    "neighbors": [
+      "C1F-CE-1",
+      "C1F-CE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ],
+          [
+            -260.4431999399803,
+            -248.96881227153997
+          ],
+          [
+            -260.3401946994553,
+            -249.45808716403334
+          ],
+          [
+            -284.16788196388256,
+            -254.47444237759697
+          ],
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-002",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      66.39840424009549,
+      0.0,
+      -381.1755927658251
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "C1F-CNE-2",
+      "C1F-CNE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ],
+          [
+            -357.335953293672,
+            -346.155853892857
+          ],
+          [
+            -357.79113653240324,
+            -346.3627553650076
+          ],
+          [
+            -367.8672382261371,
+            -324.19533163879316
+          ],
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CNE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-003",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      34.6639706053723,
+      0.0,
+      -395.60033532706285
+    ],
+    "area_m2": 12.175000000000281,
+    "neighbors": [
+      "C1F-CNE-1",
+      "C1F-CNE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ],
+          [
+            -389.5255701671264,
+            -360.78749792624535
+          ],
+          [
+            -399.6016718608602,
+            -338.6200742000309
+          ],
+          [
+            -399.1464886221289,
+            -338.4131727278803
+          ],
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CNE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-004",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      49.60000000000002,
+      0.0,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "C1F-CSE-2",
+      "C1F-CSE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -379.65,
+            -149.85
+          ],
+          [
+            -379.65,
+            -125.5
+          ],
+          [
+            -379.15,
+            -125.5
+          ],
+          [
+            -379.15,
+            -149.85
+          ],
+          [
+            -379.65,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CSE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-005",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      76.95999999999998,
+      0.0,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "C1F-CSE-1",
+      "C1F-CSE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -352.29,
+            -149.85
+          ],
+          [
+            -352.29,
+            -125.5
+          ],
+          [
+            -351.79,
+            -125.5
+          ],
+          [
+            -351.79,
+            -149.85
+          ],
+          [
+            -352.29,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CSE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-006",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      -81.94514975374523,
+      0.0,
+      -198.58437934126172
+    ],
+    "area_m2": 12.175000000000303,
+    "neighbors": [
+      "C1F-CSW-2",
+      "C1F-CSW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ],
+          [
+            -508.5480681948491,
+            -164.52368941345603
+          ],
+          [
+            -513.8303248427334,
+            -140.7535344979768
+          ],
+          [
+            -513.4677576993431,
+            -140.67296402166787
+          ],
+          [
+            -513.3422313126414,
+            -140.64506926906745
+          ],
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CSW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-007",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      -57.97940595373461,
+      0.0,
+      -193.2586584968149
+    ],
+    "area_m2": 12.175000000000239,
+    "neighbors": [
+      "C1F-CSW-1",
+      "C1F-CSW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ],
+          [
+            -484.5823243948385,
+            -159.19796856900922
+          ],
+          [
+            -489.86458104272276,
+            -135.42781365352997
+          ],
+          [
+            -489.3764875126308,
+            -135.31934842462064
+          ],
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CSW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-008",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      -118.79837945915835,
+      0.0,
+      -384.35703202693617
+    ],
+    "area_m2": 12.174999999998612,
+    "neighbors": [
+      "C1F-CNW-1",
+      "C1F-CNW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ],
+          [
+            -544.3705007208077,
+            -326.67188023694365
+          ],
+          [
+            -543.8937093882407,
+            -326.8224459209122
+          ],
+          [
+            -551.2262581975091,
+            -350.04218381692857
+          ],
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CNW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-009",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      -92.83733368591743,
+      0.0,
+      -392.55525700795954
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "C1F-CNW-2",
+      "C1F-CNW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ],
+          [
+            -525.265212424268,
+            -358.24040879795206
+          ],
+          [
+            -525.4307765457644,
+            -358.18812539116374
+          ],
+          [
+            -525.7420037568351,
+            -358.0898431139835
+          ],
+          [
+            -518.4094549475667,
+            -334.8701052179671
+          ],
+          [
+            -518.2438908260704,
+            -334.92238862475546
+          ],
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CNW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-010",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      -168.74134150318503,
+      0.0,
+      -314.0205940462654
+    ],
+    "area_m2": 12.175000000000523,
+    "neighbors": [
+      "C1F-CW-1",
+      "C1F-CW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ],
+          [
+            -585.9104966599001,
+            -270.9057691352535
+          ],
+          [
+            -609.6806515753793,
+            -265.6235124873692
+          ],
+          [
+            -609.57218634647,
+            -265.13541895727724
+          ],
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-1F-GAP-011",
+    "wing": "C",
+    "floor": "1F",
+    "world_center": [
+      -163.41562065873836,
+      0.0,
+      -290.05485024625466
+    ],
+    "area_m2": 12.175000000000537,
+    "neighbors": [
+      "C1F-CW-2",
+      "C1F-CW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ],
+          [
+            -580.5847758154533,
+            -246.94002533524286
+          ],
+          [
+            -604.3549307309326,
+            -241.65776868735858
+          ],
+          [
+            -604.2464655020232,
+            -241.1696751572666
+          ],
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C1F-CW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-000",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      151.2743896043392,
+      5.525,
+      -271.97629746685396
+    ],
+    "area_m2": 12.174999999999898,
+    "neighbors": [
+      "C2F-CE-2",
+      "C2F-CE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ],
+          [
+            -265.7602641431847,
+            -223.71275730631885
+          ],
+          [
+            -289.5879514076119,
+            -228.72911251988248
+          ],
+          [
+            -289.66570103278445,
+            -228.35980180031288
+          ],
+          [
+            -289.6909566481369,
+            -228.2398376273891
+          ],
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-001",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      156.6944590480686,
+      5.525,
+      -297.72162732456843
+    ],
+    "area_m2": 12.174999999999914,
+    "neighbors": [
+      "C2F-CE-1",
+      "C2F-CE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ],
+          [
+            -260.4431999399803,
+            -248.96881227153997
+          ],
+          [
+            -260.3401946994553,
+            -249.45808716403334
+          ],
+          [
+            -284.16788196388256,
+            -254.47444237759697
+          ],
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-002",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      66.39840424009549,
+      5.525,
+      -381.1755927658251
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "C2F-CNE-2",
+      "C2F-CNE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ],
+          [
+            -357.335953293672,
+            -346.155853892857
+          ],
+          [
+            -357.79113653240324,
+            -346.3627553650076
+          ],
+          [
+            -367.8672382261371,
+            -324.19533163879316
+          ],
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CNE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-003",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      34.6639706053723,
+      5.525,
+      -395.60033532706285
+    ],
+    "area_m2": 12.175000000000281,
+    "neighbors": [
+      "C2F-CNE-1",
+      "C2F-CNE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ],
+          [
+            -389.5255701671264,
+            -360.78749792624535
+          ],
+          [
+            -399.6016718608602,
+            -338.6200742000309
+          ],
+          [
+            -399.1464886221289,
+            -338.4131727278803
+          ],
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CNE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-004",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      49.60000000000002,
+      5.525,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "C2F-CSE-2",
+      "C2F-CSE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -379.65,
+            -149.85
+          ],
+          [
+            -379.65,
+            -125.5
+          ],
+          [
+            -379.15,
+            -125.5
+          ],
+          [
+            -379.15,
+            -149.85
+          ],
+          [
+            -379.65,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CSE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-005",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      76.95999999999998,
+      5.525,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "C2F-CSE-1",
+      "C2F-CSE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -352.29,
+            -149.85
+          ],
+          [
+            -352.29,
+            -125.5
+          ],
+          [
+            -351.79,
+            -125.5
+          ],
+          [
+            -351.79,
+            -149.85
+          ],
+          [
+            -352.29,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CSE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-006",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      -81.94514975374523,
+      5.525,
+      -198.58437934126172
+    ],
+    "area_m2": 12.175000000000303,
+    "neighbors": [
+      "C2F-CSW-2",
+      "C2F-CSW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ],
+          [
+            -508.5480681948491,
+            -164.52368941345603
+          ],
+          [
+            -513.8303248427334,
+            -140.7535344979768
+          ],
+          [
+            -513.4677576993431,
+            -140.67296402166787
+          ],
+          [
+            -513.3422313126414,
+            -140.64506926906745
+          ],
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CSW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-007",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      -57.97940595373461,
+      5.525,
+      -193.2586584968149
+    ],
+    "area_m2": 12.175000000000239,
+    "neighbors": [
+      "C2F-CSW-1",
+      "C2F-CSW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ],
+          [
+            -484.5823243948385,
+            -159.19796856900922
+          ],
+          [
+            -489.86458104272276,
+            -135.42781365352997
+          ],
+          [
+            -489.3764875126308,
+            -135.31934842462064
+          ],
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CSW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-008",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      -118.79837945915835,
+      5.525,
+      -384.35703202693617
+    ],
+    "area_m2": 12.174999999998612,
+    "neighbors": [
+      "C2F-CNW-1",
+      "C2F-CNW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ],
+          [
+            -544.3705007208077,
+            -326.67188023694365
+          ],
+          [
+            -543.8937093882407,
+            -326.8224459209122
+          ],
+          [
+            -551.2262581975091,
+            -350.04218381692857
+          ],
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CNW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-009",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      -92.83733368591743,
+      5.525,
+      -392.55525700795954
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "C2F-CNW-2",
+      "C2F-CNW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ],
+          [
+            -525.265212424268,
+            -358.24040879795206
+          ],
+          [
+            -525.4307765457644,
+            -358.18812539116374
+          ],
+          [
+            -525.7420037568351,
+            -358.0898431139835
+          ],
+          [
+            -518.4094549475667,
+            -334.8701052179671
+          ],
+          [
+            -518.2438908260704,
+            -334.92238862475546
+          ],
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CNW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-010",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      -168.74134150318503,
+      5.525,
+      -314.0205940462654
+    ],
+    "area_m2": 12.175000000000523,
+    "neighbors": [
+      "C2F-CW-1",
+      "C2F-CW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ],
+          [
+            -585.9104966599001,
+            -270.9057691352535
+          ],
+          [
+            -609.6806515753793,
+            -265.6235124873692
+          ],
+          [
+            -609.57218634647,
+            -265.13541895727724
+          ],
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-2F-GAP-011",
+    "wing": "C",
+    "floor": "2F",
+    "world_center": [
+      -163.41562065873836,
+      5.525,
+      -290.05485024625466
+    ],
+    "area_m2": 12.175000000000537,
+    "neighbors": [
+      "C2F-CW-2",
+      "C2F-CW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ],
+          [
+            -580.5847758154533,
+            -246.94002533524286
+          ],
+          [
+            -604.3549307309326,
+            -241.65776868735858
+          ],
+          [
+            -604.2464655020232,
+            -241.1696751572666
+          ],
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C2F-CW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-000",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      151.2743896043392,
+      10.875,
+      -271.97629746685396
+    ],
+    "area_m2": 12.174999999999898,
+    "neighbors": [
+      "C3F-CE-2",
+      "C3F-CE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ],
+          [
+            -265.7602641431847,
+            -223.71275730631885
+          ],
+          [
+            -289.5879514076119,
+            -228.72911251988248
+          ],
+          [
+            -289.66570103278445,
+            -228.35980180031288
+          ],
+          [
+            -289.6909566481369,
+            -228.2398376273891
+          ],
+          [
+            -265.8632693837096,
+            -223.22348241382548
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-001",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      156.6944590480686,
+      10.875,
+      -297.72162732456843
+    ],
+    "area_m2": 12.174999999999914,
+    "neighbors": [
+      "C3F-CE-1",
+      "C3F-CE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ],
+          [
+            -260.4431999399803,
+            -248.96881227153997
+          ],
+          [
+            -260.3401946994553,
+            -249.45808716403334
+          ],
+          [
+            -284.16788196388256,
+            -254.47444237759697
+          ],
+          [
+            -284.2708872044075,
+            -253.9851674851036
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-002",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      66.39840424009549,
+      10.875,
+      -381.1755927658251
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "C3F-CNE-2",
+      "C3F-CNE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ],
+          [
+            -357.335953293672,
+            -346.155853892857
+          ],
+          [
+            -357.79113653240324,
+            -346.3627553650076
+          ],
+          [
+            -367.8672382261371,
+            -324.19533163879316
+          ],
+          [
+            -367.41205498740584,
+            -323.98843016664256
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CNE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-003",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      34.6639706053723,
+      10.875,
+      -395.60033532706285
+    ],
+    "area_m2": 12.175000000000281,
+    "neighbors": [
+      "C3F-CNE-1",
+      "C3F-CNE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ],
+          [
+            -389.5255701671264,
+            -360.78749792624535
+          ],
+          [
+            -399.6016718608602,
+            -338.6200742000309
+          ],
+          [
+            -399.1464886221289,
+            -338.4131727278803
+          ],
+          [
+            -389.07038692839507,
+            -360.58059645409475
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CNE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-004",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      49.60000000000002,
+      10.875,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "C3F-CSE-2",
+      "C3F-CSE-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -379.65,
+            -149.85
+          ],
+          [
+            -379.65,
+            -125.5
+          ],
+          [
+            -379.15,
+            -125.5
+          ],
+          [
+            -379.15,
+            -149.85
+          ],
+          [
+            -379.65,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CSE-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-005",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      76.95999999999998,
+      10.875,
+      -183.675
+    ],
+    "area_m2": 12.174999999999997,
+    "neighbors": [
+      "C3F-CSE-1",
+      "C3F-CSE-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -352.29,
+            -149.85
+          ],
+          [
+            -352.29,
+            -125.5
+          ],
+          [
+            -351.79,
+            -125.5
+          ],
+          [
+            -351.79,
+            -149.85
+          ],
+          [
+            -352.29,
+            -149.85
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CSE-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-006",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      -81.94514975374523,
+      10.875,
+      -198.58437934126172
+    ],
+    "area_m2": 12.175000000000303,
+    "neighbors": [
+      "C3F-CSW-2",
+      "C3F-CSW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ],
+          [
+            -508.5480681948491,
+            -164.52368941345603
+          ],
+          [
+            -513.8303248427334,
+            -140.7535344979768
+          ],
+          [
+            -513.4677576993431,
+            -140.67296402166787
+          ],
+          [
+            -513.3422313126414,
+            -140.64506926906745
+          ],
+          [
+            -508.05997466475714,
+            -164.4152241845467
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CSW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-007",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      -57.97940595373461,
+      10.875,
+      -193.2586584968149
+    ],
+    "area_m2": 12.175000000000239,
+    "neighbors": [
+      "C3F-CSW-1",
+      "C3F-CSW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ],
+          [
+            -484.5823243948385,
+            -159.19796856900922
+          ],
+          [
+            -489.86458104272276,
+            -135.42781365352997
+          ],
+          [
+            -489.3764875126308,
+            -135.31934842462064
+          ],
+          [
+            -484.0942308647465,
+            -159.0895033400999
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CSW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-008",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      -118.79837945915835,
+      10.875,
+      -384.35703202693617
+    ],
+    "area_m2": 12.174999999998612,
+    "neighbors": [
+      "C3F-CNW-1",
+      "C3F-CNW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ],
+          [
+            -544.3705007208077,
+            -326.67188023694365
+          ],
+          [
+            -543.8937093882407,
+            -326.8224459209122
+          ],
+          [
+            -551.2262581975091,
+            -350.04218381692857
+          ],
+          [
+            -551.7030495300761,
+            -349.89161813296005
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CNW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-009",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      -92.83733368591743,
+      10.875,
+      -392.55525700795954
+    ],
+    "area_m2": 12.17499999999903,
+    "neighbors": [
+      "C3F-CNW-2",
+      "C3F-CNW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ],
+          [
+            -525.265212424268,
+            -358.24040879795206
+          ],
+          [
+            -525.4307765457644,
+            -358.18812539116374
+          ],
+          [
+            -525.7420037568351,
+            -358.0898431139835
+          ],
+          [
+            -518.4094549475667,
+            -334.8701052179671
+          ],
+          [
+            -518.2438908260704,
+            -334.92238862475546
+          ],
+          [
+            -517.9326636149997,
+            -335.02067090193566
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CNW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-010",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      -168.74134150318503,
+      10.875,
+      -314.0205940462654
+    ],
+    "area_m2": 12.175000000000523,
+    "neighbors": [
+      "C3F-CW-1",
+      "C3F-CW-2"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ],
+          [
+            -585.9104966599001,
+            -270.9057691352535
+          ],
+          [
+            -609.6806515753793,
+            -265.6235124873692
+          ],
+          [
+            -609.57218634647,
+            -265.13541895727724
+          ],
+          [
+            -585.8020314309907,
+            -270.4176756051615
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CW-1",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  },
+  {
+    "id": "C-3F-GAP-011",
+    "wing": "C",
+    "floor": "3F",
+    "world_center": [
+      -163.41562065873836,
+      10.875,
+      -290.05485024625466
+    ],
+    "area_m2": 12.175000000000537,
+    "neighbors": [
+      "C3F-CW-2",
+      "C3F-CW-3"
+    ],
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ],
+          [
+            -580.5847758154533,
+            -246.94002533524286
+          ],
+          [
+            -604.3549307309326,
+            -241.65776868735858
+          ],
+          [
+            -604.2464655020232,
+            -241.1696751572666
+          ],
+          [
+            -580.476310586544,
+            -246.45193180515088
+          ]
+        ]
+      ]
+    },
+    "status": "REALLOCATED",
+    "owner": "C3F-CW-3",
+    "reason": "Whole strip allocated to a connected adjacent tenant, with the stock-facing portion assigned to its backroom. No hidden void remains."
+  }
+]

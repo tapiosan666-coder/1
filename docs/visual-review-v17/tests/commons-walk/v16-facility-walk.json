@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "max_frame_rise_m": 0.0611111037433147
+      },
+      "id": "A-information",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_frame_rise_m": 0.000699411844834685
+      },
+      "id": "B-food-west",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_frame_rise_m": 0.000665774394292384
+      },
+      "id": "B-food-east",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_frame_rise_m": 0.0202148421667516
+      },
+      "id": "C-kids-entrance",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_frame_rise_m": 0.0189977794070728
+      },
+      "id": "C-food-truck",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_frame_rise_m": 0.000694088637828827
+      },
+      "id": "dog-outer-gate-entry",
+      "pass": true
+    },
+    {
+      "id": "outer-closed-before-inner-opens",
+      "pass": true
+    },
+    {
+      "detail": {
+        "max_frame_rise_m": 0.000694088637828827
+      },
+      "id": "dog-inner-gate-entry",
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "method": "Physical W input with automated steering and unchanged CharacterBody3D; actual gate animation and visible collisions; not human operation",
+  "pass": true
+}

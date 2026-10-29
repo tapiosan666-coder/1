@@ -1,0 +1,328 @@
+{
+  "status": "UNAPPROVED; no machine/floor/guard relocation in normal scene",
+  "candidates": [
+    {
+      "id": "B-WEST-V15-0-UP/retained-orthogonal",
+      "option": "retained-orthogonal",
+      "design_length_m": 8.40000057220459,
+      "pass": true
+    },
+    {
+      "id": "B-WEST-V15-0-UP/rounded-corner",
+      "option": "rounded-corner",
+      "design_length_m": 7.53238105773926,
+      "pass": true
+    },
+    {
+      "id": "B-WEST-V15-0-UP/direct-shortest-candidate",
+      "option": "direct-shortest-candidate",
+      "design_length_m": 6.40000057220459,
+      "pass": true
+    },
+    {
+      "id": "B-WEST-V15-1-UP/retained-orthogonal",
+      "option": "retained-orthogonal",
+      "design_length_m": 8.40000057220459,
+      "pass": true
+    },
+    {
+      "id": "B-WEST-V15-1-UP/rounded-corner",
+      "option": "rounded-corner",
+      "design_length_m": 7.53238105773926,
+      "pass": true
+    },
+    {
+      "id": "B-WEST-V15-1-UP/direct-shortest-candidate",
+      "option": "direct-shortest-candidate",
+      "design_length_m": 6.40000057220459,
+      "pass": true
+    }
+  ],
+  "direct_shortest_rejected": true,
+  "direct_margin_failures": [
+    {
+      "adopted": false,
+      "design_length_m": 6.40000057220459,
+      "detail": {
+        "contacts": [
+          {
+            "collider": "Collision_v10_guard_glass",
+            "normal": "(-0.167057, 0.0, 0.985947)",
+            "position": "(-199.4, 6.495, -12.1)"
+          },
+          {
+            "collider": "Collision_stone",
+            "normal": "(0.0, 1.0, 0.0)",
+            "position": "(-199.4501, 5.525, -11.80326)"
+          }
+        ],
+        "max_frame_rise_m": 0.000833511352539062,
+        "position": [
+          -199.450119018555,
+          5.52498912811279,
+          -11.803258895874
+        ],
+        "target": [
+          -199.45,
+          5.525,
+          -17.6
+        ]
+      },
+      "id": "B-WEST-V15-0-UP/direct-offset-right-0.35m",
+      "option": "direct-offset-right-0.35m",
+      "pass": false,
+      "points": [
+        [
+          -199.45,
+          5.525,
+          -11.2
+        ],
+        [
+          -199.45,
+          5.525,
+          -17.6
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 6.40000057220459,
+      "detail": {
+        "contacts": [
+          {
+            "collider": "Collision_v10_guard_glass",
+            "normal": "(0.167106, 0.0, -0.985939)",
+            "position": "(-184.6, 11.845, -16.7)"
+          },
+          {
+            "collider": "Collision_stone",
+            "normal": "(0.0, 1.0, 0.0)",
+            "position": "(-184.5499, 10.875, -16.99674)"
+          }
+        ],
+        "max_frame_rise_m": 0.000652313232421875,
+        "position": [
+          -184.550003051758,
+          10.8751640319824,
+          -16.9958686828613
+        ],
+        "target": [
+          -184.55,
+          10.875,
+          -11.2
+        ]
+      },
+      "id": "B-WEST-V15-1-UP/direct-offset-left-0.35m",
+      "option": "direct-offset-left-0.35m",
+      "pass": false,
+      "points": [
+        [
+          -184.55,
+          10.875,
+          -17.6
+        ],
+        [
+          -184.55,
+          10.875,
+          -11.2
+        ]
+      ]
+    }
+  ],
+  "rounded_margin_checks": [
+    {
+      "adopted": false,
+      "design_length_m": 8.15464067459106,
+      "detail": {
+        "max_frame_rise_m": 0.000726699829101562
+      },
+      "id": "B-WEST-V15-0-UP/rounded-middle-offset--0.35",
+      "option": "rounded-middle-offset--0.35",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -201.15,
+          5.525,
+          -11.8
+        ],
+        [
+          -201.15,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 7.53238105773926,
+      "detail": {
+        "max_frame_rise_m": 0.000598907470703125
+      },
+      "id": "B-WEST-V15-0-UP/rounded-middle-offset-0.0",
+      "option": "rounded-middle-offset-0.0",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -11.8
+        ],
+        [
+          -200.8,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 6.96917200088501,
+      "detail": {
+        "max_frame_rise_m": 0.000604629516601562
+      },
+      "id": "B-WEST-V15-0-UP/rounded-middle-offset-0.35",
+      "option": "rounded-middle-offset-0.35",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.45,
+          5.525,
+          -11.8
+        ],
+        [
+          -200.45,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 6.96917200088501,
+      "detail": {
+        "max_frame_rise_m": 0.000592231750488281
+      },
+      "id": "B-WEST-V15-1-UP/rounded-middle-offset--0.35",
+      "option": "rounded-middle-offset--0.35",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.55,
+          10.875,
+          -17.0
+        ],
+        [
+          -183.55,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 7.53238105773926,
+      "detail": {
+        "max_frame_rise_m": 0.000592231750488281
+      },
+      "id": "B-WEST-V15-1-UP/rounded-middle-offset-0.0",
+      "option": "rounded-middle-offset-0.0",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -17.0
+        ],
+        [
+          -183.2,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 8.15464067459106,
+      "detail": {
+        "max_frame_rise_m": 0.000592231750488281
+      },
+      "id": "B-WEST-V15-1-UP/rounded-middle-offset-0.35",
+      "option": "rounded-middle-offset-0.35",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -182.85,
+          10.875,
+          -17.0
+        ],
+        [
+          -182.85,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ]
+    }
+  ],
+  "recommendation": "Keep the protected 8.4m routing. Rounded-corner centreline is 7.53m and passed centre / middle offsets +/-0.35m in these tests; carry as the next candidate. Straight 6.4m passed centre but fails one offset on each floor: do not adopt it based on length alone. Human wayfinding and full crowd clearance remain unverified.",
+  "measured_type": "designed polyline lengths + actual automated collision tests; not measured human walking distances"
+}

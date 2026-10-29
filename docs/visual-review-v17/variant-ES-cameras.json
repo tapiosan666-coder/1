@@ -1,0 +1,70 @@
+[
+  {
+    "actual_Godot_Viewport": true,
+    "actual_camera_global": [
+      -212.0,
+      1.64999997615814,
+      -15.5
+    ],
+    "actual_look_direction": [
+      0.985197305679321,
+      0.171424329280853,
+      4.3064343202559e-08
+    ],
+    "draw_calls": 10029.0,
+    "eye": [
+      -212.0,
+      1.65,
+      -15.5
+    ],
+    "fov": 75.0,
+    "id": "ES-west-site",
+    "look": [
+      -187.0,
+      6.0,
+      -15.5
+    ],
+    "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+    "primitives": 5188500.0,
+    "reference_fps_1s_window": 1.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 2
+  },
+  {
+    "actual_Godot_Viewport": true,
+    "actual_camera_global": [
+      -221.0,
+      7.17500019073486,
+      -15.5
+    ],
+    "actual_look_direction": [
+      0.991413533687592,
+      0.130764022469521,
+      4.3336061850141e-08
+    ],
+    "draw_calls": 9885.0,
+    "eye": [
+      -221.0,
+      7.175,
+      -15.5
+    ],
+    "fov": 75.0,
+    "id": "ES-west-upper",
+    "look": [
+      -192.0,
+      11.0,
+      -15.5
+    ],
+    "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+    "primitives": 4964867.0,
+    "reference_fps_1s_window": 1.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "warmup_frames": 2
+  }
+]

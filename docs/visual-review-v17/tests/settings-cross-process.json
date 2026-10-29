@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "id": "settings-restored-in-second-Godot-process",
+      "observed": {
+        "fps_limit": 120,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "method": "Write then exit one Godot process; restore in a second process using an isolated test config"
+}

@@ -1,0 +1,51 @@
+{
+  "archive_bytes": 101163668,
+  "archive_sha256": "be964f4a1f1938adb3ff4c97f8164f59adc46af57aed5b32654af554cd1ea0e6",
+  "fresh_root": "/workspace/v17-fresh-check-release/FIND_YOURSELF-v17",
+  "checks": [
+    {
+      "case": "fresh-import",
+      "returncode": 0,
+      "script_errors": false,
+      "missing_resources": false
+    },
+    {
+      "case": "F5-entry",
+      "returncode": 0,
+      "script_errors": false,
+      "missing_resources": false
+    },
+    {
+      "case": "normal",
+      "returncode": 0,
+      "script_errors": false,
+      "missing_resources": false
+    },
+    {
+      "case": "C",
+      "returncode": 0,
+      "script_errors": false,
+      "missing_resources": false
+    },
+    {
+      "case": "ES",
+      "returncode": 0,
+      "script_errors": false,
+      "missing_resources": false
+    },
+    {
+      "case": "final-scenery",
+      "returncode": 0,
+      "script_errors": false,
+      "missing_resources": false
+    },
+    {
+      "case": "final-core",
+      "returncode": 0,
+      "script_errors": false,
+      "missing_resources": false
+    }
+  ],
+  "runtime_assets_standalone": true,
+  "human_playtest": false
+}

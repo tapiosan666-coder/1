@@ -1,0 +1,565 @@
+{
+  "actual_cross_process_restore": "requires second command",
+  "checks": [
+    {
+      "id": "defaults",
+      "observed": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-30-true",
+      "observed": {
+        "fps_limit": 30,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-30-false",
+      "observed": {
+        "fps_limit": 30,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-60-true",
+      "observed": {
+        "fps_limit": 60,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-60-false",
+      "observed": {
+        "fps_limit": 60,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-120-true",
+      "observed": {
+        "fps_limit": 120,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-120-false",
+      "observed": {
+        "fps_limit": 120,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-144-true",
+      "observed": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-144-false",
+      "observed": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-0-true",
+      "observed": {
+        "fps_limit": 0,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-0-0-false",
+      "observed": {
+        "fps_limit": 0,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          1920,
+          1080
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          1920,
+          1080
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-30-true",
+      "observed": {
+        "fps_limit": 30,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-30-false",
+      "observed": {
+        "fps_limit": 30,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-60-true",
+      "observed": {
+        "fps_limit": 60,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-60-false",
+      "observed": {
+        "fps_limit": 60,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-120-true",
+      "observed": {
+        "fps_limit": 120,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-120-false",
+      "observed": {
+        "fps_limit": 120,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-144-true",
+      "observed": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-144-false",
+      "observed": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-0-true",
+      "observed": {
+        "fps_limit": 0,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-1-0-false",
+      "observed": {
+        "fps_limit": 0,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          2560,
+          1440
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          2560,
+          1440
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-30-true",
+      "observed": {
+        "fps_limit": 30,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-30-false",
+      "observed": {
+        "fps_limit": 30,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-60-true",
+      "observed": {
+        "fps_limit": 60,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-60-false",
+      "observed": {
+        "fps_limit": 60,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-120-true",
+      "observed": {
+        "fps_limit": 120,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-120-false",
+      "observed": {
+        "fps_limit": 120,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-144-true",
+      "observed": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-144-false",
+      "observed": {
+        "fps_limit": 144,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-0-true",
+      "observed": {
+        "fps_limit": 0,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": true,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "save-restore-2-0-false",
+      "observed": {
+        "fps_limit": 0,
+        "note": "VSync and display refresh can impose a lower real FPS",
+        "physics_ticks": 60,
+        "requested_resolution": [
+          3840,
+          2160
+        ],
+        "vsync_requested": false,
+        "window_size": [
+          3840,
+          2160
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "headless": true,
+  "not_ui_screenshot_test": true
+}

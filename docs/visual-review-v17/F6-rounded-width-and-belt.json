@@ -1,0 +1,265 @@
+{
+  "checks": [
+    {
+      "adopted": false,
+      "design_length_m": 8.15464067459106,
+      "detail": {
+        "max_frame_rise_m": 0.000726699829101562
+      },
+      "id": "B-WEST-V15-0-UP/rounded-middle-offset--0.35",
+      "option": "rounded-middle-offset--0.35",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -201.15,
+          5.525,
+          -11.8
+        ],
+        [
+          -201.15,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 7.53238105773926,
+      "detail": {
+        "max_frame_rise_m": 0.000598907470703125
+      },
+      "id": "B-WEST-V15-0-UP/rounded-middle-offset-0.0",
+      "option": "rounded-middle-offset-0.0",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -11.8
+        ],
+        [
+          -200.8,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 6.96917200088501,
+      "detail": {
+        "max_frame_rise_m": 0.000604629516601562
+      },
+      "id": "B-WEST-V15-0-UP/rounded-middle-offset-0.35",
+      "option": "rounded-middle-offset-0.35",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.45,
+          5.525,
+          -11.8
+        ],
+        [
+          -200.45,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 6.96917200088501,
+      "detail": {
+        "max_frame_rise_m": 0.000592231750488281
+      },
+      "id": "B-WEST-V15-1-UP/rounded-middle-offset--0.35",
+      "option": "rounded-middle-offset--0.35",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.55,
+          10.875,
+          -17.0
+        ],
+        [
+          -183.55,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 7.53238105773926,
+      "detail": {
+        "max_frame_rise_m": 0.000592231750488281
+      },
+      "id": "B-WEST-V15-1-UP/rounded-middle-offset-0.0",
+      "option": "rounded-middle-offset-0.0",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -17.0
+        ],
+        [
+          -183.2,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ]
+    },
+    {
+      "adopted": false,
+      "design_length_m": 8.15464067459106,
+      "detail": {
+        "max_frame_rise_m": 0.000592231750488281
+      },
+      "id": "B-WEST-V15-1-UP/rounded-middle-offset-0.35",
+      "option": "rounded-middle-offset-0.35",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -182.85,
+          10.875,
+          -17.0
+        ],
+        [
+          -182.85,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ]
+    }
+  ],
+  "human_playtest": false,
+  "machine_layout_unchanged": true,
+  "runtime": {
+    "C_supported_finish_sha256": "",
+    "EV_v11_sha256": "9a79ab4ff50041047a35e04b42dc13730ccc039bab8807a41f5d6ada43053d74",
+    "adapter": "",
+    "amenity_instances_v13_sha256": "842a7fc71b4d24e5e17a3853ee5969b4aec40e46cc185dbc6931cc489c607fc0",
+    "animation_script_sha256": "4fc49fde6e53316184251730898ff5a8139c7946f050e9826f2a84285aec4739",
+    "animation_shader_sha256": "2800ee20e449cc607b0ade6b376111b7ef43ea1d47563592c4b91ec9d46f65d3",
+    "architecture_v10_sha256": "d79d55207cbebbcfee89978c98da4257ef604be523789bd935c7c6ac9a4e89f5",
+    "art_v10_sha256": "293f36b279d8daa9320da9db553bcde9f81353b6c48558e29168737782515094",
+    "basement_instances_v13_sha256": "34c919ae67e0db16cbce87e037886b065a4999a78a261ac34780d94a42617342",
+    "boundary_v12_sha256": "9f357ecdd2aa8d1d4988f0165304591b53ecaa70ea7d48c26ee5f39f55904e89",
+    "context_geometry_sha256": "bb9ec04e5bd353ddd165a14468bfc3239edded63799793c746385bb74f58cfc3",
+    "context_included": true,
+    "draft": false,
+    "es_safety_v12_sha256": "38edc4dd47cecc2c6e26de9e0959a9523d3555dfc2200fc7d3eecc46656079b3",
+    "es_unbuilt_v12_sha256": "77572377a12bf05375f35250495639ff9efa6c82e57ca81297f207582b2f713c",
+    "fitout_sha256": "427717b076d00c7ac95fbf6c9b2ff869f7c41d796b4815b84b57bcf7ea1fe726",
+    "geometry_sha256": "cef67cdaff2173b3a63153f1547dbe67d943ba35cf79a5c62d4c0e4fe1b9afe5",
+    "godot_version": {
+      "build": "official",
+      "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+      "hex": 263683,
+      "major": 4,
+      "minor": 6,
+      "patch": 3,
+      "status": "stable",
+      "string": "4.6.3-stable (official)",
+      "timestamp": 0
+    },
+    "graphics_revision": "v17-independent-site-review",
+    "main_game_loaded": false,
+    "main_script_sha256": "bfd1f6de2f441545360576b58ff4e04587b97ed54e0ffd096d9986048da0d3ff",
+    "map_v12_sha256": "fd3ad3695426fb1f691cf25ed2b6323cd17c612a801190bba96d6b931db67b90",
+    "map_v13_sha256": "7573718829fa95f3a01a9d7b42afd3688f329120cce743ef4e6492958265b37c",
+    "msaa": "4x",
+    "player_script_sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+    "proposal_C": false,
+    "proposal_ES": true,
+    "render_scale": 1.0,
+    "renderer": "forward_plus",
+    "repairs_v11_sha256": "f52deb39f9f39f96083ec4fda4b4959c91c0251839cbdefaabf6c47fd78b3257",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "retail_v10_sha256": "69d16746106bc774db87d2d09475ae53002fa78cb9850b7ac9e9241c5cb113aa",
+    "retail_v12_sha256": "bb8fa2772c50529b790cd45680fe5ecb0c716606715289a38d4fae6d9ea3ea26",
+    "roof_instances_v13_sha256": "6925ebd61a417b40004ce09392735633b7774095e60221a6aaba8cac5d44386f",
+    "scene_build_seconds": 25.637337,
+    "source_sha256": "b974339f75cbfcebc3e96869157dfd2d529459442101faf26b3f3ec08b490c5e",
+    "staff_script_sha256": "02c37b97651e894a29d27b37419eef84f64c18b35b24107441c975526b011413",
+    "v13_packs": {
+      "amenities": "04b61ebc4203762297b01b9f1ef3ae8589f17f1b0d7ab583a5dfdfc7dd8cd5e4",
+      "basement-retail": "78d7f6a4de3811c627b71de81a7584c4cadca0518d05d33490c3a71f49fbcd8a",
+      "public-areas": "b7bf3884a1003a9ab7b7afe72d12079d44db89806756e0fb54d396c411edc53a",
+      "roof-retail": "1549f193b356ea8c9455bf3f6f12181b68989a42d499025002b7622403090aa6"
+    },
+    "v14_finish_sha256": "fb9b296c2b3e814f2880eb46e21533556f330183813b3fd3db9ce80ed67aab33",
+    "v14_gi_cache_sha256": "580ba8be33c800525a8353b76b7b6c20b0797a9257945766028789517405e770",
+    "v14_model_bounds_sha256": "bd077e81301f6fd11c4068b4eb8100061c61f2aca20a86d298d6a2a882a3093c",
+    "v14_roof_sha256": "0ba85cf9c3a7fc21ad6d5eb84bfbf1db6f0eb495e1f5f00f1dec7da6dd44e142",
+    "v14_surface_sha256": "53eb2e046caa1dc7b6ece07f3202186bc5e1f35607b0902f3d86368cbffb2df2",
+    "v15_C_patch_sha256": "08fe8d75d2d0c76cb24d5ae1cba6cd379d87857bd7d25c3611efd0d376dedc0a",
+    "v15_ES_patch_sha256": "1c6a0ed7c470000d8e150ff0e2d136770a68e354db35cd9002bdbdb22447c7e2",
+    "v15_services_sha256": "c510dbd83dcab76be77d35d02d6c64cf529fe257e8a8aa2f8d88405593961c3e"
+  },
+  "status": "UNAPPROVED; candidate routes only; measured polyline lengths, not human walking distance"
+}

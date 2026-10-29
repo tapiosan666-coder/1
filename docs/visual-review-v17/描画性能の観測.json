@@ -1,0 +1,169 @@
+{
+  "environment": "Linux llvmpipe software Vulkan, Godot Forward+ 1920x1080",
+  "Windows_GPU": false,
+  "144FPS_confirmed": false,
+  "steady_state_benchmark": false,
+  "observations": [
+    {
+      "id": "V16-A-visitor",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 6221.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "AB1-003-interior",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 2941.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "BB1-MARKET-interior",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 519.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "B-RF-garden",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 1130.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "ARF-002-terrace",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 3516.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "v15-B1-030-beauty_tester_bar",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 3058.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "v15-B1-N03-electronics_media_demo",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 796.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V17-A-long-street",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 3426.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "shop-apparel-C1F-CW-1",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 833.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "shop-book-A1F-007",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 2802.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "shop-cafe-C1F-CSW-3",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 5823.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-C-kids",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 1829.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-C-dog",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 6498.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-C-melon",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 1502.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-C-courtyard",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 1678.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-B-aichi",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 6489.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-B-fair-close",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 7489.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V17-B2-gallery",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 7268.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V17-B3-gallery",
+      "variant": "通常版",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 7192.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-C-kids",
+      "variant": "C館F4・未承認",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 1622.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "V16-C-courtyard",
+      "variant": "C館F4・未承認",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 1481.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "ES-west-site",
+      "variant": "B館F6・未承認",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 10029.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    },
+    {
+      "id": "ES-west-upper",
+      "variant": "B館F6・未承認",
+      "capture_fps_observation": 1.0,
+      "draw_calls": 9885.0,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+    }
+  ]
+}

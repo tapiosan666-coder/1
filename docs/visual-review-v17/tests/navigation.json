@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "expected_C": true,
+      "expected_ES": false,
+      "key": 4194335,
+      "pass": true
+    },
+    {
+      "expected_C": false,
+      "expected_ES": true,
+      "key": 4194337,
+      "pass": true
+    },
+    {
+      "expected_C": false,
+      "expected_ES": false,
+      "key": 4194337,
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "method": "Physical F4/F6 key events through actual SceneTree.current_scene; not just constructor flags",
+  "pass": true
+}

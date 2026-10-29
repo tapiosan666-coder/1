@@ -1,0 +1,1115 @@
+{
+  "checks": [
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(354.0, 0.0, -43.0)",
+      "id": "A-WEST-VISITOR-information_counter-1",
+      "pass": true,
+      "point": [
+        354.0,
+        0.0,
+        -43.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(346.0, -0.0, -38.0)",
+      "id": "A-WEST-VISITOR-planted_seating_island-2",
+      "pass": true,
+      "point": [
+        346.0,
+        0.0,
+        -38.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(360.0, 0.0, -40.0)",
+      "id": "A-WEST-VISITOR-planted_seating_island-4",
+      "pass": true,
+      "point": [
+        360.0,
+        0.0,
+        -40.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(347.0, -0.0, -48.0)",
+      "id": "A-WEST-VISITOR-digital_info_pylon-6",
+      "pass": true,
+      "point": [
+        347.0,
+        0.0,
+        -48.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(319.0, 0.0, -30.0)",
+      "id": "A-WEST-VISITOR-outdoor_bench-7",
+      "pass": true,
+      "point": [
+        319.0,
+        0.0,
+        -30.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(356.0, 0.0, -20.0)",
+      "id": "A-WEST-VISITOR-outdoor_bench-8",
+      "pass": true,
+      "point": [
+        356.0,
+        0.0,
+        -20.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(365.0, 0.0, -45.0)",
+      "id": "A-POPUP-fair_craft_booth-1",
+      "pass": true,
+      "point": [
+        365.0,
+        0.0,
+        -45.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(373.0, 0.0, -44.0)",
+      "id": "A-POPUP-fair_craft_booth-4",
+      "pass": true,
+      "point": [
+        373.0,
+        0.0,
+        -44.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(419.0, 0.0, -48.0)",
+      "id": "A-STREET-419-digital_info_pylon-1",
+      "pass": true,
+      "point": [
+        419.0,
+        0.0,
+        -48.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(422.0, 0.0, -47.0)",
+      "id": "A-STREET-419-outdoor_bench-2",
+      "pass": true,
+      "point": [
+        422.0,
+        0.0,
+        -47.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(511.0, -0.0, -47.0)",
+      "id": "A-STREET-511-digital_info_pylon-1",
+      "pass": true,
+      "point": [
+        511.0,
+        0.0,
+        -47.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(514.0, -0.0, -46.0)",
+      "id": "A-STREET-511-outdoor_bench-2",
+      "pass": true,
+      "point": [
+        514.0,
+        0.0,
+        -46.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(593.0, 0.0, -18.0)",
+      "id": "A-STREET-593-digital_info_pylon-1",
+      "pass": true,
+      "point": [
+        593.0,
+        0.0,
+        -18.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(596.0, 0.0, -17.0)",
+      "id": "A-STREET-593-outdoor_bench-2",
+      "pass": true,
+      "point": [
+        596.0,
+        0.0,
+        -17.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(366.7997, 5.525, -61.0)",
+      "id": "A-2F-READING-planted_seating_island-1",
+      "pass": true,
+      "point": [
+        366.799747040997,
+        5.525,
+        -61.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(371.7997, 5.525, -62.0)",
+      "id": "A-2F-READING-digital_info_pylon-3",
+      "pass": true,
+      "point": [
+        371.799747040997,
+        5.525,
+        -62.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(445.9165, 10.875, -9.537229)",
+      "id": "A-CINEMA-cinema_ticket_kiosk-1",
+      "pass": true,
+      "point": [
+        445.916522568341,
+        10.875,
+        -9.5372288691399
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(445.9921, 10.875, -10.88386)",
+      "id": "A-CINEMA-cinema_ticket_kiosk-2",
+      "pass": true,
+      "point": [
+        445.99211471562,
+        10.875,
+        -10.8838609186572
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(445.0677, 10.875, -11.23049)",
+      "id": "A-CINEMA-cinema_ticket_kiosk-3",
+      "pass": true,
+      "point": [
+        445.067706862898,
+        10.875,
+        -11.2304929681745
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(445.8098, 10.875, -2.719707)",
+      "id": "A-CINEMA-digital_info_pylon-4",
+      "pass": true,
+      "point": [
+        445.809804242772,
+        10.875,
+        -2.71970650401431
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(464.93, 10.875, -35.64119)",
+      "id": "A-ARCADE-capsule_toy_machine-1",
+      "pass": true,
+      "point": [
+        464.929976139608,
+        10.875,
+        -35.6411906201441
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(464.58, 10.875, -34.65119)",
+      "id": "A-ARCADE-capsule_toy_machine-2",
+      "pass": true,
+      "point": [
+        464.580034957032,
+        10.875,
+        -34.6511899281744
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(464.7301, 10.875, -36.66119)",
+      "id": "A-ARCADE-capsule_toy_machine-3",
+      "pass": true,
+      "point": [
+        464.730093774456,
+        10.875,
+        -36.6611892362047
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(464.8802, 10.875, -37.67119)",
+      "id": "A-ARCADE-capsule_toy_machine-4",
+      "pass": true,
+      "point": [
+        464.88015259188,
+        10.875,
+        -37.6711885442351
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(471.7354, 10.875, -36.06116)",
+      "id": "A-ARCADE-digital_info_pylon-5",
+      "pass": true,
+      "point": [
+        471.735387546118,
+        10.875,
+        -36.0611615574171
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(21.0, 0.0, -8.0)",
+      "id": "B-TIME-AICHI-fair_stage-1",
+      "pass": true,
+      "point": [
+        21.0,
+        0.0,
+        -8.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-5.0, 0.0, 0.0)",
+      "id": "AICHI-miso_katsu",
+      "pass": true,
+      "point": [
+        -5.0,
+        0.0,
+        0.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-4.5, 0.0, 8.5)",
+      "id": "AICHI-tebasaki",
+      "pass": true,
+      "point": [
+        -4.5,
+        0.0,
+        8.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-5.0, 0.0, 20.0)",
+      "id": "AICHI-kishimen",
+      "pass": true,
+      "point": [
+        -5.0,
+        0.0,
+        20.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(20.0, 0.0, 0.0)",
+      "id": "AICHI-hitsumabushi",
+      "pass": true,
+      "point": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(21.0, 0.0, 10.0)",
+      "id": "AICHI-uiro",
+      "pass": true,
+      "point": [
+        21.0,
+        0.0,
+        10.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(26.0, 0.0, 25.5)",
+      "id": "AICHI-ogura_toast",
+      "pass": true,
+      "point": [
+        26.0,
+        0.0,
+        25.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(34.0, 0.0, 12.0)",
+      "id": "AICHI-tokoname",
+      "pass": true,
+      "point": [
+        34.0,
+        0.0,
+        12.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(28.0, 0.0, 29.5)",
+      "id": "AICHI-seto",
+      "pass": true,
+      "point": [
+        28.0,
+        0.0,
+        29.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(9.0, 0.0, 30.0)",
+      "id": "AICHI-shibori",
+      "pass": true,
+      "point": [
+        9.0,
+        0.0,
+        30.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(29.0, 0.0, -3.0)",
+      "id": "B-TIME-AICHI-outdoor_bench-47",
+      "pass": true,
+      "point": [
+        29.0,
+        0.0,
+        -3.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-8.0, 0.0, 27.0)",
+      "id": "B-TIME-AICHI-outdoor_bench-48",
+      "pass": true,
+      "point": [
+        -8.0,
+        0.0,
+        27.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(24.5, 0.0, 30.0)",
+      "id": "B-TIME-AICHI-outdoor_bench-49",
+      "pass": true,
+      "point": [
+        24.5,
+        0.0,
+        30.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(11.5, 0.0, 28.0)",
+      "id": "B-TIME-AICHI-digital_info_pylon-50",
+      "pass": true,
+      "point": [
+        11.5,
+        0.0,
+        28.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-14.0, 0.0, 14.0)",
+      "id": "B-TIME-AICHI-planted_seating_island-51",
+      "pass": true,
+      "point": [
+        -14.0,
+        0.0,
+        14.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(38.0, 0.0, 16.0)",
+      "id": "B-TIME-AICHI-planted_seating_island-53",
+      "pass": true,
+      "point": [
+        38.0,
+        0.0,
+        16.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(144.0, 0.0, 10.0)",
+      "id": "B-LIGHT-GARDEN-planted_seating_island-1",
+      "pass": true,
+      "point": [
+        144.0,
+        0.0,
+        10.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(158.0, 0.0, 11.0)",
+      "id": "B-LIGHT-GARDEN-planted_seating_island-3",
+      "pass": true,
+      "point": [
+        158.0,
+        0.0,
+        11.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(149.0, 0.0, -7.0)",
+      "id": "B-LIGHT-GARDEN-planted_seating_island-5",
+      "pass": true,
+      "point": [
+        149.0,
+        0.0,
+        -7.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(136.0, 0.0, 18.0)",
+      "id": "B-LIGHT-GARDEN-digital_info_pylon-7",
+      "pass": true,
+      "point": [
+        136.0,
+        0.0,
+        18.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-211.0, 0.0, 7.0)",
+      "id": "B-WING-SEASON-fair_craft_booth-1",
+      "pass": true,
+      "point": [
+        -211.0,
+        0.0,
+        7.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-177.0, 0.0, 8.0)",
+      "id": "B-WING-SEASON-fair_craft_booth-3",
+      "pass": true,
+      "point": [
+        -177.0,
+        0.0,
+        8.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(592.0, 5.525, -12.0)",
+      "id": "A-UPPER-1-planted_seating_island-1",
+      "pass": true,
+      "point": [
+        592.0,
+        5.525,
+        -12.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(596.0, 5.525, -9.0)",
+      "id": "A-UPPER-1-digital_info_pylon-3",
+      "pass": true,
+      "point": [
+        596.0,
+        5.525,
+        -9.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(15.5, 5.525, 20.5)",
+      "id": "B-UPPER-1-planted_seating_island-1",
+      "pass": true,
+      "point": [
+        15.5,
+        5.525,
+        20.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(20.0, 5.525, 26.5)",
+      "id": "B-UPPER-1-digital_info_pylon-3",
+      "pass": true,
+      "point": [
+        20.0,
+        5.525,
+        26.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-111.0, -0.02, -313.0)",
+      "id": "C-KIDS-kids_play_tower-1",
+      "pass": true,
+      "point": [
+        -111.0,
+        0.0,
+        -313.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-118.0, -0.02, -306.0)",
+      "id": "C-KIDS-kids_climb_pod-2",
+      "pass": true,
+      "point": [
+        -118.0,
+        0.0,
+        -306.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-103.0, -0.02, -315.0)",
+      "id": "C-KIDS-shade_sail-3",
+      "pass": true,
+      "point": [
+        -103.0,
+        0.0,
+        -315.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-121.0, -0.02, -317.0)",
+      "id": "C-KIDS-outdoor_bench-4",
+      "pass": true,
+      "point": [
+        -121.0,
+        0.0,
+        -317.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-120.0, -0.02, -302.0)",
+      "id": "C-KIDS-outdoor_bench-5",
+      "pass": true,
+      "point": [
+        -120.0,
+        0.0,
+        -302.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-125.0, -0.02, -257.5)",
+      "id": "C-DOG-RUN-outdoor_bench-45",
+      "pass": true,
+      "point": [
+        -125.0,
+        0.0,
+        -257.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-111.0, -0.02, -257.5)",
+      "id": "C-DOG-RUN-outdoor_bench-46",
+      "pass": true,
+      "point": [
+        -111.0,
+        0.0,
+        -257.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-110.0, -0.02, -268.5)",
+      "id": "C-DOG-RUN-dog_service_station-47",
+      "pass": true,
+      "point": [
+        -110.0,
+        0.0,
+        -268.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-115.5, -0.02, -274.6)",
+      "id": "C-DOG-RUN-digital_info_pylon-48",
+      "pass": true,
+      "point": [
+        -115.5,
+        0.0,
+        -274.6
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-88.0, -0.02, -324.0)",
+      "id": "C-MELON-TRUCK-melon_food_truck-1",
+      "pass": true,
+      "point": [
+        -88.0,
+        0.0,
+        -324.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-78.0, -0.02, -316.0)",
+      "id": "C-MELON-TRUCK-outdoor_table_set-11",
+      "pass": true,
+      "point": [
+        -78.0,
+        0.0,
+        -316.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-78.0, -0.02, -309.0)",
+      "id": "C-MELON-TRUCK-outdoor_table_set-12",
+      "pass": true,
+      "point": [
+        -78.0,
+        0.0,
+        -309.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-96.0, -0.02, -332.0)",
+      "id": "C-MELON-TRUCK-planted_seating_island-13",
+      "pass": true,
+      "point": [
+        -96.0,
+        0.0,
+        -332.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_soil:<StaticBody3D#430234942235>",
+      "hit": "(-69.0, -0.02, -315.0)",
+      "id": "C-MELON-TRUCK-planted_seating_island-15",
+      "pass": true,
+      "point": [
+        -69.0,
+        0.0,
+        -315.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-150.1802, 5.525, -300.4487)",
+      "id": "C-UPPER-1-outdoor_bench-1",
+      "pass": true,
+      "point": [
+        -150.180190153577,
+        5.525,
+        -300.448706542738
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-150.2887, 5.525, -296.327)",
+      "id": "C-UPPER-1-digital_info_pylon-2",
+      "pass": true,
+      "point": [
+        -150.288655382486,
+        5.525,
+        -296.327027844184
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(58.28, 10.875, -198.85)",
+      "id": "C-UPPER-2-outdoor_bench-1",
+      "pass": true,
+      "point": [
+        58.28,
+        10.875,
+        -198.85
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(54.28, 10.875, -197.85)",
+      "id": "C-UPPER-2-digital_info_pylon-2",
+      "pass": true,
+      "point": [
+        54.28,
+        10.875,
+        -197.85
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(376.7754, -5.35, -59.43715)",
+      "id": "A-B1-FOCUS-produce_market_bay-1",
+      "pass": true,
+      "point": [
+        376.775360386041,
+        -5.35,
+        -59.437143646973
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(384.9626, -5.35, -59.6124)",
+      "id": "A-B1-FOCUS-deli_refrigerated_showcase-2",
+      "pass": true,
+      "point": [
+        384.962619119062,
+        -5.35,
+        -59.6124040528947
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(377.2616, -5.35, -62.85088)",
+      "id": "A-B1-FOCUS-produce_market_bay-3",
+      "pass": true,
+      "point": [
+        377.261577495376,
+        -5.35,
+        -62.8508771758526
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(385.5781, -5.35, -55.97968)",
+      "id": "A-B1-FOCUS-digital_info_pylon-4",
+      "pass": true,
+      "point": [
+        385.578077726055,
+        -5.35,
+        -55.9796820280116
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-291.0, -5.35, -13.0)",
+      "id": "B-B1-FOCUS-produce_market_bay-1",
+      "pass": true,
+      "point": [
+        -291.0,
+        -5.35,
+        -13.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-290.5, -5.35, -7.5)",
+      "id": "B-B1-FOCUS-deli_refrigerated_showcase-2",
+      "pass": true,
+      "point": [
+        -290.5,
+        -5.35,
+        -7.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-294.0, -5.35, -13.0)",
+      "id": "B-B1-FOCUS-produce_market_bay-3",
+      "pass": true,
+      "point": [
+        -294.0,
+        -5.35,
+        -13.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-285.4, -5.35, -3.0)",
+      "id": "B-B1-FOCUS-digital_info_pylon-4",
+      "pass": true,
+      "point": [
+        -285.4,
+        -5.35,
+        -3.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-163.3942, -5.35, -324.2286)",
+      "id": "C-B1-FOCUS-repair_pickup_counter-1",
+      "pass": true,
+      "point": [
+        -163.394187823064,
+        -5.35,
+        -324.228632111937
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-161.7738, -5.35, -329.3516)",
+      "id": "C-B1-FOCUS-digital_info_pylon-2",
+      "pass": true,
+      "point": [
+        -161.773816124247,
+        -5.35,
+        -329.351617810229
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(351.0, -5.35, 23.0)",
+      "id": "A-B1-ARRIVAL-digital_info_pylon-1",
+      "pass": true,
+      "point": [
+        351.0,
+        -5.35,
+        23.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-112.5, -5.35, -39.5)",
+      "id": "B-B1-ARRIVAL-digital_info_pylon-1",
+      "pass": true,
+      "point": [
+        -112.5,
+        -5.35,
+        -39.5
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-142.0, -5.35, -258.0)",
+      "id": "C-B1-ARRIVAL-digital_info_pylon-1",
+      "pass": true,
+      "point": [
+        -142.0,
+        -5.35,
+        -258.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(399.5583, 16.4, -32.3629)",
+      "id": "A-RF-TERRACE-outdoor_table_set-1",
+      "pass": true,
+      "point": [
+        399.558257690269,
+        16.4,
+        -32.3629051661086
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(398.3423, 16.4, -29.02557)",
+      "id": "A-RF-TERRACE-outdoor_table_set-2",
+      "pass": true,
+      "point": [
+        398.342243466874,
+        16.4,
+        -29.0255723904086
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(400.4606, 16.4, -25.75894)",
+      "id": "A-RF-TERRACE-terrace_pergola-3",
+      "pass": true,
+      "point": [
+        400.46058774657,
+        16.4,
+        -25.7589386315989
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(396.7509, 16.4, -33.97525)",
+      "id": "A-RF-TERRACE-digital_info_pylon-4",
+      "pass": true,
+      "point": [
+        396.750870113986,
+        16.4,
+        -33.975250282255
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-164.7262, 16.4, -325.9178)",
+      "id": "C-RF-TERRACE-outdoor_table_set-1",
+      "pass": true,
+      "point": [
+        -164.726190244615,
+        16.4,
+        -325.917756894591
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-163.0503, 16.4, -319.6506)",
+      "id": "C-RF-TERRACE-digital_info_pylon-2",
+      "pass": true,
+      "point": [
+        -163.050278931606,
+        16.4,
+        -319.650586557666
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-201.0, 16.4, -34.0)",
+      "id": "B-RF-GARDEN-terrace_pergola-1",
+      "pass": true,
+      "point": [
+        -201.0,
+        16.4,
+        -34.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-191.0, 16.4, -34.0)",
+      "id": "B-RF-GARDEN-outdoor_table_set-2",
+      "pass": true,
+      "point": [
+        -191.0,
+        16.4,
+        -34.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "collider": "Collision_stone:<StaticBody3D#429463190253>",
+      "hit": "(-184.0, 16.4, -34.0)",
+      "id": "B-RF-GARDEN-digital_info_pylon-3",
+      "pass": true,
+      "point": [
+        -184.0,
+        16.4,
+        -34.0
+      ],
+      "test": "existing_ground_support_ray"
+    },
+    {
+      "pass": true,
+      "test": "F11_off_hides_mesh_and_disables_collision"
+    },
+    {
+      "pass": true,
+      "test": "F11_reenable_rejects_stage_edge_overlap"
+    },
+    {
+      "pass": true,
+      "test": "F11_on_restores_event"
+    },
+    {
+      "pass": true,
+      "test": "double_gate_interlock"
+    }
+  ],
+  "human_playtest": false,
+  "method": "Godot actual collision ray queries, event collision states and double-gate state interlock; separate from walking",
+  "pass": true
+}
