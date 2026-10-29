@@ -1,0 +1,262 @@
+{
+  "erase_surfaces": [
+    "glass@@C-2F",
+    "glass@@C-3F",
+    "glass@@C-RF",
+    "glass@@ESC-E1-12-DOWN",
+    "glass@@ESC-E1-12-UP",
+    "glass@@ESC-E1-23-DOWN",
+    "glass@@ESC-E1-23-UP",
+    "oak@@C-RF",
+    "plaster@@C-1F",
+    "plaster@@C-2F",
+    "plaster@@C-3F",
+    "plaster@@V12-ES-CE12-DOWN",
+    "plaster@@V12-ES-CE12-UP",
+    "plaster@@V12-ES-CN23-DOWN",
+    "plaster@@V12-ES-CN23-UP",
+    "plaster@@V12-ES-E1-12-DOWN",
+    "plaster@@V12-ES-E1-12-UP",
+    "plaster@@V12-ES-E1-23-DOWN",
+    "plaster@@V12-ES-E1-23-UP",
+    "step@@ESC-E1-12-DOWN",
+    "step@@ESC-E1-12-UP",
+    "step@@ESC-E1-23-DOWN",
+    "step@@ESC-E1-23-UP",
+    "stone@@C-2F",
+    "stone@@C-3F",
+    "stone@@C-RF",
+    "stone@@V12-ES-CE12-DOWN",
+    "stone@@V12-ES-CE12-UP",
+    "stone@@V12-ES-CN23-DOWN",
+    "stone@@V12-ES-CN23-UP",
+    "stone@@V12-ES-E1-12-DOWN",
+    "stone@@V12-ES-E1-12-UP",
+    "stone@@V12-ES-E1-23-DOWN",
+    "stone@@V12-ES-E1-23-UP",
+    "v10_darkstone@@V12-ES-E1-12-DOWN",
+    "v10_darkstone@@V12-ES-E1-12-UP",
+    "v10_darkstone@@V12-ES-E1-23-DOWN",
+    "v10_darkstone@@V12-ES-E1-23-UP",
+    "v10_floor_B@@V12-ES-E1-12-DOWN",
+    "v10_floor_B@@V12-ES-E1-12-UP",
+    "v10_floor_B@@V12-ES-E1-23-DOWN",
+    "v10_floor_B@@V12-ES-E1-23-UP",
+    "v10_floor_C@@V12-ES-CE12-DOWN",
+    "v10_floor_C@@V12-ES-CE12-UP",
+    "v10_floor_C@@V12-ES-CN23-DOWN",
+    "v10_floor_C@@V12-ES-CN23-UP",
+    "v10_guard_glass@@V12-ES-CN23-DOWN",
+    "v10_guard_glass@@V12-ES-CN23-UP",
+    "v10_guard_glass@@V12-ES-E1-12-DOWN",
+    "v10_guard_glass@@V12-ES-E1-12-UP",
+    "v10_guard_glass@@V12-ES-E1-23-DOWN",
+    "v10_guard_glass@@V12-ES-E1-23-UP",
+    "v10_metal@@V12-ES-E1-12-DOWN",
+    "v10_metal@@V12-ES-E1-12-UP",
+    "v10_metal@@V12-ES-E1-23-DOWN",
+    "v10_metal@@V12-ES-E1-23-UP",
+    "v12_landing_plate@@V12-LANDING-E1-12-DOWN-0",
+    "v12_landing_plate@@V12-LANDING-E1-12-DOWN-1",
+    "v12_landing_plate@@V12-LANDING-E1-12-UP-0",
+    "v12_landing_plate@@V12-LANDING-E1-12-UP-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-DOWN-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-DOWN-2",
+    "v12_landing_plate@@V12-LANDING-E1-23-UP-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-UP-2"
+  ],
+  "collision_delta": [
+    {
+      "material": "dark_stone",
+      "original_triangles": 20645,
+      "C_ES_changes": [
+        {
+          "removed": 0,
+          "added": 0
+        },
+        {
+          "removed": 34,
+          "added": 96
+        }
+      ],
+      "combined_triangles": 20707,
+      "removed_union": 34,
+      "added_union": 96
+    },
+    {
+      "material": "glass",
+      "original_triangles": 240927,
+      "C_ES_changes": [
+        {
+          "removed": 37637,
+          "added": 1477
+        },
+        {
+          "removed": 64,
+          "added": 144
+        }
+      ],
+      "combined_triangles": 204847,
+      "removed_union": 37701,
+      "added_union": 1621
+    },
+    {
+      "material": "metal",
+      "original_triangles": 35550,
+      "C_ES_changes": [
+        {
+          "removed": 36,
+          "added": 54
+        },
+        {
+          "removed": 0,
+          "added": 0
+        }
+      ],
+      "combined_triangles": 35568,
+      "removed_union": 36,
+      "added_union": 54
+    },
+    {
+      "material": "oak",
+      "original_triangles": 59588,
+      "C_ES_changes": [
+        {
+          "removed": 12,
+          "added": 0
+        },
+        {
+          "removed": 0,
+          "added": 0
+        }
+      ],
+      "combined_triangles": 59576,
+      "removed_union": 12,
+      "added_union": 0
+    },
+    {
+      "material": "step",
+      "original_triangles": 1444,
+      "C_ES_changes": [
+        {
+          "removed": 1,
+          "added": 2
+        },
+        {
+          "removed": 104,
+          "added": 156
+        }
+      ],
+      "combined_triangles": 1497,
+      "removed_union": 105,
+      "added_union": 158
+    },
+    {
+      "material": "stone",
+      "original_triangles": 114470,
+      "C_ES_changes": [
+        {
+          "removed": 3208,
+          "added": 33590
+        },
+        {
+          "removed": 316,
+          "added": 1760
+        }
+      ],
+      "combined_triangles": 146296,
+      "removed_union": 3524,
+      "added_union": 35350
+    },
+    {
+      "material": "v10_chalk",
+      "original_triangles": 33072,
+      "C_ES_changes": [
+        {
+          "removed": 0,
+          "added": 2700
+        },
+        {
+          "removed": 0,
+          "added": 2212
+        }
+      ],
+      "combined_triangles": 37984,
+      "removed_union": 0,
+      "added_union": 4912
+    },
+    {
+      "material": "v10_darkstone",
+      "original_triangles": 21112,
+      "C_ES_changes": [
+        {
+          "removed": 1135,
+          "added": 9550
+        },
+        {
+          "removed": 1520,
+          "added": 144
+        }
+      ],
+      "combined_triangles": 28151,
+      "removed_union": 2655,
+      "added_union": 9694
+    },
+    {
+      "material": "v10_guard_glass",
+      "original_triangles": 15192,
+      "C_ES_changes": [
+        {
+          "removed": 1364,
+          "added": 6850
+        },
+        {
+          "removed": 1520,
+          "added": 2172
+        }
+      ],
+      "combined_triangles": 21330,
+      "removed_union": 2884,
+      "added_union": 9022
+    },
+    {
+      "material": "v10_metal",
+      "original_triangles": 0,
+      "C_ES_changes": [
+        {
+          "removed": 0,
+          "added": 0
+        },
+        {
+          "removed": 0,
+          "added": 42
+        }
+      ],
+      "combined_triangles": 42,
+      "removed_union": 0,
+      "added_union": 42
+    },
+    {
+      "material": "v10_oak",
+      "original_triangles": 23846,
+      "C_ES_changes": [
+        {
+          "removed": 24,
+          "added": 2
+        },
+        {
+          "removed": 0,
+          "added": 0
+        }
+      ],
+      "combined_triangles": 23824,
+      "removed_union": 24,
+      "added_union": 2
+    }
+  ],
+  "policy": "Exact triangle-set union of independent C and B deltas against distributed normal v21; runtime never sequentially overwrites whole material colliders.",
+  "engineering_verified": false,
+  "physical_tested": true,
+  "sha256": "4b68ca92240b6592bc23bff0d4e9260e48e3f7355b8f9d6497db92eb48852eb8",
+  "physical_scope": "Selected loaded-scene routes, floors, entries, rails and moving equipment; not engineering or exhaustive human exploration"
+}

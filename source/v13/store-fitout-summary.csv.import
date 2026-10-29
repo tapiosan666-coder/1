@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dbthgunss2f5"
+
+[deps]
+
+files=["res://source/v13/store-fitout-summary.industry.translation", "res://source/v13/store-fitout-summary.fixture.translation", "res://source/v13/store-fitout-summary.counter.translation", "res://source/v13/store-fitout-summary.fixtures.translation", "res://source/v13/store-fitout-summary.primary.translation"]
+
+source_file="res://source/v13/store-fitout-summary.csv"
+dest_files=["res://source/v13/store-fitout-summary.industry.translation", "res://source/v13/store-fitout-summary.fixture.translation", "res://source/v13/store-fitout-summary.counter.translation", "res://source/v13/store-fitout-summary.fixtures.translation", "res://source/v13/store-fitout-summary.primary.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

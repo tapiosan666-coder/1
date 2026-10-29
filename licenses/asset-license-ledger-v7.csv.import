@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dvorw8v3avwl0"
+
+[deps]
+
+files=["res://licenses/asset-license-ledger-v7.license.translation", "res://licenses/asset-license-ledger-v7.sha256.translation"]
+
+source_file="res://licenses/asset-license-ledger-v7.csv"
+dest_files=["res://licenses/asset-license-ledger-v7.license.translation", "res://licenses/asset-license-ledger-v7.sha256.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
