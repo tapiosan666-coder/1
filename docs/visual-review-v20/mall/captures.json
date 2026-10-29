@@ -1,0 +1,196 @@
+{
+  "human_playtest": false,
+  "shots": [
+    {
+      "actor_id": "V18-A-01",
+      "actual_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.0,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "eye": [
+        351.236968994141,
+        1.0582287311554,
+        -21.5200004577637
+      ],
+      "fov": 43.0,
+      "id": "mall-standing",
+      "location": "A館1F",
+      "look": [
+        354.236968994141,
+        0.9182288646698,
+        -20.5200004577637
+      ],
+      "position": [
+        354.236968994141,
+        0.00822880957275629,
+        -20.5200004577637
+      ],
+      "real_Godot_Viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "snapshot_method": "Replay of actual automatic physics state; browsing uses documented temporary existing bookshelf route. Not human operation.",
+      "source_snapshot": "world-standing.json"
+    },
+    {
+      "actor_id": "V18-A-01",
+      "actual_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.0,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "eye": [
+        353.596954345703,
+        1.50822877883911,
+        -20.6000003814697
+      ],
+      "fov": 35.0,
+      "id": "mall-standing-face",
+      "location": "A館1F",
+      "look": [
+        354.236968994141,
+        1.49822878837585,
+        -20.5200004577637
+      ],
+      "position": [
+        354.236968994141,
+        0.00822880957275629,
+        -20.5200004577637
+      ],
+      "real_Godot_Viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "snapshot_method": "Replay of actual automatic physics state; browsing uses documented temporary existing bookshelf route. Not human operation.",
+      "source_snapshot": "world-standing.json"
+    },
+    {
+      "actor_id": "V18-A-01",
+      "actual_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.906969964504242,
+        "player_time_seconds": 0.0883622587934951,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "eye": [
+        352.476684570312,
+        1.05169272422791,
+        -21.5200004577637
+      ],
+      "fov": 43.0,
+      "id": "mall-walking",
+      "location": "A館1F",
+      "look": [
+        355.476684570312,
+        0.91169273853302,
+        -20.5200004577637
+      ],
+      "position": [
+        355.476684570312,
+        0.00169273046776652,
+        -20.5200004577637
+      ],
+      "real_Godot_Viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "snapshot_method": "Replay of actual automatic physics state; browsing uses documented temporary existing bookshelf route. Not human operation.",
+      "source_snapshot": "world-walking.json"
+    },
+    {
+      "actor_id": "V18-A-01",
+      "actual_state": {
+        "actual_player_clip": "SitIdle",
+        "assigned_clip": "SitIdle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.567499995231628,
+        "player_time_seconds": 1.016687,
+        "requested_clip": "SitIdle",
+        "variant": "v20"
+      },
+      "eye": [
+        352.559997558594,
+        1.05833327770233,
+        -21.5200004577637
+      ],
+      "fov": 43.0,
+      "id": "mall-seated",
+      "location": "A館1F",
+      "look": [
+        355.559997558594,
+        0.82833331823349,
+        -20.5200004577637
+      ],
+      "position": [
+        355.559997558594,
+        0.00833333097398281,
+        -20.5200004577637
+      ],
+      "real_Godot_Viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "snapshot_method": "Replay of actual automatic physics state; browsing uses documented temporary existing bookshelf route. Not human operation.",
+      "source_snapshot": "world-seated.json"
+    },
+    {
+      "actor_id": "V18-A-01",
+      "actual_state": {
+        "actual_player_clip": "Browse",
+        "assigned_clip": "Browse",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.933333333333333,
+        "requested_clip": "Browse",
+        "variant": "v20"
+      },
+      "eye": [
+        396.790466308594,
+        1.40108788013458,
+        -53.7790298461914
+      ],
+      "fov": 43.0,
+      "id": "mall-browsing",
+      "location": "A館1F",
+      "look": [
+        394.232055664062,
+        1.00108790397644,
+        -54.9891548156738
+      ],
+      "position": [
+        394.232055664062,
+        0.00108793098479509,
+        -54.9891548156738
+      ],
+      "real_Godot_Viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "snapshot_method": "Replay of actual automatic physics state; browsing uses documented temporary existing bookshelf route. Not human operation.",
+      "source_snapshot": "world-browsing.json"
+    }
+  ],
+  "model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835"
+}

@@ -1,0 +1,596 @@
+{
+  "checks": [
+    {
+      "id": "clip-exists-Idle",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-Walk",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-Stop",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-TurnLeft",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-TurnRight",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-SitDown",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-SitIdle",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-StandUp",
+      "pass": true
+    },
+    {
+      "id": "clip-exists-Browse",
+      "pass": true
+    },
+    {
+      "hip_y": 0.914238274097443,
+      "id": "Idle-standing-height",
+      "pass": true
+    },
+    {
+      "hip_y": 0.567499995231628,
+      "id": "SitIdle-lowered-pelvis",
+      "pass": true
+    },
+    {
+      "hip_y": 0.914238274097443,
+      "id": "Sit-to-Idle-clears-frozen-blend",
+      "pass": true
+    },
+    {
+      "hip_y": 0.914238274097443,
+      "id": "StandUp-ends-standing",
+      "pass": true
+    },
+    {
+      "id": "Walk-left-swing",
+      "pass": true,
+      "range_m": 0.046343058347702
+    },
+    {
+      "id": "Walk-right-swing",
+      "pass": true,
+      "range_m": 0.0473673641681671
+    },
+    {
+      "id": "expression-independent-normal",
+      "pass": true
+    },
+    {
+      "id": "expression-independent-smile",
+      "pass": true
+    },
+    {
+      "id": "expression-independent-happy",
+      "pass": true
+    },
+    {
+      "id": "expression-independent-sullen",
+      "pass": true
+    },
+    {
+      "id": "expression-independent-surprised",
+      "pass": true
+    },
+    {
+      "id": "expression-independent-worried",
+      "pass": true
+    },
+    {
+      "id": "body-clips-do-not-key-face",
+      "pass": true
+    },
+    {
+      "count": 54,
+      "id": "54-bones",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Walk-normal",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Walk-smile",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Walk-happy",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Walk-sullen",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Walk-surprised",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Walk-worried",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-SitIdle-normal",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-SitIdle-smile",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-SitIdle-happy",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-SitIdle-sullen",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-SitIdle-surprised",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-SitIdle-worried",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Browse-normal",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Browse-smile",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Browse-happy",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Browse-sullen",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Browse-surprised",
+      "pass": true
+    },
+    {
+      "id": "body-face-combination-Browse-worried",
+      "pass": true
+    }
+  ],
+  "expressions": [
+    {
+      "active_morphs": [],
+      "expression": "normal",
+      "state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      }
+    },
+    {
+      "active_morphs": [
+        {
+          "shape": "Face_Blendshape.Fcl_ALL_Joy",
+          "weight": 0.419999986886978
+        },
+        {
+          "shape": "Face_Blendshape.Fcl_BRW_Fun",
+          "weight": 0.159999996423721
+        }
+      ],
+      "expression": "smile",
+      "state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "smile",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      }
+    },
+    {
+      "active_morphs": [
+        {
+          "shape": "Face_Blendshape.Fcl_ALL_Fun",
+          "weight": 0.119999997317791
+        },
+        {
+          "shape": "Face_Blendshape.Fcl_ALL_Joy",
+          "weight": 0.939999997615814
+        }
+      ],
+      "expression": "happy",
+      "state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "happy",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      }
+    },
+    {
+      "active_morphs": [
+        {
+          "shape": "Face_Blendshape.Fcl_ALL_Angry",
+          "weight": 0.779999971389771
+        },
+        {
+          "shape": "Face_Blendshape.Fcl_BRW_Angry",
+          "weight": 0.219999998807907
+        }
+      ],
+      "expression": "sullen",
+      "state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "sullen",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      }
+    },
+    {
+      "active_morphs": [
+        {
+          "shape": "Face_Blendshape.Fcl_ALL_Surprised",
+          "weight": 0.819999992847443
+        },
+        {
+          "shape": "Face_Blendshape.Fcl_MTH_A",
+          "weight": 0.100000001490116
+        }
+      ],
+      "expression": "surprised",
+      "state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "surprised",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      }
+    },
+    {
+      "active_morphs": [
+        {
+          "shape": "Face_Blendshape.Fcl_ALL_Sorrow",
+          "weight": 0.680000007152557
+        },
+        {
+          "shape": "Face_Blendshape.Fcl_BRW_Sorrow",
+          "weight": 0.25
+        }
+      ],
+      "expression": "worried",
+      "state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "worried",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      }
+    }
+  ],
+  "facial_tracks_in_body_clips": [],
+  "human_playtest": false,
+  "method": "Actual Godot AnimationPlayer seek without blending, actual Skeleton3D transforms and MeshInstance3D morph values. Geometry/visual quality is a separate review.",
+  "poses": [
+    {
+      "actual_player_clip": "Idle",
+      "assigned_clip": "Idle",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.914238274097443,
+      "player_time_seconds": 0.3,
+      "requested_clip": "Idle",
+      "test_clip": "Idle",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "Walk",
+      "assigned_clip": "Walk",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.907648384571075,
+      "player_time_seconds": 0.174999997019768,
+      "requested_clip": "Walk",
+      "test_clip": "Walk",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "Stop",
+      "assigned_clip": "Stop",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.914238274097443,
+      "player_time_seconds": 0.3,
+      "requested_clip": "Stop",
+      "test_clip": "Stop",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "TurnLeft",
+      "assigned_clip": "TurnLeft",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.914238274097443,
+      "player_time_seconds": 0.3,
+      "requested_clip": "TurnLeft",
+      "test_clip": "TurnLeft",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "TurnRight",
+      "assigned_clip": "TurnRight",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.914238274097443,
+      "player_time_seconds": 0.3,
+      "requested_clip": "TurnRight",
+      "test_clip": "TurnRight",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "SitDown",
+      "assigned_clip": "SitDown",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.869476497173309,
+      "player_time_seconds": 0.3,
+      "requested_clip": "SitDown",
+      "test_clip": "SitDown",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "SitIdle",
+      "assigned_clip": "SitIdle",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.567499995231628,
+      "player_time_seconds": 0.3,
+      "requested_clip": "SitIdle",
+      "test_clip": "SitIdle",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "StandUp",
+      "assigned_clip": "StandUp",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.612261712551117,
+      "player_time_seconds": 0.3,
+      "requested_clip": "StandUp",
+      "test_clip": "StandUp",
+      "variant": "v20"
+    },
+    {
+      "actual_player_clip": "Browse",
+      "assigned_clip": "Browse",
+      "bones": 54,
+      "expression": "normal",
+      "hip_y_local_m": 0.914238274097443,
+      "player_time_seconds": 0.3,
+      "requested_clip": "Browse",
+      "test_clip": "Browse",
+      "variant": "v20"
+    }
+  ],
+  "walking_samples": [
+    {
+      "left_ankle": [
+        0.0786992833018303,
+        0.102664679288864,
+        0.171548947691917
+      ],
+      "phase": 0.0,
+      "right_ankle": [
+        -0.0786991342902184,
+        0.10266438126564,
+        -0.15845137834549
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.904238283634186,
+        "player_time_seconds": 0.0,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    },
+    {
+      "left_ankle": [
+        0.0786992162466049,
+        0.102391719818115,
+        0.0890439972281456
+      ],
+      "phase": 0.125,
+      "right_ankle": [
+        -0.0786990895867348,
+        0.116103827953339,
+        -0.226676613092422
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.906950950622559,
+        "player_time_seconds": 0.0874999985098839,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    },
+    {
+      "left_ankle": [
+        0.0786993503570557,
+        0.101987242698669,
+        0.00654850155115128
+      ],
+      "phase": 0.25,
+      "right_ankle": [
+        -0.0786990970373154,
+        0.148808926343918,
+        -0.12554195523262
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.907648384571075,
+        "player_time_seconds": 0.174999997019768,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    },
+    {
+      "left_ankle": [
+        0.0786992460489273,
+        0.102526605129242,
+        -0.0759493708610535
+      ],
+      "phase": 0.375,
+      "right_ankle": [
+        -0.0786990150809288,
+        0.148983985185623,
+        0.0671669766306877
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.90699028968811,
+        "player_time_seconds": 0.262499995529652,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    },
+    {
+      "left_ankle": [
+        0.0786992758512497,
+        0.102032035589218,
+        -0.158508598804474
+      ],
+      "phase": 0.5,
+      "right_ankle": [
+        -0.07869902998209,
+        0.107622265815735,
+        0.161519482731819
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.904834449291229,
+        "player_time_seconds": 0.349999994039536,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    },
+    {
+      "left_ankle": [
+        0.0786993429064751,
+        0.117683827877045,
+        -0.230859905481339
+      ],
+      "phase": 0.625,
+      "right_ankle": [
+        -0.078699141740799,
+        0.102477997541428,
+        0.0890470296144485
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.906946122646332,
+        "player_time_seconds": 0.437499992549419,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    },
+    {
+      "left_ankle": [
+        0.0786992609500885,
+        0.148330301046371,
+        -0.12522204220295
+      ],
+      "phase": 0.75,
+      "right_ankle": [
+        -0.0786991715431213,
+        0.101616621017456,
+        0.00654681026935577
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.907278597354889,
+        "player_time_seconds": 0.524999991059303,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    },
+    {
+      "left_ankle": [
+        0.0786992311477661,
+        0.147686362266541,
+        0.0659535825252533
+      ],
+      "phase": 0.875,
+      "right_ankle": [
+        -0.07869902998209,
+        0.102096855640411,
+        -0.0759451538324356
+      ],
+      "state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.906642854213715,
+        "player_time_seconds": 0.612499989569187,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      }
+    }
+  ]
+}

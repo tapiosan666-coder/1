@@ -1,0 +1,179 @@
+{
+  "144FPS_verified": false,
+  "Windows_GPU": false,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "caveat": "Only four software-Vulkan frames per condition; cold/warm cache order and CPU contention affect results. Moving case actually advances physics; this is not a Windows GPU benchmark. Earlier baseline actor resources stay cached in later cases, memory is total process, not isolated per-model delta.",
+  "human_playtest": false,
+  "measurements": [
+    {
+      "buffer_memory_bytes": 384241598.0,
+      "condition": "none",
+      "draw_calls": [
+        3904.0,
+        3904.0,
+        3904.0,
+        3904.0
+      ],
+      "frame_ms": [
+        9416.45,
+        4803.623,
+        4872.284,
+        4596.472
+      ],
+      "frozen": true,
+      "hero_state": {
+        "actual_player_clip": "SitIdle",
+        "assigned_clip": "SitIdle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.567499995231628,
+        "player_time_seconds": 0.0499999999999998,
+        "requested_clip": "SitIdle",
+        "variant": "v20"
+      },
+      "median_frame_ms": 4837.9535,
+      "physics_process_seconds": 0.00029,
+      "rendered_primitives": [
+        3678632.0,
+        3678632.0,
+        3678632.0,
+        3678632.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.0,
+      "static_memory_bytes": 824787001.0,
+      "texture_memory_bytes": 1068451584.0,
+      "video_memory_bytes": 1577924944.0,
+      "visible_NPC_count": 0
+    },
+    {
+      "buffer_memory_bytes": 392843462.0,
+      "condition": "v19_reference_1",
+      "draw_calls": [
+        3947.0,
+        3947.0,
+        3947.0,
+        3947.0
+      ],
+      "frame_ms": [
+        9908.313,
+        4736.282,
+        4866.944,
+        4766.921
+      ],
+      "frozen": true,
+      "hero_state": {
+        "actual_player_clip": "SitIdle",
+        "assigned_clip": "SitIdle",
+        "bones": 163,
+        "expression": "normal",
+        "hip_y_local_m": 0.530542612075806,
+        "player_time_seconds": 0.0499999999999998,
+        "requested_clip": "SitIdle",
+        "variant": "v19"
+      },
+      "median_frame_ms": 4816.9325,
+      "physics_process_seconds": 0.000239,
+      "rendered_primitives": [
+        4174340.0,
+        4174340.0,
+        4174340.0,
+        4174340.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.0,
+      "static_memory_bytes": 826432360.0,
+      "texture_memory_bytes": 1081296640.0,
+      "video_memory_bytes": 1599372448.0,
+      "visible_NPC_count": 1
+    },
+    {
+      "buffer_memory_bytes": 392843462.0,
+      "condition": "v20_reference_1",
+      "draw_calls": [
+        3991.0,
+        3991.0,
+        3991.0,
+        3991.0
+      ],
+      "frame_ms": [
+        8999.119,
+        4504.161,
+        4234.595,
+        4398.686
+      ],
+      "frozen": true,
+      "hero_state": {
+        "actual_player_clip": "SitIdle",
+        "assigned_clip": "SitIdle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.567499995231628,
+        "player_time_seconds": 0.0499999999999998,
+        "requested_clip": "SitIdle",
+        "variant": "v20"
+      },
+      "median_frame_ms": 4451.4235,
+      "physics_process_seconds": 0.000307,
+      "rendered_primitives": [
+        3901472.0,
+        3901472.0,
+        3901472.0,
+        3901472.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.0,
+      "static_memory_bytes": 826562656.0,
+      "texture_memory_bytes": 1081296640.0,
+      "video_memory_bytes": 1599372448.0,
+      "visible_NPC_count": 1
+    },
+    {
+      "buffer_memory_bytes": 392843462.0,
+      "condition": "v20_43_moving",
+      "draw_calls": [
+        4102.0,
+        4104.0,
+        4105.0,
+        4106.0
+      ],
+      "frame_ms": [
+        8479.902,
+        4370.896,
+        4757.775,
+        5247.026
+      ],
+      "frozen": false,
+      "hero_state": {
+        "actual_player_clip": "SitIdle",
+        "assigned_clip": "SitIdle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.567499995231628,
+        "player_time_seconds": 0.850015999999999,
+        "requested_clip": "SitIdle",
+        "variant": "v20"
+      },
+      "median_frame_ms": 5002.4005,
+      "physics_process_seconds": 0.017404,
+      "rendered_primitives": [
+        4130208.0,
+        4130208.0,
+        4130208.0,
+        4130208.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.533333333333334,
+      "static_memory_bytes": 827456036.0,
+      "texture_memory_bytes": 1081296640.0,
+      "video_memory_bytes": 1599372448.0,
+      "visible_NPC_count": 43
+    }
+  ],
+  "renderer": "forward_plus",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "steady_state_benchmark": false
+}

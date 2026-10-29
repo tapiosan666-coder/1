@@ -1,0 +1,1246 @@
+{
+  "Godot": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        0.0,
+        1.51,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "face-front",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        -0.46,
+        1.51,
+        -0.46
+      ],
+      "fov": 35.0,
+      "id": "face-45",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        -0.64,
+        1.51,
+        0.0
+      ],
+      "fov": 35.0,
+      "id": "face-side",
+      "look": [
+        0.0,
+        1.49,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        0.0,
+        0.95,
+        -2.8
+      ],
+      "fov": 40.0,
+      "id": "full-front",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "id": "full-side",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        0.0,
+        0.95,
+        2.8
+      ],
+      "fov": 40.0,
+      "id": "full-back",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        0.0,
+        1.555,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "v19-face-view",
+      "look": [
+        0.0,
+        1.54,
+        -0.08
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "normal",
+      "eye": [
+        0.0,
+        1.51,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "expression-normal",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "smile",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "smile",
+      "eye": [
+        0.0,
+        1.51,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "expression-smile",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "happy",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "happy",
+      "eye": [
+        0.0,
+        1.51,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "expression-happy",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "sullen",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "sullen",
+      "eye": [
+        0.0,
+        1.51,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "expression-sullen",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "surprised",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "surprised",
+      "eye": [
+        0.0,
+        1.51,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "expression-surprised",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Idle",
+        "assigned_clip": "Idle",
+        "bones": 54,
+        "expression": "worried",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Idle",
+        "variant": "v20"
+      },
+      "clip": "Idle",
+      "expression": "worried",
+      "eye": [
+        0.0,
+        1.51,
+        -0.62
+      ],
+      "fov": 35.0,
+      "id": "expression-worried",
+      "look": [
+        0.0,
+        1.49,
+        -0.025
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.904238283634186,
+        "player_time_seconds": 0.0,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.0,
+      "id": "walk-00",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.906950950622559,
+        "player_time_seconds": 0.0874999985098839,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.125,
+      "id": "walk-01",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.907648384571075,
+        "player_time_seconds": 0.174999997019768,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.25,
+      "id": "walk-02",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.90699028968811,
+        "player_time_seconds": 0.262499995529652,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.375,
+      "id": "walk-03",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.904834449291229,
+        "player_time_seconds": 0.349999994039536,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.5,
+      "id": "walk-04",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.906946122646332,
+        "player_time_seconds": 0.437499992549419,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.625,
+      "id": "walk-05",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.907278597354889,
+        "player_time_seconds": 0.524999991059303,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.75,
+      "id": "walk-06",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Walk",
+        "assigned_clip": "Walk",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.906642854213715,
+        "player_time_seconds": 0.612499989569187,
+        "requested_clip": "Walk",
+        "variant": "v20"
+      },
+      "clip": "Walk",
+      "expression": "normal",
+      "eye": [
+        -2.8,
+        0.95,
+        0.0
+      ],
+      "fov": 40.0,
+      "gait": 0.875,
+      "id": "walk-07",
+      "look": [
+        0.0,
+        0.86,
+        0.0
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "SitDown",
+        "assigned_clip": "SitDown",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.0,
+        "requested_clip": "SitDown",
+        "variant": "v20"
+      },
+      "clip": "SitDown",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "sitdown-00",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "SitDown",
+        "assigned_clip": "SitDown",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.878177523612976,
+        "player_time_seconds": 0.266666674613953,
+        "requested_clip": "SitDown",
+        "variant": "v20"
+      },
+      "clip": "SitDown",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "sitdown-01",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.266666674613953
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "SitDown",
+        "assigned_clip": "SitDown",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.792186379432678,
+        "player_time_seconds": 0.533333349227905,
+        "requested_clip": "SitDown",
+        "variant": "v20"
+      },
+      "clip": "SitDown",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "sitdown-02",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.533333349227905
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "SitDown",
+        "assigned_clip": "SitDown",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.689551830291748,
+        "player_time_seconds": 0.800000023841858,
+        "requested_clip": "SitDown",
+        "variant": "v20"
+      },
+      "clip": "SitDown",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "sitdown-03",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.800000023841858
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "SitDown",
+        "assigned_clip": "SitDown",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.603560745716095,
+        "player_time_seconds": 1.06666669845581,
+        "requested_clip": "SitDown",
+        "variant": "v20"
+      },
+      "clip": "SitDown",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "sitdown-04",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 1.06666669845581
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "",
+        "assigned_clip": "SitDown",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.567499995231628,
+        "player_time_seconds": 1.33333337306976,
+        "requested_clip": "SitDown",
+        "variant": "v20"
+      },
+      "clip": "SitDown",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "sitdown-05",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 1.33333337306976
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "StandUp",
+        "assigned_clip": "StandUp",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.567499995231628,
+        "player_time_seconds": 0.0,
+        "requested_clip": "StandUp",
+        "variant": "v20"
+      },
+      "clip": "StandUp",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "standup-00",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "StandUp",
+        "assigned_clip": "StandUp",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.603560745716095,
+        "player_time_seconds": 0.266666674613953,
+        "requested_clip": "StandUp",
+        "variant": "v20"
+      },
+      "clip": "StandUp",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "standup-01",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.266666674613953
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "StandUp",
+        "assigned_clip": "StandUp",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.689551830291748,
+        "player_time_seconds": 0.533333349227905,
+        "requested_clip": "StandUp",
+        "variant": "v20"
+      },
+      "clip": "StandUp",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "standup-02",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.533333349227905
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "StandUp",
+        "assigned_clip": "StandUp",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.792186379432678,
+        "player_time_seconds": 0.800000023841858,
+        "requested_clip": "StandUp",
+        "variant": "v20"
+      },
+      "clip": "StandUp",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "standup-03",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.800000023841858
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "StandUp",
+        "assigned_clip": "StandUp",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.878177523612976,
+        "player_time_seconds": 1.06666669845581,
+        "requested_clip": "StandUp",
+        "variant": "v20"
+      },
+      "clip": "StandUp",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "standup-04",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 1.06666669845581
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "",
+        "assigned_clip": "StandUp",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 1.33333337306976,
+        "requested_clip": "StandUp",
+        "variant": "v20"
+      },
+      "clip": "StandUp",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "standup-05",
+      "look": [
+        0,
+        0.8,
+        0.25
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 1.33333337306976
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Stop",
+        "assigned_clip": "Stop",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "Stop",
+        "variant": "v20"
+      },
+      "clip": "Stop",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "motion-stop",
+      "look": [
+        0,
+        0.86,
+        0.1
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "TurnLeft",
+        "assigned_clip": "TurnLeft",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.3,
+        "requested_clip": "TurnLeft",
+        "variant": "v20"
+      },
+      "clip": "TurnLeft",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "motion-turnleft",
+      "look": [
+        0,
+        0.86,
+        0.1
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.3
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "Browse",
+        "assigned_clip": "Browse",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 2.0,
+        "requested_clip": "Browse",
+        "variant": "v20"
+      },
+      "clip": "Browse",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "motion-browse",
+      "look": [
+        0,
+        0.86,
+        0.1
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "animation_state": {
+        "actual_player_clip": "SitIdle",
+        "assigned_clip": "SitIdle",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.567499995231628,
+        "player_time_seconds": 0.7,
+        "requested_clip": "SitIdle",
+        "variant": "v20"
+      },
+      "clip": "SitIdle",
+      "expression": "normal",
+      "eye": [
+        -2.3,
+        1.0,
+        -1.8
+      ],
+      "fov": 40.0,
+      "id": "motion-sitidle",
+      "look": [
+        0,
+        0.86,
+        0.1
+      ],
+      "method": "Deterministic pose sampling with AnimationPlayer.stop/play(blend0)/seek/advance0, not a human playtest. Walk frames are in-place studio animation samples; actual moving capsule tested separately.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "time": 0.7
+    }
+  ],
+  "model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835"
+}

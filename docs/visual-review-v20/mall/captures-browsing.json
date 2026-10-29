@@ -1,0 +1,45 @@
+{
+  "shots": [
+    {
+      "actor_id": "V18-A-01",
+      "actual_state": {
+        "actual_player_clip": "Browse",
+        "assigned_clip": "Browse",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.914238274097443,
+        "player_time_seconds": 0.933333333333333,
+        "requested_clip": "Browse",
+        "variant": "v20"
+      },
+      "eye": [
+        396.790466308594,
+        1.40108788013458,
+        -53.7790298461914
+      ],
+      "fov": 43.0,
+      "id": "mall-browsing",
+      "location": "A館1F",
+      "look": [
+        394.232055664062,
+        1.00108790397644,
+        -54.9891548156738
+      ],
+      "position": [
+        394.232055664062,
+        0.00108793098479509,
+        -54.9891548156738
+      ],
+      "real_Godot_Viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "snapshot_method": "Replay of actual automatic physics state; browsing uses documented temporary existing bookshelf route. Not human operation.",
+      "source_snapshot": "world-browsing.json"
+    }
+  ],
+  "human_playtest": false,
+  "final_wardrobe_source_weights": true,
+  "model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835"
+}

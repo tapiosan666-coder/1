@@ -1,0 +1,45 @@
+{
+  "passed": {
+    "character": 41,
+    "controls": 12,
+    "viewer": 11
+  },
+  "floor_unsupported_samples": 0,
+  "capsule_overlap_samples": 0,
+  "capsule_queries": 1935,
+  "crowd_simulated_seconds": 90,
+  "human_operation_tested": false,
+  "Windows_GPU_tested": false,
+  "144FPS_verified": false,
+  "target_Sophie2_quality_met": false,
+  "unresolved": [
+    "Shoulder/sleeve deformation and contact polish",
+    "Hair secondary animation and authored strands",
+    "Cloth folds and corrective shapes",
+    "Sole/hand contact and turn-animation polish",
+    "F6 exit resource retained warning"
+  ],
+  "protected_files_byte_identical": 1135,
+  "performance_conditions": [
+    {
+      "condition": "none",
+      "median_frame_ms": 4837.9535,
+      "visible_NPC_count": 0
+    },
+    {
+      "condition": "v19_reference_1",
+      "median_frame_ms": 4816.9325,
+      "visible_NPC_count": 1
+    },
+    {
+      "condition": "v20_reference_1",
+      "median_frame_ms": 4451.4235,
+      "visible_NPC_count": 1
+    },
+    {
+      "condition": "v20_43_moving",
+      "median_frame_ms": 5002.4005,
+      "visible_NPC_count": 43
+    }
+  ]
+}

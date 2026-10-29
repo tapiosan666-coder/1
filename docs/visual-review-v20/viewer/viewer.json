@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "actual_clip": "Idle",
+      "id": "viewer-Idle",
+      "pass": true
+    },
+    {
+      "actual_clip": "Walk",
+      "id": "viewer-Walk",
+      "pass": true
+    },
+    {
+      "actual_clip": "Stop",
+      "id": "viewer-Stop",
+      "pass": true
+    },
+    {
+      "actual_clip": "TurnLeft",
+      "id": "viewer-TurnLeft",
+      "pass": true
+    },
+    {
+      "actual_clip": "TurnRight",
+      "id": "viewer-TurnRight",
+      "pass": true
+    },
+    {
+      "actual_clip": "SitDown",
+      "id": "viewer-SitDown",
+      "pass": true
+    },
+    {
+      "actual_clip": "SitIdle",
+      "id": "viewer-SitIdle",
+      "pass": true
+    },
+    {
+      "actual_clip": "StandUp",
+      "id": "viewer-StandUp",
+      "pass": true
+    },
+    {
+      "actual_clip": "Browse",
+      "id": "viewer-Browse",
+      "pass": true
+    },
+    {
+      "id": "paused-v19-comparison",
+      "pass": true
+    },
+    {
+      "id": "UI-fits-1920x1080",
+      "panel_size": [
+        175.0,
+        677.0
+      ],
+      "pass": true
+    }
+  ],
+  "human_playtest": false
+}

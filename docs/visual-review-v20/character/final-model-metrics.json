@@ -1,0 +1,82 @@
+{
+  "triangles": 38908,
+  "bones": 54,
+  "mesh_objects": 12,
+  "material_definitions": 15,
+  "clips": [
+    "Browse",
+    "Idle",
+    "SitDown",
+    "SitIdle",
+    "StandUp",
+    "Stop",
+    "TurnLeft",
+    "TurnRight",
+    "Walk"
+  ],
+  "meshes": [
+    {
+      "mesh": "Body.001",
+      "triangles": 6412,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "CardiganFastening",
+      "triangles": 156,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "CardiganFastening.001",
+      "triangles": 156,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "CardiganFastening.002",
+      "triangles": 156,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "CardiganFastening.003",
+      "triangles": 156,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "Body.005",
+      "triangles": 712,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "Face",
+      "triangles": 7056,
+      "face_morphs": 57
+    },
+    {
+      "mesh": "Hair",
+      "triangles": 16600,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "Body.006",
+      "triangles": 1420,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "Body.003",
+      "triangles": 2616,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "Body.004",
+      "triangles": 896,
+      "face_morphs": 0
+    },
+    {
+      "mesh": "Body.002",
+      "triangles": 2572,
+      "face_morphs": 0
+    }
+  ],
+  "GLB_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+  "outline_pass_extra_geometry": true,
+  "quality_goal_met": false
+}
