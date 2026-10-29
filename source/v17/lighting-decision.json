@@ -1,0 +1,6 @@
+{
+  "default": "Direct daylight, existing designed local lights, added shop display lights and SSIL",
+  "VoxelGI_enabled": false,
+  "reason": "Native Viewport review revealed hard rectangular indirect-light volume boundaries. Rejected rather than passed as final quality.",
+  "experimental_bakes_are_not_runtime_dependencies": true
+}
