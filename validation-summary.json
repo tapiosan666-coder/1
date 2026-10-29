@@ -1,0 +1,170 @@
+{
+  "version": "v21",
+  "Godot": "4.6.3",
+  "stores_audited": 480,
+  "stores_refitted": 12,
+  "stores_not_refitted": 468,
+  "all480_art_complete": false,
+  "representative_art_complete": false,
+  "human_playtest": false,
+  "Windows_GPU_tested": false,
+  "144FPS_verified": false,
+  "existing_main_game_integrated": false,
+  "checks": {
+    "normal": {
+      "pipeline_complete": true,
+      "support_checks": 3545,
+      "support_failed": 0,
+      "swept_routes": 83,
+      "swept_routes_failed": 0,
+      "sign_boards": 43,
+      "sign_rows": 160,
+      "suppressed_unverified_rows": 2,
+      "omitted_boards": 0
+    },
+    "C": {
+      "pipeline_complete": true,
+      "support_checks": 3545,
+      "support_failed": 0,
+      "swept_routes": 83,
+      "swept_routes_failed": 0,
+      "sign_boards": 42,
+      "sign_rows": 154,
+      "suppressed_unverified_rows": 6,
+      "omitted_boards": 1
+    },
+    "ES": {
+      "pipeline_complete": true,
+      "support_checks": 3545,
+      "support_failed": 0,
+      "swept_routes": 83,
+      "swept_routes_failed": 0,
+      "sign_boards": 45,
+      "sign_rows": 164,
+      "suppressed_unverified_rows": 2,
+      "omitted_boards": 0
+    }
+  },
+  "actual_automatic_CharacterBody_walk": {
+    "routes": 12,
+    "passed": 12,
+    "human_playtest": false
+  },
+  "unchanged43NPC_90seconds": {
+    "actors": 43,
+    "floor_support_issues": 0,
+    "body_overlap_issues": 0,
+    "body_overlap_probes": 1935,
+    "all_walking_progress": true,
+    "seat_cycle_completed": true,
+    "browse_cycle_completed": true
+  },
+  "input_events": {
+    "checks": 12,
+    "passed": 12
+  },
+  "plan_geometry": {
+    "checks": 346,
+    "failed": 0,
+    "omitted_product_geometry": 0
+  },
+  "performance_reference_observations": [
+    {
+      "version": "v20",
+      "camera": "A1F-007-entry",
+      "NPC": 0,
+      "median_frame_ms": 4726.214,
+      "median_draw_calls": 1771.0,
+      "median_primitives": 2282327.0,
+      "static_memory_bytes": 819723251.0,
+      "video_memory_bytes": 1564686416.0,
+      "simulation_seconds": 0.0
+    },
+    {
+      "version": "v20",
+      "camera": "A1F-007-entry",
+      "NPC": 43,
+      "median_frame_ms": 4535.084,
+      "median_draw_calls": 1801.0,
+      "median_primitives": 2343753.0,
+      "static_memory_bytes": 820591219.0,
+      "video_memory_bytes": 1564686416.0,
+      "simulation_seconds": 0.399999999999979
+    },
+    {
+      "version": "v20",
+      "camera": "NAV-B-1F",
+      "NPC": 0,
+      "median_frame_ms": 3110.148,
+      "median_draw_calls": 1673.0,
+      "median_primitives": 1971473.0,
+      "static_memory_bytes": 823603063.0,
+      "video_memory_bytes": 1564686416.0,
+      "simulation_seconds": 0.0
+    },
+    {
+      "version": "v20",
+      "camera": "NAV-B-1F",
+      "NPC": 43,
+      "median_frame_ms": 2975.619,
+      "median_draw_calls": 1677.0,
+      "median_primitives": 1971845.0,
+      "static_memory_bytes": 823637031.0,
+      "video_memory_bytes": 1564686416.0,
+      "simulation_seconds": 0.399999999999979
+    },
+    {
+      "version": "v21",
+      "camera": "A1F-007-entry",
+      "NPC": 0,
+      "median_frame_ms": 3769.719,
+      "median_draw_calls": 1785.0,
+      "median_primitives": 2753467.0,
+      "static_memory_bytes": 856769510.0,
+      "video_memory_bytes": 1555300400.0,
+      "simulation_seconds": 0.0
+    },
+    {
+      "version": "v21",
+      "camera": "A1F-007-entry",
+      "NPC": 43,
+      "median_frame_ms": 3879.663,
+      "median_draw_calls": 1815.0,
+      "median_primitives": 2814893.0,
+      "static_memory_bytes": 856958526.0,
+      "video_memory_bytes": 1555300400.0,
+      "simulation_seconds": 0.399999999999979
+    },
+    {
+      "version": "v21",
+      "camera": "NAV-B-1F",
+      "NPC": 0,
+      "median_frame_ms": 2220.042,
+      "median_draw_calls": 1675.0,
+      "median_primitives": 1831141.0,
+      "static_memory_bytes": 860017906.0,
+      "video_memory_bytes": 1555300400.0,
+      "simulation_seconds": 0.0
+    },
+    {
+      "version": "v21",
+      "camera": "NAV-B-1F",
+      "NPC": 43,
+      "median_frame_ms": 2285.333,
+      "median_draw_calls": 1679.0,
+      "median_primitives": 1831513.0,
+      "static_memory_bytes": 860028262.0,
+      "video_memory_bytes": 1555300400.0,
+      "simulation_seconds": 0.399999999999979
+    }
+  ],
+  "final_archive_fresh_folder_verified": true,
+  "same_camera_pairs": 34,
+  "complete_runtime_assets_included": true,
+  "canonical_entry_straight_probes": {
+    "checked": 12,
+    "passed": 11,
+    "scope": "Separate public-to-sales straight normal probes; does not assert all public-to-store paths manually walked"
+  },
+  "Godot_zip_sha256": "dd2499c800bab82a0127b2b3ca38f74e5f47c2685abd02cc7009f6e5491fc693"
+}

@@ -1,0 +1,176 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "category": "electronics",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        397.663774110009,
+        1.65,
+        80.9764270009441
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "A1F-040-entry",
+      "look": [
+        387.309424367091,
+        1.0,
+        91.6249456953017
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "A1F-040",
+      "title": "A館 1F / electronics / entry",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "beauty",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -59.5935279726775,
+        1.65,
+        1.43297142599484
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "B1-030-entry",
+      "look": [
+        -55.1865802553512,
+        1.0,
+        -11.8525913129897
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B1-030",
+      "title": "B館 1F / beauty / entry",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "mobile",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        47.2387667904136,
+        1.65,
+        30.3554872724558
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "B1-N03-entry",
+      "look": [
+        35.450200012263,
+        1.0,
+        36.6615654515866
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B1-N03",
+      "title": "B館 1F / mobile / entry",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "家電",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        383.614491364664,
+        1.65,
+        95.6783879021765
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 60.0,
+      "human_playtest": false,
+      "id": "A1F-040-detail-large_appliance",
+      "look": [
+        388.889235791826,
+        1.2,
+        105.31631149744
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Player-height camera on original protected store aisle. Same view in v20 and v21.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "A1F-040",
+      "title": "A1F-040 / 家電 / large_appliance",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "美容・ケア",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -60.3442968613951,
+        1.65,
+        -4.98632282457731
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 60.0,
+      "human_playtest": false,
+      "id": "B1-030-detail-central_department",
+      "look": [
+        -58.3304271844273,
+        1.2,
+        -8.15962108471466
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Player-height camera on original protected store aisle. Same view in v20 and v21.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B1-030",
+      "title": "B1-030 / 美容・ケア / central_department",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "B"
+    }
+  ]
+}

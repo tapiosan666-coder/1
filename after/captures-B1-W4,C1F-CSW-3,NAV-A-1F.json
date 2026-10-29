@@ -1,0 +1,173 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "category": "restaurant",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -174.402691648186,
+        1.65,
+        14.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "B1-W4-entry",
+      "look": [
+        -182.35027027027,
+        1.0,
+        25.8393891891892
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B1-W4",
+      "title": "B館 1F / restaurant / entry",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "cafe",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -90.7371053192119,
+        1.65,
+        -214.034535936347
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "C1F-CSW-3-entry",
+      "look": [
+        -91.8804906360743,
+        1.0,
+        -200.633964024151
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "C1F-CSW-3",
+      "title": "C館 1F / cafe / entry",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "ベーカリー・カフェ",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -92.5484746419977,
+        1.65,
+        -211.415100658187
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 60.0,
+      "human_playtest": false,
+      "id": "C1F-CSW-3-detail-checkout",
+      "look": [
+        -100.293740748489,
+        1.2,
+        -210.370407566886
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Player-height camera on original protected store aisle. Same view in v20 and v21.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "C1F-CSW-3",
+      "title": "C1F-CSW-3 / ベーカリー・カフェ / checkout",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "レストラン",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -180.87323194393,
+        1.65,
+        22.5590561993683
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 60.0,
+      "human_playtest": false,
+      "id": "B1-W4-detail-kitchen",
+      "look": [
+        -175.25,
+        1.2,
+        31.65
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Player-height camera on original protected store aisle. Same view in v20 and v21.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B1-W4",
+      "title": "B1-W4 / レストラン / kitchen",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        311.07,
+        1.65,
+        -63.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-A-1F",
+      "look": [
+        311.0,
+        3.15,
+        -59.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館 1F / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "A"
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "failed": [],
+  "human_playtest": false,
+  "method": "Continuous .31m radius /1.80m capsule casts plus .65m floor samples; separate from actual CharacterBody walking.",
+  "routes": [
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-AB1-003-checkout-1",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "AB1-003"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-AB1-003-central_department-7",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "AB1-003"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-AB1-003-central_department-8",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "AB1-003"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-AB1-003-central_department-9",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "AB1-003"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-AB1-003-central_department-10",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "AB1-003"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-005-checkout-11",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "A1F-005"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-005-central_department-18",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-005"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-005-central_department-19",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-005"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-005-central_department-20",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-005"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-005-central_department-21",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-005"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-007-checkout-24",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "A1F-007"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-007-central_department-39",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-007"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-007-central_department-40",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-007"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-007-central_department-41",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-007"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-checkout-42",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-central_department-50",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-central_department-51",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-central_department-52",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-central_department-53",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-central_department-54",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-large_appliance-55",
+      "pass": true,
+      "role": "large_appliance",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-large_appliance-56",
+      "pass": true,
+      "role": "large_appliance",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-large_appliance-57",
+      "pass": true,
+      "role": "large_appliance",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-large_appliance-80",
+      "pass": true,
+      "role": "large_appliance",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-large_appliance-81",
+      "pass": true,
+      "role": "large_appliance",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-large_appliance-82",
+      "pass": true,
+      "role": "large_appliance",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A1F-040-large_appliance-83",
+      "pass": true,
+      "role": "large_appliance",
+      "store_id": "A1F-040"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A3F-012-checkout-84",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "A3F-012"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-A3F-012-photobooth-91",
+      "pass": true,
+      "role": "photobooth",
+      "store_id": "A3F-012"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-checkout-92",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-central_department-102",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-central_department-103",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-central_department-104",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-central_department-105",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-central_department-106",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-central_department-107",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-checkout-141",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-BB1-MARKET-checkout-142",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "BB1-MARKET"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-037-checkout-143",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "B1-037"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-037-fitting-145",
+      "pass": true,
+      "role": "fitting",
+      "store_id": "B1-037"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-037-central_department-149",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-037"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-037-central_department-150",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-037"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-030-checkout-151",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "B1-030"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-030-central_department-157",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-030"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-030-central_department-158",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-030"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-030-central_department-159",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-030"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-030-central_department-160",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-030"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-N03-central_department-169",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-N03"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-N03-central_department-170",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-N03"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-N03-central_department-171",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-N03"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-N03-central_department-172",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "B1-N03"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-N03-checkout-173",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "B1-N03"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-checkout-174",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-customer_table-177",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-customer_table-180",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-customer_table-183",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-customer_table-185",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-customer_table-187",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-seating-1-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-seating-2-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-seating-3-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-seating-4-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-seating-5-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-seating-6-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-B1-W4-seating-7-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "B1-W4"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CW-1-checkout-189",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "C1F-CW-1"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CW-1-fitting-191",
+      "pass": true,
+      "role": "fitting",
+      "store_id": "C1F-CW-1"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CW-1-central_department-200",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "C1F-CW-1"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CW-1-central_department-201",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "C1F-CW-1"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CW-1-central_department-202",
+      "pass": true,
+      "role": "central_department",
+      "store_id": "C1F-CW-1"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-checkout-203",
+      "pass": true,
+      "role": "checkout",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-customer_table-206",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-customer_table-209",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-customer_table-212",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-customer_table-215",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-customer_table-216",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-seating-1-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-seating-2-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-seating-3-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-seating-4-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-seating-6-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-seating-7-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    },
+    {
+      "capsule_sweep": true,
+      "contacts": [],
+      "floor_support": true,
+      "id": "V21-C1F-CSW-3-seating-8-0",
+      "pass": true,
+      "role": "customer_table",
+      "store_id": "C1F-CSW-3"
+    }
+  ]
+}

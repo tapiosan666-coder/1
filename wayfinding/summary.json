@@ -1,0 +1,353 @@
+{
+  "variants": {
+    "normal": {
+      "boards": 43,
+      "displayed_rows": 160,
+      "suppressed_rows": [
+        {
+          "actual_path": [
+            [
+              96.0,
+              16.4,
+              -366.0
+            ],
+            [
+              94.5,
+              16.4,
+              -360.0
+            ],
+            [
+              103.5,
+              16.4,
+              -354.0
+            ],
+            [
+              106.5,
+              16.4,
+              -354.0
+            ],
+            [
+              109.5,
+              16.4,
+              -363.0
+            ]
+          ],
+          "back_arrow": "←",
+          "distance_m": 32.2,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "→",
+          "kind": "WC",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-normal-C-RF-NAV-3",
+          "target": "K-CNE-AWC",
+          "variant": "normal"
+        },
+        {
+          "actual_path": [
+            [
+              96.0,
+              16.4,
+              -366.0
+            ],
+            [
+              94.5,
+              16.4,
+              -360.0
+            ],
+            [
+              102.0,
+              16.4,
+              -354.0
+            ]
+          ],
+          "back_arrow": "←",
+          "distance_m": 17.5,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "→",
+          "kind": "EV",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-normal-C-RF-NAV-3",
+          "target": "C-K-CNE",
+          "variant": "normal"
+        }
+      ],
+      "omitted_boards": [],
+      "source_mismatches": []
+    },
+    "C": {
+      "boards": 42,
+      "displayed_rows": 154,
+      "suppressed_rows": [
+        {
+          "actual_path": [
+            [
+              -126.0,
+              10.875,
+              -216.0
+            ],
+            [
+              -118.5,
+              10.875,
+              -205.5
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 13.6,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "WC",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-C-C-3F-NAV-1",
+          "target": "K-CSW-AWC",
+          "variant": "C"
+        },
+        {
+          "actual_path": [
+            [
+              0.0,
+              10.875,
+              -174.0
+            ],
+            [
+              10.5,
+              10.875,
+              -183.0
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 14.2,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "WC",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-C-C-3F-NAV-2",
+          "target": "K-CSE-AWC",
+          "variant": "C"
+        },
+        {
+          "actual_path": [
+            [
+              0.0,
+              10.875,
+              -174.0
+            ],
+            [
+              10.5,
+              10.875,
+              -193.5
+            ],
+            [
+              13.5,
+              10.875,
+              -193.5
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 26.8,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "EV",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-C-C-3F-NAV-2",
+          "target": "C-K-CSE",
+          "variant": "C"
+        },
+        {
+          "actual_path": [
+            [
+              0.0,
+              10.875,
+              -174.0
+            ],
+            [
+              10.5,
+              10.875,
+              -193.5
+            ],
+            [
+              19.5,
+              10.875,
+              -193.5
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 32.8,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "ST",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-C-C-3F-NAV-2",
+          "target": "K-CSE-ST",
+          "variant": "C"
+        },
+        {
+          "actual_path": [
+            [
+              0.0,
+              10.875,
+              -174.0
+            ],
+            [
+              10.5,
+              10.875,
+              -193.5
+            ],
+            [
+              21.0,
+              10.875,
+              -195.0
+            ],
+            [
+              22.5,
+              10.875,
+              -196.5
+            ],
+            [
+              88.5,
+              10.875,
+              -196.5
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 103.1,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "DINING",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-C-C-3F-NAV-2",
+          "target": "C3F-CSE-1",
+          "variant": "C"
+        },
+        {
+          "actual_path": [
+            [
+              -126.0,
+              16.4,
+              -210.0
+            ],
+            [
+              -118.5,
+              16.4,
+              -205.5
+            ]
+          ],
+          "back_arrow": "↑",
+          "distance_m": 9.4,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↓",
+          "kind": "WC",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-C-C-RF-NAV-1",
+          "target": "K-CSW-AWC",
+          "variant": "C"
+        }
+      ],
+      "omitted_boards": [
+        {
+          "id": "V21-C-C-3F-NAV-2",
+          "reason": "No physically validated destination route"
+        }
+      ],
+      "source_mismatches": []
+    },
+    "ES": {
+      "boards": 45,
+      "displayed_rows": 164,
+      "suppressed_rows": [
+        {
+          "actual_path": [
+            [
+              96.0,
+              16.4,
+              -366.0
+            ],
+            [
+              94.5,
+              16.4,
+              -360.0
+            ],
+            [
+              103.5,
+              16.4,
+              -354.0
+            ],
+            [
+              106.5,
+              16.4,
+              -354.0
+            ],
+            [
+              109.5,
+              16.4,
+              -363.0
+            ]
+          ],
+          "back_arrow": "←",
+          "distance_m": 32.2,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "→",
+          "kind": "WC",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-normal-C-RF-NAV-3",
+          "target": "K-CNE-AWC",
+          "variant": "ES"
+        },
+        {
+          "actual_path": [
+            [
+              96.0,
+              16.4,
+              -366.0
+            ],
+            [
+              94.5,
+              16.4,
+              -360.0
+            ],
+            [
+              102.0,
+              16.4,
+              -354.0
+            ]
+          ],
+          "back_arrow": "←",
+          "distance_m": 17.5,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "→",
+          "kind": "EV",
+          "pass": false,
+          "reason": "Physical capsule blocked",
+          "replanned_against_live_collision": false,
+          "sign": "V21-normal-C-RF-NAV-3",
+          "target": "C-K-CNE",
+          "variant": "ES"
+        }
+      ],
+      "omitted_boards": [],
+      "source_mismatches": []
+    }
+  },
+  "unsupported_facilities": [
+    "授乳室・ベビールーム：利用できる部屋・入口を確認できず、方向サイン未設置",
+    "出入口：追加来客扉の稼働メタデータに未実装表示が残るため、新しい出口矢印は未整備。既存表示は維持"
+  ],
+  "note": "New EXIT/baby-room guidance not fabricated. Routes terminate at approaches, not a claim that every door was manually operated. After architecture changes, source SHA mismatch suppresses arrows until routes regenerated."
+}

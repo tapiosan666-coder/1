@@ -1,0 +1,156 @@
+{
+  "144FPS_verified": false,
+  "VSync": 1,
+  "Windows_GPU": false,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "caveat": "Linux software Vulkan,3 sampled frames/case after2 warmup. Global actors43 does not mean all43 visible in camera. Moving actors advance real physics. CPU/cache order and limited samples affect times; total process memory includes cached resources. Not a Windows GPU benchmark.",
+  "human_playtest": false,
+  "max_fps": 144,
+  "measurements": [
+    {
+      "NPC_enabled": false,
+      "camera_id": "A1F-007-entry",
+      "global_NPC_count": 0,
+      "samples": [
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1771.0,
+          "frame_ms": 8823.74,
+          "primitives": 2282327.0,
+          "static_memory": 819714847.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1771.0,
+          "frame_ms": 4726.214,
+          "primitives": 2282327.0,
+          "static_memory": 819719067.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1771.0,
+          "frame_ms": 4375.009,
+          "primitives": 2282327.0,
+          "static_memory": 819723251.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        }
+      ],
+      "simulation_seconds_during_samples": 0.0
+    },
+    {
+      "NPC_enabled": true,
+      "camera_id": "A1F-007-entry",
+      "global_NPC_count": 43,
+      "samples": [
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1801.0,
+          "frame_ms": 8819.431,
+          "primitives": 2343753.0,
+          "static_memory": 820585667.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1801.0,
+          "frame_ms": 4307.45,
+          "primitives": 2343753.0,
+          "static_memory": 820586007.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1801.0,
+          "frame_ms": 4535.084,
+          "primitives": 2343753.0,
+          "static_memory": 820591219.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        }
+      ],
+      "simulation_seconds_during_samples": 0.399999999999979
+    },
+    {
+      "NPC_enabled": false,
+      "camera_id": "NAV-B-1F",
+      "global_NPC_count": 0,
+      "samples": [
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1673.0,
+          "frame_ms": 5401.593,
+          "primitives": 1971473.0,
+          "static_memory": 823599819.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1673.0,
+          "frame_ms": 3059.42,
+          "primitives": 1971473.0,
+          "static_memory": 823601219.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1673.0,
+          "frame_ms": 3110.148,
+          "primitives": 1971473.0,
+          "static_memory": 823603063.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        }
+      ],
+      "simulation_seconds_during_samples": 0.0
+    },
+    {
+      "NPC_enabled": true,
+      "camera_id": "NAV-B-1F",
+      "global_NPC_count": 43,
+      "samples": [
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1677.0,
+          "frame_ms": 5508.421,
+          "primitives": 1971845.0,
+          "static_memory": 823628503.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1677.0,
+          "frame_ms": 2913.602,
+          "primitives": 1971845.0,
+          "static_memory": 823637123.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        },
+        {
+          "buffer_memory": 382144446.0,
+          "draw_calls": 1677.0,
+          "frame_ms": 2975.619,
+          "primitives": 1971845.0,
+          "static_memory": 823637031.0,
+          "texture_memory": 1068320256.0,
+          "video_memory": 1564686416.0
+        }
+      ],
+      "simulation_seconds_during_samples": 0.399999999999979
+    }
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "steady_state_benchmark": false
+}

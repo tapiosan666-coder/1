@@ -1,0 +1,60 @@
+{
+  "floor_wall_glass_materials_not_selected": true,
+  "orphan_120mm_fixture_proxy_triangles": 476,
+  "replacement_store_ids": [
+    "A1F-003",
+    "AB1-003",
+    "A1F-005",
+    "A1F-007",
+    "A1F-040",
+    "A3F-012",
+    "BB1-MARKET",
+    "B1-037",
+    "B1-030",
+    "B1-N03",
+    "B1-W4",
+    "C1F-CW-1",
+    "C1F-CSW-3"
+  ],
+  "retired_display_triangles": 1340,
+  "retired_fixture_collision_triangles": 5147,
+  "rule": "Explicit old fixture-material classes within selected inset sales and height range. Replaces brittle independently-triangulated centroid equality. Upholstery included; structural plaster/glass/floor classes excluded.",
+  "surfaces": [
+    {
+      "key": "metal@@B1-037",
+      "removed": 36
+    },
+    {
+      "key": "walnut@@B1-037",
+      "removed": 32
+    },
+    {
+      "key": "metal@@B1-W4",
+      "removed": 396
+    },
+    {
+      "key": "oak@@B1-W4",
+      "removed": 216
+    },
+    {
+      "key": "fabric_cream@@B1-W4",
+      "removed": 432
+    },
+    {
+      "key": "oak@@A1F-040",
+      "removed": 100
+    },
+    {
+      "key": "v8_oak@@A1F-007",
+      "removed": 3
+    },
+    {
+      "key": "v8_oak@@C1F-CSW-3",
+      "removed": 5
+    },
+    {
+      "key": "v10_darkstone@@V11-FIXTURE-A1F-003",
+      "removed": 120
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# v21制作原稿
+
+Godotプロジェクトのauthoring内で実行するPython/Blenderスクリプトです。F5起動には実行不要です。既存v20と同じライセンスを保持。
+
+基本モデルv21_models.pyをBlenderで実行→v21_externalize.pyで画像を外部化→v21_layout.py→v21_geometry.py→v21_repair_access.py（不通のサービス配置のみ、対象形状を確認）→再度geometry→v21_book_faceouts.py→v21_enrich_dining.py→geometry。追加客席で狭くなったC館1組はsourceのlocal_clearance_correctionsを参照。これらは段階処理なので同じ追加処理を重複実行しないでください。
+
+専用什器v21_specialty_counters.pyをBlenderで実行→v21_apply_specialty.py。source/v21/model-bounds.jsonとcatalogを更新。人物は生成しません。
+
+案内v21_wayfinding.py→実物理QA→v21_seed_wayfinding.py→v21_sign_visibility.py→実物理QA→v21_review_cameras.py。seedは実物理経路を初期候補にするだけで、実行時の再検査は省略しません。sign_visibilityは既存の描画用の葉を検査します。
+
+rawJSONが.json.zstで収録されている場合はsite_v2_common.raw_json/readで読込可能です。一部の段階用ツールが直接JSONを編集する際は、FYJZヘッダ8バイト以降をZstandard展開して元JSONを復元してください。原本v20へ実行しないでください。
+
+実行環境はBlender4.3.2、Python+numpy/Pillow/Shapely/zstandard、Godot4.6.3。完成美術ではなく、業種別の生成方式を検証する制作原稿です。

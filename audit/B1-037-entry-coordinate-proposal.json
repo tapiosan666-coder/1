@@ -1,0 +1,34 @@
+{
+  "store_id": "B1-037",
+  "status": "NOT_APPLIED_COORDINATE_REVIEW_PROPOSAL",
+  "canonical_entry": [
+    188.304078266765,
+    0.0,
+    10.5028882685596
+  ],
+  "blocked_colliders": [
+    "Collision_wall_chalk"
+  ],
+  "tested_parallel_probe": {
+    "capsule_pass": true,
+    "end_floor_support": true,
+    "offset_along_frontage_m": -0.5,
+    "public_point": [
+      187.011978149414,
+      0.0,
+      10.6460809707642
+    ],
+    "sales_point": [
+      189.315567016602,
+      0.0,
+      11.3195209503174
+    ]
+  },
+  "candidate_entry_midpoint": [
+    188.16377258300798,
+    0.0,
+    10.9828009605408
+  ],
+  "reason": "Current canonical straight connector hits an existing wall near the facade column; one frontage-offset probe passes. An offset probe is not a full opening-width, angled approach, map update or architectural approval. Canonical maps/store-entry data not silently modified.",
+  "human_playtest": false
+}

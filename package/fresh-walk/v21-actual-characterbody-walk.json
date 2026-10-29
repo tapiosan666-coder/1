@@ -1,0 +1,138 @@
+{
+  "human_playtest": false,
+  "method": "Automatic CharacterBody3D with gravity and move_and_slide at fixed60Hz,2m/s. Capsule centre .92m above measured floor, r=.31,h=1.80. One route to a checkout/service area in each redesigned store; distinct from geometric and swept-capsule checks.",
+  "routes": [
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-AB1-003-checkout-1",
+      "simulated_seconds": 3.36666666666667,
+      "store_id": "AB1-003",
+      "ticks": 202
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-A1F-005-checkout-11",
+      "simulated_seconds": 2.43333333333333,
+      "store_id": "A1F-005",
+      "ticks": 146
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-A1F-007-checkout-24",
+      "simulated_seconds": 3.36666666666667,
+      "store_id": "A1F-007",
+      "ticks": 202
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-A1F-040-checkout-42",
+      "simulated_seconds": 5.58333333333333,
+      "store_id": "A1F-040",
+      "ticks": 335
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-A3F-012-checkout-84",
+      "simulated_seconds": 2.95,
+      "store_id": "A3F-012",
+      "ticks": 177
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-BB1-MARKET-checkout-142",
+      "simulated_seconds": 2.01666666666667,
+      "store_id": "BB1-MARKET",
+      "ticks": 121
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-B1-037-checkout-143",
+      "simulated_seconds": 9.78333333333333,
+      "store_id": "B1-037",
+      "ticks": 587
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-B1-030-checkout-151",
+      "simulated_seconds": 4.68333333333333,
+      "store_id": "B1-030",
+      "ticks": 281
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-B1-N03-checkout-173",
+      "simulated_seconds": 3.38333333333333,
+      "store_id": "B1-N03",
+      "ticks": 203
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-B1-W4-checkout-174",
+      "simulated_seconds": 9.3,
+      "store_id": "B1-W4",
+      "ticks": 558
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-C1F-CW-1-checkout-189",
+      "simulated_seconds": 3.78333333333333,
+      "store_id": "C1F-CW-1",
+      "ticks": 227
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "checkout",
+      "route": "V21-C1F-CSW-3-checkout-203",
+      "simulated_seconds": 4.48333333333333,
+      "store_id": "C1F-CSW-3",
+      "ticks": 269
+    }
+  ]
+}

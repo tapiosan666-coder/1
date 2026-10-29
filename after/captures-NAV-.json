@@ -1,0 +1,254 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        311.07,
+        1.65,
+        -63.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-A-1F",
+      "look": [
+        311.0,
+        3.15,
+        -59.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館 1F / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        312.0,
+        18.05,
+        -60.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-A-RF",
+      "look": [
+        308.0,
+        17.9,
+        -60.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館 RF / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -187.083134198433,
+        1.65,
+        -28.2958255355604
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-B-1F",
+      "look": [
+        -189.036626839687,
+        1.5,
+        -31.7863651071121
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館 1F / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -80.4,
+        18.05,
+        60.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-B-RF",
+      "look": [
+        -84.4,
+        17.9,
+        60.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館 RF / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -192.0,
+        7.175,
+        1.27
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "2F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-B-2F",
+      "look": [
+        -192.0,
+        7.025,
+        -1.84
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館 2F / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -192.0,
+        12.525,
+        1.27
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "3F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-B-3F",
+      "look": [
+        -192.0,
+        12.375,
+        -1.84
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館 3F / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -83.230240220756,
+        1.65,
+        -216.463919006598
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-C-1F",
+      "look": [
+        -84.0979620520306,
+        1.5,
+        -212.559170765862
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館 1F / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -115.742550950101,
+        18.05,
+        -375.078738925159
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-C-RF",
+      "look": [
+        -115.470723592277,
+        17.9,
+        -378.052907892573
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館 RF / 誘導・共用景観",
+      "variants": [
+        "normal"
+      ],
+      "wing": "C"
+    }
+  ]
+}

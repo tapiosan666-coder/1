@@ -1,0 +1,441 @@
+{
+  "checks": [
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        384.217254550772,
+        -5.35,
+        -51.8682291936477
+      ],
+      "capsule_sweep": true,
+      "floor": "B1",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        384.420011128905,
+        -5.35,
+        -50.6854824878717
+      ],
+      "sales_point": [
+        384.014497972639,
+        -5.35,
+        -53.0509758994236
+      ],
+      "same_floor_support": true,
+      "store_id": "AB1-003",
+      "wing": "A"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        386.042342190445,
+        0.0,
+        -52.1811013604487
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        386.245098768578,
+        0.0,
+        -50.9983546546727
+      ],
+      "sales_point": [
+        385.839585612312,
+        0.0,
+        -53.3638480662246
+      ],
+      "same_floor_support": true,
+      "store_id": "A1F-005",
+      "wing": "A"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        397.608406883885,
+        0.0,
+        -54.1638553078956
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        397.811163462018,
+        0.0,
+        -52.9811086021197
+      ],
+      "sales_point": [
+        397.405650305752,
+        0.0,
+        -55.3466020136715
+      ],
+      "same_floor_support": true,
+      "store_id": "A1F-007",
+      "wing": "A"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        396.931438383914,
+        0.0,
+        81.6573707462603
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        397.810241255228,
+        0.0,
+        80.8402382518809
+      ],
+      "sales_point": [
+        396.0526355126,
+        0.0,
+        82.4745032406397
+      ],
+      "same_floor_support": true,
+      "store_id": "A1F-040",
+      "wing": "A"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        468.273274189271,
+        10.875,
+        -39.3021137484167
+      ],
+      "capsule_sweep": true,
+      "floor": "3F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        468.287390859432,
+        10.875,
+        -40.5020307120536
+      ],
+      "sales_point": [
+        468.259157519111,
+        10.875,
+        -38.1021967847798
+      ],
+      "same_floor_support": true,
+      "store_id": "A3F-012",
+      "wing": "A"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        -282.0,
+        -5.35,
+        -9.0
+      ],
+      "capsule_sweep": true,
+      "floor": "B1",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        -280.8,
+        -5.35,
+        -9.0
+      ],
+      "sales_point": [
+        -283.2,
+        -5.35,
+        -9.0
+      ],
+      "same_floor_support": true,
+      "store_id": "BB1-MARKET",
+      "wing": "B"
+    },
+    {
+      "blocked_colliders": [
+        "Collision_wall_chalk"
+      ],
+      "canonical_entry": [
+        188.304078266765,
+        0.0,
+        10.5028882685596
+      ],
+      "capsule_sweep": false,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [
+        {
+          "capsule_pass": false,
+          "end_floor_support": true,
+          "offset_along_frontage_m": -2.0,
+          "public_point": [
+            186.591079711914,
+            0.0,
+            12.0858182907104
+          ],
+          "sales_point": [
+            188.894668579102,
+            0.0,
+            12.7592582702637
+          ]
+        },
+        {
+          "capsule_pass": false,
+          "end_floor_support": true,
+          "offset_along_frontage_m": -1.5,
+          "public_point": [
+            186.731384277344,
+            0.0,
+            11.6059055328369
+          ],
+          "sales_point": [
+            189.034973144531,
+            0.0,
+            12.2793464660645
+          ]
+        },
+        {
+          "capsule_pass": false,
+          "end_floor_support": true,
+          "offset_along_frontage_m": -1.0,
+          "public_point": [
+            186.871688842773,
+            0.0,
+            11.1259937286377
+          ],
+          "sales_point": [
+            189.175277709961,
+            0.0,
+            11.7994337081909
+          ]
+        },
+        {
+          "capsule_pass": true,
+          "end_floor_support": true,
+          "offset_along_frontage_m": -0.5,
+          "public_point": [
+            187.011978149414,
+            0.0,
+            10.6460809707642
+          ],
+          "sales_point": [
+            189.315567016602,
+            0.0,
+            11.3195209503174
+          ]
+        },
+        {
+          "capsule_pass": false,
+          "end_floor_support": true,
+          "offset_along_frontage_m": 0.5,
+          "public_point": [
+            187.292587280273,
+            0.0,
+            9.68625545501709
+          ],
+          "sales_point": [
+            189.596176147461,
+            0.0,
+            10.3596954345703
+          ]
+        },
+        {
+          "capsule_pass": false,
+          "end_floor_support": true,
+          "offset_along_frontage_m": 1.0,
+          "public_point": [
+            187.432876586914,
+            0.0,
+            9.20634269714355
+          ],
+          "sales_point": [
+            189.736465454102,
+            0.0,
+            9.87978267669678
+          ]
+        },
+        {
+          "capsule_pass": false,
+          "end_floor_support": true,
+          "offset_along_frontage_m": 1.5,
+          "public_point": [
+            187.573181152344,
+            0.0,
+            8.72643089294434
+          ],
+          "sales_point": [
+            189.876770019531,
+            0.0,
+            9.39986991882324
+          ]
+        },
+        {
+          "capsule_pass": false,
+          "end_floor_support": true,
+          "offset_along_frontage_m": 2.0,
+          "public_point": [
+            187.713485717773,
+            0.0,
+            8.2465181350708
+          ],
+          "sales_point": [
+            190.017074584961,
+            0.0,
+            8.91995811462402
+          ]
+        }
+      ],
+      "probe_pass": false,
+      "public_point": [
+        187.152288590418,
+        0.0,
+        10.1661679967287
+      ],
+      "sales_point": [
+        189.455867943111,
+        0.0,
+        10.8396085403905
+      ],
+      "same_floor_support": true,
+      "store_id": "B1-037",
+      "wing": "B"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        -59.8360184577482,
+        0.0,
+        0.462817641973878
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        -59.5450298756634,
+        0.0,
+        1.62700218279903
+      ],
+      "sales_point": [
+        -60.127007039833,
+        0.0,
+        -0.701366898851275
+      ],
+      "same_floor_support": true,
+      "store_id": "B1-030",
+      "wing": "B"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        46.8074710982239,
+        0.0,
+        31.2576979052344
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        47.3250259288515,
+        0.0,
+        30.1750451459001
+      ],
+      "sales_point": [
+        46.2899162675963,
+        0.0,
+        32.3403506645686
+      ],
+      "same_floor_support": true,
+      "store_id": "B1-N03",
+      "wing": "B"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        -174.402691648186,
+        0.0,
+        15.0
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        -174.402691648186,
+        0.0,
+        13.8
+      ],
+      "sales_point": [
+        -174.402691648186,
+        0.0,
+        16.2
+      ],
+      "same_floor_support": true,
+      "store_id": "B1-W4",
+      "wing": "B"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        -159.001346052236,
+        0.0,
+        -326.314591400767
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        -157.829921580016,
+        0.0,
+        -326.57490795015
+      ],
+      "sales_point": [
+        -160.172770524457,
+        0.0,
+        -326.054274851385
+      ],
+      "same_floor_support": true,
+      "store_id": "C1F-CW-1",
+      "wing": "C"
+    },
+    {
+      "blocked_colliders": [],
+      "canonical_entry": [
+        -90.9540357770305,
+        0.0,
+        -213.058348876163
+      ],
+      "capsule_sweep": true,
+      "floor": "1F",
+      "human_playtest": false,
+      "nearby_parallel_probes": [],
+      "probe_pass": true,
+      "public_point": [
+        -90.6937192276482,
+        0.0,
+        -214.229773348384
+      ],
+      "sales_point": [
+        -91.2143523264129,
+        0.0,
+        -211.886924403942
+      ],
+      "same_floor_support": true,
+      "store_id": "C1F-CSW-3",
+      "wing": "C"
+    }
+  ],
+  "human_playtest": false,
+  "scope": "Straight canonical entry normal, public1.2m to sales1.2m; separate from inside-store routes. A failed probe is an unverified direct connector, not proof the whole store is inaccessible. No doors force-opened or geometry modified."
+}

@@ -1,0 +1,40 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "category": "electronics",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        397.663774110009,
+        1.65,
+        80.9764270009441
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "A1F-040-entry",
+      "look": [
+        387.309424367091,
+        1.0,
+        91.6249456953017
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "A1F-040",
+      "title": "A館 1F / electronics / entry",
+      "variants": [
+        "normal",
+        "C",
+        "ES"
+      ],
+      "wing": "A"
+    }
+  ]
+}
