@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "name": "全480店舗入口",
+      "file": "site-verified/v22-site-collision.json",
+      "passed": 480,
+      "tested": 480,
+      "human": false
+    },
+    {
+      "name": "売場奥への宣言ルート",
+      "file": "interiors-verified/v22-interior-route-physics.json",
+      "passed": 480,
+      "tested": 480,
+      "human": false
+    },
+    {
+      "name": "補正9店の自動重力歩行",
+      "file": "customer-body-verified/v22-customer-characterbody-walk.json",
+      "passed": 9,
+      "tested": 9,
+      "human": false
+    },
+    {
+      "name": "全15層の代表自動歩行",
+      "file": "floors-verified/v22-15-floor-characterbody.json",
+      "passed": 15,
+      "tested": 15,
+      "human": false
+    },
+    {
+      "name": "C回廊接続",
+      "file": "C-galleries/v22-C-gallery-characterbody.json",
+      "passed": 8,
+      "tested": 8,
+      "human": false
+    },
+    {
+      "name": "縁からの押し歩き",
+      "file": "guards/v22-edge-input.json",
+      "passed": 46,
+      "tested": 46,
+      "human": false
+    },
+    {
+      "name": "催事・二重ゲート",
+      "file": "commons-verified/v16-commons-physics.json",
+      "passed": 71,
+      "tested": 71,
+      "human": false
+    },
+    {
+      "name": "F4/F6キー往復",
+      "file": "variants-final/v22-reference-scene-keys.json",
+      "passed": 4,
+      "tested": 4,
+      "human": false
+    }
+  ],
+  "human_playtest": false,
+  "scope": "Each row has its own method and coverage; no blanket claim of artistic or structural certification."
+}

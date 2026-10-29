@@ -1,0 +1,15 @@
+{
+  "batches": 16646,
+  "colliders": 7114,
+  "far_merchandise_lod": {
+    "batches": 1247,
+    "far_silhouettes_begin_m": 45.0,
+    "far_silhouettes_end_m": 110.0,
+    "instances": 63868,
+    "near_original_meshes_end_m": 45.0,
+    "scope": "Low-detail bounding silhouettes with per-SKU palette, not detailed product art; no character or architecture simplification. LOD switches use per-batch AABB distance and require visual pop-in review."
+  },
+  "fixtures": 7114,
+  "missing": [],
+  "products": 63868
+}

@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "end": [
+        19.298713684082,
+        16.4008903503418,
+        -395.727020263672
+      ],
+      "human_playtest": false,
+      "id": "WALK-C-RF",
+      "lowest_y": 16.4002342224121,
+      "max_opposite_vertical_step_m": 0.000604629516601562,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          16.4715724502042,
+          16.4,
+          -389.507259388071
+        ],
+        [
+          16.8026148056452,
+          16.4,
+          -390.235552570041
+        ],
+        [
+          17.1336571610861,
+          16.4,
+          -390.963845752011
+        ],
+        [
+          17.4646995165271,
+          16.4,
+          -391.692138933981
+        ],
+        [
+          17.795741871968,
+          16.4,
+          -392.420432115951
+        ],
+        [
+          18.126784227409,
+          16.4,
+          -393.148725297922
+        ],
+        [
+          18.4578265828499,
+          16.4,
+          -393.877018479892
+        ],
+        [
+          18.7888689382909,
+          16.4,
+          -394.605311661862
+        ],
+        [
+          19.1199112937318,
+          16.4,
+          -395.333604843832
+        ],
+        [
+          19.3681930603125,
+          16.4,
+          -395.879824730309
+        ]
+      ],
+      "scope": "Customer route to before the real locked STOCK staff-room partition; no attempt to enter the backyard.",
+      "store_id": "CRF-CNE-1",
+      "ticks": 205
+    }
+  ],
+  "failed": [],
+  "human_playtest": false,
+  "original_ES_controller_sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+  "physics_hz": 60,
+  "scope": "A/B continuous flights and ascending transfers; C dog-run public route. Does not certify structural loads or all possible edge approaches."
+}

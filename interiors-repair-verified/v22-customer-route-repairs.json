@@ -1,0 +1,191 @@
+{
+  "human_playtest": false,
+  "method": "Local .6m sales-only graph with actual capsule/floor validation at each edge. Deepest reachable sampled point; no new floor, opening or fixture edits.",
+  "stores": [
+    {
+      "endpoint_distance_from_entry_m": 12.4532781613072,
+      "geometry_changed": false,
+      "id": "AB1-013",
+      "nearby_nodes": 78,
+      "pass": true,
+      "route": [
+        [
+          590.498107910156,
+          -5.34999990463257,
+          5.83396863937378
+        ],
+        [
+          589.813049316406,
+          -5.34999990463257,
+          8.24815940856934
+        ],
+        [
+          585.013000488281,
+          -5.34999990463257,
+          10.6481590270996
+        ],
+        [
+          579.013000488281,
+          -5.34999990463257,
+          10.6481590270996
+        ]
+      ],
+      "start_node": 96
+    },
+    {
+      "endpoint_distance_from_entry_m": 13.9522205841406,
+      "geometry_changed": false,
+      "id": "AB1-021",
+      "nearby_nodes": 40,
+      "pass": true,
+      "route": [
+        [
+          447.200012207031,
+          -5.34999990463257,
+          139.899993896484
+        ],
+        [
+          445.243835449219,
+          -5.34999990463257,
+          143.829299926758
+        ],
+        [
+          445.243835449219,
+          -5.34999990463257,
+          145.629287719727
+        ],
+        [
+          446.443817138672,
+          -5.34999990463257,
+          145.629287719727
+        ],
+        [
+          452.443817138672,
+          -5.34999990463257,
+          152.829299926758
+        ]
+      ],
+      "start_node": 79
+    },
+    {
+      "endpoint_distance_from_entry_m": 13.4432389180369,
+      "geometry_changed": false,
+      "id": "A1F-003",
+      "nearby_nodes": 71,
+      "pass": true,
+      "route": [
+        [
+          364.058715820312,
+          0.0,
+          -65.0
+        ],
+        [
+          365.209289550781,
+          0.0,
+          -66.5351028442383
+        ],
+        [
+          369.409301757812,
+          0.0,
+          -69.5351028442383
+        ],
+        [
+          369.409301757812,
+          0.0,
+          -71.9351043701172
+        ],
+        [
+          372.409301757812,
+          0.0,
+          -74.9351043701172
+        ],
+        [
+          372.409301757812,
+          0.0,
+          -75.5351028442383
+        ]
+      ],
+      "start_node": 230
+    },
+    {
+      "endpoint_distance_from_entry_m": 18.5481040952261,
+      "geometry_changed": false,
+      "id": "A2F-016",
+      "nearby_nodes": 81,
+      "pass": true,
+      "route": [
+        [
+          509.100952148438,
+          5.52500009536743,
+          -35.8213806152344
+        ],
+        [
+          516.870178222656,
+          5.52500009536743,
+          -24.9198608398438
+        ],
+        [
+          518.070190429688,
+          5.52500009536743,
+          -23.1198616027832
+        ],
+        [
+          519.870178222656,
+          5.52500009536743,
+          -22.5198612213135
+        ],
+        [
+          519.870178222656,
+          5.52500009536743,
+          -20.7198600769043
+        ]
+      ],
+      "start_node": 653
+    },
+    {
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B1-SW12",
+      "nearby_nodes": 48,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B2-N03",
+      "nearby_nodes": 67,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B2-SW12",
+      "nearby_nodes": 48,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B3-N02",
+      "nearby_nodes": 71,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B3-SW12",
+      "nearby_nodes": 50,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    }
+  ]
+}

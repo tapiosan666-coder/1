@@ -1,0 +1,1074 @@
+{
+  "actors": [
+    {
+      "activity": "stand_up",
+      "browse_phase": 3.0,
+      "character_state": {
+        "actual_player_clip": "StandUp",
+        "assigned_clip": "StandUp",
+        "bones": 54,
+        "expression": "normal",
+        "hip_y_local_m": 0.714955151081085,
+        "player_time_seconds": 0.600012000000245,
+        "requested_clip": "StandUp",
+        "variant": "v20"
+      },
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": true,
+      "gait_phase": 0.0,
+      "id": "V18-A-01",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        355.559997558594,
+        0.00833333097398281,
+        -20.5200004577637
+      ],
+      "point_index": 1,
+      "pose_role": "stand_up",
+      "seat_phase": 19.1500000000002,
+      "speed_current": 0.0,
+      "visited_states": {
+        "seated": 0.0,
+        "stand_up": 11.9500000000002
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "stand_up",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-A-02",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        355.559997558594,
+        0.00833333097398281,
+        -19.4799995422363
+      ],
+      "point_index": 1,
+      "pose_role": "stand_up",
+      "seat_phase": 19.7600000000002,
+      "speed_current": 0.0,
+      "visited_states": {
+        "seated": 0.0,
+        "stand_up": 11.3500000000001
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "leave_seat",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.157085418701172,
+      "female": false,
+      "gait_phase": 0.209447224934896,
+      "id": "V18-B-03",
+      "minimum_y": -0.0000870479270815849,
+      "motion_weight": 0.837860107421875,
+      "p": [
+        25.0200004577637,
+        0.000696036033332348,
+        29.4029140472412
+      ],
+      "point_index": 1,
+      "pose_role": "leave_seat",
+      "seat_phase": 19.9033333333335,
+      "speed_current": 0.628333333333334,
+      "visited_states": {
+        "leave_seat": 12.0833333333335,
+        "seated": 0.0,
+        "stand_up": 10.7333333333334
+      },
+      "yaw": 0.0
+    },
+    {
+      "activity": "leave_seat",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.72654119564686,
+      "female": false,
+      "gait_phase": 0.968721594195813,
+      "id": "V18-B-04",
+      "minimum_y": -0.000501269707456231,
+      "motion_weight": 1.0,
+      "p": [
+        23.9636726379395,
+        0.007661372423172,
+        28.8341960906982
+      ],
+      "point_index": 1,
+      "pose_role": "leave_seat",
+      "seat_phase": 19.9133333333335,
+      "speed_current": 1.085,
+      "visited_states": {
+        "leave_seat": 11.4833333333335,
+        "seated": 0.0,
+        "stand_up": 10.1333333333334
+      },
+      "yaw": -0.0234837029129267
+    },
+    {
+      "activity": "leave_seat",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.23171997070312,
+      "female": false,
+      "gait_phase": 1.64229329427083,
+      "id": "V18-C-05",
+      "minimum_y": -0.0196595937013626,
+      "motion_weight": 0.6982421875,
+      "p": [
+        -119.480003356934,
+        -0.0150543451309204,
+        -303.671722412109
+      ],
+      "point_index": 1,
+      "pose_role": "leave_seat",
+      "seat_phase": 19.9066666666668,
+      "speed_current": 0.523071233796125,
+      "visited_states": {
+        "leave_seat": 10.8666666666668,
+        "seated": 0.0,
+        "stand_up": 9.51666666666672
+      },
+      "yaw": 0.0
+    },
+    {
+      "activity": "waiting",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.32321166992188,
+      "female": false,
+      "gait_phase": 1.7642822265625,
+      "id": "V18-C-06",
+      "minimum_y": -0.0197146870195866,
+      "motion_weight": 0.0,
+      "p": [
+        -120.519996643066,
+        -0.0194644052535295,
+        -303.763214111328
+      ],
+      "point_index": 1,
+      "pose_role": "waiting",
+      "seat_phase": 23.3166666666666,
+      "speed_current": 0.0,
+      "visited_states": {
+        "leave_seat": 10.2500000000001,
+        "seated": 0.0,
+        "stand_up": 8.90000000000002,
+        "waiting": 12.2333333333335
+      },
+      "yaw": 0.0
+    },
+    {
+      "activity": "seated_static",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-C-07",
+      "minimum_y": -0.00833333656191826,
+      "motion_weight": 0.0,
+      "p": [
+        -79.0400009155273,
+        -0.00833333656191826,
+        -316.0
+      ],
+      "point_index": 1,
+      "pose_role": "seated_static",
+      "seat_phase": 6.6,
+      "speed_current": 0.0,
+      "visited_states": {
+        "seated_static": 0.0
+      },
+      "yaw": -1.57079637050629
+    },
+    {
+      "activity": "seated_static",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-C-08",
+      "minimum_y": -0.00833333656191826,
+      "motion_weight": 0.0,
+      "p": [
+        -76.9599990844727,
+        -0.00833333656191826,
+        -316.0
+      ],
+      "point_index": 1,
+      "pose_role": "seated_static",
+      "seat_phase": 7.21,
+      "speed_current": 0.0,
+      "visited_states": {
+        "seated_static": 0.0
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "seated_static",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-C-09",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        -86.1796340942383,
+        0.00833333097398281,
+        -204.007095336914
+      ],
+      "point_index": 1,
+      "pose_role": "seated_static",
+      "seat_phase": 7.82,
+      "speed_current": 0.0,
+      "visited_states": {
+        "seated_static": 0.0
+      },
+      "yaw": 1.35212743282318
+    },
+    {
+      "activity": "seated_static",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-C-10",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        -88.2100982666016,
+        0.00833333097398281,
+        -204.458312988281
+      ],
+      "point_index": 1,
+      "pose_role": "seated_static",
+      "seat_phase": 8.43,
+      "speed_current": 0.0,
+      "visited_states": {
+        "seated_static": 0.0
+      },
+      "yaw": -1.78946530818939
+    },
+    {
+      "activity": "waiting",
+      "browse_phase": 16.3666666666668,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.40145501136431,
+      "female": false,
+      "gait_phase": 1.86860668181907,
+      "id": "V18-A-11",
+      "minimum_y": 0.0000906852073967457,
+      "motion_weight": 0.0,
+      "p": [
+        395.525299072266,
+        0.00108103035017848,
+        -55.1591682434082
+      ],
+      "point_index": 1,
+      "pose_role": "waiting",
+      "seat_phase": 9.04,
+      "speed_current": 0.0,
+      "visited_states": {
+        "browse": 0.0,
+        "leave_display": 6.99999999999998,
+        "waiting": 9.18333333333337
+      },
+      "yaw": 0.116788424551487
+    },
+    {
+      "activity": "waiting",
+      "browse_phase": 16.4000000000001,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.40132934766007,
+      "female": false,
+      "gait_phase": 1.86843913021342,
+      "id": "V18-A-12",
+      "minimum_y": 0.000120548065751791,
+      "motion_weight": 0.0,
+      "p": [
+        381.175537109375,
+        0.00108397519215941,
+        -52.8498229980469
+      ],
+      "point_index": 1,
+      "pose_role": "waiting",
+      "seat_phase": 9.65,
+      "speed_current": 0.0,
+      "visited_states": {
+        "browse": 0.0,
+        "leave_display": 6.99999999999998,
+        "waiting": 9.15000000000003
+      },
+      "yaw": 0.116788424551487
+    },
+    {
+      "activity": "waiting",
+      "browse_phase": 16.4166666666668,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.40453410340706,
+      "female": false,
+      "gait_phase": 1.87271213787608,
+      "id": "V18-B-13",
+      "minimum_y": -0.000052234623581171,
+      "motion_weight": 0.0,
+      "p": [
+        -62.1123542785645,
+        0.00834685657173395,
+        -10.5080995559692
+      ],
+      "point_index": 1,
+      "pose_role": "waiting",
+      "seat_phase": 6.6,
+      "speed_current": 0.0,
+      "visited_states": {
+        "browse": 0.0,
+        "leave_display": 6.99999999999998,
+        "waiting": 9.13333333333337
+      },
+      "yaw": 1.81572842597961
+    },
+    {
+      "activity": "waiting",
+      "browse_phase": 16.4333333333335,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.40460485505173,
+      "female": false,
+      "gait_phase": 1.87280647340231,
+      "id": "V18-B-14",
+      "minimum_y": -0.0000172527506947517,
+      "motion_weight": 0.0,
+      "p": [
+        44.1122932434082,
+        0.00875218119472265,
+        34.2082557678223
+      ],
+      "point_index": 1,
+      "pose_role": "waiting",
+      "seat_phase": 7.21,
+      "speed_current": 0.0,
+      "visited_states": {
+        "browse": 0.0,
+        "leave_display": 6.99999999999998,
+        "waiting": 9.1166666666667
+      },
+      "yaw": -1.87858176231384
+    },
+    {
+      "activity": "waiting",
+      "browse_phase": 16.4500000000001,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.40553265064955,
+      "female": false,
+      "gait_phase": 1.8740435341994,
+      "id": "V18-C-15",
+      "minimum_y": 0.0000622374936938286,
+      "motion_weight": 0.0,
+      "p": [
+        -160.839569091797,
+        0.00100935576483607,
+        -327.636566162109
+      ],
+      "point_index": 1,
+      "pose_role": "waiting",
+      "seat_phase": 7.82,
+      "speed_current": 0.0,
+      "visited_states": {
+        "browse": 0.0,
+        "leave_display": 6.99999999999998,
+        "waiting": 9.10000000000003
+      },
+      "yaw": 1.72127211093903
+    },
+    {
+      "activity": "waiting",
+      "browse_phase": 16.3666666666668,
+      "clock": 12.5500000000002,
+      "distance_walked": 1.40164766841917,
+      "female": false,
+      "gait_phase": 1.86886355789223,
+      "id": "V18-C-16",
+      "minimum_y": 0.0000874763354659081,
+      "motion_weight": 0.0,
+      "p": [
+        -86.8565902709961,
+        0.00107814138755202,
+        -210.799362182617
+      ],
+      "point_index": 1,
+      "pose_role": "waiting",
+      "seat_phase": 8.43,
+      "speed_current": 0.0,
+      "visited_states": {
+        "browse": 0.0,
+        "leave_display": 6.99999999999998,
+        "waiting": 9.18333333333337
+      },
+      "yaw": 2.99111676216125
+    },
+    {
+      "activity": "information",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-A-17",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        353.399993896484,
+        0.00833333097398281,
+        -45.0
+      ],
+      "point_index": 1,
+      "pose_role": "information",
+      "seat_phase": 9.04,
+      "speed_current": 0.0,
+      "visited_states": {
+        "information": 0.0
+      },
+      "yaw": -2.85013580322266
+    },
+    {
+      "activity": "information",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-A-18",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        354.600006103516,
+        0.00833333097398281,
+        -45.0
+      ],
+      "point_index": 1,
+      "pose_role": "information",
+      "seat_phase": 9.65,
+      "speed_current": 0.0,
+      "visited_states": {
+        "information": 0.0
+      },
+      "yaw": 2.85013580322266
+    },
+    {
+      "activity": "conversation",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-A-19",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        343.399993896484,
+        0.00833333097398281,
+        -34.0
+      ],
+      "point_index": 1,
+      "pose_role": "conversation",
+      "seat_phase": 6.6,
+      "speed_current": 0.0,
+      "visited_states": {
+        "conversation": 0.0
+      },
+      "yaw": -1.57079637050629
+    },
+    {
+      "activity": "conversation",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-A-20",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        344.600006103516,
+        0.00833333097398281,
+        -34.0
+      ],
+      "point_index": 1,
+      "pose_role": "conversation",
+      "seat_phase": 7.21,
+      "speed_current": 0.0,
+      "visited_states": {
+        "conversation": 0.0
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "conversation",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-B-21",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        34.4000015258789,
+        0.00833333097398281,
+        22.0
+      ],
+      "point_index": 1,
+      "pose_role": "conversation",
+      "seat_phase": 7.82,
+      "speed_current": 0.0,
+      "visited_states": {
+        "conversation": 0.0
+      },
+      "yaw": -1.57079637050629
+    },
+    {
+      "activity": "conversation",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-B-22",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        35.5999984741211,
+        0.00833333097398281,
+        22.0
+      ],
+      "point_index": 1,
+      "pose_role": "conversation",
+      "seat_phase": 8.43,
+      "speed_current": 0.0,
+      "visited_states": {
+        "conversation": 0.0
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "conversation",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-C-23",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        -92.5999984741211,
+        0.00833333097398281,
+        -219.5
+      ],
+      "point_index": 1,
+      "pose_role": "conversation",
+      "seat_phase": 9.04,
+      "speed_current": 0.0,
+      "visited_states": {
+        "conversation": 0.0
+      },
+      "yaw": -1.17600524425507
+    },
+    {
+      "activity": "conversation",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-C-24",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        -91.4000015258789,
+        0.00833333097398281,
+        -219.5
+      ],
+      "point_index": 1,
+      "pose_role": "conversation",
+      "seat_phase": 9.65,
+      "speed_current": 0.0,
+      "visited_states": {
+        "conversation": 0.0
+      },
+      "yaw": 1.17600524425507
+    },
+    {
+      "activity": "event",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-B-25",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        -2.29999995231628,
+        0.00833333097398281,
+        0.0
+      ],
+      "point_index": 1,
+      "pose_role": "event",
+      "seat_phase": 6.6,
+      "speed_current": 0.0,
+      "visited_states": {
+        "event": 0.0
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "event",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-B-26",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        -1.79999995231628,
+        0.00833333097398281,
+        8.5
+      ],
+      "point_index": 1,
+      "pose_role": "event",
+      "seat_phase": 7.21,
+      "speed_current": 0.0,
+      "visited_states": {
+        "event": 0.0
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "event",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-B-27",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        -2.29999995231628,
+        0.00833333097398281,
+        20.0
+      ],
+      "point_index": 1,
+      "pose_role": "event",
+      "seat_phase": 7.82,
+      "speed_current": 0.0,
+      "visited_states": {
+        "event": 0.0
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "event",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 0.0,
+      "female": false,
+      "gait_phase": 0.0,
+      "id": "V18-B-28",
+      "minimum_y": 0.00833333097398281,
+      "motion_weight": 0.0,
+      "p": [
+        17.2999992370605,
+        0.00833333097398281,
+        0.0
+      ],
+      "point_index": 1,
+      "pose_role": "event",
+      "seat_phase": 8.43,
+      "speed_current": 0.0,
+      "visited_states": {
+        "event": 0.0
+      },
+      "yaw": -1.57079637050629
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 7.73908732167911,
+      "female": false,
+      "gait_phase": 10.3187830955721,
+      "id": "V18-A-29",
+      "minimum_y": -0.00265282113105059,
+      "motion_weight": 1.0,
+      "p": [
+        336.473022460938,
+        0.00898228213191032,
+        -42.9991683959961
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 9.04,
+      "speed_current": 1.085,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.5706102848053
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.7052612304688,
+      "female": false,
+      "gait_phase": 14.2736816406251,
+      "id": "V18-A-30",
+      "minimum_y": 0.0000714836642146111,
+      "motion_weight": 1.0,
+      "p": [
+        373.945739746094,
+        0.00396172888576984,
+        -49.0
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 9.65,
+      "speed_current": 1.13,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.57079637050629
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 9.95452880859375,
+      "female": false,
+      "gait_phase": 13.272705078125,
+      "id": "V18-A-31",
+      "minimum_y": 0.000251572579145432,
+      "motion_weight": 0.15380859375,
+      "p": [
+        392.696411132812,
+        0.00369548425078392,
+        -49.0
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 6.6,
+      "speed_current": 0.114,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 2.78739309310913
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 9.99842657800764,
+      "female": false,
+      "gait_phase": 13.3312354373435,
+      "id": "V18-A-32",
+      "minimum_y": -0.0048677446320653,
+      "motion_weight": 0.419921875,
+      "p": [
+        343.6484375,
+        0.00494885072112083,
+        -25.0000610351562
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 7.21,
+      "speed_current": 0.3144,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 2.45739436149597
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.0690019652247,
+      "female": false,
+      "gait_phase": 13.425335953633,
+      "id": "V18-A-33",
+      "minimum_y": -0.00791056267917156,
+      "motion_weight": 0.6884765625,
+      "p": [
+        367.576293945312,
+        0.00224708486348391,
+        -15.9998111724854
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 7.82,
+      "speed_current": 0.5148,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 0.931703448295593
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.8652850203216,
+      "female": false,
+      "gait_phase": 14.4870466937622,
+      "id": "V18-A-34",
+      "minimum_y": -0.00486915651708841,
+      "motion_weight": 1.0,
+      "p": [
+        403.78173828125,
+        0.00704327598214149,
+        -49.0006675720215
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 8.43,
+      "speed_current": 1.085,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.57082498073578
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.9891080930829,
+      "female": false,
+      "gait_phase": 14.6521441241106,
+      "id": "V18-B-35",
+      "minimum_y": 0.0000655972398817539,
+      "motion_weight": 1.0,
+      "p": [
+        -1.33473920822144,
+        0.00406995881348848,
+        29.9999752044678
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 9.04,
+      "speed_current": 1.13,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.57079923152924
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 9.90231538098305,
+      "female": false,
+      "gait_phase": 13.203087174644,
+      "id": "V18-B-36",
+      "minimum_y": -0.000189588638022542,
+      "motion_weight": 0.1519775390625,
+      "p": [
+        4.99960470199585,
+        0.00385000184178352,
+        29.7506084442139
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 9.65,
+      "speed_current": 0.114,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": -1.9865962266922
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.1188803874538,
+      "female": false,
+      "gait_phase": 13.4918405166051,
+      "id": "V18-B-37",
+      "minimum_y": -0.000224095536395907,
+      "motion_weight": 0.794712901115417,
+      "p": [
+        26.5575523376465,
+        0.00548656191676855,
+        23.0909328460693
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 6.6,
+      "speed_current": 0.596066666666667,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.04170346260071
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.2418036004528,
+      "female": false,
+      "gait_phase": 13.6557381339372,
+      "id": "V18-B-38",
+      "minimum_y": -0.000139935407787561,
+      "motion_weight": 1.0,
+      "p": [
+        43.4054107666016,
+        0.000880777835845947,
+        18.999906539917
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 7.21,
+      "speed_current": 0.839800000000001,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.7973952293396
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.3456667168066,
+      "female": false,
+      "gait_phase": 13.7942222890754,
+      "id": "V18-B-39",
+      "minimum_y": 0.0000775312073528767,
+      "motion_weight": 1.0,
+      "p": [
+        -14.999813079834,
+        0.00833248440176249,
+        28.3070449829102
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 7.82,
+      "speed_current": 0.975200000000001,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 0.0615957193076611
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 11.252941983752,
+      "female": false,
+      "gait_phase": 15.0039226450026,
+      "id": "V18-C-40",
+      "minimum_y": -0.00283065438270569,
+      "motion_weight": 1.0,
+      "p": [
+        -99.5986328125,
+        0.00427787424996495,
+        -290.999114990234
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 8.43,
+      "speed_current": 1.13,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.5706912279129
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 9.92584228515625,
+      "female": false,
+      "gait_phase": 13.2344563802084,
+      "id": "V18-C-41",
+      "minimum_y": -0.00398157443851233,
+      "motion_weight": 0.1519775390625,
+      "p": [
+        -119.278717041016,
+        0.00818754266947508,
+        -289.0
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 9.04,
+      "speed_current": 0.114,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": -3.11079335212708
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 9.9475411856547,
+      "female": false,
+      "gait_phase": 13.2633882475396,
+      "id": "V18-C-42",
+      "minimum_y": -0.0248944200575352,
+      "motion_weight": 0.15869140625,
+      "p": [
+        -85.9999008178711,
+        0.00812803208827972,
+        -295.305328369141
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 9.65,
+      "speed_current": 0.1194,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.32659542560577
+    },
+    {
+      "activity": "walking",
+      "browse_phase": 3.0,
+      "clock": 12.5500000000002,
+      "distance_walked": 10.4483206620207,
+      "female": false,
+      "gait_phase": 13.9310942160277,
+      "id": "V18-C-43",
+      "minimum_y": -0.00373156135901809,
+      "motion_weight": 1.0,
+      "p": [
+        -85.7807846069336,
+        0.0030430112965405,
+        -215.959747314453
+      ],
+      "point_index": 0,
+      "pose_role": "walking",
+      "seat_phase": 6.6,
+      "speed_current": 1.04,
+      "visited_states": {
+        "walking": 0.0
+      },
+      "yaw": 1.56643009185791
+    }
+  ],
+  "actual_physics_snapshot": true,
+  "comparison_mode": "v20",
+  "person_script_sha256": "a71ff7133fcbe30257dfdba3d09e1723c1207943288c449315f95c0956062ffb",
+  "plan_sha256": "2f7f106916eb626c662b00bd54b7aee0a9e3288b5cdf6427a2f8631151d730e5",
+  "simulated_seconds": 12.5500000000002
+}

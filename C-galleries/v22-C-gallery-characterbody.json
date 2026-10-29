@@ -1,0 +1,300 @@
+{
+  "cases": [
+    {
+      "end": [
+        -87.0308380126953,
+        5.52582883834839,
+        -377.978118896484
+      ],
+      "human_playtest": false,
+      "id": "C-GALLERY-CW-CNW-2F",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000591754913330078,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -147.383383099283,
+          5.525,
+          -290.76274103601
+        ],
+        [
+          -86.9389395796397,
+          5.525,
+          -378.110983828762
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 1591
+    },
+    {
+      "end": [
+        41.168342590332,
+        5.52592897415161,
+        -375.536193847656
+      ],
+      "human_playtest": false,
+      "id": "C-GALLERY-CNW-CNE-2F",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000742435455322266,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -86.9389395796397,
+          5.525,
+          -378.110983828762
+        ],
+        [
+          -77.0,
+          5.525,
+          -350.0
+        ],
+        [
+          -69.0,
+          5.525,
+          -342.0
+        ],
+        [
+          -4.0,
+          5.525,
+          -340.0
+        ],
+        [
+          53.0,
+          5.525,
+          -368.0
+        ],
+        [
+          41.0342890726286,
+          5.525,
+          -375.623702852001
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 2750
+    },
+    {
+      "end": [
+        135.339584350586,
+        5.52581214904785,
+        -273.895690917969
+      ],
+      "human_playtest": false,
+      "id": "C-GALLERY-CNE-CE-2F",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000697135925292969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          41.0342890726286,
+          5.525,
+          -375.623702852001
+        ],
+        [
+          59.0,
+          5.525,
+          -365.0
+        ],
+        [
+          135.437782040266,
+          5.525,
+          -273.778512752507
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 2096
+    },
+    {
+      "end": [
+        49.1129112243652,
+        5.52583599090576,
+        -199.322402954102
+      ],
+      "human_playtest": false,
+      "id": "C-GALLERY-CE-CSE-2F",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000583648681640625,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          135.437782040266,
+          5.525,
+          -273.778512752507
+        ],
+        [
+          49.0,
+          5.525,
+          -199.225
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 1710
+    },
+    {
+      "end": [
+        -65.8620452880859,
+        5.52590942382812,
+        -210.982177734375
+      ],
+      "human_playtest": false,
+      "id": "C-GALLERY-CSE-CSW-2F",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000604629516601562,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          49.0,
+          5.525,
+          -199.225
+        ],
+        [
+          31.0,
+          5.525,
+          -228.0
+        ],
+        [
+          -35.0,
+          5.525,
+          -242.0
+        ],
+        [
+          -36.0,
+          5.525,
+          -242.0
+        ],
+        [
+          -74.0,
+          5.525,
+          -216.0
+        ],
+        [
+          -74.0,
+          5.525,
+          -215.0
+        ],
+        [
+          -65.7174547176107,
+          5.525,
+          -210.907548923332
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 2374
+    },
+    {
+      "end": [
+        -147.254241943359,
+        5.52582931518555,
+        -290.619659423828
+      ],
+      "human_playtest": false,
+      "id": "C-GALLERY-CSW-CW-2F",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000607490539550781,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -65.7174547176107,
+          5.525,
+          -210.907548923332
+        ],
+        [
+          -80.0,
+          5.525,
+          -216.0
+        ],
+        [
+          -147.383383099283,
+          5.525,
+          -290.76274103601
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 1734
+    },
+    {
+      "end": [
+        116.665351867676,
+        5.52584075927734,
+        -259.520477294922
+      ],
+      "human_playtest": false,
+      "id": "C-ES-CE12-TOP-ACCESS-2F",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.0014042854309082,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          105.0,
+          5.525,
+          -272.9
+        ],
+        [
+          105.0,
+          5.525,
+          -269.3
+        ],
+        [
+          116.667949454269,
+          5.525,
+          -269.3
+        ],
+        [
+          116.667949454269,
+          5.525,
+          -259.372110641748
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 372
+    },
+    {
+      "end": [
+        -69.4268035888672,
+        10.8758306503296,
+        -383.145660400391
+      ],
+      "human_playtest": false,
+      "id": "C-ES-CN23-TOP-ACCESS-3F",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000571250915527344,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -62.9,
+          10.875,
+          -362.0
+        ],
+        [
+          -59.3,
+          10.875,
+          -362.0
+        ],
+        [
+          -59.3,
+          10.875,
+          -383.147634859162
+        ],
+        [
+          -69.5782004818407,
+          10.875,
+          -383.147634859162
+        ]
+      ],
+      "scope": "Automatic walk along original proposed inter-gallery connector centreline",
+      "ticks": 519
+    }
+  ],
+  "failed": [],
+  "human_playtest": false,
+  "original_ES_controller_sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+  "physics_hz": 60,
+  "scope": "A/B continuous flights and ascending transfers; C dog-run public route. Does not certify structural loads or all possible edge approaches."
+}

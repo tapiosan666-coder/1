@@ -1,0 +1,1018 @@
+{
+  "cases": [
+    {
+      "design_length_m": 8.15465734053887,
+      "end": [
+        322.039520263672,
+        5.52581596374512,
+        -41.0076026916504
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-0-UP-A-WEST-V22-1-UP-rounded--0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -34.7
+        ],
+        [
+          320.85,
+          5.525,
+          -35.3
+        ],
+        [
+          320.85,
+          5.525,
+          -40.5
+        ],
+        [
+          322.2,
+          5.525,
+          -41.1
+        ]
+      ],
+      "ticks": 233,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        322.048126220703,
+        5.52580595016479,
+        -40.9821014404297
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-0-UP-A-WEST-V22-1-UP-rounded-0",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -34.7
+        ],
+        [
+          321.2,
+          5.525,
+          -35.3
+        ],
+        [
+          321.2,
+          5.525,
+          -40.5
+        ],
+        [
+          322.2,
+          5.525,
+          -41.1
+        ]
+      ],
+      "ticks": 215,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 6.96918060129538,
+      "end": [
+        322.080535888672,
+        5.52582931518555,
+        -40.9530334472656
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-0-UP-A-WEST-V22-1-UP-rounded-0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -34.7
+        ],
+        [
+          321.55,
+          5.525,
+          -35.3
+        ],
+        [
+          321.55,
+          5.525,
+          -40.5
+        ],
+        [
+          322.2,
+          5.525,
+          -41.1
+        ]
+      ],
+      "ticks": 200,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 6.96918060129538,
+      "end": [
+        337.919464111328,
+        10.8757705688477,
+        -34.846981048584
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-UP-A-WEST-V22-2-UP-rounded--0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -41.1
+        ],
+        [
+          338.45,
+          10.875,
+          -40.5
+        ],
+        [
+          338.45,
+          10.875,
+          -35.3
+        ],
+        [
+          337.8,
+          10.875,
+          -34.7
+        ]
+      ],
+      "ticks": 200,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        337.952026367188,
+        10.8757801055908,
+        -34.8179779052734
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-UP-A-WEST-V22-2-UP-rounded-0",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000604629516601562,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -41.1
+        ],
+        [
+          338.8,
+          10.875,
+          -40.5
+        ],
+        [
+          338.8,
+          10.875,
+          -35.3
+        ],
+        [
+          337.8,
+          10.875,
+          -34.7
+        ]
+      ],
+      "ticks": 215,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 8.15465734053887,
+      "end": [
+        337.96044921875,
+        10.8757810592651,
+        -34.792407989502
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-UP-A-WEST-V22-2-UP-rounded-0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000586509704589844,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -41.1
+        ],
+        [
+          339.15,
+          10.875,
+          -40.5
+        ],
+        [
+          339.15,
+          10.875,
+          -35.3
+        ],
+        [
+          337.8,
+          10.875,
+          -34.7
+        ]
+      ],
+      "ticks": 233,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 8.15465734053887,
+      "end": [
+        322.039733886719,
+        5.52582931518555,
+        -36.992374420166
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-DOWN-A-WEST-V22-0-DOWN-rounded--0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599384307861328,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -43.3
+        ],
+        [
+          320.85,
+          5.525,
+          -42.7
+        ],
+        [
+          320.85,
+          5.525,
+          -37.5
+        ],
+        [
+          322.2,
+          5.525,
+          -36.9
+        ]
+      ],
+      "ticks": 233,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        322.047912597656,
+        5.52583503723145,
+        -37.0180244445801
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-DOWN-A-WEST-V22-0-DOWN-rounded-0",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599384307861328,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -43.3
+        ],
+        [
+          321.2,
+          5.525,
+          -42.7
+        ],
+        [
+          321.2,
+          5.525,
+          -37.5
+        ],
+        [
+          322.2,
+          5.525,
+          -36.9
+        ]
+      ],
+      "ticks": 215,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 6.96918060129538,
+      "end": [
+        322.080535888672,
+        5.52583503723145,
+        -37.0469589233398
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-DOWN-A-WEST-V22-0-DOWN-rounded-0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599384307861328,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -43.3
+        ],
+        [
+          321.55,
+          5.525,
+          -42.7
+        ],
+        [
+          321.55,
+          5.525,
+          -37.5
+        ],
+        [
+          322.2,
+          5.525,
+          -36.9
+        ]
+      ],
+      "ticks": 200,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 6.96918060129538,
+      "end": [
+        337.919555664062,
+        10.8758420944214,
+        -43.1529769897461
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-2-DOWN-A-WEST-V22-1-DOWN-rounded--0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000593185424804688,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -36.9
+        ],
+        [
+          338.45,
+          10.875,
+          -37.5
+        ],
+        [
+          338.45,
+          10.875,
+          -42.7
+        ],
+        [
+          337.8,
+          10.875,
+          -43.3
+        ]
+      ],
+      "ticks": 200,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        337.951965332031,
+        10.8758373260498,
+        -43.1820602416992
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-2-DOWN-A-WEST-V22-1-DOWN-rounded-0",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -36.9
+        ],
+        [
+          338.8,
+          10.875,
+          -37.5
+        ],
+        [
+          338.8,
+          10.875,
+          -42.7
+        ],
+        [
+          337.8,
+          10.875,
+          -43.3
+        ]
+      ],
+      "ticks": 215,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 8.15465734053887,
+      "end": [
+        337.960235595703,
+        10.8758249282837,
+        -43.2076683044434
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-2-DOWN-A-WEST-V22-1-DOWN-rounded-0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000593185424804688,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -36.9
+        ],
+        [
+          339.15,
+          10.875,
+          -37.5
+        ],
+        [
+          339.15,
+          10.875,
+          -42.7
+        ],
+        [
+          337.8,
+          10.875,
+          -43.3
+        ]
+      ],
+      "ticks": 233,
+      "wing": "A"
+    },
+    {
+      "design_length_m": 8.15465734053882,
+      "end": [
+        -199.96028137207,
+        5.52584218978882,
+        -17.507682800293
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-0-UP-B-WEST-V15-1-UP-rounded--0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000605106353759766,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -201.15,
+          5.525,
+          -11.8
+        ],
+        [
+          -201.15,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ],
+      "ticks": 233,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        -199.951766967773,
+        5.52583599090576,
+        -17.4821548461914
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-0-UP-B-WEST-V15-1-UP-rounded-0",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599384307861328,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -11.8
+        ],
+        [
+          -200.8,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ],
+      "ticks": 215,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 6.96918060129542,
+      "end": [
+        -199.91943359375,
+        5.52582883834839,
+        -17.4530391693115
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-0-UP-B-WEST-V15-1-UP-rounded-0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000605106353759766,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.45,
+          5.525,
+          -11.8
+        ],
+        [
+          -200.45,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ],
+      "ticks": 200,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 6.96918060129542,
+      "end": [
+        -184.080444335938,
+        10.8758354187012,
+        -11.3469829559326
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-UP-B-WEST-V15-2-UP-rounded--0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.55,
+          10.875,
+          -17.0
+        ],
+        [
+          -183.55,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ],
+      "ticks": 200,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        -184.04817199707,
+        10.8758420944214,
+        -11.3178844451904
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-UP-B-WEST-V15-2-UP-rounded-0",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -17.0
+        ],
+        [
+          -183.2,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ],
+      "ticks": 215,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 8.15465734053882,
+      "end": [
+        -184.039642333984,
+        10.8758354187012,
+        -11.2923383712769
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-UP-B-WEST-V15-2-UP-rounded-0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -182.85,
+          10.875,
+          -17.0
+        ],
+        [
+          -182.85,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ],
+      "ticks": 233,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 8.15465734053882,
+      "end": [
+        -199.960311889648,
+        5.52583026885986,
+        -13.4923419952393
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-DOWN-B-WEST-V15-0-DOWN-rounded--0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -19.8
+        ],
+        [
+          -201.15,
+          5.525,
+          -19.2
+        ],
+        [
+          -201.15,
+          5.525,
+          -14.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -13.4
+        ]
+      ],
+      "ticks": 233,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        -199.951797485352,
+        5.52582883834839,
+        -13.5178909301758
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-DOWN-B-WEST-V15-0-DOWN-rounded-0",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -19.8
+        ],
+        [
+          -200.8,
+          5.525,
+          -19.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -14.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -13.4
+        ]
+      ],
+      "ticks": 215,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 6.96918060129542,
+      "end": [
+        -199.919555664062,
+        5.52582979202271,
+        -13.5469837188721
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-DOWN-B-WEST-V15-0-DOWN-rounded-0.35",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599861145019531,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -19.8
+        ],
+        [
+          -200.45,
+          5.525,
+          -19.2
+        ],
+        [
+          -200.45,
+          5.525,
+          -14.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -13.4
+        ]
+      ],
+      "ticks": 200,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 6.96918060129542,
+      "end": [
+        -184.080520629883,
+        10.8758239746094,
+        -19.6530723571777
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-2-DOWN-B-WEST-V15-1-DOWN-rounded--0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000580787658691406,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": -0.35,
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -13.4
+        ],
+        [
+          -183.55,
+          10.875,
+          -14.0
+        ],
+        [
+          -183.55,
+          10.875,
+          -19.2
+        ],
+        [
+          -184.2,
+          10.875,
+          -19.8
+        ]
+      ],
+      "ticks": 200,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 7.53238075793812,
+      "end": [
+        -184.048156738281,
+        10.8758249282837,
+        -19.6821060180664
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-2-DOWN-B-WEST-V15-1-DOWN-rounded-0",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000581741333007812,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.0,
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -13.4
+        ],
+        [
+          -183.2,
+          10.875,
+          -14.0
+        ],
+        [
+          -183.2,
+          10.875,
+          -19.2
+        ],
+        [
+          -184.2,
+          10.875,
+          -19.8
+        ]
+      ],
+      "ticks": 215,
+      "wing": "B"
+    },
+    {
+      "design_length_m": 8.15465734053882,
+      "end": [
+        -184.039703369141,
+        10.8758363723755,
+        -19.7076892852783
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-2-DOWN-B-WEST-V15-1-DOWN-rounded-0.35",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000603675842285156,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "middle_lateral_offset_m": 0.35,
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -13.4
+        ],
+        [
+          -182.85,
+          10.875,
+          -14.0
+        ],
+        [
+          -182.85,
+          10.875,
+          -19.2
+        ],
+        [
+          -184.2,
+          10.875,
+          -19.8
+        ]
+      ],
+      "ticks": 233,
+      "wing": "B"
+    },
+    {
+      "end": [
+        -13.3173418045044,
+        -0.000479412876302376,
+        -239.584121704102
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-NEW-PUBLIC-ACCESS",
+      "lowest_y": -0.018146488815546,
+      "max_opposite_vertical_step_m": 0.0187806976027787,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": false,
+      "points": [
+        [
+          -118.0,
+          0.0,
+          -289.5
+        ],
+        [
+          -59.0,
+          0.0,
+          -287.0
+        ],
+        [
+          -29.0,
+          0.0,
+          -267.0
+        ],
+        [
+          -0.999999999999994,
+          0.0,
+          -218.2
+        ]
+      ],
+      "ticks": 5208
+    }
+  ],
+  "failed": [
+    {
+      "end": [
+        -13.3173418045044,
+        -0.000479412876302376,
+        -239.584121704102
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-NEW-PUBLIC-ACCESS",
+      "lowest_y": -0.018146488815546,
+      "max_opposite_vertical_step_m": 0.0187806976027787,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": false,
+      "points": [
+        [
+          -118.0,
+          0.0,
+          -289.5
+        ],
+        [
+          -59.0,
+          0.0,
+          -287.0
+        ],
+        [
+          -29.0,
+          0.0,
+          -267.0
+        ],
+        [
+          -0.999999999999994,
+          0.0,
+          -218.2
+        ]
+      ],
+      "ticks": 5208
+    }
+  ],
+  "human_playtest": false,
+  "original_ES_controller_sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+  "physics_hz": 60,
+  "scope": "A/B continuous flights and ascending transfers; C dog-run public route. Does not certify structural loads or all possible edge approaches."
+}

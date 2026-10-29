@@ -1,0 +1,150 @@
+[
+  {
+    "contacts": [
+      {
+        "collider": "Collision_v10_oak",
+        "fixture": {
+
+        },
+        "from": [
+          -126.0,
+          10.875,
+          -216.0
+        ],
+        "to": [
+          -118.5,
+          10.875,
+          -205.5
+        ]
+      }
+    ],
+    "kind": "WC",
+    "sign": "V21-combined-C-3F-NAV-1"
+  },
+  {
+    "contacts": [
+      {
+        "collider": "Collision_ceramic_0",
+        "fixture": {
+
+        },
+        "from": [
+          0.0,
+          10.875,
+          -174.0
+        ],
+        "to": [
+          10.5,
+          10.875,
+          -183.0
+        ]
+      }
+    ],
+    "kind": "WC",
+    "sign": "V21-combined-C-3F-NAV-2"
+  },
+  {
+    "contacts": [
+      {
+        "collider": "Collision_ceramic_0",
+        "fixture": {
+
+        },
+        "from": [
+          0.0,
+          10.875,
+          -174.0
+        ],
+        "to": [
+          10.5,
+          10.875,
+          -193.5
+        ]
+      }
+    ],
+    "kind": "EV",
+    "sign": "V21-combined-C-3F-NAV-2"
+  },
+  {
+    "contacts": [
+      {
+        "collider": "Collision_ceramic_0",
+        "fixture": {
+
+        },
+        "from": [
+          0.0,
+          10.875,
+          -174.0
+        ],
+        "to": [
+          10.5,
+          10.875,
+          -193.5
+        ]
+      }
+    ],
+    "kind": "ST",
+    "sign": "V21-combined-C-3F-NAV-2"
+  },
+  {
+    "contacts": [
+      {
+        "collider": "Collision_ceramic_0",
+        "fixture": {
+
+        },
+        "from": [
+          0.0,
+          10.875,
+          -174.0
+        ],
+        "to": [
+          10.5,
+          10.875,
+          -193.5
+        ]
+      },
+      {
+        "collider": "Collision_plaster",
+        "fixture": {
+
+        },
+        "from": [
+          21.0,
+          10.875,
+          -195.0
+        ],
+        "to": [
+          22.5,
+          10.875,
+          -196.5
+        ]
+      }
+    ],
+    "kind": "DINING",
+    "sign": "V21-combined-C-3F-NAV-2"
+  },
+  {
+    "contacts": [
+      {
+        "collider": "Collision_plaster",
+        "fixture": {
+
+        },
+        "from": [
+          -126.0,
+          16.4,
+          -210.0
+        ],
+        "to": [
+          -118.5,
+          16.4,
+          -205.5
+        ]
+      }
+    ],
+    "kind": "WC",
+    "sign": "V21-combined-C-RF-NAV-1"
+  }
+]

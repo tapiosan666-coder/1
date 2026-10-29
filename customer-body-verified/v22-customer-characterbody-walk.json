@@ -1,0 +1,105 @@
+{
+  "human_playtest": false,
+  "method": "Automatic CharacterBody3D with gravity and move_and_slide at fixed60Hz,2m/s. Capsule centre .92m above measured floor, r=.31,h=1.80. Nine corrected customer spines, including five B door seams; not every checkout; distinct from geometric and swept-capsule checks.",
+  "routes": [
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "AB1-013",
+      "simulated_seconds": 7.3,
+      "store_id": "AB1-013",
+      "ticks": 438
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "AB1-021",
+      "simulated_seconds": 8.66666666666667,
+      "store_id": "AB1-021",
+      "ticks": 520
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "A1F-003",
+      "simulated_seconds": 7.7,
+      "store_id": "A1F-003",
+      "ticks": 462
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "A2F-016",
+      "simulated_seconds": 9.95,
+      "store_id": "A2F-016",
+      "ticks": 597
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "B1-SW12",
+      "simulated_seconds": 16.9666666666667,
+      "store_id": "B1-SW12",
+      "ticks": 1018
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "B2-N03",
+      "simulated_seconds": 9.81666666666667,
+      "store_id": "B2-N03",
+      "ticks": 589
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "B2-SW12",
+      "simulated_seconds": 16.2166666666667,
+      "store_id": "B2-SW12",
+      "ticks": 973
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "B3-N02",
+      "simulated_seconds": 25.8833333333333,
+      "store_id": "B3-N02",
+      "ticks": 1553
+    },
+    {
+      "contacts": [],
+      "fell": false,
+      "pass": true,
+      "reached": true,
+      "role": "customer_sales_spine",
+      "route": "B3-SW12",
+      "simulated_seconds": 16.3666666666667,
+      "store_id": "B3-SW12",
+      "ticks": 982
+    }
+  ]
+}

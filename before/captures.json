@@ -1,0 +1,990 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        393.2,
+        1.65,
+        -51.4
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "01-A-shared-joint",
+      "look": [
+        391.1,
+        1.4,
+        -66.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館・指摘座標から店舗境界を見る",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        314.0,
+        1.65,
+        -39.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "02-A-continuous-ES",
+      "look": [
+        332.0,
+        5.8,
+        -39.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館・西広場の連続ES候補",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -212.0,
+        1.65,
+        -15.5
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "03-B-continuous-ES",
+      "look": [
+        -187.0,
+        6.0,
+        -15.5
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館・西吹き抜けと連続ES",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -68.543382,
+        1.65,
+        -289.502218
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "04-C-open-courtyard",
+      "look": [
+        -161.0,
+        16.0,
+        -289.5
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館・中庭と上階ギャラリー",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -1.0,
+        1.65,
+        -229.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "05-C-dog-edge",
+      "look": [
+        -1.0,
+        1.3,
+        -204.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館・移設先のドッグラン",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -116.0,
+        1.65,
+        -280.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "06-C-original-dog-place",
+      "look": [
+        -118.0,
+        1.2,
+        -265.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館・旧ドッグラン位置と主動線",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -89.0,
+        1.65,
+        -301.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "07-C-melon-truck",
+      "look": [
+        -88.0,
+        1.2,
+        -323.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館・キッチンカーと屋外席",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        5.5,
+        1.65,
+        -7.5
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "08-B-Aichi-fair",
+      "look": [
+        5.5,
+        1.5,
+        17.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館・物産展の買い回り通路",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        393.2,
+        1.65,
+        -51.4
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "09-A-specialty-street",
+      "look": [
+        425.0,
+        1.7,
+        -51.4
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館・専門店街",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        397.760474317485,
+        1.65,
+        -53.2767952785637
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "10-A-storefront",
+      "look": [
+        396.763587808331,
+        1.2,
+        -59.0919665819619
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "A1F-007",
+      "title": "A館・店舗正面",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -59.6177770211846,
+        1.65,
+        1.33595604759274
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "10-B-storefront",
+      "look": [
+        -61.0484708831016,
+        1.2,
+        -4.38795127813093
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B1-030",
+      "title": "B館・店舗正面",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -158.122777698071,
+        1.65,
+        -326.509828812804
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "10-C-storefront",
+      "look": [
+        -163.882281353156,
+        1.2,
+        -325.229939111674
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "C1F-CW-1",
+      "title": "C館・店舗正面",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        448.212745206843,
+        -3.7,
+        -6.01908140286847
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "B1",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-A-B1",
+      "look": [
+        433.963586276501,
+        -4.2,
+        30.1785316396298
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "AB1-001",
+      "title": "A館 B1 / 食品市場",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        448.212745206843,
+        1.65,
+        -6.01908140286847
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-A-1F",
+      "look": [
+        433.955826063136,
+        1.15,
+        30.2654460293119
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "A1F-001",
+      "title": "A館 1F / 大型食品スーパー",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        448.212745206843,
+        7.175,
+        -6.01908140286847
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "2F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-A-2F",
+      "look": [
+        434.985225664079,
+        6.675,
+        18.7361704987536
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "A2F-001",
+      "title": "A館 2F / 大型ファッション",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        462.509803816422,
+        12.525,
+        -6.47346765769885
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "3F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-A-3F",
+      "look": [
+        517.149967260421,
+        12.025,
+        -19.0197005861828
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "A3F-002",
+      "title": "A館 3F / 屋内遊園地・娯楽",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        421.578259992763,
+        18.05,
+        -56.9526502066694
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-A-RF",
+      "look": [
+        418.983296066468,
+        17.55,
+        -64.9392852880219
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "ARF-003",
+      "title": "A館 RF / 屋上カフェ",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -283.1,
+        -3.7,
+        -9.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "B1",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-B-B1",
+      "look": [
+        -294.236666666667,
+        -4.2,
+        -23.3083333333333
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "BB1-MARKET",
+      "title": "B館 B1 / 地下食品スーパー",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        194.536483508446,
+        1.65,
+        -20.1
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-B-1F",
+      "look": [
+        209.693945815271,
+        1.15,
+        -26.7238095238095
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B1-AE1",
+      "title": "B館 1F / 食品大型店",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        191.012368926219,
+        7.175,
+        -20.1002
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "2F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-B-2F",
+      "look": [
+        215.489909518447,
+        6.675,
+        -28.9477714285714
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B2-AE1",
+      "title": "B館 2F / 大型衣料",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        193.879721113943,
+        12.525,
+        -20.1
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "3F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-B-3F",
+      "look": [
+        193.2329635,
+        12.025,
+        -27.04683615
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "B3-AE1",
+      "title": "B館 3F / フードホール",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -284.1,
+        18.05,
+        -18.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-B-RF",
+      "look": [
+        -290.8,
+        17.55,
+        -20.2166666666667
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "BRF-CAFE",
+      "title": "B館 RF / 屋上カフェ・休憩ラウンジ",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        77.2419974266169,
+        -3.7,
+        -364.081256393992
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "B1",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-C-B1",
+      "look": [
+        75.3070465372567,
+        -4.2,
+        -372.729323729754
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "CB1-CNE-3",
+      "title": "C館 B1 / アウトレット生活雑貨",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        45.9483198145983,
+        1.65,
+        -378.305655308546
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-C-1F",
+      "look": [
+        44.1699057434908,
+        1.15,
+        -386.882569545103
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "C1F-CNE-2",
+      "title": "C館 1F / アウトドア",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        45.9483198145983,
+        7.175,
+        -378.305655308546
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "2F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-C-2F",
+      "look": [
+        44.1699057434908,
+        6.675,
+        -386.882569545103
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "C2F-CNE-2",
+      "title": "C館 2F / スポーツ",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        45.9483198145983,
+        12.525,
+        -378.305655308546
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "3F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-C-3F",
+      "look": [
+        44.1699057434908,
+        12.025,
+        -386.882569545103
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "C3F-CNE-2",
+      "title": "C館 3F / アウトドア",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        17.2991783388066,
+        18.05,
+        -391.327992342996
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "FLOOR-C-RF",
+      "look": [
+        17.0195372066657,
+        17.55,
+        -396.266351163455
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "CRF-CNE-1",
+      "title": "C館 RF / 展望カフェ",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        311.07,
+        1.65,
+        -63.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-A-1F",
+      "look": [
+        311.0,
+        3.15,
+        -59.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館 1F / 誘導・共用景観",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -187.083134198433,
+        1.65,
+        -28.2958255355604
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-B-1F",
+      "look": [
+        -189.036626839687,
+        1.5,
+        -31.7863651071121
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館 1F / 誘導・共用景観",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -83.230240220756,
+        1.65,
+        -216.463919006598
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "NAV-C-1F",
+      "look": [
+        -84.0979620520306,
+        1.5,
+        -212.559170765862
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館 1F / 誘導・共用景観",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "cases": [
+    {
+      "end": [
+        -1.07314157485962,
+        0.000828761025331914,
+        -218.163558959961
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-NEW-PUBLIC-ACCESS",
+      "lowest_y": -0.0196428261697292,
+      "max_opposite_vertical_step_m": 0.016611400526017,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -118.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -97.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -76.5,
+          0.0,
+          -288.0
+        ],
+        [
+          -55.5,
+          0.0,
+          -285.0
+        ],
+        [
+          -45.0,
+          0.0,
+          -282.0
+        ],
+        [
+          -24.0,
+          0.0,
+          -262.5
+        ],
+        [
+          -15.0,
+          0.0,
+          -241.5
+        ],
+        [
+          -9.0,
+          0.0,
+          -229.5
+        ],
+        [
+          -1.0,
+          0.0,
+          -218.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -218.199996948242
+        ]
+      ],
+      "ticks": 4588
+    }
+  ],
+  "failed": [],
+  "human_playtest": false,
+  "original_ES_controller_sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+  "physics_hz": 60,
+  "scope": "A/B continuous flights and ascending transfers; C dog-run public route. Does not certify structural loads or all possible edge approaches."
+}

@@ -1,0 +1,565 @@
+{
+  "human_playtest": false,
+  "method": "Local .6m sales-only graph with actual capsule/floor validation at each edge. Deepest reachable sampled point; no new floor, opening or fixture edits.",
+  "stores": [
+    {
+      "diagnostic": [],
+      "endpoint_distance_from_entry_m": 12.4532781613072,
+      "geometry_changed": false,
+      "id": "AB1-013",
+      "nearby_nodes": 78,
+      "pass": true,
+      "route": [
+        [
+          590.498107910156,
+          -5.34999990463257,
+          5.83396863937378
+        ],
+        [
+          589.813049316406,
+          -5.34999990463257,
+          8.24815940856934
+        ],
+        [
+          585.013000488281,
+          -5.34999990463257,
+          10.6481590270996
+        ],
+        [
+          579.013000488281,
+          -5.34999990463257,
+          10.6481590270996
+        ]
+      ],
+      "start_node": 96
+    },
+    {
+      "diagnostic": [],
+      "endpoint_distance_from_entry_m": 13.9522205841406,
+      "geometry_changed": false,
+      "id": "AB1-021",
+      "nearby_nodes": 40,
+      "pass": true,
+      "route": [
+        [
+          447.200012207031,
+          -5.34999990463257,
+          139.899993896484
+        ],
+        [
+          445.243835449219,
+          -5.34999990463257,
+          143.829299926758
+        ],
+        [
+          445.243835449219,
+          -5.34999990463257,
+          145.629287719727
+        ],
+        [
+          446.443817138672,
+          -5.34999990463257,
+          145.629287719727
+        ],
+        [
+          452.443817138672,
+          -5.34999990463257,
+          152.829299926758
+        ]
+      ],
+      "start_node": 79
+    },
+    {
+      "diagnostic": [],
+      "endpoint_distance_from_entry_m": 13.4432389180369,
+      "geometry_changed": false,
+      "id": "A1F-003",
+      "nearby_nodes": 71,
+      "pass": true,
+      "route": [
+        [
+          364.058715820312,
+          0.0,
+          -65.0
+        ],
+        [
+          365.209289550781,
+          0.0,
+          -66.5351028442383
+        ],
+        [
+          369.409301757812,
+          0.0,
+          -69.5351028442383
+        ],
+        [
+          369.409301757812,
+          0.0,
+          -71.9351043701172
+        ],
+        [
+          372.409301757812,
+          0.0,
+          -74.9351043701172
+        ],
+        [
+          372.409301757812,
+          0.0,
+          -75.5351028442383
+        ]
+      ],
+      "start_node": 230
+    },
+    {
+      "diagnostic": [],
+      "endpoint_distance_from_entry_m": 18.5481040952261,
+      "geometry_changed": false,
+      "id": "A2F-016",
+      "nearby_nodes": 81,
+      "pass": true,
+      "route": [
+        [
+          509.100952148438,
+          5.52500009536743,
+          -35.8213806152344
+        ],
+        [
+          516.870178222656,
+          5.52500009536743,
+          -24.9198608398438
+        ],
+        [
+          518.070190429688,
+          5.52500009536743,
+          -23.1198616027832
+        ],
+        [
+          519.870178222656,
+          5.52500009536743,
+          -22.5198612213135
+        ],
+        [
+          519.870178222656,
+          5.52500009536743,
+          -20.7198600769043
+        ]
+      ],
+      "start_node": 653
+    },
+    {
+      "diagnostic": [
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.84644, 0.0, 32.78269)",
+          "node_clear": true,
+          "p": [
+            -52.8464431762695,
+            0.0,
+            32.7826919555664
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.44644, 0.0, 33.38269)",
+          "node_clear": true,
+          "p": [
+            -53.4464416503906,
+            0.0,
+            33.3826942443848
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.44644, 0.0, 32.78269)",
+          "node_clear": true,
+          "p": [
+            -53.4464416503906,
+            0.0,
+            32.7826919555664
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.84644, 0.0, 32.18269)",
+          "node_clear": true,
+          "p": [
+            -52.8464431762695,
+            0.0,
+            32.1826934814453
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.24644, 0.0, 32.18269)",
+          "node_clear": true,
+          "p": [
+            -52.2464408874512,
+            0.0,
+            32.1826934814453
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.44644, 0.0, 32.18269)",
+          "node_clear": true,
+          "p": [
+            -53.4464416503906,
+            0.0,
+            32.1826934814453
+          ]
+        }
+      ],
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B1-SW12",
+      "nearby_nodes": 48,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "diagnostic": [
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-98.32721, 5.525, 29.01316)",
+          "node_clear": true,
+          "p": [
+            -98.3272094726562,
+            5.52500009536743,
+            29.0131568908691
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-98.92722, 5.525, 29.01316)",
+          "node_clear": true,
+          "p": [
+            -98.9272155761719,
+            5.52500009536743,
+            29.0131568908691
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-97.72721, 5.525, 29.61316)",
+          "node_clear": true,
+          "p": [
+            -97.7272109985352,
+            5.52500009536743,
+            29.6131572723389
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-98.32721, 5.525, 29.61316)",
+          "node_clear": true,
+          "p": [
+            -98.3272094726562,
+            5.52500009536743,
+            29.6131572723389
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-97.12721, 5.525, 29.61316)",
+          "node_clear": true,
+          "p": [
+            -97.1272125244141,
+            5.52500009536743,
+            29.6131572723389
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-98.92722, 5.525, 29.61316)",
+          "node_clear": true,
+          "p": [
+            -98.9272155761719,
+            5.52500009536743,
+            29.6131572723389
+          ]
+        }
+      ],
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B2-N03",
+      "nearby_nodes": 67,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "diagnostic": [
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.84644, 5.525, 32.78269)",
+          "node_clear": true,
+          "p": [
+            -52.8464431762695,
+            5.52500009536743,
+            32.7826919555664
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.44644, 5.525, 33.38269)",
+          "node_clear": true,
+          "p": [
+            -53.4464416503906,
+            5.52500009536743,
+            33.3826942443848
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.44644, 5.525, 32.78269)",
+          "node_clear": true,
+          "p": [
+            -53.4464416503906,
+            5.52500009536743,
+            32.7826919555664
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.84644, 5.525, 32.18269)",
+          "node_clear": true,
+          "p": [
+            -52.8464431762695,
+            5.52500009536743,
+            32.1826934814453
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.24644, 5.525, 32.18269)",
+          "node_clear": true,
+          "p": [
+            -52.2464408874512,
+            5.52500009536743,
+            32.1826934814453
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.44644, 5.525, 32.18269)",
+          "node_clear": true,
+          "p": [
+            -53.4464416503906,
+            5.52500009536743,
+            32.1826934814453
+          ]
+        }
+      ],
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B2-SW12",
+      "nearby_nodes": 48,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "diagnostic": [
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-98.09094, 10.875, 29.22098)",
+          "node_clear": true,
+          "p": [
+            -98.0909423828125,
+            10.875,
+            29.220983505249
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-97.49094, 10.875, 29.22098)",
+          "node_clear": true,
+          "p": [
+            -97.4909439086914,
+            10.875,
+            29.220983505249
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-98.69095, 10.875, 29.22098)",
+          "node_clear": true,
+          "p": [
+            -98.6909484863281,
+            10.875,
+            29.220983505249
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-98.09094, 10.875, 29.82098)",
+          "node_clear": true,
+          "p": [
+            -98.0909423828125,
+            10.875,
+            29.8209838867188
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-99.29094, 10.875, 28.62098)",
+          "node_clear": true,
+          "p": [
+            -99.2909393310547,
+            10.875,
+            28.6209831237793
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-97.49094, 10.875, 29.82098)",
+          "node_clear": true,
+          "p": [
+            -97.4909439086914,
+            10.875,
+            29.8209838867188
+          ]
+        }
+      ],
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B3-N02",
+      "nearby_nodes": 71,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    },
+    {
+      "diagnostic": [
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.08289, 10.875, 33.38269)",
+          "node_clear": true,
+          "p": [
+            -53.082893371582,
+            10.875,
+            33.3826942443848
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.48289, 10.875, 32.78269)",
+          "node_clear": true,
+          "p": [
+            -52.4828948974609,
+            10.875,
+            32.7826919555664
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.08289, 10.875, 32.78269)",
+          "node_clear": true,
+          "p": [
+            -53.082893371582,
+            10.875,
+            32.7826919555664
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.68289, 10.875, 33.38269)",
+          "node_clear": true,
+          "p": [
+            -53.6828918457031,
+            10.875,
+            33.3826942443848
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-53.68289, 10.875, 32.78269)",
+          "node_clear": true,
+          "p": [
+            -53.6828918457031,
+            10.875,
+            32.7826919555664
+          ]
+        },
+        {
+          "contacts": [],
+          "entry_sweep": false,
+          "floor": true,
+          "floor_hit": "(-52.48289, 10.875, 32.18269)",
+          "node_clear": true,
+          "p": [
+            -52.4828948974609,
+            10.875,
+            32.1826934814453
+          ]
+        }
+      ],
+      "endpoint_distance_from_entry_m": 0.0,
+      "geometry_changed": false,
+      "id": "B3-SW12",
+      "nearby_nodes": 50,
+      "pass": false,
+      "route": [],
+      "start_node": -1
+    }
+  ]
+}

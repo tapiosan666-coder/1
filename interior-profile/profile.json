@@ -1,0 +1,236 @@
+{
+  "60FPS_verified": false,
+  "Engine_max_fps": 144,
+  "VSync": 1,
+  "Windows_GPU": false,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "cases": [
+    {
+      "camera": {
+        "category": "book",
+        "eye": [
+          397.777370698996,
+          1.65,
+          -53.1782330530823
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "A-1F-book",
+        "look": [
+          397.88452612311,
+          1.0,
+          -67.0666102256896
+        ],
+        "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+        "store_id": "A1F-007",
+        "title": "A館 1F / book / entry",
+        "variants": [
+          "normal",
+          "C",
+          "ES"
+        ],
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 1784.0,
+          "objects": 1784.0,
+          "physics_seconds": 0.002212,
+          "primitives": 2261922.0,
+          "process_seconds": 4.307468,
+          "render_CPU_ms": 6.29500007629395,
+          "render_GPU_ms": 3790.375,
+          "static_memory_bytes": 1105903094.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 8901.382
+        },
+        {
+          "draw_calls": 1784.0,
+          "objects": 1784.0,
+          "physics_seconds": 0.005944,
+          "primitives": 2261922.0,
+          "process_seconds": 4.579397,
+          "render_CPU_ms": 10.5010004043579,
+          "render_GPU_ms": 4229.98193359375,
+          "static_memory_bytes": 1105904282.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 4219.806
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "book",
+        "eye": [
+          397.777370698996,
+          1.65,
+          -53.1782330530823
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "A-1F-book",
+        "look": [
+          397.88452612311,
+          1.0,
+          -67.0666102256896
+        ],
+        "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+        "store_id": "A1F-007",
+        "title": "A館 1F / book / entry",
+        "variants": [
+          "normal",
+          "C",
+          "ES"
+        ],
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "no_occlusion",
+      "frames": [
+        {
+          "draw_calls": 1784.0,
+          "objects": 1784.0,
+          "physics_seconds": 0.00038,
+          "primitives": 2261922.0,
+          "process_seconds": 3.515031,
+          "render_CPU_ms": 4.54300022125244,
+          "render_GPU_ms": 3736.4599609375,
+          "static_memory_bytes": 1105674055.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 6789.221
+        },
+        {
+          "draw_calls": 1784.0,
+          "objects": 1784.0,
+          "physics_seconds": 0.001555,
+          "primitives": 2261922.0,
+          "process_seconds": 3.275525,
+          "render_CPU_ms": 3.45300006866455,
+          "render_GPU_ms": 3494.49291992188,
+          "static_memory_bytes": 1105675243.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 3355.522
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "eye": [
+          339.0,
+          1.65,
+          -47.0
+        ],
+        "fov": 75.0,
+        "id": "A-1F-west",
+        "look": [
+          355.0,
+          1.4,
+          -40.0
+        ],
+        "title": "A館 西広場の案内と休憩",
+        "ui": ""
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 5608.0,
+          "objects": 5608.0,
+          "physics_seconds": 0.000465,
+          "primitives": 3631978.0,
+          "process_seconds": 4.327037,
+          "render_CPU_ms": 23.7789993286133,
+          "render_GPU_ms": 4788.77197265625,
+          "static_memory_bytes": 1112041646.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 8732.909
+        },
+        {
+          "draw_calls": 5620.0,
+          "objects": 5620.0,
+          "physics_seconds": 0.000479,
+          "primitives": 3635398.0,
+          "process_seconds": 4.414825,
+          "render_CPU_ms": 13.6199998855591,
+          "render_GPU_ms": 4285.64306640625,
+          "static_memory_bytes": 1112043826.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 4115.387
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "eye": [
+          339.0,
+          1.65,
+          -47.0
+        ],
+        "fov": 75.0,
+        "id": "A-1F-west",
+        "look": [
+          355.0,
+          1.4,
+          -40.0
+        ],
+        "title": "A館 西広場の案内と休憩",
+        "ui": ""
+      },
+      "camera_motion": "static",
+      "condition": "no_occlusion",
+      "frames": [
+        {
+          "draw_calls": 5671.0,
+          "objects": 5671.0,
+          "physics_seconds": 0.000334,
+          "primitives": 3642988.0,
+          "process_seconds": 4.284517,
+          "render_CPU_ms": 13.668999671936,
+          "render_GPU_ms": 4110.91796875,
+          "static_memory_bytes": 1111826327.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 9004.247
+        },
+        {
+          "draw_calls": 5671.0,
+          "objects": 5671.0,
+          "physics_seconds": 0.000636,
+          "primitives": 3642988.0,
+          "process_seconds": 4.732573,
+          "render_CPU_ms": 12.7309999465942,
+          "render_GPU_ms": 4220.7021484375,
+          "static_memory_bytes": 1111827515.0,
+          "texture_memory_bytes": 1003075072.0,
+          "video_memory_bytes": 1391677248.0,
+          "wall_frame_ms": 4706.926
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    }
+  ],
+  "effects_default": {
+    "glow_enabled": true,
+    "ssao_enabled": true,
+    "ssil_enabled": true,
+    "ssr_enabled": true
+  },
+  "human_playtest": false,
+  "physics_hz": 60,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "scope": "Short factor diagnostics,2 warm-up frames and configured sampled frames. Software GPU timings are not Windows GPU performance. Objects hidden for diagnostic isolation only, never exported as a quality setting. Render CPU/GPU timing zero may mean backend unsupported. Current snapshot includes baked details with conservative categories."
+}

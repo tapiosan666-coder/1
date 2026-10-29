@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "check": "480 IDs preserved",
+      "pass": true
+    },
+    {
+      "check": "15 source floor records unchanged",
+      "pass": true
+    },
+    {
+      "check": "All original brands and source categories preserved",
+      "pass": true
+    },
+    {
+      "check": "Inherited character data and models unchanged",
+      "pass": true,
+      "changed": [],
+      "files": 73
+    },
+    {
+      "check": "Main game tracked source unchanged",
+      "pass": true,
+      "files": 451
+    },
+    {
+      "check": "Retained standalone scene C_proposal_v12.tscn",
+      "pass": true
+    },
+    {
+      "check": "Retained standalone scene ES_site_proposal_v15.tscn",
+      "pass": true
+    },
+    {
+      "check": "Retained standalone scene main.tscn",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "human_playtest": false,
+  "structural_engineering_certified": false
+}

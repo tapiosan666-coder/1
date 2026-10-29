@@ -1,0 +1,70 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        325.0,
+        1.65,
+        -39.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "SUPP-A-interior-ES",
+      "look": [
+        333.0,
+        7.0,
+        -39.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館1F・吹き抜け中央から連続ES",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        5.5,
+        1.65,
+        -17.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "SUPP-B-fair-entrance",
+      "look": [
+        5.5,
+        2.2,
+        10.0
+      ],
+      "main_script_sha256": "dee4281444561a93955356292389d75a615b6e2c25199b9aeeb1f662c590e019",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館1F・愛知県フェア入口と二列の売場",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    }
+  ]
+}
