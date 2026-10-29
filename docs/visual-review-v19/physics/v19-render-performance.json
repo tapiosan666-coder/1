@@ -1,0 +1,135 @@
+{
+  "144FPS_verified": false,
+  "Windows_GPU": false,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "caveat": "Only four software-Vulkan frames per condition; cold/warm cache order and CPU contention affect results. Moving case actually advances physics; this is not a Windows GPU benchmark. Earlier baseline actor resources stay cached in later cases, memory is total process, not isolated per-model delta.",
+  "human_playtest": false,
+  "measurements": [
+    {
+      "buffer_memory_bytes": 386038826.0,
+      "condition": "none",
+      "draw_calls": [
+        5299.0,
+        5299.0,
+        5299.0,
+        5299.0
+      ],
+      "frame_ms": [
+        11563.025,
+        6392.727,
+        6345.838,
+        6143.313
+      ],
+      "frozen": true,
+      "median_frame_ms": 6369.2825,
+      "physics_process_seconds": 0.002151,
+      "rendered_primitives": [
+        3949843.0,
+        3949843.0,
+        3949843.0,
+        3949843.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.0,
+      "static_memory_bytes": 828994399.0,
+      "texture_memory_bytes": 1035159296.0,
+      "video_memory_bytes": 1548527072.0
+    },
+    {
+      "buffer_memory_bytes": 391420578.0,
+      "condition": "v18_43",
+      "draw_calls": [
+        5420.0,
+        5420.0,
+        5420.0,
+        5420.0
+      ],
+      "frame_ms": [
+        11068.596,
+        5261.147,
+        5166.262,
+        5066.173
+      ],
+      "frozen": true,
+      "median_frame_ms": 5213.7045,
+      "physics_process_seconds": 0.002004,
+      "rendered_primitives": [
+        4070452.0,
+        4070452.0,
+        4070452.0,
+        4070452.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.0,
+      "static_memory_bytes": 839603551.0,
+      "texture_memory_bytes": 1035159296.0,
+      "video_memory_bytes": 1553909168.0
+    },
+    {
+      "buffer_memory_bytes": 391420578.0,
+      "condition": "female_1",
+      "draw_calls": [
+        5329.0,
+        5329.0,
+        5329.0,
+        5329.0
+      ],
+      "frame_ms": [
+        10049.356,
+        4795.735,
+        4812.636,
+        4789.281
+      ],
+      "frozen": true,
+      "median_frame_ms": 4804.1855,
+      "physics_process_seconds": 0.000849,
+      "rendered_primitives": [
+        4035043.0,
+        4035043.0,
+        4035043.0,
+        4035043.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.0,
+      "static_memory_bytes": 839653375.0,
+      "texture_memory_bytes": 1035159296.0,
+      "video_memory_bytes": 1553909168.0
+    },
+    {
+      "buffer_memory_bytes": 391420578.0,
+      "condition": "v19_43_moving",
+      "draw_calls": [
+        5406.0,
+        5406.0,
+        5406.0,
+        5406.0
+      ],
+      "frame_ms": [
+        10949.15,
+        5740.139,
+        5956.563,
+        5129.581
+      ],
+      "frozen": false,
+      "median_frame_ms": 5848.351,
+      "physics_process_seconds": 0.023903,
+      "rendered_primitives": [
+        4119094.0,
+        4119094.0,
+        4119094.0,
+        4119094.0
+      ],
+      "sample_frames": 4,
+      "simulation_seconds_during_samples": 0.533333333333334,
+      "static_memory_bytes": 840606331.0,
+      "texture_memory_bytes": 1035159296.0,
+      "video_memory_bytes": 1553909168.0
+    }
+  ],
+  "renderer": "forward_plus",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "steady_state_benchmark": false
+}

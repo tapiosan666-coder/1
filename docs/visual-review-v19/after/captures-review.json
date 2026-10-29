@@ -1,0 +1,683 @@
+{
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        339.0,
+        1.64999997615814,
+        -47.0
+      ],
+      "actual_look_direction": [
+        0.916063487529755,
+        -0.0143134938552976,
+        0.400777757167816
+      ],
+      "draw_calls": 6454.0,
+      "eye": [
+        339.0,
+        1.65,
+        -47.0
+      ],
+      "fov": 75.0,
+      "id": "V16-A-visitor",
+      "look": [
+        355.0,
+        1.4,
+        -40.0
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 4968993.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "A館 西広場の案内と休憩",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -3.52699995040894,
+        1.65020000934601,
+        32.0999984741211
+      ],
+      "actual_look_direction": [
+        0.420736908912659,
+        0.100676327943802,
+        -0.901579022407532
+      ],
+      "draw_calls": 6740.0,
+      "eye": [
+        -3.527,
+        1.6502,
+        32.1
+      ],
+      "fov": 75.0,
+      "id": "V16-B-aichi",
+      "look": [
+        10.473,
+        5.0002,
+        2.1
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 4050842.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "B館 時の広場・あいち催事",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -68.5434036254883,
+        1.64999997615814,
+        -289.502197265625
+      ],
+      "actual_look_direction": [
+        -0.988168597221375,
+        0.153371661901474,
+        2.348517045902e-05
+      ],
+      "draw_calls": 1812.0,
+      "eye": [
+        -68.5434,
+        1.65,
+        -289.5022
+      ],
+      "fov": 75.0,
+      "id": "V16-C-courtyard",
+      "look": [
+        -161.0,
+        16.0,
+        -289.5
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 1785222.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "C館 中庭・屋外動線",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        339.0,
+        1.64999997615814,
+        -40.0
+      ],
+      "actual_look_direction": [
+        8.742277657e-08,
+        0.0,
+        1.0
+      ],
+      "draw_calls": 3593.0,
+      "eye": [
+        339.0,
+        1.65,
+        -40.0
+      ],
+      "fov": 75.0,
+      "id": "V17-A-long-street",
+      "look": [
+        339.0,
+        1.65,
+        -4.0
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 3399815.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "A館1F 長い専門店街",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -3.0,
+        7.17500019073486,
+        31.7999992370605
+      ],
+      "actual_look_direction": [
+        0.999989926815033,
+        -0.00448713917285204,
+        4.371094775e-08
+      ],
+      "draw_calls": 7443.0,
+      "eye": [
+        -3.0,
+        7.175,
+        31.8
+      ],
+      "fov": 75.0,
+      "id": "V17-B2-gallery",
+      "look": [
+        36.0,
+        7.0,
+        31.8
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 5146600.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "B館2F 共用通路",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -3.0,
+        12.5249996185303,
+        31.7999992370605
+      ],
+      "actual_look_direction": [
+        0.999989926815033,
+        -0.00448711449280381,
+        4.371094775e-08
+      ],
+      "draw_calls": 7320.0,
+      "eye": [
+        -3.0,
+        12.525,
+        31.8
+      ],
+      "fov": 75.0,
+      "id": "V17-B3-gallery",
+      "look": [
+        36.0,
+        12.35,
+        31.8
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 5069681.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "B館3F 共用通路",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -160.172775268555,
+        1.64999997615814,
+        -326.054260253906
+      ],
+      "actual_look_direction": [
+        -0.975866615772247,
+        -0.0256326030939817,
+        0.216857939958572
+      ],
+      "draw_calls": 908.0,
+      "eye": [
+        -160.172770524457,
+        1.65,
+        -326.054274851385
+      ],
+      "fov": 75.0,
+      "id": "shop-apparel-C1F-CW-1",
+      "look": [
+        -167.787029593892,
+        1.45,
+        -324.362217280399
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 1656669.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "代表店舗の素材確認",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        397.405639648438,
+        1.64999997615814,
+        -55.3466033935547
+      ],
+      "actual_look_direction": [
+        -0.168906360864639,
+        -0.0256326105445623,
+        -0.985298752784729
+      ],
+      "draw_calls": 2772.0,
+      "eye": [
+        397.405650305752,
+        1.65,
+        -55.3466020136715
+      ],
+      "fov": 75.0,
+      "id": "shop-book-A1F-007",
+      "look": [
+        396.087732547888,
+        1.45,
+        -63.034455601215
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 2958622.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "代表店舗の素材確認",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -91.21435546875,
+        1.64999997615814,
+        -211.886917114258
+      ],
+      "actual_look_direction": [
+        -0.216858863830566,
+        -0.025632593780756,
+        0.975866377353668
+      ],
+      "draw_calls": 5975.0,
+      "eye": [
+        -91.214352326413,
+        1.65,
+        -211.886924403942
+      ],
+      "fov": 75.0,
+      "id": "shop-cafe-C1F-CSW-3",
+      "look": [
+        -92.9064098973985,
+        1.45,
+        -204.272665334507
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 3182201.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "代表店舗の素材確認",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        383.963806152344,
+        -3.69999980926514,
+        -53.3466644287109
+      ],
+      "actual_look_direction": [
+        -0.168807849287987,
+        -0.042817872017622,
+        -0.984718501567841
+      ],
+      "draw_calls": 3022.0,
+      "eye": [
+        383.963808828106,
+        -3.7,
+        -53.3466625758675
+      ],
+      "fov": 76.0,
+      "id": "AB1-003-interior",
+      "look": [
+        382.189688769442,
+        -4.15,
+        -63.6956962514069
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 3255505.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "食品専門店 / 地下店舗",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -283.5,
+        -3.69999980926514,
+        -9.0
+      ],
+      "actual_look_direction": [
+        -0.999082922935486,
+        -0.042817872017622,
+        4.367130301e-08
+      ],
+      "draw_calls": 590.0,
+      "eye": [
+        -283.5,
+        -3.7,
+        -9.0
+      ],
+      "fov": 76.0,
+      "id": "BB1-MARKET-interior",
+      "look": [
+        -294.0,
+        -4.15,
+        -9.0
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 2075217.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "地下食品スーパー / 地下店舗",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -188.020004272461,
+        18.0499992370605,
+        -30.8199996948242
+      ],
+      "actual_look_direction": [
+        -0.973080337047577,
+        -0.230466112494469,
+        4.253469398e-08
+      ],
+      "draw_calls": 1204.0,
+      "eye": [
+        -188.02,
+        18.05,
+        -30.82
+      ],
+      "fov": 72.0,
+      "id": "B-RF-garden",
+      "look": [
+        -191.82,
+        17.15,
+        -30.82
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 1918211.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "B館屋上前庭 / 休憩テラス",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        398.855438232422,
+        18.0499992370605,
+        -36.6223487854004
+      ],
+      "actual_look_direction": [
+        0.168849974870682,
+        -0.0368169732391834,
+        0.984953939914703
+      ],
+      "draw_calls": 3544.0,
+      "eye": [
+        398.855431503017,
+        18.05,
+        -36.6223500523249
+      ],
+      "fov": 72.0,
+      "id": "ARF-002-terrace",
+      "look": [
+        400.46058774657,
+        17.7,
+        -27.2589386315989
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 4581608.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "屋上カフェ / 屋外席",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        -54.0248756408691,
+        1.64999997615814,
+        -6.18558120727539
+      ],
+      "actual_look_direction": [
+        0.116611003875732,
+        -0.371477633714676,
+        0.921089768409729
+      ],
+      "draw_calls": 3113.0,
+      "eye": [
+        -54.0248737997028,
+        1.65,
+        -6.18558130104837
+      ],
+      "fov": 75.0,
+      "id": "v15-B1-030-beauty_tester_bar",
+      "look": [
+        -53.8679212138561,
+        1.15,
+        -4.94581641382752
+      ],
+      "note": "Reachable service approach from collision-tested path, avoids looking through adjacent tall shelves",
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 3030294.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "B1-030 beauty_tester_bar",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        34.6540298461914,
+        1.64999997615814,
+        38.812385559082
+      ],
+      "actual_look_direction": [
+        -0.313157767057419,
+        -0.414658516645432,
+        0.854394853115082
+      ],
+      "draw_calls": 789.0,
+      "eye": [
+        34.6540286894651,
+        1.65,
+        38.8123868333631
+      ],
+      "fov": 75.0,
+      "id": "v15-B1-N03-electronics_media_demo",
+      "look": [
+        34.2764215826274,
+        1.15,
+        39.8426247991399
+      ],
+      "note": "Reachable service approach from collision-tested path, avoids looking through adjacent tall shelves",
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 2037901.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "B1-N03 electronics_media_demo",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        18.0,
+        1.64999997615814,
+        25.0
+      ],
+      "actual_look_direction": [
+        0.812855243682861,
+        -0.0464488677680492,
+        0.580610811710358
+      ],
+      "draw_calls": 6635.0,
+      "eye": [
+        18.0,
+        1.65,
+        25.0
+      ],
+      "fov": 75.0,
+      "id": "V18-B-time-people",
+      "look": [
+        25.0,
+        1.25,
+        30.0
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 4341776.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "B館1F 時の広場・ベンチと会話",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        385.839599609375,
+        1.64999997615814,
+        -53.3638496398926
+      ],
+      "actual_look_direction": [
+        -0.168878972530365,
+        -0.0320348367094994,
+        -0.985116064548492
+      ],
+      "draw_calls": 2835.0,
+      "eye": [
+        385.839585612312,
+        1.65,
+        -53.3638480662246
+      ],
+      "fov": 75.0,
+      "id": "V18-A-home-interior",
+      "look": [
+        384.521667854447,
+        1.4,
+        -61.0517016537681
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 2991843.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "A館1F 雑貨・器の売場",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        383.339996337891,
+        18.0499992370605,
+        -40.6300010681152
+      ],
+      "actual_look_direction": [
+        -0.70271635055542,
+        -0.111263275146484,
+        -0.70271635055542
+      ],
+      "draw_calls": 6597.0,
+      "eye": [
+        383.34,
+        18.05,
+        -40.63
+      ],
+      "fov": 75.0,
+      "id": "V18-A-roof-lounge",
+      "look": [
+        377.34,
+        17.1,
+        -46.63
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 4060047.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920.0,
+        1080.0
+      ],
+      "title": "A館RF 植栽と一体の休憩家具",
+      "ui": "",
+      "warmup_frames": 2.0
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "actual_camera_global": [
+        364.558715820312,
+        1.64999997615814,
+        -67.0
+      ],
+      "actual_look_direction": [
+        0.0,
+        -0.0277670696377754,
+        -0.999614477157593
+      ],
+      "draw_calls": 1839.0,
+      "eye": [
+        364.558701768868,
+        1.65,
+        -67.0
+      ],
+      "fov": 75.0,
+      "id": "shop-shoes-A1F-003",
+      "look": [
+        364.558701768868,
+        1.4,
+        -76.0
+      ],
+      "performance_note": "Software Vulkan llvmpipe, capture window only; includes warmup, not steady-state Windows GPU FPS",
+      "primitives": 2086778.0,
+      "reference_fps_1s_window": 1.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館1F 靴・鞄店 / サイズ展示・フィッティング",
+      "ui": "",
+      "warmup_frames": 2
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "height_m": 1.665,
+  "rig_bones": 163,
+  "actions": [
+    "Blink",
+    "Browse",
+    "Idle",
+    "SitDown",
+    "SitIdle",
+    "StandUp",
+    "Walk"
+  ],
+  "meshes": [
+    {
+      "name": "Face_neck_ears",
+      "vertices": 4316,
+      "polygons": 4290
+    },
+    {
+      "name": "Anatomical_hands_ten_fingers",
+      "vertices": 3338,
+      "polygons": 3316
+    },
+    {
+      "name": "Relaxed_crew_neck_knit",
+      "vertices": 28733,
+      "polygons": 57433
+    },
+    {
+      "name": "Tailored_wool_trousers",
+      "vertices": 1377,
+      "polygons": 1334
+    },
+    {
+      "name": "Finished_low_rib_collar",
+      "vertices": 480,
+      "polygons": 384
+    },
+    {
+      "name": "Tailored_seam_combined",
+      "vertices": 588,
+      "polygons": 564
+    },
+    {
+      "name": "Warm_leather_combined",
+      "vertices": 816,
+      "polygons": 772
+    },
+    {
+      "name": "Rubber_combined",
+      "vertices": 288,
+      "polygons": 194
+    },
+    {
+      "name": "Corneal_eye_L",
+      "vertices": 2040,
+      "polygons": 510
+    },
+    {
+      "name": "Corneal_eye_R",
+      "vertices": 2040,
+      "polygons": 510
+    },
+    {
+      "name": "Chestnut_hair_combined",
+      "vertices": 12652,
+      "polygons": 9920
+    },
+    {
+      "name": "Soft_brow_L",
+      "vertices": 50,
+      "polygons": 24
+    },
+    {
+      "name": "Lash_and_brow_combined",
+      "vertices": 288,
+      "polygons": 192
+    },
+    {
+      "name": "Soft_brow_R",
+      "vertices": 50,
+      "polygons": 24
+    }
+  ],
+  "anatomy": "Pinned MakeHuman CC0 female morph + full anatomical weights, not primitive-body assembly",
+  "skin_textures": "Original procedural pigmentation, pore normal and roughness; no photographic skin scan",
+  "clothing_and_hair": "Original tailored mesh shell and layered directional clumps",
+  "AAA_quality_verified": false,
+  "exported_triangles": 166364,
+  "exported_material_primitives": 14,
+  "rigid_decorative_seams_disabled_at_runtime": true
+}

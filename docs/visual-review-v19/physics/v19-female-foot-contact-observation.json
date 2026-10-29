@@ -1,0 +1,5663 @@
+{
+  "foot_bone_indices": [
+    6,
+    26
+  ],
+  "human_playtest": false,
+  "maximum_stance_drift_m_per_tick": 0.00772140314802527,
+  "median_stance_drift_m_per_tick": 0.000335780059685931,
+  "method": "Actual moving female actor on existing A walking route. Animated ankle pivots sampled during middle of nominal stance, not sole contact or full foot IK against arbitrary terrain. Turning/acceleration and garment intersections require visual evaluation; no zero-sliding claim.",
+  "sample_count": 706,
+  "samples": [
+    {
+      "ankle_height_m": 0.077259436249733,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000305390276480466,
+      "speed_mps": 0.780000000000001,
+      "stance_phase": 0.40162770261957,
+      "tick": 36
+    },
+    {
+      "ankle_height_m": 0.0752199441194534,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000305390276480466,
+      "speed_mps": 0.801666666666667,
+      "stance_phase": 0.422684830898268,
+      "tick": 37
+    },
+    {
+      "ankle_height_m": 0.0741205215454102,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000305271125398576,
+      "speed_mps": 0.823333333333334,
+      "stance_phase": 0.444320186955787,
+      "tick": 38
+    },
+    {
+      "ankle_height_m": 0.0732845738530159,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000305271125398576,
+      "speed_mps": 0.845000000000001,
+      "stance_phase": 0.466533770792126,
+      "tick": 39
+    },
+    {
+      "ankle_height_m": 0.0732581242918968,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.136147252579356,
+      "tick": 46
+    },
+    {
+      "ankle_height_m": 0.073260672390461,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.161155604013325,
+      "tick": 47
+    },
+    {
+      "ankle_height_m": 0.0731140747666359,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.186163955447294,
+      "tick": 48
+    },
+    {
+      "ankle_height_m": 0.0731354504823685,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.211124121233029,
+      "tick": 49
+    },
+    {
+      "ankle_height_m": 0.073259249329567,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.236084287018763,
+      "tick": 50
+    },
+    {
+      "ankle_height_m": 0.0733019337058067,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.261092638452733,
+      "tick": 51
+    },
+    {
+      "ankle_height_m": 0.07314483076334,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.286100989886702,
+      "tick": 52
+    },
+    {
+      "ankle_height_m": 0.0731514319777489,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.311109341320671,
+      "tick": 53
+    },
+    {
+      "ankle_height_m": 0.0732737556099892,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.336117692754641,
+      "tick": 54
+    },
+    {
+      "ankle_height_m": 0.0733704194426537,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.36112604418861,
+      "tick": 55
+    },
+    {
+      "ankle_height_m": 0.0733530968427658,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.386134395622579,
+      "tick": 56
+    },
+    {
+      "ankle_height_m": 0.0733695477247238,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.411142747056549,
+      "tick": 57
+    },
+    {
+      "ankle_height_m": 0.0733525678515434,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.436151098490518,
+      "tick": 58
+    },
+    {
+      "ankle_height_m": 0.0737790241837502,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.461159449924488,
+      "tick": 59
+    },
+    {
+      "ankle_height_m": 0.073311448097229,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.136217909962273,
+      "tick": 66
+    },
+    {
+      "ankle_height_m": 0.0732874795794487,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.161226261396243,
+      "tick": 67
+    },
+    {
+      "ankle_height_m": 0.0731289386749268,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.186234612830212,
+      "tick": 68
+    },
+    {
+      "ankle_height_m": 0.0731429383158684,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.211242964264182,
+      "tick": 69
+    },
+    {
+      "ankle_height_m": 0.0732652693986893,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.236251315698151,
+      "tick": 70
+    },
+    {
+      "ankle_height_m": 0.0733018815517426,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.261259667132121,
+      "tick": 71
+    },
+    {
+      "ankle_height_m": 0.0731458738446236,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.28626801856609,
+      "tick": 72
+    },
+    {
+      "ankle_height_m": 0.0731517449021339,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.311276370000059,
+      "tick": 73
+    },
+    {
+      "ankle_height_m": 0.0732758343219757,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.336284721434028,
+      "tick": 74
+    },
+    {
+      "ankle_height_m": 0.0733693987131119,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.361293072867998,
+      "tick": 75
+    },
+    {
+      "ankle_height_m": 0.0733543485403061,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.386301424301967,
+      "tick": 76
+    },
+    {
+      "ankle_height_m": 0.0733685418963432,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.411309775735936,
+      "tick": 77
+    },
+    {
+      "ankle_height_m": 0.073353499174118,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.436318127169906,
+      "tick": 78
+    },
+    {
+      "ankle_height_m": 0.0733639597892761,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.461326478603875,
+      "tick": 79
+    },
+    {
+      "ankle_height_m": 0.0733126774430275,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.13638493864166,
+      "tick": 86
+    },
+    {
+      "ankle_height_m": 0.0732852965593338,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.16139329007563,
+      "tick": 87
+    },
+    {
+      "ankle_height_m": 0.0731291621923447,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.186401641509599,
+      "tick": 88
+    },
+    {
+      "ankle_height_m": 0.0731425434350967,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.211409992943569,
+      "tick": 89
+    },
+    {
+      "ankle_height_m": 0.0732671692967415,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.236418344377538,
+      "tick": 90
+    },
+    {
+      "ankle_height_m": 0.0732997581362724,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.261426695811507,
+      "tick": 91
+    },
+    {
+      "ankle_height_m": 0.0731460005044937,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.286435047245477,
+      "tick": 92
+    },
+    {
+      "ankle_height_m": 0.073151521384716,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.311443398679446,
+      "tick": 93
+    },
+    {
+      "ankle_height_m": 0.0732777416706085,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.336451750113415,
+      "tick": 94
+    },
+    {
+      "ankle_height_m": 0.0733682438731194,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.361460101547385,
+      "tick": 95
+    },
+    {
+      "ankle_height_m": 0.0733551979064941,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.386468452981354,
+      "tick": 96
+    },
+    {
+      "ankle_height_m": 0.0733675211668015,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.411476804415323,
+      "tick": 97
+    },
+    {
+      "ankle_height_m": 0.0733544752001762,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.436485155849293,
+      "tick": 98
+    },
+    {
+      "ankle_height_m": 0.073789082467556,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.461493507283262,
+      "tick": 99
+    },
+    {
+      "ankle_height_m": 0.0733139365911484,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.136551967321048,
+      "tick": 106
+    },
+    {
+      "ankle_height_m": 0.0732828602194786,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.161560318755018,
+      "tick": 107
+    },
+    {
+      "ankle_height_m": 0.073129303753376,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.186568670188987,
+      "tick": 108
+    },
+    {
+      "ankle_height_m": 0.0731421709060669,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.211577021622956,
+      "tick": 109
+    },
+    {
+      "ankle_height_m": 0.0732694119215012,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.236585373056926,
+      "tick": 110
+    },
+    {
+      "ankle_height_m": 0.0732976272702217,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.261593724490895,
+      "tick": 111
+    },
+    {
+      "ankle_height_m": 0.0731461867690086,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.286602075924864,
+      "tick": 112
+    },
+    {
+      "ankle_height_m": 0.0731512159109116,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.311610427358834,
+      "tick": 113
+    },
+    {
+      "ankle_height_m": 0.0732796639204025,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.336618778792803,
+      "tick": 114
+    },
+    {
+      "ankle_height_m": 0.0733671188354492,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.361627130226772,
+      "tick": 115
+    },
+    {
+      "ankle_height_m": 0.0733561441302299,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.386635481660742,
+      "tick": 116
+    },
+    {
+      "ankle_height_m": 0.0733663067221642,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.411643833094711,
+      "tick": 117
+    },
+    {
+      "ankle_height_m": 0.0733553171157837,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.43665218452868,
+      "tick": 118
+    },
+    {
+      "ankle_height_m": 0.0733615830540657,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.46166053596265,
+      "tick": 119
+    },
+    {
+      "ankle_height_m": 0.0733152478933334,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.136718996000435,
+      "tick": 126
+    },
+    {
+      "ankle_height_m": 0.0732807070016861,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.161727347434404,
+      "tick": 127
+    },
+    {
+      "ankle_height_m": 0.0731295198202133,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.186735698868374,
+      "tick": 128
+    },
+    {
+      "ankle_height_m": 0.073141910135746,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.211744050302343,
+      "tick": 129
+    },
+    {
+      "ankle_height_m": 0.0732712894678116,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.236752401736313,
+      "tick": 130
+    },
+    {
+      "ankle_height_m": 0.0732955932617188,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.261760753170282,
+      "tick": 131
+    },
+    {
+      "ankle_height_m": 0.0731462687253952,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.286769104604251,
+      "tick": 132
+    },
+    {
+      "ankle_height_m": 0.0731510743498802,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.311777456038221,
+      "tick": 133
+    },
+    {
+      "ankle_height_m": 0.0732815489172935,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.33678580747219,
+      "tick": 134
+    },
+    {
+      "ankle_height_m": 0.0733659565448761,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.361794158906159,
+      "tick": 135
+    },
+    {
+      "ankle_height_m": 0.0733571946620941,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.386802510340129,
+      "tick": 136
+    },
+    {
+      "ankle_height_m": 0.0733652636408806,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.411810861774098,
+      "tick": 137
+    },
+    {
+      "ankle_height_m": 0.0733565762639046,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.436819213208068,
+      "tick": 138
+    },
+    {
+      "ankle_height_m": 0.0737990140914917,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.461827564642037,
+      "tick": 139
+    },
+    {
+      "ankle_height_m": 0.0733165591955185,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.136886024679823,
+      "tick": 146
+    },
+    {
+      "ankle_height_m": 0.0732784643769264,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.161894376113792,
+      "tick": 147
+    },
+    {
+      "ankle_height_m": 0.0731298178434372,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.186902727547761,
+      "tick": 148
+    },
+    {
+      "ankle_height_m": 0.0731416940689087,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.211911078981731,
+      "tick": 149
+    },
+    {
+      "ankle_height_m": 0.0732732489705086,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.2369194304157,
+      "tick": 150
+    },
+    {
+      "ankle_height_m": 0.0732934698462486,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.26192778184967,
+      "tick": 151
+    },
+    {
+      "ankle_height_m": 0.0731463134288788,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.286936133283639,
+      "tick": 152
+    },
+    {
+      "ankle_height_m": 0.0731507539749146,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.311944484717608,
+      "tick": 153
+    },
+    {
+      "ankle_height_m": 0.0732835084199905,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.336952836151578,
+      "tick": 154
+    },
+    {
+      "ankle_height_m": 0.0733650103211403,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.361961187585547,
+      "tick": 155
+    },
+    {
+      "ankle_height_m": 0.0733582377433777,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.386969539019516,
+      "tick": 156
+    },
+    {
+      "ankle_height_m": 0.0733640938997269,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.411977890453486,
+      "tick": 157
+    },
+    {
+      "ankle_height_m": 0.0733573585748672,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.436986241887455,
+      "tick": 158
+    },
+    {
+      "ankle_height_m": 0.0733593180775642,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.461994593321424,
+      "tick": 159
+    },
+    {
+      "ankle_height_m": 0.0733180344104767,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.13705305335921,
+      "tick": 166
+    },
+    {
+      "ankle_height_m": 0.0732761472463608,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.162061404793179,
+      "tick": 167
+    },
+    {
+      "ankle_height_m": 0.0731300637125969,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.187069756227148,
+      "tick": 168
+    },
+    {
+      "ankle_height_m": 0.0731413885951042,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.212078107661118,
+      "tick": 169
+    },
+    {
+      "ankle_height_m": 0.0732754319906235,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.237086459095087,
+      "tick": 170
+    },
+    {
+      "ankle_height_m": 0.073291502892971,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.262094810529057,
+      "tick": 171
+    },
+    {
+      "ankle_height_m": 0.0731464177370071,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.287103161963026,
+      "tick": 172
+    },
+    {
+      "ankle_height_m": 0.0731505528092384,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.312111513396995,
+      "tick": 173
+    },
+    {
+      "ankle_height_m": 0.0732854455709457,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.337119864830965,
+      "tick": 174
+    },
+    {
+      "ankle_height_m": 0.0733638107776642,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.362128216264934,
+      "tick": 175
+    },
+    {
+      "ankle_height_m": 0.0733592137694359,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.387136567698903,
+      "tick": 176
+    },
+    {
+      "ankle_height_m": 0.0733629837632179,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.412144919132873,
+      "tick": 177
+    },
+    {
+      "ankle_height_m": 0.0733584761619568,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.437153270566842,
+      "tick": 178
+    },
+    {
+      "ankle_height_m": 0.0738091319799423,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.462161622000812,
+      "tick": 179
+    },
+    {
+      "ankle_height_m": 0.0733194127678871,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.137220082038597,
+      "tick": 186
+    },
+    {
+      "ankle_height_m": 0.0732739716768265,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.162228433472567,
+      "tick": 187
+    },
+    {
+      "ankle_height_m": 0.0731304138898849,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.187236784906536,
+      "tick": 188
+    },
+    {
+      "ankle_height_m": 0.0731411203742027,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.212245136340506,
+      "tick": 189
+    },
+    {
+      "ankle_height_m": 0.0732775703072548,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.237253487774475,
+      "tick": 190
+    },
+    {
+      "ankle_height_m": 0.0732893049716949,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.262261839208444,
+      "tick": 191
+    },
+    {
+      "ankle_height_m": 0.0731466114521027,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.287270190642414,
+      "tick": 192
+    },
+    {
+      "ankle_height_m": 0.0731504857540131,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.312278542076383,
+      "tick": 193
+    },
+    {
+      "ankle_height_m": 0.0732874646782875,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.337286893510352,
+      "tick": 194
+    },
+    {
+      "ankle_height_m": 0.0733627453446388,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.362295244944322,
+      "tick": 195
+    },
+    {
+      "ankle_height_m": 0.073360338807106,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.387303596378291,
+      "tick": 196
+    },
+    {
+      "ankle_height_m": 0.073361910879612,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.41231194781226,
+      "tick": 197
+    },
+    {
+      "ankle_height_m": 0.0733595639467239,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.43732029924623,
+      "tick": 198
+    },
+    {
+      "ankle_height_m": 0.0733570829033852,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.462328650680199,
+      "tick": 199
+    },
+    {
+      "ankle_height_m": 0.0733205527067184,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.137387110717984,
+      "tick": 206
+    },
+    {
+      "ankle_height_m": 0.0732717290520668,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.162395462151954,
+      "tick": 207
+    },
+    {
+      "ankle_height_m": 0.0731306225061417,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.187403813585923,
+      "tick": 208
+    },
+    {
+      "ankle_height_m": 0.0731409192085266,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.212412165019892,
+      "tick": 209
+    },
+    {
+      "ankle_height_m": 0.0732795149087906,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.237420516453862,
+      "tick": 210
+    },
+    {
+      "ankle_height_m": 0.0732872858643532,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.262428867887831,
+      "tick": 211
+    },
+    {
+      "ankle_height_m": 0.0731467232108116,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.287437219321801,
+      "tick": 212
+    },
+    {
+      "ankle_height_m": 0.0731504112482071,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.31244557075577,
+      "tick": 213
+    },
+    {
+      "ankle_height_m": 0.0732893943786621,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.337453922189739,
+      "tick": 214
+    },
+    {
+      "ankle_height_m": 0.0733618065714836,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.362462273623709,
+      "tick": 215
+    },
+    {
+      "ankle_height_m": 0.0733614191412926,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.387470625057678,
+      "tick": 216
+    },
+    {
+      "ankle_height_m": 0.0733608454465866,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.412478976491647,
+      "tick": 217
+    },
+    {
+      "ankle_height_m": 0.0733606368303299,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.437487327925617,
+      "tick": 218
+    },
+    {
+      "ankle_height_m": 0.0738192498683929,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.462495679359586,
+      "tick": 219
+    },
+    {
+      "ankle_height_m": 0.0733221769332886,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.137554139397372,
+      "tick": 226
+    },
+    {
+      "ankle_height_m": 0.0732696205377579,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.162562490831341,
+      "tick": 227
+    },
+    {
+      "ankle_height_m": 0.0731309130787849,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.187570842265311,
+      "tick": 228
+    },
+    {
+      "ankle_height_m": 0.0731408819556236,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.21257919369928,
+      "tick": 229
+    },
+    {
+      "ankle_height_m": 0.0732817202806473,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.23758754513325,
+      "tick": 230
+    },
+    {
+      "ankle_height_m": 0.0732850432395935,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.262595896567219,
+      "tick": 231
+    },
+    {
+      "ankle_height_m": 0.0731470733880997,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.287604248001188,
+      "tick": 232
+    },
+    {
+      "ankle_height_m": 0.0731502994894981,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.312612599435158,
+      "tick": 233
+    },
+    {
+      "ankle_height_m": 0.0732914209365845,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.337620950869127,
+      "tick": 234
+    },
+    {
+      "ankle_height_m": 0.0733606368303299,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.362629302303096,
+      "tick": 235
+    },
+    {
+      "ankle_height_m": 0.0733624249696732,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.387637653737066,
+      "tick": 236
+    },
+    {
+      "ankle_height_m": 0.0733598098158836,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.412646005171035,
+      "tick": 237
+    },
+    {
+      "ankle_height_m": 0.0733616575598717,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.437654356605004,
+      "tick": 238
+    },
+    {
+      "ankle_height_m": 0.0733548253774643,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.462662708038974,
+      "tick": 239
+    },
+    {
+      "ankle_height_m": 0.0742087736725807,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.136371969926179,
+      "tick": 246
+    },
+    {
+      "ankle_height_m": 0.0750680342316628,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.160464794043683,
+      "tick": 247
+    },
+    {
+      "ankle_height_m": 0.0760940462350845,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.184798546402362,
+      "tick": 248
+    },
+    {
+      "ankle_height_m": 0.0774089470505714,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.209758712188097,
+      "tick": 249
+    },
+    {
+      "ankle_height_m": 0.078386127948761,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.235441662697356,
+      "tick": 250
+    },
+    {
+      "ankle_height_m": 0.0784687772393227,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.261895583578376,
+      "tick": 251
+    },
+    {
+      "ankle_height_m": 0.077810026705265,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.28859043270057,
+      "tick": 252
+    },
+    {
+      "ankle_height_m": 0.0770717188715935,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.31523709617453,
+      "tick": 253
+    },
+    {
+      "ankle_height_m": 0.0762864276766777,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.341450088814375,
+      "tick": 254
+    },
+    {
+      "ankle_height_m": 0.0754646956920624,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.367036668027164,
+      "tick": 255
+    },
+    {
+      "ankle_height_m": 0.0748579278588295,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.392045019461133,
+      "tick": 256
+    },
+    {
+      "ankle_height_m": 0.0743638351559639,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.417053370895103,
+      "tick": 257
+    },
+    {
+      "ankle_height_m": 0.0741070955991745,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.442061722329072,
+      "tick": 258
+    },
+    {
+      "ankle_height_m": 0.0745098069310188,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.467070073763042,
+      "tick": 259
+    },
+    {
+      "ankle_height_m": 0.0735511109232903,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.142032162504357,
+      "tick": 266
+    },
+    {
+      "ankle_height_m": 0.0733995959162712,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.167040513938327,
+      "tick": 267
+    },
+    {
+      "ankle_height_m": 0.0733267366886139,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.192048865372296,
+      "tick": 268
+    },
+    {
+      "ankle_height_m": 0.0733209997415543,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.217057216806265,
+      "tick": 269
+    },
+    {
+      "ankle_height_m": 0.0735238045454025,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.242065568240235,
+      "tick": 270
+    },
+    {
+      "ankle_height_m": 0.0734163522720337,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.267073919674204,
+      "tick": 271
+    },
+    {
+      "ankle_height_m": 0.0733372494578362,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.292082271108174,
+      "tick": 272
+    },
+    {
+      "ankle_height_m": 0.0733320042490959,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.317090622542143,
+      "tick": 273
+    },
+    {
+      "ankle_height_m": 0.0735307782888412,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.342098973976112,
+      "tick": 274
+    },
+    {
+      "ankle_height_m": 0.0735176131129265,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.367107325410082,
+      "tick": 275
+    },
+    {
+      "ankle_height_m": 0.0735762566328049,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.392115676844051,
+      "tick": 276
+    },
+    {
+      "ankle_height_m": 0.0735165774822235,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.41712402827802,
+      "tick": 277
+    },
+    {
+      "ankle_height_m": 0.0735758021473885,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.44213237971199,
+      "tick": 278
+    },
+    {
+      "ankle_height_m": 0.0735108554363251,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.467140731145959,
+      "tick": 279
+    },
+    {
+      "ankle_height_m": 0.0735488459467888,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.142199191183744,
+      "tick": 286
+    },
+    {
+      "ankle_height_m": 0.0733956545591354,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.167207542617714,
+      "tick": 287
+    },
+    {
+      "ankle_height_m": 0.0733263343572617,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.192215894051683,
+      "tick": 288
+    },
+    {
+      "ankle_height_m": 0.0733206644654274,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.217224245485652,
+      "tick": 289
+    },
+    {
+      "ankle_height_m": 0.073525957763195,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.242232596919622,
+      "tick": 290
+    },
+    {
+      "ankle_height_m": 0.0734144002199173,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.267240948353591,
+      "tick": 291
+    },
+    {
+      "ankle_height_m": 0.0733377039432526,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.292249299787561,
+      "tick": 292
+    },
+    {
+      "ankle_height_m": 0.0733323097229004,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.31725765122153,
+      "tick": 293
+    },
+    {
+      "ankle_height_m": 0.0735330805182457,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.342266002655499,
+      "tick": 294
+    },
+    {
+      "ankle_height_m": 0.0735170543193817,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.367274354089469,
+      "tick": 295
+    },
+    {
+      "ankle_height_m": 0.0735775232315063,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.392282705523438,
+      "tick": 296
+    },
+    {
+      "ankle_height_m": 0.0735161080956459,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.417291056957407,
+      "tick": 297
+    },
+    {
+      "ankle_height_m": 0.0735772103071213,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.442299408391377,
+      "tick": 298
+    },
+    {
+      "ankle_height_m": 0.0741519331932068,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.467307759825346,
+      "tick": 299
+    },
+    {
+      "ankle_height_m": 0.0735508501529694,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.142366219863132,
+      "tick": 306
+    },
+    {
+      "ankle_height_m": 0.073393926024437,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.167374571297101,
+      "tick": 307
+    },
+    {
+      "ankle_height_m": 0.0733272209763527,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.192382922731071,
+      "tick": 308
+    },
+    {
+      "ankle_height_m": 0.0733208507299423,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.21739127416504,
+      "tick": 309
+    },
+    {
+      "ankle_height_m": 0.0735284835100174,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.24239962559901,
+      "tick": 310
+    },
+    {
+      "ankle_height_m": 0.0734128654003143,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.267407977032979,
+      "tick": 311
+    },
+    {
+      "ankle_height_m": 0.0733383074402809,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.292416328466948,
+      "tick": 312
+    },
+    {
+      "ankle_height_m": 0.0733324363827705,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.317424679900918,
+      "tick": 313
+    },
+    {
+      "ankle_height_m": 0.0735354572534561,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.342433031334887,
+      "tick": 314
+    },
+    {
+      "ankle_height_m": 0.0735163539648056,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.367441382768856,
+      "tick": 315
+    },
+    {
+      "ankle_height_m": 0.0735791698098183,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.392449734202826,
+      "tick": 316
+    },
+    {
+      "ankle_height_m": 0.0735154300928116,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.417458085636795,
+      "tick": 317
+    },
+    {
+      "ankle_height_m": 0.0735786557197571,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.442466437070764,
+      "tick": 318
+    },
+    {
+      "ankle_height_m": 0.0735093876719475,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.467474788504733,
+      "tick": 319
+    },
+    {
+      "ankle_height_m": 0.0735527873039246,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.142533248542519,
+      "tick": 326
+    },
+    {
+      "ankle_height_m": 0.0733921751379967,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.167541599976488,
+      "tick": 327
+    },
+    {
+      "ankle_height_m": 0.0733278840780258,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.192549951410458,
+      "tick": 328
+    },
+    {
+      "ankle_height_m": 0.073321133852005,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.217558302844427,
+      "tick": 329
+    },
+    {
+      "ankle_height_m": 0.0735310837626457,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.242566654278396,
+      "tick": 330
+    },
+    {
+      "ankle_height_m": 0.0734112858772278,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.267575005712366,
+      "tick": 331
+    },
+    {
+      "ankle_height_m": 0.0733388215303421,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.292583357146335,
+      "tick": 332
+    },
+    {
+      "ankle_height_m": 0.0733327120542526,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.317591708580305,
+      "tick": 333
+    },
+    {
+      "ankle_height_m": 0.0735379904508591,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.342600060014274,
+      "tick": 334
+    },
+    {
+      "ankle_height_m": 0.0735157355666161,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.367608411448243,
+      "tick": 335
+    },
+    {
+      "ankle_height_m": 0.0735804885625839,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.392616762882213,
+      "tick": 336
+    },
+    {
+      "ankle_height_m": 0.0735146552324295,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.417625114316182,
+      "tick": 337
+    },
+    {
+      "ankle_height_m": 0.0735800042748451,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.442633465750151,
+      "tick": 338
+    },
+    {
+      "ankle_height_m": 0.0741629898548126,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.467641817184121,
+      "tick": 339
+    },
+    {
+      "ankle_height_m": 0.0735548511147499,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.142700277221907,
+      "tick": 346
+    },
+    {
+      "ankle_height_m": 0.0733906030654907,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.167708628655876,
+      "tick": 347
+    },
+    {
+      "ankle_height_m": 0.0733286887407303,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.192716980089846,
+      "tick": 348
+    },
+    {
+      "ankle_height_m": 0.0733214244246483,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.217725331523815,
+      "tick": 349
+    },
+    {
+      "ankle_height_m": 0.0735335648059845,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.242733682957784,
+      "tick": 350
+    },
+    {
+      "ankle_height_m": 0.0734097063541412,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.267742034391754,
+      "tick": 351
+    },
+    {
+      "ankle_height_m": 0.0733394995331764,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.292750385825723,
+      "tick": 352
+    },
+    {
+      "ankle_height_m": 0.0733330771327019,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.317758737259692,
+      "tick": 353
+    },
+    {
+      "ankle_height_m": 0.0735404416918755,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.342767088693662,
+      "tick": 354
+    },
+    {
+      "ankle_height_m": 0.0735150575637817,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.367775440127631,
+      "tick": 355
+    },
+    {
+      "ankle_height_m": 0.0735820233821869,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.3927837915616,
+      "tick": 356
+    },
+    {
+      "ankle_height_m": 0.0735140517354012,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.41779214299557,
+      "tick": 357
+    },
+    {
+      "ankle_height_m": 0.0735817104578018,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.442800494429539,
+      "tick": 358
+    },
+    {
+      "ankle_height_m": 0.0735080987215042,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.467808845863508,
+      "tick": 359
+    },
+    {
+      "ankle_height_m": 0.0735567361116409,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.142867305901294,
+      "tick": 366
+    },
+    {
+      "ankle_height_m": 0.0733889043331146,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.167875657335263,
+      "tick": 367
+    },
+    {
+      "ankle_height_m": 0.0733297541737556,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.192884008769232,
+      "tick": 368
+    },
+    {
+      "ankle_height_m": 0.0733216255903244,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.217892360203202,
+      "tick": 369
+    },
+    {
+      "ankle_height_m": 0.0735360532999039,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.242900711637171,
+      "tick": 370
+    },
+    {
+      "ankle_height_m": 0.0734081193804741,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.26790906307114,
+      "tick": 371
+    },
+    {
+      "ankle_height_m": 0.0733401924371719,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.29291741450511,
+      "tick": 372
+    },
+    {
+      "ankle_height_m": 0.0733334124088287,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.317925765939079,
+      "tick": 373
+    },
+    {
+      "ankle_height_m": 0.0735427737236023,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.342934117373049,
+      "tick": 374
+    },
+    {
+      "ankle_height_m": 0.07351453602314,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.367942468807018,
+      "tick": 375
+    },
+    {
+      "ankle_height_m": 0.0735835060477257,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.392950820240987,
+      "tick": 376
+    },
+    {
+      "ankle_height_m": 0.0735135674476624,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.417959171674957,
+      "tick": 377
+    },
+    {
+      "ankle_height_m": 0.07358318567276,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.442967523108926,
+      "tick": 378
+    },
+    {
+      "ankle_height_m": 0.0741740837693214,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.467975874542895,
+      "tick": 379
+    },
+    {
+      "ankle_height_m": 0.0735588520765305,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.143034334580681,
+      "tick": 386
+    },
+    {
+      "ankle_height_m": 0.0733873471617699,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168042686014651,
+      "tick": 387
+    },
+    {
+      "ankle_height_m": 0.0733305513858795,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.19305103744862,
+      "tick": 388
+    },
+    {
+      "ankle_height_m": 0.0733218640089035,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.218059388882589,
+      "tick": 389
+    },
+    {
+      "ankle_height_m": 0.0735386684536934,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.243067740316559,
+      "tick": 390
+    },
+    {
+      "ankle_height_m": 0.0734066218137741,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.268076091750528,
+      "tick": 391
+    },
+    {
+      "ankle_height_m": 0.0733406990766525,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.293084443184497,
+      "tick": 392
+    },
+    {
+      "ankle_height_m": 0.0733337476849556,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.318092794618467,
+      "tick": 393
+    },
+    {
+      "ankle_height_m": 0.0735452696681023,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.343101146052436,
+      "tick": 394
+    },
+    {
+      "ankle_height_m": 0.073513925075531,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.368109497486405,
+      "tick": 395
+    },
+    {
+      "ankle_height_m": 0.0735850781202316,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.393117848920375,
+      "tick": 396
+    },
+    {
+      "ankle_height_m": 0.0735128670930862,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.418126200354344,
+      "tick": 397
+    },
+    {
+      "ankle_height_m": 0.0735847428441048,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.443134551788313,
+      "tick": 398
+    },
+    {
+      "ankle_height_m": 0.0735069513320923,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.468142903222283,
+      "tick": 399
+    },
+    {
+      "ankle_height_m": 0.0735608711838722,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.143201363260068,
+      "tick": 406
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 407
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 408
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 409
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 410
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 411
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 412
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 413
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 414
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 415
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 416
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 417
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 418
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 419
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 420
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 421
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 422
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 423
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 424
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 425
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 426
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 427
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 428
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 429
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 430
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 431
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 432
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 433
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 434
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 435
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 436
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 437
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 438
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 439
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 440
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 441
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 442
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 443
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 444
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 445
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 446
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 447
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 448
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 449
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 450
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 451
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 452
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 453
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 454
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 455
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 456
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 457
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 458
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 459
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 460
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 461
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 462
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 463
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 464
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 465
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 466
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 467
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 468
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 469
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 470
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 471
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 472
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 473
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 474
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 475
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 476
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 477
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 478
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 479
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 480
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 481
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 482
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 483
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 484
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 485
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 486
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 487
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 488
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 489
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 490
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 491
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 492
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 493
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 494
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 495
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 496
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 497
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 498
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 499
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 500
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 501
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 502
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 503
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 504
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 505
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 506
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 507
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 508
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 509
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 510
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 511
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 512
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 513
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 514
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 515
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 516
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 517
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 518
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 519
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 520
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 521
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 522
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 523
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 524
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 525
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 526
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 527
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 528
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 529
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 530
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 531
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 532
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 533
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 534
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 535
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 536
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 537
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 538
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 539
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 540
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 541
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 542
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 543
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 544
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 545
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 546
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 547
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 548
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 549
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 550
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 551
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 552
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 553
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 554
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 555
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 556
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 557
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 558
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 559
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 560
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 561
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 562
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 563
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 564
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 565
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 566
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 567
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 568
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 569
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 570
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 571
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 572
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 573
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 574
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 575
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 576
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 577
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 578
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 579
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 580
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 581
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 582
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 583
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 584
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 585
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 586
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 587
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0,
+      "speed_mps": 0.95,
+      "stance_phase": 0.168209714694038,
+      "tick": 588
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00520600378513336,
+      "speed_mps": 0.916666666666667,
+      "stance_phase": 0.168209714694038,
+      "tick": 589
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00522100506350398,
+      "speed_mps": 0.883333333333333,
+      "stance_phase": 0.168209714694038,
+      "tick": 590
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0051963641308248,
+      "speed_mps": 0.85,
+      "stance_phase": 0.168209714694038,
+      "tick": 591
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0052115311846137,
+      "speed_mps": 0.816666666666667,
+      "stance_phase": 0.168209714694038,
+      "tick": 592
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00521114049479365,
+      "speed_mps": 0.783333333333333,
+      "stance_phase": 0.168209714694038,
+      "tick": 593
+    },
+    {
+      "ankle_height_m": 0.0733856111764908,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00521243456751108,
+      "speed_mps": 0.75,
+      "stance_phase": 0.168209714694038,
+      "tick": 594
+    },
+    {
+      "ankle_height_m": 0.0838456228375435,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00554980104789138,
+      "speed_mps": 0.785666666666667,
+      "stance_phase": 0.347058228822679,
+      "tick": 689
+    },
+    {
+      "ankle_height_m": 0.0799107328057289,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00506122782826424,
+      "speed_mps": 0.807333333333334,
+      "stance_phase": 0.368308099694318,
+      "tick": 690
+    },
+    {
+      "ankle_height_m": 0.0773282125592232,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00453797169029713,
+      "speed_mps": 0.829000000000001,
+      "stance_phase": 0.390136198344777,
+      "tick": 691
+    },
+    {
+      "ankle_height_m": 0.0756110697984695,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00409196130931377,
+      "speed_mps": 0.850666666666668,
+      "stance_phase": 0.412542524774056,
+      "tick": 692
+    },
+    {
+      "ankle_height_m": 0.0744715854525566,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00367611949332058,
+      "speed_mps": 0.872333333333334,
+      "stance_phase": 0.43547889333392,
+      "tick": 693
+    },
+    {
+      "ankle_height_m": 0.0738904699683189,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00336201232858002,
+      "speed_mps": 0.894000000000001,
+      "stance_phase": 0.458993489672604,
+      "tick": 694
+    },
+    {
+      "ankle_height_m": 0.0734667778015137,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.132750937208044,
+      "tick": 701
+    },
+    {
+      "ankle_height_m": 0.0735177248716354,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.157759288642013,
+      "tick": 702
+    },
+    {
+      "ankle_height_m": 0.0733079388737679,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.182767640075983,
+      "tick": 703
+    },
+    {
+      "ankle_height_m": 0.0733328983187675,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.207775991509952,
+      "tick": 704
+    },
+    {
+      "ankle_height_m": 0.0734075829386711,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.232784342943921,
+      "tick": 705
+    },
+    {
+      "ankle_height_m": 0.0735294669866562,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.257792694377891,
+      "tick": 706
+    },
+    {
+      "ankle_height_m": 0.0733277425169945,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.28280104581186,
+      "tick": 707
+    },
+    {
+      "ankle_height_m": 0.0733396783471107,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.30780939724583,
+      "tick": 708
+    },
+    {
+      "ankle_height_m": 0.0734193995594978,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.332817748679799,
+      "tick": 709
+    },
+    {
+      "ankle_height_m": 0.0735765770077705,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.357826100113768,
+      "tick": 710
+    },
+    {
+      "ankle_height_m": 0.0735174417495728,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.382834451547738,
+      "tick": 711
+    },
+    {
+      "ankle_height_m": 0.0735759139060974,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.407842802981707,
+      "tick": 712
+    },
+    {
+      "ankle_height_m": 0.0735166817903519,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.432851154415676,
+      "tick": 713
+    },
+    {
+      "ankle_height_m": 0.0738638341426849,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.457859505849646,
+      "tick": 714
+    },
+    {
+      "ankle_height_m": 0.0734699890017509,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.132917965887432,
+      "tick": 721
+    },
+    {
+      "ankle_height_m": 0.0735163167119026,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.157926317321401,
+      "tick": 722
+    },
+    {
+      "ankle_height_m": 0.0733085125684738,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.182934668755371,
+      "tick": 723
+    },
+    {
+      "ankle_height_m": 0.0733326226472855,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.20794302018934,
+      "tick": 724
+    },
+    {
+      "ankle_height_m": 0.0734093636274338,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.232951371623309,
+      "tick": 725
+    },
+    {
+      "ankle_height_m": 0.0735272541642189,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.257959723057279,
+      "tick": 726
+    },
+    {
+      "ankle_height_m": 0.0733275264501572,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.282968074491248,
+      "tick": 727
+    },
+    {
+      "ankle_height_m": 0.0733393877744675,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.307976425925217,
+      "tick": 728
+    },
+    {
+      "ankle_height_m": 0.0734210386872292,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.332984777359187,
+      "tick": 729
+    },
+    {
+      "ankle_height_m": 0.0735751092433929,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.357993128793156,
+      "tick": 730
+    },
+    {
+      "ankle_height_m": 0.0735181272029877,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.383001480227125,
+      "tick": 731
+    },
+    {
+      "ankle_height_m": 0.0735744759440422,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.408009831661095,
+      "tick": 732
+    },
+    {
+      "ankle_height_m": 0.0735171362757683,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.433018183095064,
+      "tick": 733
+    },
+    {
+      "ankle_height_m": 0.0735707655549049,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.458026534529033,
+      "tick": 734
+    },
+    {
+      "ankle_height_m": 0.0734709054231644,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.133084994566819,
+      "tick": 741
+    },
+    {
+      "ankle_height_m": 0.0735137760639191,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.158093346000788,
+      "tick": 742
+    },
+    {
+      "ankle_height_m": 0.0733083784580231,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.183101697434757,
+      "tick": 743
+    },
+    {
+      "ankle_height_m": 0.0733320042490959,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.208110048868727,
+      "tick": 744
+    },
+    {
+      "ankle_height_m": 0.0734109655022621,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.233118400302696,
+      "tick": 745
+    },
+    {
+      "ankle_height_m": 0.0735247582197189,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.258126751736665,
+      "tick": 746
+    },
+    {
+      "ankle_height_m": 0.07332743704319,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.283135103170635,
+      "tick": 747
+    },
+    {
+      "ankle_height_m": 0.0733389332890511,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.308143454604604,
+      "tick": 748
+    },
+    {
+      "ankle_height_m": 0.0734226107597351,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.333151806038574,
+      "tick": 749
+    },
+    {
+      "ankle_height_m": 0.0735736787319183,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.358160157472543,
+      "tick": 750
+    },
+    {
+      "ankle_height_m": 0.0735188350081444,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.383168508906512,
+      "tick": 751
+    },
+    {
+      "ankle_height_m": 0.0735728740692139,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.408176860340482,
+      "tick": 752
+    },
+    {
+      "ankle_height_m": 0.0735178291797638,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.433185211774451,
+      "tick": 753
+    },
+    {
+      "ankle_height_m": 0.0738732218742371,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.45819356320842,
+      "tick": 754
+    },
+    {
+      "ankle_height_m": 0.0734716951847076,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.133252023246206,
+      "tick": 761
+    },
+    {
+      "ankle_height_m": 0.0735110118985176,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.158260374680176,
+      "tick": 762
+    },
+    {
+      "ankle_height_m": 0.0733082741498947,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.183268726114145,
+      "tick": 763
+    },
+    {
+      "ankle_height_m": 0.0733315497636795,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.208277077548114,
+      "tick": 764
+    },
+    {
+      "ankle_height_m": 0.0734127312898636,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.233285428982084,
+      "tick": 765
+    },
+    {
+      "ankle_height_m": 0.0735223889350891,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.258293780416053,
+      "tick": 766
+    },
+    {
+      "ankle_height_m": 0.0733272507786751,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.283302131850023,
+      "tick": 767
+    },
+    {
+      "ankle_height_m": 0.0733384042978287,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.308310483283992,
+      "tick": 768
+    },
+    {
+      "ankle_height_m": 0.0734245479106903,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.333318834717961,
+      "tick": 769
+    },
+    {
+      "ankle_height_m": 0.0735723152756691,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.35832718615193,
+      "tick": 770
+    },
+    {
+      "ankle_height_m": 0.0735194832086563,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.3833355375859,
+      "tick": 771
+    },
+    {
+      "ankle_height_m": 0.0735715925693512,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.408343889019869,
+      "tick": 772
+    },
+    {
+      "ankle_height_m": 0.0735185667872429,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.433352240453838,
+      "tick": 773
+    },
+    {
+      "ankle_height_m": 0.0735679790377617,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.458360591887808,
+      "tick": 774
+    },
+    {
+      "ankle_height_m": 0.0734727755188942,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.133419051925593,
+      "tick": 781
+    },
+    {
+      "ankle_height_m": 0.0735084861516953,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.158427403359563,
+      "tick": 782
+    },
+    {
+      "ankle_height_m": 0.0733081102371216,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.183435754793532,
+      "tick": 783
+    },
+    {
+      "ankle_height_m": 0.0733308270573616,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.208444106227501,
+      "tick": 784
+    },
+    {
+      "ankle_height_m": 0.0734144076704979,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.233452457661471,
+      "tick": 785
+    },
+    {
+      "ankle_height_m": 0.0735198929905891,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.25846080909544,
+      "tick": 786
+    },
+    {
+      "ankle_height_m": 0.0733270943164825,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.283469160529409,
+      "tick": 787
+    },
+    {
+      "ankle_height_m": 0.0733379423618317,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.308477511963379,
+      "tick": 788
+    },
+    {
+      "ankle_height_m": 0.0734261348843575,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.333485863397348,
+      "tick": 789
+    },
+    {
+      "ankle_height_m": 0.0735709369182587,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.358494214831318,
+      "tick": 790
+    },
+    {
+      "ankle_height_m": 0.0735202580690384,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.383502566265287,
+      "tick": 791
+    },
+    {
+      "ankle_height_m": 0.0735701099038124,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.408510917699256,
+      "tick": 792
+    },
+    {
+      "ankle_height_m": 0.0735192894935608,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.433519269133226,
+      "tick": 793
+    },
+    {
+      "ankle_height_m": 0.0738827437162399,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.458527620567195,
+      "tick": 794
+    },
+    {
+      "ankle_height_m": 0.0734737813472748,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.133586080604981,
+      "tick": 801
+    },
+    {
+      "ankle_height_m": 0.0735058784484863,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.15859443203895,
+      "tick": 802
+    },
+    {
+      "ankle_height_m": 0.0733079686760902,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.18360278347292,
+      "tick": 803
+    },
+    {
+      "ankle_height_m": 0.0733302384614944,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.208611134906889,
+      "tick": 804
+    },
+    {
+      "ankle_height_m": 0.0734160840511322,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.233619486340859,
+      "tick": 805
+    },
+    {
+      "ankle_height_m": 0.0735175758600235,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.258627837774828,
+      "tick": 806
+    },
+    {
+      "ankle_height_m": 0.0733268111944199,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.283636189208797,
+      "tick": 807
+    },
+    {
+      "ankle_height_m": 0.0733373686671257,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.308644540642766,
+      "tick": 808
+    },
+    {
+      "ankle_height_m": 0.0734275728464127,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335693359375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.333652892076736,
+      "tick": 809
+    },
+    {
+      "ankle_height_m": 0.0735694468021393,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.0003662109375,
+      "speed_mps": 0.95,
+      "stance_phase": 0.358661243510705,
+      "tick": 810
+    },
+    {
+      "ankle_height_m": 0.0735208615660667,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.383669594944674,
+      "tick": 811
+    },
+    {
+      "ankle_height_m": 0.0735689103603363,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.408677946378644,
+      "tick": 812
+    },
+    {
+      "ankle_height_m": 0.0735201984643936,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.433686297812613,
+      "tick": 813
+    },
+    {
+      "ankle_height_m": 0.0735649242997169,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.458694649246582,
+      "tick": 814
+    },
+    {
+      "ankle_height_m": 0.0734746307134628,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366230815416202,
+      "speed_mps": 0.95,
+      "stance_phase": 0.133753109284368,
+      "tick": 821
+    },
+    {
+      "ankle_height_m": 0.0735033228993416,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.158761460718337,
+      "tick": 822
+    },
+    {
+      "ankle_height_m": 0.0733078867197037,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00033571504172869,
+      "speed_mps": 0.95,
+      "stance_phase": 0.183769812152307,
+      "tick": 823
+    },
+    {
+      "ankle_height_m": 0.0735820233821869,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.207814450621576,
+      "tick": 824
+    },
+    {
+      "ankle_height_m": 0.0739454701542854,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.231280861312025,
+      "tick": 825
+    },
+    {
+      "ankle_height_m": 0.0746083557605743,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.254409972464829,
+      "tick": 826
+    },
+    {
+      "ankle_height_m": 0.0750459358096123,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000305271125398576,
+      "speed_mps": 0.95,
+      "stance_phase": 0.277539083617633,
+      "tick": 827
+    },
+    {
+      "ankle_height_m": 0.0760033950209618,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335888384142891,
+      "speed_mps": 0.95,
+      "stance_phase": 0.301005494308082,
+      "tick": 828
+    },
+    {
+      "ankle_height_m": 0.0770693495869637,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335888384142891,
+      "speed_mps": 0.95,
+      "stance_phase": 0.325146504073821,
+      "tick": 829
+    },
+    {
+      "ankle_height_m": 0.0783646553754807,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366389722330496,
+      "speed_mps": 0.95,
+      "stance_phase": 0.350154855507791,
+      "tick": 830
+    },
+    {
+      "ankle_height_m": 0.0785244107246399,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335888384142891,
+      "speed_mps": 0.95,
+      "stance_phase": 0.37574143472058,
+      "tick": 831
+    },
+    {
+      "ankle_height_m": 0.0780730172991753,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366389722330496,
+      "speed_mps": 0.95,
+      "stance_phase": 0.40152075652631,
+      "tick": 832
+    },
+    {
+      "ankle_height_m": 0.0770258978009224,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366389722330496,
+      "speed_mps": 0.95,
+      "stance_phase": 0.427203707035569,
+      "tick": 833
+    },
+    {
+      "ankle_height_m": 0.0762127712368965,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.452693914951889,
+      "tick": 834
+    },
+    {
+      "ankle_height_m": 0.0760910287499428,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.477702266385858,
+      "tick": 835
+    },
+    {
+      "ankle_height_m": 0.073498472571373,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.127656003693204,
+      "tick": 841
+    },
+    {
+      "ankle_height_m": 0.0736327320337296,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.152664355127174,
+      "tick": 842
+    },
+    {
+      "ankle_height_m": 0.0733344405889511,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.177672706561143,
+      "tick": 843
+    },
+    {
+      "ankle_height_m": 0.0733679682016373,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.202632872346877,
+      "tick": 844
+    },
+    {
+      "ankle_height_m": 0.0733677744865417,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.227641223780847,
+      "tick": 845
+    },
+    {
+      "ankle_height_m": 0.0736140757799149,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.252649575214816,
+      "tick": 846
+    },
+    {
+      "ankle_height_m": 0.0733432546257973,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.277657926648786,
+      "tick": 847
+    },
+    {
+      "ankle_height_m": 0.0733639448881149,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.302666278082755,
+      "tick": 848
+    },
+    {
+      "ankle_height_m": 0.0733772069215775,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.327674629516724,
+      "tick": 849
+    },
+    {
+      "ankle_height_m": 0.0736281722784042,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.352682980950694,
+      "tick": 850
+    },
+    {
+      "ankle_height_m": 0.0735038667917252,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.377691332384663,
+      "tick": 851
+    },
+    {
+      "ankle_height_m": 0.0736276805400848,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.402699683818632,
+      "tick": 852
+    },
+    {
+      "ankle_height_m": 0.0735027119517326,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.427708035252601,
+      "tick": 853
+    },
+    {
+      "ankle_height_m": 0.0736262053251266,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.452716386686571,
+      "tick": 854
+    },
+    {
+      "ankle_height_m": 0.0734963342547417,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.47772473812054,
+      "tick": 855
+    },
+    {
+      "ankle_height_m": 0.0734514147043228,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.127774846724356,
+      "tick": 861
+    },
+    {
+      "ankle_height_m": 0.0736053436994553,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.152783198158326,
+      "tick": 862
+    },
+    {
+      "ankle_height_m": 0.0733206942677498,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.177791549592295,
+      "tick": 863
+    },
+    {
+      "ankle_height_m": 0.0733598470687866,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.202799901026264,
+      "tick": 864
+    },
+    {
+      "ankle_height_m": 0.0733651965856552,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.227808252460234,
+      "tick": 865
+    },
+    {
+      "ankle_height_m": 0.0736093148589134,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.252816603894203,
+      "tick": 866
+    },
+    {
+      "ankle_height_m": 0.0733416825532913,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.277824955328172,
+      "tick": 867
+    },
+    {
+      "ankle_height_m": 0.0733623057603836,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.302833306762142,
+      "tick": 868
+    },
+    {
+      "ankle_height_m": 0.0733781233429909,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.327841658196111,
+      "tick": 869
+    },
+    {
+      "ankle_height_m": 0.0736261457204819,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.352850009630081,
+      "tick": 870
+    },
+    {
+      "ankle_height_m": 0.0735039263963699,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.37785836106405,
+      "tick": 871
+    },
+    {
+      "ankle_height_m": 0.0736258178949356,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.402866712498019,
+      "tick": 872
+    },
+    {
+      "ankle_height_m": 0.0735029429197311,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.427875063931989,
+      "tick": 873
+    },
+    {
+      "ankle_height_m": 0.0737310871481895,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.452883415365958,
+      "tick": 874
+    },
+    {
+      "ankle_height_m": 0.0745308548212051,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.477891766799927,
+      "tick": 875
+    },
+    {
+      "ankle_height_m": 0.0734517052769661,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.127941875403744,
+      "tick": 881
+    },
+    {
+      "ankle_height_m": 0.0736023187637329,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.152950226837713,
+      "tick": 882
+    },
+    {
+      "ankle_height_m": 0.0733200162649155,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.177958578271683,
+      "tick": 883
+    },
+    {
+      "ankle_height_m": 0.0733587592840195,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.202966929705652,
+      "tick": 884
+    },
+    {
+      "ankle_height_m": 0.0733665302395821,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.227975281139622,
+      "tick": 885
+    },
+    {
+      "ankle_height_m": 0.0736063122749329,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.252983632573591,
+      "tick": 886
+    },
+    {
+      "ankle_height_m": 0.0733409523963928,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.27799198400756,
+      "tick": 887
+    },
+    {
+      "ankle_height_m": 0.0733614042401314,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.30300033544153,
+      "tick": 888
+    },
+    {
+      "ankle_height_m": 0.073379173874855,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.328008686875499,
+      "tick": 889
+    },
+    {
+      "ankle_height_m": 0.0736243426799774,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.353017038309468,
+      "tick": 890
+    },
+    {
+      "ankle_height_m": 0.0735042616724968,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.378025389743438,
+      "tick": 891
+    },
+    {
+      "ankle_height_m": 0.0736239179968834,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.403033741177407,
+      "tick": 892
+    },
+    {
+      "ankle_height_m": 0.0735031589865685,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.428042092611376,
+      "tick": 893
+    },
+    {
+      "ankle_height_m": 0.0736223608255386,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.453050444045345,
+      "tick": 894
+    },
+    {
+      "ankle_height_m": 0.0734968185424805,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.478058795479315,
+      "tick": 895
+    },
+    {
+      "ankle_height_m": 0.0734521746635437,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.128108904083131,
+      "tick": 901
+    },
+    {
+      "ankle_height_m": 0.0735991299152374,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.1531172555171,
+      "tick": 902
+    },
+    {
+      "ankle_height_m": 0.0733195021748543,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.17812560695107,
+      "tick": 903
+    },
+    {
+      "ankle_height_m": 0.0733576640486717,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.203133958385039,
+      "tick": 904
+    },
+    {
+      "ankle_height_m": 0.0733676254749298,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.228142309819008,
+      "tick": 905
+    },
+    {
+      "ankle_height_m": 0.0736035108566284,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.253150661252978,
+      "tick": 906
+    },
+    {
+      "ankle_height_m": 0.0733402594923973,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.278159012686947,
+      "tick": 907
+    },
+    {
+      "ankle_height_m": 0.0733606219291687,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.303167364120916,
+      "tick": 908
+    },
+    {
+      "ankle_height_m": 0.0733804255723953,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.328175715554886,
+      "tick": 909
+    },
+    {
+      "ankle_height_m": 0.0736222937703133,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.353184066988855,
+      "tick": 910
+    },
+    {
+      "ankle_height_m": 0.0735044181346893,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.378192418422824,
+      "tick": 911
+    },
+    {
+      "ankle_height_m": 0.0736220329999924,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.403200769856794,
+      "tick": 912
+    },
+    {
+      "ankle_height_m": 0.0735034197568893,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.428209121290763,
+      "tick": 913
+    },
+    {
+      "ankle_height_m": 0.0737396329641342,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.453217472724733,
+      "tick": 914
+    },
+    {
+      "ankle_height_m": 0.0745438262820244,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.478225824158702,
+      "tick": 915
+    },
+    {
+      "ankle_height_m": 0.0734525248408318,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.128275932762518,
+      "tick": 921
+    },
+    {
+      "ankle_height_m": 0.0735960155725479,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.153284284196488,
+      "tick": 922
+    },
+    {
+      "ankle_height_m": 0.073318749666214,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.178292635630457,
+      "tick": 923
+    },
+    {
+      "ankle_height_m": 0.0733565390110016,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.203300987064427,
+      "tick": 924
+    },
+    {
+      "ankle_height_m": 0.0733688920736313,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.228309338498396,
+      "tick": 925
+    },
+    {
+      "ankle_height_m": 0.0736006423830986,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.253317689932365,
+      "tick": 926
+    },
+    {
+      "ankle_height_m": 0.0733396112918854,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.278326041366335,
+      "tick": 927
+    },
+    {
+      "ankle_height_m": 0.0733594596385956,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.303334392800304,
+      "tick": 928
+    },
+    {
+      "ankle_height_m": 0.0733816251158714,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.328342744234273,
+      "tick": 929
+    },
+    {
+      "ankle_height_m": 0.0736205726861954,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.353351095668243,
+      "tick": 930
+    },
+    {
+      "ankle_height_m": 0.0735047310590744,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.378359447102212,
+      "tick": 931
+    },
+    {
+      "ankle_height_m": 0.0736202076077461,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.403367798536181,
+      "tick": 932
+    },
+    {
+      "ankle_height_m": 0.0735036954283714,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.428376149970151,
+      "tick": 933
+    },
+    {
+      "ankle_height_m": 0.0736183971166611,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.45338450140412,
+      "tick": 934
+    },
+    {
+      "ankle_height_m": 0.0734974592924118,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.478392852838089,
+      "tick": 935
+    },
+    {
+      "ankle_height_m": 0.0734527558088303,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.128442961441906,
+      "tick": 941
+    },
+    {
+      "ankle_height_m": 0.0735929012298584,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.153451312875875,
+      "tick": 942
+    },
+    {
+      "ankle_height_m": 0.0733182057738304,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.178459664309844,
+      "tick": 943
+    },
+    {
+      "ankle_height_m": 0.0733555480837822,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.203468015743814,
+      "tick": 944
+    },
+    {
+      "ankle_height_m": 0.0733701661229134,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.228476367177783,
+      "tick": 945
+    },
+    {
+      "ankle_height_m": 0.0735978931188583,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.253484718611752,
+      "tick": 946
+    },
+    {
+      "ankle_height_m": 0.0733389258384705,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.278493070045722,
+      "tick": 947
+    },
+    {
+      "ankle_height_m": 0.0733585730195045,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.303501421479691,
+      "tick": 948
+    },
+    {
+      "ankle_height_m": 0.0733828991651535,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.32850977291366,
+      "tick": 949
+    },
+    {
+      "ankle_height_m": 0.0736187100410461,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.35351812434763,
+      "tick": 950
+    },
+    {
+      "ankle_height_m": 0.0735050365328789,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.378526475781599,
+      "tick": 951
+    },
+    {
+      "ankle_height_m": 0.0736183375120163,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.403534827215569,
+      "tick": 952
+    },
+    {
+      "ankle_height_m": 0.0735039860010147,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.428543178649538,
+      "tick": 953
+    },
+    {
+      "ankle_height_m": 0.0737481713294983,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.453551530083507,
+      "tick": 954
+    },
+    {
+      "ankle_height_m": 0.0745568498969078,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.478559881517477,
+      "tick": 955
+    },
+    {
+      "ankle_height_m": 0.0734532475471497,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.128609990121293,
+      "tick": 961
+    },
+    {
+      "ankle_height_m": 0.0735899433493614,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.153618341555263,
+      "tick": 962
+    },
+    {
+      "ankle_height_m": 0.073317676782608,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.178626692989232,
+      "tick": 963
+    },
+    {
+      "ankle_height_m": 0.0733545273542404,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.203635044423201,
+      "tick": 964
+    },
+    {
+      "ankle_height_m": 0.0733713805675507,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.228643395857171,
+      "tick": 965
+    },
+    {
+      "ankle_height_m": 0.0735948979854584,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.25365174729114,
+      "tick": 966
+    },
+    {
+      "ankle_height_m": 0.0733383968472481,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.278660098725109,
+      "tick": 967
+    },
+    {
+      "ankle_height_m": 0.0733577311038971,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.303668450159079,
+      "tick": 968
+    },
+    {
+      "ankle_height_m": 0.073384091258049,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.328676801593048,
+      "tick": 969
+    },
+    {
+      "ankle_height_m": 0.0736168697476387,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.353685153027017,
+      "tick": 970
+    },
+    {
+      "ankle_height_m": 0.0735053569078445,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.378693504460987,
+      "tick": 971
+    },
+    {
+      "ankle_height_m": 0.0736164897680283,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.403701855894956,
+      "tick": 972
+    },
+    {
+      "ankle_height_m": 0.073504351079464,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.428710207328925,
+      "tick": 973
+    },
+    {
+      "ankle_height_m": 0.0736145228147507,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.453718558762895,
+      "tick": 974
+    },
+    {
+      "ankle_height_m": 0.0734980553388596,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.478726910196864,
+      "tick": 975
+    },
+    {
+      "ankle_height_m": 0.0734536275267601,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.12877701880068,
+      "tick": 981
+    },
+    {
+      "ankle_height_m": 0.0735868662595749,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.153785370234649,
+      "tick": 982
+    },
+    {
+      "ankle_height_m": 0.0733170360326767,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.178793721668619,
+      "tick": 983
+    },
+    {
+      "ankle_height_m": 0.0733535066246986,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.203802073102588,
+      "tick": 984
+    },
+    {
+      "ankle_height_m": 0.0733726695179939,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.228810424536558,
+      "tick": 985
+    },
+    {
+      "ankle_height_m": 0.0735922157764435,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.253818775970527,
+      "tick": 986
+    },
+    {
+      "ankle_height_m": 0.0733377933502197,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.278827127404496,
+      "tick": 987
+    },
+    {
+      "ankle_height_m": 0.0733568668365479,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.303835478838466,
+      "tick": 988
+    },
+    {
+      "ankle_height_m": 0.0733854249119759,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.328843830272435,
+      "tick": 989
+    },
+    {
+      "ankle_height_m": 0.0736152082681656,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.353852181706404,
+      "tick": 990
+    },
+    {
+      "ankle_height_m": 0.0735055953264236,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.378860533140374,
+      "tick": 991
+    },
+    {
+      "ankle_height_m": 0.0736146941781044,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.403868884574343,
+      "tick": 992
+    },
+    {
+      "ankle_height_m": 0.0735046714544296,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.428877236008313,
+      "tick": 993
+    },
+    {
+      "ankle_height_m": 0.0737569034099579,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.453885587442282,
+      "tick": 994
+    },
+    {
+      "ankle_height_m": 0.0745698437094688,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.478893938876251,
+      "tick": 995
+    },
+    {
+      "ankle_height_m": 0.0734538584947586,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.128944047480068,
+      "tick": 1001
+    },
+    {
+      "ankle_height_m": 0.0735838413238525,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.153952398914037,
+      "tick": 1002
+    },
+    {
+      "ankle_height_m": 0.0733166113495827,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.178960750348007,
+      "tick": 1003
+    },
+    {
+      "ankle_height_m": 0.0733524411916733,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.203969101781976,
+      "tick": 1004
+    },
+    {
+      "ankle_height_m": 0.0733740776777267,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.228977453215945,
+      "tick": 1005
+    },
+    {
+      "ankle_height_m": 0.0735893845558167,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.253985804649915,
+      "tick": 1006
+    },
+    {
+      "ankle_height_m": 0.0733373388648033,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.278994156083884,
+      "tick": 1007
+    },
+    {
+      "ankle_height_m": 0.073355920612812,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.304002507517853,
+      "tick": 1008
+    },
+    {
+      "ankle_height_m": 0.0733865797519684,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.329010858951823,
+      "tick": 1009
+    },
+    {
+      "ankle_height_m": 0.0736133605241776,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.354019210385792,
+      "tick": 1010
+    },
+    {
+      "ankle_height_m": 0.0735060796141624,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.379027561819761,
+      "tick": 1011
+    },
+    {
+      "ankle_height_m": 0.0736129879951477,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.404035913253731,
+      "tick": 1012
+    },
+    {
+      "ankle_height_m": 0.0735049694776535,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.4290442646877,
+      "tick": 1013
+    },
+    {
+      "ankle_height_m": 0.0736107751727104,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.454052616121669,
+      "tick": 1014
+    },
+    {
+      "ankle_height_m": 0.0734987258911133,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.479060967555639,
+      "tick": 1015
+    },
+    {
+      "ankle_height_m": 0.0734544396400452,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.129111076159455,
+      "tick": 1021
+    },
+    {
+      "ankle_height_m": 0.0735807493329048,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.154119427593424,
+      "tick": 1022
+    },
+    {
+      "ankle_height_m": 0.0733159929513931,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.95,
+      "stance_phase": 0.179127779027393,
+      "tick": 1023
+    },
+    {
+      "ankle_height_m": 0.0733513832092285,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.95,
+      "stance_phase": 0.204136130461363,
+      "tick": 1024
+    },
+    {
+      "ankle_height_m": 0.0733347907662392,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.941995082963879,
+      "stance_phase": 0.228903553654157,
+      "tick": 1025
+    },
+    {
+      "ankle_height_m": 0.0734682232141495,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000366290390957147,
+      "speed_mps": 0.926887195427186,
+      "stance_phase": 0.253285491661071,
+      "tick": 1026
+    },
+    {
+      "ankle_height_m": 0.0729998797178268,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000305271125398576,
+      "speed_mps": 0.911769961607984,
+      "stance_phase": 0.277281944482106,
+      "tick": 1027
+    },
+    {
+      "ankle_height_m": 0.0728382021188736,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335888384142891,
+      "speed_mps": 0.896642908776607,
+      "stance_phase": 0.300844726469025,
+      "tick": 1028
+    },
+    {
+      "ankle_height_m": 0.0726324543356895,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335888384142891,
+      "speed_mps": 0.88153668873947,
+      "stance_phase": 0.324070208918299,
+      "tick": 1029
+    },
+    {
+      "ankle_height_m": 0.0726964548230171,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000305271125398576,
+      "speed_mps": 0.866388990472813,
+      "stance_phase": 0.346862020533458,
+      "tick": 1030
+    },
+    {
+      "ankle_height_m": 0.072355791926384,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000335780059685931,
+      "speed_mps": 0.851262131659147,
+      "stance_phase": 0.369268346962737,
+      "tick": 1031
+    },
+    {
+      "ankle_height_m": 0.0721876323223114,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000305199617287144,
+      "speed_mps": 0.836124394995296,
+      "stance_phase": 0.391289188206136,
+      "tick": 1032
+    },
+    {
+      "ankle_height_m": 0.0718789324164391,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.00030517578125,
+      "speed_mps": 0.820975178760372,
+      "stance_phase": 0.412924544263654,
+      "tick": 1033
+    },
+    {
+      "ankle_height_m": 0.0716087147593498,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000274684687610716,
+      "speed_mps": 0.805813835510411,
+      "stance_phase": 0.434126229487058,
+      "tick": 1034
+    },
+    {
+      "ankle_height_m": 0.0840223655104637,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000305271125398576,
+      "speed_mps": 0.790674405570966,
+      "stance_phase": 0.454942429524582,
+      "tick": 1035
+    },
+    {
+      "ankle_height_m": 0.0808065608143806,
+      "foot": 0,
+      "horizontal_ankle_drift_m_per_tick": 0.000274764141067863,
+      "speed_mps": 0.775522757161258,
+      "stance_phase": 0.475373144376225,
+      "tick": 1036
+    },
+    {
+      "ankle_height_m": 0.0717528089880943,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00772140314802527,
+      "speed_mps": 0.872333333333334,
+      "stance_phase": 0.126179349605601,
+      "tick": 1195
+    },
+    {
+      "ankle_height_m": 0.0722466185688972,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00714995292946696,
+      "speed_mps": 0.894000000000001,
+      "stance_phase": 0.149693945944285,
+      "tick": 1196
+    },
+    {
+      "ankle_height_m": 0.0722123235464096,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00650540133938193,
+      "speed_mps": 0.915666666666668,
+      "stance_phase": 0.17378677006179,
+      "tick": 1197
+    },
+    {
+      "ankle_height_m": 0.0725628286600113,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00593702308833599,
+      "speed_mps": 0.937333333333334,
+      "stance_phase": 0.198457821958114,
+      "tick": 1198
+    },
+    {
+      "ankle_height_m": 0.0728298053145409,
+      "foot": 1,
+      "horizontal_ankle_drift_m_per_tick": 0.00529710948467255,
+      "speed_mps": 0.95,
+      "stance_phase": 0.223466173392084,
+      "tick": 1199
+    }
+  ],
+  "simulated_seconds": 20,
+  "unsupported_ticks": 0
+}

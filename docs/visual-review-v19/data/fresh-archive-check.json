@@ -1,0 +1,51 @@
+{
+  "extracted_from": "FIND_YOURSELF-v19-Godot.zip",
+  "file_hash_checks": 1540,
+  "file_hash_failures": 0,
+  "cases": [
+    {
+      "case": "import",
+      "exit_code": 0,
+      "errors": [],
+      "ready": false,
+      "people_built": false,
+      "file": "fresh/import.log"
+    },
+    {
+      "case": "normal",
+      "exit_code": 0,
+      "errors": [],
+      "ready": true,
+      "people_built": true,
+      "file": "fresh/normal.log"
+    },
+    {
+      "case": "F4",
+      "exit_code": 0,
+      "errors": [],
+      "ready": true,
+      "people_built": true,
+      "file": "fresh/F4.log"
+    },
+    {
+      "case": "F6",
+      "exit_code": 0,
+      "errors": [],
+      "ready": true,
+      "people_built": true,
+      "file": "fresh/F6.log"
+    },
+    {
+      "case": "character",
+      "exit_code": 0,
+      "errors": [],
+      "ready": false,
+      "people_built": false,
+      "file": "fresh/character.log"
+    }
+  ],
+  "OS": "Linux",
+  "Godot": "4.6.3",
+  "Windows_tested": false,
+  "human_playtest": false
+}

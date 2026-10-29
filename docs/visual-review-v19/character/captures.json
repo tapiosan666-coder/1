@@ -1,0 +1,125 @@
+{
+  "shots": [
+    {
+      "NPC_enabled": true,
+      "NPC_mode": "v19",
+      "activity": "browse",
+      "actual_Godot_Viewport": true,
+      "eye": [
+        392.933166503906,
+        1.45104134082794,
+        -57.4551811218262
+      ],
+      "fov": 55,
+      "id": "actual-browsing-snapshot-20s",
+      "look": [
+        394.229309082031,
+        1.10104131698608,
+        -54.9894180297852
+      ],
+      "method": "Actual 20-second physics-state snapshot, not forced animation pose",
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "NPC_enabled": true,
+      "NPC_mode": "female_only",
+      "actual_Godot_Viewport": true,
+      "clip": "Idle",
+      "clip_time": 0.3,
+      "eye": [
+        351.059997558594,
+        1.04999995231628,
+        -22.0200004577637
+      ],
+      "fov": 43,
+      "id": "mall-standing",
+      "look": [
+        354.160003662109,
+        0.870000004768372,
+        -20.5200004577637
+      ],
+      "method": "Posed reference actor in actual mall. Separate activity and foot-contact QA tests real movement.",
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "NPC_enabled": true,
+      "NPC_mode": "female_only",
+      "actual_Godot_Viewport": true,
+      "clip": "Walk",
+      "clip_time": 0.2,
+      "eye": [
+        351.360015869141,
+        1.04999995231628,
+        -21.7200012207031
+      ],
+      "fov": 43,
+      "id": "mall-walking",
+      "look": [
+        354.160003662109,
+        0.870000004768372,
+        -20.5200004577637
+      ],
+      "method": "Posed reference actor in actual mall. Separate activity and foot-contact QA tests real movement.",
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "NPC_enabled": true,
+      "NPC_mode": "female_only",
+      "actual_Godot_Viewport": true,
+      "clip": "SitIdle",
+      "clip_time": 0.7,
+      "eye": [
+        353.059997558594,
+        0.949999988079071,
+        -22.0200004577637
+      ],
+      "fov": 43,
+      "id": "mall-seated",
+      "look": [
+        355.809997558594,
+        0.75,
+        -20.5200004577637
+      ],
+      "method": "Posed reference actor in actual mall. Separate activity and foot-contact QA tests real movement.",
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "NPC_enabled": true,
+      "NPC_mode": "female_only",
+      "actual_Godot_Viewport": true,
+      "clip": "Browse",
+      "clip_time": 2.2,
+      "eye": [
+        351.860015869141,
+        1.10000002384186,
+        -21.7200012207031
+      ],
+      "fov": 43,
+      "id": "mall-browse-pose",
+      "look": [
+        354.160003662109,
+        1.02999997138977,
+        -20.5200004577637
+      ],
+      "method": "Posed reference actor in actual mall. Separate activity and foot-contact QA tests real movement.",
+      "resolution": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "studio": "face/front/side/back: actual GLB, Idle 0.3s, separate Godot studio lights; not mall lighting",
+  "human_playtest": false
+}

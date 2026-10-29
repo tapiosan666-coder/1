@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "id": "default-43",
+      "pass": true
+    },
+    {
+      "id": "N-original-v18-43",
+      "pass": true
+    },
+    {
+      "id": "N-female-only-1",
+      "pass": true
+    },
+    {
+      "id": "F12-off-no-person-colliders",
+      "pass": true
+    },
+    {
+      "id": "F12-restores-one",
+      "pass": true
+    },
+    {
+      "id": "N-restores-v19-43",
+      "pass": true
+    },
+    {
+      "id": "M-pauses-NPC-and-player",
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "method": "Injected real N / F12 / M key events, actual actor visibility/collision masks/clock and player physics status"
+}
