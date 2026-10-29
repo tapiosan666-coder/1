@@ -1,0 +1,248 @@
+{
+  "144fps_verified": false,
+  "Windows_GPU": false,
+  "caveat": "8 frames/condition; software rendering observation only. NPC animation frozen to validated 20s snapshot for reproducible views, so this is rendering cost, not full moving crowd benchmark.",
+  "human_playtest": false,
+  "measurements": [
+    {
+      "NPC_enabled": false,
+      "NPC_total": 0,
+      "camera": "V16-A-visitor",
+      "derived_observation_fps": 0.144096475472258,
+      "draw_calls": [
+        6203.0,
+        6203.0,
+        6203.0,
+        6203.0,
+        6203.0,
+        6203.0,
+        6203.0,
+        6203.0
+      ],
+      "median_frame_ms": 6939.795,
+      "p95_sample_frame_ms": 13369.585,
+      "rendered_primitives": [
+        4688816.0,
+        4688816.0,
+        4688816.0,
+        4688816.0,
+        4688816.0,
+        4688816.0,
+        4688816.0,
+        4688816.0
+      ],
+      "sample_frame_ms": [
+        13369.585,
+        6993.676,
+        6576.872,
+        6497.778,
+        6316.506,
+        7521.603,
+        7224.173,
+        6885.914
+      ],
+      "simulation_frozen_for_same_view_comparison": true
+    },
+    {
+      "NPC_enabled": true,
+      "NPC_total": 43,
+      "camera": "V16-A-visitor",
+      "derived_observation_fps": 0.161202454242885,
+      "draw_calls": [
+        6540.0,
+        6540.0,
+        6540.0,
+        6540.0,
+        6540.0,
+        6540.0,
+        6540.0,
+        6540.0
+      ],
+      "median_frame_ms": 6203.3795,
+      "p95_sample_frame_ms": 13156.467,
+      "rendered_primitives": [
+        5069920.0,
+        5069920.0,
+        5069920.0,
+        5069920.0,
+        5069920.0,
+        5069920.0,
+        5069920.0,
+        5069920.0
+      ],
+      "sample_frame_ms": [
+        13156.467,
+        6223.654,
+        6107.61,
+        6603.198,
+        6549.425,
+        6062.929,
+        6089.477,
+        6183.105
+      ],
+      "simulation_frozen_for_same_view_comparison": true
+    },
+    {
+      "NPC_enabled": false,
+      "NPC_total": 0,
+      "camera": "V16-B-aichi",
+      "derived_observation_fps": 0.191965218973765,
+      "draw_calls": [
+        6524.0,
+        6524.0,
+        6524.0,
+        6524.0,
+        6524.0,
+        6524.0,
+        6524.0,
+        6524.0
+      ],
+      "median_frame_ms": 5209.277,
+      "p95_sample_frame_ms": 8853.714,
+      "rendered_primitives": [
+        3725058.0,
+        3725058.0,
+        3725058.0,
+        3725058.0,
+        3725058.0,
+        3725058.0,
+        3725058.0,
+        3725058.0
+      ],
+      "sample_frame_ms": [
+        8853.714,
+        4387.919,
+        4538.744,
+        4520.834,
+        5092.395,
+        5461.945,
+        5429.694,
+        5326.159
+      ],
+      "simulation_frozen_for_same_view_comparison": true
+    },
+    {
+      "NPC_enabled": true,
+      "NPC_total": 43,
+      "camera": "V16-B-aichi",
+      "derived_observation_fps": 0.156927780893666,
+      "draw_calls": [
+        6847.0,
+        6847.0,
+        6847.0,
+        6847.0,
+        6847.0,
+        6847.0,
+        6847.0,
+        6847.0
+      ],
+      "median_frame_ms": 6372.358,
+      "p95_sample_frame_ms": 11862.194,
+      "rendered_primitives": [
+        4082267.0,
+        4082267.0,
+        4082267.0,
+        4082267.0,
+        4082267.0,
+        4082267.0,
+        4082267.0,
+        4082267.0
+      ],
+      "sample_frame_ms": [
+        11862.194,
+        6372.997,
+        6371.719,
+        8025.826,
+        5447.594,
+        5254.774,
+        5208.402,
+        6661.74
+      ],
+      "simulation_frozen_for_same_view_comparison": true
+    },
+    {
+      "NPC_enabled": false,
+      "NPC_total": 0,
+      "camera": "V16-C-courtyard",
+      "derived_observation_fps": 0.537512023472075,
+      "draw_calls": [
+        1724.0,
+        1724.0,
+        1724.0,
+        1724.0,
+        1724.0,
+        1724.0,
+        1724.0,
+        1724.0
+      ],
+      "median_frame_ms": 1860.4235,
+      "p95_sample_frame_ms": 3503.189,
+      "rendered_primitives": [
+        1656218.0,
+        1656218.0,
+        1656218.0,
+        1656218.0,
+        1656218.0,
+        1656218.0,
+        1656218.0,
+        1656218.0
+      ],
+      "sample_frame_ms": [
+        3503.189,
+        1730.753,
+        1778.826,
+        1919.518,
+        1958.495,
+        1927.076,
+        1735.238,
+        1801.329
+      ],
+      "simulation_frozen_for_same_view_comparison": true
+    },
+    {
+      "NPC_enabled": true,
+      "NPC_total": 43,
+      "camera": "V16-C-courtyard",
+      "derived_observation_fps": 0.452550734331449,
+      "draw_calls": [
+        1838.0,
+        1838.0,
+        1838.0,
+        1838.0,
+        1838.0,
+        1838.0,
+        1838.0,
+        1838.0
+      ],
+      "median_frame_ms": 2209.697,
+      "p95_sample_frame_ms": 3955.232,
+      "rendered_primitives": [
+        1787690.0,
+        1787690.0,
+        1787690.0,
+        1787690.0,
+        1787690.0,
+        1787690.0,
+        1787690.0,
+        1787690.0
+      ],
+      "sample_frame_ms": [
+        3955.232,
+        3354.094,
+        2326.88,
+        2300.521,
+        1896.321,
+        1817.634,
+        2046.374,
+        2118.873
+      ],
+      "simulation_frozen_for_same_view_comparison": true
+    }
+  ],
+  "renderer": "Godot4.6.3 Forward+ / Vulkan llvmpipe LLVM19.1.7 software",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "steady_state_benchmark": false
+}

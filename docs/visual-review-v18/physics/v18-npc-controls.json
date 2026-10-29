@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "id": "F12-disables-43-visual-and-colliders",
+      "pass": true
+    },
+    {
+      "id": "F12-rejects-enable-overlapping-player",
+      "pass": true
+    },
+    {
+      "id": "F12-restores-43-visual-and-colliders",
+      "pass": true
+    },
+    {
+      "id": "M-map-pauses-player-and-shoppers",
+      "pass": true
+    },
+    {
+      "distance_m": 0.592067718505859,
+      "id": "player-capsule-collides-with-information-shopper",
+      "pass": true
+    },
+    {
+      "distance_m": 0.0587730407714844,
+      "id": "NPC-off-removes-physical-barrier",
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "method": "Synthetic real key input + actual player capsule movement; not manual operation"
+}
