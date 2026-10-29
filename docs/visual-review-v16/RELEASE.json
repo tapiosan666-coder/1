@@ -1,0 +1,33 @@
+{
+  "version": "v16 independent spatial-density validation",
+  "baseline": "v15",
+  "artifacts": [
+    {
+      "file": "FIND_YOURSELF-v16-Godot.zip",
+      "bytes": 99859624,
+      "sha256": "d914c8d3cd6c0956b4a7c6732d1e8148d1c20f8374eda95e32dccf2b479ca6a9"
+    },
+    {
+      "file": "FIND_YOURSELF-v16-Review.zip",
+      "bytes": 96655748,
+      "sha256": "a52c70c2575249b1383d0acc554e5b1476ed88073156b2fbb272d7772aaefe80"
+    }
+  ],
+  "real_Godot_comparison_pairs": 17,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "main_game_integrated": false,
+  "human_playtest": false,
+  "Windows_GPU_FPS": null,
+  "all_floors_graphically_complete": false,
+  "FF16_quality_achieved": false,
+  "unapproved": [
+    "C F4 structure",
+    "B F6 escalator site option",
+    "RF-SUPPORT-16",
+    "roof support unresolved locations",
+    "C RF water garden design-only"
+  ]
+}

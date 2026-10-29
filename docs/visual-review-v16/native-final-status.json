@@ -1,0 +1,43 @@
+[
+  {
+    "job": "GI-normal",
+    "returncode": 0,
+    "seconds": 124.10965347290039
+  },
+  {
+    "job": "GI-C-option",
+    "returncode": 0,
+    "seconds": 66.25038361549377
+  },
+  {
+    "job": "after",
+    "returncode": 0,
+    "seconds": 271.7289619445801
+  },
+  {
+    "job": "after-C-option",
+    "returncode": 0,
+    "seconds": 86.98436617851257
+  },
+  {
+    "job": "after-ES-option",
+    "returncode": 0,
+    "seconds": 74.73733448982239
+  },
+  {
+    "job": "ui",
+    "returncode": 0,
+    "first_attempt_returncode": 1,
+    "rerun": "Capture helper was outside project. Rerun via absolute path; native UI capture succeeded. Then HUD overlap corrected and captured again.",
+    "initial_attempt": {
+      "returncode": 1,
+      "seconds": 1.6740038394927979,
+      "reason": "Helper script path was corrected before successful reruns"
+    },
+    "final_attempt": {
+      "returncode": 0,
+      "duration_not_recorded": true,
+      "log": "v16-final-ui-clean.log"
+    }
+  }
+]

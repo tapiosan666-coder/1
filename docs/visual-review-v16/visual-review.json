@@ -1,0 +1,13 @@
+{
+  "method": "AIによる実Godot Viewport画像の確認。人間によるゲーム操作ではない。",
+  "human_playtest": false,
+  "AAA_quality_achieved": false,
+  "whole_site_finish_complete": false,
+  "observations": [
+    {"area":"A館西広場","implemented":"案内、待合、クラフト展示が既存動線から見える","remaining":"長い白い壁、店舗奥、植栽と床の細部の自然さ"},
+    {"area":"B館時の広場","implemented":"食・工芸・ステージの役割と商品を区別。黒く隠れていたステージ画面の取り付けを修正","remaining":"周辺店の内装・ファサード、催事全体の精密なディテール"},
+    {"area":"C館地上","implemented":"新しい利用区画に重なる草・低木の旧メッシュを除去。車体・遊具・二重ゲートの実形状を確認","remaining":"通常版の上階デッキの閉鎖感。遊び場の素材・景観密度・細部の仕上げ"},
+    {"area":"C館F4別案","implemented":"通常版とは分離。支柱と回廊がある開放型の既存構造を保持し、新しい地上施設を配置","remaining":"建築・構造安全の承認、全館の仕上げ"},
+    {"area":"UI","implemented":"マップと状態HUDの重複を解消し、M/F9/F10の実表示を確認","remaining":"人間による操作、Windows実機・全解像度の目視確認"}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "actual_Viewport": true,
+      "id": "M-map-C",
+      "pass": true
+    },
+    {
+      "actual_Viewport": true,
+      "id": "F9-native",
+      "pass": true
+    },
+    {
+      "actual_Viewport": true,
+      "id": "F10-native",
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "method": "Native Godot Viewport, physical key-event injection; no human operator",
+  "resolution": [
+    1920,
+    1080
+  ]
+}

@@ -1,0 +1,28 @@
+FIND YOURSELF v16 — original additions and retained third-party licenses
+
+32 dedicated Blender models, original procedural oak/walnut/shibori textures,
+33 original Japanese graphic tile designs and layouts were produced for this project.
+The new meshes are not copied from FF16, a real store, or the supplied reference photos.
+The historical material name CC0_Oak_veneer remains in some exported meshes; their
+new v16 wood image is the original procedural image from authoring/v16_textures.py.
+
+assets/v16/textures/aichi-key-visual-original.png is an original OpenAI ImageGen
+illustration generated for the user's event concept. It is used at its portrait
+aspect ratio. Commercial-use availability follows the applicable OpenAI output terms;
+this statement does not invent a third-party CC0 license or trademark clearance.
+The separate roof-garden generated image is review-only, not a Godot screenshot.
+
+Japanese lettering uses Noto Sans CJK JP (SIL Open Font License), already licensed in
+this project. The v16 runtime subset adds glyphs without changing original glyph
+outlines or advance metrics. The graphic tiles were rasterized using the same OFL family.
+
+All retained v15 assets keep their existing attribution/license files. In particular,
+Khronos sample models and vendor furniture/plant textures retain the adjacent CC0 or
+CC-BY attribution and modification notices. No new external commercial asset pack was
+downloaded. Identical image-byte sharing and lossless JSON compression are documented
+in source/v16; they do not change mesh geometry, image pixels or attribution.
+
+The supplied concept images, v15 screenshots and linked mall references are design
+references, not reusable storefront logos or texture sources. No supplied real-brand
+logo or photograph was applied to a runtime material. New vendor names are fictional;
+no representation that a trademark search has been performed is made.

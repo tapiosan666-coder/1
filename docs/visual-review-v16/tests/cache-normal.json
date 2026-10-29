@@ -1,0 +1,63 @@
+{
+  "GLB_bounds": [],
+  "VSync_project_default": 1,
+  "Windows_GPU_FPS": null,
+  "checks": [
+    {
+      "energy": 0.850000023841858,
+      "file_sha256": "7d45751e88973ba707dcb95b4a16f44da1887f1dd74ba124a4a3a721b587462c",
+      "id": "A",
+      "pass": true,
+      "signature_matches": true,
+      "two_bounces": true
+    },
+    {
+      "energy": 0.850000023841858,
+      "file_sha256": "ccab30fc70086f78bc9c5ef47ec3b4447e59951071296f1f1945ff28ea413a6a",
+      "id": "B",
+      "pass": true,
+      "signature_matches": true,
+      "two_bounces": true
+    },
+    {
+      "energy": 0.850000023841858,
+      "file_sha256": "919fda33d04a98e6238c5d7fa7cfe5162803afff193eecc0e4b0ac64eeb4e98b",
+      "id": "C",
+      "pass": true,
+      "signature_matches": true,
+      "two_bounces": true
+    },
+    {
+      "energy": 0.850000023841858,
+      "file_sha256": "431ebf1e19b2c4b9208cb0de8279011c31aef8b859122d0b0de6c923b45797fa",
+      "id": "A-shoe",
+      "pass": true,
+      "signature_matches": true,
+      "two_bounces": true
+    },
+    {
+      "energy": 0.850000023841858,
+      "file_sha256": "fa1ec8ed853738dd0dcef922505aab7b503b3feb71cd040f7e3593815ffce794",
+      "id": "A-supermarket",
+      "pass": true,
+      "signature_matches": true,
+      "two_bounces": true
+    },
+    {
+      "energy": 0.850000023841858,
+      "file_sha256": "8ce06e8aabb60945a650549901b815d5d5cf444d51ef5c5d13e8b9c1a9aae0de",
+      "id": "B-travel",
+      "pass": true,
+      "signature_matches": true,
+      "two_bounces": true
+    }
+  ],
+  "current_signature": "9cd8bcd8c0aa71d1e7882d29c81909aced23ecb21e76621397af859be95e4bd0",
+  "failed": 0,
+  "initial_max_fps": 144,
+  "local_reflection_probes_default": false,
+  "passed": 6,
+  "physics_Hz": 60,
+  "screen_height": 1080,
+  "screen_width": 1920
+}

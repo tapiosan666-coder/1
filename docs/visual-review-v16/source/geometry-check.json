@@ -1,0 +1,783 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "id": "A-WEST-VISITOR-information_counter-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-WEST-VISITOR-planted_seating_island-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-WEST-VISITOR-planted_seating_island-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-WEST-VISITOR-digital_info_pylon-6",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-WEST-VISITOR-outdoor_bench-7",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-WEST-VISITOR-outdoor_bench-8",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-POPUP-fair_craft_booth-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-POPUP-fair_craft_booth-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-STREET-419-digital_info_pylon-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-STREET-419-outdoor_bench-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-STREET-511-digital_info_pylon-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-STREET-511-outdoor_bench-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-STREET-593-digital_info_pylon-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-STREET-593-outdoor_bench-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-2F-READING-planted_seating_island-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-2F-READING-digital_info_pylon-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-CINEMA-cinema_ticket_kiosk-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-CINEMA-cinema_ticket_kiosk-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-CINEMA-cinema_ticket_kiosk-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-CINEMA-digital_info_pylon-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-ARCADE-capsule_toy_machine-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-ARCADE-capsule_toy_machine-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-ARCADE-capsule_toy_machine-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-ARCADE-capsule_toy_machine-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-ARCADE-digital_info_pylon-5",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-TIME-AICHI-fair_stage-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-miso_katsu",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-tebasaki",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-kishimen",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-hitsumabushi",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-uiro",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-ogura_toast",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-tokoname",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-seto",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "AICHI-shibori",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-TIME-AICHI-outdoor_bench-47",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-TIME-AICHI-outdoor_bench-48",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-TIME-AICHI-outdoor_bench-49",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-TIME-AICHI-digital_info_pylon-50",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-TIME-AICHI-planted_seating_island-51",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-TIME-AICHI-planted_seating_island-53",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-LIGHT-GARDEN-planted_seating_island-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-LIGHT-GARDEN-planted_seating_island-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-LIGHT-GARDEN-planted_seating_island-5",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-LIGHT-GARDEN-digital_info_pylon-7",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-WING-SEASON-fair_craft_booth-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-WING-SEASON-fair_craft_booth-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-UPPER-1-planted_seating_island-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-UPPER-1-digital_info_pylon-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-UPPER-1-planted_seating_island-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-UPPER-1-digital_info_pylon-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-KIDS-kids_play_tower-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-KIDS-kids_climb_pod-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-KIDS-shade_sail-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-KIDS-outdoor_bench-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-KIDS-outdoor_bench-5",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-DOG-RUN-outdoor_bench-45",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-DOG-RUN-outdoor_bench-46",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-DOG-RUN-dog_service_station-47",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-DOG-RUN-digital_info_pylon-48",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-MELON-TRUCK-melon_food_truck-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-MELON-TRUCK-outdoor_table_set-11",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-MELON-TRUCK-outdoor_table_set-12",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-MELON-TRUCK-planted_seating_island-13",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-MELON-TRUCK-planted_seating_island-15",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-UPPER-1-outdoor_bench-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-UPPER-1-digital_info_pylon-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-UPPER-2-outdoor_bench-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-UPPER-2-digital_info_pylon-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-B1-FOCUS-produce_market_bay-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-B1-FOCUS-deli_refrigerated_showcase-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-B1-FOCUS-produce_market_bay-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-B1-FOCUS-digital_info_pylon-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-B1-FOCUS-produce_market_bay-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-B1-FOCUS-deli_refrigerated_showcase-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-B1-FOCUS-produce_market_bay-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-B1-FOCUS-digital_info_pylon-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-B1-FOCUS-repair_pickup_counter-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-B1-FOCUS-digital_info_pylon-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-B1-ARRIVAL-digital_info_pylon-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-B1-ARRIVAL-digital_info_pylon-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-B1-ARRIVAL-digital_info_pylon-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-RF-TERRACE-outdoor_table_set-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-RF-TERRACE-outdoor_table_set-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-RF-TERRACE-terrace_pergola-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "A-RF-TERRACE-digital_info_pylon-4",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-RF-TERRACE-outdoor_table_set-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-RF-TERRACE-digital_info_pylon-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-RF-GARDEN-terrace_pergola-1",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-RF-GARDEN-outdoor_table_set-2",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "B-RF-GARDEN-digital_info_pylon-3",
+      "test": "design_floor_or_ground_coverage",
+      "missing_m2": 0.0,
+      "passed": true,
+      "method": "design floor + registered outdoor ground and terrain-v7 layers; native downward support rays are a separate check"
+    },
+    {
+      "id": "C-KIDS-SAFETY",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-DOG-TURF",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-QUEUE-0",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-QUEUE-1",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-QUEUE-2",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-QUEUE-3",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-ACCESS-KIDS",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-ACCESS-DOG",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-ACCESS-FOOD",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "id": "C-FOOD-FORECOURT",
+      "test": "surface_finish_not_new_structural_floor",
+      "passed": true
+    },
+    {
+      "test": "480_shop_ids_unchanged",
+      "count": 480,
+      "passed": true
+    },
+    {
+      "test": "smooth_controller_unchanged",
+      "path": "player.gd",
+      "passed": true
+    },
+    {
+      "test": "smooth_controller_unchanged",
+      "path": "escalator_v2.gd",
+      "passed": true
+    }
+  ],
+  "failed": [],
+  "method": "design geometry only; no manual playtest, structural engineering or vehicle tracking claim",
+  "rejected_placements": [
+    {
+      "zone": "B-UPPER-2",
+      "model": "planted_seating_island",
+      "preferred_world": [
+        160.0,
+        2.0
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    },
+    {
+      "zone": "B-UPPER-2",
+      "model": "digital_info_pylon",
+      "preferred_world": [
+        164.0,
+        5.0
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    },
+    {
+      "zone": "C-KIDS",
+      "model": "digital_info_pylon",
+      "preferred_world": [
+        -103.0,
+        -302.0
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    },
+    {
+      "zone": "C-MELON-TRUCK",
+      "model": "digital_info_pylon",
+      "preferred_world": [
+        -84.4,
+        -322.0
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    },
+    {
+      "zone": "A-B1-FOCUS",
+      "model": "produce_market_bay",
+      "preferred_world": [
+        386.9488362283974,
+        -65.52613758177435
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    },
+    {
+      "zone": "B-B1-FOCUS",
+      "model": "produce_market_bay",
+      "preferred_world": [
+        -295.0,
+        -4.0
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    },
+    {
+      "zone": "C-RF-TERRACE",
+      "model": "outdoor_table_set",
+      "preferred_world": [
+        -164.96693364224956,
+        -320.891329955301
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    },
+    {
+      "zone": "C-RF-TERRACE",
+      "model": "terrace_pergola",
+      "preferred_world": [
+        -169.73940371426,
+        -323.9283563647622
+      ],
+      "reason": "No placement preserving declared space, existing furniture, entrances and protected walk bands"
+    }
+  ]
+}

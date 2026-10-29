@@ -1,0 +1,191 @@
+{
+  "version": "v16",
+  "all_listed_tests_pass": true,
+  "tests": [
+    {
+      "name": "建築原本・主要処理の保護",
+      "passed": 26,
+      "failed": 0,
+      "method": "19パック＋主要7インターフェースの原本比較",
+      "source": "source/preservation.json"
+    },
+    {
+      "name": "配置・設計データ",
+      "passed": 104,
+      "failed": 0,
+      "method": "床/既存地面の被覆、ID、処理保護。設計上の検査",
+      "source": "source/geometry-check.json"
+    },
+    {
+      "name": "通常版の指定歩行",
+      "passed": 945,
+      "failed": 0,
+      "method": "実衝突カプセルの自動経路追従。人間ではない",
+      "source": "tests/core/physics-all.json"
+    },
+    {
+      "name": "ESと既存アクセス",
+      "passed": 163,
+      "failed": 0,
+      "method": "実ES40機＋ES指定で抽出されたアクセス123経路",
+      "source": "tests/core/physics-ES.json"
+    },
+    {
+      "name": "EV乗降・各階移動",
+      "passed": 119,
+      "failed": 0,
+      "method": "実開口・連続キャリアで移動。ワープではない",
+      "source": "tests/core/physics-EV.json"
+    },
+    {
+      "name": "C館別案の指定歩行",
+      "passed": 945,
+      "failed": 0,
+      "method": "別案で全経路。C館186経路と館間接続を含む",
+      "source": "tests/C/physics-all.json"
+    },
+    {
+      "name": "C館別案の回廊",
+      "passed": 8,
+      "failed": 0,
+      "method": "実W入力＋自動操舵。人間の実操作ではない",
+      "source": "tests/C-gallery-input.json"
+    },
+    {
+      "name": "F6 乗降・上下乗継・接続",
+      "passed": 18,
+      "failed": 0,
+      "method": "実W入力。6機械＋4乗継＋8接続",
+      "source": "tests/ES-site-input.json"
+    },
+    {
+      "name": "C館別案のガード",
+      "passed": 22,
+      "failed": 0,
+      "method": "代表22地点へ160tick進み、落下・通過を確認",
+      "source": "tests/C-edge-input.json"
+    },
+    {
+      "name": "F6別案のガード",
+      "passed": 12,
+      "failed": 0,
+      "method": "2F/3F/RFの代表4方向。全境界の保証ではない",
+      "source": "tests/ES-edge-input.json"
+    },
+    {
+      "name": "C館別案のES",
+      "passed": 4,
+      "failed": 0,
+      "method": "実W入力で4機の乗降。移動処理は保持",
+      "source": "tests/C-es/es-approach-input.json"
+    },
+    {
+      "name": "新施設への歩行",
+      "passed": 8,
+      "failed": 0,
+      "method": "案内・催事・遊び場・車・二重ゲート。実W入力",
+      "source": "tests/facilities/v16-facility-walk.json"
+    },
+    {
+      "name": "支持・催事切替・ゲート",
+      "passed": 95,
+      "failed": 0,
+      "method": "実衝突の支持線、切替、再開時重複、インターロック",
+      "source": "tests/commons/v16-commons-physics.json"
+    },
+    {
+      "name": "F9・M・催事操作",
+      "passed": 42,
+      "failed": 0,
+      "method": "キー注入、移動先接地、マップ・HUD非重複",
+      "source": "tests/controls-amenities.json"
+    },
+    {
+      "name": "基本操作と初期設定",
+      "passed": 11,
+      "failed": 0,
+      "method": "向き、W、M停止、144上限/VSync/60Hzなど",
+      "source": "tests/controls/controls.json"
+    },
+    {
+      "name": "設定の保存・復元",
+      "passed": 31,
+      "failed": 0,
+      "method": "3解像度×5上限×VSync。人間の全解像度目視ではない",
+      "source": "tests/settings.json"
+    },
+    {
+      "name": "F4/F6の独立切替",
+      "passed": 3,
+      "failed": 0,
+      "method": "実current_sceneへのキー注入。通常版へ戻るまで",
+      "source": "tests/navigation.json"
+    },
+    {
+      "name": "間接光キャッシュ normal",
+      "passed": 6,
+      "failed": 0,
+      "method": "最終ソースとの指紋一致。全館GI完成ではない",
+      "source": "tests/cache-normal.json"
+    },
+    {
+      "name": "間接光キャッシュ C-option",
+      "passed": 1,
+      "failed": 0,
+      "method": "最終ソースとの指紋一致。全館GI完成ではない",
+      "source": "tests/cache-C-option.json"
+    },
+    {
+      "name": "新規展開 normal",
+      "passed": 5,
+      "failed": 0,
+      "method": "全展開・インポート後、独立シーンを起動",
+      "source": "tests/fresh/normal.json"
+    },
+    {
+      "name": "新規展開 C",
+      "passed": 5,
+      "failed": 0,
+      "method": "全展開・インポート後、独立シーンを起動",
+      "source": "tests/fresh/C.json"
+    },
+    {
+      "name": "新規展開 ES",
+      "passed": 5,
+      "failed": 0,
+      "method": "全展開・インポート後、独立シーンを起動",
+      "source": "tests/fresh/ES.json"
+    },
+    {
+      "name": "実UIのViewport確認",
+      "passed": 3,
+      "failed": 0,
+      "method": "1920×1080、M/F9/F10をキー注入。人間ではない",
+      "source": "ui/checks.json"
+    },
+    {
+      "name": "ZIP整合性",
+      "passed": 1,
+      "failed": 0,
+      "method": "CRC・全ファイルSHA・外部画像参照",
+      "source": "tests/package-integrity.json"
+    },
+    {
+      "name": "新規展開・描画起動",
+      "passed": 1,
+      "failed": 0,
+      "method": "実描画でmain起動（F5相当）。Windowsではない",
+      "source": "tests/fresh/native-main.json"
+    }
+  ],
+  "human_playtest": false,
+  "Windows_GPU_FPS": null,
+  "144FPS_achieved": null,
+  "software_renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "not_architectural_or_product_safety_approval": true,
+  "notes": [
+    "経路・入力・描画を別に評価。数の多さだけで品質を合格としない。",
+    "新規利用区画の旧装飾4197三角形を除去、衝突変更0。",
+    "Windows GPU、人間の操作、製品安全、建築構造・排水・車両軌跡は未検証。"
+  ]
+}
