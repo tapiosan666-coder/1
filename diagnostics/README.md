@@ -1,0 +1,1 @@
+試験パケットと補正前の描画測定です。標準提出版の最終性能ではありません。現行値は一つ上のperformance-v23とperformance-crowd。

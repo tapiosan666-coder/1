@@ -1,0 +1,481 @@
+﻿店舗ID,分類,商品カテゴリー,レジ機器として別管理,規則外カテゴリー,機械的業種ルール一致,美術品質の完成判定
+AB1-001,food,food,0,,True,False
+AB1-002,home,home,0,,True,False
+AB1-003,food,food,0,,True,False
+AB1-004,food,food,0,,True,False
+AB1-005,food,food,0,,True,False
+AB1-006,food,food,0,,True,False
+AB1-007,food,food,0,,True,False
+AB1-008,food,food,0,,True,False
+AB1-009,food,food,0,,True,False
+AB1-010,food,food,0,,True,False
+AB1-011,pharmacy,beauty / pharmacy,0,,True,False
+AB1-012,pharmacy,beauty / pharmacy,0,,True,False
+AB1-013,home,home,0,,True,False
+AB1-014,home,home,0,,True,False
+AB1-015,food,food,0,,True,False
+AB1-016,food,food,0,,True,False
+AB1-017,pharmacy,beauty / pharmacy,0,,True,False
+AB1-018,pharmacy,beauty / pharmacy,0,,True,False
+AB1-019,home,home,0,,True,False
+AB1-020,home,home,0,,True,False
+AB1-021,food,food,0,,True,False
+AB1-022,pharmacy,beauty / pharmacy,0,,True,False
+AB1-023,pharmacy,beauty / pharmacy,0,,True,False
+AB1-024,home,home,0,,True,False
+AB1-025,home,home,0,,True,False
+AB1-026,service,,0,,True,False
+AB1-027,service,,0,,True,False
+AB1-028,food,food,0,,True,False
+AB1-029,food,food,0,,True,False
+AB1-030,book,book,0,,True,False
+AB1-031,sports,apparel / bags / shoes / sports,0,,True,False
+A1F-001,food,food,0,,True,False
+A1F-002,electronics,electronics,0,,True,False
+A1F-003,shoes,bags / shoes,0,,True,False
+A1F-004,shoes,bags / shoes,0,,True,False
+A1F-005,home,home,0,,True,False
+A1F-006,home,home,0,,True,False
+A1F-007,book,book,0,,True,False
+A1F-008,book,book,0,,True,False
+A1F-009,shoes,bags / shoes,0,,True,False
+A1F-010,shoes,bags / shoes,0,,True,False
+A1F-011,home,home,0,,True,False
+A1F-012,home,home,0,,True,False
+A1F-013,book,book,0,,True,False
+A1F-014,furniture,home,0,,True,False
+A1F-015,cafe,dining / food,0,,True,False
+A1F-016,cafe,dining / food,0,,True,False
+A1F-017,home,home / stationery,0,,True,False
+A1F-018,home,home,0,,True,False
+A1F-019,book,book,0,,True,False
+A1F-020,book,book,0,,True,False
+A1F-021,cafe,food,0,,True,False
+A1F-022,cafe,dining / food,0,,True,False
+A1F-023,beauty,beauty,0,,True,False
+A1F-024,beauty,beauty,0,,True,False
+A1F-025,cafe,dining / food,0,,True,False
+A1F-026,cafe,dining / food,0,,True,False
+A1F-027,beauty,beauty,0,,True,False
+A1F-028,beauty,beauty,0,,True,False
+A1F-029,sports,bags / shoes / sports,0,,True,False
+A1F-030,sports,bags / shoes / sports,0,,True,False
+A1F-031,beauty,beauty,0,,True,False
+A1F-032,restaurant,dining,0,,True,False
+A1F-033,restaurant,dining,0,,True,False
+A1F-034,restaurant,dining,0,,True,False
+A1F-035,restaurant,dining,0,,True,False
+A1F-036,home,home,0,,True,False
+A1F-037,home,home,0,,True,False
+A1F-038,apparel,apparel,0,,True,False
+A1F-039,apparel,apparel / bags,0,,True,False
+A1F-040,electronics,electronics,0,,True,False
+A1F-041,electronics,electronics,0,,True,False
+A1F-042,home,home,0,,True,False
+A1F-043,home,home,0,,True,False
+A1F-044,apparel,apparel,0,,True,False
+A1F-045,apparel,apparel,0,,True,False
+A1F-046,home,home,0,,True,False
+A1F-047,home,home,0,,True,False
+A1F-048,apparel,apparel,0,,True,False
+A1F-049,apparel,apparel,0,,True,False
+A1F-050,shoes,bags / shoes,0,,True,False
+A1F-051,book,book,0,,True,False
+A1F-052,electronics,electronics,0,,True,False
+A2F-001,apparel,apparel / bags / shoes,0,,True,False
+A2F-002,furniture,home,0,,True,False
+A2F-003,home,home,0,,True,False
+A2F-004,book,book,0,,True,False
+A2F-005,cafe,dining / food,0,,True,False
+A2F-006,cafe,dining / food,0,,True,False
+A2F-007,book,book,0,,True,False
+A2F-008,home,home,0,,True,False
+A2F-009,optics,optics,0,,True,False
+A2F-010,shoes,bags / shoes,0,,True,False
+A2F-011,beauty,beauty,0,,True,False
+A2F-012,furniture,,0,,True,False
+A2F-013,sports,bags / shoes / sports,0,,True,False
+A2F-014,home,home,0,,True,False
+A2F-015,cafe,dining / food,0,,True,False
+A2F-016,cafe,dining / food,0,,True,False
+A2F-017,beauty,beauty,0,,True,False
+A2F-018,beauty,beauty,0,,True,False
+A2F-019,sports,bags / shoes / sports,0,,True,False
+A2F-020,sports,bags / shoes / sports,0,,True,False
+A2F-021,electronics,electronics,0,,True,False
+A2F-022,electronics,electronics,0,,True,False
+A2F-023,sports,bags / shoes / sports,0,,True,False
+A2F-024,sports,bags / shoes / sports,0,,True,False
+A2F-025,electronics,electronics,0,,True,False
+A2F-026,electronics,electronics,0,,True,False
+A2F-027,home,home,0,,True,False
+A2F-028,home,home,0,,True,False
+A2F-029,electronics,electronics,0,,True,False
+A2F-030,electronics,electronics,0,,True,False
+A2F-031,home,home,0,,True,False
+A2F-032,home,home,0,,True,False
+A2F-033,apparel,apparel,0,,True,False
+A2F-034,home,home,0,,True,False
+A2F-035,apparel,apparel,0,,True,False
+A2F-036,apparel,apparel,0,,True,False
+A2F-037,shoes,bags / shoes,0,,True,False
+A2F-038,shoes,bags / shoes,0,,True,False
+A2F-039,apparel,apparel,0,,True,False
+A2F-040,apparel,apparel,0,,True,False
+A2F-041,shoes,bags / shoes,0,,True,False
+A2F-042,shoes,bags / shoes,0,,True,False
+A2F-043,home,home,0,,True,False
+A2F-044,home,home,0,,True,False
+A2F-045,book,book,0,,True,False
+A2F-046,book,book,0,,True,False
+A2F-047,shoes,bags / shoes,0,,True,False
+A2F-048,home,home,0,,True,False
+A2F-049,home,home,0,,True,False
+A2F-050,book,book,0,,True,False
+A2F-051,book,book,0,,True,False
+A2F-052,sports,apparel / bags / shoes / sports,0,,True,False
+A3F-001,cinema,,0,,True,False
+A3F-002,arcade,,0,,True,False
+A3F-003,stationery,stationery,0,,True,False
+A3F-004,beauty,beauty,0,,True,False
+A3F-005,apparel,apparel,0,,True,False
+A3F-006,sports,bags / shoes / sports,0,,True,False
+A3F-007,toy,book / toy,0,,True,False
+A3F-008,shoes,bags / shoes,0,,True,False
+A3F-009,toy,book / toy,0,,True,False
+A3F-010,music,music,0,,True,False
+A3F-011,toy,book / toy,0,,True,False
+A3F-012,arcade,,0,,True,False
+A3F-013,home,home,0,,True,False
+A3F-014,stationery,stationery,0,,True,False
+A3F-015,sports,bags / shoes / sports,0,,True,False
+A3F-016,sports,bags / shoes / sports,0,,True,False
+A3F-017,electronics,electronics,0,,True,False
+A3F-018,electronics,electronics,0,,True,False
+A3F-019,home,home,0,,True,False
+A3F-020,home,home,0,,True,False
+A3F-021,home,home,0,,True,False
+A3F-022,home,home,0,,True,False
+A3F-023,home,home,0,,True,False
+A3F-024,home,home,0,,True,False
+A3F-025,apparel,apparel,0,,True,False
+A3F-026,apparel,apparel,0,,True,False
+A3F-027,shoes,bags / shoes,0,,True,False
+A3F-028,shoes,bags / shoes,0,,True,False
+A3F-029,apparel,apparel,0,,True,False
+A3F-030,apparel,apparel,0,,True,False
+A3F-031,shoes,bags / shoes,0,,True,False
+A3F-032,shoes,bags / shoes,0,,True,False
+A3F-033,home,home,0,,True,False
+A3F-034,home,home,0,,True,False
+A3F-035,book,book,0,,True,False
+A3F-036,book,book,0,,True,False
+A3F-037,cafe,dining / food,0,,True,False
+A3F-038,cafe,dining / food,0,,True,False
+A3F-039,home,home,0,,True,False
+A3F-040,home,home,0,,True,False
+A3F-041,book,book,0,,True,False
+A3F-042,book,book,0,,True,False
+A3F-043,cafe,dining / food,0,,True,False
+A3F-044,cafe,dining / food,0,,True,False
+A3F-045,beauty,beauty,0,,True,False
+A3F-046,beauty,beauty,0,,True,False
+A3F-047,book,book,0,,True,False
+A3F-048,book,book,0,,True,False
+A3F-049,cafe,dining / food,0,,True,False
+A3F-050,book,book,0,,True,False
+A3F-051,sports,apparel / bags / shoes / sports,0,,True,False
+ARF-001,garden,garden / home,0,,True,False
+ARF-002,cafe,dining / food,0,,True,False
+ARF-003,cafe,dining / food,0,,True,False
+ARF-004,garden,garden / home,0,,True,False
+ARF-005,cafe,dining / food,0,,True,False
+ARF-006,cafe,dining / food,0,,True,False
+ARF-007,garden,garden / home,0,,True,False
+ARF-008,cafe,dining / food,0,,True,False
+ARF-009,cafe,dining / food,0,,True,False
+ARF-010,garden,garden / home,0,,True,False
+ARF-011,cafe,dining / food,0,,True,False
+ARF-012,cafe,dining / food,0,,True,False
+ARF-013,garden,garden / home,0,,True,False
+ARF-014,cafe,dining / food,0,,True,False
+ARF-015,garden,garden / home,0,,True,False
+BB1-MARKET,food,food,0,,True,False
+BB1-PICKUP,food,food,0,,True,False
+B1-AE1,food,food,0,,True,False
+B1-011,book,book,0,,True,False
+B1-024,beauty,beauty,0,,True,False
+B1-032,home,home,0,,True,False
+B1-037,apparel,apparel,0,,True,False
+B1-045,shoes,bags / shoes,0,,True,False
+B1-AW1,electronics,electronics,0,,True,False
+B1-001,apparel,apparel,0,,True,False
+B1-015,shoes,bags / shoes,0,,True,False
+B1-028,cafe,food,0,,True,False
+B1-003,shoes,bags / shoes,0,,True,False
+B1-017,book,book,0,,True,False
+B1-030,beauty,beauty,0,,True,False
+B1-038,home,home,0,,True,False
+B1-040,cafe,dining / food,0,,True,False
+B1-043,apparel,apparel,0,,True,False
+B1-N01,electronics,electronics,0,,True,False
+B1-013,apparel,apparel,0,,True,False
+B1-026,home,home,0,,True,False
+B1-039,shoes,bags / shoes,0,,True,False
+B1-048,beauty,beauty,0,,True,False
+B1-055,apparel,apparel,0,,True,False
+B1-061,apparel,apparel,0,,True,False
+B1-066,beauty,beauty,0,,True,False
+B1-010,cafe,dining / food,0,,True,False
+B1-052,cafe,dining / food,0,,True,False
+B1-063,shoes,bags / shoes,0,,True,False
+B1-N02,home,home,0,,True,False
+B1-007,apparel,apparel,0,,True,False
+B1-021,shoes,bags / shoes,0,,True,False
+B1-034,cafe,dining / food,0,,True,False
+B1-046,cafe,dining / food,0,,True,False
+B1-053,book,book,0,,True,False
+B1-059,book,book,0,,True,False
+B1-009,shoes,bags / shoes,0,,True,False
+B1-051,shoes,bags / shoes,0,,True,False
+B1-N03,mobile,electronics,0,,True,False
+B1-036,beauty,beauty,0,,True,False
+B1-047,book,book,0,,True,False
+B1-054,beauty,beauty,0,,True,False
+B1-060,beauty,beauty,0,,True,False
+B1-065,book,book,0,,True,False
+B1-012,beauty,beauty,0,,True,False
+B1-016,cafe,dining / food,0,,True,False
+B1-025,apparel,apparel,0,,True,False
+B1-029,book,book,0,,True,False
+B1-042,beauty,beauty,0,,True,False
+B1-W4,restaurant,dining,0,,True,False
+B1-020,home,home,0,,True,False
+B1-033,shoes,bags / shoes,0,,True,False
+B1-050,home,home,0,,True,False
+B1-057,shoes,bags / shoes,0,,True,False
+B1-N04,shoes,bags / shoes,0,,True,False
+B1-W3,cafe,dining / food,0,,True,False
+B1-067,apparel,apparel,0,,True,False
+B1-W2,book,book,0,,True,False
+B1-W1,apparel,apparel,0,,True,False
+B1-004,cafe,dining / food,0,,True,False
+B1-018,beauty,beauty,0,,True,False
+B1-005,book,book,0,,True,False
+B1-019,apparel,apparel,0,,True,False
+B1-008,home,home,0,,True,False
+B1-022,cafe,dining / food,0,,True,False
+B1-SW32,shoes,bags / shoes,0,,True,False
+B1-014,home,home,0,,True,False
+B1-027,shoes,bags / shoes,0,,True,False
+B1-SW12,shoes,bags / shoes,0,,True,False
+B1-SW31,cafe,dining / food,0,,True,False
+B1-SW11,cafe,dining / food,0,,True,False
+B2-AE1,apparel,apparel / bags / shoes,0,,True,False
+B2-011,book,book,0,,True,False
+B2-025,apparel,apparel,0,,True,False
+B2-033,shoes,bags / shoes,0,,True,False
+B2-036,beauty,beauty,0,,True,False
+B2-AW1,book,book,0,,True,False
+B2-001,apparel,apparel,0,,True,False
+B2-015,shoes,bags / shoes,0,,True,False
+B2-003,shoes,bags / shoes,0,,True,False
+B2-017,book,book,0,,True,False
+B2-031,apparel,apparel,0,,True,False
+B2-037,apparel,apparel,0,,True,False
+B2-065,book,book,0,,True,False
+B2-068,home,home,0,,True,False
+B2-069,shoes,bags / shoes,0,,True,False
+B2-070,cafe,dining / food,0,,True,False
+B2-N01,book,book,0,,True,False
+B2-013,apparel,apparel,0,,True,False
+B2-027,shoes,bags / shoes,0,,True,False
+B2-038,home,home,0,,True,False
+B2-045,shoes,bags / shoes,0,,True,False
+B2-052,cafe,dining / food,0,,True,False
+B2-057,shoes,bags / shoes,0,,True,False
+B2-062,home,home,0,,True,False
+B2-010,cafe,dining / food,0,,True,False
+B2-024,beauty,beauty,0,,True,False
+B2-042,beauty,beauty,0,,True,False
+B2-054,beauty,beauty,0,,True,False
+B2-007,apparel,apparel,0,,True,False
+B2-021,shoes,bags / shoes,0,,True,False
+B2-034,cafe,dining / food,0,,True,False
+B2-043,apparel,apparel,0,,True,False
+B2-050,home,home,0,,True,False
+B2-055,apparel,apparel,0,,True,False
+B2-009,shoes,bags / shoes,0,,True,False
+B2-023,book,book,0,,True,False
+B2-032,home,home,0,,True,False
+B2-N02,book,book,0,,True,False
+B2-044,home,home,0,,True,False
+B2-051,shoes,bags / shoes,0,,True,False
+B2-056,home,home,0,,True,False
+B2-061,apparel,apparel,0,,True,False
+B2-064,cafe,dining / food,0,,True,False
+B2-067,apparel,apparel,0,,True,False
+B2-012,beauty,beauty,0,,True,False
+B2-016,cafe,dining / food,0,,True,False
+B2-026,home,home,0,,True,False
+B2-030,beauty,beauty,0,,True,False
+B2-W4,restaurant,dining,0,,True,False
+B2-006,beauty,beauty,1,,True,False
+B2-020,home,home,0,,True,False
+B2-040,cafe,dining / food,0,,True,False
+B2-047,book,book,0,,True,False
+B2-N03,book,book,0,,True,False
+B2-W3,cafe,dining / food,0,,True,False
+B2-W2,book,book,0,,True,False
+B2-W1,apparel,apparel,0,,True,False
+B2-004,cafe,dining / food,0,,True,False
+B2-018,beauty,beauty,0,,True,False
+B2-005,book,book,0,,True,False
+B2-019,apparel,apparel,0,,True,False
+B2-008,home,home,0,,True,False
+B2-022,cafe,dining / food,0,,True,False
+B2-SW32,shoes,bags / shoes,0,,True,False
+B2-014,home,home,0,,True,False
+B2-028,cafe,dining / food,0,,True,False
+B2-SW12,shoes,bags / shoes,0,,True,False
+B2-SW31,cafe,dining / food,0,,True,False
+B2-SW11,cafe,dining / food,0,,True,False
+B3-AE1,restaurant,dining,0,,True,False
+B3-011,music,music,0,,True,False
+B3-019,apparel,apparel,0,,True,False
+B3-025,apparel,apparel,0,,True,False
+B3-AW1,cinema,,0,,True,False
+B3-001,apparel,apparel,0,,True,False
+B3-015,restaurant,dining,0,,True,False
+B3-029,music,music,0,,True,False
+B3-003,restaurant,dining,0,,True,False
+B3-017,music,music,0,,True,False
+B3-031,apparel,apparel,0,,True,False
+B3-037,apparel,apparel,0,,True,False
+B3-041,music,music,0,,True,False
+B3-046,arcade,,0,,True,False
+B3-N01,sports,bags / shoes / sports,0,,True,False
+B3-013,apparel,apparel,0,,True,False
+B3-027,restaurant,dining,0,,True,False
+B3-038,toy,book / toy,0,,True,False
+B3-047,music,music,0,,True,False
+B3-055,apparel,apparel,0,,True,False
+B3-010,arcade,,0,,True,False
+B3-043,apparel,apparel,0,,True,False
+B3-052,arcade,,0,,True,False
+B3-058,arcade,,0,,True,False
+B3-007,apparel,apparel,0,,True,False
+B3-021,restaurant,dining,0,,True,False
+B3-035,music,music,0,,True,False
+B3-044,toy,book / toy,0,,True,False
+B3-053,music,music,0,,True,False
+B3-059,music,music,0,,True,False
+B3-009,restaurant,dining,0,,True,False
+B3-023,music,music,0,,True,False
+B3-032,toy,book / toy,0,,True,False
+B3-057,restaurant,dining,0,,True,False
+B3-036,home,home,0,,True,False
+B3-045,restaurant,dining,0,,True,False
+B3-054,home,home,0,,True,False
+B3-060,home,home,0,,True,False
+B3-012,home,home,0,,True,False
+B3-016,arcade,,0,,True,False
+B3-030,home,home,0,,True,False
+B3-040,arcade,,0,,True,False
+B3-W4,restaurant,dining,0,,True,False
+B3-034,arcade,,0,,True,False
+B3-049,apparel,apparel,0,,True,False
+B3-N02,music,music,0,,True,False
+B3-W3,cafe,dining / food,0,,True,False
+B3-W2,book,book,0,,True,False
+B3-W1,apparel,apparel,0,,True,False
+B3-004,arcade,,0,,True,False
+B3-018,home,home,0,,True,False
+B3-005,music,music,0,,True,False
+B3-008,toy,book / toy,0,,True,False
+B3-022,arcade,,0,,True,False
+B3-SW32,shoes,bags / shoes,0,,True,False
+B3-014,toy,book / toy,0,,True,False
+B3-028,arcade,,0,,True,False
+B3-SW12,shoes,bags / shoes,0,,True,False
+B3-SW31,cafe,dining / food,0,,True,False
+B3-N03,cafe,dining / food,0,,True,False
+BRF-CAFE,cafe,dining / food,0,,True,False
+CB1-CW-1,service,,0,,True,False
+CB1-CW-2,home,home,0,,True,False
+CB1-CW-3,service,,0,,True,False
+CB1-CNW-1,home,home,0,,True,False
+CB1-CNW-2,service,,0,,True,False
+CB1-CNW-3,service,,0,,True,False
+CB1-CNE-1,service,,0,,True,False
+CB1-CNE-2,service,,0,,True,False
+CB1-CNE-3,home,home,0,,True,False
+CB1-CE-1,service,,0,,True,False
+CB1-CE-2,home,home,0,,True,False
+CB1-CE-3,service,,0,,True,False
+CB1-CSE-1,home,home,0,,True,False
+CB1-CSE-2,service,,0,,True,False
+CB1-CSE-3,service,,0,,True,False
+CB1-CSW-1,service,,0,,True,False
+CB1-CSW-2,service,,0,,True,False
+CB1-CSW-3,home,home,0,,True,False
+C1F-CW-1,apparel,apparel,0,,True,False
+C1F-CW-2,apparel,apparel,0,,True,False
+C1F-CW-3,shoes,bags / shoes,0,,True,False
+C1F-CNW-1,home,home,0,,True,False
+C1F-CNW-2,book,book,0,,True,False
+C1F-CNW-3,home,home,0,,True,False
+C1F-CNE-1,sports,bags / shoes / sports,0,,True,False
+C1F-CNE-2,sports,bags / shoes / sports,0,,True,False
+C1F-CNE-3,sports,bags / shoes / sports,0,,True,False
+C1F-CE-1,shoes,bags / shoes,0,,True,False
+C1F-CE-2,sports,bags / shoes / sports,0,,True,False
+C1F-CE-3,apparel,apparel,0,,True,False
+C1F-CSE-1,cafe,dining / food,0,,True,False
+C1F-CSE-2,restaurant,dining,0,,True,False
+C1F-CSE-3,food,food,0,,True,False
+C1F-CSW-1,home,home,0,,True,False
+C1F-CSW-2,furniture,home,0,,True,False
+C1F-CSW-3,cafe,dining / food,0,,True,False
+C2F-CW-1,apparel,apparel,0,,True,False
+C2F-CW-2,apparel,apparel,0,,True,False
+C2F-CW-3,shoes,bags / shoes,0,,True,False
+C2F-CNW-1,home,home,0,,True,False
+C2F-CNW-2,book,book,0,,True,False
+C2F-CNW-3,toy,book / toy,0,,True,False
+C2F-CNE-1,sports,bags / shoes / sports,0,,True,False
+C2F-CNE-2,sports,bags / shoes / sports,0,,True,False
+C2F-CNE-3,home,home,0,,True,False
+C2F-CE-1,sports,bags / shoes / sports,0,,True,False
+C2F-CE-2,toy,book / toy,0,,True,False
+C2F-CE-3,toy,book / toy,0,,True,False
+C2F-CSE-1,cafe,dining / food,0,,True,False
+C2F-CSE-2,restaurant,dining,0,,True,False
+C2F-CSE-3,restaurant,dining,0,,True,False
+C2F-CSW-1,furniture,home,0,,True,False
+C2F-CSW-2,home,home,0,,True,False
+C2F-CSW-3,gallery,book / home,0,,True,False
+C3F-CW-1,apparel,apparel,0,,True,False
+C3F-CW-2,service,,0,,True,False
+C3F-CW-3,shoes,bags / shoes,0,,True,False
+C3F-CNW-1,book,book,0,,True,False
+C3F-CNW-2,toy,book / toy,0,,True,False
+C3F-CNW-3,home,home,0,,True,False
+C3F-CNE-1,sports,bags / shoes / sports,0,,True,False
+C3F-CNE-2,sports,bags / shoes / sports,0,,True,False
+C3F-CNE-3,apparel,apparel,0,,True,False
+C3F-CE-1,arcade,,0,,True,False
+C3F-CE-2,toy,book / toy,0,,True,False
+C3F-CE-3,sports,bags / shoes / sports,0,,True,False
+C3F-CSE-1,restaurant,dining,0,,True,False
+C3F-CSE-2,restaurant,dining,0,,True,False
+C3F-CSE-3,cafe,dining / food,0,,True,False
+C3F-CSW-1,furniture,home,0,,True,False
+C3F-CSW-2,home,home,0,,True,False
+C3F-CSW-3,gallery,book / home,0,,True,False
+CRF-CW-1,cafe,dining / food,0,,True,False
+CRF-CNW-1,service,,0,,True,False
+CRF-CNE-1,cafe,dining / food,0,,True,False
+CRF-CE-1,cafe,dining / food,0,,True,False
+CRF-CSE-1,service,,0,,True,False
+CRF-CSW-1,cafe,dining / food,0,,True,False

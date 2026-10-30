@@ -1,0 +1,531 @@
+{
+  "cases": [
+    {
+      "end": [
+        322.395202636719,
+        5.52582931518555,
+        -34.7000007629395
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-0-UP",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.0141921043395996,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          0.0,
+          -34.7
+        ],
+        [
+          322.2,
+          5.525,
+          -34.7
+        ]
+      ],
+      "ticks": 381
+    },
+    {
+      "end": [
+        337.604675292969,
+        0.000934737036004663,
+        -36.9000015258789
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-0-DOWN",
+      "lowest_y": 0.000934737036004663,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -36.9
+        ],
+        [
+          337.8,
+          0.0,
+          -36.9
+        ]
+      ],
+      "ticks": 400
+    },
+    {
+      "end": [
+        337.618896484375,
+        10.8758401870728,
+        -41.0999984741211
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-UP",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.00366783142089844,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -41.1
+        ],
+        [
+          337.8,
+          10.875,
+          -41.1
+        ]
+      ],
+      "ticks": 382
+    },
+    {
+      "end": [
+        322.372009277344,
+        5.52582311630249,
+        -43.3000106811523
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-DOWN",
+      "lowest_y": 5.52581071853638,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -43.3
+        ],
+        [
+          322.2,
+          5.525,
+          -43.3
+        ]
+      ],
+      "ticks": 389
+    },
+    {
+      "end": [
+        322.399261474609,
+        16.4008274078369,
+        -34.7000007629395
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-2-UP",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.008636474609375,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -34.7
+        ],
+        [
+          322.2,
+          16.4,
+          -34.7
+        ]
+      ],
+      "ticks": 381
+    },
+    {
+      "end": [
+        337.615081787109,
+        10.8758420944214,
+        -36.9000015258789
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-2-DOWN",
+      "lowest_y": 10.875828742981,
+      "max_opposite_vertical_step_m": 0.000593185424804688,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          16.4,
+          -36.9
+        ],
+        [
+          337.8,
+          10.875,
+          -36.9
+        ]
+      ],
+      "ticks": 398
+    },
+    {
+      "end": [
+        322.026550292969,
+        5.52583456039429,
+        -41.0705528259277
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-0-UP-TRANSFER",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          322.2,
+          5.525,
+          -34.7
+        ],
+        [
+          321.2,
+          5.525,
+          -34.7
+        ],
+        [
+          321.2,
+          5.525,
+          -41.1
+        ],
+        [
+          322.2,
+          5.525,
+          -41.1
+        ]
+      ],
+      "ticks": 237
+    },
+    {
+      "end": [
+        337.973541259766,
+        10.8757905960083,
+        -34.7295799255371
+      ],
+      "human_playtest": false,
+      "id": "A-WEST-V22-1-UP-TRANSFER",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000586509704589844,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          337.8,
+          10.875,
+          -41.1
+        ],
+        [
+          338.8,
+          10.875,
+          -41.1
+        ],
+        [
+          338.8,
+          10.875,
+          -34.7
+        ],
+        [
+          337.8,
+          10.875,
+          -34.7
+        ]
+      ],
+      "ticks": 236
+    },
+    {
+      "end": [
+        -199.62077331543,
+        5.5258355140686,
+        -11.2000026702881
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-0-UP",
+      "lowest_y": 0.000104660517536104,
+      "max_opposite_vertical_step_m": 0.00580167770385742,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          0.0,
+          -11.2
+        ],
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ]
+      ],
+      "ticks": 382
+    },
+    {
+      "end": [
+        -184.369201660156,
+        0.000835964048746973,
+        -13.3999996185303
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-0-DOWN",
+      "lowest_y": 0.000835964048746973,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -13.4
+        ],
+        [
+          -184.2,
+          0.0,
+          -13.4
+        ]
+      ],
+      "ticks": 382
+    },
+    {
+      "end": [
+        -184.393188476562,
+        10.8758163452148,
+        -17.6000003814697
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-UP",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.00922393798828125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ],
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ]
+      ],
+      "ticks": 381
+    },
+    {
+      "end": [
+        -199.608261108398,
+        5.5258355140686,
+        -19.7999439239502
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-DOWN",
+      "lowest_y": 5.52582931518555,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -19.8
+        ],
+        [
+          -199.8,
+          5.525,
+          -19.8
+        ]
+      ],
+      "ticks": 381
+    },
+    {
+      "end": [
+        -199.620559692383,
+        16.4008350372314,
+        -11.199951171875
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-2-UP",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.00591278076171875,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ],
+        [
+          -199.8,
+          16.4,
+          -11.2
+        ]
+      ],
+      "ticks": 382
+    },
+    {
+      "end": [
+        -184.372634887695,
+        10.8758296966553,
+        -13.3999996185303
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-2-DOWN",
+      "lowest_y": 10.8758249282837,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          16.4,
+          -13.4
+        ],
+        [
+          -184.2,
+          10.875,
+          -13.4
+        ]
+      ],
+      "ticks": 382
+    },
+    {
+      "end": [
+        -199.973052978516,
+        5.5258355140686,
+        -17.5704555511475
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-0-UP-TRANSFER",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599861145019531,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -17.6
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ],
+      "ticks": 236
+    },
+    {
+      "end": [
+        -184.026901245117,
+        10.8758354187012,
+        -11.2295513153076
+      ],
+      "human_playtest": false,
+      "id": "B-WEST-V15-1-UP-TRANSFER",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -11.2
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ],
+      "ticks": 236
+    },
+    {
+      "end": [
+        -1.07314157485962,
+        0.000828761025331914,
+        -218.163558959961
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-NEW-PUBLIC-ACCESS",
+      "lowest_y": -0.0196428261697292,
+      "max_opposite_vertical_step_m": 0.016611400526017,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -118.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -97.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -76.5,
+          0.0,
+          -288.0
+        ],
+        [
+          -55.5,
+          0.0,
+          -285.0
+        ],
+        [
+          -45.0,
+          0.0,
+          -282.0
+        ],
+        [
+          -24.0,
+          0.0,
+          -262.5
+        ],
+        [
+          -15.0,
+          0.0,
+          -241.5
+        ],
+        [
+          -9.0,
+          0.0,
+          -229.5
+        ],
+        [
+          -1.0,
+          0.0,
+          -218.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -218.199996948242
+        ]
+      ],
+      "ticks": 4588
+    }
+  ],
+  "failed": [],
+  "human_playtest": false,
+  "original_ES_controller_sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+  "physics_hz": 60,
+  "scope": "A/B continuous flights and ascending transfers; C dog-run public route. Does not certify structural loads or all possible edge approaches."
+}

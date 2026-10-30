@@ -1,0 +1,1639 @@
+{
+  "atlas_front_batches": 88,
+  "backing_batches": 89,
+  "boards": 254,
+  "floating_labels_replaced": true,
+  "main_architectural_shadows_unchanged": true,
+  "omitted_unverified": [
+    {
+      "host": "V22D-AB1-001-department_island-6206",
+      "id": "V22D-AB1-001-DEPT-0",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A1F-001-department_island-6366",
+      "id": "V22D-A1F-001-DEPT-0",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A1F-002-department_island-6522",
+      "id": "V22D-A1F-002-DEPT-5",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A1F-052-department_island-6578",
+      "id": "V22D-A1F-052-DEPT-5",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A2F-002-department_island-6555",
+      "id": "V22D-A2F-002-DEPT-0",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A2F-002-department_island-6580",
+      "id": "V22D-A2F-002-DEPT-1",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A2F-002-department_island-6605",
+      "id": "V22D-A2F-002-DEPT-2",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A2F-002-department_island-6630",
+      "id": "V22D-A2F-002-DEPT-3",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A2F-002-department_island-6655",
+      "id": "V22D-A2F-002-DEPT-4",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-A2F-002-department_island-6705",
+      "id": "V22D-A2F-002-DEPT-6",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-BB1-PICKUP-department_island-6838",
+      "id": "V22D-BB1-PICKUP-DEPT-0",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-B1-AE1-department_island-6829",
+      "id": "V22D-B1-AE1-DEPT-0",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-B1-AW1-department_island-6923",
+      "id": "V22D-B1-AW1-DEPT-5",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-B3-AE1-department_island-6991",
+      "id": "V22D-B3-AE1-DEPT-0",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-B3-AE1-department_island-7024",
+      "id": "V22D-B3-AE1-DEPT-1",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-B3-AE1-department_island-7060",
+      "id": "V22D-B3-AE1-DEPT-2",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V22D-B3-AE1-department_island-7093",
+      "id": "V22D-B3-AE1-DEPT-3",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V23-C1F-CSE-3-entrance_feature-80",
+      "id": "V23-C1F-CSE-3-entrance_feature-80-department",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V23-C1F-CSE-3-central_department-94",
+      "id": "V23-C1F-CSE-3-central_department-94-department",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    },
+    {
+      "host": "V23-C1F-CSE-3-central_department-97",
+      "id": "V23-C1F-CSE-3-central_department-97-department",
+      "reason": "No confirmed own-fixture clip/post support; redundant departmental caption suppressed, brand and navigation signs retained"
+    }
+  ],
+  "small_fixture_sign_shadows": false,
+  "support_rod_batches": 83,
+  "support_rods": 466,
+  "texture_size": "(4096.0, 704.0)",
+  "verified_mounts": [
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-AB1-003-checkout-1",
+      "id": "V21-AB1-003-checkout-1-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-AB1-003-wall_department-3",
+      "id": "V21-AB1-003-wall_department-3-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-AB1-003-wall_department-4",
+      "id": "V21-AB1-003-wall_department-4-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-AB1-003-wall_department-5",
+      "id": "V21-AB1-003-wall_department-5-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-AB1-003-wall_department-6",
+      "id": "V21-AB1-003-wall_department-6-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-005-checkout-11",
+      "id": "V21-A1F-005-checkout-11-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-005-wall_department-13",
+      "id": "V21-A1F-005-wall_department-13-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-005-wall_department-14",
+      "id": "V21-A1F-005-wall_department-14-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-005-wall_department-15",
+      "id": "V21-A1F-005-wall_department-15-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-005-wall_department-16",
+      "id": "V21-A1F-005-wall_department-16-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-005-wall_department-17",
+      "id": "V21-A1F-005-wall_department-17-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-040-checkout-42",
+      "id": "V21-A1F-040-checkout-42-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-040-wall_department-44",
+      "id": "V21-A1F-040-wall_department-44-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-040-wall_department-45",
+      "id": "V21-A1F-040-wall_department-45-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-040-wall_department-46",
+      "id": "V21-A1F-040-wall_department-46-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-040-wall_department-47",
+      "id": "V21-A1F-040-wall_department-47-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-040-wall_department-48",
+      "id": "V21-A1F-040-wall_department-48-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A1F-040-wall_department-49",
+      "id": "V21-A1F-040-wall_department-49-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-A3F-012-checkout-84",
+      "id": "V21-A3F-012-checkout-84-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-checkout-92",
+      "id": "V21-BB1-MARKET-checkout-92-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-94",
+      "id": "V21-BB1-MARKET-wall_department-94-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-95",
+      "id": "V21-BB1-MARKET-wall_department-95-department-sign",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-96",
+      "id": "V21-BB1-MARKET-wall_department-96-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-97",
+      "id": "V21-BB1-MARKET-wall_department-97-department-sign",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-98",
+      "id": "V21-BB1-MARKET-wall_department-98-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-99",
+      "id": "V21-BB1-MARKET-wall_department-99-department-sign",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-100",
+      "id": "V21-BB1-MARKET-wall_department-100-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-wall_department-101",
+      "id": "V21-BB1-MARKET-wall_department-101-department-sign",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-checkout-141",
+      "id": "V21-BB1-MARKET-checkout-141-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-BB1-MARKET-checkout-142",
+      "id": "V21-BB1-MARKET-checkout-142-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-037-checkout-143",
+      "id": "V21-B1-037-checkout-143-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-037-fitting-145",
+      "id": "V21-B1-037-fitting-145-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-037-wall_department-147",
+      "id": "V21-B1-037-wall_department-147-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-037-wall_department-148",
+      "id": "V21-B1-037-wall_department-148-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-030-checkout-151",
+      "id": "V21-B1-030-checkout-151-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-030-wall_department-153",
+      "id": "V21-B1-030-wall_department-153-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-030-wall_department-154",
+      "id": "V21-B1-030-wall_department-154-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-030-wall_department-155",
+      "id": "V21-B1-030-wall_department-155-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-030-wall_department-156",
+      "id": "V21-B1-030-wall_department-156-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-wall_department-162",
+      "id": "V21-B1-N03-wall_department-162-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-wall_department-163",
+      "id": "V21-B1-N03-wall_department-163-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-wall_department-164",
+      "id": "V21-B1-N03-wall_department-164-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-wall_department-165",
+      "id": "V21-B1-N03-wall_department-165-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-wall_department-166",
+      "id": "V21-B1-N03-wall_department-166-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-wall_department-167",
+      "id": "V21-B1-N03-wall_department-167-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-wall_department-168",
+      "id": "V21-B1-N03-wall_department-168-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-N03-checkout-173",
+      "id": "V21-B1-N03-checkout-173-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-W4-checkout-174",
+      "id": "V21-B1-W4-checkout-174-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-B1-W4-kitchen-176",
+      "id": "V21-B1-W4-kitchen-176-department-sign",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-checkout-189",
+      "id": "V21-C1F-CW-1-checkout-189-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-fitting-191",
+      "id": "V21-C1F-CW-1-fitting-191-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-wall_department-194",
+      "id": "V21-C1F-CW-1-wall_department-194-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-wall_department-195",
+      "id": "V21-C1F-CW-1-wall_department-195-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-wall_department-196",
+      "id": "V21-C1F-CW-1-wall_department-196-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-wall_department-197",
+      "id": "V21-C1F-CW-1-wall_department-197-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-wall_department-198",
+      "id": "V21-C1F-CW-1-wall_department-198-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CW-1-wall_department-199",
+      "id": "V21-C1F-CW-1-wall_department-199-department-sign",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CSW-3-checkout-203",
+      "id": "V21-C1F-CSW-3-checkout-203-department-sign",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V21-C1F-CSW-3-kitchen-205",
+      "id": "V21-C1F-CSW-3-kitchen-205-department-sign",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-001-department_island-6226",
+      "id": "V22D-AB1-001-DEPT-1",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-001-department_island-6246",
+      "id": "V22D-AB1-001-DEPT-2",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-001-department_island-6266",
+      "id": "V22D-AB1-001-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-001-department_island-6286",
+      "id": "V22D-AB1-001-DEPT-4",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-001-department_island-6306",
+      "id": "V22D-AB1-001-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-001-department_island-6321",
+      "id": "V22D-AB1-001-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6249",
+      "id": "V22D-AB1-002-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6272",
+      "id": "V22D-AB1-002-DEPT-1",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6295",
+      "id": "V22D-AB1-002-DEPT-2",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6318",
+      "id": "V22D-AB1-002-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6341",
+      "id": "V22D-AB1-002-DEPT-4",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6364",
+      "id": "V22D-AB1-002-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6387",
+      "id": "V22D-AB1-002-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-002-department_island-6410",
+      "id": "V22D-AB1-002-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-031-department_island-6402",
+      "id": "V22D-AB1-031-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-031-department_island-6406",
+      "id": "V22D-AB1-031-DEPT-1",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-031-department_island-6410",
+      "id": "V22D-AB1-031-DEPT-2",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-031-department_island-6414",
+      "id": "V22D-AB1-031-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-031-department_island-6418",
+      "id": "V22D-AB1-031-DEPT-4",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-031-department_island-6422",
+      "id": "V22D-AB1-031-DEPT-5",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-AB1-031-department_island-6426",
+      "id": "V22D-AB1-031-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-001-department_island-6386",
+      "id": "V22D-A1F-001-DEPT-1",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-001-department_island-6406",
+      "id": "V22D-A1F-001-DEPT-2",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-001-department_island-6426",
+      "id": "V22D-A1F-001-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-001-department_island-6446",
+      "id": "V22D-A1F-001-DEPT-4",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-001-department_island-6466",
+      "id": "V22D-A1F-001-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-001-department_island-6480",
+      "id": "V22D-A1F-001-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-001-department_island-6489",
+      "id": "V22D-A1F-001-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-002-department_island-6407",
+      "id": "V22D-A1F-002-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-002-department_island-6430",
+      "id": "V22D-A1F-002-DEPT-1",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-002-department_island-6453",
+      "id": "V22D-A1F-002-DEPT-2",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-002-department_island-6476",
+      "id": "V22D-A1F-002-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-002-department_island-6499",
+      "id": "V22D-A1F-002-DEPT-4",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-002-department_island-6545",
+      "id": "V22D-A1F-002-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-002-department_island-6568",
+      "id": "V22D-A1F-002-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-052-department_island-6558",
+      "id": "V22D-A1F-052-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-052-department_island-6562",
+      "id": "V22D-A1F-052-DEPT-1",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-052-department_island-6566",
+      "id": "V22D-A1F-052-DEPT-2",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-052-department_island-6570",
+      "id": "V22D-A1F-052-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-052-department_island-6574",
+      "id": "V22D-A1F-052-DEPT-4",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-052-department_island-6582",
+      "id": "V22D-A1F-052-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A1F-052-department_island-6585",
+      "id": "V22D-A1F-052-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6521",
+      "id": "V22D-A2F-001-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6541",
+      "id": "V22D-A2F-001-DEPT-1",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6561",
+      "id": "V22D-A2F-001-DEPT-2",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6581",
+      "id": "V22D-A2F-001-DEPT-3",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6601",
+      "id": "V22D-A2F-001-DEPT-4",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6621",
+      "id": "V22D-A2F-001-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6638",
+      "id": "V22D-A2F-001-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-001-department_island-6649",
+      "id": "V22D-A2F-001-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-002-department_island-6680",
+      "id": "V22D-A2F-002-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-002-department_island-6730",
+      "id": "V22D-A2F-002-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6723",
+      "id": "V22D-A2F-052-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6727",
+      "id": "V22D-A2F-052-DEPT-1",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6731",
+      "id": "V22D-A2F-052-DEPT-2",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6735",
+      "id": "V22D-A2F-052-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6739",
+      "id": "V22D-A2F-052-DEPT-4",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6743",
+      "id": "V22D-A2F-052-DEPT-5",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6747",
+      "id": "V22D-A2F-052-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A2F-052-department_island-6750",
+      "id": "V22D-A2F-052-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6817",
+      "id": "V22D-A3F-051-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6821",
+      "id": "V22D-A3F-051-DEPT-1",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6825",
+      "id": "V22D-A3F-051-DEPT-2",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6829",
+      "id": "V22D-A3F-051-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6833",
+      "id": "V22D-A3F-051-DEPT-4",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6837",
+      "id": "V22D-A3F-051-DEPT-5",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6841",
+      "id": "V22D-A3F-051-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-A3F-051-department_island-6844",
+      "id": "V22D-A3F-051-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-BB1-PICKUP-department_island-6843",
+      "id": "V22D-BB1-PICKUP-DEPT-1",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-BB1-PICKUP-department_island-6848",
+      "id": "V22D-BB1-PICKUP-DEPT-2",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-BB1-PICKUP-department_island-6853",
+      "id": "V22D-BB1-PICKUP-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-BB1-PICKUP-department_island-6858",
+      "id": "V22D-BB1-PICKUP-DEPT-4",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-BB1-PICKUP-department_island-6863",
+      "id": "V22D-BB1-PICKUP-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-BB1-PICKUP-department_island-6868",
+      "id": "V22D-BB1-PICKUP-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AE1-department_island-6839",
+      "id": "V22D-B1-AE1-DEPT-1",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AE1-department_island-6847",
+      "id": "V22D-B1-AE1-DEPT-2",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AE1-department_island-6857",
+      "id": "V22D-B1-AE1-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AE1-department_island-6867",
+      "id": "V22D-B1-AE1-DEPT-4",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AE1-department_island-6876",
+      "id": "V22D-B1-AE1-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AE1-department_island-6885",
+      "id": "V22D-B1-AE1-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AE1-department_island-6893",
+      "id": "V22D-B1-AE1-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AW1-department_island-6875",
+      "id": "V22D-B1-AW1-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AW1-department_island-6885",
+      "id": "V22D-B1-AW1-DEPT-1",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AW1-department_island-6894",
+      "id": "V22D-B1-AW1-DEPT-2",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AW1-department_island-6902",
+      "id": "V22D-B1-AW1-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AW1-department_island-6911",
+      "id": "V22D-B1-AW1-DEPT-4",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AW1-department_island-6935",
+      "id": "V22D-B1-AW1-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B1-AW1-department_island-6947",
+      "id": "V22D-B1-AW1-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6914",
+      "id": "V22D-B2-AE1-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6925",
+      "id": "V22D-B2-AE1-DEPT-1",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6934",
+      "id": "V22D-B2-AE1-DEPT-2",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6945",
+      "id": "V22D-B2-AE1-DEPT-3",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6955",
+      "id": "V22D-B2-AE1-DEPT-4",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6966",
+      "id": "V22D-B2-AE1-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6976",
+      "id": "V22D-B2-AE1-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AE1-department_island-6986",
+      "id": "V22D-B2-AE1-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-6966",
+      "id": "V22D-B2-AW1-DEPT-0",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-6975",
+      "id": "V22D-B2-AW1-DEPT-1",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-6984",
+      "id": "V22D-B2-AW1-DEPT-2",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-6992",
+      "id": "V22D-B2-AW1-DEPT-3",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-7001",
+      "id": "V22D-B2-AW1-DEPT-4",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-7013",
+      "id": "V22D-B2-AW1-DEPT-5",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-7025",
+      "id": "V22D-B2-AW1-DEPT-6",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V22D-B2-AW1-department_island-7037",
+      "id": "V22D-B2-AW1-DEPT-7",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-checkout-1",
+      "id": "V23-A1F-039-checkout-1-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-entrance_feature-4",
+      "id": "V23-A1F-039-entrance_feature-4-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-5",
+      "id": "V23-A1F-039-wall_department-5-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-6",
+      "id": "V23-A1F-039-wall_department-6-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-7",
+      "id": "V23-A1F-039-wall_department-7-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-8",
+      "id": "V23-A1F-039-wall_department-8-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-9",
+      "id": "V23-A1F-039-wall_department-9-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-10",
+      "id": "V23-A1F-039-wall_department-10-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-11",
+      "id": "V23-A1F-039-wall_department-11-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-wall_department-12",
+      "id": "V23-A1F-039-wall_department-12-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-central_department-13",
+      "id": "V23-A1F-039-central_department-13-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-central_department-14",
+      "id": "V23-A1F-039-central_department-14-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-039-central_department-15",
+      "id": "V23-A1F-039-central_department-15-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-checkout-17",
+      "id": "V23-A1F-003-checkout-17-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-entrance_feature-19",
+      "id": "V23-A1F-003-entrance_feature-19-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-wall_department-20",
+      "id": "V23-A1F-003-wall_department-20-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-wall_department-21",
+      "id": "V23-A1F-003-wall_department-21-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-wall_department-22",
+      "id": "V23-A1F-003-wall_department-22-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-wall_department-23",
+      "id": "V23-A1F-003-wall_department-23-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-wall_department-24",
+      "id": "V23-A1F-003-wall_department-24-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-wall_department-25",
+      "id": "V23-A1F-003-wall_department-25-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-central_department-26",
+      "id": "V23-A1F-003-central_department-26-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-central_department-27",
+      "id": "V23-A1F-003-central_department-27-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-central_department-28",
+      "id": "V23-A1F-003-central_department-28-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-003-central_department-29",
+      "id": "V23-A1F-003-central_department-29-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-checkout-30",
+      "id": "V23-A1F-023-checkout-30-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-entrance_feature-31",
+      "id": "V23-A1F-023-entrance_feature-31-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-wall_department-32",
+      "id": "V23-A1F-023-wall_department-32-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-wall_department-33",
+      "id": "V23-A1F-023-wall_department-33-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-wall_department-34",
+      "id": "V23-A1F-023-wall_department-34-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-wall_department-35",
+      "id": "V23-A1F-023-wall_department-35-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-wall_department-36",
+      "id": "V23-A1F-023-wall_department-36-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-central_department-37",
+      "id": "V23-A1F-023-central_department-37-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-023-central_department-38",
+      "id": "V23-A1F-023-central_department-38-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-checkout-39",
+      "id": "V23-A1F-017-checkout-39-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-entrance_feature-41",
+      "id": "V23-A1F-017-entrance_feature-41-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-wall_department-42",
+      "id": "V23-A1F-017-wall_department-42-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-wall_department-43",
+      "id": "V23-A1F-017-wall_department-43-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-wall_department-44",
+      "id": "V23-A1F-017-wall_department-44-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-wall_department-45",
+      "id": "V23-A1F-017-wall_department-45-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-wall_department-46",
+      "id": "V23-A1F-017-wall_department-46-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-wall_department-47",
+      "id": "V23-A1F-017-wall_department-47-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-wall_department-48",
+      "id": "V23-A1F-017-wall_department-48-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-central_department-49",
+      "id": "V23-A1F-017-central_department-49-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-central_department-50",
+      "id": "V23-A1F-017-central_department-50-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-017-central_department-51",
+      "id": "V23-A1F-017-central_department-51-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-checkout-52",
+      "id": "V23-B1-N01-checkout-52-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-wall_department-53",
+      "id": "V23-B1-N01-wall_department-53-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-wall_department-54",
+      "id": "V23-B1-N01-wall_department-54-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-wall_department-55",
+      "id": "V23-B1-N01-wall_department-55-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-wall_department-56",
+      "id": "V23-B1-N01-wall_department-56-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-wall_department-57",
+      "id": "V23-B1-N01-wall_department-57-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-central_department-58",
+      "id": "V23-B1-N01-central_department-58-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-central_department-59",
+      "id": "V23-B1-N01-central_department-59-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-N01-central_department-60",
+      "id": "V23-B1-N01-central_department-60-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-checkout-64",
+      "id": "V23-A1F-007-checkout-64-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-entrance_feature-65",
+      "id": "V23-A1F-007-entrance_feature-65-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-66",
+      "id": "V23-A1F-007-wall_department-66-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-67",
+      "id": "V23-A1F-007-wall_department-67-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-68",
+      "id": "V23-A1F-007-wall_department-68-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-69",
+      "id": "V23-A1F-007-wall_department-69-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-70",
+      "id": "V23-A1F-007-wall_department-70-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-71",
+      "id": "V23-A1F-007-wall_department-71-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-72",
+      "id": "V23-A1F-007-wall_department-72-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-73",
+      "id": "V23-A1F-007-wall_department-73-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-74",
+      "id": "V23-A1F-007-wall_department-74-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-wall_department-75",
+      "id": "V23-A1F-007-wall_department-75-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-central_department-76",
+      "id": "V23-A1F-007-central_department-76-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-central_department-77",
+      "id": "V23-A1F-007-central_department-77-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-007-central_department-78",
+      "id": "V23-A1F-007-central_department-78-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-checkout-79",
+      "id": "V23-C1F-CSE-3-checkout-79-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-81",
+      "id": "V23-C1F-CSE-3-wall_department-81-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-82",
+      "id": "V23-C1F-CSE-3-wall_department-82-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-83",
+      "id": "V23-C1F-CSE-3-wall_department-83-department",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-84",
+      "id": "V23-C1F-CSE-3-wall_department-84-department",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-85",
+      "id": "V23-C1F-CSE-3-wall_department-85-department",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-86",
+      "id": "V23-C1F-CSE-3-wall_department-86-department",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-87",
+      "id": "V23-C1F-CSE-3-wall_department-87-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-88",
+      "id": "V23-C1F-CSE-3-wall_department-88-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-89",
+      "id": "V23-C1F-CSE-3-wall_department-89-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-90",
+      "id": "V23-C1F-CSE-3-wall_department-90-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-91",
+      "id": "V23-C1F-CSE-3-wall_department-91-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-92",
+      "id": "V23-C1F-CSE-3-wall_department-92-department",
+      "mount": "fixture_header"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-wall_department-93",
+      "id": "V23-C1F-CSE-3-wall_department-93-department",
+      "mount": "refrigerator_header_face"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-central_department-95",
+      "id": "V23-C1F-CSE-3-central_department-95-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C1F-CSE-3-central_department-96",
+      "id": "V23-C1F-CSE-3-central_department-96-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-035-checkout-98",
+      "id": "V23-A1F-035-checkout-98-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-A1F-035-entrance_feature-100",
+      "id": "V23-A1F-035-entrance_feature-100-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-B1-046-entrance_feature-108",
+      "id": "V23-B1-046-entrance_feature-108-department",
+      "mount": "shelf_edge_clip"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C3F-CE-1-checkout-132",
+      "id": "V23-C3F-CE-1-checkout-132-department",
+      "mount": "counter_top_sign"
+    },
+    {
+      "actual_own_fixture_support": true,
+      "host": "V23-C3F-CE-1-entrance_feature-133",
+      "id": "V23-C3F-CE-1-entrance_feature-133-department",
+      "mount": "shelf_edge_clip"
+    }
+  ]
+}

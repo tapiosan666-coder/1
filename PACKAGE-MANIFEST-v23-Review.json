@@ -1,0 +1,953 @@
+{
+  "version": 23,
+  "kind": "Review",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 23318,
+      "sha256": "69b4a951fda8f810f3e12315ef277a349c0814ee95f1ce6882557da6e9ca31b0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4613,
+      "sha256": "e5f5a51e3d728d3c7ae901419378ba1b62a697af72f9ebaf15bbb8d759df55ef"
+    },
+    {
+      "path": "quality-review.md",
+      "bytes": 3282,
+      "sha256": "ce8068f8418d212cc33934369f8268819bbd29656ba97b11e5b68cd49fbf9198"
+    },
+    {
+      "path": "data-design.md",
+      "bytes": 2391,
+      "sha256": "923f55beb83c5bccf435be22b490d6506267cef3021a04918819dfa109403aca"
+    },
+    {
+      "path": "optimization-design.md",
+      "bytes": 2738,
+      "sha256": "86ca1f6dd237067dc6fb95fda0454993c9dab93306c438ee1ca3a80ca862cbd4"
+    },
+    {
+      "path": "performance-notes.md",
+      "bytes": 1680,
+      "sha256": "470f9113060632e8c0229a731d751121dc14f37f28bc5628bf2d5e26a5808c2d"
+    },
+    {
+      "path": "remaining-issues.json",
+      "bytes": 2373,
+      "sha256": "e9a5449aa7612c89e8a5fd267dd3423f567fa0a9aa0ab2366a18397bc791ccc8"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 175488,
+      "sha256": "d2d5a51c3da460754d3716e917e8550114cfb880952fd87f9dbbf7d090074705"
+    },
+    {
+      "path": "data-integrity.json",
+      "bytes": 192,
+      "sha256": "c7464d44483320994b681ed62001e5fbeafa0deb39fb62187323a8d0d92d1056"
+    },
+    {
+      "path": "duplicate-audit.json",
+      "bytes": 272,
+      "sha256": "ec42bbf6e9d5aedbf053a5008ed85bd402ec178eef8fc984c3791d2a537a7316"
+    },
+    {
+      "path": "category-audit.json",
+      "bytes": 175,
+      "sha256": "3a22094ae924db7b6329c8ee5fc82da18ad50ad1041c0f739911d542edca7fb9"
+    },
+    {
+      "path": "toy-book-correction.json",
+      "bytes": 92946,
+      "sha256": "960726ab4c1c5456e5844e3809486030a995ccce52e08177d2ae5f6fc34dd6cf"
+    },
+    {
+      "path": "source-compression.json",
+      "bytes": 624,
+      "sha256": "b23407e6a890a35bcc748300e43379cbdcffa48b516cdd49a11fb282c71c3daf"
+    },
+    {
+      "path": "protection.json",
+      "bytes": 379,
+      "sha256": "b177bfd0a755a28a853c344dfbbe815ea9fcf69a9dcf85bc04a2d8c26d7fa988"
+    },
+    {
+      "path": "production-render-policy.json",
+      "bytes": 143,
+      "sha256": "98a0716d8160f15341a113184f2d0afe39f3a344ca369a3a587f6b1432547345"
+    },
+    {
+      "path": "cameras.json",
+      "bytes": 16992,
+      "sha256": "48165609ce25f4bd85a02f8c11d58b91b9d1b96dd13eca7f6913506b7dfaef06"
+    },
+    {
+      "path": "capture-verification.json",
+      "bytes": 10836,
+      "sha256": "7059b6b870af86b495402fe3aad09d9d222582d6441842c5bb551746b997346a"
+    },
+    {
+      "path": "fresh-extraction.json",
+      "bytes": 182,
+      "sha256": "41498159bd2bc850259fed10a3f902acfb129cf0d9ea852249d8950398c332ca"
+    },
+    {
+      "path": "fresh-log-check.json",
+      "bytes": 204,
+      "sha256": "f0a6e8b2279b4a540bbae4277d74d45d72d114d3234d40438749b5c7ddcf192b"
+    },
+    {
+      "path": "project-package.json",
+      "bytes": 263,
+      "sha256": "8c5ad5dccbdc9d6f9db5522532d210977e02c9102b3e20f357c311aa85075638"
+    },
+    {
+      "path": "asset-provenance.md",
+      "bytes": 1386,
+      "sha256": "8781d2042a208b3690648211c5887d7b2133da1c34c73c068884264c1b3ec278"
+    },
+    {
+      "path": "asset-manifest-v23.json",
+      "bytes": 29354,
+      "sha256": "104ee22f5d142e85bc3e853c1ef7eb699a7fc3a8b25b92617a58bfb2f3924293"
+    },
+    {
+      "path": "PACKAGE-MANIFEST-v23-Godot.json",
+      "bytes": 551950,
+      "sha256": "084c202d372fd829c987b68f0e416838edf416dae6c3a1892ad4884f74f0c33a"
+    },
+    {
+      "path": "performance-comparison.csv",
+      "bytes": 6579,
+      "sha256": "bf516907f3ad8ffb0ece099bb0c11a0a33152e95ed01bde1390b5b73032626aa"
+    },
+    {
+      "path": "performance-summary.json",
+      "bytes": 9174,
+      "sha256": "fa28c403f43098e199d0d519367e3cf1ecc44047f8a80106eee1deb575a5c1fa"
+    },
+    {
+      "path": "before/apparel-centre.jpg",
+      "bytes": 388315,
+      "sha256": "90c206689333cc24591dc0040d5bf0c5115cf4524e308e39fc8b59c970d79e21"
+    },
+    {
+      "path": "before/cafe-entrance.jpg",
+      "bytes": 342216,
+      "sha256": "64fe4e9a0767ddcd60067704c92f293198fc116cb49b94bdc5c9d7874e18fc6a"
+    },
+    {
+      "path": "before/home-entrance.jpg",
+      "bytes": 357214,
+      "sha256": "174002813674cbb853d300d1e85aa1df1fae2ca5ee99ab627d0f0755c7146678"
+    },
+    {
+      "path": "before/arcade-rear.jpg",
+      "bytes": 416304,
+      "sha256": "bd06bee5ed3fa2a3edf6b4b17df16c5200c3451de16e584af67e1ad8587fcdf7"
+    },
+    {
+      "path": "before/food-entrance.jpg",
+      "bytes": 385946,
+      "sha256": "9c8be047c24a8f5f41c57ef013c2304c1d054c49fbb0e8aff5efcdacd7799b54"
+    },
+    {
+      "path": "before/book-entrance.jpg",
+      "bytes": 475495,
+      "sha256": "5bafa74c80127b23b9f74f9ec817e18504370c38d77a3b85ed783db9e83274b8"
+    },
+    {
+      "path": "before/arcade-centre.jpg",
+      "bytes": 372038,
+      "sha256": "dd76d3ad198150451ee0e4cf1bcc8188482fae2f23b287c099f6e4f06a57ab39"
+    },
+    {
+      "path": "before/home-rear.jpg",
+      "bytes": 439243,
+      "sha256": "3a8dfd1910a83ccd8251afa6f7c0f32baead965940d814d5057f1f5e7167a9b2"
+    },
+    {
+      "path": "before/cafe-rear.jpg",
+      "bytes": 390554,
+      "sha256": "7a59e67d2afe01c863e035ca1846a63be624591feeba5c006e5e062788baf328"
+    },
+    {
+      "path": "before/arcade-entrance.jpg",
+      "bytes": 415639,
+      "sha256": "6e4b4c0cb182a4ee0308900598e7e0d43646e47a4660148de4a02e95cb0eea36"
+    },
+    {
+      "path": "before/electronics-rear.jpg",
+      "bytes": 403439,
+      "sha256": "71b175dd4a7806156ec727f7c606be64ce68fa4ce876cd55bc46397857bd9f55"
+    },
+    {
+      "path": "before/food-centre.jpg",
+      "bytes": 306671,
+      "sha256": "817c4e1035b8761ea24a7006204b80e1d72d338cd7c97488e587f4157d644504"
+    },
+    {
+      "path": "before/book-rear.jpg",
+      "bytes": 650072,
+      "sha256": "952d5814b730898a69a376a2868d4f4a2bfbae46e0e0f7e6e6bffe0b08075847"
+    },
+    {
+      "path": "before/beauty-rear.jpg",
+      "bytes": 307753,
+      "sha256": "d6ca622f1d8caccfdf2f8e4f06b7b9f3c72f37b079b0cfb99dcade9e949ab108"
+    },
+    {
+      "path": "before/food-rear.jpg",
+      "bytes": 415484,
+      "sha256": "9525c786a2be69b25f9daaddaf77dec6c50431cfe61f8ca77d72af72c3d0ecc3"
+    },
+    {
+      "path": "before/cafe-centre.jpg",
+      "bytes": 362585,
+      "sha256": "e876e9394a3090dc5b23d789fe578124e61daedc319261d6db18a8115180bd57"
+    },
+    {
+      "path": "before/apparel-entrance.jpg",
+      "bytes": 369434,
+      "sha256": "6b35efd8189da1fa1a4aeff2dc0767bb4aa1c63ad401b866072d1fde568cb990"
+    },
+    {
+      "path": "before/shoes-rear.jpg",
+      "bytes": 386242,
+      "sha256": "51972704e22ad726a8e6903577b27c25ce7929dc7db53d693a3bc6b954c2e228"
+    },
+    {
+      "path": "before/captures.json",
+      "bytes": 31929,
+      "sha256": "8ff6be2d174ee5e810b6c3cb833e81a18c7869b2b6bb7479913e40137bba3fea"
+    },
+    {
+      "path": "before/book-centre.jpg",
+      "bytes": 603446,
+      "sha256": "2fb1cd8cab78356d165ea2d53d07a61719744b48f7f43941bb7eece265276d9b"
+    },
+    {
+      "path": "before/electronics-centre.jpg",
+      "bytes": 346818,
+      "sha256": "242301dea155768bb7be9e07c6a2530f994da26e0a6669753ee5851aa609f24c"
+    },
+    {
+      "path": "before/electronics-entrance.jpg",
+      "bytes": 396325,
+      "sha256": "3978d986fc30a8f447ebcfaa19bd93817875fc41a63007dd1c0ff8c905574eb3"
+    },
+    {
+      "path": "before/beauty-entrance.jpg",
+      "bytes": 359585,
+      "sha256": "339c5e22277d736443c8a0443820bd1685ed70fd0e984ce56f557cb48c4048b9"
+    },
+    {
+      "path": "before/restaurant-entrance.jpg",
+      "bytes": 325870,
+      "sha256": "02ca9a7fb90c6fad60da5220b3d2d95b8604a2770904b6c06c5b4814bd324068"
+    },
+    {
+      "path": "before/apparel-rear.jpg",
+      "bytes": 418741,
+      "sha256": "f12f137997f31a91052380c915b58fc099690c657a0bcc87f5d71aa31d485dd1"
+    },
+    {
+      "path": "before/commons-09-A-specialty-street.jpg",
+      "bytes": 434262,
+      "sha256": "01c3918ffe8256c4240ef64e4cf328f36f225f3cf30ed216e72c4923678f610a"
+    },
+    {
+      "path": "before/commons-08-B-Aichi-fair.jpg",
+      "bytes": 636827,
+      "sha256": "7c95afe3834175c10483c8ab93bfe193e2b212fab14acc5d9312c6441d8af08b"
+    },
+    {
+      "path": "before/beauty-centre.jpg",
+      "bytes": 290788,
+      "sha256": "3a27136a246faf4b1f8a1cda4858c4dc2d7d0f85c3bab922d0b86e7aaa184d39"
+    },
+    {
+      "path": "before/shoes-centre.jpg",
+      "bytes": 301331,
+      "sha256": "2cdb791712092d971b091fcd11cffab7e5db2ccaff067ea07cc6295a3fcabe3b"
+    },
+    {
+      "path": "before/shoes-entrance.jpg",
+      "bytes": 323352,
+      "sha256": "056587eb7f59786a23fff782d3fdff1cc9ea8c24fea436a19391760dfb3e5c4c"
+    },
+    {
+      "path": "before/commons-04-C-open-courtyard.jpg",
+      "bytes": 552440,
+      "sha256": "daab232d9d845a9e33502892553d1053cb08aa82c589c09184ab9f9aa954ad8a"
+    },
+    {
+      "path": "before/restaurant-rear.jpg",
+      "bytes": 407402,
+      "sha256": "4d9460eab5dffe452fffcaa945f508c443aa20a171224fab4cec61608f5615f4"
+    },
+    {
+      "path": "before/restaurant-centre.jpg",
+      "bytes": 344300,
+      "sha256": "e85af7b551b0521c22e41e4cbc0958422eb786aa8394deb3d7c106d8c5a21996"
+    },
+    {
+      "path": "before/home-centre.jpg",
+      "bytes": 431648,
+      "sha256": "e05a3569a8c91c4e2d1e8430f2194920621cc4c80db548bfaaf75e8b56f42ea0"
+    },
+    {
+      "path": "after/apparel-centre.jpg",
+      "bytes": 393870,
+      "sha256": "db3b2482e5296b24387dc813ebf0bb6bb35661504cef2b4d38baf11a1f1c3580"
+    },
+    {
+      "path": "after/cafe-entrance.jpg",
+      "bytes": 349407,
+      "sha256": "bd5c859c6ed411c48f85d222bbcbba64b49c1464092aea90ac8ec2d0b519b532"
+    },
+    {
+      "path": "after/home-entrance.jpg",
+      "bytes": 358289,
+      "sha256": "3aac07a3d382758dfdbdd13c71a4f4c5754c62a2ddbe3f740fec5e763ad4921d"
+    },
+    {
+      "path": "after/arcade-rear.jpg",
+      "bytes": 425638,
+      "sha256": "04e16e6d7bcd8a6cc652ec3e178f309d09eb82e26075df982597791996a87e60"
+    },
+    {
+      "path": "after/food-entrance.jpg",
+      "bytes": 403623,
+      "sha256": "36135984ab220ed3952f6cfbaa2bb97272395d86d31ec344550b9dcc0238e463"
+    },
+    {
+      "path": "after/book-entrance.jpg",
+      "bytes": 451160,
+      "sha256": "98c078715366ff3c20084216b119ebc2dd74965e5589e5ae8b21083c8448c3e0"
+    },
+    {
+      "path": "after/arcade-centre.jpg",
+      "bytes": 375277,
+      "sha256": "04e632c3ebb120528affd4e0e157cc9bdfe9755576dd23139ffe79048266babb"
+    },
+    {
+      "path": "after/home-rear.jpg",
+      "bytes": 439540,
+      "sha256": "85eae63566d232da7c9b405045adc19ab2bc860f08eeb45386587aa6c5a71884"
+    },
+    {
+      "path": "after/cafe-rear.jpg",
+      "bytes": 406501,
+      "sha256": "1b1ae0299f878a6582230645ee3bf5b67ad532c8832fdc051e744d435fda8e27"
+    },
+    {
+      "path": "after/arcade-entrance.jpg",
+      "bytes": 425617,
+      "sha256": "0a9c45494edb584ff88fafe85a6e27a195adafc5ad99a32b885dd239b0a4ff91"
+    },
+    {
+      "path": "after/electronics-rear.jpg",
+      "bytes": 427838,
+      "sha256": "c9a357bd5f56cffd3b2bf07dec00e97f1b8fefeef7463073d992c23d127a1d53"
+    },
+    {
+      "path": "after/food-centre.jpg",
+      "bytes": 322913,
+      "sha256": "82832f37e60a7da48a3156018252dd47b81091c4cf44df5d6e62c80c05b351c3"
+    },
+    {
+      "path": "after/book-rear.jpg",
+      "bytes": 576300,
+      "sha256": "320c02ced2dfd1fdc5088f392ca9a654dc7d246bf2dbea2a1421e9b37c122fb0"
+    },
+    {
+      "path": "after/beauty-rear.jpg",
+      "bytes": 302266,
+      "sha256": "1e195b56cd26c6c48335dc2219a2b4863e84e34c30b01e83a60659c68bbfe2fa"
+    },
+    {
+      "path": "after/food-rear.jpg",
+      "bytes": 431392,
+      "sha256": "f79e307902215e270b79437eb2544a011c18404b0776a9c00afa236a9b40a4c4"
+    },
+    {
+      "path": "after/cafe-centre.jpg",
+      "bytes": 381696,
+      "sha256": "2e790cacf4f99e9170593819ad53fba9562c686414615473d2f4f88bd8034119"
+    },
+    {
+      "path": "after/apparel-entrance.jpg",
+      "bytes": 380646,
+      "sha256": "63d4e85e474f3c1063e0c72a2155982516fc11bd19efc3b3d746ff7c500756e7"
+    },
+    {
+      "path": "after/shoes-rear.jpg",
+      "bytes": 378280,
+      "sha256": "3fd4bfcfd8e55755fbb45b6213a3818625ae807d37902c75d0c8f03f0fa52ee8"
+    },
+    {
+      "path": "after/captures.json",
+      "bytes": 31929,
+      "sha256": "6a86487d9f3953bd4fddfe855be73cda1aa04fa7ce242005eed4c29f0d8d003d"
+    },
+    {
+      "path": "after/book-centre.jpg",
+      "bytes": 550343,
+      "sha256": "dfe006e482b29ee1ed8e1bf9bcf7e9579337f3f3bc0594be4ca173c07b29bdbf"
+    },
+    {
+      "path": "after/electronics-centre.jpg",
+      "bytes": 354750,
+      "sha256": "fbf34bfefa171314d40c4a8493c65f7135deb1b65cc18956758c4ed04f9aff8e"
+    },
+    {
+      "path": "after/electronics-entrance.jpg",
+      "bytes": 398075,
+      "sha256": "eef4e7168691fdbc766c4a9a605cecaea1747dec4faaa09291333ed2a9ce361d"
+    },
+    {
+      "path": "after/beauty-entrance.jpg",
+      "bytes": 375207,
+      "sha256": "49dbd17c54b9f4bacb05f9d7756cc879e99421dce76dc008e203128f6d37fd8c"
+    },
+    {
+      "path": "after/restaurant-entrance.jpg",
+      "bytes": 340101,
+      "sha256": "f576f71400087eaf4aa195617790777d32c70fa60c2ce962b4c36dd4b3e997ab"
+    },
+    {
+      "path": "after/apparel-rear.jpg",
+      "bytes": 431301,
+      "sha256": "30ffed9505c40d87cd64d6933c832a0adde1583c7bba74b4344256b2823d7cc9"
+    },
+    {
+      "path": "after/commons-09-A-specialty-street.jpg",
+      "bytes": 413656,
+      "sha256": "dfbadbc33f7dcd5a07885f131296b015bafd6b15e235fead500ea7d2da7e501f"
+    },
+    {
+      "path": "after/commons-08-B-Aichi-fair.jpg",
+      "bytes": 636619,
+      "sha256": "c13ef92f66643f8e458dc57b0b93eaebfa8a0d37c4b55b39602c399050fd9b4a"
+    },
+    {
+      "path": "after/beauty-centre.jpg",
+      "bytes": 250185,
+      "sha256": "cb806059973765b91c4d80787371a2cdab35028327ccd8be27fa5eabc6031f85"
+    },
+    {
+      "path": "after/shoes-centre.jpg",
+      "bytes": 309240,
+      "sha256": "8387a78a8cb193f6e4452295b8b7883474ed448b29e36c45fce0d4db411096f7"
+    },
+    {
+      "path": "after/shoes-entrance.jpg",
+      "bytes": 350537,
+      "sha256": "e704c52362b2dfa6ee61dd9c3c90fc93d9ea3dbcb628973340f705a5c52cfb81"
+    },
+    {
+      "path": "after/commons-04-C-open-courtyard.jpg",
+      "bytes": 552304,
+      "sha256": "25bd76c7c24c5b2eae8213b86cb5081d8c3114a451054feb762956bb952f3382"
+    },
+    {
+      "path": "after/restaurant-rear.jpg",
+      "bytes": 377594,
+      "sha256": "0df80a2247b2df4420b5f56af2f9ec51aeac2f885da1b8404fb4653b772645df"
+    },
+    {
+      "path": "after/restaurant-centre.jpg",
+      "bytes": 342031,
+      "sha256": "e2b00bd59956f80b900b634678dfa22d09296579368cb072801dcb75ebf0576f"
+    },
+    {
+      "path": "after/home-centre.jpg",
+      "bytes": 442862,
+      "sha256": "f79804e37b452ad07439f59e3c40a345f1eeafaa1a1b8b1eb85478f44238757c"
+    },
+    {
+      "path": "tables/audit-v23-480.csv",
+      "bytes": 135081,
+      "sha256": "15b55beeb3d93839745cd4cafbf50f8fd1d85155a3d064c24d0fe077bfaba093"
+    },
+    {
+      "path": "tables/audit-v22-480.csv",
+      "bytes": 71700,
+      "sha256": "2acce316675017be60554fd849e64262a361260f628de294d668364d9ebeeaa0"
+    },
+    {
+      "path": "tables/fixture-facility-positions.csv",
+      "bytes": 1799436,
+      "sha256": "9a6c8571cafe37f50ced60afd13c07738b56a3f26461e0787f165de80804bbd2"
+    },
+    {
+      "path": "tables/product-positions.csv",
+      "bytes": 11791665,
+      "sha256": "a8523b2fa37f1ccbde447a5fd54bfe6f5521236a64f962f9c6e477ce44128cfe"
+    },
+    {
+      "path": "tables/unresolved-shopping-approaches.csv",
+      "bytes": 33682,
+      "sha256": "2ada43d5edc4035228450e9a16d18506a537a4566d5d64795ba80f65d0914b72"
+    },
+    {
+      "path": "tables/category-fit.csv",
+      "bytes": 18553,
+      "sha256": "44081c637d480fcb52b2d4d32567412db8691a2aedbf1b16fce4966c5ddea962"
+    },
+    {
+      "path": "tables/floor-progress.csv",
+      "bytes": 2803,
+      "sha256": "c0493e5fcd58a478b32431d9000952fa20a78dfd9c35366d78cc18672ddd84b1"
+    },
+    {
+      "path": "tables/fixture-overlap-candidates.csv",
+      "bytes": 5,
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295"
+    },
+    {
+      "path": "fresh-runtime/v16-legacy-landscape-cleanup.json",
+      "bytes": 4389,
+      "sha256": "93e449d1bfc3ffc5d385d5582c85ba559c005b2da8883e623717c2bbdf0fc853"
+    },
+    {
+      "path": "fresh-runtime/v14-model-bounds-9.json",
+      "bytes": 483,
+      "sha256": "9d79478b650225c6aebd4d151fe63a54c0fb36428f39fc2faa50809f06ee7c27"
+    },
+    {
+      "path": "fresh-runtime/v14-model-bounds-6.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "fresh-runtime/v19-retail-build.json",
+      "bytes": 117,
+      "sha256": "16d4b17f0d5ce30846b2e62e246a5f2c419c61b45857e2b2b80374bfdebf8f7e"
+    },
+    {
+      "path": "fresh-runtime/v22-architecture-batching.json",
+      "bytes": 248,
+      "sha256": "9c059dc92f1bb635c993748ae2939ebb4a258c0816bc113749479283c689166c"
+    },
+    {
+      "path": "fresh-runtime/retail-build.json",
+      "bytes": 82,
+      "sha256": "f44c738d862e354c291c9356af3c2b92a9baa32061fe508aba89a742982b2c04"
+    },
+    {
+      "path": "fresh-runtime/v16-commons-build.json",
+      "bytes": 94,
+      "sha256": "a7f142b336f7d91b7d0976a620aeb8e2128b149964fd1f0f48b9730839834bac"
+    },
+    {
+      "path": "fresh-runtime/fresh-startup.json",
+      "bytes": 720,
+      "sha256": "549e5949ca63ea7eb37c2a2f16a60e2daee4d9658e9d579a27087d00a4a1e201"
+    },
+    {
+      "path": "fresh-runtime/v14-model-bounds-1.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "fresh-runtime/v18-retired-retail.json",
+      "bytes": 43711,
+      "sha256": "7d79d9e9eb950b857b5ec6fa801a95fadbaaa93aa811b924ca6a22ef331c119e"
+    },
+    {
+      "path": "fresh-runtime/v22-occlusion-build.json",
+      "bytes": 197,
+      "sha256": "80032fcc31f7b8ba14f5d496c6c18e58cb6c30b2d3f22f4e5f6a60a5760fe558"
+    },
+    {
+      "path": "fresh-runtime/v21-retail-build.json",
+      "bytes": 926,
+      "sha256": "4cf79f9e412abeb653a4bdc39aa76e2d261b4c4512c410bd58e9989ecb2b0ac4"
+    },
+    {
+      "path": "fresh-runtime/v21-wayfinding-physics.json",
+      "bytes": 154235,
+      "sha256": "dbe1dd3b798cd06ef5fb477f823f1d7513287dc82f34f25e6d681602477254f4"
+    },
+    {
+      "path": "fresh-runtime/fresh-launch.jpg",
+      "bytes": 604175,
+      "sha256": "1fc880d7d446bae14d14e7af0c4eea9b88a970752edef643d48f6b979bb08c43"
+    },
+    {
+      "path": "fresh-runtime/amenities-build-v13.json",
+      "bytes": 84,
+      "sha256": "09b8f1f3058a16a6588862b637f50a8374b065cd6bf098941e718d87a0669867"
+    },
+    {
+      "path": "fresh-runtime/v17-scene-build.json",
+      "bytes": 225,
+      "sha256": "12d7b03e87e3c07ed7514e1dd9461ddabf518b39ffaac2494b7cf9db47b37459"
+    },
+    {
+      "path": "fresh-runtime/v14-model-bounds-0.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "fresh-runtime/v23-department-sign-physics.json",
+      "bytes": 52795,
+      "sha256": "676d7e5117c4679eff999bf286b8fc1022df995a8a05710597ba242a3aa7dbcc"
+    },
+    {
+      "path": "performance-v22/scene-inventory.json",
+      "bytes": 8061616,
+      "sha256": "120b7e87ffee690be85d4d0eb44c0346335416026e1d3f62521d58cdf64767de"
+    },
+    {
+      "path": "performance-v22/profile.json",
+      "bytes": 21295,
+      "sha256": "a30a4222395f27e416d928e872a1525483efe081ed37d4d59b4b14cfd579b3a3"
+    },
+    {
+      "path": "performance-v22/B-1F-time-full_none_static.jpg",
+      "bytes": 370926,
+      "sha256": "2368012925290c5913d6b1ed3a58e01298cabdbac92128ab3649eb296b479183"
+    },
+    {
+      "path": "performance-v22/A-1F-book-full_none_static.jpg",
+      "bytes": 543497,
+      "sha256": "6cd0fdeabb0becd86bb9381de8501bd2886b11fb8407fd6e62fc0b157ec8bccd"
+    },
+    {
+      "path": "performance-v22/C-1F-yard-full_none_static.jpg",
+      "bytes": 404380,
+      "sha256": "51c82166d2a5d1867a6f11fcc1f53903c1f59a0a0c6e27b13fbd2757203ad6ce"
+    },
+    {
+      "path": "performance-v22/B-RF-full_none_static.jpg",
+      "bytes": 479866,
+      "sha256": "2eda446eeaa73e159652ca7d611253b48af26b7696d91d6df75076bd2b29e045"
+    },
+    {
+      "path": "performance-v22/A-1F-gap-393-full_none_static.jpg",
+      "bytes": 439789,
+      "sha256": "4fb07c45b618a0c515e961c585d777bf938892144de6b647c9aa5e855ee57515"
+    },
+    {
+      "path": "performance-v22/A-RF-full_none_static.jpg",
+      "bytes": 419356,
+      "sha256": "ea3514cca1db72440720fbaf433f47f6e41e9d2644410a4d92c5ff776b62e629"
+    },
+    {
+      "path": "performance-v22/C-RF-full_none_static.jpg",
+      "bytes": 463208,
+      "sha256": "6146e896149f84dfa46977e7d230ebd3aaad11802e81c975ee2b86ea3bbdc0f7"
+    },
+    {
+      "path": "performance-v22/A-B1-food-full_none_static.jpg",
+      "bytes": 404005,
+      "sha256": "4665a2c8eb137109c74fe63b0169a93c05b7c43ee63e90a7bb157002d25487bb"
+    },
+    {
+      "path": "performance-v22/A-1F-west-full_none_static.jpg",
+      "bytes": 444770,
+      "sha256": "ca4f9a792a7858a7c29ffa2a614d3e645c2198f7a5b982f9ab0d9d61a5e8a60c"
+    },
+    {
+      "path": "performance-v22/B-B1-food-full_none_static.jpg",
+      "bytes": 447771,
+      "sha256": "417c737e9620f810fd30ce61d8a79067046977633c9685538648e1a37f402dd2"
+    },
+    {
+      "path": "performance-unoptimized/scene-inventory.json",
+      "bytes": 8063435,
+      "sha256": "c15570c94518e9a8340a849aeee778a6c4f3d1358b1ef301e3b9e38afd1f102d"
+    },
+    {
+      "path": "performance-unoptimized/profile.json",
+      "bytes": 21279,
+      "sha256": "6468c798dd538de361ee95c4cc873e04eba9407f1e778ac3d0a2ce5fad17ba47"
+    },
+    {
+      "path": "performance-unoptimized/B-1F-time-full_none_static.jpg",
+      "bytes": 371114,
+      "sha256": "006927b2a008a2d4493a5d96252e7a3b1e685eeb1ae4f2f9121983fd95c2df66"
+    },
+    {
+      "path": "performance-unoptimized/A-1F-book-full_none_static.jpg",
+      "bytes": 507485,
+      "sha256": "32a54c62dc707450e657929c01b11303afe53bec0d8620f9fc32b57017b20f61"
+    },
+    {
+      "path": "performance-unoptimized/C-1F-yard-full_none_static.jpg",
+      "bytes": 404132,
+      "sha256": "3b7c5688b4eede68d151275ddd56a099894e9373aed90369ebdba7debe28f7bd"
+    },
+    {
+      "path": "performance-unoptimized/B-RF-full_none_static.jpg",
+      "bytes": 479866,
+      "sha256": "2eda446eeaa73e159652ca7d611253b48af26b7696d91d6df75076bd2b29e045"
+    },
+    {
+      "path": "performance-unoptimized/A-1F-gap-393-full_none_static.jpg",
+      "bytes": 416369,
+      "sha256": "9291d0199e3927a559fda5e35ff83e516e1ee6aa582f23dc75d052a6f321cdee"
+    },
+    {
+      "path": "performance-unoptimized/A-RF-full_none_static.jpg",
+      "bytes": 419356,
+      "sha256": "ea3514cca1db72440720fbaf433f47f6e41e9d2644410a4d92c5ff776b62e629"
+    },
+    {
+      "path": "performance-unoptimized/C-RF-full_none_static.jpg",
+      "bytes": 463208,
+      "sha256": "6146e896149f84dfa46977e7d230ebd3aaad11802e81c975ee2b86ea3bbdc0f7"
+    },
+    {
+      "path": "performance-unoptimized/A-B1-food-full_none_static.jpg",
+      "bytes": 400454,
+      "sha256": "d0a62a915e40f17ee883bf62f35f840d547436235aabf05247d4b0b01040201e"
+    },
+    {
+      "path": "performance-unoptimized/A-1F-west-full_none_static.jpg",
+      "bytes": 444783,
+      "sha256": "38f30a61163d6ce9b373a5dd3eb49804e3f6703f4d1dcdf6aaf02c116c229387"
+    },
+    {
+      "path": "performance-unoptimized/B-B1-food-full_none_static.jpg",
+      "bytes": 444867,
+      "sha256": "484e1a09925f5c0780654d2e14ae8157793c1d9aa2ae7595845c1e3dbbbbd1d3"
+    },
+    {
+      "path": "performance-v23/scene-inventory.json",
+      "bytes": 7933055,
+      "sha256": "c99261dde5aefaa644cbfb9a928b7a6f1941968a82a9f613571e0236c2e08203"
+    },
+    {
+      "path": "performance-v23/profile.json",
+      "bytes": 21286,
+      "sha256": "771d73c195ebece3691206708ab3d9770f57fa931d682ce6a2f2d1688d6588fb"
+    },
+    {
+      "path": "performance-v23/B-1F-time-full_none_static.jpg",
+      "bytes": 371173,
+      "sha256": "97987aa0187e7ecd724f52349f656cb386c62dcb1df426d9cdaa2da47c8b1f3e"
+    },
+    {
+      "path": "performance-v23/A-1F-book-full_none_static.jpg",
+      "bytes": 507485,
+      "sha256": "32a54c62dc707450e657929c01b11303afe53bec0d8620f9fc32b57017b20f61"
+    },
+    {
+      "path": "performance-v23/C-1F-yard-full_none_static.jpg",
+      "bytes": 404132,
+      "sha256": "3b7c5688b4eede68d151275ddd56a099894e9373aed90369ebdba7debe28f7bd"
+    },
+    {
+      "path": "performance-v23/B-RF-full_none_static.jpg",
+      "bytes": 479866,
+      "sha256": "2eda446eeaa73e159652ca7d611253b48af26b7696d91d6df75076bd2b29e045"
+    },
+    {
+      "path": "performance-v23/A-1F-gap-393-full_none_static.jpg",
+      "bytes": 416369,
+      "sha256": "9291d0199e3927a559fda5e35ff83e516e1ee6aa582f23dc75d052a6f321cdee"
+    },
+    {
+      "path": "performance-v23/A-RF-full_none_static.jpg",
+      "bytes": 419356,
+      "sha256": "ea3514cca1db72440720fbaf433f47f6e41e9d2644410a4d92c5ff776b62e629"
+    },
+    {
+      "path": "performance-v23/C-RF-full_none_static.jpg",
+      "bytes": 463208,
+      "sha256": "6146e896149f84dfa46977e7d230ebd3aaad11802e81c975ee2b86ea3bbdc0f7"
+    },
+    {
+      "path": "performance-v23/A-B1-food-full_none_static.jpg",
+      "bytes": 400454,
+      "sha256": "d0a62a915e40f17ee883bf62f35f840d547436235aabf05247d4b0b01040201e"
+    },
+    {
+      "path": "performance-v23/A-1F-west-full_none_static.jpg",
+      "bytes": 444783,
+      "sha256": "38f30a61163d6ce9b373a5dd3eb49804e3f6703f4d1dcdf6aaf02c116c229387"
+    },
+    {
+      "path": "performance-v23/B-B1-food-full_none_static.jpg",
+      "bytes": 444867,
+      "sha256": "484e1a09925f5c0780654d2e14ae8157793c1d9aa2ae7595845c1e3dbbbbd1d3"
+    },
+    {
+      "path": "performance-crowd/scene-inventory.json",
+      "bytes": 7933055,
+      "sha256": "c99261dde5aefaa644cbfb9a928b7a6f1941968a82a9f613571e0236c2e08203"
+    },
+    {
+      "path": "performance-crowd/profile.json",
+      "bytes": 20095,
+      "sha256": "a2ff446d2318e48875cdbbb6020718abe549abc04038a6383323a76c4b3fa886"
+    },
+    {
+      "path": "performance-crowd/B-1F-time-full_none_static.jpg",
+      "bytes": 371114,
+      "sha256": "6cce58b6d13145eccb118354e0a004258f6ffff4c709f63a009fb2189500d44c"
+    },
+    {
+      "path": "performance-crowd/A-1F-book-full_none_static.jpg",
+      "bytes": 507485,
+      "sha256": "32a54c62dc707450e657929c01b11303afe53bec0d8620f9fc32b57017b20f61"
+    },
+    {
+      "path": "performance-crowd/C-1F-yard-full_none_static.jpg",
+      "bytes": 404132,
+      "sha256": "3b7c5688b4eede68d151275ddd56a099894e9373aed90369ebdba7debe28f7bd"
+    },
+    {
+      "path": "performance-crowd/B-1F-time-full_43_static.jpg",
+      "bytes": 371153,
+      "sha256": "d6c9ce99987d0fe733f1126c41afe82fcde2c9e336e53a8902aec6eda3320c41"
+    },
+    {
+      "path": "performance-crowd/A-1F-book-full_43_static.jpg",
+      "bytes": 507485,
+      "sha256": "32a54c62dc707450e657929c01b11303afe53bec0d8620f9fc32b57017b20f61"
+    },
+    {
+      "path": "performance-crowd/C-1F-yard-full_43_static.jpg",
+      "bytes": 411235,
+      "sha256": "a142dfc1cf7e94961df44b6d6b03bc3fe7ef3049948e44b79dd6e40a74615480"
+    },
+    {
+      "path": "production-retail/v23-retail-physics.json",
+      "bytes": 917978,
+      "sha256": "946cec6209e1f1271d7d63f0f9a7892af7ecf8bf2b9f09c5980b7e088f2617db"
+    },
+    {
+      "path": "production-retail/v23-department-sign-physics.json",
+      "bytes": 52795,
+      "sha256": "676d7e5117c4679eff999bf286b8fc1022df995a8a05710597ba242a3aa7dbcc"
+    },
+    {
+      "path": "production-retail/v21-retail-build.json",
+      "bytes": 926,
+      "sha256": "4cf79f9e412abeb653a4bdc39aa76e2d261b4c4512c410bd58e9989ecb2b0ac4"
+    },
+    {
+      "path": "production-retail/v21-wayfinding-physics.json",
+      "bytes": 154235,
+      "sha256": "dbe1dd3b798cd06ef5fb477f823f1d7513287dc82f34f25e6d681602477254f4"
+    },
+    {
+      "path": "final-qa_shopping_v23/v23-shopping-physics.json",
+      "bytes": 3585877,
+      "sha256": "4d780c868186cddfd62cc9969f0f8a988a91e3a4ca9404b2ee65493f64553143"
+    },
+    {
+      "path": "final-qa_shopping_v23/v23-shopping-body-routes.json",
+      "bytes": 17339,
+      "sha256": "703cd87d27c62eddca1bc3004af0c6e7cf8f5aab0c319babf77eb1370a05753d"
+    },
+    {
+      "path": "final-qa_catalog_v23/v23-catalog-api.json",
+      "bytes": 181,
+      "sha256": "bd7e82bb04b1221e08e03827645aa9da7deba317721c9182465feb092f6a4fec"
+    },
+    {
+      "path": "current-qa_facility_walk_v23/v23-facility-characterbody.json",
+      "bytes": 33922,
+      "sha256": "a9d08e4e4167732c99e6bae4f9d9656008da709379bb7f0e4317ec40cb1b2cb9"
+    },
+    {
+      "path": "current-qa_npcs_v20/v20-crowd-physics.json",
+      "bytes": 17511,
+      "sha256": "6b2107008a4a7372d29aabc43c4c9511716dcd45edc999fd84e3507423d9db85"
+    },
+    {
+      "path": "current-qa_npcs_v20/v20-browse-scenario.json",
+      "bytes": 767,
+      "sha256": "c4629e2ac1b0d823fd1d7f159d0f109d818bd0690b2600bdf3519a9befe90a7f"
+    },
+    {
+      "path": "current-qa_controls_v20/v20-input-controls.json",
+      "bytes": 968,
+      "sha256": "37dea5b42a846d6a5b50e23048f64693bcc258f35480e16baa71aa8313d9a9bb"
+    },
+    {
+      "path": "current-qa_movement_v22/v22-actual-movement.json",
+      "bytes": 12031,
+      "sha256": "7da9182d43d4ded7f0f3c4fe9c582b671e55e89a4a414a00f9b5d1fb693b53e9"
+    },
+    {
+      "path": "current-qa_elevators_v22/physics-EV.json",
+      "bytes": 273063,
+      "sha256": "d575e4a08e97f375705597a734856e8c915681334f7384a393a825d0fe7a40c9"
+    },
+    {
+      "path": "current-qa_edges_v22/v22-edge-input.json",
+      "bytes": 13516,
+      "sha256": "464f1ed526449aa1c11e30ccd214eae5722562b81f9991531456f83f758c494f"
+    },
+    {
+      "path": "current-qa_variants_v22/v22-reference-scene-keys.json",
+      "bytes": 808,
+      "sha256": "ebcd867d8cb2acc9b5f80419cbbe69238e4b7adcd46b2d593a8d12740edaf376"
+    },
+    {
+      "path": "diagnostics/retail-second-support-failures.json",
+      "bytes": 867730,
+      "sha256": "284ffc18c2d2280d2aa3668138437b73652106ce89d9f642a1d9031c338633f5"
+    },
+    {
+      "path": "diagnostics/retail-first-support-failures.json",
+      "bytes": 880002,
+      "sha256": "51c592db41aed6f8f4bcffee21db693fa919674be9964f238f1108b04a8a3c44"
+    },
+    {
+      "path": "diagnostics/performance-before-toyfix/scene-inventory.json",
+      "bytes": 7715458,
+      "sha256": "54e595738e0dd4d4ce5204cef956c6e85da387ce75781ba396747fb9a0d10267"
+    },
+    {
+      "path": "diagnostics/performance-before-toyfix/profile.json",
+      "bytes": 88297,
+      "sha256": "4aff63c341562384904b2ae7a2e8502032a491615695758189855f71030d97d7"
+    },
+    {
+      "path": "diagnostics/experimental-packets-crowd/scene-inventory.json",
+      "bytes": 7713532,
+      "sha256": "8402459c3c09f9e8b4c724c1ac28ea57a5ec95f153c0ece36822e53eaf5d7c8f"
+    },
+    {
+      "path": "diagnostics/experimental-packets-crowd/profile.json",
+      "bytes": 20097,
+      "sha256": "810bb77e9bc7ccc03e89e5ee2596c8293309ca4408acce305ad02af65ba8103d"
+    },
+    {
+      "path": "diagnostics/unoptimized-before-toyfix/scene-inventory.json",
+      "bytes": 8067425,
+      "sha256": "e44d8c058217051ba95b6e4748a361d7e6ea4a7604d08256bd0df1c2b5a718a0"
+    },
+    {
+      "path": "diagnostics/unoptimized-before-toyfix/profile.json",
+      "bytes": 21295,
+      "sha256": "6b74585acd890936dba213f9609e18561cef608080c34c720d866ba3200c5d64"
+    },
+    {
+      "path": "diagnostics/experimental-packets-final/scene-inventory.json",
+      "bytes": 7713532,
+      "sha256": "8402459c3c09f9e8b4c724c1ac28ea57a5ec95f153c0ece36822e53eaf5d7c8f"
+    },
+    {
+      "path": "diagnostics/experimental-packets-final/profile.json",
+      "bytes": 21263,
+      "sha256": "f457a505686580556416e32b86edaac04c330c482c9b0ff9f3855693997b7427"
+    },
+    {
+      "path": "diagnostics/README.md",
+      "bytes": 171,
+      "sha256": "ed30188a654d21368a72c1817c8b36b27843c3b58374e22a667609f0cfafb3cb"
+    }
+  ],
+  "actual_Viewport_pairs": 33,
+  "human_playtest": false
+}

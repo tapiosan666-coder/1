@@ -1,0 +1,287 @@
+{
+  "scope": "Final v23 includes6toy-store children-book correction. Same final v23 merchandise for optimization ON/OFF. v22 content differs. Short diagnostics; software GPU only. No human operation or Windows GPU FPS claim.",
+  "comparisons": [
+    {
+      "camera": "A-1F-book",
+      "draw_calls_off": 1767.0,
+      "draw_calls_on": 1720.0,
+      "draw_change_percent": -2.66,
+      "wall_ms_off": 2360.285,
+      "wall_ms_on": 2582.181,
+      "frame_change_percent": 9.4,
+      "primitives_off": 1810910.0,
+      "primitives_on": 1812120.0,
+      "objects_off": 1767.0,
+      "objects_on": 1720.0,
+      "static_bytes_off": 1502924732.0,
+      "static_bytes_on": 1501861440.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "B-1F-time",
+      "draw_calls_off": 1909.0,
+      "draw_calls_on": 1933.0,
+      "draw_change_percent": 1.26,
+      "wall_ms_off": 2297.085,
+      "wall_ms_on": 1865.115,
+      "frame_change_percent": -18.81,
+      "primitives_off": 2157108.0,
+      "primitives_on": 2160420.0,
+      "objects_off": 1911.0,
+      "objects_on": 1935.0,
+      "static_bytes_off": 1505622444.0,
+      "static_bytes_on": 1504310828.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "C-1F-yard",
+      "draw_calls_off": 5231.0,
+      "draw_calls_on": 5245.0,
+      "draw_change_percent": 0.27,
+      "wall_ms_off": 3769.328,
+      "wall_ms_on": 3891.965,
+      "frame_change_percent": 3.25,
+      "primitives_off": 3039693.0,
+      "primitives_on": 3042443.0,
+      "objects_off": 5249.0,
+      "objects_on": 5263.0,
+      "static_bytes_off": 1509355244.0,
+      "static_bytes_on": 1505448716.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "A-B1-food",
+      "draw_calls_off": 2527.0,
+      "draw_calls_on": 2486.0,
+      "draw_change_percent": -1.62,
+      "wall_ms_off": 2674.523,
+      "wall_ms_on": 2315.038,
+      "frame_change_percent": -13.44,
+      "primitives_off": 2525453.0,
+      "primitives_on": 2527323.0,
+      "objects_off": 2527.0,
+      "objects_on": 2486.0,
+      "static_bytes_off": 1510848428.0,
+      "static_bytes_on": 1507043708.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "B-B1-food",
+      "draw_calls_off": 591.0,
+      "draw_calls_on": 583.0,
+      "draw_change_percent": -1.35,
+      "wall_ms_off": 1899.473,
+      "wall_ms_on": 1743.067,
+      "frame_change_percent": -8.23,
+      "primitives_off": 1332411.0,
+      "primitives_on": 1332645.0,
+      "objects_off": 591.0,
+      "objects_on": 583.0,
+      "static_bytes_off": 1511050292.0,
+      "static_bytes_on": 1507232468.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "A-RF",
+      "draw_calls_off": 7014.0,
+      "draw_calls_on": 7014.0,
+      "draw_change_percent": 0.0,
+      "wall_ms_off": 2987.854,
+      "wall_ms_on": 3324.722,
+      "frame_change_percent": 11.27,
+      "primitives_off": 3850557.0,
+      "primitives_on": 3850557.0,
+      "objects_off": 7040.0,
+      "objects_on": 7040.0,
+      "static_bytes_off": 1514278554.0,
+      "static_bytes_on": 1509412908.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "B-RF",
+      "draw_calls_off": 2632.0,
+      "draw_calls_on": 2632.0,
+      "draw_change_percent": 0.0,
+      "wall_ms_off": 3145.311,
+      "wall_ms_on": 3060.769,
+      "frame_change_percent": -2.69,
+      "primitives_off": 2607848.0,
+      "primitives_on": 2607848.0,
+      "objects_off": 2644.0,
+      "objects_on": 2644.0,
+      "static_bytes_off": 1514404470.0,
+      "static_bytes_on": 1509537764.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "C-RF",
+      "draw_calls_off": 793.0,
+      "draw_calls_on": 793.0,
+      "draw_change_percent": 0.0,
+      "wall_ms_off": 1776.32,
+      "wall_ms_on": 1397.294,
+      "frame_change_percent": -21.34,
+      "primitives_off": 915951.0,
+      "primitives_on": 915951.0,
+      "objects_off": 793.0,
+      "objects_on": 793.0,
+      "static_bytes_off": 1514469242.0,
+      "static_bytes_on": 1509593864.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "A-1F-west",
+      "draw_calls_off": 5743.0,
+      "draw_calls_on": 5728.0,
+      "draw_change_percent": -0.26,
+      "wall_ms_off": 5015.01,
+      "wall_ms_on": 3702.504,
+      "frame_change_percent": -26.17,
+      "primitives_off": 3545048.0,
+      "primitives_on": 3546124.0,
+      "objects_off": 5743.0,
+      "objects_on": 5728.0,
+      "static_bytes_off": 1520409106.0,
+      "static_bytes_on": 1514024364.0,
+      "texture_bytes_off": 1415604992.0,
+      "texture_bytes_on": 1066033664.0
+    },
+    {
+      "camera": "A-1F-gap-393",
+      "draw_calls_off": 4224.0,
+      "draw_calls_on": 4218.0,
+      "draw_change_percent": -0.14,
+      "wall_ms_off": 3992.589,
+      "wall_ms_on": 3086.002,
+      "frame_change_percent": -22.71,
+      "primitives_off": 2564849.0,
+      "primitives_on": 2566033.0,
+      "objects_off": 4224.0,
+      "objects_on": 4218.0,
+      "static_bytes_off": 1520727242.0,
+      "static_bytes_on": 1514413340.0,
+      "texture_bytes_off": 1449159424.0,
+      "texture_bytes_on": 1099588096.0
+    }
+  ],
+  "inventories": {
+    "v22": {
+      "by_category": {
+        "NPC": {
+          "nodes": 432,
+          "potential_triangles": 1985118,
+          "visible_in_tree_nodes": 404
+        },
+        "architecture": {
+          "nodes": 5365,
+          "potential_triangles": 2270920,
+          "visible_in_tree_nodes": 5365
+        },
+        "commons": {
+          "nodes": 4228,
+          "potential_triangles": 3270999,
+          "visible_in_tree_nodes": 4207
+        },
+        "retail": {
+          "nodes": 19736,
+          "potential_triangles": 60012077,
+          "visible_in_tree_nodes": 19736
+        },
+        "signs_ads": {
+          "nodes": 2922,
+          "potential_triangles": 3668,
+          "visible_in_tree_nodes": 2916
+        }
+      },
+      "light_count": 2638,
+      "scope": "Potential scene triangles include loaded but off-screen instances; never substituted for measured rendered primitives. Baked fitout classification is material-based; architecture-only may retain built-in small details.",
+      "unique_loaded_mesh_resources": 10752,
+      "unique_loaded_surface_materials": 2780,
+      "unique_referenced_textures": 256
+    },
+    "v23-off": {
+      "by_category": {
+        "NPC": {
+          "nodes": 432,
+          "potential_triangles": 1985118,
+          "visible_in_tree_nodes": 404
+        },
+        "architecture": {
+          "nodes": 5365,
+          "potential_triangles": 2270920,
+          "visible_in_tree_nodes": 5365
+        },
+        "commons": {
+          "nodes": 4228,
+          "potential_triangles": 3270999,
+          "visible_in_tree_nodes": 4207
+        },
+        "retail": {
+          "nodes": 19136,
+          "potential_triangles": 62467689,
+          "visible_in_tree_nodes": 19136
+        },
+        "signs_ads": {
+          "nodes": 3460,
+          "potential_triangles": 29592,
+          "visible_in_tree_nodes": 3454
+        }
+      },
+      "light_count": 2638,
+      "scope": "Potential scene triangles include loaded but off-screen instances; never substituted for measured rendered primitives. Baked fitout classification is material-based; architecture-only may retain built-in small details.",
+      "unique_loaded_mesh_resources": 11159,
+      "unique_loaded_surface_materials": 2934,
+      "unique_referenced_textures": 304
+    },
+    "v23-on": {
+      "by_category": {
+        "NPC": {
+          "nodes": 432,
+          "potential_triangles": 1985118,
+          "visible_in_tree_nodes": 404
+        },
+        "architecture": {
+          "nodes": 5365,
+          "potential_triangles": 2270920,
+          "visible_in_tree_nodes": 5365
+        },
+        "commons": {
+          "nodes": 4228,
+          "potential_triangles": 3270999,
+          "visible_in_tree_nodes": 4207
+        },
+        "retail": {
+          "nodes": 19136,
+          "potential_triangles": 62467689,
+          "visible_in_tree_nodes": 19136
+        },
+        "signs_ads": {
+          "nodes": 2979,
+          "potential_triangles": 29592,
+          "visible_in_tree_nodes": 2973
+        }
+      },
+      "light_count": 2638,
+      "scope": "Potential scene triangles include loaded but off-screen instances; never substituted for measured rendered primitives. Baked fitout classification is material-based; architecture-only may retain built-in small details.",
+      "unique_loaded_mesh_resources": 10828,
+      "unique_loaded_surface_materials": 2351,
+      "unique_referenced_textures": 255
+    }
+  },
+  "Windows_GPU_144FPS_verified": false,
+  "cases": {
+    "v22": 10,
+    "v23-off": 10,
+    "v23-on": 10,
+    "v23-crowd": 9
+  },
+  "previous_factor_diagnostics": "diagnostics/performance-before-toyfix is prior snapshot, not claimed current final content"
+}
