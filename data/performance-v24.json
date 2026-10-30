@@ -1,0 +1,450 @@
+{
+  "60FPS_verified": false,
+  "Engine_max_fps": 144,
+  "VSync": 1,
+  "Windows_GPU": false,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "cases": [
+    {
+      "camera": {
+        "category": "apparel",
+        "eye": [
+          428.295175588671,
+          1.65,
+          79.5432238973262
+        ],
+        "floor": "1F",
+        "fov": 68.0,
+        "id": "apparel-centre",
+        "look": [
+          430.631064526288,
+          1.15,
+          76.9367659807053
+        ],
+        "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。",
+        "store_id": "A1F-039",
+        "title": "A1F-039 / FERNELL WORKS / apparel / centre",
+        "variants": [
+          "normal",
+          "C",
+          "ES",
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 4650.0,
+          "objects": 4658.0,
+          "physics_seconds": 0.000376,
+          "primitives": 2806420.0,
+          "process_seconds": 3.809021,
+          "render_CPU_ms": 15.7229995727539,
+          "render_GPU_ms": 4395.52880859375,
+          "static_memory_bytes": 1985115965.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 7742.918
+        },
+        {
+          "draw_calls": 4650.0,
+          "objects": 4658.0,
+          "physics_seconds": 0.00036,
+          "primitives": 2806420.0,
+          "process_seconds": 3.939267,
+          "render_CPU_ms": 10.8280000686646,
+          "render_GPU_ms": 3772.8330078125,
+          "static_memory_bytes": 1985117153.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3925.976
+        },
+        {
+          "draw_calls": 4650.0,
+          "objects": 4658.0,
+          "physics_seconds": 0.00032,
+          "primitives": 2806420.0,
+          "process_seconds": 3.929461,
+          "render_CPU_ms": 11.3149995803833,
+          "render_GPU_ms": 3897.03198242188,
+          "static_memory_bytes": 1985118261.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4014.108
+        },
+        {
+          "draw_calls": 4650.0,
+          "objects": 4658.0,
+          "physics_seconds": 0.000467,
+          "primitives": 2806420.0,
+          "process_seconds": 4.011325,
+          "render_CPU_ms": 9.1560001373291,
+          "render_GPU_ms": 3891.05200195312,
+          "static_memory_bytes": 1985119393.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4029.688
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "cafe",
+        "eye": [
+          -104.268047401048,
+          1.65,
+          57.180140513287
+        ],
+        "floor": "1F",
+        "fov": 68.0,
+        "id": "cafe-centre",
+        "look": [
+          -106.201402672419,
+          1.15,
+          60.0976972641771
+        ],
+        "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。",
+        "store_id": "B1-046",
+        "title": "B1-046 / ALVENE EDIT / cafe / centre",
+        "variants": [
+          "normal",
+          "C",
+          "ES",
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 1010.0,
+          "objects": 1010.0,
+          "physics_seconds": 0.000384,
+          "primitives": 1692369.0,
+          "process_seconds": 2.065637,
+          "render_CPU_ms": 2.5460000038147,
+          "render_GPU_ms": 2117.84692382812,
+          "static_memory_bytes": 1985213229.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4009.954
+        },
+        {
+          "draw_calls": 1010.0,
+          "objects": 1010.0,
+          "physics_seconds": 0.000339,
+          "primitives": 1692369.0,
+          "process_seconds": 1.949148,
+          "render_CPU_ms": 2.27999997138977,
+          "render_GPU_ms": 2043.02697753906,
+          "static_memory_bytes": 1985214417.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 1874.67
+        },
+        {
+          "draw_calls": 1010.0,
+          "objects": 1010.0,
+          "physics_seconds": 0.000335,
+          "primitives": 1692369.0,
+          "process_seconds": 1.871117,
+          "render_CPU_ms": 2.78099989891052,
+          "render_GPU_ms": 1921.2939453125,
+          "static_memory_bytes": 1985215525.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 1951.0
+        },
+        {
+          "draw_calls": 1010.0,
+          "objects": 1010.0,
+          "physics_seconds": 0.000318,
+          "primitives": 1692369.0,
+          "process_seconds": 1.950455,
+          "render_CPU_ms": 2.8199999332428,
+          "render_GPU_ms": 1851.51098632812,
+          "static_memory_bytes": 1985216657.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 1856.81
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "beauty",
+        "eye": [
+          534.517593519549,
+          7.175,
+          -30.0751775375747
+        ],
+        "floor": "2F",
+        "fov": 72.0,
+        "id": "A2F-018-centre",
+        "look": [
+          527.219505525324,
+          6.875,
+          -23.4595082511251
+        ],
+        "scope": "candidate-store finish; visual quality requires review",
+        "store_id": "A2F-018",
+        "title": "VELORIA COLLECTIVE / A館2F / centre",
+        "variants": [
+          "combined",
+          "normal",
+          "C",
+          "ES"
+        ],
+        "view": "centre",
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 9919.0,
+          "objects": 9941.0,
+          "physics_seconds": 0.000461,
+          "primitives": 4639285.0,
+          "process_seconds": 4.847341,
+          "render_CPU_ms": 21.7840003967285,
+          "render_GPU_ms": 4505.22705078125,
+          "static_memory_bytes": 1988410456.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 9673.092
+        },
+        {
+          "draw_calls": 9919.0,
+          "objects": 9941.0,
+          "physics_seconds": 0.000389,
+          "primitives": 4639285.0,
+          "process_seconds": 4.832533,
+          "render_CPU_ms": 20.2000007629395,
+          "render_GPU_ms": 4801.251953125,
+          "static_memory_bytes": 1988411644.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4585.235
+        },
+        {
+          "draw_calls": 9922.0,
+          "objects": 9944.0,
+          "physics_seconds": 0.000404,
+          "primitives": 4639313.0,
+          "process_seconds": 4.585287,
+          "render_CPU_ms": 20.5330009460449,
+          "render_GPU_ms": 4761.68701171875,
+          "static_memory_bytes": 1988419376.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4456.053
+        },
+        {
+          "draw_calls": 9922.0,
+          "objects": 9944.0,
+          "physics_seconds": 0.000377,
+          "primitives": 4639313.0,
+          "process_seconds": 4.452287,
+          "render_CPU_ms": 16.6620006561279,
+          "render_GPU_ms": 4538.02197265625,
+          "static_memory_bytes": 1988420508.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4685.875
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "book",
+        "eye": [
+          325.5,
+          1.65,
+          -65.65
+        ],
+        "floor": "1F",
+        "fov": 72.0,
+        "id": "A1F-051-centre",
+        "look": [
+          318.581198910082,
+          1.35,
+          -81.52
+        ],
+        "scope": "candidate-store finish; visual quality requires review",
+        "store_id": "A1F-051",
+        "title": "ORIENNE BOOKS / A館1F / centre",
+        "variants": [
+          "combined",
+          "normal",
+          "C",
+          "ES"
+        ],
+        "view": "centre",
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 3492.0,
+          "objects": 3508.0,
+          "physics_seconds": 0.000374,
+          "primitives": 2798915.0,
+          "process_seconds": 4.893133,
+          "render_CPU_ms": 11.9079999923706,
+          "render_GPU_ms": 4395.080078125,
+          "static_memory_bytes": 1994702076.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 9068.416
+        },
+        {
+          "draw_calls": 3492.0,
+          "objects": 3508.0,
+          "physics_seconds": 0.000412,
+          "primitives": 2798915.0,
+          "process_seconds": 4.180102,
+          "render_CPU_ms": 13.9739999771118,
+          "render_GPU_ms": 4840.490234375,
+          "static_memory_bytes": 1994703264.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4088.757
+        },
+        {
+          "draw_calls": 3492.0,
+          "objects": 3508.0,
+          "physics_seconds": 0.000351,
+          "primitives": 2798915.0,
+          "process_seconds": 4.086959,
+          "render_CPU_ms": 6.21999979019165,
+          "render_GPU_ms": 4138.6640625,
+          "static_memory_bytes": 1994704372.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3488.824
+        },
+        {
+          "draw_calls": 3492.0,
+          "objects": 3508.0,
+          "physics_seconds": 0.000401,
+          "primitives": 2798915.0,
+          "process_seconds": 3.486352,
+          "render_CPU_ms": 6.18100023269653,
+          "render_GPU_ms": 4054.36791992188,
+          "static_memory_bytes": 1994705504.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3125.087
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "arcade",
+        "eye": [
+          468.265627659601,
+          12.525,
+          -38.6521587264467
+        ],
+        "floor": "3F",
+        "fov": 72.0,
+        "id": "A3F-012-centre",
+        "look": [
+          469.39731025594,
+          12.225,
+          -25.637640514489
+        ],
+        "scope": "candidate-store finish; visual quality requires review",
+        "store_id": "A3F-012",
+        "title": "TERRUNE STORE / A館3F / centre",
+        "variants": [
+          "combined",
+          "normal",
+          "C",
+          "ES"
+        ],
+        "view": "centre",
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 4175.0,
+          "objects": 4183.0,
+          "physics_seconds": 0.000365,
+          "primitives": 2603613.0,
+          "process_seconds": 3.312957,
+          "render_CPU_ms": 7.63100004196167,
+          "render_GPU_ms": 3184.32006835938,
+          "static_memory_bytes": 1994923376.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 6752.872
+        },
+        {
+          "draw_calls": 4178.0,
+          "objects": 4186.0,
+          "physics_seconds": 0.000462,
+          "primitives": 2605113.0,
+          "process_seconds": 3.442661,
+          "render_CPU_ms": 6.05900001525879,
+          "render_GPU_ms": 3281.7958984375,
+          "static_memory_bytes": 1994924564.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3486.586
+        },
+        {
+          "draw_calls": 4179.0,
+          "objects": 4187.0,
+          "physics_seconds": 0.000367,
+          "primitives": 2605473.0,
+          "process_seconds": 3.493561,
+          "render_CPU_ms": 8.6560001373291,
+          "render_GPU_ms": 3399.31005859375,
+          "static_memory_bytes": 1994925672.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3452.876
+        },
+        {
+          "draw_calls": 4179.0,
+          "objects": 4187.0,
+          "physics_seconds": 0.00038,
+          "primitives": 2605473.0,
+          "process_seconds": 3.447962,
+          "render_CPU_ms": 8.15799999237061,
+          "render_GPU_ms": 3453.69506835938,
+          "static_memory_bytes": 1994926804.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3442.112
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    }
+  ],
+  "effects_default": {
+    "glow_enabled": true,
+    "ssao_enabled": true,
+    "ssil_enabled": true,
+    "ssr_enabled": true
+  },
+  "human_playtest": false,
+  "physics_hz": 60,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "scope": "Render object monitor counts actual rendered GeometryInstances, not individual merchandise inside a MultiMesh. Video memory here is renderer-reported allocation, not Windows VRAM. Short factor diagnostics,2 warm-up frames and configured sampled frames. Software GPU timings are not Windows GPU performance. Objects hidden for diagnostic isolation only, never exported as a quality setting. Render CPU/GPU timing zero may mean backend unsupported. Current snapshot includes baked details with conservative categories."
+}

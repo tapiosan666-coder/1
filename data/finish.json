@@ -1,0 +1,473 @@
+{
+  "ceiling_units": 10,
+  "floor_triangles": 63,
+  "new_collision_shapes": 0,
+  "posters": 17,
+  "real_lights": 10,
+  "resource_cache": {
+    "NPC_models_changed": false,
+    "canonical_materials": 231,
+    "canonical_texture_contents": 100,
+    "libraries": 267,
+    "library_hits": 1,
+    "library_misses": 267,
+    "triangles_merged": false
+  },
+  "store_reports": [
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              427.347412109375,
+              5.14499998092651,
+              82.295524597168
+            ],
+            [
+              425.472839355469,
+              5.14499855041504,
+              80.9977188110352
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              431.470947265625,
+              5.14499998092651,
+              77.6943435668945
+            ],
+            [
+              429.596374511719,
+              5.14499998092651,
+              76.3965377807617
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "common_finish_y": 0.010999999448657,
+      "floor_sample_scope": "Existing architectural stone/tile floor surfaces only; fixture plinths excluded; one continuous planar finish per store",
+      "floor_triangles": 24,
+      "id": "A1F-039",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.822192192077637,
+            0.0,
+            -0.56920999288559
+          ],
+          "p": [
+            432.065765380859,
+            1.75,
+            88.4016342163086
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.56920999288559,
+            0.0,
+            0.822192192077637
+          ],
+          "p": [
+            436.643371582031,
+            1.75,
+            73.8123474121094
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.56920999288559,
+            0.0,
+            0.822192192077637
+          ],
+          "p": [
+            433.128295898438,
+            1.75,
+            71.3788452148438
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.822210311889648,
+            0.0,
+            0.569183766841888
+          ],
+          "p": [
+            423.066955566406,
+            1.75,
+            77.9130096435547
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 4,
+      "style": "v25-authored-atelier",
+      "walls": 6
+    },
+    {
+      "cafe_gallery_panels": 3,
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              -102.168319702148,
+              5.14499950408936,
+              53.1481323242188
+            ],
+            [
+              -102.517135620117,
+              5.14499950408936,
+              55.4012908935547
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              -106.379959106445,
+              5.14499950408936,
+              59.5037612915039
+            ],
+            [
+              -106.728775024414,
+              5.14499950408936,
+              61.7569198608398
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "common_finish_y": 0.010999999448657,
+      "floor_sample_scope": "Existing architectural stone/tile floor surfaces only; fixture plinths excluded; one continuous planar finish per store",
+      "floor_triangles": 12,
+      "id": "B1-046",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.988237917423248,
+            0.0,
+            0.152924180030823
+          ],
+          "p": [
+            -109.975746154785,
+            1.75,
+            50.3404655456543
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.988237917423248,
+            0.0,
+            -0.152924180030823
+          ],
+          "p": [
+            -100.41170501709,
+            1.75,
+            65.3146438598633
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "v25-authored-atelier",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              531.391845703125,
+              10.4949989318848,
+              -28.4785900115967
+            ],
+            [
+              533.627563476562,
+              10.4949989318848,
+              -28.0314464569092
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              528.6689453125,
+              10.4949998855591,
+              -26.0103130340576
+            ],
+            [
+              530.904663085938,
+              10.4949998855591,
+              -25.5631694793701
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "common_finish_y": 5.53599999237061,
+      "floor_sample_scope": "Existing architectural stone/tile floor surfaces only; fixture plinths excluded; one continuous planar finish per store",
+      "floor_triangles": 22,
+      "id": "A2F-018",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999237060511,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.196116134524345,
+            0.0,
+            -0.980580687522888
+          ],
+          "p": [
+            523.298400878906,
+            7.27500009536743,
+            -23.8806819915771
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.196116134524345,
+            0.0,
+            -0.980580687522888
+          ],
+          "p": [
+            533.167907714844,
+            7.27500009536743,
+            -21.9067802429199
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.980580687522888,
+            0.0,
+            -0.196116134524345
+          ],
+          "p": [
+            539.674621582031,
+            7.27500009536743,
+            -22.1758708953857
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.980580687522888,
+            0.0,
+            0.196116134524345
+          ],
+          "p": [
+            522.689819335938,
+            7.27500009536743,
+            -31.6453456878662
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 4,
+      "style": "v25-authored-atelier",
+      "walls": 4
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              323.462615966797,
+              5.14500045776367,
+              -69.183235168457
+            ],
+            [
+              323.462615966797,
+              5.14500045776367,
+              -71.4632339477539
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              320.950134277344,
+              5.14500045776367,
+              -74.9462738037109
+            ],
+            [
+              320.950134277344,
+              5.14500045776367,
+              -77.2262725830078
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "common_finish_y": 0.010999999448657,
+      "floor_sample_scope": "Existing architectural stone/tile floor surfaces only; fixture plinths excluded; one continuous planar finish per store",
+      "floor_triangles": 2,
+      "id": "A1F-051",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "p": [
+            323.178497314453,
+            1.75,
+            -81.8760070800781
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "p": [
+            303.717498779297,
+            2.79999995231628,
+            -81.8760070800781
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "p": [
+            343.855987548828,
+            1.75,
+            -73.5
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "p": [
+            291.144012451172,
+            2.79999995231628,
+            -78.9048004150391
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 4,
+      "style": "v25-authored-atelier",
+      "walls": 4
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              467.449554443359,
+              16.0200004577637,
+              -34.9412651062012
+            ],
+            [
+              469.729400634766,
+              16.0200004577637,
+              -34.9144401550293
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              467.865356445312,
+              16.0200004577637,
+              -30.1595363616943
+            ],
+            [
+              470.145202636719,
+              16.0200004577637,
+              -30.1327152252197
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "common_finish_y": 10.885999420166,
+      "floor_sample_scope": "Existing architectural stone/tile floor surfaces only; fixture plinths excluded; one continuous planar finish per store",
+      "floor_triangles": 3,
+      "id": "A3F-012",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799942016601562,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.996037721633911,
+            0.0,
+            0.0889319404959679
+          ],
+          "p": [
+            464.254486083984,
+            12.625,
+            -36.7636795043945
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.999930799007416,
+            0.0,
+            -0.0117638921365142
+          ],
+          "p": [
+            476.221313476562,
+            12.625,
+            -27.656156539917
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.0117638921365142,
+            0.0,
+            -0.999930799007416
+          ],
+          "p": [
+            470.224792480469,
+            12.625,
+            -25.271879196167
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 3,
+      "style": "v25-authored-atelier",
+      "walls": 3
+    }
+  ],
+  "stores": 5,
+  "unverified": [],
+  "wall_panels": 19
+}

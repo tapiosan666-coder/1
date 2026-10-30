@@ -1,0 +1,137 @@
+{
+  "pilot": false,
+  "changes": [
+    {
+      "id": "V23-A1F-039-checkout-1",
+      "store_id": "A1F-039",
+      "from": "fixture_checkout",
+      "to": "fixture_v25_atelier_checkout",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-front_window_outfit-2",
+      "store_id": "A1F-039",
+      "from": "fixture_v23_outfit_display",
+      "to": "fixture_v25_window_outfits",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-entrance_feature-4",
+      "store_id": "A1F-039",
+      "from": "fixture_v23_nested_display",
+      "to": "fixture_v25_nested_atelier",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-5",
+      "store_id": "A1F-039",
+      "from": "fixture_apparel_rail",
+      "to": "fixture_v25_wardrobe",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-6",
+      "store_id": "A1F-039",
+      "from": "fixture_apparel_rail",
+      "to": "fixture_v25_wardrobe",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-7",
+      "store_id": "A1F-039",
+      "from": "fixture_v23_bag_wall",
+      "to": "fixture_v25_bag_gallery",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-8",
+      "store_id": "A1F-039",
+      "from": "fixture_v23_bag_wall",
+      "to": "fixture_v25_bag_gallery",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-9",
+      "store_id": "A1F-039",
+      "from": "fixture_apparel_rail",
+      "to": "fixture_v25_wardrobe",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-10",
+      "store_id": "A1F-039",
+      "from": "fixture_apparel_rail",
+      "to": "fixture_v25_wardrobe",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-11",
+      "store_id": "A1F-039",
+      "from": "fixture_apparel_rail",
+      "to": "fixture_v25_wardrobe",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-wall_department-12",
+      "store_id": "A1F-039",
+      "from": "fixture_apparel_rail",
+      "to": "fixture_v25_wardrobe",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-central_department-13",
+      "store_id": "A1F-039",
+      "from": "fixture_v23_nested_display",
+      "to": "fixture_v25_nested_atelier",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-central_department-14",
+      "store_id": "A1F-039",
+      "from": "fixture_apparel_rail",
+      "to": "fixture_v25_gallery_rail",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V23-A1F-039-central_department-15",
+      "store_id": "A1F-039",
+      "from": "fixture_v23_nested_display",
+      "to": "fixture_v25_nested_atelier",
+      "position_retained": true,
+      "approach_IDs_retained": true
+    },
+    {
+      "id": "V25-A1F-039-collection-1",
+      "store_id": "A1F-039",
+      "to": "fixture_v25_nested_atelier",
+      "role": "centre capsule collection",
+      "position_retained": false
+    }
+  ],
+  "rejected": [
+    {
+      "store": "A1F-039",
+      "model": "fixture_v25_gallery_rail",
+      "local": [
+        1.1,
+        8.0
+      ],
+      "reason": "Existing approach/path or fixture clearance"
+    }
+  ],
+  "architecture_changed": false,
+  "old_fixture_positions_retained": true
+}

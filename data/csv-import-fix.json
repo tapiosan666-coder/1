@@ -1,0 +1,33 @@
+{
+  "changed_import_metadata": [
+    {
+      "path": "source/v13/remaining-service-zones.csv.import",
+      "before_sha256": "8a9f2d0e76b07e31461ed7cdf11eb38e90e3fad77eb9ace5106550bf7cedf2fc",
+      "change": "csv_translation to keep; table contents unchanged, not a localization resource"
+    },
+    {
+      "path": "source/v13/store-fitout-summary.csv.import",
+      "before_sha256": "c070af9f6a2a444ef797ac6094f0045dceddaca33c8187c169e7ed468471a2db",
+      "change": "csv_translation to keep; table contents unchanged, not a localization resource"
+    },
+    {
+      "path": "source/v12/space-watch.csv.import",
+      "before_sha256": "18120cc6870429e3b4418c1f47449e490221dc03492cbf9dc64b6bf1b2d7ca8c",
+      "change": "csv_translation to keep; table contents unchanged, not a localization resource"
+    },
+    {
+      "path": "source/v15/store-inventory.csv.import",
+      "before_sha256": "34538620bbb51c2a0a525b31eef7cc08148c246c155a801b459f7921ef918ebb",
+      "change": "csv_translation to keep; table contents unchanged, not a localization resource"
+    },
+    {
+      "path": "source/v14/roof-planting-as-built.csv.import",
+      "before_sha256": "17dbf8c7eab603248ea88985d73858ffa71f91778c9f0683dcb969f8ef17d2fd",
+      "change": "csv_translation to keep; table contents unchanged, not a localization resource"
+    }
+  ],
+  "actual_CSV_data_changed": false,
+  "initial_Linux_import_aborted": true,
+  "log": "fresh-import-csv-failure.log",
+  "not_architectural_or_game_logic_change": true
+}
