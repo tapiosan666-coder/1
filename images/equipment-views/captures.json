@@ -1,0 +1,217 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation",
+      "approach_world": [
+        428.501488060527,
+        0.0,
+        72.6233996965536
+      ],
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        428.295175588671,
+        1.65,
+        79.5432238973262
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "fixture_id": "V23-A1F-039-fitting_room-3",
+      "fov": 75.0,
+      "human_playtest": false,
+      "id": "equipment-fitting_room",
+      "look": [
+        428.501488060527,
+        1.0,
+        72.6233996965536
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "note": "Known sales-spine camera reused to avoid a close non-colliding garment obscuring the review camera. The standing position itself is unchanged.",
+      "required_clearance": {
+        "body_height_m": 1.8,
+        "sampled_space_width_m": 0.68,
+        "standing_radius_m": 0.34
+      },
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A1F-039 / V23-A1F-039-fitting_room-3",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation",
+      "approach_world": [
+        -102.722405473259,
+        0.0,
+        49.8411558702006
+      ],
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -102.55411774856,
+        1.65,
+        48.7541051622226
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "fixture_id": "V23-B1-046-checkout-106",
+      "fov": 75.0,
+      "human_playtest": false,
+      "id": "equipment-checkout",
+      "look": [
+        -102.814198776181,
+        0.86,
+        50.4340926105823
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "required_clearance": {
+        "body_height_m": 1.8,
+        "sampled_space_width_m": 0.68,
+        "standing_radius_m": 0.34
+      },
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B1-046 / V23-B1-046-checkout-106",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation",
+      "approach_world": [
+        -55.4481335328708,
+        0.0,
+        -29.3773074792296
+      ],
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -55.5384457017436,
+        1.65,
+        -30.4735938068619
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "fixture_id": "V23-B1-N01-appliance_demo-61",
+      "fov": 75.0,
+      "human_playtest": false,
+      "id": "equipment-display",
+      "look": [
+        -55.4113386900981,
+        0.86,
+        -28.9306602160474
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "required_clearance": {
+        "body_height_m": 1.8,
+        "sampled_space_width_m": 0.68,
+        "standing_radius_m": 0.34
+      },
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B1-N01 / V23-B1-N01-appliance_demo-61",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation",
+      "approach_world": [
+        164.295505683313,
+        10.875,
+        -314.458652199483
+      ],
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        163.219100919828,
+        12.525,
+        -314.685263728638
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "fixture_id": "V23-C3F-CE-1-photo_booth-134",
+      "fov": 75.0,
+      "human_playtest": false,
+      "id": "equipment-photo_booth",
+      "look": [
+        165.364571321078,
+        11.735,
+        -314.233585749427
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "required_clearance": {
+        "body_height_m": 1.8,
+        "sampled_space_width_m": 0.68,
+        "standing_radius_m": 0.34
+      },
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C3F-CE-1 / V23-C3F-CE-1-photo_booth-134",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ]
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation",
+      "approach_world": [
+        355.720550931534,
+        0.0,
+        -71.4538441317081
+      ],
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        356.24262670018,
+        1.65,
+        -70.4856308846428
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "fixture_id": "V23-A1F-003-shoe_try_and_mirror-18",
+      "fov": 75.0,
+      "human_playtest": false,
+      "id": "equipment-mirror",
+      "look": [
+        355.445550931534,
+        0.86,
+        -71.9638441334963
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "required_clearance": {
+        "body_height_m": 1.8,
+        "sampled_space_width_m": 0.68,
+        "standing_radius_m": 0.34
+      },
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A1F-003 / V23-A1F-003-shoe_try_and_mirror-18",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ]
+    }
+  ]
+}

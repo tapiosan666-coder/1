@@ -1,0 +1,99 @@
+{
+  "art_quality": {
+    "status": "未完成・継続仕上げ",
+    "focus_stores_modified": 30,
+    "all30_art_complete_claimed": false,
+    "issues": [
+      "後壁・天井上部が単調に見える店舗がある",
+      "店舗中央の余白・什器の高さと密度に追加の視覚調整が必要",
+      "専用家電/衣料/食品は改良したが、近距離でAAAと比較できる品質に未達",
+      "アクセサリー等に既存の木製共通什器が残り、ブランド専用内装は未完成",
+      "ゲームセンターは既存設備と仕上げが中心、新しい全機種の専用モデルは未制作",
+      "鏡は既存表現を維持、正確な平面反射の新規実装なし",
+      "全480店の個別美術完成審査は未実施"
+    ]
+  },
+  "repetition": {
+    "baseline39": 39,
+    "composition_changed": 35,
+    "high_repetition_flags_remaining": 7,
+    "threshold": "single model >60%, checkout equipment included consistently with baseline; actual visual quality is separate"
+  },
+  "equipment": {
+    "original155_unresolved": 0,
+    "all_equipment_no_standing_remaining": [
+      {
+        "approach": [],
+        "approach_direction": [],
+        "approach_face": "",
+        "equipment_forward": [
+          0.996037705314462,
+          0.0889319379745056
+        ],
+        "fixture_id": "V22D-A1F-001-department_island-6402",
+        "human_playtest": false,
+        "kind": "display",
+        "navigation_possible": false,
+        "navigation_tested": false,
+        "previously_unresolved_v23": false,
+        "required_clearance": {
+          "body_height_m": 1.8,
+          "sampled_space_width_m": 0.68,
+          "standing_radius_m": 0.34
+        },
+        "standing_clear": false,
+        "store_id": "A1F-001",
+        "usable_capacity": 0,
+        "world_position": [
+          433.638047848482,
+          0.02,
+          -4.97113747494208
+        ]
+      },
+      {
+        "approach": [],
+        "approach_direction": [],
+        "approach_face": "",
+        "equipment_forward": [
+          -0.978549784986749,
+          -0.206010481049842
+        ],
+        "fixture_id": "V23-C3F-CE-1-capsule_corner-145",
+        "human_playtest": false,
+        "kind": "display",
+        "navigation_possible": false,
+        "navigation_tested": false,
+        "previously_unresolved_v23": false,
+        "required_clearance": {
+          "body_height_m": 1.8,
+          "sampled_space_width_m": 0.68,
+          "standing_radius_m": 0.34
+        },
+        "standing_clear": false,
+        "store_id": "C3F-CE-1",
+        "usable_capacity": 0,
+        "world_position": [
+          149.562633707224,
+          10.895,
+          -301.8289612905
+        ]
+      }
+    ],
+    "untested_navigation_not_usable": true,
+    "standing_radius_m": 0.34,
+    "body_height_m": 1.8,
+    "human_operation": false
+  },
+  "structure_approval": [
+    "v22 ABC統合候補の承認状態はv23維持",
+    "F4/F6旧構造別案維持、通常版への新たな統合なし",
+    "C屋上水上庭園・RF-SUPPORT-16は未承認のまま"
+  ],
+  "performance": [
+    "実GPU性能と144FPSは未検証",
+    "同内容の共有化でマテリアル参照2574→2544、テクスチャ参照323→321。メッシュ参照数とドローコールは減っていない。大幅なFPS向上を実証した最適化ではない。",
+    "追加商品・新仕上げにより地点によって負荷が増える可能性。比較表の実測値を参照",
+    "一部自動検査のプロセス終了時にGodot PagedAllocator解放警告が出る。実行中のSCRIPT ERRORとは別扱い、プロセス解放の完全な原因究明は未完"
+  ],
+  "main_game_changed": false
+}

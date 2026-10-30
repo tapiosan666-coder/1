@@ -1,0 +1,40 @@
+﻿店舗ID,業種,商品v23,商品v24,モデル種類v23,モデル種類v24,最大単一比率v23,最大単一比率v24,構成v23,構成v24,対応,数値フラグ残存
+AB1-012,医薬品,35,35,2,4,0.7143,0.3143,"{""sku_medicine"": 25, ""sku_v23_pump"": 10}","{""sku_v24_care_box"": 6, ""sku_v24_ointment"": 8, ""sku_v24_blister"": 11, ""sku_v23_pump"": 10}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+AB1-017,医薬品,135,138,3,5,0.6296,0.3333,"{""sku_medicine"": 85, ""sku_serum"": 25, ""sku_cream"": 25}","{""sku_v24_care_box"": 19, ""sku_v24_ointment"": 23, ""sku_v24_blister"": 46, ""sku_serum"": 25, ""sku_cream"": 25}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+AB1-022,医薬品,135,135,3,5,0.6296,0.3333,"{""sku_medicine"": 85, ""sku_serum"": 25, ""sku_cream"": 25}","{""sku_v24_care_box"": 18, ""sku_v24_ointment"": 22, ""sku_v24_blister"": 45, ""sku_serum"": 25, ""sku_cream"": 25}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A1F-004,靴・鞄,18,18,2,4,0.6667,0.3333,"{""sku_v23_heel"": 12, ""sku_v23_crossbody"": 6}","{""sku_v23_sneaker"": 4, ""sku_v23_heel"": 4, ""sku_v23_boot"": 4, ""sku_v23_crossbody"": 6}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A1F-021,カフェ,2,2,1,1,1.0,1.0,"{""sku_bread"": 2}","{""sku_bread"": 2}",未解消：用途別の商品専用制作が必要,True
+A1F-022,カフェ,4,4,2,3,0.75,0.5,"{""sku_bread"": 3, ""sku_coffee_service"": 1}","{""sku_bread"": 2, ""sku_coffee_service"": 1, ""sku_v24_pastry_service"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A1F-050,靴・鞄,8,8,2,4,0.875,0.375,"{""sku_v23_heel"": 7, ""sku_v23_crossbody"": 1}","{""sku_v23_sneaker"": 3, ""sku_v23_heel"": 2, ""sku_v23_boot"": 2, ""sku_v23_crossbody"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A2F-009,眼鏡,165,165,1,3,1.0,0.4303,"{""sku_glasses"": 165}","{""sku_v24_optical_round"": 71, ""sku_v24_optical_rectangular"": 52, ""sku_v24_optical_cat_eye"": 42}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A2F-038,靴・鞄,54,54,2,4,0.6667,0.3333,"{""sku_v23_boot"": 36, ""sku_v23_backpack"": 18}","{""sku_v23_sneaker"": 12, ""sku_v23_heel"": 12, ""sku_v23_boot"": 12, ""sku_v23_backpack"": 18}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A2F-042,靴・鞄,48,48,2,4,0.75,0.25,"{""sku_v23_heel"": 36, ""sku_v23_crossbody"": 12}","{""sku_v23_sneaker"": 12, ""sku_v23_heel"": 12, ""sku_v23_boot"": 12, ""sku_v23_crossbody"": 12}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A2F-047,靴・鞄,48,48,2,4,0.625,0.375,"{""sku_v23_boot"": 30, ""sku_v23_backpack"": 18}","{""sku_v23_sneaker"": 10, ""sku_v23_heel"": 10, ""sku_v23_boot"": 10, ""sku_v23_backpack"": 18}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A3F-008,旅行・鞄,54,54,2,4,0.7778,0.2593,"{""sku_v23_sneaker"": 42, ""sku_v23_backpack"": 12}","{""sku_v23_sneaker"": 14, ""sku_v23_heel"": 14, ""sku_v23_boot"": 14, ""sku_v23_backpack"": 12}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+A3F-010,楽器,7,7,1,3,1.0,0.4286,"{""sku_guitar"": 7}","{""sku_v24_electric_bass"": 3, ""sku_v24_acoustic_guitar"": 2, ""sku_v24_ukulele"": 2}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B1-028,食品・カフェ,2,2,1,1,1.0,1.0,"{""sku_bread"": 2}","{""sku_bread"": 2}",未解消：用途別の商品専用制作が必要,True
+B1-003,靴・鞄,42,42,2,4,0.7143,0.2857,"{""sku_v23_boot"": 30, ""sku_v23_backpack"": 12}","{""sku_v23_sneaker"": 10, ""sku_v23_heel"": 10, ""sku_v23_boot"": 10, ""sku_v23_backpack"": 12}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B1-010,食品・カフェ,4,4,2,3,0.75,0.5,"{""sku_bread"": 3, ""sku_coffee_service"": 1}","{""sku_bread"": 2, ""sku_coffee_service"": 1, ""sku_v24_pastry_service"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B1-063,靴・鞄,72,72,2,4,0.6667,0.3333,"{""sku_v23_heel"": 48, ""sku_v23_crossbody"": 24}","{""sku_v23_sneaker"": 16, ""sku_v23_heel"": 16, ""sku_v23_boot"": 16, ""sku_v23_crossbody"": 24}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B1-021,靴・鞄,36,36,2,4,0.6667,0.6667,"{""sku_v23_heel"": 12, ""sku_v23_crossbody"": 24}","{""sku_v23_sneaker"": 4, ""sku_v23_heel"": 4, ""sku_v23_boot"": 4, ""sku_v23_crossbody"": 24}",同一棚内の小ロットを維持し、売場単位のコレクションへ,True
+B1-051,靴・鞄,60,60,2,4,0.8,0.2667,"{""sku_v23_boot"": 48, ""sku_v23_backpack"": 12}","{""sku_v23_sneaker"": 16, ""sku_v23_heel"": 16, ""sku_v23_boot"": 16, ""sku_v23_backpack"": 12}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B1-N03,モバイル・家電小物,36,36,2,2,0.6667,0.6667,"{""sku_phone"": 24, ""sku_v23_tablet"": 12}","{""sku_phone"": 24, ""sku_v23_tablet"": 12}",未解消：用途別の商品専用制作が必要,True
+B1-057,靴・鞄,18,18,2,4,0.6667,0.3333,"{""sku_v23_boot"": 12, ""sku_v23_backpack"": 6}","{""sku_v23_sneaker"": 4, ""sku_v23_heel"": 4, ""sku_v23_boot"": 4, ""sku_v23_backpack"": 6}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B1-022,食品・カフェ,4,4,2,3,0.75,0.5,"{""sku_bread"": 3, ""sku_coffee_service"": 1}","{""sku_bread"": 2, ""sku_coffee_service"": 1, ""sku_v24_pastry_service"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B1-027,靴・鞄,18,18,2,4,0.6667,0.6667,"{""sku_v23_crossbody"": 12, ""sku_v23_heel"": 6}","{""sku_v23_crossbody"": 12, ""sku_v23_sneaker"": 2, ""sku_v23_heel"": 2, ""sku_v23_boot"": 2}",同一棚内の小ロットを維持し、売場単位のコレクションへ,True
+B2-015,靴・鞄,24,24,2,4,0.75,0.25,"{""sku_v23_heel"": 18, ""sku_v23_crossbody"": 6}","{""sku_v23_sneaker"": 6, ""sku_v23_heel"": 6, ""sku_v23_boot"": 6, ""sku_v23_crossbody"": 6}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B2-022,食品・カフェ,4,4,2,3,0.75,0.5,"{""sku_bread"": 3, ""sku_coffee_service"": 1}","{""sku_bread"": 2, ""sku_coffee_service"": 1, ""sku_v24_pastry_service"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B2-028,食品・カフェ,4,4,2,3,0.75,0.5,"{""sku_bread"": 3, ""sku_coffee_service"": 1}","{""sku_bread"": 2, ""sku_coffee_service"": 1, ""sku_v24_pastry_service"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-011,楽器,6,6,1,3,1.0,0.3333,"{""sku_guitar"": 6}","{""sku_v24_electric_bass"": 2, ""sku_v24_ukulele"": 2, ""sku_v24_acoustic_guitar"": 2}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-015,飲食,2,3,1,2,1.0,0.6667,"{""sku_coffee_service"": 2}","{""sku_coffee_service"": 2, ""sku_v24_fruit_tart"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,True
+B3-029,楽器,3,3,1,3,1.0,0.3333,"{""sku_guitar"": 3}","{""sku_v24_electric_bass"": 1, ""sku_v24_acoustic_guitar"": 1, ""sku_v24_ukulele"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-017,楽器,7,7,1,3,1.0,0.4286,"{""sku_guitar"": 7}","{""sku_v24_electric_bass"": 3, ""sku_v24_acoustic_guitar"": 2, ""sku_v24_ukulele"": 2}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-041,楽器,15,15,1,3,1.0,0.3333,"{""sku_guitar"": 15}","{""sku_v24_electric_bass"": 5, ""sku_v24_acoustic_guitar"": 5, ""sku_v24_ukulele"": 5}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-047,楽器,13,13,1,3,1.0,0.3846,"{""sku_guitar"": 13}","{""sku_v24_electric_bass"": 5, ""sku_v24_acoustic_guitar"": 4, ""sku_v24_ukulele"": 4}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-035,楽器,6,6,1,3,1.0,0.3333,"{""sku_guitar"": 6}","{""sku_v24_acoustic_guitar"": 2, ""sku_v24_ukulele"": 2, ""sku_v24_electric_bass"": 2}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-053,楽器,9,9,1,3,1.0,0.3333,"{""sku_guitar"": 9}","{""sku_v24_electric_bass"": 3, ""sku_v24_acoustic_guitar"": 3, ""sku_v24_ukulele"": 3}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-059,楽器,3,3,1,3,1.0,0.3333,"{""sku_guitar"": 3}","{""sku_v24_acoustic_guitar"": 1, ""sku_v24_ukulele"": 1, ""sku_v24_electric_bass"": 1}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-023,楽器,10,10,1,3,1.0,0.4,"{""sku_guitar"": 10}","{""sku_v24_electric_bass"": 4, ""sku_v24_acoustic_guitar"": 3, ""sku_v24_ukulele"": 3}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-057,飲食,4,4,2,2,0.75,0.75,"{""sku_coffee_service"": 3, ""sku_bistro_plate"": 1}","{""sku_coffee_service"": 3, ""sku_bistro_plate"": 1}",未解消：用途別の商品専用制作が必要,True
+B3-N02,楽器・クラフト,11,11,1,3,1.0,0.3636,"{""sku_guitar"": 11}","{""sku_v24_electric_bass"": 4, ""sku_v24_acoustic_guitar"": 4, ""sku_v24_ukulele"": 3}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False
+B3-005,楽器,13,13,1,3,1.0,0.3846,"{""sku_guitar"": 13}","{""sku_v24_electric_bass"": 5, ""sku_v24_acoustic_guitar"": 4, ""sku_v24_ukulele"": 4}",同一棚内の小ロットを維持し、売場単位のコレクションへ,False

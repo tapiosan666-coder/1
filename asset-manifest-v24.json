@@ -1,0 +1,584 @@
+{
+  "models": [
+    {
+      "model": "finish_v24_track",
+      "bytes": 84144,
+      "triangles": 2472,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "f7a0b39d4fdf536336588db945bf083dac8079adedc8e0d900053b43021d7353"
+    },
+    {
+      "model": "fixture_v24_coffee_station",
+      "bytes": 538628,
+      "triangles": 4034,
+      "materials": 10,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "b4b9bac1687af8f3f5d4839435a7a1c124af576a6499968e08fef548d2a48f47"
+    },
+    {
+      "model": "fixture_v24_double_library",
+      "bytes": 675564,
+      "triangles": 960,
+      "materials": 6,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "510c73d3d9dc57e2386de3c84ce6cd952a4e25c6502dd381391c591366d0865c"
+    },
+    {
+      "model": "fixture_v24_jewellery_case",
+      "bytes": 27088,
+      "triangles": 420,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "f2799502116bd6d4aeae325ed94e34ab0880d45c8630d19124b33d17dc340a95"
+    },
+    {
+      "model": "fixture_v24_parcel_lockers",
+      "bytes": 172780,
+      "triangles": 2940,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "fc9ee69406691f25ab4401b62c411e7cef23c4f036c22d6001ac775b5b7fa539"
+    },
+    {
+      "model": "fixture_v24_repair_bench",
+      "bytes": 399124,
+      "triangles": 1920,
+      "materials": 4,
+      "embedded_images": 1,
+      "external_uris": [],
+      "sha256": "4715b39cb8c3f1a0a13bdcb6a085d9247865602986fdf040fc0b9a3008d3933c"
+    },
+    {
+      "model": "fixture_v24_sculpted_table",
+      "bytes": 14464,
+      "triangles": 312,
+      "materials": 2,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "ba7fb8e1f64ed8ba3066260d182998659af0008771dfae47bdf5ff19143991be"
+    },
+    {
+      "model": "sku_v24_acoustic_guitar",
+      "bytes": 807004,
+      "triangles": 4700,
+      "materials": 5,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "db02ee6f30ee44cad7844377f25dd9db168710163bd6f671df8cbebc35f43544"
+    },
+    {
+      "model": "sku_v24_blazer",
+      "bytes": 871420,
+      "triangles": 12744,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "b1982f81299fa9e7a76550031bb0b5c1c897dc78e8b1b16d6ea8aab5545b60d9"
+    },
+    {
+      "model": "sku_v24_blister",
+      "bytes": 86948,
+      "triangles": 3228,
+      "materials": 2,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "4d540fac274b1c632a7ae1c8e06e72d9f0be272aa5a78283453efcc57a8348e8"
+    },
+    {
+      "model": "sku_v24_book_0_0",
+      "bytes": 30764,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "9a49e0b7e5c0b4f6807c3d4734b6e2a7c0139819d0cae64d1adeacb6e1d1960b"
+    },
+    {
+      "model": "sku_v24_book_0_1",
+      "bytes": 30492,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "a678a5593033d1add903bc23772333e1c035c617a092dfc06ee8b01aee1b8dd0"
+    },
+    {
+      "model": "sku_v24_book_0_2",
+      "bytes": 30532,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "0180e7e6c539e6f152640102c88dd98703766cc279aa77689df1ad69372255cd"
+    },
+    {
+      "model": "sku_v24_book_0_3",
+      "bytes": 33724,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "9fb0b37bb8067ee24c0f9a944eff881b7ea207eb568f5578d8d4b30c06cfb418"
+    },
+    {
+      "model": "sku_v24_book_1_0",
+      "bytes": 32716,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "701cb38252650792f15f6a31951861bdbfe291322a4a1766ef4922ca014d75e9"
+    },
+    {
+      "model": "sku_v24_book_1_1",
+      "bytes": 29912,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "601d5ab2490ea26496243ee4367c5eb211adedefadbbad7d9afd033f340f8ba6"
+    },
+    {
+      "model": "sku_v24_book_1_2",
+      "bytes": 32680,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "4c6c174702f1d193d6b2a932ff062c8ae6cf31b023255a0a9671e0223d08d06e"
+    },
+    {
+      "model": "sku_v24_book_1_3",
+      "bytes": 31992,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "7b4592d5957a04208c791ac4a262afedf69b50e09a91c28831ac594d35c03b00"
+    },
+    {
+      "model": "sku_v24_book_2_0",
+      "bytes": 30864,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "1f5b4c2249a26fe860534ac275891dbede79658d164cfb89882b495310de142e"
+    },
+    {
+      "model": "sku_v24_book_2_1",
+      "bytes": 30020,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "601f0a1ea13ea1048cc038c181c6c610d14921550edb7bf758f23991b54fdead"
+    },
+    {
+      "model": "sku_v24_book_2_2",
+      "bytes": 28840,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "db01479a1810b81a0c376b14e4c532d890e4b53380c240e1aed4c25ecb641204"
+    },
+    {
+      "model": "sku_v24_book_2_3",
+      "bytes": 33156,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "c04c56e4283a21e7df7038975e3ab467da58d22fe06e4a5f58dd71745e188a3e"
+    },
+    {
+      "model": "sku_v24_book_3_0",
+      "bytes": 33192,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "1ad94e8c8c2009a068c67a3bae766d5fbdbb44fb87d4c65b6de19421a39f24ba"
+    },
+    {
+      "model": "sku_v24_book_3_1",
+      "bytes": 30056,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "f6d198e50c3db51411f3a75d0d3587fb84a9ed16d68ab2afa2cda928d4c43604"
+    },
+    {
+      "model": "sku_v24_book_3_2",
+      "bytes": 33456,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "c8f8154e9309f3e7a935f1f9cdac7490294f66d49581b266e9722ce45bf5068b"
+    },
+    {
+      "model": "sku_v24_book_3_3",
+      "bytes": 32528,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "1af01a6705e7cc191d30fc6cbe2b598c87a88152a5eb5e9b11a20f46d8954b81"
+    },
+    {
+      "model": "sku_v24_book_4_0",
+      "bytes": 31956,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "aaa5e85e29770275f7a8690aacd8f7ca7385365a935e73931f316d95cc159144"
+    },
+    {
+      "model": "sku_v24_book_4_1",
+      "bytes": 31200,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "8146b6e0154156a95761bdf918942a21cb3b7a67d7672afeb48a30152695cc94"
+    },
+    {
+      "model": "sku_v24_book_4_2",
+      "bytes": 34612,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "00f2b374ff17876c0521ca1695e0bf52ebaad8c63fbac2988d4943b992d49190"
+    },
+    {
+      "model": "sku_v24_book_4_3",
+      "bytes": 33440,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "f21cc2107eec2a6b80be913b87f564c9b863ad8d0e628537a2aa22e90925917e"
+    },
+    {
+      "model": "sku_v24_book_5_0",
+      "bytes": 31332,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "644c5b7ba43726068ba3a5cedb9d1b2318b5e2e01c957b3bd79410aeeb90a985"
+    },
+    {
+      "model": "sku_v24_book_5_1",
+      "bytes": 27544,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "d4157223ddc36beac81a16c0a00f64861031dd23917420e1d50c95b98af34d62"
+    },
+    {
+      "model": "sku_v24_book_5_2",
+      "bytes": 29832,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "3bff1714dbd286ba92570adbda3e487739049b1a06760c1d4d203712f0c2ef9a"
+    },
+    {
+      "model": "sku_v24_book_5_3",
+      "bytes": 32284,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "ef3a27955a46ac7e03003c19fe98d11c7cd666c06e00469937cd3b56fb8cc545"
+    },
+    {
+      "model": "sku_v24_book_6_0",
+      "bytes": 34020,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "1d9e7872c4e90cb95a4d0a3271b830705bc3e31060f8a251555a2e0b2d3d1b0a"
+    },
+    {
+      "model": "sku_v24_book_6_1",
+      "bytes": 30360,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "b4eb0708b91f58cfeda551bd30ec8ff491902ed09adc2b2b70103c8d55d1fbb0"
+    },
+    {
+      "model": "sku_v24_book_6_2",
+      "bytes": 31716,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "250d472a5f43001ed34b18c4b3533c34fdeb3c7f0f46bd38f49869cfaedcc683"
+    },
+    {
+      "model": "sku_v24_book_6_3",
+      "bytes": 34908,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "56d14d2f957d4b6e93f8dcfda1c231965618dc2e8b128cd656c60540fbd2c193"
+    },
+    {
+      "model": "sku_v24_book_7_0",
+      "bytes": 33692,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "1e1ff8d237316a78cff4e5b626232f7d8767028b225ecf5cb08864be505aae73"
+    },
+    {
+      "model": "sku_v24_book_7_1",
+      "bytes": 29564,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "1a080058191230b2575f28b5de126ef77675d718369d196f356a7294db5bf005"
+    },
+    {
+      "model": "sku_v24_book_7_2",
+      "bytes": 31864,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "d85674d5ea442aea4ee48bf7c63bdb7f7f0aa148df12ef8dd2db7ff108b9ea69"
+    },
+    {
+      "model": "sku_v24_book_7_3",
+      "bytes": 31272,
+      "triangles": 184,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "e4eeff5b504247a11ae865c608fe5b7ebaed308f116e39987147010537d9e8a5"
+    },
+    {
+      "model": "sku_v24_building_kit",
+      "bytes": 21016,
+      "triangles": 300,
+      "materials": 5,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "b9a267ad541b0682cb18089fe1131195f25ea17e09f73c5aca60600f5f81741b"
+    },
+    {
+      "model": "sku_v24_care_box",
+      "bytes": 23592,
+      "triangles": 360,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "865c92f3c666982e5924f79b75e250461f8ea6ce3d75cc377555a9f2ddb001d2"
+    },
+    {
+      "model": "sku_v24_croissant",
+      "bytes": 238872,
+      "triangles": 9984,
+      "materials": 2,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "d1803b4aaa17999d7fe998f4a1d86811eea8bb8ad87eef53db7d64c0b73900c7"
+    },
+    {
+      "model": "sku_v24_electric_bass",
+      "bytes": 509868,
+      "triangles": 4088,
+      "materials": 5,
+      "embedded_images": 1,
+      "external_uris": [],
+      "sha256": "cbf1a59667ac12b25304b36e02a4541c548fa83da51482e8f77351fee02d22a6"
+    },
+    {
+      "model": "sku_v24_fridge",
+      "bytes": 42064,
+      "triangles": 1232,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "541fbcc8f100bb7dff1ec1520d4cde2dcee0ccf64443baec687efae2723e2557"
+    },
+    {
+      "model": "sku_v24_fruit_tart",
+      "bytes": 210228,
+      "triangles": 7712,
+      "materials": 4,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "ae7a502ce9db5092fc287923388ab4d5c8685de61e07111ff1994cf7b33911cb"
+    },
+    {
+      "model": "sku_v24_long_coat",
+      "bytes": 1000464,
+      "triangles": 12744,
+      "materials": 4,
+      "embedded_images": 2,
+      "external_uris": [],
+      "sha256": "28e4501f77928eb47c8a4c8112e5778ac8d65a16ec3cc94459baa71b9a0593b1"
+    },
+    {
+      "model": "sku_v24_necklace",
+      "bytes": 1150000,
+      "triangles": 16972,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "1fd996a53528661c4abe5b66f0009a7b11afa5ffd730e3dd5e76f275fe21fb43"
+    },
+    {
+      "model": "sku_v24_ointment",
+      "bytes": 18432,
+      "triangles": 440,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "fd35a93799c377724128c3104d15310a516b7c27614b1a961cb206e576083066"
+    },
+    {
+      "model": "sku_v24_optical_cat_eye",
+      "bytes": 276680,
+      "triangles": 11340,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "1b74654c000070dccff6c10be8526ba9e4cceeea0858f83c5be830af73b7bbda"
+    },
+    {
+      "model": "sku_v24_optical_rectangular",
+      "bytes": 276692,
+      "triangles": 11340,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "8f19d73a9208d1a046af82bef0a4aae861f2505c7867ba292dcf0c82344c9f59"
+    },
+    {
+      "model": "sku_v24_optical_round",
+      "bytes": 276656,
+      "triangles": 11340,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "2cdf29e8d268b9ff0dbf9ae41da14d93200fcea462353c61f3ff2d1103c46928"
+    },
+    {
+      "model": "sku_v24_pastry_service",
+      "bytes": 254700,
+      "triangles": 10428,
+      "materials": 4,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "05225560d56ef5c37734994037d141ac114732abc3dee1f55ba5ea6726020dcc"
+    },
+    {
+      "model": "sku_v24_plush_bear",
+      "bytes": 440724,
+      "triangles": 6144,
+      "materials": 4,
+      "embedded_images": 1,
+      "external_uris": [],
+      "sha256": "f68ea681143449d046c8d19c702e7648c2614e047afabe6bbb81f3fd66dc7cad"
+    },
+    {
+      "model": "sku_v24_plush_rabbit",
+      "bytes": 440732,
+      "triangles": 6144,
+      "materials": 4,
+      "embedded_images": 1,
+      "external_uris": [],
+      "sha256": "4336417526c39211cbc10aeeacbeb7da366778df12fb1a4da43c40ca8988a49d"
+    },
+    {
+      "model": "sku_v24_ring_set",
+      "bytes": 181948,
+      "triangles": 3564,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "9c682b0179b278b489e0f57717dbe633ddb52753a5f1931c31e4c0c186491954"
+    },
+    {
+      "model": "sku_v24_sandwich",
+      "bytes": 3452,
+      "triangles": 32,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "fbf977461a7a027ed69481229cbe15044decf2edc5cc7852e99fb3027bb06aa8"
+    },
+    {
+      "model": "sku_v24_soup_service",
+      "bytes": 36500,
+      "triangles": 1232,
+      "materials": 3,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "8aa024d086a16d0093380deda35ef6f8367bc3ca8d6fa217e23fe14261928fe6"
+    },
+    {
+      "model": "sku_v24_train",
+      "bytes": 373740,
+      "triangles": 740,
+      "materials": 4,
+      "embedded_images": 1,
+      "external_uris": [],
+      "sha256": "e86ed4ca00611bef501a6c53f8226b041a14ebdbcb051072f77e7ae7889144c3"
+    },
+    {
+      "model": "sku_v24_ukulele",
+      "bytes": 504652,
+      "triangles": 4100,
+      "materials": 4,
+      "embedded_images": 1,
+      "external_uris": [],
+      "sha256": "1eafffd5d162b668a6059a68406805497bf6571cf8f583bb3ccf0d920ee64f2e"
+    },
+    {
+      "model": "sku_v24_washer",
+      "bytes": 126728,
+      "triangles": 1888,
+      "materials": 6,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "74a46e72d02b252186f59eb1badc8095690bfe6c2261bb8c0b5f8e9e1b88889f"
+    },
+    {
+      "model": "sku_v24_watch",
+      "bytes": 69556,
+      "triangles": 1172,
+      "materials": 5,
+      "embedded_images": 0,
+      "external_uris": [],
+      "sha256": "d379136d23084a68503fd9e7f8817d36adcbeba039d1da0885ae3cb4660135ac"
+    }
+  ],
+  "unresolved_external_asset_URIs": [],
+  "new_external_downloads": false,
+  "book_title_variants": 32,
+  "all64_independent_shapes_claimed": false
+}

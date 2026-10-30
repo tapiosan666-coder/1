@@ -1,0 +1,1094 @@
+{
+  "version": 24,
+  "kind": "Review",
+  "files": [
+    {
+      "path": "PACKAGE-MANIFEST-v24-Godot.json",
+      "bytes": 643036,
+      "sha256": "53724bd1030ccadf0961e9161ecfef2c29808777b134f69764a5135920b107f4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 460,
+      "sha256": "2d7968d86612ad34be5b90bb59e5dc80419aa1daf21a2d4dd1cb407ca2ec4517"
+    },
+    {
+      "path": "asset-manifest-v24.json",
+      "bytes": 16581,
+      "sha256": "e2613e2ca819815b5dae1a0d945399d1f6ecfe9120bd740cb87c430651efd17c"
+    },
+    {
+      "path": "asset-provenance.md",
+      "bytes": 2162,
+      "sha256": "fe2f43ea31503fde144af94a4079d8f2d7df4e34982f0264b8788ae6f5790e09"
+    },
+    {
+      "path": "capture-comparison-provenance.json",
+      "bytes": 160903,
+      "sha256": "eaf4a98c460778aa8502fefc873803fd0da19be244918f74f74ecc8930238810"
+    },
+    {
+      "path": "checks/physics-EV.json",
+      "bytes": 273069,
+      "sha256": "339c2041acef03495ecc3a18431ec24089c8352b5761422583bcb337ed114e94"
+    },
+    {
+      "path": "checks/v20-crowd-physics.json",
+      "bytes": 17511,
+      "sha256": "6b2107008a4a7372d29aabc43c4c9511716dcd45edc999fd84e3507423d9db85"
+    },
+    {
+      "path": "checks/v20-input-controls.json",
+      "bytes": 968,
+      "sha256": "37dea5b42a846d6a5b50e23048f64693bcc258f35480e16baa71aa8313d9a9bb"
+    },
+    {
+      "path": "checks/v22-actual-movement.json",
+      "bytes": 12031,
+      "sha256": "7ccbd0166a302c662cb933c062c49c6184eb97d194d730e334cad414f8157fdd"
+    },
+    {
+      "path": "checks/v22-edge-input.json",
+      "bytes": 13516,
+      "sha256": "03689e552c1d145b8ff7a2802aee38dc379d43a4a32c2d9e7711e4738d5ea80d"
+    },
+    {
+      "path": "checks/v22-reference-scene-keys.json",
+      "bytes": 808,
+      "sha256": "ebcd867d8cb2acc9b5f80419cbbe69238e4b7adcd46b2d593a8d12740edaf376"
+    },
+    {
+      "path": "checks/v24-catalog-api.json",
+      "bytes": 181,
+      "sha256": "ac8abd2a594881bcec0ff14d10c9d5d7c4b2d89bf663f2347b6aa896b34200ab"
+    },
+    {
+      "path": "checks/v24-equipment-physics.json",
+      "bytes": 6635298,
+      "sha256": "a3f81d4f6d303ceaf345a8e90515e0eb6acd65a1218daffd15b34da95806e3a0"
+    },
+    {
+      "path": "checks/v24-facility-characterbody.json",
+      "bytes": 174384,
+      "sha256": "874e1ba0ec8b23589125146ed351b8438f861b21b25bc15a2f6ebcdec2e09052"
+    },
+    {
+      "path": "checks/v24-retail-physics.json",
+      "bytes": 927262,
+      "sha256": "ce3cdd2f12f94f110e7a9ff24e67ccbd8cfa4f385fb8ed7eb5f627fb94b36913"
+    },
+    {
+      "path": "data-integrity.json",
+      "bytes": 454,
+      "sha256": "3db8362826c6861e0795a3140758b3e799ae787c7a07e125058a1575b3027823"
+    },
+    {
+      "path": "design/coffee-reference-correction.json",
+      "bytes": 274,
+      "sha256": "f389a4d858b73f44df31470e847c13a4c4ce433c57ddade7b3495c915de78cc3"
+    },
+    {
+      "path": "design/coffee-station-changes.json",
+      "bytes": 539,
+      "sha256": "a261775cf2f682e5019d78c80c412ddafe861f7f8a9bda61e38280f3c76db334"
+    },
+    {
+      "path": "design/equipment-facing-changes.json",
+      "bytes": 27237,
+      "sha256": "675979f47c5dce0d3ee45e4be1725f0e83dfc73583bbb10fe408cc4a833479c9"
+    },
+    {
+      "path": "design/focus-stores.json",
+      "bytes": 9713,
+      "sha256": "d893df1dc27f94da948350b6a79ca487712ae73ac6700eefacf68f41ecdf6677"
+    },
+    {
+      "path": "design/folded-merchandise-corrections.json",
+      "bytes": 5078,
+      "sha256": "55339d937a8fae9073248a22127af63c2e2e4525bbe187bff39e8c7e54d1d037"
+    },
+    {
+      "path": "design/local-equipment-adjustments-2.json",
+      "bytes": 1805,
+      "sha256": "58aac894baa583034250cff6a150ac5c9a5a6bc1ab5e8123552f294d959a3a03"
+    },
+    {
+      "path": "design/local-equipment-adjustments.json",
+      "bytes": 621,
+      "sha256": "96e31358d8c4491c26f315aa87b3d893cb7e0d6e451d41f9f73116693255a754"
+    },
+    {
+      "path": "design/product-catalog.json",
+      "bytes": 14998,
+      "sha256": "847224d3d89783eb843fc546b708692f237b4b4366f18521375aab6b4fdb6e19"
+    },
+    {
+      "path": "design/retail-changes.json",
+      "bytes": 1357014,
+      "sha256": "575de83f1a1bdb90c980b7a21029b50fac8f70dc8b3fb703cf506d549196f5eb"
+    },
+    {
+      "path": "design/store-finishes.json",
+      "bytes": 255824,
+      "sha256": "07ee088f72e4cda23614d7a3fb8a4185bd814989def8fd14b50259648fdc8e62"
+    },
+    {
+      "path": "fresh-extraction.json",
+      "bytes": 182,
+      "sha256": "104b5116a75783883ebf9e22235c1ce9bd57b9e530651ea1bd226da2816a7c19"
+    },
+    {
+      "path": "fresh-log-check.json",
+      "bytes": 630,
+      "sha256": "4dad68b7b8195b17f2d071a0e8df1e1dedd754a22cf7e4f8ebe7a1e9ff22e6f0"
+    },
+    {
+      "path": "images/after/A1F-006-centre.jpg",
+      "bytes": 508191,
+      "sha256": "5ccda27aa2004eed65dcf038d21510d0d2d14d843715535b1a6d8f70ef1af488"
+    },
+    {
+      "path": "images/after/A1F-006-entrance.jpg",
+      "bytes": 496894,
+      "sha256": "c23371191a40a4f0bcae560d12846ce513a67f1624012c16d2e8fe4260473759"
+    },
+    {
+      "path": "images/after/A1F-006-rear.jpg",
+      "bytes": 573386,
+      "sha256": "5a2b2b4e7004822e7762a7ac36613df5e8e81b23f226196982e1e19d199081fb"
+    },
+    {
+      "path": "images/after/A1F-021-centre.jpg",
+      "bytes": 361339,
+      "sha256": "f324ecd200885d0df398877eb267fa5513d897e555a74dbcf76bd6b733961d39"
+    },
+    {
+      "path": "images/after/A1F-021-entrance.jpg",
+      "bytes": 393612,
+      "sha256": "f0b7211fb4b88309aa591c410654405f080e62eac348612374f2d1faec7702e6"
+    },
+    {
+      "path": "images/after/A1F-021-rear.jpg",
+      "bytes": 445259,
+      "sha256": "6a8abad42128d379759c4b17d422894c2d09eb2305d019fd18b3917b6dfe09dc"
+    },
+    {
+      "path": "images/after/A1F-029-centre.jpg",
+      "bytes": 330722,
+      "sha256": "6f880b70c3881753fb30dc67afd93d2433a6801a0640c39547e77f648025030b"
+    },
+    {
+      "path": "images/after/A1F-029-entrance.jpg",
+      "bytes": 295791,
+      "sha256": "3d53f237abe96aec7200fb604a0f647a8bc476b7364756a3626af67edfc28b6a"
+    },
+    {
+      "path": "images/after/A1F-029-rear.jpg",
+      "bytes": 359644,
+      "sha256": "f9d9c902a05e674ed7a5c57cea5405f85d3ff38ad71b063ad534f0b41aee2689"
+    },
+    {
+      "path": "images/after/A1F-038-centre.jpg",
+      "bytes": 375741,
+      "sha256": "719e99cdff437ee0c629ffb8add124beb863ead88a04542fdfaa467a6c649c4a"
+    },
+    {
+      "path": "images/after/A1F-038-entrance.jpg",
+      "bytes": 365152,
+      "sha256": "54b8d2b519ce614114111f94f9d06f7aca3ec9f2a31b2d8ad2c6df65c8030d0e"
+    },
+    {
+      "path": "images/after/A1F-038-rear.jpg",
+      "bytes": 380507,
+      "sha256": "d67d6d4ca42fb11f28e0005c3a25c39c09ff726849cdc06e3b105e960bea5137"
+    },
+    {
+      "path": "images/after/A1F-051-centre.jpg",
+      "bytes": 579600,
+      "sha256": "d97055d567be731d2cfd9c0300e3d5d7d7e7dd98c489e4e57a79bd7aa00f4e2d"
+    },
+    {
+      "path": "images/after/A1F-051-entrance.jpg",
+      "bytes": 508398,
+      "sha256": "6296d07222ed0e7a2eefcb21f1dda932dbebb41ddc54771820b358a6310327b2"
+    },
+    {
+      "path": "images/after/A1F-051-rear.jpg",
+      "bytes": 604740,
+      "sha256": "675386238672e0d07dee753cae91b8778104842b70c522030145f43f4dcc6f14"
+    },
+    {
+      "path": "images/after/A2F-008-centre.jpg",
+      "bytes": 325537,
+      "sha256": "94079a3ef4e9fad716d191d51f4caaf7a98363b6710522b2a402aa84b3268c3b"
+    },
+    {
+      "path": "images/after/A2F-008-entrance.jpg",
+      "bytes": 283006,
+      "sha256": "070347ea1a208d7e4898b25dd406ee804ac2262e449a3899302dd0d65e20e85f"
+    },
+    {
+      "path": "images/after/A2F-008-rear.jpg",
+      "bytes": 402528,
+      "sha256": "7495b8ee36f8e588b763ed5a4fc799232c51616d55387111358b3020e1e131d0"
+    },
+    {
+      "path": "images/after/A2F-014-centre.jpg",
+      "bytes": 406747,
+      "sha256": "5616d1fec277491002668b35638cefd51bc9c0351eb8ce6b05c4db13e8e61926"
+    },
+    {
+      "path": "images/after/A2F-014-entrance.jpg",
+      "bytes": 409381,
+      "sha256": "fd4cb11b0b9e82c9e1e0922890e46f1fc227457c45ff4c84c3f873eb95ebdcd2"
+    },
+    {
+      "path": "images/after/A2F-014-rear.jpg",
+      "bytes": 454814,
+      "sha256": "158d31c79c8d92bc7adfd76305e8e78d4d1e9ba936234ff23fffde5e603d8e18"
+    },
+    {
+      "path": "images/after/A2F-018-centre.jpg",
+      "bytes": 368553,
+      "sha256": "53ee7e23c57517212b75b23b12a9df65064765c4c0871f72a3ea22471b17cb1a"
+    },
+    {
+      "path": "images/after/A2F-018-entrance.jpg",
+      "bytes": 353839,
+      "sha256": "d10a08c3596baf69697ac2dc1bdaf3b5443f5824be505adc8916a8d555f74912"
+    },
+    {
+      "path": "images/after/A2F-018-rear.jpg",
+      "bytes": 417562,
+      "sha256": "e6800d6f163999d7017e39daea392034ee41ec82be279db5c8ecb9d452d424f3"
+    },
+    {
+      "path": "images/after/A2F-022-centre.jpg",
+      "bytes": 309210,
+      "sha256": "6a02d9aafe95cc05833f79b57234ff3abba512c66c4a34258ecba784ff3f213f"
+    },
+    {
+      "path": "images/after/A2F-022-entrance.jpg",
+      "bytes": 294498,
+      "sha256": "374ff751cebe9c8b59a3c84e467ab31913b285fe4bffb8d746e3a7ff15c89c07"
+    },
+    {
+      "path": "images/after/A2F-022-rear.jpg",
+      "bytes": 318534,
+      "sha256": "40c6a07222cdbc2c01a9f20fc5677f3485ec6b308e3f56098a2148088c6cc7c7"
+    },
+    {
+      "path": "images/after/A2F-035-centre.jpg",
+      "bytes": 334107,
+      "sha256": "959aac8cb219253e74996632f6145161d20ab58c0f5f142891929fe76b2c57e9"
+    },
+    {
+      "path": "images/after/A2F-035-entrance.jpg",
+      "bytes": 304229,
+      "sha256": "673d98f346aa2b781385ae23abab4d41aa0926eb5bbb013bac13bc4bf7f5cef4"
+    },
+    {
+      "path": "images/after/A2F-035-rear.jpg",
+      "bytes": 348241,
+      "sha256": "9d1d9ee236b0b8a14cbe1f19ab7aefba75416aa57ae27e4b60b46f09ef474a1a"
+    },
+    {
+      "path": "images/after/A2F-042-centre.jpg",
+      "bytes": 288135,
+      "sha256": "463744f69574e258a9844d988a65cf76d1800f37e09125a1cd6eed0779f32d92"
+    },
+    {
+      "path": "images/after/A2F-042-entrance.jpg",
+      "bytes": 280634,
+      "sha256": "5890355ee6607186eeec92cc807c8f0cca3ebbdc96819d8019f760b18161cc78"
+    },
+    {
+      "path": "images/after/A2F-042-rear.jpg",
+      "bytes": 266182,
+      "sha256": "778924ba2652310539b65f30f34cd73241a4fe93500a22f17cb6a1f22da7cc8d"
+    },
+    {
+      "path": "images/after/A3F-007-centre.jpg",
+      "bytes": 291853,
+      "sha256": "429b7a605eab0c3c1f433f97f5398e52aa5f41e787a165ffcbc567d34859761e"
+    },
+    {
+      "path": "images/after/A3F-007-entrance.jpg",
+      "bytes": 290047,
+      "sha256": "2591b16408303897eafdc6ec81d992fb68b21d2e84d08124926f6c736f40cfc1"
+    },
+    {
+      "path": "images/after/A3F-007-rear.jpg",
+      "bytes": 325623,
+      "sha256": "0e13f5eb7e5972e35fa16a08135617c0cbf331548300a1216b139af3f571c26b"
+    },
+    {
+      "path": "images/after/A3F-012-centre.jpg",
+      "bytes": 227345,
+      "sha256": "490de260a1aa8435523eca165b360ab62032c6f902e2300054e4ed7bcac30cb7"
+    },
+    {
+      "path": "images/after/A3F-012-entrance.jpg",
+      "bytes": 238885,
+      "sha256": "ce39e6fda69f7564dbfb64e4d0ecb6b83112e2223c175386db2cc33a273e1ba0"
+    },
+    {
+      "path": "images/after/A3F-012-rear.jpg",
+      "bytes": 213795,
+      "sha256": "b2adeee12644121c745a0e8d768744fd0a3ab16c9b77c4bb34b457656a120846"
+    },
+    {
+      "path": "images/after/AB1-017-centre.jpg",
+      "bytes": 298524,
+      "sha256": "c18acfe5865c26461c300b11477c10fc9b5fab674dec387ea984fd16fbb208c1"
+    },
+    {
+      "path": "images/after/AB1-017-entrance.jpg",
+      "bytes": 281455,
+      "sha256": "ab8dcafca1fec5df43f0e9e00f3ede2bb1db351370678ff8e51aedfc6785be04"
+    },
+    {
+      "path": "images/after/AB1-017-rear.jpg",
+      "bytes": 347801,
+      "sha256": "1c31b25a28f0d4a3edd3992d6ad66d9a8eede272647ad34b58b720a05094546a"
+    },
+    {
+      "path": "images/after/AB1-030-centre.jpg",
+      "bytes": 462413,
+      "sha256": "90cff3dc4d7f8d724e0a411f206c3cf7bf96282518d8f5fbe55fea071444a8cf"
+    },
+    {
+      "path": "images/after/AB1-030-entrance.jpg",
+      "bytes": 407294,
+      "sha256": "e8cff1ae817081aaf5678ba6152492c5debd64cdf197a838f5536f073375ebc0"
+    },
+    {
+      "path": "images/after/AB1-030-rear.jpg",
+      "bytes": 483534,
+      "sha256": "857340cd55cfc96619a7ac79b9205bd1d974a5c00cbafc591964e05a2f3ff0a0"
+    },
+    {
+      "path": "images/after/ARF-003-centre.jpg",
+      "bytes": 454677,
+      "sha256": "0b19defb27bcc4c1fcd04aeb018f63e3259c0fb247a5e32e9cf2047030cd3705"
+    },
+    {
+      "path": "images/after/ARF-003-entrance.jpg",
+      "bytes": 499932,
+      "sha256": "7aa90267e29011b95fce1340dd182067da9b5a3483c9318a829b1c9538dbfcc6"
+    },
+    {
+      "path": "images/after/ARF-003-rear.jpg",
+      "bytes": 463002,
+      "sha256": "8d637b4a95e57919446cbf8a2181075e12aa715c15589b4c44e50e429adbde38"
+    },
+    {
+      "path": "images/after/B1-028-centre.jpg",
+      "bytes": 386924,
+      "sha256": "fdea23f3a2d8b839a25718e0ffb655cf34b744bf70859c520508103d8b0f4da6"
+    },
+    {
+      "path": "images/after/B1-028-entrance.jpg",
+      "bytes": 365958,
+      "sha256": "d4b5565eec0cccfd9341076c11081080c552665b98fd96d9eb8d69c7b7001db9"
+    },
+    {
+      "path": "images/after/B1-028-rear.jpg",
+      "bytes": 294498,
+      "sha256": "6f22709ee595342decb3b917dd7a6c3915a513f3cedcbf99b896237aff03c317"
+    },
+    {
+      "path": "images/after/B3-015-centre.jpg",
+      "bytes": 369576,
+      "sha256": "09a18fee54dd3746aea729911556c854affdb42038aecef2ea750c0acbd1e31a"
+    },
+    {
+      "path": "images/after/B3-015-entrance.jpg",
+      "bytes": 418326,
+      "sha256": "39ef4360eaea1c2383af8a1e3c1730cfb4eb86537845905f85fcd0c62e94ceb7"
+    },
+    {
+      "path": "images/after/B3-015-rear.jpg",
+      "bytes": 410063,
+      "sha256": "61541e16a3f31713eef738ab9fdd403f52bee68722b18d182a49d521cb4615b0"
+    },
+    {
+      "path": "images/after/B3-044-centre.jpg",
+      "bytes": 363162,
+      "sha256": "df24b4920b7440915ac08fbfa2a8195c9690d7a1e73ad2ea6f2bc9b729c3d62f"
+    },
+    {
+      "path": "images/after/B3-044-entrance.jpg",
+      "bytes": 442805,
+      "sha256": "9a3c38640b2ebfd14da465e670ba18030da41c20209600fe275f0e9c7d4c8506"
+    },
+    {
+      "path": "images/after/B3-044-rear.jpg",
+      "bytes": 462173,
+      "sha256": "d8b34c0f0691d69e20e99b38b3fc35f3b768885c97c660011a52f44807fb70a0"
+    },
+    {
+      "path": "images/after/C1F-CSW-2-centre.jpg",
+      "bytes": 274743,
+      "sha256": "451054805824e83c01bc615390b7bd64ea7094a59b0aa2094b32f76f3c3098cb"
+    },
+    {
+      "path": "images/after/C1F-CSW-2-entrance.jpg",
+      "bytes": 268380,
+      "sha256": "1353dea7feca9ddd597da4cb40de7bdea721c80d81393c6046c792760f5fdd85"
+    },
+    {
+      "path": "images/after/C1F-CSW-2-rear.jpg",
+      "bytes": 332568,
+      "sha256": "b61e1e6a08fb7c0f7e3cef17159ad1f63ca9655d213a9e173c6076466944d1ee"
+    },
+    {
+      "path": "images/after/apparel-centre.jpg",
+      "bytes": 469325,
+      "sha256": "b6544cb53679a3509028846e84e4de2a238eae5c938e0708e5f9aa83360bb7e0"
+    },
+    {
+      "path": "images/after/apparel-entrance.jpg",
+      "bytes": 419471,
+      "sha256": "b9976eb66f2b5b0cb2c1d907301613d6b1c35af7623819418af70e0ff4a3b2d6"
+    },
+    {
+      "path": "images/after/apparel-rear.jpg",
+      "bytes": 507688,
+      "sha256": "b2b9c5cddd2b225e000b3350520cd8b634f39630212da0b85458506290533874"
+    },
+    {
+      "path": "images/after/arcade-centre.jpg",
+      "bytes": 376690,
+      "sha256": "c5d0116b8349f13aeced1b6d590b2eebaf29345f82991dde9812bc0435b1a915"
+    },
+    {
+      "path": "images/after/arcade-entrance.jpg",
+      "bytes": 340449,
+      "sha256": "e7e5bbfe37e55d66789061b0e0ab0c4681f8220b3912dcf287ccaad461787976"
+    },
+    {
+      "path": "images/after/arcade-rear.jpg",
+      "bytes": 418561,
+      "sha256": "4204f55cef88b84142e43bd8791dda5e73398b1be1d938e9aedf8a09bea2b901"
+    },
+    {
+      "path": "images/after/beauty-centre.jpg",
+      "bytes": 277791,
+      "sha256": "c4980e723e7a8618dfb8f59f169f57e697243b05b84435b7eda3cd0e9628b91d"
+    },
+    {
+      "path": "images/after/beauty-entrance.jpg",
+      "bytes": 347184,
+      "sha256": "e9653845ec744914956e8f55df742f6249fb7a40ab0ee40df1ff110ece2d26b1"
+    },
+    {
+      "path": "images/after/beauty-rear.jpg",
+      "bytes": 268510,
+      "sha256": "d9ce42b4f7eec757bb4ce874af8eb74a05f4758846ff0b91f2a4ef67798bad32"
+    },
+    {
+      "path": "images/after/book-centre.jpg",
+      "bytes": 560532,
+      "sha256": "bf4d7b91c313d510c0a7a12876ca91b9aff3d96a76c68b06c542c066b6b0b674"
+    },
+    {
+      "path": "images/after/book-entrance.jpg",
+      "bytes": 508282,
+      "sha256": "add1ea3be31422c2d3b46e93ecbce6261f38fdce38bad9e89d79da8a4466ada4"
+    },
+    {
+      "path": "images/after/book-rear.jpg",
+      "bytes": 598131,
+      "sha256": "26e33c12b4d97bc34ace1bcc0bedaf5a36f889ff08f7b482c88b9c64cb1e5fb2"
+    },
+    {
+      "path": "images/after/cafe-centre.jpg",
+      "bytes": 378443,
+      "sha256": "742f2fe2c637a792d976e376a99ef275ceec982f512c621bb00e56604bdec589"
+    },
+    {
+      "path": "images/after/cafe-entrance.jpg",
+      "bytes": 357307,
+      "sha256": "e4c599024b332ee8a373e4c641e5074621ecd827cd7abea7514c1fe1851a7bfb"
+    },
+    {
+      "path": "images/after/cafe-rear.jpg",
+      "bytes": 404321,
+      "sha256": "c5378b0feec16d47f369687b832f0b021b77d9e75581300206cc316a77dd9374"
+    },
+    {
+      "path": "images/after/commons-04-C-open-courtyard.jpg",
+      "bytes": 552304,
+      "sha256": "25bd76c7c24c5b2eae8213b86cb5081d8c3114a451054feb762956bb952f3382"
+    },
+    {
+      "path": "images/after/commons-08-B-Aichi-fair.jpg",
+      "bytes": 636480,
+      "sha256": "93e1e4c6be560226c13d15b239513c30f30aaab615007726f662a1da0c6d5988"
+    },
+    {
+      "path": "images/after/commons-09-A-specialty-street.jpg",
+      "bytes": 449304,
+      "sha256": "cbb43c4b6ce0cdf0b596af12a050fbe5e78e0199ece0a2347d38504e26fdd1e3"
+    },
+    {
+      "path": "images/after/electronics-centre.jpg",
+      "bytes": 346923,
+      "sha256": "5dd84ac199d2244e0df8f246ebc2f956d5b4122b07b05523c795614e1ff097da"
+    },
+    {
+      "path": "images/after/electronics-entrance.jpg",
+      "bytes": 397947,
+      "sha256": "ad1284dc8143a294972c1987d94fe0c225949ece38dc96bb43bc22fd4059a838"
+    },
+    {
+      "path": "images/after/electronics-rear.jpg",
+      "bytes": 417706,
+      "sha256": "6a47516276819bc3161fd9057bca89652a8af0ec91d5faf1f515efecf83f8c76"
+    },
+    {
+      "path": "images/after/food-centre.jpg",
+      "bytes": 358256,
+      "sha256": "a3bd88275e82685569fdbe1706c13a7e280a4d13a84e943f27324da9832e1903"
+    },
+    {
+      "path": "images/after/food-entrance.jpg",
+      "bytes": 385270,
+      "sha256": "242408c619071f110fdfa74e6769f75ca2a3689d2bf97159522a98c53ad10230"
+    },
+    {
+      "path": "images/after/food-rear.jpg",
+      "bytes": 450655,
+      "sha256": "07d82d5f4aa8458f8469f4a3741108521e4575a313d2d82d7283bcc929736e50"
+    },
+    {
+      "path": "images/after/home-centre.jpg",
+      "bytes": 473907,
+      "sha256": "e3cdebdd87a6513381222085eb95b1581a928b71c1ff39c151233c4fa2f21856"
+    },
+    {
+      "path": "images/after/home-entrance.jpg",
+      "bytes": 376389,
+      "sha256": "e8169064f77a3b27f10ea0d177dee4dcfe1fd8946bf6e4a52b2697379ff6e1fd"
+    },
+    {
+      "path": "images/after/home-rear.jpg",
+      "bytes": 464067,
+      "sha256": "8ad6d81850ddcbfb47943f960f40e447194b96e2d47d06747a1200b03691fd37"
+    },
+    {
+      "path": "images/after/restaurant-centre.jpg",
+      "bytes": 375572,
+      "sha256": "8fd9cce9710da86ba81a84d2f3f412359ebebc33f14c710457a38614ec4e5def"
+    },
+    {
+      "path": "images/after/restaurant-entrance.jpg",
+      "bytes": 362264,
+      "sha256": "fac567f53c43273e6e0463fcbd137b869dbc2fc6b8b9528e021f67235b78040f"
+    },
+    {
+      "path": "images/after/restaurant-rear.jpg",
+      "bytes": 414174,
+      "sha256": "177d1a22e308a481935c30ea9511d28467c51d59f08f1a078e3382b9ac3d0e5f"
+    },
+    {
+      "path": "images/after/shoes-centre.jpg",
+      "bytes": 299877,
+      "sha256": "b150ccc19182afe0bfa034a95425b40aba51ea829d80dc2643f2247b6ecffaf8"
+    },
+    {
+      "path": "images/after/shoes-entrance.jpg",
+      "bytes": 332944,
+      "sha256": "cafe11d1297068ed386ecb2d3b6e03eb8aee87a1b4033dae63fb8d4880aec649"
+    },
+    {
+      "path": "images/after/shoes-rear.jpg",
+      "bytes": 364202,
+      "sha256": "04d0a2ee9d8ecb0daf03a363382667bc9a8e5e7c6ed8fd163e3e949aec1a9ffe"
+    },
+    {
+      "path": "images/before/apparel-centre.jpg",
+      "bytes": 393870,
+      "sha256": "db3b2482e5296b24387dc813ebf0bb6bb35661504cef2b4d38baf11a1f1c3580"
+    },
+    {
+      "path": "images/before/apparel-entrance.jpg",
+      "bytes": 380646,
+      "sha256": "63d4e85e474f3c1063e0c72a2155982516fc11bd19efc3b3d746ff7c500756e7"
+    },
+    {
+      "path": "images/before/apparel-rear.jpg",
+      "bytes": 431301,
+      "sha256": "30ffed9505c40d87cd64d6933c832a0adde1583c7bba74b4344256b2823d7cc9"
+    },
+    {
+      "path": "images/before/arcade-centre.jpg",
+      "bytes": 375277,
+      "sha256": "04e632c3ebb120528affd4e0e157cc9bdfe9755576dd23139ffe79048266babb"
+    },
+    {
+      "path": "images/before/arcade-entrance.jpg",
+      "bytes": 425617,
+      "sha256": "0a9c45494edb584ff88fafe85a6e27a195adafc5ad99a32b885dd239b0a4ff91"
+    },
+    {
+      "path": "images/before/arcade-rear.jpg",
+      "bytes": 425638,
+      "sha256": "04e16e6d7bcd8a6cc652ec3e178f309d09eb82e26075df982597791996a87e60"
+    },
+    {
+      "path": "images/before/beauty-centre.jpg",
+      "bytes": 250185,
+      "sha256": "cb806059973765b91c4d80787371a2cdab35028327ccd8be27fa5eabc6031f85"
+    },
+    {
+      "path": "images/before/beauty-entrance.jpg",
+      "bytes": 375207,
+      "sha256": "49dbd17c54b9f4bacb05f9d7756cc879e99421dce76dc008e203128f6d37fd8c"
+    },
+    {
+      "path": "images/before/beauty-rear.jpg",
+      "bytes": 302266,
+      "sha256": "1e195b56cd26c6c48335dc2219a2b4863e84e34c30b01e83a60659c68bbfe2fa"
+    },
+    {
+      "path": "images/before/book-centre.jpg",
+      "bytes": 550343,
+      "sha256": "dfe006e482b29ee1ed8e1bf9bcf7e9579337f3f3bc0594be4ca173c07b29bdbf"
+    },
+    {
+      "path": "images/before/book-entrance.jpg",
+      "bytes": 451160,
+      "sha256": "98c078715366ff3c20084216b119ebc2dd74965e5589e5ae8b21083c8448c3e0"
+    },
+    {
+      "path": "images/before/book-rear.jpg",
+      "bytes": 576300,
+      "sha256": "320c02ced2dfd1fdc5088f392ca9a654dc7d246bf2dbea2a1421e9b37c122fb0"
+    },
+    {
+      "path": "images/before/cafe-centre.jpg",
+      "bytes": 381696,
+      "sha256": "2e790cacf4f99e9170593819ad53fba9562c686414615473d2f4f88bd8034119"
+    },
+    {
+      "path": "images/before/cafe-entrance.jpg",
+      "bytes": 349407,
+      "sha256": "bd5c859c6ed411c48f85d222bbcbba64b49c1464092aea90ac8ec2d0b519b532"
+    },
+    {
+      "path": "images/before/cafe-rear.jpg",
+      "bytes": 406501,
+      "sha256": "1b1ae0299f878a6582230645ee3bf5b67ad532c8832fdc051e744d435fda8e27"
+    },
+    {
+      "path": "images/before/commons-04-C-open-courtyard.jpg",
+      "bytes": 552304,
+      "sha256": "25bd76c7c24c5b2eae8213b86cb5081d8c3114a451054feb762956bb952f3382"
+    },
+    {
+      "path": "images/before/commons-08-B-Aichi-fair.jpg",
+      "bytes": 636619,
+      "sha256": "c13ef92f66643f8e458dc57b0b93eaebfa8a0d37c4b55b39602c399050fd9b4a"
+    },
+    {
+      "path": "images/before/commons-09-A-specialty-street.jpg",
+      "bytes": 413656,
+      "sha256": "dfbadbc33f7dcd5a07885f131296b015bafd6b15e235fead500ea7d2da7e501f"
+    },
+    {
+      "path": "images/before/electronics-centre.jpg",
+      "bytes": 354750,
+      "sha256": "fbf34bfefa171314d40c4a8493c65f7135deb1b65cc18956758c4ed04f9aff8e"
+    },
+    {
+      "path": "images/before/electronics-entrance.jpg",
+      "bytes": 398075,
+      "sha256": "eef4e7168691fdbc766c4a9a605cecaea1747dec4faaa09291333ed2a9ce361d"
+    },
+    {
+      "path": "images/before/electronics-rear.jpg",
+      "bytes": 427838,
+      "sha256": "c9a357bd5f56cffd3b2bf07dec00e97f1b8fefeef7463073d992c23d127a1d53"
+    },
+    {
+      "path": "images/before/food-centre.jpg",
+      "bytes": 322913,
+      "sha256": "82832f37e60a7da48a3156018252dd47b81091c4cf44df5d6e62c80c05b351c3"
+    },
+    {
+      "path": "images/before/food-entrance.jpg",
+      "bytes": 403623,
+      "sha256": "36135984ab220ed3952f6cfbaa2bb97272395d86d31ec344550b9dcc0238e463"
+    },
+    {
+      "path": "images/before/food-rear.jpg",
+      "bytes": 431392,
+      "sha256": "f79e307902215e270b79437eb2544a011c18404b0776a9c00afa236a9b40a4c4"
+    },
+    {
+      "path": "images/before/home-centre.jpg",
+      "bytes": 442862,
+      "sha256": "f79804e37b452ad07439f59e3c40a345f1eeafaa1a1b8b1eb85478f44238757c"
+    },
+    {
+      "path": "images/before/home-entrance.jpg",
+      "bytes": 358289,
+      "sha256": "3aac07a3d382758dfdbdd13c71a4f4c5754c62a2ddbe3f740fec5e763ad4921d"
+    },
+    {
+      "path": "images/before/home-rear.jpg",
+      "bytes": 439540,
+      "sha256": "85eae63566d232da7c9b405045adc19ab2bc860f08eeb45386587aa6c5a71884"
+    },
+    {
+      "path": "images/before/restaurant-centre.jpg",
+      "bytes": 342031,
+      "sha256": "e2b00bd59956f80b900b634678dfa22d09296579368cb072801dcb75ebf0576f"
+    },
+    {
+      "path": "images/before/restaurant-entrance.jpg",
+      "bytes": 340101,
+      "sha256": "f576f71400087eaf4aa195617790777d32c70fa60c2ce962b4c36dd4b3e997ab"
+    },
+    {
+      "path": "images/before/restaurant-rear.jpg",
+      "bytes": 377594,
+      "sha256": "0df80a2247b2df4420b5f56af2f9ec51aeac2f885da1b8404fb4653b772645df"
+    },
+    {
+      "path": "images/before/shoes-centre.jpg",
+      "bytes": 309240,
+      "sha256": "8387a78a8cb193f6e4452295b8b7883474ed448b29e36c45fce0d4db411096f7"
+    },
+    {
+      "path": "images/before/shoes-entrance.jpg",
+      "bytes": 350537,
+      "sha256": "e704c52362b2dfa6ee61dd9c3c90fc93d9ea3dbcb628973340f705a5c52cfb81"
+    },
+    {
+      "path": "images/before/shoes-rear.jpg",
+      "bytes": 378280,
+      "sha256": "3fd4bfcfd8e55755fbb45b6213a3818625ae807d37902c75d0c8f03f0fa52ee8"
+    },
+    {
+      "path": "images/commons-after/A-B1-food.jpg",
+      "bytes": 400456,
+      "sha256": "fb2fdaa17a7351912fe78c773260a170ceed7f180309f132f4dae17e17d0caf7"
+    },
+    {
+      "path": "images/commons-after/A-RF.jpg",
+      "bytes": 419452,
+      "sha256": "9b5e8032eff06ba337952ae69a5412c1d5acff7c9d1b5ede8bca9887b12b51f1"
+    },
+    {
+      "path": "images/commons-after/B-B1-food.jpg",
+      "bytes": 444710,
+      "sha256": "8407fb6c61c86a37bdb75220eb2673f0fc56a8ba1b12ec83ad56b51020222877"
+    },
+    {
+      "path": "images/commons-after/B-RF.jpg",
+      "bytes": 479763,
+      "sha256": "a63a28c175e2510a5c0999d79bcd8abb844901a4f46bdf9f26fc10b89f192131"
+    },
+    {
+      "path": "images/commons-after/C-RF.jpg",
+      "bytes": 463210,
+      "sha256": "e03c53ed644ff695ac7e57ffeccb4ba1a6bfa75f63106cb8641d71018a48b07c"
+    },
+    {
+      "path": "images/commons-after/captures.json",
+      "bytes": 4653,
+      "sha256": "a34d77e75c36c84b4de5502015df4d08bcaa1295dcfbd7f007d119a5a6442248"
+    },
+    {
+      "path": "images/commons-before/A-B1-food.jpg",
+      "bytes": 400404,
+      "sha256": "6333ac7aafa8de12feb8a7e22fc35c3e36e43a6b740bf106fcb4268425de2bbb"
+    },
+    {
+      "path": "images/commons-before/A-RF.jpg",
+      "bytes": 419452,
+      "sha256": "9b5e8032eff06ba337952ae69a5412c1d5acff7c9d1b5ede8bca9887b12b51f1"
+    },
+    {
+      "path": "images/commons-before/B-B1-food.jpg",
+      "bytes": 444862,
+      "sha256": "1e5b90477bb6b28efff566137b50d87b36b0584cd21c04fb9121c7e681d7cdca"
+    },
+    {
+      "path": "images/commons-before/B-RF.jpg",
+      "bytes": 479763,
+      "sha256": "a63a28c175e2510a5c0999d79bcd8abb844901a4f46bdf9f26fc10b89f192131"
+    },
+    {
+      "path": "images/commons-before/C-RF.jpg",
+      "bytes": 463210,
+      "sha256": "e03c53ed644ff695ac7e57ffeccb4ba1a6bfa75f63106cb8641d71018a48b07c"
+    },
+    {
+      "path": "images/commons-before/captures.json",
+      "bytes": 4653,
+      "sha256": "00b24c1cdb3295cda5e5c9e883d31e77f2b7f76b46602f2fdc0fb6e26e0d0b05"
+    },
+    {
+      "path": "images/equipment-views/captures.json",
+      "bytes": 6335,
+      "sha256": "1c4c11a7668c68e0ce4350beda7f165090425ed309de66fa7982aa8f5297e52d"
+    },
+    {
+      "path": "images/equipment-views/equipment-checkout.jpg",
+      "bytes": 422182,
+      "sha256": "13182549060feb08ac2413f2b3c6d3787bf85ecd915b486e41057dc1d7cbbb9c"
+    },
+    {
+      "path": "images/equipment-views/equipment-display.jpg",
+      "bytes": 401728,
+      "sha256": "23d44817a597cf6ca8ff97285e6857e70f0e8165cc4eb600391ba57239d1fae4"
+    },
+    {
+      "path": "images/equipment-views/equipment-fitting_room.jpg",
+      "bytes": 413161,
+      "sha256": "5df434968eb9d990f7e8755eb906ef2b09d7a5a7cdfeb6c904558914999cc910"
+    },
+    {
+      "path": "images/equipment-views/equipment-mirror.jpg",
+      "bytes": 319170,
+      "sha256": "495add5815a8063d872c744e93dd6f5091530d9fbcf52512aa2dd096ff340188"
+    },
+    {
+      "path": "images/equipment-views/equipment-photo_booth.jpg",
+      "bytes": 318333,
+      "sha256": "69e05e583d8c9f72d58781ffed1e75e947763ebfa72486979a0b7f1de7294379"
+    },
+    {
+      "path": "index.html",
+      "bytes": 45272,
+      "sha256": "2ba326c302592bc128f322eca08dd7c2cc770972060d2ee6b9cfeaa3736a833b"
+    },
+    {
+      "path": "main-game-protection.json",
+      "bytes": 82,
+      "sha256": "2f54a18af231833521df7b9753386213831c77495de9f405754d1c876cae53da"
+    },
+    {
+      "path": "performance-crowd/A-1F-book-full_43_static.jpg",
+      "bytes": 560562,
+      "sha256": "714c51b7c247afa75f96bca45c8e7bcd420a61bc4592543929f6832d84a59ad4"
+    },
+    {
+      "path": "performance-crowd/A-1F-book-full_none_static.jpg",
+      "bytes": 560562,
+      "sha256": "714c51b7c247afa75f96bca45c8e7bcd420a61bc4592543929f6832d84a59ad4"
+    },
+    {
+      "path": "performance-crowd/B-1F-time-full_43_static.jpg",
+      "bytes": 371153,
+      "sha256": "167c08ae5902ffdf9313121f07efa0f3688511c491056221ba17007928fad56b"
+    },
+    {
+      "path": "performance-crowd/B-1F-time-full_none_static.jpg",
+      "bytes": 371124,
+      "sha256": "43f1e0890daafa4ece2ed631bad50400856f7a6e89d8e7ef5be0df8d9aed9af5"
+    },
+    {
+      "path": "performance-crowd/C-1F-yard-full_43_static.jpg",
+      "bytes": 411265,
+      "sha256": "d9f7c3f4e8f2cd470b528d1d4c652b1dd3d428bf15a354d59c0242415f2e05ad"
+    },
+    {
+      "path": "performance-crowd/C-1F-yard-full_none_static.jpg",
+      "bytes": 404135,
+      "sha256": "cb9d20578449bedf772f39018929535a1637d208b81a64b886455beefeee9add"
+    },
+    {
+      "path": "performance-crowd/profile.json",
+      "bytes": 24263,
+      "sha256": "94ab30b386e5069216c599cca984219e8a412c0fbf42d9aec1fb3a2def7eed8d"
+    },
+    {
+      "path": "performance-crowd/scene-inventory.json",
+      "bytes": 8384226,
+      "sha256": "cae57086727c295598a3292989451fe967efa4b094d9fa8fb87fd4651565593d"
+    },
+    {
+      "path": "performance-summary.json",
+      "bytes": 7435,
+      "sha256": "7616cf31a34acd4e484e4f2717be98c1447239deca06a2bbd7399fbc3af550b9"
+    },
+    {
+      "path": "performance-v23/A-1F-book-full_none_static.jpg",
+      "bytes": 507485,
+      "sha256": "32a54c62dc707450e657929c01b11303afe53bec0d8620f9fc32b57017b20f61"
+    },
+    {
+      "path": "performance-v23/A-1F-west-full_none_static.jpg",
+      "bytes": 444783,
+      "sha256": "38f30a61163d6ce9b373a5dd3eb49804e3f6703f4d1dcdf6aaf02c116c229387"
+    },
+    {
+      "path": "performance-v23/A-RF-full_none_static.jpg",
+      "bytes": 419339,
+      "sha256": "75d4679c0c46fd19a5ddacaef2b6e432c7fc6e5d5be328562d3966ce33ac3c07"
+    },
+    {
+      "path": "performance-v23/B-1F-time-full_none_static.jpg",
+      "bytes": 371124,
+      "sha256": "574dfcce9ccbdf14d0716e59c45968b70212e48b46852dffa9c143c7463ccd10"
+    },
+    {
+      "path": "performance-v23/C-1F-yard-full_none_static.jpg",
+      "bytes": 404177,
+      "sha256": "49bb17f0aa46dd60fe42737a23eaf5efcf7657ca971268d35a3e1bb2b8e0d7f2"
+    },
+    {
+      "path": "performance-v23/profile.json",
+      "bytes": 13373,
+      "sha256": "ed1f2f2ed5f20e46f3896de7bc7980ae370c37350e17e41faedbcce747a34ec6"
+    },
+    {
+      "path": "performance-v23/scene-inventory.json",
+      "bytes": 7933055,
+      "sha256": "c99261dde5aefaa644cbfb9a928b7a6f1941968a82a9f613571e0236c2e08203"
+    },
+    {
+      "path": "performance-v24/A-1F-book-full_none_static.jpg",
+      "bytes": 560562,
+      "sha256": "714c51b7c247afa75f96bca45c8e7bcd420a61bc4592543929f6832d84a59ad4"
+    },
+    {
+      "path": "performance-v24/A-1F-west-full_none_static.jpg",
+      "bytes": 446191,
+      "sha256": "f1f7d8e5ebd9ed9701573403c431b8e25bc928d469eb57125bba7a3cae2f6d63"
+    },
+    {
+      "path": "performance-v24/A-RF-full_none_static.jpg",
+      "bytes": 419339,
+      "sha256": "75d4679c0c46fd19a5ddacaef2b6e432c7fc6e5d5be328562d3966ce33ac3c07"
+    },
+    {
+      "path": "performance-v24/B-1F-time-full_none_static.jpg",
+      "bytes": 371124,
+      "sha256": "43f1e0890daafa4ece2ed631bad50400856f7a6e89d8e7ef5be0df8d9aed9af5"
+    },
+    {
+      "path": "performance-v24/C-1F-yard-full_none_static.jpg",
+      "bytes": 404135,
+      "sha256": "cb9d20578449bedf772f39018929535a1637d208b81a64b886455beefeee9add"
+    },
+    {
+      "path": "performance-v24/profile.json",
+      "bytes": 13368,
+      "sha256": "4c052b1efa5c93b3c8138d883a2a4ac2dc1b661a2b70cbba7aeb7e64568a7f4b"
+    },
+    {
+      "path": "performance-v24/scene-inventory.json",
+      "bytes": 8384226,
+      "sha256": "cae57086727c295598a3292989451fe967efa4b094d9fa8fb87fd4651565593d"
+    },
+    {
+      "path": "performance-v24-local-resources/A-1F-book-full_none_static.jpg",
+      "bytes": 560562,
+      "sha256": "714c51b7c247afa75f96bca45c8e7bcd420a61bc4592543929f6832d84a59ad4"
+    },
+    {
+      "path": "performance-v24-local-resources/A-1F-west-full_none_static.jpg",
+      "bytes": 446191,
+      "sha256": "f1f7d8e5ebd9ed9701573403c431b8e25bc928d469eb57125bba7a3cae2f6d63"
+    },
+    {
+      "path": "performance-v24-local-resources/A-RF-full_none_static.jpg",
+      "bytes": 419339,
+      "sha256": "75d4679c0c46fd19a5ddacaef2b6e432c7fc6e5d5be328562d3966ce33ac3c07"
+    },
+    {
+      "path": "performance-v24-local-resources/B-1F-time-full_none_static.jpg",
+      "bytes": 371124,
+      "sha256": "43f1e0890daafa4ece2ed631bad50400856f7a6e89d8e7ef5be0df8d9aed9af5"
+    },
+    {
+      "path": "performance-v24-local-resources/C-1F-yard-full_none_static.jpg",
+      "bytes": 404135,
+      "sha256": "cb9d20578449bedf772f39018929535a1637d208b81a64b886455beefeee9add"
+    },
+    {
+      "path": "performance-v24-local-resources/profile.json",
+      "bytes": 13375,
+      "sha256": "6d37e860d311331db498407ee26e22835f6ea0d876aba7cd9ff25639bc243358"
+    },
+    {
+      "path": "performance-v24-local-resources/scene-inventory.json",
+      "bytes": 8384226,
+      "sha256": "f0bd76e59d6439fe2d3023a528bbc5d374e9c40cca48b3da0f2366c4d8d4a8e1"
+    },
+    {
+      "path": "project-package.json",
+      "bytes": 182,
+      "sha256": "e53fa5fa1ea3330faa3436a43497a6189ba3fb0bbf4ac26535f1f49083d49372"
+    },
+    {
+      "path": "quality-review.md",
+      "bytes": 3199,
+      "sha256": "da88282041f41322b3d640ce6315daa3c3938c422894c30d3ba22cad82f0539b"
+    },
+    {
+      "path": "remaining-issues.json",
+      "bytes": 3724,
+      "sha256": "417bed0e10f3ac6019dd7ffbc189a74bb28db080928bf147b82b8cc43270eafd"
+    },
+    {
+      "path": "source-compression.json",
+      "bytes": 247,
+      "sha256": "97261300a76f895e629f0dfd876c0883390bd57fa67bf2779f430bf7a549bc4a"
+    },
+    {
+      "path": "tables/全480店舗監査.csv",
+      "bytes": 79900,
+      "sha256": "5f36f2ca1a9c0469ad4c9adcb32ef24189f06e402b8d62fea6e45567c3642f63"
+    },
+    {
+      "path": "tables/全設備接近位置.csv",
+      "bytes": 1792943,
+      "sha256": "97c876b841a2abd107acdb45c462fac2664b2810ba9977bba3b37427e540f75d"
+    },
+    {
+      "path": "tables/反復39店舗比較.csv",
+      "bytes": 9838,
+      "sha256": "df2d0c114a3dbe5d07ac3b5e9c6339111ea03d5774cf8d8195312f6d6c455709"
+    },
+    {
+      "path": "tables/同条件性能比較.csv",
+      "bytes": 2202,
+      "sha256": "a7e4f1a931b56814c27f64b9d05244cf9887f4c4620a28a36eec97303f3a1dfd"
+    },
+    {
+      "path": "tables/密度12区画比較.csv",
+      "bytes": 2873,
+      "sha256": "ede80f71b24db2887ac3848fa77ee732347c7fa7d983cb80e4e6ce1ef52110bf"
+    },
+    {
+      "path": "tables/旧155設備検証.csv",
+      "bytes": 38116,
+      "sha256": "5af6e240eb4c374f553fa6a2a12d63f9a993dc43a51dfe1cc7bd56260f53676e"
+    },
+    {
+      "path": "tables/残存接近位置不合格.csv",
+      "bytes": 533,
+      "sha256": "72a378127da27ab3bb9d84ca72d705f72ac61b60f95385a6e4d820e9e17dad1d"
+    },
+    {
+      "path": "tables/重点30店舗.csv",
+      "bytes": 7025,
+      "sha256": "398dd22311bc365863116dc5c6299f2c93dafc4ba49bf79484b4d9895f05d9cf"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2986,
+      "sha256": "fa324aa84563ac1f6f7a9f28c1ca36d01a44ab4aa84d9365ecbfba84e50f22d0"
+    }
+  ],
+  "offline_gallery": true,
+  "all_local_links_valid": true,
+  "split": false
+}

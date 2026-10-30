@@ -1,0 +1,760 @@
+{
+  "60FPS_verified": false,
+  "Engine_max_fps": 144,
+  "VSync": 1,
+  "Windows_GPU": false,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "cases": [
+    {
+      "camera": {
+        "category": "book",
+        "eye": [
+          397.777370698996,
+          1.65,
+          -53.1782330530823
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "A-1F-book",
+        "look": [
+          397.88452612311,
+          1.0,
+          -67.0666102256896
+        ],
+        "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+        "store_id": "A1F-007",
+        "title": "A館 1F / book / entry",
+        "variants": [
+          "normal",
+          "C",
+          "ES"
+        ],
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 1930.0,
+          "objects": 1946.0,
+          "physics_seconds": 0.000339,
+          "primitives": 1925544.0,
+          "process_seconds": 2.604924,
+          "render_CPU_ms": 4.67700004577637,
+          "render_GPU_ms": 2537.35107421875,
+          "static_memory_bytes": 1984358009.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 5146.409
+        },
+        {
+          "draw_calls": 1930.0,
+          "objects": 1946.0,
+          "physics_seconds": 0.000401,
+          "primitives": 1925544.0,
+          "process_seconds": 2.546966,
+          "render_CPU_ms": 4.69299983978271,
+          "render_GPU_ms": 2579.69091796875,
+          "static_memory_bytes": 1984359197.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2688.348
+        },
+        {
+          "draw_calls": 1930.0,
+          "objects": 1946.0,
+          "physics_seconds": 0.000346,
+          "primitives": 1925544.0,
+          "process_seconds": 2.686986,
+          "render_CPU_ms": 5.11800003051758,
+          "render_GPU_ms": 2514.61108398438,
+          "static_memory_bytes": 1984360305.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2508.364
+        },
+        {
+          "draw_calls": 1930.0,
+          "objects": 1946.0,
+          "physics_seconds": 0.000336,
+          "primitives": 1925544.0,
+          "process_seconds": 2.50657,
+          "render_CPU_ms": 7.25400018692017,
+          "render_GPU_ms": 2656.69311523438,
+          "static_memory_bytes": 1984361437.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2610.663
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "book",
+        "eye": [
+          397.777370698996,
+          1.65,
+          -53.1782330530823
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "A-1F-book",
+        "look": [
+          397.88452612311,
+          1.0,
+          -67.0666102256896
+        ],
+        "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+        "store_id": "A1F-007",
+        "title": "A館 1F / book / entry",
+        "variants": [
+          "normal",
+          "C",
+          "ES"
+        ],
+        "wing": "A"
+      },
+      "camera_motion": "static",
+      "condition": "full_43_static",
+      "frames": [
+        {
+          "draw_calls": 1960.0,
+          "objects": 1976.0,
+          "physics_seconds": 0.014316,
+          "primitives": 1986970.0,
+          "process_seconds": 2.748032,
+          "render_CPU_ms": 5.21700000762939,
+          "render_GPU_ms": 2764.0439453125,
+          "static_memory_bytes": 1984453985.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 5244.701
+        },
+        {
+          "draw_calls": 1960.0,
+          "objects": 1976.0,
+          "physics_seconds": 0.012355,
+          "primitives": 1986970.0,
+          "process_seconds": 2.444228,
+          "render_CPU_ms": 7.95499992370605,
+          "render_GPU_ms": 2722.48291015625,
+          "static_memory_bytes": 1984455173.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2509.161
+        },
+        {
+          "draw_calls": 1960.0,
+          "objects": 1976.0,
+          "physics_seconds": 0.008953,
+          "primitives": 1986970.0,
+          "process_seconds": 2.447801,
+          "render_CPU_ms": 5.52699995040894,
+          "render_GPU_ms": 2414.99291992188,
+          "static_memory_bytes": 1984456281.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2498.159
+        },
+        {
+          "draw_calls": 1960.0,
+          "objects": 1976.0,
+          "physics_seconds": 0.013405,
+          "primitives": 1986970.0,
+          "process_seconds": 2.439008,
+          "render_CPU_ms": 4.76399993896484,
+          "render_GPU_ms": 2423.14794921875,
+          "static_memory_bytes": 1984457413.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2434.397
+        }
+      ],
+      "simulated_NPC_seconds": 0.533333333333334
+    },
+    {
+      "camera": {
+        "category": "book",
+        "eye": [
+          397.777370698996,
+          1.65,
+          -53.1782330530823
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "A-1F-book",
+        "look": [
+          397.88452612311,
+          1.0,
+          -67.0666102256896
+        ],
+        "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+        "store_id": "A1F-007",
+        "title": "A館 1F / book / entry",
+        "variants": [
+          "normal",
+          "C",
+          "ES"
+        ],
+        "wing": "A"
+      },
+      "camera_motion": "Automated .12m/frame lateral camera trajectory, not a physical or human walk",
+      "condition": "full_43_camera_move",
+      "frames": [
+        {
+          "draw_calls": 1958.0,
+          "objects": 1974.0,
+          "physics_seconds": 0.01459,
+          "primitives": 1986358.0,
+          "process_seconds": 2.42404,
+          "render_CPU_ms": 4.45499992370605,
+          "render_GPU_ms": 2290.00903320312,
+          "static_memory_bytes": 1984481645.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 5000.917
+        },
+        {
+          "draw_calls": 1960.0,
+          "objects": 1976.0,
+          "physics_seconds": 0.01395,
+          "primitives": 1986656.0,
+          "process_seconds": 2.519855,
+          "render_CPU_ms": 4.49399995803833,
+          "render_GPU_ms": 2403.373046875,
+          "static_memory_bytes": 1984482833.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2687.061
+        },
+        {
+          "draw_calls": 1959.0,
+          "objects": 1975.0,
+          "physics_seconds": 0.009944,
+          "primitives": 1974542.0,
+          "process_seconds": 2.61663,
+          "render_CPU_ms": 4.57000017166138,
+          "render_GPU_ms": 2492.708984375,
+          "static_memory_bytes": 1984483541.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2524.632
+        },
+        {
+          "draw_calls": 1958.0,
+          "objects": 1974.0,
+          "physics_seconds": 0.008471,
+          "primitives": 1974530.0,
+          "process_seconds": 2.465412,
+          "render_CPU_ms": 6.72800016403198,
+          "render_GPU_ms": 2585.68188476562,
+          "static_memory_bytes": 1984484673.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2448.738
+        }
+      ],
+      "simulated_NPC_seconds": 0.533333333333331
+    },
+    {
+      "camera": {
+        "category": "wayfinding",
+        "eye": [
+          -187.083134198433,
+          1.65,
+          -28.2958255355604
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "B-1F-time",
+        "look": [
+          -189.036626839687,
+          1.5,
+          -31.7863651071121
+        ],
+        "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+        "title": "B館 1F / 誘導・共用景観",
+        "variants": [
+          "normal"
+        ],
+        "wing": "B"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 1924.0,
+          "objects": 1926.0,
+          "physics_seconds": 0.000469,
+          "primitives": 2165316.0,
+          "process_seconds": 1.865524,
+          "render_CPU_ms": 6.75600004196167,
+          "render_GPU_ms": 1926.03295898438,
+          "static_memory_bytes": 1986980705.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3884.831
+        },
+        {
+          "draw_calls": 1924.0,
+          "objects": 1926.0,
+          "physics_seconds": 0.000373,
+          "primitives": 2165316.0,
+          "process_seconds": 2.020557,
+          "render_CPU_ms": 4.32100009918213,
+          "render_GPU_ms": 1840.89599609375,
+          "static_memory_bytes": 1986981893.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 1867.823
+        },
+        {
+          "draw_calls": 1924.0,
+          "objects": 1926.0,
+          "physics_seconds": 0.00077,
+          "primitives": 2165316.0,
+          "process_seconds": 1.864103,
+          "render_CPU_ms": 5.17000007629395,
+          "render_GPU_ms": 1987.55004882812,
+          "static_memory_bytes": 1986983001.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 1939.939
+        },
+        {
+          "draw_calls": 1924.0,
+          "objects": 1926.0,
+          "physics_seconds": 0.000389,
+          "primitives": 2165316.0,
+          "process_seconds": 1.940512,
+          "render_CPU_ms": 3.89400005340576,
+          "render_GPU_ms": 1840.8349609375,
+          "static_memory_bytes": 1986984133.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2026.146
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "wayfinding",
+        "eye": [
+          -187.083134198433,
+          1.65,
+          -28.2958255355604
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "B-1F-time",
+        "look": [
+          -189.036626839687,
+          1.5,
+          -31.7863651071121
+        ],
+        "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+        "title": "B館 1F / 誘導・共用景観",
+        "variants": [
+          "normal"
+        ],
+        "wing": "B"
+      },
+      "camera_motion": "static",
+      "condition": "full_43_static",
+      "frames": [
+        {
+          "draw_calls": 1928.0,
+          "objects": 1934.0,
+          "physics_seconds": 0.014427,
+          "primitives": 2165688.0,
+          "process_seconds": 1.841493,
+          "render_CPU_ms": 3.84599995613098,
+          "render_GPU_ms": 1937.32104492188,
+          "static_memory_bytes": 1987004661.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3892.556
+        },
+        {
+          "draw_calls": 1928.0,
+          "objects": 1934.0,
+          "physics_seconds": 0.014584,
+          "primitives": 2165688.0,
+          "process_seconds": 1.992875,
+          "render_CPU_ms": 3.85400009155273,
+          "render_GPU_ms": 1820.26794433594,
+          "static_memory_bytes": 1987005849.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2110.145
+        },
+        {
+          "draw_calls": 1928.0,
+          "objects": 1934.0,
+          "physics_seconds": 0.009728,
+          "primitives": 2165688.0,
+          "process_seconds": 2.039351,
+          "render_CPU_ms": 3.68300008773804,
+          "render_GPU_ms": 1963.75903320312,
+          "static_memory_bytes": 1987006957.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2168.963
+        },
+        {
+          "draw_calls": 1928.0,
+          "objects": 1934.0,
+          "physics_seconds": 0.008319,
+          "primitives": 2165688.0,
+          "process_seconds": 2.115142,
+          "render_CPU_ms": 4.59999990463257,
+          "render_GPU_ms": 2012.20397949219,
+          "static_memory_bytes": 1987008817.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2274.218
+        }
+      ],
+      "simulated_NPC_seconds": 0.533333333333331
+    },
+    {
+      "camera": {
+        "category": "wayfinding",
+        "eye": [
+          -187.083134198433,
+          1.65,
+          -28.2958255355604
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "B-1F-time",
+        "look": [
+          -189.036626839687,
+          1.5,
+          -31.7863651071121
+        ],
+        "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+        "title": "B館 1F / 誘導・共用景観",
+        "variants": [
+          "normal"
+        ],
+        "wing": "B"
+      },
+      "camera_motion": "Automated .12m/frame lateral camera trajectory, not a physical or human walk",
+      "condition": "full_43_camera_move",
+      "frames": [
+        {
+          "draw_calls": 1931.0,
+          "objects": 1937.0,
+          "physics_seconds": 0.01451,
+          "primitives": 2166998.0,
+          "process_seconds": 2.068223,
+          "render_CPU_ms": 5.7189998626709,
+          "render_GPU_ms": 2196.19311523438,
+          "static_memory_bytes": 1987037329.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 4090.07
+        },
+        {
+          "draw_calls": 1934.0,
+          "objects": 1940.0,
+          "physics_seconds": 0.013996,
+          "primitives": 2167032.0,
+          "process_seconds": 1.961486,
+          "render_CPU_ms": 4.10699987411499,
+          "render_GPU_ms": 2046.84802246094,
+          "static_memory_bytes": 1987045141.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2059.253
+        },
+        {
+          "draw_calls": 1937.0,
+          "objects": 1943.0,
+          "physics_seconds": 0.008847,
+          "primitives": 2167068.0,
+          "process_seconds": 2.004753,
+          "render_CPU_ms": 4.22300004959106,
+          "render_GPU_ms": 1935.2060546875,
+          "static_memory_bytes": 1987049185.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 2101.254
+        },
+        {
+          "draw_calls": 1941.0,
+          "objects": 1947.0,
+          "physics_seconds": 0.011155,
+          "primitives": 2167402.0,
+          "process_seconds": 2.036041,
+          "render_CPU_ms": 3.8289999961853,
+          "render_GPU_ms": 1979.17504882812,
+          "static_memory_bytes": 1987056941.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 1947.272
+        }
+      ],
+      "simulated_NPC_seconds": 0.533333333333331
+    },
+    {
+      "camera": {
+        "category": "wayfinding",
+        "eye": [
+          -83.230240220756,
+          1.65,
+          -216.463919006598
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "C-1F-yard",
+        "look": [
+          -84.0979620520306,
+          1.5,
+          -212.559170765862
+        ],
+        "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+        "title": "C館 1F / 誘導・共用景観",
+        "variants": [
+          "normal"
+        ],
+        "wing": "C"
+      },
+      "camera_motion": "static",
+      "condition": "full_none_static",
+      "frames": [
+        {
+          "draw_calls": 5311.0,
+          "objects": 5329.0,
+          "physics_seconds": 0.000743,
+          "primitives": 3069237.0,
+          "process_seconds": 3.711984,
+          "render_CPU_ms": 12.5150003433228,
+          "render_GPU_ms": 3478.00903320312,
+          "static_memory_bytes": 1987950561.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 7105.497
+        },
+        {
+          "draw_calls": 5311.0,
+          "objects": 5329.0,
+          "physics_seconds": 0.000384,
+          "primitives": 3069237.0,
+          "process_seconds": 3.40104,
+          "render_CPU_ms": 11.5939998626709,
+          "render_GPU_ms": 3671.44995117188,
+          "static_memory_bytes": 1987951749.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3288.637
+        },
+        {
+          "draw_calls": 5311.0,
+          "objects": 5329.0,
+          "physics_seconds": 0.000361,
+          "primitives": 3069237.0,
+          "process_seconds": 3.286768,
+          "render_CPU_ms": 10.03600025177,
+          "render_GPU_ms": 3352.38208007812,
+          "static_memory_bytes": 1987952857.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3390.034
+        },
+        {
+          "draw_calls": 5311.0,
+          "objects": 5329.0,
+          "physics_seconds": 0.000354,
+          "primitives": 3069237.0,
+          "process_seconds": 3.390116,
+          "render_CPU_ms": 8.20199966430664,
+          "render_GPU_ms": 3251.9990234375,
+          "static_memory_bytes": 1987953989.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3457.273
+        }
+      ],
+      "simulated_NPC_seconds": 0.0
+    },
+    {
+      "camera": {
+        "category": "wayfinding",
+        "eye": [
+          -83.230240220756,
+          1.65,
+          -216.463919006598
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "C-1F-yard",
+        "look": [
+          -84.0979620520306,
+          1.5,
+          -212.559170765862
+        ],
+        "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+        "title": "C館 1F / 誘導・共用景観",
+        "variants": [
+          "normal"
+        ],
+        "wing": "C"
+      },
+      "camera_motion": "static",
+      "condition": "full_43_static",
+      "frames": [
+        {
+          "draw_calls": 5443.0,
+          "objects": 5510.0,
+          "physics_seconds": 0.019715,
+          "primitives": 3214506.0,
+          "process_seconds": 3.634337,
+          "render_CPU_ms": 9.24600028991699,
+          "render_GPU_ms": 3396.8701171875,
+          "static_memory_bytes": 1988029217.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 7058.607
+        },
+        {
+          "draw_calls": 5443.0,
+          "objects": 5510.0,
+          "physics_seconds": 0.017613,
+          "primitives": 3214506.0,
+          "process_seconds": 3.366702,
+          "render_CPU_ms": 9.20100021362305,
+          "render_GPU_ms": 3597.26196289062,
+          "static_memory_bytes": 1988033013.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3510.024
+        },
+        {
+          "draw_calls": 5443.0,
+          "objects": 5510.0,
+          "physics_seconds": 0.009373,
+          "primitives": 3214506.0,
+          "process_seconds": 3.447441,
+          "render_CPU_ms": 8.90200042724609,
+          "render_GPU_ms": 3329.04711914062,
+          "static_memory_bytes": 1988031513.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3463.586
+        },
+        {
+          "draw_calls": 5443.0,
+          "objects": 5510.0,
+          "physics_seconds": 0.010911,
+          "primitives": 3214506.0,
+          "process_seconds": 3.399739,
+          "render_CPU_ms": 7.97599983215332,
+          "render_GPU_ms": 3412.21801757812,
+          "static_memory_bytes": 1988032645.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3432.71
+        }
+      ],
+      "simulated_NPC_seconds": 0.533333333333332
+    },
+    {
+      "camera": {
+        "category": "wayfinding",
+        "eye": [
+          -83.230240220756,
+          1.65,
+          -216.463919006598
+        ],
+        "floor": "1F",
+        "fov": 65.0,
+        "id": "C-1F-yard",
+        "look": [
+          -84.0979620520306,
+          1.5,
+          -212.559170765862
+        ],
+        "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+        "title": "C館 1F / 誘導・共用景観",
+        "variants": [
+          "normal"
+        ],
+        "wing": "C"
+      },
+      "camera_motion": "Automated .12m/frame lateral camera trajectory, not a physical or human walk",
+      "condition": "full_43_camera_move",
+      "frames": [
+        {
+          "draw_calls": 5441.0,
+          "objects": 5508.0,
+          "physics_seconds": 0.014848,
+          "primitives": 3214492.0,
+          "process_seconds": 3.414123,
+          "render_CPU_ms": 8.62800025939941,
+          "render_GPU_ms": 3376.63110351562,
+          "static_memory_bytes": 1988074441.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 6919.109
+        },
+        {
+          "draw_calls": 5441.0,
+          "objects": 5508.0,
+          "physics_seconds": 0.018787,
+          "primitives": 3215098.0,
+          "process_seconds": 3.440802,
+          "render_CPU_ms": 8.65799999237061,
+          "render_GPU_ms": 3384.31689453125,
+          "static_memory_bytes": 1988075629.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3551.057
+        },
+        {
+          "draw_calls": 5437.0,
+          "objects": 5504.0,
+          "physics_seconds": 0.008224,
+          "primitives": 3215055.0,
+          "process_seconds": 3.49534,
+          "render_CPU_ms": 8.38799953460693,
+          "render_GPU_ms": 3404.64306640625,
+          "static_memory_bytes": 1988079345.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3518.273
+        },
+        {
+          "draw_calls": 5437.0,
+          "objects": 5504.0,
+          "physics_seconds": 0.010722,
+          "primitives": 3215055.0,
+          "process_seconds": 3.457599,
+          "render_CPU_ms": 8.00699996948242,
+          "render_GPU_ms": 3457.30200195312,
+          "static_memory_bytes": 1988077869.0,
+          "texture_memory_bytes": 1147017728.0,
+          "video_memory_bytes": 1609013024.0,
+          "wall_frame_ms": 3580.733
+        }
+      ],
+      "simulated_NPC_seconds": 0.533333333333331
+    }
+  ],
+  "effects_default": {
+    "glow_enabled": true,
+    "ssao_enabled": true,
+    "ssil_enabled": true,
+    "ssr_enabled": true
+  },
+  "human_playtest": false,
+  "physics_hz": 60,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "scope": "Render object monitor counts actual rendered GeometryInstances, not individual merchandise inside a MultiMesh. Video memory here is renderer-reported allocation, not Windows VRAM. Short factor diagnostics,2 warm-up frames and configured sampled frames. Software GPU timings are not Windows GPU performance. Objects hidden for diagnostic isolation only, never exported as a quality setting. Render CPU/GPU timing zero may mean backend unsupported. Current snapshot includes baked details with conservative categories."
+}

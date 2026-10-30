@@ -1,0 +1,6994 @@
+{
+  "cases": [
+    {
+      "end": [
+        465.052398681641,
+        10.8758430480957,
+        -34.9114685058594
+      ],
+      "human_playtest": false,
+      "id": "V21-A3F-012-checkout-84",
+      "lowest_y": 10.8751049041748,
+      "max_opposite_vertical_step_m": 0.00074005126953125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          468.283294677734,
+          10.875,
+          -40.1520538330078
+        ],
+        [
+          464.751586914062,
+          10.875,
+          -35.1046981811523
+        ],
+        [
+          465.142547607422,
+          10.875,
+          -34.7436294555664
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A3F-012",
+      "ticks": 191
+    },
+    {
+      "end": [
+        474.043304443359,
+        10.8758430480957,
+        -35.4374580383301
+      ],
+      "human_playtest": false,
+      "id": "V21-A3F-012-capsule-90",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          468.283294677734,
+          10.875,
+          -40.1520538330078
+        ],
+        [
+          469.951599121094,
+          10.875,
+          -37.7047004699707
+        ],
+        [
+          474.501586914062,
+          10.875,
+          -37.0546989440918
+        ],
+        [
+          475.151611328125,
+          10.875,
+          -36.4047012329102
+        ],
+        [
+          475.151611328125,
+          10.875,
+          -35.1046981811523
+        ],
+        [
+          473.856994628906,
+          10.875,
+          -35.4611625671387
+        ]
+      ],
+      "role": "display",
+      "store_id": "A3F-012",
+      "ticks": 316
+    },
+    {
+      "end": [
+        465.950469970703,
+        10.8758430480957,
+        -28.4960250854492
+      ],
+      "human_playtest": false,
+      "id": "V21-A3F-012-photobooth-91",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          468.283294677734,
+          10.875,
+          -40.1520538330078
+        ],
+        [
+          467.351593017578,
+          10.875,
+          -31.2047004699707
+        ],
+        [
+          465.867095947266,
+          10.875,
+          -28.325813293457
+        ]
+      ],
+      "role": "photo_booth",
+      "store_id": "A3F-012",
+      "ticks": 361
+    },
+    {
+      "end": [
+        -288.064239501953,
+        -5.34915781021118,
+        -27.7717304229736
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-94",
+      "lowest_y": -5.34989547729492,
+      "max_opposite_vertical_step_m": 0.000740528106689453,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -282.760009765625,
+          -5.34999990463257,
+          -12.1100006103516
+        ],
+        [
+          -286.010009765625,
+          -5.34999990463257,
+          -23.8099994659424
+        ],
+        [
+          -288.149993896484,
+          -5.34999990463257,
+          -27.9400005340576
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 603
+    },
+    {
+      "end": [
+        -294.791564941406,
+        -5.34915781021118,
+        -27.7389373779297
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-95",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -286.660003662109,
+          -5.34999990463257,
+          -12.7600002288818
+        ],
+        [
+          -287.309997558594,
+          -5.34999990463257,
+          -16.0100002288818
+        ],
+        [
+          -289.260009765625,
+          -5.34999990463257,
+          -16.6599998474121
+        ],
+        [
+          -291.860015869141,
+          -5.34999990463257,
+          -22.5100002288818
+        ],
+        [
+          -293.160003662109,
+          -5.34999990463257,
+          -23.1599998474121
+        ],
+        [
+          -293.809997558594,
+          -5.34999990463257,
+          -23.8099994659424
+        ],
+        [
+          -294.843994140625,
+          -5.34999990463257,
+          -27.9300003051758
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 739
+    },
+    {
+      "end": [
+        -302.258605957031,
+        -5.34915781021118,
+        -27.7593879699707
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-96",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -289.260009765625,
+          -5.34999990463257,
+          -13.4099998474121
+        ],
+        [
+          -292.510009765625,
+          -5.34999990463257,
+          -16.0100002288818
+        ],
+        [
+          -293.809997558594,
+          -5.34999990463257,
+          -16.6599998474121
+        ],
+        [
+          -297.059997558594,
+          -5.34999990463257,
+          -19.9099998474121
+        ],
+        [
+          -297.709991455078,
+          -5.34999990463257,
+          -19.9099998474121
+        ],
+        [
+          -302.260009765625,
+          -5.34999990463257,
+          -27.0599994659424
+        ],
+        [
+          -302.279998779297,
+          -5.34999990463257,
+          -27.9400005340576
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 876
+    },
+    {
+      "end": [
+        -310.602355957031,
+        -5.34915781021118,
+        -27.840539932251
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-97",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -289.260009765625,
+          -5.34999990463257,
+          -13.4099998474121
+        ],
+        [
+          -292.510009765625,
+          -5.34999990463257,
+          -16.0100002288818
+        ],
+        [
+          -293.809997558594,
+          -5.34999990463257,
+          -16.6599998474121
+        ],
+        [
+          -297.059997558594,
+          -5.34999990463257,
+          -19.9099998474121
+        ],
+        [
+          -297.709991455078,
+          -5.34999990463257,
+          -19.9099998474121
+        ],
+        [
+          -302.910003662109,
+          -5.34999990463257,
+          -23.1599998474121
+        ],
+        [
+          -304.860015869141,
+          -5.34999990463257,
+          -26.4099998474121
+        ],
+        [
+          -309.410003662109,
+          -5.34999990463257,
+          -27.0599994659424
+        ],
+        [
+          -310.753997802734,
+          -5.34999990463257,
+          -27.9300003051758
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 1076
+    },
+    {
+      "end": [
+        -286.370483398438,
+        -5.34915781021118,
+        1.38773846626282
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-98",
+      "lowest_y": -5.36573076248169,
+      "max_opposite_vertical_step_m": 0.0165729522705078,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -286.010009765625,
+          -5.34999990463257,
+          1.53999900817871
+        ],
+        [
+          -286.549987792969,
+          -5.34999990463257,
+          1.38999998569489
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 356
+    },
+    {
+      "end": [
+        -293.074859619141,
+        -5.34915781021118,
+        0.752098321914673
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-99",
+      "lowest_y": -5.36573076248169,
+      "max_opposite_vertical_step_m": 0.0165729522705078,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -290.559997558594,
+          -5.34999990463257,
+          -0.410001754760742
+        ],
+        [
+          -293.235992431641,
+          -5.34999990463257,
+          0.829999983310699
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 465
+    },
+    {
+      "end": [
+        -300.532806396484,
+        -5.34915781021118,
+        0.715986669063568
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-100",
+      "lowest_y": -5.36573076248169,
+      "max_opposite_vertical_step_m": 0.0165729522705078,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -288.610015869141,
+          -5.34999990463257,
+          -8.86000061035156
+        ],
+        [
+          -292.510009765625,
+          -5.34999990463257,
+          -5.61000061035156
+        ],
+        [
+          -293.160003662109,
+          -5.34999990463257,
+          -5.61000061035156
+        ],
+        [
+          -300.679992675781,
+          -5.34999990463257,
+          0.839999973773956
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 684
+    },
+    {
+      "end": [
+        -308.991638183594,
+        -5.34915781021118,
+        0.763116121292114
+      ],
+      "human_playtest": false,
+      "id": "V21-BB1-MARKET-wall_department-101",
+      "lowest_y": -5.36505270004272,
+      "max_opposite_vertical_step_m": 0.0158963203430176,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -281.149993896484,
+          -5.34999990463257,
+          -9.0
+        ],
+        [
+          -293.160003662109,
+          -5.34999990463257,
+          -8.86000061035156
+        ],
+        [
+          -296.410003662109,
+          -5.34999990463257,
+          -6.26000022888184
+        ],
+        [
+          -298.360015869141,
+          -5.34999990463257,
+          -5.61000061035156
+        ],
+        [
+          -301.610015869141,
+          -5.34999990463257,
+          -2.36000061035156
+        ],
+        [
+          -309.14599609375,
+          -5.34999990463257,
+          0.829999983310699
+        ]
+      ],
+      "role": "display",
+      "store_id": "BB1-MARKET",
+      "ticks": 923
+    },
+    {
+      "end": [
+        189.645263671875,
+        0.000822866160888225,
+        13.1739320755005
+      ],
+      "human_playtest": false,
+      "id": "V21-B1-037-arrival_display-144",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000587056158110499,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          187.418075561523,
+          0.0,
+          10.5043344497681
+        ],
+        [
+          190.094573974609,
+          0.0,
+          12.9527473449707
+        ],
+        [
+          189.52473449707,
+          0.0,
+          13.3124971389771
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-037",
+      "ticks": 117
+    },
+    {
+      "end": [
+        186.791427612305,
+        0.000802831898909062,
+        28.9414024353027
+      ],
+      "human_playtest": false,
+      "id": "V21-B1-037-window_mannequin-146",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.00752511620521545,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          187.418075561523,
+          0.0,
+          10.5043344497681
+        ],
+        [
+          190.094573974609,
+          0.0,
+          12.9527473449707
+        ],
+        [
+          190.744583129883,
+          0.0,
+          24.6527481079102
+        ],
+        [
+          186.679092407227,
+          0.0,
+          29.0691432952881
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-037",
+      "ticks": 632
+    },
+    {
+      "end": [
+        22.039134979248,
+        0.000934707932174206,
+        34.6130561828613
+      ],
+      "human_playtest": false,
+      "id": "V21-B1-N03-central_department-171",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000598657934460789,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          47.174072265625,
+          0.0,
+          30.4908180236816
+        ],
+        [
+          43.5040283203125,
+          0.0,
+          34.1623840332031
+        ],
+        [
+          37.0040283203125,
+          0.0,
+          33.5123863220215
+        ],
+        [
+          32.454029083252,
+          0.0,
+          36.1123847961426
+        ],
+        [
+          23.3540287017822,
+          0.0,
+          35.4623870849609
+        ],
+        [
+          21.8760185241699,
+          0.0,
+          34.5197448730469
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-N03",
+      "ticks": 825
+    },
+    {
+      "end": [
+        -165.142807006836,
+        0.000842076551634818,
+        -332.700256347656
+      ],
+      "human_playtest": false,
+      "id": "V21-C1F-CW-1-wall_department-194",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182560108602,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          0.0,
+          -326.498992919922
+        ],
+        [
+          -163.651947021484,
+          0.0,
+          -330.117736816406
+        ],
+        [
+          -164.951934814453,
+          0.0,
+          -331.417755126953
+        ],
+        [
+          -165.180084228516,
+          0.0,
+          -332.867828369141
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-1",
+      "ticks": 290
+    },
+    {
+      "end": [
+        -169.004684448242,
+        0.000842065142933279,
+        -331.892486572266
+      ],
+      "human_playtest": false,
+      "id": "V21-C1F-CW-1-wall_department-195",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182560108602,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          0.0,
+          -326.498992919922
+        ],
+        [
+          -169.17903137207,
+          0.0,
+          -331.979187011719
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-1",
+      "ticks": 363
+    },
+    {
+      "end": [
+        -174.723922729492,
+        0.000842071953229606,
+        -330.636535644531
+      ],
+      "human_playtest": false,
+      "id": "V21-C1F-CW-1-wall_department-196",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182560108602,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          0.0,
+          -326.498992919922
+        ],
+        [
+          -168.201934814453,
+          0.0,
+          -327.517761230469
+        ],
+        [
+          -174.883865356445,
+          0.0,
+          -330.71142578125
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-1",
+      "ticks": 519
+    },
+    {
+      "end": [
+        -163.004806518555,
+        0.000939574092626572,
+        -315.666961669922
+      ],
+      "human_playtest": false,
+      "id": "V21-C1F-CW-1-wall_department-197",
+      "lowest_y": -0.0157321747392416,
+      "max_opposite_vertical_step_m": 0.0165614750003442,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          0.0,
+          -326.498992919922
+        ],
+        [
+          -163.001937866211,
+          0.0,
+          -319.717742919922
+        ],
+        [
+          -163.651947021484,
+          0.0,
+          -315.817749023438
+        ],
+        [
+          -162.85530090332,
+          0.0,
+          -315.583892822266
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-1",
+      "ticks": 383
+    },
+    {
+      "end": [
+        -167.040420532227,
+        0.000942856830079108,
+        -314.696899414062
+      ],
+      "human_playtest": false,
+      "id": "V21-C1F-CW-1-wall_department-198",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182676523924,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          0.0,
+          -326.498992919922
+        ],
+        [
+          -167.551940917969,
+          0.0,
+          -315.817749023438
+        ],
+        [
+          -167.551940917969,
+          0.0,
+          -314.517761230469
+        ],
+        [
+          -166.854248046875,
+          0.0,
+          -314.695220947266
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-1",
+      "ticks": 474
+    },
+    {
+      "end": [
+        -172.400238037109,
+        0.000941303907893598,
+        -313.480926513672
+      ],
+      "human_playtest": false,
+      "id": "V21-C1F-CW-1-wall_department-199",
+      "lowest_y": -0.0157322995364666,
+      "max_opposite_vertical_step_m": 0.0165615939768031,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          0.0,
+          -326.498992919922
+        ],
+        [
+          -170.151947021484,
+          0.0,
+          -315.167755126953
+        ],
+        [
+          -170.801940917969,
+          0.0,
+          -313.867736816406
+        ],
+        [
+          -172.559097290039,
+          0.0,
+          -313.427490234375
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-1",
+      "ticks": 586
+    },
+    {
+      "end": [
+        545.125,
+        -5.34915781021118,
+        90.8074645996094
+      ],
+      "human_playtest": false,
+      "id": "V22-AB1-017-checkout-181",
+      "lowest_y": -5.34989547729492,
+      "max_opposite_vertical_step_m": 0.000740528106689453,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          547.736633300781,
+          -5.34999990463257,
+          78.6492919921875
+        ],
+        [
+          549.031677246094,
+          -5.34999990463257,
+          81.7496795654297
+        ],
+        [
+          545.054626464844,
+          -5.34999990463257,
+          90.9772186279297
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "AB1-017",
+      "ticks": 395
+    },
+    {
+      "end": [
+        341.818756103516,
+        -5.34917116165161,
+        -68.0301666259766
+      ],
+      "human_playtest": false,
+      "id": "V22-AB1-030-checkout-292",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          325.5,
+          -5.34999990463257,
+          -64.1500015258789
+        ],
+        [
+          329.690002441406,
+          -5.34999990463257,
+          -66.0600051879883
+        ],
+        [
+          341.389984130859,
+          -5.34999990463257,
+          -68.0100021362305
+        ],
+        [
+          342.0,
+          -5.34999990463257,
+          -68.0449981689453
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "AB1-030",
+      "ticks": 507
+    },
+    {
+      "end": [
+        377.040893554688,
+        -0.0185180306434631,
+        -31.9189682006836
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-004-central_department-381",
+      "lowest_y": -0.0291026681661606,
+      "max_opposite_vertical_step_m": 0.0165545530617237,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          374.149993896484,
+          0.0,
+          -28.6430282592773
+        ],
+        [
+          377.290008544922,
+          0.0,
+          -30.5452251434326
+        ],
+        [
+          377.028839111328,
+          0.0,
+          -32.0906410217285
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-004",
+      "ticks": 149
+    },
+    {
+      "end": [
+        384.159973144531,
+        0.000829366326797754,
+        -32.6423606872559
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-006-checkout-383",
+      "lowest_y": -0.00835202075541019,
+      "max_opposite_vertical_step_m": 0.00918473291676491,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          388.602142333984,
+          0.0,
+          -37.2489242553711
+        ],
+        [
+          384.036468505859,
+          0.0,
+          -32.5144157409668
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-006",
+      "ticks": 192
+    },
+    {
+      "end": [
+        470.719146728516,
+        -0.0157306827604771,
+        -24.8787784576416
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-014-living_room_scene-470",
+      "lowest_y": -0.0157306827604771,
+      "max_opposite_vertical_step_m": 0.0165725380065851,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          462.691223144531,
+          0.0,
+          -30.4320945739746
+        ],
+        [
+          467.006011962891,
+          0.0,
+          -28.604700088501
+        ],
+        [
+          470.846038818359,
+          0.0,
+          -24.7547912597656
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-014",
+      "ticks": 298
+    },
+    {
+      "end": [
+        600.435180664062,
+        0.000835360027849674,
+        4.99709272384644
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-021-kitchen-541",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000574429228436202,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          592.251708984375,
+          0.0,
+          4.35345935821533
+        ],
+        [
+          593.586181640625,
+          0.0,
+          5.4410285949707
+        ],
+        [
+          600.6259765625,
+          0.0,
+          4.98820638656616
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-021",
+      "ticks": 256
+    },
+    {
+      "end": [
+        547.109680175781,
+        -0.0181568264961243,
+        87.3591842651367
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-029-checkout-612",
+      "lowest_y": -0.0181981958448887,
+      "max_opposite_vertical_step_m": 0.0190221453085542,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          547.232788085938,
+          0.0,
+          79.513069152832
+        ],
+        [
+          548.447143554688,
+          0.0,
+          82.3413314819336
+        ],
+        [
+          547.070068359375,
+          0.0,
+          87.522102355957
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-029",
+      "ticks": 247
+    },
+    {
+      "end": [
+        410.64013671875,
+        0.000834045524243265,
+        99.4329147338867
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-038-checkout-708",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.00059259490808472,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          416.651245117188,
+          0.0,
+          98.9236221313477
+        ],
+        [
+          412.480438232422,
+          0.0,
+          100.108726501465
+        ],
+        [
+          410.464263916016,
+          0.0,
+          99.3776473999023
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-038",
+      "ticks": 188
+    },
+    {
+      "end": [
+        322.237365722656,
+        0.000809457269497216,
+        0.926396310329437
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-050-central_department-822",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000590544485021383,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          321.247955322266,
+          0.0,
+          -0.850000023841858
+        ],
+        [
+          322.322937011719,
+          0.0,
+          1.08000004291534
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-050",
+      "ticks": 61
+    },
+    {
+      "end": [
+        341.811706542969,
+        0.000697732204571366,
+        -68.0190658569336
+      ],
+      "human_playtest": false,
+      "id": "V22-A1F-051-checkout-823",
+      "lowest_y": -0.0137922279536724,
+      "max_opposite_vertical_step_m": 0.0145498183555901,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          325.5,
+          0.0,
+          -64.1500015258789
+        ],
+        [
+          336.839996337891,
+          0.0,
+          -67.3600006103516
+        ],
+        [
+          342.0,
+          0.0,
+          -68.0449981689453
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-051",
+      "ticks": 504
+    },
+    {
+      "end": [
+        347.262329101562,
+        5.52562522888184,
+        -66.3813934326172
+      ],
+      "human_playtest": false,
+      "id": "V22-A2F-003-central_department-885",
+      "lowest_y": 5.52383852005005,
+      "max_opposite_vertical_step_m": 0.000219345092773438,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          348.232788085938,
+          5.52500009536743,
+          -64.1500015258789
+        ],
+        [
+          347.190612792969,
+          5.52500009536743,
+          -66.5461196899414
+        ]
+      ],
+      "role": "display",
+      "store_id": "A2F-003",
+      "ticks": 73
+    },
+    {
+      "end": [
+        413.803741455078,
+        5.52584218978882,
+        -37.0624618530273
+      ],
+      "human_playtest": false,
+      "id": "V22-A2F-008-checkout-944",
+      "lowest_y": 5.50926923751831,
+      "max_opposite_vertical_step_m": 0.0165729522705078,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          418.415252685547,
+          5.52500009536743,
+          -40.7387390136719
+        ],
+        [
+          416.639190673828,
+          5.52500009536743,
+          -38.3212852478027
+        ],
+        [
+          414.039215087891,
+          5.52500009536743,
+          -38.3212852478027
+        ],
+        [
+          413.389190673828,
+          5.52500009536743,
+          -37.6712837219238
+        ],
+        [
+          413.869720458984,
+          5.52500009536743,
+          -36.8969459533691
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-008",
+      "ticks": 210
+    },
+    {
+      "end": [
+        475.427673339844,
+        5.5258412361145,
+        -36.2274322509766
+      ],
+      "human_playtest": false,
+      "id": "V22-A2F-014-checkout-1006",
+      "lowest_y": 5.50899839401245,
+      "max_opposite_vertical_step_m": 0.0168428421020508,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          481.810852050781,
+          5.52500009536743,
+          -39.9929084777832
+        ],
+        [
+          479.977630615234,
+          5.52500009536743,
+          -37.5989837646484
+        ],
+        [
+          475.265472412109,
+          5.52500009536743,
+          -36.1746406555176
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-014",
+      "ticks": 232
+    },
+    {
+      "end": [
+        524.358337402344,
+        5.52584218978882,
+        -29.7554626464844
+      ],
+      "human_playtest": false,
+      "id": "V22-A2F-018-checkout-1072",
+      "lowest_y": 5.50900316238403,
+      "max_opposite_vertical_step_m": 0.0168256759643555,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          534.811767578125,
+          5.52500009536743,
+          -31.546049118042
+        ],
+        [
+          533.409545898438,
+          5.52500009536743,
+          -30.0756778717041
+        ],
+        [
+          526.909545898438,
+          5.52500009536743,
+          -30.7256774902344
+        ],
+        [
+          524.193054199219,
+          5.52500009536743,
+          -29.6976547241211
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-018",
+      "ticks": 336
+    },
+    {
+      "end": [
+        559.630249023438,
+        5.52584218978882,
+        15.7343673706055
+      ],
+      "human_playtest": false,
+      "id": "V22-A2F-022-checkout-1099",
+      "lowest_y": 5.5099778175354,
+      "max_opposite_vertical_step_m": 0.00783872604370117,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          563.049987792969,
+          5.52500009536743,
+          20.3236312866211
+        ],
+        [
+          561.155456542969,
+          5.52500009536743,
+          18.7766609191895
+        ],
+        [
+          559.538452148438,
+          5.52500009536743,
+          15.5598630905151
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-022",
+      "ticks": 175
+    },
+    {
+      "end": [
+        433.879302978516,
+        5.52584075927734,
+        115.502128601074
+      ],
+      "human_playtest": false,
+      "id": "V22-A2F-035-checkout-1255",
+      "lowest_y": 5.51290798187256,
+      "max_opposite_vertical_step_m": 0.0128974914550781,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          440.976715087891,
+          5.52500009536743,
+          115.764320373535
+        ],
+        [
+          439.367004394531,
+          5.52500009536743,
+          116.842864990234
+        ],
+        [
+          433.696899414062,
+          5.52500009536743,
+          115.461776733398
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-035",
+      "ticks": 226
+    },
+    {
+      "end": [
+        405.331665039062,
+        5.52584218978882,
+        64.4279327392578
+      ],
+      "human_playtest": false,
+      "id": "V22-A2F-042-checkout-1347",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          401.054046630859,
+          5.52500009536743,
+          65.311164855957
+        ],
+        [
+          405.516021728516,
+          5.52500009536743,
+          64.3898544311523
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-042",
+      "ticks": 131
+    },
+    {
+      "end": [
+        437.940277099609,
+        10.8758296966553,
+        -58.667423248291
+      ],
+      "human_playtest": false,
+      "id": "V22-A3F-007-checkout-1503",
+      "lowest_y": 10.8670444488525,
+      "max_opposite_vertical_step_m": 0.00875473022460938,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          426.567932128906,
+          10.875,
+          -54.9438133239746
+        ],
+        [
+          428.037872314453,
+          10.875,
+          -56.9183807373047
+        ],
+        [
+          438.1279296875,
+          10.875,
+          -58.7030830383301
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A3F-007",
+      "ticks": 374
+    },
+    {
+      "end": [
+        427.947204589844,
+        16.4008274078369,
+        -58.751781463623
+      ],
+      "human_playtest": false,
+      "id": "V22-ARF-003-checkout-2035",
+      "lowest_y": 16.4002342224121,
+      "max_opposite_vertical_step_m": 0.000604629516601562,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          421.555297851562,
+          16.3999996185303,
+          -55.0027847290039
+        ],
+        [
+          422.837860107422,
+          16.3999996185303,
+          -56.9183807373047
+        ],
+        [
+          428.128631591797,
+          16.3999996185303,
+          -58.8207206726074
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "ARF-003",
+      "ticks": 231
+    },
+    {
+      "end": [
+        413.949523925781,
+        16.4008350372314,
+        -78.310173034668
+      ],
+      "human_playtest": false,
+      "id": "V22-ARF-003-kitchen-2036",
+      "lowest_y": 16.3840160369873,
+      "max_opposite_vertical_step_m": 0.0168113708496094,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          421.555297851562,
+          16.3999996185303,
+          -55.0027847290039
+        ],
+        [
+          418.937866210938,
+          16.3999996185303,
+          -67.3183746337891
+        ],
+        [
+          415.037872314453,
+          16.3999996185303,
+          -75.1183776855469
+        ],
+        [
+          413.737854003906,
+          16.3999996185303,
+          -76.4183807373047
+        ],
+        [
+          413.737854003906,
+          16.3999996185303,
+          -78.3683776855469
+        ],
+        [
+          414.108001708984,
+          16.3999996185303,
+          -78.4020156860352
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "ARF-003",
+      "ticks": 753
+    },
+    {
+      "end": [
+        -248.871124267578,
+        0.000839727581478655,
+        -6.57142734527588
+      ],
+      "human_playtest": false,
+      "id": "V22-B1-028-kitchen-2271",
+      "lowest_y": -0.0000906519126147032,
+      "max_opposite_vertical_step_m": 0.000123314559459686,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -252.197326660156,
+          0.0,
+          -3.66384720802307
+        ],
+        [
+          -251.254989624023,
+          0.0,
+          -5.48000001907349
+        ],
+        [
+          -250.054977416992,
+          0.0,
+          -6.68000030517578
+        ],
+        [
+          -248.678741455078,
+          0.0,
+          -6.57353925704956
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B1-028",
+      "ticks": 146
+    },
+    {
+      "end": [
+        -79.4506301879883,
+        0.000835966086015105,
+        -52.6825981140137
+      ],
+      "human_playtest": false,
+      "id": "V22-B1-026-central_department-2343",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000560633954592049,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -81.7214431762695,
+          0.0,
+          -45.591625213623
+        ],
+        [
+          -79.7652587890625,
+          0.0,
+          -52.548641204834
+        ],
+        [
+          -79.2871856689453,
+          0.0,
+          -52.7928886413574
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-026",
+      "ticks": 226
+    },
+    {
+      "end": [
+        136.530990600586,
+        0.000830445264000446,
+        78.4804992675781
+      ],
+      "human_playtest": false,
+      "id": "V22-B1-054-wall_department-2512",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605817942414433,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          135.114700317383,
+          0.0,
+          56.7773857116699
+        ],
+        [
+          135.151489257812,
+          0.0,
+          63.5938606262207
+        ],
+        [
+          137.101486206055,
+          0.0,
+          72.6938629150391
+        ],
+        [
+          136.513763427734,
+          0.0,
+          78.6645355224609
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-054",
+      "ticks": 658
+    },
+    {
+      "end": [
+        -63.5617141723633,
+        5.52584218978882,
+        -26.2926368713379
+      ],
+      "human_playtest": false,
+      "id": "V22-B2-065-central_department-2908",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599384307861328,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -58.4513740539551,
+          5.52500009536743,
+          -40.1822319030762
+        ],
+        [
+          -58.8119049072266,
+          5.52500009536743,
+          -27.3713111877441
+        ],
+        [
+          -60.1119079589844,
+          5.52500009536743,
+          -26.0713119506836
+        ],
+        [
+          -63.7468109130859,
+          5.52500009536743,
+          -26.2972869873047
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-065",
+      "ticks": 540
+    },
+    {
+      "end": [
+        -86.8090362548828,
+        5.52580595016479,
+        -52.1452980041504
+      ],
+      "human_playtest": false,
+      "id": "V22-B2-013-central_department-2954",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000581264495849609,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -89.0982513427734,
+          5.52500009536743,
+          -44.984130859375
+        ],
+        [
+          -87.416862487793,
+          5.52500009536743,
+          -52.0840263366699
+        ],
+        [
+          -86.631233215332,
+          5.52500009536743,
+          -52.2139587402344
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-013",
+      "ticks": 234
+    },
+    {
+      "end": [
+        131.818313598633,
+        5.52582979202271,
+        64.6886596679688
+      ],
+      "human_playtest": false,
+      "id": "V22-B2-056-central_department-3164",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          132.39143371582,
+          5.52500009536743,
+          57.3788146972656
+        ],
+        [
+          132.042770385742,
+          5.52500009536743,
+          64.8452682495117
+        ],
+        [
+          131.63493347168,
+          5.52500009536743,
+          64.7026748657227
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-056",
+      "ticks": 226
+    },
+    {
+      "end": [
+        -170.375885009766,
+        5.5259051322937,
+        19.9664154052734
+      ],
+      "human_playtest": false,
+      "id": "V22-B2-006-central_department-3262",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -164.218185424805,
+          5.52500009536743,
+          23.2243194580078
+        ],
+        [
+          -168.059997558594,
+          5.52500009536743,
+          24.0397109985352
+        ],
+        [
+          -169.660003662109,
+          5.52500009536743,
+          22.0397109985352
+        ],
+        [
+          -170.437026977539,
+          5.52500009536743,
+          19.8057498931885
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-006",
+      "ticks": 257
+    },
+    {
+      "end": [
+        58.6263313293457,
+        5.52584075927734,
+        12.3581447601318
+      ],
+      "human_playtest": false,
+      "id": "V22-B2-018-central_department-3351",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          54.2038955688477,
+          5.52500009536743,
+          18.001220703125
+        ],
+        [
+          58.4489440917969,
+          5.52500009536743,
+          12.0346126556396
+        ],
+        [
+          58.778923034668,
+          5.52500009536743,
+          12.4481029510498
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-018",
+      "ticks": 224
+    },
+    {
+      "end": [
+        -253.594680786133,
+        10.8758296966553,
+        -7.2560338973999
+      ],
+      "human_playtest": false,
+      "id": "V22-B3-015-checkout-3479",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -259.428588867188,
+          10.875,
+          -2.10439443588257
+        ],
+        [
+          -258.838745117188,
+          10.875,
+          -4.18000030517578
+        ],
+        [
+          -255.588760375977,
+          10.875,
+          -5.48000049591064
+        ],
+        [
+          -253.453308105469,
+          10.875,
+          -7.37721347808838
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B3-015",
+      "ticks": 248
+    },
+    {
+      "end": [
+        -244.396133422852,
+        10.8758363723755,
+        -7.51220750808716
+      ],
+      "human_playtest": false,
+      "id": "V22-B3-029-central_department-3481",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -249.458374023438,
+          10.875,
+          -4.25459671020508
+        ],
+        [
+          -248.197357177734,
+          10.875,
+          -6.78000068664551
+        ],
+        [
+          -244.29736328125,
+          10.875,
+          -7.43000030517578
+        ],
+        [
+          -244.312576293945,
+          10.875,
+          -7.65981817245483
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-029",
+      "ticks": 200
+    },
+    {
+      "end": [
+        -244.696914672852,
+        10.8758316040039,
+        -8.79892158508301
+      ],
+      "human_playtest": false,
+      "id": "V22-B3-029-central_department-3483",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -249.458374023438,
+          10.875,
+          -4.25459671020508
+        ],
+        [
+          -248.197357177734,
+          10.875,
+          -6.78000068664551
+        ],
+        [
+          -246.247360229492,
+          10.875,
+          -6.78000068664551
+        ],
+        [
+          -244.586349487305,
+          10.875,
+          -8.92919826507568
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-029",
+      "ticks": 215
+    },
+    {
+      "end": [
+        -109.749305725098,
+        10.8758354187012,
+        49.6308403015137
+      ],
+      "human_playtest": false,
+      "id": "V22-B3-044-checkout-3654",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -102.748153686523,
+          10.875,
+          46.8522415161133
+        ],
+        [
+          -104.052284240723,
+          10.875,
+          48.0553855895996
+        ],
+        [
+          -109.926246643066,
+          10.875,
+          49.6822700500488
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B3-044",
+      "ticks": 230
+    },
+    {
+      "end": [
+        -17.3340225219727,
+        10.8758296966553,
+        35.2922210693359
+      ],
+      "human_playtest": false,
+      "id": "V22-B3-022-amusement_zone-3905",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          10.875,
+          32.1500015258789
+        ],
+        [
+          -5.60785675048828,
+          10.875,
+          34.6399993896484
+        ],
+        [
+          -17.3078575134277,
+          10.875,
+          35.2900009155273
+        ],
+        [
+          -17.5321998596191,
+          10.875,
+          35.3058891296387
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-022",
+      "ticks": 448
+    },
+    {
+      "end": [
+        -162.61360168457,
+        -5.34915781021118,
+        -312.643280029297
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3970",
+      "lowest_y": -5.34989547729492,
+      "max_opposite_vertical_step_m": 0.000733375549316406,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -157.411773681641,
+          -5.34999990463257,
+          -307.56201171875
+        ],
+        [
+          -162.754608154297,
+          -5.34999990463257,
+          -312.779754638672
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 364
+    },
+    {
+      "end": [
+        -165.36328125,
+        -5.34915781021118,
+        -312.077392578125
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3971",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -165.512329101562,
+          -5.34999990463257,
+          -312.166931152344
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 420
+    },
+    {
+      "end": [
+        -159.091445922852,
+        -5.34915781021118,
+        -293.755126953125
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3972",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -158.711776733398,
+          -5.34999990463257,
+          -295.862030029297
+        ],
+        [
+          -159.127990722656,
+          -5.34999990463257,
+          -293.578887939453
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 378
+    },
+    {
+      "end": [
+        -168.082000732422,
+        -5.34915781021118,
+        -311.494140625
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3973",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          -5.34999990463257,
+          -310.81201171875
+        ],
+        [
+          -168.270065307617,
+          -5.34999990463257,
+          -311.554107666016
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 485
+    },
+    {
+      "end": [
+        -161.879364013672,
+        -5.34915781021118,
+        -293.155151367188
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3974",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -161.961776733398,
+          -5.34999990463257,
+          -293.912017822266
+        ],
+        [
+          -161.885711669922,
+          -5.34999990463257,
+          -292.966064453125
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 439
+    },
+    {
+      "end": [
+        -170.846832275391,
+        -5.34915781021118,
+        -310.88671875
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3975",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -161.961776733398,
+          -5.34999990463257,
+          -308.212036132812
+        ],
+        [
+          -171.027786254883,
+          -5.34999990463257,
+          -310.941253662109
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 555
+    },
+    {
+      "end": [
+        -164.561935424805,
+        -5.34915781021118,
+        -292.512725830078
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3976",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -163.911773681641,
+          -5.34999990463257,
+          -293.912017822266
+        ],
+        [
+          -164.643447875977,
+          -5.34999990463257,
+          -292.353240966797
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 502
+    },
+    {
+      "end": [
+        -173.62321472168,
+        -5.34915781021118,
+        -310.222869873047
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3977",
+      "lowest_y": -5.34976577758789,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -161.961776733398,
+          -5.34999990463257,
+          -308.212036132812
+        ],
+        [
+          -173.661773681641,
+          -5.34999990463257,
+          -310.162017822266
+        ],
+        [
+          -173.785522460938,
+          -5.34999990463257,
+          -310.328430175781
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 632
+    },
+    {
+      "end": [
+        -167.299499511719,
+        -5.34915781021118,
+        -291.879272460938
+      ],
+      "human_playtest": false,
+      "id": "V22-CB1-CW-2-wall_department-3978",
+      "lowest_y": -5.36573076248169,
+      "max_opposite_vertical_step_m": 0.0165729522705078,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          -5.34999990463257,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          -5.34999990463257,
+          -293.912017822266
+        ],
+        [
+          -167.401168823242,
+          -5.34999990463257,
+          -291.740386962891
+        ]
+      ],
+      "role": "display",
+      "store_id": "CB1-CW-2",
+      "ticks": 573
+    },
+    {
+      "end": [
+        -161.158294677734,
+        0.000839541433379054,
+        -313.133911132812
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4124",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605818058829755,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -161.28581237793,
+          0.0,
+          -313.269256591797
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 341
+    },
+    {
+      "end": [
+        -163.891860961914,
+        0.000842081906739622,
+        -312.545684814453
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4125",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605818058829755,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -164.043533325195,
+          0.0,
+          -312.656402587891
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 391
+    },
+    {
+      "end": [
+        -160.090225219727,
+        0.000829851487651467,
+        -291.679321289062
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4126",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605818058829755,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -158.061782836914,
+          0.0,
+          -293.912017822266
+        ],
+        [
+          -158.711776733398,
+          0.0,
+          -291.962036132812
+        ],
+        [
+          -160.271041870117,
+          0.0,
+          -291.623565673828
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 459
+    },
+    {
+      "end": [
+        -166.604248046875,
+        0.000835979531984776,
+        -312.039428710938
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4127",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605817942414433,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          0.0,
+          -312.112030029297
+        ],
+        [
+          -166.80126953125,
+          0.0,
+          -312.043579101562
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 455
+    },
+    {
+      "end": [
+        -163.267517089844,
+        0.000829357304610312,
+        -292.636352539062
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4128",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605817942414433,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -162.611785888672,
+          0.0,
+          -293.912017822266
+        ],
+        [
+          -163.354507446289,
+          0.0,
+          -292.4765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 473
+    },
+    {
+      "end": [
+        -169.699234008789,
+        0.00083596381591633,
+        -312.828063964844
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4129",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605817942414433,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          0.0,
+          -310.81201171875
+        ],
+        [
+          -169.111785888672,
+          0.0,
+          -312.112030029297
+        ],
+        [
+          -169.111785888672,
+          0.0,
+          -312.762023925781
+        ],
+        [
+          -169.884735107422,
+          0.0,
+          -312.896575927734
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 552
+    },
+    {
+      "end": [
+        -165.601196289062,
+        0.000834826845675707,
+        -290.453948974609
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4130",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.0161986052407883,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -163.911773681641,
+          0.0,
+          -293.912017822266
+        ],
+        [
+          -163.911773681641,
+          0.0,
+          -291.31201171875
+        ],
+        [
+          -164.561782836914,
+          0.0,
+          -290.662017822266
+        ],
+        [
+          -165.786499023438,
+          0.0,
+          -290.397918701172
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 590
+    },
+    {
+      "end": [
+        -172.499160766602,
+        0.000836493156384677,
+        -312.187866210938
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4131",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.203461264260113,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          0.0,
+          -309.512023925781
+        ],
+        [
+          -171.711776733398,
+          0.0,
+          -311.462036132812
+        ],
+        [
+          -172.361785888672,
+          0.0,
+          -312.112030029297
+        ],
+        [
+          -172.642471313477,
+          0.0,
+          -312.283752441406
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 617
+    },
+    {
+      "end": [
+        -168.35205078125,
+        0.000835465907584876,
+        -289.837158203125
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-2-wall_department-4132",
+      "lowest_y": -0.0157323628664017,
+      "max_opposite_vertical_step_m": 0.0165616661543027,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          0.0,
+          -304.863250732422
+        ],
+        [
+          -163.911773681641,
+          0.0,
+          -293.912017822266
+        ],
+        [
+          -166.511779785156,
+          0.0,
+          -291.31201171875
+        ],
+        [
+          -167.161773681641,
+          0.0,
+          -290.012023925781
+        ],
+        [
+          -168.544219970703,
+          0.0,
+          -289.785095214844
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-2",
+      "ticks": 644
+    },
+    {
+      "end": [
+        -155.96989440918,
+        0.000829451833851635,
+        -289.581207275391
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4139",
+      "lowest_y": -0.0157349072396755,
+      "max_opposite_vertical_step_m": 0.0165515564149246,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -156.091506958008,
+          0.0,
+          -289.710479736328
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 344
+    },
+    {
+      "end": [
+        -158.705307006836,
+        0.000829355616588145,
+        -288.992248535156
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4140",
+      "lowest_y": -0.0146708022803068,
+      "max_opposite_vertical_step_m": 0.0155150805949233,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -158.849227905273,
+          0.0,
+          -289.09765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 394
+    },
+    {
+      "end": [
+        -155.215393066406,
+        0.000340810976922512,
+        -268.318572998047
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4141",
+      "lowest_y": -0.0157373584806919,
+      "max_opposite_vertical_step_m": 0.0165729913278483,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -155.336044311523,
+          0.0,
+          -270.434356689453
+        ],
+        [
+          -155.986053466797,
+          0.0,
+          -269.134368896484
+        ],
+        [
+          -155.986053466797,
+          0.0,
+          -268.484375
+        ],
+        [
+          -155.038116455078,
+          0.0,
+          -268.259765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 472
+    },
+    {
+      "end": [
+        -161.430923461914,
+        0.000829377037007362,
+        -288.491546630859
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4142",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000574906065594405,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          0.0,
+          -288.634368896484
+        ],
+        [
+          -161.606964111328,
+          0.0,
+          -288.484802246094
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 460
+    },
+    {
+      "end": [
+        -158.110992431641,
+        0.00084034982137382,
+        -269.419372558594
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4143",
+      "lowest_y": -0.0157339870929718,
+      "max_opposite_vertical_step_m": 0.0165696290205233,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -157.936050415039,
+          0.0,
+          -270.434356689453
+        ],
+        [
+          -158.153778076172,
+          0.0,
+          -269.257659912109
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 468
+    },
+    {
+      "end": [
+        -164.195327758789,
+        0.000828853284474462,
+        -287.818572998047
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4144",
+      "lowest_y": -0.0148463593795896,
+      "max_opposite_vertical_step_m": 0.0156586072989739,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          0.0,
+          -286.684356689453
+        ],
+        [
+          -164.364685058594,
+          0.0,
+          -287.871978759766
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 522
+    },
+    {
+      "end": [
+        -160.809631347656,
+        0.000823260634206235,
+        -268.813110351562
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4145",
+      "lowest_y": -0.00750251207500696,
+      "max_opposite_vertical_step_m": 0.00763049814850092,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -159.886047363281,
+          0.0,
+          -270.434356689453
+        ],
+        [
+          -160.911499023438,
+          0.0,
+          -268.644836425781
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 535
+    },
+    {
+      "end": [
+        -166.952590942383,
+        0.00083596701733768,
+        -287.204376220703
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4146",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000593119359109551,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -157.286056518555,
+          0.0,
+          -284.084350585938
+        ],
+        [
+          -167.122421264648,
+          0.0,
+          -287.259155273438
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 593
+    },
+    {
+      "end": [
+        -163.532104492188,
+        0.000827936572022736,
+        -268.137786865234
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CW-3-wall_department-4147",
+      "lowest_y": -0.00806890986859798,
+      "max_opposite_vertical_step_m": 0.00885779946111143,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          0.0,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          0.0,
+          -270.434356689453
+        ],
+        [
+          -163.669235229492,
+          0.0,
+          -268.032012939453
+        ]
+      ],
+      "role": "display",
+      "store_id": "C1F-CW-3",
+      "ticks": 607
+    },
+    {
+      "end": [
+        -77.5803146362305,
+        0.000842061592265964,
+        -207.037719726562
+      ],
+      "human_playtest": false,
+      "id": "V22-C1F-CSW-2-checkout-4353",
+      "lowest_y": -0.0149713912978768,
+      "max_opposite_vertical_step_m": 0.0158023507101461,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -67.1367645263672,
+          0.0,
+          -208.636352539062
+        ],
+        [
+          -77.7681503295898,
+          0.0,
+          -207.008880615234
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "C1F-CSW-2",
+      "ticks": 317
+    },
+    {
+      "end": [
+        -165.463012695312,
+        5.52583599090576,
+        -332.435394287109
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4363",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -163.651947021484,
+          5.52500009536743,
+          -330.117736816406
+        ],
+        [
+          -165.575973510742,
+          5.52500009536743,
+          -332.574981689453
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 285
+    },
+    {
+      "end": [
+        -168.142791748047,
+        5.52583026885986,
+        -331.885101318359
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4364",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -168.299545288086,
+          5.52500009536743,
+          -331.969757080078
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 340
+    },
+    {
+      "end": [
+        -165.864715576172,
+        5.52593421936035,
+        -315.025390625
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4365",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.0198521614074707,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -163.001937866211,
+          5.52500009536743,
+          -318.417755126953
+        ],
+        [
+          -164.301940917969,
+          5.52500009536743,
+          -315.817749023438
+        ],
+        [
+          -164.951934814453,
+          5.52500009536743,
+          -315.167755126953
+        ],
+        [
+          -166.039840698242,
+          5.52500009536743,
+          -314.978668212891
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 424
+    },
+    {
+      "end": [
+        -171.787994384766,
+        5.52582359313965,
+        -332.620391845703
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4366",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000593185424804688,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -170.801940917969,
+          5.52500009536743,
+          -332.067749023438
+        ],
+        [
+          -171.934555053711,
+          5.52500009536743,
+          -332.700164794922
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 448
+    },
+    {
+      "end": [
+        -169.160995483398,
+        5.52593564987183,
+        -314.302398681641
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4367",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.0161881446838379,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -167.551940917969,
+          5.52500009536743,
+          -315.167755126953
+        ],
+        [
+          -168.201934814453,
+          5.52500009536743,
+          -314.517761230469
+        ],
+        [
+          -169.34912109375,
+          5.52500009536743,
+          -314.243255615234
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 498
+    },
+    {
+      "end": [
+        -175.082046508789,
+        5.5258355140686,
+        -331.865905761719
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4368",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -166.251937866211,
+          5.52500009536743,
+          -329.467742919922
+        ],
+        [
+          -173.401947021484,
+          5.52500009536743,
+          -330.767761230469
+        ],
+        [
+          -175.24382019043,
+          5.52500009536743,
+          -331.964782714844
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 536
+    },
+    {
+      "end": [
+        -172.495025634766,
+        5.52593994140625,
+        -313.550567626953
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4369",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -170.151947021484,
+          5.52500009536743,
+          -315.167755126953
+        ],
+        [
+          -170.801940917969,
+          5.52500009536743,
+          -313.867736816406
+        ],
+        [
+          -172.658386230469,
+          5.52500009536743,
+          -313.507873535156
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 588
+    },
+    {
+      "end": [
+        -178.398300170898,
+        5.52584218978882,
+        -331.141632080078
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4370",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -166.251937866211,
+          5.52500009536743,
+          -326.217742919922
+        ],
+        [
+          -176.651947021484,
+          5.52500009536743,
+          -330.117736816406
+        ],
+        [
+          -178.553100585938,
+          5.52500009536743,
+          -331.229400634766
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 636
+    },
+    {
+      "end": [
+        -176.117111206055,
+        5.52582931518555,
+        -314.331573486328
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-1-wall_department-4371",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          5.52500009536743,
+          -326.498992919922
+        ],
+        [
+          -170.801940917969,
+          5.52500009536743,
+          -317.117736816406
+        ],
+        [
+          -176.293411254883,
+          5.52500009536743,
+          -314.238311767578
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-1",
+      "ticks": 652
+    },
+    {
+      "end": [
+        -161.181655883789,
+        5.52582263946533,
+        -313.119384765625
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4378",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -157.411773681641,
+          5.52500009536743,
+          -307.56201171875
+        ],
+        [
+          -161.28581237793,
+          5.52500009536743,
+          -313.269256591797
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 347
+    },
+    {
+      "end": [
+        -163.890197753906,
+        5.52582263946533,
+        -312.539031982422
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4379",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -157.411773681641,
+          5.52500009536743,
+          -307.56201171875
+        ],
+        [
+          -164.043533325195,
+          5.52500009536743,
+          -312.656402587891
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 391
+    },
+    {
+      "end": [
+        -160.1064453125,
+        5.52579355239868,
+        -291.705718994141
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4380",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.0170960426330566,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -156.761779785156,
+          5.52500009536743,
+          -299.112030029297
+        ],
+        [
+          -158.061782836914,
+          5.52500009536743,
+          -292.612030029297
+        ],
+        [
+          -160.271041870117,
+          5.52500009536743,
+          -291.623565673828
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 468
+    },
+    {
+      "end": [
+        -166.604751586914,
+        5.52583026885986,
+        -312.039489746094
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4381",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          5.52500009536743,
+          -312.112030029297
+        ],
+        [
+          -166.80126953125,
+          5.52500009536743,
+          -312.043579101562
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 455
+    },
+    {
+      "end": [
+        -163.268768310547,
+        5.52584218978882,
+        -292.632720947266
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4382",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -162.611785888672,
+          5.52500009536743,
+          -293.912017822266
+        ],
+        [
+          -163.354507446289,
+          5.52500009536743,
+          -292.4765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 473
+    },
+    {
+      "end": [
+        -169.700622558594,
+        5.525803565979,
+        -312.828948974609
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4383",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          5.52500009536743,
+          -310.81201171875
+        ],
+        [
+          -169.111785888672,
+          5.52500009536743,
+          -312.112030029297
+        ],
+        [
+          -169.111785888672,
+          5.52500009536743,
+          -312.762023925781
+        ],
+        [
+          -169.884735107422,
+          5.52500009536743,
+          -312.896575927734
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 552
+    },
+    {
+      "end": [
+        -165.599700927734,
+        5.52583599090576,
+        -290.454711914062
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4384",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.014434814453125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -163.911773681641,
+          5.52500009536743,
+          -293.912017822266
+        ],
+        [
+          -163.911773681641,
+          5.52500009536743,
+          -291.31201171875
+        ],
+        [
+          -164.561782836914,
+          5.52500009536743,
+          -290.662017822266
+        ],
+        [
+          -165.786499023438,
+          5.52500009536743,
+          -290.397918701172
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 590
+    },
+    {
+      "end": [
+        -172.503494262695,
+        5.52582931518555,
+        -312.188323974609
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4385",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.00557422637939453,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -165.861785888672,
+          5.52500009536743,
+          -309.512023925781
+        ],
+        [
+          -171.711776733398,
+          5.52500009536743,
+          -311.462036132812
+        ],
+        [
+          -172.361785888672,
+          5.52500009536743,
+          -312.112030029297
+        ],
+        [
+          -172.642471313477,
+          5.52500009536743,
+          -312.283752441406
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 617
+    },
+    {
+      "end": [
+        -168.351745605469,
+        5.52584218978882,
+        -289.837341308594
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-2-wall_department-4386",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.00851058959960938,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.363647460938,
+          5.52500009536743,
+          -304.863250732422
+        ],
+        [
+          -163.911773681641,
+          5.52500009536743,
+          -293.912017822266
+        ],
+        [
+          -166.511779785156,
+          5.52500009536743,
+          -291.31201171875
+        ],
+        [
+          -167.161773681641,
+          5.52500009536743,
+          -290.012023925781
+        ],
+        [
+          -168.544219970703,
+          5.52500009536743,
+          -289.785095214844
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-2",
+      "ticks": 644
+    },
+    {
+      "end": [
+        -155.975936889648,
+        5.5258355140686,
+        -289.557312011719
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4393",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -151.436050415039,
+          5.52500009536743,
+          -283.434356689453
+        ],
+        [
+          -156.091506958008,
+          5.52500009536743,
+          -289.710479736328
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 348
+    },
+    {
+      "end": [
+        -158.70246887207,
+        5.52584218978882,
+        -288.981170654297
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4394",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -153.386047363281,
+          5.52500009536743,
+          -284.734375
+        ],
+        [
+          -158.849227905273,
+          5.52500009536743,
+          -289.09765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 394
+    },
+    {
+      "end": [
+        -155.219192504883,
+        5.525803565979,
+        -268.320007324219
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4395",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -155.336044311523,
+          5.52500009536743,
+          -270.434356689453
+        ],
+        [
+          -155.986053466797,
+          5.52500009536743,
+          -269.134368896484
+        ],
+        [
+          -155.986053466797,
+          5.52500009536743,
+          -268.484375
+        ],
+        [
+          -155.038116455078,
+          5.52500009536743,
+          -268.259765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 472
+    },
+    {
+      "end": [
+        -161.432083129883,
+        5.52584218978882,
+        -288.491668701172
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4396",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          5.52500009536743,
+          -288.634368896484
+        ],
+        [
+          -161.606964111328,
+          5.52500009536743,
+          -288.484802246094
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 460
+    },
+    {
+      "end": [
+        -158.110656738281,
+        5.52582931518555,
+        -269.420349121094
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4397",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -157.936050415039,
+          5.52500009536743,
+          -270.434356689453
+        ],
+        [
+          -158.153778076172,
+          5.52500009536743,
+          -269.257659912109
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 468
+    },
+    {
+      "end": [
+        -164.195434570312,
+        5.52583646774292,
+        -287.818542480469
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4398",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          5.52500009536743,
+          -286.684356689453
+        ],
+        [
+          -164.364685058594,
+          5.52500009536743,
+          -287.871978759766
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 522
+    },
+    {
+      "end": [
+        -160.810531616211,
+        5.52583599090576,
+        -268.811676025391
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4399",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -159.886047363281,
+          5.52500009536743,
+          -270.434356689453
+        ],
+        [
+          -160.911499023438,
+          5.52500009536743,
+          -268.644836425781
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 535
+    },
+    {
+      "end": [
+        -166.954483032227,
+        5.5258355140686,
+        -287.204986572266
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4400",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -157.286056518555,
+          5.52500009536743,
+          -284.084350585938
+        ],
+        [
+          -167.122421264648,
+          5.52500009536743,
+          -287.259155273438
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 593
+    },
+    {
+      "end": [
+        -163.532180786133,
+        5.5258355140686,
+        -268.137908935547
+      ],
+      "human_playtest": false,
+      "id": "V22-C2F-CW-3-wall_department-4401",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          5.52500009536743,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          5.52500009536743,
+          -270.434356689453
+        ],
+        [
+          -163.669235229492,
+          5.52500009536743,
+          -268.032012939453
+        ]
+      ],
+      "role": "display",
+      "store_id": "C2F-CW-3",
+      "ticks": 607
+    },
+    {
+      "end": [
+        -165.462860107422,
+        10.8758363723755,
+        -332.435211181641
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4642",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -163.651947021484,
+          10.875,
+          -330.117736816406
+        ],
+        [
+          -165.575973510742,
+          10.875,
+          -332.574981689453
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 285
+    },
+    {
+      "end": [
+        -168.142791748047,
+        10.8758306503296,
+        -331.885131835938
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4643",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000604629516601562,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -168.299545288086,
+          10.875,
+          -331.969757080078
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 340
+    },
+    {
+      "end": [
+        -165.864700317383,
+        10.8759346008301,
+        -315.025482177734
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4644",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.019841194152832,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -163.001937866211,
+          10.875,
+          -318.417755126953
+        ],
+        [
+          -164.301940917969,
+          10.875,
+          -315.817749023438
+        ],
+        [
+          -164.951934814453,
+          10.875,
+          -315.167755126953
+        ],
+        [
+          -166.039840698242,
+          10.875,
+          -314.978668212891
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 424
+    },
+    {
+      "end": [
+        -171.78776550293,
+        10.8758239746094,
+        -332.620239257812
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4645",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -170.801940917969,
+          10.875,
+          -332.067749023438
+        ],
+        [
+          -171.934555053711,
+          10.875,
+          -332.700164794922
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 448
+    },
+    {
+      "end": [
+        -169.172958374023,
+        10.8759365081787,
+        -314.300720214844
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4646",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.0161933898925781,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -167.551940917969,
+          10.875,
+          -315.167755126953
+        ],
+        [
+          -168.201934814453,
+          10.875,
+          -314.517761230469
+        ],
+        [
+          -169.34912109375,
+          10.875,
+          -314.243255615234
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 498
+    },
+    {
+      "end": [
+        -175.081909179688,
+        10.8758354187012,
+        -331.865814208984
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4647",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -166.251937866211,
+          10.875,
+          -329.467742919922
+        ],
+        [
+          -173.401947021484,
+          10.875,
+          -330.767761230469
+        ],
+        [
+          -175.24382019043,
+          10.875,
+          -331.964782714844
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 536
+    },
+    {
+      "end": [
+        -172.473663330078,
+        10.8759393692017,
+        -313.558532714844
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4648",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -170.151947021484,
+          10.875,
+          -315.167755126953
+        ],
+        [
+          -170.801940917969,
+          10.875,
+          -313.867736816406
+        ],
+        [
+          -172.658386230469,
+          10.875,
+          -313.507873535156
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 587
+    },
+    {
+      "end": [
+        -178.398254394531,
+        10.8758430480957,
+        -331.1416015625
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4649",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000593185424804688,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -166.251937866211,
+          10.875,
+          -326.217742919922
+        ],
+        [
+          -176.651947021484,
+          10.875,
+          -330.117736816406
+        ],
+        [
+          -178.553100585938,
+          10.875,
+          -331.229400634766
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 636
+    },
+    {
+      "end": [
+        -176.11735534668,
+        10.8758296966553,
+        -314.331451416016
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-1-wall_department-4650",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -158.171585083008,
+          10.875,
+          -326.498992919922
+        ],
+        [
+          -170.801940917969,
+          10.875,
+          -317.117736816406
+        ],
+        [
+          -176.293411254883,
+          10.875,
+          -314.238311767578
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-1",
+      "ticks": 652
+    },
+    {
+      "end": [
+        -155.975875854492,
+        10.8757905960083,
+        -289.557159423828
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4663",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -151.436050415039,
+          10.875,
+          -283.434356689453
+        ],
+        [
+          -156.091506958008,
+          10.875,
+          -289.710479736328
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 348
+    },
+    {
+      "end": [
+        -158.702209472656,
+        10.8758039474487,
+        -288.98095703125
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4664",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -153.386047363281,
+          10.875,
+          -284.734375
+        ],
+        [
+          -158.849227905273,
+          10.875,
+          -289.09765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 394
+    },
+    {
+      "end": [
+        -155.219390869141,
+        10.8758039474487,
+        -268.320068359375
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4665",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -155.336044311523,
+          10.875,
+          -270.434356689453
+        ],
+        [
+          -155.986053466797,
+          10.875,
+          -269.134368896484
+        ],
+        [
+          -155.986053466797,
+          10.875,
+          -268.484375
+        ],
+        [
+          -155.038116455078,
+          10.875,
+          -268.259765625
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 472
+    },
+    {
+      "end": [
+        -161.431716918945,
+        10.8758039474487,
+        -288.491668701172
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4666",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          10.875,
+          -288.634368896484
+        ],
+        [
+          -161.606964111328,
+          10.875,
+          -288.484802246094
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 460
+    },
+    {
+      "end": [
+        -158.110626220703,
+        10.8758296966553,
+        -269.420349121094
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4667",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -157.936050415039,
+          10.875,
+          -270.434356689453
+        ],
+        [
+          -158.153778076172,
+          10.875,
+          -269.257659912109
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 468
+    },
+    {
+      "end": [
+        -164.195541381836,
+        10.8758296966553,
+        -287.818603515625
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4668",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          10.875,
+          -286.684356689453
+        ],
+        [
+          -164.364685058594,
+          10.875,
+          -287.871978759766
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 522
+    },
+    {
+      "end": [
+        -160.810348510742,
+        10.8758363723755,
+        -268.811981201172
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4669",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -159.886047363281,
+          10.875,
+          -270.434356689453
+        ],
+        [
+          -160.911499023438,
+          10.875,
+          -268.644836425781
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 535
+    },
+    {
+      "end": [
+        -166.954025268555,
+        10.8758354187012,
+        -287.204833984375
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4670",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -157.286056518555,
+          10.875,
+          -284.084350585938
+        ],
+        [
+          -167.122421264648,
+          10.875,
+          -287.259155273438
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 593
+    },
+    {
+      "end": [
+        -163.532089233398,
+        10.8758354187012,
+        -268.137969970703
+      ],
+      "human_playtest": false,
+      "id": "V22-C3F-CW-3-wall_department-4671",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -148.111892700195,
+          10.875,
+          -281.230346679688
+        ],
+        [
+          -160.536056518555,
+          10.875,
+          -270.434356689453
+        ],
+        [
+          -163.669235229492,
+          10.875,
+          -268.032012939453
+        ]
+      ],
+      "role": "display",
+      "store_id": "C3F-CW-3",
+      "ticks": 607
+    },
+    {
+      "end": [
+        618.879516601562,
+        -5.34915781021118,
+        -41.5777549743652
+      ],
+      "human_playtest": false,
+      "id": "V22C-AB1-031-checkout-5361",
+      "lowest_y": -5.34989547729492,
+      "max_opposite_vertical_step_m": 0.000740528106689453,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          614.297119140625,
+          -5.34999990463257,
+          -43.4043922424316
+        ],
+        [
+          617.840026855469,
+          -5.34999990463257,
+          -42.7099990844727
+        ],
+        [
+          619.00341796875,
+          -5.34999990463257,
+          -41.4465866088867
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "AB1-031",
+      "ticks": 154
+    },
+    {
+      "end": [
+        592.357788085938,
+        0.000614410964772105,
+        6.6176233291626
+      ],
+      "human_playtest": false,
+      "id": "V22C-A1F-021-checkout-5515",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000586555572226644,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          592.251708984375,
+          0.0,
+          4.35345935821533
+        ],
+        [
+          592.365966796875,
+          0.0,
+          6.7923002243042
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-021",
+      "ticks": 68
+    },
+    {
+      "end": [
+        554.792297363281,
+        0.000842616660520434,
+        2.42857885360718
+      ],
+      "human_playtest": false,
+      "id": "V22C-A1F-022-compact_department-5518",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605818058829755,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          554.925048828125,
+          0.0,
+          -0.760515093803406
+        ],
+        [
+          554.21875,
+          0.0,
+          1.77185726165771
+        ],
+        [
+          554.899108886719,
+          0.0,
+          2.5682430267334
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-022",
+      "ticks": 104
+    },
+    {
+      "end": [
+        345.135772705078,
+        0.000828839314635843,
+        19.3153858184814
+      ],
+      "human_playtest": false,
+      "id": "V22C-A1F-046-compact_department-5523",
+      "lowest_y": -0.000184344127774239,
+      "max_opposite_vertical_step_m": 0.00074137223418802,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          347.777770996094,
+          0.0,
+          25.6528625488281
+        ],
+        [
+          345.067596435547,
+          0.0,
+          19.1522445678711
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-046",
+      "ticks": 206
+    },
+    {
+      "end": [
+        317.936004638672,
+        0.000695311115123332,
+        1.08017671108246
+      ],
+      "human_playtest": false,
+      "id": "V22C-A1F-050-compact_department-5524",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000603600579779595,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          321.247955322266,
+          0.0,
+          -0.850000023841858
+        ],
+        [
+          317.773315429688,
+          0.0,
+          1.17499995231628
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-050",
+      "ticks": 115
+    },
+    {
+      "end": [
+        322.290985107422,
+        0.000808764365501702,
+        1.23713517189026
+      ],
+      "human_playtest": false,
+      "id": "V22C-A1F-050-compact_department-5525",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000585053465329111,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          321.247955322266,
+          0.0,
+          -0.850000023841858
+        ],
+        [
+          322.367797851562,
+          0.0,
+          1.39073586463928
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-050",
+      "ticks": 70
+    },
+    {
+      "end": [
+        618.879760742188,
+        0.000835438841022551,
+        -41.5773811340332
+      ],
+      "human_playtest": false,
+      "id": "V22C-A1F-052-checkout-5534",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000598658050876111,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          614.297119140625,
+          0.0,
+          -43.4043922424316
+        ],
+        [
+          617.840026855469,
+          0.0,
+          -42.7099990844727
+        ],
+        [
+          619.00341796875,
+          0.0,
+          -41.4465866088867
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-052",
+      "ticks": 154
+    },
+    {
+      "end": [
+        353.724090576172,
+        5.52580308914185,
+        -66.1408538818359
+      ],
+      "human_playtest": false,
+      "id": "V22C-A2F-003-compact_department-5706",
+      "lowest_y": 5.52383852005005,
+      "max_opposite_vertical_step_m": 0.000149250030517578,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          348.232788085938,
+          5.52500009536743,
+          -64.1500015258789
+        ],
+        [
+          348.980529785156,
+          5.52500009536743,
+          -65.7100067138672
+        ],
+        [
+          353.917938232422,
+          5.52500009536743,
+          -66.1652603149414
+        ]
+      ],
+      "role": "display",
+      "store_id": "A2F-003",
+      "ticks": 192
+    },
+    {
+      "end": [
+        517.763305664062,
+        5.52584075927734,
+        114.261817932129
+      ],
+      "human_playtest": false,
+      "id": "V22C-A2F-031-checkout-5707",
+      "lowest_y": 5.50912475585938,
+      "max_opposite_vertical_step_m": 0.0167102813720703,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          514.87158203125,
+          5.52500009536743,
+          113.242691040039
+        ],
+        [
+          517.695434570312,
+          5.52500009536743,
+          114.431121826172
+        ],
+        [
+          517.945495605469,
+          5.52500009536743,
+          114.194175720215
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-031",
+      "ticks": 94
+    },
+    {
+      "end": [
+        494.581665039062,
+        5.52584218978882,
+        104.365531921387
+      ],
+      "human_playtest": false,
+      "id": "V22C-A2F-033-checkout-5708",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.0123367309570312,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          491.030395507812,
+          5.52500009536743,
+          106.465522766113
+        ],
+        [
+          493.139984130859,
+          5.52500009536743,
+          103.372543334961
+        ],
+        [
+          494.747650146484,
+          5.52500009536743,
+          104.457275390625
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-033",
+      "ticks": 160
+    },
+    {
+      "end": [
+        489.482696533203,
+        5.52584218978882,
+        103.250778198242
+      ],
+      "human_playtest": false,
+      "id": "V22C-A2F-033-compact_department-5709",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          491.030395507812,
+          5.52500009536743,
+          106.465522766113
+        ],
+        [
+          490.540008544922,
+          5.52500009536743,
+          103.372543334961
+        ],
+        [
+          489.297760009766,
+          5.52500009536743,
+          103.196792602539
+        ]
+      ],
+      "role": "display",
+      "store_id": "A2F-033",
+      "ticks": 122
+    },
+    {
+      "end": [
+        445.791931152344,
+        5.52583599090576,
+        128.610473632812
+      ],
+      "human_playtest": false,
+      "id": "V22C-A2F-034-checkout-5710",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          448.649993896484,
+          5.52500009536743,
+          131.0
+        ],
+        [
+          445.771942138672,
+          5.52500009536743,
+          129.839996337891
+        ],
+        [
+          445.771942138672,
+          5.52500009536743,
+          128.421890258789
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-034",
+      "ticks": 127
+    },
+    {
+      "end": [
+        376.255279541016,
+        5.52581644058228,
+        -26.6343536376953
+      ],
+      "human_playtest": false,
+      "id": "V22C-A2F-050-compact_department-5712",
+      "lowest_y": 5.49769258499146,
+      "max_opposite_vertical_step_m": 0.0281052589416504,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          374.149993896484,
+          5.52500009536743,
+          -28.6430282592773
+        ],
+        [
+          376.639984130859,
+          5.52500009536743,
+          -27.0157680511475
+        ],
+        [
+          376.172485351562,
+          5.52500009536743,
+          -26.46901512146
+        ]
+      ],
+      "role": "display",
+      "store_id": "A2F-050",
+      "ticks": 100
+    },
+    {
+      "end": [
+        618.879028320312,
+        5.5258355140686,
+        -41.5781669616699
+      ],
+      "human_playtest": false,
+      "id": "V22C-A2F-052-checkout-5721",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000599384307861328,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          614.297119140625,
+          5.52500009536743,
+          -43.4043922424316
+        ],
+        [
+          617.840026855469,
+          5.52500009536743,
+          -42.7099990844727
+        ],
+        [
+          619.00341796875,
+          5.52500009536743,
+          -41.4465866088867
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A2F-052",
+      "ticks": 154
+    },
+    {
+      "end": [
+        449.150604248047,
+        10.8758430480957,
+        -8.77873420715332
+      ],
+      "human_playtest": false,
+      "id": "V22C-A3F-001-compact_department-5727",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          450.154998779297,
+          10.875,
+          -5.84566402435303
+        ],
+        [
+          449.093017578125,
+          10.875,
+          -8.94736194610596
+        ]
+      ],
+      "role": "display",
+      "store_id": "A3F-001",
+      "ticks": 93
+    },
+    {
+      "end": [
+        471.252655029297,
+        10.8758430480957,
+        85.0921096801758
+      ],
+      "human_playtest": false,
+      "id": "V22C-A3F-001-anchor_department-5739",
+      "lowest_y": 10.8547086715698,
+      "max_opposite_vertical_step_m": 0.0190343856811523,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          450.154998779297,
+          10.875,
+          -5.84566402435303
+        ],
+        [
+          448.201965332031,
+          10.875,
+          -2.64936256408691
+        ],
+        [
+          446.901947021484,
+          10.875,
+          9.05063629150391
+        ],
+        [
+          446.901947021484,
+          10.875,
+          20.7506370544434
+        ],
+        [
+          446.901947021484,
+          10.875,
+          32.4506340026855
+        ],
+        [
+          452.101959228516,
+          10.875,
+          44.150634765625
+        ],
+        [
+          455.351959228516,
+          10.875,
+          48.7006378173828
+        ],
+        [
+          457.951965332031,
+          10.875,
+          54.5506362915039
+        ],
+        [
+          457.951965332031,
+          10.875,
+          57.8006362915039
+        ],
+        [
+          463.801940917969,
+          10.875,
+          66.2506332397461
+        ],
+        [
+          463.801940917969,
+          10.875,
+          69.5006332397461
+        ],
+        [
+          465.751953125,
+          10.875,
+          77.9506378173828
+        ],
+        [
+          468.351959228516,
+          10.875,
+          80.5506362915039
+        ],
+        [
+          468.351959228516,
+          10.875,
+          82.5006332397461
+        ],
+        [
+          471.395324707031,
+          10.875,
+          85.228630065918
+        ]
+      ],
+      "role": "display",
+      "store_id": "A3F-001",
+      "ticks": 2953
+    },
+    {
+      "end": [
+        467.531707763672,
+        10.8758430480957,
+        68.8963470458984
+      ],
+      "human_playtest": false,
+      "id": "V22C-A3F-001-anchor_department-5763",
+      "lowest_y": 10.8361158370972,
+      "max_opposite_vertical_step_m": 0.0331888198852539,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          450.154998779297,
+          10.875,
+          -5.84566402435303
+        ],
+        [
+          448.201965332031,
+          10.875,
+          -2.64936256408691
+        ],
+        [
+          446.901947021484,
+          10.875,
+          9.05063629150391
+        ],
+        [
+          446.901947021484,
+          10.875,
+          20.7506370544434
+        ],
+        [
+          451.451965332031,
+          10.875,
+          32.4506340026855
+        ],
+        [
+          456.651947021484,
+          10.875,
+          44.150634765625
+        ],
+        [
+          457.951965332031,
+          10.875,
+          46.7506332397461
+        ],
+        [
+          457.951965332031,
+          10.875,
+          51.9506378173828
+        ],
+        [
+          461.851959228516,
+          10.875,
+          55.8506317138672
+        ],
+        [
+          461.851959228516,
+          10.875,
+          57.150634765625
+        ],
+        [
+          463.801940917969,
+          10.875,
+          59.7506332397461
+        ],
+        [
+          463.801940917969,
+          10.875,
+          61.0506362915039
+        ],
+        [
+          465.751953125,
+          10.875,
+          63.650634765625
+        ],
+        [
+          467.595306396484,
+          10.875,
+          69.0786285400391
+        ]
+      ],
+      "role": "display",
+      "store_id": "A3F-001",
+      "ticks": 2418
+    },
+    {
+      "end": [
+        561.063659667969,
+        10.8758430480957,
+        9.02499675750732
+      ],
+      "human_playtest": false,
+      "id": "V22C-A3F-022-checkout-5916",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          563.787353515625,
+          10.875,
+          11.474925994873
+        ],
+        [
+          561.676391601562,
+          10.875,
+          10.4734649658203
+        ],
+        [
+          561.026428222656,
+          10.875,
+          9.82346439361572
+        ],
+        [
+          561.049011230469,
+          10.875,
+          8.83646678924561
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A3F-022",
+      "ticks": 120
+    },
+    {
+      "end": [
+        618.879272460938,
+        10.8758354187012,
+        -41.577880859375
+      ],
+      "human_playtest": false,
+      "id": "V22C-A3F-051-checkout-5927",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          614.297119140625,
+          10.875,
+          -43.4043922424316
+        ],
+        [
+          617.840026855469,
+          10.875,
+          -42.7099990844727
+        ],
+        [
+          619.00341796875,
+          10.875,
+          -41.4465866088867
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A3F-051",
+      "ticks": 154
+    },
+    {
+      "end": [
+        -246.850402832031,
+        0.000842082023154944,
+        -7.56328630447388
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-028-checkout-6018",
+      "lowest_y": -0.0000906519126147032,
+      "max_opposite_vertical_step_m": 0.000128229148685932,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -252.197326660156,
+          0.0,
+          -3.66384720802307
+        ],
+        [
+          -251.254989624023,
+          0.0,
+          -5.48000001907349
+        ],
+        [
+          -250.054977416992,
+          0.0,
+          -6.68000030517578
+        ],
+        [
+          -247.654983520508,
+          0.0,
+          -7.07999992370605
+        ],
+        [
+          -246.683624267578,
+          0.0,
+          -7.6522536277771
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B1-028",
+      "ticks": 212
+    },
+    {
+      "end": [
+        -250.359161376953,
+        0.000829342170618474,
+        -6.22656059265137
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-028-compact_department-6019",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000574906065594405,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -252.197326660156,
+          0.0,
+          -3.66384720802307
+        ],
+        [
+          -251.254989624023,
+          0.0,
+          -5.48000001907349
+        ],
+        [
+          -250.217025756836,
+          0.0,
+          -6.3581428527832
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-028",
+      "ticks": 96
+    },
+    {
+      "end": [
+        -246.847503662109,
+        0.000842068227939308,
+        -7.39175605773926
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-028-compact_department-6020",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000574906065594405,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -252.197326660156,
+          0.0,
+          -3.66384720802307
+        ],
+        [
+          -251.254989624023,
+          0.0,
+          -5.48000001907349
+        ],
+        [
+          -250.054977416992,
+          0.0,
+          -6.68000030517578
+        ],
+        [
+          -247.654983520508,
+          0.0,
+          -7.07999992370605
+        ],
+        [
+          -246.662673950195,
+          0.0,
+          -7.45750093460083
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-028",
+      "ticks": 210
+    },
+    {
+      "end": [
+        -75.152961730957,
+        0.000828845135401934,
+        -36.0973091125488
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-038-checkout-6021",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000585554051212966,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -72.3087463378906,
+          0.0,
+          -39.0418167114258
+        ],
+        [
+          -73.9671478271484,
+          0.0,
+          -36.6574325561523
+        ],
+        [
+          -74.6171493530273,
+          0.0,
+          -36.0074310302734
+        ],
+        [
+          -75.3436050415039,
+          0.0,
+          -36.083927154541
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B1-038",
+      "ticks": 129
+    },
+    {
+      "end": [
+        166.567016601562,
+        0.000828760850708932,
+        37.4612655639648
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-010-compact_department-6024",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000598658050876111,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          167.16162109375,
+          0.0,
+          39.8208465576172
+        ],
+        [
+          166.521362304688,
+          0.0,
+          37.2799453735352
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-010",
+      "ticks": 73
+    },
+    {
+      "end": [
+        -77.4918594360352,
+        0.000793793238699436,
+        56.5707359313965
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-059-compact_department-6029",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182560108602,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -75.1500015258789,
+          0.0,
+          57.7529983520508
+        ],
+        [
+          -77.6625518798828,
+          0.0,
+          56.7378578186035
+        ],
+        [
+          -77.4863662719727,
+          0.0,
+          56.3897819519043
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-059",
+      "ticks": 83
+    },
+    {
+      "end": [
+        110.858123779297,
+        0.000834487320389599,
+        64.3244476318359
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-036-compact_department-6031",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000567054783459753,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          112.184043884277,
+          0.0,
+          61.8402061462402
+        ],
+        [
+          111.23999786377,
+          0.0,
+          64.1065292358398
+        ],
+        [
+          110.727531433105,
+          0.0,
+          64.4370498657227
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-036",
+      "ticks": 86
+    },
+    {
+      "end": [
+        -5.82924795150757,
+        0.00082404405111447,
+        34.2382011413574
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-022-compact_department-6033",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605818058829755,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          0.0,
+          32.1500015258789
+        ],
+        [
+          -5.20261573791504,
+          0.0,
+          34.6399993896484
+        ],
+        [
+          -6.00261497497559,
+          0.0,
+          34.1749992370605
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-022",
+      "ticks": 108
+    },
+    {
+      "end": [
+        -8.44649314880371,
+        0.000845395959913731,
+        34.1629676818848
+      ],
+      "human_playtest": false,
+      "id": "V22C-B1-022-compact_department-6034",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605817942414433,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          0.0,
+          32.1500015258789
+        ],
+        [
+          -4.55261611938477,
+          0.0,
+          33.9900016784668
+        ],
+        [
+          -8.62261486053467,
+          0.0,
+          34.1725006103516
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-022",
+      "ticks": 179
+    },
+    {
+      "end": [
+        152.461776733398,
+        5.52582311630249,
+        42.6337127685547
+      ],
+      "human_playtest": false,
+      "id": "V22C-B2-024-checkout-6115",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.00058746337890625,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          149.521835327148,
+          5.52500009536743,
+          46.1211967468262
+        ],
+        [
+          150.441680908203,
+          5.52500009536743,
+          43.9852561950684
+        ],
+        [
+          151.741683959961,
+          5.52500009536743,
+          42.6852569580078
+        ],
+        [
+          152.64778137207,
+          5.52500009536743,
+          42.5926361083984
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B2-024",
+      "ticks": 145
+    },
+    {
+      "end": [
+        -5.43553829193115,
+        5.5258321762085,
+        34.3432388305664
+      ],
+      "human_playtest": false,
+      "id": "V22C-B2-022-compact_department-6120",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          5.52500009536743,
+          32.1500015258789
+        ],
+        [
+          -5.53808689117432,
+          5.52500009536743,
+          34.6399993896484
+        ],
+        [
+          -5.43808555603027,
+          5.52500009536743,
+          34.1749992370605
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-022",
+      "ticks": 96
+    },
+    {
+      "end": [
+        -7.87955522537231,
+        5.52582311630249,
+        34.1954383850098
+      ],
+      "human_playtest": false,
+      "id": "V22C-B2-022-compact_department-6121",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          5.52500009536743,
+          32.1500015258789
+        ],
+        [
+          -5.53808689117432,
+          5.52500009536743,
+          34.6399993896484
+        ],
+        [
+          -8.05808544158936,
+          5.52500009536743,
+          34.1725006103516
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-022",
+      "ticks": 165
+    },
+    {
+      "end": [
+        -9.02974796295166,
+        5.52590179443359,
+        33.6060600280762
+      ],
+      "human_playtest": false,
+      "id": "V22C-B2-022-compact_department-6122",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          5.52500009536743,
+          32.1500015258789
+        ],
+        [
+          -5.53808689117432,
+          5.52500009536743,
+          34.6399993896484
+        ],
+        [
+          -8.78808689117432,
+          5.52500009536743,
+          33.9900016784668
+        ],
+        [
+          -9.16208553314209,
+          5.52500009536743,
+          33.4799995422363
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-022",
+      "ticks": 205
+    },
+    {
+      "end": [
+        15.1436395645142,
+        5.52584218978882,
+        -34.7603645324707
+      ],
+      "human_playtest": false,
+      "id": "V22C-B2-028-compact_department-6124",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          11.4380760192871,
+          5.52500009536743,
+          -32.1500015258789
+        ],
+        [
+          12.2466325759888,
+          5.52500009536743,
+          -34.6199150085449
+        ],
+        [
+          14.1966323852539,
+          5.52500009536743,
+          -35.2699165344238
+        ],
+        [
+          15.3215885162354,
+          5.52500009536743,
+          -34.6887168884277
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-028",
+      "ticks": 169
+    },
+    {
+      "end": [
+        -258.411224365234,
+        10.8758430480957,
+        -4.35632610321045
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-015-compact_department-6247",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -259.428588867188,
+          10.875,
+          -2.10439443588257
+        ],
+        [
+          -258.838745117188,
+          10.875,
+          -4.18000030517578
+        ],
+        [
+          -258.275451660156,
+          10.875,
+          -4.45817708969116
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-015",
+      "ticks": 77
+    },
+    {
+      "end": [
+        -73.4382247924805,
+        10.8758363723755,
+        -37.5564994812012
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-046-compact_department-6250",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -71.978759765625,
+          10.875,
+          -39.0689926147461
+        ],
+        [
+          -72.6387329101562,
+          10.875,
+          -37.307430267334
+        ],
+        [
+          -73.637336730957,
+          10.875,
+          -37.5748176574707
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-046",
+      "ticks": 77
+    },
+    {
+      "end": [
+        143.34294128418,
+        10.8758029937744,
+        44.5412979125977
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-010-checkout-6251",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          140.39338684082,
+          10.875,
+          48.1365661621094
+        ],
+        [
+          141.334350585938,
+          10.875,
+          45.9352569580078
+        ],
+        [
+          142.634353637695,
+          10.875,
+          44.63525390625
+        ],
+        [
+          143.519378662109,
+          10.875,
+          44.4926376342773
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B3-010",
+      "ticks": 147
+    },
+    {
+      "end": [
+        144.556655883789,
+        10.8758363723755,
+        44.6712341308594
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-010-compact_department-6252",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000592231750488281,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          140.39338684082,
+          10.875,
+          48.1365661621094
+        ],
+        [
+          141.334350585938,
+          10.875,
+          45.9352569580078
+        ],
+        [
+          143.28434753418,
+          10.875,
+          43.9852561950684
+        ],
+        [
+          144.715103149414,
+          10.875,
+          44.7351722717285
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-010",
+      "ticks": 194
+    },
+    {
+      "end": [
+        123.281898498535,
+        10.8758163452148,
+        34.4834671020508
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-052-checkout-6255",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          127.687767028809,
+          10.875,
+          32.5768508911133
+        ],
+        [
+          125.880256652832,
+          10.875,
+          34.6247673034668
+        ],
+        [
+          123.090835571289,
+          10.875,
+          34.4809265136719
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B3-052",
+      "ticks": 158
+    },
+    {
+      "end": [
+        125.913093566895,
+        10.8758354187012,
+        34.4937477111816
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-052-compact_department-6256",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          127.687767028809,
+          10.875,
+          32.5768508911133
+        ],
+        [
+          125.880256652832,
+          10.875,
+          34.6247673034668
+        ],
+        [
+          125.734344482422,
+          10.875,
+          34.5258140563965
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-052",
+      "ticks": 79
+    },
+    {
+      "end": [
+        -133.522430419922,
+        10.8758354187012,
+        -2.13475465774536
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-016-compact_department-6262",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000581741333007812,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -132.397918701172,
+          10.875,
+          0.47501927614212
+        ],
+        [
+          -132.865997314453,
+          10.875,
+          -2.06582736968994
+        ],
+        [
+          -133.697677612305,
+          10.875,
+          -2.1981680393219
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-016",
+      "ticks": 94
+    },
+    {
+      "end": [
+        -157.569564819336,
+        10.8758354187012,
+        34.7991790771484
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-034-compact_department-6264",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000598907470703125,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -153.8759765625,
+          10.875,
+          35.8146057128906
+        ],
+        [
+          -157.517059326172,
+          10.875,
+          36.93115234375
+        ],
+        [
+          -158.167053222656,
+          10.875,
+          35.6311531066895
+        ],
+        [
+          -157.474487304688,
+          10.875,
+          34.6367301940918
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-034",
+      "ticks": 182
+    },
+    {
+      "end": [
+        -5.68226385116577,
+        10.8758220672607,
+        34.3148155212402
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-022-compact_department-6266",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          10.875,
+          32.1500015258789
+        ],
+        [
+          -5.60785675048828,
+          10.875,
+          34.6399993896484
+        ],
+        [
+          -5.82219886779785,
+          10.875,
+          34.1749992370605
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-022",
+      "ticks": 100
+    },
+    {
+      "end": [
+        -8.27616119384766,
+        10.8758163452148,
+        34.1911239624023
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-022-compact_department-6267",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -3.52724623680115,
+          10.875,
+          32.1500015258789
+        ],
+        [
+          -5.60785675048828,
+          10.875,
+          34.6399993896484
+        ],
+        [
+          -8.44219875335693,
+          10.875,
+          34.1725006103516
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-022",
+      "ticks": 176
+    },
+    {
+      "end": [
+        7.69416570663452,
+        10.8758354187012,
+        -34.5181884765625
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-028-compact_department-6268",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          5.65069770812988,
+          10.875,
+          -32.1500015258789
+        ],
+        [
+          7.16343212127686,
+          10.875,
+          -34.660457611084
+        ],
+        [
+          7.86437940597534,
+          10.875,
+          -34.5254592895508
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-028",
+      "ticks": 101
+    },
+    {
+      "end": [
+        10.2864351272583,
+        10.8758363723755,
+        -34.5233726501465
+      ],
+      "human_playtest": false,
+      "id": "V22C-B3-028-compact_department-6269",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          5.65069770812988,
+          10.875,
+          -32.1500015258789
+        ],
+        [
+          7.16343212127686,
+          10.875,
+          -34.0104598999023
+        ],
+        [
+          7.81343221664429,
+          10.875,
+          -34.660457611084
+        ],
+        [
+          10.4843797683716,
+          10.875,
+          -34.5229606628418
+        ]
+      ],
+      "role": "display",
+      "store_id": "B3-028",
+      "ticks": 172
+    },
+    {
+      "end": [
+        -166.309127807617,
+        5.52583599090576,
+        23.2157936096191
+      ],
+      "human_playtest": false,
+      "id": "V22C-B2-006-compact_department-6269",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000592708587646484,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -164.218185424805,
+          5.52500009536743,
+          23.2243194580078
+        ],
+        [
+          -166.460006713867,
+          5.52500009536743,
+          23.2397117614746
+        ],
+        [
+          -166.426406860352,
+          5.52500009536743,
+          23.1066398620605
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-006",
+      "ticks": 63
+    },
+    {
+      "end": [
+        463.903961181641,
+        0.00084294326370582,
+        14.1144456863403
+      ],
+      "human_playtest": false,
+      "id": "V22D-A1F-002-department_island-6426",
+      "lowest_y": -0.0181982908397913,
+      "max_opposite_vertical_step_m": 0.0190406231558882,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          460.567535400391,
+          0.0,
+          -6.64688491821289
+        ],
+        [
+          461.738616943359,
+          0.0,
+          -3.46794509887695
+        ],
+        [
+          461.738616943359,
+          0.0,
+          8.23205375671387
+        ],
+        [
+          462.388641357422,
+          0.0,
+          11.4820556640625
+        ],
+        [
+          463.688629150391,
+          0.0,
+          12.1320533752441
+        ],
+        [
+          464.338623046875,
+          0.0,
+          12.782054901123
+        ],
+        [
+          463.870788574219,
+          0.0,
+          14.2816953659058
+        ]
+      ],
+      "role": "display",
+      "store_id": "A1F-002",
+      "ticks": 660
+    },
+    {
+      "end": [
+        463.990966796875,
+        10.8758420944214,
+        13.8667669296265
+      ],
+      "human_playtest": false,
+      "id": "V22D-A3F-002-department_island-6677",
+      "lowest_y": 10.8333196640015,
+      "max_opposite_vertical_step_m": 0.0204391479492188,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          460.567535400391,
+          10.875,
+          -6.64688491821289
+        ],
+        [
+          461.738616943359,
+          10.875,
+          -3.46794509887695
+        ],
+        [
+          461.738616943359,
+          10.875,
+          8.23205375671387
+        ],
+        [
+          462.388641357422,
+          10.875,
+          10.8320541381836
+        ],
+        [
+          464.338623046875,
+          10.875,
+          13.4320526123047
+        ],
+        [
+          463.921051025391,
+          10.875,
+          14.0382719039917
+        ]
+      ],
+      "role": "display",
+      "store_id": "A3F-002",
+      "ticks": 643
+    },
+    {
+      "end": [
+        -279.885498046875,
+        0.000829350086860359,
+        3.24924778938293
+      ],
+      "human_playtest": false,
+      "id": "V22D-B1-AW1-department_island-6912",
+      "lowest_y": -0.000891956500709057,
+      "max_opposite_vertical_step_m": 0.000117566320113838,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -229.149993896484,
+          0.0,
+          -14.0469999313354
+        ],
+        [
+          -241.709991455078,
+          0.0,
+          -14.4099998474121
+        ],
+        [
+          -244.309997558594,
+          0.0,
+          -15.710000038147
+        ],
+        [
+          -256.010009765625,
+          0.0,
+          -15.0600004196167
+        ],
+        [
+          -267.709991455078,
+          0.0,
+          -15.0600004196167
+        ],
+        [
+          -270.959991455078,
+          0.0,
+          -15.0600004196167
+        ],
+        [
+          -272.260009765625,
+          0.0,
+          -15.710000038147
+        ],
+        [
+          -276.160003662109,
+          0.0,
+          -13.1100006103516
+        ],
+        [
+          -277.459991455078,
+          0.0,
+          -11.1599998474121
+        ],
+        [
+          -278.109985351562,
+          0.0,
+          -2.71000099182129
+        ],
+        [
+          -280.059997558594,
+          0.0,
+          -0.110000610351562
+        ],
+        [
+          -279.881500244141,
+          0.0,
+          3.43065190315247
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-AW1",
+      "ticks": 1966
+    },
+    {
+      "end": [
+        -279.983917236328,
+        5.5258355140686,
+        3.0065655708313
+      ],
+      "human_playtest": false,
+      "id": "V22D-B2-AW1-department_island-7001",
+      "lowest_y": 5.52523422241211,
+      "max_opposite_vertical_step_m": 0.000606060028076172,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -229.149993896484,
+          5.52500009536743,
+          -14.0469999313354
+        ],
+        [
+          -241.709991455078,
+          5.52500009536743,
+          -14.4099998474121
+        ],
+        [
+          -243.660003662109,
+          5.52500009536743,
+          -15.0600004196167
+        ],
+        [
+          -255.359985351562,
+          5.52500009536743,
+          -15.0600004196167
+        ],
+        [
+          -267.059997558594,
+          5.52500009536743,
+          -15.0600004196167
+        ],
+        [
+          -270.959991455078,
+          5.52500009536743,
+          -15.0600004196167
+        ],
+        [
+          -272.260009765625,
+          5.52500009536743,
+          -15.710000038147
+        ],
+        [
+          -276.160003662109,
+          5.52500009536743,
+          -13.1100006103516
+        ],
+        [
+          -277.459991455078,
+          5.52500009536743,
+          -11.1599998474121
+        ],
+        [
+          -278.109985351562,
+          5.52500009536743,
+          -2.06000137329102
+        ],
+        [
+          -280.046936035156,
+          5.52500009536743,
+          3.18172931671143
+        ]
+      ],
+      "role": "display",
+      "store_id": "B2-AW1",
+      "ticks": 1944
+    },
+    {
+      "end": [
+        421.552337646484,
+        0.000799836125224829,
+        82.5785903930664
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-039-checkout-1",
+      "lowest_y": -0.0120918173342943,
+      "max_opposite_vertical_step_m": 0.0129353916272521,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          422.220031738281,
+          0.0,
+          86.6026458740234
+        ],
+        [
+          422.164337158203,
+          0.0,
+          83.3763885498047
+        ],
+        [
+          421.46435546875,
+          0.0,
+          82.4367904663086
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-039",
+      "ticks": 126
+    },
+    {
+      "end": [
+        428.530609130859,
+        0.000741502968594432,
+        72.803092956543
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-039-fitting_room-3",
+      "lowest_y": -0.0181982908397913,
+      "max_opposite_vertical_step_m": 0.0190412199008279,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          422.220031738281,
+          0.0,
+          86.6026458740234
+        ],
+        [
+          429.314331054688,
+          0.0,
+          76.8763885498047
+        ],
+        [
+          428.501495361328,
+          0.0,
+          72.6233978271484
+        ]
+      ],
+      "role": "fitting_room",
+      "store_id": "A1F-039",
+      "ticks": 484
+    },
+    {
+      "end": [
+        435.324859619141,
+        0.000842061592265964,
+        76.9788589477539
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-039-mirror_and_waiting-16",
+      "lowest_y": -0.0181982908397913,
+      "max_opposite_vertical_step_m": 0.0190412199008279,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          422.220031738281,
+          0.0,
+          86.6026458740234
+        ],
+        [
+          433.214324951172,
+          0.0,
+          76.2263870239258
+        ],
+        [
+          435.494659423828,
+          0.0,
+          77.02587890625
+        ]
+      ],
+      "role": "mirror",
+      "store_id": "A1F-039",
+      "ticks": 518
+    },
+    {
+      "end": [
+        355.436706542969,
+        0.000822194910142571,
+        -67.0892333984375
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-003-checkout-17",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.00059259490808472,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          364.058715820312,
+          0.0,
+          -64.1500015258789
+        ],
+        [
+          355.270538330078,
+          0.0,
+          -67.1449966430664
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-003",
+      "ticks": 273
+    },
+    {
+      "end": [
+        355.898895263672,
+        0.000716798705980182,
+        -71.3811264038086
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-003-shoe_try_and_mirror-18",
+      "lowest_y": -0.0157509259879589,
+      "max_opposite_vertical_step_m": 0.0165672212606296,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          364.058715820312,
+          0.0,
+          -64.1500015258789
+        ],
+        [
+          357.063110351562,
+          0.0,
+          -70.9812850952148
+        ],
+        [
+          355.720550537109,
+          0.0,
+          -71.4538421630859
+        ]
+      ],
+      "role": "mirror",
+      "store_id": "A1F-003",
+      "ticks": 330
+    },
+    {
+      "end": [
+        580.167419433594,
+        0.000816069892607629,
+        10.6343946456909
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-023-checkout-30",
+      "lowest_y": -0.0157336927950382,
+      "max_opposite_vertical_step_m": 0.0165756600908935,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          576.638854980469,
+          0.0,
+          17.4106693267822
+        ],
+        [
+          578.52880859375,
+          0.0,
+          16.1088790893555
+        ],
+        [
+          580.223449707031,
+          0.0,
+          10.4600410461426
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-023",
+      "ticks": 239
+    },
+    {
+      "end": [
+        501.044464111328,
+        0.000828847580123693,
+        -55.880973815918
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-017-checkout-39",
+      "lowest_y": -0.0149714285507798,
+      "max_opposite_vertical_step_m": 0.0158007688587531,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          504.7177734375,
+          0.0,
+          -52.1480484008789
+        ],
+        [
+          503.460723876953,
+          0.0,
+          -54.6178359985352
+        ],
+        [
+          500.892486572266,
+          0.0,
+          -55.9674110412598
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-017",
+      "ticks": 164
+    },
+    {
+      "end": [
+        -43.8148307800293,
+        0.000842511537484825,
+        -38.3613433837891
+      ],
+      "human_playtest": false,
+      "id": "V23-B1-N01-checkout-52",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182560108602,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -40.0912780761719,
+          0.0,
+          -41.6946182250977
+        ],
+        [
+          -43.7184028625488,
+          0.0,
+          -38.2202682495117
+        ],
+        [
+          -43.9847183227539,
+          0.0,
+          -38.3687286376953
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B1-N01",
+      "ticks": 152
+    },
+    {
+      "end": [
+        -55.495735168457,
+        0.000835430575534701,
+        -29.5539932250977
+      ],
+      "human_playtest": false,
+      "id": "V23-B1-N01-appliance_demo-61",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182560108602,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -40.0912780761719,
+          0.0,
+          -41.6946182250977
+        ],
+        [
+          -43.7184028625488,
+          0.0,
+          -38.2202682495117
+        ],
+        [
+          -45.3184051513672,
+          0.0,
+          -37.8202705383301
+        ],
+        [
+          -52.5184020996094,
+          0.0,
+          -31.4202690124512
+        ],
+        [
+          -55.7184028625488,
+          0.0,
+          -30.2202682495117
+        ],
+        [
+          -55.4481353759766,
+          0.0,
+          -29.3773078918457
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-N01",
+      "ticks": 608
+    },
+    {
+      "end": [
+        -54.9518699645996,
+        0.000802928931079805,
+        -30.567964553833
+      ],
+      "human_playtest": false,
+      "id": "V23-B1-N01-appliance_demo-63",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000599182560108602,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -40.0912780761719,
+          0.0,
+          -41.6946182250977
+        ],
+        [
+          -43.7184028625488,
+          0.0,
+          -38.2202682495117
+        ],
+        [
+          -45.3184051513672,
+          0.0,
+          -37.8202705383301
+        ],
+        [
+          -52.5184020996094,
+          0.0,
+          -32.2202682495117
+        ],
+        [
+          -55.103832244873,
+          0.0,
+          -30.4640045166016
+        ]
+      ],
+      "role": "display",
+      "store_id": "B1-N01",
+      "ticks": 561
+    },
+    {
+      "end": [
+        394.992248535156,
+        0.000842609326355159,
+        -55.7391357421875
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-007-checkout-64",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605818058829755,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          397.752014160156,
+          0.0,
+          -53.3260765075684
+        ],
+        [
+          394.84619140625,
+          0.0,
+          -55.8666229248047
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-007",
+      "ticks": 110
+    },
+    {
+      "end": [
+        47.6722526550293,
+        0.000835432263556868,
+        -193.656829833984
+      ],
+      "human_playtest": false,
+      "id": "V23-C1F-CSE-3-checkout-79",
+      "lowest_y": -0.0157349109649658,
+      "max_opposite_vertical_step_m": 0.0164756200974807,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          36.2999992370605,
+          0.0,
+          -196.700012207031
+        ],
+        [
+          47.6399993896484,
+          0.0,
+          -193.559997558594
+        ],
+        [
+          47.8499984741211,
+          0.0,
+          -193.705001831055
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "C1F-CSE-3",
+      "ticks": 354
+    },
+    {
+      "end": [
+        453.209930419922,
+        0.000836076505947858,
+        105.460052490234
+      ],
+      "human_playtest": false,
+      "id": "V23-A1F-035-checkout-98",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000605269626248628,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          461.168823242188,
+          0.0,
+          105.280990600586
+        ],
+        [
+          458.607940673828,
+          0.0,
+          103.778045654297
+        ],
+        [
+          453.020660400391,
+          0.0,
+          105.514595031738
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "A1F-035",
+      "ticks": 257
+    },
+    {
+      "end": [
+        -102.560234069824,
+        0.000829034252092242,
+        49.7854843139648
+      ],
+      "human_playtest": false,
+      "id": "V23-B1-046-checkout-106",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000574429228436202,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -98.7614440917969,
+          0.0,
+          47.4692153930664
+        ],
+        [
+          -99.9347229003906,
+          0.0,
+          48.9963912963867
+        ],
+        [
+          -102.72240447998,
+          0.0,
+          49.8411560058594
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "B1-046",
+      "ticks": 139
+    },
+    {
+      "end": [
+        150.699844360352,
+        10.8758163452148,
+        -318.156372070312
+      ],
+      "human_playtest": false,
+      "id": "V23-C3F-CE-1-checkout-132",
+      "lowest_y": 10.8742389678955,
+      "max_opposite_vertical_step_m": 0.00011444091796875,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          146.131927490234,
+          10.875,
+          -310.774566650391
+        ],
+        [
+          147.731872558594,
+          10.875,
+          -311.871704101562
+        ],
+        [
+          150.782241821289,
+          10.875,
+          -318.325469970703
+        ]
+      ],
+      "role": "checkout",
+      "store_id": "C3F-CE-1",
+      "ticks": 266
+    },
+    {
+      "end": [
+        164.125579833984,
+        10.8758420944214,
+        -314.399993896484
+      ],
+      "human_playtest": false,
+      "id": "V23-C3F-CE-1-photo_booth-134",
+      "lowest_y": 10.8752346038818,
+      "max_opposite_vertical_step_m": 0.000605583190917969,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          146.131927490234,
+          10.875,
+          -310.774566650391
+        ],
+        [
+          158.781860351562,
+          10.875,
+          -312.521728515625
+        ],
+        [
+          164.295501708984,
+          10.875,
+          -314.458648681641
+        ]
+      ],
+      "role": "photo_booth",
+      "store_id": "C3F-CE-1",
+      "ticks": 553
+    }
+  ],
+  "failed": [],
+  "human_playtest": false,
+  "physics_hz": 60,
+  "scope": "Actual original player CharacterBody3D; NPC disabled for fixture clearance. Separate43NPC dynamic tests recorded separately. Only paths passing capsule planning selected; unresolved approach points remain explicitly unresolved."
+}

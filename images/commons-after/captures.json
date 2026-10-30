@@ -1,0 +1,178 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "category": "food_specialty",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        384.386218365883,
+        -3.7,
+        -50.8826069388344
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "B1",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "A-B1-food",
+      "look": [
+        382.341253104051,
+        -4.35,
+        -61.5211511960249
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "AB1-003",
+      "title": "A-B1-food",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "food",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -281.0,
+        -3.7,
+        -9.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "B1",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "B-B1-food",
+      "look": [
+        -297.826041666667,
+        -4.35,
+        -15.853125
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "store_id": "BB1-MARKET",
+      "title": "B-B1-food",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        312.0,
+        18.05,
+        -60.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "A-RF",
+      "look": [
+        308.0,
+        17.9,
+        -60.0
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A-RF",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -80.4,
+        18.05,
+        60.0
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "B-RF",
+      "look": [
+        -84.4,
+        17.9,
+        60.0
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B-RF",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "category": "wayfinding",
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -115.742550950101,
+        18.05,
+        -375.078738925159
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "RF",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "C-RF",
+      "look": [
+        -115.470723592277,
+        17.9,
+        -378.052907892573
+      ],
+      "main_script_sha256": "b629f7a4b99d96613b24f8db70ecf16525047b7773fcd4d5e10c8d21590fc9dc",
+      "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure.",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C-RF",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    }
+  ]
+}

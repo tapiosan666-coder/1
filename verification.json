@@ -1,0 +1,99 @@
+{
+  "automatic_checks": [
+    {
+      "name": "全480店舗の入口",
+      "tested": 480,
+      "failed": 0,
+      "method": "Actual capsule entrance sweep"
+    },
+    {
+      "name": "全480店舗の指定売場主通路",
+      "tested": 480,
+      "failed": 0,
+      "method": "Actual capsule sweep and floor rays; not all free trajectories"
+    },
+    {
+      "name": "什器支持",
+      "tested": 7243,
+      "failed": 0,
+      "method": "Actual structural slab support ray per fixture"
+    },
+    {
+      "name": "商品底点の自身の什器支持",
+      "tested": 64451,
+      "failed": 0,
+      "method": "Actual own-host ray. Hanging garments separate, stacked parent support separate."
+    },
+    {
+      "name": "平積み親子支持",
+      "tested": 46,
+      "failed": 0,
+      "method": "Parent reference/contact height and bottom host physics"
+    },
+    {
+      "name": "旧155設備の接近",
+      "tested": 155,
+      "failed": 0,
+      "method": "r.34/h1.8 standing capsule, five support rays, entrance route. New unresolved elsewhere reported separately."
+    },
+    {
+      "name": "実プレイヤー自動歩行",
+      "tested": 192,
+      "failed": 0,
+      "method": "Actual original CharacterBody, gravity, move_and_slide,60Hz fixed simulation, NPC OFF"
+    },
+    {
+      "name": "ES/乗継ぎ/屋外動線",
+      "tested": 17,
+      "failed": 0,
+      "method": "17 actual CharacterBody routes at60Hz"
+    },
+    {
+      "name": "床端落下防止",
+      "tested": 46,
+      "failed": 0,
+      "method": "46 actual W-input cases; not every edge and angle"
+    },
+    {
+      "name": "実キー入力",
+      "tested": 12,
+      "failed": 0,
+      "method": "N/P/F12/M/F11/F9 actual events; automated not human"
+    },
+    {
+      "name": "F4/F6比較案",
+      "tested": 4,
+      "failed": 0,
+      "method": "Actual scene switches and source key comparison"
+    },
+    {
+      "name": "43NPC床支持",
+      "tested": 43,
+      "failed": 0,
+      "method": "90s actual physics; no character model changes"
+    },
+    {
+      "name": "43NPC体幹カプセル衝突",
+      "tested": 1935,
+      "failed": 0,
+      "method": "Capsule inset25mm, excludes assigned seating; not animated hands/hair/clothing mesh"
+    },
+    {
+      "name": "EV乗降",
+      "tested": 119,
+      "failed": 0,
+      "method": "Actual rides, not teleports"
+    }
+  ],
+  "human_operation_tested": false,
+  "art_quality_complete": false,
+  "Windows_GPU_tested": false,
+  "unresolved_all_equipment_standing": 2,
+  "navigation_not_tested_elsewhere_not_usable": true,
+  "gait_and_ES_scripts_unchanged_from_v23": true,
+  "maximum_ES_opposite_vertical_step_m": 0.016611400526017,
+  "runtime_notes": [
+    "Some automated process exits report Godot PagedAllocator pages-in-use warning. Not counted as a successful runtime check; underlying complete exit cleanup remains uninvestigated.",
+    "Fresh complete project has a separate first-import/normal-start check."
+  ]
+}
