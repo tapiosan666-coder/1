@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b434t0jvj8b0n"
+
+[deps]
+
+files=["res://source/v14/roof-planting-as-built.candidate.translation", "res://source/v14/roof-planting-as-built.installed.translation", "res://source/v14/roof-planting-as-built.bed.translation", "res://source/v14/roof-planting-as-built.excluded.translation"]
+
+source_file="res://source/v14/roof-planting-as-built.csv"
+dest_files=["res://source/v14/roof-planting-as-built.candidate.translation", "res://source/v14/roof-planting-as-built.installed.translation", "res://source/v14/roof-planting-as-built.bed.translation", "res://source/v14/roof-planting-as-built.excluded.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

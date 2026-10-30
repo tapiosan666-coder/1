@@ -1,0 +1,1404 @@
+{
+  "people": [
+    {
+      "id": "V18-A-01",
+      "wing": "A",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        355.98,
+        0.0,
+        -20.52
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 0,
+      "scale": 0.91,
+      "phase": 0.0,
+      "speed": 0.95,
+      "seat_body": "A-WEST-VISITOR-outdoor_bench-8",
+      "seat_height": 0.5075,
+      "female_reference": true,
+      "activity_offset": 0.0,
+      "stride_m": 0.62,
+      "seat_front": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "seat_point": [
+        355.98,
+        0.0,
+        -20.52
+      ],
+      "seat_cycle": true,
+      "stand_point": [
+        355.56,
+        0.0,
+        -20.52
+      ],
+      "home_point": [
+        354.16,
+        0.0,
+        -20.52
+      ]
+    },
+    {
+      "id": "V18-A-02",
+      "wing": "A",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        355.98,
+        0.0,
+        -19.48
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 1,
+      "scale": 0.928,
+      "phase": 1.731,
+      "speed": 0.995,
+      "seat_body": "A-WEST-VISITOR-outdoor_bench-8",
+      "seat_height": 0.5075,
+      "female_reference": false,
+      "activity_offset": 0.61,
+      "stride_m": 0.75,
+      "seat_front": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "seat_point": [
+        355.98,
+        0.0,
+        -19.48
+      ],
+      "seat_cycle": true,
+      "stand_point": [
+        355.56,
+        0.0,
+        -19.48
+      ],
+      "home_point": [
+        354.16,
+        0.0,
+        -19.48
+      ]
+    },
+    {
+      "id": "V18-B-03",
+      "wing": "B",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        25.02,
+        0.0,
+        29.98
+      ],
+      "yaw": -0.0,
+      "style": 2,
+      "scale": 0.9460000000000001,
+      "phase": 3.462,
+      "speed": 1.04,
+      "seat_body": "B-TIME-AICHI-outdoor_bench-49",
+      "seat_height": 0.5075,
+      "female_reference": false,
+      "activity_offset": 1.22,
+      "stride_m": 0.75,
+      "seat_front": [
+        0.0,
+        -1.0
+      ],
+      "seat_point": [
+        25.02,
+        0.0,
+        29.98
+      ],
+      "seat_cycle": true,
+      "stand_point": [
+        25.02,
+        0.0,
+        29.56
+      ],
+      "home_point": [
+        25.02,
+        0.0,
+        28.16
+      ]
+    },
+    {
+      "id": "V18-B-04",
+      "wing": "B",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        23.98,
+        0.0,
+        29.98
+      ],
+      "yaw": -0.0,
+      "style": 3,
+      "scale": 0.964,
+      "phase": 5.1930000000000005,
+      "speed": 1.085,
+      "seat_body": "B-TIME-AICHI-outdoor_bench-49",
+      "seat_height": 0.5075,
+      "female_reference": false,
+      "activity_offset": 1.83,
+      "stride_m": 0.75,
+      "seat_front": [
+        0.0,
+        -1.0
+      ],
+      "seat_point": [
+        23.98,
+        0.0,
+        29.98
+      ],
+      "seat_cycle": true,
+      "stand_point": [
+        23.98,
+        0.0,
+        29.56
+      ],
+      "home_point": [
+        23.98,
+        0.0,
+        28.16
+      ]
+    },
+    {
+      "id": "V18-C-05",
+      "wing": "C",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        -119.48,
+        0.0,
+        -302.02
+      ],
+      "yaw": -0.0,
+      "style": 4,
+      "scale": 0.982,
+      "phase": 6.924,
+      "speed": 1.13,
+      "seat_body": "C-KIDS-outdoor_bench-5",
+      "seat_height": 0.5075,
+      "female_reference": false,
+      "activity_offset": 2.44,
+      "stride_m": 0.75,
+      "seat_front": [
+        0.0,
+        -1.0
+      ],
+      "seat_point": [
+        -119.48,
+        0.0,
+        -302.02
+      ],
+      "seat_cycle": true,
+      "stand_point": [
+        -119.48,
+        0.0,
+        -302.44
+      ],
+      "home_point": [
+        -119.48,
+        0.0,
+        -303.84
+      ]
+    },
+    {
+      "id": "V18-C-06",
+      "wing": "C",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        -120.52,
+        0.0,
+        -302.02
+      ],
+      "yaw": -0.0,
+      "style": 5,
+      "scale": 0.91,
+      "phase": 8.655000000000001,
+      "speed": 0.95,
+      "seat_body": "C-KIDS-outdoor_bench-5",
+      "seat_height": 0.5075,
+      "female_reference": false,
+      "activity_offset": 3.05,
+      "stride_m": 0.75,
+      "seat_front": [
+        0.0,
+        -1.0
+      ],
+      "seat_point": [
+        -120.52,
+        0.0,
+        -302.02
+      ],
+      "seat_cycle": true,
+      "stand_point": [
+        -120.52,
+        0.0,
+        -302.44
+      ],
+      "home_point": [
+        -120.52,
+        0.0,
+        -303.84
+      ]
+    },
+    {
+      "id": "V18-C-07",
+      "wing": "C",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        -79.04,
+        0.0,
+        -316.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 0,
+      "scale": 0.928,
+      "phase": 10.386000000000001,
+      "speed": 0.995,
+      "seat_body": "C-MELON-TRUCK-outdoor_table_set-11",
+      "seat_height": 0.505,
+      "female_reference": false,
+      "activity_offset": 0.0,
+      "stride_m": 0.75,
+      "seat_front": [
+        1.0,
+        -6.123233995736766e-17
+      ],
+      "seat_point": [
+        -79.04,
+        0.0,
+        -316.0
+      ],
+      "seat_cycle": false,
+      "stand_point": [
+        -78.62,
+        0.0,
+        -316.0
+      ],
+      "home_point": [
+        -77.22000000000001,
+        0.0,
+        -316.0
+      ]
+    },
+    {
+      "id": "V18-C-08",
+      "wing": "C",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        -76.96,
+        0.0,
+        -316.0
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 1,
+      "scale": 0.9460000000000001,
+      "phase": 12.117,
+      "speed": 1.04,
+      "seat_body": "C-MELON-TRUCK-outdoor_table_set-11",
+      "seat_height": 0.505,
+      "female_reference": false,
+      "activity_offset": 0.61,
+      "stride_m": 0.75,
+      "seat_front": [
+        -1.0,
+        -6.123233995736766e-17
+      ],
+      "seat_point": [
+        -76.96,
+        0.0,
+        -316.0
+      ],
+      "seat_cycle": false,
+      "stand_point": [
+        -77.38,
+        0.0,
+        -316.0
+      ],
+      "home_point": [
+        -78.77999999999999,
+        0.0,
+        -316.0
+      ]
+    },
+    {
+      "id": "V18-C-09",
+      "wing": "C",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        -86.17963229036539,
+        0.0,
+        -204.00709846058362
+      ],
+      "yaw": 1.3521273809209546,
+      "style": 2,
+      "scale": 0.964,
+      "phase": 13.848,
+      "speed": 1.085,
+      "seat_body": "V18-C1F-CSW-3-customer_seating-194",
+      "seat_height": 0.505,
+      "female_reference": false,
+      "activity_offset": 1.22,
+      "stride_m": 0.75,
+      "seat_front": [
+        -0.9761870601839527,
+        -0.2169304578186562
+      ],
+      "seat_point": [
+        -86.17963229036539,
+        0.0,
+        -204.00709846058362
+      ],
+      "seat_cycle": false,
+      "stand_point": [
+        -86.58963085564265,
+        0.0,
+        -204.09820925286746
+      ],
+      "home_point": [
+        -87.95629273990018,
+        0.0,
+        -204.40191189381358
+      ]
+    },
+    {
+      "id": "V18-C-10",
+      "wing": "C",
+      "floor": "1F",
+      "role": "seated",
+      "p": [
+        -88.21010137554802,
+        0.0,
+        -204.45831381284643
+      ],
+      "yaw": -1.7894652726688385,
+      "style": 3,
+      "scale": 0.982,
+      "phase": 15.579,
+      "speed": 1.13,
+      "seat_body": "V18-C1F-CSW-3-customer_seating-194",
+      "seat_height": 0.505,
+      "female_reference": false,
+      "activity_offset": 1.83,
+      "stride_m": 0.75,
+      "seat_front": [
+        0.9761870601839528,
+        0.21693045781865608
+      ],
+      "seat_point": [
+        -88.21010137554802,
+        0.0,
+        -204.45831381284643
+      ],
+      "seat_cycle": false,
+      "stand_point": [
+        -87.80010281027076,
+        0.0,
+        -204.36720302056258
+      ],
+      "home_point": [
+        -86.43344092601323,
+        0.0,
+        -204.06350037961647
+      ]
+    },
+    {
+      "id": "V18-A-11",
+      "wing": "A",
+      "floor": "1F",
+      "role": "browsing",
+      "p": [
+        394.13338441977214,
+        0.0,
+        -54.99585338368612
+      ],
+      "yaw": 0.1167884257863605,
+      "style": 4,
+      "scale": 0.91,
+      "phase": 17.310000000000002,
+      "speed": 0.95,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 2.44,
+      "stride_m": 0.75,
+      "store_id": "A1F-007",
+      "browse_point": [
+        394.13338441977214,
+        0.0,
+        -54.99585338368612
+      ],
+      "browse_cycle": true,
+      "home_point": [
+        395.6231663894984,
+        0.0,
+        -55.17063805886843
+      ]
+    },
+    {
+      "id": "V18-A-12",
+      "wing": "A",
+      "floor": "1F",
+      "role": "browsing",
+      "p": [
+        382.5673197263316,
+        0.0,
+        -53.013099436239166
+      ],
+      "yaw": 0.1167884257863605,
+      "style": 5,
+      "scale": 0.928,
+      "phase": 19.041,
+      "speed": 0.995,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 3.05,
+      "stride_m": 0.75,
+      "store_id": "AB1-003",
+      "browse_point": [
+        382.5673197263316,
+        0.0,
+        -53.013099436239166
+      ],
+      "browse_cycle": true,
+      "home_point": [
+        381.07753775660535,
+        0.0,
+        -52.83831476105686
+      ]
+    },
+    {
+      "id": "V18-B-13",
+      "wing": "B",
+      "floor": "1F",
+      "role": "browsing",
+      "p": [
+        -62.45294416594762,
+        0.0,
+        -11.87071196199485
+      ],
+      "yaw": 1.8157284609807747,
+      "style": 0,
+      "scale": 0.9460000000000001,
+      "phase": 20.772000000000002,
+      "speed": 1.04,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 0.0,
+      "stride_m": 0.75,
+      "store_id": "B1-030",
+      "browse_point": [
+        -62.45294416594762,
+        0.0,
+        -11.87071196199485
+      ],
+      "browse_cycle": true,
+      "home_point": [
+        -62.08920843834161,
+        0.0,
+        -10.41548128596341
+      ]
+    },
+    {
+      "id": "V18-B-14",
+      "wing": "B",
+      "floor": "1F",
+      "role": "browsing",
+      "p": [
+        43.686812533000555,
+        0.0,
+        35.54685290909602
+      ],
+      "yaw": -1.8785817516641745,
+      "style": 1,
+      "scale": 0.964,
+      "phase": 22.503,
+      "speed": 1.085,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 0.61,
+      "stride_m": 0.75,
+      "store_id": "B1-N03",
+      "browse_point": [
+        43.686812533000555,
+        0.0,
+        35.54685290909602
+      ],
+      "browse_cycle": true,
+      "home_point": [
+        44.14123584680784,
+        0.0,
+        34.11734269511767
+      ]
+    },
+    {
+      "id": "V18-C-15",
+      "wing": "C",
+      "floor": "1F",
+      "role": "browsing",
+      "p": [
+        -161.0502789316057,
+        0.0,
+        -329.02622212350053
+      ],
+      "yaw": 1.7212721576383727,
+      "style": 2,
+      "scale": 0.982,
+      "phase": 24.234,
+      "speed": 1.13,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 1.22,
+      "stride_m": 0.75,
+      "store_id": "C1F-CW-1",
+      "browse_point": [
+        -161.0502789316057,
+        0.0,
+        -329.02622212350053
+      ],
+      "browse_cycle": true,
+      "home_point": [
+        -160.82541602663417,
+        0.0,
+        -327.5431723354058
+      ]
+    },
+    {
+      "id": "V18-C-16",
+      "wing": "C",
+      "floor": "1F",
+      "role": "browsing",
+      "p": [
+        -88.24240505429734,
+        0.0,
+        -211.00941599679382
+      ],
+      "yaw": 2.991116822746326,
+      "style": 3,
+      "scale": 0.91,
+      "phase": 25.965,
+      "speed": 0.95,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 1.83,
+      "stride_m": 0.75,
+      "store_id": "C1F-CSW-3",
+      "browse_point": [
+        -88.24240505429734,
+        0.0,
+        -211.00941599679382
+      ],
+      "browse_cycle": true,
+      "home_point": [
+        -86.75935526620262,
+        0.0,
+        -210.78455309182232
+      ]
+    },
+    {
+      "id": "V18-A-17",
+      "wing": "A",
+      "floor": "1F",
+      "role": "information",
+      "p": [
+        353.4,
+        0.0,
+        -45.0
+      ],
+      "yaw": -2.8501358591119157,
+      "style": 4,
+      "scale": 0.928,
+      "phase": 27.696,
+      "speed": 0.995,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 2.44,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-18",
+      "wing": "A",
+      "floor": "1F",
+      "role": "information",
+      "p": [
+        354.6,
+        0.0,
+        -45.0
+      ],
+      "yaw": 2.8501358591119157,
+      "style": 5,
+      "scale": 0.9460000000000001,
+      "phase": 29.427000000000003,
+      "speed": 1.04,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 3.05,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-19",
+      "wing": "A",
+      "floor": "1F",
+      "role": "conversation",
+      "p": [
+        343.4,
+        0.0,
+        -34.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 0,
+      "scale": 0.964,
+      "phase": 31.158,
+      "speed": 1.085,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 0.0,
+      "stride_m": 0.75,
+      "partner_id": "V18-A-20"
+    },
+    {
+      "id": "V18-A-20",
+      "wing": "A",
+      "floor": "1F",
+      "role": "conversation",
+      "p": [
+        344.6,
+        0.0,
+        -34.0
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 1,
+      "scale": 0.982,
+      "phase": 32.889,
+      "speed": 1.13,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 0.61,
+      "stride_m": 0.75,
+      "partner_id": "V18-A-19"
+    },
+    {
+      "id": "V18-B-21",
+      "wing": "B",
+      "floor": "1F",
+      "role": "conversation",
+      "p": [
+        34.4,
+        0.0,
+        22.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 2,
+      "scale": 0.91,
+      "phase": 34.620000000000005,
+      "speed": 0.95,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 1.22,
+      "stride_m": 0.75,
+      "partner_id": "V18-B-22"
+    },
+    {
+      "id": "V18-B-22",
+      "wing": "B",
+      "floor": "1F",
+      "role": "conversation",
+      "p": [
+        35.6,
+        0.0,
+        22.0
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 3,
+      "scale": 0.928,
+      "phase": 36.351,
+      "speed": 0.995,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 1.83,
+      "stride_m": 0.75,
+      "partner_id": "V18-B-21"
+    },
+    {
+      "id": "V18-C-23",
+      "wing": "C",
+      "floor": "1F",
+      "role": "conversation",
+      "p": [
+        -92.6,
+        0.0,
+        -219.5
+      ],
+      "yaw": -1.1760052070951317,
+      "style": 4,
+      "scale": 0.9460000000000001,
+      "phase": 38.082,
+      "speed": 1.04,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 2.44,
+      "stride_m": 0.75,
+      "partner_id": "V18-C-24"
+    },
+    {
+      "id": "V18-C-24",
+      "wing": "C",
+      "floor": "1F",
+      "role": "conversation",
+      "p": [
+        -91.4,
+        0.0,
+        -219.5
+      ],
+      "yaw": 1.1760052070951317,
+      "style": 5,
+      "scale": 0.964,
+      "phase": 39.813,
+      "speed": 1.085,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 3.05,
+      "stride_m": 0.75,
+      "partner_id": "V18-C-23"
+    },
+    {
+      "id": "V18-B-25",
+      "wing": "B",
+      "floor": "1F",
+      "role": "event",
+      "p": [
+        -2.3,
+        0.0,
+        0.0
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 0,
+      "scale": 0.982,
+      "phase": 41.544000000000004,
+      "speed": 1.13,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 0.0,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-26",
+      "wing": "B",
+      "floor": "1F",
+      "role": "event",
+      "p": [
+        -1.7999999999999998,
+        0.0,
+        8.5
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 1,
+      "scale": 0.91,
+      "phase": 43.275000000000006,
+      "speed": 0.95,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 0.61,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-27",
+      "wing": "B",
+      "floor": "1F",
+      "role": "event",
+      "p": [
+        -2.3,
+        0.0,
+        20.0
+      ],
+      "yaw": 1.5707963267948966,
+      "style": 2,
+      "scale": 0.928,
+      "phase": 45.006,
+      "speed": 0.995,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 1.22,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-28",
+      "wing": "B",
+      "floor": "1F",
+      "role": "event",
+      "p": [
+        17.3,
+        0.0,
+        0.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 3,
+      "scale": 0.9460000000000001,
+      "phase": 46.737,
+      "speed": 1.04,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "female_reference": false,
+      "activity_offset": 1.83,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-29",
+      "wing": "A",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        332.0,
+        0.0,
+        -43.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 4,
+      "scale": 0.964,
+      "phase": 48.468,
+      "speed": 1.085,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          332.0,
+          0.0,
+          -43.0
+        ],
+        [
+          342.0,
+          0.0,
+          -43.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 2.44,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-30",
+      "wing": "A",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        365.0,
+        0.0,
+        -49.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 5,
+      "scale": 0.982,
+      "phase": 50.199000000000005,
+      "speed": 1.13,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          365.0,
+          0.0,
+          -49.0
+        ],
+        [
+          375.0,
+          0.0,
+          -49.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 3.05,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-31",
+      "wing": "A",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        383.0,
+        0.0,
+        -49.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 0,
+      "scale": 0.91,
+      "phase": 51.93,
+      "speed": 0.95,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          383.0,
+          0.0,
+          -49.0
+        ],
+        [
+          393.0,
+          0.0,
+          -49.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 0.0,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-32",
+      "wing": "A",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        334.0,
+        0.0,
+        -25.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 1,
+      "scale": 0.928,
+      "phase": 53.661,
+      "speed": 0.995,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          334.0,
+          0.0,
+          -25.0
+        ],
+        [
+          344.0,
+          0.0,
+          -25.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 0.61,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-33",
+      "wing": "A",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        358.0,
+        0.0,
+        -16.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 2,
+      "scale": 0.9460000000000001,
+      "phase": 55.392,
+      "speed": 1.04,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          358.0,
+          0.0,
+          -16.0
+        ],
+        [
+          368.0,
+          0.0,
+          -16.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 1.22,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-A-34",
+      "wing": "A",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        395.0,
+        0.0,
+        -49.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 3,
+      "scale": 0.964,
+      "phase": 57.123000000000005,
+      "speed": 1.085,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          395.0,
+          0.0,
+          -49.0
+        ],
+        [
+          405.0,
+          0.0,
+          -49.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 1.83,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-35",
+      "wing": "B",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        -10.0,
+        0.0,
+        30.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 4,
+      "scale": 0.982,
+      "phase": 58.854000000000006,
+      "speed": 1.13,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          -10.0,
+          0.0,
+          30.0
+        ],
+        [
+          0.0,
+          0.0,
+          30.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 2.44,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-36",
+      "wing": "B",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        5.0,
+        0.0,
+        20.0
+      ],
+      "yaw": -3.141592653589793,
+      "style": 5,
+      "scale": 0.91,
+      "phase": 60.585,
+      "speed": 0.95,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          5.0,
+          0.0,
+          20.0
+        ],
+        [
+          5.0,
+          0.0,
+          30.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 3.05,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-37",
+      "wing": "B",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        17.0,
+        0.0,
+        23.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 0,
+      "scale": 0.928,
+      "phase": 62.316,
+      "speed": 0.995,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          17.0,
+          0.0,
+          23.0
+        ],
+        [
+          27.0,
+          0.0,
+          23.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 0.0,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-38",
+      "wing": "B",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        34.0,
+        0.0,
+        19.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 1,
+      "scale": 0.9460000000000001,
+      "phase": 64.047,
+      "speed": 1.04,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          34.0,
+          0.0,
+          19.0
+        ],
+        [
+          44.0,
+          0.0,
+          19.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 0.61,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-B-39",
+      "wing": "B",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        -15.0,
+        0.0,
+        19.0
+      ],
+      "yaw": -3.141592653589793,
+      "style": 2,
+      "scale": 0.964,
+      "phase": 65.778,
+      "speed": 1.085,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          -15.0,
+          0.0,
+          19.0
+        ],
+        [
+          -15.0,
+          0.0,
+          29.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 1.22,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-C-40",
+      "wing": "C",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        -108.0,
+        0.0,
+        -291.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 3,
+      "scale": 0.982,
+      "phase": 67.509,
+      "speed": 1.13,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          -108.0,
+          0.0,
+          -291.0
+        ],
+        [
+          -98.0,
+          0.0,
+          -291.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 1.83,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-C-41",
+      "wing": "C",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        -129.0,
+        0.0,
+        -289.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 4,
+      "scale": 0.91,
+      "phase": 69.24000000000001,
+      "speed": 0.95,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          -129.0,
+          0.0,
+          -289.0
+        ],
+        [
+          -119.0,
+          0.0,
+          -289.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 2.44,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-C-42",
+      "wing": "C",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        -86.0,
+        0.0,
+        -305.0
+      ],
+      "yaw": -3.141592653589793,
+      "style": 5,
+      "scale": 0.928,
+      "phase": 70.971,
+      "speed": 0.995,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          -86.0,
+          0.0,
+          -305.0
+        ],
+        [
+          -86.0,
+          0.0,
+          -295.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 3.05,
+      "stride_m": 0.75
+    },
+    {
+      "id": "V18-C-43",
+      "wing": "C",
+      "floor": "1F",
+      "role": "walking",
+      "p": [
+        -95.0,
+        0.0,
+        -216.0
+      ],
+      "yaw": -1.5707963267948966,
+      "style": 0,
+      "scale": 0.9460000000000001,
+      "phase": 72.702,
+      "speed": 1.04,
+      "seat_body": null,
+      "seat_height": 0.49,
+      "path": [
+        [
+          -95.0,
+          0.0,
+          -216.0
+        ],
+        [
+          -85.0,
+          0.0,
+          -216.0
+        ]
+      ],
+      "path_length_m": 10.0,
+      "female_reference": false,
+      "activity_offset": 0.0,
+      "stride_m": 0.75
+    }
+  ],
+  "count": 43,
+  "female_reference_count": 1,
+  "toggle": "F12",
+  "baseline_v18_preserved": true,
+  "default_mode": "v19",
+  "no_ES_EV_stairs_AI": true,
+  "issues": [
+    {
+      "id": "V18-C-07",
+      "status": "Chair remains seated; front approach crosses a table. No false complete sit/stand loop."
+    },
+    {
+      "id": "V18-C-08",
+      "status": "Chair remains seated; front approach crosses a table. No false complete sit/stand loop."
+    },
+    {
+      "id": "V18-C-09",
+      "status": "Chair remains seated; front approach crosses a table. No false complete sit/stand loop."
+    },
+    {
+      "id": "V18-C-10",
+      "status": "Chair remains seated; front approach crosses a table. No false complete sit/stand loop."
+    }
+  ]
+}

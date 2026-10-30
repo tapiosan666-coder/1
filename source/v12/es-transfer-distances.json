@@ -1,0 +1,727 @@
+[
+  {
+    "wing": "B",
+    "from": "E1-12-UP",
+    "to": "E1-23-UP",
+    "floor_y": 5.525,
+    "exit_world_xz": [
+      -189.6,
+      -38.0
+    ],
+    "next_entry_world_xz": [
+      -194.4,
+      3.0
+    ],
+    "straight_line_m": 41.28001937984041,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 82.75264233615796,
+    "path_source_xz": [
+      [
+        -618.6,
+        8.0
+      ],
+      [
+        -618.0,
+        8.25
+      ],
+      [
+        -594.75,
+        18.0
+      ],
+      [
+        -594.0,
+        26.25
+      ],
+      [
+        -594.0,
+        42.0
+      ],
+      [
+        -598.5,
+        44.25
+      ],
+      [
+        -624.0,
+        47.25
+      ],
+      [
+        -624.0,
+        48.75
+      ],
+      [
+        -623.4,
+        49.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "B",
+    "from": "E2-12-UP",
+    "to": "E2-23-UP",
+    "floor_y": 5.525,
+    "exit_world_xz": [
+      -20.0,
+      24.4
+    ],
+    "next_entry_world_xz": [
+      23.0,
+      9.6
+    ],
+    "straight_line_m": 45.47570780097875,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 50.659107662785594,
+    "path_source_xz": [
+      [
+        -449.0,
+        70.4
+      ],
+      [
+        -449.25,
+        71.25
+      ],
+      [
+        -444.75,
+        70.5
+      ],
+      [
+        -415.5,
+        61.5
+      ],
+      [
+        -411.75,
+        54.75
+      ],
+      [
+        -405.75,
+        54.75
+      ],
+      [
+        -406.0,
+        55.6
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "B",
+    "from": "E3-12-UP",
+    "to": "E3-23-UP",
+    "floor_y": 5.525,
+    "exit_world_xz": [
+      146.40858796,
+      -35.13205
+    ],
+    "next_entry_world_xz": [
+      164.04569143999998,
+      28.22453824
+    ],
+    "straight_line_m": 65.76568020310543,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 85.26412900021381,
+    "path_source_xz": [
+      [
+        -282.59141204,
+        10.86795
+      ],
+      [
+        -282.0,
+        10.5
+      ],
+      [
+        -255.75,
+        31.5
+      ],
+      [
+        -251.25,
+        42.0
+      ],
+      [
+        -251.25,
+        51.0
+      ],
+      [
+        -257.25,
+        62.25
+      ],
+      [
+        -266.25,
+        72.75
+      ],
+      [
+        -266.25,
+        75.0
+      ],
+      [
+        -265.5,
+        75.0
+      ],
+      [
+        -264.95430856,
+        74.22453824
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E1--1-UP",
+    "to": "A-E1-0-UP",
+    "floor_y": 0.0,
+    "exit_world_xz": [
+      350.4,
+      -57.0
+    ],
+    "next_entry_world_xz": [
+      335.6,
+      -10.0
+    ],
+    "straight_line_m": 49.275145864827216,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 52.21019062860765,
+    "path_source_xz": [
+      [
+        -78.60000000000002,
+        -11.0
+      ],
+      [
+        -78.0,
+        -11.0
+      ],
+      [
+        -78.0,
+        -5.0
+      ],
+      [
+        -94.5,
+        35.5
+      ],
+      [
+        -94.5,
+        36.25
+      ],
+      [
+        -93.39999999999998,
+        36.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E2--1-UP",
+    "to": "A-E2-0-UP",
+    "floor_y": 0.0,
+    "exit_world_xz": [
+      581.4,
+      -60.0
+    ],
+    "next_entry_world_xz": [
+      566.6,
+      -3.0
+    ],
+    "straight_line_m": 58.89006707416794,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 61.302705155616955,
+    "path_source_xz": [
+      [
+        152.39999999999998,
+        -14.0
+      ],
+      [
+        153.0,
+        -14.0
+      ],
+      [
+        153.0,
+        -8.0
+      ],
+      [
+        136.5,
+        43.0
+      ],
+      [
+        137.60000000000002,
+        43.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E3--1-UP",
+    "to": "A-E3-0-UP",
+    "floor_y": 0.0,
+    "exit_world_xz": [
+      455.0,
+      138.4
+    ],
+    "next_entry_world_xz": [
+      510.0,
+      123.6
+    ],
+    "straight_line_m": 56.95647461000374,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 59.15563281004609,
+    "path_source_xz": [
+      [
+        26.0,
+        184.4
+      ],
+      [
+        26.25,
+        185.5
+      ],
+      [
+        75.75,
+        169.0
+      ],
+      [
+        81.0,
+        169.0
+      ],
+      [
+        81.0,
+        169.6
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E1-0-UP",
+    "to": "A-E1-1-UP",
+    "floor_y": 5.525,
+    "exit_world_xz": [
+      350.4,
+      -10.0
+    ],
+    "next_entry_world_xz": [
+      335.6,
+      -57.0
+    ],
+    "straight_line_m": 49.275145864827216,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 61.29005486831236,
+    "path_source_xz": [
+      [
+        -78.60000000000002,
+        36.0
+      ],
+      [
+        -77.5,
+        35.75
+      ],
+      [
+        -72.25,
+        14.75
+      ],
+      [
+        -73.0,
+        8.75
+      ],
+      [
+        -89.5,
+        -4.75
+      ],
+      [
+        -94.0,
+        -4.75
+      ],
+      [
+        -94.0,
+        -10.75
+      ],
+      [
+        -93.39999999999998,
+        -11.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E2-0-UP",
+    "to": "A-E2-1-UP",
+    "floor_y": 5.525,
+    "exit_world_xz": [
+      581.4,
+      -3.0
+    ],
+    "next_entry_world_xz": [
+      566.6,
+      -60.0
+    ],
+    "straight_line_m": 58.89006707416794,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 76.4239472666873,
+    "path_source_xz": [
+      [
+        152.39999999999998,
+        43.0
+      ],
+      [
+        153.5,
+        43.25
+      ],
+      [
+        152.75,
+        40.25
+      ],
+      [
+        131.75,
+        27.5
+      ],
+      [
+        124.25,
+        17.75
+      ],
+      [
+        131.0,
+        -7.0
+      ],
+      [
+        137.0,
+        -13.75
+      ],
+      [
+        137.60000000000002,
+        -14.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E3-0-UP",
+    "to": "A-E3-1-UP",
+    "floor_y": 5.525,
+    "exit_world_xz": [
+      510.0,
+      138.4
+    ],
+    "next_entry_world_xz": [
+      455.0,
+      123.6
+    ],
+    "straight_line_m": 56.95647461000374,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 67.6472225550444,
+    "path_source_xz": [
+      [
+        81.0,
+        184.4
+      ],
+      [
+        80.75,
+        185.0
+      ],
+      [
+        74.75,
+        185.0
+      ],
+      [
+        63.5,
+        166.25
+      ],
+      [
+        30.5,
+        166.25
+      ],
+      [
+        26.0,
+        168.5
+      ],
+      [
+        26.0,
+        169.6
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E1-1-UP",
+    "to": "A-E1-2-UP",
+    "floor_y": 10.875,
+    "exit_world_xz": [
+      350.4,
+      -57.0
+    ],
+    "next_entry_world_xz": [
+      335.6,
+      -10.0
+    ],
+    "straight_line_m": 49.275145864827216,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 60.11486634463441,
+    "path_source_xz": [
+      [
+        -78.60000000000002,
+        -11.0
+      ],
+      [
+        -77.75,
+        -10.75
+      ],
+      [
+        -71.75,
+        14.75
+      ],
+      [
+        -75.5,
+        22.25
+      ],
+      [
+        -94.25,
+        34.25
+      ],
+      [
+        -94.25,
+        35.75
+      ],
+      [
+        -93.39999999999998,
+        36.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E2-1-UP",
+    "to": "A-E2-2-UP",
+    "floor_y": 10.875,
+    "exit_world_xz": [
+      581.4,
+      -60.0
+    ],
+    "next_entry_world_xz": [
+      566.6,
+      -3.0
+    ],
+    "straight_line_m": 58.89006707416794,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 79.00446704241084,
+    "path_source_xz": [
+      [
+        152.39999999999998,
+        -14.0
+      ],
+      [
+        153.25,
+        -13.75
+      ],
+      [
+        153.25,
+        -7.75
+      ],
+      [
+        134.5,
+        -1.75
+      ],
+      [
+        127.0,
+        5.75
+      ],
+      [
+        124.0,
+        18.5
+      ],
+      [
+        136.75,
+        43.25
+      ],
+      [
+        137.60000000000002,
+        43.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "A",
+    "from": "A-E3-1-UP",
+    "to": "A-E3-2-UP",
+    "floor_y": 10.875,
+    "exit_world_xz": [
+      455.0,
+      138.4
+    ],
+    "next_entry_world_xz": [
+      510.0,
+      123.6
+    ],
+    "straight_line_m": 56.95647461000374,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 69.87127626436603,
+    "path_source_xz": [
+      [
+        26.0,
+        184.4
+      ],
+      [
+        25.75,
+        185.0
+      ],
+      [
+        28.0,
+        185.0
+      ],
+      [
+        35.5,
+        167.0
+      ],
+      [
+        40.0,
+        166.25
+      ],
+      [
+        76.75,
+        166.25
+      ],
+      [
+        81.25,
+        168.5
+      ],
+      [
+        81.0,
+        169.6
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  },
+  {
+    "wing": "C",
+    "from": "CE12-UP",
+    "to": "CN23-UP",
+    "floor_y": 5.525,
+    "exit_world_xz": [
+      107.0,
+      -273.6
+    ],
+    "next_entry_world_xz": [
+      -78.4,
+      -364.0
+    ],
+    "straight_line_m": 206.26516913914477,
+    "walk_distance_measured": false,
+    "plan_path_found": true,
+    "plan_only": true,
+    "grid_resolution_m": 0.75,
+    "actual_Godot_walk_distance_measured": false,
+    "plan_path_m": 296.3907491455451,
+    "path_source_xz": [
+      [
+        -322.0,
+        -227.60000000000002
+      ],
+      [
+        -322.25,
+        -226.75
+      ],
+      [
+        -299.75,
+        -229.0
+      ],
+      [
+        -299.75,
+        -230.5
+      ],
+      [
+        -318.5,
+        -262.0
+      ],
+      [
+        -371.75,
+        -319.0
+      ],
+      [
+        -384.5,
+        -318.25
+      ],
+      [
+        -433.25,
+        -295.0
+      ],
+      [
+        -498.5,
+        -297.25
+      ],
+      [
+        -508.25,
+        -313.0
+      ],
+      [
+        -508.25,
+        -318.25
+      ],
+      [
+        -507.4,
+        -318.0
+      ]
+    ],
+    "candidate_module_transfer_m": 8.4,
+    "module_installed_in_this_wing": false
+  }
+]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://2t7ubswpx1yo"
+
+[deps]
+
+files=["res://source/v13/remaining-service-zones.wing.translation", "res://source/v13/remaining-service-zones.floor.translation", "res://source/v13/remaining-service-zones.role.translation", "res://source/v13/remaining-service-zones.area.translation", "res://source/v13/remaining-service-zones.world.translation", "res://source/v13/remaining-service-zones.world.translation", "res://source/v13/remaining-service-zones.world.translation", "res://source/v13/remaining-service-zones.status.translation"]
+
+source_file="res://source/v13/remaining-service-zones.csv"
+dest_files=["res://source/v13/remaining-service-zones.wing.translation", "res://source/v13/remaining-service-zones.floor.translation", "res://source/v13/remaining-service-zones.role.translation", "res://source/v13/remaining-service-zones.area.translation", "res://source/v13/remaining-service-zones.world.translation", "res://source/v13/remaining-service-zones.world.translation", "res://source/v13/remaining-service-zones.world.translation", "res://source/v13/remaining-service-zones.status.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

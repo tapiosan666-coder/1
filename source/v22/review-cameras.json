@@ -1,0 +1,762 @@
+[
+  {
+    "id": "01-A-shared-joint",
+    "title": "A館・指摘座標から店舗境界を見る",
+    "eye": [
+      393.2,
+      1.65,
+      -51.4
+    ],
+    "look": [
+      391.1,
+      1.4,
+      -66.0
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "02-A-continuous-ES",
+    "title": "A館・西広場の連続ES候補",
+    "eye": [
+      314,
+      1.65,
+      -39
+    ],
+    "look": [
+      332,
+      5.8,
+      -39
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "03-B-continuous-ES",
+    "title": "B館・西吹き抜けと連続ES",
+    "eye": [
+      -212,
+      1.65,
+      -15.5
+    ],
+    "look": [
+      -187,
+      6,
+      -15.5
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "04-C-open-courtyard",
+    "title": "C館・中庭と上階ギャラリー",
+    "eye": [
+      -68.543382,
+      1.65,
+      -289.502218
+    ],
+    "look": [
+      -161,
+      16,
+      -289.5
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "05-C-dog-edge",
+    "title": "C館・移設先のドッグラン",
+    "eye": [
+      -1,
+      1.65,
+      -229
+    ],
+    "look": [
+      -1,
+      1.3,
+      -204
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "06-C-original-dog-place",
+    "title": "C館・旧ドッグラン位置と主動線",
+    "eye": [
+      -116,
+      1.65,
+      -280
+    ],
+    "look": [
+      -118,
+      1.2,
+      -265
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "07-C-melon-truck",
+    "title": "C館・キッチンカーと屋外席",
+    "eye": [
+      -89,
+      1.65,
+      -301
+    ],
+    "look": [
+      -88,
+      1.2,
+      -323
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "08-B-Aichi-fair",
+    "title": "B館・物産展の買い回り通路",
+    "eye": [
+      5.5,
+      1.65,
+      -7.5
+    ],
+    "look": [
+      5.5,
+      1.5,
+      17
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "09-A-specialty-street",
+    "title": "A館・専門店街",
+    "eye": [
+      393.2,
+      1.65,
+      -51.4
+    ],
+    "look": [
+      425,
+      1.7,
+      -51.4
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "10-A-storefront",
+    "title": "A館・店舗正面",
+    "eye": [
+      397.7604743174849,
+      1.65,
+      -53.27679527856367
+    ],
+    "look": [
+      396.7635878083309,
+      1.2,
+      -59.09196658196194
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "A1F-007"
+  },
+  {
+    "id": "10-B-storefront",
+    "title": "B館・店舗正面",
+    "eye": [
+      -59.61777702118459,
+      1.65,
+      1.3359560475927426
+    ],
+    "look": [
+      -61.048470883101565,
+      1.2,
+      -4.3879512781309264
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "B1-030"
+  },
+  {
+    "id": "10-C-storefront",
+    "title": "C館・店舗正面",
+    "eye": [
+      -158.12277769807093,
+      1.65,
+      -326.5098288128042
+    ],
+    "look": [
+      -163.88228135315626,
+      1.2,
+      -325.22993911167407
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "C1F-CW-1"
+  },
+  {
+    "id": "FLOOR-A-B1",
+    "title": "A館 B1 / 食品市場",
+    "eye": [
+      448.2127452068431,
+      -3.6999999999999997,
+      -6.0190814028684665
+    ],
+    "look": [
+      433.96358627650096,
+      -4.199999999999999,
+      30.178531639629792
+    ],
+    "wing": "A",
+    "floor": "B1",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "AB1-001"
+  },
+  {
+    "id": "FLOOR-A-1F",
+    "title": "A館 1F / 大型食品スーパー",
+    "eye": [
+      448.2127452068431,
+      1.65,
+      -6.0190814028684665
+    ],
+    "look": [
+      433.9558260631365,
+      1.15,
+      30.265446029311892
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "A1F-001"
+  },
+  {
+    "id": "FLOOR-A-2F",
+    "title": "A館 2F / 大型ファッション",
+    "eye": [
+      448.2127452068431,
+      7.175000000000001,
+      -6.0190814028684665
+    ],
+    "look": [
+      434.9852256640792,
+      6.675000000000001,
+      18.736170498753562
+    ],
+    "wing": "A",
+    "floor": "2F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "A2F-001"
+  },
+  {
+    "id": "FLOOR-A-3F",
+    "title": "A館 3F / 屋内遊園地・娯楽",
+    "eye": [
+      462.50980381642177,
+      12.525,
+      -6.473467657698847
+    ],
+    "look": [
+      517.149967260421,
+      12.025,
+      -19.01970058618275
+    ],
+    "wing": "A",
+    "floor": "3F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "A3F-002"
+  },
+  {
+    "id": "FLOOR-A-RF",
+    "title": "A館 RF / 屋上カフェ",
+    "eye": [
+      421.5782599927633,
+      18.049999999999997,
+      -56.95265020666942
+    ],
+    "look": [
+      418.98329606646803,
+      17.549999999999997,
+      -64.93928528802194
+    ],
+    "wing": "A",
+    "floor": "RF",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "ARF-003"
+  },
+  {
+    "id": "FLOOR-B-B1",
+    "title": "B館 B1 / 地下食品スーパー",
+    "eye": [
+      -283.1,
+      -3.6999999999999997,
+      -9.0
+    ],
+    "look": [
+      -294.2366666666667,
+      -4.199999999999999,
+      -23.308333333333334
+    ],
+    "wing": "B",
+    "floor": "B1",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "BB1-MARKET"
+  },
+  {
+    "id": "FLOOR-B-1F",
+    "title": "B館 1F / 食品大型店",
+    "eye": [
+      194.53648350844617,
+      1.65,
+      -20.1
+    ],
+    "look": [
+      209.693945815271,
+      1.15,
+      -26.723809523809525
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "B1-AE1"
+  },
+  {
+    "id": "FLOOR-B-2F",
+    "title": "B館 2F / 大型衣料",
+    "eye": [
+      191.01236892621898,
+      7.175000000000001,
+      -20.1002
+    ],
+    "look": [
+      215.48990951844704,
+      6.675000000000001,
+      -28.94777142857143
+    ],
+    "wing": "B",
+    "floor": "2F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "B2-AE1"
+  },
+  {
+    "id": "FLOOR-B-3F",
+    "title": "B館 3F / フードホール",
+    "eye": [
+      193.87972111394342,
+      12.525,
+      -20.1
+    ],
+    "look": [
+      193.2329635,
+      12.025,
+      -27.04683615
+    ],
+    "wing": "B",
+    "floor": "3F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "B3-AE1"
+  },
+  {
+    "id": "FLOOR-B-RF",
+    "title": "B館 RF / 屋上カフェ・休憩ラウンジ",
+    "eye": [
+      -284.1,
+      18.049999999999997,
+      -18.0
+    ],
+    "look": [
+      -290.8,
+      17.549999999999997,
+      -20.21666666666667
+    ],
+    "wing": "B",
+    "floor": "RF",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "BRF-CAFE"
+  },
+  {
+    "id": "FLOOR-C-B1",
+    "title": "C館 B1 / アウトレット生活雑貨",
+    "eye": [
+      77.24199742661688,
+      -3.6999999999999997,
+      -364.0812563939917
+    ],
+    "look": [
+      75.30704653725668,
+      -4.199999999999999,
+      -372.7293237297543
+    ],
+    "wing": "C",
+    "floor": "B1",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "CB1-CNE-3"
+  },
+  {
+    "id": "FLOOR-C-1F",
+    "title": "C館 1F / アウトドア",
+    "eye": [
+      45.94831981459833,
+      1.65,
+      -378.3056553085456
+    ],
+    "look": [
+      44.1699057434908,
+      1.15,
+      -386.8825695451025
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "C1F-CNE-2"
+  },
+  {
+    "id": "FLOOR-C-2F",
+    "title": "C館 2F / スポーツ",
+    "eye": [
+      45.94831981459833,
+      7.175000000000001,
+      -378.3056553085456
+    ],
+    "look": [
+      44.1699057434908,
+      6.675000000000001,
+      -386.8825695451025
+    ],
+    "wing": "C",
+    "floor": "2F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "C2F-CNE-2"
+  },
+  {
+    "id": "FLOOR-C-3F",
+    "title": "C館 3F / アウトドア",
+    "eye": [
+      45.94831981459833,
+      12.525,
+      -378.3056553085456
+    ],
+    "look": [
+      44.1699057434908,
+      12.025,
+      -386.8825695451025
+    ],
+    "wing": "C",
+    "floor": "3F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "C3F-CNE-2"
+  },
+  {
+    "id": "FLOOR-C-RF",
+    "title": "C館 RF / 展望カフェ",
+    "eye": [
+      17.29917833880659,
+      18.049999999999997,
+      -391.32799234299637
+    ],
+    "look": [
+      17.019537206665667,
+      17.549999999999997,
+      -396.26635116345534
+    ],
+    "wing": "C",
+    "floor": "RF",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "store_id": "CRF-CNE-1"
+  },
+  {
+    "id": "NAV-A-1F",
+    "wing": "A",
+    "floor": "1F",
+    "category": "wayfinding",
+    "eye": [
+      311.07,
+      1.65,
+      -63.0
+    ],
+    "look": [
+      311.0,
+      3.15,
+      -59.0
+    ],
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "title": "A館 1F / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "NAV-B-1F",
+    "wing": "B",
+    "floor": "1F",
+    "category": "wayfinding",
+    "eye": [
+      -187.08313419843307,
+      1.65,
+      -28.29582553556037
+    ],
+    "look": [
+      -189.0366268396866,
+      1.5,
+      -31.786365107112072
+    ],
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "title": "B館 1F / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "NAV-C-1F",
+    "wing": "C",
+    "floor": "1F",
+    "category": "wayfinding",
+    "eye": [
+      -83.230240220756,
+      1.65,
+      -216.46391900659808
+    ],
+    "look": [
+      -84.09796205203061,
+      1.5,
+      -212.55917076586226
+    ],
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "title": "C館 1F / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "SUPP-A-interior-ES",
+    "title": "A館1F・吹き抜け中央から連続ES",
+    "eye": [
+      325,
+      1.65,
+      -39
+    ],
+    "look": [
+      333,
+      7,
+      -39
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "SUPP-B-fair-entrance",
+    "title": "B館1F・愛知県フェア入口と二列の売場",
+    "eye": [
+      5.5,
+      1.65,
+      -17
+    ],
+    "look": [
+      5.5,
+      2.2,
+      10
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  }
+]

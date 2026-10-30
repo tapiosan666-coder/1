@@ -1,0 +1,596 @@
+{
+  "status": "UNAPPROVED independent B-west site alternative",
+  "centre_world": [
+    -192,
+    0,
+    -15.5
+  ],
+  "escalators": [
+    {
+      "id": "B-WEST-V15-0-UP",
+      "wing": "B",
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "UP",
+      "c": [
+        -192.0,
+        0.0,
+        -11.2
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 0.0,
+      "high_y": 5.525,
+      "run_m": 11.8,
+      "rise_m": 5.525,
+      "test_start": [
+        -184.2,
+        0.0,
+        -11.2
+      ],
+      "test_end": [
+        -199.8,
+        5.525,
+        -11.2
+      ]
+    },
+    {
+      "id": "B-WEST-V15-0-DOWN",
+      "wing": "B",
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "DOWN",
+      "c": [
+        -192.0,
+        0.0,
+        -13.4
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 0.0,
+      "high_y": 5.525,
+      "run_m": 11.8,
+      "rise_m": 5.525,
+      "test_start": [
+        -184.2,
+        0.0,
+        -13.4
+      ],
+      "test_end": [
+        -199.8,
+        5.525,
+        -13.4
+      ]
+    },
+    {
+      "id": "B-WEST-V15-1-UP",
+      "wing": "B",
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "UP",
+      "c": [
+        -192.0,
+        5.525,
+        -17.6
+      ],
+      "u": [
+        1.0,
+        0.0
+      ],
+      "low_y": 5.525,
+      "high_y": 10.875,
+      "run_m": 11.8,
+      "rise_m": 5.35,
+      "test_start": [
+        -199.8,
+        5.525,
+        -17.6
+      ],
+      "test_end": [
+        -184.2,
+        10.875,
+        -17.6
+      ]
+    },
+    {
+      "id": "B-WEST-V15-1-DOWN",
+      "wing": "B",
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "DOWN",
+      "c": [
+        -192.0,
+        5.525,
+        -19.8
+      ],
+      "u": [
+        1.0,
+        0.0
+      ],
+      "low_y": 5.525,
+      "high_y": 10.875,
+      "run_m": 11.8,
+      "rise_m": 5.35,
+      "test_start": [
+        -199.8,
+        5.525,
+        -19.8
+      ],
+      "test_end": [
+        -184.2,
+        10.875,
+        -19.8
+      ]
+    },
+    {
+      "id": "B-WEST-V15-2-UP",
+      "wing": "B",
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "UP",
+      "c": [
+        -192.0,
+        10.875,
+        -11.2
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 10.875,
+      "high_y": 16.4,
+      "run_m": 11.8,
+      "rise_m": 5.524999999999999,
+      "test_start": [
+        -184.2,
+        10.875,
+        -11.2
+      ],
+      "test_end": [
+        -199.8,
+        16.4,
+        -11.2
+      ]
+    },
+    {
+      "id": "B-WEST-V15-2-DOWN",
+      "wing": "B",
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "DOWN",
+      "c": [
+        -192.0,
+        10.875,
+        -13.4
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 10.875,
+      "high_y": 16.4,
+      "run_m": 11.8,
+      "rise_m": 5.524999999999999,
+      "test_start": [
+        -184.2,
+        10.875,
+        -13.4
+      ],
+      "test_end": [
+        -199.8,
+        16.4,
+        -13.4
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "from": "B-WEST-V15-0-UP",
+      "to": "B-WEST-V15-1-UP",
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -17.6
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ],
+      "centreline_length_m": 8.4,
+      "status": "AUTOMATED_PHYSICS_PASS / architecture remains UNAPPROVED"
+    },
+    {
+      "from": "B-WEST-V15-1-UP",
+      "to": "B-WEST-V15-2-UP",
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -11.2
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ],
+      "centreline_length_m": 8.4,
+      "status": "AUTOMATED_PHYSICS_PASS / architecture remains UNAPPROVED"
+    }
+  ],
+  "connectors": [
+    {
+      "level": 1,
+      "height": 5.525,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 1,
+      "height": 5.525,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 2,
+      "height": 10.875,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 2,
+      "height": 10.875,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 3,
+      "height": 16.4,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 3,
+      "height": 16.4,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    }
+  ],
+  "erase_surfaces": [
+    "step@@ESC-E1-12-UP",
+    "glass@@ESC-E1-12-UP",
+    "step@@ESC-E1-12-DOWN",
+    "glass@@ESC-E1-12-DOWN",
+    "step@@ESC-E1-23-UP",
+    "glass@@ESC-E1-23-UP",
+    "step@@ESC-E1-23-DOWN",
+    "glass@@ESC-E1-23-DOWN",
+    "stone@@V12-ES-E1-12-UP",
+    "v10_floor_B@@V12-ES-E1-12-UP",
+    "plaster@@V12-ES-E1-12-UP",
+    "v10_darkstone@@V12-ES-E1-12-UP",
+    "v10_guard_glass@@V12-ES-E1-12-UP",
+    "v10_metal@@V12-ES-E1-12-UP",
+    "stone@@V12-ES-E1-12-DOWN",
+    "v10_floor_B@@V12-ES-E1-12-DOWN",
+    "plaster@@V12-ES-E1-12-DOWN",
+    "v10_darkstone@@V12-ES-E1-12-DOWN",
+    "v10_guard_glass@@V12-ES-E1-12-DOWN",
+    "v10_metal@@V12-ES-E1-12-DOWN",
+    "stone@@V12-ES-E1-23-UP",
+    "v10_floor_B@@V12-ES-E1-23-UP",
+    "plaster@@V12-ES-E1-23-UP",
+    "v10_darkstone@@V12-ES-E1-23-UP",
+    "v10_guard_glass@@V12-ES-E1-23-UP",
+    "v10_metal@@V12-ES-E1-23-UP",
+    "stone@@V12-ES-E1-23-DOWN",
+    "v10_floor_B@@V12-ES-E1-23-DOWN",
+    "plaster@@V12-ES-E1-23-DOWN",
+    "v10_darkstone@@V12-ES-E1-23-DOWN",
+    "v10_guard_glass@@V12-ES-E1-23-DOWN",
+    "v10_metal@@V12-ES-E1-23-DOWN",
+    "v12_landing_plate@@V12-LANDING-E1-12-UP-0",
+    "v12_landing_plate@@V12-LANDING-E1-12-UP-1",
+    "v12_landing_plate@@V12-LANDING-E1-12-DOWN-0",
+    "v12_landing_plate@@V12-LANDING-E1-12-DOWN-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-UP-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-UP-2",
+    "v12_landing_plate@@V12-LANDING-E1-23-DOWN-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-DOWN-2"
+  ],
+  "rail_mouth_cuts": [
+    {
+      "surface": "glass@@ARCH-1",
+      "triangles_split": 16
+    },
+    {
+      "surface": "dark_stone@@ARCH-1",
+      "triangles_split": 16
+    },
+    {
+      "surface": "dark_stone@@ARCH-2",
+      "triangles_split": 16
+    },
+    {
+      "surface": "glass@@ARCH-2",
+      "triangles_split": 16
+    },
+    {
+      "surface": "metal@@ESC-E3-23-DOWN",
+      "triangles_split": 2
+    },
+    {
+      "surface": "glass@@B-RF",
+      "triangles_split": 16
+    },
+    {
+      "surface": "v10_metal@@V11-GUARD-ACTUAL-16.4-1.1",
+      "triangles_split": 40
+    },
+    {
+      "surface": "v10_metal@@V15-B-WEST-TRANSFER",
+      "triangles_split": 48
+    },
+    {
+      "surface": "v10_guard_glass@@V15-B-WEST-TRANSFER",
+      "triangles_split": 48
+    },
+    {
+      "surface": "v10_chalk@@V15-B-WEST-TRANSFER",
+      "triangles_split": 48
+    }
+  ],
+  "retired_machine_ids": [
+    "E1-12-UP",
+    "E1-12-DOWN",
+    "E1-23-UP",
+    "E1-23-DOWN"
+  ],
+  "deleted_collision_triangles": {
+    "stone": 64,
+    "plaster": 0,
+    "glass": 16,
+    "wall_chalk": 0,
+    "metal": 0,
+    "walnut": 0,
+    "oak": 0,
+    "wall_sand": 0,
+    "wall_sage": 0,
+    "wall_taupe": 0,
+    "fabric_cream": 0,
+    "wood": 0,
+    "fabric_navy": 0,
+    "dark_stone": 0,
+    "step": 104,
+    "soil": 0,
+    "black": 0,
+    "v8_oak": 0,
+    "v8_slate": 0,
+    "v8_bronze": 0,
+    "v8_travertine": 0,
+    "v8_chair_seat": 0,
+    "v9_collision_only": 0,
+    "v9_marble": 0,
+    "v9_basalt": 0,
+    "v9_bronze": 0,
+    "v10_darkstone": 1520,
+    "v10_glass": 0,
+    "v10_chalk": 0,
+    "v10_sage": 0,
+    "v10_oak": 0,
+    "v10_charcoal": 0,
+    "v10_clay": 0,
+    "v11_fixture_proxy": 0,
+    "v10_guard_glass": 1520,
+    "v12_fixture_proxy": 0,
+    "v12_matched_visible_walls": 0,
+    "ceramic_0": 0
+  },
+  "basement_status": "NOT_INSTALLED: five-level candidate overlaps B1 vehicle aisle and 4 parking stalls; existing basement routes and stalls retained",
+  "controller_unchanged": true,
+  "stores_relocated": false,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "structural_capacity_verified": false,
+  "site_physics_evidence": "evidence/v15/physics-ES.json"
+}

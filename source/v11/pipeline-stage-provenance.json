@@ -1,0 +1,9 @@
+{
+  "stages": [
+    "wall-audit.json records environment generator output, before overlays",
+    "roof-guard-repair.json records the RF internal-opening overlay",
+    "guard-finish-actual.json records the final render-only finishes from actual 3D panes"
+  ],
+  "authoritative_final_pack_manifest": "pack-manifest.json",
+  "last_overlay_preserves_collision_arrays": true
+}
