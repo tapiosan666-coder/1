@@ -1,0 +1,220 @@
+[
+  {
+    "id": "A-1F-book",
+    "title": "A館 1F / book / entry",
+    "store_id": "A1F-007",
+    "wing": "A",
+    "floor": "1F",
+    "category": "book",
+    "eye": [
+      397.777370698996,
+      1.65,
+      -53.178233053082344
+    ],
+    "look": [
+      397.8845261231103,
+      1.0,
+      -67.06661022568959
+    ],
+    "fov": 65,
+    "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+    "variants": [
+      "normal",
+      "C",
+      "ES"
+    ]
+  },
+  {
+    "id": "B-1F-time",
+    "wing": "B",
+    "floor": "1F",
+    "category": "wayfinding",
+    "eye": [
+      -187.08313419843307,
+      1.65,
+      -28.29582553556037
+    ],
+    "look": [
+      -189.0366268396866,
+      1.5,
+      -31.786365107112072
+    ],
+    "fov": 65,
+    "variants": [
+      "normal"
+    ],
+    "title": "B館 1F / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "C-1F-yard",
+    "wing": "C",
+    "floor": "1F",
+    "category": "wayfinding",
+    "eye": [
+      -83.230240220756,
+      1.65,
+      -216.46391900659808
+    ],
+    "look": [
+      -84.09796205203061,
+      1.5,
+      -212.55917076586226
+    ],
+    "fov": 65,
+    "variants": [
+      "normal"
+    ],
+    "title": "C館 1F / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "A-B1-food",
+    "title": "A館 B1 / food_specialty / entry",
+    "store_id": "AB1-003",
+    "wing": "A",
+    "floor": "B1",
+    "category": "food_specialty",
+    "eye": [
+      384.3862183658829,
+      -3.6999999999999997,
+      -50.882606938834385
+    ],
+    "look": [
+      382.34125310405074,
+      -4.35,
+      -61.52115119602487
+    ],
+    "fov": 65,
+    "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+    "variants": [
+      "normal",
+      "C",
+      "ES"
+    ]
+  },
+  {
+    "id": "B-B1-food",
+    "title": "B館 B1 / food / entry",
+    "store_id": "BB1-MARKET",
+    "wing": "B",
+    "floor": "B1",
+    "category": "food",
+    "eye": [
+      -281.0,
+      -3.6999999999999997,
+      -9.0
+    ],
+    "look": [
+      -297.82604166666675,
+      -4.35,
+      -15.853124999999997
+    ],
+    "fov": 65,
+    "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+    "variants": [
+      "normal",
+      "C",
+      "ES"
+    ]
+  },
+  {
+    "id": "A-RF",
+    "wing": "A",
+    "floor": "RF",
+    "category": "wayfinding",
+    "eye": [
+      312.0,
+      18.049999999999997,
+      -60.0
+    ],
+    "look": [
+      308.0,
+      17.9,
+      -60.0
+    ],
+    "fov": 65,
+    "variants": [
+      "normal"
+    ],
+    "title": "A館 RF / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "B-RF",
+    "wing": "B",
+    "floor": "RF",
+    "category": "wayfinding",
+    "eye": [
+      -80.39999999999998,
+      18.049999999999997,
+      60.0
+    ],
+    "look": [
+      -84.39999999999998,
+      17.9,
+      60.0
+    ],
+    "fov": 65,
+    "variants": [
+      "normal"
+    ],
+    "title": "B館 RF / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "C-RF",
+    "wing": "C",
+    "floor": "RF",
+    "category": "wayfinding",
+    "eye": [
+      -115.74255095010126,
+      18.049999999999997,
+      -375.07873892515875
+    ],
+    "look": [
+      -115.47072359227734,
+      17.9,
+      -378.05290789257276
+    ],
+    "fov": 65,
+    "variants": [
+      "normal"
+    ],
+    "title": "C館 RF / 誘導・共用景観",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "A-1F-west",
+    "title": "A館 西広場の案内と休憩",
+    "eye": [
+      339,
+      1.65,
+      -47
+    ],
+    "look": [
+      355,
+      1.4,
+      -40
+    ],
+    "fov": 75,
+    "ui": ""
+  },
+  {
+    "id": "A-1F-gap-393",
+    "eye": [
+      393.2,
+      1.65,
+      -51.4
+    ],
+    "look": [
+      398.2,
+      1.45,
+      -51.4
+    ],
+    "fov": 70,
+    "title": "A館1F 指摘箇所 X393.2 Z-51.4",
+    "wing": "A",
+    "floor": "1F"
+  }
+]

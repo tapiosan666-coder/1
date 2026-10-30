@@ -1,0 +1,338 @@
+[
+  {
+    "id": "C1F-CW-1",
+    "asset": "apparel_fitting_room",
+    "industry": "ファッション",
+    "status": "PLACED",
+    "role": "Fitting suite with opaque enclosure, mirror, stool and parked curtain",
+    "world": [
+      -176.1146296485149,
+      0.0,
+      -324.9582396970304
+    ],
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -604.464922927348,
+            -280.13725673527483
+          ],
+          [
+            -604.0267234025544,
+            -278.1653588737032
+          ],
+          [
+            -605.7643363696818,
+            -277.779222658786
+          ],
+          [
+            -606.2025358944754,
+            -279.75112052035763
+          ],
+          [
+            -604.464922927348,
+            -280.13725673527483
+          ]
+        ]
+      ]
+    },
+    "declared_max_xz": [
+      2.02,
+      1.78
+    ],
+    "height": 2.36,
+    "closest_existing_fixture_m": 1.4149999999999936,
+    "primary_aisle_reserved_width_m": 2.2,
+    "sales_area_unchanged_m2": 406.80075193236894,
+    "human_playtest": false
+  },
+  {
+    "id": "A1F-007",
+    "asset": "book_magazine_display",
+    "industry": "書店",
+    "status": "PLACED",
+    "role": "Face-out magazine/new release department, separate from spine browsing",
+    "world": [
+      393.7006271103437,
+      0.0,
+      -74.09007605315497
+    ],
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -36.141375901625345,
+            -28.32620298477239
+          ],
+          [
+            -34.584092739020384,
+            -28.593165812647523
+          ],
+          [
+            -34.45736987768725,
+            -27.85394912153757
+          ],
+          [
+            -36.01465304029221,
+            -27.586986293662438
+          ],
+          [
+            -36.141375901625345,
+            -28.32620298477239
+          ]
+        ]
+      ]
+    },
+    "declared_max_xz": [
+      1.58,
+      0.75
+    ],
+    "height": 1.38,
+    "closest_existing_fixture_m": 1.2800000000000138,
+    "primary_aisle_reserved_width_m": 2.2,
+    "sales_area_unchanged_m2": 313.285843219953,
+    "human_playtest": false
+  },
+  {
+    "id": "B1-030",
+    "asset": "beauty_tester_bar",
+    "industry": "美容・ケア",
+    "status": "PLACED",
+    "role": "Consultation and seated tester service",
+    "world": [
+      -53.86792121385605,
+      0.0,
+      -4.945816413827522
+    ],
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -484.141226472963,
+            40.908602965447855
+          ],
+          [
+            -481.8128573913127,
+            40.32662580127824
+          ],
+          [
+            -481.5946159547491,
+            41.1997642068971
+          ],
+          [
+            -483.9229850363994,
+            41.781741371066715
+          ],
+          [
+            -484.141226472963,
+            40.908602965447855
+          ]
+        ]
+      ]
+    },
+    "declared_max_xz": [
+      2.4,
+      0.9
+    ],
+    "height": 1.77,
+    "closest_existing_fixture_m": 1.4500000000000046,
+    "primary_aisle_reserved_width_m": 2.2,
+    "sales_area_unchanged_m2": 291.75044805822625,
+    "human_playtest": false
+  },
+  {
+    "id": "B1-N03",
+    "asset": "electronics_media_demo",
+    "industry": "モバイル・家電小物",
+    "status": "PLACED",
+    "role": "TV/audio demonstration and concealed cable cabinet",
+    "world": [
+      34.27642158262745,
+      0.0,
+      39.84262479913993
+    ],
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -393.57966155535973,
+            86.7884864236933
+          ],
+          [
+            -396.1780281777619,
+            85.5463548301871
+          ],
+          [
+            -395.86749527938537,
+            84.89676317458655
+          ],
+          [
+            -393.2691286569832,
+            86.13889476809275
+          ],
+          [
+            -393.57966155535973,
+            86.7884864236933
+          ]
+        ]
+      ]
+    },
+    "declared_max_xz": [
+      2.88,
+      0.72
+    ],
+    "height": 2.35,
+    "closest_existing_fixture_m": 1.2899999999999996,
+    "primary_aisle_reserved_width_m": 2.2,
+    "sales_area_unchanged_m2": 374.2608217695618,
+    "human_playtest": false
+  },
+  {
+    "id": "C1F-CSW-3",
+    "asset": "cafe_barista_station",
+    "industry": "ベーカリー・カフェ",
+    "status": "PLACED",
+    "role": "Barista preparation separate from customer seating",
+    "world": [
+      -99.0718093985281,
+      0.0,
+      -207.02568578113022
+    ],
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -526.9589561499183,
+            -160.31740783635232
+          ],
+          [
+            -529.3799000591746,
+            -160.85539537174256
+          ],
+          [
+            -529.1846626471379,
+            -161.73396372590813
+          ],
+          [
+            -526.7637187378816,
+            -161.19597619051788
+          ],
+          [
+            -526.9589561499183,
+            -160.31740783635232
+          ]
+        ]
+      ]
+    },
+    "declared_max_xz": [
+      2.48,
+      0.9
+    ],
+    "height": 1.55,
+    "closest_existing_fixture_m": 1.1341762980599632,
+    "primary_aisle_reserved_width_m": 2.2,
+    "sales_area_unchanged_m2": 490.88573509079,
+    "human_playtest": false
+  },
+  {
+    "id": "A1F-001",
+    "asset": "grocery_checkout_lane",
+    "industry": "大型食品スーパー",
+    "status": "PLACED",
+    "role": "Conveyor checkout and operator service zone",
+    "world": [
+      442.3247205047889,
+      0.0,
+      29.566498818899078
+    ],
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            12.7630263845419,
+            77.02231464354173
+          ],
+          [
+            13.029822198465416,
+            74.03420152759836
+          ],
+          [
+            13.886414625035853,
+            74.11068299425642
+          ],
+          [
+            13.619618811112337,
+            77.0987961101998
+          ],
+          [
+            12.7630263845419,
+            77.02231464354173
+          ]
+        ]
+      ]
+    },
+    "declared_max_xz": [
+      3.0,
+      0.86
+    ],
+    "height": 1.55,
+    "closest_existing_fixture_m": 1.3800669728379693,
+    "primary_aisle_reserved_width_m": 2.2,
+    "sales_area_unchanged_m2": 5230.9027508279005,
+    "human_playtest": false
+  },
+  {
+    "id": "C1F-CW-1",
+    "asset": "apparel_window_mannequin",
+    "industry": "ファッション",
+    "status": "PLACED",
+    "role": "Entrance outfit presentation / sculpted display mannequin",
+    "world": [
+      -164.06414271668848,
+      0.0,
+      -331.5800419219449
+    ],
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -592.7604400757423,
+            -286.0572889291459
+          ],
+          [
+            -592.5868957094874,
+            -285.27633928099874
+          ],
+          [
+            -593.3678453576347,
+            -285.10279491474387
+          ],
+          [
+            -593.5413897238896,
+            -285.883744562891
+          ],
+          [
+            -592.7604400757423,
+            -286.0572889291459
+          ]
+        ]
+      ]
+    },
+    "declared_max_xz": [
+      0.8,
+      0.8
+    ],
+    "height": 1.8,
+    "closest_existing_fixture_m": 1.4883394630747027,
+    "primary_aisle_reserved_width_m": 2.2,
+    "sales_area_unchanged_m2": 406.80075193236894,
+    "human_playtest": false
+  }
+]

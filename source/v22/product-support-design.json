@@ -1,0 +1,1998 @@
+{
+  "target_shelf_heights_local_m": {
+    "fixture_table": [
+      0.8075
+    ],
+    "fixture_produce_bin": [
+      0.925
+    ],
+    "fixture_library_bay": [
+      0.3475,
+      0.8075,
+      1.2675,
+      1.7275
+    ],
+    "fixture_wall_bay": [
+      0.3475,
+      0.8075,
+      1.2675,
+      1.7275
+    ],
+    "fixture_cold_case": [
+      0.3475,
+      0.8075,
+      1.2675,
+      1.7275
+    ],
+    "fixture_low_island": [
+      0.3775,
+      0.8275
+    ],
+    "fixture_beauty_island": [
+      0.9475
+    ],
+    "fixture_beauty_counter": [
+      0.8075
+    ],
+    "fixture_beauty_wall": [
+      0.3475,
+      0.8075,
+      1.2675,
+      1.7275
+    ],
+    "fixture_electronics_counter": [
+      0.8075
+    ],
+    "fixture_electronics_wall": [
+      0.8075
+    ],
+    "fixture_shoe_table": [
+      0.7775,
+      1.045
+    ],
+    "fixture_small_presentation": [
+      0.78
+    ],
+    "fixture_narrow_wall": [
+      0.3175,
+      0.7975,
+      1.2575,
+      1.7175
+    ],
+    "fixture_sport_wall": [
+      0.4725,
+      1.1225,
+      1.7725
+    ],
+    "fixture_cafe_table": [
+      0.77
+    ]
+  },
+  "special_fixes": [
+    {
+      "host": "V22-A1F-015-customer_table-476",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-015-customer_table-479",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-015-customer_table-482",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-016-customer_table-486",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-016-customer_table-489",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-016-customer_table-492",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-025-customer_table-565",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-025-customer_table-568",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-025-customer_table-571",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-025-customer_table-574",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-026-customer_table-577",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-649",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-652",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-655",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-658",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-661",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-664",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-667",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-032-customer_table-670",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-033-customer_table-673",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-034-customer_table-677",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-034-customer_table-680",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A1F-035-customer_table-684",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-896",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-899",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-902",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-905",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-908",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-911",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-914",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-005-customer_table-917",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-006-customer_table-921",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-006-customer_table-924",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-006-customer_table-926",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1019",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1022",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1025",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1028",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1031",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1034",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1037",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-015-customer_table-1040",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-016-customer_table-1044",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-016-customer_table-1047",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-016-customer_table-1050",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-016-customer_table-1053",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A2F-016-customer_table-1056",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-010-wall_department-1547",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-A3F-010-wall_department-1548",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-A3F-010-wall_department-1549",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-A3F-010-wall_department-1550",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-A3F-037-customer_table-1832",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-037-customer_table-1835",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-038-customer_table-1840",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-038-customer_table-1843",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-038-customer_table-1846",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-043-customer_table-1899",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-043-customer_table-1902",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-043-customer_table-1905",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-043-customer_table-1908",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-044-customer_table-1912",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-044-customer_table-1915",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-044-customer_table-1918",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-044-customer_table-1921",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-049-customer_table-1971",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-049-customer_table-1974",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-A3F-049-customer_table-1977",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-002-customer_table-2021",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-002-customer_table-2024",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-002-customer_table-2027",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-002-customer_table-2030",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-002-customer_table-2033",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-003-customer_table-2037",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-003-customer_table-2040",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-003-customer_table-2043",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-003-customer_table-2046",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-003-customer_table-2049",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-003-customer_table-2052",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-003-customer_table-2055",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-005-customer_table-2074",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-005-customer_table-2077",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-006-customer_table-2082",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-006-customer_table-2085",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-006-customer_table-2088",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-006-customer_table-2091",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-008-customer_table-2101",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-008-customer_table-2104",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-008-customer_table-2107",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-008-customer_table-2110",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-009-customer_table-2115",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-009-customer_table-2118",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-011-customer_table-2124",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-011-customer_table-2127",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-012-customer_table-2132",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-012-customer_table-2135",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-012-customer_table-2138",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-012-customer_table-2141",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-014-customer_table-2152",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-014-customer_table-2155",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-014-customer_table-2158",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-ARF-014-customer_table-2161",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-040-customer_table-2307",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-052-customer_table-2394",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-052-customer_table-2397",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-034-customer_table-2433",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-034-customer_table-2436",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-034-customer_table-2439",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-034-customer_table-2442",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-046-customer_table-2446",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-046-customer_table-2449",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-046-customer_table-2452",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-046-customer_table-2455",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-016-customer_table-2553",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-016-customer_table-2556",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-016-customer_table-2559",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-016-customer_table-2561",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-W3-customer_table-2625",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-W3-customer_table-2628",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-W3-customer_table-2631",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-W3-customer_table-2634",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-W3-customer_table-2637",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-W3-customer_table-2640",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-004-customer_table-2679",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B1-004-customer_table-2682",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-SW31-customer_table-2753",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B1-SW31-customer_table-2756",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-SW11-customer_table-2761",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-SW11-customer_table-2764",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B1-SW11-customer_table-2767",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-070-customer_table-2934",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-052-customer_table-2994",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-052-customer_table-2997",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-052-customer_table-3000",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-052-customer_table-3003",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-010-customer_table-3021",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-010-customer_table-3024",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-010-customer_table-3027",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-034-customer_table-3077",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-034-customer_table-3080",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-034-customer_table-3083",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-064-customer_table-3181",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-064-customer_table-3184",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-016-customer_table-3202",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-016-customer_table-3205",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-016-customer_table-3208",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-016-customer_table-3210",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3235",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3238",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3241",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3244",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3247",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3250",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3253",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3256",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W4-customer_table-3258",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-040-customer_table-3275",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-040-customer_table-3278",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W3-customer_table-3298",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W3-customer_table-3301",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W3-customer_table-3304",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W3-customer_table-3306",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W3-customer_table-3307",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-W3-customer_table-3309",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-004-customer_table-3340",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-004-customer_table-3343",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-SW31-customer_table-3407",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B2-SW31-customer_table-3410",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-SW11-customer_table-3415",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-SW11-customer_table-3418",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B2-SW11-customer_table-3421",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-AE1-customer_table-3423",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B3-AE1-customer_table-3426",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B3-011-wall_department-3431",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-011-wall_department-3432",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-003-customer_table-3486",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-003-customer_table-3489",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-003-customer_table-3492",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-017-wall_department-3495",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-017-wall_department-3496",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-017-wall_department-3497",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-017-wall_department-3498",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-017-wall_department-3499",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3525",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3526",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3527",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3528",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3529",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3530",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3531",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3532",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3533",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-041-wall_department-3534",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-027-customer_table-3562",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-027-customer_table-3565",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-047-wall_department-3583",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-047-wall_department-3584",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-047-wall_department-3585",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-047-wall_department-3586",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-047-wall_department-3587",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-047-wall_department-3588",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-047-wall_department-3589",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-047-wall_department-3590",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-021-customer_table-3638",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-021-customer_table-3641",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-021-customer_table-3644",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-035-wall_department-3648",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-035-wall_department-3649",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-035-wall_department-3650",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-035-wall_department-3651",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-053-wall_department-3663",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-053-wall_department-3664",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-053-wall_department-3665",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-053-wall_department-3666",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-053-wall_department-3667",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-059-wall_department-3672",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-059-wall_department-3673",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-009-customer_table-3677",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-009-customer_table-3680",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-023-wall_department-3684",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-023-wall_department-3685",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-023-wall_department-3686",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-023-wall_department-3687",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-023-wall_department-3688",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-023-wall_department-3689",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-045-customer_table-3710",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B3-045-customer_table-3713",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-045-customer_table-3716",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3775",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3778",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3781",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3784",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3787",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3790",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3793",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3796",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W4-customer_table-3798",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-N02-wall_department-3815",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-N02-wall_department-3816",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-N02-wall_department-3817",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-N02-wall_department-3818",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-N02-wall_department-3819",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-N02-wall_department-3820",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-N02-wall_department-3821",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-W3-customer_table-3827",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W3-customer_table-3830",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W3-customer_table-3833",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W3-customer_table-3835",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W3-customer_table-3836",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-W3-customer_table-3838",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-005-wall_department-3885",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-005-wall_department-3886",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-005-wall_department-3887",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-005-wall_department-3888",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-005-wall_department-3889",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-005-wall_department-3890",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-005-wall_department-3891",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-005-wall_department-3892",
+      "correction": "Instrument showroom single-height stand/table; no stacked full-size guitars"
+    },
+    {
+      "host": "V22-B3-SW31-customer_table-3930",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 0
+    },
+    {
+      "host": "V22-B3-SW31-customer_table-3933",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-N03-customer_table-3938",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-N03-customer_table-3941",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-B3-N03-customer_table-3944",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-BRF-CAFE-customer_table-3948",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-BRF-CAFE-customer_table-3951",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-BRF-CAFE-customer_table-3954",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-BRF-CAFE-customer_table-3957",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-BRF-CAFE-customer_table-3960",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-1-customer_table-4282",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-1-customer_table-4285",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-1-customer_table-4288",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-1-customer_table-4291",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-1-customer_table-4294",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-1-customer_table-4297",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4302",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4305",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4308",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4311",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4314",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4317",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4320",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C1F-CSE-2-customer_table-4322",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-1-customer_table-4536",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-1-customer_table-4539",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-1-customer_table-4542",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-1-customer_table-4545",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-1-customer_table-4548",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-1-customer_table-4551",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4556",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4559",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4562",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4565",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4568",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4571",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4574",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-2-customer_table-4576",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4580",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4583",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4586",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4589",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4592",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4595",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4598",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C2F-CSE-3-customer_table-4600",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-1-customer_table-4800",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-1-customer_table-4803",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-1-customer_table-4806",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-1-customer_table-4809",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-1-customer_table-4812",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-1-customer_table-4815",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4820",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4823",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4826",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4829",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4832",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4835",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4838",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-2-customer_table-4840",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4844",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4847",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4850",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4853",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4856",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4859",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4862",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-C3F-CSE-3-customer_table-4864",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CW-1-customer_table-4906",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CW-1-customer_table-4908",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CNE-1-customer_table-4918",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CNE-1-customer_table-4920",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CE-1-customer_table-4924",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CE-1-customer_table-4926",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CSW-1-customer_table-4936",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22-CRF-CSW-1-customer_table-4938",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-A1F-022-compact_department-5520",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B1-010-compact_department-6026",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B1-022-compact_department-6035",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B2-022-compact_department-6122",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B2-028-compact_department-6125",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6127",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6128",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6129",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6130",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6131",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6132",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6133",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6134",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6135",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6136",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6137",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6138",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6139",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6140",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6141",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6142",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6143",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6144",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6145",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6146",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6147",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6148",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6149",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6150",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6151",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6152",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6153",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6154",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6155",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6156",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6157",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6158",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6159",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6160",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6161",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6162",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6163",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6164",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6165",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6166",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6167",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6168",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6169",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6170",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6171",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6172",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6173",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6174",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6175",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6176",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6177",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6178",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6179",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6180",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6181",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6182",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6183",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-AE1-anchor_department-6184",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    },
+    {
+      "host": "V22C-B3-057-compact_department-6261",
+      "correction": "Circular cafe tabletop: two supported services, not a full-width shelving row",
+      "removed_excess": 1
+    }
+  ],
+  "actual_Godot_physics_verified": false
+}

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cqy16smcm0hik"
+
+[deps]
+
+files=["res://licenses/asset-license-ledger-v10.file.translation", "res://licenses/asset-license-ledger-v10.sha256.translation", "res://licenses/asset-license-ledger-v10.license.translation", "res://licenses/asset-license-ledger-v10.credit.translation", "res://licenses/asset-license-ledger-v10.source.translation", "res://licenses/asset-license-ledger-v10.changes.translation"]
+
+source_file="res://licenses/asset-license-ledger-v10.csv"
+dest_files=["res://licenses/asset-license-ledger-v10.file.translation", "res://licenses/asset-license-ledger-v10.sha256.translation", "res://licenses/asset-license-ledger-v10.license.translation", "res://licenses/asset-license-ledger-v10.credit.translation", "res://licenses/asset-license-ledger-v10.source.translation", "res://licenses/asset-license-ledger-v10.changes.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
