@@ -1,0 +1,167 @@
+[
+  {
+    "id": "equipment-fitting_room",
+    "title": "A1F-039 / V23-A1F-039-fitting_room-3",
+    "eye": [
+      427.87535708381364,
+      1.65,
+      73.52781110736174
+    ],
+    "look": [
+      428.922958278147,
+      0.86,
+      72.01460938221396
+    ],
+    "fov": 75,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "approach_world": [
+      428.501488060527,
+      0.0,
+      72.6233996965536
+    ],
+    "fixture_id": "V23-A1F-039-fitting_room-3",
+    "required_clearance": {
+      "body_height_m": 1.8,
+      "sampled_space_width_m": 0.68,
+      "standing_radius_m": 0.34
+    },
+    "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation"
+  },
+  {
+    "id": "equipment-checkout",
+    "title": "B1-046 / V23-B1-046-checkout-106",
+    "eye": [
+      -102.55411774855983,
+      1.65,
+      48.75410516222255
+    ],
+    "look": [
+      -102.8141987761815,
+      0.86,
+      50.4340926105823
+    ],
+    "fov": 75,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "approach_world": [
+      -102.722405473259,
+      0.0,
+      49.8411558702006
+    ],
+    "fixture_id": "V23-B1-046-checkout-106",
+    "required_clearance": {
+      "body_height_m": 1.8,
+      "sampled_space_width_m": 0.68,
+      "standing_radius_m": 0.34
+    },
+    "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation"
+  },
+  {
+    "id": "equipment-display",
+    "title": "B1-N01 / V23-B1-N01-appliance_demo-61",
+    "eye": [
+      -55.538445701743576,
+      1.65,
+      -30.473593806861892
+    ],
+    "look": [
+      -55.4113386900981,
+      0.86,
+      -28.9306602160474
+    ],
+    "fov": 75,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "approach_world": [
+      -55.4481335328708,
+      0.0,
+      -29.3773074792296
+    ],
+    "fixture_id": "V23-B1-N01-appliance_demo-61",
+    "required_clearance": {
+      "body_height_m": 1.8,
+      "sampled_space_width_m": 0.68,
+      "standing_radius_m": 0.34
+    },
+    "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation"
+  },
+  {
+    "id": "equipment-photo_booth",
+    "title": "C3F-CE-1 / V23-C3F-CE-1-photo_booth-134",
+    "eye": [
+      163.2191009198276,
+      12.525,
+      -314.6852637286381
+    ],
+    "look": [
+      165.36457132107802,
+      11.735,
+      -314.233585749427
+    ],
+    "fov": 75,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "approach_world": [
+      164.295505683313,
+      10.875,
+      -314.458652199483
+    ],
+    "fixture_id": "V23-C3F-CE-1-photo_booth-134",
+    "required_clearance": {
+      "body_height_m": 1.8,
+      "sampled_space_width_m": 0.68,
+      "standing_radius_m": 0.34
+    },
+    "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation"
+  },
+  {
+    "id": "equipment-mirror",
+    "title": "A1F-003 / V23-A1F-003-shoe_try_and_mirror-18",
+    "eye": [
+      356.2426267001799,
+      1.65,
+      -70.48563088464279
+    ],
+    "look": [
+      355.445550931534,
+      0.86,
+      -71.96384413349625
+    ],
+    "fov": 75,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "approach_world": [
+      355.720550931534,
+      0.0,
+      -71.4538441317081
+    ],
+    "fixture_id": "V23-A1F-003-shoe_try_and_mirror-18",
+    "required_clearance": {
+      "body_height_m": 1.8,
+      "sampled_space_width_m": 0.68,
+      "standing_radius_m": 0.34
+    },
+    "annotation": "Cyan ring is a review-only standing-radius overlay, not game equipment or proof of human operation"
+  }
+]

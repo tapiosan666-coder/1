@@ -1,0 +1,62 @@
+[
+  {
+    "old": "architecture.pack.gz",
+    "new": "architecture.pack.zst",
+    "old_bytes": 473019,
+    "new_bytes": 323041,
+    "uncompressed_sha256": "c1946da2d8ff4b3bdfc53b53fbc233e42e40ca3fe43916f281c535acb7c5d17c",
+    "payload_byte_identical": true,
+    "uncompressed_bytes": 3275805,
+    "container": "FYZ1 + little-endian decoded byte count + Zstandard frame"
+  },
+  {
+    "old": "art.pack.gz",
+    "new": "art.pack.zst",
+    "old_bytes": 50603,
+    "new_bytes": 35024,
+    "uncompressed_sha256": "01b30bd7ad4f01364ab7aa4cb59ccd0052c66226b3c26c91d8645680d1d6dd1b",
+    "payload_byte_identical": true,
+    "uncompressed_bytes": 368416,
+    "container": "FYZ1 + little-endian decoded byte count + Zstandard frame"
+  },
+  {
+    "old": "base-b.pack.gz",
+    "new": "base-b.pack.zst",
+    "old_bytes": 9909140,
+    "new_bytes": 6847746,
+    "uncompressed_sha256": "a663761a7c2f98397a6a32189c63a42775af3e8fa5c3d111c8577768b9e904c5",
+    "payload_byte_identical": true,
+    "uncompressed_bytes": 61513176,
+    "container": "FYZ1 + little-endian decoded byte count + Zstandard frame"
+  },
+  {
+    "old": "base-site-C-option.pack.gz",
+    "new": "base-site-C-option.pack.zst",
+    "old_bytes": 17640716,
+    "new_bytes": 8622084,
+    "uncompressed_sha256": "cc19f76d5cada2717c70d059be32c355d193245ff14c1abfd03eafd64d8e445b",
+    "payload_byte_identical": true,
+    "uncompressed_bytes": 106693987,
+    "container": "FYZ1 + little-endian decoded byte count + Zstandard frame"
+  },
+  {
+    "old": "base-site.pack.gz",
+    "new": "base-site.pack.zst",
+    "old_bytes": 17096980,
+    "new_bytes": 8239907,
+    "uncompressed_sha256": "5c6a63677bbf7857a36200fb9bf8c946e83939cd3d026d5ca7b3c174f365263c",
+    "payload_byte_identical": true,
+    "uncompressed_bytes": 103155131,
+    "container": "FYZ1 + little-endian decoded byte count + Zstandard frame"
+  },
+  {
+    "old": "fitout.pack.gz",
+    "new": "fitout.pack.zst",
+    "old_bytes": 4128285,
+    "new_bytes": 2765160,
+    "uncompressed_sha256": "188c06a53f506b432cc2f7f3479e348559b6745dcc2a5f03c9c21d802333b380",
+    "payload_byte_identical": true,
+    "uncompressed_bytes": 28129115,
+    "container": "FYZ1 + little-endian decoded byte count + Zstandard frame"
+  }
+]
