@@ -1,0 +1,424 @@
+{
+  "status": "V22_INDEPENDENT_INTEGRATED_CANDIDATE_AUTOMATED_PHYSICS_VALIDATED_NOT_ENGINEERING_APPROVED",
+  "centre_world": [
+    330,
+    0,
+    -39
+  ],
+  "escalators": [
+    {
+      "id": "A-WEST-V22-0-UP",
+      "wing": "A",
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "UP",
+      "c": [
+        330.0,
+        0.0,
+        -34.7
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 0.0,
+      "high_y": 5.525,
+      "run_m": 11.8,
+      "rise_m": 5.525,
+      "test_start": [
+        337.8,
+        0.0,
+        -34.7
+      ],
+      "test_end": [
+        322.2,
+        5.525,
+        -34.7
+      ]
+    },
+    {
+      "id": "A-WEST-V22-0-DOWN",
+      "wing": "A",
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "DOWN",
+      "c": [
+        330.0,
+        0.0,
+        -36.9
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 0.0,
+      "high_y": 5.525,
+      "run_m": 11.8,
+      "rise_m": 5.525,
+      "test_start": [
+        337.8,
+        0.0,
+        -36.9
+      ],
+      "test_end": [
+        322.2,
+        5.525,
+        -36.9
+      ]
+    },
+    {
+      "id": "A-WEST-V22-1-UP",
+      "wing": "A",
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "UP",
+      "c": [
+        330.0,
+        5.525,
+        -41.1
+      ],
+      "u": [
+        1.0,
+        0.0
+      ],
+      "low_y": 5.525,
+      "high_y": 10.875,
+      "run_m": 11.8,
+      "rise_m": 5.35,
+      "test_start": [
+        322.2,
+        5.525,
+        -41.1
+      ],
+      "test_end": [
+        337.8,
+        10.875,
+        -41.1
+      ]
+    },
+    {
+      "id": "A-WEST-V22-1-DOWN",
+      "wing": "A",
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "DOWN",
+      "c": [
+        330.0,
+        5.525,
+        -43.3
+      ],
+      "u": [
+        1.0,
+        0.0
+      ],
+      "low_y": 5.525,
+      "high_y": 10.875,
+      "run_m": 11.8,
+      "rise_m": 5.35,
+      "test_start": [
+        322.2,
+        5.525,
+        -43.3
+      ],
+      "test_end": [
+        337.8,
+        10.875,
+        -43.3
+      ]
+    },
+    {
+      "id": "A-WEST-V22-2-UP",
+      "wing": "A",
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "UP",
+      "c": [
+        330.0,
+        10.875,
+        -34.7
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 10.875,
+      "high_y": 16.4,
+      "run_m": 11.8,
+      "rise_m": 5.524999999999999,
+      "test_start": [
+        337.8,
+        10.875,
+        -34.7
+      ],
+      "test_end": [
+        322.2,
+        16.4,
+        -34.7
+      ]
+    },
+    {
+      "id": "A-WEST-V22-2-DOWN",
+      "wing": "A",
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "DOWN",
+      "c": [
+        330.0,
+        10.875,
+        -36.9
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 10.875,
+      "high_y": 16.4,
+      "run_m": 11.8,
+      "rise_m": 5.524999999999999,
+      "test_start": [
+        337.8,
+        10.875,
+        -36.9
+      ],
+      "test_end": [
+        322.2,
+        16.4,
+        -36.9
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "from": "A-WEST-V22-0-UP",
+      "to": "A-WEST-V22-1-UP",
+      "points": [
+        [
+          322.2,
+          5.525,
+          -34.7
+        ],
+        [
+          321.2,
+          5.525,
+          -34.7
+        ],
+        [
+          321.2,
+          5.525,
+          -41.1
+        ],
+        [
+          322.2,
+          5.525,
+          -41.1
+        ]
+      ],
+      "centreline_length_m": 8.4,
+      "status": "Independent module only; not installed in A/B/C"
+    },
+    {
+      "from": "A-WEST-V22-1-UP",
+      "to": "A-WEST-V22-2-UP",
+      "points": [
+        [
+          337.8,
+          10.875,
+          -41.1
+        ],
+        [
+          338.8,
+          10.875,
+          -41.1
+        ],
+        [
+          338.8,
+          10.875,
+          -34.7
+        ],
+        [
+          337.8,
+          10.875,
+          -34.7
+        ]
+      ],
+      "centreline_length_m": 8.4,
+      "status": "Independent module only; not installed in A/B/C"
+    }
+  ],
+  "retired_machine_ids": [
+    "A-E1-0-DOWN",
+    "A-E1-0-UP",
+    "A-E1-1-DOWN",
+    "A-E1-1-UP",
+    "A-E1-2-DOWN",
+    "A-E1-2-UP"
+  ],
+  "floor_slot_restorations": [
+    {
+      "floor": "1F",
+      "old_flight_slot_filled_m2": 1.5023900579809673
+    },
+    {
+      "floor": "2F",
+      "old_flight_slot_filled_m2": 3.0047801159619403
+    },
+    {
+      "floor": "3F",
+      "old_flight_slot_filled_m2": 3.00478011596194
+    },
+    {
+      "floor": "RF",
+      "old_flight_slot_filled_m2": 1.5023900579809673
+    }
+  ],
+  "surface_clipping": [
+    {
+      "surface": "plaster@@ARCH-0",
+      "triangles_clipped": 5
+    },
+    {
+      "surface": "stone@@ARCH-1",
+      "triangles_clipped": 16
+    },
+    {
+      "surface": "plaster@@ARCH-1",
+      "triangles_clipped": 8
+    },
+    {
+      "surface": "plaster@@A-1F",
+      "triangles_clipped": 38
+    },
+    {
+      "surface": "stone@@A-2F",
+      "triangles_clipped": 142
+    },
+    {
+      "surface": "plaster@@A-2F",
+      "triangles_clipped": 37
+    },
+    {
+      "surface": "glass@@A-2F",
+      "triangles_clipped": 386
+    },
+    {
+      "surface": "stone@@A-3F",
+      "triangles_clipped": 140
+    },
+    {
+      "surface": "plaster@@A-3F",
+      "triangles_clipped": 35
+    },
+    {
+      "surface": "glass@@A-3F",
+      "triangles_clipped": 386
+    },
+    {
+      "surface": "stone@@A-RF",
+      "triangles_clipped": 136
+    },
+    {
+      "surface": "glass@@A-RF",
+      "triangles_clipped": 386
+    },
+    {
+      "surface": "roof_glass@@A-SKYLIGHTS",
+      "triangles_clipped": 53
+    },
+    {
+      "surface": "metal@@A-SKYLIGHTS",
+      "triangles_clipped": 20
+    },
+    {
+      "surface": "v8_plaster@@FINISH-A-1F",
+      "triangles_clipped": 388
+    },
+    {
+      "surface": "v8_led@@FINISH-A-1F",
+      "triangles_clipped": 492
+    },
+    {
+      "surface": "v8_dark@@FINISH-A-1F",
+      "triangles_clipped": 424
+    },
+    {
+      "surface": "v8_bronze@@FINISH-A-1F",
+      "triangles_clipped": 374
+    },
+    {
+      "surface": "v8_limestone@@FINISH-A-2F",
+      "triangles_clipped": 86
+    },
+    {
+      "surface": "v8_plaster@@FINISH-A-2F",
+      "triangles_clipped": 388
+    },
+    {
+      "surface": "v8_led@@FINISH-A-2F",
+      "triangles_clipped": 492
+    },
+    {
+      "surface": "v8_dark@@FINISH-A-2F",
+      "triangles_clipped": 424
+    },
+    {
+      "surface": "v8_bronze@@FINISH-A-2F",
+      "triangles_clipped": 374
+    },
+    {
+      "surface": "v8_limestone@@FINISH-A-3F",
+      "triangles_clipped": 85
+    },
+    {
+      "surface": "v8_plaster@@FINISH-A-3F",
+      "triangles_clipped": 388
+    },
+    {
+      "surface": "v8_led@@FINISH-A-3F",
+      "triangles_clipped": 492
+    },
+    {
+      "surface": "v8_dark@@FINISH-A-3F",
+      "triangles_clipped": 424
+    },
+    {
+      "surface": "v8_bronze@@FINISH-A-3F",
+      "triangles_clipped": 374
+    },
+    {
+      "surface": "v10_metal@@V11-GUARD-ACTUAL-5.525-1.1",
+      "triangles_clipped": 908
+    },
+    {
+      "surface": "v10_metal@@V11-GUARD-ACTUAL-10.875-1.1",
+      "triangles_clipped": 908
+    },
+    {
+      "surface": "v10_metal@@V11-GUARD-ACTUAL-16.4-1.1",
+      "triangles_clipped": 908
+    },
+    {
+      "surface": "v8_pavers@@V13-PUBLIC-A-RF",
+      "triangles_clipped": 139
+    }
+  ],
+  "controller_changed": false,
+  "stores_relocated": false,
+  "structural_capacity_verified": false,
+  "supports_foundation_egress": "UNVERIFIED",
+  "chosen_reason": "Zero store/building boundary overlap at all four floors; west and north mouths connect to existing A public promenade, east/south remain guarded at atrium.",
+  "physical_tested": true,
+  "physical_scope": "6 actual continuous ES flights, transfer capsule/CharacterBody tests and edge probes; no human or engineering certification",
+  "evidence": "Review/movement + rounded-transfers + guards"
+}

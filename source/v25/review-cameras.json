@@ -1,0 +1,470 @@
+[
+  {
+    "id": "apparel-entrance",
+    "store_id": "A1F-039",
+    "category": "apparel",
+    "wing": "A",
+    "floor": "1F",
+    "title": "A1F-039 / FERNELL WORKS / apparel / entrance",
+    "eye": [
+      421.1669801468283,
+      1.65,
+      88.12370442133948
+    ],
+    "look": [
+      426.1191069626519,
+      1.15,
+      80.9706323540386
+    ],
+    "fov": 68,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。"
+  },
+  {
+    "id": "apparel-centre",
+    "store_id": "A1F-039",
+    "category": "apparel",
+    "wing": "A",
+    "floor": "1F",
+    "title": "A1F-039 / FERNELL WORKS / apparel / centre",
+    "eye": [
+      428.29517558867093,
+      1.65,
+      79.54322389732621
+    ],
+    "look": [
+      430.63106452628847,
+      1.15,
+      76.93676598070527
+    ],
+    "fov": 68,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。"
+  },
+  {
+    "id": "apparel-rear",
+    "store_id": "A1F-039",
+    "category": "apparel",
+    "wing": "A",
+    "floor": "1F",
+    "title": "A1F-039 / FERNELL WORKS / apparel / rear",
+    "eye": [
+      432.5365380574099,
+      1.65,
+      74.81057903314908
+    ],
+    "look": [
+      429.19955386081347,
+      1.15,
+      78.53409034260758
+    ],
+    "fov": 68,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。"
+  },
+  {
+    "id": "cafe-entrance",
+    "store_id": "B1-046",
+    "category": "cafe",
+    "wing": "B",
+    "floor": "1F",
+    "title": "B1-046 / ALVENE EDIT / cafe / entrance",
+    "eye": [
+      -98.47841736036058,
+      1.65,
+      45.64099401546815
+    ],
+    "look": [
+      -99.80942027389388,
+      1.15,
+      54.23857688765763
+    ],
+    "fov": 68,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。"
+  },
+  {
+    "id": "cafe-centre",
+    "store_id": "B1-046",
+    "category": "cafe",
+    "wing": "B",
+    "floor": "1F",
+    "title": "B1-046 / ALVENE EDIT / cafe / centre",
+    "eye": [
+      -104.26804740104826,
+      1.65,
+      57.18014051328696
+    ],
+    "look": [
+      -106.20140267241864,
+      1.15,
+      60.09769726417706
+    ],
+    "fov": 68,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。"
+  },
+  {
+    "id": "cafe-rear",
+    "store_id": "B1-046",
+    "category": "cafe",
+    "wing": "B",
+    "floor": "1F",
+    "title": "B1-046 / ALVENE EDIT / cafe / rear",
+    "eye": [
+      -108.60001631409276,
+      1.65,
+      63.71735865113112
+    ],
+    "look": [
+      -105.83808021213508,
+      1.15,
+      59.54942043557383
+    ],
+    "fov": 68,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "note": "v22とv23で同じカメラ・画角。商品と役割別売場を比較。"
+  },
+  {
+    "id": "A2F-018-entrance",
+    "store_id": "A2F-018",
+    "wing": "A",
+    "floor": "2F",
+    "eye": [
+      534.9392432100959,
+      7.175000000000001,
+      -32.1834259903102
+    ],
+    "look": [
+      534.5175935195489,
+      6.925000000000001,
+      -30.075177537574717
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "entrance",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "VELORIA COLLECTIVE / A館2F / entrance",
+    "category": "beauty"
+  },
+  {
+    "id": "A2F-018-centre",
+    "store_id": "A2F-018",
+    "wing": "A",
+    "floor": "2F",
+    "eye": [
+      534.5175935195489,
+      7.175000000000001,
+      -30.075177537574717
+    ],
+    "look": [
+      527.2195055253239,
+      6.875,
+      -23.45950825112509
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "centre",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "VELORIA COLLECTIVE / A館2F / centre",
+    "category": "beauty"
+  },
+  {
+    "id": "A2F-018-rear",
+    "store_id": "A2F-018",
+    "wing": "A",
+    "floor": "2F",
+    "eye": [
+      527.2195055253239,
+      7.175000000000001,
+      -23.45950825112509
+    ],
+    "look": [
+      534.6450690073887,
+      6.925000000000001,
+      -30.712554976773816
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "rear",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "VELORIA COLLECTIVE / A館2F / rear",
+    "category": "beauty"
+  },
+  {
+    "id": "A1F-051-entrance",
+    "store_id": "A1F-051",
+    "wing": "A",
+    "floor": "1F",
+    "eye": [
+      325.5,
+      1.65,
+      -63.5
+    ],
+    "look": [
+      325.5,
+      1.4,
+      -65.65
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "entrance",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "ORIENNE BOOKS / A館1F / entrance",
+    "category": "book"
+  },
+  {
+    "id": "A1F-051-centre",
+    "store_id": "A1F-051",
+    "wing": "A",
+    "floor": "1F",
+    "eye": [
+      325.5,
+      1.65,
+      -65.65
+    ],
+    "look": [
+      318.58119891008175,
+      1.35,
+      -81.52
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "centre",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "ORIENNE BOOKS / A館1F / centre",
+    "category": "book"
+  },
+  {
+    "id": "A1F-051-rear",
+    "store_id": "A1F-051",
+    "wing": "A",
+    "floor": "1F",
+    "eye": [
+      318.58119891008175,
+      1.65,
+      -81.52
+    ],
+    "look": [
+      325.5,
+      1.4,
+      -65.0
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "rear",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "ORIENNE BOOKS / A館1F / rear",
+    "category": "book"
+  },
+  {
+    "id": "A3F-012-entrance",
+    "store_id": "A3F-012",
+    "wing": "A",
+    "floor": "3F",
+    "eye": [
+      468.2909200269718,
+      12.525,
+      -40.80200995296282
+    ],
+    "look": [
+      468.265627659601,
+      12.275,
+      -38.652158726446714
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "entrance",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "TERRUNE STORE / A館3F / entrance",
+    "category": "arcade"
+  },
+  {
+    "id": "A3F-012-centre",
+    "store_id": "A3F-012",
+    "wing": "A",
+    "floor": "3F",
+    "eye": [
+      468.265627659601,
+      12.525,
+      -38.652158726446714
+    ],
+    "look": [
+      469.39731025594,
+      12.225,
+      -25.637640514488986
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "centre",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "TERRUNE STORE / A館3F / centre",
+    "category": "arcade"
+  },
+  {
+    "id": "A3F-012-rear",
+    "store_id": "A3F-012",
+    "wing": "A",
+    "floor": "3F",
+    "eye": [
+      469.39731025594,
+      12.525,
+      -25.637640514488986
+    ],
+    "look": [
+      468.2732741892712,
+      12.275,
+      -39.3021137484167
+    ],
+    "fov": 72.0,
+    "variants": [
+      "combined",
+      "normal",
+      "C",
+      "ES"
+    ],
+    "view": "rear",
+    "scope": "candidate-store finish; visual quality requires review",
+    "title": "TERRUNE STORE / A館3F / rear",
+    "category": "arcade"
+  },
+  {
+    "id": "commons-09-A-specialty-street",
+    "title": "A館・専門店街",
+    "eye": [
+      393.2,
+      1.65,
+      -51.4
+    ],
+    "look": [
+      425,
+      1.7,
+      -51.4
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "commons-08-B-Aichi-fair",
+    "title": "B館・物産展の買い回り通路",
+    "eye": [
+      5.5,
+      1.65,
+      -7.5
+    ],
+    "look": [
+      5.5,
+      1.5,
+      17
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "commons-04-C-open-courtyard",
+    "title": "C館・中庭と上階ギャラリー",
+    "eye": [
+      -68.543382,
+      1.65,
+      -289.502218
+    ],
+    "look": [
+      -161,
+      16,
+      -289.5
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  }
+]

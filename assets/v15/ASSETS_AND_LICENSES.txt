@@ -1,0 +1,16 @@
+v15で新規制作した専用モデル（このプロジェクト向けのオリジナル制作）:
+apparel_fitting_room.glb / apparel_window_mannequin.glb
+book_magazine_display.glb / beauty_tester_bar.glb
+electronics_media_demo.glb / cafe_barista_station.glb
+cafe_order_counter.glb / grocery_checkout_lane.glb
+制作元: authoring/v15_models.py、Blender 4.3.2。
+実在ブランド・FF16の資産や固有デザインは使用していません。
+
+新規の外部素材ダウンロードは行っていません。
+モデルの木材画像等はv14までの素材を継承しています。
+CC0木材画像と既存商用利用可能アセットの出典・ライセンスは、
+既存のlicensesフォルダ、assets/v10、assets/v14および元の素材台帳を参照してください。
+外部素材のライセンスや既存ゲーム本体の権利表記は変更していません。
+
+外部画像参照への変換は画像と頂点データを変更しない無損失処理です。
+検証: source/v15/lossless-packaging.json。

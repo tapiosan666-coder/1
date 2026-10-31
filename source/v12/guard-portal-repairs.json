@@ -1,0 +1,19 @@
+[
+  {
+    "pack": "assets/v10/base-b.pack.zst",
+    "render_faces_clipped": 228,
+    "physical_faces_clipped": 228
+  },
+  {
+    "pack": "assets/v10/base-site.pack.zst",
+    "render_faces_clipped": 68,
+    "physical_faces_clipped": 68
+  },
+  {
+    "pack": "assets/v12/C-outlet.pack.zst",
+    "render_faces_clipped": 60,
+    "physical_faces_clipped": 100,
+    "method": "Exact 3D clipping by common outer-landing portal prisms, retaining UV/normal/colour and visible/collision correspondence",
+    "landing_clear_width_m": 1.64
+  }
+]

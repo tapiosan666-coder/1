@@ -1,0 +1,2 @@
+# v21 original retail kit
+Original fixture, product and packaging geometry/art authored in Blender/Python for FIND YOURSELF. No real store brands or game assets copied. Existing CC0 oak/walnut texture provenance and Noto OFL are retained in the project licenses. Character assets are unchanged and retain their separate licenses. These models are a procedural production kit; AAA quality is not asserted.

@@ -1,0 +1,415 @@
+{
+  "stores": [
+    {
+      "id": "A1F-039",
+      "category": "apparel",
+      "fixtures": 16,
+      "products": 75,
+      "roles": {
+        "checkout": 1,
+        "front_window_outfit": 1,
+        "fitting_room": 1,
+        "entrance_feature": 1,
+        "wall_department": 8,
+        "central_department": 3,
+        "mirror_and_waiting": 1
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "A1F-003",
+      "category": "shoes",
+      "fixtures": 13,
+      "products": 74,
+      "roles": {
+        "checkout": 1,
+        "shoe_try_and_mirror": 1,
+        "entrance_feature": 1,
+        "wall_department": 6,
+        "central_department": 4
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "A1F-023",
+      "category": "beauty",
+      "fixtures": 9,
+      "products": 77,
+      "roles": {
+        "checkout": 1,
+        "entrance_feature": 1,
+        "wall_department": 5,
+        "central_department": 2
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "A1F-017",
+      "category": "home",
+      "fixtures": 13,
+      "products": 98,
+      "roles": {
+        "checkout": 1,
+        "living_scene": 1,
+        "entrance_feature": 1,
+        "wall_department": 7,
+        "central_department": 3
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "B1-N01",
+      "category": "electronics",
+      "fixtures": 12,
+      "products": 22,
+      "roles": {
+        "checkout": 1,
+        "wall_department": 5,
+        "central_department": 3,
+        "appliance_demo": 3
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "A1F-007",
+      "category": "book",
+      "fixtures": 15,
+      "products": 1253,
+      "roles": {
+        "checkout": 1,
+        "entrance_feature": 1,
+        "wall_department": 10,
+        "central_department": 3
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "C1F-CSE-3",
+      "category": "food",
+      "fixtures": 19,
+      "products": 590,
+      "roles": {
+        "checkout": 1,
+        "entrance_feature": 1,
+        "wall_department": 13,
+        "central_department": 4
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "A1F-035",
+      "category": "restaurant",
+      "fixtures": 8,
+      "products": 12,
+      "roles": {
+        "checkout": 1,
+        "kitchen": 1,
+        "entrance_feature": 1,
+        "dining_booth": 5
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "B1-046",
+      "category": "cafe",
+      "fixtures": 26,
+      "products": 23,
+      "roles": {
+        "checkout": 1,
+        "kitchen": 1,
+        "entrance_feature": 1,
+        "cafe_seating": 8,
+        "cafe_chair": 15
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    },
+    {
+      "id": "C3F-CE-1",
+      "category": "arcade",
+      "fixtures": 15,
+      "products": 0,
+      "roles": {
+        "checkout": 1,
+        "entrance_feature": 1,
+        "photo_booth": 1,
+        "arcade_zone": 9,
+        "capsule_corner": 3
+      },
+      "checkout_present": true,
+      "human_playtest": false
+    }
+  ],
+  "placement_conflicts_omitted": [
+    {
+      "store_id": "A1F-039",
+      "role": "central_department",
+      "model": "fixture_apparel_rail",
+      "preferred": [
+        -0.24952118482149288,
+        15.280000000000012
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-003",
+      "role": "wall_department",
+      "model": "fixture_shoe_table",
+      "preferred": [
+        9.674089324576812,
+        7.1912813784281395
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-003",
+      "role": "wall_department",
+      "model": "fixture_v23_bag_wall",
+      "preferred": [
+        -9.238395911414898,
+        9.573844135284418
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-023",
+      "role": "wall_department",
+      "model": "fixture_beauty_wall",
+      "preferred": [
+        4.5419476368480325,
+        18.66666666666673
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-023",
+      "role": "wall_department",
+      "model": "fixture_beauty_wall",
+      "preferred": [
+        9.924304181562274,
+        25.00000000000009
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-023",
+      "role": "wall_department",
+      "model": "fixture_beauty_wall",
+      "preferred": [
+        6.924304181562276,
+        25.00000000000009
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-023",
+      "role": "central_department",
+      "model": "fixture_v23_round_tester",
+      "preferred": [
+        5.148532195384211,
+        18.75000000000006
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-023",
+      "role": "central_department",
+      "model": "fixture_v23_round_tester",
+      "preferred": [
+        7.2379974008038825,
+        22.75000000000007
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-017",
+      "role": "wall_department",
+      "model": "fixture_wall_bay",
+      "preferred": [
+        4.9999999999999885,
+        10.000000000000007
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-017",
+      "role": "central_department",
+      "model": "fixture_table",
+      "preferred": [
+        2.079999999999984,
+        10.100000000000009
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-N01",
+      "role": "entrance_feature",
+      "model": "fixture_v23_nested_display",
+      "preferred": [
+        -24.88153934432566,
+        3.2
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-N01",
+      "role": "wall_department",
+      "model": "fixture_electronics_wall",
+      "preferred": [
+        -1.876719432821054,
+        6.0
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-N01",
+      "role": "wall_department",
+      "model": "fixture_electronics_wall",
+      "preferred": [
+        -2.7733430665890895,
+        8.41969157336181
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-N01",
+      "role": "wall_department",
+      "model": "fixture_electronics_wall",
+      "preferred": [
+        -4.566590334125158,
+        13.259074720085426
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-N01",
+      "role": "wall_department",
+      "model": "fixture_electronics_wall",
+      "preferred": [
+        -17.532113133437026,
+        15.678766293447236
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-N01",
+      "role": "wall_department",
+      "model": "fixture_electronics_wall",
+      "preferred": [
+        -20.53211313343702,
+        15.678766293447236
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-N01",
+      "role": "central_department",
+      "model": "fixture_v23_electronics_demo",
+      "preferred": [
+        -20.593096227381544,
+        15.013376023561205
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-007",
+      "role": "central_department",
+      "model": "fixture_v23_magazine_cascade",
+      "preferred": [
+        -0.19639759635632714,
+        11.450000000000012
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "C1F-CSE-3",
+      "role": "wall_department",
+      "model": "fixture_cold_case",
+      "preferred": [
+        -11.550000000000011,
+        20.01428571428571
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "C1F-CSE-3",
+      "role": "wall_department",
+      "model": "fixture_cold_case",
+      "preferred": [
+        -11.550000000000011,
+        22.349999999999994
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "C1F-CSE-3",
+      "role": "wall_department",
+      "model": "fixture_cold_case",
+      "preferred": [
+        11.550000000000011,
+        22.349999999999994
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-035",
+      "role": "dining_booth",
+      "model": "fixture_v23_dining_banquette",
+      "preferred": [
+        -2.2527649249528725,
+        11.372790390501539
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-035",
+      "role": "dining_booth",
+      "model": "fixture_v23_dining_banquette",
+      "preferred": [
+        4.188488641362497,
+        14.05918558575231
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "A1F-035",
+      "role": "dining_booth",
+      "model": "fixture_v23_dining_banquette",
+      "preferred": [
+        0.1884886413625546,
+        14.05918558575231
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "B1-046",
+      "role": "cafe_chair",
+      "model": "sku_chair",
+      "preferred": [
+        -9.291123757739514,
+        18.34618286722781
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    },
+    {
+      "store_id": "C3F-CE-1",
+      "role": "arcade_zone",
+      "model": "fixture_rhythm",
+      "preferred": [
+        8.74695368323699,
+        20.849999999999966
+      ],
+      "reason": "sales/entry/NPC/aisle/fixture clearance"
+    }
+  ],
+  "architecture_changed": false,
+  "NPC_changed": false
+}

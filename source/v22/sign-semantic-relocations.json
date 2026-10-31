@@ -1,0 +1,87 @@
+[
+  {
+    "id": "V21-combined-C-2F-NAV-1",
+    "old_p": [
+      -113.3396888024429,
+      5.525,
+      -206.5199308449873
+    ],
+    "old_room": "accessible_wc",
+    "core_id": "K-CSW",
+    "new_p": [
+      -117.39870734749036,
+      5.525,
+      -220.52275299279893
+    ],
+    "rule": "Visitor wayfinding outside private WC/shaft and narrow access rooms, beside the actual entrance; does not occupy the door centreline."
+  },
+  {
+    "id": "V21-combined-C-2F-NAV-3",
+    "old_p": [
+      104.18726480480906,
+      5.525,
+      -361.8694250887232
+    ],
+    "old_room": "accessible_access",
+    "core_id": "K-CNE",
+    "new_p": [
+      105.68256081954617,
+      5.525,
+      -348.24281195811244
+    ],
+    "rule": "Visitor wayfinding outside private WC/shaft and narrow access rooms, beside the actual entrance; does not occupy the door centreline."
+  },
+  {
+    "id": "V21-combined-C-3F-NAV-1",
+    "old_p": [
+      -126.18851882216896,
+      10.875,
+      -215.54189307159314
+    ],
+    "old_room": "men",
+    "core_id": "K-CSW",
+    "new_p": [
+      -117.39870734749036,
+      10.875,
+      -220.52275299279893
+    ],
+    "rule": "Visitor wayfinding outside private WC/shaft and narrow access rooms, beside the actual entrance; does not occupy the door centreline."
+  },
+  {
+    "id": "V21-combined-C-3F-NAV-2",
+    "old_p": [
+      0.0,
+      10.875,
+      -173.0
+    ],
+    "old_room": "men",
+    "core_id": "K-CSE",
+    "new_p": [
+      7.5,
+      10.875,
+      -197.4
+    ],
+    "rule": "Visitor wayfinding outside private WC/shaft and narrow access rooms, beside the actual entrance; does not occupy the door centreline."
+  },
+  {
+    "id": "V21-combined-C-3F-NAV-3",
+    "old_p": [
+      107.22315668603584,
+      10.875,
+      -357.9540086603778
+    ],
+    "old_room": "lift_access",
+    "core_id": "K-CNE",
+    "new_p": [
+      105.68256081954617,
+      10.875,
+      -348.24281195811244
+    ],
+    "rule": "Visitor wayfinding outside private WC/shaft and narrow access rooms, beside the actual entrance; does not occupy the door centreline."
+  },
+  {
+    "id": "V21-combined-C-RF-NAV-1",
+    "status": "SUPPRESSED_NO_NATURAL_MOUNT",
+    "old_room": "men"
+  }
+]
