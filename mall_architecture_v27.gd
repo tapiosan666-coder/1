@@ -15,11 +15,12 @@ func build()->void:
   if not is_inside_tree()or not is_instance_valid(game):return
  var finish=load("res://escalator_finish_v27.gd").new()
  for b:Dictionary in game.animator.banks:
-  finish.skin(self,b);report.es_ids.append(b.id)
+  if OS.get_cmdline_user_args().has("--v27-baseline") or not str(b.id).begins_with("B-WEST"):finish.skin(self,b)
+  report.es_ids.append(b.id)
  # Retain controller, support ramp, opening and balustrade alignment. Do not retire remote ES.
  if game.es_site_proposal:report.retired_ids=game.read_json("res://source/v15/ES-site-proposal.json").retired_machine_ids
  west_landings()
- turf()
+ if OS.get_cmdline_user_args().has("--v27-baseline"):turf()
  low_headroom_guards()
  game.results.architecture_revision="v27";game.write_json("v27-architecture.json",report);set_meta("ready",true);print("V27_ARCHITECTURE_READY ",report.es_ids.size()," skinned ES; living turf surface")
 func turf()->void:

@@ -1,9 +1,6 @@
-# FIND YOURSELF v27 ダウンロード
+# FIND YOURSELF v28 配布
 
-Godot完全プロジェクト: https://codeload.github.com/tapiosan666-coder/1/zip/refs/heads/FIND_YOURSELF-v27-Godot
+- Godot完全プロジェクト: https://codeload.github.com/tapiosan666-coder/1/zip/refs/heads/FIND_YOURSELF-v28-Godot
+- Review: https://codeload.github.com/tapiosan666-coder/1/zip/refs/heads/FIND_YOURSELF-v28-Review
 
-Review: https://codeload.github.com/tapiosan666-coder/1/zip/refs/heads/FIND_YOURSELF-v27-Review
-
-どちらも分割なしのZIPです。GitHubの自動生成ファイル名にはリポジトリ名の `1-` が先頭に付く場合があります。ZIPをすべて新規フォルダへ展開し、Godot側は `project.godot`、Review側は `index.html` を開いてください。Godot 4.6.3を使用します。
-
-通常起動は独立した構造候補です。既存ゲーム本体・正式建築原本には統合していません。
+どちらも分割なしの完全ZIP。GitHubの自動保存名には`1-`が先頭に付きます。Godot側は全展開して`project.godot`、Review側は`index.html`を開きます。Godot 4.6.3を使用してください。既存ゲーム本体や正式な建築原本には統合していません。

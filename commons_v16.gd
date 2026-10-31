@@ -60,6 +60,7 @@ func setup(g)->void:
  if g.ui!=null and g.ui.map!=null:update_map()
  print("V16_COMMONS ",JSON.stringify(stats));g.write_json("v16-commons-build.json",stats)
 func build_pad(d:Dictionary)->void:
+ if d.get("terrain_replacement_v28",false) and not OS.get_cmdline_user_args().has("--v27-baseline"):return
  var geom:Dictionary=d.geometry
  var polygons:Array=geom.coordinates if geom.type=="MultiPolygon"else[geom.coordinates]
  for rings:Array in polygons:

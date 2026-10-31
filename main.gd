@@ -26,6 +26,7 @@ var with_context:bool=true
 var context_only:bool=false
 @export var c_open_proposal:bool=false
 @export var es_site_proposal:bool=false
+@export var comparison_B_v28:bool=false
 @export var a_continuous_v22:bool=false
 var commons_v16
 var scenery_v17
@@ -43,6 +44,10 @@ func read_json(p:String):
  if not OS.get_cmdline_user_args().has("--v26-baseline"):
   if p in ["res://source/v25/commons.json","res://source/v22/commons.json"]:p="res://source/v27/commons.json"
   if p=="res://source/v22/wayfinding.json":p="res://source/v27/wayfinding.json"
+ if not OS.get_cmdline_user_args().has("--v27-baseline"):
+  if p=="res://source/v22/scene-design.json":p="res://source/v28/scene-design.json"
+  if p=="res://source/v27/commons.json":p="res://source/v28/commons.json"
+  if p=="res://source/v27/wayfinding.json":p="res://source/v28/wayfinding.json"
  if p=="res://source/v25/retail-plan.json"and not retail_v23_cache.is_empty():return retail_v23_cache
  var value
  if not FileAccess.file_exists(p)and FileAccess.file_exists(p+".zst"):
@@ -191,6 +196,12 @@ func _ready()->void:
  var landscape_audit:Dictionary=load("res://commons_v16.gd").reconcile_legacy_landscape(geo,read_json("res://source/v22/commons.json"));write_json("v16-legacy-landscape-cleanup.json",landscape_audit)
  if not OS.get_cmdline_user_args().has("--v26-baseline"):
   write_json("v27-landscape-reconcile.json",load("res://landscape_reconcile_v27.gd").new().apply(geo))
+ if not OS.get_cmdline_user_args().has("--v27-baseline"):
+  write_json("v28-ground-replacement.json",load("res://terrain_reconcile_v28.gd").new().apply(geo,read_json("res://source/v28/terrain-plan.json")))
+ if not OS.get_cmdline_user_args().has("--v27-baseline"):
+  write_json("v28-entrance-openings.json",load("res://entry_reconcile_v28.gd").new().apply(geo,read_json("res://source/v28/entrances.json")))
+ if not OS.get_cmdline_user_args().has("--v27-baseline"):
+  write_json("v28-public-finish-collision.json",load("res://public_finish_collision_v28.gd").new().apply(geo))
  for key:String in geo.surfaces:
   var material_key:String=key.split("@@")[0]
   var room_key:String=key.split("@@")[-1]
@@ -286,6 +297,8 @@ func _ready()->void:
  var amenity_finish=load("res://amenities_v13.gd").new();add_child(amenity_finish);amenity_finish.setup(self)
  var roof_beds=load("res://roof_finish_v14.gd").new();add_child(roof_beds);roof_beds.setup(self)
  var landscape=load("res://retail_v10.gd").new();add_child(landscape);landscape.name="V14_Existing_Roof_Beds";landscape.setup(self,{"instances":read_json("res://source/v14/roof-planting.json").instances,"signs":[],"lights":[]})
+ if not OS.get_cmdline_user_args().has("--v27-baseline"):
+  var entrance_ground=load("res://entry_ground_v28.gd").new();add_child(entrance_ground);entrance_ground.setup(self)
  commons_v16=load("res://commons_v16.gd").new();add_child(commons_v16);commons_v16.setup(self)
  scenery_v17=load("res://scenery_v17.gd").new();add_child(scenery_v17);scenery_v17.setup(self)
  retail_v18=load("res://retail_v19.gd").new();add_child(retail_v18);retail_v18.setup(self)
@@ -298,6 +311,8 @@ func _ready()->void:
   var v26=load("res://mall_architecture_v26.gd").new();add_child(v26);v26.setup(self)
  if not OS.get_cmdline_user_args().has("--v26-baseline"):
   var v27=load("res://mall_architecture_v27.gd").new();add_child(v27);v27.setup(self)
+ if not OS.get_cmdline_user_args().has("--v27-baseline"):
+  var v28=load("res://mall_architecture_v28.gd").new();add_child(v28);v28.setup(self)
  shoppers_v18=load("res://shoppers_v20.gd").new();add_child(shoppers_v18);shoppers_v18.setup(self)
  load("res://architecture_batch_v22.gd").new().run(self)
  var optimiser_v22=load("res://scene_optimizer_v22.gd").new();add_child(optimiser_v22);optimiser_v22.setup(self)
@@ -311,7 +326,10 @@ func _ready()->void:
  if not visual_v7:build_unbuilt_signs()
  var layer=CanvasLayer.new();add_child(layer)
  hud=Label.new();hud.add_theme_font_override("font",font);hud.add_theme_font_size_override("font_size",17);hud.position=Vector2(22,16);hud.add_theme_color_override("font_outline_color",Color(.08,.1,.09,.85));hud.add_theme_constant_override("outline_size",5);layer.add_child(hud)
- var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text=("v22 ABC統合候補・構造計算未検証 | "if a_continuous_v22 else"C館 旧別案との比較 | "if c_open_proposal else"B館西ES 敷地別案・未承認 | "if es_site_proposal else"")+"v27 ES外装・芝生 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M マップ / N 人物比較 / P 表情 / F12 NPC / Esc カーソル\nF1 A / F2 B / F3 C | F4 C館旧別案比較 / F6 B館ES旧別案比較 / F7 ES検討 / F8 店舗 / F9 確認地点 / F10 設定 / F11 催事";layer.add_child(bottom)
+ if not OS.get_cmdline_user_args().has("--v27-baseline"):
+  if comparison_B_v28:interactive_pose({"eye":[-209,1.65,-38],"look":[-196,2.5,-38],"fov":70})
+  elif es_site_proposal:interactive_pose({"eye":[-182,1.65,-6.5],"look":[-194,3.0,-14.0],"fov":72})
+ var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text=("F6 B旧配置比較：旧西ES4基／RF連続なし | "if comparison_B_v28 else"通常：B西の新連続ES6基・1F～RF | "if a_continuous_v22 else"C館 旧別案との比較 | "if c_open_proposal else"B館西ES 敷地別案・未承認 | "if es_site_proposal else"")+"v28 建築・地形整合 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M マップ / N 人物比較 / P 表情 / F12 NPC / Esc カーソル\nF1 A / F2 B / F3 C | F4 C館旧別案比較 / F6 B旧配置比較⇄通常の連続ES / F7 ES検討 / F8 店舗 / F9 確認地点 / F10 設定 / F11 催事";layer.add_child(bottom)
  if not visual_v7 and bool(ProjectSettings.get_setting("rendering/quality/v14_local_probe_reflections",false))and mode not in ["walk-test","walk-v8","ui-test","bake-gi"]:
   for d in [[Vector3(350,3,-32),Vector3(110,12,110)],[Vector3(0,3,8),Vector3(110,12,110)]]:
    var probe=ReflectionProbe.new();probe.position=d[0];probe.size=d[1];probe.interior=true;probe.box_projection=true;probe.max_distance=60;probe.intensity=.7;probe.enable_shadows=false;probe.update_mode=ReflectionProbe.UPDATE_ONCE;probe.ambient_mode=ReflectionProbe.AMBIENT_DISABLED;add_child(probe)
@@ -431,7 +449,9 @@ func add_vector_sign(d:Dictionary)->void:
 func _input(e:InputEvent)->void:
  if ui==null or mode!="interactive":return
  if e is InputEventKey and e.pressed and not e.echo and e.keycode==KEY_F6:
-  get_tree().change_scene_to_file("res://main.tscn"if es_site_proposal and not c_open_proposal else"res://ES_site_proposal_v15.tscn");return
+  if OS.get_cmdline_user_args().has("--v27-baseline"):
+   get_tree().change_scene_to_file("res://main.tscn"if es_site_proposal and not c_open_proposal else"res://ES_site_proposal_v15.tscn");return
+  get_tree().change_scene_to_file("res://main.tscn"if comparison_B_v28 else"res://B_legacy_comparison_v28.tscn");return
  if e is InputEventKey and e.pressed and not e.echo and e.keycode==KEY_F4:
   get_tree().change_scene_to_file("res://main.tscn"if c_open_proposal and not es_site_proposal else"res://C_proposal_v12.tscn");return
  if e is InputEventKey and e.pressed and not e.echo and ui.overlay=="":

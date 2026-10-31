@@ -143,7 +143,7 @@ func icon(parent:Node3D,kind:String,p:Vector3)->void:
  for k:int in[0,1,2,0,2,3]:st.set_normal(Vector3.BACK);st.set_uv(uv[k]);st.add_vertex(points[k])
  var mesh=MeshInstance3D.new();mesh.mesh=st.commit();var mat=StandardMaterial3D.new();mat.albedo_texture=icon_texture;mat.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA;mat.cull_mode=BaseMaterial3D.CULL_DISABLED;mat.shading_mode=BaseMaterial3D.SHADING_MODE_UNSHADED;mesh.material_override=mat;mesh.position=p;mesh.visibility_range_end=75.;parent.add_child(mesh)
 func build_board(d:Dictionary,rows:Array)->Node3D:
- var mount=Node3D.new();mount.name=str(d.id).validate_node_name();var n=Vector3(d.n[0],0,d.n[1]);mount.transform=Transform3D(Basis(Vector3.UP.cross(n),Vector3.UP,n),game.v3(d.p));add_child(mount);var overhead:bool=d.mount=="ceiling";var width:float=4.80 if overhead else 2.2;var height:float=1.10 if overhead else 1.65;var y:float=3.15 if overhead else 1.50
+ var mount=Node3D.new();mount.name=str(d.id).validate_node_name();var n=Vector3(d.n[0],0,d.n[1]);mount.transform=Transform3D(Basis(Vector3.UP.cross(n),Vector3.UP,n),game.v3(d.p));add_child(mount);var overhead:bool=d.mount=="ceiling";var width:float=4.80 if overhead else 2.2;var height:float=(1.10 if OS.get_cmdline_user_args().has("--v27-baseline")else 1.50)if overhead else 1.65;var y:float=(3.15 if OS.get_cmdline_user_args().has("--v27-baseline")else 3.25)if overhead else 1.50
  solid(mount,Vector3(0,y,0),Vector3(width,height,.12),ink)
  var accent=StandardMaterial3D.new();accent.albedo_color=Color(.12,.37,.51)if d.wing=="A"else Color(.12,.31,.22)if d.wing=="B"else Color(.55,.28,.13);accent.roughness=.55
  solid(mount,Vector3(0,y+height/2.-.045,0),Vector3(width,.08,.14),accent,false)
@@ -156,10 +156,19 @@ func build_board(d:Dictionary,rows:Array)->Node3D:
  if not rows.is_empty():fill_labels(mount,d,rows)
  return mount
 func fill_labels(mount:Node3D,d:Dictionary,rows:Array)->void:
- var overhead:bool=d.mount=="ceiling";var width:float=4.80 if overhead else 2.2;var height:float=1.10 if overhead else 1.65;var y:float=3.15 if overhead else 1.50
+ var overhead:bool=d.mount=="ceiling";var width:float=4.80 if overhead else 2.2;var height:float=(1.10 if OS.get_cmdline_user_args().has("--v27-baseline")else 1.50)if overhead else 1.65;var y:float=(3.15 if OS.get_cmdline_user_args().has("--v27-baseline")else 3.25)if overhead else 1.50
  for side:float in[1.,-1.]:
   var face=Node3D.new();face.position=Vector3(0,y,.066*side);face.rotation.y=PI if side<0 else 0.;mount.add_child(face);var left:float=-width/2.+.16;var header_y:float=height/2.-.18;text(face,str(d.wing)+"館  "+str(d.floor)+"  館内案内",Vector3(left,header_y,0),width-.32,.0031)
   for i in rows.size():
+   if overhead and not OS.get_cmdline_user_args().has("--v27-baseline"):
+    var row:Dictionary=rows[i];var ry:float=header_y-.31-i*.28
+    var arrow:String=str(row.front_arrow if side>0 else row.back_arrow)
+    text(face,arrow,Vector3(left,ry,0),.50,.0085)
+    var before:int=face.get_child_count();icon(face,str(row.kind),Vector3(left+.60,ry,0))
+    if face.get_child_count()>before:face.get_child(-1).scale=Vector3.ONE*1.15
+    text(face,str(row.label),Vector3(left+.85,ry,0),width-1.75,.0046)
+    text(face,str(roundi(row.distance_m))+"m",Vector3(width*.5-.65,ry,0),.52,.0031)
+    continue
    var r:Dictionary=rows[i];var ry:float=header_y-.23-i*(.20 if overhead else .28);icon(face,str(r.kind),Vector3(left+.08,ry,0));var arrow:String=str(r.front_arrow if side>0 else r.back_arrow);text(face,arrow+"  "+str(r.label)+"  "+str(roundi(r.distance_m))+"m",Vector3(left+.26,ry,0),width-.58,.0028 if overhead else .0023)
 
 func _exit_tree()->void:

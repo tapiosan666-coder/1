@@ -64,11 +64,13 @@ func show_amenities()->void:
  if overlay=="amenities":close();return
  close();overlay="amenities";pause_player(true)
  for child in lift_buttons.get_children():child.queue_free()
- var title=Label.new();title.text="v27 B西ES・L-3芝生ドッグラン・既存施設 / F9で閉じる";lift_buttons.add_child(title)
+ var title=Label.new();title.text="v28 連続ES・一体地形・出入口・既存施設 / F9で閉じる";lift_buttons.add_child(title)
  var scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(490,335);scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;lift_buttons.add_child(scroll)
  var choices=VBoxContainer.new();choices.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.add_child(choices)
  var menu_v27:Array=[]if OS.get_cmdline_user_args().has("--v26-baseline")else game.read_json("res://source/v27/menu-cameras.json")
- for shot:Dictionary in menu_v27+game.read_json("res://source/v26/review-cameras.json")+game.read_json("res://source/v25/review-cameras.json")+game.read_json("res://source/v24/review-cameras.json")+game.read_json("res://source/v22/review-cameras.json")+game.read_json("res://source/v19/menu-cameras.json"):
+ var menu_v28:Array=[]if OS.get_cmdline_user_args().has("--v27-baseline")else game.read_json("res://source/v28/menu-cameras.json")
+ for shot:Dictionary in menu_v28+menu_v27+game.read_json("res://source/v26/review-cameras.json")+game.read_json("res://source/v25/review-cameras.json")+game.read_json("res://source/v24/review-cameras.json")+game.read_json("res://source/v22/review-cameras.json")+game.read_json("res://source/v19/menu-cameras.json"):
+  if not OS.get_cmdline_user_args().has("--v27-baseline") and shot.id in ["entrance-B","entrance-C"]:continue
   if not OS.get_cmdline_user_args().has("--v26-baseline") and str(shot.id).to_lower().contains("dog") and not str(shot.id).begins_with("C-L3"):continue
   var variant:String="combined"if game.c_open_proposal and game.es_site_proposal else"C"if game.c_open_proposal else"ES"if game.es_site_proposal else"normal"
   if not variant in shot.get("variants",["normal","C","ES"]):continue

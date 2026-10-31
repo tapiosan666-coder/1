@@ -112,20 +112,22 @@ func standing_clear(p:Vector3)->bool:
  if is_nan(y):return false
  var q=PhysicsShapeQueryParameters3D.new();q.shape=way.capsule;q.transform.origin=Vector3(p.x,y+.95,p.z);q.margin=.008;q.collision_mask=1;q.exclude=[game.player.get_rid()]
  return get_world_3d().direct_space_state.intersect_shape(q,1).is_empty()
-func portal_clear(p:Vector3,n:Vector3)->bool:
+func portal_clear(p:Vector3,n:Vector3,inside_length:float=5.)->bool:
  var u=Vector3(n.z,0,-n.x)
  for x in [-1.25,0.,1.25]:
-  var a:Vector3=p+n*-5.+u*x;var b:Vector3=p+n*5.+u*x
+  var a:Vector3=p+n*-5.+u*x;var b:Vector3=p+n*inside_length+u*x
   if not standing_clear(a)or not standing_clear(b)or not way.sweep(a,b)or not way.sweep(b,a):return false
-  for z in range(-5,6):
+  for z in range(-5,ceili(inside_length)+1):
    if not way.floor_hit(p+n*float(z)+u*x):return false
  return true
 func build_portal(wing:String,p:Vector3,n:Vector3)->void:
+ if not OS.get_cmdline_user_args().has("--v27-baseline") and wing in ["B","C"]:
+  var entry:Dictionary=game.read_json("res://source/v28/entrances.json")[wing];p=game.v3(entry.p);n=Vector3(entry.n[0],0,entry.n[1])
  var u=Vector3(n.z,0,-n.x);var found:bool=false
- for depth in [0.,-3.,3.,-6.,6.]:
-  for shift in [0.,3.,-3.,6.,-6.,9.,-9.,12.,-12.,15.,-15.,18.,-18.,21.,-21.,24.,-24.]:
+ for depth in ([0.]if not OS.get_cmdline_user_args().has("--v27-baseline") and wing in["B","C"]else[0.,-3.,3.,-6.,6.]):
+  for shift in ([0.]if not OS.get_cmdline_user_args().has("--v27-baseline") and wing in["B","C"]else[0.,3.,-3.,6.,-6.,9.,-9.,12.,-12.,15.,-15.,18.,-18.,21.,-21.,24.,-24.]):
    var test:Vector3=p+u*shift+n*depth
-   if portal_clear(test,n):p=test;found=true;break
+   if portal_clear(test,n,3.2 if wing=="C"and not OS.get_cmdline_user_args().has("--v27-baseline")else 5.):p=test;found=true;break
   if found:break
  if not found:reports.omissions.append({"wing":wing,"type":"entrance","reason":"No bidirectionally clear supported 10m through-route"});return
  var portal=Node3D.new();portal.name="V26_"+wing+"_Vestibule";portal.transform=Transform3D(basis_for(n),p);add_child(portal)
@@ -145,9 +147,9 @@ func build_portal(wing:String,p:Vector3,n:Vector3)->void:
    for x in [-.80,.80]:box(body,Vector3(x,1.45,0),Vector3(.045,2.9,.07),metal)
    for y in [.06,1.05,2.87]:box(body,Vector3(0,y,0),Vector3(1.62,.045,.07),metal)
    var col=CollisionShape3D.new();var s=BoxShape3D.new();s.size=Vector3(1.64,2.9,.07);col.shape=s;col.position.y=1.45;body.add_child(col);door.leaves.append(body)
-  box(door,Vector3(0,.045,0),Vector3(7.8,.009,.12),metal)
+  box(door,Vector3(0,.005 if not OS.get_cmdline_user_args().has("--v27-baseline")and wing in["B","C"]else .045,0),Vector3(7.8,.009,.12),metal)
   doors.append(door)
- box(portal,Vector3(0,.042,0),Vector3(3.1,.01,2.9),mat("#3c484a",.96))
+ box(portal,Vector3(0,.007 if not OS.get_cmdline_user_args().has("--v27-baseline")and wing in["B","C"]else .042,0),Vector3(3.1,.01 if OS.get_cmdline_user_args().has("--v27-baseline")else .008,2.9),mat("#3c484a",.96))
  box(portal,Vector3(0,3.02,-2.4),Vector3(5.6,.37,.10),ink)
  text(portal,wing+"館  /  ENTRANCE 01",Vector3(0,3.02,-2.47),.23,5.).rotation.y=PI
  text(portal,"10:00–21:00   自動ドア",Vector3(0,2.71,-2.26),.10,3.1).rotation.y=PI
@@ -156,7 +158,15 @@ func build_portal(wing:String,p:Vector3,n:Vector3)->void:
  box(portal,Vector3(3.1,.42,1.2),Vector3(.38,.80,.36),metal,true);text(portal,"傘袋",Vector3(3.1,.74,1.01),.10,.34).rotation.y=PI
  ring(portal,Vector3(3.45,2.85,-1.8),.075,.035,ink)
  evacuation_diagram(portal,wing,p,n)
- entrances.append({"id":wing+"-ENTRANCE-01","wing":wing,"floor":"1F","p":[p.x,p.y,p.z],"n":[n.x,n.z],"outside":[p.x-n.x*5.,p.y,p.z-n.z*5.],"inside":[p.x+n.x*5.,p.y,p.z+n.z*5.],"clear_width_m":3.3,"vestibule_depth_m":4.4,"retained_slab":true,"pre_build_three_lane_bidirectional_capsule_sweeps":true})
+ if not OS.get_cmdline_user_args().has("--v27-baseline") and wing in["B","C"]:
+  var ray=PhysicsRayQueryParameters3D.create(p+n*.5+Vector3.UP*3.5,p+n*.5+Vector3.UP*8.,1)
+  var hit=get_world_3d().direct_space_state.intersect_ray(ray)
+  if not hit.is_empty()and hit.normal.y<-.65:
+   var top:float=hit.position.y-p.y-.008;var span:float=top-3.27
+   if span>0.:box(portal,Vector3(0,3.27+span*.5,-2.2),Vector3(8.,span,.14),ivory,true)
+   reports["v28_"+wing+"_transom_support"]={"ceiling_y":hit.position.y,"top":p.y+top,"gap_m":.008}
+
+ entrances.append({"id":wing+"-ENTRANCE-01","wing":wing,"floor":"1F","p":[p.x,p.y,p.z],"n":[n.x,n.z],"outside":[p.x-n.x*5.,p.y,p.z-n.z*5.],"inside":[p.x+n.x*(3.2 if wing=="C"and not OS.get_cmdline_user_args().has("--v27-baseline")else 5.),p.y,p.z+n.z*(3.2 if wing=="C"and not OS.get_cmdline_user_args().has("--v27-baseline")else 5.)],"clear_width_m":3.3,"vestibule_depth_m":4.4,"retained_slab":true,"pre_build_three_lane_bidirectional_capsule_sweeps":true})
 func evacuation_diagram(parent:Node3D,wing:String,p:Vector3,n:Vector3)->void:
  var path:String="res://assets/v26/guide-"+wing+".png"
  if not ResourceLoader.exists(path):return
@@ -164,7 +174,7 @@ func evacuation_diagram(parent:Node3D,wing:String,p:Vector3,n:Vector3)->void:
  if image.is_compressed():image.decompress()
  var meta:Dictionary=game.read_json("res://source/v26/guide-metadata.json")[wing];var offset=Vector2(meta.offset[0],meta.offset[1]);var scale:float=meta.scale
  var centre:Vector2=offset+Vector2(p.x,p.z)*scale;var corner=Vector2i(roundi(centre.x)-170,roundi(centre.y)-170);corner.x=clampi(corner.x,0,image.get_width()-340);corner.y=clampi(corner.y,0,image.get_height()-340)
- var crop:Image=image.get_region(Rect2i(corner,Vector2i(340,340)));var a:Vector3=p+n*5.;var b:Vector3=p-n*5.;var aa:Vector2=offset+Vector2(a.x,a.z)*scale-Vector2(corner);var bb:Vector2=offset+Vector2(b.x,b.z)*scale-Vector2(corner)
+ var crop:Image=image.get_region(Rect2i(corner,Vector2i(340,340)));var a:Vector3=p+n*(3.2 if wing=="C"and not OS.get_cmdline_user_args().has("--v27-baseline")else 5.);var b:Vector3=p-n*5.;var aa:Vector2=offset+Vector2(a.x,a.z)*scale-Vector2(corner);var bb:Vector2=offset+Vector2(b.x,b.z)*scale-Vector2(corner)
  for tick in 100:
   var point:Vector2=aa.lerp(bb,float(tick)/99.)
   for dx in range(-2,3):
