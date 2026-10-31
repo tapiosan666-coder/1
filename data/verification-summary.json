@@ -1,0 +1,24 @@
+{
+  "architecture_checks": 18,
+  "architecture_failures": 0,
+  "door_state_tests": 6,
+  "bidirectional_door_walks": 6,
+  "guides": 6,
+  "floor_catalogue": {
+    "floors": 15,
+    "stores": 480
+  },
+  "retail": {
+    "entrances": 480,
+    "sales_spines": 480,
+    "supported_fixtures": 7287,
+    "supported_non_hanging_products": 70669
+  },
+  "equipment_approaches": 7243,
+  "inherited_unresolved_approaches": 2,
+  "input_checks": 12,
+  "F4_F6_checks": 4,
+  "human_playtest": false,
+  "Windows_GPU_tested": false,
+  "all_mall_art_complete": false
+}

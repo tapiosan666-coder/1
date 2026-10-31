@@ -1,0 +1,117 @@
+[
+  {
+    "NPC_displayed": false,
+    "controller_states": [
+      {
+        "collision_leaves": 2,
+        "cycles": 1,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      }
+    ],
+    "fixed_step_hz": 60,
+    "human_playtest": false,
+    "occupancy_input": "controlled player coordinates; separate live NPC detection is tested in architecture-QA.json",
+    "stage": "01-closed"
+  },
+  {
+    "NPC_displayed": false,
+    "controller_states": [
+      {
+        "collision_leaves": 2,
+        "cycles": 1,
+        "hold": 1.8,
+        "progress": 0.45,
+        "sensor_radius_m": 3.5
+      },
+      {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      }
+    ],
+    "fixed_step_hz": 60,
+    "human_playtest": false,
+    "occupancy_input": "controlled player coordinates; separate live NPC detection is tested in architecture-QA.json",
+    "stage": "02-opening"
+  },
+  {
+    "NPC_displayed": false,
+    "controller_states": [
+      {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 1.8,
+        "progress": 1.0,
+        "sensor_radius_m": 3.5
+      },
+      {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      }
+    ],
+    "fixed_step_hz": 60,
+    "human_playtest": false,
+    "occupancy_input": "controlled player coordinates; separate live NPC detection is tested in architecture-QA.json",
+    "stage": "03-open"
+  },
+  {
+    "NPC_displayed": false,
+    "controller_states": [
+      {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 1.8,
+        "progress": 1.0,
+        "sensor_radius_m": 3.5
+      },
+      {
+        "collision_leaves": 2,
+        "cycles": 3,
+        "hold": 1.8,
+        "progress": 1.0,
+        "sensor_radius_m": 3.5
+      }
+    ],
+    "fixed_step_hz": 60,
+    "human_playtest": false,
+    "occupancy_input": "controlled player coordinates; separate live NPC detection is tested in architecture-QA.json",
+    "stage": "04-threshold-held"
+  },
+  {
+    "NPC_displayed": false,
+    "controller_states": [
+      {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      {
+        "collision_leaves": 2,
+        "cycles": 3,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      }
+    ],
+    "fixed_step_hz": 60,
+    "human_playtest": false,
+    "occupancy_input": "controlled player coordinates; separate live NPC detection is tested in architecture-QA.json",
+    "stage": "05-reclosed"
+  }
+]

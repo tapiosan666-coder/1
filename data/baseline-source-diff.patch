@@ -1,0 +1,105 @@
+diff --git a/main.gd b/main.gd
+index 913d780..3c073c2 100644
+--- a/main.gd
++++ b/main.gd
+@@ -286,6 +286,8 @@ func _ready()->void:
+  var finish_v24=load("res://store_finishes_v24.gd").new();add_child(finish_v24);finish_v24.setup(self)
+  var v25_finish=load("res://store_finishes_v25.gd").new();add_child(v25_finish);v25_finish.setup(self)
+  var v25_decor=load("res://suspended_v25.gd").new();add_child(v25_decor);v25_decor.setup(self)
++ if not OS.get_cmdline_user_args().has("--v25-baseline"):
++  var v26=load("res://mall_architecture_v26.gd").new();add_child(v26);v26.setup(self)
+  shoppers_v18=load("res://shoppers_v20.gd").new();add_child(shoppers_v18);shoppers_v18.setup(self)
+  load("res://architecture_batch_v22.gd").new().run(self)
+  var optimiser_v22=load("res://scene_optimizer_v22.gd").new();add_child(optimiser_v22);optimiser_v22.setup(self)
+@@ -299,7 +301,7 @@ func _ready()->void:
+  if not visual_v7:build_unbuilt_signs()
+  var layer=CanvasLayer.new();add_child(layer)
+  hud=Label.new();hud.add_theme_font_override("font",font);hud.add_theme_font_size_override("font_size",17);hud.position=Vector2(22,16);hud.add_theme_color_override("font_outline_color",Color(.08,.1,.09,.85));hud.add_theme_constant_override("outline_size",5);layer.add_child(hud)
+- var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text=("v22 ABC統合候補・構造計算未検証 | "if a_continuous_v22 else"C館 旧別案との比較 | "if c_open_proposal else"B館西ES 敷地別案・未承認 | "if es_site_proposal else"")+"v25 代表5店舗の内装検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M マップ / N 人物比較 / P 表情 / F12 NPC / Esc カーソル\nF1 A / F2 B / F3 C | F4 C館旧別案比較 / F6 B館ES旧別案比較 / F7 ES検討 / F8 店舗 / F9 確認地点 / F10 設定 / F11 催事";layer.add_child(bottom)
++ var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text=("v22 ABC統合候補・構造計算未検証 | "if a_continuous_v22 else"C館 旧別案との比較 | "if c_open_proposal else"B館西ES 敷地別案・未承認 | "if es_site_proposal else"")+"v26 建築仕上げ・出入口 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M マップ / N 人物比較 / P 表情 / F12 NPC / Esc カーソル\nF1 A / F2 B / F3 C | F4 C館旧別案比較 / F6 B館ES旧別案比較 / F7 ES検討 / F8 店舗 / F9 確認地点 / F10 設定 / F11 催事";layer.add_child(bottom)
+  if not visual_v7 and bool(ProjectSettings.get_setting("rendering/quality/v14_local_probe_reflections",false))and mode not in ["walk-test","walk-v8","ui-test","bake-gi"]:
+   for d in [[Vector3(350,3,-32),Vector3(110,12,110)],[Vector3(0,3,8),Vector3(110,12,110)]]:
+    var probe=ReflectionProbe.new();probe.position=d[0];probe.size=d[1];probe.interior=true;probe.box_projection=true;probe.max_distance=60;probe.intensity=.7;probe.enable_shadows=false;probe.update_mode=ReflectionProbe.UPDATE_ONCE;probe.ambient_mode=ReflectionProbe.AMBIENT_DISABLED;add_child(probe)
+@@ -442,7 +444,7 @@ func add_brand_slot(d:Dictionary)->void:
+   add_vector_sign({"text":d.name,"p":d.sign_position,"n":d.normal,"w":d.max_width_m,"h":.65})
+ 
+ func interactive_pose(shot:Dictionary)->void:
+- var eye=v3(shot.eye);var direction=v3(shot.look)-eye
++ var eye=v3(shot.get("walk_eye",shot.eye));var direction=v3(shot.look)-eye
+  player.position=eye-Vector3(0,1.65,0);player.velocity=Vector3.ZERO;player.auto_active=false
+  player.rotation=Vector3(0,atan2(-direction.x,-direction.z),0)
+  player.camera.rotation=Vector3(atan2(direction.y,Vector2(direction.x,direction.z).length()),0,0)
+diff --git a/project.godot b/project.godot
+index 232398e..ca93093 100644
+--- a/project.godot
++++ b/project.godot
+@@ -1,7 +1,7 @@
+ ; Independent validation project. Does not load FIND YOURSELF game scenes or saves.
+ config_version=5
+ [application]
+-config/name="FIND YOURSELF - 代表5店舗・内装検証 v25"
++config/name="FIND YOURSELF - 建築仕上げ・出入口 独立検証 v26"
+ run/main_scene="res://main.tscn"
+ run/max_fps=144
+ config/features=PackedStringArray("4.6", "Forward Plus")
+diff --git a/store_finishes_v25.gd b/store_finishes_v25.gd
+index 03d58dc..17ede0a 100644
+--- a/store_finishes_v25.gd
++++ b/store_finishes_v25.gd
+@@ -58,10 +58,16 @@ func split_walls(edges:Array,h:float)->Array:
+    var item:Dictionary=edge.duplicate(true);var aa:Vector2=a+delta*float(interval[0]);var bb:Vector2=a+delta*float(interval[1]);item.a=[aa.x,aa.y];item.b=[bb.x,bb.y];result.append(item)
+  return result
+ func build()->void:
+- while not game.has_node("V21_Route_Derived_Wayfinding"):await get_tree().process_frame
++ var lifecycle_tree:SceneTree=get_tree()
++ while not game.has_node("V21_Route_Derived_Wayfinding"):
++  await lifecycle_tree.process_frame
++  if not is_inside_tree()or not is_instance_valid(game):return
+  way=game.get_node("V21_Route_Derived_Wayfinding")
+- while not way.has_meta("ready"):await get_tree().process_frame
+- await get_tree().physics_frame;await get_tree().physics_frame
++ while not way.has_meta("ready"):
++  await lifecycle_tree.process_frame
++  if not is_inside_tree()or not is_instance_valid(game):return
++ await lifecycle_tree.physics_frame;await lifecycle_tree.physics_frame
++ if not is_inside_tree()or not is_instance_valid(game):return
+  library=load("res://retail_v10.gd").new();var enabled:Array=game.read_json("res://source/v25/finish-release.json").enabled_store_ids
+  floor_sampler=load("res://floor_surface_sample_v25.gd").new();var floor_levels:Array=[]
+  for definition:Dictionary in game.read_json("res://source/v25/store-finishes.json"):
+diff --git a/suspended_v25.gd b/suspended_v25.gd
+index 4880817..8ef695a 100644
+--- a/suspended_v25.gd
++++ b/suspended_v25.gd
+@@ -3,8 +3,13 @@ var game
+ func setup(g)->void:
+  game=g;name="V25_Supported_Decor";call_deferred("build")
+ func build()->void:
+- while not game.has_node("V25_Store_Finishes"):await get_tree().process_frame
+- while not game.get_node("V25_Store_Finishes").has_meta("ready"):await get_tree().process_frame
++ var lifecycle_tree:SceneTree=get_tree()
++ while not game.has_node("V25_Store_Finishes"):
++  await lifecycle_tree.process_frame
++  if not is_inside_tree()or not is_instance_valid(game):return
++ while not game.get_node("V25_Store_Finishes").has_meta("ready"):
++  await lifecycle_tree.process_frame
++  if not is_inside_tree()or not is_instance_valid(game):return
+  var library=load("res://retail_v10.gd").new();var world=game.get_world_3d().direct_space_state;var rows:Array=[]
+  var metal=StandardMaterial3D.new();metal.albedo_color=Color(.15,.16,.14);metal.metallic=.65;metal.roughness=.4
+  for d:Dictionary in game.read_json("res://source/v25/suspended-finishes.json"):
+diff --git a/ui_v7.gd b/ui_v7.gd
+index eb0e41d..6e3cb2a 100644
+--- a/ui_v7.gd
++++ b/ui_v7.gd
+@@ -64,10 +64,10 @@ func show_amenities()->void:
+  if overlay=="amenities":close();return
+  close();overlay="amenities";pause_player(true)
+  for child in lift_buttons.get_children():child.queue_free()
+- var title=Label.new();title.text="v25 代表5店舗の内装検証・既存館内誘導 / F9で閉じる";lift_buttons.add_child(title)
++ var title=Label.new();title.text="v26 3館の建築仕上げ・二重自動ドア・既存5店舗 / F9で閉じる";lift_buttons.add_child(title)
+  var scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(490,335);scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;lift_buttons.add_child(scroll)
+  var choices=VBoxContainer.new();choices.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.add_child(choices)
+- for shot:Dictionary in game.read_json("res://source/v25/review-cameras.json")+game.read_json("res://source/v24/review-cameras.json")+game.read_json("res://source/v22/review-cameras.json")+game.read_json("res://source/v19/menu-cameras.json"):
++ for shot:Dictionary in game.read_json("res://source/v26/review-cameras.json")+game.read_json("res://source/v25/review-cameras.json")+game.read_json("res://source/v24/review-cameras.json")+game.read_json("res://source/v22/review-cameras.json")+game.read_json("res://source/v19/menu-cameras.json"):
+   var variant:String="combined"if game.c_open_proposal and game.es_site_proposal else"C"if game.c_open_proposal else"ES"if game.es_site_proposal else"normal"
+   if not variant in shot.get("variants",["normal","C","ES"]):continue
+   var b=Button.new();b.text=String(shot.id)+" / "+String(shot.title)

@@ -1,0 +1,447 @@
+{
+  "version": 26,
+  "kind": "Review",
+  "offline": true,
+  "native_Godot_images": 43,
+  "image_resolution": [
+    1920,
+    1080
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6207,
+      "sha256": "1e2b7fb2f06bc07cf86f432b179ad6eb2fbbd3e5f64766196c62cc9e9add3a9b"
+    },
+    {
+      "path": "after/A-ceiling-detail.jpg",
+      "bytes": 291457,
+      "sha256": "310ff865ac6cc4d84ca0dedeeb66b2e27f519441fef5196745df6f667704b370"
+    },
+    {
+      "path": "after/C-gallery-detail.jpg",
+      "bytes": 483299,
+      "sha256": "5d5000ba3b466ea2fcc2b33264de925eb8998b14f535494cec4e099233bd5858"
+    },
+    {
+      "path": "after/captures.json",
+      "bytes": 2483,
+      "sha256": "8d0723d6b36d4897c955595c6ca9240e92df6d0474a80eba94f5be9d6add1278"
+    },
+    {
+      "path": "after/commons-04-C-open-courtyard.jpg",
+      "bytes": 504330,
+      "sha256": "df6a624dde77477224108bfe6b222b9e97592a73fdad961dd0ac0da37ea327c1"
+    },
+    {
+      "path": "after/commons-08-B-Aichi-fair.jpg",
+      "bytes": 482294,
+      "sha256": "906ae5f72a03be7140925ba1df08beea8f70e777f5ca925369a943d940dbce3a"
+    },
+    {
+      "path": "after/commons-09-A-specialty-street.jpg",
+      "bytes": 436252,
+      "sha256": "b8a2ad04bd8aa03b9dfa1c2c6f7f0e90eb7bb386c8de7c13f733ba8966df8edd"
+    },
+    {
+      "path": "after/entrance-A.jpg",
+      "bytes": 328301,
+      "sha256": "c0a6dbc32229efce991487453e0f333675725bbb0f75c39311d40ab61d947809"
+    },
+    {
+      "path": "after/entrance-B.jpg",
+      "bytes": 381433,
+      "sha256": "28c06a70fce5c4f0565531ad2d383bb3bd1dd91b0f0a48c23a1ccef2b0c08b14"
+    },
+    {
+      "path": "after/entrance-C.jpg",
+      "bytes": 232307,
+      "sha256": "a4b210d1f5df14d1e042ec759de0ac5cdb8f0e68d30337e65209fc9d4f4e6b4f"
+    },
+    {
+      "path": "after/fire-1.jpg",
+      "bytes": 247942,
+      "sha256": "a9e2cab50190eb8ac63d8e7d528ca994b259d189af2d02734bdda79f4dc9224c"
+    },
+    {
+      "path": "after/fire-2.jpg",
+      "bytes": 185485,
+      "sha256": "66b8f1be575b6dd471c4eb204a127186630f0a33d3609d03b43863b8e531167d"
+    },
+    {
+      "path": "after/fire-3.jpg",
+      "bytes": 213966,
+      "sha256": "ba4fe36499b104d5904c15feae87148d952f86926f23517dd99eb877009993de"
+    },
+    {
+      "path": "after/guide-A-ENTRANCE-01.jpg",
+      "bytes": 450962,
+      "sha256": "466495f2fb6cebc7d88a5954440574409bc49fc7c35b8a962f3835cdec79404a"
+    },
+    {
+      "path": "after/guide-A-PLAZA.jpg",
+      "bytes": 376289,
+      "sha256": "b03a1d807ce3e48054cfd8305d7a879f2a2c04fe1f5545ec11289b1b3dda5bbc"
+    },
+    {
+      "path": "after/guide-B-ENTRANCE-01.jpg",
+      "bytes": 378083,
+      "sha256": "e0e23e5a0a8acfbb03cd756b89bb01b05faf81c499219a1de6ede35e56862427"
+    },
+    {
+      "path": "after/guide-B-PLAZA.jpg",
+      "bytes": 341457,
+      "sha256": "cba059594f2c183663c7a265a68e37525cd9913a85bb560799c5852720d7bb33"
+    },
+    {
+      "path": "after/guide-C-ENTRANCE-01.jpg",
+      "bytes": 240953,
+      "sha256": "a75b8f77cc8770c5848f95e29727438dedb2ed23ba79592c5ce4e5d95a4b9b30"
+    },
+    {
+      "path": "after/guide-C-PLAZA.jpg",
+      "bytes": 385820,
+      "sha256": "945d10134da8ddb3687f9aeedd320f67493fd57d84d3f99cbc6e06c4ab313d67"
+    },
+    {
+      "path": "after/hanging-sign-1.jpg",
+      "bytes": 340315,
+      "sha256": "d6567ac1df556da670e95f5c7c5e2ae31e6f89e2abd5c3c4a01118b48c5a2a23"
+    },
+    {
+      "path": "after/hanging-sign-2.jpg",
+      "bytes": 261437,
+      "sha256": "818e325cc106e4dd24cea3c31449fa791afef010d6be0f92587e9e389a2af8ee"
+    },
+    {
+      "path": "after/hanging-sign-3.jpg",
+      "bytes": 194170,
+      "sha256": "54fae16c4e5cec8316dfa40e741d39e54b3c0d881ce2caa135540be324ae618f"
+    },
+    {
+      "path": "before/A-ceiling-detail.jpg",
+      "bytes": 350924,
+      "sha256": "f7369c7ffa11bccfd60e1b46f453f1f172c26d674e07b10b0ef048b2dfef6d3d"
+    },
+    {
+      "path": "before/C-gallery-detail.jpg",
+      "bytes": 506899,
+      "sha256": "ca7d012b67a965fc09e46f707cd2682dda34bc804db385768e49001f86d6a63a"
+    },
+    {
+      "path": "before/captures.json",
+      "bytes": 2483,
+      "sha256": "990e7c7d51aa3411b2a0dfaa5aeb7116518b78f8033725eea8d30295040de512"
+    },
+    {
+      "path": "before/commons-04-C-open-courtyard.jpg",
+      "bytes": 626114,
+      "sha256": "26c5543ec994605cc5a1216bc5b022d7cb8bb60ba1bc0289851b4111b15dfbba"
+    },
+    {
+      "path": "before/commons-08-B-Aichi-fair.jpg",
+      "bytes": 638479,
+      "sha256": "9e6351d39eab913bfc01d5273c59ec27d427f554f351e6b5e8c13acc3987bb05"
+    },
+    {
+      "path": "before/commons-09-A-specialty-street.jpg",
+      "bytes": 474032,
+      "sha256": "1ee67c094a9fa59a40570a896174b9adf7340b3310214d1f97bc48992151d001"
+    },
+    {
+      "path": "before/entrance-A.jpg",
+      "bytes": 327196,
+      "sha256": "1d1a314a313c074743bea6ac33789488a5a933f67291c79bfe18d293d678e6ab"
+    },
+    {
+      "path": "before/entrance-B.jpg",
+      "bytes": 549285,
+      "sha256": "157a6bbe719d6b8ea63e83093dd9f2fb72d383e3c15cfca78cca534176e7566e"
+    },
+    {
+      "path": "before/entrance-C.jpg",
+      "bytes": 341971,
+      "sha256": "00771ad3e752470c9cbe78d00766ac0577fb52e316982d67802818f6798d264c"
+    },
+    {
+      "path": "data/architecture-QA.json",
+      "bytes": 78806,
+      "sha256": "197468fda29f13e010f2e218837094fd08789c561016e17e2662725da4ea56f8"
+    },
+    {
+      "path": "data/architecture-QA.log",
+      "bytes": 10129,
+      "sha256": "2539a788f18d2fb24db183e655b064f1d46769208511d1243e81341da6fd725a"
+    },
+    {
+      "path": "data/baseline-source-diff.patch",
+      "bytes": 8584,
+      "sha256": "44c6d5046bdd40e290ce7c810c9fe739b1b09e3f144b0b3119bc3d59b219c42d"
+    },
+    {
+      "path": "data/catalog-complete.gd",
+      "bytes": 1204,
+      "sha256": "164ba6403ae58fac5907185410a92b29f816cd9354be9361240131bbe5fa4f09"
+    },
+    {
+      "path": "data/catalog-complete.log",
+      "bytes": 9357,
+      "sha256": "43cfc8c6d035db3c93ee9ae27194d99bfdff075eeab48433b9b4111daab38b86"
+    },
+    {
+      "path": "data/comparison-cameras.json",
+      "bytes": 1029,
+      "sha256": "9d0e327ed5f7e040f83a4d46a42dc28f4c283c97b826843bbaeb58925425f175"
+    },
+    {
+      "path": "data/door-sequence-A.json",
+      "bytes": 2812,
+      "sha256": "ddabfe6df4bdf82fef9cb6ba799b76a2e6971633f8d6234f0a0d0595612ce87f"
+    },
+    {
+      "path": "data/door-sequence-B.json",
+      "bytes": 2812,
+      "sha256": "59d986da2690c7e3d0add0fe213bee1072e4c239188b31657ad6ea0d66b55f29"
+    },
+    {
+      "path": "data/door-sequence-C.json",
+      "bytes": 2812,
+      "sha256": "e01adf7d68477e70d721a2f7473af547f6d5e80e7614610d8780e15fe13466eb"
+    },
+    {
+      "path": "data/fire-equipment.json",
+      "bytes": 13807,
+      "sha256": "20071c4fb5e28fc4ce345f2c9eca7c206b5da44752e0f86762a9fd183c93b33e"
+    },
+    {
+      "path": "data/fresh-extraction.json",
+      "bytes": 178,
+      "sha256": "f2ae1b05c1dfe1755937d2e749142bb5346639ace9fa2d0548d9b2a731eb43b7"
+    },
+    {
+      "path": "data/fresh-import.log",
+      "bytes": 458222,
+      "sha256": "82cd252986e0dabd2c17b4ac30e3266a08486db879d8befc1066e6824e133fce"
+    },
+    {
+      "path": "data/fresh-start-verification.json",
+      "bytes": 881,
+      "sha256": "c720d753a5acc2b151d388b9792738f7e39d632df583eaadca536878f6a91475"
+    },
+    {
+      "path": "data/fresh-start.log",
+      "bytes": 10296,
+      "sha256": "3f8b66b7bef10f6aa67db44c6af564b98c07ccc3e78ddc0c9614fd27bc16e9df"
+    },
+    {
+      "path": "data/guide-metadata.json",
+      "bytes": 4037,
+      "sha256": "bf1663624e5742082eafb3fa0323ca1826ee1dcca41278c6ea7de75eae3c9ab7"
+    },
+    {
+      "path": "data/guide-store-audit.json",
+      "bytes": 5505,
+      "sha256": "edd55bd3f693326277ab53b7678cf38930f39ff4437f769a26aa3ad6d8b14c59"
+    },
+    {
+      "path": "data/known-cleanup-warnings.json",
+      "bytes": 589,
+      "sha256": "24eb1859c74d6ce8fa9101b312d03a5e3ec142c2755e6e9381ec8e4137c80f70"
+    },
+    {
+      "path": "data/performance-summary.json",
+      "bytes": 1141,
+      "sha256": "966a09ab180c46e361b58e75069e0a79163579b53249bb169ddee965a91ea970"
+    },
+    {
+      "path": "data/project-package.json",
+      "bytes": 327,
+      "sha256": "27f9bb9591f8d1d28374c50f22dd15fe3213d66c1e5b3b1325b33747141b0213"
+    },
+    {
+      "path": "data/provenance.json",
+      "bytes": 740,
+      "sha256": "cb0dc029610fbb6d0c59d03f6254bc578f34fb1404c186ebb0443fe760e00869"
+    },
+    {
+      "path": "data/qa_catalog_v25.log",
+      "bytes": 9504,
+      "sha256": "c41a67192fa8fef6dbb0a0217fbe94922e1d5ebcbd0f3cffb998dae38ef79c49"
+    },
+    {
+      "path": "data/qa_controls_v21.log",
+      "bytes": 9339,
+      "sha256": "ae807c514f4bb0f902c93bc4ec113f379d760175b9cdc423942a1f8e2c08d2e2"
+    },
+    {
+      "path": "data/regression_approaches_v26.log",
+      "bytes": 9358,
+      "sha256": "181df00e79a8588cd975368178a3e81305d63c92ae5233b95eac995dff9d3096"
+    },
+    {
+      "path": "data/regression_retail_v26.log",
+      "bytes": 9406,
+      "sha256": "3abb099c278c9f2d72dae630ce2d043fa87859a0f89196795bd78616458008f4"
+    },
+    {
+      "path": "data/regression_variants_v26.log",
+      "bytes": 46610,
+      "sha256": "fec3024e46bf5af0da9d9f54928a3a194164fd6df1f0fe634d1391941c4e6f92"
+    },
+    {
+      "path": "data/retained-baseline-integrity.json",
+      "bytes": 316,
+      "sha256": "1af76dc5bcd67dc3b06fe9ecbfa463b23dc04773e9e6bc037f0b9e1935ce9981"
+    },
+    {
+      "path": "data/review-cameras.json",
+      "bytes": 2802,
+      "sha256": "3498351389c23851eda44bdfd8c92733925e1fab020d9b65118fe88ccbb1c3b9"
+    },
+    {
+      "path": "data/v20-input-controls.json",
+      "bytes": 968,
+      "sha256": "37dea5b42a846d6a5b50e23048f64693bcc258f35480e16baa71aa8313d9a9bb"
+    },
+    {
+      "path": "data/v22-reference-scene-keys.json",
+      "bytes": 808,
+      "sha256": "ebcd867d8cb2acc9b5f80419cbbe69238e4b7adcd46b2d593a8d12740edaf376"
+    },
+    {
+      "path": "data/v25-catalog-api.json",
+      "bytes": 181,
+      "sha256": "ab65fa29cff4fc6a17aa7bc4a91e844e4c6d1c42721a32560e34b255c5418e64"
+    },
+    {
+      "path": "data/v25-equipment-retained.json",
+      "bytes": 6913564,
+      "sha256": "d87e29d3c0b135f7fdbaf4d02f87dd2d6d857687eba751d7a1b4e8be5e0c313c"
+    },
+    {
+      "path": "data/v25-native-review.json",
+      "bytes": 6458,
+      "sha256": "e08276b430d59e7ddfa94a7c8aef3785a7c028f9221a95ef8031d4738f45de26"
+    },
+    {
+      "path": "data/v25-retail-physics.json",
+      "bytes": 928682,
+      "sha256": "013f8d6afc0fddce9f9592b1c35b19ab34a164a64e418fae4a8f2c4947f5c031"
+    },
+    {
+      "path": "data/v26-native-review.json",
+      "bytes": 6680,
+      "sha256": "95948d9bf172f2081a631ad3535c90f4f54586ed3597335155aa6752b5d589aa"
+    },
+    {
+      "path": "data/validation-scope.json",
+      "bytes": 417,
+      "sha256": "8beebbd523e9fb6c1ac657fc81851764049954ae8d25dfdb13b397e2350f2b09"
+    },
+    {
+      "path": "data/verification-summary.json",
+      "bytes": 547,
+      "sha256": "6c3c0354cf07bb39380aeab732df6bec69debe93afd9732767712092559e2ee6"
+    },
+    {
+      "path": "data/wayfinding-routes.json",
+      "bytes": 19256,
+      "sha256": "6499235b587fd6a024e3c1b085ded2176592a252f8561f74b966bc183ae406de"
+    },
+    {
+      "path": "doors/A-01-closed.jpg",
+      "bytes": 353214,
+      "sha256": "bd3b8fded7d15389b2092e4d1539568805e472ebb20e7005379e4258232fb558"
+    },
+    {
+      "path": "doors/A-02-opening.jpg",
+      "bytes": 355531,
+      "sha256": "c545803732150a978d76d54f19f8ae5d4227fd3cb48369cbf3d16dedcfcafdc8"
+    },
+    {
+      "path": "doors/A-03-open.jpg",
+      "bytes": 352578,
+      "sha256": "2dbd10324130ae8dc346e595cf655b9b915d5de80682a2c68e53545913cbf3f4"
+    },
+    {
+      "path": "doors/A-04-threshold-held.jpg",
+      "bytes": 350928,
+      "sha256": "d0146653b651c2436923289d6c588d6f5048b228273a46e173e951c41c33cbc2"
+    },
+    {
+      "path": "doors/A-05-reclosed.jpg",
+      "bytes": 353214,
+      "sha256": "bd3b8fded7d15389b2092e4d1539568805e472ebb20e7005379e4258232fb558"
+    },
+    {
+      "path": "doors/B-01-closed.jpg",
+      "bytes": 393359,
+      "sha256": "28b8f8937c0f9baa63c77461050807cbff6c7b15651179e3cf0db650779cc7a3"
+    },
+    {
+      "path": "doors/B-02-opening.jpg",
+      "bytes": 397204,
+      "sha256": "5334aa1739d44e249f1953f757e1e691878b3a1d3bc767dc4d2420e56dc59ba0"
+    },
+    {
+      "path": "doors/B-03-open.jpg",
+      "bytes": 404026,
+      "sha256": "c42827f2338f1ec2dc5c868965e240aac6b49cd0ba7d23ceaf48c738c214d019"
+    },
+    {
+      "path": "doors/B-04-threshold-held.jpg",
+      "bytes": 406894,
+      "sha256": "3e68690e950d6ddd6cb034ab8c3d787d89ac37e4dcf8ce0d2ffd1905056b0cec"
+    },
+    {
+      "path": "doors/B-05-reclosed.jpg",
+      "bytes": 393359,
+      "sha256": "28b8f8937c0f9baa63c77461050807cbff6c7b15651179e3cf0db650779cc7a3"
+    },
+    {
+      "path": "doors/C-01-closed.jpg",
+      "bytes": 420541,
+      "sha256": "5eda67ba7f25ae17ab83eeab083a9e195ddc890d469b8d0bb0a18c3e17f86918"
+    },
+    {
+      "path": "doors/C-02-opening.jpg",
+      "bytes": 424131,
+      "sha256": "1ac191339ceb163805217aa53e3426c63d7152e10867c140363a8a76bceaf6d1"
+    },
+    {
+      "path": "doors/C-03-open.jpg",
+      "bytes": 430820,
+      "sha256": "f5bbe06ff577346342069c788d6798c1210a33163ab56d2621070f52fbfc955c"
+    },
+    {
+      "path": "doors/C-04-threshold-held.jpg",
+      "bytes": 432307,
+      "sha256": "8bf359d82a2d9e0fdc657a8dde1874e8b8a721162f14198a30495226fc4bb738"
+    },
+    {
+      "path": "doors/C-05-reclosed.jpg",
+      "bytes": 420541,
+      "sha256": "5eda67ba7f25ae17ab83eeab083a9e195ddc890d469b8d0bb0a18c3e17f86918"
+    },
+    {
+      "path": "index.html",
+      "bytes": 24419,
+      "sha256": "e021b81b6a1a451690c3ff8ec8905501e5bb652a29d889db79ea7b96641ef3f3"
+    },
+    {
+      "path": "reference-application.md",
+      "bytes": 1004,
+      "sha256": "7e806b136ae6fb9cfd967d9cc44dcd4d74536e8fb3d27c343213348f39302c93"
+    },
+    {
+      "path": "review.js",
+      "bytes": 7297,
+      "sha256": "5fc0e98c3ce96c70d2c6b21c8375a27d436fae193cc27460cb0e5f2bd01617d7"
+    },
+    {
+      "path": "実装箇所一覧.csv",
+      "bytes": 6014,
+      "sha256": "4bfa585ad06e78b5bd5586a7859137b78b03ef86e94db9a24304dd6312f3907f"
+    }
+  ]
+}

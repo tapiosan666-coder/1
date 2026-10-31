@@ -1,0 +1,201 @@
+[
+  {
+    "id": "commons-09-A-specialty-street",
+    "title": "A館・専門店街",
+    "eye": [
+      393.2,
+      1.65,
+      -51.4
+    ],
+    "look": [
+      425,
+      1.7,
+      -51.4
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "commons-08-B-Aichi-fair",
+    "title": "B館・物産展の買い回り通路",
+    "eye": [
+      5.5,
+      1.65,
+      -7.5
+    ],
+    "look": [
+      5.5,
+      1.5,
+      17
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "commons-04-C-open-courtyard",
+    "title": "C館・中庭と上階ギャラリー",
+    "eye": [
+      -68.543382,
+      1.65,
+      -289.502218
+    ],
+    "look": [
+      -161,
+      16,
+      -289.5
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "entrance-A",
+    "title": "A館 二重自動ドア",
+    "eye": [
+      291.0,
+      1.65,
+      -58.0
+    ],
+    "look": [
+      300.0,
+      1.5,
+      -58.0
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "walk_eye": [
+      293,
+      1.65,
+      -59
+    ]
+  },
+  {
+    "id": "entrance-B",
+    "title": "B館 二重自動ドア",
+    "eye": [
+      4.0,
+      1.65,
+      33.0
+    ],
+    "look": [
+      4.0,
+      1.5,
+      24.0
+    ],
+    "wing": "B",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "walk_eye": [
+      3,
+      1.65,
+      31
+    ]
+  },
+  {
+    "id": "entrance-C",
+    "title": "C館 二重自動ドア",
+    "eye": [
+      -88.0,
+      1.65,
+      -228.0
+    ],
+    "look": [
+      -88.0,
+      1.5,
+      -219.0
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "walk_eye": [
+      -87,
+      1.65,
+      -226
+    ]
+  },
+  {
+    "id": "C-gallery-detail",
+    "title": "C館 石畳と木調の軒下",
+    "eye": [
+      -149,
+      1.65,
+      -297
+    ],
+    "look": [
+      -151,
+      3.2,
+      -279
+    ],
+    "wing": "C",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "A-ceiling-detail",
+    "title": "A館 天井と設備の納まり",
+    "eye": [
+      405,
+      1.65,
+      -52
+    ],
+    "look": [
+      417,
+      3.5,
+      -53
+    ],
+    "wing": "A",
+    "floor": "1F",
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  }
+]

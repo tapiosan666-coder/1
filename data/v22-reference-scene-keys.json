@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "from": "res://main.tscn",
+      "key": "F4",
+      "pass": true,
+      "source_mismatches": [],
+      "to": "res://C_proposal_v12.tscn"
+    },
+    {
+      "from": "res://C_proposal_v12.tscn",
+      "key": "F4",
+      "pass": true,
+      "source_mismatches": [],
+      "to": "res://main.tscn"
+    },
+    {
+      "from": "res://main.tscn",
+      "key": "F6",
+      "pass": true,
+      "source_mismatches": [],
+      "to": "res://ES_site_proposal_v15.tscn"
+    },
+    {
+      "from": "res://ES_site_proposal_v15.tscn",
+      "key": "F6",
+      "pass": true,
+      "source_mismatches": [],
+      "to": "res://main.tscn"
+    }
+  ],
+  "human_playtest": false,
+  "method": "Actual injected F4/F6 input events and scene lifecycle; normal integrated candidate restores on second press."
+}

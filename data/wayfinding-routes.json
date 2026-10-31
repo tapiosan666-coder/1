@@ -1,0 +1,985 @@
+{
+  "hanging_boards": [
+    {
+      "ceiling_support_y": 5.14499950408936,
+      "checks": [
+        {
+          "actual_path": [
+            [
+              309.0,
+              0.0,
+              -60.0
+            ],
+            [
+              313.5,
+              0.0,
+              -49.5
+            ],
+            [
+              330.0,
+              0.0,
+              -31.5
+            ],
+            [
+              349.5,
+              0.0,
+              -12.0
+            ],
+            [
+              351.0,
+              0.0,
+              -10.5
+            ],
+            [
+              351.0,
+              0.0,
+              10.5
+            ],
+            [
+              352.5,
+              0.0,
+              27.0
+            ],
+            [
+              334.0,
+              0.0,
+              27.0
+            ],
+            [
+              334.0,
+              0.0,
+              27.1000003814697
+            ]
+          ],
+          "back_arrow": "↘",
+          "distance_m": 121.7,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↖",
+          "kind": "WC",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-A-1F-NAV-1",
+          "target": "A-KW-AWC",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              309.0,
+              0.0,
+              -60.0
+            ],
+            [
+              313.5,
+              0.0,
+              -49.5
+            ],
+            [
+              328.5,
+              0.0,
+              -33.0
+            ],
+            [
+              349.5,
+              0.0,
+              -12.0
+            ],
+            [
+              351.0,
+              0.0,
+              -10.5
+            ],
+            [
+              351.0,
+              0.0,
+              10.5
+            ],
+            [
+              352.5,
+              0.0,
+              27.0
+            ],
+            [
+              331.5,
+              0.0,
+              27.5
+            ],
+            [
+              330.0,
+              0.0,
+              30.0
+            ],
+            [
+              329.899993896484,
+              0.0,
+              30.0
+            ]
+          ],
+          "back_arrow": "↘",
+          "distance_m": 127.1,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↖",
+          "kind": "EV",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-A-1F-NAV-1",
+          "target": "A-A-KW",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              309.0,
+              0.0,
+              -60.0
+            ],
+            [
+              309.5,
+              0.0,
+              -59.0
+            ],
+            [
+              325.5,
+              0.0,
+              -46.5
+            ],
+            [
+              338.0,
+              0.0,
+              -38.0
+            ],
+            [
+              338.0,
+              0.0,
+              -37.0
+            ],
+            [
+              337.799987792969,
+              0.0,
+              -36.9000015258789
+            ]
+          ],
+          "back_arrow": "↘",
+          "distance_m": 37.8,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↖",
+          "kind": "ES",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-A-1F-NAV-1",
+          "target": "A-WEST-V22-0-DOWN-test_start",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              309.0,
+              0.0,
+              -60.0
+            ],
+            [
+              309.5,
+              0.0,
+              -59.0
+            ],
+            [
+              325.5,
+              0.0,
+              -52.5
+            ],
+            [
+              346.0,
+              0.0,
+              -50.5
+            ],
+            [
+              354.0,
+              0.0,
+              -45.0
+            ],
+            [
+              354.0,
+              0.0,
+              -45.0
+            ]
+          ],
+          "back_arrow": "↘",
+          "distance_m": 48.7,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↖",
+          "kind": "INFO",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-A-1F-NAV-1",
+          "target": "A-WEST-VISITOR-information_counter-1",
+          "variant": "combined"
+        }
+      ],
+      "mount": "ceiling",
+      "sign": "V21-combined-A-1F-NAV-1",
+      "source": "Inherited live navigation + physical sweep",
+      "wing": "A"
+    },
+    {
+      "ceiling_support_y": 5.14499950408936,
+      "checks": [
+        {
+          "actual_path": [
+            [
+              28.5,
+              0.0,
+              6.0
+            ],
+            [
+              61.5,
+              0.0,
+              30.0
+            ],
+            [
+              91.5,
+              0.0,
+              58.5
+            ],
+            [
+              100.5,
+              0.0,
+              66.0
+            ],
+            [
+              102.0,
+              0.0,
+              78.0
+            ],
+            [
+              102.0,
+              0.0,
+              84.0
+            ]
+          ],
+          "back_arrow": "↙",
+          "distance_m": 112.0,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↗",
+          "kind": "WC",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-B-1F-NAV-2",
+          "target": "K3-AWC",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              28.5,
+              0.0,
+              6.0
+            ],
+            [
+              61.5,
+              0.0,
+              30.0
+            ],
+            [
+              91.5,
+              0.0,
+              58.5
+            ],
+            [
+              100.5,
+              0.0,
+              66.0
+            ],
+            [
+              102.0,
+              0.0,
+              78.0
+            ],
+            [
+              102.0,
+              0.0,
+              87.0
+            ],
+            [
+              105.0,
+              0.0,
+              88.5
+            ]
+          ],
+          "back_arrow": "↙",
+          "distance_m": 118.3,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↗",
+          "kind": "EV",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-B-1F-NAV-2",
+          "target": "B-K3",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              28.5,
+              0.0,
+              6.0
+            ],
+            [
+              10.5,
+              0.0,
+              -3.0
+            ],
+            [
+              -7.5,
+              0.0,
+              -3.0
+            ],
+            [
+              -19.5,
+              0.0,
+              9.0
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 55.1,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "ES",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-B-1F-NAV-2",
+          "target": "E2-12-UP-test_start",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              28.5,
+              0.0,
+              6.0
+            ],
+            [
+              70.5,
+              0.0,
+              25.5
+            ],
+            [
+              133.5,
+              0.0,
+              1.5
+            ],
+            [
+              165.0,
+              0.0,
+              -30.0
+            ]
+          ],
+          "back_arrow": "↙",
+          "distance_m": 158.3,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↗",
+          "kind": "A",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-B-1F-NAV-2",
+          "target": "AB-1-THROUGH-TO-A1F-051",
+          "variant": "combined"
+        }
+      ],
+      "mount": "ceiling",
+      "sign": "V21-combined-B-1F-NAV-2",
+      "source": "Inherited live navigation + physical sweep",
+      "wing": "B"
+    },
+    {
+      "ceiling_support_y": 5.14499998092651,
+      "checks": [
+        {
+          "actual_path": [
+            [
+              -84.5,
+              0.0,
+              -220.5
+            ],
+            [
+              -85.5,
+              0.0,
+              -220.5
+            ],
+            [
+              -90.0,
+              0.0,
+              -217.5
+            ],
+            [
+              -91.5,
+              0.0,
+              -216.0
+            ],
+            [
+              -109.5,
+              0.0,
+              -219.0
+            ],
+            [
+              -112.5,
+              0.0,
+              -218.5
+            ],
+            [
+              -119.5,
+              0.0,
+              -216.5
+            ],
+            [
+              -119.361930847168,
+              0.0,
+              -216.298034667969
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 37.3,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "WC",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-C-1F-NAV-1",
+          "target": "K-CSW-AWC",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              -84.5,
+              0.0,
+              -220.5
+            ],
+            [
+              -85.5,
+              0.0,
+              -220.5
+            ],
+            [
+              -90.0,
+              0.0,
+              -217.5
+            ],
+            [
+              -91.5,
+              0.0,
+              -216.0
+            ],
+            [
+              -108.0,
+              0.0,
+              -217.5
+            ],
+            [
+              -112.5,
+              0.0,
+              -218.5
+            ],
+            [
+              -113.0,
+              0.0,
+              -217.0
+            ],
+            [
+              -113.0,
+              0.0,
+              -215.0
+            ],
+            [
+              -113.005867004395,
+              0.0,
+              -214.936798095703
+            ]
+          ],
+          "back_arrow": "↗",
+          "distance_m": 33.4,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↙",
+          "kind": "EV",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-C-1F-NAV-1",
+          "target": "C-K-CSW",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              -84.0,
+              0.0,
+              -220.5
+            ],
+            [
+              -70.5,
+              0.0,
+              -219.0
+            ],
+            [
+              -64.5,
+              0.0,
+              -218.5
+            ],
+            [
+              -43.5,
+              0.0,
+              -219.0
+            ],
+            [
+              -22.5,
+              0.0,
+              -219.0
+            ],
+            [
+              -1.5,
+              0.0,
+              -219.0
+            ],
+            [
+              19.5,
+              0.0,
+              -216.0
+            ],
+            [
+              40.5,
+              0.0,
+              -207.0
+            ],
+            [
+              50.0,
+              0.0,
+              -204.5
+            ],
+            [
+              61.5,
+              0.0,
+              -210.0
+            ],
+            [
+              82.5,
+              0.0,
+              -229.5
+            ],
+            [
+              103.5,
+              0.0,
+              -247.5
+            ],
+            [
+              124.5,
+              0.0,
+              -265.5
+            ],
+            [
+              117.0,
+              0.0,
+              -285.0
+            ],
+            [
+              107.0,
+              0.0,
+              -289.0
+            ],
+            [
+              107.0,
+              0.0,
+              -287.700012207031
+            ]
+          ],
+          "back_arrow": "↙",
+          "distance_m": 266.2,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↗",
+          "kind": "ES",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-C-1F-NAV-1",
+          "target": "CE12-UP-test_start",
+          "variant": "combined"
+        },
+        {
+          "actual_path": [
+            [
+              -84.0,
+              0.0,
+              -220.5
+            ],
+            [
+              -70.5,
+              0.0,
+              -219.0
+            ],
+            [
+              -62.0,
+              0.0,
+              -218.5
+            ],
+            [
+              -48.0,
+              0.0,
+              -219.0
+            ],
+            [
+              -27.0,
+              0.0,
+              -219.0
+            ],
+            [
+              -6.0,
+              0.0,
+              -219.0
+            ],
+            [
+              15.0,
+              0.0,
+              -219.0
+            ],
+            [
+              36.0,
+              0.0,
+              -207.0
+            ],
+            [
+              52.5,
+              0.0,
+              -201.5
+            ],
+            [
+              63.5,
+              0.0,
+              -196.5
+            ],
+            [
+              63.2799987792969,
+              0.0,
+              -196.75
+            ]
+          ],
+          "back_arrow": "↙",
+          "distance_m": 153.1,
+          "fallback_from_unverified_target": "",
+          "front_arrow": "↗",
+          "kind": "DINING",
+          "pass": true,
+          "reason": "",
+          "replanned_against_live_collision": false,
+          "sign": "V21-combined-C-1F-NAV-1",
+          "target": "C1F-CSE-2",
+          "variant": "combined"
+        }
+      ],
+      "mount": "ceiling",
+      "sign": "V21-combined-C-1F-NAV-1",
+      "source": "Inherited live navigation + physical sweep",
+      "wing": "C"
+    }
+  ],
+  "route_replans": [
+    {
+      "new_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          309.5,
+          0.0,
+          -59.0
+        ],
+        [
+          325.5,
+          0.0,
+          -46.5
+        ],
+        [
+          338.0,
+          0.0,
+          -38.0
+        ],
+        [
+          338.0,
+          0.0,
+          -37.0
+        ],
+        [
+          337.799987792969,
+          0.0,
+          -36.9000015258789
+        ]
+      ],
+      "old_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          320.5,
+          0.0,
+          -49.0
+        ],
+        [
+          336.0,
+          0.0,
+          -39.0
+        ],
+        [
+          338.0,
+          0.0,
+          -38.0
+        ],
+        [
+          338.0,
+          0.0,
+          -37.0
+        ],
+        [
+          337.799987792969,
+          0.0,
+          -36.9000015258789
+        ]
+      ],
+      "pass": true,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-WEST-V22-0-DOWN-test_start"
+    },
+    {
+      "new_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          309.5,
+          0.0,
+          -59.0
+        ],
+        [
+          325.5,
+          0.0,
+          -52.5
+        ],
+        [
+          346.0,
+          0.0,
+          -50.5
+        ],
+        [
+          354.0,
+          0.0,
+          -45.0
+        ],
+        [
+          354.0,
+          0.0,
+          -45.0
+        ]
+      ],
+      "old_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          352.5,
+          0.0,
+          -45.0
+        ],
+        [
+          354.0,
+          0.0,
+          -45.0
+        ]
+      ],
+      "pass": true,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-WEST-VISITOR-information_counter-1"
+    },
+    {
+      "new_path": [
+        [
+          -84.5,
+          0.0,
+          -220.5
+        ],
+        [
+          -85.5,
+          0.0,
+          -220.5
+        ],
+        [
+          -90.0,
+          0.0,
+          -217.5
+        ],
+        [
+          -91.5,
+          0.0,
+          -216.0
+        ],
+        [
+          -109.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -112.5,
+          0.0,
+          -218.5
+        ],
+        [
+          -119.5,
+          0.0,
+          -216.5
+        ],
+        [
+          -119.361930847168,
+          0.0,
+          -216.298034667969
+        ]
+      ],
+      "old_path": [
+        [
+          -84.0,
+          0.0,
+          -220.5
+        ],
+        [
+          -103.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -114.0,
+          0.0,
+          -218.5
+        ],
+        [
+          -119.5,
+          0.0,
+          -216.5
+        ],
+        [
+          -119.361930847168,
+          0.0,
+          -216.298034667969
+        ]
+      ],
+      "pass": true,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "new_path": [
+        [
+          -84.5,
+          0.0,
+          -220.5
+        ],
+        [
+          -85.5,
+          0.0,
+          -220.5
+        ],
+        [
+          -90.0,
+          0.0,
+          -217.5
+        ],
+        [
+          -91.5,
+          0.0,
+          -216.0
+        ],
+        [
+          -108.0,
+          0.0,
+          -217.5
+        ],
+        [
+          -112.5,
+          0.0,
+          -218.5
+        ],
+        [
+          -113.0,
+          0.0,
+          -217.0
+        ],
+        [
+          -113.0,
+          0.0,
+          -215.0
+        ],
+        [
+          -113.005867004395,
+          0.0,
+          -214.936798095703
+        ]
+      ],
+      "old_path": [
+        [
+          -84.0,
+          0.0,
+          -220.5
+        ],
+        [
+          -90.0,
+          0.0,
+          -220.0
+        ],
+        [
+          -109.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -112.5,
+          0.0,
+          -218.5
+        ],
+        [
+          -113.0,
+          0.0,
+          -217.0
+        ],
+        [
+          -113.0,
+          0.0,
+          -215.0
+        ],
+        [
+          -113.005867004395,
+          0.0,
+          -214.936798095703
+        ]
+      ],
+      "pass": true,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "C-K-CSW"
+    }
+  ],
+  "post_addition_all_routes_check": {
+    "details": [],
+    "id": "routes-after-v26-colliders",
+    "pass": true
+  },
+  "door_state_during_route_validation": "open; sensor operation and closed-leaf collision tested separately"
+}

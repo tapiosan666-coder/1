@@ -1,0 +1,102 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "shots": [
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        393.2,
+        1.65,
+        -51.4
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "commons-09-A-specialty-street",
+      "look": [
+        425.0,
+        1.7,
+        -51.4
+      ],
+      "main_script_sha256": "c7a2cd532545f1c7e430cae3db6bebabf2d0232b1df7cd971436b9c3f0a9fcb4",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館・専門店街",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        5.5,
+        1.65,
+        -7.5
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "commons-08-B-Aichi-fair",
+      "look": [
+        5.5,
+        1.5,
+        17.0
+      ],
+      "main_script_sha256": "c7a2cd532545f1c7e430cae3db6bebabf2d0232b1df7cd971436b9c3f0a9fcb4",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館・物産展の買い回り通路",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "actual_Godot_Viewport": true,
+      "encoding": "JPEG 96 directly saved by Godot Image, no image postprocessing",
+      "eye": [
+        -68.543382,
+        1.65,
+        -289.502218
+      ],
+      "female_model_sha256": "ecacf9f2296e211d93f697c53af32d61cb001731390a401d9a5f5ec7b4290835",
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "commons-04-C-open-courtyard",
+      "look": [
+        -161.0,
+        16.0,
+        -289.5
+      ],
+      "main_script_sha256": "c7a2cd532545f1c7e430cae3db6bebabf2d0232b1df7cd971436b9c3f0a9fcb4",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館・中庭と上階ギャラリー",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    }
+  ]
+}

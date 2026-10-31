@@ -1,0 +1,356 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "human_playtest": false,
+  "performance": [
+    {
+      "NPC_count": 43,
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "camera": "commons-09-A-specialty-street",
+      "draw_calls": [
+        4355.0,
+        4355.0,
+        4355.0
+      ],
+      "frame_ms_samples": [
+        3543.901,
+        3509.025,
+        3553.358
+      ],
+      "hardware_GPU_measured": false,
+      "memory_static_bytes": 1901347181.0,
+      "primitives": [
+        2477541.0,
+        2477541.0,
+        2477541.0
+      ],
+      "render_scale": 1.0,
+      "renderer": "gl_compatibility",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "NPC_count": 43,
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "camera": "commons-08-B-Aichi-fair",
+      "draw_calls": [
+        3272.0,
+        3282.0,
+        3282.0
+      ],
+      "frame_ms_samples": [
+        3363.206,
+        3321.316,
+        3377.111
+      ],
+      "hardware_GPU_measured": false,
+      "memory_static_bytes": 1901762609.0,
+      "primitives": [
+        3124429.0,
+        3124545.0,
+        3124545.0
+      ],
+      "render_scale": 1.0,
+      "renderer": "gl_compatibility",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "NPC_count": 43,
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "camera": "commons-04-C-open-courtyard",
+      "draw_calls": [
+        1429.0,
+        1429.0,
+        1429.0
+      ],
+      "frame_ms_samples": [
+        1010.998,
+        1006.833,
+        1148.976
+      ],
+      "hardware_GPU_measured": false,
+      "memory_static_bytes": 1902105229.0,
+      "primitives": [
+        1795126.0,
+        1795126.0,
+        1795126.0
+      ],
+      "render_scale": 1.0,
+      "renderer": "gl_compatibility",
+      "viewport": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "renderer": "gl_compatibility",
+  "shots": [
+    {
+      "baseline": false,
+      "eye": [
+        393.2,
+        1.65,
+        -51.4
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "commons-09-A-specialty-street",
+      "image_postprocessing": false,
+      "look": [
+        425.0,
+        1.7,
+        -51.4
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館・専門店街",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    },
+    {
+      "baseline": false,
+      "eye": [
+        5.5,
+        1.65,
+        -7.5
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "commons-08-B-Aichi-fair",
+      "image_postprocessing": false,
+      "look": [
+        5.5,
+        1.5,
+        17.0
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館・物産展の買い回り通路",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "B"
+    },
+    {
+      "baseline": false,
+      "eye": [
+        -68.543382,
+        1.65,
+        -289.502218
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "commons-04-C-open-courtyard",
+      "image_postprocessing": false,
+      "look": [
+        -161.0,
+        16.0,
+        -289.5
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館・中庭と上階ギャラリー",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "baseline": false,
+      "eye": [
+        291.0,
+        1.65,
+        -58.0
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "entrance-A",
+      "image_postprocessing": false,
+      "look": [
+        300.0,
+        1.5,
+        -58.0
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館 二重自動ドア",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "walk_eye": [
+        293.0,
+        1.65,
+        -59.0
+      ],
+      "wing": "A"
+    },
+    {
+      "baseline": false,
+      "eye": [
+        4.0,
+        1.65,
+        33.0
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "entrance-B",
+      "image_postprocessing": false,
+      "look": [
+        4.0,
+        1.5,
+        24.0
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "B館 二重自動ドア",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "walk_eye": [
+        3.0,
+        1.65,
+        31.0
+      ],
+      "wing": "B"
+    },
+    {
+      "baseline": false,
+      "eye": [
+        -88.0,
+        1.65,
+        -228.0
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "entrance-C",
+      "image_postprocessing": false,
+      "look": [
+        -88.0,
+        1.5,
+        -219.0
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館 二重自動ドア",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "walk_eye": [
+        -87.0,
+        1.65,
+        -226.0
+      ],
+      "wing": "C"
+    },
+    {
+      "baseline": false,
+      "eye": [
+        -149.0,
+        1.65,
+        -297.0
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "C-gallery-detail",
+      "image_postprocessing": false,
+      "look": [
+        -151.0,
+        3.2,
+        -279.0
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "C館 石畳と木調の軒下",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "C"
+    },
+    {
+      "baseline": false,
+      "eye": [
+        405.0,
+        1.65,
+        -52.0
+      ],
+      "floor": "1F",
+      "fov": 65.0,
+      "human_playtest": false,
+      "id": "A-ceiling-detail",
+      "image_postprocessing": false,
+      "look": [
+        417.0,
+        3.5,
+        -53.0
+      ],
+      "native_Godot_viewport": true,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "title": "A館 天井と設備の納まり",
+      "variants": [
+        "normal",
+        "C",
+        "ES",
+        "combined"
+      ],
+      "wing": "A"
+    }
+  ]
+}

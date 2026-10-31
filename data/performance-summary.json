@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "camera": "commons-09-A-specialty-street",
+      "v25_median_frame_ms": 3629.831,
+      "v26_median_frame_ms": 3543.901,
+      "v25_draw_calls": 4299.0,
+      "v26_draw_calls": 4355.0,
+      "v25_primitives": 2447161.0,
+      "v26_primitives": 2477541.0
+    },
+    {
+      "camera": "commons-08-B-Aichi-fair",
+      "v25_median_frame_ms": 3684.216,
+      "v26_median_frame_ms": 3363.206,
+      "v25_draw_calls": 3171.0,
+      "v26_draw_calls": 3282.0,
+      "v25_primitives": 3090642.0,
+      "v26_primitives": 3124545.0
+    },
+    {
+      "camera": "commons-04-C-open-courtyard",
+      "v25_median_frame_ms": 1032.515,
+      "v26_median_frame_ms": 1010.998,
+      "v25_draw_calls": 1385.0,
+      "v26_draw_calls": 1429.0,
+      "v25_primitives": 1774746.0,
+      "v26_primitives": 1795126.0
+    }
+  ],
+  "hardware_GPU_measured": false,
+  "samples_per_camera": 3,
+  "note": "Linux llvmpipe OpenGL, sequential native render processes, 1920x1080, identical camera/NPC snapshot/environment. Host load is not controlled; these small CPU/software-renderer samples do not prove hardware FPS or an optimization speedup."
+}

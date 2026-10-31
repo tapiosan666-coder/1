@@ -1,0 +1,23 @@
+{
+  "Godot": "4.6.3 Standard",
+  "project_package_sha256": "770092bafadb3341c527e255784890b87119b93204c55994c21f473b6c6a577f",
+  "fresh_extraction": {
+    "fresh_independent_directory": "/workspace/v26-delivery-fresh/FIND_YOURSELF-v26-Godot",
+    "manifest_files_checked": 3981,
+    "hash_mismatches": [],
+    "cache_included": false
+  },
+  "editor_import_pass": true,
+  "ordinary_main_scene_launch_pass": true,
+  "launch_command": "godot --audio-driver Dummy --rendering-method gl_compatibility --quit-after 15",
+  "main_scene": "main.tscn",
+  "v26_ready_observed": true,
+  "script_parse_resource_errors": [],
+  "headless_import": true,
+  "headless_architecture_tests_passed": 18,
+  "native_startup_renderer": "OpenGL / gl_compatibility / llvmpipe",
+  "Windows_tested": false,
+  "hardware_GPU_tested": false,
+  "human_F5_click": false,
+  "separate_XDG_settings_cache_data": true
+}

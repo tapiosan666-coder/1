@@ -1,0 +1,747 @@
+{
+  "wall_groups": [
+    {
+      "actual_wall_ray": true,
+      "approach_clear": true,
+      "mount_collider": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_A_Vestibule / verified entrance side wall + clear approach",
+      "normal": [
+        0.0,
+        1.0
+      ],
+      "p": [
+        298.0,
+        0.0,
+        -61.875
+      ],
+      "types": [
+        "fire_hose_cabinet",
+        "alarm_call_point",
+        "extinguisher",
+        "keep_clear_notice"
+      ]
+    },
+    {
+      "actual_wall_ray": true,
+      "approach_clear": true,
+      "mount_collider": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_B_Vestibule / verified entrance side wall + clear approach",
+      "normal": [
+        -1.0,
+        0.0
+      ],
+      "p": [
+        7.87499952316284,
+        0.0,
+        26.0
+      ],
+      "types": [
+        "fire_hose_cabinet",
+        "alarm_call_point",
+        "extinguisher",
+        "keep_clear_notice"
+      ]
+    },
+    {
+      "actual_wall_ray": true,
+      "approach_clear": true,
+      "mount_collider": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_C_Vestibule / verified entrance side wall + clear approach",
+      "normal": [
+        1.0,
+        0.0
+      ],
+      "p": [
+        -91.8749923706055,
+        0.0,
+        -221.0
+      ],
+      "types": [
+        "fire_hose_cabinet",
+        "alarm_call_point",
+        "extinguisher",
+        "keep_clear_notice"
+      ]
+    }
+  ],
+  "ceiling_groups": [
+    {
+      "p": [
+        394.0,
+        5.04499998092651,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499998092651,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        400.0,
+        5.04500045776367,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14500045776367,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        406.0,
+        5.04499998092651,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499998092651,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        412.0,
+        5.04499950408936,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        418.0,
+        5.04499950408936,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        424.0,
+        5.04499950408936,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        430.0,
+        5.04499950408936,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        436.0,
+        5.04499950408936,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        442.0,
+        5.04499950408936,
+        -53.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        -16.0,
+        5.04499950408936,
+        -16.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -16.0,
+        5.04499950408936,
+        -4.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -16.0,
+        5.04499950408936,
+        8.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -16.0,
+        5.04499950408936,
+        20.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -4.0,
+        5.04499950408936,
+        -16.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -4.0,
+        5.04499950408936,
+        -4.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -4.0,
+        5.04499950408936,
+        20.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        8.0,
+        5.04499950408936,
+        -16.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        8.0,
+        5.04499950408936,
+        -4.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        8.0,
+        5.04499950408936,
+        20.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        20.0,
+        5.04499950408936,
+        -16.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        20.0,
+        5.04499950408936,
+        -4.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        20.0,
+        5.04499950408936,
+        8.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -152.0,
+        5.04499950408936,
+        -313.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        -152.0,
+        5.04499950408936,
+        -307.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        -152.0,
+        5.04499950408936,
+        -301.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        -152.0,
+        3.43999996185303,
+        -295.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 3.53999996185303,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        -152.0,
+        5.04499950408936,
+        -289.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        -152.0,
+        5.04499950408936,
+        -283.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        -152.0,
+        5.04499950408936,
+        -277.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        -152.0,
+        5.04499950408936,
+        -271.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    },
+    {
+      "p": [
+        365.0,
+        5.04499998092651,
+        -54.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499998092651,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        460.0,
+        5.04499950408936,
+        -54.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        500.0,
+        2.94999995231628,
+        -54.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 3.04999995231628,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        540.0,
+        5.04499998092651,
+        -54.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499998092651,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        580.0,
+        5.04499998092651,
+        -54.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499998092651,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "A"
+    },
+    {
+      "p": [
+        -170.0,
+        5.04499950408936,
+        5.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -140.0,
+        5.04499950408936,
+        5.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        100.0,
+        5.04499950408936,
+        5.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "B"
+    },
+    {
+      "p": [
+        -143.0,
+        5.04499950408936,
+        -256.0
+      ],
+      "ray_normal_y": -1.0,
+      "support_y": 5.14499950408936,
+      "types": [
+        "luminaire",
+        "HVAC",
+        "smoke_detector",
+        "sprinkler"
+      ],
+      "wing": "C"
+    }
+  ],
+  "local_evacuation_diagrams": [
+    {
+      "map_source": "source/v22/map-data-integrated.json",
+      "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+      "route": [
+        [
+          303.0,
+          0.0,
+          -58.0
+        ],
+        [
+          293.0,
+          0.0,
+          -58.0
+        ]
+      ],
+      "scope": "This entrance only; not a certified whole-building evacuation plan",
+      "wing": "A"
+    },
+    {
+      "map_source": "source/v22/map-data-integrated.json",
+      "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+      "route": [
+        [
+          4.0,
+          0.0,
+          21.0
+        ],
+        [
+          4.0,
+          0.0,
+          31.0
+        ]
+      ],
+      "scope": "This entrance only; not a certified whole-building evacuation plan",
+      "wing": "B"
+    },
+    {
+      "map_source": "source/v22/map-data-integrated.json",
+      "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+      "route": [
+        [
+          -88.0,
+          0.0,
+          -216.0
+        ],
+        [
+          -88.0,
+          0.0,
+          -226.0
+        ]
+      ],
+      "scope": "This entrance only; not a certified whole-building evacuation plan",
+      "wing": "C"
+    }
+  ],
+  "fire_code_certified": false
+}

@@ -1,0 +1,12 @@
+{
+  "early_exit_catalog_script": "qa_catalog_v25.gd",
+  "observed_cleanup_messages": [
+    "PagedAllocator pages-in-use",
+    "1 resources still in use at exit"
+  ],
+  "application_startup_or_resource_load_failure": false,
+  "complete_build_catalog_rerun": "catalog-complete.log",
+  "note": "The legacy catalog helper exits before all deferred modules finish. A separate rerun waits for full build before exercising the same API. These warnings are not hidden or counted as passed cleanup checks.",
+  "complete_build_catalog_rerun_pass": true,
+  "complete_build_catalog_rerun_errors": []
+}
