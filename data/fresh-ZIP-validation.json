@@ -1,0 +1,27 @@
+{
+  "tests": [
+    {
+      "case": "ordinary-startup",
+      "exit_code": 0,
+      "ready": true
+    },
+    {
+      "case": "qa_architecture_v28",
+      "exit_code": 0,
+      "ready": true
+    },
+    {
+      "case": "qa_integrity_v28",
+      "exit_code": 0,
+      "ready": true
+    }
+  ],
+  "first_import_clean": true,
+  "Godot": "4.6.3",
+  "human_playtest": false,
+  "tested_physics_ZIP_SHA256": "19314d6b67e31f64690de0d1c886488256fce8c699ff56d366eb8edc14cffdec",
+  "final_ZIP_SHA256": "409a9b228d18ce7eedfc2ce81e7c025780c56c49c0a88582a2074a18ad2b79d2",
+  "final_revision_note": "After clean-import physics tests, only B non-collidable ceiling speaker and review camera changed. Final payload hashes, native capture and ordinary startup verified. Physics tests were not rerun after that cosmetic revision.",
+  "final_speaker_count": 3,
+  "final_ordinary_startup_exit_code": 0
+}

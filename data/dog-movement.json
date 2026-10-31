@@ -1,0 +1,840 @@
+{
+  "approach_route_revalidated": true,
+  "cases": [
+    {
+      "end": [
+        -76.9999160766602,
+        -0.000357422046363354,
+        -259.385620117188
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-L3-new-public-approach",
+      "lowest_y": -0.0111709348857403,
+      "max_opposite_vertical_step_m": 0.000116311013698578,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -118.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -97.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -76.5,
+          0.0,
+          -288.0
+        ],
+        [
+          -77.0,
+          0.0,
+          -266.0
+        ],
+        [
+          -77.0,
+          0.0,
+          -259.2
+        ]
+      ],
+      "ticks": 2115
+    },
+    {
+      "end": [
+        -77.0,
+        0.000935477670282125,
+        -256.567504882812
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-outer-into-vestibule",
+      "lowest_y": -0.00240234658122063,
+      "max_opposite_vertical_step_m": 0.0000064019113779068,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -260.0
+        ],
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ]
+      ],
+      "ticks": 103
+    },
+    {
+      "end": [
+        -80.8884201049805,
+        0.0208426918834448,
+        -248.138610839844
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-inner-into-grass",
+      "lowest_y": 0.000234372913837433,
+      "max_opposite_vertical_step_m": 0.000771138758864254,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ],
+        [
+          -77.0,
+          0.0,
+          -252.8
+        ],
+        [
+          -81.0,
+          0.0,
+          -248.0
+        ]
+      ],
+      "ticks": 289
+    },
+    {
+      "end": [
+        -80.8048477172852,
+        0.0209155008196831,
+        -242.003723144531
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-grass-running-surface",
+      "lowest_y": 0.0201887991279364,
+      "max_opposite_vertical_step_m": 0.000753885135054588,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -81.0,
+          0.0,
+          -248.0
+        ],
+        [
+          -72.0,
+          0.0,
+          -248.0
+        ],
+        [
+          -72.0,
+          0.0,
+          -242.0
+        ],
+        [
+          -81.0,
+          0.0,
+          -242.0
+        ]
+      ],
+      "ticks": 703
+    },
+    {
+      "end": [
+        -77.0,
+        0.000936270516831428,
+        -256.200042724609
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-return-to-vestibule",
+      "lowest_y": 0.000935467542149127,
+      "max_opposite_vertical_step_m": 0.000747157260775566,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -252.8
+        ],
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ]
+      ],
+      "ticks": 102
+    },
+    {
+      "end": [
+        -76.9999847412109,
+        -0.00136151374317706,
+        -259.832489013672
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-return-to-public",
+      "lowest_y": -0.00136151374317706,
+      "max_opposite_vertical_step_m": 0.000701589102391154,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ],
+        [
+          -77.0,
+          0.0,
+          -260.0
+        ]
+      ],
+      "ticks": 103
+    }
+  ],
+  "closed_gates": [
+    {
+      "closed_blocks": true,
+      "id": "C-DOG-outer"
+    },
+    {
+      "closed_blocks": true,
+      "id": "C-DOG-inner"
+    }
+  ],
+  "coordinates_relocated": true,
+  "failed": [],
+  "fence_contact": [
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-1",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -87.86,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-2",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -85.58,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-3",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -83.3,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-4",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -81.02,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-5",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -78.74,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-6",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -75.26,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-7",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -72.98,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-8",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -70.7,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-9",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -68.42,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-10",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -66.14,
+        0.0,
+        -254.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-11",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -87.8,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-12",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -85.4,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-13",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -83.0,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-14",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -80.6,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-15",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -78.2,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-16",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -75.8,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-17",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -73.4,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-18",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -71.0,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-19",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -68.6,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-20",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -66.2,
+        0.0,
+        -235.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-21",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -253.533333333333
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-22",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -251.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-23",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -249.266666666667
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-24",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -247.133333333333
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-25",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -245.0
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-26",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -242.866666666667
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-27",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -240.733333333333
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-28",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -238.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-29",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -89.0,
+        0.0,
+        -236.466666666667
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-30",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -253.533333333333
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-31",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -251.4
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-32",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -249.266666666667
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-33",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -247.133333333333
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-34",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -245.0
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-35",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -242.866666666667
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-36",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -240.733333333333
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-37",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -238.6
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-38",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -65.0,
+        0.0,
+        -236.466666666667
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-39",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -77.9,
+        0.0,
+        -257.3
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-40",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -77.9,
+        0.0,
+        -255.5
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-41",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -76.1,
+        0.0,
+        -257.3
+      ]
+    },
+    {
+      "base_error": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-42",
+      "mesh_floor_height": 0.0,
+      "p": [
+        -76.1,
+        0.0,
+        -255.5
+      ]
+    },
+    {
+      "base_error": 0.00000000000015946577391901,
+      "id": "C-DOG-RUN-dog_fence_segment-43",
+      "mesh_floor_height": -0.00000000000015946577391901,
+      "p": [
+        -77.75,
+        0.0,
+        -258.2
+      ]
+    },
+    {
+      "base_error": 0.00000000000015946577391901,
+      "id": "C-DOG-RUN-dog_fence_segment-44",
+      "mesh_floor_height": -0.00000000000015946577391901,
+      "p": [
+        -76.25,
+        0.0,
+        -258.2
+      ]
+    }
+  ],
+  "grass_standing_grid": [
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        0.0199999958276749,
+        -252.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        0.0199999958276749,
+        -248.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        0.0199999958276749,
+        -244.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        0.0199999958276749,
+        -240.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        0.0199999958276749,
+        -252.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        0.0199999958276749,
+        -248.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        0.0199999958276749,
+        -244.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        0.0199999958276749,
+        -240.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        0.0199999958276749,
+        -252.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        0.0199999958276749,
+        -248.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        0.0199999958276749,
+        -244.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        0.0199999958276749,
+        -240.0
+      ]
+    }
+  ],
+  "human_playtest": false,
+  "interlock_rejected_other_leaf": true,
+  "landscape": {
+    "collision_triangles_moved": 44.0,
+    "delta_world": [
+      -10.5,
+      0.0,
+      0.0
+    ],
+    "id": "V9-PARKLIGHT-L-3",
+    "new_centre": [
+      -90.175,
+      0.0,
+      -248.065
+    ],
+    "old_centre": [
+      -79.675,
+      0.0,
+      -248.065
+    ],
+    "reason": "既存庭園灯が新しい芝生走行線にあるため柵外の緑地縁へ移設。メッシュ・発光部・衝突を同時移設",
+    "surfaces": [
+      "v9_basalt@@V9-PARKLIGHT-L-3",
+      "v9_bronze@@V9-PARKLIGHT-L-3",
+      "v9_glow@@V9-PARKLIGHT-L-3"
+    ]
+  },
+  "live_map_markers": [
+    {
+      "correct": true,
+      "floor": "1F",
+      "wing": "C",
+      "world_point": [
+        -77.0,
+        -245.0
+      ]
+    }
+  ],
+  "physics_hz": 60,
+  "surface_audit": [
+    {
+      "collider": "V28_L3_exact_terrain_collision",
+      "hit": true,
+      "normal": 1.0,
+      "p": [
+        -77.0,
+        0.0,
+        -245.0
+      ],
+      "y": 0.0200000107288361
+    },
+    {
+      "collider": "V28_L3_exact_terrain_collision",
+      "hit": true,
+      "normal": 0.999995589256287,
+      "p": [
+        -77.0,
+        0.0,
+        -260.0
+      ],
+      "y": -0.00270003080368042
+    },
+    {
+      "collider": "B_V28_same_floor_collision",
+      "hit": true,
+      "normal": 0.99994170665741,
+      "p": [
+        7.0,
+        0.0,
+        34.0
+      ],
+      "y": -0.00800400972366333
+    },
+    {
+      "collider": "B_V28_same_floor_collision",
+      "hit": true,
+      "normal": 1.0,
+      "p": [
+        7.0,
+        0.0,
+        30.0
+      ],
+      "y": 0.0399999916553497
+    }
+  ]
+}

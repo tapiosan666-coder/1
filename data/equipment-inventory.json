@@ -1,0 +1,725 @@
+{
+  "baseline_commit": "cb467d661211a1bb0dd0fdc23f8ee3182b6839b0",
+  "engineering_approved": false,
+  "coordinate_system": "metres WORLD x/y/z; map local x,z +429,-46",
+  "records": [
+    {
+      "id": "E1-12-UP",
+      "kind": "ES",
+      "position": [
+        -197,
+        0.0,
+        -38
+      ],
+      "orientation": [
+        1,
+        0
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "UP",
+      "normal": "excluded",
+      "F6": "active old comparator",
+      "decision": "退役維持",
+      "reason": "西側連続ESに役割を置換済み。v27で再表示しない",
+      "relocated": false
+    },
+    {
+      "id": "E1-12-DOWN",
+      "kind": "ES",
+      "position": [
+        -197,
+        0.0,
+        -34
+      ],
+      "orientation": [
+        1,
+        0
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "DOWN",
+      "normal": "excluded",
+      "F6": "active old comparator",
+      "decision": "退役維持",
+      "reason": "西側連続ESに役割を置換済み。v27で再表示しない",
+      "relocated": false
+    },
+    {
+      "id": "E2-12-UP",
+      "kind": "ES",
+      "position": [
+        -20,
+        0.0,
+        17
+      ],
+      "orientation": [
+        0,
+        1
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "UP",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "E2-12-DOWN",
+      "kind": "ES",
+      "position": [
+        -24,
+        0.0,
+        17
+      ],
+      "orientation": [
+        0,
+        1
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "DOWN",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "E3-12-UP",
+      "kind": "ES",
+      "position": [
+        140.0,
+        0.0,
+        -31.43205
+      ],
+      "orientation": [
+        0.8660254,
+        -0.5
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "UP",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "E3-12-DOWN",
+      "kind": "ES",
+      "position": [
+        142.0,
+        0.0,
+        -27.96795
+      ],
+      "orientation": [
+        0.8660254,
+        -0.5
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "DOWN",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "E1-23-UP",
+      "kind": "ES",
+      "position": [
+        -187,
+        5.525,
+        3
+      ],
+      "orientation": [
+        1,
+        0
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "UP",
+      "normal": "excluded",
+      "F6": "active old comparator",
+      "decision": "退役維持",
+      "reason": "西側連続ESに役割を置換済み。v27で再表示しない",
+      "relocated": false
+    },
+    {
+      "id": "E1-23-DOWN",
+      "kind": "ES",
+      "position": [
+        -187,
+        5.525,
+        7
+      ],
+      "orientation": [
+        1,
+        0
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "DOWN",
+      "normal": "excluded",
+      "F6": "active old comparator",
+      "decision": "退役維持",
+      "reason": "西側連続ESに役割を置換済み。v27で再表示しない",
+      "relocated": false
+    },
+    {
+      "id": "E2-23-UP",
+      "kind": "ES",
+      "position": [
+        23,
+        5.525,
+        17
+      ],
+      "orientation": [
+        0,
+        1
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "UP",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "E2-23-DOWN",
+      "kind": "ES",
+      "position": [
+        19,
+        5.525,
+        17
+      ],
+      "orientation": [
+        0,
+        1
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "DOWN",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "E3-23-UP",
+      "kind": "ES",
+      "position": [
+        169.71442,
+        5.525,
+        23.46791
+      ],
+      "orientation": [
+        0.7660444,
+        -0.6427876
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "UP",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "E3-23-DOWN",
+      "kind": "ES",
+      "position": [
+        172.28558,
+        5.525,
+        26.53209
+      ],
+      "orientation": [
+        0.7660444,
+        -0.6427876
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "DOWN",
+      "normal": "active",
+      "F6": "active independent retained",
+      "decision": "独立動線として維持＋外装更新",
+      "reason": "西側とは別の中央/東側の動線。無条件撤去しない",
+      "relocated": false
+    },
+    {
+      "id": "B-WEST-V15-0-UP",
+      "kind": "ES",
+      "position": [
+        -192.0,
+        0.0,
+        -11.2
+      ],
+      "orientation": [
+        -1.0,
+        0.0
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "UP",
+      "normal": "active",
+      "F6": "excluded in old comparator",
+      "decision": "通常採用維持＋上下2基の一体外装",
+      "reason": "通常起動は1F～RFの新6基。中央の開放スリットを閉鎖し、元の支持面と制御は保持",
+      "relocated": false
+    },
+    {
+      "id": "B-WEST-V15-0-DOWN",
+      "kind": "ES",
+      "position": [
+        -192.0,
+        0.0,
+        -13.4
+      ],
+      "orientation": [
+        -1.0,
+        0.0
+      ],
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "DOWN",
+      "normal": "active",
+      "F6": "excluded in old comparator",
+      "decision": "通常採用維持＋上下2基の一体外装",
+      "reason": "通常起動は1F～RFの新6基。中央の開放スリットを閉鎖し、元の支持面と制御は保持",
+      "relocated": false
+    },
+    {
+      "id": "B-WEST-V15-1-UP",
+      "kind": "ES",
+      "position": [
+        -192.0,
+        5.525,
+        -17.6
+      ],
+      "orientation": [
+        1.0,
+        0.0
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "UP",
+      "normal": "active",
+      "F6": "excluded in old comparator",
+      "decision": "通常採用維持＋上下2基の一体外装",
+      "reason": "通常起動は1F～RFの新6基。中央の開放スリットを閉鎖し、元の支持面と制御は保持",
+      "relocated": false
+    },
+    {
+      "id": "B-WEST-V15-1-DOWN",
+      "kind": "ES",
+      "position": [
+        -192.0,
+        5.525,
+        -19.8
+      ],
+      "orientation": [
+        1.0,
+        0.0
+      ],
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "DOWN",
+      "normal": "active",
+      "F6": "excluded in old comparator",
+      "decision": "通常採用維持＋上下2基の一体外装",
+      "reason": "通常起動は1F～RFの新6基。中央の開放スリットを閉鎖し、元の支持面と制御は保持",
+      "relocated": false
+    },
+    {
+      "id": "B-WEST-V15-2-UP",
+      "kind": "ES",
+      "position": [
+        -192.0,
+        10.875,
+        -11.2
+      ],
+      "orientation": [
+        -1.0,
+        0.0
+      ],
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "UP",
+      "normal": "active",
+      "F6": "excluded in old comparator",
+      "decision": "通常採用維持＋上下2基の一体外装",
+      "reason": "通常起動は1F～RFの新6基。中央の開放スリットを閉鎖し、元の支持面と制御は保持",
+      "relocated": false
+    },
+    {
+      "id": "B-WEST-V15-2-DOWN",
+      "kind": "ES",
+      "position": [
+        -192.0,
+        10.875,
+        -13.4
+      ],
+      "orientation": [
+        -1.0,
+        0.0
+      ],
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "DOWN",
+      "normal": "active",
+      "F6": "excluded in old comparator",
+      "decision": "通常採用維持＋上下2基の一体外装",
+      "reason": "通常起動は1F～RFの新6基。中央の開放スリットを閉鎖し、元の支持面と制御は保持",
+      "relocated": false
+    },
+    {
+      "id": "B-K1",
+      "kind": "EV",
+      "position": [
+        -113.0,
+        0,
+        -57.96
+      ],
+      "door": [
+        -113.0,
+        0,
+        -56.0
+      ],
+      "levels": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "decision": "維持",
+      "reason": "B1からRFをつなぐ既存EV。西側ESとは別位置",
+      "relocated": false
+    },
+    {
+      "id": "B-K2",
+      "kind": "EV",
+      "position": [
+        -70.00000000000006,
+        0,
+        75.96
+      ],
+      "door": [
+        -70.0,
+        0,
+        74.0
+      ],
+      "levels": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "decision": "維持",
+      "reason": "B1からRFをつなぐ既存EV。西側ESとは別位置",
+      "relocated": false
+    },
+    {
+      "id": "B-K3",
+      "kind": "EV",
+      "position": [
+        105.0,
+        0,
+        90.95999999999998
+      ],
+      "door": [
+        105.0,
+        0,
+        89.0
+      ],
+      "levels": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "decision": "維持",
+      "reason": "B1からRFをつなぐ既存EV。西側ESとは別位置",
+      "relocated": false
+    },
+    {
+      "id": "K1-stair-B1",
+      "kind": "STAIR",
+      "position": [
+        -119.5,
+        -5.35,
+        -52.5
+      ],
+      "levels": [
+        -1
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K2-stair-B1",
+      "kind": "STAIR",
+      "position": [
+        -63.5,
+        -5.35,
+        70.5
+      ],
+      "levels": [
+        -1
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K3-stair-B1",
+      "kind": "STAIR",
+      "position": [
+        111.5,
+        -5.35,
+        85.5
+      ],
+      "levels": [
+        -1
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K1-stair-1F",
+      "kind": "STAIR",
+      "position": [
+        -119.5,
+        0.0,
+        -52.5
+      ],
+      "levels": [
+        0
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K2-stair-1F",
+      "kind": "STAIR",
+      "position": [
+        -63.5,
+        0.0,
+        70.5
+      ],
+      "levels": [
+        0
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K3-stair-1F",
+      "kind": "STAIR",
+      "position": [
+        111.5,
+        0.0,
+        85.5
+      ],
+      "levels": [
+        0
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K1-stair-2F",
+      "kind": "STAIR",
+      "position": [
+        -119.5,
+        5.525,
+        -52.5
+      ],
+      "levels": [
+        1
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K2-stair-2F",
+      "kind": "STAIR",
+      "position": [
+        -63.5,
+        5.525,
+        70.5
+      ],
+      "levels": [
+        1
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K3-stair-2F",
+      "kind": "STAIR",
+      "position": [
+        111.5,
+        5.525,
+        85.5
+      ],
+      "levels": [
+        1
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K1-stair-3F",
+      "kind": "STAIR",
+      "position": [
+        -119.5,
+        10.875,
+        -52.5
+      ],
+      "levels": [
+        2
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K2-stair-3F",
+      "kind": "STAIR",
+      "position": [
+        -63.5,
+        10.875,
+        70.5
+      ],
+      "levels": [
+        2
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K3-stair-3F",
+      "kind": "STAIR",
+      "position": [
+        111.5,
+        10.875,
+        85.5
+      ],
+      "levels": [
+        2
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K1-stair-RF",
+      "kind": "STAIR",
+      "position": [
+        -119.5,
+        16.4,
+        -52.5
+      ],
+      "levels": [
+        3
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K2-stair-RF",
+      "kind": "STAIR",
+      "position": [
+        -63.5,
+        16.4,
+        70.5
+      ],
+      "levels": [
+        3
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    },
+    {
+      "id": "K3-stair-RF",
+      "kind": "STAIR",
+      "position": [
+        111.5,
+        16.4,
+        85.5
+      ],
+      "levels": [
+        3
+      ],
+      "decision": "維持",
+      "reason": "既存避難階段コアを変更しない",
+      "relocated": false
+    }
+  ],
+  "notes": [
+    "通常版は新西ES6基・中央/東独立8基。旧西4基は退役を維持。ES/EV座標の新規移設なし。",
+    "F6はB_legacy_comparison_v28.tscnの旧B配置比較に変更。旧西4基と独立8基、RFは既存EV/階段で接続。",
+    "F6比較シーンは旧全館構造候補を使うためA/Cも比較用構造。通常版へF6で復帰。正式構造への採用ではない。",
+    "各階3EVと3階段コア、地下階接続は保持。"
+  ],
+  "version": 28
+}

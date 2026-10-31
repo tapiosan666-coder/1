@@ -1,0 +1,55 @@
+{
+  "measurements": [
+    {
+      "version": "v27",
+      "camera": "B-1F-oblique",
+      "samples": [
+        3186.713,
+        3170.018,
+        3067.062
+      ],
+      "median_ms": 3170.018,
+      "draw_calls": 1784.0,
+      "primitives": 2575672.0
+    },
+    {
+      "version": "v27",
+      "camera": "C-L3-dog-ground",
+      "samples": [
+        3459.12,
+        3494.98,
+        3503.6
+      ],
+      "median_ms": 3494.98,
+      "draw_calls": 8415.0,
+      "primitives": 4462856.0
+    },
+    {
+      "version": "v28",
+      "camera": "B-1F-oblique",
+      "samples": [
+        2474.606,
+        2564.155,
+        2509.259
+      ],
+      "median_ms": 2509.259,
+      "draw_calls": 1752.0,
+      "primitives": 2568935.0
+    },
+    {
+      "version": "v28",
+      "camera": "C-L3-dog-ground",
+      "samples": [
+        2856.738,
+        2817.94,
+        2841.86
+      ],
+      "median_ms": 2841.86,
+      "draw_calls": 8371.0,
+      "primitives": 4538471.0
+    }
+  ],
+  "hardware_GPU": false,
+  "shared_CPU_not_controlled": true,
+  "FPS_improvement_claimed": false
+}
