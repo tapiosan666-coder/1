@@ -1,7 +1,9 @@
-# FIND YOURSELF v25 配布版
+# FIND YOURSELF v27 ダウンロード
 
-GitHubが単独で展開できる一つのZIPを生成します。分割・追加Data ZIP・結合・EXEは不要です。ダウンロード名にリポジトリ名の1-が付く場合があります。Godot版はproject.godotをGodot4.6.3で開き、インポート後F5。Review版はindex.htmlを開いてください。
+Godot完全プロジェクト: https://codeload.github.com/tapiosan666-coder/1/zip/refs/heads/FIND_YOURSELF-v27-Godot
 
-v24を唯一の基準とした代表5店舗の内装検証版です。F9の先頭からアパレル・大型書店・カフェ・化粧品・ゲームセンターを確認できます。既存15層・480店舗ID・43NPC・移動機能は保持。全480店舗の美術完成やFF16級達成は主張しません。未解決の設備接近2件、残る平坦な床や単調な商品表現、終了時の既存PagedAllocator警告はReviewに記録しています。人間の実操作・Windows GPU/144FPSは未検証です。
+Review: https://codeload.github.com/tapiosan666-coder/1/zip/refs/heads/FIND_YOURSELF-v27-Review
 
-元ZIPの全ファイルを保持し、この配布案内だけ追加しています。圧縮・外装ハッシュは元ZIPと異なるため、展開ファイルのSHA256で照合します。独立した配布ブランチであり、既存スキャンゲーム本体には統合していません。
+どちらも分割なしのZIPです。GitHubの自動生成ファイル名にはリポジトリ名の `1-` が先頭に付く場合があります。ZIPをすべて新規フォルダへ展開し、Godot側は `project.godot`、Review側は `index.html` を開いてください。Godot 4.6.3を使用します。
+
+通常起動は独立した構造候補です。既存ゲーム本体・正式建築原本には統合していません。
