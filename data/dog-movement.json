@@ -1,0 +1,352 @@
+{
+  "approach_route_revalidated": true,
+  "cases": [
+    {
+      "end": [
+        -76.9999313354492,
+        -0.0191579256206751,
+        -259.387054443359
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-L3-new-public-approach",
+      "lowest_y": -0.0379135683178902,
+      "max_opposite_vertical_step_m": 0.0187571216374636,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -118.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -97.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -76.5,
+          0.0,
+          -288.0
+        ],
+        [
+          -77.0,
+          0.0,
+          -266.0
+        ],
+        [
+          -77.0,
+          0.0,
+          -259.2
+        ]
+      ],
+      "ticks": 2115
+    },
+    {
+      "end": [
+        -77.0,
+        -0.0191579088568687,
+        -256.567504882812
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-outer-into-vestibule",
+      "lowest_y": -0.0198502633720636,
+      "max_opposite_vertical_step_m": 0.0000000186264514923096,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -260.0
+        ],
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ]
+      ],
+      "ticks": 103
+    },
+    {
+      "end": [
+        -80.8879089355469,
+        -0.019164027646184,
+        -248.139450073242
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-inner-into-grass",
+      "lowest_y": -0.0198502633720636,
+      "max_opposite_vertical_step_m": 0.00000600330531597137,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ],
+        [
+          -77.0,
+          0.0,
+          -252.8
+        ],
+        [
+          -81.0,
+          0.0,
+          -248.0
+        ]
+      ],
+      "ticks": 289
+    },
+    {
+      "end": [
+        -80.8051452636719,
+        -0.0191640239208937,
+        -242.003692626953
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-grass-running-surface",
+      "lowest_y": -0.0360013172030449,
+      "max_opposite_vertical_step_m": 0.0165674090385437,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -81.0,
+          0.0,
+          -248.0
+        ],
+        [
+          -72.0,
+          0.0,
+          -248.0
+        ],
+        [
+          -72.0,
+          0.0,
+          -242.0
+        ],
+        [
+          -81.0,
+          0.0,
+          -242.0
+        ]
+      ],
+      "ticks": 703
+    },
+    {
+      "end": [
+        -77.0,
+        -0.0191579088568687,
+        -256.232513427734
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-return-to-vestibule",
+      "lowest_y": -0.0198502633720636,
+      "max_opposite_vertical_step_m": 0.0000000186264514923096,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -252.8
+        ],
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ]
+      ],
+      "ticks": 103
+    },
+    {
+      "end": [
+        -77.0,
+        -0.0191579088568687,
+        -259.832489013672
+      ],
+      "human_playtest": false,
+      "id": "C-DOG-return-to-public",
+      "lowest_y": -0.0198502633720636,
+      "max_opposite_vertical_step_m": 0.0000000186264514923096,
+      "method": "Automatic actual player CharacterBody3D, gravity, move_and_slide and existing continuous-slope ES controller at60Hz",
+      "pass": true,
+      "points": [
+        [
+          -77.0,
+          0.0,
+          -256.4
+        ],
+        [
+          -77.0,
+          0.0,
+          -260.0
+        ]
+      ],
+      "ticks": 103
+    }
+  ],
+  "closed_gates": [
+    {
+      "closed_blocks": true,
+      "id": "C-DOG-outer"
+    },
+    {
+      "closed_blocks": true,
+      "id": "C-DOG-inner"
+    }
+  ],
+  "coordinates_relocated": true,
+  "failed": [],
+  "grass_standing_grid": [
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        -0.0200000256299973,
+        -252.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        -0.0200000256299973,
+        -248.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        -0.0200000256299973,
+        -244.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -84.0,
+        -0.0200000256299973,
+        -240.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        -0.0200000256299973,
+        -252.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        -0.0200000256299973,
+        -248.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        -0.0200000256299973,
+        -244.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -78.0,
+        -0.0200000256299973,
+        -240.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        -0.0200000256299973,
+        -252.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        -0.0200000256299973,
+        -248.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        -0.0200000256299973,
+        -244.0
+      ]
+    },
+    {
+      "clear": true,
+      "colliders": [],
+      "p": [
+        -72.0,
+        -0.0199999958276749,
+        -240.0
+      ]
+    }
+  ],
+  "human_playtest": false,
+  "interlock_rejected_other_leaf": true,
+  "landscape": {
+    "collision_triangles_moved": 44.0,
+    "delta_world": [
+      -10.5,
+      0.0,
+      0.0
+    ],
+    "id": "V9-PARKLIGHT-L-3",
+    "new_centre": [
+      -90.175,
+      0.0,
+      -248.065
+    ],
+    "old_centre": [
+      -79.675,
+      0.0,
+      -248.065
+    ],
+    "reason": "既存庭園灯が新しい芝生走行線にあるため柵外の緑地縁へ移設。メッシュ・発光部・衝突を同時移設",
+    "surfaces": [
+      "v9_basalt@@V9-PARKLIGHT-L-3",
+      "v9_bronze@@V9-PARKLIGHT-L-3",
+      "v9_glow@@V9-PARKLIGHT-L-3"
+    ]
+  },
+  "live_map_markers": [
+    {
+      "correct": true,
+      "floor": "1F",
+      "wing": "C",
+      "world_point": [
+        -77.0,
+        -245.0
+      ]
+    }
+  ],
+  "physics_hz": 60
+}

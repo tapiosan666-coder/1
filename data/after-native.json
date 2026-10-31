@@ -1,0 +1,545 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "cameras": [
+    {
+      "eye": [
+        -192.0,
+        1.65,
+        -12.3
+      ],
+      "fov": 85.0,
+      "id": "B-1F-below",
+      "look": [
+        -192.0,
+        3.1,
+        -12.2
+      ]
+    },
+    {
+      "eye": [
+        -188.0,
+        1.65,
+        -7.3
+      ],
+      "fov": 70.0,
+      "id": "B-1F-oblique",
+      "look": [
+        -194.0,
+        3.0,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -192.0,
+        2.2,
+        -4.3
+      ],
+      "fov": 75.0,
+      "id": "B-1F-side",
+      "look": [
+        -192.0,
+        2.7,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -182.0,
+        1.65,
+        -12.3
+      ],
+      "fov": 70.0,
+      "id": "B-1F-boarding",
+      "look": [
+        -192.0,
+        2.0,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -202.0,
+        7.175,
+        -12.3
+      ],
+      "fov": 70.0,
+      "id": "B-1F-upper",
+      "look": [
+        -192.0,
+        2.7625,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -192.0,
+        7.175,
+        -18.7
+      ],
+      "fov": 85.0,
+      "id": "B-2F-below",
+      "look": [
+        -192.0,
+        8.625,
+        -18.6
+      ]
+    },
+    {
+      "eye": [
+        -188.0,
+        7.175,
+        -13.7
+      ],
+      "fov": 70.0,
+      "id": "B-2F-oblique",
+      "look": [
+        -194.0,
+        8.525,
+        -18.7
+      ]
+    },
+    {
+      "eye": [
+        -192.0,
+        7.725,
+        -10.7
+      ],
+      "fov": 75.0,
+      "id": "B-2F-side",
+      "look": [
+        -192.0,
+        8.225,
+        -18.7
+      ]
+    },
+    {
+      "eye": [
+        -202.0,
+        7.175,
+        -18.7
+      ],
+      "fov": 70.0,
+      "id": "B-2F-boarding",
+      "look": [
+        -192.0,
+        7.525,
+        -18.7
+      ]
+    },
+    {
+      "eye": [
+        -182.0,
+        12.525,
+        -18.7
+      ],
+      "fov": 70.0,
+      "id": "B-2F-upper",
+      "look": [
+        -192.0,
+        8.2,
+        -18.7
+      ]
+    },
+    {
+      "eye": [
+        -192.0,
+        12.525,
+        -12.3
+      ],
+      "fov": 85.0,
+      "id": "B-3F-below",
+      "look": [
+        -192.0,
+        13.975,
+        -12.2
+      ]
+    },
+    {
+      "eye": [
+        -188.0,
+        12.525,
+        -7.3
+      ],
+      "fov": 70.0,
+      "id": "B-3F-oblique",
+      "look": [
+        -194.0,
+        13.875,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -192.0,
+        13.075,
+        -4.3
+      ],
+      "fov": 75.0,
+      "id": "B-3F-side",
+      "look": [
+        -192.0,
+        13.575,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -182.0,
+        12.525,
+        -12.3
+      ],
+      "fov": 70.0,
+      "id": "B-3F-boarding",
+      "look": [
+        -192.0,
+        12.875,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -202.0,
+        18.05,
+        -12.3
+      ],
+      "fov": 70.0,
+      "id": "B-3F-upper",
+      "look": [
+        -192.0,
+        13.6375,
+        -12.3
+      ]
+    },
+    {
+      "eye": [
+        -192.0,
+        -0.85,
+        -15.5
+      ],
+      "fov": 85.0,
+      "id": "B-B1-layout",
+      "look": [
+        -192.0,
+        -5.35,
+        -15.51
+      ],
+      "orthographic": true,
+      "size": 52.0
+    },
+    {
+      "eye": [
+        -192.0,
+        4.5,
+        -15.5
+      ],
+      "fov": 85.0,
+      "id": "B-1F-layout",
+      "look": [
+        -192.0,
+        0.0,
+        -15.51
+      ],
+      "orthographic": true,
+      "size": 52.0
+    },
+    {
+      "eye": [
+        -192.0,
+        10.025,
+        -15.5
+      ],
+      "fov": 85.0,
+      "id": "B-2F-layout",
+      "look": [
+        -192.0,
+        5.525,
+        -15.51
+      ],
+      "orthographic": true,
+      "size": 52.0
+    },
+    {
+      "eye": [
+        -192.0,
+        15.375,
+        -15.5
+      ],
+      "fov": 85.0,
+      "id": "B-3F-layout",
+      "look": [
+        -192.0,
+        10.875,
+        -15.51
+      ],
+      "orthographic": true,
+      "size": 52.0
+    },
+    {
+      "eye": [
+        -192.0,
+        20.9,
+        -15.5
+      ],
+      "fov": 85.0,
+      "id": "B-RF-layout",
+      "look": [
+        -192.0,
+        16.4,
+        -15.51
+      ],
+      "orthographic": true,
+      "size": 52.0
+    },
+    {
+      "eye": [
+        -207.0,
+        7.0,
+        -52.0
+      ],
+      "fov": 75.0,
+      "id": "B-old-west",
+      "look": [
+        -192.0,
+        3.0,
+        -31.0
+      ]
+    },
+    {
+      "eye": [
+        -113.0,
+        1.65,
+        -49.0
+      ],
+      "fov": 70.0,
+      "id": "B-EV-hall",
+      "look": [
+        -113.0,
+        1.5,
+        -58.0
+      ]
+    },
+    {
+      "eye": [
+        -1.0,
+        34.0,
+        -218.0
+      ],
+      "fov": 70.0,
+      "id": "C-dog-aerial",
+      "look": [
+        -1.0,
+        0.0,
+        -204.0
+      ]
+    },
+    {
+      "eye": [
+        -10.0,
+        1.65,
+        -211.0
+      ],
+      "fov": 75.0,
+      "id": "C-dog-ground",
+      "look": [
+        5.0,
+        0.4,
+        -199.0
+      ]
+    },
+    {
+      "eye": [
+        -5.0,
+        1.65,
+        -221.0
+      ],
+      "fov": 70.0,
+      "id": "C-dog-gates",
+      "look": [
+        -1.0,
+        0.8,
+        -213.0
+      ]
+    },
+    {
+      "eye": [
+        -77.0,
+        34.0,
+        -259.0
+      ],
+      "fov": 70.0,
+      "id": "C-L3-dog-aerial",
+      "look": [
+        -77.0,
+        0.0,
+        -245.0
+      ]
+    },
+    {
+      "eye": [
+        -86.0,
+        1.65,
+        -252.0
+      ],
+      "fov": 75.0,
+      "id": "C-L3-dog-ground",
+      "look": [
+        -71.0,
+        0.4,
+        -240.0
+      ]
+    },
+    {
+      "eye": [
+        -81.0,
+        1.65,
+        -262.0
+      ],
+      "fov": 70.0,
+      "id": "C-L3-dog-gates",
+      "look": [
+        -77.0,
+        0.8,
+        -254.0
+      ]
+    },
+    {
+      "eye": [
+        -209.0,
+        1.65,
+        -38.0
+      ],
+      "fov": 70.0,
+      "id": "B-legacy-ES-direct",
+      "look": [
+        -196.0,
+        2.5,
+        -38.0
+      ]
+    },
+    {
+      "eye": [
+        -70.0,
+        1.65,
+        67.0
+      ],
+      "fov": 70.0,
+      "id": "B-K2-EV-hall",
+      "look": [
+        -70.0,
+        1.5,
+        76.0
+      ]
+    },
+    {
+      "eye": [
+        105.0,
+        1.65,
+        82.0
+      ],
+      "fov": 70.0,
+      "id": "B-K3-EV-hall",
+      "look": [
+        105.0,
+        1.5,
+        91.0
+      ]
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "human_playtest": false,
+  "performance": [
+    {
+      "camera": "B-1F-oblique",
+      "draw_calls": 1784.0,
+      "frame_ms": [
+        3162.685,
+        3129.95,
+        3086.17
+      ],
+      "primitives": 2575672.0
+    },
+    {
+      "camera": "B-B1-layout",
+      "draw_calls": 1581.0,
+      "frame_ms": [],
+      "primitives": 1734578.0
+    },
+    {
+      "camera": "B-1F-layout",
+      "draw_calls": 1814.0,
+      "frame_ms": [],
+      "primitives": 1954599.0
+    },
+    {
+      "camera": "B-2F-layout",
+      "draw_calls": 1994.0,
+      "frame_ms": [],
+      "primitives": 2280500.0
+    },
+    {
+      "camera": "B-3F-layout",
+      "draw_calls": 2122.0,
+      "frame_ms": [],
+      "primitives": 2480373.0
+    },
+    {
+      "camera": "B-RF-layout",
+      "draw_calls": 2232.0,
+      "frame_ms": [],
+      "primitives": 2622425.0
+    },
+    {
+      "camera": "C-L3-dog-aerial",
+      "draw_calls": 1767.0,
+      "frame_ms": [],
+      "primitives": 1466002.0
+    },
+    {
+      "camera": "C-L3-dog-ground",
+      "draw_calls": 8416.0,
+      "frame_ms": [
+        2972.702,
+        3186.068,
+        3197.074
+      ],
+      "primitives": 4462868.0
+    },
+    {
+      "camera": "C-L3-dog-gates",
+      "draw_calls": 9816.0,
+      "frame_ms": [],
+      "primitives": 5046740.0
+    },
+    {
+      "camera": "B-legacy-ES-direct",
+      "draw_calls": 10231.0,
+      "frame_ms": [],
+      "primitives": 5093829.0
+    },
+    {
+      "camera": "B-K2-EV-hall",
+      "draw_calls": 732.0,
+      "frame_ms": [],
+      "primitives": 1443636.0
+    },
+    {
+      "camera": "B-K3-EV-hall",
+      "draw_calls": 382.0,
+      "frame_ms": [],
+      "primitives": 977897.0
+    }
+  ],
+  "renderer": "gl_compatibility",
+  "screenshots_unedited": true
+}

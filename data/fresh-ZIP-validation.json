@@ -1,0 +1,30 @@
+{
+  "tests": [
+    {
+      "case": "ordinary-startup",
+      "exit_code": 0,
+      "ready": true
+    },
+    {
+      "case": "qa_architecture_v27",
+      "exit_code": 0,
+      "ready": true
+    },
+    {
+      "case": "qa_movement_v27",
+      "exit_code": 0,
+      "ready": true
+    },
+    {
+      "case": "qa_dog_v27",
+      "exit_code": 0,
+      "ready": true
+    }
+  ],
+  "source_ZIP": "/workspace/output/FIND_YOURSELF-v27-Godot.zip",
+  "source_ZIP_sha256": "afcac7d727643aaa6787e91bee45d9ef22e74da0d420240425d50b3135ed6093",
+  "clean_extract_files": 4022,
+  "Godot": "4.6.3",
+  "physical_hz": 60,
+  "human_playtest": false
+}

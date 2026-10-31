@@ -1,0 +1,36 @@
+{
+  "samples": [
+    {
+      "version": "v26",
+      "camera": "B-1F-oblique",
+      "frame_ms_samples": [
+        2993.412,
+        3074.274,
+        2996.467
+      ],
+      "frame_ms_median": 2996.467,
+      "draw_calls": 1660.0,
+      "primitives": 2605102.0,
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "renderer": "gl_compatibility"
+    },
+    {
+      "version": "v27",
+      "camera": "B-1F-oblique",
+      "frame_ms_samples": [
+        3162.685,
+        3129.95,
+        3086.17
+      ],
+      "frame_ms_median": 3129.95,
+      "draw_calls": 1784.0,
+      "primitives": 2575672.0,
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "renderer": "gl_compatibility"
+    }
+  ],
+  "hardware_GPU_measured": false,
+  "native_render_processes_sequential": true,
+  "shared_CPU_workload_not_controlled": true,
+  "FPS_improvement_claimed": false
+}

@@ -1,0 +1,3361 @@
+{
+  "actual_CharacterBody_move_and_slide": true,
+  "architecture": {
+    "batched_box_maximum_corner_error_m": 0.0,
+    "ceiling_mounts": [
+      {
+        "p": [
+          394.0,
+          5.04499998092651,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499998092651,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          400.0,
+          5.04500045776367,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14500045776367,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          406.0,
+          5.04499998092651,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499998092651,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          412.0,
+          5.04499950408936,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          418.0,
+          5.04499950408936,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          424.0,
+          5.04499950408936,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          430.0,
+          5.04499950408936,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          436.0,
+          5.04499950408936,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          442.0,
+          5.04499950408936,
+          -53.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          -16.0,
+          5.04499950408936,
+          -16.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -16.0,
+          5.04499950408936,
+          -4.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -16.0,
+          5.04499950408936,
+          8.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -16.0,
+          5.04499950408936,
+          20.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -4.0,
+          5.04499950408936,
+          -16.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -4.0,
+          5.04499950408936,
+          -4.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -4.0,
+          5.04499950408936,
+          20.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          8.0,
+          5.04499950408936,
+          -16.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          8.0,
+          5.04499950408936,
+          -4.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          8.0,
+          5.04499950408936,
+          20.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          20.0,
+          5.04499950408936,
+          -16.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          20.0,
+          5.04499950408936,
+          -4.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          20.0,
+          5.04499950408936,
+          8.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -152.0,
+          5.04499950408936,
+          -313.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          -152.0,
+          5.04499950408936,
+          -307.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          -152.0,
+          5.04499950408936,
+          -301.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          -152.0,
+          3.43999996185303,
+          -295.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 3.53999996185303,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          -152.0,
+          5.04499950408936,
+          -289.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          -152.0,
+          5.04499950408936,
+          -283.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          -152.0,
+          5.04499950408936,
+          -277.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          -152.0,
+          5.04499950408936,
+          -271.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      },
+      {
+        "p": [
+          365.0,
+          5.04499998092651,
+          -54.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499998092651,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          460.0,
+          5.04499950408936,
+          -54.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          500.0,
+          2.94999995231628,
+          -54.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 3.04999995231628,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          540.0,
+          5.04499998092651,
+          -54.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499998092651,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          580.0,
+          5.04499998092651,
+          -54.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499998092651,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "A"
+      },
+      {
+        "p": [
+          -170.0,
+          5.04499950408936,
+          5.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -140.0,
+          5.04499950408936,
+          5.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          100.0,
+          5.04499950408936,
+          5.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "B"
+      },
+      {
+        "p": [
+          -143.0,
+          5.04499950408936,
+          -256.0
+        ],
+        "ray_normal_y": -1.0,
+        "support_y": 5.14499950408936,
+        "types": [
+          "luminaire",
+          "HVAC",
+          "smoke_detector",
+          "sprinkler"
+        ],
+        "wing": "C"
+      }
+    ],
+    "decorative_box_batches": 10,
+    "decorative_finish_shadow_casters_disabled": 333,
+    "entrances": [
+      {
+        "clear_width_m": 3.3,
+        "floor": "1F",
+        "id": "A-ENTRANCE-01",
+        "inside": [
+          303.0,
+          0.0,
+          -58.0
+        ],
+        "n": [
+          1.0,
+          0.0
+        ],
+        "outside": [
+          293.0,
+          0.0,
+          -58.0
+        ],
+        "p": [
+          298.0,
+          0.0,
+          -58.0
+        ],
+        "pre_build_three_lane_bidirectional_capsule_sweeps": true,
+        "retained_slab": true,
+        "vestibule_depth_m": 4.4,
+        "wing": "A"
+      },
+      {
+        "clear_width_m": 3.3,
+        "floor": "1F",
+        "id": "B-ENTRANCE-01",
+        "inside": [
+          4.0,
+          0.0,
+          21.0
+        ],
+        "n": [
+          0.0,
+          -1.0
+        ],
+        "outside": [
+          4.0,
+          0.0,
+          31.0
+        ],
+        "p": [
+          4.0,
+          0.0,
+          26.0
+        ],
+        "pre_build_three_lane_bidirectional_capsule_sweeps": true,
+        "retained_slab": true,
+        "vestibule_depth_m": 4.4,
+        "wing": "B"
+      },
+      {
+        "clear_width_m": 3.3,
+        "floor": "1F",
+        "id": "C-ENTRANCE-01",
+        "inside": [
+          -88.0,
+          0.0,
+          -216.0
+        ],
+        "n": [
+          0.0,
+          1.0
+        ],
+        "outside": [
+          -88.0,
+          0.0,
+          -226.0
+        ],
+        "p": [
+          -88.0,
+          0.0,
+          -221.0
+        ],
+        "pre_build_three_lane_bidirectional_capsule_sweeps": true,
+        "retained_slab": true,
+        "vestibule_depth_m": 4.4,
+        "wing": "C"
+      }
+    ],
+    "fire_code_certified": false,
+    "floor_surfaces": [
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_stone__ARCH-0",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_stone__ARCH-1",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_stone__ARCH-2",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V10-PUBLIC-A",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V10-PUBLIC-B",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_C__V10-PUBLIC-C",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V11-WALL-A1F-001",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V11-WALL-A1F-005",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V11-WALL-B1-030",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V11-WALL-B1-N03",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V11-CORE-FORECOURT-1F",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V12-ES-E3-23-DOWN",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E2-0-UP",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E2-0-DOWN",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E2-2-UP",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E2-2-DOWN",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-B1-A-KS",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-1F-A-KW",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-1F-A-KE",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-1F-A-KS",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-2F-A-KW",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-2F-A-KE",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-2F-A-KS",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-3F-A-KW",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-3F-A-KE",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-3F-A-KS",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-RF-A-KW",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-RF-A-KE",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-A-RF-A-KS",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-1F-K1",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-1F-K2",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-1F-K3",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-2F-K1",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-2F-K2",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-2F-K3",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-3F-K1",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-3F-K2",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-3F-K3",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-RF-K1",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-RF-K2",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-B-RF-K3",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-B1-K-CE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-1F-K-CW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-1F-K-CNW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-1F-K-CNE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-1F-K-CE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-1F-K-CSE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-1F-K-CSW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-2F-K-CW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-2F-K-CNW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-2F-K-CNE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-2F-K-CE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-2F-K-CSE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-2F-K-CSW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-3F-K-CW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-3F-K-CNW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-3F-K-CNE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-3F-K-CE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-3F-K-CSE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-3F-K-CSW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-RF-K-CW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-RF-K-CNW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-RF-K-CNE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-RF-K-CE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-RF-K-CSE",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V13-CORE-C-RF-K-CSW",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V13-PUBLIC-A-B1",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V13-PUBLIC-B-B1",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V13-PUBLIC-C-B1",
+        "roughness": 0.72,
+        "wing": "C",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V15-B-WEST-TRANSFER",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V15-B-WEST-CONNECTORS",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V22-A-WEST-CONTINUOUS",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V22-A-ES-TIE-IN",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V11-WALL-A1F-003__V22-BATCH-496",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V11-WALL-B1-008__V22-BATCH-577",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V12-ES-E2-12-UP__V22-BATCH-604",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_B__V12-ES-E2-23-UP__V22-BATCH-609",
+        "roughness": 0.46,
+        "wing": "B",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E2--1-UP__V22-BATCH-619",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E3--1-UP__V22-BATCH-623",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E3-0-UP__V22-BATCH-628",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E2-1-UP__V22-BATCH-630",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E3-1-UP__V22-BATCH-634",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      },
+      {
+        "collision_unchanged": true,
+        "grout_mm": 6,
+        "node": "Architecture_v10_floor_A__V12-ES-A-E3-2-UP__V22-BATCH-636",
+        "roughness": 0.38,
+        "wing": "A",
+        "world_metre_UV": true
+      }
+    ],
+    "guides": [
+      {
+        "current_position": [
+          310.0,
+          -60.0
+        ],
+        "id": "A-ENTRANCE-01",
+        "map_source": "source/v22/map-data-integrated.json",
+        "normal": [
+          -1.0,
+          0.0
+        ],
+        "p": [
+          310.0,
+          0.0,
+          -60.0
+        ],
+        "store_source": "source/v25/retail-plan.json",
+        "texture": "res://assets/v26/guide-A.png",
+        "wing": "A"
+      },
+      {
+        "current_position": [
+          1.20000004768372,
+          22.0
+        ],
+        "id": "B-ENTRANCE-01",
+        "map_source": "source/v22/map-data-integrated.json",
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "p": [
+          1.20000004768372,
+          0.0,
+          22.0
+        ],
+        "store_source": "source/v25/retail-plan.json",
+        "texture": "res://assets/v26/guide-B.png",
+        "wing": "B"
+      },
+      {
+        "current_position": [
+          -85.1999969482422,
+          -218.5
+        ],
+        "id": "C-ENTRANCE-01",
+        "map_source": "source/v22/map-data-integrated.json",
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "p": [
+          -85.1999969482422,
+          0.0,
+          -218.5
+        ],
+        "store_source": "source/v25/retail-plan.json",
+        "texture": "res://assets/v26/guide-C.png",
+        "wing": "C"
+      },
+      {
+        "current_position": [
+          417.0,
+          -48.0
+        ],
+        "id": "A-PLAZA",
+        "map_source": "source/v22/map-data-integrated.json",
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "p": [
+          417.0,
+          0.0,
+          -48.0
+        ],
+        "store_source": "source/v25/retail-plan.json",
+        "texture": "res://assets/v26/guide-A.png",
+        "wing": "A"
+      },
+      {
+        "current_position": [
+          24.0,
+          8.0
+        ],
+        "id": "B-PLAZA",
+        "map_source": "source/v22/map-data-integrated.json",
+        "normal": [
+          -1.0,
+          0.0
+        ],
+        "p": [
+          24.0,
+          0.0,
+          8.0
+        ],
+        "store_source": "source/v25/retail-plan.json",
+        "texture": "res://assets/v26/guide-B.png",
+        "wing": "B"
+      },
+      {
+        "current_position": [
+          -148.0,
+          -285.0
+        ],
+        "id": "C-PLAZA",
+        "map_source": "source/v22/map-data-integrated.json",
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "p": [
+          -148.0,
+          0.0,
+          -285.0
+        ],
+        "store_source": "source/v25/retail-plan.json",
+        "texture": "res://assets/v26/guide-C.png",
+        "wing": "C"
+      }
+    ],
+    "local_evacuation_diagrams": [
+      {
+        "map_source": "source/v22/map-data-integrated.json",
+        "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+        "route": [
+          [
+            303.0,
+            0.0,
+            -58.0
+          ],
+          [
+            293.0,
+            0.0,
+            -58.0
+          ]
+        ],
+        "scope": "This entrance only; not a certified whole-building evacuation plan",
+        "wing": "A"
+      },
+      {
+        "map_source": "source/v22/map-data-integrated.json",
+        "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+        "route": [
+          [
+            4.0,
+            0.0,
+            21.0
+          ],
+          [
+            4.0,
+            0.0,
+            31.0
+          ]
+        ],
+        "scope": "This entrance only; not a certified whole-building evacuation plan",
+        "wing": "B"
+      },
+      {
+        "map_source": "source/v22/map-data-integrated.json",
+        "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+        "route": [
+          [
+            -88.0,
+            0.0,
+            -216.0
+          ],
+          [
+            -88.0,
+            0.0,
+            -226.0
+          ]
+        ],
+        "scope": "This entrance only; not a certified whole-building evacuation plan",
+        "wing": "C"
+      }
+    ],
+    "omissions": [
+      {
+        "near": [
+          411.0,
+          0.0,
+          -54.0
+        ],
+        "reason": "No verified architectural wall/clear approach",
+        "type": "fire_wall_group"
+      },
+      {
+        "near": [
+          429.0,
+          0.0,
+          -54.0
+        ],
+        "reason": "No verified architectural wall/clear approach",
+        "type": "fire_wall_group"
+      },
+      {
+        "near": [
+          17.0,
+          0.0,
+          8.0
+        ],
+        "reason": "No verified architectural wall/clear approach",
+        "type": "fire_wall_group"
+      },
+      {
+        "near": [
+          -15.0,
+          0.0,
+          10.0
+        ],
+        "reason": "No verified architectural wall/clear approach",
+        "type": "fire_wall_group"
+      },
+      {
+        "near": [
+          -147.0,
+          0.0,
+          -283.0
+        ],
+        "reason": "No verified architectural wall/clear approach",
+        "type": "fire_wall_group"
+      },
+      {
+        "near": [
+          -147.0,
+          0.0,
+          -296.0
+        ],
+        "reason": "No verified architectural wall/clear approach",
+        "type": "fire_wall_group"
+      },
+      {
+        "near": [
+          -147.0,
+          0.0,
+          -304.0
+        ],
+        "reason": "No verified architectural wall/clear approach",
+        "type": "fire_wall_group"
+      }
+    ],
+    "route_replans": [
+      {
+        "new_path": [
+          [
+            309.0,
+            0.0,
+            -60.0
+          ],
+          [
+            309.5,
+            0.0,
+            -59.0
+          ],
+          [
+            325.5,
+            0.0,
+            -46.5
+          ],
+          [
+            338.0,
+            0.0,
+            -38.0
+          ],
+          [
+            338.0,
+            0.0,
+            -37.0
+          ],
+          [
+            337.799987792969,
+            0.0,
+            -36.9000015258789
+          ]
+        ],
+        "old_path": [
+          [
+            309.0,
+            0.0,
+            -60.0
+          ],
+          [
+            320.5,
+            0.0,
+            -49.0
+          ],
+          [
+            336.0,
+            0.0,
+            -39.0
+          ],
+          [
+            338.0,
+            0.0,
+            -38.0
+          ],
+          [
+            338.0,
+            0.0,
+            -37.0
+          ],
+          [
+            337.799987792969,
+            0.0,
+            -36.9000015258789
+          ]
+        ],
+        "pass": true,
+        "sign": "V21-combined-A-1F-NAV-1",
+        "target": "A-WEST-V22-0-DOWN-test_start"
+      },
+      {
+        "new_path": [
+          [
+            309.0,
+            0.0,
+            -60.0
+          ],
+          [
+            309.5,
+            0.0,
+            -59.0
+          ],
+          [
+            325.5,
+            0.0,
+            -52.5
+          ],
+          [
+            346.0,
+            0.0,
+            -50.5
+          ],
+          [
+            354.0,
+            0.0,
+            -45.0
+          ],
+          [
+            354.0,
+            0.0,
+            -45.0
+          ]
+        ],
+        "old_path": [
+          [
+            309.0,
+            0.0,
+            -60.0
+          ],
+          [
+            352.5,
+            0.0,
+            -45.0
+          ],
+          [
+            354.0,
+            0.0,
+            -45.0
+          ]
+        ],
+        "pass": true,
+        "sign": "V21-combined-A-1F-NAV-1",
+        "target": "A-WEST-VISITOR-information_counter-1"
+      },
+      {
+        "new_path": [
+          [
+            -84.5,
+            0.0,
+            -220.5
+          ],
+          [
+            -85.5,
+            0.0,
+            -220.5
+          ],
+          [
+            -90.0,
+            0.0,
+            -217.5
+          ],
+          [
+            -91.5,
+            0.0,
+            -216.0
+          ],
+          [
+            -109.5,
+            0.0,
+            -219.0
+          ],
+          [
+            -112.5,
+            0.0,
+            -218.5
+          ],
+          [
+            -119.5,
+            0.0,
+            -216.5
+          ],
+          [
+            -119.361930847168,
+            0.0,
+            -216.298034667969
+          ]
+        ],
+        "old_path": [
+          [
+            -84.0,
+            0.0,
+            -220.5
+          ],
+          [
+            -103.5,
+            0.0,
+            -219.0
+          ],
+          [
+            -114.0,
+            0.0,
+            -218.5
+          ],
+          [
+            -119.5,
+            0.0,
+            -216.5
+          ],
+          [
+            -119.361930847168,
+            0.0,
+            -216.298034667969
+          ]
+        ],
+        "pass": true,
+        "sign": "V21-combined-C-1F-NAV-1",
+        "target": "K-CSW-AWC"
+      },
+      {
+        "new_path": [
+          [
+            -84.5,
+            0.0,
+            -220.5
+          ],
+          [
+            -85.5,
+            0.0,
+            -220.5
+          ],
+          [
+            -90.0,
+            0.0,
+            -217.5
+          ],
+          [
+            -91.5,
+            0.0,
+            -216.0
+          ],
+          [
+            -108.0,
+            0.0,
+            -217.5
+          ],
+          [
+            -112.5,
+            0.0,
+            -218.5
+          ],
+          [
+            -113.0,
+            0.0,
+            -217.0
+          ],
+          [
+            -113.0,
+            0.0,
+            -215.0
+          ],
+          [
+            -113.005867004395,
+            0.0,
+            -214.936798095703
+          ]
+        ],
+        "old_path": [
+          [
+            -84.0,
+            0.0,
+            -220.5
+          ],
+          [
+            -90.0,
+            0.0,
+            -220.0
+          ],
+          [
+            -109.5,
+            0.0,
+            -219.0
+          ],
+          [
+            -112.5,
+            0.0,
+            -218.5
+          ],
+          [
+            -113.0,
+            0.0,
+            -217.0
+          ],
+          [
+            -113.0,
+            0.0,
+            -215.0
+          ],
+          [
+            -113.005867004395,
+            0.0,
+            -214.936798095703
+          ]
+        ],
+        "pass": true,
+        "sign": "V21-combined-C-1F-NAV-1",
+        "target": "C-K-CSW"
+      }
+    ],
+    "signs": [
+      {
+        "ceiling_support_y": 5.14499950408936,
+        "checks": [
+          {
+            "actual_path": [
+              [
+                309.0,
+                0.0,
+                -60.0
+              ],
+              [
+                313.5,
+                0.0,
+                -49.5
+              ],
+              [
+                330.0,
+                0.0,
+                -31.5
+              ],
+              [
+                349.5,
+                0.0,
+                -12.0
+              ],
+              [
+                351.0,
+                0.0,
+                -10.5
+              ],
+              [
+                351.0,
+                0.0,
+                10.5
+              ],
+              [
+                352.5,
+                0.0,
+                27.0
+              ],
+              [
+                334.0,
+                0.0,
+                27.0
+              ],
+              [
+                334.0,
+                0.0,
+                27.1000003814697
+              ]
+            ],
+            "back_arrow": "↘",
+            "distance_m": 121.7,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↖",
+            "kind": "WC",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-A-1F-NAV-1",
+            "target": "A-KW-AWC",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                309.0,
+                0.0,
+                -60.0
+              ],
+              [
+                313.5,
+                0.0,
+                -49.5
+              ],
+              [
+                328.5,
+                0.0,
+                -33.0
+              ],
+              [
+                349.5,
+                0.0,
+                -12.0
+              ],
+              [
+                351.0,
+                0.0,
+                -10.5
+              ],
+              [
+                351.0,
+                0.0,
+                10.5
+              ],
+              [
+                352.5,
+                0.0,
+                27.0
+              ],
+              [
+                331.5,
+                0.0,
+                27.5
+              ],
+              [
+                330.0,
+                0.0,
+                30.0
+              ],
+              [
+                329.899993896484,
+                0.0,
+                30.0
+              ]
+            ],
+            "back_arrow": "↘",
+            "distance_m": 127.1,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↖",
+            "kind": "EV",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-A-1F-NAV-1",
+            "target": "A-A-KW",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                309.0,
+                0.0,
+                -60.0
+              ],
+              [
+                309.5,
+                0.0,
+                -59.0
+              ],
+              [
+                325.5,
+                0.0,
+                -46.5
+              ],
+              [
+                338.0,
+                0.0,
+                -38.0
+              ],
+              [
+                338.0,
+                0.0,
+                -37.0
+              ],
+              [
+                337.799987792969,
+                0.0,
+                -36.9000015258789
+              ]
+            ],
+            "back_arrow": "↘",
+            "distance_m": 37.8,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↖",
+            "kind": "ES",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-A-1F-NAV-1",
+            "target": "A-WEST-V22-0-DOWN-test_start",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                309.0,
+                0.0,
+                -60.0
+              ],
+              [
+                309.5,
+                0.0,
+                -59.0
+              ],
+              [
+                325.5,
+                0.0,
+                -52.5
+              ],
+              [
+                346.0,
+                0.0,
+                -50.5
+              ],
+              [
+                354.0,
+                0.0,
+                -45.0
+              ],
+              [
+                354.0,
+                0.0,
+                -45.0
+              ]
+            ],
+            "back_arrow": "↘",
+            "distance_m": 48.7,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↖",
+            "kind": "INFO",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-A-1F-NAV-1",
+            "target": "A-WEST-VISITOR-information_counter-1",
+            "variant": "combined"
+          }
+        ],
+        "mount": "ceiling",
+        "sign": "V21-combined-A-1F-NAV-1",
+        "source": "Inherited live navigation + physical sweep",
+        "wing": "A"
+      },
+      {
+        "ceiling_support_y": 5.14499950408936,
+        "checks": [
+          {
+            "actual_path": [
+              [
+                28.5,
+                0.0,
+                6.0
+              ],
+              [
+                61.5,
+                0.0,
+                30.0
+              ],
+              [
+                91.5,
+                0.0,
+                58.5
+              ],
+              [
+                100.5,
+                0.0,
+                66.0
+              ],
+              [
+                102.0,
+                0.0,
+                78.0
+              ],
+              [
+                102.0,
+                0.0,
+                84.0
+              ]
+            ],
+            "back_arrow": "↙",
+            "distance_m": 112.0,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↗",
+            "kind": "WC",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-B-1F-NAV-2",
+            "target": "K3-AWC",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                28.5,
+                0.0,
+                6.0
+              ],
+              [
+                61.5,
+                0.0,
+                30.0
+              ],
+              [
+                91.5,
+                0.0,
+                58.5
+              ],
+              [
+                100.5,
+                0.0,
+                66.0
+              ],
+              [
+                102.0,
+                0.0,
+                78.0
+              ],
+              [
+                102.0,
+                0.0,
+                87.0
+              ],
+              [
+                105.0,
+                0.0,
+                88.5
+              ]
+            ],
+            "back_arrow": "↙",
+            "distance_m": 118.3,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↗",
+            "kind": "EV",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-B-1F-NAV-2",
+            "target": "B-K3",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                28.5,
+                0.0,
+                6.0
+              ],
+              [
+                10.5,
+                0.0,
+                -3.0
+              ],
+              [
+                -7.5,
+                0.0,
+                -3.0
+              ],
+              [
+                -19.5,
+                0.0,
+                9.0
+              ]
+            ],
+            "back_arrow": "↗",
+            "distance_m": 55.1,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↙",
+            "kind": "ES",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-B-1F-NAV-2",
+            "target": "E2-12-UP-test_start",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                28.5,
+                0.0,
+                6.0
+              ],
+              [
+                70.5,
+                0.0,
+                25.5
+              ],
+              [
+                133.5,
+                0.0,
+                1.5
+              ],
+              [
+                165.0,
+                0.0,
+                -30.0
+              ]
+            ],
+            "back_arrow": "↙",
+            "distance_m": 158.3,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↗",
+            "kind": "A",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-B-1F-NAV-2",
+            "target": "AB-1-THROUGH-TO-A1F-051",
+            "variant": "combined"
+          }
+        ],
+        "mount": "ceiling",
+        "sign": "V21-combined-B-1F-NAV-2",
+        "source": "Inherited live navigation + physical sweep",
+        "wing": "B"
+      },
+      {
+        "ceiling_support_y": 5.14499998092651,
+        "checks": [
+          {
+            "actual_path": [
+              [
+                -84.5,
+                0.0,
+                -220.5
+              ],
+              [
+                -85.5,
+                0.0,
+                -220.5
+              ],
+              [
+                -90.0,
+                0.0,
+                -217.5
+              ],
+              [
+                -91.5,
+                0.0,
+                -216.0
+              ],
+              [
+                -109.5,
+                0.0,
+                -219.0
+              ],
+              [
+                -112.5,
+                0.0,
+                -218.5
+              ],
+              [
+                -119.5,
+                0.0,
+                -216.5
+              ],
+              [
+                -119.361930847168,
+                0.0,
+                -216.298034667969
+              ]
+            ],
+            "back_arrow": "↗",
+            "distance_m": 37.3,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↙",
+            "kind": "WC",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-C-1F-NAV-1",
+            "target": "K-CSW-AWC",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                -84.5,
+                0.0,
+                -220.5
+              ],
+              [
+                -85.5,
+                0.0,
+                -220.5
+              ],
+              [
+                -90.0,
+                0.0,
+                -217.5
+              ],
+              [
+                -91.5,
+                0.0,
+                -216.0
+              ],
+              [
+                -108.0,
+                0.0,
+                -217.5
+              ],
+              [
+                -112.5,
+                0.0,
+                -218.5
+              ],
+              [
+                -113.0,
+                0.0,
+                -217.0
+              ],
+              [
+                -113.0,
+                0.0,
+                -215.0
+              ],
+              [
+                -113.005867004395,
+                0.0,
+                -214.936798095703
+              ]
+            ],
+            "back_arrow": "↗",
+            "distance_m": 33.4,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↙",
+            "kind": "EV",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-C-1F-NAV-1",
+            "target": "C-K-CSW",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                -84.0,
+                0.0,
+                -220.5
+              ],
+              [
+                -70.5,
+                0.0,
+                -219.0
+              ],
+              [
+                -64.5,
+                0.0,
+                -218.5
+              ],
+              [
+                -43.5,
+                0.0,
+                -219.0
+              ],
+              [
+                -22.5,
+                0.0,
+                -219.0
+              ],
+              [
+                -1.5,
+                0.0,
+                -219.0
+              ],
+              [
+                19.5,
+                0.0,
+                -216.0
+              ],
+              [
+                40.5,
+                0.0,
+                -207.0
+              ],
+              [
+                50.0,
+                0.0,
+                -204.5
+              ],
+              [
+                61.5,
+                0.0,
+                -210.0
+              ],
+              [
+                82.5,
+                0.0,
+                -229.5
+              ],
+              [
+                103.5,
+                0.0,
+                -247.5
+              ],
+              [
+                124.5,
+                0.0,
+                -265.5
+              ],
+              [
+                117.0,
+                0.0,
+                -285.0
+              ],
+              [
+                107.0,
+                0.0,
+                -289.0
+              ],
+              [
+                107.0,
+                0.0,
+                -287.700012207031
+              ]
+            ],
+            "back_arrow": "↙",
+            "distance_m": 266.2,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↗",
+            "kind": "ES",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-C-1F-NAV-1",
+            "target": "CE12-UP-test_start",
+            "variant": "combined"
+          },
+          {
+            "actual_path": [
+              [
+                -84.0,
+                0.0,
+                -220.5
+              ],
+              [
+                -70.5,
+                0.0,
+                -219.0
+              ],
+              [
+                -62.0,
+                0.0,
+                -218.5
+              ],
+              [
+                -48.0,
+                0.0,
+                -219.0
+              ],
+              [
+                -27.0,
+                0.0,
+                -219.0
+              ],
+              [
+                -6.0,
+                0.0,
+                -219.0
+              ],
+              [
+                15.0,
+                0.0,
+                -219.0
+              ],
+              [
+                36.0,
+                0.0,
+                -207.0
+              ],
+              [
+                52.5,
+                0.0,
+                -201.5
+              ],
+              [
+                63.5,
+                0.0,
+                -196.5
+              ],
+              [
+                63.2799987792969,
+                0.0,
+                -196.75
+              ]
+            ],
+            "back_arrow": "↙",
+            "distance_m": 153.1,
+            "fallback_from_unverified_target": "",
+            "front_arrow": "↗",
+            "kind": "DINING",
+            "pass": true,
+            "reason": "",
+            "replanned_against_live_collision": false,
+            "sign": "V21-combined-C-1F-NAV-1",
+            "target": "C1F-CSE-2",
+            "variant": "combined"
+          }
+        ],
+        "mount": "ceiling",
+        "sign": "V21-combined-C-1F-NAV-1",
+        "source": "Inherited live navigation + physical sweep",
+        "wing": "C"
+      }
+    ],
+    "structural_floor_changed": false,
+    "version": 26,
+    "wall_equipment": [
+      {
+        "actual_wall_ray": true,
+        "approach_clear": true,
+        "mount_collider": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_A_Vestibule / verified entrance side wall + clear approach",
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "p": [
+          298.0,
+          0.0,
+          -61.875
+        ],
+        "types": [
+          "fire_hose_cabinet",
+          "alarm_call_point",
+          "extinguisher",
+          "keep_clear_notice"
+        ]
+      },
+      {
+        "actual_wall_ray": true,
+        "approach_clear": true,
+        "mount_collider": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_B_Vestibule / verified entrance side wall + clear approach",
+        "normal": [
+          -1.0,
+          0.0
+        ],
+        "p": [
+          7.87499952316284,
+          0.0,
+          26.0
+        ],
+        "types": [
+          "fire_hose_cabinet",
+          "alarm_call_point",
+          "extinguisher",
+          "keep_clear_notice"
+        ]
+      },
+      {
+        "actual_wall_ray": true,
+        "approach_clear": true,
+        "mount_collider": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_C_Vestibule / verified entrance side wall + clear approach",
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "p": [
+          -91.8749923706055,
+          0.0,
+          -221.0
+        ],
+        "types": [
+          "fire_hose_cabinet",
+          "alarm_call_point",
+          "extinguisher",
+          "keep_clear_notice"
+        ]
+      }
+    ],
+    "wall_finish_surfaces": [
+      "Architecture_plaster__ARCH-0",
+      "Architecture_plaster__ARCH-1",
+      "Architecture_plaster__ARCH-2",
+      "Architecture_plaster__A-B1",
+      "Architecture_plaster__A-1F",
+      "Architecture_plaster__A-2F",
+      "Architecture_plaster__A-3F",
+      "Architecture_plaster__A-RF",
+      "Architecture_plaster__C-B1",
+      "Architecture_v10_chalk__V11-WALL-C1F-CNE-1",
+      "Architecture_v10_chalk__V11-WALL-C1F-CNE-3",
+      "Architecture_v10_chalk__V11-WALL-C1F-CSW-1",
+      "Architecture_v10_chalk__V11-WALL-C2F-CNE-1",
+      "Architecture_v10_chalk__V11-WALL-C2F-CNE-3",
+      "Architecture_v10_chalk__V11-WALL-C2F-CNW-1",
+      "Architecture_v10_chalk__V11-WALL-C2F-CSW-1",
+      "Architecture_v10_chalk__V11-WALL-C2F-CSW-3",
+      "Architecture_v10_chalk__V11-WALL-C2F-CW-1",
+      "Architecture_v10_chalk__V11-WALL-C3F-CNE-1",
+      "Architecture_v10_chalk__V11-WALL-C3F-CNE-3",
+      "Architecture_v10_chalk__V11-WALL-C3F-CNW-1",
+      "Architecture_v10_chalk__V11-WALL-C3F-CSW-1",
+      "Architecture_v10_chalk__V11-WALL-C3F-CSW-3",
+      "Architecture_v10_chalk__V11-WALL-C3F-CW-1",
+      "Architecture_v10_chalk__V11-WALL-CB1-CE-1",
+      "Architecture_v10_chalk__V11-WALL-CB1-CE-3",
+      "Architecture_v10_chalk__V11-WALL-CB1-CNE-1",
+      "Architecture_v10_chalk__V11-WALL-CB1-CNE-3",
+      "Architecture_v10_chalk__V11-WALL-CB1-CNW-1",
+      "Architecture_v10_chalk__V11-WALL-CB1-CSE-1",
+      "Architecture_v10_chalk__V11-WALL-CB1-CSW-1",
+      "Architecture_v10_chalk__V11-WALL-CB1-CSW-3",
+      "Architecture_v10_chalk__V11-WALL-CB1-CW-1",
+      "Architecture_v10_chalk__V15-C-CONTINUOUS-SUPPORTS",
+      "Architecture_v10_chalk__V10-FRONT-C1F-CW-2__V22-BATCH-478",
+      "Architecture_v10_chalk__V10-FRONT-C1F-CNW-2__V22-BATCH-481",
+      "Architecture_v10_chalk__V10-FRONT-C1F-CSW-2__V22-BATCH-488",
+      "Architecture_v10_chalk__V11-WALL-C1F-CNW-3__V22-BATCH-578",
+      "Architecture_v10_chalk__V11-WALL-C1F-CW-3__V22-BATCH-580",
+      "Architecture_v10_chalk__V11-WALL-C2F-CNW-3__V22-BATCH-582",
+      "Architecture_v10_chalk__V11-WALL-C2F-CW-3__V22-BATCH-584",
+      "Architecture_v10_chalk__V11-WALL-C3F-CNW-3__V22-BATCH-586",
+      "Architecture_v10_chalk__V11-WALL-C3F-CW-3__V22-BATCH-588",
+      "Architecture_v10_chalk__V11-WALL-CB1-CNW-3__V22-BATCH-594",
+      "Architecture_v10_chalk__V11-WALL-CB1-CSE-3__V22-BATCH-596",
+      "Architecture_v10_chalk__V11-WALL-CB1-CW-3__V22-BATCH-600"
+    ]
+  },
+  "checks": [
+    {
+      "details": null,
+      "id": "480-store-identities",
+      "pass": true
+    },
+    {
+      "details": null,
+      "id": "43-test-NPC",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "clear_width_m": 3.3,
+          "floor": "1F",
+          "id": "A-ENTRANCE-01",
+          "inside": [
+            303.0,
+            0.0,
+            -58.0
+          ],
+          "n": [
+            1.0,
+            0.0
+          ],
+          "outside": [
+            293.0,
+            0.0,
+            -58.0
+          ],
+          "p": [
+            298.0,
+            0.0,
+            -58.0
+          ],
+          "pre_build_three_lane_bidirectional_capsule_sweeps": true,
+          "retained_slab": true,
+          "vestibule_depth_m": 4.4,
+          "wing": "A"
+        },
+        {
+          "clear_width_m": 3.3,
+          "floor": "1F",
+          "id": "B-ENTRANCE-01",
+          "inside": [
+            4.0,
+            0.0,
+            21.0
+          ],
+          "n": [
+            0.0,
+            -1.0
+          ],
+          "outside": [
+            4.0,
+            0.0,
+            31.0
+          ],
+          "p": [
+            4.0,
+            0.0,
+            26.0
+          ],
+          "pre_build_three_lane_bidirectional_capsule_sweeps": true,
+          "retained_slab": true,
+          "vestibule_depth_m": 4.4,
+          "wing": "B"
+        },
+        {
+          "clear_width_m": 3.3,
+          "floor": "1F",
+          "id": "C-ENTRANCE-01",
+          "inside": [
+            -88.0,
+            0.0,
+            -216.0
+          ],
+          "n": [
+            0.0,
+            1.0
+          ],
+          "outside": [
+            -88.0,
+            0.0,
+            -226.0
+          ],
+          "p": [
+            -88.0,
+            0.0,
+            -221.0
+          ],
+          "pre_build_three_lane_bidirectional_capsule_sweeps": true,
+          "retained_slab": true,
+          "vestibule_depth_m": 4.4,
+          "wing": "C"
+        }
+      ],
+      "id": "three-double-door-entrances",
+      "pass": true
+    },
+    {
+      "details": null,
+      "id": "six-collidable-sliding-doors",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "closed_collision_blocks": true,
+          "closes": true,
+          "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_A_Vestibule/Outer_Automatic_Door",
+          "opens": true,
+          "state": {
+            "collision_leaves": 2,
+            "cycles": 2,
+            "hold": 0.0,
+            "progress": 0.0,
+            "sensor_radius_m": 3.5
+          },
+          "threshold_hold": true
+        },
+        {
+          "closed_collision_blocks": true,
+          "closes": true,
+          "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_A_Vestibule/Inner_Automatic_Door",
+          "opens": true,
+          "state": {
+            "collision_leaves": 2,
+            "cycles": 3,
+            "hold": 0.0,
+            "progress": 0.0,
+            "sensor_radius_m": 3.5
+          },
+          "threshold_hold": true
+        },
+        {
+          "closed_collision_blocks": true,
+          "closes": true,
+          "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_B_Vestibule/Outer_Automatic_Door",
+          "opens": true,
+          "state": {
+            "collision_leaves": 2,
+            "cycles": 2,
+            "hold": 0.0,
+            "progress": 0.0,
+            "sensor_radius_m": 3.5
+          },
+          "threshold_hold": true
+        },
+        {
+          "closed_collision_blocks": true,
+          "closes": true,
+          "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_B_Vestibule/Inner_Automatic_Door",
+          "opens": true,
+          "state": {
+            "collision_leaves": 2,
+            "cycles": 3,
+            "hold": 0.0,
+            "progress": 0.0,
+            "sensor_radius_m": 3.5
+          },
+          "threshold_hold": true
+        },
+        {
+          "closed_collision_blocks": true,
+          "closes": true,
+          "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_C_Vestibule/Outer_Automatic_Door",
+          "opens": true,
+          "state": {
+            "collision_leaves": 2,
+            "cycles": 2,
+            "hold": 0.0,
+            "progress": 0.0,
+            "sensor_radius_m": 3.5
+          },
+          "threshold_hold": true
+        },
+        {
+          "closed_collision_blocks": true,
+          "closes": true,
+          "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_C_Vestibule/Inner_Automatic_Door",
+          "opens": true,
+          "state": {
+            "collision_leaves": 2,
+            "cycles": 3,
+            "hold": 0.0,
+            "progress": 0.0,
+            "sensor_radius_m": 3.5
+          },
+          "threshold_hold": true
+        }
+      ],
+      "id": "door-open-hold-close",
+      "pass": true
+    },
+    {
+      "details": null,
+      "id": "existing-NPC-opens-door",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "entrance": "A-ENTRANCE-01",
+          "feet_y": -0.0191553328186274,
+          "pass": true,
+          "residual_m": 0.234832763671875,
+          "reverse": false
+        },
+        {
+          "entrance": "A-ENTRANCE-01",
+          "feet_y": -0.0192805640399456,
+          "pass": true,
+          "residual_m": 0.234466552734375,
+          "reverse": true
+        },
+        {
+          "entrance": "B-ENTRANCE-01",
+          "feet_y": 0.000830957724247128,
+          "pass": true,
+          "residual_m": 0.233087539672852,
+          "reverse": false
+        },
+        {
+          "entrance": "B-ENTRANCE-01",
+          "feet_y": 0.000844671332743019,
+          "pass": true,
+          "residual_m": 0.23309326171875,
+          "reverse": true
+        },
+        {
+          "entrance": "C-ENTRANCE-01",
+          "feet_y": 0.000844509806483984,
+          "pass": true,
+          "residual_m": 0.23333740234375,
+          "reverse": false
+        },
+        {
+          "entrance": "C-ENTRANCE-01",
+          "feet_y": 0.00057779555208981,
+          "pass": true,
+          "residual_m": 0.233230590820312,
+          "reverse": true
+        }
+      ],
+      "id": "six-two-door-physical-walks",
+      "pass": true
+    },
+    {
+      "details": [],
+      "id": "navigation-source-integrity",
+      "pass": true
+    },
+    {
+      "details": [],
+      "id": "existing-navigation-routes",
+      "pass": true
+    },
+    {
+      "details": [],
+      "id": "routes-after-v26-colliders",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "map_source": "source/v22/map-data-integrated.json",
+          "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+          "route": [
+            [
+              303.0,
+              0.0,
+              -58.0
+            ],
+            [
+              293.0,
+              0.0,
+              -58.0
+            ]
+          ],
+          "scope": "This entrance only; not a certified whole-building evacuation plan",
+          "wing": "A"
+        },
+        {
+          "map_source": "source/v22/map-data-integrated.json",
+          "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+          "route": [
+            [
+              4.0,
+              0.0,
+              21.0
+            ],
+            [
+              4.0,
+              0.0,
+              31.0
+            ]
+          ],
+          "scope": "This entrance only; not a certified whole-building evacuation plan",
+          "wing": "B"
+        },
+        {
+          "map_source": "source/v22/map-data-integrated.json",
+          "physical_route_test": "Six bidirectional CharacterBody walks in architecture-QA.json",
+          "route": [
+            [
+              -88.0,
+              0.0,
+              -216.0
+            ],
+            [
+              -88.0,
+              0.0,
+              -226.0
+            ]
+          ],
+          "scope": "This entrance only; not a certified whole-building evacuation plan",
+          "wing": "C"
+        }
+      ],
+      "id": "three-local-evacuation-diagrams",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "actual_wall_ray": true,
+          "approach_clear": true,
+          "p": [
+            298.0,
+            0.0,
+            -61.875
+          ]
+        },
+        {
+          "actual_wall_ray": true,
+          "approach_clear": true,
+          "p": [
+            7.87499952316284,
+            0.0,
+            26.0
+          ]
+        },
+        {
+          "actual_wall_ray": true,
+          "approach_clear": true,
+          "p": [
+            -91.8749923706055,
+            0.0,
+            -221.0
+          ]
+        }
+      ],
+      "id": "three-supported-fire-equipment-groups",
+      "pass": true
+    },
+    {
+      "details": null,
+      "id": "guide-catalog-all-15-floors",
+      "pass": true
+    },
+    {
+      "details": null,
+      "id": "all-three-wing-floor-finishes",
+      "pass": true
+    },
+    {
+      "details": null,
+      "id": "existing-slab-collision-retained",
+      "pass": true
+    },
+    {
+      "details": 0.0,
+      "id": "rotated-box-batching-preserves-geometry",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "current_position": [
+            310.0,
+            -60.0
+          ],
+          "id": "A-ENTRANCE-01",
+          "map_source": "source/v22/map-data-integrated.json",
+          "normal": [
+            -1.0,
+            0.0
+          ],
+          "p": [
+            310.0,
+            0.0,
+            -60.0
+          ],
+          "store_source": "source/v25/retail-plan.json",
+          "texture": "res://assets/v26/guide-A.png",
+          "wing": "A"
+        },
+        {
+          "current_position": [
+            1.20000004768372,
+            22.0
+          ],
+          "id": "B-ENTRANCE-01",
+          "map_source": "source/v22/map-data-integrated.json",
+          "normal": [
+            0.0,
+            1.0
+          ],
+          "p": [
+            1.20000004768372,
+            0.0,
+            22.0
+          ],
+          "store_source": "source/v25/retail-plan.json",
+          "texture": "res://assets/v26/guide-B.png",
+          "wing": "B"
+        },
+        {
+          "current_position": [
+            -85.1999969482422,
+            -218.5
+          ],
+          "id": "C-ENTRANCE-01",
+          "map_source": "source/v22/map-data-integrated.json",
+          "normal": [
+            0.0,
+            -1.0
+          ],
+          "p": [
+            -85.1999969482422,
+            0.0,
+            -218.5
+          ],
+          "store_source": "source/v25/retail-plan.json",
+          "texture": "res://assets/v26/guide-C.png",
+          "wing": "C"
+        },
+        {
+          "current_position": [
+            417.0,
+            -48.0
+          ],
+          "id": "A-PLAZA",
+          "map_source": "source/v22/map-data-integrated.json",
+          "normal": [
+            0.0,
+            -1.0
+          ],
+          "p": [
+            417.0,
+            0.0,
+            -48.0
+          ],
+          "store_source": "source/v25/retail-plan.json",
+          "texture": "res://assets/v26/guide-A.png",
+          "wing": "A"
+        },
+        {
+          "current_position": [
+            24.0,
+            8.0
+          ],
+          "id": "B-PLAZA",
+          "map_source": "source/v22/map-data-integrated.json",
+          "normal": [
+            -1.0,
+            0.0
+          ],
+          "p": [
+            24.0,
+            0.0,
+            8.0
+          ],
+          "store_source": "source/v25/retail-plan.json",
+          "texture": "res://assets/v26/guide-B.png",
+          "wing": "B"
+        },
+        {
+          "current_position": [
+            -148.0,
+            -285.0
+          ],
+          "id": "C-PLAZA",
+          "map_source": "source/v22/map-data-integrated.json",
+          "normal": [
+            1.0,
+            0.0
+          ],
+          "p": [
+            -148.0,
+            0.0,
+            -285.0
+          ],
+          "store_source": "source/v25/retail-plan.json",
+          "texture": "res://assets/v26/guide-C.png",
+          "wing": "C"
+        }
+      ],
+      "id": "guides-at-entrances-and-plazas",
+      "pass": true
+    },
+    {
+      "details": null,
+      "id": "guides-in-public-circulation",
+      "pass": true
+    }
+  ],
+  "door_tests": [
+    {
+      "closed_collision_blocks": true,
+      "closes": true,
+      "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_A_Vestibule/Outer_Automatic_Door",
+      "opens": true,
+      "state": {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      "threshold_hold": true
+    },
+    {
+      "closed_collision_blocks": true,
+      "closes": true,
+      "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_A_Vestibule/Inner_Automatic_Door",
+      "opens": true,
+      "state": {
+        "collision_leaves": 2,
+        "cycles": 3,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      "threshold_hold": true
+    },
+    {
+      "closed_collision_blocks": true,
+      "closes": true,
+      "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_B_Vestibule/Outer_Automatic_Door",
+      "opens": true,
+      "state": {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      "threshold_hold": true
+    },
+    {
+      "closed_collision_blocks": true,
+      "closes": true,
+      "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_B_Vestibule/Inner_Automatic_Door",
+      "opens": true,
+      "state": {
+        "collision_leaves": 2,
+        "cycles": 3,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      "threshold_hold": true
+    },
+    {
+      "closed_collision_blocks": true,
+      "closes": true,
+      "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_C_Vestibule/Outer_Automatic_Door",
+      "opens": true,
+      "state": {
+        "collision_leaves": 2,
+        "cycles": 2,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      "threshold_hold": true
+    },
+    {
+      "closed_collision_blocks": true,
+      "closes": true,
+      "door": "/root/FIND_YOURSELF_v12/V26_Mall_Architecture/V26_C_Vestibule/Inner_Automatic_Door",
+      "opens": true,
+      "state": {
+        "collision_leaves": 2,
+        "cycles": 3,
+        "hold": 0.0,
+        "progress": 0.0,
+        "sensor_radius_m": 3.5
+      },
+      "threshold_hold": true
+    }
+  ],
+  "human_playtest": false,
+  "physics_hz": 60,
+  "renderer": "forward_plus",
+  "walks": [
+    {
+      "entrance": "A-ENTRANCE-01",
+      "feet_y": -0.0191553328186274,
+      "pass": true,
+      "residual_m": 0.234832763671875,
+      "reverse": false
+    },
+    {
+      "entrance": "A-ENTRANCE-01",
+      "feet_y": -0.0192805640399456,
+      "pass": true,
+      "residual_m": 0.234466552734375,
+      "reverse": true
+    },
+    {
+      "entrance": "B-ENTRANCE-01",
+      "feet_y": 0.000830957724247128,
+      "pass": true,
+      "residual_m": 0.233087539672852,
+      "reverse": false
+    },
+    {
+      "entrance": "B-ENTRANCE-01",
+      "feet_y": 0.000844671332743019,
+      "pass": true,
+      "residual_m": 0.23309326171875,
+      "reverse": true
+    },
+    {
+      "entrance": "C-ENTRANCE-01",
+      "feet_y": 0.000844509806483984,
+      "pass": true,
+      "residual_m": 0.23333740234375,
+      "reverse": false
+    },
+    {
+      "entrance": "C-ENTRANCE-01",
+      "feet_y": 0.00057779555208981,
+      "pass": true,
+      "residual_m": 0.233230590820312,
+      "reverse": true
+    }
+  ]
+}
