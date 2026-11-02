@@ -1,0 +1,92 @@
+{
+  "environment": "Linux software Vulkan llvmpipe; native Godot 4.6.3, 1080p. Not Windows GPU.",
+  "method": "Per-view rendering counters from screenshot capture. One recorded capture frame per pose, includes shader compilation and scene transition overhead. No warm steady-state benchmark.",
+  "do_not_convert_capture_wait_to_game_FPS": true,
+  "144_FPS_achieved": false,
+  "Windows_GPU_measured": false,
+  "human_playtest": false,
+  "samples": {
+    "before": {
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "settings": {
+        "B_ES": true,
+        "C": true,
+        "cap": 144,
+        "continuous": true,
+        "vsync": 1
+      },
+      "samples": 277,
+      "draw_calls": {
+        "min": 563.0,
+        "median": 4800.0,
+        "max": 12758.0
+      },
+      "primitives": {
+        "min": 641385.0,
+        "median": 3033796.0,
+        "max": 5722816.0
+      },
+      "static_memory_bytes": {
+        "min": 2048781027.0,
+        "median": 2085276445.0,
+        "max": 2086078837.0
+      },
+      "video_memory_bytes": {
+        "min": 1790051712.0,
+        "median": 1827954880.0,
+        "max": 1830838464.0
+      },
+      "CPU_process_ms": {
+        "min": 1628.778,
+        "median": 3840.86,
+        "max": 6238.003
+      },
+      "capture_frame_wait_ms": {
+        "min": 1587.038,
+        "median": 3815.163,
+        "max": 9162.21
+      }
+    },
+    "after": {
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "settings": {
+        "B_ES": true,
+        "C": true,
+        "cap": 144,
+        "continuous": true,
+        "vsync": 1
+      },
+      "samples": 277,
+      "draw_calls": {
+        "min": 616.0,
+        "median": 5438.0,
+        "max": 14939.0
+      },
+      "primitives": {
+        "min": 672216.0,
+        "median": 3162367.0,
+        "max": 5971335.0
+      },
+      "static_memory_bytes": {
+        "min": 2244443958.0,
+        "median": 2284467462.0,
+        "max": 2285433042.0
+      },
+      "video_memory_bytes": {
+        "min": 1917897056.0,
+        "median": 1955800224.0,
+        "max": 1958683808.0
+      },
+      "CPU_process_ms": {
+        "min": 1656.088,
+        "median": 3981.625,
+        "max": 16468.874
+      },
+      "capture_frame_wait_ms": {
+        "min": 1622.118,
+        "median": 3947.299,
+        "max": 10391.776
+      }
+    }
+  }
+}

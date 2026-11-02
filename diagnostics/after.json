@@ -1,0 +1,3048 @@
+{
+  "B1_030_precision_walks": [
+    {
+      "NPC_enabled_frozen": false,
+      "endpoint_tolerance_m": 0.03,
+      "pass": true,
+      "reverse": false,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -59.9504470825195,
+            0.000803594302851707,
+            0.00502687692642212
+          ],
+          "pass": true,
+          "residual_m": 0.00812507607042789,
+          "step": 1,
+          "target": [
+            -59.9524138877614,
+            0.0,
+            -0.00285616307122087
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -60.0765380859375,
+            0.000817018677480519,
+            -0.499450713396072
+          ],
+          "pass": true,
+          "residual_m": 0.00812831521034241,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -64.1718063354492,
+            0.000861787819303572,
+            -20.2288246154785
+          ],
+          "pass": true,
+          "residual_m": 0.00961264222860336,
+          "step": 3,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -64.2222747802734,
+            0.000844446942210197,
+            -20.4322624206543
+          ],
+          "pass": true,
+          "residual_m": 0.0000019073486328125,
+          "step": 4,
+          "target": [
+            -64.2222759286407,
+            0.0,
+            -20.432265083354
+          ]
+        }
+      ]
+    },
+    {
+      "NPC_enabled_frozen": false,
+      "endpoint_tolerance_m": 0.03,
+      "pass": true,
+      "reverse": true,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -64.1802444458008,
+            0.000831954879686236,
+            -20.2641048431396
+          ],
+          "pass": true,
+          "residual_m": 0.0266679637134075,
+          "step": 1,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -60.084228515625,
+            0.000817007734440267,
+            -0.534848749637604
+          ],
+          "pass": true,
+          "residual_m": 0.0281005669385195,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -59.9591598510742,
+            0.000815980311017483,
+            -0.0301078036427498
+          ],
+          "pass": true,
+          "residual_m": 0.0280738081783056,
+          "step": 3,
+          "target": [
+            -59.9524138877614,
+            0.0,
+            -0.00285616307122087
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -59.8364868164062,
+            0.0432571768760681,
+            0.460925161838531
+          ],
+          "pass": true,
+          "residual_m": 0.00194977596402168,
+          "step": 4,
+          "target": [
+            -59.8360184577482,
+            0.0,
+            0.462817641973878
+          ]
+        }
+      ]
+    },
+    {
+      "NPC_enabled_frozen": true,
+      "endpoint_tolerance_m": 0.03,
+      "pass": false,
+      "reverse": false,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -59.950325012207,
+            0.000844153517391533,
+            0.00552090629935265
+          ],
+          "pass": true,
+          "residual_m": 0.00863396190106869,
+          "step": 1,
+          "target": [
+            -59.9524138877614,
+            0.0,
+            -0.00285616307122087
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -60.076416015625,
+            0.000816991087049246,
+            -0.498959243297577
+          ],
+          "pass": true,
+          "residual_m": 0.00863471813499928,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        },
+        {
+          "colliders": [
+            "V18-B-13"
+          ],
+          "feet": [
+            -62.3171615600586,
+            -0.0000421013683080673,
+            -11.2948455810547
+          ],
+          "pass": false,
+          "residual_m": 9.13406848907471,
+          "step": 3,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        }
+      ]
+    },
+    {
+      "NPC_enabled_frozen": true,
+      "endpoint_tolerance_m": 0.03,
+      "pass": false,
+      "reverse": true,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -64.1802444458008,
+            0.000831954879686236,
+            -20.2641048431396
+          ],
+          "pass": true,
+          "residual_m": 0.0266679637134075,
+          "step": 1,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        },
+        {
+          "colliders": [
+            "V18-B-13"
+          ],
+          "feet": [
+            -62.5586280822754,
+            0.0000638790079392493,
+            -12.453125
+          ],
+          "pass": false,
+          "residual_m": 12.2005271911621,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        }
+      ]
+    }
+  ],
+  "NPC_paths": [
+    {
+      "floor_supported": true,
+      "id": "V18-A-01",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-A-02",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-03",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-04",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-05",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-06",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-07",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-08",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-09",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-10",
+      "role": "seated",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "seat_approach_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-A-11",
+      "role": "browsing",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-A-12",
+      "role": "browsing",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-13",
+      "role": "browsing",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-14",
+      "role": "browsing",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-15",
+      "role": "browsing",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-16",
+      "role": "browsing",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-A-17",
+      "role": "information",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-A-18",
+      "role": "information",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-A-19",
+      "role": "conversation",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-A-20",
+      "role": "conversation",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-21",
+      "role": "conversation",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-22",
+      "role": "conversation",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-23",
+      "role": "conversation",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-C-24",
+      "role": "conversation",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-25",
+      "role": "event",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-26",
+      "role": "event",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-27",
+      "role": "event",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "V18-B-28",
+      "role": "event",
+      "scope": "standing capsule or seat anchor; not full animation",
+      "standing_clear": true
+    },
+    {
+      "id": "V18-A-29",
+      "pass": false,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-A-30",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-A-31",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-A-32",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-A-33",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-A-34",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-B-35",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-B-36",
+      "pass": false,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-B-37",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-B-38",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-B-39",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-C-40",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-C-41",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-C-42",
+      "pass": true,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    },
+    {
+      "id": "V18-C-43",
+      "pass": false,
+      "scope": "authored path capsule sweep; not full animation or crowd interaction"
+    }
+  ],
+  "before": false,
+  "camera_feet": [
+    {
+      "floor_supported": true,
+      "id": "A-1F-R048-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R048-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R012-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R012-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R014-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R014-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R001-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R001-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R070-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R070-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R071-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R071-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R002-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R002-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R073-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R073-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R039-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R039-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R010-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R010-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R003-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R003-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R069-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R069-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R075-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R075-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R067-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R067-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R051-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A-1F-R051-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R180-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R180-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R087-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R087-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R088-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R088-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R091-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R091-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R089-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R089-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R190-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R190-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R094-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R094-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R172-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R172-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R145-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R145-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R164-forward",
+      "proposed_eye": [
+        12.5,
+        1.65,
+        9.0
+      ],
+      "standing_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R164-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R171-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R171-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R160-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R160-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R150-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R150-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R162-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R162-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R117-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B-1F-R117-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R216-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R216-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R214-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R214-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R228-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R228-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R229-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R229-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R218-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R218-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R207-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R207-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R212-forward",
+      "proposed_eye": [
+        -83.5,
+        1.65,
+        -218.0
+      ],
+      "standing_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R212-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R206-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R206-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R219-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R219-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R223-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R223-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R225-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R225-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R230-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R230-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R210-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R210-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R215-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R215-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R224-forward",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C-1F-R224-reverse",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-001-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-001-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-001-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-002-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-002-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-002-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-003-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-004-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-005-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-005-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-005-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-006-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-007-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-008-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-009-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-009-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-009-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-010-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-011-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-012-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-013-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-014-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-015-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-016-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-017-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-018-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-019-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-020-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-021-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-022-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-023-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-024-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-025-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-025-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-025-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-026-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-027-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-028-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-028-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-028-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-029-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-030-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-031-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-032-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-033-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-034-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-035-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-036-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-037-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-038-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-039-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-040-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-041-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-042-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-043-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-044-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-044-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-044-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-045-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-046-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-047-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-048-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-049-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-050-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-051-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-051-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-051-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "A1F-052-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-AE1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-AE1-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-AE1-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-011-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-024-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-032-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-037-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-045-front",
+      "proposed_eye": [
+        190.5,
+        1.65,
+        -18.0
+      ],
+      "standing_clear": false
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-AW1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-AW1-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-AW1-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-001-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-015-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-028-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-003-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-017-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-030-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-030-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-030-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-038-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-038-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-038-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-040-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-040-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-040-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-043-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-N01-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-013-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-026-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-039-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-048-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-055-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-061-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-066-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-010-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-052-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-052-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-052-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-063-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-063-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-063-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-N02-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-007-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-021-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-034-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-046-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-053-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-059-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-009-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-009-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-009-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-051-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-N03-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-N03-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-N03-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-036-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-047-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-054-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-060-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-065-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-012-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-016-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-025-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-029-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-042-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W4-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W4-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W4-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-020-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-033-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-050-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-057-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-N04-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W3-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-067-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W2-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W2-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W2-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W1-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-W1-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-004-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-018-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-005-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-019-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-008-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-022-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-SW32-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-014-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-027-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-SW12-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-SW31-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "B1-SW11-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CW-1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CW-2-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CW-3-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CW-3-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CW-3-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNW-1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNW-2-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNW-2-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNW-2-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNW-3-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNW-3-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNW-3-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNE-1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNE-2-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CNE-3-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CE-1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CE-2-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CE-3-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CE-3-centre",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CE-3-rear",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CSE-1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CSE-2-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CSE-3-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CSW-1-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CSW-2-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    },
+    {
+      "floor_supported": true,
+      "id": "C1F-CSW-3-front",
+      "proposed_eye": [],
+      "standing_clear": true
+    }
+  ],
+  "human_playtest": false,
+  "route_repairs": [
+    {
+      "id": "A-1F-R032",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          417.0,
+          0.0,
+          -49.5
+        ],
+        [
+          417.0,
+          0.0,
+          -46.5
+        ],
+        [
+          423.0,
+          0.0,
+          -40.5
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          417.0,
+          0.0,
+          -49.5
+        ],
+        [
+          420.5,
+          0.0,
+          -48.0
+        ],
+        [
+          420.0,
+          0.0,
+          -46.5
+        ],
+        [
+          423.0,
+          0.0,
+          -40.5
+        ],
+        [
+          423.0,
+          0.0,
+          -40.5
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    },
+    {
+      "id": "B-1F-R089",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -229.5,
+          0.0,
+          -13.5
+        ],
+        [
+          -226.5,
+          0.0,
+          -10.5
+        ],
+        [
+          -174.0,
+          0.0,
+          -10.5
+        ],
+        [
+          -157.5,
+          0.0,
+          6.0
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          -229.5,
+          0.0,
+          -13.5
+        ],
+        [
+          -208.5,
+          0.0,
+          -13.5
+        ],
+        [
+          -192.0,
+          0.0,
+          -9.0
+        ],
+        [
+          -175.5,
+          0.0,
+          -1.5
+        ],
+        [
+          -159.0,
+          0.0,
+          5.5
+        ],
+        [
+          -157.5,
+          0.0,
+          6.0
+        ],
+        [
+          -157.5,
+          0.0,
+          6.0
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    },
+    {
+      "id": "B-1F-R156",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -4.5,
+          0.0,
+          13.5
+        ],
+        [
+          -3.0,
+          0.0,
+          13.5
+        ],
+        [
+          1.5,
+          0.0,
+          9.0
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [],
+      "proposed_status": {
+        "pass": false,
+        "reason": "No replacement path"
+      }
+    },
+    {
+      "id": "B-1F-R158",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -3.0,
+          0.0,
+          31.5
+        ],
+        [
+          -1.5,
+          0.0,
+          30.0
+        ],
+        [
+          -1.5,
+          0.0,
+          24.0
+        ],
+        [
+          1.5,
+          0.0,
+          21.0
+        ],
+        [
+          1.5,
+          0.0,
+          18.0
+        ],
+        [
+          6.0,
+          0.0,
+          13.5
+        ],
+        [
+          6.0,
+          0.0,
+          9.0
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          -3.0,
+          0.0,
+          31.5
+        ],
+        [
+          4.0,
+          0.0,
+          18.0
+        ],
+        [
+          6.0,
+          0.0,
+          9.0
+        ],
+        [
+          6.0,
+          0.0,
+          9.0
+        ],
+        [
+          6.0,
+          0.0,
+          9.0
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    },
+    {
+      "id": "B-1F-R159",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -1.5,
+          0.0,
+          6.0
+        ],
+        [
+          1.5,
+          0.0,
+          9.0
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [],
+      "proposed_status": {
+        "pass": false,
+        "reason": "No replacement path"
+      }
+    },
+    {
+      "id": "B-1F-R164",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          6.0,
+          0.0,
+          9.0
+        ],
+        [
+          10.5,
+          0.0,
+          9.0
+        ],
+        [
+          15.0,
+          0.0,
+          13.5
+        ],
+        [
+          28.5,
+          0.0,
+          13.5
+        ],
+        [
+          34.5,
+          0.0,
+          19.5
+        ],
+        [
+          37.5,
+          0.0,
+          19.5
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          6.0,
+          0.0,
+          9.0
+        ],
+        [
+          8.5,
+          0.0,
+          17.0
+        ],
+        [
+          28.5,
+          0.0,
+          18.0
+        ],
+        [
+          37.5,
+          0.0,
+          19.5
+        ],
+        [
+          37.5,
+          0.0,
+          19.5
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    },
+    {
+      "id": "B-1F-R194",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          157.5,
+          0.0,
+          51.0
+        ],
+        [
+          163.5,
+          0.0,
+          51.0
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [],
+      "proposed_status": {
+        "pass": false,
+        "reason": "No replacement path"
+      }
+    },
+    {
+      "id": "C-1F-R206",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -145.5,
+          0.0,
+          -294.0
+        ],
+        [
+          -141.0,
+          0.0,
+          -298.5
+        ],
+        [
+          -141.0,
+          0.0,
+          -307.5
+        ],
+        [
+          -138.0,
+          0.0,
+          -310.5
+        ],
+        [
+          -138.0,
+          0.0,
+          -312.0
+        ],
+        [
+          -135.0,
+          0.0,
+          -315.0
+        ],
+        [
+          -135.0,
+          0.0,
+          -316.5
+        ],
+        [
+          -132.0,
+          0.0,
+          -319.5
+        ],
+        [
+          -132.0,
+          0.0,
+          -321.0
+        ],
+        [
+          -129.0,
+          0.0,
+          -324.0
+        ],
+        [
+          -129.0,
+          0.0,
+          -325.5
+        ],
+        [
+          -124.5,
+          0.0,
+          -330.0
+        ],
+        [
+          -124.5,
+          0.0,
+          -331.5
+        ],
+        [
+          -121.5,
+          0.0,
+          -334.5
+        ],
+        [
+          -121.5,
+          0.0,
+          -336.0
+        ],
+        [
+          -118.5,
+          0.0,
+          -339.0
+        ],
+        [
+          -118.5,
+          0.0,
+          -340.5
+        ],
+        [
+          -114.0,
+          0.0,
+          -345.0
+        ],
+        [
+          -114.0,
+          0.0,
+          -346.5
+        ],
+        [
+          -111.0,
+          0.0,
+          -349.5
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          -145.5,
+          0.0,
+          -294.0
+        ],
+        [
+          -140.0,
+          0.0,
+          -306.5
+        ],
+        [
+          -126.0,
+          0.0,
+          -325.5
+        ],
+        [
+          -113.5,
+          0.0,
+          -345.0
+        ],
+        [
+          -111.0,
+          0.0,
+          -349.5
+        ],
+        [
+          -111.0,
+          0.0,
+          -349.5
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    },
+    {
+      "id": "C-1F-R210",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -111.0,
+          0.0,
+          -349.5
+        ],
+        [
+          -87.0,
+          0.0,
+          -373.5
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          -111.0,
+          0.0,
+          -349.5
+        ],
+        [
+          -104.5,
+          0.0,
+          -356.5
+        ],
+        [
+          -91.5,
+          0.0,
+          -369.0
+        ],
+        [
+          -89.0,
+          0.0,
+          -371.0
+        ],
+        [
+          -87.0,
+          0.0,
+          -373.5
+        ],
+        [
+          -87.0,
+          0.0,
+          -373.5
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    },
+    {
+      "id": "C-1F-R212",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -91.5,
+          0.0,
+          -214.5
+        ],
+        [
+          -88.5,
+          0.0,
+          -217.5
+        ],
+        [
+          -28.5,
+          0.0,
+          -217.5
+        ],
+        [
+          -22.5,
+          0.0,
+          -223.5
+        ],
+        [
+          -21.0,
+          0.0,
+          -223.5
+        ],
+        [
+          -19.5,
+          0.0,
+          -225.0
+        ],
+        [
+          -18.0,
+          0.0,
+          -225.0
+        ],
+        [
+          -16.5,
+          0.0,
+          -226.5
+        ],
+        [
+          -15.0,
+          0.0,
+          -226.5
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          -91.5,
+          0.0,
+          -214.5
+        ],
+        [
+          -84.5,
+          0.0,
+          -219.5
+        ],
+        [
+          -72.0,
+          0.0,
+          -219.0
+        ],
+        [
+          -51.0,
+          0.0,
+          -217.5
+        ],
+        [
+          -33.0,
+          0.0,
+          -219.0
+        ],
+        [
+          -18.0,
+          0.0,
+          -224.5
+        ],
+        [
+          -15.0,
+          0.0,
+          -226.5
+        ],
+        [
+          -15.0,
+          0.0,
+          -226.5
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    },
+    {
+      "id": "C-1F-R216",
+      "meaning": "inspection route recalculation, no building or corridor added",
+      "original_points": [
+        [
+          -61.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -37.5,
+          0.0,
+          -313.5
+        ],
+        [
+          -37.5,
+          0.0,
+          -339.0
+        ],
+        [
+          -36.0,
+          0.0,
+          -340.5
+        ],
+        [
+          -36.0,
+          0.0,
+          -346.5
+        ],
+        [
+          -30.0,
+          0.0,
+          -352.5
+        ],
+        [
+          -21.0,
+          0.0,
+          -352.5
+        ],
+        [
+          -15.0,
+          0.0,
+          -358.5
+        ],
+        [
+          -9.0,
+          0.0,
+          -358.5
+        ],
+        [
+          -7.5,
+          0.0,
+          -360.0
+        ],
+        [
+          -4.5,
+          0.0,
+          -360.0
+        ],
+        [
+          -3.0,
+          0.0,
+          -361.5
+        ],
+        [
+          28.5,
+          0.0,
+          -361.5
+        ],
+        [
+          30.0,
+          0.0,
+          -363.0
+        ],
+        [
+          48.0,
+          0.0,
+          -363.0
+        ],
+        [
+          49.5,
+          0.0,
+          -364.5
+        ],
+        [
+          70.5,
+          0.0,
+          -364.5
+        ],
+        [
+          72.0,
+          0.0,
+          -363.0
+        ],
+        [
+          73.5,
+          0.0,
+          -363.0
+        ],
+        [
+          75.0,
+          0.0,
+          -361.5
+        ],
+        [
+          76.5,
+          0.0,
+          -361.5
+        ]
+      ],
+      "original_status": {
+        "pass": false,
+        "reason": "Physical capsule blocked"
+      },
+      "proposed_points": [
+        [
+          -61.5,
+          0.0,
+          -289.5
+        ],
+        [
+          -40.5,
+          0.0,
+          -310.5
+        ],
+        [
+          -37.0,
+          0.0,
+          -331.5
+        ],
+        [
+          -30.5,
+          0.0,
+          -344.5
+        ],
+        [
+          -19.5,
+          0.0,
+          -354.0
+        ],
+        [
+          1.5,
+          0.0,
+          -360.0
+        ],
+        [
+          22.5,
+          0.0,
+          -361.5
+        ],
+        [
+          35.0,
+          0.0,
+          -362.0
+        ],
+        [
+          38.5,
+          0.0,
+          -363.5
+        ],
+        [
+          46.5,
+          0.0,
+          -364.5
+        ],
+        [
+          67.5,
+          0.0,
+          -364.5
+        ],
+        [
+          76.5,
+          0.0,
+          -361.5
+        ],
+        [
+          76.5,
+          0.0,
+          -361.5
+        ]
+      ],
+      "proposed_status": {
+        "pass": true,
+        "reason": ""
+      }
+    }
+  ]
+}

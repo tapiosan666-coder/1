@@ -1,0 +1,949 @@
+{
+  "C_lobby_return": {
+    "actual_CharacterBody": true,
+    "end": [
+      -102.167808532715,
+      -0.0110929664224386,
+      -225.12580871582
+    ],
+    "minimum_y": -0.011385191231966,
+    "pass": true,
+    "points": [
+      [
+        -107.80256652832,
+        0.0399999991059303,
+        -218.185577392578
+      ],
+      [
+        -103.897819519043,
+        0.0399999991059303,
+        -217.317855834961
+      ],
+      [
+        -102.118988037109,
+        0.0399999991059303,
+        -225.32258605957
+      ]
+    ]
+  },
+  "C_lobby_turn": {
+    "actual_CharacterBody": true,
+    "end": [
+      -107.60034942627,
+      0.0408295504748821,
+      -218.151290893555
+    ],
+    "minimum_y": -0.011881516315043,
+    "pass": true,
+    "points": [
+      [
+        -102.118988037109,
+        0.0399999991059303,
+        -225.32258605957
+      ],
+      [
+        -103.897819519043,
+        0.0399999991059303,
+        -217.317855834961
+      ],
+      [
+        -107.80256652832,
+        0.0399999991059303,
+        -218.185577392578
+      ]
+    ]
+  },
+  "entrance_alignment": [
+    {
+      "outer_door_facade_error_m": 0.0,
+      "pass": true,
+      "transom": {
+        "ceiling_y": 5.14499998092651,
+        "gap_m": 0.008,
+        "top": 5.13699998092651
+      },
+      "wing": "B"
+    },
+    {
+      "outer_door_facade_error_m": 0.000479135691421106,
+      "pass": true,
+      "transom": {
+        "ceiling_y": 5.14499998092651,
+        "gap_m": 0.008,
+        "top": 5.13699998092651
+      },
+      "wing": "C"
+    }
+  ],
+  "failures": 0,
+  "fence_contact": [
+    {
+      "base_error_m": 0.000440031290054321,
+      "id": "C-DOG-RUN-dog_fence_segment-1",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000140011310577393,
+      "id": "C-DOG-RUN-dog_fence_segment-2",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000360026955604553,
+      "id": "C-DOG-RUN-dog_fence_segment-3",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000720039010047913,
+      "id": "C-DOG-RUN-dog_fence_segment-4",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000860050320625305,
+      "id": "C-DOG-RUN-dog_fence_segment-5",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000860050320625305,
+      "id": "C-DOG-RUN-dog_fence_segment-6",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000860050320625305,
+      "id": "C-DOG-RUN-dog_fence_segment-7",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000860050320625305,
+      "id": "C-DOG-RUN-dog_fence_segment-8",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000536039471626282,
+      "id": "C-DOG-RUN-dog_fence_segment-9",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000340014696121216,
+      "id": "C-DOG-RUN-dog_fence_segment-10",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000860050320625305,
+      "id": "C-DOG-RUN-dog_fence_segment-11",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000860050320625305,
+      "id": "C-DOG-RUN-dog_fence_segment-12",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000840052962303162,
+      "id": "C-DOG-RUN-dog_fence_segment-13",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000760048627853394,
+      "id": "C-DOG-RUN-dog_fence_segment-14",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000660032033920288,
+      "id": "C-DOG-RUN-dog_fence_segment-15",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000520035624504089,
+      "id": "C-DOG-RUN-dog_fence_segment-16",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000360026955604553,
+      "id": "C-DOG-RUN-dog_fence_segment-17",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.00018000602722168,
+      "id": "C-DOG-RUN-dog_fence_segment-18",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0000599920749664307,
+      "id": "C-DOG-RUN-dog_fence_segment-19",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.000119999051094055,
+      "id": "C-DOG-RUN-dog_fence_segment-20",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-21",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-22",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-23",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-24",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-25",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-26",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-27",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-28",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-29",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-30",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-31",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-32",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-33",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-34",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-35",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-36",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-37",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-38",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-39",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-40",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-41",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0,
+      "id": "C-DOG-RUN-dog_fence_segment-42",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0000399947166442871,
+      "id": "C-DOG-RUN-dog_fence_segment-43",
+      "pass": true
+    },
+    {
+      "base_error_m": 0.0000400245189666748,
+      "id": "C-DOG-RUN-dog_fence_segment-44",
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "public_finish_samples": [
+    {
+      "collider": "Collision_v28_public_finish",
+      "floor_y": 0.0400000065565109,
+      "hit": true,
+      "p": [
+        312.0,
+        0.0,
+        -58.0
+      ]
+    },
+    {
+      "collider": "Collision_v28_public_finish",
+      "floor_y": 0.0400000065565109,
+      "hit": true,
+      "p": [
+        420.0,
+        0.0,
+        -50.0
+      ]
+    },
+    {
+      "collider": "Collision_v28_public_finish",
+      "floor_y": 0.0400000065565109,
+      "hit": true,
+      "p": [
+        20.0,
+        0.0,
+        8.0
+      ]
+    },
+    {
+      "collider": "Collision_v28_public_finish",
+      "floor_y": 0.00500001013278961,
+      "hit": true,
+      "p": [
+        -182.0,
+        0.0,
+        -21.0
+      ]
+    },
+    {
+      "collider": "Collision_v28_public_finish",
+      "floor_y": 0.0400000065565109,
+      "hit": true,
+      "p": [
+        -145.0,
+        0.0,
+        -287.0
+      ]
+    }
+  ],
+  "sign_visibility": [
+    {
+      "ceiling_y": 5.14499950408936,
+      "clear_public_approach": true,
+      "id": "V21-combined-A-1F-NAV-1",
+      "mount": "two actual ceiling rays",
+      "view": {
+        "distance_m": 6.0,
+        "eye": [
+          309.0,
+          1.64999997615814,
+          -54.0
+        ],
+        "look": [
+          309.0,
+          3.25,
+          -60.0
+        ],
+        "side": -1.0,
+        "transparent_glass": []
+      }
+    },
+    {
+      "ceiling_y": 5.14499950408936,
+      "clear_public_approach": true,
+      "id": "V21-combined-B-1F-NAV-2",
+      "mount": "two actual ceiling rays",
+      "view": {
+        "distance_m": 6.0,
+        "eye": [
+          23.0432815551758,
+          1.64999997615814,
+          6.26622009277344
+        ],
+        "look": [
+          29.0061836242676,
+          3.25,
+          5.60003137588501
+        ],
+        "side": 1.0,
+        "transparent_glass": []
+      }
+    },
+    {
+      "ceiling_y": 5.14499998092651,
+      "clear_public_approach": true,
+      "id": "V21-combined-C-1F-NAV-1",
+      "mount": "two actual ceiling rays",
+      "view": {
+        "distance_m": 6.0,
+        "eye": [
+          -87.3458251953125,
+          1.64999997615814,
+          -217.391662597656
+        ],
+        "look": [
+          -82.8221588134766,
+          3.25,
+          -221.333297729492
+        ],
+        "side": 1.0,
+        "transparent_glass": []
+      }
+    }
+  ],
+  "terrain_samples": [
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -87.0,
+        0.0163771758594719,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.0000228335342200917
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -87.0,
+        0.02,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -87.0,
+        0.02,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -87.0,
+        0.02,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -87.0,
+        0.02,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -87.0,
+        0.02,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -84.0,
+        0.02,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.000000010728836059154
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -84.0,
+        0.02,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -84.0,
+        0.02,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -84.0,
+        0.02,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -84.0,
+        0.02,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -84.0,
+        0.02,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -81.0,
+        0.02,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -81.0,
+        0.02,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -81.0,
+        0.02,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -81.0,
+        0.02,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -81.0,
+        0.02,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -81.0,
+        0.02,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -78.0,
+        0.02,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -78.0,
+        0.02,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -78.0,
+        0.02,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -78.0,
+        0.02,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -78.0,
+        0.02,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -78.0,
+        0.02,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -75.0,
+        0.02,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -75.0,
+        0.02,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -75.0,
+        0.02,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -75.0,
+        0.02,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -75.0,
+        0.02,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -75.0,
+        0.02,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -72.0,
+        0.02,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -72.0,
+        0.02,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -72.0,
+        0.02,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -72.0,
+        0.02,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -72.0,
+        0.02,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -72.0,
+        0.02,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -69.0,
+        0.02,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -69.0,
+        0.02,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -69.0,
+        0.02,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -69.0,
+        0.02,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -69.0,
+        0.02,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -69.0,
+        0.02,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.00000000417232513469368
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -66.0,
+        0.0114465732110382,
+        -253.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.0000465739501358201
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -66.0,
+        0.0198327856909308,
+        -250.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.0000327932487997271
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -66.0,
+        0.0198327856909308,
+        -247.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.0000327932487997271
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -66.0,
+        0.0198327856909308,
+        -244.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.0000327932487997271
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -66.0,
+        0.0198327856909308,
+        -241.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.0000327932487997271
+    },
+    {
+      "new_terrain_hit": true,
+      "old_ground_remaining_below": false,
+      "p": [
+        -66.0,
+        0.0198327856909308,
+        -238.0
+      ],
+      "pass": true,
+      "visual_physics_error_m": 0.0000327932487997271
+    }
+  ]
+}

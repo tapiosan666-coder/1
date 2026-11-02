@@ -1,0 +1,310 @@
+{
+  "version": 29,
+  "completion": "PARTIAL_PROVISIONAL_NOT_ACCEPTED_AS_ALL_1F_COMPLETE",
+  "stores_1F": 139,
+  "data_collection_applied_stores": 135,
+  "collection_fixture_changes": 422,
+  "retired_individual_SKU_records": 4299,
+  "display_goods_integrated_in_collection_mesh": true,
+  "unmodified_advanced_v25_fixtures_preserved": true,
+  "retained_store_ids": [
+    "A1F-046",
+    "B1-028",
+    "B1-010",
+    "B1-022"
+  ],
+  "target_focus_stores": [
+    "A1F-044",
+    "A1F-051",
+    "A1F-028",
+    "A1F-002",
+    "A1F-005",
+    "A1F-009",
+    "A1F-025",
+    "A1F-001",
+    "B1-W1",
+    "B1-W2",
+    "B1-030",
+    "B1-AW1",
+    "B1-038",
+    "B1-063",
+    "B1-052",
+    "B1-AE1",
+    "B1-W4",
+    "B1-N03",
+    "B1-040",
+    "B1-009",
+    "C1F-CE-3",
+    "C1F-CNW-2",
+    "C1F-CNW-3",
+    "C1F-CW-3"
+  ],
+  "route_count": 233,
+  "cameras_defined": 277,
+  "before_images": 277,
+  "after_images": 277,
+  "new_failed_routes_vs_v28": [],
+  "final_swept_routes_pass": 233,
+  "precision_B1_030": [
+    {
+      "NPC_enabled_frozen": false,
+      "endpoint_tolerance_m": 0.03,
+      "pass": true,
+      "reverse": false,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -59.9504470825195,
+            0.000803594302851707,
+            0.00502687692642212
+          ],
+          "pass": true,
+          "residual_m": 0.00812507607042789,
+          "step": 1,
+          "target": [
+            -59.9524138877614,
+            0.0,
+            -0.00285616307122087
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -60.0765380859375,
+            0.000817018677480519,
+            -0.499450713396072
+          ],
+          "pass": true,
+          "residual_m": 0.00812831521034241,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -64.1718063354492,
+            0.000861787819303572,
+            -20.2288246154785
+          ],
+          "pass": true,
+          "residual_m": 0.00961264222860336,
+          "step": 3,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -64.2222747802734,
+            0.000844446942210197,
+            -20.4322624206543
+          ],
+          "pass": true,
+          "residual_m": 1.9073486328125e-06,
+          "step": 4,
+          "target": [
+            -64.2222759286407,
+            0.0,
+            -20.432265083354
+          ]
+        }
+      ]
+    },
+    {
+      "NPC_enabled_frozen": false,
+      "endpoint_tolerance_m": 0.03,
+      "pass": true,
+      "reverse": true,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -64.1802444458008,
+            0.000831954879686236,
+            -20.2641048431396
+          ],
+          "pass": true,
+          "residual_m": 0.0266679637134075,
+          "step": 1,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -60.084228515625,
+            0.000817007734440267,
+            -0.534848749637604
+          ],
+          "pass": true,
+          "residual_m": 0.0281005669385195,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -59.9591598510742,
+            0.000815980311017483,
+            -0.0301078036427498
+          ],
+          "pass": true,
+          "residual_m": 0.0280738081783056,
+          "step": 3,
+          "target": [
+            -59.9524138877614,
+            0.0,
+            -0.00285616307122087
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -59.8364868164062,
+            0.0432571768760681,
+            0.460925161838531
+          ],
+          "pass": true,
+          "residual_m": 0.00194977596402168,
+          "step": 4,
+          "target": [
+            -59.8360184577482,
+            0.0,
+            0.462817641973878
+          ]
+        }
+      ]
+    },
+    {
+      "NPC_enabled_frozen": true,
+      "endpoint_tolerance_m": 0.03,
+      "pass": false,
+      "reverse": false,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -59.950325012207,
+            0.000844153517391533,
+            0.00552090629935265
+          ],
+          "pass": true,
+          "residual_m": 0.00863396190106869,
+          "step": 1,
+          "target": [
+            -59.9524138877614,
+            0.0,
+            -0.00285616307122087
+          ]
+        },
+        {
+          "colliders": [],
+          "feet": [
+            -60.076416015625,
+            0.000816991087049246,
+            -0.498959243297577
+          ],
+          "pass": true,
+          "residual_m": 0.00863471813499928,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        },
+        {
+          "colliders": [
+            "V18-B-13"
+          ],
+          "feet": [
+            -62.3171615600586,
+            -4.21013683080673e-05,
+            -11.2948455810547
+          ],
+          "pass": false,
+          "residual_m": 9.13406848907471,
+          "step": 3,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        }
+      ]
+    },
+    {
+      "NPC_enabled_frozen": true,
+      "endpoint_tolerance_m": 0.03,
+      "pass": false,
+      "reverse": true,
+      "speed_m_s": 2.6,
+      "stages": [
+        {
+          "colliders": [],
+          "feet": [
+            -64.1802444458008,
+            0.000831954879686236,
+            -20.2641048431396
+          ],
+          "pass": true,
+          "residual_m": 0.0266679637134075,
+          "step": 1,
+          "target": [
+            -64.1737778325788,
+            0.0,
+            -20.2382343263119
+          ]
+        },
+        {
+          "colliders": [
+            "V18-B-13"
+          ],
+          "feet": [
+            -62.5586280822754,
+            6.38790079392493e-05,
+            -12.453125
+          ],
+          "pass": false,
+          "residual_m": 12.2005271911621,
+          "step": 2,
+          "target": [
+            -60.0785089428189,
+            0.0,
+            -0.50733614204708
+          ]
+        }
+      ]
+    }
+  ],
+  "all_277_camera_feet_checked_in_both_builds": true,
+  "NPC_test_scope": "43 maintained; generic player-capsule reference probes reproduce baseline contacts. Actual seat-exception/animation/crowd operation is not certified.",
+  "human_playtest": false,
+  "Windows_GPU_FPS_measured": false,
+  "FF16_quality_achieved": false,
+  "structural_fix_tickets": [
+    "B西ES/EV混在・下面仕上げ：v28を維持、別修正ブランチ対象",
+    "C中央箱型入口の整理：未施工、別修正対象",
+    "Cドッグラン地形の詳細修正：v28を維持、別修正対象",
+    "RF-SUPPORT-16・水上庭園：既存の未承認状態を維持"
+  ],
+  "all_139_individually_art_approved": false
+}
