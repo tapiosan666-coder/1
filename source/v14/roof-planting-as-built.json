@@ -1,0 +1,137 @@
+{
+  "candidate_total": 178.0,
+  "installed_total": 168,
+  "excluded_total": 10.0,
+  "raised_beds": 17,
+  "excluded_bed": "BRF-GARDEN-2-BED-4",
+  "unsupported_whole_bed_m2": 3.5699999999999807,
+  "beds": [
+    {
+      "bed_id": "BRF-GARDEN-1-BED-1",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-1-BED-2",
+      "candidate_count": 8.0,
+      "installed_count": 8,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-1-BED-3",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-1-BED-4",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-1-BED-5",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-1-BED-6",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-2-BED-1",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-2-BED-2",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-2-BED-3",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-2-BED-4",
+      "candidate_count": 10.0,
+      "installed_count": 0,
+      "bed_installed": false,
+      "excluded_count": 10.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-2-BED-5",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-2-BED-6",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-3-BED-1",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-3-BED-2",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-3-BED-3",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-3-BED-4",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-3-BED-5",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    },
+    {
+      "bed_id": "BRF-GARDEN-3-BED-6",
+      "candidate_count": 10.0,
+      "installed_count": 10,
+      "bed_installed": true,
+      "excluded_count": 0.0
+    }
+  ],
+  "support_check_method": "Whole footprint versus original collision triangles plus Godot runtime physics QA; not continuous rays during interactive play or structural-load certification."
+}

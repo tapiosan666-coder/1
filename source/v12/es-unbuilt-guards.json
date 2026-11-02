@@ -1,0 +1,579 @@
+[
+  {
+    "id": "E1-12-UP-B1-1F",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": -5.35,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -189.545,
+                -36.375
+              ],
+              [
+                -189.545,
+                -39.255
+              ],
+              [
+                -204.455,
+                -39.255
+              ],
+              [
+                -204.455,
+                -36.375
+              ],
+              [
+                -204.385,
+                -36.375
+              ],
+              [
+                -204.385,
+                -39.185
+              ],
+              [
+                -189.615,
+                -39.185
+              ],
+              [
+                -189.615,
+                -36.375
+              ],
+              [
+                -189.545,
+                -36.375
+              ]
+            ]
+          ]
+        },
+        "guard_footprint_m2": 1.4371000000001257
+      },
+      {
+        "floor_y": 0.0,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E1-12-DOWN-B1-1F",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": -5.35,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -204.455,
+                -35.625
+              ],
+              [
+                -204.455,
+                -32.745
+              ],
+              [
+                -189.545,
+                -32.745
+              ],
+              [
+                -189.545,
+                -35.625
+              ],
+              [
+                -189.615,
+                -35.625
+              ],
+              [
+                -189.615,
+                -32.815
+              ],
+              [
+                -204.385,
+                -32.815
+              ],
+              [
+                -204.385,
+                -35.625
+              ],
+              [
+                -204.455,
+                -35.625
+              ]
+            ]
+          ]
+        },
+        "guard_footprint_m2": 1.4371000000001257
+      },
+      {
+        "floor_y": 0.0,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E2-12-UP-B1-1F",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": -5.35,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -21.625,
+                24.455
+              ],
+              [
+                -18.745,
+                24.455
+              ],
+              [
+                -18.745,
+                9.545
+              ],
+              [
+                -21.625,
+                9.545
+              ],
+              [
+                -21.625,
+                9.615
+              ],
+              [
+                -18.815,
+                9.615
+              ],
+              [
+                -18.815,
+                24.385
+              ],
+              [
+                -21.625,
+                24.385
+              ],
+              [
+                -21.625,
+                24.455
+              ]
+            ]
+          ]
+        },
+        "guard_footprint_m2": 1.4370999999999938
+      },
+      {
+        "floor_y": 0.0,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E2-12-DOWN-B1-1F",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": -5.35,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -22.375,
+                9.545
+              ],
+              [
+                -25.255,
+                9.545
+              ],
+              [
+                -25.255,
+                24.455
+              ],
+              [
+                -22.375,
+                24.455
+              ],
+              [
+                -22.375,
+                24.385
+              ],
+              [
+                -25.185,
+                24.385
+              ],
+              [
+                -25.185,
+                9.615
+              ],
+              [
+                -22.375,
+                9.615
+              ],
+              [
+                -22.375,
+                9.545
+              ]
+            ]
+          ]
+        },
+        "guard_footprint_m2": 1.4370999999999938
+      },
+      {
+        "floor_y": 0.0,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E3-12-UP-B1-1F",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": -5.35,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                147.269,
+                -33.752
+              ],
+              [
+                147.057,
+                -34.12
+              ],
+              [
+                145.829,
+                -36.246
+              ],
+              [
+                132.916,
+                -28.791
+              ],
+              [
+                134.143,
+                -26.665
+              ],
+              [
+                134.356,
+                -26.297
+              ],
+              [
+                134.416,
+                -26.332
+              ],
+              [
+                134.204,
+                -26.7
+              ],
+              [
+                133.011,
+                -28.766
+              ],
+              [
+                145.804,
+                -36.151
+              ],
+              [
+                146.996,
+                -34.086
+              ],
+              [
+                147.208,
+                -33.718
+              ],
+              [
+                147.269,
+                -33.752
+              ]
+            ]
+          ]
+        },
+        "guard_footprint_m2": 1.427926999999956
+      },
+      {
+        "floor_y": 0.0,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E3-12-DOWN-B1-1F",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": -5.35,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                134.731,
+                -25.648
+              ],
+              [
+                134.943,
+                -25.28
+              ],
+              [
+                136.171,
+                -23.154
+              ],
+              [
+                149.084,
+                -30.609
+              ],
+              [
+                147.857,
+                -32.735
+              ],
+              [
+                147.644,
+                -33.103
+              ],
+              [
+                147.584,
+                -33.068
+              ],
+              [
+                147.796,
+                -32.7
+              ],
+              [
+                148.989,
+                -30.634
+              ],
+              [
+                136.196,
+                -23.249
+              ],
+              [
+                135.004,
+                -25.314
+              ],
+              [
+                134.792,
+                -25.682
+              ],
+              [
+                134.731,
+                -25.648
+              ]
+            ]
+          ]
+        },
+        "guard_footprint_m2": 1.4279269999999418
+      },
+      {
+        "floor_y": 0.0,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                135.01,
+                -25.162
+              ],
+              [
+                135.258,
+                -24.735
+              ],
+              [
+                135.352,
+                -24.789
+              ],
+              [
+                135.215,
+                -25.028
+              ],
+              [
+                135.216,
+                -25.028
+              ],
+              [
+                135.144,
+                -25.152
+              ],
+              [
+                135.107,
+                -25.217
+              ],
+              [
+                135.106,
+                -25.218
+              ],
+              [
+                135.031,
+                -25.174
+              ],
+              [
+                135.011,
+                -25.163
+              ],
+              [
+                135.01,
+                -25.162
+              ]
+            ]
+          ]
+        },
+        "guard_footprint_m2": 0.0543370000000022
+      }
+    ]
+  },
+  {
+    "id": "E1-23-UP-3F-RF",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": 10.875,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      },
+      {
+        "floor_y": 16.4,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E1-23-DOWN-3F-RF",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": 10.875,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      },
+      {
+        "floor_y": 16.4,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E2-23-UP-3F-RF",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": 10.875,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      },
+      {
+        "floor_y": 16.4,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E2-23-DOWN-3F-RF",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": 10.875,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      },
+      {
+        "floor_y": 16.4,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E3-23-UP-3F-RF",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": 10.875,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      },
+      {
+        "floor_y": 16.4,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  },
+  {
+    "id": "E3-23-DOWN-3F-RF",
+    "not_implemented": true,
+    "guards": [
+      {
+        "floor_y": 10.875,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      },
+      {
+        "floor_y": 16.4,
+        "geometry": {
+          "type": "GeometryCollection",
+          "geometries": []
+        },
+        "guard_footprint_m2": 0.0
+      }
+    ]
+  }
+]
