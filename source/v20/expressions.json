@@ -1,0 +1,8 @@
+{
+  "normal":{"label":"通常","weights":{}},
+  "smile":{"label":"笑顔","weights":{"Fcl_ALL_Joy":0.42,"Fcl_BRW_Fun":0.16}},
+  "happy":{"label":"嬉しい","weights":{"Fcl_ALL_Joy":0.94,"Fcl_ALL_Fun":0.12}},
+  "sullen":{"label":"不機嫌","weights":{"Fcl_ALL_Angry":0.78,"Fcl_BRW_Angry":0.22}},
+  "surprised":{"label":"驚き","weights":{"Fcl_ALL_Surprised":0.82,"Fcl_MTH_A":0.10}},
+  "worried":{"label":"困った","weights":{"Fcl_ALL_Sorrow":0.68,"Fcl_BRW_Sorrow":0.25}}
+}

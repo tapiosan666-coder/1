@@ -1,0 +1,102 @@
+{
+  "status": "UNAPPROVED relocation option; not installed",
+  "old_world": [
+    18.4,
+    16.4,
+    12.4
+  ],
+  "old_footprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          20.4,
+          11.7
+        ],
+        [
+          20.4,
+          13.1
+        ],
+        [
+          16.4,
+          13.1
+        ],
+        [
+          16.4,
+          11.7
+        ],
+        [
+          20.4,
+          11.7
+        ]
+      ]
+    ]
+  },
+  "missing_rendered_collision_floor_m2": 3.5699994659423817,
+  "missing_canonical_planned_floor_m2": 3.639999999999983,
+  "missing_geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          20.4,
+          13.1
+        ],
+        [
+          20.4,
+          11.7
+        ],
+        [
+          17.850000381469727,
+          11.7
+        ],
+        [
+          17.850000381469727,
+          13.1
+        ],
+        [
+          20.4,
+          13.1
+        ]
+      ]
+    ]
+  },
+  "cause": "Garden furnishing footprint is not clipped to the final roof slab; centre-only planting validation was insufficient. Compare planned and physical overlap explicitly.",
+  "proposal_world": [
+    15.649999999999999,
+    16.4,
+    12.4
+  ],
+  "proposal_footprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          17.65,
+          11.7
+        ],
+        [
+          17.65,
+          13.1
+        ],
+        [
+          13.649999999999999,
+          13.1
+        ],
+        [
+          13.649999999999999,
+          11.7
+        ],
+        [
+          17.65,
+          11.7
+        ]
+      ]
+    ]
+  },
+  "relocation_distance_m": 2.75,
+  "no_new_support_floor": true,
+  "engineering_and_route_clearance_approval_pending": true,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "normal_bed_still_omitted": true
+}

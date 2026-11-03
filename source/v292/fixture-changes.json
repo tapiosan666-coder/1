@@ -1,0 +1,78 @@
+{
+  "replaced": [
+    {
+      "id": "V22-C1F-CE-3-central_department-4276",
+      "store_id": "C1F-CE-3",
+      "before_model": "collection_v29_apparel_0",
+      "after_model": "kids_window_v292",
+      "p": [
+        143.4767019591673,
+        0.02,
+        -263.2562286393529
+      ],
+      "n": [
+        -0.9785497849867489,
+        -0.20601048104984188
+      ],
+      "scale": 1.0,
+      "before_footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.1230598463775,
+              -264.1420737072532
+            ],
+            [
+              143.7110388842778,
+              -262.1849741372797
+            ],
+            [
+              142.83034407195711,
+              -262.3703835714525
+            ],
+            [
+              143.2423650340568,
+              -264.327483141426
+            ],
+            [
+              144.1230598463775,
+              -264.1420737072532
+            ]
+          ]
+        ]
+      },
+      "after_footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              143.97679241769453,
+              -264.02979800699194
+            ],
+            [
+              143.62245438439479,
+              -262.3466923488182
+            ],
+            [
+              142.9668260412854,
+              -262.48471936842014
+            ],
+            [
+              143.32116407458514,
+              -264.1678250265939
+            ],
+            [
+              143.97679241769453,
+              -264.02979800699194
+            ]
+          ]
+        ]
+      },
+      "reason": "Replace adult-body display mannequins in a kids shop with child-scale outfits and shoes. NPCs unchanged."
+    }
+  ],
+  "retired_product_records": 0,
+  "architecture_changed": false,
+  "NPC_changed": false
+}
