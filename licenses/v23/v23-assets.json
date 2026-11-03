@@ -1,0 +1,656 @@
+[
+  {
+    "path": "assets/v23/art/arcade-original-interface.png",
+    "bytes": 308851,
+    "sha256": "b2c59b3e7dfc58704f4b67f3928fc87d14599011d44e3ba6a35243f3f475fe7b",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/art/book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/art/book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/art/cafe-menu-original.png",
+    "bytes": 65557,
+    "sha256": "1dd72b1e1997496024c572442b3385e1266fe3d438af95fdd31170e62cc47fca",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/art/department-sign-atlas.png",
+    "bytes": 279939,
+    "sha256": "ba29368ada90bad60d0d900031e79a04d08395ba28320991f23af3611d95150c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/art/retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_bag_wall.glb",
+    "bytes": 399048,
+    "sha256": "3f51574537873dd939d7d4c87bf2dc4ab9fd0d301f5c9f332a6c49d7ccf4a9f9",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_bag_wall_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_dining_banquette.glb",
+    "bytes": 361200,
+    "sha256": "dfa41d2135f199d8349694bdd4b500a6eac234516c34ab0faf4e943ad26316ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_dining_banquette_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_electronics_demo.glb",
+    "bytes": 362288,
+    "sha256": "72e4b2bdb8dc453e8a801433cdc217278b0c5ea1c70cfec34595d94a4123005c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_electronics_demo_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_magazine_cascade.glb",
+    "bytes": 374472,
+    "sha256": "da13f1337eac91c5219b1158ed7e4ea2824a690f763db72f00ede77f600bdaca",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_magazine_cascade_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_medal_game.glb",
+    "bytes": 35416,
+    "sha256": "94cee0123c63f6c6f6950e1abd6d343b87cd50796ae2f874a9d484770acc0fa1",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_nested_display.glb",
+    "bytes": 23060,
+    "sha256": "fb7103af1bb6c8f4f18811e5c1d4d19a2664154691bf3adcd22d8dbcb3b0adf2",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_order_counter.glb",
+    "bytes": 454228,
+    "sha256": "b376b70578fac13b312d424acd137cfa5dbafb4fe8666e46b2531a05cdccc3c8",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_order_counter_cafe-menu-original.png",
+    "bytes": 65557,
+    "sha256": "1dd72b1e1997496024c572442b3385e1266fe3d438af95fdd31170e62cc47fca",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_order_counter_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_outfit_display.glb",
+    "bytes": 85232,
+    "sha256": "d9cd15c5a012f1651b1653993a846cf6db5facba13fce837ef66bc2d042e8e66",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_photo_pod.glb",
+    "bytes": 352888,
+    "sha256": "c204927c5b71a35ff2cb51198cc803eb42ac12f800e18809f124eb52020760f3",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_photo_pod_arcade-original-interface.png",
+    "bytes": 308851,
+    "sha256": "b2c59b3e7dfc58704f4b67f3928fc87d14599011d44e3ba6a35243f3f475fe7b",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_photo_pod_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_racing_cabinet.glb",
+    "bytes": 336132,
+    "sha256": "56424bc3d6353b80d3304d9ce49f60937a60d1e8fdf0212d4f5b26c51c8f02a2",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_racing_cabinet_arcade-original-interface.png",
+    "bytes": 308851,
+    "sha256": "b2c59b3e7dfc58704f4b67f3928fc87d14599011d44e3ba6a35243f3f475fe7b",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_racing_cabinet_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_round_tester.glb",
+    "bytes": 22648,
+    "sha256": "067c270c619a03f061f651f83344c9349d2f0c485c00da1ab7b068be0e1a2525",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_shoe_bench_mirror.glb",
+    "bytes": 20880,
+    "sha256": "1a54350c00557a10ab9cdb77aaf138f1f10403707a750f2d29eae26282967601",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/fixture_v23_supported_kitchen.glb",
+    "bytes": 35840,
+    "sha256": "2e3bfb419999d9800861a630a37dc13f0829fb0aa6b2b36f1132e004591cccfa",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_backpack.glb",
+    "bytes": 44140,
+    "sha256": "357d00c2f7e20fb468438898b9704171350645a4fd03997fb1ea6290419810e3",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_bakery_bag.glb",
+    "bytes": 334204,
+    "sha256": "09508e4d5d7f71ec52527aebdd46f179a9364228b3660a05653f828222dd9b32",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_bakery_bag_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_0.glb",
+    "bytes": 390780,
+    "sha256": "d7350edd73308222e5c17ee859acd24e314c707d1b5caa77769f68a2e7dcd156",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_0_B.glb",
+    "bytes": 156688,
+    "sha256": "22444fe5dea21587d5662c994d8f395da93e07a855578b700a1cf5fca2d2686a",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_0_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_0_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_0_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_0_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_1.glb",
+    "bytes": 390856,
+    "sha256": "7237bf8840fbfad5a49a82d713623333d8f31795f529a3c39288add23ea67fc4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_1_B.glb",
+    "bytes": 156680,
+    "sha256": "70ae16a1270b0e65324ed6875624d1ee1ff3bf16a12c23647f2b6c19704706b8",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_1_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_1_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_1_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_1_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_2.glb",
+    "bytes": 390792,
+    "sha256": "ebc97049f1d5691c90daa7a3292a64e2af0bdceb9ad5cf5f5a493defbe8adad5",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_2_B.glb",
+    "bytes": 156684,
+    "sha256": "33fe5615c297485d73bf7da3afeb5f2f4d95174d48ecb9e429b9b8bad482cf83",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_2_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_2_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_2_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_2_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_3.glb",
+    "bytes": 391052,
+    "sha256": "68f70b6f412ba38c26c767817ff18e797ceb28758aaf1810645b36d985a611dc",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_3_B.glb",
+    "bytes": 156684,
+    "sha256": "d3c23d79bf44a62a3672dc29b30fd1401d998bce22e6348755d4cbe450ef6774",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_3_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_3_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_3_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_3_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_4.glb",
+    "bytes": 390792,
+    "sha256": "cd940b67f415245d3f8546bc7a270fc8aff51a03fb8c068b4daacede0e987eec",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_4_B.glb",
+    "bytes": 156688,
+    "sha256": "93d42075083294494c1bdee9910c450b49086d4b805e9d12662c1ebf78edc024",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_4_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_4_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_4_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_4_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_5.glb",
+    "bytes": 390788,
+    "sha256": "c1042148c1f781ca1c10c20574f527f9fa21a1ef2c033b05afd90e33e6831620",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_5_B.glb",
+    "bytes": 156688,
+    "sha256": "b22981d1cd1948b8521caa795947cb3e75175f88b9f8c0b71b0dcb07952e48de",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_5_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_5_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_5_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_5_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_6.glb",
+    "bytes": 390860,
+    "sha256": "adee966131406a5076d0b3b60ee4caf2609e1069307601f316dd235423415845",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_6_B.glb",
+    "bytes": 156680,
+    "sha256": "ca46d44f7fa851a9b1a8bab829e43c7704e77ba1d3e60c7feb1c49802f8545c7",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_6_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_6_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_6_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_6_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_7.glb",
+    "bytes": 390860,
+    "sha256": "636ad1ffe8d52d3556e2f4efb8b3deff95313c2c18a2e3ecabfb8973778222cb",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_7_B.glb",
+    "bytes": 156680,
+    "sha256": "23a616dac67c4281df216ab687594c46b1b82da756c929a4b3dc8d868ba8040d",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_7_B_book-companion-original.png",
+    "bytes": 80324,
+    "sha256": "26d6e846f9fd28fb7692c50de768540910d1149769f705022f145a3e68952818",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_7_B_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_7_book-spines-original.png",
+    "bytes": 61033,
+    "sha256": "ab38e82476d87ef541325eef4081ed44834c5b451a521b206359069f8b80a27c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_book_7_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_boot.glb",
+    "bytes": 39040,
+    "sha256": "ae2f76de4fedc8e95759ce75af604618388f857f4d11085c7a31d712df6ee8a7",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_brush_cup.glb",
+    "bytes": 387504,
+    "sha256": "a2df6790be87e5390ad4c9bda6754ddfb9f280ae9e5329016cf9e885eb5b8a8c",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_brush_cup_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_cardigan.glb",
+    "bytes": 428620,
+    "sha256": "bd48cd774c159648adf5fa8219cc58199f4ef1fb2bae1de33b2e3533385e57f2",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_cardigan_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_citrus.glb",
+    "bytes": 36072,
+    "sha256": "ba1c995a0a1d7dcd4bdd6db63c6c6e95e2689645645d1c2fcad30a471c97fd2b",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_compact_open.glb",
+    "bytes": 16624,
+    "sha256": "a04fa6c4c77f260ea7b06707bba182ba762090c6f46a345ed9b0975529225697",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_crossbody.glb",
+    "bytes": 39296,
+    "sha256": "597a37175a2b11e71351ad61295722498ce114c0b0acc4783bb855486d4a0c44",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_desk_lamp.glb",
+    "bytes": 21212,
+    "sha256": "297d388ce831f2831eaf385cb051af63043a41b126a612ef692e30996d6d2cf3",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_headphones.glb",
+    "bytes": 29092,
+    "sha256": "77b34f59b569c06cf98168228dfb7b3d97d61ea3fd3d4ea6bed4d40c8a76086e",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_heel.glb",
+    "bytes": 39572,
+    "sha256": "d37d9b230966be0d5d0c8eb6bbbca54db97b00d095d89aecaca7ce899d0e275f",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_hoodie.glb",
+    "bytes": 443688,
+    "sha256": "eb34a59f0626e6ec1d05315782c38fa25e9d842242b8861eeaf5207144f90eac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_hoodie_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_lip_open.glb",
+    "bytes": 15628,
+    "sha256": "8d3c8a5ce302c8aba111fb2a558be86562df3e156626d4d5bdce3409bcca4246",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_melon.glb",
+    "bytes": 36072,
+    "sha256": "08b13c5174f227c171351f6dfe98e28525d5f300def7a269e040120acee222ad",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_palette.glb",
+    "bytes": 28548,
+    "sha256": "1bd137dec56a2845b25b21cfcd8a381a734247b511952e2b555ace23db3a5c11",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_perfume.glb",
+    "bytes": 324584,
+    "sha256": "b7500800effc63463ff05809e8ab3ccfb4bd6f93187a88f7dc698b9250098fce",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_perfume_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_pleated_dress.glb",
+    "bytes": 394636,
+    "sha256": "ec496e84d90beecc76a52d1e9417b124eed34422fc891534c5134b444f3ea10d",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_pleated_dress_wood-oak.png",
+    "bytes": 337998,
+    "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_pump.glb",
+    "bytes": 342104,
+    "sha256": "41a9787e7a405db57c8b34f021b0a02b4b5d834910296591bb33c0349a1cb249",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_pump_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_salad.glb",
+    "bytes": 33032,
+    "sha256": "177b3399927ca08bc9909916c79125858eaa6e834d8dfb5d05a47c7eee91ad14",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_sneaker.glb",
+    "bytes": 45468,
+    "sha256": "3923f297bb39b5be8963dfed99db42266323058e45c96027960ea90e3be2b92f",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_storage_basket.glb",
+    "bytes": 140568,
+    "sha256": "4f29c23e80b8b3e81c25169796de8baf09f60cddda6a93458e3456272fefafe8",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_tablet.glb",
+    "bytes": 320604,
+    "sha256": "facdd84c1fc3f451a741b129aa3f7f0d6b58e2068381ca61e2e42a0875c44c90",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_tablet_retail-editorial-atlas.png",
+    "bytes": 314433,
+    "sha256": "9444b2490e46ccb44e1329d5066e406e1f132819b933ed0bd22b0c7e1b081df4",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_tea_pot.glb",
+    "bytes": 30388,
+    "sha256": "5734cb6af473011ab83bbc1b3160d1a48b8b4fa79ed31d1b0895435bac1b82b1",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  },
+  {
+    "path": "assets/v23/models/sku_v23_tote.glb",
+    "bytes": 47224,
+    "sha256": "c7c147fce1954c8a0e21e41d709d779e907d74fe02b79f650ae7d42b16874fea",
+    "source": "Original v23 Blender/Pillow; inherited materials documented in PROVENANCE.md"
+  }
+]

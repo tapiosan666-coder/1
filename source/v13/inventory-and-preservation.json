@@ -1,0 +1,795 @@
+{
+  "floors": 15,
+  "store_IDs": 480,
+  "toilet_core_floor_locations": 60,
+  "original_canonical_design_bytes_unchanged": true,
+  "original_scan_game_integrated": false,
+  "code_invariants": {
+    "player.gd": {
+      "unchanged_from_v12": true,
+      "sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140"
+    },
+    "escalator_v2.gd": {
+      "unchanged_from_v12": true,
+      "sha256": "4fc49fde6e53316184251730898ff5a8139c7946f050e9826f2a84285aec4739"
+    },
+    "elevators_v11.gd": {
+      "unchanged_from_v12": true,
+      "sha256": "9a79ab4ff50041047a35e04b42dc13730ccc039bab8807a41f5d6ada43053d74"
+    }
+  },
+  "geometry_changes": [
+    {
+      "pack": "base-site",
+      "changed_surface_keys": [
+        "oak@@AB1-001",
+        "oak@@AB1-002",
+        "oak@@AB1-003",
+        "oak@@AB1-004",
+        "oak@@AB1-005",
+        "oak@@AB1-006",
+        "oak@@AB1-007",
+        "oak@@AB1-008",
+        "oak@@AB1-009",
+        "oak@@AB1-010",
+        "oak@@AB1-013",
+        "oak@@AB1-014",
+        "oak@@AB1-015",
+        "oak@@AB1-016",
+        "oak@@AB1-017",
+        "oak@@AB1-018",
+        "oak@@AB1-019",
+        "oak@@AB1-020",
+        "oak@@AB1-021",
+        "oak@@AB1-022",
+        "oak@@AB1-023",
+        "oak@@AB1-024",
+        "oak@@AB1-025",
+        "oak@@AB1-026",
+        "oak@@AB1-027",
+        "oak@@AB1-029",
+        "oak@@AB1-030",
+        "oak@@AB1-031",
+        "oak@@ARF-001",
+        "oak@@ARF-002",
+        "oak@@ARF-003",
+        "oak@@ARF-004",
+        "oak@@ARF-006",
+        "oak@@ARF-007",
+        "oak@@ARF-008",
+        "oak@@ARF-009",
+        "oak@@ARF-010",
+        "oak@@ARF-011",
+        "oak@@ARF-012",
+        "oak@@ARF-013",
+        "oak@@ARF-014",
+        "oak@@ARF-015",
+        "oak@@BB1-MARKET",
+        "oak@@BB1-PICKUP",
+        "oak@@BRF-CAFE",
+        "oak@@CB1-CW-1",
+        "oak@@CB1-CW-2",
+        "oak@@CB1-CW-3",
+        "oak@@CB1-CNW-1",
+        "oak@@CB1-CNW-2",
+        "oak@@CB1-CNW-3",
+        "oak@@CB1-CNE-1",
+        "oak@@CB1-CNE-2",
+        "oak@@CB1-CNE-3",
+        "oak@@CB1-CE-1",
+        "oak@@CB1-CE-2",
+        "oak@@CB1-CE-3",
+        "oak@@CB1-CSE-1",
+        "oak@@CB1-CSE-2",
+        "oak@@CB1-CSE-3",
+        "oak@@CB1-CSW-1",
+        "oak@@CB1-CSW-2",
+        "oak@@CB1-CSW-3",
+        "oak@@CRF-CW-1",
+        "oak@@CRF-CNW-1",
+        "oak@@CRF-CNE-1",
+        "oak@@CRF-CE-1",
+        "oak@@CRF-CSE-1",
+        "oak@@CRF-CSW-1",
+        "ceramic_0@@CORE-A-A-KW",
+        "ceramic_0@@CORE-A-A-KE",
+        "ceramic_0@@CORE-A-A-KS",
+        "ceramic_0@@CORE-B-K1",
+        "ceramic_0@@CORE-B-K2",
+        "ceramic_0@@CORE-B-K3",
+        "ceramic_0@@CORE-C-K-CW",
+        "ceramic_0@@CORE-C-K-CNW",
+        "ceramic_0@@CORE-C-K-CNE",
+        "ceramic_0@@CORE-C-K-CE",
+        "ceramic_0@@CORE-C-K-CSE",
+        "ceramic_0@@CORE-C-K-CSW"
+      ],
+      "changed_collider_materials": [
+        "oak",
+        "ceramic_0"
+      ],
+      "unexpected_structure_changes": [],
+      "wall_floor_glass_geometry_unchanged": true
+    },
+    {
+      "pack": "C-outlet",
+      "changed_surface_keys": [
+        "oak@@AB1-001",
+        "oak@@AB1-002",
+        "oak@@AB1-003",
+        "oak@@AB1-004",
+        "oak@@AB1-005",
+        "oak@@AB1-006",
+        "oak@@AB1-007",
+        "oak@@AB1-008",
+        "oak@@AB1-009",
+        "oak@@AB1-010",
+        "oak@@AB1-013",
+        "oak@@AB1-014",
+        "oak@@AB1-015",
+        "oak@@AB1-016",
+        "oak@@AB1-017",
+        "oak@@AB1-018",
+        "oak@@AB1-019",
+        "oak@@AB1-020",
+        "oak@@AB1-021",
+        "oak@@AB1-022",
+        "oak@@AB1-023",
+        "oak@@AB1-024",
+        "oak@@AB1-025",
+        "oak@@AB1-026",
+        "oak@@AB1-027",
+        "oak@@AB1-029",
+        "oak@@AB1-030",
+        "oak@@AB1-031",
+        "oak@@ARF-001",
+        "oak@@ARF-002",
+        "oak@@ARF-003",
+        "oak@@ARF-004",
+        "oak@@ARF-006",
+        "oak@@ARF-007",
+        "oak@@ARF-008",
+        "oak@@ARF-009",
+        "oak@@ARF-010",
+        "oak@@ARF-011",
+        "oak@@ARF-012",
+        "oak@@ARF-013",
+        "oak@@ARF-014",
+        "oak@@ARF-015",
+        "oak@@BB1-MARKET",
+        "oak@@BB1-PICKUP",
+        "oak@@BRF-CAFE",
+        "oak@@CB1-CW-1",
+        "oak@@CB1-CW-2",
+        "oak@@CB1-CW-3",
+        "oak@@CB1-CNW-1",
+        "oak@@CB1-CNW-2",
+        "oak@@CB1-CNW-3",
+        "oak@@CB1-CNE-1",
+        "oak@@CB1-CNE-2",
+        "oak@@CB1-CNE-3",
+        "oak@@CB1-CE-1",
+        "oak@@CB1-CE-2",
+        "oak@@CB1-CE-3",
+        "oak@@CB1-CSE-1",
+        "oak@@CB1-CSE-2",
+        "oak@@CB1-CSE-3",
+        "oak@@CB1-CSW-1",
+        "oak@@CB1-CSW-2",
+        "oak@@CB1-CSW-3",
+        "oak@@CRF-CW-1",
+        "oak@@CRF-CNW-1",
+        "oak@@CRF-CNE-1",
+        "oak@@CRF-CE-1",
+        "oak@@CRF-CSE-1",
+        "oak@@CRF-CSW-1",
+        "ceramic_0@@CORE-A-A-KW",
+        "ceramic_0@@CORE-A-A-KE",
+        "ceramic_0@@CORE-A-A-KS",
+        "ceramic_0@@CORE-B-K1",
+        "ceramic_0@@CORE-B-K2",
+        "ceramic_0@@CORE-B-K3",
+        "ceramic_0@@CORE-C-K-CW",
+        "ceramic_0@@CORE-C-K-CNW",
+        "ceramic_0@@CORE-C-K-CNE",
+        "ceramic_0@@CORE-C-K-CE",
+        "ceramic_0@@CORE-C-K-CSE",
+        "ceramic_0@@CORE-C-K-CSW"
+      ],
+      "changed_collider_materials": [
+        "oak",
+        "ceramic_0"
+      ],
+      "unexpected_structure_changes": [],
+      "wall_floor_glass_geometry_unchanged": true
+    }
+  ],
+  "retail_allocations": [
+    {
+      "id": "AB1-001",
+      "industry": "食品市場",
+      "fixture_count": 240,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-002",
+      "industry": "生活・ホームセンター",
+      "fixture_count": 240,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-003",
+      "industry": "食品専門店",
+      "fixture_count": 16,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-004",
+      "industry": "食品専門店",
+      "fixture_count": 11,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-005",
+      "industry": "食品専門店",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-006",
+      "industry": "食品専門店",
+      "fixture_count": 18,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-007",
+      "industry": "食品専門店",
+      "fixture_count": 21,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-008",
+      "industry": "食品専門店",
+      "fixture_count": 21,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-009",
+      "industry": "食品専門店",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-010",
+      "industry": "食品専門店",
+      "fixture_count": 13,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-011",
+      "industry": "医薬品",
+      "fixture_count": 6,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-012",
+      "industry": "医薬品",
+      "fixture_count": 2,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-013",
+      "industry": "生活用品",
+      "fixture_count": 2,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-014",
+      "industry": "生活用品",
+      "fixture_count": 2,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-015",
+      "industry": "食品専門店",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-016",
+      "industry": "食品専門店",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-017",
+      "industry": "医薬品",
+      "fixture_count": 21,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-018",
+      "industry": "医薬品",
+      "fixture_count": 21,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-019",
+      "industry": "生活用品",
+      "fixture_count": 13,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-020",
+      "industry": "生活用品",
+      "fixture_count": 18,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-021",
+      "industry": "食品専門店",
+      "fixture_count": 2,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-022",
+      "industry": "医薬品",
+      "fixture_count": 20,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-023",
+      "industry": "医薬品",
+      "fixture_count": 21,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-024",
+      "industry": "生活用品",
+      "fixture_count": 20,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-025",
+      "industry": "生活用品",
+      "fixture_count": 20,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-026",
+      "industry": "地下サービス",
+      "fixture_count": 14,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-027",
+      "industry": "地下サービス",
+      "fixture_count": 12,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-028",
+      "industry": "食品専門店",
+      "fixture_count": 7,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-029",
+      "industry": "食品専門店",
+      "fixture_count": 12,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-030",
+      "industry": "書籍・生活大型店",
+      "fixture_count": 40,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "AB1-031",
+      "industry": "スポーツ大型店",
+      "fixture_count": 63,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "BB1-MARKET",
+      "industry": "地下食品スーパー",
+      "fixture_count": 48,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "BB1-PICKUP",
+      "industry": "食料品・大型受取カウンター",
+      "fixture_count": 80,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CW-1",
+      "industry": "サービス・修理",
+      "fixture_count": 19,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CW-2",
+      "industry": "アウトレット生活雑貨",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CW-3",
+      "industry": "物流受取カウンター",
+      "fixture_count": 25,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CNW-1",
+      "industry": "アウトレット生活雑貨",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CNW-2",
+      "industry": "物流受取カウンター",
+      "fixture_count": 28,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CNW-3",
+      "industry": "サービス・修理",
+      "fixture_count": 26,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CNE-1",
+      "industry": "物流受取カウンター",
+      "fixture_count": 29,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CNE-2",
+      "industry": "サービス・修理",
+      "fixture_count": 35,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CNE-3",
+      "industry": "アウトレット生活雑貨",
+      "fixture_count": 34,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CE-1",
+      "industry": "サービス・修理",
+      "fixture_count": 19,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CE-2",
+      "industry": "アウトレット生活雑貨",
+      "fixture_count": 27,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CE-3",
+      "industry": "物流受取カウンター",
+      "fixture_count": 28,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CSE-1",
+      "industry": "アウトレット生活雑貨",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CSE-2",
+      "industry": "物流受取カウンター",
+      "fixture_count": 28,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CSE-3",
+      "industry": "サービス・修理",
+      "fixture_count": 27,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CSW-1",
+      "industry": "物流受取カウンター",
+      "fixture_count": 21,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CSW-2",
+      "industry": "サービス・修理",
+      "fixture_count": 19,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CB1-CSW-3",
+      "industry": "アウトレット生活雑貨",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-001",
+      "industry": "ガーデンショップ",
+      "fixture_count": 17,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-002",
+      "industry": "軽食テラス",
+      "fixture_count": 29,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-003",
+      "industry": "屋上カフェ",
+      "fixture_count": 40,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-004",
+      "industry": "ガーデンショップ",
+      "fixture_count": 15,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-005",
+      "industry": "屋上カフェ",
+      "fixture_count": 15,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-006",
+      "industry": "屋上カフェ",
+      "fixture_count": 29,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-007",
+      "industry": "ガーデンショップ",
+      "fixture_count": 8,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-008",
+      "industry": "屋上カフェ",
+      "fixture_count": 29,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-009",
+      "industry": "軽食テラス",
+      "fixture_count": 13,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-010",
+      "industry": "ガーデンショップ",
+      "fixture_count": 7,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-011",
+      "industry": "軽食テラス",
+      "fixture_count": 15,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-012",
+      "industry": "屋上カフェ",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-013",
+      "industry": "ガーデンショップ",
+      "fixture_count": 8,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-014",
+      "industry": "軽食テラス",
+      "fixture_count": 23,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "ARF-015",
+      "industry": "ガーデンショップ",
+      "fixture_count": 7,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "BRF-CAFE",
+      "industry": "屋上カフェ・休憩ラウンジ",
+      "fixture_count": 29,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CRF-CW-1",
+      "industry": "屋上ラウンジ",
+      "fixture_count": 13,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CRF-CNW-1",
+      "industry": "庭園管理・休憩",
+      "fixture_count": 8,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CRF-CNE-1",
+      "industry": "展望カフェ",
+      "fixture_count": 21,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CRF-CE-1",
+      "industry": "屋上ラウンジ",
+      "fixture_count": 15,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CRF-CSE-1",
+      "industry": "庭園管理・休憩",
+      "fixture_count": 8,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    },
+    {
+      "id": "CRF-CSW-1",
+      "industry": "展望カフェ",
+      "fixture_count": 13,
+      "counter_placed": true,
+      "fixtures_outside_sales_m2": 0.0,
+      "primary_aisle_m": 2.1
+    }
+  ],
+  "structural_capacity_certified": false,
+  "RF_SUPPORT_16": "UNAPPROVED"
+}

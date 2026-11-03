@@ -1,0 +1,906 @@
+{
+  "method": "Two approach sides,5 rays per side, actual inherited foliage triangles; a representative visibility screen, not all-camera occlusion certification. Meshes/landscape unchanged.",
+  "changes": [
+    {
+      "variant": "normal",
+      "board": "V21-normal-A-1F-NAV-1",
+      "before": [
+        309.0,
+        0.0,
+        -60.0
+      ],
+      "after": [
+        310.0,
+        0.0,
+        -59.0
+      ],
+      "before_blocked_rays_of_10": 2,
+      "after_blocked_rays_of_10": 1,
+      "reason": "Inherited visual foliage obscured the sign although physics trunk clearance passed. Relocated sign, not tree; path and arrows revalidated at runtime."
+    },
+    {
+      "variant": "C",
+      "board": "V21-normal-A-1F-NAV-1",
+      "before": [
+        309.0,
+        0.0,
+        -60.0
+      ],
+      "after": [
+        310.0,
+        0.0,
+        -59.0
+      ],
+      "before_blocked_rays_of_10": 2,
+      "after_blocked_rays_of_10": 1,
+      "reason": "Inherited visual foliage obscured the sign although physics trunk clearance passed. Relocated sign, not tree; path and arrows revalidated at runtime."
+    },
+    {
+      "variant": "ES",
+      "board": "V21-normal-A-1F-NAV-1",
+      "before": [
+        309.0,
+        0.0,
+        -60.0
+      ],
+      "after": [
+        310.0,
+        0.0,
+        -59.0
+      ],
+      "before_blocked_rays_of_10": 2,
+      "after_blocked_rays_of_10": 1,
+      "reason": "Inherited visual foliage obscured the sign although physics trunk clearance passed. Relocated sign, not tree; path and arrows revalidated at runtime."
+    },
+    {
+      "variant": "normal",
+      "board": "V21-normal-A-1F-NAV-1",
+      "before": [
+        310.0,
+        0.0,
+        -59.0
+      ],
+      "after": [
+        311.0,
+        0.0,
+        -59.0
+      ],
+      "before_blocked_rays_of_10": 1,
+      "after_blocked_rays_of_10": 0,
+      "reason": "Inherited visual foliage obscured the sign although physics trunk clearance passed. Relocated sign, not tree; path and arrows revalidated at runtime."
+    },
+    {
+      "variant": "C",
+      "board": "V21-normal-A-1F-NAV-1",
+      "before": [
+        310.0,
+        0.0,
+        -59.0
+      ],
+      "after": [
+        311.0,
+        0.0,
+        -59.0
+      ],
+      "before_blocked_rays_of_10": 1,
+      "after_blocked_rays_of_10": 0,
+      "reason": "Inherited visual foliage obscured the sign although physics trunk clearance passed. Relocated sign, not tree; path and arrows revalidated at runtime."
+    },
+    {
+      "variant": "ES",
+      "board": "V21-normal-A-1F-NAV-1",
+      "before": [
+        310.0,
+        0.0,
+        -59.0
+      ],
+      "after": [
+        311.0,
+        0.0,
+        -59.0
+      ],
+      "before_blocked_rays_of_10": 1,
+      "after_blocked_rays_of_10": 0,
+      "reason": "Inherited visual foliage obscured the sign although physics trunk clearance passed. Relocated sign, not tree; path and arrows revalidated at runtime."
+    }
+  ],
+  "unresolved": [],
+  "source_surfaces": [
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@A-B1",
+      "triangles": 84
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@A-1F",
+      "triangles": 56
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@A-2F",
+      "triangles": 84
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@A-3F",
+      "triangles": 84
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@A-RF",
+      "triangles": 84
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@C-B1",
+      "triangles": 112
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@C-2F",
+      "triangles": 28
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@C-3F",
+      "triangles": 28
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@C-RF",
+      "triangles": 28
+    },
+    {
+      "pack": "assets/v10/base-site.pack.zst",
+      "surface": "leaf@@SITE-TERRAIN",
+      "triangles": 5224
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@PUBLIC-A-PW-0-P0",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@PUBLIC-A-PW-0-P0",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@PUBLIC-A-PW-0-P0",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@PUBLIC-P-T-1-1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@PUBLIC-P-T-1-1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@PUBLIC-P-T-1-1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@PUBLIC-P-T-1-2-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@PUBLIC-P-T-1-2-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@PUBLIC-P-T-1-2-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@PUBLIC-C-GATE-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@PUBLIC-C-GATE-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@PUBLIC-C-GATE-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@PUBLIC-C-GATE-0-1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@PUBLIC-C-GATE-0-1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@PUBLIC-C-GATE-0-1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@PUBLIC-C-CENTRAL-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@PUBLIC-C-CENTRAL-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@PUBLIC-C-CENTRAL-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@PUBLIC-C-NORTH-GARDEN-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@PUBLIC-C-NORTH-GARDEN-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@PUBLIC-C-NORTH-GARDEN-0--1-P",
+      "triangles": 390
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--24",
+      "triangles": 123
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--44--23",
+      "triangles": 93
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--43--22",
+      "triangles": 162
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--45--24",
+      "triangles": 24
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--45--23",
+      "triangles": 78
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--45--23",
+      "triangles": 60
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--42--24",
+      "triangles": 60
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--43--22",
+      "triangles": 147
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--42--22",
+      "triangles": 75
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--42--22",
+      "triangles": 132
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--22",
+      "triangles": 123
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--25",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--44--24",
+      "triangles": 135
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--43--22",
+      "triangles": 102
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--42--24",
+      "triangles": 66
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--45--24",
+      "triangles": 30
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--22",
+      "triangles": 165
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--42--23",
+      "triangles": 90
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--45--22",
+      "triangles": 108
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--43--24",
+      "triangles": 78
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--45--22",
+      "triangles": 147
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--42--22",
+      "triangles": 99
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--42--23",
+      "triangles": 141
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--43--23",
+      "triangles": 144
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--23",
+      "triangles": 117
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--23",
+      "triangles": 105
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--43--24",
+      "triangles": 126
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--42--24",
+      "triangles": 60
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--25",
+      "triangles": 12
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--43--24",
+      "triangles": 102
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--43--23",
+      "triangles": 117
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--44--22",
+      "triangles": 93
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--43--23",
+      "triangles": 141
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--21",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--42--23",
+      "triangles": 114
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--45--23",
+      "triangles": 63
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--45--22",
+      "triangles": 123
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--24",
+      "triangles": 78
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--45--21",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--46--22",
+      "triangles": 12
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--45--24",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--46--22",
+      "triangles": 15
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--46--21",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--45--21",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--46--21",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--46--21",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--45--21",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--46--22",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--44--25",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--21",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@SHRUBS-L-1",
+      "triangles": 1152
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@SHRUBS-L-1",
+      "triangles": 576
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@SHRUBS-L-1",
+      "triangles": 576
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--34--24",
+      "triangles": 51
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--34--23",
+      "triangles": 141
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--33--22",
+      "triangles": 27
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--34--23",
+      "triangles": 126
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--34--23",
+      "triangles": 117
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--35--24",
+      "triangles": 99
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--35--24",
+      "triangles": 93
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--34--24",
+      "triangles": 84
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--33--23",
+      "triangles": 36
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--33--23",
+      "triangles": 39
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--34--22",
+      "triangles": 30
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--33--22",
+      "triangles": 60
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--35--24",
+      "triangles": 78
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--33--22",
+      "triangles": 33
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--34--24",
+      "triangles": 81
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--35--23",
+      "triangles": 30
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--34--22",
+      "triangles": 33
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--35--23",
+      "triangles": 33
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--34--22",
+      "triangles": 36
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--33--23",
+      "triangles": 33
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--35--23",
+      "triangles": 27
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--35--25",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--35--25",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--35--25",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@SHRUBS-L-2",
+      "triangles": 960
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@SHRUBS-L-2",
+      "triangles": 576
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@SHRUBS-L-2",
+      "triangles": 1152
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--43--17",
+      "triangles": 162
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--45--17",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--41--17",
+      "triangles": 135
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--42--18",
+      "triangles": 81
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--43--18",
+      "triangles": 114
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--18",
+      "triangles": 60
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--41--16",
+      "triangles": 42
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--42--17",
+      "triangles": 147
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--42--16",
+      "triangles": 72
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--42--16",
+      "triangles": 60
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--43--18",
+      "triangles": 75
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--42--18",
+      "triangles": 123
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--41--16",
+      "triangles": 48
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--42--17",
+      "triangles": 186
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--44--18",
+      "triangles": 42
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--42--16",
+      "triangles": 57
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--17",
+      "triangles": 153
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--16",
+      "triangles": 45
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--41--17",
+      "triangles": 96
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--44--17",
+      "triangles": 150
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--43--17",
+      "triangles": 156
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--42--18",
+      "triangles": 120
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--44--16",
+      "triangles": 66
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--41--17",
+      "triangles": 123
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--42--17",
+      "triangles": 132
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--43--18",
+      "triangles": 90
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--43--17",
+      "triangles": 162
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--40--16",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--43--16",
+      "triangles": 60
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--45--17",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--44--16",
+      "triangles": 42
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--43--16",
+      "triangles": 105
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--41--16",
+      "triangles": 39
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--17",
+      "triangles": 165
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--43--16",
+      "triangles": 57
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--44--18",
+      "triangles": 48
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--41--18",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--45--17",
+      "triangles": 15
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@GRASS--40--17",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--40--16",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--41--18",
+      "triangles": 9
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--40--17",
+      "triangles": 6
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--45--18",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@GRASS--40--16",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@GRASS--41--18",
+      "triangles": 3
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf2@@SHRUBS-L-3",
+      "triangles": 1152
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf0@@SHRUBS-L-3",
+      "triangles": 768
+    },
+    {
+      "pack": "assets/v10/fitout.pack.zst",
+      "surface": "v8_leaf1@@SHRUBS-L-3",
+      "triangles": 576
+    }
+  ],
+  "triangle_count": 29815
+}
