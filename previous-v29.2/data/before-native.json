@@ -1,0 +1,1442 @@
+{
+  "Windows_GPU_measured": false,
+  "actual_Godot_viewport": true,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "camera_feet": [
+    {
+      "floor": true,
+      "id": "ad-A1F-023",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-A1F-044",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-B1-040",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-C1F-CE-3",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-A1F-004",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-B1-052",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-B1-043",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-C1F-CW-1",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-044-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "C1F-CE-3-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "C1F-CE-3-centre",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "bakery-entry-turn",
+      "standing": true
+    }
+  ],
+  "campaigns": {
+
+  },
+  "engine": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "human_playtest": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "revision": "29.2",
+  "route_checks": [
+    {
+      "id": "A-1F-R001",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R002",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R003",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R004",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R005",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R006",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R007",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R008",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R009",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R010",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R011",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R012",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R013",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R014",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R015",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R016",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R017",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R018",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R019",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R020",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R021",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R022",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R023",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R024",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R025",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R026",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R027",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R028",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R029",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R030",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R031",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R032",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R033",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R034",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R035",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R036",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R037",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R038",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R039",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R040",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R041",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R042",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R043",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R044",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R045",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R046",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R047",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R048",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R049",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R050",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R051",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R052",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R053",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R054",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R055",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R056",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R057",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R058",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R059",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R060",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R061",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R062",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R063",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R064",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R065",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R066",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R067",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R068",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R069",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R070",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R071",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R072",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R073",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R074",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R075",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R076",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R077",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R078",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R079",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R080",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R081",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R082",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R083",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R084",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R085",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R086",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R087",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R088",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R089",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R090",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R091",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R092",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R093",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R094",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R095",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R096",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R097",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R098",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R099",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R100",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R101",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R102",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R103",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R104",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R105",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R106",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R107",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R108",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R109",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R110",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R111",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R112",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R113",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R114",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R115",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R116",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R117",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R118",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R119",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R120",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R121",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R122",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R123",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R124",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R125",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R126",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R127",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R128",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R129",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R130",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R131",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R132",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R133",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R134",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R135",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R136",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R137",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R138",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R139",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R140",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R141",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R142",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R143",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R144",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R145",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R146",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R147",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R148",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R149",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R150",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R151",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R152",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R153",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R154",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R155",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R156",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R157",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R158",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R159",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R160",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R161",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R162",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R163",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R164",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R165",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R166",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R167",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R168",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R169",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R170",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R171",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R172",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R173",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R174",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R175",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R176",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R177",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R178",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R179",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R180",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R181",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R182",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R183",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R184",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R185",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R186",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R187",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R188",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R189",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R190",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R191",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R192",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R193",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R194",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R195",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R196",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R197",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R198",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R199",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R200",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R201",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R202",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R203",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R204",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R205",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R206",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R207",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R208",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R209",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R210",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R211",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R212",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R213",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R214",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R215",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R216",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R217",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R218",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R219",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R220",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R221",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R222",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R223",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R224",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R225",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R226",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R227",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R228",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R229",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R230",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R231",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R232",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R233",
+      "pass": true
+    }
+  ],
+  "rows": [
+    {
+      "CPU_process_ms": 5429.77,
+      "camera": {
+        "eye": [
+          576.027282714844,
+          1.64999997615814,
+          13.0448160171509
+        ],
+        "fov": 60.0,
+        "genre": "beauty",
+        "id": "ad-A1F-023",
+        "look": [
+          577.821044921875,
+          1.89999997615814,
+          13.1942834854126
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-023",
+        "title": "NOLLIA HOUSE｜コスメ人物広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 6895.165,
+      "draw_calls": 1947.0,
+      "file": "before/ad-A1F-023.jpg",
+      "primitives": 1048508.0,
+      "save_error": 0,
+      "static_memory_bytes": 2345882117.0,
+      "video_memory_bytes": 1934940512.0
+    },
+    {
+      "CPU_process_ms": 3449.956,
+      "camera": {
+        "eye": [
+          356.850524902344,
+          1.64999997615814,
+          52.4915962219238
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-044",
+        "look": [
+          355.624816894531,
+          1.89999997615814,
+          51.1733932495117
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-044",
+        "title": "ALVENE WORKS｜ファッション人物広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 6362.077,
+      "draw_calls": 7763.0,
+      "file": "before/ad-A1F-044.jpg",
+      "primitives": 4479613.0,
+      "save_error": 0,
+      "static_memory_bytes": 2361734486.0,
+      "video_memory_bytes": 1934940512.0
+    },
+    {
+      "CPU_process_ms": 6401.306,
+      "camera": {
+        "eye": [
+          -31.9625205993652,
+          1.64999997615814,
+          -13.5289392471313
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-040",
+        "look": [
+          -33.1496658325195,
+          1.89999997615814,
+          -12.175910949707
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-040",
+        "title": "TERRUNE BAKERY｜カフェ人物広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 5203.791,
+      "draw_calls": 5501.0,
+      "file": "before/ad-B1-040.jpg",
+      "primitives": 2632554.0,
+      "save_error": 0,
+      "static_memory_bytes": 2365236170.0,
+      "video_memory_bytes": 1937824096.0
+    },
+    {
+      "CPU_process_ms": 5240.419,
+      "camera": {
+        "eye": [
+          137.572082519531,
+          1.64999997615814,
+          -250.967620849609
+        ],
+        "fov": 60.0,
+        "genre": "family",
+        "id": "ad-C1F-CE-3",
+        "look": [
+          137.201263427734,
+          1.89999997615814,
+          -249.206237792969
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CE-3",
+        "title": "RIVORA LANE｜キッズ・家族広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 4457.903,
+      "draw_calls": 5549.0,
+      "file": "before/ad-C1F-CE-3.jpg",
+      "primitives": 3026594.0,
+      "save_error": 0,
+      "static_memory_bytes": 2366707962.0,
+      "video_memory_bytes": 1936382304.0
+    },
+    {
+      "CPU_process_ms": 4483.52,
+      "camera": {
+        "eye": [
+          373.178009033203,
+          1.64999997615814,
+          -23.0430278778076
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-004",
+        "look": [
+          374.977996826172,
+          1.89999997615814,
+          -23.0430278778076
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-004",
+        "title": "ALVENE STUDIO｜ファッション人物広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4815.202,
+      "draw_calls": 5957.0,
+      "file": "before/ad-A1F-004.jpg",
+      "primitives": 2579841.0,
+      "save_error": 0,
+      "static_memory_bytes": 2372701470.0,
+      "video_memory_bytes": 1936382304.0
+    },
+    {
+      "CPU_process_ms": 4847.097,
+      "camera": {
+        "eye": [
+          92.1223068237305,
+          1.64999997615814,
+          31.3652076721191
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-052",
+        "look": [
+          92.7232284545898,
+          1.89999997615814,
+          33.061939239502
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-052",
+        "title": "SORELI EDIT｜カフェ人物広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 2937.372,
+      "draw_calls": 2733.0,
+      "file": "before/ad-B1-052.jpg",
+      "primitives": 1845081.0,
+      "save_error": 0,
+      "static_memory_bytes": 2373220478.0,
+      "video_memory_bytes": 1969942576.0
+    },
+    {
+      "CPU_process_ms": 2969.915,
+      "camera": {
+        "eye": [
+          -29.747709274292,
+          1.64999997615814,
+          -11.5816783905029
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-B1-043",
+        "look": [
+          -30.9348545074463,
+          1.85000002384186,
+          -10.2286500930786
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-043",
+        "title": "MIREVA STUDIO｜ファッション人物広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4113.118,
+      "draw_calls": 5208.0,
+      "file": "before/ad-B1-043.jpg",
+      "primitives": 2513423.0,
+      "save_error": 0,
+      "static_memory_bytes": 2373250926.0,
+      "video_memory_bytes": 1969942576.0
+    },
+    {
+      "CPU_process_ms": 4146.695,
+      "camera": {
+        "eye": [
+          -155.890747070312,
+          1.64999997615814,
+          -321.269073486328
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-C1F-CW-1",
+        "look": [
+          -157.647918701172,
+          1.89999997615814,
+          -320.878753662109
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CW-1",
+        "title": "VELORIA LANE｜ファッション人物広告",
+        "variants": [
+          "combined"
+        ],
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 2739.065,
+      "draw_calls": 867.0,
+      "file": "before/ad-C1F-CW-1.jpg",
+      "primitives": 1568153.0,
+      "save_error": 0,
+      "static_memory_bytes": 2373413110.0,
+      "video_memory_bytes": 1969942576.0
+    },
+    {
+      "CPU_process_ms": 2767.895,
+      "camera": {
+        "eye": [
+          370.607181029605,
+          1.65,
+          48.6470166926585
+        ],
+        "fov": 78.0,
+        "id": "A1F-044-front",
+        "look": [
+          366.066699527818,
+          2.5,
+          52.868867913619
+        ],
+        "store_id": "A1F-044",
+        "title": "衣料品店・入口",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3582.925,
+      "draw_calls": 5640.0,
+      "file": "before/A1F-044-front.jpg",
+      "primitives": 3234539.0,
+      "save_error": 0,
+      "static_memory_bytes": 2373736798.0,
+      "video_memory_bytes": 1969942576.0
+    },
+    {
+      "CPU_process_ms": 3615.36,
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "title": "ベーカリー・入口",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4403.222,
+      "draw_calls": 7422.0,
+      "file": "before/B1-040-front.jpg",
+      "primitives": 3803299.0,
+      "save_error": 0,
+      "static_memory_bytes": 2374344894.0,
+      "video_memory_bytes": 1969948416.0
+    },
+    {
+      "CPU_process_ms": 4447.535,
+      "camera": {
+        "eye": [
+          133.594430680577,
+          1.65,
+          -262.62861770994
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-3-front",
+        "look": [
+          139.661439347495,
+          2.5,
+          -261.351352727431
+        ],
+        "store_id": "C1F-CE-3",
+        "title": "キッズ店・中央展示",
+        "variants": [
+          "combined"
+        ],
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 3863.97,
+      "draw_calls": 5062.0,
+      "file": "before/C1F-CE-3-front.jpg",
+      "primitives": 3453154.0,
+      "save_error": 0,
+      "static_memory_bytes": 2376417330.0,
+      "video_memory_bytes": 1969948416.0
+    },
+    {
+      "CPU_process_ms": 3902.519,
+      "camera": {
+        "eye": [
+          146.058806421824,
+          1.65,
+          -260.004538606519
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-centre",
+        "look": [
+          151.89194169013,
+          1.55,
+          -258.776510128981
+        ],
+        "store_id": "C1F-CE-3",
+        "title": "キッズ店・子どもサイズの衣料展示",
+        "variants": [
+          "combined"
+        ],
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 2878.483,
+      "draw_calls": 4456.0,
+      "file": "before/C1F-CE-3-centre.jpg",
+      "primitives": 3450220.0,
+      "save_error": 0,
+      "static_memory_bytes": 2376420042.0,
+      "video_memory_bytes": 1969948416.0
+    },
+    {
+      "CPU_process_ms": 2913.766,
+      "camera": {
+        "eye": [
+          -32.5,
+          1.65,
+          -15.0
+        ],
+        "fov": 75.0,
+        "id": "bakery-entry-turn",
+        "look": [
+          -38.0,
+          1.35,
+          -26.0
+        ],
+        "scope": "v29.1 focused area",
+        "title": "ベーカリーの人物広告と店内案内",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 3815.342,
+      "draw_calls": 7837.0,
+      "file": "before/bakery-entry-turn.jpg",
+      "primitives": 3359062.0,
+      "save_error": 0,
+      "static_memory_bytes": 2377039954.0,
+      "video_memory_bytes": 1969948416.0
+    }
+  ],
+  "settings": {
+    "B_ES": true,
+    "C": true,
+    "cap": 144,
+    "continuous": true,
+    "vsync": 1
+  },
+  "side": "before"
+}

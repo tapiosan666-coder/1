@@ -1,0 +1,1727 @@
+{
+  "Windows_GPU_measured": false,
+  "actual_Godot_viewport": true,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "camera_feet": [
+    {
+      "floor": true,
+      "id": "ad-A1F-023",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-A1F-044",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-B1-040",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-C1F-CE-3",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-A1F-004",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-B1-052",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-B1-043",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "ad-C1F-CW-1",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-044-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "C1F-CE-3-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "C1F-CE-3-centre",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "bakery-entry-turn",
+      "standing": true
+    }
+  ],
+  "campaigns": {
+    "architecture_changed": false,
+    "directions": [
+      {
+        "actual_path": [
+          [
+            -32.4426536560059,
+            0.02,
+            -12.9817152023315
+          ],
+          [
+            -30.4799995422363,
+            0.0199999995529652,
+            -12.1548643112183
+          ],
+          [
+            -31.2000007629395,
+            0.02,
+            -36.4000015258789
+          ],
+          [
+            -33.2000007629395,
+            0.02,
+            -40.0
+          ]
+        ],
+        "arrow": "→",
+        "source": "Same existing checkout and actual path, not a decorative invented direction",
+        "store_id": "B1-040",
+        "sweep_pass": true,
+        "target_fixture": "V22-B1-040-checkout-2306",
+        "viewer": [
+          -32.4426536560059,
+          0.0199999995529652,
+          -12.9817152023315
+        ]
+      }
+    ],
+    "existing_panel_campaigns": [
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "ALVENE STUDIO",
+        "genre": "fashion",
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          374.977996826172,
+          1.89999997615814,
+          -23.0430278778076
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "A1F-004",
+        "support": "Collision_v10_chalk",
+        "world_p": [
+          374.971008300781,
+          1.89999997615814,
+          -23.0430278778076
+        ]
+      },
+      {
+        "atlas_region": [
+          0.5,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "NOLLIA HOUSE",
+        "genre": "beauty",
+        "normal": [
+          -0.996546447277069,
+          0.0,
+          -0.0830375328660011
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          577.821044921875,
+          1.89999997615814,
+          13.1942834854126
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "A1F-023",
+        "support": "Collision_v10_chalk",
+        "world_p": [
+          577.814086914062,
+          1.89999997615814,
+          13.1937026977539
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "SORELI EDIT",
+        "genre": "cafe",
+        "normal": [
+          -0.333844244480133,
+          0.0,
+          -0.942628264427185
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          92.7232284545898,
+          1.89999997615814,
+          33.061939239502
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "B1-052",
+        "support": "Collision_wall_sage",
+        "world_p": [
+          92.7208938598633,
+          1.89999997615814,
+          33.0553398132324
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "VELORIA LANE",
+        "genre": "fashion",
+        "normal": [
+          0.976206243038177,
+          0.0,
+          -0.21684430539608
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -157.647918701172,
+          1.89999997615814,
+          -320.878753662109
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "C1F-CW-1",
+        "support": "Collision_v10_charcoal",
+        "world_p": [
+          -157.641082763672,
+          1.89999997615814,
+          -320.880279541016
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "MIREVA STUDIO",
+        "genre": "fashion",
+        "normal": [
+          0.659525096416473,
+          0.0,
+          -0.751682579517365
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -31.3633136749268,
+          1.85000002384186,
+          -10.6045789718628
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          1.08000004291534,
+          1.62000000476837
+        ],
+        "store_id": "B1-043",
+        "support": "Collision_wall_sage",
+        "world_p": [
+          -30.9302387237549,
+          1.85000002384186,
+          -10.2339115142822
+        ]
+      }
+    ],
+    "human_playtest": false,
+    "new_store_posters": [
+      {
+        "actual_supports": [
+          "Collision_v10_chalk",
+          "Collision_v10_chalk",
+          "Collision_v10_chalk"
+        ],
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "ALVENE WORKS",
+        "genre": "fashion",
+        "normal": [
+          0.680943608283997,
+          0.0,
+          0.732335865497589
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          355.624816894531,
+          1.89999997615814,
+          51.1733932495117
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "A1F-044",
+        "view": [
+          356.354766845703,
+          0.0199999995529652,
+          51.9584579467773
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          355.629577636719,
+          1.89999997615814,
+          51.1785202026367
+        ]
+      },
+      {
+        "actual_supports": [
+          "Collision_wall_sage",
+          "Collision_wall_sage",
+          "Collision_wall_sage"
+        ],
+        "atlas_region": [
+          0.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "TERRUNE BAKERY",
+        "genre": "cafe",
+        "normal": [
+          0.659525096416473,
+          0.0,
+          -0.751682579517365
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -33.1496658325195,
+          1.89999997615814,
+          -12.175910949707
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "B1-040",
+        "view": [
+          -32.4426536560059,
+          0.0199999995529652,
+          -12.9817152023315
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          -33.1450500488281,
+          1.89999997615814,
+          -12.1811723709106
+        ]
+      },
+      {
+        "actual_supports": [
+          "Collision_v10_chalk",
+          "Collision_v10_chalk",
+          "Collision_v10_chalk"
+        ],
+        "atlas_region": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "RIVORA LANE",
+        "genre": "family",
+        "normal": [
+          0.206010952591896,
+          0.0,
+          -0.978549718856812
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          137.201263427734,
+          1.89999997615814,
+          -249.206237792969
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "C1F-CE-3",
+        "view": [
+          137.422103881836,
+          0.0199999995529652,
+          -250.255233764648
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          137.202713012695,
+          1.89999997615814,
+          -249.213088989258
+        ]
+      }
+    ],
+    "omissions": [],
+    "revision": "v29.2"
+  },
+  "engine": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "human_playtest": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "revision": "29.2",
+  "route_checks": [
+    {
+      "id": "A-1F-R001",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R002",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R003",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R004",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R005",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R006",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R007",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R008",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R009",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R010",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R011",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R012",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R013",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R014",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R015",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R016",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R017",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R018",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R019",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R020",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R021",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R022",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R023",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R024",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R025",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R026",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R027",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R028",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R029",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R030",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R031",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R032",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R033",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R034",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R035",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R036",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R037",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R038",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R039",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R040",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R041",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R042",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R043",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R044",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R045",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R046",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R047",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R048",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R049",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R050",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R051",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R052",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R053",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R054",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R055",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R056",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R057",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R058",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R059",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R060",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R061",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R062",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R063",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R064",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R065",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R066",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R067",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R068",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R069",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R070",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R071",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R072",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R073",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R074",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R075",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R076",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R077",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R078",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R079",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R080",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R081",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R082",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R083",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R084",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R085",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R086",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R087",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R088",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R089",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R090",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R091",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R092",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R093",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R094",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R095",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R096",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R097",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R098",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R099",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R100",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R101",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R102",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R103",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R104",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R105",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R106",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R107",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R108",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R109",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R110",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R111",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R112",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R113",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R114",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R115",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R116",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R117",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R118",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R119",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R120",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R121",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R122",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R123",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R124",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R125",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R126",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R127",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R128",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R129",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R130",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R131",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R132",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R133",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R134",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R135",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R136",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R137",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R138",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R139",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R140",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R141",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R142",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R143",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R144",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R145",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R146",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R147",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R148",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R149",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R150",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R151",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R152",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R153",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R154",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R155",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R156",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R157",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R158",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R159",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R160",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R161",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R162",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R163",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R164",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R165",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R166",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R167",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R168",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R169",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R170",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R171",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R172",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R173",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R174",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R175",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R176",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R177",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R178",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R179",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R180",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R181",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R182",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R183",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R184",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R185",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R186",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R187",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R188",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R189",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R190",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R191",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R192",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R193",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R194",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R195",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R196",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R197",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R198",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R199",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R200",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R201",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R202",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R203",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R204",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R205",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R206",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R207",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R208",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R209",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R210",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R211",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R212",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R213",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R214",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R215",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R216",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R217",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R218",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R219",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R220",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R221",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R222",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R223",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R224",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R225",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R226",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R227",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R228",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R229",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R230",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R231",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R232",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R233",
+      "pass": true
+    }
+  ],
+  "rows": [
+    {
+      "CPU_process_ms": 10383.653,
+      "camera": {
+        "eye": [
+          576.027282714844,
+          1.64999997615814,
+          13.0448160171509
+        ],
+        "fov": 60.0,
+        "genre": "beauty",
+        "id": "ad-A1F-023",
+        "look": [
+          577.821044921875,
+          1.89999997615814,
+          13.1942834854126
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-023",
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 11504.679,
+      "draw_calls": 1953.0,
+      "file": "after/ad-A1F-023.jpg",
+      "primitives": 1048570.0,
+      "save_error": 0,
+      "static_memory_bytes": 2353756042.0,
+      "video_memory_bytes": 1929740032.0
+    },
+    {
+      "CPU_process_ms": 3073.016,
+      "camera": {
+        "eye": [
+          356.850524902344,
+          1.64999997615814,
+          52.4915962219238
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-044",
+        "look": [
+          355.624816894531,
+          1.89999997615814,
+          51.1733932495117
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 5442.699,
+      "draw_calls": 7776.0,
+      "file": "after/ad-A1F-044.jpg",
+      "primitives": 4479721.0,
+      "save_error": 0,
+      "static_memory_bytes": 2369630215.0,
+      "video_memory_bytes": 1929740032.0
+    },
+    {
+      "CPU_process_ms": 5472.781,
+      "camera": {
+        "eye": [
+          -31.9625205993652,
+          1.64999997615814,
+          -13.5289392471313
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-040",
+        "look": [
+          -33.1496658325195,
+          1.89999997615814,
+          -12.175910949707
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 5002.175,
+      "draw_calls": 5515.0,
+      "file": "after/ad-B1-040.jpg",
+      "primitives": 2632686.0,
+      "save_error": 0,
+      "static_memory_bytes": 2373157451.0,
+      "video_memory_bytes": 1932623616.0
+    },
+    {
+      "CPU_process_ms": 5051.682,
+      "camera": {
+        "eye": [
+          137.572082519531,
+          1.64999997615814,
+          -250.967620849609
+        ],
+        "fov": 60.0,
+        "genre": "family",
+        "id": "ad-C1F-CE-3",
+        "look": [
+          137.201263427734,
+          1.89999997615814,
+          -249.206237792969
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 6490.238,
+      "draw_calls": 5563.0,
+      "file": "after/ad-C1F-CE-3.jpg",
+      "primitives": 3026708.0,
+      "save_error": 0,
+      "static_memory_bytes": 2374653531.0,
+      "video_memory_bytes": 1931181824.0
+    },
+    {
+      "CPU_process_ms": 6531.623,
+      "camera": {
+        "eye": [
+          373.178009033203,
+          1.64999997615814,
+          -23.0430278778076
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-004",
+        "look": [
+          374.977996826172,
+          1.89999997615814,
+          -23.0430278778076
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-004",
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4809.197,
+      "draw_calls": 5963.0,
+      "file": "after/ad-A1F-004.jpg",
+      "primitives": 2579919.0,
+      "save_error": 0,
+      "static_memory_bytes": 2380660903.0,
+      "video_memory_bytes": 1931181824.0
+    },
+    {
+      "CPU_process_ms": 4842.728,
+      "camera": {
+        "eye": [
+          92.1223068237305,
+          1.64999997615814,
+          31.3652076721191
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-052",
+        "look": [
+          92.7232284545898,
+          1.89999997615814,
+          33.061939239502
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-052",
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 2972.783,
+      "draw_calls": 2738.0,
+      "file": "after/ad-B1-052.jpg",
+      "primitives": 1845143.0,
+      "save_error": 0,
+      "static_memory_bytes": 2381190943.0,
+      "video_memory_bytes": 1964742096.0
+    },
+    {
+      "CPU_process_ms": 3006.394,
+      "camera": {
+        "eye": [
+          -29.747709274292,
+          1.64999997615814,
+          -11.5816783905029
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-B1-043",
+        "look": [
+          -30.9348545074463,
+          1.85000002384186,
+          -10.2286500930786
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-043",
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4290.535,
+      "draw_calls": 5215.0,
+      "file": "after/ad-B1-043.jpg",
+      "primitives": 2513501.0,
+      "save_error": 0,
+      "static_memory_bytes": 2381236387.0,
+      "video_memory_bytes": 1964742096.0
+    },
+    {
+      "CPU_process_ms": 4330.639,
+      "camera": {
+        "eye": [
+          -155.890747070312,
+          1.64999997615814,
+          -321.269073486328
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-C1F-CW-1",
+        "look": [
+          -157.647918701172,
+          1.89999997615814,
+          -320.878753662109
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CW-1",
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 3365.117,
+      "draw_calls": 873.0,
+      "file": "after/ad-C1F-CW-1.jpg",
+      "primitives": 1568229.0,
+      "save_error": 0,
+      "static_memory_bytes": 2381411811.0,
+      "video_memory_bytes": 1964742096.0
+    },
+    {
+      "CPU_process_ms": 3397.867,
+      "camera": {
+        "eye": [
+          370.607181029605,
+          1.65,
+          48.6470166926585
+        ],
+        "fov": 78.0,
+        "id": "A1F-044-front",
+        "look": [
+          366.066699527818,
+          2.5,
+          52.868867913619
+        ],
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4307.736,
+      "draw_calls": 5654.0,
+      "file": "after/A1F-044-front.jpg",
+      "primitives": 3234659.0,
+      "save_error": 0,
+      "static_memory_bytes": 2381735451.0,
+      "video_memory_bytes": 1964742096.0
+    },
+    {
+      "CPU_process_ms": 4350.968,
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4891.772,
+      "draw_calls": 7446.0,
+      "file": "after/B1-040-front.jpg",
+      "primitives": 3803535.0,
+      "save_error": 0,
+      "static_memory_bytes": 2382343575.0,
+      "video_memory_bytes": 1964747936.0
+    },
+    {
+      "CPU_process_ms": 4953.195,
+      "camera": {
+        "eye": [
+          133.594430680577,
+          1.65,
+          -262.62861770994
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-3-front",
+        "look": [
+          139.661439347495,
+          2.5,
+          -261.351352727431
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 4142.571,
+      "draw_calls": 5100.0,
+      "file": "after/C1F-CE-3-front.jpg",
+      "primitives": 3443704.0,
+      "save_error": 0,
+      "static_memory_bytes": 2384469679.0,
+      "video_memory_bytes": 1964747936.0
+    },
+    {
+      "CPU_process_ms": 4179.995,
+      "camera": {
+        "eye": [
+          146.058806421824,
+          1.65,
+          -260.004538606519
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-centre",
+        "look": [
+          151.89194169013,
+          1.55,
+          -258.776510128981
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "capture_frame_wait_ms": 3134.717,
+      "draw_calls": 4457.0,
+      "file": "after/C1F-CE-3-centre.jpg",
+      "primitives": 3450222.0,
+      "save_error": 0,
+      "static_memory_bytes": 2384472383.0,
+      "video_memory_bytes": 1964747936.0
+    },
+    {
+      "CPU_process_ms": 3176.495,
+      "camera": {
+        "eye": [
+          -32.5,
+          1.65,
+          -15.0
+        ],
+        "fov": 75.0,
+        "id": "bakery-entry-turn",
+        "look": [
+          -38.0,
+          1.35,
+          -26.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 3696.916,
+      "draw_calls": 7836.0,
+      "file": "after/bakery-entry-turn.jpg",
+      "primitives": 3359062.0,
+      "save_error": 0,
+      "static_memory_bytes": 2385104223.0,
+      "video_memory_bytes": 1964747936.0
+    }
+  ],
+  "settings": {
+    "B_ES": true,
+    "C": true,
+    "cap": 144,
+    "continuous": true,
+    "vsync": 1
+  },
+  "side": "after"
+}

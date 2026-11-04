@@ -1,0 +1,669 @@
+{
+  "actual_Godot_viewport": true,
+  "images": 26,
+  "cameras": 13,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "matching_eye_look_FOV": true,
+  "NPC_animation_exact_sync": false,
+  "files": [
+    {
+      "file": "before/ad-A1F-023.jpg",
+      "sha256": "f4c759c7c675c13451298163c61b0bfba39ddbf36ccd87440281fae42ed7d30a",
+      "camera": {
+        "eye": [
+          576.027282714844,
+          1.64999997615814,
+          13.0448160171509
+        ],
+        "fov": 60.0,
+        "genre": "beauty",
+        "id": "ad-A1F-023",
+        "look": [
+          577.821044921875,
+          1.89999997615814,
+          13.1942834854126
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-023",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "NOLLIA HOUSE｜コスメ人物広告"
+      }
+    },
+    {
+      "file": "before/ad-A1F-044.jpg",
+      "sha256": "778fa2fc83fd5bf949a3f693047012c33ab5cef467cac32654d11365a6094f2a",
+      "camera": {
+        "eye": [
+          356.850524902344,
+          1.64999997615814,
+          52.4915962219238
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-044",
+        "look": [
+          355.624816894531,
+          1.89999997615814,
+          51.1733932495117
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-044",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "ALVENE WORKS｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "before/ad-B1-040.jpg",
+      "sha256": "1db07d75e9896090a1a2fc1fc73e16fe5ff459f9d6048c1dcb275f6876cb0d16",
+      "camera": {
+        "eye": [
+          -31.9625205993652,
+          1.64999997615814,
+          -13.5289392471313
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-040",
+        "look": [
+          -33.1496658325195,
+          1.89999997615814,
+          -12.175910949707
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-040",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "TERRUNE BAKERY｜カフェ人物広告"
+      }
+    },
+    {
+      "file": "before/ad-C1F-CE-3.jpg",
+      "sha256": "c47fdf71ebfc9f20b0b395a7cc5668b63ae85ef4a753cc38c3a42663b3a65776",
+      "camera": {
+        "eye": [
+          137.572082519531,
+          1.64999997615814,
+          -250.967620849609
+        ],
+        "fov": 60.0,
+        "genre": "family",
+        "id": "ad-C1F-CE-3",
+        "look": [
+          137.201263427734,
+          1.89999997615814,
+          -249.206237792969
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CE-3",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "RIVORA LANE｜キッズ・家族広告"
+      }
+    },
+    {
+      "file": "before/ad-A1F-004.jpg",
+      "sha256": "fa2e2e42c1b51fe7a74c66a708c271e9fa0a7df52664d90a77614e9514d6aecb",
+      "camera": {
+        "eye": [
+          373.178009033203,
+          1.64999997615814,
+          -23.0430278778076
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-004",
+        "look": [
+          374.977996826172,
+          1.89999997615814,
+          -23.0430278778076
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-004",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "ALVENE STUDIO｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "before/ad-B1-052.jpg",
+      "sha256": "ae0bc4fa75407ef2c461e29c834a6a2b9da07e1022ee88a10fa1b661ad8cf576",
+      "camera": {
+        "eye": [
+          92.1223068237305,
+          1.64999997615814,
+          31.3652076721191
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-052",
+        "look": [
+          92.7232284545898,
+          1.89999997615814,
+          33.061939239502
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-052",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "SORELI EDIT｜カフェ人物広告"
+      }
+    },
+    {
+      "file": "before/ad-B1-043.jpg",
+      "sha256": "bdfd21ac7584c24a2440f59c4f2791dcb10620410b96a5a16a278ceb1d654268",
+      "camera": {
+        "eye": [
+          -29.747709274292,
+          1.64999997615814,
+          -11.5816783905029
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-B1-043",
+        "look": [
+          -30.9348545074463,
+          1.85000002384186,
+          -10.2286500930786
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-043",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "MIREVA STUDIO｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "before/ad-C1F-CW-1.jpg",
+      "sha256": "54caf9b28a1deabe4fa4abd9126fb3d019b89f1a2463606f354da8d4f20c29d2",
+      "camera": {
+        "eye": [
+          -155.890747070312,
+          1.64999997615814,
+          -321.269073486328
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-C1F-CW-1",
+        "look": [
+          -157.647918701172,
+          1.89999997615814,
+          -320.878753662109
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CW-1",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "VELORIA LANE｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "before/A1F-044-front.jpg",
+      "sha256": "110249fc9147269f7c36a95a9c3dff865161eb0313ebc3c1ccadf85de101f029",
+      "camera": {
+        "eye": [
+          370.607181029605,
+          1.65,
+          48.6470166926585
+        ],
+        "fov": 78.0,
+        "id": "A1F-044-front",
+        "look": [
+          366.066699527818,
+          2.5,
+          52.868867913619
+        ],
+        "store_id": "A1F-044",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "衣料品店・入口"
+      }
+    },
+    {
+      "file": "before/B1-040-front.jpg",
+      "sha256": "68b33b942fb62aba81c7e1a9b7e8651c52b2bdad42fc598f117ecb43ee5cb465",
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "ベーカリー・入口"
+      }
+    },
+    {
+      "file": "before/C1F-CE-3-front.jpg",
+      "sha256": "43b14ab421a9e5c27d69b0d6978f8d9e9cac6f14872aaa746c2d1dee1db460dd",
+      "camera": {
+        "eye": [
+          133.594430680577,
+          1.65,
+          -262.62861770994
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-3-front",
+        "look": [
+          139.661439347495,
+          2.5,
+          -261.351352727431
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "キッズ店・中央展示"
+      }
+    },
+    {
+      "file": "before/C1F-CE-3-centre.jpg",
+      "sha256": "69a902dd0d330c2d954297af5f632d5ead9a8da2c8017657cba2d277a84fdc4c",
+      "camera": {
+        "eye": [
+          146.058806421824,
+          1.65,
+          -260.004538606519
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-centre",
+        "look": [
+          151.89194169013,
+          1.55,
+          -258.776510128981
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "キッズ店・子どもサイズの衣料展示"
+      }
+    },
+    {
+      "file": "before/bakery-entry-turn.jpg",
+      "sha256": "5def00dc05d4b3ec834a10671d0f9b88776b20ca5b2826bb3e4067386980d955",
+      "camera": {
+        "eye": [
+          -32.5,
+          1.65,
+          -15.0
+        ],
+        "fov": 75.0,
+        "id": "bakery-entry-turn",
+        "look": [
+          -38.0,
+          1.35,
+          -26.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "ベーカリーの人物広告と店内案内"
+      }
+    },
+    {
+      "file": "after/ad-A1F-023.jpg",
+      "sha256": "7fc78010a4670a07aad94445a6efb5c06bc66abb66c97627ef6d133dc23adbe8",
+      "camera": {
+        "eye": [
+          576.027282714844,
+          1.64999997615814,
+          13.0448160171509
+        ],
+        "fov": 60.0,
+        "genre": "beauty",
+        "id": "ad-A1F-023",
+        "look": [
+          577.821044921875,
+          1.89999997615814,
+          13.1942834854126
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-023",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "NOLLIA HOUSE｜コスメ人物広告"
+      }
+    },
+    {
+      "file": "after/ad-A1F-044.jpg",
+      "sha256": "aa898efcb6290b3bbff86f1b54b3336f0d016c91e10153039d36bfc1a4137ef6",
+      "camera": {
+        "eye": [
+          356.850524902344,
+          1.64999997615814,
+          52.4915962219238
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-044",
+        "look": [
+          355.624816894531,
+          1.89999997615814,
+          51.1733932495117
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-044",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "ALVENE WORKS｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "after/ad-B1-040.jpg",
+      "sha256": "48046e2ebdacb34eee613a6e1b500f8c374dd47782e847798f774f7a81082523",
+      "camera": {
+        "eye": [
+          -31.9625205993652,
+          1.64999997615814,
+          -13.5289392471313
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-040",
+        "look": [
+          -33.1496658325195,
+          1.89999997615814,
+          -12.175910949707
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-040",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "TERRUNE BAKERY｜カフェ人物広告"
+      }
+    },
+    {
+      "file": "after/ad-C1F-CE-3.jpg",
+      "sha256": "ee054536d3b33e2d3000485fe7dea5db1c4a34dd87df9f575810bd22fa88f61c",
+      "camera": {
+        "eye": [
+          137.572082519531,
+          1.64999997615814,
+          -250.967620849609
+        ],
+        "fov": 60.0,
+        "genre": "family",
+        "id": "ad-C1F-CE-3",
+        "look": [
+          137.201263427734,
+          1.89999997615814,
+          -249.206237792969
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CE-3",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "RIVORA LANE｜キッズ・家族広告"
+      }
+    },
+    {
+      "file": "after/ad-A1F-004.jpg",
+      "sha256": "eca424ccbae97c705ca7d4a2aca345cabb47f3c9f873d922cfb129258cb43b3a",
+      "camera": {
+        "eye": [
+          373.178009033203,
+          1.64999997615814,
+          -23.0430278778076
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-A1F-004",
+        "look": [
+          374.977996826172,
+          1.89999997615814,
+          -23.0430278778076
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "A1F-004",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "ALVENE STUDIO｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "after/ad-B1-052.jpg",
+      "sha256": "4bd07d83db5c78358e6cfe36ad22999114d110129c8812e3ea642fb9363fd9ee",
+      "camera": {
+        "eye": [
+          92.1223068237305,
+          1.64999997615814,
+          31.3652076721191
+        ],
+        "fov": 60.0,
+        "genre": "cafe",
+        "id": "ad-B1-052",
+        "look": [
+          92.7232284545898,
+          1.89999997615814,
+          33.061939239502
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-052",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "SORELI EDIT｜カフェ人物広告"
+      }
+    },
+    {
+      "file": "after/ad-B1-043.jpg",
+      "sha256": "b7fd8332834566500f5e9be27f9a3c4d26de60abd95fb334893956678835c7fc",
+      "camera": {
+        "eye": [
+          -29.747709274292,
+          1.64999997615814,
+          -11.5816783905029
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-B1-043",
+        "look": [
+          -30.9348545074463,
+          1.85000002384186,
+          -10.2286500930786
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "B1-043",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "MIREVA STUDIO｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "after/ad-C1F-CW-1.jpg",
+      "sha256": "db3e2025bb5ecd81df5cff1d8662bc36918ac9ceb842996e1ad11164c1240c99",
+      "camera": {
+        "eye": [
+          -155.890747070312,
+          1.64999997615814,
+          -321.269073486328
+        ],
+        "fov": 60.0,
+        "genre": "fashion",
+        "id": "ad-C1F-CW-1",
+        "look": [
+          -157.647918701172,
+          1.89999997615814,
+          -320.878753662109
+        ],
+        "scope": "Actual mounted advertisement, same pose for v29.1 baseline",
+        "store_id": "C1F-CW-1",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "VELORIA LANE｜ファッション人物広告"
+      }
+    },
+    {
+      "file": "after/A1F-044-front.jpg",
+      "sha256": "ea867b230de2d53cc4231b01fe46596e44fdb3867bcbb4cff9ccc1a7d073c65a",
+      "camera": {
+        "eye": [
+          370.607181029605,
+          1.65,
+          48.6470166926585
+        ],
+        "fov": 78.0,
+        "id": "A1F-044-front",
+        "look": [
+          366.066699527818,
+          2.5,
+          52.868867913619
+        ],
+        "store_id": "A1F-044",
+        "wing": "A",
+        "variants": [
+          "combined"
+        ],
+        "title": "衣料品店・入口"
+      }
+    },
+    {
+      "file": "after/B1-040-front.jpg",
+      "sha256": "29dfc3526b9dbdcfe60251acc7dd52ee56f50f40ff1fa111548305876c7cf3c4",
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "ベーカリー・入口"
+      }
+    },
+    {
+      "file": "after/C1F-CE-3-front.jpg",
+      "sha256": "670fd75fb01b8c5cfe22b01a3c9eac2e80d026f6a613367f36ec28dc7e5d07b1",
+      "camera": {
+        "eye": [
+          133.594430680577,
+          1.65,
+          -262.62861770994
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-3-front",
+        "look": [
+          139.661439347495,
+          2.5,
+          -261.351352727431
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "キッズ店・中央展示"
+      }
+    },
+    {
+      "file": "after/C1F-CE-3-centre.jpg",
+      "sha256": "409fe886ae15d310519165c99b70bbf3a8178e83a35927bcb6cf0b4fe0ea1b9b",
+      "camera": {
+        "eye": [
+          146.058806421824,
+          1.65,
+          -260.004538606519
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-centre",
+        "look": [
+          151.89194169013,
+          1.55,
+          -258.776510128981
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C",
+        "variants": [
+          "combined"
+        ],
+        "title": "キッズ店・子どもサイズの衣料展示"
+      }
+    },
+    {
+      "file": "after/bakery-entry-turn.jpg",
+      "sha256": "fc003662b1130e15711be6767038cabc0a160112239c61befcd691196284b4c5",
+      "camera": {
+        "eye": [
+          -32.5,
+          1.65,
+          -15.0
+        ],
+        "fov": 75.0,
+        "id": "bakery-entry-turn",
+        "look": [
+          -38.0,
+          1.35,
+          -26.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "B",
+        "variants": [
+          "combined"
+        ],
+        "title": "ベーカリーの人物広告と店内案内"
+      }
+    }
+  ]
+}

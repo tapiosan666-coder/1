@@ -1,0 +1,28 @@
+{
+  "assets": [
+    {
+      "path": "assets/v292/art/people-campaign-atlas.png",
+      "bytes": 2843937,
+      "sha256": "ff91f2bce2be4f67d26c92796b83702534464422807976d72ec112428734a057"
+    },
+    {
+      "path": "assets/v292/models/kids_window_v292.glb",
+      "bytes": 743140,
+      "sha256": "722f7b675639102c97dabe70a619f9e2c6c839ff53d54dd2b62ff6ac74887c03",
+      "embedded_images_only": true
+    },
+    {
+      "path": "assets/v292/models/kids_window_v292_wood-oak.png",
+      "bytes": 337998,
+      "sha256": "80f09ff7e58d60ff6229b07e6ef03435a19a3084c42f13822303c2685b2b29ac"
+    }
+  ],
+  "license_notes": "# v29.2 追加素材\n\n人物広告イラスト4案は、この制作中に画像生成ツールで新規生成した架空人物・場面です。実在人物や既存キャラクターを参照指定せず、外部の広告写真・ロゴは使用していません。元PNGを未加工で収録し、GodotのUV指定で領域を選択します。店名・コピー・色帯はシェーダーとゲームの文字描画で組み合わせています。\n\n画像：assets/v292/art/people-campaign-atlas.png。生成元記録：generated_images/exec-6c6da209-9fa2-40d4-93a2-92db2354783c.png（実行環境の原本。ゲームの起動には不要）。\n\nキッズ用展示モデルは本制作のBlender専用ソースから生成。再利用した衣類・靴・木材は既存プロジェクト内の素材です。sourcesはsource/v292/model-bounds.json、元の利用条件は継承したlicensesを参照。人物モデル43人とアニメーションには変更を加えていません。\n",
+  "illustration_styles": [
+    "fashion couple",
+    "beauty portrait",
+    "bakery cafe couple",
+    "family/children fashion"
+  ],
+  "image_editing_pipeline": "Original generated atlas unchanged; Godot shader UV regions and Label3D typography, no external artwork or image compositing dependency."
+}
