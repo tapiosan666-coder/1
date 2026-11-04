@@ -1,0 +1,448 @@
+{
+  "version": "v14",
+  "source": "protected v13",
+  "original_game_modified": false,
+  "all_architecture_and_collision_packs_unchanged": true,
+  "checks": [
+    {
+      "path": "assets/v13/amenities.pack.zst",
+      "sha256": "04b61ebc4203762297b01b9f1ef3ae8589f17f1b0d7ab583a5dfdfc7dd8cd5e4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v13/basement-retail.pack.zst",
+      "sha256": "78d7f6a4de3811c627b71de81a7584c4cadca0518d05d33490c3a71f49fbcd8a",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v13/roof-retail.pack.zst",
+      "sha256": "1549f193b356ea8c9455bf3f6f12181b68989a42d499025002b7622403090aa6",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v13/public-areas.pack.zst",
+      "sha256": "b7bf3884a1003a9ab7b7afe72d12079d44db89806756e0fb54d396c411edc53a",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/boundary-physics.pack.zst",
+      "sha256": "9f357ecdd2aa8d1d4988f0165304591b53ecaa70ea7d48c26ee5f39f55904e89",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/es-landing-plates.pack.zst",
+      "sha256": "81e4b6dbc9f62043782f6632c02ba545bc752287826163dc8f805a04a1c1a011",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/es-transfer-study.pack.zst",
+      "sha256": "e06656f55d22d447e49d82f8e389091c9d77f70bc503824b813152ac990061ab",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/C-supported-finish.pack.zst",
+      "sha256": "89558a5bdf3742b0cfce3fd0f487bcd5f676fb16794978f4e5cdd22d31a27d03",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/es-safety.pack.zst",
+      "sha256": "38edc4dd47cecc2c6e26de9e0959a9523d3555dfc2200fc7d3eecc46656079b3",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/es-unbuilt-safety.pack.zst",
+      "sha256": "77572377a12bf05375f35250495639ff9efa6c82e57ca81297f207582b2f713c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/retail.pack.zst",
+      "sha256": "bb8fa2772c50529b790cd45680fe5ecb0c716606715289a38d4fae6d9ea3ea26",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v12/C-outlet.pack.zst",
+      "sha256": "82e18c5f3251cc15e0d420cd7f70773e3eacb6466db20c9eb36eabec8b637844",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v10/art.pack.zst",
+      "sha256": "293f36b279d8daa9320da9db553bcde9f81353b6c48558e29168737782515094",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v10/fitout.pack.zst",
+      "sha256": "427717b076d00c7ac95fbf6c9b2ff869f7c41d796b4815b84b57bcf7ea1fe726",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v10/base-b.pack.zst",
+      "sha256": "cef67cdaff2173b3a63153f1547dbe67d943ba35cf79a5c62d4c0e4fe1b9afe5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v10/base-site.pack.zst",
+      "sha256": "bb9ec04e5bd353ddd165a14468bfc3239edded63799793c746385bb74f58cfc3",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v10/architecture.pack.zst",
+      "sha256": "d79d55207cbebbcfee89978c98da4257ef604be523789bd935c7c6ac9a4e89f5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/v11/repairs.pack.zst",
+      "sha256": "f52deb39f9f39f96083ec4fda4b4959c91c0251839cbdefaabf6c47fd78b3257",
+      "unchanged": true
+    },
+    {
+      "path": "player.gd",
+      "sha256": "61342f554c489f1506205465d9a11a4351a58afbda7828505b6154e74574a140",
+      "unchanged": true
+    },
+    {
+      "path": "escalator_v2.gd",
+      "sha256": "4fc49fde6e53316184251730898ff5a8139c7946f050e9826f2a84285aec4739",
+      "unchanged": true
+    },
+    {
+      "path": "elevators_v11.gd",
+      "sha256": "9a79ab4ff50041047a35e04b42dc13730ccc039bab8807a41f5d6ada43053d74",
+      "unchanged": true
+    },
+    {
+      "path": "staff_doors.gd",
+      "sha256": "02c37b97651e894a29d27b37419eef84f64c18b35b24107441c975526b011413",
+      "unchanged": true
+    },
+    {
+      "path": "settings_v7.gd",
+      "sha256": "4625d755f72d87e3b7a40cddf3cef9d28129619ef6b548dc13ce89f6171a8d20",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/amenities-public.json",
+      "sha256": "842a7fc71b4d24e5e17a3853ee5969b4aec40e46cc185dbc6931cc489c607fc0",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/removed-fixture-blocks.json",
+      "sha256": "83e18cc9bfcf1de9e3d7d0a2c1daff78d0139bb1f80cbbbd2d76baf85f46f242",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/public-access-plan-audit.json",
+      "sha256": "198d03abd09dcbcbfc2a45ffcb4bc9aa39e5d3094b45d46040a4306365aac124",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/roof-store-cameras.json",
+      "sha256": "99b28822459875f05687f9b6c94e0c7dd572d019e8321b656f1d212cbf26cf07",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/inventory-and-preservation.json",
+      "sha256": "0a5233add25c10d70841378dc5c93a0c0e2f96249396214cdf99f3e261ed2f70",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/roof-garden-plan-audit.json",
+      "sha256": "1bb9d9226c2d55aa8396739db6559bd62be4585183f807dfae863a6c877ccd6c",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/fixture-audit.json",
+      "sha256": "d1fa2acfe416d7be91d24beb89ada71dac26747af111567ca562e2fa813f8fe3",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/asset-bounds.json",
+      "sha256": "18ae3570d3bbdc31d8076233a8d7c4e8e62d2da88c22f926f516faaac836ba00",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/amenities.json",
+      "sha256": "aaa8eb25bab7e78b992e965b6b813fa5d5610054d81e4f9d033b6323caaceb31",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/review-cameras.json",
+      "sha256": "5444b429574325037ad93d37b115fc55656ac944982ba352f9771ce70995de4b",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/map-data-C-option.json",
+      "sha256": "88601fe88450cdc992b9a96bdc8687942f1020ac857ea7fe743fe0ca24faaad3",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/basement-retail.json",
+      "sha256": "34c919ae67e0db16cbce87e037886b065a4999a78a261ac34780d94a42617342",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/basement-retail-routes.json",
+      "sha256": "4c20f1ee67417a255c24dd082c6eed6dd14dcee0189bfb5d418e1b7ab2c6210e",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/roof-retail.json",
+      "sha256": "6925ebd61a417b40004ce09392735633b7774095e60221a6aaba8cac5d44386f",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/cameras.json",
+      "sha256": "ae6e837bc744e2b95c97f26bd871d6be1ce7661ba3a9a2045b8ce906dbebde0c",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/toilet-locations.json",
+      "sha256": "74dd239ffc6ff40ac4cef30d47114b366c371266f8c9d421a021271ccdc3559a",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/public-finish-audit.json",
+      "sha256": "57b88892b216f9844c521f66b938cf6d088ac6cf1b371e24b34917be13803a14",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/pack-manifest.json",
+      "sha256": "96ef6cdee47e8b56e324bfee2678df05f197e86ce0d5e5f8056f50de7923a7f3",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/public-access-routes.json",
+      "sha256": "8f23ee88f8b868b4d7675420fca3763113b0f2425a5a5aa59def2498e5376d01",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/toilet-routes.json",
+      "sha256": "2ae9fd3a64398e7d6944348a0474b181f0d4c913186d00b69b01b2a27bc30ba3",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/roof-retail-routes.json",
+      "sha256": "1cabf3254a261f442112e9d2e719da1a3260a31ab00a02b043e4d6550c6c58ed",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/supplement-cameras.json",
+      "sha256": "ceb94e38c8708c3c8fffc69259645d240eacc6ae3b4bf637b0b26e9a824bf419",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/garden-cameras.json",
+      "sha256": "aa4bb399c7cdc90595929ce0c442f1f70d82e29fa35538d76e107ad2b9d042ca",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/roof-shelf-removal.json",
+      "sha256": "901b1bc0a5c4ce0b85c78e00b40593208df1f1bf111a10994d9adce4b5eb9a73",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/basement-shelf-removal.json",
+      "sha256": "c0ce91c381fc7d9ae6e13c06c228078cb6135e816e01eda4b23ce1ff36bc0c29",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/roof-store-ledger.json",
+      "sha256": "becc1b510e1b986f417398e5571b411c645f1b12c4f991703a42fcbb3ee971ef",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/basement-store-ledger.json",
+      "sha256": "099886c550c2a267f855e2ab55d2c3ef35d9612113ea0c4883f49671c79936f4",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/map-data.json",
+      "sha256": "b7eec776667eba2bd54ac34007625977bb892294019dd72136d6c1cf2806fe97",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/basement-store-cameras.json",
+      "sha256": "fdf20274c5a4d9ebcd6c60e90478ed1e507502695e1cbf1d2e7bb20c02e465f6",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/roof-garden-routes.json",
+      "sha256": "3a0dbc788f6ae1a3c4d3737d1c139be6722b22cfc9d4de61f6ba37da678d3b49",
+      "unchanged": true
+    },
+    {
+      "path": "source/v13/arrival-hubs.json",
+      "sha256": "802adce795cca439e37706e44f491fc62a447535991744f8ec557a0a40db2011",
+      "unchanged": true
+    }
+  ],
+  "replacement_types": [
+    {
+      "old_asset": "../v11/models/grocery_gondola",
+      "new_asset": "res://assets/v14/models/grocery_gondola.glb",
+      "instances": 139,
+      "old_size_m": [
+        2.09999990463257,
+        1.72499990463257,
+        0.939999997615814
+      ],
+      "raw_new_size_m": [
+        2.07999992370605,
+        1.7150000333786,
+        0.942000091075897
+      ],
+      "normalization_scale": [
+        1.0096153757981323,
+        1.005830828606032,
+        0.9978767587402262
+      ],
+      "original_bounds_manifest_sha256": "864f1a73b6d0c9535c7365d980b8ba3c577605eed990755763ab1af750b55612",
+      "new_sha256": "15fb2418bc62884907171ffbcd221db25fd5c7d871d34771cbf6305e8d0a6708"
+    },
+    {
+      "old_asset": "../v11/models/produce_island",
+      "new_asset": "res://assets/v14/models/produce_island.glb",
+      "instances": 312,
+      "old_size_m": [
+        2.0,
+        0.850000023841858,
+        0.949999988079071
+      ],
+      "raw_new_size_m": [
+        2.16000008583069,
+        0.725000023841858,
+        0.897009968757629
+      ],
+      "normalization_scale": [
+        0.9259258891329362,
+        1.1724137874335654,
+        1.0590740584464562
+      ],
+      "original_bounds_manifest_sha256": "93192694dea11ba74b6860c31a08d387b995b471779974e04fae8b8c23de15c8",
+      "new_sha256": "b18ce422ae6c827e071eab86a3bc2a7a2c1f3925cdfa1feab983c9626d48b4df"
+    },
+    {
+      "old_asset": "../v11/models/refrigerated_case",
+      "new_asset": "res://assets/v14/models/refrigerated_case.glb",
+      "instances": 123,
+      "old_size_m": [
+        2.09999990463257,
+        2.13499999046326,
+        0.776412665843964
+      ],
+      "raw_new_size_m": [
+        2.07999992370605,
+        2.13000011444092,
+        0.747500002384186
+      ],
+      "normalization_scale": [
+        1.0096153757981323,
+        1.002347359508782,
+        1.0386791483178055
+      ],
+      "original_bounds_manifest_sha256": "7de8739388e2161fee274600faa3da679c4546413558318e7436baa180481464",
+      "new_sha256": "2361948ad110fd2f4d1fd9c80ed8f981c9717ce482f6ec8137a5f88233281cec"
+    },
+    {
+      "old_asset": "../v12/models/book_double_gondola_0",
+      "new_asset": "res://assets/v14/models/book_double_gondola_0.glb",
+      "instances": 16,
+      "old_size_m": [
+        2.04500007629395,
+        1.51999998092651,
+        0.790000081062317
+      ],
+      "raw_new_size_m": [
+        2.04500007629395,
+        1.51999998092651,
+        0.790000081062317
+      ],
+      "normalization_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "original_bounds_manifest_sha256": "ebe97d80ce3418e9b15328ae90a68adfc644d88deb5e44a9411c01a9cb74e2e7",
+      "new_sha256": "e551b800bae2c14473c721a3f0783831d2fa3a0b75ebf75c4deb1298ed33a4ca"
+    },
+    {
+      "old_asset": "../v12/models/book_double_gondola_1",
+      "new_asset": "res://assets/v14/models/book_double_gondola_1.glb",
+      "instances": 22,
+      "old_size_m": [
+        2.04500007629395,
+        1.51999998092651,
+        0.790000081062317
+      ],
+      "raw_new_size_m": [
+        2.04500007629395,
+        1.51999998092651,
+        0.790000081062317
+      ],
+      "normalization_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "original_bounds_manifest_sha256": "26d42957f7276f2258484154771cf0ff4d37f9577a5fedcb3ec106cfcad7f04c",
+      "new_sha256": "84121aa43b75703c7cf86696ecd9f83ac8b4acbe1b39b4d08e064836e14bb68e"
+    },
+    {
+      "old_asset": "../v13/models/health_wall_bay",
+      "new_asset": "res://assets/v14/models/health_wall_bay.glb",
+      "instances": 85,
+      "old_size_m": [
+        2.0,
+        2.09999990463257,
+        0.489999979734421
+      ],
+      "raw_new_size_m": [
+        2.0,
+        2.09999990463257,
+        0.489999979734421
+      ],
+      "normalization_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "original_bounds_manifest_sha256": "94840c2ec316a4f2338251d5d478930b142b9c4032ec9e5b17c9fbfac0cf2b68",
+      "new_sha256": "af1f90978109879cd3c850e39d41eeea87af5c4d5cedf474d3e112466de9b052"
+    },
+    {
+      "old_asset": "../v13/models/public_bench",
+      "new_asset": "res://assets/v14/models/planted_bench.glb",
+      "instances": 21,
+      "old_size_m": [
+        2.20000004768372,
+        0.977500021457672,
+        0.643541812896729
+      ],
+      "raw_new_size_m": [
+        2.17000007629395,
+        0.980000019073486,
+        0.630841016769409
+      ],
+      "normalization_scale": [
+        1.013824871122127,
+        0.9974489820743294,
+        1.0201331172033834
+      ],
+      "original_bounds_manifest_sha256": "559a78a6167bf4b2bf894280a26e6fc919ab9e3730e4247dc67714f25cffb986",
+      "new_sha256": "c29af6041e9749c5d220ee10543fbfdcefced71003396c4e8900db27911201b0"
+    }
+  ],
+  "replacement_placements": 718,
+  "additional_roof_plants": 168,
+  "excluded_plant_candidates": 10,
+  "installed_raised_beds": 17,
+  "unsupported_whole_bed_excluded": 1,
+  "model_bounds_runtime_reports": "evidence/v14/*/v14-model-bounds-*.json; re-evaluated transformed meshes, tolerance 0.1mm",
+  "floors_retained": 15,
+  "store_IDs_retained": 480,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "C_option": "UNAPPROVED",
+  "site_ES_relocation": "UNAPPROVED",
+  "windows_GPU_FPS": "UNMEASURED",
+  "human_playtest": false,
+  "quality_limit": "Visual representative review, not full-mall commercial or FF16 quality certification"
+}

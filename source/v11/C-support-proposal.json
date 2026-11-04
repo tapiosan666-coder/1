@@ -1,0 +1,58 @@
+{
+  "status": "UNAPPROVED / UNBUILT v11 support proposal",
+  "review_point_world": [
+    -134.5,
+    0,
+    -235.7
+  ],
+  "floors": [
+    {
+      "floor": "2F",
+      "normal_deck_m2": 24196.60083187309,
+      "v10_option_deck_m2": 17462.388972696124,
+      "above_reported_point_normal": false,
+      "above_reported_point_option": false,
+      "structural_capacity_verified": false
+    },
+    {
+      "floor": "3F",
+      "normal_deck_m2": 23338.85801552967,
+      "v10_option_deck_m2": 16694.397099685928,
+      "above_reported_point_normal": false,
+      "above_reported_point_option": false,
+      "structural_capacity_verified": false
+    },
+    {
+      "floor": "RF",
+      "normal_deck_m2": 23209.81882908607,
+      "v10_option_deck_m2": 15535.666499193452,
+      "above_reported_point_normal": false,
+      "above_reported_point_option": false,
+      "structural_capacity_verified": false
+    }
+  ],
+  "proposal": [
+    "Retain pavilion-side galleries and the B/C bridge route; use the existing v10 reduction option only for visual comparison.",
+    "Arrange portal frames along each necessary bridge axis: conceptual 8m maximum module, columns at both edges of the deck outside protected walking lines, girders directly under the slab.",
+    "Anchor gallery ends to pavilion frames; reduce redundant cross-courtyard deck branches only after confirming every 2F/3F/RF store and EV/stair route.",
+    "Do not add isolated decorative columns without a continuous slab-girder-column-foundation load path."
+  ],
+  "conceptual_dimensions_m": {
+    "gallery_clear_width": 4.0,
+    "portal_module_maximum_for_review": 8.0,
+    "candidate_column_width": 0.35,
+    "candidate_girder_depth": 0.55
+  },
+  "dimension_status": "Game-space initial study; not engineered sections or verified spans. Exact placement is not approved.",
+  "not_verified": [
+    "loads",
+    "foundations",
+    "lateral stability",
+    "wind/seismic forces",
+    "fire/egress",
+    "vehicle clearances",
+    "column placement collision sweep"
+  ],
+  "normal_geometry_changed": false,
+  "RF_SUPPORT_16": "UNAPPROVED"
+}

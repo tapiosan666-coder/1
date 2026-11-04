@@ -1,0 +1,5398 @@
+[
+  {
+    "wing": "A",
+    "floor": "B1",
+    "y": -5.35,
+    "store_count": 31,
+    "categories": {
+      "食品市場": 1,
+      "生活・ホームセンター": 1,
+      "食品専門店": 13,
+      "医薬品": 6,
+      "生活用品": 6,
+      "地下サービス": 2,
+      "書籍・生活大型店": 1,
+      "スポーツ大型店": 1
+    },
+    "world_public_bounds": [
+      307.0,
+      -65.0,
+      619.0,
+      160.3125925925926
+    ],
+    "public_area_m2": 20973.56542948578,
+    "public_center_world": [
+      465.55730501943157,
+      16.39164368263696
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "furniture",
+      "program",
+      "guardrails",
+      "routes",
+      "reachable",
+      "roof_edge_parapet",
+      "roof_edge_parapet_height_m",
+      "fixed_B_public_in_site",
+      "facade_wall_solids",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented",
+      "forecourt_extensions"
+    ],
+    "zones": [
+      {
+        "type": "program",
+        "id": "A-B1-S1",
+        "name": "設備機械・防災管理",
+        "area_m2": 1612.9038191727132,
+        "center_world": [
+          409.7805401686164,
+          49.02952637354964
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S2",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 1546.8869578441381,
+        "center_world": [
+          528.0323030185018,
+          48.49992730491677
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S3",
+        "name": "清掃・保守作業室",
+        "area_m2": 847.1663086068629,
+        "center_world": [
+          433.7026403437202,
+          -61.00669499983674
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S4",
+        "name": "設備機械・防災管理",
+        "area_m2": 763.4888755367758,
+        "center_world": [
+          563.6592943008941,
+          66.49714227189124
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S5",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 533.0863593863446,
+        "center_world": [
+          413.3380356703212,
+          -31.078830024665756
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S6",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 307.7378147676775,
+        "center_world": [
+          383.4003806423141,
+          83.55981694083934
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S7",
+        "name": "設備機械・防災管理",
+        "area_m2": 189.20851340517834,
+        "center_world": [
+          522.5895897128412,
+          -26.493447077514812
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S8",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 121.06333226504199,
+        "center_world": [
+          459.06754341331276,
+          100.64750027478198
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S9",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 99.84511047084197,
+        "center_world": [
+          330.900014509363,
+          26.091544501101325
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S10",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 67.66724923804972,
+        "center_world": [
+          448.2636173835764,
+          143.51479313638734
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S11",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 29.879466096896696,
+        "center_world": [
+          464.30331774389856,
+          -29.07957885551977
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S12",
+        "name": "清掃・保守作業室",
+        "area_m2": 15.518364133109,
+        "center_world": [
+          493.73211750442397,
+          -34.8976586535493
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-B1-S13",
+        "name": "設備機械・防災管理",
+        "area_m2": 16.27920472650196,
+        "center_world": [
+          451.1673463994505,
+          -32.82813724158372
+        ]
+      }
+    ]
+  },
+  {
+    "wing": "A",
+    "floor": "1F",
+    "y": 0.0,
+    "store_count": 52,
+    "categories": {
+      "大型食品スーパー": 1,
+      "生活・家電大型店": 1,
+      "靴・鞄": 5,
+      "雑貨": 6,
+      "書店": 6,
+      "家具インテリア": 1,
+      "カフェ": 6,
+      "化粧品": 5,
+      "スポーツ": 2,
+      "フードコート独立売場": 4,
+      "生活用品": 6,
+      "服飾": 6,
+      "家電": 2,
+      "家電大型店": 1
+    },
+    "world_public_bounds": [
+      255.0,
+      -66.0,
+      619.0,
+      160.3125925925926
+    ],
+    "public_area_m2": 21028.117083628214,
+    "public_center_world": [
+      462.80007080152586,
+      15.124536213227678
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "furniture",
+      "program",
+      "guardrails",
+      "routes",
+      "reachable",
+      "roof_edge_parapet",
+      "roof_edge_parapet_height_m",
+      "fixed_B_public_in_site",
+      "facade_wall_solids",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented",
+      "forecourt_extensions"
+    ],
+    "zones": [
+      {
+        "type": "program",
+        "id": "A-1F-S1",
+        "name": "設備機械・防災管理",
+        "area_m2": 1524.4893654833425,
+        "center_world": [
+          487.59770952974844,
+          11.67439046147421
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S2",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 603.7828637626143,
+        "center_world": [
+          394.25441749615686,
+          24.534886725694847
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S3",
+        "name": "清掃・保守作業室",
+        "area_m2": 347.1450761709391,
+        "center_world": [
+          519.703423272771,
+          48.18738762996172
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S4",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 175.0365508694353,
+        "center_world": [
+          368.9274285310472,
+          76.57428717854025
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S5",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 180.63718092961778,
+        "center_world": [
+          315.9801532813879,
+          1.1104616594097507
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S6",
+        "name": "清掃・保守作業室",
+        "area_m2": 76.01739826075183,
+        "center_world": [
+          441.09165051842473,
+          74.8903635217006
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S7",
+        "name": "設備機械・防災管理",
+        "area_m2": 69.89128986304948,
+        "center_world": [
+          449.58029106047934,
+          -31.1126402301094
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S8",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 57.511882854480945,
+        "center_world": [
+          538.0453149607947,
+          -24.65104231427988
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S9",
+        "name": "清掃・保守作業室",
+        "area_m2": 52.1424030171549,
+        "center_world": [
+          524.5569788664185,
+          79.08368698221658
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S10",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": null,
+        "center_world": null
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S11",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": null,
+        "center_world": null
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S12",
+        "name": "清掃・保守作業室",
+        "area_m2": 16.280909205785328,
+        "center_world": [
+          410.9566435603352,
+          -35.9185713950542
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S13",
+        "name": "設備機械・防災管理",
+        "area_m2": 15.518364134515677,
+        "center_world": [
+          493.73211750437946,
+          -34.89765865291654
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S14",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 1.9190743963124478e-10,
+        "center_world": [
+          476.8979456498367,
+          -39.2005294289457
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S15",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 6.557406961177348e-11,
+        "center_world": [
+          446.1063663562182,
+          102.10552961146166
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S16",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 1.43956653234089e-16,
+        "center_world": [
+          434.4453833142528,
+          -39.700088935181626
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S17",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 12.018779797447042,
+        "center_world": [
+          420.38550983289986,
+          80.10344733049004
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S18",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 3.2747699690860443e-10,
+        "center_world": [
+          508.593808635791,
+          -35.92280705085702
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-1F-S19",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 6.17830066892023e-17,
+        "center_world": [
+          395.8055467354462,
+          -37.62139388398978
+        ]
+      }
+    ]
+  },
+  {
+    "wing": "A",
+    "floor": "2F",
+    "y": 5.525,
+    "store_count": 52,
+    "categories": {
+      "大型ファッション": 1,
+      "家具インテリア": 2,
+      "キッチン用品": 1,
+      "書店": 5,
+      "カフェ": 4,
+      "アクセサリー": 2,
+      "眼鏡": 1,
+      "旅行・鞄": 1,
+      "化粧品": 3,
+      "スポーツ": 5,
+      "家電": 6,
+      "生活用品": 5,
+      "服飾": 5,
+      "靴・鞄": 5,
+      "雑貨": 4,
+      "書籍・生活大型店": 1,
+      "スポーツ大型店": 1
+    },
+    "world_public_bounds": [
+      287.2736842105263,
+      -65.0,
+      619.0,
+      160.3125925925926
+    ],
+    "public_area_m2": 18442.76918231024,
+    "public_center_world": [
+      462.4022821782284,
+      15.948607028391898
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "furniture",
+      "program",
+      "guardrails",
+      "routes",
+      "reachable",
+      "roof_edge_parapet",
+      "roof_edge_parapet_height_m",
+      "fixed_B_public_in_site",
+      "facade_wall_solids",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented"
+    ],
+    "zones": [
+      {
+        "type": "program",
+        "id": "A-2F-S1",
+        "name": "設備機械・防災管理",
+        "area_m2": 703.6437734914189,
+        "center_world": [
+          441.52057809223544,
+          -71.71272665546256
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S2",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 579.3753253158378,
+        "center_world": [
+          556.7132527981552,
+          86.21169958603744
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S3",
+        "name": "清掃・保守作業室",
+        "area_m2": 442.42541031641167,
+        "center_world": [
+          403.75754151359854,
+          30.7465260980196
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S4",
+        "name": "設備機械・防災管理",
+        "area_m2": 363.64299482988133,
+        "center_world": [
+          521.6359093016376,
+          43.97316252675978
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S5",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 321.070978445857,
+        "center_world": [
+          391.9047476326814,
+          100.47890564422903
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S6",
+        "name": "清掃・保守作業室",
+        "area_m2": 300.4659173572805,
+        "center_world": [
+          432.1665848266489,
+          76.77122376545424
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S7",
+        "name": "設備機械・防災管理",
+        "area_m2": 247.85837442834583,
+        "center_world": [
+          324.2746971295584,
+          5.962490033402965
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S8",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 62.37955696950965,
+        "center_world": [
+          492.0535730080174,
+          -31.347934834547367
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S9",
+        "name": "清掃・保守作業室",
+        "area_m2": 58.91070873490983,
+        "center_world": [
+          410.01554151247853,
+          -32.529597519803445
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S10",
+        "name": "設備機械・防災管理",
+        "area_m2": 49.80163470498226,
+        "center_world": [
+          498.7946654446606,
+          84.88195548253489
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S11",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 19.20791926692482,
+        "center_world": [
+          575.4628393749208,
+          -31.883248861805953
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S12",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 15.939925574525773,
+        "center_world": [
+          479.0000000000012,
+          132.50000000000387
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S13",
+        "name": "設備機械・防災管理",
+        "area_m2": 15.75628881561252,
+        "center_world": [
+          464.5302779352148,
+          101.43306619242333
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S14",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 14.763258957874996,
+        "center_world": [
+          339.00000000000006,
+          -31.99999999999995
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S15",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 4.1037218580500076e-10,
+        "center_world": [
+          472.91136958795505,
+          -39.247547919937745
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S16",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": null,
+        "center_world": null
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S17",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": null,
+        "center_world": null
+      },
+      {
+        "type": "program",
+        "id": "A-2F-S18",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 3.049681182399037,
+        "center_world": [
+          592.4173182261028,
+          15.823984797443678
+        ]
+      }
+    ]
+  },
+  {
+    "wing": "A",
+    "floor": "3F",
+    "y": 10.875,
+    "store_count": 51,
+    "categories": {
+      "映画館": 1,
+      "屋内遊園地・娯楽": 1,
+      "文具": 2,
+      "化粧品": 3,
+      "子供服": 1,
+      "アウトドア": 1,
+      "玩具": 1,
+      "旅行・鞄": 1,
+      "ホビー": 2,
+      "楽器": 1,
+      "ゲームセンター": 1,
+      "生活用品": 7,
+      "スポーツ": 2,
+      "家電": 2,
+      "服飾": 4,
+      "靴・鞄": 4,
+      "雑貨": 4,
+      "書店": 6,
+      "カフェ": 5,
+      "書籍・生活大型店": 1,
+      "スポーツ大型店": 1
+    },
+    "world_public_bounds": [
+      307.0,
+      -65.0,
+      619.0,
+      160.3125925925926
+    ],
+    "public_area_m2": 18317.484483721684,
+    "public_center_world": [
+      463.08272441736506,
+      16.210394156474244
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "furniture",
+      "program",
+      "guardrails",
+      "routes",
+      "reachable",
+      "roof_edge_parapet",
+      "roof_edge_parapet_height_m",
+      "fixed_B_public_in_site",
+      "facade_wall_solids",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented",
+      "forecourt_extensions"
+    ],
+    "zones": [
+      {
+        "type": "program",
+        "id": "A-3F-S1",
+        "name": "設備機械・防災管理",
+        "area_m2": 1556.6411043645708,
+        "center_world": [
+          476.079548843315,
+          0.661902579713491
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S2",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 455.3510001540767,
+        "center_world": [
+          522.0971916018867,
+          44.287669444433334
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S3",
+        "name": "清掃・保守作業室",
+        "area_m2": 364.5411362870067,
+        "center_world": [
+          409.47360232541666,
+          38.26078334400913
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S4",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 182.67978586699212,
+        "center_world": [
+          365.49377707709215,
+          78.31075509152227
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S5",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 121.1353925519902,
+        "center_world": [
+          419.495470629986,
+          126.56721283617725
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S6",
+        "name": "清掃・保守作業室",
+        "area_m2": 122.25449479060968,
+        "center_world": [
+          381.8066974263164,
+          2.064038550758518
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S7",
+        "name": "設備機械・防災管理",
+        "area_m2": 126.55119588714894,
+        "center_world": [
+          408.11107933900365,
+          -31.64078035076416
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S8",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 107.74048741974273,
+        "center_world": [
+          555.0103069530752,
+          20.763622122511393
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S9",
+        "name": "清掃・保守作業室",
+        "area_m2": 76.50588417334177,
+        "center_world": [
+          441.13438440996276,
+          74.5161594159287
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S10",
+        "name": "設備機械・防災管理",
+        "area_m2": 55.3225674494903,
+        "center_world": [
+          499.0486862442789,
+          84.18659018911688
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S11",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 36.6807092083634,
+        "center_world": [
+          524.9872034795212,
+          80.10043176838327
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S12",
+        "name": "清掃・保守作業室",
+        "area_m2": 30.195602758111736,
+        "center_world": [
+          547.777788548897,
+          -3.217042199111411
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S13",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 19.20791926692482,
+        "center_world": [
+          575.4628393749208,
+          -31.883248861805978
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S14",
+        "name": "搬入待機・共用商品庫",
+        "area_m2": 15.518364133108987,
+        "center_world": [
+          493.732117504424,
+          -34.89765865354931
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S15",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 15.939925574525546,
+        "center_world": [
+          479.00000000000114,
+          132.50000000000296
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S16",
+        "name": "設備機械・防災管理",
+        "area_m2": 15.890795059639386,
+        "center_world": [
+          362.3312000212212,
+          1.0169671132888283
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S17",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 14.763258957874996,
+        "center_world": [
+          339.00000000000006,
+          -31.99999999999995
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S18",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": null,
+        "center_world": null
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S19",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": null,
+        "center_world": null
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S20",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": null,
+        "center_world": null
+      },
+      {
+        "type": "program",
+        "id": "A-3F-S21",
+        "name": "清掃・保守作業室",
+        "area_m2": 12.018779797130533,
+        "center_world": [
+          420.3855098328153,
+          80.10344733058892
+        ]
+      }
+    ]
+  },
+  {
+    "wing": "A",
+    "floor": "RF",
+    "y": 16.4,
+    "store_count": 15,
+    "categories": {
+      "ガーデンショップ": 6,
+      "軽食テラス": 4,
+      "屋上カフェ": 5
+    },
+    "world_public_bounds": [
+      289.92,
+      -87.08000000000001,
+      642.0799999999999,
+      160.3125925925926
+    ],
+    "public_area_m2": 47209.15205045631,
+    "public_center_world": [
+      465.4258703456188,
+      17.868357862233836
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "furniture",
+      "program",
+      "guardrails",
+      "routes",
+      "reachable",
+      "roof_edge_parapet",
+      "roof_edge_parapet_height_m",
+      "fixed_B_public_in_site",
+      "facade_wall_solids",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented"
+    ],
+    "zones": [
+      {
+        "type": "program",
+        "id": "A-RF-GARDEN",
+        "name": "屋上庭園・散策芝生",
+        "area_m2": 30473.24648113106,
+        "center_world": [
+          466.8462654477899,
+          19.65120428272303
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-RF-S1",
+        "name": "設備機械・防災管理",
+        "area_m2": 753.9549732119985,
+        "center_world": [
+          451.91101522949094,
+          31.25368972425575
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-RF-S2",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 19.20791926692459,
+        "center_world": [
+          575.4628393749198,
+          -31.88324886180581
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-RF-S3",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 15.939925574525546,
+        "center_world": [
+          478.9999999999977,
+          132.4999999999947
+        ]
+      },
+      {
+        "type": "program",
+        "id": "A-RF-S4",
+        "name": "外壁・配管保守帯（非室）",
+        "area_m2": 14.76325895787511,
+        "center_world": [
+          338.9999999999999,
+          -31.999999999999865
+        ]
+      }
+    ]
+  },
+  {
+    "wing": "B",
+    "floor": "B1",
+    "y": -5.35,
+    "store_count": 2,
+    "categories": {
+      "地下食品スーパー": 1,
+      "食料品・大型受取カウンター": 1
+    },
+    "world_public_bounds": [
+      -282.0,
+      -67.59989444867097,
+      197.0,
+      74.0
+    ],
+    "public_area_m2": 3195.992968436166,
+    "public_center_world": [
+      -31.51681793307597,
+      -3.0639658166683787
+    ],
+    "keys": [
+      "wing",
+      "level",
+      "label",
+      "height",
+      "shell",
+      "floor_plate",
+      "public",
+      "walkable",
+      "void",
+      "shafts",
+      "stores",
+      "cores",
+      "escalators",
+      "parking",
+      "gardens",
+      "program",
+      "residual",
+      "routes",
+      "guardrails",
+      "existing_middle_floors_modified",
+      "walk_route_note",
+      "staff_walk",
+      "staff_routes",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "revision",
+      "game_implemented",
+      "above_basement_grade_cover",
+      "grade_cover_status"
+    ],
+    "zones": [
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-1",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 23110.82047741449,
+        "center_world": [
+          -24.374523579901677,
+          2.341240062855455
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-2",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6860440185722123,
+        "center_world": [
+          148.1525356070996,
+          -33.82711308002463
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-3",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 146.24422941600238,
+        "center_world": [
+          149.83889805615257,
+          -24.000257700866737
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-4",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5091610414740108,
+        "center_world": [
+          134.04052706542592,
+          -25.681220419107113
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-6",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          146.50000000000006,
+          -16.18273422497378
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-8",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          151.50000000000006,
+          -16.18273422497378
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-10",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          156.50000000000006,
+          -16.18273422497378
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-12",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          161.50000000000006,
+          -16.18273422497378
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-13",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 323.927100126402,
+        "center_world": [
+          157.70872052490512,
+          -0.3247758335450328
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-14",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7594382361562562,
+        "center_world": [
+          136.5378712208045,
+          1.0847901681871264
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-15",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 237.3784261040895,
+        "center_world": [
+          131.10465275103917,
+          7.141778963997588
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-17",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          146.50000000000006,
+          7.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-19",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          151.50000000000006,
+          7.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-21",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          156.50000000000006,
+          7.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-23",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925878,
+        "center_world": [
+          161.50000000000006,
+          7.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-24",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 88.90098105035942,
+        "center_world": [
+          167.45340742602696,
+          21.34006750231167
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-25",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 12.79320497541741,
+        "center_world": [
+          164.75334821357598,
+          29.131352815890963
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-26",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.651719391269927,
+        "center_world": [
+          159.04798182832405,
+          25.27018914636743
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-27",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.8887625088997186,
+        "center_world": [
+          156.7050599041097,
+          25.50175894185257
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-28",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3768344457010684,
+        "center_world": [
+          154.0172339295114,
+          25.10493664580403
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-29",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.1981817393913694,
+        "center_world": [
+          151.57338034575577,
+          25.23433255116467
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-30",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2826340971204178,
+        "center_world": [
+          149.0143339339428,
+          25.05676542049747
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-31",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.974588684757781,
+        "center_world": [
+          146.55557253819512,
+          25.157951532192342
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-32",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2276404941061028,
+        "center_world": [
+          144.01220459342545,
+          25.029320539631442
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-33",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.844623587535558,
+        "center_world": [
+          141.54500052979716,
+          25.113726434575952
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-34",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.19162203826991,
+        "center_world": [
+          139.01059712987922,
+          25.0116083202755
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-35",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7594382361562433,
+        "center_world": [
+          136.53787122080456,
+          25.084790168187126
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-36",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 125.5473938511186,
+        "center_world": [
+          133.60598486697535,
+          28.60809887184324
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-37",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925888,
+        "center_world": [
+          136.50000000000006,
+          31.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-39",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925888,
+        "center_world": [
+          141.5,
+          31.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-41",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925888,
+        "center_world": [
+          146.5,
+          31.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-43",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925888,
+        "center_world": [
+          151.5,
+          31.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-45",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925888,
+        "center_world": [
+          156.50000000000006,
+          31.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-47",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.635227324925888,
+        "center_world": [
+          161.5,
+          31.817265775026215
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-48",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 42.28256411045234,
+        "center_world": [
+          166.42084485969036,
+          40.98410411799124
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-49",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.198108731250687,
+        "center_world": [
+          161.1834015232277,
+          49.89604645809253
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-50",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.9788189845552167,
+        "center_world": [
+          158.83746382074713,
+          49.51902664864045
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-51",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.198108731250687,
+        "center_world": [
+          156.1834015232277,
+          49.89604645809253
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-52",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.9788189845552167,
+        "center_world": [
+          153.83746382074713,
+          49.51902664864045
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-53",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.198108731250687,
+        "center_world": [
+          151.1834015232277,
+          49.89604645809253
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-54",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.9788189845552167,
+        "center_world": [
+          148.83746382074713,
+          49.51902664864045
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-55",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.198108731250687,
+        "center_world": [
+          146.1834015232277,
+          49.89604645809253
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-56",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.9788189845552167,
+        "center_world": [
+          143.8374638207472,
+          49.51902664864045
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-57",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.198108731250687,
+        "center_world": [
+          141.18340152322764,
+          49.89604645809253
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-58",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.9788189845552167,
+        "center_world": [
+          138.83746382074713,
+          49.51902664864045
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-59",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.198108731250687,
+        "center_world": [
+          136.1834015232277,
+          49.89604645809253
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-60",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 38.057463676779435,
+        "center_world": [
+          128.15916036625498,
+          48.34443493898641
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-61",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.629485515841807,
+        "center_world": [
+          121.47339746125726,
+          49.04073128909236
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-62",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.150738708762765,
+        "center_world": [
+          118.99145623847551,
+          48.99175566497554
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-63",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7458053014317119,
+        "center_world": [
+          116.46328703900207,
+          49.0801631550472
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-64",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2153483833343428,
+        "center_world": [
+          113.98832395467412,
+          49.023252498919746
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-65",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.0280493934446016,
+        "center_world": [
+          111.44016681618672,
+          49.17617010159202
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-66",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4046795883765442,
+        "center_world": [
+          108.98197520140519,
+          49.11949973139414
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-67",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 9.998108731250698,
+        "center_world": [
+          105.16469596297986,
+          49.92734543187598
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-68",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.533213708172665,
+        "center_world": [
+          101.27298969922441,
+          49.83107689864471
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-69",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.9788189845552167,
+        "center_world": [
+          98.83746382074719,
+          49.51902664864045
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-70",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.198108731250687,
+        "center_world": [
+          96.18340152322776,
+          49.89604645809253
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-71",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 135.33321370817274,
+        "center_world": [
+          80.37765228588836,
+          47.65426567639754
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-72",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6812038010308985,
+        "center_world": [
+          68.96950618951604,
+          49.27300433292588
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-73",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.952867326636549,
+        "center_world": [
+          66.43556398029261,
+          49.46341355610497
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-74",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.682706572217999,
+        "center_world": [
+          63.96913890474508,
+          49.27402969972357
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-75",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.9717145373596905,
+        "center_world": [
+          61.43201491718031,
+          49.46974062239465
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-76",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7441641931981877,
+        "center_world": [
+          58.951752088710236,
+          49.31807391738393
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-77",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.40602911241043,
+        "center_world": [
+          56.3609347289011,
+          49.61710503492175
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-78",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 127.89539167236657,
+        "center_world": [
+          41.4225514756107,
+          41.750616011094564
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-79",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 179.68359556822597,
+        "center_world": [
+          -188.7433755780637,
+          -26.910110923099307
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-80",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1005887450304654,
+        "center_world": [
+          -188.22184112310345,
+          -35.99515410878276
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-81",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.9599999999999542,
+        "center_world": [
+          -196.9999999999999,
+          -39.3
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-82",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0839894148107088,
+        "center_world": [
+          -203.4358570977488,
+          -16.340529380343483
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-83",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6341121417427016,
+        "center_world": [
+          -205.97812295499773,
+          -16.27270685489274
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-84",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.96999021733259,
+        "center_world": [
+          -208.44977749587474,
+          -16.299995100475513
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-85",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.598852183635018,
+        "center_world": [
+          -210.98111316379027,
+          -16.255775271659775
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-86",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9021657358721116,
+        "center_world": [
+          -213.45857518188961,
+          -16.275962302964615
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-87",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5757493936270954,
+        "center_world": [
+          -215.9834365764334,
+          -16.24482875340018
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-88",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8571886652405283,
+        "center_world": [
+          -218.46468622429347,
+          -16.260074227173938
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-89",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5594483956914631,
+        "center_world": [
+          -220.98527274642038,
+          -16.237178030276255
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-90",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8251798560784775,
+        "center_world": [
+          -223.4691963111585,
+          -16.24879744612706
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-91",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 40.96392322035888,
+        "center_world": [
+          -228.07981298835784,
+          -16.008087851263344
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-92",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 1378.9036662489434,
+        "center_world": [
+          -146.72713937183767,
+          -1.7178363407722017
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-93",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.740476042830363,
+        "center_world": [
+          -198.28749777440646,
+          -16.887947777261974
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-94",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0867695611358343,
+        "center_world": [
+          -200.96931266876754,
+          -16.510080331728776
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-95",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.5208274944206863,
+        "center_world": [
+          -238.09122862769868,
+          -17.168170815506702
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-96",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4441998485589698,
+        "center_world": [
+          -240.77448498683395,
+          -16.83388533818973
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-97",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.4662831584619713,
+        "center_world": [
+          -243.10749014265673,
+          -17.148185897665414
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-98",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4439773597449,
+        "center_world": [
+          -245.77467022545113,
+          -16.83364278902671
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-99",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.464328596608691,
+        "center_world": [
+          -248.1081592527736,
+          -17.147468697867414
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-100",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4437921143482064,
+        "center_world": [
+          -250.7748244025056,
+          -16.8334408750658
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-101",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.2907475417253407,
+        "center_world": [
+          -253.20379453728515,
+          -16.81229275104751
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-102",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8207990045769011,
+        "center_world": [
+          -255.9700143637616,
+          -16.36664070315535
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-103",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.315679745234094,
+        "center_world": [
+          -258.4097131979006,
+          -16.423217133399433
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-104",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.694442797390882,
+        "center_world": [
+          -260.97429686105306,
+          -16.302279623657306
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-105",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.083989414810706,
+        "center_world": [
+          -263.4358570977488,
+          -16.340529380343476
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-106",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 44.24220264895207,
+        "center_world": [
+          -268.57806022171644,
+          -7.673195445671965
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-107",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 5.930848000139308,
+        "center_world": [
+          -98.82870446402603,
+          -15.505127329534755
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-108",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 24.089992534495522,
+        "center_world": [
+          -103.79399331542618,
+          -21.47691463262679
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-109",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 145.80109900751285,
+        "center_world": [
+          -110.93559491546284,
+          -18.208181694949037
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-110",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463372,
+        "center_world": [
+          -263.5,
+          0.9464615936293512
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-111",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 244.79779894499768,
+        "center_world": [
+          -102.90090289053592,
+          10.419440784962163
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-112",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 16.525574870228233,
+        "center_world": [
+          -101.61194492886636,
+          -2.566780592770556
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-113",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 21.432266388744278,
+        "center_world": [
+          -138.1114729099786,
+          21.716213508086966
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-114",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -133.5000000000001,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-115",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546285,
+        "center_world": [
+          -131.0,
+          24.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-116",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -128.5000000000001,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-117",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546285,
+        "center_world": [
+          -126.0,
+          24.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-118",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.086384558455062,
+        "center_world": [
+          -123.53034719461732,
+          24.8585091152718
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-119",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7725825774745245,
+        "center_world": [
+          -120.74007900631705,
+          24.705020904115628
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-122",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7062859764321838,
+        "center_world": [
+          -43.512518681295035,
+          -64.20722485846984
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-123",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.502388180859004,
+        "center_world": [
+          -46.006769258159466,
+          -64.21090658621529
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-124",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7200111607923579,
+        "center_world": [
+          -48.51477830211991,
+          -64.2119919093038
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-125",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5102565491594242,
+        "center_world": [
+          -51.00802645240134,
+          -64.21447960524506
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-126",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7403070883457923,
+        "center_world": [
+          -53.518039771862675,
+          -64.21905887749877
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-127",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5223500114487287,
+        "center_world": [
+          -56.00985192246179,
+          -64.22000328407933
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-128",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7733761748636803,
+        "center_world": [
+          -58.5231684405357,
+          -64.2306135930788
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-129",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5433165266206309,
+        "center_world": [
+          -61.01273332778709,
+          -64.22966829970198
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-130",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8368080428632401,
+        "center_world": [
+          -63.532458942238236,
+          -64.25289083605914
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-131",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 10.130525697176836,
+        "center_world": [
+          -66.848718720617,
+          -61.88175980367055
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-132",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0855818174655811,
+        "center_world": [
+          -41.004698764728744,
+          -47.03932554029212
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-133",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.498549837641926,
+        "center_world": [
+          -38.514624479727104,
+          -47.00354031549372
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-134",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 15.480405393169518,
+        "center_world": [
+          -67.16188854481845,
+          -48.28478843013334
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-135",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.0280493934446104,
+        "center_world": [
+          -63.55983318381334,
+          -46.82382989840796
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-136",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2153483833343377,
+        "center_world": [
+          -61.011676045325885,
+          -46.976747501080254
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-137",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7458053014317254,
+        "center_world": [
+          -58.53671296099793,
+          -46.9198368449528
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-138",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.150738708762759,
+        "center_world": [
+          -56.00854376152449,
+          -47.00824433502448
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-139",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6294855158417598,
+        "center_world": [
+          -53.526602538742736,
+          -46.959268710907665
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-140",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1182148964305312,
+        "center_world": [
+          -51.00671852289133,
+          -47.02384534705842
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-141",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.5660102694059819,
+        "center_world": [
+          -48.52088603226747,
+          -46.9807476545803
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-142",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0986463391459718,
+        "center_world": [
+          -46.00553114959371,
+          -47.03314909485482
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-143",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.5260356478235888,
+        "center_world": [
+          -43.51720072467924,
+          -46.99425841060808
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-144",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.199204936944082,
+        "center_world": [
+          -58.57742067012913,
+          -40.38161110179243
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-145",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7440466950784197,
+        "center_world": [
+          -61.027867234955295,
+          -40.327146575174744
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-146",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.5263094532600774,
+        "center_world": [
+          -63.685491620335654,
+          -40.81798852313812
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-147",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 18.88995151931162,
+        "center_world": [
+          -68.02709042152509,
+          -39.93219842645862
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-148",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5685969815105993,
+        "center_world": [
+          -41.015778887371425,
+          -40.24146426176335
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-149",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8821522538718739,
+        "center_world": [
+          -43.53873590401065,
+          -40.26888701495629
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-150",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.588543977775722,
+        "center_world": [
+          -46.01788855477696,
+          -40.25087632600208
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-151",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9391075783975233,
+        "center_world": [
+          -48.54627282391141,
+          -40.2890426236438
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-152",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6179956946052486,
+        "center_world": [
+          -51.02058789743046,
+          -40.264934800854896
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-153",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0301929348970873,
+        "center_world": [
+          -53.55768991054805,
+          -40.321383429292744
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-154",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6658134851260659,
+        "center_world": [
+          -56.02407006376205,
+          -40.28815314840918
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-155",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6139710576407353,
+        "center_world": [
+          -53.525219644634944,
+          -22.96452125529853
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-156",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1135590557075672,
+        "center_world": [
+          -51.00644230591507,
+          -23.026064611352545
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-157",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 156.17940694684964,
+        "center_world": [
+          -58.5654910363985,
+          -18.49953450589733
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-158",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 15.81868545268193,
+        "center_world": [
+          -67.21403209319692,
+          -24.215600995812256
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-159",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.979054698747733,
+        "center_world": [
+          -63.57696510568178,
+          -22.52693035993777
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-160",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.530986875673274,
+        "center_world": [
+          -61.010174992715804,
+          -22.818216317239713
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-161",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7153899341937393,
+        "center_world": [
+          -58.53410995613001,
+          -22.930155781240302
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-162",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6963852952153001,
+        "center_world": [
+          -38.51085981165937,
+          -64.20379266268205
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-163",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.142619541615561,
+        "center_world": [
+          -56.00810474602389,
+          -23.012154961025967
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-164",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9655367105590774,
+        "center_world": [
+          -40.964862298771095,
+          -16.446270025794448
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-165",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.5319328459996724,
+        "center_world": [
+          -38.08481980799712,
+          -17.17238666224691
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-166",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 50.060347313227524,
+        "center_world": [
+          -27.157567028436404,
+          -16.688341555484328
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-167",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0209446578113353,
+        "center_world": [
+          -23.443439114027683,
+          -16.31809494745103
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-168",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6475668712127123,
+        "center_world": [
+          -20.97713922542431,
+          -16.27923715383711
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-169",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1031066710507302,
+        "center_world": [
+          -18.43360686304709,
+          -16.3473393734719
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-170",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6850374105169521,
+        "center_world": [
+          -15.974799700864708,
+          -16.297620412408808
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-171",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.229731809208022,
+        "center_world": [
+          -13.419161149275737,
+          -16.39250943016558
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-172",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.741658749395657,
+        "center_world": [
+          -10.972219575337647,
+          -16.32593817082628
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-173",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4507046595317492,
+        "center_world": [
+          -8.3951468896351,
+          -16.471560509403073
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-174",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8373179217316578,
+        "center_world": [
+          -5.969641049217273,
+          -16.37533232706776
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-175",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.1381761522047724,
+        "center_world": [
+          -3.226064480846219,
+          -16.755989612238462
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-176",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1141982248670153,
+        "center_world": [
+          -0.928150683954982,
+          -16.554063862205663
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-177",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 12.026727004211754,
+        "center_world": [
+          4.952225825565904,
+          -20.39896209405178
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-178",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 88.90921410402623,
+        "center_world": [
+          7.453042733705104,
+          -12.106454732364718
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-179",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 1988.0532523369614,
+        "center_world": [
+          -9.958410098285412,
+          15.16769763203255
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-180",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5659802103437988,
+        "center_world": [
+          -21.99798074716756,
+          8.89230838855245
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-181",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 192.56286430233592,
+        "center_world": [
+          -11.011992935079832,
+          11.932349459384227
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-183",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 65.5451518856316,
+        "center_world": [
+          -37.584787088761175,
+          -18.83031610856501
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-184",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -11.000000000000057,
+          -23.069850941592165
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-185",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445462932,
+        "center_world": [
+          -13.500000000000057,
+          -23.053538406370656
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-186",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -16.000000000000057,
+          -23.069850941592165
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-187",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445462932,
+        "center_world": [
+          -18.5,
+          -23.053538406370656
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-188",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -21.0,
+          -23.069850941592165
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-189",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445462932,
+        "center_world": [
+          -23.500000000000057,
+          -23.053538406370656
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-190",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -1.0,
+          -23.069850941592165
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-191",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445462932,
+        "center_world": [
+          -3.500000000000057,
+          -23.053538406370656
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-192",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0078564629289988,
+        "center_world": [
+          1.4450476584926264,
+          -40.31344272855223
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-193",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 44.774927066392024,
+        "center_world": [
+          6.550420580794992,
+          -31.77589662655256
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-194",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445462932,
+        "center_world": [
+          1.4999999999999432,
+          -23.053538406370656
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-195",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2822692906059538,
+        "center_world": [
+          -3.5866423888896293,
+          -40.41127632042176
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-196",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6722834199964972,
+        "center_world": [
+          -1.024466320989859,
+          -40.29133101548887
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-197",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -6.0,
+          -23.069850941592165
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-198",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445462932,
+        "center_world": [
+          -8.499999999999943,
+          -23.05353840637065
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-199",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 40.519701275996326,
+        "center_world": [
+          -33.703713957718435,
+          -39.984214632889724
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-200",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.843172712883616,
+        "center_world": [
+          -38.53335666387369,
+          -40.2551329542554
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-201",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.2907472944321583,
+        "center_world": [
+          -23.796205264899186,
+          -40.81229257129975
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-202",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7405373373961455,
+        "center_world": [
+          -21.436765518609263,
+          -41.050178869762426
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-203",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.4676461178840077,
+        "center_world": [
+          -18.89297664450163,
+          -41.1486861296285
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-204",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4441056927314895,
+        "center_world": [
+          -16.225436612799683,
+          -40.83378268754492
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-205",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.465458155771227,
+        "center_world": [
+          -13.892227390476819,
+          -41.14788315098734
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-206",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4438993437859342,
+        "center_world": [
+          -11.225264837060593,
+          -40.83355774937295
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-207",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.463639028084576,
+        "center_world": [
+          -8.891604766903129,
+          -41.14721571548764
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-208",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8655037963804976,
+        "center_world": [
+          -6.031034130674698,
+          -40.39035725000915
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-209",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 276.20432469710374,
+        "center_world": [
+          -95.65369934911178,
+          -24.329850419487766
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-210",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 209.1612653515967,
+        "center_world": [
+          -82.60332009620106,
+          -50.92066349888629
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-211",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 182.36653662042477,
+        "center_world": [
+          -90.06229587912844,
+          -36.29091881975057
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-212",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 551.7971358621667,
+        "center_world": [
+          -78.36848423508854,
+          33.777881808529756
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-213",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 400.7634263200935,
+        "center_world": [
+          -54.72878846847095,
+          4.006972940997244
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-214",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 24.31005483816597,
+        "center_world": [
+          -77.34462247609957,
+          12.596755111562864
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-215",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1520777369723139,
+        "center_world": [
+          -80.15808626364719,
+          -3.8081611515879956
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-216",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 9.248295410988064,
+        "center_world": [
+          -75.22769942544238,
+          -13.102053764701147
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-217",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 211.5390401414637,
+        "center_world": [
+          -121.12934027820165,
+          32.72142125190328
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-218",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 305.76466244646264,
+        "center_world": [
+          -191.75239668509528,
+          3.929528174463279
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-219",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 73.18651737828141,
+        "center_world": [
+          -157.66234803623274,
+          24.560158440977304
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-220",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 15.00662223048236,
+        "center_world": [
+          -76.10682264871616,
+          -30.60997055771187
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-221",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.4683874838906767,
+        "center_world": [
+          -80.02728221665456,
+          -20.911485171518738
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-222",
+        "name": "地下共同倉庫・設備保守区画",
+        "area_m2": 93.6627545985954,
+        "center_world": [
+          110.31233416628532,
+          22.6627629922681
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-223",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 10.828954781158922,
+        "center_world": [
+          93.80126864076249,
+          21.051268640762487
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-224",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 37.485055023808656,
+        "center_world": [
+          64.71857292345129,
+          36.31483621245272
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-225",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 8.493420693517109,
+        "center_world": [
+          99.89919809157993,
+          36.75325167446516
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-226",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6475061042218426,
+        "center_world": [
+          -163.5862338993345,
+          -14.50489993399282
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-227",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 45.961308067761195,
+        "center_world": [
+          -176.5872733996896,
+          -24.626027209118444
+        ]
+      },
+      {
+        "type": "program",
+        "id": "B1-PROGRAM-228",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 5.701497673889008,
+        "center_world": [
+          160.98975862584126,
+          -22.00998374943342
+        ]
+      }
+    ]
+  },
+  {
+    "wing": "B",
+    "floor": "1F",
+    "y": 0.0,
+    "store_count": 69,
+    "categories": {
+      "食品大型店": 1,
+      "書籍・文具": 8,
+      "美容・ケア": 10,
+      "生活雑貨": 7,
+      "衣料": 10,
+      "靴・鞄": 11,
+      "家電・生活大型店": 1,
+      "食品・カフェ": 9,
+      "インテリア・家電": 1,
+      "生活雑貨・デザイン": 1,
+      "モバイル・家電小物": 1,
+      "レストラン": 1,
+      "旅行用品": 1,
+      "カフェ": 1,
+      "書籍・雑貨": 1,
+      "生活・服飾": 1,
+      "旅行・雑貨": 2,
+      "カフェ・焼菓子": 2
+    },
+    "world_public_bounds": [
+      -278.687,
+      -130.0,
+      257.5,
+      74.0
+    ],
+    "public_area_m2": 23289.385151365466,
+    "public_center_world": [
+      -15.911054493627375,
+      -3.058491701946714
+    ],
+    "keys": [
+      "floor",
+      "height",
+      "stores",
+      "public",
+      "void",
+      "shafts",
+      "connectors",
+      "egress",
+      "route_ids",
+      "furniture",
+      "waiting",
+      "route_associations",
+      "wayfinding",
+      "walkable",
+      "reachable",
+      "clear_public",
+      "shell",
+      "residual",
+      "floor_plate",
+      "guardrails",
+      "service_zones",
+      "level",
+      "label",
+      "cores",
+      "escalators",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented",
+      "v5_floor_block_extensions",
+      "v5_blocks",
+      "original_shell",
+      "exterior_removed",
+      "old_floor_plate",
+      "floor_openings_v5",
+      "machine_islands",
+      "construction_poche",
+      "per_level_external_floor_cuts",
+      "building_envelope_v5",
+      "slab_added_v5",
+      "slab_removed_v5",
+      "floor_roles",
+      "thin_boundary_joints",
+      "other_wing_preview_floor",
+      "owned_B_floor_plate"
+    ],
+    "zones": []
+  },
+  {
+    "wing": "B",
+    "floor": "2F",
+    "y": 5.525,
+    "store_count": 69,
+    "categories": {
+      "大型衣料": 1,
+      "書籍・文具": 7,
+      "衣料": 11,
+      "靴・鞄": 10,
+      "美容・ケア": 8,
+      "書店・生活大型店": 1,
+      "生活雑貨": 11,
+      "食品・カフェ": 10,
+      "児童書・絵本": 1,
+      "レストラン": 1,
+      "ライフスタイル書店": 1,
+      "カフェ": 1,
+      "書籍・雑貨": 1,
+      "生活・服飾": 1,
+      "旅行・雑貨": 2,
+      "カフェ・焼菓子": 2
+    },
+    "world_public_bounds": [
+      -278.687,
+      -165.5,
+      321.5,
+      74.0
+    ],
+    "public_area_m2": 18751.848258665268,
+    "public_center_world": [
+      -18.27828739746309,
+      -1.1849114727534555
+    ],
+    "keys": [
+      "floor",
+      "height",
+      "stores",
+      "public",
+      "void",
+      "shafts",
+      "connectors",
+      "egress",
+      "route_ids",
+      "furniture",
+      "waiting",
+      "route_associations",
+      "wayfinding",
+      "walkable",
+      "reachable",
+      "clear_public",
+      "shell",
+      "residual",
+      "floor_plate",
+      "guardrails",
+      "service_zones",
+      "level",
+      "label",
+      "cores",
+      "escalators",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented",
+      "v5_floor_block_extensions",
+      "v5_blocks",
+      "original_shell",
+      "exterior_removed",
+      "old_floor_plate",
+      "floor_openings_v5",
+      "machine_islands",
+      "construction_poche",
+      "per_level_external_floor_cuts",
+      "building_envelope_v5",
+      "slab_added_v5",
+      "slab_removed_v5",
+      "floor_roles",
+      "thin_boundary_joints",
+      "other_wing_preview_floor",
+      "owned_B_floor_plate"
+    ],
+    "zones": []
+  },
+  {
+    "wing": "B",
+    "floor": "3F",
+    "y": 10.875,
+    "store_count": 60,
+    "categories": {
+      "フードホール": 1,
+      "楽器": 10,
+      "キッズ": 10,
+      "シネマ複合": 1,
+      "飲食": 7,
+      "体験・ゲーム": 10,
+      "スポーツ・アウトドア": 1,
+      "ホビー": 5,
+      "生活雑貨": 6,
+      "レストラン": 1,
+      "楽器・クラフト": 1,
+      "カフェ": 1,
+      "書籍・雑貨": 1,
+      "生活・服飾": 1,
+      "旅行・雑貨": 2,
+      "カフェ・焼菓子": 1,
+      "親子読書カフェ": 1
+    },
+    "world_public_bounds": [
+      -278.687,
+      -53.909,
+      197.0002,
+      74.0
+    ],
+    "public_area_m2": 17665.791996917796,
+    "public_center_world": [
+      -30.65843760955522,
+      4.3656721579925915
+    ],
+    "keys": [
+      "floor",
+      "height",
+      "stores",
+      "public",
+      "void",
+      "shafts",
+      "connectors",
+      "egress",
+      "route_ids",
+      "furniture",
+      "waiting",
+      "route_associations",
+      "wayfinding",
+      "walkable",
+      "reachable",
+      "clear_public",
+      "shell",
+      "residual",
+      "floor_plate",
+      "guardrails",
+      "service_zones",
+      "level",
+      "label",
+      "cores",
+      "escalators",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented",
+      "v5_floor_block_extensions",
+      "v5_blocks",
+      "original_shell",
+      "exterior_removed",
+      "old_floor_plate",
+      "floor_openings_v5",
+      "machine_islands",
+      "construction_poche",
+      "per_level_external_floor_cuts",
+      "building_envelope_v5",
+      "slab_added_v5",
+      "slab_removed_v5",
+      "floor_roles",
+      "thin_boundary_joints",
+      "other_wing_preview_floor",
+      "owned_B_floor_plate"
+    ],
+    "zones": []
+  },
+  {
+    "wing": "B",
+    "floor": "RF",
+    "y": 16.4,
+    "store_count": 1,
+    "categories": {
+      "屋上カフェ・休憩ラウンジ": 1
+    },
+    "world_public_bounds": [
+      -283.0,
+      -67.59989444867097,
+      181.40945464000004,
+      74.0
+    ],
+    "public_area_m2": 2556.5883086823183,
+    "public_center_world": [
+      -53.56224420375128,
+      -0.24681005577745196
+    ],
+    "keys": [
+      "wing",
+      "level",
+      "label",
+      "height",
+      "shell",
+      "floor_plate",
+      "public",
+      "walkable",
+      "void",
+      "shafts",
+      "stores",
+      "cores",
+      "escalators",
+      "parking",
+      "gardens",
+      "program",
+      "residual",
+      "routes",
+      "guardrails",
+      "existing_middle_floors_modified",
+      "walk_route_note",
+      "staff_walk",
+      "staff_routes",
+      "vertical_devices",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "revision",
+      "game_implemented",
+      "removed_slab",
+      "equipment_zones",
+      "overhang",
+      "plant_beds",
+      "garden_semantics"
+    ],
+    "zones": [
+      {
+        "type": "gardens",
+        "id": "BRF-GARDEN-1",
+        "name": "翼の広場屋上前庭",
+        "area_m2": 1283.243835452271,
+        "center_world": [
+          -191.99999999999807,
+          -15.500000000000064
+        ]
+      },
+      {
+        "type": "gardens",
+        "id": "BRF-GARDEN-2",
+        "name": "時の広場屋上前庭",
+        "area_m2": 997.5142337720376,
+        "center_world": [
+          -2.2737367544323206e-13,
+          2.1316282072803006e-14
+        ]
+      },
+      {
+        "type": "gardens",
+        "id": "BRF-GARDEN-3",
+        "name": "光の広場屋上前庭",
+        "area_m2": 1363.9449503952715,
+        "center_world": [
+          150.02264529599603,
+          0.5809035053179272
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-1",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 24703.867998986552,
+        "center_world": [
+          -2.5680657862146745,
+          1.2423716590638918
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-2",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 1149.3919047236889,
+        "center_world": [
+          -166.89071963743288,
+          17.061456324921316
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-3",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.959999999999928,
+        "center_world": [
+          -187.0,
+          8.299999999999997
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-5",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2599256903543803,
+        "center_world": [
+          -174.51334801404755,
+          6.8173122940268485
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-6",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.542342658040673,
+        "center_world": [
+          -156.94872665511616,
+          0.45313152564548176
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-7",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5754169722101279,
+        "center_world": [
+          -156.91499049088236,
+          -1.1315973648206494
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-8",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 220.59720701746141,
+        "center_world": [
+          -191.9171863619041,
+          -20.996545553707804
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-9",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 19.641765356667168,
+        "center_world": [
+          -192.11787925217243,
+          -1.2526394335181195
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-10",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6305557752605553,
+        "center_world": [
+          -238.37258822916556,
+          -16.537346472809674
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-11",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7566246958592225,
+        "center_world": [
+          -240.97170216052302,
+          -16.333530453574628
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-12",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.199204936944227,
+        "center_world": [
+          -243.42257932987104,
+          -16.381611101792448
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-13",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6658134851261229,
+        "center_world": [
+          -245.975929936238,
+          -16.288153148409176
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-14",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0301929348971788,
+        "center_world": [
+          -248.44231008945167,
+          -16.32138342929275
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-15",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6179956946053238,
+        "center_world": [
+          -250.97941210256965,
+          -16.264934800854896
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-16",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8585788833773644,
+        "center_world": [
+          -253.4509750344033,
+          -16.26218355278841
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-17",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 86.69180898007549,
+        "center_world": [
+          -264.53655246106564,
+          -10.354482310041874
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-18",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463372,
+        "center_world": [
+          -263.5,
+          0.9464615936293512
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-19",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -261.0000000000002,
+          0.9301490584078493
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-20",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463372,
+        "center_world": [
+          -258.5000000000001,
+          0.9464615936293512
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-21",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -256.0000000000001,
+          0.9301490584078493
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-22",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 87.8444432782098,
+        "center_world": [
+          -99.34002118346723,
+          64.95006498898863
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-23",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 120.9371192840058,
+        "center_world": [
+          81.08924496258845,
+          47.274507880853946
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-24",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 918.0773012195177,
+        "center_world": [
+          66.40978163845915,
+          24.539609711046538
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-26",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 2124.4496785830092,
+        "center_world": [
+          -50.55010148483473,
+          27.789636645366357
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-27",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.5173412005938247,
+        "center_world": [
+          -53.38762212799526,
+          7.504399312112419
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-28",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.9108682712646345,
+        "center_world": [
+          -56.79609506953972,
+          7.49987142091269
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-29",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 425.1638668843273,
+        "center_world": [
+          -65.27717435873416,
+          4.5932071040259075
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-30",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 152.0646674410691,
+        "center_world": [
+          -35.175738379203835,
+          -13.54527721859749
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-31",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9391075783975242,
+        "center_world": [
+          -53.546272823911295,
+          -16.289042623643798
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-32",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9511853976276587,
+        "center_world": [
+          -56.012284043888656,
+          -16.428325059738217
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-33",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.043404141640817,
+        "center_world": [
+          -58.57281893659348,
+          -16.645856927089632
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-34",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.235727725300342,
+        "center_world": [
+          -61.08434621213712,
+          -16.626389296222055
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-35",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.0720439246557905,
+        "center_world": [
+          -63.78948222569295,
+          -17.005483702253557
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-36",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 40.827039553951685,
+        "center_world": [
+          -72.23957288116532,
+          -16.177922313007425
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-37",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 8.386511723430193,
+        "center_world": [
+          -79.16652751853019,
+          -13.492153470894415
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-38",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 21.690206895131713,
+        "center_world": [
+          -69.12466997503145,
+          -23.57712748531174
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-39",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.40602911241046,
+        "center_world": [
+          -63.6390652710989,
+          -22.38289496507824
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-40",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.744164193198213,
+        "center_world": [
+          -61.04824791128982,
+          -22.68192608261607
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-41",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.9717145373596825,
+        "center_world": [
+          -58.56798508281969,
+          -22.530259377605333
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-42",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6827065722179992,
+        "center_world": [
+          -56.03086109525492,
+          -22.725970300276412
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-43",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.9528673266365457,
+        "center_world": [
+          -53.564436019707216,
+          -22.53658644389503
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-44",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 44.214032236464206,
+        "center_world": [
+          -33.41952442650472,
+          -31.66766792659592
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-45",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0500863838161876,
+        "center_world": [
+          -53.56009818386855,
+          -40.32846017083372
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-46",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6609198418126715,
+        "center_world": [
+          -56.02375926291131,
+          -40.285755204112725
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-47",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1466812718232515,
+        "center_world": [
+          -58.57144821744862,
+          -40.36287198955825
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-48",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1328216160163402,
+        "center_world": [
+          -61.042383682595755,
+          -40.54254711263842
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-49",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.4997334785283334,
+        "center_world": [
+          -63.66696383744767,
+          -40.80500744450123
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-50",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 17.341499258054036,
+        "center_world": [
+          -67.75682594439013,
+          -39.645905366436814
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-51",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 14.784964246577756,
+        "center_world": [
+          -67.11763700500313,
+          -48.423344914651196
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-52",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.141089267395778,
+        "center_world": [
+          -63.56876007865645,
+          -46.785239343205305
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-53",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2367271674691127,
+        "center_world": [
+          -61.012582477089666,
+          -46.966178231078345
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-54",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.781744658208143,
+        "center_world": [
+          -58.53975561550595,
+          -46.9076366798468
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-55",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1600072293823698,
+        "center_world": [
+          -56.009031910268504,
+          -47.00376713609332
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-56",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6469378799255434,
+        "center_world": [
+          -53.52814776621449,
+          -46.95335807033025
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-57",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1233582263930368,
+        "center_world": [
+          -51.007019202141066,
+          -47.0213896109703
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-58",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7403070883457923,
+        "center_world": [
+          -53.518039771862675,
+          -64.21905887749877
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-59",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5223500114487287,
+        "center_world": [
+          -56.00985192246185,
+          -64.22000328407933
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-60",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7733761748636803,
+        "center_world": [
+          -58.5231684405357,
+          -64.2306135930788
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-61",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5433165266206309,
+        "center_world": [
+          -61.01273332778709,
+          -64.22966829970198
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-62",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8368080428632403,
+        "center_world": [
+          -63.53245894223818,
+          -64.25289083605914
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-63",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 10.130525697176836,
+        "center_world": [
+          -66.848718720617,
+          -61.88175980367055
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-64",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 218.7641034995823,
+        "center_world": [
+          -82.52712858501133,
+          -50.678329440109124
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-65",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 204.84870586723343,
+        "center_world": [
+          -90.15253190410749,
+          -35.56118221514238
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-66",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 16.613360619783364,
+        "center_world": [
+          -90.2283439096675,
+          -27.394848630405743
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-67",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 229.42113306550027,
+        "center_world": [
+          -95.5776436746645,
+          -22.456460407523494
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-68",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 5.9308480001393065,
+        "center_world": [
+          -98.82870446402615,
+          -15.505127329534766
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-69",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 24.08999253449534,
+        "center_world": [
+          -103.79399331542618,
+          -21.47691463262674
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-70",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 885.5533575403824,
+        "center_world": [
+          -124.93156070543102,
+          -3.0145828782324884
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-71",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -143.5,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-72",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546285,
+        "center_world": [
+          -141.0,
+          24.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-73",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -138.5,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-74",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546285,
+        "center_world": [
+          -136.0000000000001,
+          24.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-75",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -133.5000000000001,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-76",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546285,
+        "center_world": [
+          -131.0000000000001,
+          24.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-77",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -128.5000000000001,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-78",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546285,
+        "center_world": [
+          -126.00000000000011,
+          24.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-79",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -123.50000000000011,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-80",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546285,
+        "center_world": [
+          -121.0,
+          24.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-81",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463507,
+        "center_world": [
+          -118.49999999999989,
+          24.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-82",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 459.351128025259,
+        "center_world": [
+          -124.43669608107109,
+          36.03675577272733
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-83",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 16.525574870228233,
+        "center_world": [
+          -101.61194492886636,
+          -2.566780592770556
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-84",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 342.6271281410891,
+        "center_world": [
+          -102.26341031130062,
+          12.9924266072194
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-85",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 12.713588280813338,
+        "center_world": [
+          -82.53977435903477,
+          -2.4049546540207274
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-86",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.7244988713183422,
+        "center_world": [
+          -74.68773392112342,
+          -33.78392799883592
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-87",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 37.87612011010275,
+        "center_world": [
+          64.6914531513628,
+          36.3066680867572
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-88",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6963852952153,
+        "center_world": [
+          -38.51085981165937,
+          -64.20379266268205
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-89",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.1638753317661745,
+        "center_world": [
+          -48.12064194476022,
+          7.191289145626605
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-90",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9404090417972277,
+        "center_world": [
+          -45.96632018643402,
+          7.568245823359959
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-91",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 11.947169520753038,
+        "center_world": [
+          -35.077840744143316,
+          3.6325482526994577
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-95",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 4.169662927007739,
+        "center_world": [
+          16.702830278387694,
+          23.45680281066781
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-96",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 210.3426056179128,
+        "center_world": [
+          -0.10714856798091432,
+          0.054010381911155037
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-97",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 393.61493829017564,
+        "center_world": [
+          -16.036452636645947,
+          -29.832185994353036
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-98",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.2247236946391045,
+        "center_world": [
+          21.174311590180764,
+          7.046621448153175
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-99",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463052,
+        "center_world": [
+          121.5,
+          48.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-100",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0201027445463362,
+        "center_world": [
+          119.0,
+          48.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-101",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463052,
+        "center_world": [
+          116.49999999999994,
+          48.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-102",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0201027445463362,
+        "center_world": [
+          114.0,
+          48.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-103",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463052,
+        "center_world": [
+          111.50000000000006,
+          48.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-104",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0201027445463362,
+        "center_world": [
+          109.0,
+          48.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-105",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.1501027445463166,
+        "center_world": [
+          105.49999999999994,
+          48.94848347417856
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-106",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6351027445463235,
+        "center_world": [
+          101.6561945310292,
+          48.942346899228255
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-107",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0201027445463362,
+        "center_world": [
+          99.0,
+          48.930149058407835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-108",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445463052,
+        "center_world": [
+          96.5,
+          48.94646159362935
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-109",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.1290697051091751,
+        "center_world": [
+          69.00734768981016,
+          48.98134243153639
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-110",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.5875938892658286,
+        "center_world": [
+          66.52284758456801,
+          49.02655252172636
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-111",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.10545687325988,
+        "center_world": [
+          64.00595232670815,
+          48.970081821326644
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-112",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.5401074019377206,
+        "center_world": [
+          61.518506061263,
+          49.010496113202365
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-113",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.090249295220865,
+        "center_world": [
+          59.0049998899479,
+          48.962877845655385
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-114",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.508445002746444,
+        "center_world": [
+          56.515556106136216,
+          48.99980049446138
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-115",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9145422021694606,
+        "center_world": [
+          164.4418585118342,
+          30.49691204489835
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-116",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.265596713822755,
+        "center_world": [
+          151.67914366084062,
+          25.662382346315283
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-117",
+        "name": "屋上太陽光/空調設備保守区画",
+        "area_m2": 314.0713543332263,
+        "center_world": [
+          149.9285985080495,
+          -0.910527149573646
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-118",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.4214519182343368,
+        "center_world": [
+          13.162611424538511,
+          -16.090033535957396
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-119",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.5033378572221743,
+        "center_world": [
+          -38.515075864028745,
+          -47.0019238920543
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-121",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7062859764321838,
+        "center_world": [
+          -43.51251868129509,
+          -64.20722485846984
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-122",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.502388180859004,
+        "center_world": [
+          -46.006769258159466,
+          -64.21090658621529
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-123",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.7200111607923579,
+        "center_world": [
+          -48.51477830211991,
+          -64.2119919093038
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-124",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5102565491594242,
+        "center_world": [
+          -51.00802645240134,
+          -64.21447960524506
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-125",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.5762884324467268,
+        "center_world": [
+          -48.521822503962255,
+          -46.97727174152248
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-126",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.101910237113311,
+        "center_world": [
+          -46.00573406856546,
+          -47.03160165185998
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-127",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.532801002604546,
+        "center_world": [
+          -43.517829418070505,
+          -46.9919727595476
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-128",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.0878352932633752,
+        "center_world": [
+          -41.004844674261676,
+          -47.03826218692018
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-129",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5720538091764193,
+        "center_world": [
+          -41.016162093438936,
+          -40.243088885551145
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-130",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.6320837013440826,
+        "center_world": [
+          -38.5419102459951,
+          -40.18379038732476
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-131",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3501027445462932,
+        "center_world": [
+          -38.49999999999994,
+          -23.053538406370656
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-132",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8917693978045472,
+        "center_world": [
+          -43.54003382307826,
+          -40.272285877869656
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-133",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5934918281473351,
+        "center_world": [
+          -46.018375210841896,
+          -40.25322484377962
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-134",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.9538025118366199,
+        "center_world": [
+          -48.54816320315973,
+          -40.294252324608564
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-135",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.630623577790152,
+        "center_world": [
+          -51.0216085155343,
+          -40.271019857317945
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-136",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6812038010308992,
+        "center_world": [
+          -51.03049381048385,
+          -22.726995667074128
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-137",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 2.9414698437931053,
+        "center_world": [
+          -48.56232628108967,
+          -22.540398339844778
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-138",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.6802423252027683,
+        "center_world": [
+          -46.0302610507772,
+          -22.727650200662683
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-139",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 53.68853843910443,
+        "center_world": [
+          -47.15418328002983,
+          -19.522231730594413
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-140",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.020102744546328,
+        "center_world": [
+          -41.00000000000006,
+          -23.069850941592165
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-141",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.5685969815106003,
+        "center_world": [
+          -46.015778887371425,
+          -16.24146426176334
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-142",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8821522538718736,
+        "center_world": [
+          -48.53873590401071,
+          -16.268887014956295
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-143",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.588543977775724,
+        "center_world": [
+          -51.0178885547769,
+          -16.25087632600208
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-144",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 0.8508343086949213,
+        "center_world": [
+          -50.96933046550771,
+          7.617495335492983
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-145",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 3.52726050205261,
+        "center_world": [
+          -42.62288735593603,
+          6.57048797702307
+        ]
+      },
+      {
+        "type": "program",
+        "id": "RF-PROGRAM-146",
+        "name": "非居室：防水/壁厚/設備間離隔",
+        "area_m2": 1.3456490467148337,
+        "center_world": [
+          -40.74675215429079,
+          7.184167072259029
+        ]
+      }
+    ]
+  },
+  {
+    "wing": "C",
+    "floor": "B1",
+    "y": -5.35,
+    "store_count": 18,
+    "categories": {
+      "サービス・修理": 6,
+      "アウトレット生活雑貨": 6,
+      "物流受取カウンター": 6
+    },
+    "world_public_bounds": [
+      -169.6348204320626,
+      -418.8859839632194,
+      157.4294463848782,
+      -172.0
+    ],
+    "public_area_m2": 20057.086171604813,
+    "public_center_world": [
+      -11.932675713423805,
+      -287.7294089154567
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "pavilions",
+      "outdoor_deck",
+      "outdoor_ground",
+      "indoor_public",
+      "landscape",
+      "furniture",
+      "route_ids",
+      "weather",
+      "service_access",
+      "guardrails",
+      "guardrail_height_m",
+      "staff_corridor",
+      "loading_yard",
+      "staff_route_points",
+      "enclosure",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented"
+    ],
+    "zones": [
+      {
+        "type": "outdoor_ground",
+        "area_m2": 0.0
+      },
+      {
+        "type": "indoor_public",
+        "area_m2": 20057.086171604824
+      }
+    ]
+  },
+  {
+    "wing": "C",
+    "floor": "1F",
+    "y": 0.0,
+    "store_count": 18,
+    "categories": {
+      "ファッション": 2,
+      "靴・鞄": 2,
+      "生活雑貨": 3,
+      "書籍・文具": 1,
+      "スポーツ": 3,
+      "アウトドア": 1,
+      "キッズ": 1,
+      "カフェ": 1,
+      "レストラン": 1,
+      "フードショップ": 1,
+      "家具": 1,
+      "ベーカリー・カフェ": 1
+    },
+    "world_public_bounds": [
+      -169.6348204320626,
+      -418.8859839632194,
+      157.4294463848782,
+      -125.0
+    ],
+    "public_area_m2": 21418.377759038365,
+    "public_center_world": [
+      -5.034634922125292,
+      -280.6245553032357
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "pavilions",
+      "outdoor_deck",
+      "outdoor_ground",
+      "indoor_public",
+      "landscape",
+      "furniture",
+      "route_ids",
+      "weather",
+      "service_access",
+      "guardrails",
+      "guardrail_height_m",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented"
+    ],
+    "zones": [
+      {
+        "type": "outdoor_ground",
+        "area_m2": 14844.041628187877
+      },
+      {
+        "type": "indoor_public",
+        "area_m2": 6574.336130850462
+      }
+    ]
+  },
+  {
+    "wing": "C",
+    "floor": "2F",
+    "y": 5.525,
+    "store_count": 18,
+    "categories": {
+      "ファッション": 1,
+      "キッズ服飾": 1,
+      "靴・鞄": 1,
+      "生活雑貨": 2,
+      "書籍・文具": 1,
+      "ホビー": 1,
+      "アウトドア": 1,
+      "スポーツ": 2,
+      "リユース": 1,
+      "キッズ体験": 1,
+      "玩具": 1,
+      "カフェ": 1,
+      "レストラン": 1,
+      "ファミリー飲食": 1,
+      "家具": 1,
+      "ギャラリー・カフェ": 1
+    },
+    "world_public_bounds": [
+      -169.6348204320626,
+      -418.8859839632194,
+      157.4294463848782,
+      -162.0
+    ],
+    "public_area_m2": 12020.554386658483,
+    "public_center_world": [
+      -7.750400877388245,
+      -282.6038679012409
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "pavilions",
+      "outdoor_deck",
+      "outdoor_ground",
+      "indoor_public",
+      "landscape",
+      "furniture",
+      "route_ids",
+      "weather",
+      "service_access",
+      "guardrails",
+      "guardrail_height_m",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented"
+    ],
+    "zones": [
+      {
+        "type": "outdoor_ground",
+        "area_m2": 0.0
+      },
+      {
+        "type": "indoor_public",
+        "area_m2": 6574.336130850461
+      }
+    ]
+  },
+  {
+    "wing": "C",
+    "floor": "3F",
+    "y": 10.875,
+    "store_count": 18,
+    "categories": {
+      "ファッション特集": 1,
+      "ファッションリペア": 1,
+      "靴・鞄": 1,
+      "書店・学習": 1,
+      "ホビー工房": 1,
+      "生活雑貨": 1,
+      "屋内スポーツ体験": 1,
+      "アウトドア": 1,
+      "キッズアクティブ": 1,
+      "アミューズ": 1,
+      "玩具": 1,
+      "スポーツ体験": 1,
+      "レストラン": 1,
+      "ビュッフェ": 1,
+      "カフェ": 1,
+      "家具": 1,
+      "リユース": 1,
+      "ギャラリー": 1
+    },
+    "world_public_bounds": [
+      -169.6348204320626,
+      -418.8859839632194,
+      157.4294463848782,
+      -172.0
+    ],
+    "public_area_m2": 11162.811570315049,
+    "public_center_world": [
+      -9.644072565068484,
+      -287.0415715834822
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "pavilions",
+      "outdoor_deck",
+      "outdoor_ground",
+      "indoor_public",
+      "landscape",
+      "furniture",
+      "route_ids",
+      "weather",
+      "service_access",
+      "guardrails",
+      "guardrail_height_m",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented"
+    ],
+    "zones": [
+      {
+        "type": "outdoor_ground",
+        "area_m2": 0.0
+      },
+      {
+        "type": "indoor_public",
+        "area_m2": 6574.336130850461
+      }
+    ]
+  },
+  {
+    "wing": "C",
+    "floor": "RF",
+    "y": 16.4,
+    "store_count": 6,
+    "categories": {
+      "屋上ラウンジ": 2,
+      "庭園管理・休憩": 2,
+      "展望カフェ": 2
+    },
+    "world_public_bounds": [
+      -185.11182038654363,
+      -419.5534918288133,
+      173.17017968917273,
+      -171.3
+    ],
+    "public_area_m2": 16923.91074991205,
+    "public_center_world": [
+      -8.407717011889417,
+      -289.2962260088292
+    ],
+    "keys": [
+      "level",
+      "label",
+      "height",
+      "shell",
+      "public",
+      "walkable",
+      "floor_plate",
+      "void",
+      "shafts",
+      "residual",
+      "stores",
+      "cores",
+      "escalators",
+      "pavilions",
+      "outdoor_deck",
+      "outdoor_ground",
+      "indoor_public",
+      "landscape",
+      "furniture",
+      "route_ids",
+      "weather",
+      "service_access",
+      "guardrails",
+      "guardrail_height_m",
+      "core_free",
+      "envelope_walls",
+      "vestibule_walls",
+      "doors_v3",
+      "nav_free",
+      "nav_avatar_radius_m",
+      "wing",
+      "revision",
+      "game_implemented"
+    ],
+    "zones": [
+      {
+        "type": "outdoor_ground",
+        "area_m2": 0.0
+      },
+      {
+        "type": "indoor_public",
+        "area_m2": 2705.7599999999998
+      }
+    ]
+  }
+]

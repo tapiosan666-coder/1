@@ -1,0 +1,832 @@
+{
+  "seeded_rows": [
+    {
+      "sign": "V21-combined-A-B1-NAV-1",
+      "kind": "WC",
+      "target": "A-KW-AWC"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-1",
+      "kind": "EV",
+      "target": "A-A-KW"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-1",
+      "kind": "ES",
+      "target": "A-E1--1-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-1",
+      "kind": "FOOD",
+      "target": "AB1-001"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-2",
+      "kind": "WC",
+      "target": "A-KE-AWC"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-2",
+      "kind": "EV",
+      "target": "A-A-KE"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-2",
+      "kind": "ES",
+      "target": "A-E2--1-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-2",
+      "kind": "FOOD",
+      "target": "AB1-001"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-3",
+      "kind": "WC",
+      "target": "A-KS-AWC"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-3",
+      "kind": "EV",
+      "target": "A-A-KS"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-3",
+      "kind": "ES",
+      "target": "A-E3--1-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-A-B1-NAV-3",
+      "kind": "FOOD",
+      "target": "AB1-001"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-1",
+      "kind": "WC",
+      "target": "A-KW-AWC"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-1",
+      "kind": "EV",
+      "target": "A-A-KW"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-1",
+      "kind": "ES",
+      "target": "A-WEST-V22-0-DOWN-test_start"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-1",
+      "kind": "INFO",
+      "target": "A-WEST-VISITOR-information_counter-1"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-2",
+      "kind": "WC",
+      "target": "A-KE-AWC"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-2",
+      "kind": "EV",
+      "target": "A-A-KE"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-2",
+      "kind": "ES",
+      "target": "A-E2--1-DOWN-test_end"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-2",
+      "kind": "DINING",
+      "target": "A1F-032"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-3",
+      "kind": "WC",
+      "target": "A-KS-AWC"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-3",
+      "kind": "EV",
+      "target": "A-A-KS"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-3",
+      "kind": "ES",
+      "target": "A-E3--1-UP-test_end"
+    },
+    {
+      "sign": "V21-combined-A-1F-NAV-3",
+      "kind": "INFO",
+      "target": "A-WEST-VISITOR-information_counter-1"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-1",
+      "kind": "WC",
+      "target": "A-KW-AWC"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-1",
+      "kind": "EV",
+      "target": "A-A-KW"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-1",
+      "kind": "ES",
+      "target": "A-WEST-V22-1-DOWN-test_start"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-1",
+      "kind": "B",
+      "target": "AB-2-THROUGH-TO-A2F-051-return"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-2",
+      "kind": "WC",
+      "target": "A-KE-AWC"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-2",
+      "kind": "EV",
+      "target": "A-A-KE"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-2",
+      "kind": "ES",
+      "target": "A-E2-1-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-2",
+      "kind": "B",
+      "target": "AB-2-THROUGH-TO-A2F-051-return"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-3",
+      "kind": "WC",
+      "target": "A-KS-AWC"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-3",
+      "kind": "EV",
+      "target": "A-A-KS"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-3",
+      "kind": "ES",
+      "target": "A-E3-1-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-A-2F-NAV-3",
+      "kind": "B",
+      "target": "AB-2-THROUGH-TO-A2F-051-return"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-1",
+      "kind": "WC",
+      "target": "A-KW-AWC"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-1",
+      "kind": "EV",
+      "target": "A-A-KW"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-1",
+      "kind": "ES",
+      "target": "A-WEST-V22-1-DOWN-test_end"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-1",
+      "kind": "ARCADE",
+      "target": "A3F-012"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-2",
+      "kind": "WC",
+      "target": "A-KE-AWC"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-2",
+      "kind": "EV",
+      "target": "A-A-KE"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-2",
+      "kind": "ES",
+      "target": "A-E2-1-DOWN-test_end"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-2",
+      "kind": "CINEMA",
+      "target": "A3F-001"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-3",
+      "kind": "WC",
+      "target": "A-KS-AWC"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-3",
+      "kind": "EV",
+      "target": "A-A-KS"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-3",
+      "kind": "ES",
+      "target": "A-E3-1-UP-test_end"
+    },
+    {
+      "sign": "V21-combined-A-3F-NAV-3",
+      "kind": "CINEMA",
+      "target": "A3F-001"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-1",
+      "kind": "WC",
+      "target": "A-KW-AWC"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-1",
+      "kind": "EV",
+      "target": "A-A-KW"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-1",
+      "kind": "ES",
+      "target": "A-WEST-V22-2-DOWN-test_end"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-1",
+      "kind": "ST",
+      "target": "A-KW-ST"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-2",
+      "kind": "WC",
+      "target": "A-KE-AWC"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-2",
+      "kind": "EV",
+      "target": "A-A-KE"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-2",
+      "kind": "ES",
+      "target": "A-E2-2-UP-test_end"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-2",
+      "kind": "ST",
+      "target": "A-KE-ST"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-3",
+      "kind": "WC",
+      "target": "A-KW-AWC"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-3",
+      "kind": "EV",
+      "target": "A-A-KW"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-3",
+      "kind": "ES",
+      "target": "A-WEST-V22-2-UP-test_end"
+    },
+    {
+      "sign": "V21-combined-A-RF-NAV-3",
+      "kind": "ST",
+      "target": "A-KW-ST"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-1",
+      "kind": "WC",
+      "target": "K1-AWC"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-1",
+      "kind": "EV",
+      "target": "B-K1"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-1",
+      "kind": "ST",
+      "target": "K1-ST"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-2",
+      "kind": "WC",
+      "target": "K2-AWC"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-2",
+      "kind": "EV",
+      "target": "B-K2"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-2",
+      "kind": "ST",
+      "target": "K2-ST"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-3",
+      "kind": "WC",
+      "target": "K3-AWC"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-3",
+      "kind": "EV",
+      "target": "B-K3"
+    },
+    {
+      "sign": "V21-combined-B-B1-NAV-3",
+      "kind": "ST",
+      "target": "K3-ST"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-1",
+      "kind": "WC",
+      "target": "K1-AWC"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-1",
+      "kind": "EV",
+      "target": "B-K1"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-1",
+      "kind": "ES",
+      "target": "B-WEST-V15-0-DOWN-test_start"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-1",
+      "kind": "DINING",
+      "target": "B1-W4"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-2",
+      "kind": "WC",
+      "target": "K3-AWC"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-2",
+      "kind": "EV",
+      "target": "B-K3"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-2",
+      "kind": "ES",
+      "target": "E2-12-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-2",
+      "kind": "A",
+      "target": "AB-1-THROUGH-TO-A1F-051"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-3",
+      "kind": "WC",
+      "target": "K3-AWC"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-3",
+      "kind": "EV",
+      "target": "B-K3"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-3",
+      "kind": "ES",
+      "target": "E3-12-DOWN-test_start"
+    },
+    {
+      "sign": "V21-combined-B-1F-NAV-3",
+      "kind": "DINING",
+      "target": "B1-W4"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-1",
+      "kind": "WC",
+      "target": "K1-AWC"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-1",
+      "kind": "EV",
+      "target": "B-K1"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-1",
+      "kind": "ES",
+      "target": "B-WEST-V15-0-UP-test_end"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-1",
+      "kind": "DINING",
+      "target": "B2-W4"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-2",
+      "kind": "WC",
+      "target": "K2-AWC"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-2",
+      "kind": "EV",
+      "target": "B-K2"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-2",
+      "kind": "ES",
+      "target": "E2-23-DOWN-test_start"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-2",
+      "kind": "DINING",
+      "target": "B2-W4"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-3",
+      "kind": "WC",
+      "target": "K3-AWC"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-3",
+      "kind": "EV",
+      "target": "B-K3"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-3",
+      "kind": "ES",
+      "target": "E3-12-DOWN-test_end"
+    },
+    {
+      "sign": "V21-combined-B-2F-NAV-3",
+      "kind": "DINING",
+      "target": "B2-W4"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-1",
+      "kind": "WC",
+      "target": "K1-AWC"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-1",
+      "kind": "EV",
+      "target": "B-K1"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-1",
+      "kind": "ES",
+      "target": "B-WEST-V15-2-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-1",
+      "kind": "DINING",
+      "target": "B3-W4"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-2",
+      "kind": "WC",
+      "target": "K2-AWC"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-2",
+      "kind": "EV",
+      "target": "B-K2"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-2",
+      "kind": "ES",
+      "target": "E2-23-DOWN-test_end"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-2",
+      "kind": "DINING",
+      "target": "B3-W4"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-3",
+      "kind": "WC",
+      "target": "K3-AWC"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-3",
+      "kind": "EV",
+      "target": "B-K3"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-3",
+      "kind": "ES",
+      "target": "E3-23-UP-test_end"
+    },
+    {
+      "sign": "V21-combined-B-3F-NAV-3",
+      "kind": "DINING",
+      "target": "B3-W4"
+    },
+    {
+      "sign": "V21-combined-B-RF-NAV-1",
+      "kind": "ES",
+      "target": "B-WEST-V15-2-DOWN-test_end"
+    },
+    {
+      "sign": "V21-combined-B-RF-NAV-2",
+      "kind": "WC",
+      "target": "K1-AWC"
+    },
+    {
+      "sign": "V21-combined-B-RF-NAV-2",
+      "kind": "EV",
+      "target": "B-K1"
+    },
+    {
+      "sign": "V21-combined-B-RF-NAV-2",
+      "kind": "ST",
+      "target": "K1-ST"
+    },
+    {
+      "sign": "V21-combined-B-RF-NAV-3",
+      "kind": "WC",
+      "target": "K3-AWC"
+    },
+    {
+      "sign": "V21-combined-B-RF-NAV-3",
+      "kind": "EV",
+      "target": "B-K3"
+    },
+    {
+      "sign": "V21-combined-B-RF-NAV-3",
+      "kind": "ST",
+      "target": "K3-ST"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-1",
+      "kind": "WC",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-1",
+      "kind": "EV",
+      "target": "C-K-CSW"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-1",
+      "kind": "ST",
+      "target": "K-CSW-ST"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-2",
+      "kind": "WC",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-2",
+      "kind": "EV",
+      "target": "C-K-CSE"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-2",
+      "kind": "ST",
+      "target": "K-CSE-ST"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-3",
+      "kind": "WC",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-3",
+      "kind": "EV",
+      "target": "C-K-CNE"
+    },
+    {
+      "sign": "V21-combined-C-B1-NAV-3",
+      "kind": "ST",
+      "target": "K-CNE-ST"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-1",
+      "kind": "WC",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-1",
+      "kind": "EV",
+      "target": "C-K-CSW"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-1",
+      "kind": "ES",
+      "target": "CE12-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-1",
+      "kind": "DINING",
+      "target": "C1F-CSE-2"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-2",
+      "kind": "WC",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-2",
+      "kind": "EV",
+      "target": "C-K-CSE"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-2",
+      "kind": "ES",
+      "target": "CE12-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-2",
+      "kind": "B",
+      "target": "BC-1-THROUGH-TO-C1F-CSE-2-return"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-3",
+      "kind": "WC",
+      "target": "K-CE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-3",
+      "kind": "EV",
+      "target": "C-K-CE"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-3",
+      "kind": "ES",
+      "target": "CE12-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-C-1F-NAV-3",
+      "kind": "DINING",
+      "target": "C1F-CSE-2"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-1",
+      "kind": "WC",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-1",
+      "kind": "EV",
+      "target": "C-K-CSW"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-1",
+      "kind": "ES",
+      "target": "CN23-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-1",
+      "kind": "B",
+      "target": "BC-2-THROUGH-TO-C2F-CSE-3-return"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-2",
+      "kind": "WC",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-2",
+      "kind": "EV",
+      "target": "C-K-CSW"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-2",
+      "kind": "ES",
+      "target": "CN23-UP-test_start"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-2",
+      "kind": "DINING",
+      "target": "C2F-CSE-2"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-3",
+      "kind": "WC",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-3",
+      "kind": "EV",
+      "target": "C-K-CNE"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-3",
+      "kind": "ES",
+      "target": "CE12-UP-test_end"
+    },
+    {
+      "sign": "V21-combined-C-2F-NAV-3",
+      "kind": "DINING",
+      "target": "C2F-CSE-2"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-1",
+      "kind": "WC",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-1",
+      "kind": "EV",
+      "target": "C-K-CSW"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-1",
+      "kind": "ST",
+      "target": "K-CSW-ST"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-2",
+      "kind": "WC",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-2",
+      "kind": "EV",
+      "target": "C-K-CSE"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-2",
+      "kind": "ST",
+      "target": "K-CSE-ST"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-2",
+      "kind": "DINING",
+      "target": "C3F-CSE-1"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-3",
+      "kind": "WC",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-3",
+      "kind": "EV",
+      "target": "C-K-CNE"
+    },
+    {
+      "sign": "V21-combined-C-3F-NAV-3",
+      "kind": "ST",
+      "target": "K-CNE-ST"
+    },
+    {
+      "sign": "V21-combined-C-RF-NAV-2",
+      "kind": "WC",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-RF-NAV-2",
+      "kind": "EV",
+      "target": "C-K-CSE"
+    },
+    {
+      "sign": "V21-combined-C-RF-NAV-2",
+      "kind": "ST",
+      "target": "K-CSE-ST"
+    },
+    {
+      "sign": "V21-combined-C-RF-NAV-3",
+      "kind": "WC",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "sign": "V21-combined-C-RF-NAV-3",
+      "kind": "EV",
+      "target": "C-K-CNE"
+    },
+    {
+      "sign": "V21-combined-C-RF-NAV-3",
+      "kind": "ST",
+      "target": "K-CNE-ST"
+    },
+    {
+      "sign": "V22-TRANSFER-A-2F",
+      "kind": "ES",
+      "target": "A-WEST-V22-1-UP-boarding"
+    },
+    {
+      "sign": "V22-TRANSFER-A-3F",
+      "kind": "ES",
+      "target": "A-WEST-V22-2-UP-boarding"
+    },
+    {
+      "sign": "V22-TRANSFER-B-2F",
+      "kind": "ES",
+      "target": "B-WEST-V15-1-UP-boarding"
+    },
+    {
+      "sign": "V22-TRANSFER-B-3F",
+      "kind": "ES",
+      "target": "B-WEST-V15-2-UP-boarding"
+    }
+  ],
+  "human_playtest": false,
+  "runtime_revalidation_required": true,
+  "purpose": "Avoid repeating a full navigation search at every launch; no unverified route is enabled."
+}

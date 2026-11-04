@@ -1,0 +1,98 @@
+{
+  "references": [
+    {
+      "id": "USER-PHOTO-1",
+      "source": "User-provided 1-写真1.jpg",
+      "sha256": "cb1886f10fa427df73c0984a4561be993d13bdd469f94e2d07590055ab4de232",
+      "visually_inspected": true,
+      "kind": "photographic store/mall reference",
+      "redistributed": false
+    },
+    {
+      "id": "USER-PHOTO-2",
+      "source": "User-provided 2-写真2.jpg",
+      "sha256": "a312f2ce822a98f85cbe5e65954c746301223665931caa76aea20c00ef2d9ab5",
+      "visually_inspected": true,
+      "kind": "architectural visualization; built condition not verified",
+      "redistributed": false
+    },
+    {
+      "id": "USER-PHOTO-3",
+      "source": "User-provided 3-写真3.jpg",
+      "sha256": "0d2a76304ce5a270a03f1845b69c11b3434f547216ae5675aa2958c0e2c541e9",
+      "visually_inspected": true,
+      "kind": "photographic store/mall reference",
+      "redistributed": false
+    },
+    {
+      "id": "USER-PHOTO-4",
+      "source": "User-provided 4-写真4.jpg",
+      "sha256": "d15f71f5d73fdc8469dc685eb3d4bd2821de67ee38c350476304308426af7e52",
+      "visually_inspected": true,
+      "kind": "photographic store/mall reference",
+      "redistributed": false
+    },
+    {
+      "id": "OFFICIAL-GUIDE-P7",
+      "source": "User-uploaded AEON_LAKETOWN_OFFICIAL_FLOOR_GUIDE_202610.pdf page 7, upper-left outlet exterior image",
+      "visually_inspected": true,
+      "redistributed": false,
+      "note": "Exterior/aerial image only; capture method not independently verified. Not a ground-level courtyard survey."
+    }
+  ],
+  "assets_considered": [
+    {
+      "name": "MaterialsVariantsShoe",
+      "license": "CC-BY-4.0",
+      "credit": "Shopify, 2021",
+      "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/MaterialsVariantsShoe",
+      "commercial_use": true,
+      "restrictions": "Attribution and modification notice retained for CC-BY assets. No real store branding copied."
+    },
+    {
+      "name": "DiffuseTransmissionPlant",
+      "license": "CC-BY-4.0 and CC0-1.0",
+      "credit": "Eric Chadwick / Darmstadt Graphics Group GmbH 2024; original Rico Cilliers 2021",
+      "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/DiffuseTransmissionPlant",
+      "commercial_use": true,
+      "restrictions": "Attribution and modification notice retained for CC-BY assets. No real store branding copied."
+    },
+    {
+      "name": "AnisotropyBarnLamp",
+      "license": "CC-BY-4.0",
+      "credit": "Eric Chadwick / Wayfair LLC 2023",
+      "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/AnisotropyBarnLamp",
+      "commercial_use": true,
+      "restrictions": "Attribution and modification notice retained for CC-BY assets. No real store branding copied."
+    },
+    {
+      "name": "WaterBottle",
+      "license": "CC0-1.0",
+      "credit": "Microsoft 2017",
+      "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/WaterBottle",
+      "commercial_use": true,
+      "restrictions": "Attribution and modification notice retained for CC-BY assets. No real store branding copied."
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "name": "Sponza",
+      "reason": "CryEngine agreement encountered; suitability for this Godot commercial redistribution not verified. Not used."
+    },
+    {
+      "name": "royal_esplanade HDR mirror",
+      "reason": "Image obtained but asset-specific licence could not be independently checked on accessible official pages; not used"
+    }
+  ],
+  "environment_constraints": [
+    "No Windows real machine or discrete GPU; llvmpipe only",
+    "No unrestricted photo web search; only actually opened user photos and official PDF used",
+    "Blender 4.3.2 and Godot 4.6.3 available",
+    "No human interactive playtest available"
+  ],
+  "design_decisions": {
+    "A": "Store eye-level composition: wide open shop portals, darker frames, warm interiors, floor reflectance controlled, window displays with real garments and shoes. Remove repetitive v9 coffer grid.",
+    "B": "Keep three courts and circulation; remove repetitive baffle decoration, articulate actual upper balconies/void edges and keep view axis to the existing atrium.",
+    "C": "Different pavilion finishes and roofs/awnings, proper foliage, paving and sunlight. Any reduced deck geometry is an explicitly unapproved separate option; original v9 data stays immutable."
+  }
+}

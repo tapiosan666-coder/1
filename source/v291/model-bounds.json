@@ -1,0 +1,182 @@
+{
+  "bakery_vitrine": {
+    "min": [
+      -1.840000033378601,
+      0.0,
+      -0.6800000071525574
+    ],
+    "max": [
+      1.840000033378601,
+      1.4860000610351562,
+      0.6800000071525574
+    ],
+    "role": "bread_and_pastry_display",
+    "sources": [
+      "assets/v24/models/sku_v24_croissant.glb",
+      "assets/v24/models/sku_v24_fruit_tart.glb",
+      "assets/v24/models/sku_v24_pastry_service.glb",
+      "assets/v24/models/sku_v24_sandwich.glb"
+    ]
+  },
+  "cafe_banquette": {
+    "min": [
+      -0.8399999737739563,
+      0.019999999552965164,
+      -1.2835103273391724
+    ],
+    "max": [
+      0.8399999737739563,
+      1.2565374374389648,
+      1.2835103273391724
+    ],
+    "role": "four_place_booth",
+    "sources": [
+      "assets/v21/models/sku_cup.glb",
+      "assets/v24/models/sku_v24_croissant.glb"
+    ]
+  },
+  "cafe_table": {
+    "min": [
+      -0.75,
+      0.019999995827674866,
+      -1.1299999952316284
+    ],
+    "max": [
+      0.75,
+      0.8671516180038452,
+      1.1299999952316284
+    ],
+    "role": "four_place_cafe_table",
+    "sources": [
+      "assets/v21/models/sku_bistro_plate.glb",
+      "assets/v21/models/sku_chair.glb",
+      "assets/v21/models/sku_cup.glb"
+    ]
+  },
+  "coffee_bar": {
+    "min": [
+      -1.9149999618530273,
+      0.034999996423721313,
+      -0.47999998927116394
+    ],
+    "max": [
+      1.9149999618530273,
+      1.6399998664855957,
+      0.5874999761581421
+    ],
+    "role": "barista_and_pickup_counter",
+    "sources": [
+      "assets/v21/models/sku_cup.glb",
+      "assets/v21/models/sku_espresso_machine.glb",
+      "assets/v24/models/sku_v24_pastry_service.glb"
+    ]
+  },
+  "fashion_rail": {
+    "min": [
+      -1.034999966621399,
+      0.0,
+      -0.4399999976158142
+    ],
+    "max": [
+      1.034999966621399,
+      1.8317657709121704,
+      0.4399999976158142
+    ],
+    "role": "adult_clothing",
+    "sources": [
+      "assets/v21/models/sku_trousers.glb",
+      "assets/v23/models/sku_v23_cardigan.glb",
+      "assets/v23/models/sku_v23_pleated_dress.glb",
+      "assets/v24/models/sku_v24_blazer.glb"
+    ]
+  },
+  "kids_rail": {
+    "min": [
+      -1.0099999904632568,
+      0.0,
+      -0.4399999976158142
+    ],
+    "max": [
+      1.0099999904632568,
+      1.3017655611038208,
+      0.4399999976158142
+    ],
+    "role": "child_scale_clothing",
+    "sources": [
+      "assets/v21/models/sku_trousers.glb",
+      "assets/v23/models/sku_v23_cardigan.glb",
+      "assets/v23/models/sku_v23_pleated_dress.glb",
+      "assets/v24/models/sku_v24_blazer.glb"
+    ]
+  },
+  "fashion_table": {
+    "min": [
+      -1.125,
+      0.03785701096057892,
+      -0.574999988079071
+    ],
+    "max": [
+      1.125,
+      1.4500000476837158,
+      0.574999988079071
+    ],
+    "role": "coordinated_fashion_table",
+    "sources": [
+      "assets/v21/models/sku_folded_knit.glb",
+      "assets/v23/models/sku_v23_heel.glb",
+      "assets/v23/models/sku_v23_tote.glb"
+    ]
+  },
+  "television_demo": {
+    "min": [
+      -1.899999976158142,
+      0.0,
+      -0.5249999761581421
+    ],
+    "max": [
+      1.899999976158142,
+      2.509999990463257,
+      0.5249999761581421
+    ],
+    "role": "television_and_audio_experience",
+    "sources": [
+      "assets/v23/models/sku_v23_headphones.glb"
+    ]
+  },
+  "laundry_demo": {
+    "min": [
+      -1.7999999523162842,
+      0.0,
+      -0.7250000238418579
+    ],
+    "max": [
+      1.7999999523162842,
+      2.021627902984619,
+      0.7250000238418579
+    ],
+    "role": "large_appliance_department",
+    "sources": [
+      "assets/v21/models/sku_fridge.glb",
+      "assets/v21/models/sku_towels.glb",
+      "assets/v21/models/sku_washer.glb"
+    ]
+  },
+  "kitchen_demo": {
+    "min": [
+      -1.8899999856948853,
+      0.0,
+      -0.44999998807907104
+    ],
+    "max": [
+      1.8899999856948853,
+      1.7442659139633179,
+      0.44999998807907104
+    ],
+    "role": "kitchen_appliance_department",
+    "sources": [
+      "assets/v21/models/sku_cup.glb",
+      "assets/v21/models/sku_espresso_machine.glb",
+      "assets/v23/models/sku_v23_tea_pot.glb"
+    ]
+  }
+}

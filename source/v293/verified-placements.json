@@ -1,0 +1,391 @@
+{
+  "recorded_proof_only": true,
+  "source": "Actual Godot collision scene, not a runtime override",
+  "walls": {
+    "department_markers": [
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6420",
+        "ceiling_support": "Collision_stone",
+        "label": "テレビ",
+        "no_direction_arrow": true,
+        "p": [
+          469.796752929688,
+          3.3199999332428,
+          14.0878419876099
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6436",
+        "ceiling_support": "Collision_stone",
+        "label": "パソコン",
+        "no_direction_arrow": true,
+        "p": [
+          476.091857910156,
+          3.3199999332428,
+          21.7342300415039
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6465",
+        "ceiling_support": "Collision_stone",
+        "label": "オーディオ",
+        "no_direction_arrow": true,
+        "p": [
+          486.890563964844,
+          3.3199999332428,
+          16.4197807312012
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6556",
+        "ceiling_support": "Collision_stone",
+        "label": "モバイル",
+        "no_direction_arrow": true,
+        "p": [
+          524.744201660156,
+          3.3199999332428,
+          18.8598918914795
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6569",
+        "ceiling_support": "Collision_stone",
+        "label": "周辺機器",
+        "no_direction_arrow": true,
+        "p": [
+          536.796936035156,
+          3.3199999332428,
+          -0.245336875319481
+        ]
+      }
+    ],
+    "omissions": [],
+    "wall_merchandising": [
+      {
+        "no_new_walls": true,
+        "normal": [
+          0.965925514698029,
+          0.0,
+          -0.258820295333862
+        ],
+        "p": [
+          -40.6349220275879,
+          0.0199999995529652,
+          -24.8181171417236
+        ],
+        "store_id": "B1-040",
+        "support_rays": 15,
+        "view": [
+          -38.7706871032715,
+          0.0199999995529652,
+          -25.3176403045654
+        ]
+      },
+      {
+        "no_new_walls": true,
+        "normal": [
+          0.963054955005646,
+          0.0,
+          0.269305109977722
+        ],
+        "p": [
+          -39.1325874328613,
+          0.0199999995529652,
+          -36.8725357055664
+        ],
+        "store_id": "B1-040",
+        "support_rays": 15,
+        "view": [
+          -37.2738914489746,
+          0.0199999995529652,
+          -36.3527793884277
+        ]
+      }
+    ]
+  },
+  "geometry_routes_pass": true,
+  "adopted_fixture_contacts": [
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6410",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6419",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6420",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6421",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6422",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6428",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6430",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6432",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6436",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6440",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6446",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6453",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6454",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6455",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6456",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6463",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6465",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6468",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6469",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6473",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6474",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6475",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6545",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6546",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6547",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6548",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6549",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6550",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6551",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6552",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6553",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6555",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6556",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6557",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6558",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6559",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6560",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6561",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6562",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6563",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6565",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6566",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6568",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6569",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6570",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6571",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "floor_supported": true,
+      "id": "V22D-A1F-002-department_island-6572",
+      "pass": true
+    }
+  ]
+}
