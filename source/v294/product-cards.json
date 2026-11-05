@@ -1,0 +1,210 @@
+{
+  "cards": {
+    "pc14": {
+      "label": "ノートパソコン",
+      "model": "NOTE R14",
+      "spec": "16GB / 512GB SSD",
+      "reference_price_yen": "129,800",
+      "region": [
+        0.0,
+        0.0,
+        0.25,
+        0.2
+      ]
+    },
+    "pc16": {
+      "label": "ノートパソコン",
+      "model": "NOTE R16",
+      "spec": "32GB / 1TB SSD",
+      "reference_price_yen": "159,800",
+      "region": [
+        0.25,
+        0.0,
+        0.25,
+        0.2
+      ]
+    },
+    "tablet": {
+      "label": "タブレット",
+      "model": "PAD T11",
+      "spec": "128GB / Wi-Fi",
+      "reference_price_yen": "54,800",
+      "region": [
+        0.5,
+        0.0,
+        0.25,
+        0.2
+      ]
+    },
+    "phone": {
+      "label": "スマートフォン",
+      "model": "PHONE S6",
+      "spec": "256GB / OLED",
+      "reference_price_yen": "79,800",
+      "region": [
+        0.75,
+        0.0,
+        0.25,
+        0.2
+      ]
+    },
+    "audio1": {
+      "label": "ヘッドホン",
+      "model": "LISTEN C1",
+      "spec": "LIGHTWEIGHT / WIRELESS",
+      "reference_price_yen": "19,800",
+      "region": [
+        0.0,
+        0.2,
+        0.25,
+        0.2
+      ]
+    },
+    "audio2": {
+      "label": "ヘッドホン",
+      "model": "LISTEN C2",
+      "spec": "RICH BASS / WIRELESS",
+      "reference_price_yen": "24,800",
+      "region": [
+        0.25,
+        0.2,
+        0.25,
+        0.2
+      ]
+    },
+    "audio3": {
+      "label": "ヘッドホン",
+      "model": "LISTEN C3",
+      "spec": "CLEAR VOICE / WIRELESS",
+      "reference_price_yen": "29,800",
+      "region": [
+        0.5,
+        0.2,
+        0.25,
+        0.2
+      ]
+    },
+    "speaker": {
+      "label": "スピーカー",
+      "model": "SOUND B2",
+      "spec": "STEREO / COMPACT",
+      "reference_price_yen": "24,800",
+      "region": [
+        0.75,
+        0.2,
+        0.25,
+        0.2
+      ]
+    },
+    "watch": {
+      "label": "スマートウォッチ",
+      "model": "WATCH W1",
+      "spec": "DAILY / FITNESS",
+      "reference_price_yen": "18,800",
+      "region": [
+        0.0,
+        0.4,
+        0.25,
+        0.2
+      ]
+    },
+    "tv1": {
+      "label": "テレビ",
+      "model": "DISPLAY D1",
+      "spec": "COLOR / HOME CINEMA",
+      "reference_price_yen": "129,800",
+      "region": [
+        0.25,
+        0.4,
+        0.25,
+        0.2
+      ]
+    },
+    "tv2": {
+      "label": "テレビ",
+      "model": "DISPLAY D2",
+      "spec": "LOW REFLECTION",
+      "reference_price_yen": "159,800",
+      "region": [
+        0.5,
+        0.4,
+        0.25,
+        0.2
+      ]
+    },
+    "cinema": {
+      "label": "映像と音の体験",
+      "model": "LIVING CINEMA",
+      "spec": "TV + SOUND + LIVING",
+      "reference_price_yen": "",
+      "region": [
+        0.75,
+        0.4,
+        0.25,
+        0.2
+      ]
+    },
+    "kitchen": {
+      "label": "キッチンと暮らし",
+      "model": "KITCHEN LAB",
+      "spec": "COFFEE / HOME COOKING",
+      "reference_price_yen": "",
+      "region": [
+        0.0,
+        0.6,
+        0.25,
+        0.2
+      ]
+    },
+    "work": {
+      "label": "ワークスペース",
+      "model": "WORK AT HOME",
+      "spec": "DESK / PC / LIGHTING",
+      "reference_price_yen": "",
+      "region": [
+        0.25,
+        0.6,
+        0.25,
+        0.2
+      ]
+    },
+    "bread": {
+      "label": "クロワッサン",
+      "model": "BAKERY SELECTION",
+      "spec": "TERRUNE BAKERY",
+      "reference_price_yen": "280",
+      "region": [
+        0.5,
+        0.6,
+        0.25,
+        0.2
+      ]
+    },
+    "tart": {
+      "label": "フルーツタルト",
+      "model": "FRUIT TART",
+      "spec": "TERRUNE BAKERY",
+      "reference_price_yen": "420",
+      "region": [
+        0.75,
+        0.6,
+        0.25,
+        0.2
+      ]
+    },
+    "sandwich": {
+      "label": "サンドイッチ",
+      "model": "SANDWICH",
+      "spec": "TERRUNE BAKERY",
+      "reference_price_yen": "380",
+      "region": [
+        0.0,
+        0.8,
+        0.25,
+        0.2
+      ]
+    }
+  },
+  "not_purchase_logic": true,
+  "font_missing_characters_replaced": []
+}

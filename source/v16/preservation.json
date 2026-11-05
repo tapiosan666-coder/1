@@ -1,0 +1,129 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "path": "assets/v10/base-b.pack.zst",
+      "same": true,
+      "sha256": "cef67cdaff2173b3a63153f1547dbe67d943ba35cf79a5c62d4c0e4fe1b9afe5"
+    },
+    {
+      "path": "assets/v10/base-site.pack.zst",
+      "same": true,
+      "sha256": "bb9ec04e5bd353ddd165a14468bfc3239edded63799793c746385bb74f58cfc3"
+    },
+    {
+      "path": "assets/v10/fitout.pack.zst",
+      "same": true,
+      "sha256": "427717b076d00c7ac95fbf6c9b2ff869f7c41d796b4815b84b57bcf7ea1fe726"
+    },
+    {
+      "path": "assets/v10/art.pack.zst",
+      "same": true,
+      "sha256": "293f36b279d8daa9320da9db553bcde9f81353b6c48558e29168737782515094"
+    },
+    {
+      "path": "assets/v10/architecture.pack.zst",
+      "same": true,
+      "sha256": "d79d55207cbebbcfee89978c98da4257ef604be523789bd935c7c6ac9a4e89f5"
+    },
+    {
+      "path": "assets/v11/repairs.pack.zst",
+      "same": true,
+      "sha256": "f52deb39f9f39f96083ec4fda4b4959c91c0251839cbdefaabf6c47fd78b3257"
+    },
+    {
+      "path": "assets/v12/es-safety.pack.zst",
+      "same": true,
+      "sha256": "38edc4dd47cecc2c6e26de9e0959a9523d3555dfc2200fc7d3eecc46656079b3"
+    },
+    {
+      "path": "assets/v12/retail.pack.zst",
+      "same": true,
+      "sha256": "bb8fa2772c50529b790cd45680fe5ecb0c716606715289a38d4fae6d9ea3ea26"
+    },
+    {
+      "path": "assets/v12/boundary-physics.pack.zst",
+      "same": true,
+      "sha256": "9f357ecdd2aa8d1d4988f0165304591b53ecaa70ea7d48c26ee5f39f55904e89"
+    },
+    {
+      "path": "assets/v12/es-transfer-study.pack.zst",
+      "same": true,
+      "sha256": "e06656f55d22d447e49d82f8e389091c9d77f70bc503824b813152ac990061ab"
+    },
+    {
+      "path": "assets/v12/es-unbuilt-safety.pack.zst",
+      "same": true,
+      "sha256": "77572377a12bf05375f35250495639ff9efa6c82e57ca81297f207582b2f713c"
+    },
+    {
+      "path": "assets/v12/es-landing-plates.pack.zst",
+      "same": true,
+      "sha256": "81e4b6dbc9f62043782f6632c02ba545bc752287826163dc8f805a04a1c1a011"
+    },
+    {
+      "path": "assets/v13/amenities.pack.zst",
+      "same": true,
+      "sha256": "04b61ebc4203762297b01b9f1ef3ae8589f17f1b0d7ab583a5dfdfc7dd8cd5e4"
+    },
+    {
+      "path": "assets/v13/public-areas.pack.zst",
+      "same": true,
+      "sha256": "b7bf3884a1003a9ab7b7afe72d12079d44db89806756e0fb54d396c411edc53a"
+    },
+    {
+      "path": "assets/v13/basement-retail.pack.zst",
+      "same": true,
+      "sha256": "78d7f6a4de3811c627b71de81a7584c4cadca0518d05d33490c3a71f49fbcd8a"
+    },
+    {
+      "path": "assets/v13/roof-retail.pack.zst",
+      "same": true,
+      "sha256": "1549f193b356ea8c9455bf3f6f12181b68989a42d499025002b7622403090aa6"
+    },
+    {
+      "path": "assets/v15/C-finish-replacement.pack.zst",
+      "same": true,
+      "sha256": "08fe8d75d2d0c76cb24d5ae1cba6cd379d87857bd7d25c3611efd0d376dedc0a"
+    },
+    {
+      "path": "assets/v15/ES-site-replacement.pack.zst",
+      "same": true,
+      "sha256": "1c6a0ed7c470000d8e150ff0e2d136770a68e354db35cd9002bdbdb22447c7e2"
+    },
+    {
+      "path": "assets/v15/retail-services.pack.zst",
+      "same": true,
+      "sha256": "c510dbd83dcab76be77d35d02d6c64cf529fe257e8a8aa2f8d88405593961c3e"
+    },
+    {
+      "path": "player.gd",
+      "same": true
+    },
+    {
+      "path": "escalator_v2.gd",
+      "same": true
+    },
+    {
+      "path": "elevators_v11.gd",
+      "same": true
+    },
+    {
+      "path": "staff_doors.gd",
+      "same": true
+    },
+    {
+      "path": "source/scene-manifest.json",
+      "same": true
+    },
+    {
+      "path": "source/v15/C-outlet-proposal.json",
+      "same": true
+    },
+    {
+      "path": "source/v15/ES-site-proposal.json",
+      "same": true
+    }
+  ],
+  "method": "Byte-for-byte against protected v15. New fit-out exists only in separate v16 runtime nodes. No scan-game integration."
+}

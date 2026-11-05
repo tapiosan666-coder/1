@@ -1,0 +1,87 @@
+{
+  "mobile_experience_v293": {
+    "min": [
+      -1.399999976158142,
+      0.0,
+      -0.7599999904632568
+    ],
+    "max": [
+      1.399999976158142,
+      1.1600000858306885,
+      0.7599999904632568
+    ],
+    "role": "mobile_experience",
+    "sources": [
+      "assets/v21/models/sku_phone.glb",
+      "assets/v23/models/sku_v23_headphones.glb",
+      "assets/v23/models/sku_v23_tablet.glb"
+    ]
+  },
+  "computer_experience_v293": {
+    "min": [
+      -1.399999976158142,
+      0.0,
+      -0.7599999904632568
+    ],
+    "max": [
+      1.399999976158142,
+      1.2093297243118286,
+      0.7599999904632568
+    ],
+    "role": "computer_experience",
+    "sources": [
+      "assets/v21/models/sku_laptop.glb",
+      "assets/v23/models/sku_v23_tablet.glb"
+    ]
+  },
+  "audio_listening_v293": {
+    "min": [
+      -1.399999976158142,
+      0.0,
+      -0.7599999904632568
+    ],
+    "max": [
+      1.399999976158142,
+      1.1600000858306885,
+      0.7599999904632568
+    ],
+    "role": "audio_listening",
+    "sources": [
+      "assets/v23/models/sku_v23_headphones.glb"
+    ]
+  },
+  "screen_compare_v293": {
+    "min": [
+      -1.375,
+      0.019999980926513672,
+      -0.6600000262260437
+    ],
+    "max": [
+      1.375,
+      2.3600001335144043,
+      0.6600000262260437
+    ],
+    "role": "screen_compare",
+    "sources": [
+      "assets/v21/models/sku_tv.glb"
+    ]
+  },
+  "accessory_consult_v293": {
+    "min": [
+      -1.399999976158142,
+      0.0,
+      -0.7599999904632568
+    ],
+    "max": [
+      1.399999976158142,
+      1.9499999284744263,
+      0.7599999904632568
+    ],
+    "role": "wearables_speakers_and_headphones",
+    "sources": [
+      "assets/v21/models/sku_speaker.glb",
+      "assets/v23/models/sku_v23_headphones.glb",
+      "assets/v24/models/sku_v24_watch.glb"
+    ]
+  }
+}

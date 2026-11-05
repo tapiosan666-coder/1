@@ -1,0 +1,105 @@
+{
+  "accepted": [
+    {
+      "id": "V25-enrich-A1F-039-1",
+      "store": "A1F-039",
+      "local": [
+        -5.3,
+        17.0
+      ],
+      "model": "fixture_v25_wardrobe",
+      "own_industry_collection": true
+    }
+  ],
+  "rejected": [
+    {
+      "store": "A1F-039",
+      "local": [
+        -7.6,
+        17.0
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A1F-039",
+      "local": [
+        1.0,
+        17.0
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A1F-039",
+      "local": [
+        3.4,
+        17.0
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A1F-039",
+      "local": [
+        -8.45,
+        5.1
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A1F-039",
+      "local": [
+        -8.45,
+        8.1
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A1F-039",
+      "local": [
+        -8.45,
+        11.1
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A2F-018",
+      "local": [
+        -10.8,
+        2.0
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A2F-018",
+      "local": [
+        -10.8,
+        4.6
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A2F-018",
+      "local": [
+        -10.8,
+        7.0
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A2F-018",
+      "local": [
+        5.5,
+        2.0
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    },
+    {
+      "store": "A2F-018",
+      "local": [
+        5.5,
+        6.8
+      ],
+      "reason": "Protected legacy approach, circulation or old fixture clearance"
+    }
+  ],
+  "old_approaches_and_routes_retained": true
+}

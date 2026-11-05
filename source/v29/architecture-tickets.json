@@ -1,0 +1,60 @@
+{
+  "main_game_modified": false,
+  "structural_work_executed_in_v29": false,
+  "tickets": [
+    {
+      "id": "ARCH-B-WEST-ES-EV",
+      "scope": "B西ES/EV混在、ES下面仕上げ、乗降口",
+      "source": [
+        "main.gd",
+        "source/v28/scene-design.json",
+        "escalator_finish_v28.gd"
+      ],
+      "status": "別修正対象・今回未施工"
+    },
+    {
+      "id": "ARCH-C-ENTRY",
+      "scope": "C館の屋外型施設に対する箱型風除室の要否・位置",
+      "p": [
+        -103.2036425,
+        0.04,
+        -220.4416535
+      ],
+      "source": [
+        "mall_architecture_v26.gd",
+        "source/v28/entrances.json",
+        "entry_reconcile_v28.gd"
+      ],
+      "status": "別修正対象・今回未施工"
+    },
+    {
+      "id": "ARCH-C-DOG-TERRAIN",
+      "scope": "ドッグラン地形と柵・通路の追加整合",
+      "p": [
+        -77.0,
+        0.0,
+        -245.0
+      ],
+      "source": [
+        "terrain_v28.gd",
+        "source/v28/terrain-plan.json"
+      ],
+      "status": "v28を保持・追加修正未施工"
+    },
+    {
+      "id": "RF-SUPPORT-16",
+      "scope": "既存の支持未承認箇所",
+      "status": "未承認のまま・今回不変更"
+    },
+    {
+      "id": "C-WATER-GARDEN",
+      "scope": "屋上水上庭園の構造案",
+      "status": "既存未承認状態を維持"
+    }
+  ],
+  "merge_conflicts_to_review": [
+    "main.gdのread_json差替えとモジュール追加。旧ZIPを全上書きしない。",
+    "source/v28建築・出入口・地形を変える場合はv29の撮影位置、検査用経路、壁面広告の支持、サイン経路を再生成・再検査。",
+    "v29のgallery-route-anchors.jsonは確定した見た目の参照で、検査経路の再計算から切り離している。建築修正時は実際の壁・テナント境界も再照合。"
+  ]
+}

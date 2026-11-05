@@ -1,0 +1,802 @@
+{
+  "bank_count": 40,
+  "records": [
+    {
+      "wing": "B",
+      "from": "E1-12-UP",
+      "to": "E1-23-UP",
+      "existing_lower": {
+        "id": "E1-12-UP",
+        "levels": [
+          0,
+          1
+        ],
+        "direction": "UP",
+        "c": [
+          -197,
+          0.0,
+          -38
+        ],
+        "u": [
+          1,
+          0
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.525,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          -203.7,
+          0.0,
+          -38.0
+        ],
+        "test_end": [
+          -190.3,
+          5.525,
+          -38.0
+        ]
+      },
+      "existing_upper": {
+        "id": "E1-23-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "c": [
+          -187,
+          5.525,
+          3
+        ],
+        "u": [
+          1,
+          0
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          -193.7,
+          5.525,
+          3.0
+        ],
+        "test_end": [
+          -180.3,
+          10.875,
+          3.0
+        ]
+      },
+      "proposed_upper": {
+        "id": "E1-23-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "c": [
+          -197.0,
+          5.525,
+          -34.0
+        ],
+        "u": [
+          -1,
+          0
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          -190.29999999999998,
+          5.525,
+          -34.0
+        ],
+        "test_end": [
+          -203.70000000000002,
+          10.875,
+          -34.0
+        ]
+      },
+      "before_straight_line_m": 41.14073407220634,
+      "proposed_straight_line_m": 4.0,
+      "proposal_3F_retail_overlap_m2": 0.0,
+      "proposal_floor_opening_change_m2": 35.99999999999998,
+      "after_walking_distance_measured": false,
+      "landing_review_required": true,
+      "up_down_pair_redesign_required": true,
+      "status": "UNBUILT PROPOSAL; no existing bank moved",
+      "reason": "Stack the next flight in reverse direction beside the same court; a floor opening/landing and structural review is required. C requires a new east 2F-3F bank rather than moving the only north bank."
+    },
+    {
+      "wing": "B",
+      "from": "E2-12-UP",
+      "to": "E2-23-UP",
+      "existing_lower": {
+        "id": "E2-12-UP",
+        "levels": [
+          0,
+          1
+        ],
+        "direction": "UP",
+        "c": [
+          -20,
+          0.0,
+          17
+        ],
+        "u": [
+          0,
+          1
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.525,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          -20.0,
+          0.0,
+          10.3
+        ],
+        "test_end": [
+          -20.0,
+          5.525,
+          23.7
+        ]
+      },
+      "existing_upper": {
+        "id": "E2-23-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "c": [
+          23,
+          5.525,
+          17
+        ],
+        "u": [
+          0,
+          1
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          23.0,
+          5.525,
+          10.3
+        ],
+        "test_end": [
+          23.0,
+          10.875,
+          23.7
+        ]
+      },
+      "proposed_upper": {
+        "id": "E2-23-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "c": [
+          -24.0,
+          5.525,
+          17.0
+        ],
+        "u": [
+          0,
+          -1
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          -24.0,
+          5.525,
+          23.7
+        ],
+        "test_end": [
+          -24.0,
+          10.875,
+          10.299999999999999
+        ]
+      },
+      "before_straight_line_m": 45.0395381859095,
+      "proposed_straight_line_m": 4.0,
+      "proposal_3F_retail_overlap_m2": 0.0,
+      "proposal_floor_opening_change_m2": 35.99999999999966,
+      "after_walking_distance_measured": false,
+      "landing_review_required": true,
+      "up_down_pair_redesign_required": true,
+      "status": "UNBUILT PROPOSAL; no existing bank moved",
+      "reason": "Stack the next flight in reverse direction beside the same court; a floor opening/landing and structural review is required. C requires a new east 2F-3F bank rather than moving the only north bank."
+    },
+    {
+      "wing": "B",
+      "from": "E3-12-UP",
+      "to": "E3-23-UP",
+      "existing_lower": {
+        "id": "E3-12-UP",
+        "levels": [
+          0,
+          1
+        ],
+        "direction": "UP",
+        "c": [
+          140.0,
+          0.0,
+          -31.43205
+        ],
+        "u": [
+          0.8660254,
+          -0.5
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.525,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          134.19763,
+          0.0,
+          -28.08205
+        ],
+        "test_end": [
+          145.80237,
+          5.525,
+          -34.78205
+        ]
+      },
+      "existing_upper": {
+        "id": "E3-23-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "c": [
+          169.71442,
+          5.525,
+          23.46791
+        ],
+        "u": [
+          0.7660444,
+          -0.6427876
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          164.58193,
+          5.525,
+          27.77459
+        ],
+        "test_end": [
+          174.84692,
+          10.875,
+          19.16123
+        ]
+      },
+      "proposed_upper": {
+        "id": "E3-23-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "c": [
+          142.0,
+          5.525,
+          -27.9679484
+        ],
+        "u": [
+          -0.8660254,
+          0.5
+        ],
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "landing_width_m": 3.6,
+        "test_start": [
+          147.80237018,
+          5.525,
+          -31.3179484
+        ],
+        "test_end": [
+          136.19762982,
+          10.875,
+          -24.617948400000003
+        ]
+      },
+      "before_straight_line_m": 65.31466207432447,
+      "proposed_straight_line_m": 4.000000076890323,
+      "proposal_3F_retail_overlap_m2": 0.0,
+      "proposal_floor_opening_change_m2": 35.99999976402603,
+      "after_walking_distance_measured": false,
+      "landing_review_required": true,
+      "up_down_pair_redesign_required": true,
+      "status": "UNBUILT PROPOSAL; no existing bank moved",
+      "reason": "Stack the next flight in reverse direction beside the same court; a floor opening/landing and structural review is required. C requires a new east 2F-3F bank rather than moving the only north bank."
+    },
+    {
+      "wing": "A",
+      "from": "A-E1-0-UP",
+      "to": "A-E1-1-UP",
+      "existing_lower": {
+        "id": "A-E1-0-UP",
+        "levels": [
+          0,
+          1
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          343,
+          0.0,
+          -10
+        ],
+        "u": [
+          1,
+          0
+        ],
+        "low_y": 0.0,
+        "high_y": 5.525,
+        "run_m": 11.8,
+        "rise_m": 5.525,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          336.3,
+          0.0,
+          -10.0
+        ],
+        "test_end": [
+          349.7,
+          5.525,
+          -10.0
+        ]
+      },
+      "existing_upper": {
+        "id": "A-E1-1-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          343,
+          5.525,
+          -57
+        ],
+        "u": [
+          1,
+          0
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          336.3,
+          5.525,
+          -57.0
+        ],
+        "test_end": [
+          349.7,
+          10.875,
+          -57.0
+        ]
+      },
+      "proposed_upper": {
+        "id": "A-E1-1-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          343.0,
+          5.525,
+          -6.0
+        ],
+        "u": [
+          -1,
+          0
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          349.7,
+          5.525,
+          -6.0
+        ],
+        "test_end": [
+          336.3,
+          10.875,
+          -6.0
+        ]
+      },
+      "before_straight_line_m": 48.87289637416632,
+      "proposed_straight_line_m": 4.0,
+      "proposal_3F_retail_overlap_m2": 0.0,
+      "proposal_floor_opening_change_m2": 0.47999999999997384,
+      "after_walking_distance_measured": false,
+      "landing_review_required": true,
+      "up_down_pair_redesign_required": true,
+      "status": "UNBUILT PROPOSAL; no existing bank moved",
+      "reason": "Stack the next flight in reverse direction beside the same court; a floor opening/landing and structural review is required. C requires a new east 2F-3F bank rather than moving the only north bank."
+    },
+    {
+      "wing": "A",
+      "from": "A-E2-0-UP",
+      "to": "A-E2-1-UP",
+      "existing_lower": {
+        "id": "A-E2-0-UP",
+        "levels": [
+          0,
+          1
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          574,
+          0.0,
+          -3
+        ],
+        "u": [
+          1,
+          0
+        ],
+        "low_y": 0.0,
+        "high_y": 5.525,
+        "run_m": 11.8,
+        "rise_m": 5.525,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          567.3,
+          0.0,
+          -3.0
+        ],
+        "test_end": [
+          580.7,
+          5.525,
+          -3.0
+        ]
+      },
+      "existing_upper": {
+        "id": "A-E2-1-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          574,
+          5.525,
+          -60
+        ],
+        "u": [
+          1,
+          0
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          567.3,
+          5.525,
+          -60.0
+        ],
+        "test_end": [
+          580.7,
+          10.875,
+          -60.0
+        ]
+      },
+      "proposed_upper": {
+        "id": "A-E2-1-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          574.0,
+          5.525,
+          1.0
+        ],
+        "u": [
+          -1,
+          0
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          580.6999999999999,
+          5.525,
+          1.0
+        ],
+        "test_end": [
+          567.3000000000001,
+          10.875,
+          1.0
+        ]
+      },
+      "before_straight_line_m": 58.55390678682339,
+      "proposed_straight_line_m": 4.0,
+      "proposal_3F_retail_overlap_m2": 0.0,
+      "proposal_floor_opening_change_m2": 0.47999999999997384,
+      "after_walking_distance_measured": false,
+      "landing_review_required": true,
+      "up_down_pair_redesign_required": true,
+      "status": "UNBUILT PROPOSAL; no existing bank moved",
+      "reason": "Stack the next flight in reverse direction beside the same court; a floor opening/landing and structural review is required. C requires a new east 2F-3F bank rather than moving the only north bank."
+    },
+    {
+      "wing": "A",
+      "from": "A-E3-0-UP",
+      "to": "A-E3-1-UP",
+      "existing_lower": {
+        "id": "A-E3-0-UP",
+        "levels": [
+          0,
+          1
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          510,
+          0.0,
+          131
+        ],
+        "u": [
+          0,
+          1
+        ],
+        "low_y": 0.0,
+        "high_y": 5.525,
+        "run_m": 11.8,
+        "rise_m": 5.525,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          510.0,
+          0.0,
+          124.3
+        ],
+        "test_end": [
+          510.0,
+          5.525,
+          137.7
+        ]
+      },
+      "existing_upper": {
+        "id": "A-E3-1-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          455,
+          5.525,
+          131
+        ],
+        "u": [
+          0,
+          1
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          455.0,
+          5.525,
+          124.3
+        ],
+        "test_end": [
+          455.0,
+          10.875,
+          137.7
+        ]
+      },
+      "proposed_upper": {
+        "id": "A-E3-1-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "A",
+        "c": [
+          506.0,
+          5.525,
+          131.0
+        ],
+        "u": [
+          0,
+          -1
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          506.0,
+          5.525,
+          137.70000000000002
+        ],
+        "test_end": [
+          506.0,
+          10.875,
+          124.3
+        ]
+      },
+      "before_straight_line_m": 56.608833232985816,
+      "proposed_straight_line_m": 4.0,
+      "proposal_3F_retail_overlap_m2": 0.0,
+      "proposal_floor_opening_change_m2": 0.47999999999997384,
+      "after_walking_distance_measured": false,
+      "landing_review_required": true,
+      "up_down_pair_redesign_required": true,
+      "status": "UNBUILT PROPOSAL; no existing bank moved",
+      "reason": "Stack the next flight in reverse direction beside the same court; a floor opening/landing and structural review is required. C requires a new east 2F-3F bank rather than moving the only north bank."
+    },
+    {
+      "wing": "C",
+      "from": "CE12-UP",
+      "to": "CN23-UP",
+      "existing_lower": {
+        "id": "CE12-UP",
+        "levels": [
+          0,
+          1
+        ],
+        "direction": "UP",
+        "wing": "C",
+        "c": [
+          107,
+          0.0,
+          -281
+        ],
+        "u": [
+          0,
+          1
+        ],
+        "low_y": 0.0,
+        "high_y": 5.525,
+        "run_m": 11.8,
+        "rise_m": 5.525,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          107.0,
+          0.0,
+          -287.7
+        ],
+        "test_end": [
+          107.0,
+          5.525,
+          -274.3
+        ]
+      },
+      "existing_upper": {
+        "id": "CN23-UP",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "C",
+        "c": [
+          -71,
+          5.525,
+          -364
+        ],
+        "u": [
+          1,
+          0
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          -77.7,
+          5.525,
+          -364.0
+        ],
+        "test_end": [
+          -64.3,
+          10.875,
+          -364.0
+        ]
+      },
+      "proposed_upper": {
+        "id": "CE23-NEW-UP-PROPOSAL",
+        "levels": [
+          1,
+          2
+        ],
+        "direction": "UP",
+        "wing": "C",
+        "c": [
+          103.0,
+          5.525,
+          -281.0
+        ],
+        "u": [
+          0,
+          -1
+        ],
+        "low_y": 5.525,
+        "high_y": 10.875,
+        "run_m": 11.8,
+        "rise_m": 5.35,
+        "tread_width_m": 1.32,
+        "shaft_width_m": 2.4,
+        "test_start": [
+          103.0,
+          5.525,
+          -274.3
+        ],
+        "test_end": [
+          103.0,
+          10.875,
+          -287.7
+        ]
+      },
+      "before_straight_line_m": 205.32944260383115,
+      "proposed_straight_line_m": 4.0,
+      "proposal_3F_retail_overlap_m2": 0.0,
+      "proposal_floor_opening_change_m2": 0.0,
+      "after_walking_distance_measured": false,
+      "landing_review_required": true,
+      "up_down_pair_redesign_required": true,
+      "status": "UNBUILT PROPOSAL; no existing bank moved",
+      "reason": "Stack the next flight in reverse direction beside the same court; a floor opening/landing and structural review is required. C requires a new east 2F-3F bank rather than moving the only north bank."
+    }
+  ],
+  "existing_positions_changed": false,
+  "straight_line_is_not_walking_distance": true,
+  "C_changes_unapproved": true
+}

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://main.gd" id="1"]
+[node name="FIND_YOURSELF_B_LEGACY_COMPARISON_V28" type="Node3D"]
+script=ExtResource("1")
+c_open_proposal=true
+es_site_proposal=false
+a_continuous_v22=false
+comparison_B_v28=true

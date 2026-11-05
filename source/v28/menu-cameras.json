@@ -1,0 +1,144 @@
+[
+  {
+    "id": "v28-B-legacy-ES-direct",
+    "eye": [
+      -209,
+      1.65,
+      -38
+    ],
+    "look": [
+      -196,
+      2.5,
+      -38
+    ],
+    "fov": 70,
+    "title": "B館 旧ES比較位置",
+    "variants": [
+      "C"
+    ]
+  },
+  {
+    "id": "v28-C-fence-grounding",
+    "eye": [
+      -90.5,
+      0.28,
+      -248
+    ],
+    "look": [
+      -88.8,
+      0.04,
+      -245
+    ],
+    "fov": 65,
+    "title": "C館 フェンス根元・一体地形",
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "v28-C-gate-threshold",
+    "eye": [
+      -78.7,
+      0.65,
+      -259.4
+    ],
+    "look": [
+      -77,
+      0,
+      -256.8
+    ],
+    "fov": 60,
+    "title": "C館 二重ゲートの接地",
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "v28-B-entry-outside",
+    "eye": [
+      7.0,
+      1.65,
+      42
+    ],
+    "look": [
+      7.0,
+      1.8,
+      29
+    ],
+    "fov": 70,
+    "title": "B館 実外壁と風除室",
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "v28-C-entry-outside",
+    "eye": [
+      -100.86224,
+      1.65,
+      -230.82485
+    ],
+    "look": [
+      -103.66224,
+      1.8,
+      -218.32485
+    ],
+    "fov": 70,
+    "title": "C館 共用ギャラリーの出入口",
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "v28-C-entry-inside",
+    "eye": [
+      -102.73,
+      1.65,
+      -217.06
+    ],
+    "look": [
+      -102.73,
+      1.65,
+      -223.0
+    ],
+    "fov": 70,
+    "title": "C館 内扉と廊下接続",
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "v28-B-normal-startup",
+    "eye": [
+      -182,
+      1.65,
+      -6.5
+    ],
+    "look": [
+      -194,
+      3,
+      -14
+    ],
+    "fov": 72,
+    "title": "B館 新連続ES 全景（通常版）",
+    "variants": [
+      "combined",
+      "ES"
+    ]
+  }
+]

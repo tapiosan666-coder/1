@@ -1,0 +1,143 @@
+{
+  "compact_pc_v294": {
+    "min": [
+      -0.949999988079071,
+      0.0,
+      -0.4000000059604645
+    ],
+    "max": [
+      0.949999988079071,
+      1.189329743385315,
+      0.4074999988079071
+    ],
+    "role": "compact_pc_experience",
+    "sources": [
+      "assets/v21/models/sku_laptop.glb"
+    ]
+  },
+  "compact_mobile_v294": {
+    "min": [
+      -0.949999988079071,
+      0.0,
+      -0.4000000059604645
+    ],
+    "max": [
+      0.949999988079071,
+      1.1399999856948853,
+      0.4074999988079071
+    ],
+    "role": "compact_mobile_experience",
+    "sources": [
+      "assets/v21/models/sku_phone.glb",
+      "assets/v23/models/sku_v23_tablet.glb"
+    ]
+  },
+  "compact_audio_v294": {
+    "min": [
+      -0.949999988079071,
+      0.0,
+      -0.4000000059604645
+    ],
+    "max": [
+      0.949999988079071,
+      1.1399999856948853,
+      0.4074999988079071
+    ],
+    "role": "compact_audio_experience",
+    "sources": [
+      "assets/v21/models/sku_speaker.glb",
+      "assets/v23/models/sku_v23_headphones.glb"
+    ]
+  },
+  "compact_accessory_v294": {
+    "min": [
+      -0.949999988079071,
+      0.0,
+      -0.4000000059604645
+    ],
+    "max": [
+      0.949999988079071,
+      1.1399999856948853,
+      0.4074999988079071
+    ],
+    "role": "compact_accessory_experience",
+    "sources": [
+      "assets/v23/models/sku_v23_headphones.glb",
+      "assets/v24/models/sku_v24_watch.glb"
+    ]
+  },
+  "compact_tv_v294": {
+    "min": [
+      -0.9399999976158142,
+      0.005000025033950806,
+      -0.38999998569488525
+    ],
+    "max": [
+      0.9399999976158142,
+      1.5900001525878906,
+      0.406499981880188
+    ],
+    "role": "compact_tv_comparison",
+    "sources": [
+      "assets/v21/models/sku_tv.glb"
+    ]
+  },
+  "cinema_room_v294": {
+    "min": [
+      -2.9000000953674316,
+      -0.019999999552965164,
+      -2.299999952316284
+    ],
+    "max": [
+      2.9000000953674316,
+      2.5199999809265137,
+      2.299999952316284
+    ],
+    "role": "home_cinema_experience",
+    "sources": [
+      "assets/v17/models/lounge_sofa.glb",
+      "assets/v21/models/sku_cup.glb",
+      "assets/v21/models/sku_speaker.glb",
+      "assets/v21/models/sku_tv.glb"
+    ]
+  },
+  "kitchen_room_v294": {
+    "min": [
+      -2.9000000953674316,
+      -0.019999999552965164,
+      -2.299999952316284
+    ],
+    "max": [
+      2.9000000953674316,
+      2.4200000762939453,
+      2.299999952316284
+    ],
+    "role": "kitchen_and_coffee_experience",
+    "sources": [
+      "assets/v21/models/sku_chair.glb",
+      "assets/v21/models/sku_cup.glb",
+      "assets/v21/models/sku_espresso_machine.glb",
+      "assets/v21/models/sku_fridge.glb",
+      "assets/v21/models/sku_kettle.glb"
+    ]
+  },
+  "workspace_room_v294": {
+    "min": [
+      -2.299999952316284,
+      -0.019999999552965164,
+      -1.899999976158142
+    ],
+    "max": [
+      2.299999952316284,
+      2.180000066757202,
+      1.899999976158142
+    ],
+    "role": "home_office_experience",
+    "sources": [
+      "assets/v21/models/sku_chair.glb",
+      "assets/v21/models/sku_laptop.glb",
+      "assets/v23/models/sku_v23_desk_lamp.glb",
+      "assets/v23/models/sku_v23_tablet.glb"
+    ]
+  }
+}

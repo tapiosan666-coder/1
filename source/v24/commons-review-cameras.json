@@ -1,0 +1,129 @@
+[
+  {
+    "id": "A-B1-food",
+    "title": "A-B1-food",
+    "store_id": "AB1-003",
+    "wing": "A",
+    "floor": "B1",
+    "category": "food_specialty",
+    "eye": [
+      384.3862183658829,
+      -3.6999999999999997,
+      -50.882606938834385
+    ],
+    "look": [
+      382.34125310405074,
+      -4.35,
+      -61.52115119602487
+    ],
+    "fov": 65,
+    "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "B-B1-food",
+    "title": "B-B1-food",
+    "store_id": "BB1-MARKET",
+    "wing": "B",
+    "floor": "B1",
+    "category": "food",
+    "eye": [
+      -281.0,
+      -3.6999999999999997,
+      -9.0
+    ],
+    "look": [
+      -297.82604166666675,
+      -4.35,
+      -15.853124999999997
+    ],
+    "fov": 65,
+    "note": "Same coordinates and angle for v20 and v21; not a human viewpoint selection",
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ]
+  },
+  {
+    "id": "A-RF",
+    "wing": "A",
+    "floor": "RF",
+    "category": "wayfinding",
+    "eye": [
+      312.0,
+      18.049999999999997,
+      -60.0
+    ],
+    "look": [
+      308.0,
+      17.9,
+      -60.0
+    ],
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "title": "A-RF",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "B-RF",
+    "wing": "B",
+    "floor": "RF",
+    "category": "wayfinding",
+    "eye": [
+      -80.39999999999998,
+      18.049999999999997,
+      60.0
+    ],
+    "look": [
+      -84.39999999999998,
+      17.9,
+      60.0
+    ],
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "title": "B-RF",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  },
+  {
+    "id": "C-RF",
+    "wing": "C",
+    "floor": "RF",
+    "category": "wayfinding",
+    "eye": [
+      -115.74255095010126,
+      18.049999999999997,
+      -375.07873892515875
+    ],
+    "look": [
+      -115.47072359227734,
+      17.9,
+      -378.05290789257276
+    ],
+    "fov": 65,
+    "variants": [
+      "normal",
+      "C",
+      "ES",
+      "combined"
+    ],
+    "title": "C-RF",
+    "note": "Normal layout sign; roof facilities preserved. No claim of a new roof structure."
+  }
+]
