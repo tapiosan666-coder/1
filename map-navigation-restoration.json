@@ -1,0 +1,21 @@
+{
+  "map_floor_count": 32,
+  "changed_navigation_tiles": [
+    {
+      "key": "combined-B-1F",
+      "new_grid_cells": 50,
+      "physical_edges_still_checked_at_use": true
+    },
+    {
+      "key": "combined-B-2F",
+      "new_grid_cells": 90,
+      "physical_edges_still_checked_at_use": true
+    },
+    {
+      "key": "combined-B-3F",
+      "new_grid_cells": 40,
+      "physical_edges_still_checked_at_use": true
+    }
+  ],
+  "retired_ES_areas_restored_to_floor_and_public_map": true
+}

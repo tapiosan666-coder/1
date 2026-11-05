@@ -1,0 +1,262 @@
+{
+  "human_playtest": false,
+  "method": "Actual CharacterBody3D auto-controller, move_and_slide at 60Hz, 2.6m/s, collision mask 1; not human input",
+  "rows": [
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 0.0,
+      "from": [
+        -203.75,
+        0.01,
+        -36.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -190.402938842773,
+              0.00083536870079115,
+              -35.9999923706055
+            ]
+          }
+        ],
+        "contact_ticks": 308,
+        "max_vertical_difference_m": 0.0095788910984993,
+        "pass": true,
+        "position": "(-190.4029, 0.000835, -35.99999)",
+        "ticks": 308
+      },
+      "reverse": false,
+      "to": [
+        -190.25,
+        0.01,
+        -36.0
+      ]
+    },
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 0.0,
+      "from": [
+        -190.25,
+        0.01,
+        -36.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -203.597061157227,
+              0.000822207541204989,
+              -35.9999923706055
+            ]
+          }
+        ],
+        "contact_ticks": 308,
+        "max_vertical_difference_m": 0.00953153660520911,
+        "pass": true,
+        "position": "(-203.5971, 0.000822, -35.99999)",
+        "ticks": 308
+      },
+      "reverse": true,
+      "to": [
+        -203.75,
+        0.01,
+        -36.0
+      ]
+    },
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 1.0,
+      "from": [
+        -203.75,
+        5.535,
+        -36.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -190.402984619141,
+              5.52583360671997,
+              -35.9999923706055
+            ]
+          }
+        ],
+        "contact_ticks": 308,
+        "max_vertical_difference_m": 0.00983428955078125,
+        "pass": true,
+        "position": "(-190.403, 5.525834, -35.99999)",
+        "ticks": 308
+      },
+      "reverse": false,
+      "to": [
+        -190.25,
+        5.535,
+        -36.0
+      ]
+    },
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 1.0,
+      "from": [
+        -190.25,
+        5.535,
+        -36.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -203.596862792969,
+              5.52581596374512,
+              -36.0000076293945
+            ]
+          }
+        ],
+        "contact_ticks": 308,
+        "max_vertical_difference_m": 0.0248351097106934,
+        "pass": true,
+        "position": "(-203.5969, 5.525816, -36.00001)",
+        "ticks": 308
+      },
+      "reverse": true,
+      "to": [
+        -203.75,
+        5.535,
+        -36.0
+      ]
+    },
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 1.0,
+      "from": [
+        -193.75,
+        5.535,
+        5.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -180.403472900391,
+              5.52582788467407,
+              5.00000286102295
+            ]
+          }
+        ],
+        "contact_ticks": 308,
+        "max_vertical_difference_m": 0.0250043869018555,
+        "pass": true,
+        "position": "(-180.4035, 5.525828, 5.000003)",
+        "ticks": 308
+      },
+      "reverse": false,
+      "to": [
+        -180.25,
+        5.535,
+        5.0
+      ]
+    },
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 1.0,
+      "from": [
+        -180.25,
+        5.535,
+        5.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -193.596618652344,
+              5.52582406997681,
+              5.00000095367432
+            ]
+          }
+        ],
+        "contact_ticks": 306,
+        "max_vertical_difference_m": 0.0278792381286621,
+        "pass": true,
+        "position": "(-193.5966, 5.525824, 5.000001)",
+        "ticks": 308
+      },
+      "reverse": true,
+      "to": [
+        -193.75,
+        5.535,
+        5.0
+      ]
+    },
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 2.0,
+      "from": [
+        -193.75,
+        10.885,
+        5.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -180.403274536133,
+              10.8758163452148,
+              5.00000286102295
+            ]
+          }
+        ],
+        "contact_ticks": 308,
+        "max_vertical_difference_m": 0.0250053405761719,
+        "pass": true,
+        "position": "(-180.4033, 10.87582, 5.000003)",
+        "ticks": 308
+      },
+      "reverse": false,
+      "to": [
+        -180.25,
+        10.885,
+        5.0
+      ]
+    },
+    {
+      "actual_CharacterBody3D_move_and_slide": true,
+      "floor": 2.0,
+      "from": [
+        -180.25,
+        10.885,
+        5.0
+      ],
+      "result": {
+        "checkpoints": [
+          {
+            "on_floor": true,
+            "position": [
+              -193.596755981445,
+              10.8758172988892,
+              5.0
+            ]
+          }
+        ],
+        "contact_ticks": 306,
+        "max_vertical_difference_m": 0.0281610488891602,
+        "pass": true,
+        "position": "(-193.5968, 10.87582, 5.0)",
+        "ticks": 308
+      },
+      "reverse": true,
+      "to": [
+        -193.75,
+        10.885,
+        5.0
+      ]
+    }
+  ]
+}

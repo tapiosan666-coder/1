@@ -1,0 +1,221 @@
+{
+  "status": "BUILT_PENDING_PHYSICS_AND_VIEWPORT_VALIDATION",
+  "origin": "assets/v22/integrated-ABC.pack.zst",
+  "origin_sha256": "392b0141e5ff674137c0154e80bc6203058bc6049d6e63d7f278bedeff1741a5",
+  "output_sha256": "d5a0a7286707b2c2516647850840ab15466d08f439251afa5477243710c2b624",
+  "notes": "Unified original horizontal slab surfaces re-tessellated at original elevations. Original archive unchanged. Not a new covering board. B transfer decks, machine locations and meaningful atrium openings are not redesigned by this repair.",
+  "floors": [
+    {
+      "level": 0,
+      "height_m": 0.0,
+      "retired_shafts": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.4,
+              -39.2
+            ],
+            [
+              -204.4,
+              -32.8
+            ],
+            [
+              -189.6,
+              -32.8
+            ],
+            [
+              -189.6,
+              -39.2
+            ],
+            [
+              -204.4,
+              -39.2
+            ]
+          ]
+        ]
+      },
+      "changes": [
+        {
+          "surface": "stone@@ARCH-0",
+          "old_plan_area_m2": 50904.484082971125,
+          "new_plan_area_m2": 50999.204182723035,
+          "restored_area_m2": 94.72009975191031,
+          "old_horizontal_triangles": 13394,
+          "new_horizontal_triangles": 2250,
+          "collider_old_faces_removed": 13394,
+          "height_m": 0.0,
+          "continuous_retriangulated_surface": true,
+          "missing_area_after_m2": 0.0
+        },
+        {
+          "surface": "plaster@@ARCH-0",
+          "old_plan_area_m2": 0.0,
+          "new_plan_area_m2": 94.72000000000016,
+          "restored_area_m2": 94.72000000000016,
+          "old_horizontal_triangles": 0,
+          "new_horizontal_triangles": 2,
+          "collider_old_faces_removed": 0,
+          "height_m": -0.25,
+          "continuous_retriangulated_surface": true,
+          "missing_area_after_m2": 0.0
+        },
+        {
+          "surface": "metal@@ARCH-0",
+          "obsolete_reveal_or_guard_triangles_removed": 342,
+          "atrium_guardrails_outside_retired_envelopes_untouched": true
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "height_m": 5.525,
+      "retired_shafts": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -204.4,
+                -32.8
+              ],
+              [
+                -189.6,
+                -32.8
+              ],
+              [
+                -189.6,
+                -39.2
+              ],
+              [
+                -204.4,
+                -39.2
+              ],
+              [
+                -204.4,
+                -32.8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -194.4,
+                8.2
+              ],
+              [
+                -179.6,
+                8.2
+              ],
+              [
+                -179.6,
+                1.8
+              ],
+              [
+                -194.4,
+                1.8
+              ],
+              [
+                -194.4,
+                8.2
+              ]
+            ]
+          ]
+        ]
+      },
+      "changes": [
+        {
+          "surface": "stone@@ARCH-1",
+          "old_plan_area_m2": 46756.38793004972,
+          "new_plan_area_m2": 46945.82794339333,
+          "restored_area_m2": 189.44001334360655,
+          "old_horizontal_triangles": 12810,
+          "new_horizontal_triangles": 2595,
+          "collider_old_faces_removed": 12810,
+          "height_m": 5.525,
+          "continuous_retriangulated_surface": true,
+          "missing_area_after_m2": 0.0
+        },
+        {
+          "surface": "plaster@@ARCH-1",
+          "old_plan_area_m2": 0.0,
+          "new_plan_area_m2": 189.44000000000023,
+          "restored_area_m2": 189.44000000000023,
+          "old_horizontal_triangles": 0,
+          "new_horizontal_triangles": 4,
+          "collider_old_faces_removed": 0,
+          "height_m": 5.275,
+          "continuous_retriangulated_surface": true,
+          "missing_area_after_m2": 0.0
+        },
+        {
+          "surface": "metal@@ARCH-1",
+          "obsolete_reveal_or_guard_triangles_removed": 684,
+          "atrium_guardrails_outside_retired_envelopes_untouched": true
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "height_m": 10.875,
+      "retired_shafts": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -194.4,
+              1.8
+            ],
+            [
+              -194.4,
+              8.2
+            ],
+            [
+              -179.6,
+              8.2
+            ],
+            [
+              -179.6,
+              1.8
+            ],
+            [
+              -194.4,
+              1.8
+            ]
+          ]
+        ]
+      },
+      "changes": [
+        {
+          "surface": "stone@@ARCH-2",
+          "old_plan_area_m2": 46116.07763548645,
+          "new_plan_area_m2": 46210.79766611269,
+          "restored_area_m2": 94.72003062623844,
+          "old_horizontal_triangles": 12466,
+          "new_horizontal_triangles": 2387,
+          "collider_old_faces_removed": 12466,
+          "height_m": 10.875,
+          "continuous_retriangulated_surface": true,
+          "missing_area_after_m2": 0.0
+        },
+        {
+          "surface": "plaster@@ARCH-2",
+          "old_plan_area_m2": 0.0,
+          "new_plan_area_m2": 94.72000000000007,
+          "restored_area_m2": 94.72000000000007,
+          "old_horizontal_triangles": 0,
+          "new_horizontal_triangles": 2,
+          "collider_old_faces_removed": 0,
+          "height_m": 10.625,
+          "continuous_retriangulated_surface": true,
+          "missing_area_after_m2": 0.0
+        },
+        {
+          "surface": "metal@@ARCH-2",
+          "obsolete_reveal_or_guard_triangles_removed": 358,
+          "atrium_guardrails_outside_retired_envelopes_untouched": true
+        }
+      ]
+    }
+  ]
+}
