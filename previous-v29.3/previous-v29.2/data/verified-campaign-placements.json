@@ -1,0 +1,346 @@
+{
+  "recorded_proof_only": true,
+  "variant": "combined",
+  "engine": "Godot 4.6.3",
+  "source": "Actual native Viewport scene, printed panels and support rays",
+  "campaigns": {
+    "architecture_changed": false,
+    "directions": [
+      {
+        "actual_path": [
+          [
+            -32.4426536560059,
+            0.02,
+            -12.9817152023315
+          ],
+          [
+            -30.4799995422363,
+            0.0199999995529652,
+            -12.1548643112183
+          ],
+          [
+            -31.2000007629395,
+            0.02,
+            -36.4000015258789
+          ],
+          [
+            -33.2000007629395,
+            0.02,
+            -40.0
+          ]
+        ],
+        "arrow": "→",
+        "source": "Same existing checkout and actual path, not a decorative invented direction",
+        "store_id": "B1-040",
+        "sweep_pass": true,
+        "target_fixture": "V22-B1-040-checkout-2306",
+        "viewer": [
+          -32.4426536560059,
+          0.0199999995529652,
+          -12.9817152023315
+        ]
+      }
+    ],
+    "existing_panel_campaigns": [
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "ALVENE STUDIO",
+        "genre": "fashion",
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          374.977996826172,
+          1.89999997615814,
+          -23.0430278778076
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "A1F-004",
+        "support": "Collision_v10_chalk",
+        "world_p": [
+          374.971008300781,
+          1.89999997615814,
+          -23.0430278778076
+        ]
+      },
+      {
+        "atlas_region": [
+          0.5,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "NOLLIA HOUSE",
+        "genre": "beauty",
+        "normal": [
+          -0.996546447277069,
+          0.0,
+          -0.0830375328660011
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          577.821044921875,
+          1.89999997615814,
+          13.1942834854126
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "A1F-023",
+        "support": "Collision_v10_chalk",
+        "world_p": [
+          577.814086914062,
+          1.89999997615814,
+          13.1937026977539
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "SORELI EDIT",
+        "genre": "cafe",
+        "normal": [
+          -0.333844244480133,
+          0.0,
+          -0.942628264427185
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          92.7232284545898,
+          1.89999997615814,
+          33.061939239502
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "B1-052",
+        "support": "Collision_wall_sage",
+        "world_p": [
+          92.7208938598633,
+          1.89999997615814,
+          33.0553398132324
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "VELORIA LANE",
+        "genre": "fashion",
+        "normal": [
+          0.976206243038177,
+          0.0,
+          -0.21684430539608
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -157.647918701172,
+          1.89999997615814,
+          -320.878753662109
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "C1F-CW-1",
+        "support": "Collision_v10_charcoal",
+        "world_p": [
+          -157.641082763672,
+          1.89999997615814,
+          -320.880279541016
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "MIREVA STUDIO",
+        "genre": "fashion",
+        "normal": [
+          0.659525096416473,
+          0.0,
+          -0.751682579517365
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -31.3633136749268,
+          1.85000002384186,
+          -10.6045789718628
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          1.08000004291534,
+          1.62000000476837
+        ],
+        "store_id": "B1-043",
+        "support": "Collision_wall_sage",
+        "world_p": [
+          -30.9302387237549,
+          1.85000002384186,
+          -10.2339115142822
+        ]
+      }
+    ],
+    "human_playtest": false,
+    "new_store_posters": [
+      {
+        "actual_supports": [
+          "Collision_v10_chalk",
+          "Collision_v10_chalk",
+          "Collision_v10_chalk"
+        ],
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "ALVENE WORKS",
+        "genre": "fashion",
+        "normal": [
+          0.680943608283997,
+          0.0,
+          0.732335865497589
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          355.624816894531,
+          1.89999997615814,
+          51.1733932495117
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "A1F-044",
+        "view": [
+          356.354766845703,
+          0.0199999995529652,
+          51.9584579467773
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          355.629577636719,
+          1.89999997615814,
+          51.1785202026367
+        ]
+      },
+      {
+        "actual_supports": [
+          "Collision_wall_sage",
+          "Collision_wall_sage",
+          "Collision_wall_sage"
+        ],
+        "atlas_region": [
+          0.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "TERRUNE BAKERY",
+        "genre": "cafe",
+        "normal": [
+          0.659525096416473,
+          0.0,
+          -0.751682579517365
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -33.1496658325195,
+          1.89999997615814,
+          -12.175910949707
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "B1-040",
+        "view": [
+          -32.4426536560059,
+          0.0199999995529652,
+          -12.9817152023315
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          -33.1450500488281,
+          1.89999997615814,
+          -12.1811723709106
+        ]
+      },
+      {
+        "actual_supports": [
+          "Collision_v10_chalk",
+          "Collision_v10_chalk",
+          "Collision_v10_chalk"
+        ],
+        "atlas_region": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "RIVORA LANE",
+        "genre": "family",
+        "normal": [
+          0.206010952591896,
+          0.0,
+          -0.978549718856812
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          137.201263427734,
+          1.89999997615814,
+          -249.206237792969
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "C1F-CE-3",
+        "view": [
+          137.422103881836,
+          0.0199999995529652,
+          -250.255233764648
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          137.202713012695,
+          1.89999997615814,
+          -249.213088989258
+        ]
+      }
+    ],
+    "omissions": [],
+    "revision": "v29.2"
+  }
+}
