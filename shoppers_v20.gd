@@ -18,6 +18,7 @@ func set_mode(value:String,force:bool=false)->bool:
     a.female.set_variant("v19"if value=="v19"else"v20");a.record.stride_m=.62 if value=="v19"else .66;a.gait_phase=a.distance_walked/float(a.record.stride_m)
  return changed
 func _unhandled_key_input(e:InputEvent)->void:
+ if not game.developer_mode():return
  if e is InputEventKey and e.pressed and not e.echo:
   if e.keycode==KEY_F12:set_enabled(not enabled);get_viewport().set_input_as_handled()
   elif e.keycode==KEY_N:

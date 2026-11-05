@@ -121,6 +121,11 @@ func portal_clear(p:Vector3,n:Vector3,inside_length:float=5.)->bool:
    if not way.floor_hit(p+n*float(z)+u*x):return false
  return true
 func build_portal(wing:String,p:Vector3,n:Vector3)->void:
+ if wing=="C":
+  var access:Dictionary=game.read_json("res://source/v28/entrances.json")["C"];p=game.v3(access.p);n=Vector3(access.n[0],0,access.n[1])
+  entrances.append({"id":"C-ENTRANCE-01","wing":"C","floor":"1F","p":[p.x,p.y,p.z],"n":[n.x,n.z],"outside":[p.x-n.x*5.,p.y,p.z-n.z*5.],"inside":[p.x+n.x*3.2,p.y,p.z+n.z*3.2],"clear_width_m":3.3,"vestibule_depth_m":0.,"open_outdoor_access":true,"retained_slab":true})
+  reports["v30_C_central_vestibule"]="Removed generated enclosure and both automatic door assemblies. Outdoor circulation retained; walking verification pending."
+  return
  if not OS.get_cmdline_user_args().has("--v27-baseline") and wing in ["B","C"]:
   var entry:Dictionary=game.read_json("res://source/v28/entrances.json")[wing];p=game.v3(entry.p);n=Vector3(entry.n[0],0,entry.n[1])
  var u=Vector3(n.z,0,-n.x);var found:bool=false
@@ -219,8 +224,8 @@ func public_point(p:Vector3,wing:String)->bool:
  var variant:String="combined"if game.c_open_proposal and game.es_site_proposal else"C"if game.c_open_proposal and wing=="C"else"ES"if game.es_site_proposal and wing=="B"else"normal"
  var key:String=variant+"-"+wing+"-1F"
  # Unchanged floors reuse the normal grid; C's alternate only supplies upper-floor grids.
- if not way.grids.has(key):key="normal-"+wing+"-1F"
- var grid:Dictionary=way.grids[key];var point=Vector2(p.x,p.z)
+ if not way.grid_index.has(key):key="normal-"+wing+"-1F"
+ var grid:Dictionary=way.get_grid(key);var point=Vector2(p.x,p.z)
  for rings:Array in grid.walk_polygons:
   var outer=PackedVector2Array(rings[0].map(func(q):return Vector2(q[0],q[1])))
   if not Geometry2D.is_point_in_polygon(point,outer):continue
@@ -251,7 +256,7 @@ func build_route_signs()->void:
   if definition.is_empty():continue
   var n=Vector3(definition.n[0],0,definition.n[1]);var u=Vector3(n.z,0,-n.x);var top:float=INF
   for side in [-1.,1.]:
-   var hit:Dictionary=ceiling(p+u*side*1.68)
+   var hit:Dictionary=ceiling(p+u*side*way.panel_width(definition)*.35)
    if hit.is_empty():top=INF;break
    top=minf(top,float(hit.position.y))
   if not is_finite(top)or top<p.y+4.0:continue
@@ -278,7 +283,7 @@ func refresh_navigation()->void:
   for board:Dictionary in way.data[variant]:
    if board.id==c.sign:definition=board;break
   if definition.is_empty():continue
-  var graph=load("res://nav_live_v21.gd").new();graph.setup(way.grids[definition.grid_key],way)
+  var graph=load("res://nav_live_v21.gd").new();graph.setup(way.get_grid(definition.grid_key),way)
   var end:Array=c.actual_path[-1];var row:Dictionary={"path":c.actual_path,"target_point":[end[0],end[2]]}
   var path:Array=graph.repair(row);var okay:bool=not path.is_empty()and way.check_path(path)["pass"]
   reports.route_replans.append({"sign":c.sign,"target":c.target,"pass":okay,"old_path":c.actual_path,"new_path":path})
@@ -308,6 +313,8 @@ func wall_equipment(p:Vector3)->void:
  var at:Vector3=chosen.position+chosen.normal*.02;at.y=p.y;mount_fire_equipment(at,chosen.normal,str(chosen.collider.name))
 func portal_fire_equipment()->void:
  for entry:Dictionary in entrances:
+  if entry.get("open_outdoor_access",false):
+   wall_equipment(game.v3(entry.p));continue
   var portal:Node3D=get_node("V26_"+entry.wing+"_Vestibule")
   var placed:bool=false
   for side:float in [-1.,1.]:

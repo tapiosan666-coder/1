@@ -5,7 +5,8 @@ var stats:Dictionary={"boards":0,"rows":0,"omitted_boards":[],"blocked_rows":[],
 var capsule:CapsuleShape3D
 var checks:Array=[]
 var live_graphs:Dictionary={}
-var grids:Dictionary
+var grids:Dictionary={}
+var grid_index:Dictionary={}
 var mounts:Dictionary={}
 var mount_audit:Array=[]
 var ink:StandardMaterial3D
@@ -16,11 +17,14 @@ func setup(g)->void:
  game=g;name="V21_Route_Derived_Wayfinding";data=g.read_json("res://source/v22/wayfinding.json");capsule=CapsuleShape3D.new();capsule.radius=.31;capsule.height=1.80
  ink=StandardMaterial3D.new();ink.albedo_color=Color(.025,.055,.058);ink.roughness=.56;metal=StandardMaterial3D.new();metal.albedo_color=Color(.21,.24,.25);metal.metallic=.6;metal.roughness=.42;white=StandardMaterial3D.new();white.albedo_color=Color(.83,.88,.85);icon_texture=load("res://assets/v21/art/wayfinding-icons.png")
  call_deferred("validate_and_build")
+func get_grid(key:String)->Dictionary:
+ if not grids.has(key):grids[key]=game.read_json(grid_index[key])
+ return grids[key]
 func resolve_mount(board:Dictionary)->void:
  # Support rods must terminate at actual built ceiling collision, never a nominal storey height.
  var p=game.v3(board.p);var n=Vector3(board.n[0],0,board.n[1]);var u=Vector3(n.z,0,-n.x);var top:float=INF
  for side:float in[-1.,1.]:
-  var q=PhysicsRayQueryParameters3D.create(p+u*side*1.68+Vector3.UP*3.9,p+u*side*1.68+Vector3.UP*8.8,1);var hit=get_world_3d().direct_space_state.intersect_ray(q)
+  var q=PhysicsRayQueryParameters3D.create(p+u*side*panel_width(board)*.35+Vector3.UP*3.9,p+u*side*panel_width(board)*.35+Vector3.UP*8.8,1);var hit=get_world_3d().direct_space_state.intersect_ray(q)
   if hit.is_empty():top=INF;break
   top=minf(top,float(hit.position.y))
  if is_finite(top)and top>p.y+3.9:
@@ -44,7 +48,7 @@ func validate_and_build()->void:
   if FileAccess.get_sha256("res://"+path)!=str(data.source_hashes[path]):stats.source_mismatches.append(path)
  if not stats.source_mismatches.is_empty():push_warning("V21 wayfinding source changed: regenerate routes; stale arrows suppressed");finish();return
  var variant:String="combined"if game.c_open_proposal and game.es_site_proposal else"C"if game.c_open_proposal else"ES"if game.es_site_proposal else"normal"
- grids=game.read_json("res://source/v22/navigation-grids.json");stats.live_replans=0;stats.offline_route_conflicts=0
+ grid_index=game.read_json("res://source/v30/navigation/index.json");stats.live_replans=0;stats.offline_route_conflicts=0
  # Install all physically supported sign bodies first, so no later post can invalidate an earlier route.
  for board:Dictionary in data[variant]:
   if board.has("disabled_reason"):stats.omitted_boards.append({"id":board.id,"reason":board.disabled_reason});continue
@@ -70,7 +74,7 @@ func validate_and_build()->void:
    if not pass_route:
     stats.offline_route_conflicts+=1
     if not live_graphs.has(board.grid_key):
-     var graph=load("res://nav_live_v21.gd").new();graph.setup(grids[board.grid_key],self);live_graphs[board.grid_key]=graph
+     var graph=load("res://nav_live_v21.gd").new();graph.setup(get_grid(board.grid_key),self);live_graphs[board.grid_key]=graph
     var candidate:Array=live_graphs[board.grid_key].repair(row)
     if not candidate.is_empty():
      result=check_path(candidate)
@@ -142,34 +146,45 @@ func icon(parent:Node3D,kind:String,p:Vector3)->void:
  var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES);var points=[Vector3(-.10,.12,0),Vector3(-.10,-.12,0),Vector3(.10,-.12,0),Vector3(.10,.12,0)];var uv=[Vector2(i*192./float(icon_texture.get_width()),0),Vector2(i*192./float(icon_texture.get_width()),1),Vector2((i*192.+192.)/float(icon_texture.get_width()),1),Vector2((i*192.+192.)/float(icon_texture.get_width()),0)]
  for k:int in[0,1,2,0,2,3]:st.set_normal(Vector3.BACK);st.set_uv(uv[k]);st.add_vertex(points[k])
  var mesh=MeshInstance3D.new();mesh.mesh=st.commit();var mat=StandardMaterial3D.new();mat.albedo_texture=icon_texture;mat.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA;mat.cull_mode=BaseMaterial3D.CULL_DISABLED;mat.shading_mode=BaseMaterial3D.SHADING_MODE_UNSHADED;mesh.material_override=mat;mesh.position=p;mesh.visibility_range_end=75.;parent.add_child(mesh)
+func panel_width(d:Dictionary)->float:
+ return .28+1.78*mini(5,d.rows.size()) if d.mount=="ceiling" else 2.2
 func build_board(d:Dictionary,rows:Array)->Node3D:
- var mount=Node3D.new();mount.name=str(d.id).validate_node_name();var n=Vector3(d.n[0],0,d.n[1]);mount.transform=Transform3D(Basis(Vector3.UP.cross(n),Vector3.UP,n),game.v3(d.p));add_child(mount);var overhead:bool=d.mount=="ceiling";var width:float=4.80 if overhead else 2.2;var height:float=(1.10 if OS.get_cmdline_user_args().has("--v27-baseline")else 1.50)if overhead else 1.65;var y:float=(3.15 if OS.get_cmdline_user_args().has("--v27-baseline")else 3.25)if overhead else 1.50
- solid(mount,Vector3(0,y,0),Vector3(width,height,.12),ink)
+ var mount=Node3D.new();mount.name=str(d.id).validate_node_name();mount.set_meta("v30_wayfinding",d.id)
+ var n=Vector3(d.n[0],0,d.n[1]);mount.transform=Transform3D(Basis(Vector3.UP.cross(n),Vector3.UP,n),game.v3(d.p));add_child(mount)
+ var overhead:bool=d.mount=="ceiling";var width:float=panel_width(d);var y:float=3.25 if overhead else 1.8
  var accent=StandardMaterial3D.new();accent.albedo_color=Color(.12,.37,.51)if d.wing=="A"else Color(.12,.31,.22)if d.wing=="B"else Color(.55,.28,.13);accent.roughness=.55
- solid(mount,Vector3(0,y+height/2.-.045,0),Vector3(width,.08,.14),accent,false)
+ var panels:int=ceili(float(d.rows.size())/5.) if overhead else ceili(float(d.rows.size())/2.)
+ for panel:int in panels:
+  var py:float=y-float(panel)*.70
+  solid(mount,Vector3(0,py,0),Vector3(width,.60,.12),white,not overhead)
+  solid(mount,Vector3(0,py+.285,0),Vector3(width,.025,.14),accent,false)
  if overhead:
-  var top:float=float(d.ceiling_y)-float(d.p[1]);var length:float=maxf(.03,top-y-height/2.)
-  for x:float in[-width*.35,width*.35]:solid(mount,Vector3(x,y+height/2.+length/2.,0),Vector3(.025,length,.025),metal,false)
+  var top:float=float(d.ceiling_y)-float(d.p[1]);var length:float=maxf(.03,top-y-.30)
+  for x:float in[-width*.35,width*.35]:solid(mount,Vector3(x,y+.30+length/2.,0),Vector3(.025,length,.025),metal,false)
  else:
-  solid(mount,Vector3(0,.055,0),Vector3(width*.62,.11,.55),metal)
-  for x:float in[-width*.35,width*.35]:solid(mount,Vector3(x,.50,0),Vector3(.055,.90,.055),metal)
+  solid(mount,Vector3(0,.055,0),Vector3(1.36,.11,.55),metal)
+  for x:float in[-.77,.77]:solid(mount,Vector3(x,.50,0),Vector3(.055,.90,.055),metal)
  if not rows.is_empty():fill_labels(mount,d,rows)
  return mount
 func fill_labels(mount:Node3D,d:Dictionary,rows:Array)->void:
- var overhead:bool=d.mount=="ceiling";var width:float=4.80 if overhead else 2.2;var height:float=(1.10 if OS.get_cmdline_user_args().has("--v27-baseline")else 1.50)if overhead else 1.65;var y:float=(3.15 if OS.get_cmdline_user_args().has("--v27-baseline")else 3.25)if overhead else 1.50
+ var overhead:bool=d.mount=="ceiling";var width:float=panel_width(d);var y:float=3.25 if overhead else 1.8
+ var per_panel:int=5 if overhead else 2
+ var names:Dictionary={"WC":"トイレ","EV":"エレベーター","ES":"エスカレーター","ST":"階段","INFO":"ご案内","FOOD":"フードコート","DINING":"レストラン","CINEMA":"シネマ","ARCADE":"ゲーム","PARK":"駐車場","EXIT":"出口","A":"A館","B":"B館","C":"C館"}
  for side:float in[1.,-1.]:
-  var face=Node3D.new();face.position=Vector3(0,y,.066*side);face.rotation.y=PI if side<0 else 0.;mount.add_child(face);var left:float=-width/2.+.16;var header_y:float=height/2.-.18;text(face,str(d.wing)+"館  "+str(d.floor)+"  館内案内",Vector3(left,header_y,0),width-.32,.0031)
-  for i in rows.size():
-   if overhead and not OS.get_cmdline_user_args().has("--v27-baseline"):
-    var row:Dictionary=rows[i];var ry:float=header_y-.31-i*.28
+  for panel:int in ceili(float(rows.size())/float(per_panel)):
+   var face=Node3D.new();face.name="HorizontalFace_%s_%d"%[str(side),panel];face.position=Vector3(0,y-float(panel)*.70,.066*side);face.rotation.y=PI if side<0 else 0.;mount.add_child(face)
+   var count:int=mini(per_panel,rows.size()-panel*per_panel);var cell:float=(width-.24)/float(count)
+   for i:int in count:
+    var row:Dictionary=rows[panel*per_panel+i];var left:float=-width*.5+.12+float(i)*cell
     var arrow:String=str(row.front_arrow if side>0 else row.back_arrow)
-    text(face,arrow,Vector3(left,ry,0),.50,.0085)
-    var before:int=face.get_child_count();icon(face,str(row.kind),Vector3(left+.60,ry,0))
-    if face.get_child_count()>before:face.get_child(-1).scale=Vector3.ONE*1.15
-    text(face,str(row.label),Vector3(left+.85,ry,0),width-1.75,.0046)
-    text(face,str(roundi(row.distance_m))+"m",Vector3(width*.5-.65,ry,0),.52,.0031)
-    continue
-   var r:Dictionary=rows[i];var ry:float=header_y-.23-i*(.20 if overhead else .28);icon(face,str(r.kind),Vector3(left+.08,ry,0));var arrow:String=str(r.front_arrow if side>0 else r.back_arrow);text(face,arrow+"  "+str(r.label)+"  "+str(roundi(r.distance_m))+"m",Vector3(left+.26,ry,0),width-.58,.0028 if overhead else .0023)
+    text(face,arrow,Vector3(left,.0,.003),cell*.17,.006 if overhead else .004)
+    var before:int=face.get_child_count();icon(face,str(row.kind),Vector3(left+cell*.24,0,.004))
+    if face.get_child_count()>before:
+     var glyph:MeshInstance3D=face.get_child(-1);var material:StandardMaterial3D=glyph.material_override.duplicate();material.albedo_color=Color(.08,.17,.20);glyph.material_override=material;glyph.scale=Vector3.ONE*(1.0 if overhead else .72)
+    text(face,str(names.get(row.kind,row.label)),Vector3(left+cell*.35,0,.003),cell*.61,.0034 if overhead else .0025)
+    if i>0:solid(face,Vector3(left-.05,0,0),Vector3(.008,.36,.006),metal,false)
+   for label:Label3D in face.find_children("*","Label3D",true,false):label.modulate=Color(.08,.17,.20)
+ mount.set_meta("v30_visible_destinations",rows.size());mount.set_meta("v30_distance_displayed",false)
 
 func _exit_tree()->void:
  for graph in live_graphs.values():graph.clear();graph.way=null

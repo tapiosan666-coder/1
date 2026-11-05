@@ -42,7 +42,7 @@ func build()->void:
  for d:Dictionary in game.read_json("res://source/v29/storefronts.json"):frontage(d)
  interior_stations()
  wall_galleries()
- signs()
+ # v30: shared all-floor renderer owns signs; no 1F override.
  batch_decor()
  game.results.architecture_revision="v29-provisional-1F";game.write_json("v29-environment.json",report);set_meta("ready",true);print("V29_ENV_READY ",report.storefronts.size()," fronts ",report.posters.size()," editorial windows ",report.ceiling_bays.size()," supported bays")
 func model(parent:Node3D,id:String)->Node3D:

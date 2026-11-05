@@ -90,7 +90,7 @@ func _physics_process(dt:float)->void:
   var gate:Dictionary=gates[id];gate.angle=move_toward(float(gate.angle),float(gate.target),dt*1.4);gate.body.rotation.y=gate.angle
 func _unhandled_key_input(e:InputEvent)->void:
  if not e is InputEventKey or not e.pressed or e.echo or game==null:return
- if e.keycode==KEY_F11:
+ if game.developer_mode() and e.keycode==KEY_F11:
   set_fair(not fair_enabled);get_viewport().set_input_as_handled()
  elif e.keycode==KEY_F and game.ui.overlay=="":
   var best="";var distance=2.4

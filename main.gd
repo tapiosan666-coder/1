@@ -36,14 +36,18 @@ var retail_v18
 var shoppers_v18
 var draft:bool=false
 var art_v10:Dictionary={}
+var startup_trace_v30:Array=[]
 var interaction_notice:String=""
 var notice_seconds:float=0.0
+func developer_mode()->bool:return OS.get_cmdline_user_args().has("--developer")
 func v3(a:Array)->Vector3:return Vector3(a[0],a[1],a[2])
 func v294_enabled()->bool:return v293_enabled()and not OS.get_cmdline_user_args().has("--v293-baseline")
 func v293_enabled()->bool:return v292_enabled()and not OS.get_cmdline_user_args().has("--v292-baseline")
 func v292_enabled()->bool:return not OS.get_cmdline_user_args().has("--v291-baseline")and not OS.get_cmdline_user_args().has("--v29-baseline")and not OS.get_cmdline_user_args().has("--v28-baseline")
 func data_hash(p:String)->String:return FileAccess.get_sha256(p if FileAccess.file_exists(p)else p+".zst")
 func read_json(p:String):
+ if p=="res://source/v22/map-data-integrated.json":p="res://source/v30/map-data.json"
+ var v30_begin:int=Time.get_ticks_usec()
  if not OS.get_cmdline_user_args().has("--v26-baseline"):
   if p in ["res://source/v25/commons.json","res://source/v22/commons.json"]:p="res://source/v27/commons.json"
   if p=="res://source/v22/wayfinding.json":p="res://source/v27/wayfinding.json"
@@ -64,8 +68,10 @@ func read_json(p:String):
  if p in ["res://source/v25/retail-plan.json","res://source/v29/retail-plan.json","res://source/v291/retail-plan.json","res://source/v292/retail-plan.json","res://source/v293/retail-plan.json","res://source/v294/retail-plan.json"]and value is Dictionary:
   # Compatibility views are derived references, never duplicated authoritative records on disk.
   value.instances=value.fixtures+value.products;value.retirement_stores=value.stores;retail_v23_cache=value
+ startup_trace_v30.append({"kind":"json","path":p,"milliseconds":(Time.get_ticks_usec()-v30_begin)/1000.})
  return value
 func load_geometry(path:String)->Dictionary:
+ var v30_begin:int=Time.get_ticks_usec()
  var packed=FileAccess.get_file_as_bytes(path)
  var raw=packed.slice(8).decompress(packed.decode_u32(4),FileAccess.COMPRESSION_ZSTD)if path.ends_with(".pack.zst")else packed.decompress_dynamic(1800000000,FileAccess.COMPRESSION_GZIP)
  if not path.ends_with(".pack.gz")and not path.ends_with(".pack.zst"):return JSON.parse_string(raw.get_string_from_utf8())
@@ -75,6 +81,7 @@ func load_geometry(path:String)->Dictionary:
    var slot:Array=head.surfaces[key][field];head.surfaces[key][field]=raw.slice(start+int(slot[0]),start+int(slot[0])+int(slot[1])).to_int32_array()if field=="i"else raw.slice(start+int(slot[0]),start+int(slot[0])+int(slot[1])).to_float32_array()
  for key:String in head.colliders:
   var slot:Array=head.colliders[key];head.colliders[key]=raw.slice(start+int(slot[0]),start+int(slot[0])+int(slot[1])).to_float32_array()
+ startup_trace_v30.append({"kind":"geometry","path":path,"packed_bytes":packed.size(),"decoded_bytes":raw.size(),"milliseconds":(Time.get_ticks_usec()-v30_begin)/1000.})
  return head
 func _ready()->void:
  load("res://asset_cache_v24.gd").reset()
@@ -85,7 +92,7 @@ func _ready()->void:
    push_error("配布データが不足しています: "+data_path)
    OS.alert("マップデータが不足しています。統合版ZIPを新しいフォルダにすべて展開し、そこにあるproject.godotを開いてください。", "FIND YOURSELF：データ不足")
    get_tree().quit(2);return
- for required_path:String in ["res://assets/v11/repairs.pack.zst","res://assets/v12/es-safety.pack.zst","res://assets/v12/retail.pack.zst","res://assets/v12/boundary-physics.pack.zst","res://assets/v12/es-unbuilt-safety.pack.zst","res://assets/v12/es-transfer-study.pack.zst","res://assets/v12/es-landing-plates.pack.zst","res://assets/v13/amenities.pack.zst","res://assets/v13/public-areas.pack.zst","res://assets/v13/basement-retail.pack.zst","res://assets/v13/roof-retail.pack.zst","res://assets/v15/C-finish-replacement.pack.zst","res://assets/v15/ES-site-replacement.pack.zst","res://assets/v15/retail-services.pack.zst","res://assets/v22/combined-structure.pack.zst","res://assets/v22/integrated-ABC.pack.zst"]:
+ for required_path:String in ["res://assets/v11/repairs.pack.zst","res://assets/v12/es-safety.pack.zst","res://assets/v12/retail.pack.zst","res://assets/v12/boundary-physics.pack.zst","res://assets/v12/es-unbuilt-safety.pack.zst","res://assets/v12/es-transfer-study.pack.zst","res://assets/v12/es-landing-plates.pack.zst","res://assets/v13/amenities.pack.zst","res://assets/v13/public-areas.pack.zst","res://assets/v13/basement-retail.pack.zst","res://assets/v13/roof-retail.pack.zst","res://assets/v15/C-finish-replacement.pack.zst","res://assets/v15/ES-site-replacement.pack.zst","res://assets/v15/retail-services.pack.zst","res://assets/v22/combined-structure.pack.zst","res://assets/v30/structure-restoration.pack.zst"]:
   var bytes=FileAccess.get_file_as_bytes(required_path)
   if bytes.size()<12 or bytes.slice(0,4).get_string_from_ascii()!="FYZ1":
    push_error("検証版データの欠落または破損: "+required_path);OS.alert("データが不足または破損しています。v22 ZIPを新しいフォルダへすべて展開してください。\n"+required_path,"FIND YOURSELF：データ不足");get_tree().quit(2);return
@@ -188,7 +195,7 @@ func _ready()->void:
   if geo.colliders.has(key):geo.colliders[key].append_array(amenity_geometry.colliders[key])
   else:geo.colliders[key]=amenity_geometry.colliders[key]
  if c_open_proposal or es_site_proposal:
-  var patch_path:String="res://assets/v22/integrated-ABC.pack.zst"if c_open_proposal and es_site_proposal and a_continuous_v22 else"res://assets/v22/combined-structure.pack.zst"if c_open_proposal and es_site_proposal else"res://assets/v15/C-finish-replacement.pack.zst"if c_open_proposal else"res://assets/v15/ES-site-replacement.pack.zst"
+  var patch_path:String="res://assets/v30/structure-restoration.pack.zst"if c_open_proposal and es_site_proposal and a_continuous_v22 else"res://assets/v22/combined-structure.pack.zst"if c_open_proposal and es_site_proposal else"res://assets/v15/C-finish-replacement.pack.zst"if c_open_proposal else"res://assets/v15/ES-site-replacement.pack.zst"
   var patch_info:Dictionary=read_json("res://source/v22/integrated-ABC.json"if c_open_proposal and es_site_proposal and a_continuous_v22 else"res://source/v22/combined-structure.json"if c_open_proposal and es_site_proposal else"res://source/v15/C-finish-audit.json"if c_open_proposal else"res://source/v15/ES-site-proposal.json")
   for erased:String in patch_info.erase_surfaces:geo.surfaces.erase(erased)
   var coordinated_patch:Dictionary=load_geometry(patch_path)
@@ -347,7 +354,7 @@ func _ready()->void:
  if not OS.get_cmdline_user_args().has("--v27-baseline"):
   if comparison_B_v28:interactive_pose({"eye":[-209,1.65,-38],"look":[-196,2.5,-38],"fov":70})
   elif es_site_proposal:interactive_pose({"eye":[-182,1.65,-6.5],"look":[-194,3.0,-14.0],"fov":72})
- var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text=("F6 B旧配置比較：旧西ES4基／RF連続なし | "if comparison_B_v28 else"通常：B西の新連続ES6基・1F～RF | "if a_continuous_v22 else"C館 旧別案との比較 | "if c_open_proposal else"B館西ES 敷地別案・未承認 | "if es_site_proposal else"")+"v29.4 体験売場・商品表示・人物広告・暫定 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M マップ / N 人物比較 / P 表情 / F12 NPC / Esc カーソル\nF1 A / F2 B / F3 C | F4 C館旧別案比較 / F6 B旧配置比較⇄通常の連続ES / F7 ES検討 / F8 店舗 / F9 確認地点 / F10 設定 / F11 催事";layer.add_child(bottom)
+ var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v30 制作中・独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
  if not visual_v7 and bool(ProjectSettings.get_setting("rendering/quality/v14_local_probe_reflections",false))and mode not in ["walk-test","walk-v8","ui-test","bake-gi"]:
   for d in [[Vector3(350,3,-32),Vector3(110,12,110)],[Vector3(0,3,8),Vector3(110,12,110)]]:
    var probe=ReflectionProbe.new();probe.position=d[0];probe.size=d[1];probe.interior=true;probe.box_projection=true;probe.max_distance=60;probe.intensity=.7;probe.enable_shadows=false;probe.update_mode=ReflectionProbe.UPDATE_ONCE;probe.ambient_mode=ReflectionProbe.AMBIENT_DISABLED;add_child(probe)
@@ -356,7 +363,7 @@ func _ready()->void:
   if mode=="bake-gi":get_tree().quit();return
  if mode!="interactive":player.input_enabled=false
  results={"godot_version":Engine.get_version_info(),"renderer":RenderingServer.get_current_rendering_method(),"adapter":RenderingServer.get_video_adapter_name(),"resolution":[1920,1080],"msaa":"4x","source_sha256":manifest.source_original_sha256,"context_included":with_context,"context_geometry_sha256":FileAccess.get_sha256("res://assets/baseline-site-v7.pack.gz"if visual_v7 else"res://assets/v10/base-site.pack.zst"),"main_game_loaded":false,"graphics_revision":"v7-preserved-baseline"if visual_v7 else"v25-five-authored-interiors","animation_shader_sha256":FileAccess.get_sha256("res://rubber.gdshader"),"staff_script_sha256":FileAccess.get_sha256("res://staff_doors.gd"),"animation_script_sha256":FileAccess.get_sha256("res://escalator_v2.gd"),"proposal_C":c_open_proposal,"draft":draft,"render_scale":.5 if draft else 1.0,"retail_v10_sha256":FileAccess.get_sha256("res://source/v12/scene-art.json"),"architecture_v10_sha256":FileAccess.get_sha256("res://assets/v10/architecture.pack.zst"),"art_v10_sha256":FileAccess.get_sha256("res://assets/v10/art.pack.zst"),"fitout_sha256":""if visual_v7 else FileAccess.get_sha256("res://assets/v10/fitout.pack.zst"),"geometry_sha256":FileAccess.get_sha256(geometry_path),"main_script_sha256":FileAccess.get_sha256("res://main.gd"),"player_script_sha256":FileAccess.get_sha256("res://player.gd"),"scene_build_seconds":(Time.get_ticks_usec()-start_usec)/1000000.0}
- results.integrated_A_v22=a_continuous_v22;results.v22_retail_plan_sha256=data_hash("res://source/v25/retail-plan.json");results.v22_structure_sha256=FileAccess.get_sha256("res://assets/v22/integrated-ABC.pack.zst")if a_continuous_v22 else"";results.effective_map_sha256=data_hash("res://source/v22/map-data-integrated.json"if a_continuous_v22 else"res://source/v22/map-data-combined.json"if c_open_proposal and es_site_proposal else"res://source/v15/map-data-C-option.json"if c_open_proposal else"res://source/v15/map-data-ES-option.json"if es_site_proposal else"res://source/v13/map-data.json")
+ results.integrated_A_v22=a_continuous_v22;results.v22_retail_plan_sha256=data_hash("res://source/v25/retail-plan.json");results.v22_structure_sha256=FileAccess.get_sha256("res://assets/v30/structure-restoration.pack.zst")if a_continuous_v22 else"";results.effective_map_sha256=data_hash("res://source/v22/map-data-integrated.json"if a_continuous_v22 else"res://source/v22/map-data-combined.json"if c_open_proposal and es_site_proposal else"res://source/v15/map-data-C-option.json"if c_open_proposal else"res://source/v15/map-data-ES-option.json"if es_site_proposal else"res://source/v13/map-data.json")
  results.proposal_ES=es_site_proposal;results.v15_C_patch_sha256=FileAccess.get_sha256("res://assets/v15/C-finish-replacement.pack.zst");results.v15_ES_patch_sha256=FileAccess.get_sha256("res://assets/v15/ES-site-replacement.pack.zst");results.v15_services_sha256=FileAccess.get_sha256("res://assets/v15/retail-services.pack.zst");results.C_supported_finish_sha256=FileAccess.get_sha256("res://assets/v15/C-finish-replacement.pack.zst")if c_open_proposal else"";results.es_unbuilt_v12_sha256=FileAccess.get_sha256("res://assets/v12/es-unbuilt-safety.pack.zst");results.es_safety_v12_sha256=FileAccess.get_sha256("res://assets/v12/es-safety.pack.zst");results.boundary_v12_sha256=FileAccess.get_sha256("res://assets/v12/boundary-physics.pack.zst");results.retail_v12_sha256=FileAccess.get_sha256("res://assets/v12/retail.pack.zst");results.repairs_v11_sha256=FileAccess.get_sha256("res://assets/v11/repairs.pack.zst");results.EV_v11_sha256=FileAccess.get_sha256("res://elevators_v11.gd");results.map_v12_sha256=data_hash("res://source/v12/map-data-C-option.json"if c_open_proposal else"res://source/v12/map-data.json")
  results.map_v13_sha256=data_hash("res://source/v15/map-data-C-option.json"if c_open_proposal else"res://source/v15/map-data-ES-option.json"if es_site_proposal else"res://source/v13/map-data.json")
  results.v13_packs={}
@@ -375,10 +382,10 @@ func _ready()->void:
  
 func _process(dt:float)->void:
  if player==null or hud==null:return
- hud.text="FIND YOURSELF  v29.4 体験売場・商品表示検証\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s"%[player.position.x,player.position.y,player.position.z,Engine.get_frames_per_second(),"ESCALATOR "+player.belt_id if player.belt_id!="" else ""]
+ hud.text="FIND YOURSELF  v30 制作中・独立検証\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s"%[player.position.x,player.position.y,player.position.z,Engine.get_frames_per_second(),"ESCALATOR "+player.belt_id if player.belt_id!="" else ""]
  if notice_seconds>0:
   notice_seconds-=dt;hud.text+="\n"+interaction_notice
- if mode=="interactive" and ui.overlay=="":
+ if developer_mode() and mode=="interactive" and ui.overlay=="":
   if Input.is_physical_key_pressed(KEY_1):player.position=Vector3(-3,.08,28.3)
   if Input.is_physical_key_pressed(KEY_2):player.position=Vector3(-3,5.605,28.3)
   if Input.is_physical_key_pressed(KEY_3):player.position=Vector3(-3,10.955,28.3)
@@ -417,7 +424,6 @@ func build_sign(d:Dictionary)->void:
 func write_json(name:String,data)->void:
  var file=FileAccess.open(output+"/"+name,FileAccess.WRITE);file.store_string(JSON.stringify(data,"  "))
 func _unhandled_input(e:InputEvent)->void:
- if e is InputEventKey and e.pressed and e.keycode==KEY_F7:get_tree().change_scene_to_file("res://ES_transfer_study_v12.tscn");return
  if e is InputEventKey and e.pressed and e.keycode==KEY_F and ui.overlay=="":
   var index=elevators.nearest()
   if index>=0:
@@ -466,21 +472,18 @@ func add_vector_sign(d:Dictionary)->void:
  var n=Label3D.new();n.font=font;n.text=d.text;n.font_size=38;n.pixel_size=min(.009,float(d.w)/max(font.get_string_size(str(d.text),HORIZONTAL_ALIGNMENT_LEFT,-1,38).x,1.));n.outline_size=4;n.modulate=Color(.2,.30,.28);n.position=v3(d.p);var normal=Vector3(d.n[0],0,d.n[1]);n.basis=Basis(Vector3.UP.cross(normal),Vector3.UP,normal);add_child(n)
 func _input(e:InputEvent)->void:
  if ui==null or mode!="interactive":return
- if e is InputEventKey and e.pressed and not e.echo and e.keycode==KEY_F6:
-  if OS.get_cmdline_user_args().has("--v27-baseline"):
-   get_tree().change_scene_to_file("res://main.tscn"if es_site_proposal and not c_open_proposal else"res://ES_site_proposal_v15.tscn");return
-  get_tree().change_scene_to_file("res://main.tscn"if comparison_B_v28 else"res://B_legacy_comparison_v28.tscn");return
- if e is InputEventKey and e.pressed and not e.echo and e.keycode==KEY_F4:
-  get_tree().change_scene_to_file("res://main.tscn"if c_open_proposal and not es_site_proposal else"res://C_proposal_v12.tscn");return
  if e is InputEventKey and e.pressed and not e.echo and ui.overlay=="":
   if e.keycode in [KEY_F1,KEY_F2,KEY_F3]:
    var idx=int(e.keycode)-int(KEY_F1);var shots=read_json("res://source/cameras-v8.json");var shot=shots[[0,2,4][idx]];interactive_pose(shot);get_viewport().set_input_as_handled();return
  if e is InputEventKey and e.pressed and not e.echo:
   if e.keycode==KEY_M:ui.show_map();get_viewport().set_input_as_handled()
-  elif e.keycode==KEY_F10:ui.show_settings();get_viewport().set_input_as_handled()
-  elif e.keycode==KEY_F8:ui.show_pilots();get_viewport().set_input_as_handled()
-  elif e.keycode==KEY_F9:ui.show_amenities();get_viewport().set_input_as_handled()
-  elif e.keycode==KEY_ESCAPE and ui.overlay!="":ui.close();get_viewport().set_input_as_handled()
+  elif developer_mode() and e.keycode==KEY_F10:ui.show_settings();get_viewport().set_input_as_handled()
+  elif developer_mode() and e.keycode==KEY_F8:ui.show_pilots();get_viewport().set_input_as_handled()
+  elif developer_mode() and e.keycode==KEY_F9:ui.show_amenities();get_viewport().set_input_as_handled()
+  elif e.keycode==KEY_ESCAPE:
+   if ui.overlay!="":ui.close()
+   else:ui.show_settings()
+   get_viewport().set_input_as_handled()
 
 func add_brand_slot(d:Dictionary)->void:
  var slot=Node3D.new();slot.name="BrandSlot_"+d.store_id;slot.position=v3(d.sign_position);slot.set_meta("brand",d);add_child(slot)

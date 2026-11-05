@@ -17,7 +17,7 @@ func setup(g)->void:
  map=load("res://map_v7.gd").new();root.add_child(map);map.setup(g.read_json("res://source/v22/map-data-integrated.json"if g.a_continuous_v22 else"res://source/v22/map-data-combined.json"if g.c_open_proposal and g.es_site_proposal else"res://source/v15/map-data-C-option.json"if g.c_open_proposal else"res://source/v15/map-data-ES-option.json"if g.es_site_proposal else"res://source/v13/map-data.json"),g.player,g.font);map.visible=false
  settings_panel=PanelContainer.new();settings_panel.position=Vector2(555,235);settings_panel.size=Vector2(810,600);root.add_child(settings_panel);var style=StyleBoxFlat.new();style.bg_color=Color(.045,.065,.08,.98);style.content_margin_left=24;style.content_margin_right=24;style.content_margin_top=24;style.content_margin_bottom=24;style.corner_radius_top_left=12;style.corner_radius_top_right=12;style.corner_radius_bottom_left=12;style.corner_radius_bottom_right=12;settings_panel.add_theme_stylebox_override("panel",style)
  var v=VBoxContainer.new();v.add_theme_constant_override("separation",18);settings_panel.add_child(v)
- var title=Label.new();title.text="画面設定 / F10で閉じる";v.add_child(title)
+ var title=Label.new();title.text="画面設定 / Escで閉じる";v.add_child(title)
  resolution=OptionButton.new()
  for text in ["1920 × 1080","2560 × 1440","3840 × 2160"]:resolution.add_item(text)
  resolution.select(settings.resolution_index);v.add_child(resolution)
