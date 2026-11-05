@@ -1,0 +1,1886 @@
+{
+  "Windows_GPU_measured": false,
+  "actual_Godot_viewport": true,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "camera_feet": [
+    {
+      "floor": true,
+      "id": "room-cinema_room_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "room-kitchen_room_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "room-workspace_room_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "compact-compact_pc_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "compact-compact_mobile_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "compact-compact_tv_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "pop-pc14",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "pop-bread",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-002-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-002-centre",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-002-rear",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-centre",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-rear",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-screen_compare_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-computer_experience_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-audio_listening_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-mobile_experience_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-accessory_consult_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "bakery-wall-1",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "bakery-wall-2",
+      "standing": true
+    }
+  ],
+  "campaigns": {
+
+  },
+  "departments": {
+
+  },
+  "displays": {
+
+  },
+  "engine": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "first_new_F9_button": {
+
+  },
+  "human_playtest": false,
+  "interior_checks": [
+    {
+      "id": "V291-A1F-002-television_demo-1",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-2",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-laundry_demo-3",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-4",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-5",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-laundry_demo-6",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-7",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-8",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-laundry_demo-9",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-10",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-11",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-12",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-13",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-14",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-15",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-16",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-17",
+      "pass": true
+    },
+    {
+      "id": "V22C-A1F-002-checkout-5431",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-25",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-26",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-27",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-28",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-29",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-30",
+      "pass": true
+    },
+    {
+      "id": "V22-A1F-044-checkout-769",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-bakery_vitrine-18",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-coffee_bar-19",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-bakery_vitrine-20",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-bakery_vitrine-21",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-cafe_banquette-22",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-cafe_table-23",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-cafe_banquette-24",
+      "pass": true
+    },
+    {
+      "id": "V22-B1-040-checkout-2306",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-31",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-32",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-33",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-34",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-35",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-36",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-37",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-38",
+      "pass": true
+    },
+    {
+      "id": "V22-C1F-CE-3-checkout-4266",
+      "pass": true
+    }
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "revision": "29.4",
+  "route_checks": [
+    {
+      "id": "A-1F-R001",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R002",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R003",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R004",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R005",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R006",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R007",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R008",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R009",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R010",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R011",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R012",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R013",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R014",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R015",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R016",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R017",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R018",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R019",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R020",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R021",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R022",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R023",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R024",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R025",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R026",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R027",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R028",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R029",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R030",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R031",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R032",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R033",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R034",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R035",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R036",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R037",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R038",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R039",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R040",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R041",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R042",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R043",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R044",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R045",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R046",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R047",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R048",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R049",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R050",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R051",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R052",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R053",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R054",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R055",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R056",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R057",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R058",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R059",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R060",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R061",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R062",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R063",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R064",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R065",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R066",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R067",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R068",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R069",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R070",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R071",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R072",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R073",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R074",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R075",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R076",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R077",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R078",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R079",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R080",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R081",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R082",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R083",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R084",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R085",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R086",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R087",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R088",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R089",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R090",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R091",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R092",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R093",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R094",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R095",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R096",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R097",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R098",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R099",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R100",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R101",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R102",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R103",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R104",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R105",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R106",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R107",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R108",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R109",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R110",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R111",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R112",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R113",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R114",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R115",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R116",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R117",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R118",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R119",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R120",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R121",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R122",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R123",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R124",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R125",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R126",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R127",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R128",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R129",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R130",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R131",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R132",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R133",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R134",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R135",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R136",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R137",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R138",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R139",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R140",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R141",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R142",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R143",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R144",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R145",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R146",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R147",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R148",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R149",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R150",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R151",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R152",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R153",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R154",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R155",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R156",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R157",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R158",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R159",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R160",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R161",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R162",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R163",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R164",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R165",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R166",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R167",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R168",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R169",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R170",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R171",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R172",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R173",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R174",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R175",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R176",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R177",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R178",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R179",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R180",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R181",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R182",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R183",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R184",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R185",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R186",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R187",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R188",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R189",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R190",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R191",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R192",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R193",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R194",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R195",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R196",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R197",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R198",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R199",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R200",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R201",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R202",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R203",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R204",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R205",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R206",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R207",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R208",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R209",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R210",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R211",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R212",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R213",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R214",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R215",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R216",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R217",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R218",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R219",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R220",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R221",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R222",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R223",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R224",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R225",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R226",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R227",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R228",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R229",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R230",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R231",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R232",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R233",
+      "pass": true
+    }
+  ],
+  "rows": [
+    {
+      "CPU_process_ms": 6863.918,
+      "camera": {
+        "eye": [
+          509.0,
+          1.65,
+          6.0
+        ],
+        "fov": 65.0,
+        "id": "room-cinema_room_v294",
+        "look": [
+          514.0,
+          1.1,
+          6.0
+        ],
+        "store_id": "A1F-002",
+        "title": "映像と音の体験",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 7493.412,
+      "draw_calls": 4418.0,
+      "file": "before/room-cinema_room_v294.jpg",
+      "primitives": 2317209.0,
+      "save_error": 0,
+      "static_memory_bytes": 2394297969.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 4102.033,
+      "camera": {
+        "eye": [
+          507.0,
+          1.65,
+          20.0
+        ],
+        "fov": 65.0,
+        "id": "room-kitchen_room_v294",
+        "look": [
+          512.0,
+          1.1,
+          20.0
+        ],
+        "store_id": "A1F-002",
+        "title": "キッチンと暮らし",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4154.909,
+      "draw_calls": 4481.0,
+      "file": "before/room-kitchen_room_v294.jpg",
+      "primitives": 2557002.0,
+      "save_error": 0,
+      "static_memory_bytes": 2394510805.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 4203.629,
+      "camera": {
+        "eye": [
+          485.0,
+          1.65,
+          50.0
+        ],
+        "fov": 65.0,
+        "id": "room-workspace_room_v294",
+        "look": [
+          490.0,
+          1.1,
+          50.0
+        ],
+        "store_id": "A1F-002",
+        "title": "暮らしのワークスペース",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4015.336,
+      "draw_calls": 5314.0,
+      "file": "before/room-workspace_room_v294.jpg",
+      "primitives": 2634395.0,
+      "save_error": 0,
+      "static_memory_bytes": 2395125133.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 4051.757,
+      "camera": {
+        "eye": [
+          472.476745605469,
+          1.65,
+          39.0406455993652
+        ],
+        "fov": 62.0,
+        "id": "compact-compact_pc_v294",
+        "look": [
+          474.468805815671,
+          1.04,
+          39.2185085428569
+        ],
+        "store_id": "A1F-002",
+        "title": "小型専用展示 / パソコン",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4043.047,
+      "draw_calls": 6003.0,
+      "file": "before/compact-compact_pc_v294.jpg",
+      "primitives": 2754559.0,
+      "save_error": 0,
+      "static_memory_bytes": 2396082782.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 4108.745,
+      "camera": {
+        "eye": [
+          530.391906738281,
+          1.65,
+          9.04462718963623
+        ],
+        "fov": 62.0,
+        "id": "compact-compact_mobile_v294",
+        "look": [
+          532.383963916817,
+          1.04,
+          9.2224909387181
+        ],
+        "store_id": "A1F-002",
+        "title": "小型専用展示 / モバイル",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3354.654,
+      "draw_calls": 3681.0,
+      "file": "before/compact-compact_mobile_v294.jpg",
+      "primitives": 1947400.0,
+      "save_error": 0,
+      "static_memory_bytes": 2396270606.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 3391.975,
+      "camera": {
+        "eye": [
+          464.170959472656,
+          1.65,
+          17.7937793731689
+        ],
+        "fov": 62.0,
+        "id": "compact-compact_tv_v294",
+        "look": [
+          466.163012126691,
+          1.04,
+          17.9716436334754
+        ],
+        "store_id": "A1F-002",
+        "title": "小型専用展示 / テレビ",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3639.848,
+      "draw_calls": 6388.0,
+      "file": "before/compact-compact_tv_v294.jpg",
+      "primitives": 3098838.0,
+      "save_error": 0,
+      "static_memory_bytes": 2396961846.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 3671.977,
+      "camera": {
+        "eye": [
+          473.529174804688,
+          1.65,
+          34.5601615905762
+        ],
+        "fov": 55.0,
+        "id": "pop-pc14",
+        "look": [
+          474.276214599609,
+          0.979999959468842,
+          34.6268615722656
+        ],
+        "store_id": "A1F-002",
+        "title": "商品説明・展示用参考価格",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 1939.404,
+      "draw_calls": 3145.0,
+      "file": "before/pop-pc14.jpg",
+      "primitives": 1518918.0,
+      "save_error": 0,
+      "static_memory_bytes": 2397020174.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 1975.245,
+      "camera": {
+        "eye": [
+          -39.2603569030762,
+          1.65,
+          -23.7991619110107
+        ],
+        "fov": 55.0,
+        "id": "pop-bread",
+        "look": [
+          -39.9848022460938,
+          0.764999985694885,
+          -23.6050472259521
+        ],
+        "store_id": "B1-040",
+        "title": "商品説明・展示用参考価格",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 1996.877,
+      "draw_calls": 3570.0,
+      "file": "before/pop-bread.jpg",
+      "primitives": 2324471.0,
+      "save_error": 0,
+      "static_memory_bytes": 2400609530.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 2031.356,
+      "camera": {
+        "eye": [
+          458.22684168357,
+          1.65,
+          -6.85587499098921
+        ],
+        "fov": 78.0,
+        "id": "A1F-002-front",
+        "look": [
+          464.402275456519,
+          2.5,
+          -6.3044969755473
+        ],
+        "store_id": "A1F-002",
+        "title": "家電売場 A1F-002-front",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4036.145,
+      "draw_calls": 7194.0,
+      "file": "before/A1F-002-front.jpg",
+      "primitives": 3252826.0,
+      "save_error": 0,
+      "static_memory_bytes": 2401264110.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 4065.309,
+      "camera": {
+        "eye": [
+          499.94496737117,
+          1.65,
+          -5.40874045638876
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-centre",
+        "look": [
+          524.028157568265,
+          1.55,
+          -4.70643191158509
+        ],
+        "store_id": "A1F-002",
+        "title": "家電売場 A1F-002-centre",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3205.114,
+      "draw_calls": 5297.0,
+      "file": "before/A1F-002-centre.jpg",
+      "primitives": 2591063.0,
+      "save_error": 0,
+      "static_memory_bytes": 2401626938.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 3236.569,
+      "camera": {
+        "eye": [
+          529.647568614254,
+          1.65,
+          -4.54255991779756
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-rear",
+        "look": [
+          463.406237751205,
+          1.55,
+          -6.3934289135218
+        ],
+        "store_id": "A1F-002",
+        "title": "家電売場 A1F-002-rear",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4526.894,
+      "draw_calls": 12476.0,
+      "file": "before/A1F-002-rear.jpg",
+      "primitives": 4487315.0,
+      "save_error": 0,
+      "static_memory_bytes": 2421706851.0,
+      "video_memory_bytes": 1948010160.0
+    },
+    {
+      "CPU_process_ms": 4563.856,
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "title": "ベーカリー B1-040-front",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4795.667,
+      "draw_calls": 7512.0,
+      "file": "before/B1-040-front.jpg",
+      "primitives": 3810055.0,
+      "save_error": 0,
+      "static_memory_bytes": 2422358103.0,
+      "video_memory_bytes": 1950893744.0
+    },
+    {
+      "CPU_process_ms": 4833.336,
+      "camera": {
+        "eye": [
+          -34.8012865156798,
+          1.65,
+          -16.7825656700315
+        ],
+        "fov": 72.0,
+        "id": "B1-040-centre",
+        "look": [
+          -37.5738002487532,
+          1.55,
+          -20.1578351002096
+        ],
+        "store_id": "B1-040",
+        "title": "ベーカリー B1-040-centre",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4451.362,
+      "draw_calls": 7383.0,
+      "file": "before/B1-040-centre.jpg",
+      "primitives": 3508997.0,
+      "save_error": 0,
+      "static_memory_bytes": 2422786431.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 4495.292,
+      "camera": {
+        "eye": [
+          -38.2207201198037,
+          1.65,
+          -20.9453979672512
+        ],
+        "fov": 72.0,
+        "id": "B1-040-rear",
+        "look": [
+          -32.0,
+          1.55,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "title": "ベーカリー B1-040-rear",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4059.542,
+      "draw_calls": 7025.0,
+      "file": "before/B1-040-rear.jpg",
+      "primitives": 4193187.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425020003.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 4092.042,
+      "camera": {
+        "eye": [
+          464.627075195312,
+          1.65,
+          7.18079710006714
+        ],
+        "fov": 70.0,
+        "id": "detail-screen_compare_v293",
+        "look": [
+          467.017578125,
+          1.05,
+          7.39423370361328
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / テレビ",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3594.177,
+      "draw_calls": 6285.0,
+      "file": "before/detail-screen_compare_v293.jpg",
+      "primitives": 3062783.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425010659.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 3633.115,
+      "camera": {
+        "eye": [
+          472.378387451172,
+          1.65,
+          35.3609962463379
+        ],
+        "fov": 70.0,
+        "id": "detail-computer_experience_v293",
+        "look": [
+          474.768890380859,
+          1.05,
+          35.5744323730469
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / パソコン",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3356.836,
+      "draw_calls": 5647.0,
+      "file": "before/detail-computer_experience_v293.jpg",
+      "primitives": 2808150.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425020947.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 3390.533,
+      "camera": {
+        "eye": [
+          482.726593017578,
+          1.65,
+          37.1581726074219
+        ],
+        "fov": 70.0,
+        "id": "detail-audio_listening_v293",
+        "look": [
+          485.117095947266,
+          1.05,
+          37.3716087341309
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / オーディオ",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3189.88,
+      "draw_calls": 5374.0,
+      "file": "before/detail-audio_listening_v293.jpg",
+      "primitives": 2747722.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425023163.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 3223.253,
+      "camera": {
+        "eye": [
+          527.473693847656,
+          1.65,
+          -1.0420628786087
+        ],
+        "fov": 70.0,
+        "id": "detail-mobile_experience_v293",
+        "look": [
+          529.864196777344,
+          1.05,
+          -0.828626215457916
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / モバイル",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 2997.524,
+      "draw_calls": 3954.0,
+      "file": "before/detail-mobile_experience_v293.jpg",
+      "primitives": 2067517.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425031451.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 3026.996,
+      "camera": {
+        "eye": [
+          534.406433105469,
+          1.65,
+          -0.458773553371429
+        ],
+        "fov": 70.0,
+        "id": "detail-accessory_consult_v293",
+        "look": [
+          536.796936035156,
+          1.05,
+          -0.245336875319481
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / 周辺機器",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3280.104,
+      "draw_calls": 3597.0,
+      "file": "before/detail-accessory_consult_v293.jpg",
+      "primitives": 1915592.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425035803.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 3314.341,
+      "camera": {
+        "eye": [
+          -38.7706871032715,
+          1.65,
+          -25.3176403045654
+        ],
+        "fov": 88.0,
+        "id": "bakery-wall-1",
+        "look": [
+          -40.6349220275879,
+          1.35,
+          -24.8181171417236
+        ],
+        "store_id": "B1-040",
+        "title": "パンの壁面展示 / 1",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4483.846,
+      "draw_calls": 8487.0,
+      "file": "before/bakery-wall-1.jpg",
+      "primitives": 3911495.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425153771.0,
+      "video_memory_bytes": 1949451952.0
+    },
+    {
+      "CPU_process_ms": 4515.259,
+      "camera": {
+        "eye": [
+          -37.2738914489746,
+          1.65,
+          -36.3527793884277
+        ],
+        "fov": 88.0,
+        "id": "bakery-wall-2",
+        "look": [
+          -39.1325874328613,
+          1.35,
+          -36.8725357055664
+        ],
+        "store_id": "B1-040",
+        "title": "パンの壁面展示 / 2",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4533.113,
+      "draw_calls": 7768.0,
+      "file": "before/bakery-wall-2.jpg",
+      "primitives": 4002914.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425173647.0,
+      "video_memory_bytes": 1949451952.0
+    }
+  ],
+  "settings": {
+    "B_ES": true,
+    "C": true,
+    "cap": 144,
+    "continuous": true,
+    "vsync": 1
+  },
+  "side": "before",
+  "wall_fixture_contacts": []
+}

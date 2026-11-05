@@ -1,0 +1,8344 @@
+{
+  "Windows_GPU_measured": false,
+  "actual_Godot_viewport": true,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "engine": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "environment": {
+
+  },
+  "human_playtest": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "rows": [
+    {
+      "CPU_process_ms": 3520.372,
+      "camera": {
+        "eye": [
+          453.0,
+          1.65,
+          4.1038181771802
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R048-forward",
+        "look": [
+          471.284924240492,
+          1.65,
+          70.7849242404917
+        ],
+        "route_id": "A-1F-R048",
+        "wing": "A"
+      },
+      "draw_calls": 3536.0,
+      "file": "before/A-1F-R048-forward.jpg",
+      "frame_ms": [
+        6725.473
+      ],
+      "objects": 3536.0,
+      "physics_process_ms": 18.716,
+      "primitives": 2425710.0,
+      "save_error": 0,
+      "static_memory_bytes": 2048781027.0,
+      "video_memory_bytes": 1790051712.0
+    },
+    {
+      "CPU_process_ms": 3234.891,
+      "camera": {
+        "eye": [
+          474.0,
+          1.65,
+          78.3961818228198
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R048-reverse",
+        "look": [
+          453.0,
+          1.65,
+          12.839696961967
+        ],
+        "route_id": "A-1F-R048",
+        "wing": "A"
+      },
+      "draw_calls": 6969.0,
+      "file": "before/A-1F-R048-reverse.jpg",
+      "frame_ms": [
+        3828.889
+      ],
+      "objects": 7023.0,
+      "physics_process_ms": 6.259,
+      "primitives": 3562531.0,
+      "save_error": 0,
+      "static_memory_bytes": 2059485734.0,
+      "video_memory_bytes": 1790051712.0
+    },
+    {
+      "CPU_process_ms": 3868.023,
+      "camera": {
+        "eye": [
+          364.687279220614,
+          1.65,
+          31.6872792206136
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R012-forward",
+        "look": [
+          408.248528137424,
+          1.65,
+          75.2485281374239
+        ],
+        "route_id": "A-1F-R012",
+        "wing": "A"
+      },
+      "draw_calls": 4561.0,
+      "file": "before/A-1F-R012-forward.jpg",
+      "frame_ms": [
+        3824.188
+      ],
+      "objects": 4567.0,
+      "physics_process_ms": 0.558,
+      "primitives": 2575544.0,
+      "save_error": 0,
+      "static_memory_bytes": 2061411926.0,
+      "video_memory_bytes": 1790051712.0
+    },
+    {
+      "CPU_process_ms": 3881.086,
+      "camera": {
+        "eye": [
+          413.373380951166,
+          1.65,
+          80.3733809511662
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R012-reverse",
+        "look": [
+          369.812132034356,
+          1.65,
+          36.812132034356
+        ],
+        "route_id": "A-1F-R012",
+        "wing": "A"
+      },
+      "draw_calls": 10744.0,
+      "file": "before/A-1F-R012-reverse.jpg",
+      "frame_ms": [
+        4723.343
+      ],
+      "objects": 10850.0,
+      "physics_process_ms": 0.922,
+      "primitives": 4622805.0,
+      "save_error": 0,
+      "static_memory_bytes": 2071150679.0,
+      "video_memory_bytes": 1823629504.0
+    },
+    {
+      "CPU_process_ms": 4737.609,
+      "camera": {
+        "eye": [
+          363.936396103068,
+          1.65,
+          33.9363961030679
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R014-forward",
+        "look": [
+          403.242640687119,
+          1.65,
+          73.2426406871193
+        ],
+        "route_id": "A-1F-R014",
+        "wing": "A"
+      },
+      "draw_calls": 4636.0,
+      "file": "before/A-1F-R014-forward.jpg",
+      "frame_ms": [
+        4690.718
+      ],
+      "objects": 4642.0,
+      "physics_process_ms": 0.955,
+      "primitives": 2590410.0,
+      "save_error": 0,
+      "static_memory_bytes": 2071157515.0,
+      "video_memory_bytes": 1826513088.0
+    },
+    {
+      "CPU_process_ms": 4744.62,
+      "camera": {
+        "eye": [
+          407.866904755831,
+          1.65,
+          77.8669047558312
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R014-reverse",
+        "look": [
+          368.56066017178,
+          1.65,
+          38.5606601717798
+        ],
+        "route_id": "A-1F-R014",
+        "wing": "A"
+      },
+      "draw_calls": 10806.0,
+      "file": "before/A-1F-R014-reverse.jpg",
+      "frame_ms": [
+        4682.833
+      ],
+      "objects": 10914.0,
+      "physics_process_ms": 0.815,
+      "primitives": 4907941.0,
+      "save_error": 0,
+      "static_memory_bytes": 2071332591.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4717.776,
+      "camera": {
+        "eye": [
+          327.874629867977,
+          1.65,
+          -8.37462986797652
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R001-forward",
+        "look": [
+          369.660303038033,
+          1.65,
+          -40.5
+        ],
+        "route_id": "A-1F-R001",
+        "wing": "A"
+      },
+      "draw_calls": 5122.0,
+      "file": "before/A-1F-R001-forward.jpg",
+      "frame_ms": [
+        4434.373
+      ],
+      "objects": 5164.0,
+      "physics_process_ms": 1.293,
+      "primitives": 3915530.0,
+      "save_error": 0,
+      "static_memory_bytes": 2072524549.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4484.962,
+      "camera": {
+        "eye": [
+          376.141766235091,
+          1.65,
+          -40.5
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R001-reverse",
+        "look": [
+          332.457716446628,
+          1.65,
+          -12.9577164466275
+        ],
+        "route_id": "A-1F-R001",
+        "wing": "A"
+      },
+      "draw_calls": 8128.0,
+      "file": "before/A-1F-R001-reverse.jpg",
+      "frame_ms": [
+        4775.624
+      ],
+      "objects": 8192.0,
+      "physics_process_ms": 0.961,
+      "primitives": 4788729.0,
+      "save_error": 0,
+      "static_memory_bytes": 2073385985.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4805.785,
+      "camera": {
+        "eye": [
+          551.534558441227,
+          1.65,
+          -45.0
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R070-forward",
+        "look": [
+          599.897056274848,
+          1.65,
+          -45.0
+        ],
+        "route_id": "A-1F-R070",
+        "wing": "A"
+      },
+      "draw_calls": 1672.0,
+      "file": "before/A-1F-R070-forward.jpg",
+      "frame_ms": [
+        2415.363
+      ],
+      "objects": 1672.0,
+      "physics_process_ms": 0.761,
+      "primitives": 1730042.0,
+      "save_error": 0,
+      "static_memory_bytes": 2073741169.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2459.363,
+      "camera": {
+        "eye": [
+          605.586761902332,
+          1.65,
+          -45.0
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R070-reverse",
+        "look": [
+          557.224264068712,
+          1.65,
+          -45.0
+        ],
+        "route_id": "A-1F-R070",
+        "wing": "A"
+      },
+      "draw_calls": 10928.0,
+      "file": "before/A-1F-R070-reverse.jpg",
+      "frame_ms": [
+        3972.588
+      ],
+      "objects": 11008.0,
+      "physics_process_ms": 0.592,
+      "primitives": 4814769.0,
+      "save_error": 0,
+      "static_memory_bytes": 2074327077.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4010.475,
+      "camera": {
+        "eye": [
+          548.94,
+          1.65,
+          -39.06
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R071-forward",
+        "look": [
+          582.6,
+          1.65,
+          -5.4
+        ],
+        "route_id": "A-1F-R071",
+        "wing": "A"
+      },
+      "draw_calls": 3100.0,
+      "file": "before/A-1F-R071-forward.jpg",
+      "frame_ms": [
+        2603.785
+      ],
+      "objects": 3100.0,
+      "physics_process_ms": 0.739,
+      "primitives": 2086117.0,
+      "save_error": 0,
+      "static_memory_bytes": 2074388105.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2640.352,
+      "camera": {
+        "eye": [
+          586.56,
+          1.65,
+          -1.44
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R071-reverse",
+        "look": [
+          552.9,
+          1.65,
+          -35.1
+        ],
+        "route_id": "A-1F-R071",
+        "wing": "A"
+      },
+      "draw_calls": 10395.0,
+      "file": "before/A-1F-R071-reverse.jpg",
+      "frame_ms": [
+        4423.009
+      ],
+      "objects": 10482.0,
+      "physics_process_ms": 4.566,
+      "primitives": 4758457.0,
+      "save_error": 0,
+      "static_memory_bytes": 2074468389.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4467.043,
+      "camera": {
+        "eye": [
+          330.141623381593,
+          1.65,
+          -60.0
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R002-forward",
+        "look": [
+          362.657359312881,
+          1.65,
+          -49.5
+        ],
+        "route_id": "A-1F-R002",
+        "wing": "A"
+      },
+      "draw_calls": 6235.0,
+      "file": "before/A-1F-R002-forward.jpg",
+      "frame_ms": [
+        4739.265
+      ],
+      "objects": 6275.0,
+      "physics_process_ms": 1.095,
+      "primitives": 4507644.0,
+      "save_error": 0,
+      "static_memory_bytes": 2074642269.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4773.296,
+      "camera": {
+        "eye": [
+          366.994415587728,
+          1.65,
+          -49.5
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R002-reverse",
+        "look": [
+          334.47867965644,
+          1.65,
+          -60.0
+        ],
+        "route_id": "A-1F-R002",
+        "wing": "A"
+      },
+      "draw_calls": 8890.0,
+      "file": "before/A-1F-R002-reverse.jpg",
+      "frame_ms": [
+        4866.707
+      ],
+      "objects": 9007.0,
+      "physics_process_ms": 1.491,
+      "primitives": 5275669.0,
+      "save_error": 0,
+      "static_memory_bytes": 2074864781.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4895.077,
+      "camera": {
+        "eye": [
+          547.214558441227,
+          1.65,
+          -13.7854415587728
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R073-forward",
+        "look": [
+          571.097056274848,
+          1.65,
+          10.0970562748477
+        ],
+        "route_id": "A-1F-R073",
+        "wing": "A"
+      },
+      "draw_calls": 3311.0,
+      "file": "before/A-1F-R073-forward.jpg",
+      "frame_ms": [
+        3277.161
+      ],
+      "objects": 3320.0,
+      "physics_process_ms": 0.775,
+      "primitives": 1941769.0,
+      "save_error": 0,
+      "static_memory_bytes": 2074935729.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3325.464,
+      "camera": {
+        "eye": [
+          573.906761902333,
+          1.65,
+          12.9067619023325
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R073-reverse",
+        "look": [
+          550.024264068712,
+          1.65,
+          -10.9757359312881
+        ],
+        "route_id": "A-1F-R073",
+        "wing": "A"
+      },
+      "draw_calls": 11055.0,
+      "file": "before/A-1F-R073-reverse.jpg",
+      "frame_ms": [
+        4605.732
+      ],
+      "objects": 11141.0,
+      "physics_process_ms": 1.126,
+      "primitives": 4945946.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075004073.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4630.155,
+      "camera": {
+        "eye": [
+          433.26,
+          1.65,
+          -49.5
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R039-forward",
+        "look": [
+          465.9,
+          1.65,
+          -49.5
+        ],
+        "route_id": "A-1F-R039",
+        "wing": "A"
+      },
+      "draw_calls": 4842.0,
+      "file": "before/A-1F-R039-forward.jpg",
+      "frame_ms": [
+        3258.865
+      ],
+      "objects": 4850.0,
+      "physics_process_ms": 1.089,
+      "primitives": 2700845.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075387825.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3305.951,
+      "camera": {
+        "eye": [
+          469.74,
+          1.65,
+          -49.5
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R039-reverse",
+        "look": [
+          437.1,
+          1.65,
+          -49.5
+        ],
+        "route_id": "A-1F-R039",
+        "wing": "A"
+      },
+      "draw_calls": 11102.0,
+      "file": "before/A-1F-R039-reverse.jpg",
+      "frame_ms": [
+        4490.013
+      ],
+      "objects": 11204.0,
+      "physics_process_ms": 1.191,
+      "primitives": 5302316.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075476709.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4521.744,
+      "camera": {
+        "eye": [
+          360.96,
+          1.65,
+          26.46
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R010-forward",
+        "look": [
+          383.4,
+          1.65,
+          48.9
+        ],
+        "route_id": "A-1F-R010",
+        "wing": "A"
+      },
+      "draw_calls": 4602.0,
+      "file": "before/A-1F-R010-forward.jpg",
+      "frame_ms": [
+        3937.998
+      ],
+      "objects": 4602.0,
+      "physics_process_ms": 0.723,
+      "primitives": 2719191.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075517737.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3974.122,
+      "camera": {
+        "eye": [
+          386.04,
+          1.65,
+          51.54
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R010-reverse",
+        "look": [
+          363.6,
+          1.65,
+          29.1
+        ],
+        "route_id": "A-1F-R010",
+        "wing": "A"
+      },
+      "draw_calls": 10613.0,
+      "file": "before/A-1F-R010-reverse.jpg",
+      "frame_ms": [
+        5897.47
+      ],
+      "objects": 10707.0,
+      "physics_process_ms": 1.248,
+      "primitives": 5047218.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075570469.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5930.224,
+      "camera": {
+        "eye": [
+          348.42,
+          1.65,
+          1.08
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R003-forward",
+        "look": [
+          367.8,
+          1.65,
+          -18.3
+        ],
+        "route_id": "A-1F-R003",
+        "wing": "A"
+      },
+      "draw_calls": 5499.0,
+      "file": "before/A-1F-R003-forward.jpg",
+      "frame_ms": [
+        4156.459
+      ],
+      "objects": 5545.0,
+      "physics_process_ms": 0.813,
+      "primitives": 3735552.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075602705.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4196.336,
+      "camera": {
+        "eye": [
+          370.08,
+          1.65,
+          -20.58
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R003-reverse",
+        "look": [
+          350.7,
+          1.65,
+          -1.2
+        ],
+        "route_id": "A-1F-R003",
+        "wing": "A"
+      },
+      "draw_calls": 7306.0,
+      "file": "before/A-1F-R003-reverse.jpg",
+      "frame_ms": [
+        3898.704
+      ],
+      "objects": 7366.0,
+      "physics_process_ms": 0.655,
+      "primitives": 3816031.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075616629.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3934.581,
+      "camera": {
+        "eye": [
+          540.626619048834,
+          1.65,
+          68.3733809511662
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R069-forward",
+        "look": [
+          558.687867965644,
+          1.65,
+          50.312132034356
+        ],
+        "route_id": "A-1F-R069",
+        "wing": "A"
+      },
+      "draw_calls": 3717.0,
+      "file": "before/A-1F-R069-forward.jpg",
+      "frame_ms": [
+        3294.59
+      ],
+      "objects": 3717.0,
+      "physics_process_ms": 0.703,
+      "primitives": 2200189.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075788513.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3335.463,
+      "camera": {
+        "eye": [
+          560.812720779386,
+          1.65,
+          48.1872792206136
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R069-reverse",
+        "look": [
+          542.751471862576,
+          1.65,
+          66.2485281374239
+        ],
+        "route_id": "A-1F-R069",
+        "wing": "A"
+      },
+      "draw_calls": 8039.0,
+      "file": "before/A-1F-R069-reverse.jpg",
+      "frame_ms": [
+        4264.587
+      ],
+      "objects": 8092.0,
+      "physics_process_ms": 1.277,
+      "primitives": 3670280.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075828309.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4303.187,
+      "camera": {
+        "eye": [
+          546.029116882454,
+          1.65,
+          -11.9708831175457
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R075-forward",
+        "look": [
+          563.194112549695,
+          1.65,
+          5.19411254969543
+        ],
+        "route_id": "A-1F-R075",
+        "wing": "A"
+      },
+      "draw_calls": 3559.0,
+      "file": "before/A-1F-R075-forward.jpg",
+      "frame_ms": [
+        3109.336
+      ],
+      "objects": 3568.0,
+      "physics_process_ms": 0.647,
+      "primitives": 1975858.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075833749.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3147.953,
+      "camera": {
+        "eye": [
+          564.0,
+          1.65,
+          7.7161818228198
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R075-reverse",
+        "look": [
+          548.048528137424,
+          1.65,
+          -9.95147186257614
+        ],
+        "route_id": "A-1F-R075",
+        "wing": "A"
+      },
+      "draw_calls": 10478.0,
+      "file": "before/A-1F-R075-reverse.jpg",
+      "frame_ms": [
+        4411.096
+      ],
+      "objects": 10565.0,
+      "physics_process_ms": 0.643,
+      "primitives": 4294920.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075834457.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4463.678,
+      "camera": {
+        "eye": [
+          529.498233764909,
+          1.65,
+          -43.5017662350914
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R067-forward",
+        "look": [
+          543.0,
+          1.65,
+          -25.0669047558312
+        ],
+        "route_id": "A-1F-R067",
+        "wing": "A"
+      },
+      "draw_calls": 4681.0,
+      "file": "before/A-1F-R067-forward.jpg",
+      "frame_ms": [
+        3589.635
+      ],
+      "objects": 4692.0,
+      "physics_process_ms": 0.652,
+      "primitives": 2674376.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075848457.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3622.666,
+      "camera": {
+        "eye": [
+          543.0,
+          1.65,
+          -22.2401428534987
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R067-reverse",
+        "look": [
+          531.497056274848,
+          1.65,
+          -41.5029437251523
+        ],
+        "route_id": "A-1F-R067",
+        "wing": "A"
+      },
+      "draw_calls": 6000.0,
+      "file": "before/A-1F-R067-reverse.jpg",
+      "frame_ms": [
+        2953.471
+      ],
+      "objects": 6042.0,
+      "physics_process_ms": 1.685,
+      "primitives": 2460937.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075876929.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2989.518,
+      "camera": {
+        "eye": [
+          476.998233764909,
+          1.65,
+          94.4982337649086
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R051-forward",
+        "look": [
+          494.245584412272,
+          1.65,
+          108.745584412272
+        ],
+        "route_id": "A-1F-R051",
+        "wing": "A"
+      },
+      "draw_calls": 2043.0,
+      "file": "before/A-1F-R051-forward.jpg",
+      "frame_ms": [
+        2686.919
+      ],
+      "objects": 2043.0,
+      "physics_process_ms": 0.638,
+      "primitives": 1441062.0,
+      "save_error": 0,
+      "static_memory_bytes": 2075917977.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2713.134,
+      "camera": {
+        "eye": [
+          496.759857146501,
+          1.65,
+          109.5
+        ],
+        "fov": 75.0,
+        "id": "A-1F-R051-reverse",
+        "look": [
+          478.997056274848,
+          1.65,
+          96.4970562748477
+        ],
+        "route_id": "A-1F-R051",
+        "wing": "A"
+      },
+      "draw_calls": 10645.0,
+      "file": "before/A-1F-R051-reverse.jpg",
+      "frame_ms": [
+        4339.379
+      ],
+      "objects": 10741.0,
+      "physics_process_ms": 1.085,
+      "primitives": 4283908.0,
+      "save_error": 0,
+      "static_memory_bytes": 2076008925.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4378.339,
+      "camera": {
+        "eye": [
+          118.521837661841,
+          1.65,
+          16.4781623381593
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R180-forward",
+        "look": [
+          170.084924240492,
+          1.65,
+          -33.5849242404918
+        ],
+        "route_id": "B-1F-R180",
+        "wing": "B"
+      },
+      "draw_calls": 5113.0,
+      "file": "before/B-1F-R180-forward.jpg",
+      "frame_ms": [
+        3238.645
+      ],
+      "objects": 5143.0,
+      "physics_process_ms": 0.639,
+      "primitives": 4149870.0,
+      "save_error": 0,
+      "static_memory_bytes": 2076499313.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3268.314,
+      "camera": {
+        "eye": [
+          176.099482681719,
+          1.65,
+          -39.5994826817189
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R180-reverse",
+        "look": [
+          124.536396103068,
+          1.65,
+          10.4636038969321
+        ],
+        "route_id": "B-1F-R180",
+        "wing": "B"
+      },
+      "draw_calls": 6175.0,
+      "file": "before/B-1F-R180-reverse.jpg",
+      "frame_ms": [
+        3519.454
+      ],
+      "objects": 6251.0,
+      "physics_process_ms": 2.412,
+      "primitives": 3334488.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077040657.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3553.182,
+      "camera": {
+        "eye": [
+          -249.796324676319,
+          1.65,
+          1.5
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R087-forward",
+        "look": [
+          -186.308831175457,
+          1.65,
+          1.5
+        ],
+        "route_id": "B-1F-R087",
+        "wing": "B"
+      },
+      "draw_calls": 10414.0,
+      "file": "before/B-1F-R087-forward.jpg",
+      "frame_ms": [
+        4412.745
+      ],
+      "objects": 10490.0,
+      "physics_process_ms": 0.629,
+      "primitives": 5209623.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077761389.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4444.826,
+      "camera": {
+        "eye": [
+          -178.839714293003,
+          1.65,
+          1.5
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R087-reverse",
+        "look": [
+          -242.327207793864,
+          1.65,
+          1.5
+        ],
+        "route_id": "B-1F-R087",
+        "wing": "B"
+      },
+      "draw_calls": 1814.0,
+      "file": "before/B-1F-R087-reverse.jpg",
+      "frame_ms": [
+        2764.052
+      ],
+      "objects": 1820.0,
+      "physics_process_ms": 1.956,
+      "primitives": 2373253.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077783745.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2804.223,
+      "camera": {
+        "eye": [
+          -241.652649352637,
+          1.65,
+          -3.0
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R088-forward",
+        "look": [
+          -183.017662350914,
+          1.65,
+          -3.0
+        ],
+        "route_id": "B-1F-R088",
+        "wing": "B"
+      },
+      "draw_calls": 10468.0,
+      "file": "before/B-1F-R088-forward.jpg",
+      "frame_ms": [
+        4952.552
+      ],
+      "objects": 10544.0,
+      "physics_process_ms": 0.672,
+      "primitives": 5225282.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077806021.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4976.665,
+      "camera": {
+        "eye": [
+          -176.816681810065,
+          1.65,
+          -1.31668181006535
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R088-reverse",
+        "look": [
+          -234.754415587728,
+          1.65,
+          -3.0
+        ],
+        "route_id": "B-1F-R088",
+        "wing": "B"
+      },
+      "draw_calls": 1871.0,
+      "file": "before/B-1F-R088-reverse.jpg",
+      "frame_ms": [
+        3174.568
+      ],
+      "objects": 1875.0,
+      "physics_process_ms": 2.094,
+      "primitives": 2401201.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077813281.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3215.21,
+      "camera": {
+        "eye": [
+          -211.732203461105,
+          1.65,
+          -40.5
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R091-forward",
+        "look": [
+          -165.994112549695,
+          1.65,
+          -17.4941125496954
+        ],
+        "route_id": "B-1F-R091",
+        "wing": "B"
+      },
+      "draw_calls": 9270.0,
+      "file": "before/B-1F-R091-forward.jpg",
+      "frame_ms": [
+        4741.495
+      ],
+      "objects": 9330.0,
+      "physics_process_ms": 0.666,
+      "primitives": 5279362.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077922237.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4776.323,
+      "camera": {
+        "eye": [
+          -161.396467529817,
+          1.65,
+          -12.8964675298173
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R091-reverse",
+        "look": [
+          -205.230151519016,
+          1.65,
+          -40.5
+        ],
+        "route_id": "B-1F-R091",
+        "wing": "B"
+      },
+      "draw_calls": 2031.0,
+      "file": "before/B-1F-R091-reverse.jpg",
+      "frame_ms": [
+        2756.043
+      ],
+      "objects": 2037.0,
+      "physics_process_ms": 0.712,
+      "primitives": 2361494.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077928041.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2789.015,
+      "camera": {
+        "eye": [
+          -221.133380951166,
+          1.65,
+          -10.5
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R089-forward",
+        "look": [
+          -168.824621202459,
+          1.65,
+          -5.32462120245875
+        ],
+        "route_id": "B-1F-R089",
+        "wing": "B"
+      },
+      "draw_calls": 10492.0,
+      "file": "before/B-1F-R089-forward.jpg",
+      "frame_ms": [
+        4413.731
+      ],
+      "objects": 10556.0,
+      "physics_process_ms": 0.832,
+      "primitives": 5518230.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077967989.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4449.705,
+      "camera": {
+        "eye": [
+          -164.294772721475,
+          1.65,
+          -0.794772721475255
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R089-reverse",
+        "look": [
+          -214.727207793864,
+          1.65,
+          -10.5
+        ],
+        "route_id": "B-1F-R089",
+        "wing": "B"
+      },
+      "draw_calls": 2199.0,
+      "file": "before/B-1F-R089-reverse.jpg",
+      "frame_ms": [
+        2633.807
+      ],
+      "objects": 2205.0,
+      "physics_process_ms": 0.657,
+      "primitives": 2215502.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077974521.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2677.455,
+      "camera": {
+        "eye": [
+          144.530954544295,
+          1.65,
+          17.469045455705
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R190-forward",
+        "look": [
+          173.479036790187,
+          1.65,
+          -9.97903679018718
+        ],
+        "route_id": "B-1F-R190",
+        "wing": "B"
+      },
+      "draw_calls": 5042.0,
+      "file": "before/B-1F-R190-forward.jpg",
+      "frame_ms": [
+        3815.163
+      ],
+      "objects": 5072.0,
+      "physics_process_ms": 0.872,
+      "primitives": 4226441.0,
+      "save_error": 0,
+      "static_memory_bytes": 2077989565.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3854.356,
+      "camera": {
+        "eye": [
+          177.385155851775,
+          1.65,
+          -12.0
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R190-reverse",
+        "look": [
+          147.884924240492,
+          1.65,
+          14.1150757595083
+        ],
+        "route_id": "B-1F-R190",
+        "wing": "B"
+      },
+      "draw_calls": 6000.0,
+      "file": "before/B-1F-R190-reverse.jpg",
+      "frame_ms": [
+        3450.4
+      ],
+      "objects": 6060.0,
+      "physics_process_ms": 1.037,
+      "primitives": 3180988.0,
+      "save_error": 0,
+      "static_memory_bytes": 2078041681.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3487.921,
+      "camera": {
+        "eye": [
+          -185.798162338159,
+          1.65,
+          -41.7981623381593
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R094-forward",
+        "look": [
+          -161.275735931288,
+          1.65,
+          -14.2757359312881
+        ],
+        "route_id": "B-1F-R094",
+        "wing": "B"
+      },
+      "draw_calls": 9697.0,
+      "file": "before/B-1F-R094-forward.jpg",
+      "frame_ms": [
+        5532.19
+      ],
+      "objects": 9757.0,
+      "physics_process_ms": 0.874,
+      "primitives": 5516563.0,
+      "save_error": 0,
+      "static_memory_bytes": 2078255121.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5562.981,
+      "camera": {
+        "eye": [
+          -158.141177490061,
+          1.65,
+          -11.1411774900609
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R094-reverse",
+        "look": [
+          -182.663603896932,
+          1.65,
+          -38.6636038969321
+        ],
+        "route_id": "B-1F-R094",
+        "wing": "B"
+      },
+      "draw_calls": 2556.0,
+      "file": "before/B-1F-R094-reverse.jpg",
+      "frame_ms": [
+        2931.785
+      ],
+      "objects": 2564.0,
+      "physics_process_ms": 1.196,
+      "primitives": 2466672.0,
+      "save_error": 0,
+      "static_memory_bytes": 2078284629.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2972.297,
+      "camera": {
+        "eye": [
+          53.46,
+          1.65,
+          23.46
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R172-forward",
+        "look": [
+          75.9,
+          1.65,
+          45.9
+        ],
+        "route_id": "B-1F-R172",
+        "wing": "B"
+      },
+      "draw_calls": 5633.0,
+      "file": "before/B-1F-R172-forward.jpg",
+      "frame_ms": [
+        4168.112
+      ],
+      "objects": 5633.0,
+      "physics_process_ms": 1.921,
+      "primitives": 3472634.0,
+      "save_error": 0,
+      "static_memory_bytes": 2078448065.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4198.798,
+      "camera": {
+        "eye": [
+          78.54,
+          1.65,
+          48.54
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R172-reverse",
+        "look": [
+          56.1,
+          1.65,
+          26.1
+        ],
+        "route_id": "B-1F-R172",
+        "wing": "B"
+      },
+      "draw_calls": 7507.0,
+      "file": "before/B-1F-R172-reverse.jpg",
+      "frame_ms": [
+        4647.464
+      ],
+      "objects": 7578.0,
+      "physics_process_ms": 1.091,
+      "primitives": 3950359.0,
+      "save_error": 0,
+      "static_memory_bytes": 2079463837.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4680.048,
+      "camera": {
+        "eye": [
+          -34.5,
+          1.65,
+          6.0
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R145-forward",
+        "look": [
+          -9.0,
+          1.65,
+          6.0
+        ],
+        "route_id": "B-1F-R145",
+        "wing": "B"
+      },
+      "draw_calls": 7808.0,
+      "file": "before/B-1F-R145-forward.jpg",
+      "frame_ms": [
+        4450.835
+      ],
+      "objects": 7890.0,
+      "physics_process_ms": 1.449,
+      "primitives": 5561939.0,
+      "save_error": 0,
+      "static_memory_bytes": 2079805241.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4482.674,
+      "camera": {
+        "eye": [
+          -6.0,
+          1.65,
+          6.0
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R145-reverse",
+        "look": [
+          -31.5,
+          1.65,
+          6.0
+        ],
+        "route_id": "B-1F-R145",
+        "wing": "B"
+      },
+      "draw_calls": 5804.0,
+      "file": "before/B-1F-R145-reverse.jpg",
+      "frame_ms": [
+        4283.956
+      ],
+      "objects": 5815.0,
+      "physics_process_ms": 0.972,
+      "primitives": 3715924.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080176549.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4335.8,
+      "camera": {
+        "eye": [
+          10.3019090885901,
+          1.65,
+          9.0
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R164-forward",
+        "look": [
+          31.5514718625761,
+          1.65,
+          16.5514718625761
+        ],
+        "route_id": "B-1F-R164",
+        "wing": "B"
+      },
+      "draw_calls": 6924.0,
+      "file": "before/B-1F-R164-forward.jpg",
+      "frame_ms": [
+        4690.549
+      ],
+      "objects": 6978.0,
+      "physics_process_ms": 0.722,
+      "primitives": 4896064.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080183081.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4720.7,
+      "camera": {
+        "eye": [
+          33.5794112549695,
+          1.65,
+          18.5794112549695
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R164-reverse",
+        "look": [
+          12.387867965644,
+          1.65,
+          10.887867965644
+        ],
+        "route_id": "B-1F-R164",
+        "wing": "B"
+      },
+      "draw_calls": 7445.0,
+      "file": "before/B-1F-R164-reverse.jpg",
+      "frame_ms": [
+        4399.677
+      ],
+      "objects": 7505.0,
+      "physics_process_ms": 1.054,
+      "primitives": 4475955.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080298737.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4431.296,
+      "camera": {
+        "eye": [
+          53.7582337649086,
+          1.65,
+          19.5
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R171-forward",
+        "look": [
+          75.4029437251523,
+          1.65,
+          25.5
+        ],
+        "route_id": "B-1F-R171",
+        "wing": "B"
+      },
+      "draw_calls": 6823.0,
+      "file": "before/B-1F-R171-forward.jpg",
+      "frame_ms": [
+        4366.551
+      ],
+      "objects": 6857.0,
+      "physics_process_ms": 2.021,
+      "primitives": 4338024.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080299445.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4397.574,
+      "camera": {
+        "eye": [
+          78.2417662350914,
+          1.65,
+          25.5
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R171-reverse",
+        "look": [
+          56.2757359312881,
+          1.65,
+          20.2757359312881
+        ],
+        "route_id": "B-1F-R171",
+        "wing": "B"
+      },
+      "draw_calls": 7151.0,
+      "file": "before/B-1F-R171-reverse.jpg",
+      "frame_ms": [
+        4138.406
+      ],
+      "objects": 7233.0,
+      "physics_process_ms": 0.708,
+      "primitives": 3929484.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080299425.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4188.31,
+      "camera": {
+        "eye": [
+          1.5,
+          1.65,
+          -28.8163246763185
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R160-forward",
+        "look": [
+          3.0,
+          1.65,
+          -5.7301515190165
+        ],
+        "route_id": "B-1F-R160",
+        "wing": "B"
+      },
+      "draw_calls": 4800.0,
+      "file": "before/B-1F-R160-forward.jpg",
+      "frame_ms": [
+        3620.979
+      ],
+      "objects": 4841.0,
+      "physics_process_ms": 0.671,
+      "primitives": 3323050.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080302317.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3651.468,
+      "camera": {
+        "eye": [
+          3.04169480834201,
+          1.65,
+          -2.95830519165799
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R160-reverse",
+        "look": [
+          1.5,
+          1.65,
+          -26.0272077938642
+        ],
+        "route_id": "B-1F-R160",
+        "wing": "B"
+      },
+      "draw_calls": 5269.0,
+      "file": "before/B-1F-R160-reverse.jpg",
+      "frame_ms": [
+        3021.184
+      ],
+      "objects": 5293.0,
+      "physics_process_ms": 0.907,
+      "primitives": 2609698.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080382101.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3061.276,
+      "camera": {
+        "eye": [
+          -25.5763246763185,
+          1.65,
+          -9.07632467631853
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R150-forward",
+        "look": [
+          -7.76984848098349,
+          1.65,
+          4.5
+        ],
+        "route_id": "B-1F-R150",
+        "wing": "B"
+      },
+      "draw_calls": 7591.0,
+      "file": "before/B-1F-R150-forward.jpg",
+      "frame_ms": [
+        4599.785
+      ],
+      "objects": 7662.0,
+      "physics_process_ms": 0.711,
+      "primitives": 5320903.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080382933.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4632.618,
+      "camera": {
+        "eye": [
+          -5.01338095116624,
+          1.65,
+          4.5
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R150-reverse",
+        "look": [
+          -23.6272077938642,
+          1.65,
+          -7.12720779386421
+        ],
+        "route_id": "B-1F-R150",
+        "wing": "B"
+      },
+      "draw_calls": 6114.0,
+      "file": "before/B-1F-R150-reverse.jpg",
+      "frame_ms": [
+        4092.26
+      ],
+      "objects": 6144.0,
+      "physics_process_ms": 1.0,
+      "primitives": 3502662.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080384973.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4129.853,
+      "camera": {
+        "eye": [
+          6.0,
+          1.65,
+          -3.85455844122716
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R162-forward",
+        "look": [
+          6.0,
+          1.65,
+          -25.6970562748477
+        ],
+        "route_id": "B-1F-R162",
+        "wing": "B"
+      },
+      "draw_calls": 5142.0,
+      "file": "before/B-1F-R162-forward.jpg",
+      "frame_ms": [
+        2946.911
+      ],
+      "objects": 5166.0,
+      "physics_process_ms": 1.074,
+      "primitives": 2590314.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080386409.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2992.241,
+      "camera": {
+        "eye": [
+          6.0,
+          1.65,
+          -28.2667619023325
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R162-reverse",
+        "look": [
+          6.0,
+          1.65,
+          -6.42426406871193
+        ],
+        "route_id": "B-1F-R162",
+        "wing": "B"
+      },
+      "draw_calls": 4820.0,
+      "file": "before/B-1F-R162-reverse.jpg",
+      "frame_ms": [
+        3932.323
+      ],
+      "objects": 4861.0,
+      "physics_process_ms": 1.092,
+      "primitives": 3316889.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080387241.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3971.7,
+      "camera": {
+        "eye": [
+          -95.8388225099391,
+          1.65,
+          23.8388225099391
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R117-forward",
+        "look": [
+          -79.5363961030679,
+          1.65,
+          10.5363961030679
+        ],
+        "route_id": "B-1F-R117",
+        "wing": "B"
+      },
+      "draw_calls": 11328.0,
+      "file": "before/B-1F-R117-forward.jpg",
+      "frame_ms": [
+        5472.599
+      ],
+      "objects": 11426.0,
+      "physics_process_ms": 2.272,
+      "primitives": 5722816.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080403965.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5505.757,
+      "camera": {
+        "eye": [
+          -77.7218376618407,
+          1.65,
+          8.72183766184074
+        ],
+        "fov": 75.0,
+        "id": "B-1F-R117-reverse",
+        "look": [
+          -94.0242640687119,
+          1.65,
+          22.0242640687119
+        ],
+        "route_id": "B-1F-R117",
+        "wing": "B"
+      },
+      "draw_calls": 3823.0,
+      "file": "before/B-1F-R117-reverse.jpg",
+      "frame_ms": [
+        3738.092
+      ],
+      "objects": 3836.0,
+      "physics_process_ms": 3.085,
+      "primitives": 2949472.0,
+      "save_error": 0,
+      "static_memory_bytes": 2080584213.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3773.155,
+      "camera": {
+        "eye": [
+          -45.4831039096866,
+          1.65,
+          -305.516896090313
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R216-forward",
+        "look": [
+          40.6117749006091,
+          1.65,
+          -363.0
+        ],
+        "route_id": "C-1F-R216",
+        "wing": "C"
+      },
+      "draw_calls": 1778.0,
+      "file": "before/C-1F-R216-forward.jpg",
+      "frame_ms": [
+        1700.741
+      ],
+      "objects": 1778.0,
+      "physics_process_ms": 0.748,
+      "primitives": 1709675.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081064605.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 1731.107,
+      "camera": {
+        "eye": [
+          55.0913290090774,
+          1.65,
+          -364.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R216-reverse",
+        "look": [
+          -37.5,
+          1.65,
+          -317.311060633116
+        ],
+        "route_id": "C-1F-R216",
+        "wing": "C"
+      },
+      "draw_calls": 5540.0,
+      "file": "before/C-1F-R216-reverse.jpg",
+      "frame_ms": [
+        2579.963
+      ],
+      "objects": 5578.0,
+      "physics_process_ms": 0.889,
+      "primitives": 2666356.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081180833.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2626.103,
+      "camera": {
+        "eye": [
+          -71.9854415587728,
+          1.65,
+          -373.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R214-forward",
+        "look": [
+          13.0970562748477,
+          1.65,
+          -373.5
+        ],
+        "route_id": "C-1F-R214",
+        "wing": "C"
+      },
+      "draw_calls": 5278.0,
+      "file": "before/C-1F-R214-forward.jpg",
+      "frame_ms": [
+        3247.728
+      ],
+      "objects": 5298.0,
+      "physics_process_ms": 0.686,
+      "primitives": 3546665.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081205501.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3285.929,
+      "camera": {
+        "eye": [
+          23.1067619023325,
+          1.65,
+          -373.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R214-reverse",
+        "look": [
+          -61.9757359312881,
+          1.65,
+          -373.5
+        ],
+        "route_id": "C-1F-R214",
+        "wing": "C"
+      },
+      "draw_calls": 2750.0,
+      "file": "before/C-1F-R214-reverse.jpg",
+      "frame_ms": [
+        1849.682
+      ],
+      "objects": 2786.0,
+      "physics_process_ms": 1.05,
+      "primitives": 1964436.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081458029.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 1885.674,
+      "camera": {
+        "eye": [
+          50.0510259710444,
+          1.65,
+          -270.0
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R228-forward",
+        "look": [
+          121.173506473629,
+          1.65,
+          -270.0
+        ],
+        "route_id": "C-1F-R228",
+        "wing": "C"
+      },
+      "draw_calls": 4829.0,
+      "file": "before/C-1F-R228-forward.jpg",
+      "frame_ms": [
+        2565.809
+      ],
+      "objects": 4849.0,
+      "physics_process_ms": 0.683,
+      "primitives": 3529119.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081727349.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2604.346,
+      "camera": {
+        "eye": [
+          127.625084425026,
+          1.65,
+          -274.625084425026
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R228-reverse",
+        "look": [
+          58.4183766184074,
+          1.65,
+          -270.0
+        ],
+        "route_id": "C-1F-R228",
+        "wing": "C"
+      },
+      "draw_calls": 4889.0,
+      "file": "before/C-1F-R228-reverse.jpg",
+      "frame_ms": [
+        2730.562
+      ],
+      "objects": 4927.0,
+      "physics_process_ms": 0.605,
+      "primitives": 2726712.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081769569.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2783.605,
+      "camera": {
+        "eye": [
+          48.9514718625761,
+          1.65,
+          -268.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R229-forward",
+        "look": [
+          117.363961030679,
+          1.65,
+          -268.5
+        ],
+        "route_id": "C-1F-R229",
+        "wing": "C"
+      },
+      "draw_calls": 4845.0,
+      "file": "before/C-1F-R229-forward.jpg",
+      "frame_ms": [
+        2701.285
+      ],
+      "objects": 4865.0,
+      "physics_process_ms": 0.549,
+      "primitives": 3544861.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081771005.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2736.42,
+      "camera": {
+        "eye": [
+          125.412489168103,
+          1.65,
+          -268.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R229-reverse",
+        "look": [
+          57.0,
+          1.65,
+          -268.5
+        ],
+        "route_id": "C-1F-R229",
+        "wing": "C"
+      },
+      "draw_calls": 4530.0,
+      "file": "before/C-1F-R229-reverse.jpg",
+      "frame_ms": [
+        2861.805
+      ],
+      "objects": 4564.0,
+      "physics_process_ms": 0.751,
+      "primitives": 2676385.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081805801.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2904.064,
+      "camera": {
+        "eye": [
+          -39.410740264047,
+          1.65,
+          -289.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R218-forward",
+        "look": [
+          19.4485281374239,
+          1.65,
+          -273.051471862576
+        ],
+        "route_id": "C-1F-R218",
+        "wing": "C"
+      },
+      "draw_calls": 6216.0,
+      "file": "before/C-1F-R218-forward.jpg",
+      "frame_ms": [
+        3484.777
+      ],
+      "objects": 6248.0,
+      "physics_process_ms": 0.662,
+      "primitives": 3872419.0,
+      "save_error": 0,
+      "static_memory_bytes": 2081906289.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3526.04,
+      "camera": {
+        "eye": [
+          26.2297770542341,
+          1.65,
+          -270.770222945766
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R218-reverse",
+        "look": [
+          -31.6845671067449,
+          1.65,
+          -289.5
+        ],
+        "route_id": "C-1F-R218",
+        "wing": "C"
+      },
+      "draw_calls": 1984.0,
+      "file": "before/C-1F-R218-reverse.jpg",
+      "frame_ms": [
+        1765.134
+      ],
+      "objects": 2022.0,
+      "physics_process_ms": 1.173,
+      "primitives": 1814470.0,
+      "save_error": 0,
+      "static_memory_bytes": 2082025429.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 1806.466,
+      "camera": {
+        "eye": [
+          -135.42,
+          1.65,
+          -289.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R207-forward",
+        "look": [
+          -78.3,
+          1.65,
+          -289.5
+        ],
+        "route_id": "C-1F-R207",
+        "wing": "C"
+      },
+      "draw_calls": 6990.0,
+      "file": "before/C-1F-R207-forward.jpg",
+      "frame_ms": [
+        3318.879
+      ],
+      "objects": 7070.0,
+      "physics_process_ms": 0.615,
+      "primitives": 4367913.0,
+      "save_error": 0,
+      "static_memory_bytes": 2082341161.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3348.205,
+      "camera": {
+        "eye": [
+          -71.58,
+          1.65,
+          -289.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R207-reverse",
+        "look": [
+          -128.7,
+          1.65,
+          -289.5
+        ],
+        "route_id": "C-1F-R207",
+        "wing": "C"
+      },
+      "draw_calls": 1624.0,
+      "file": "before/C-1F-R207-reverse.jpg",
+      "frame_ms": [
+        1713.594
+      ],
+      "objects": 1632.0,
+      "physics_process_ms": 0.648,
+      "primitives": 1875671.0,
+      "save_error": 0,
+      "static_memory_bytes": 2082582365.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 1764.669,
+      "camera": {
+        "eye": [
+          -82.966173157302,
+          1.65,
+          -217.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R212-forward",
+        "look": [
+          -27.839696961967,
+          1.65,
+          -218.160303038033
+        ],
+        "route_id": "C-1F-R212",
+        "wing": "C"
+      },
+      "draw_calls": 6689.0,
+      "file": "before/C-1F-R212-forward.jpg",
+      "frame_ms": [
+        3934.739
+      ],
+      "objects": 6719.0,
+      "physics_process_ms": 0.614,
+      "primitives": 4050294.0,
+      "save_error": 0,
+      "static_memory_bytes": 2082712841.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3968.566,
+      "camera": {
+        "eye": [
+          -23.2310259710444,
+          1.65,
+          -222.768974028956
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R212-reverse",
+        "look": [
+          -76.4485281374238,
+          1.65,
+          -217.5
+        ],
+        "route_id": "C-1F-R212",
+        "wing": "C"
+      },
+      "draw_calls": 3161.0,
+      "file": "before/C-1F-R212-reverse.jpg",
+      "frame_ms": [
+        2707.808
+      ],
+      "objects": 3197.0,
+      "physics_process_ms": 1.011,
+      "primitives": 2516279.0,
+      "save_error": 0,
+      "static_memory_bytes": 2083001881.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2756.054,
+      "camera": {
+        "eye": [
+          -141.0,
+          1.65,
+          -300.510883117546
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R206-forward",
+        "look": [
+          -118.748528137424,
+          1.65,
+          -338.751471862576
+        ],
+        "route_id": "C-1F-R206",
+        "wing": "C"
+      },
+      "draw_calls": 2040.0,
+      "file": "before/C-1F-R206-forward.jpg",
+      "frame_ms": [
+        1881.116
+      ],
+      "objects": 2053.0,
+      "physics_process_ms": 0.68,
+      "primitives": 1730329.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084207097.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 1912.887,
+      "camera": {
+        "eye": [
+          -115.86124891681,
+          1.65,
+          -343.13875108319
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R206-reverse",
+        "look": [
+          -141.0,
+          1.65,
+          -306.094112549695
+        ],
+        "route_id": "C-1F-R206",
+        "wing": "C"
+      },
+      "draw_calls": 5200.0,
+      "file": "before/C-1F-R206-reverse.jpg",
+      "frame_ms": [
+        2687.006
+      ],
+      "objects": 5239.0,
+      "physics_process_ms": 0.887,
+      "primitives": 2896687.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084220773.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2724.447,
+      "camera": {
+        "eye": [
+          -45.3326493526371,
+          1.65,
+          -283.832649352637
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R219-forward",
+        "look": [
+          -21.7029437251523,
+          1.65,
+          -248.202943725152
+        ],
+        "route_id": "C-1F-R219",
+        "wing": "C"
+      },
+      "draw_calls": 9019.0,
+      "file": "before/C-1F-R219-forward.jpg",
+      "frame_ms": [
+        3566.46
+      ],
+      "objects": 9079.0,
+      "physics_process_ms": 0.727,
+      "primitives": 4709189.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084225009.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3602.999,
+      "camera": {
+        "eye": [
+          -19.5,
+          1.65,
+          -243.772203461105
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R219-reverse",
+        "look": [
+          -41.5544155877284,
+          1.65,
+          -280.054415587728
+        ],
+        "route_id": "C-1F-R219",
+        "wing": "C"
+      },
+      "draw_calls": 2278.0,
+      "file": "before/C-1F-R219-reverse.jpg",
+      "frame_ms": [
+        1587.038
+      ],
+      "objects": 2310.0,
+      "physics_process_ms": 0.74,
+      "primitives": 1646903.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084227925.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 1628.778,
+      "camera": {
+        "eye": [
+          -12.7817662350914,
+          1.65,
+          -233.281766235091
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R223-forward",
+        "look": [
+          9.23603896932107,
+          1.65,
+          -214.5
+        ],
+        "route_id": "C-1F-R223",
+        "wing": "C"
+      },
+      "draw_calls": 7244.0,
+      "file": "before/C-1F-R223-forward.jpg",
+      "frame_ms": [
+        3574.755
+      ],
+      "objects": 7304.0,
+      "physics_process_ms": 0.762,
+      "primitives": 4292342.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084452601.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3610.696,
+      "camera": {
+        "eye": [
+          12.7416233815926,
+          1.65,
+          -214.5
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R223-reverse",
+        "look": [
+          -10.3029437251523,
+          1.65,
+          -230.802943725152
+        ],
+        "route_id": "C-1F-R223",
+        "wing": "C"
+      },
+      "draw_calls": 2282.0,
+      "file": "before/C-1F-R223-reverse.jpg",
+      "frame_ms": [
+        2092.419
+      ],
+      "objects": 2314.0,
+      "physics_process_ms": 1.321,
+      "primitives": 1754357.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084456949.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2136.163,
+      "camera": {
+        "eye": [
+          22.4297056274848,
+          1.65,
+          -213.070294372515
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R225-forward",
+        "look": [
+          47.1301515190165,
+          1.65,
+          -204.0
+        ],
+        "route_id": "C-1F-R225",
+        "wing": "C"
+      },
+      "draw_calls": 6002.0,
+      "file": "before/C-1F-R225-forward.jpg",
+      "frame_ms": [
+        3877.21
+      ],
+      "objects": 6034.0,
+      "physics_process_ms": 0.665,
+      "primitives": 3935034.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084482497.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3912.072,
+      "camera": {
+        "eye": [
+          50.4780909114099,
+          1.65,
+          -204.0
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R225-reverse",
+        "look": [
+          25.1272077938642,
+          1.65,
+          -211.5
+        ],
+        "route_id": "C-1F-R225",
+        "wing": "C"
+      },
+      "draw_calls": 3442.0,
+      "file": "before/C-1F-R225-reverse.jpg",
+      "frame_ms": [
+        3066.745
+      ],
+      "objects": 3470.0,
+      "physics_process_ms": 4.721,
+      "primitives": 2286772.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084488301.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3102.604,
+      "camera": {
+        "eye": [
+          59.8327922061358,
+          1.65,
+          -204.0
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R230-forward",
+        "look": [
+          83.3937554159486,
+          1.65,
+          -201.606244584051
+        ],
+        "route_id": "C-1F-R230",
+        "wing": "C"
+      },
+      "draw_calls": 4975.0,
+      "file": "before/C-1F-R230-forward.jpg",
+      "frame_ms": [
+        3471.631
+      ],
+      "objects": 4997.0,
+      "physics_process_ms": 0.85,
+      "primitives": 3537489.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084489009.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3506.918,
+      "camera": {
+        "eye": [
+          85.4362532495692,
+          1.65,
+          -199.563746750431
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R230-reverse",
+        "look": [
+          62.7213203435596,
+          1.65,
+          -204.0
+        ],
+        "route_id": "C-1F-R230",
+        "wing": "C"
+      },
+      "draw_calls": 4255.0,
+      "file": "before/C-1F-R230-reverse.jpg",
+      "frame_ms": [
+        2927.604
+      ],
+      "objects": 4285.0,
+      "physics_process_ms": 0.66,
+      "primitives": 2504266.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084503461.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2969.647,
+      "camera": {
+        "eye": [
+          -108.12,
+          1.65,
+          -352.38
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R210-forward",
+        "look": [
+          -91.8,
+          1.65,
+          -368.7
+        ],
+        "route_id": "C-1F-R210",
+        "wing": "C"
+      },
+      "draw_calls": 1973.0,
+      "file": "before/C-1F-R210-forward.jpg",
+      "frame_ms": [
+        1991.72
+      ],
+      "objects": 1973.0,
+      "physics_process_ms": 0.774,
+      "primitives": 1351879.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084507145.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2022.417,
+      "camera": {
+        "eye": [
+          -89.88,
+          1.65,
+          -370.62
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R210-reverse",
+        "look": [
+          -106.2,
+          1.65,
+          -354.3
+        ],
+        "route_id": "C-1F-R210",
+        "wing": "C"
+      },
+      "draw_calls": 4830.0,
+      "file": "before/C-1F-R210-reverse.jpg",
+      "frame_ms": [
+        2345.019
+      ],
+      "objects": 4879.0,
+      "physics_process_ms": 0.902,
+      "primitives": 2601029.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084507125.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2379.711,
+      "camera": {
+        "eye": [
+          -64.6689740289556,
+          1.65,
+          -211.331025971044
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R215-forward",
+        "look": [
+          -42.6727922061358,
+          1.65,
+          -213.0
+        ],
+        "route_id": "C-1F-R215",
+        "wing": "C"
+      },
+      "draw_calls": 6707.0,
+      "file": "before/C-1F-R215-forward.jpg",
+      "frame_ms": [
+        3454.023
+      ],
+      "objects": 6733.0,
+      "physics_process_ms": 0.578,
+      "primitives": 4083197.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084515113.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3486.679,
+      "camera": {
+        "eye": [
+          -40.0036753236815,
+          1.65,
+          -213.0
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R215-reverse",
+        "look": [
+          -62.6911688245431,
+          1.65,
+          -213.0
+        ],
+        "route_id": "C-1F-R215",
+        "wing": "C"
+      },
+      "draw_calls": 3056.0,
+      "file": "before/C-1F-R215-reverse.jpg",
+      "frame_ms": [
+        3026.034
+      ],
+      "objects": 3090.0,
+      "physics_process_ms": 0.861,
+      "primitives": 2451989.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084558453.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3064.377,
+      "camera": {
+        "eye": [
+          18.0775735931288,
+          1.65,
+          -386.922426406871
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R224-forward",
+        "look": [
+          34.9029437251523,
+          1.65,
+          -376.5
+        ],
+        "route_id": "C-1F-R224",
+        "wing": "C"
+      },
+      "draw_calls": 6505.0,
+      "file": "before/C-1F-R224-forward.jpg",
+      "frame_ms": [
+        4253.762
+      ],
+      "objects": 6533.0,
+      "physics_process_ms": 0.67,
+      "primitives": 3564894.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084678529.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4295.965,
+      "camera": {
+        "eye": [
+          36.983086578651,
+          1.65,
+          -375.516913421349
+        ],
+        "fov": 75.0,
+        "id": "C-1F-R224-reverse",
+        "look": [
+          19.8363961030679,
+          1.65,
+          -385.163603896932
+        ],
+        "route_id": "C-1F-R224",
+        "wing": "C"
+      },
+      "draw_calls": 1744.0,
+      "file": "before/C-1F-R224-reverse.jpg",
+      "frame_ms": [
+        2338.557
+      ],
+      "objects": 1756.0,
+      "physics_process_ms": 0.641,
+      "primitives": 1319233.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084681729.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2391.32,
+      "camera": {
+        "eye": [
+          452.495707339695,
+          1.65,
+          -5.63667406957811
+        ],
+        "fov": 78.0,
+        "id": "A1F-001-front",
+        "look": [
+          446.320273566746,
+          2.5,
+          -6.18805208502001
+        ],
+        "store_id": "A1F-001",
+        "wing": "A"
+      },
+      "draw_calls": 11104.0,
+      "file": "before/A1F-001-front.jpg",
+      "frame_ms": [
+        5881.097
+      ],
+      "objects": 11212.0,
+      "physics_process_ms": 0.938,
+      "primitives": 5221619.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084770533.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5919.301,
+      "camera": {
+        "eye": [
+          415.515351078302,
+          1.65,
+          -11.0572228380125
+        ],
+        "fov": 72.0,
+        "id": "A1F-001-centre",
+        "look": [
+          394.397779684441,
+          1.55,
+          -14.2925960850424
+        ],
+        "store_id": "A1F-001",
+        "wing": "A"
+      },
+      "draw_calls": 10592.0,
+      "file": "before/A1F-001-centre.jpg",
+      "frame_ms": [
+        6198.116
+      ],
+      "objects": 10689.0,
+      "physics_process_ms": 2.25,
+      "primitives": 5352995.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084776321.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 6238.003,
+      "camera": {
+        "eye": [
+          389.470346359206,
+          1.65,
+          -15.0475165093494
+        ],
+        "fov": 72.0,
+        "id": "A1F-001-rear",
+        "look": [
+          447.31631127206,
+          1.55,
+          -6.09912014704551
+        ],
+        "store_id": "A1F-001",
+        "wing": "A"
+      },
+      "draw_calls": 5197.0,
+      "file": "before/A1F-001-rear.jpg",
+      "frame_ms": [
+        4791.18
+      ],
+      "objects": 5203.0,
+      "physics_process_ms": 0.74,
+      "primitives": 3188419.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084803197.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4829.1,
+      "camera": {
+        "eye": [
+          458.22684168357,
+          1.65,
+          -6.85587499098921
+        ],
+        "fov": 78.0,
+        "id": "A1F-002-front",
+        "look": [
+          464.402275456519,
+          2.5,
+          -6.3044969755473
+        ],
+        "store_id": "A1F-002",
+        "wing": "A"
+      },
+      "draw_calls": 4657.0,
+      "file": "before/A1F-002-front.jpg",
+      "frame_ms": [
+        3800.99
+      ],
+      "objects": 4663.0,
+      "physics_process_ms": 1.095,
+      "primitives": 2783656.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084800245.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3840.86,
+      "camera": {
+        "eye": [
+          499.94496737117,
+          1.65,
+          -5.40874045638876
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-centre",
+        "look": [
+          524.028157568265,
+          1.55,
+          -4.70643191158509
+        ],
+        "store_id": "A1F-002",
+        "wing": "A"
+      },
+      "draw_calls": 3932.0,
+      "file": "before/A1F-002-centre.jpg",
+      "frame_ms": [
+        3905.972
+      ],
+      "objects": 3942.0,
+      "physics_process_ms": 0.936,
+      "primitives": 2374205.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084801337.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3942.43,
+      "camera": {
+        "eye": [
+          529.647568614254,
+          1.65,
+          -4.54255991779756
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-rear",
+        "look": [
+          463.406237751205,
+          1.55,
+          -6.3934289135218
+        ],
+        "store_id": "A1F-002",
+        "wing": "A"
+      },
+      "draw_calls": 11614.0,
+      "file": "before/A1F-002-rear.jpg",
+      "frame_ms": [
+        5856.841
+      ],
+      "objects": 11696.0,
+      "physics_process_ms": 1.227,
+      "primitives": 4664785.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084802733.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5946.195,
+      "camera": {
+        "eye": [
+          364.227600249585,
+          1.65,
+          -61.8044604050002
+        ],
+        "fov": 78.0,
+        "id": "A1F-003-front",
+        "look": [
+          363.900359443196,
+          2.5,
+          -67.9958183703123
+        ],
+        "store_id": "A1F-003",
+        "wing": "A"
+      },
+      "draw_calls": 2539.0,
+      "file": "before/A1F-003-front.jpg",
+      "frame_ms": [
+        5270.592
+      ],
+      "objects": 2566.0,
+      "physics_process_ms": 0.765,
+      "primitives": 2222938.0,
+      "save_error": 0,
+      "static_memory_bytes": 2084993665.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5307.606,
+      "camera": {
+        "eye": [
+          371.8,
+          1.65,
+          -28.643027714351
+        ],
+        "fov": 78.0,
+        "id": "A1F-004-front",
+        "look": [
+          378.0,
+          2.5,
+          -28.643027714351
+        ],
+        "store_id": "A1F-004",
+        "wing": "A"
+      },
+      "draw_calls": 6052.0,
+      "file": "before/A1F-004-front.jpg",
+      "frame_ms": [
+        5774.23
+      ],
+      "objects": 6072.0,
+      "physics_process_ms": 2.617,
+      "primitives": 3482989.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085004541.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5819.617,
+      "camera": {
+        "eye": [
+          386.583026398799,
+          1.65,
+          -49.0271101450462
+        ],
+        "fov": 78.0,
+        "id": "A1F-005-front",
+        "look": [
+          385.535450745112,
+          2.5,
+          -55.1379681248885
+        ],
+        "store_id": "A1F-005",
+        "wing": "A"
+      },
+      "draw_calls": 3731.0,
+      "file": "before/A1F-005-front.jpg",
+      "frame_ms": [
+        4090.029
+      ],
+      "objects": 3781.0,
+      "physics_process_ms": 0.717,
+      "primitives": 3410346.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085017601.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4124.282,
+      "camera": {
+        "eye": [
+          384.459218828382,
+          1.65,
+          -61.415987639147
+        ],
+        "fov": 72.0,
+        "id": "A1F-005-centre",
+        "look": [
+          383.469766727093,
+          1.55,
+          -67.1877915633335
+        ],
+        "store_id": "A1F-005",
+        "wing": "A"
+      },
+      "draw_calls": 2511.0,
+      "file": "before/A1F-005-centre.jpg",
+      "frame_ms": [
+        2918.866
+      ],
+      "objects": 2526.0,
+      "physics_process_ms": 0.856,
+      "primitives": 2176367.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085019021.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2957.942,
+      "camera": {
+        "eye": [
+          383.238894570125,
+          1.65,
+          -68.5345458123104
+        ],
+        "fov": 72.0,
+        "id": "A1F-005-rear",
+        "look": [
+          385.704414560223,
+          1.55,
+          -54.1523458700752
+        ],
+        "store_id": "A1F-005",
+        "wing": "A"
+      },
+      "draw_calls": 5724.0,
+      "file": "before/A1F-005-rear.jpg",
+      "frame_ms": [
+        4480.904
+      ],
+      "objects": 5773.0,
+      "physics_process_ms": 0.753,
+      "primitives": 3255217.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085020417.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4529.762,
+      "camera": {
+        "eye": [
+          388.205079023864,
+          1.65,
+          -39.5651364988388
+        ],
+        "fov": 78.0,
+        "id": "A1F-006-front",
+        "look": [
+          389.252654677551,
+          2.5,
+          -33.4542785189966
+        ],
+        "store_id": "A1F-006",
+        "wing": "A"
+      },
+      "draw_calls": 4787.0,
+      "file": "before/A1F-006-front.jpg",
+      "frame_ms": [
+        4889.652
+      ],
+      "objects": 4796.0,
+      "physics_process_ms": 0.654,
+      "primitives": 2986769.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085022561.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4925.61,
+      "camera": {
+        "eye": [
+          398.149091092239,
+          1.65,
+          -51.0098640924931
+        ],
+        "fov": 78.0,
+        "id": "A1F-007-front",
+        "look": [
+          397.101515438553,
+          2.5,
+          -57.1207220723355
+        ],
+        "store_id": "A1F-007",
+        "wing": "A"
+      },
+      "draw_calls": 3506.0,
+      "file": "before/A1F-007-front.jpg",
+      "frame_ms": [
+        4022.781
+      ],
+      "objects": 3546.0,
+      "physics_process_ms": 0.681,
+      "primitives": 3094182.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085077845.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4065.224,
+      "camera": {
+        "eye": [
+          402.11276277086,
+          1.65,
+          -41.9493108554667
+        ],
+        "fov": 78.0,
+        "id": "A1F-008-front",
+        "look": [
+          403.160338424547,
+          2.5,
+          -35.8384528756245
+        ],
+        "store_id": "A1F-008",
+        "wing": "A"
+      },
+      "draw_calls": 4943.0,
+      "file": "before/A1F-008-front.jpg",
+      "frame_ms": [
+        5042.277
+      ],
+      "objects": 4955.0,
+      "physics_process_ms": 0.641,
+      "primitives": 2904982.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085078529.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5098.001,
+      "camera": {
+        "eye": [
+          423.543330684716,
+          1.65,
+          -52.629234160382
+        ],
+        "fov": 78.0,
+        "id": "A1F-009-front",
+        "look": [
+          423.616266813878,
+          2.5,
+          -58.8288051391726
+        ],
+        "store_id": "A1F-009",
+        "wing": "A"
+      },
+      "draw_calls": 2459.0,
+      "file": "before/A1F-009-front.jpg",
+      "frame_ms": [
+        3259.211
+      ],
+      "objects": 2466.0,
+      "physics_process_ms": 0.933,
+      "primitives": 2186770.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085079181.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3299.334,
+      "camera": {
+        "eye": [
+          423.518179612732,
+          1.65,
+          -68.0802529599294
+        ],
+        "fov": 72.0,
+        "id": "A1F-009-centre",
+        "look": [
+          423.471686656778,
+          1.55,
+          -75.7372987262095
+        ],
+        "store_id": "A1F-009",
+        "wing": "A"
+      },
+      "draw_calls": 1267.0,
+      "file": "before/A1F-009-centre.jpg",
+      "frame_ms": [
+        1962.172
+      ],
+      "objects": 1272.0,
+      "physics_process_ms": 0.725,
+      "primitives": 1314037.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085080601.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 1999.361,
+      "camera": {
+        "eye": [
+          423.460838300389,
+          1.65,
+          -77.5239427383415
+        ],
+        "fov": 72.0,
+        "id": "A1F-009-rear",
+        "look": [
+          423.604502922078,
+          1.55,
+          -57.8288743361419
+        ],
+        "store_id": "A1F-009",
+        "wing": "A"
+      },
+      "draw_calls": 6082.0,
+      "file": "before/A1F-009-rear.jpg",
+      "frame_ms": [
+        4713.777
+      ],
+      "objects": 6095.0,
+      "physics_process_ms": 0.649,
+      "primitives": 3530775.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085081997.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4739.241,
+      "camera": {
+        "eye": [
+          422.942564561789,
+          1.65,
+          -43.0356376602474
+        ],
+        "fov": 78.0,
+        "id": "A1F-010-front",
+        "look": [
+          422.869628432626,
+          2.5,
+          -36.8360666814567
+        ],
+        "store_id": "A1F-010",
+        "wing": "A"
+      },
+      "draw_calls": 5056.0,
+      "file": "before/A1F-010-front.jpg",
+      "frame_ms": [
+        4894.013
+      ],
+      "objects": 5059.0,
+      "physics_process_ms": 0.732,
+      "primitives": 3229452.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085083413.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4930.428,
+      "camera": {
+        "eye": [
+          441.354231618535,
+          1.65,
+          -52.4196941493959
+        ],
+        "fov": 78.0,
+        "id": "A1F-011-front",
+        "look": [
+          441.427167747697,
+          2.5,
+          -58.6192651281865
+        ],
+        "store_id": "A1F-011",
+        "wing": "A"
+      },
+      "draw_calls": 2284.0,
+      "file": "before/A1F-011-front.jpg",
+      "frame_ms": [
+        3267.945
+      ],
+      "objects": 2292.0,
+      "physics_process_ms": 0.612,
+      "primitives": 1831382.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085084825.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3304.945,
+      "camera": {
+        "eye": [
+          441.241298257251,
+          1.65,
+          -42.8203584403007
+        ],
+        "fov": 78.0,
+        "id": "A1F-012-front",
+        "look": [
+          441.168362128089,
+          2.5,
+          -36.6207874615101
+        ],
+        "store_id": "A1F-012",
+        "wing": "A"
+      },
+      "draw_calls": 4694.0,
+      "file": "before/A1F-012-front.jpg",
+      "frame_ms": [
+        4380.797
+      ],
+      "objects": 4694.0,
+      "physics_process_ms": 0.69,
+      "primitives": 2977106.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085086237.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4427.316,
+      "camera": {
+        "eye": [
+          462.65275772309,
+          1.65,
+          -52.1691232540482
+        ],
+        "fov": 78.0,
+        "id": "A1F-013-front",
+        "look": [
+          462.725693852252,
+          2.5,
+          -58.3686942328388
+        ],
+        "store_id": "A1F-013",
+        "wing": "A"
+      },
+      "draw_calls": 2067.0,
+      "file": "before/A1F-013-front.jpg",
+      "frame_ms": [
+        2926.112
+      ],
+      "objects": 2073.0,
+      "physics_process_ms": 0.778,
+      "primitives": 1666719.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085084009.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2972.644,
+      "camera": {
+        "eye": [
+          460.350521083418,
+          1.65,
+          -30.6410842692902
+        ],
+        "fov": 78.0,
+        "id": "A1F-014-front",
+        "look": [
+          466.525954856368,
+          2.5,
+          -30.0897062538483
+        ],
+        "store_id": "A1F-014",
+        "wing": "A"
+      },
+      "draw_calls": 5001.0,
+      "file": "before/A1F-014-front.jpg",
+      "frame_ms": [
+        4405.926
+      ],
+      "objects": 5011.0,
+      "physics_process_ms": 0.921,
+      "primitives": 2694389.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085090517.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4436.351,
+      "camera": {
+        "eye": [
+          485.254134742778,
+          1.65,
+          -51.9032247008754
+        ],
+        "fov": 78.0,
+        "id": "A1F-015-front",
+        "look": [
+          485.32707087194,
+          2.5,
+          -58.102795679666
+        ],
+        "store_id": "A1F-015",
+        "wing": "A"
+      },
+      "draw_calls": 1935.0,
+      "file": "before/A1F-015-front.jpg",
+      "frame_ms": [
+        2986.924
+      ],
+      "objects": 1938.0,
+      "physics_process_ms": 0.857,
+      "primitives": 1590462.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085090473.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3018.229,
+      "camera": {
+        "eye": [
+          485.141201381494,
+          1.65,
+          -42.3038889917802
+        ],
+        "fov": 78.0,
+        "id": "A1F-016-front",
+        "look": [
+          485.068265252332,
+          2.5,
+          -36.1043180129896
+        ],
+        "store_id": "A1F-016",
+        "wing": "A"
+      },
+      "draw_calls": 4973.0,
+      "file": "before/A1F-016-front.jpg",
+      "frame_ms": [
+        4351.103
+      ],
+      "objects": 4980.0,
+      "physics_process_ms": 0.679,
+      "primitives": 2946486.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085091893.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4385.523,
+      "camera": {
+        "eye": [
+          504.256873867727,
+          1.65,
+          -49.8436839595037
+        ],
+        "fov": 78.0,
+        "id": "A1F-017-front",
+        "look": [
+          505.472793905584,
+          2.5,
+          -55.9232841487874
+        ],
+        "store_id": "A1F-017",
+        "wing": "A"
+      },
+      "draw_calls": 1231.0,
+      "file": "before/A1F-017-front.jpg",
+      "frame_ms": [
+        2811.223
+      ],
+      "objects": 1237.0,
+      "physics_process_ms": 0.737,
+      "primitives": 1256390.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085093305.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2843.601,
+      "camera": {
+        "eye": [
+          502.374158970401,
+          1.65,
+          -40.4301094728708
+        ],
+        "fov": 78.0,
+        "id": "A1F-018-front",
+        "look": [
+          501.158238932543,
+          2.5,
+          -34.3505092835872
+        ],
+        "store_id": "A1F-018",
+        "wing": "A"
+      },
+      "draw_calls": 5112.0,
+      "file": "before/A1F-018-front.jpg",
+      "frame_ms": [
+        4341.032
+      ],
+      "objects": 5112.0,
+      "physics_process_ms": 1.064,
+      "primitives": 3101584.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085095445.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4371.101,
+      "camera": {
+        "eye": [
+          529.942217261544,
+          1.65,
+          -44.7066152807403
+        ],
+        "fov": 78.0,
+        "id": "A1F-019-front",
+        "look": [
+          531.158137299401,
+          2.5,
+          -50.786215470024
+        ],
+        "store_id": "A1F-019",
+        "wing": "A"
+      },
+      "draw_calls": 1435.0,
+      "file": "before/A1F-019-front.jpg",
+      "frame_ms": [
+        2559.696
+      ],
+      "objects": 1437.0,
+      "physics_process_ms": 0.619,
+      "primitives": 1196493.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085096129.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2599.554,
+      "camera": {
+        "eye": [
+          519.859484662864,
+          1.65,
+          -36.933044334378
+        ],
+        "fov": 78.0,
+        "id": "A1F-020-front",
+        "look": [
+          518.643564625006,
+          2.5,
+          -30.8534441450946
+        ],
+        "store_id": "A1F-020",
+        "wing": "A"
+      },
+      "draw_calls": 4987.0,
+      "file": "before/A1F-020-front.jpg",
+      "frame_ms": [
+        4199.797
+      ],
+      "objects": 4987.0,
+      "physics_process_ms": 0.645,
+      "primitives": 2915618.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085098269.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4240.133,
+      "camera": {
+        "eye": [
+          591.508551150116,
+          1.65,
+          2.1240534457818
+        ],
+        "fov": 78.0,
+        "id": "A1F-021-front",
+        "look": [
+          593.469163299421,
+          2.5,
+          8.0058898936949
+        ],
+        "store_id": "A1F-021",
+        "wing": "A"
+      },
+      "draw_calls": 2864.0,
+      "file": "before/A1F-021-front.jpg",
+      "frame_ms": [
+        3480.59
+      ],
+      "objects": 2882.0,
+      "physics_process_ms": 0.685,
+      "primitives": 1745316.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085106905.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 3509.543,
+      "camera": {
+        "eye": [
+          556.493786310665,
+          1.65,
+          -2.51025328707842
+        ],
+        "fov": 78.0,
+        "id": "A1F-022-front",
+        "look": [
+          552.355007213002,
+          2.5,
+          2.10607724492963
+        ],
+        "store_id": "A1F-022",
+        "wing": "A"
+      },
+      "draw_calls": 9130.0,
+      "file": "before/A1F-022-front.jpg",
+      "frame_ms": [
+        4727.622
+      ],
+      "objects": 9182.0,
+      "physics_process_ms": 0.881,
+      "primitives": 4138138.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085113413.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 4762.822,
+      "camera": {
+        "eye": [
+          574.296945375053,
+          1.65,
+          17.2155121881689
+        ],
+        "fov": 78.0,
+        "id": "A1F-023-front",
+        "look": [
+          580.475529076171,
+          2.5,
+          17.730394163262
+        ],
+        "store_id": "A1F-023",
+        "wing": "A"
+      },
+      "draw_calls": 2044.0,
+      "file": "before/A1F-023-front.jpg",
+      "frame_ms": [
+        2750.8
+      ],
+      "objects": 2063.0,
+      "physics_process_ms": 0.706,
+      "primitives": 1237766.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085115217.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 2786.599,
+      "camera": {
+        "eye": [
+          565.640999432794,
+          1.65,
+          17.5291501176681
+        ],
+        "fov": 78.0,
+        "id": "A1F-024-front",
+        "look": [
+          559.462415731675,
+          2.5,
+          17.014268142575
+        ],
+        "store_id": "A1F-024",
+        "wing": "A"
+      },
+      "draw_calls": 12686.0,
+      "file": "before/A1F-024-front.jpg",
+      "frame_ms": [
+        5464.84
+      ],
+      "objects": 12776.0,
+      "physics_process_ms": 0.598,
+      "primitives": 4914785.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085150925.0,
+      "video_memory_bytes": 1825071296.0
+    },
+    {
+      "CPU_process_ms": 5508.879,
+      "camera": {
+        "eye": [
+          567.927474531385,
+          1.65,
+          39.3725449682885
+        ],
+        "fov": 78.0,
+        "id": "A1F-025-front",
+        "look": [
+          573.282903716955,
+          2.5,
+          42.4965453265382
+        ],
+        "store_id": "A1F-025",
+        "wing": "A"
+      },
+      "draw_calls": 1742.0,
+      "file": "before/A1F-025-front.jpg",
+      "frame_ms": [
+        2744.845
+      ],
+      "objects": 1746.0,
+      "physics_process_ms": 0.594,
+      "primitives": 936764.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085150409.0,
+      "video_memory_bytes": 1830838464.0
+    },
+    {
+      "CPU_process_ms": 2784.265,
+      "camera": {
+        "eye": [
+          578.784829804117,
+          1.65,
+          45.7060022107162
+        ],
+        "fov": 72.0,
+        "id": "A1F-025-centre",
+        "look": [
+          583.843119047779,
+          1.55,
+          48.6566709361853
+        ],
+        "store_id": "A1F-025",
+        "wing": "A"
+      },
+      "draw_calls": 970.0,
+      "file": "before/A1F-025-centre.jpg",
+      "frame_ms": [
+        2080.822
+      ],
+      "objects": 970.0,
+      "physics_process_ms": 0.626,
+      "primitives": 810778.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085153061.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2122.863,
+      "camera": {
+        "eye": [
+          585.023386537966,
+          1.65,
+          49.3451603054614
+        ],
+        "fov": 72.0,
+        "id": "A1F-025-rear",
+        "look": [
+          572.419124816056,
+          1.55,
+          41.992674301014
+        ],
+        "store_id": "A1F-025",
+        "wing": "A"
+      },
+      "draw_calls": 12150.0,
+      "file": "before/A1F-025-rear.jpg",
+      "frame_ms": [
+        5736.068
+      ],
+      "objects": 12243.0,
+      "physics_process_ms": 0.656,
+      "primitives": 5484765.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085154765.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5761.024,
+      "camera": {
+        "eye": [
+          560.498975983658,
+          1.65,
+          35.0392541487815
+        ],
+        "fov": 78.0,
+        "id": "A1F-026-front",
+        "look": [
+          555.143546798088,
+          2.5,
+          31.9152537905322
+        ],
+        "store_id": "A1F-026",
+        "wing": "A"
+      },
+      "draw_calls": 11574.0,
+      "file": "before/A1F-026-front.jpg",
+      "frame_ms": [
+        5163.195
+      ],
+      "objects": 11661.0,
+      "physics_process_ms": 1.108,
+      "primitives": 4409986.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085162509.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5203.997,
+      "camera": {
+        "eye": [
+          557.195021687721,
+          1.65,
+          57.7710355574255
+        ],
+        "fov": 78.0,
+        "id": "A1F-027-front",
+        "look": [
+          562.550450873292,
+          2.5,
+          60.8950359156745
+        ],
+        "store_id": "A1F-027",
+        "wing": "A"
+      },
+      "draw_calls": 1567.0,
+      "file": "before/A1F-027-front.jpg",
+      "frame_ms": [
+        2593.442
+      ],
+      "objects": 1576.0,
+      "physics_process_ms": 0.738,
+      "primitives": 933740.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085163921.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2638.214,
+      "camera": {
+        "eye": [
+          549.766523139995,
+          1.65,
+          53.4377447379182
+        ],
+        "fov": 78.0,
+        "id": "A1F-028-front",
+        "look": [
+          544.411093954425,
+          2.5,
+          50.3137443796688
+        ],
+        "store_id": "A1F-028",
+        "wing": "A"
+      },
+      "draw_calls": 11712.0,
+      "file": "before/A1F-028-front.jpg",
+      "frame_ms": [
+        5155.164
+      ],
+      "objects": 11791.0,
+      "physics_process_ms": 0.655,
+      "primitives": 4435806.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085169701.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5186.974,
+      "camera": {
+        "eye": [
+          537.665326249968,
+          1.65,
+          46.3787132187359
+        ],
+        "fov": 72.0,
+        "id": "A1F-028-centre",
+        "look": [
+          531.829635995498,
+          1.55,
+          42.9745605702952
+        ],
+        "store_id": "A1F-028",
+        "wing": "A"
+      },
+      "draw_calls": 10686.0,
+      "file": "before/A1F-028-centre.jpg",
+      "frame_ms": [
+        4528.247
+      ],
+      "objects": 10770.0,
+      "physics_process_ms": 1.255,
+      "primitives": 4252208.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085171121.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4565.096,
+      "camera": {
+        "eye": [
+          530.467974936122,
+          1.65,
+          42.180258285659
+        ],
+        "fov": 72.0,
+        "id": "A1F-028-rear",
+        "look": [
+          545.274872855323,
+          1.55,
+          50.8176154051929
+        ],
+        "store_id": "A1F-028",
+        "wing": "A"
+      },
+      "draw_calls": 3215.0,
+      "file": "before/A1F-028-rear.jpg",
+      "frame_ms": [
+        2872.078
+      ],
+      "objects": 3224.0,
+      "physics_process_ms": 0.581,
+      "primitives": 1424359.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085172517.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2908.79,
+      "camera": {
+        "eye": [
+          545.202891280248,
+          1.65,
+          78.3289733988082
+        ],
+        "fov": 78.0,
+        "id": "A1F-029-front",
+        "look": [
+          550.558320465818,
+          2.5,
+          81.4529737570573
+        ],
+        "store_id": "A1F-029",
+        "wing": "A"
+      },
+      "draw_calls": 1386.0,
+      "file": "before/A1F-029-front.jpg",
+      "frame_ms": [
+        2502.559
+      ],
+      "objects": 1401.0,
+      "physics_process_ms": 0.543,
+      "primitives": 891967.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085175053.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2530.852,
+      "camera": {
+        "eye": [
+          538.548488036012,
+          1.65,
+          72.668662059031
+        ],
+        "fov": 78.0,
+        "id": "A1F-030-front",
+        "look": [
+          533.193058850442,
+          2.5,
+          69.5446617007819
+        ],
+        "store_id": "A1F-030",
+        "wing": "A"
+      },
+      "draw_calls": 11466.0,
+      "file": "before/A1F-030-front.jpg",
+      "frame_ms": [
+        5366.124
+      ],
+      "objects": 11546.0,
+      "physics_process_ms": 0.626,
+      "primitives": 4421094.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085176465.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5396.847,
+      "camera": {
+        "eye": [
+          528.309085559845,
+          1.65,
+          99.2120647906058
+        ],
+        "fov": 78.0,
+        "id": "A1F-031-front",
+        "look": [
+          532.235159859441,
+          2.5,
+          104.010600045666
+        ],
+        "store_id": "A1F-031",
+        "wing": "A"
+      },
+      "draw_calls": 1019.0,
+      "file": "before/A1F-031-front.jpg",
+      "frame_ms": [
+        2131.168
+      ],
+      "objects": 1019.0,
+      "physics_process_ms": 0.597,
+      "primitives": 1086555.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085177877.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2175.81,
+      "camera": {
+        "eye": [
+          518.119803415437,
+          1.65,
+          96.4370260477991
+        ],
+        "fov": 78.0,
+        "id": "A1F-032-front",
+        "look": [
+          514.193729115842,
+          2.5,
+          91.6384907927387
+        ],
+        "store_id": "A1F-032",
+        "wing": "A"
+      },
+      "draw_calls": 11691.0,
+      "file": "before/A1F-032-front.jpg",
+      "frame_ms": [
+        5034.702
+      ],
+      "objects": 11769.0,
+      "physics_process_ms": 0.573,
+      "primitives": 4402460.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085179289.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5067.831,
+      "camera": {
+        "eye": [
+          503.256314432969,
+          1.65,
+          108.598062488
+        ],
+        "fov": 78.0,
+        "id": "A1F-033-front",
+        "look": [
+          499.330240133374,
+          2.5,
+          103.79952723294
+        ],
+        "store_id": "A1F-033",
+        "wing": "A"
+      },
+      "draw_calls": 11361.0,
+      "file": "before/A1F-033-front.jpg",
+      "frame_ms": [
+        4752.976
+      ],
+      "objects": 11451.0,
+      "physics_process_ms": 1.017,
+      "primitives": 4278903.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085181625.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4796.604,
+      "camera": {
+        "eye": [
+          450.4,
+          1.65,
+          123.353285086781
+        ],
+        "fov": 78.0,
+        "id": "A1F-034-front",
+        "look": [
+          444.2,
+          2.5,
+          123.353285086781
+        ],
+        "store_id": "A1F-034",
+        "wing": "A"
+      },
+      "draw_calls": 9275.0,
+      "file": "before/A1F-034-front.jpg",
+      "frame_ms": [
+        4138.501
+      ],
+      "objects": 9336.0,
+      "physics_process_ms": 0.773,
+      "primitives": 3705518.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085241209.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4170.802,
+      "camera": {
+        "eye": [
+          462.094526239898,
+          1.65,
+          107.440985031296
+        ],
+        "fov": 78.0,
+        "id": "A1F-035-front",
+        "look": [
+          459.652226588707,
+          2.5,
+          101.742285845184
+        ],
+        "store_id": "A1F-035",
+        "wing": "A"
+      },
+      "draw_calls": 9476.0,
+      "file": "before/A1F-035-front.jpg",
+      "frame_ms": [
+        4529.01
+      ],
+      "objects": 9566.0,
+      "physics_process_ms": 0.647,
+      "primitives": 3701200.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085275033.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4568.961,
+      "camera": {
+        "eye": [
+          431.660703427279,
+          1.65,
+          106.456561579933
+        ],
+        "fov": 78.0,
+        "id": "A1F-036-front",
+        "look": [
+          428.131601558531,
+          2.5,
+          111.554153168125
+        ],
+        "store_id": "A1F-036",
+        "wing": "A"
+      },
+      "draw_calls": 1255.0,
+      "file": "before/A1F-036-front.jpg",
+      "frame_ms": [
+        2397.655
+      ],
+      "objects": 1261.0,
+      "physics_process_ms": 0.587,
+      "primitives": 1153410.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085276445.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2431.209,
+      "camera": {
+        "eye": [
+          433.082718286341,
+          1.65,
+          96.9811919141112
+        ],
+        "fov": 78.0,
+        "id": "A1F-037-front",
+        "look": [
+          436.611820155088,
+          2.5,
+          91.8836003259197
+        ],
+        "store_id": "A1F-037",
+        "wing": "A"
+      },
+      "draw_calls": 5732.0,
+      "file": "before/A1F-037-front.jpg",
+      "frame_ms": [
+        4338.483
+      ],
+      "objects": 5770.0,
+      "physics_process_ms": 0.627,
+      "primitives": 2881873.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085286593.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4375.414,
+      "camera": {
+        "eye": [
+          417.988904615922,
+          1.65,
+          96.9914700951474
+        ],
+        "fov": 78.0,
+        "id": "A1F-038-front",
+        "look": [
+          414.459802747174,
+          2.5,
+          102.089061683339
+        ],
+        "store_id": "A1F-038",
+        "wing": "A"
+      },
+      "draw_calls": 1309.0,
+      "file": "before/A1F-038-front.jpg",
+      "frame_ms": [
+        3058.777
+      ],
+      "objects": 1309.0,
+      "physics_process_ms": 0.665,
+      "primitives": 1159888.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085292373.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3110.616,
+      "camera": {
+        "eye": [
+          420.882375157413,
+          1.65,
+          88.5348005171616
+        ],
+        "fov": 78.0,
+        "id": "A1F-039-front",
+        "look": [
+          424.411477026161,
+          2.5,
+          83.4372089289698
+        ],
+        "store_id": "A1F-039",
+        "wing": "A"
+      },
+      "draw_calls": 5870.0,
+      "file": "before/A1F-039-front.jpg",
+      "frame_ms": [
+        4937.577
+      ],
+      "objects": 5928.0,
+      "physics_process_ms": 0.755,
+      "primitives": 3033796.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085298881.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4976.466,
+      "camera": {
+        "eye": [
+          399.274912707417,
+          1.65,
+          79.4783507612485
+        ],
+        "fov": 78.0,
+        "id": "A1F-040-front",
+        "look": [
+          394.73443120563,
+          2.5,
+          83.7002019822089
+        ],
+        "store_id": "A1F-040",
+        "wing": "A"
+      },
+      "draw_calls": 4254.0,
+      "file": "before/A1F-040-front.jpg",
+      "frame_ms": [
+        3805.226
+      ],
+      "objects": 4286.0,
+      "physics_process_ms": 0.856,
+      "primitives": 2551695.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085302701.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3860.062,
+      "camera": {
+        "eye": [
+          405.572999951832,
+          1.65,
+          73.6222345515292
+        ],
+        "fov": 78.0,
+        "id": "A1F-041-front",
+        "look": [
+          410.11348145362,
+          2.5,
+          69.4003833305689
+        ],
+        "store_id": "A1F-041",
+        "wing": "A"
+      },
+      "draw_calls": 5927.0,
+      "file": "before/A1F-041-front.jpg",
+      "frame_ms": [
+        4835.425
+      ],
+      "objects": 5971.0,
+      "physics_process_ms": 0.721,
+      "primitives": 3281423.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085304841.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4876.494,
+      "camera": {
+        "eye": [
+          383.068451568892,
+          1.65,
+          62.0487604801929
+        ],
+        "fov": 78.0,
+        "id": "A1F-042-front",
+        "look": [
+          378.527970067104,
+          2.5,
+          66.2706117011533
+        ],
+        "store_id": "A1F-042",
+        "wing": "A"
+      },
+      "draw_calls": 4768.0,
+      "file": "before/A1F-042-front.jpg",
+      "frame_ms": [
+        3951.852
+      ],
+      "objects": 4798.0,
+      "physics_process_ms": 1.252,
+      "primitives": 2787349.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085309165.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3987.212,
+      "camera": {
+        "eye": [
+          389.366538813307,
+          1.65,
+          56.1926442704737
+        ],
+        "fov": 78.0,
+        "id": "A1F-043-front",
+        "look": [
+          393.907020315094,
+          2.5,
+          51.9707930495132
+        ],
+        "store_id": "A1F-043",
+        "wing": "A"
+      },
+      "draw_calls": 6197.0,
+      "file": "before/A1F-043-front.jpg",
+      "frame_ms": [
+        4966.279
+      ],
+      "objects": 6234.0,
+      "physics_process_ms": 0.896,
+      "primitives": 3800481.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085322297.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5002.008,
+      "camera": {
+        "eye": [
+          370.607181029605,
+          1.65,
+          48.6470166926585
+        ],
+        "fov": 78.0,
+        "id": "A1F-044-front",
+        "look": [
+          366.066699527818,
+          2.5,
+          52.868867913619
+        ],
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "draw_calls": 5037.0,
+      "file": "before/A1F-044-front.jpg",
+      "frame_ms": [
+        4228.388
+      ],
+      "objects": 5073.0,
+      "physics_process_ms": 0.718,
+      "primitives": 3070489.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085325133.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4267.028,
+      "camera": {
+        "eye": [
+          362.105056183936,
+          1.65,
+          56.5525011982815
+        ],
+        "fov": 72.0,
+        "id": "A1F-044-centre",
+        "look": [
+          358.255899607582,
+          1.55,
+          60.1315415236634
+        ],
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "draw_calls": 3778.0,
+      "file": "before/A1F-044-centre.jpg",
+      "frame_ms": [
+        3101.284
+      ],
+      "objects": 3808.0,
+      "physics_process_ms": 0.632,
+      "primitives": 2639079.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085325825.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3132.211,
+      "camera": {
+        "eye": [
+          357.357763073099,
+          1.65,
+          60.9666509329192
+        ],
+        "fov": 72.0,
+        "id": "A1F-044-rear",
+        "look": [
+          366.799035253913,
+          1.55,
+          52.1879241683028
+        ],
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "draw_calls": 6666.0,
+      "file": "before/A1F-044-rear.jpg",
+      "frame_ms": [
+        4329.59
+      ],
+      "objects": 6701.0,
+      "physics_process_ms": 0.641,
+      "primitives": 3724410.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085327253.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4369.252,
+      "camera": {
+        "eye": [
+          376.905268274021,
+          1.65,
+          42.7909004829393
+        ],
+        "fov": 78.0,
+        "id": "A1F-045-front",
+        "look": [
+          381.445749775808,
+          2.5,
+          38.569049261979
+        ],
+        "store_id": "A1F-045",
+        "wing": "A"
+      },
+      "draw_calls": 6069.0,
+      "file": "before/A1F-045-front.jpg",
+      "frame_ms": [
+        4725.153
+      ],
+      "objects": 6102.0,
+      "physics_process_ms": 0.736,
+      "primitives": 3830188.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085329333.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4757.51,
+      "camera": {
+        "eye": [
+          347.239518995338,
+          1.65,
+          27.9403927425937
+        ],
+        "fov": 78.0,
+        "id": "A1F-046-front",
+        "look": [
+          348.659562864436,
+          2.5,
+          21.9052062989255
+        ],
+        "store_id": "A1F-046",
+        "wing": "A"
+      },
+      "draw_calls": 5478.0,
+      "file": "before/A1F-046-front.jpg",
+      "frame_ms": [
+        4514.79
+      ],
+      "objects": 5514.0,
+      "physics_process_ms": 4.091,
+      "primitives": 3841585.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085332929.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4546.063,
+      "camera": {
+        "eye": [
+          361.397368004808,
+          1.65,
+          19.259038550064
+        ],
+        "fov": 78.0,
+        "id": "A1F-047-front",
+        "look": [
+          367.296324019845,
+          2.5,
+          17.3505527804931
+        ],
+        "store_id": "A1F-047",
+        "wing": "A"
+      },
+      "draw_calls": 6702.0,
+      "file": "before/A1F-047-front.jpg",
+      "frame_ms": [
+        4805.851
+      ],
+      "objects": 6714.0,
+      "physics_process_ms": 0.646,
+      "primitives": 4228358.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085334341.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4837.292,
+      "camera": {
+        "eye": [
+          347.187312024301,
+          1.65,
+          3.27542699445466
+        ],
+        "fov": 78.0,
+        "id": "A1F-048-front",
+        "look": [
+          341.288356009264,
+          2.5,
+          5.18391276402553
+        ],
+        "store_id": "A1F-048",
+        "wing": "A"
+      },
+      "draw_calls": 7525.0,
+      "file": "before/A1F-048-front.jpg",
+      "frame_ms": [
+        4053.793
+      ],
+      "objects": 7591.0,
+      "physics_process_ms": 0.607,
+      "primitives": 3554060.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085336481.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4093.186,
+      "camera": {
+        "eye": [
+          356.742568947494,
+          1.65,
+          4.87147782745645
+        ],
+        "fov": 78.0,
+        "id": "A1F-049-front",
+        "look": [
+          362.641524962531,
+          2.5,
+          2.96299205788558
+        ],
+        "store_id": "A1F-049",
+        "wing": "A"
+      },
+      "draw_calls": 6377.0,
+      "file": "before/A1F-049-front.jpg",
+      "frame_ms": [
+        4710.423
+      ],
+      "objects": 6393.0,
+      "physics_process_ms": 0.73,
+      "primitives": 3820873.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085337165.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4758.912,
+      "camera": {
+        "eye": [
+          321.247951784123,
+          1.65,
+          -3.2
+        ],
+        "fov": 78.0,
+        "id": "A1F-050-front",
+        "look": [
+          321.247951784123,
+          2.5,
+          3.0
+        ],
+        "store_id": "A1F-050",
+        "wing": "A"
+      },
+      "draw_calls": 3200.0,
+      "file": "before/A1F-050-front.jpg",
+      "frame_ms": [
+        3545.708
+      ],
+      "objects": 3200.0,
+      "physics_process_ms": 0.648,
+      "primitives": 2355334.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085339305.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3582.994,
+      "camera": {
+        "eye": [
+          325.5,
+          1.65,
+          -61.8
+        ],
+        "fov": 78.0,
+        "id": "A1F-051-front",
+        "look": [
+          325.5,
+          2.5,
+          -68.0
+        ],
+        "store_id": "A1F-051",
+        "wing": "A"
+      },
+      "draw_calls": 2870.0,
+      "file": "before/A1F-051-front.jpg",
+      "frame_ms": [
+        4623.417
+      ],
+      "objects": 2906.0,
+      "physics_process_ms": 0.896,
+      "primitives": 3851699.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085351285.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4669.622,
+      "camera": {
+        "eye": [
+          322.314053539501,
+          1.65,
+          -72.9577646937687
+        ],
+        "fov": 72.0,
+        "id": "A1F-051-centre",
+        "look": [
+          320.16048356099,
+          1.55,
+          -77.8975158319791
+        ],
+        "store_id": "A1F-051",
+        "wing": "A"
+      },
+      "draw_calls": 3251.0,
+      "file": "before/A1F-051-centre.jpg",
+      "frame_ms": [
+        3619.978
+      ],
+      "objects": 3279.0,
+      "physics_process_ms": 0.63,
+      "primitives": 3118129.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085361441.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3667.012,
+      "camera": {
+        "eye": [
+          319.657983899337,
+          1.65,
+          -79.0501244308948
+        ],
+        "fov": 72.0,
+        "id": "A1F-051-rear",
+        "look": [
+          325.5,
+          1.55,
+          -67.0
+        ],
+        "store_id": "A1F-051",
+        "wing": "A"
+      },
+      "draw_calls": 6408.0,
+      "file": "before/A1F-051-rear.jpg",
+      "frame_ms": [
+        5803.407
+      ],
+      "objects": 6464.0,
+      "physics_process_ms": 0.766,
+      "primitives": 5353230.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085362837.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5839.056,
+      "camera": {
+        "eye": [
+          612.353835193377,
+          1.65,
+          -42.0829608726732
+        ],
+        "fov": 78.0,
+        "id": "A1F-052-front",
+        "look": [
+          617.480779506209,
+          2.5,
+          -45.5692830053983
+        ],
+        "store_id": "A1F-052",
+        "wing": "A"
+      },
+      "draw_calls": 919.0,
+      "file": "before/A1F-052-front.jpg",
+      "frame_ms": [
+        2409.623
+      ],
+      "objects": 919.0,
+      "physics_process_ms": 1.721,
+      "primitives": 956218.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085385877.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2441.304,
+      "camera": {
+        "eye": [
+          194.536483508446,
+          1.65,
+          -15.8
+        ],
+        "fov": 78.0,
+        "id": "B1-AE1-front",
+        "look": [
+          194.536483508446,
+          2.5,
+          -22.0
+        ],
+        "store_id": "B1-AE1",
+        "wing": "B"
+      },
+      "draw_calls": 3344.0,
+      "file": "before/B1-AE1-front.jpg",
+      "frame_ms": [
+        3294.493
+      ],
+      "objects": 3362.0,
+      "physics_process_ms": 1.012,
+      "primitives": 2439000.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085411189.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3335.233,
+      "camera": {
+        "eye": [
+          216.680675059885,
+          1.65,
+          -32.7200092362057
+        ],
+        "fov": 72.0,
+        "id": "B1-AE1-centre",
+        "look": [
+          231.062747604574,
+          1.55,
+          -40.9813221488612
+        ],
+        "store_id": "B1-AE1",
+        "wing": "B"
+      },
+      "draw_calls": 4053.0,
+      "file": "before/B1-AE1-centre.jpg",
+      "frame_ms": [
+        3477.589
+      ],
+      "objects": 4085.0,
+      "physics_process_ms": 1.256,
+      "primitives": 3423954.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085411877.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3513.719,
+      "camera": {
+        "eye": [
+          234.418564531668,
+          1.65,
+          -42.9089618284809
+        ],
+        "fov": 72.0,
+        "id": "B1-AE1-rear",
+        "look": [
+          194.536483508446,
+          1.55,
+          -21.0
+        ],
+        "store_id": "B1-AE1",
+        "wing": "B"
+      },
+      "draw_calls": 6314.0,
+      "file": "before/B1-AE1-rear.jpg",
+      "frame_ms": [
+        4507.224
+      ],
+      "objects": 6366.0,
+      "physics_process_ms": 0.665,
+      "primitives": 3657001.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085424917.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4534.214,
+      "camera": {
+        "eye": [
+          176.683654062273,
+          1.65,
+          35.5948325669128
+        ],
+        "fov": 78.0,
+        "id": "B1-011-front",
+        "look": [
+          181.589578622575,
+          2.5,
+          39.3858620060794
+        ],
+        "store_id": "B1-011",
+        "wing": "B"
+      },
+      "draw_calls": 3954.0,
+      "file": "before/B1-011-front.jpg",
+      "frame_ms": [
+        3592.061
+      ],
+      "objects": 3954.0,
+      "physics_process_ms": 1.032,
+      "primitives": 2756983.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085430273.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3625.207,
+      "camera": {
+        "eye": [
+          181.564580760302,
+          1.65,
+          29.2788059903064
+        ],
+        "fov": 78.0,
+        "id": "B1-024-front",
+        "look": [
+          186.470055286605,
+          2.5,
+          33.0704177415001
+        ],
+        "store_id": "B1-024",
+        "wing": "B"
+      },
+      "draw_calls": 4067.0,
+      "file": "before/B1-024-front.jpg",
+      "frame_ms": [
+        3655.823
+      ],
+      "objects": 4067.0,
+      "physics_process_ms": 0.814,
+      "primitives": 2787228.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085433861.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3694.307,
+      "camera": {
+        "eye": [
+          183.048581223364,
+          1.65,
+          -46.6223493129038
+        ],
+        "fov": 78.0,
+        "id": "B1-032-front",
+        "look": [
+          188.850933562293,
+          2.5,
+          -44.4376966322857
+        ],
+        "store_id": "B1-032",
+        "wing": "B"
+      },
+      "draw_calls": 5279.0,
+      "file": "before/B1-032-front.jpg",
+      "frame_ms": [
+        4654.657
+      ],
+      "objects": 5301.0,
+      "physics_process_ms": 0.668,
+      "primitives": 4055677.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085439633.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4691.919,
+      "camera": {
+        "eye": [
+          185.095045100224,
+          1.65,
+          11.3652694042987
+        ],
+        "fov": 78.0,
+        "id": "B1-037-front",
+        "look": [
+          191.176631125674,
+          2.5,
+          10.1593210575377
+        ],
+        "store_id": "B1-037",
+        "wing": "B"
+      },
+      "draw_calls": 5268.0,
+      "file": "before/B1-037-front.jpg",
+      "frame_ms": [
+        4466.936
+      ],
+      "objects": 5304.0,
+      "physics_process_ms": 0.854,
+      "primitives": 3876306.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085441037.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4499.337,
+      "camera": {
+        "eye": [
+          189.838125069334,
+          1.65,
+          -18.6781490068991
+        ],
+        "fov": 78.0,
+        "id": "B1-045-front",
+        "look": [
+          184.339257747499,
+          2.5,
+          -15.8141556101098
+        ],
+        "store_id": "B1-045",
+        "wing": "B"
+      },
+      "draw_calls": 6383.0,
+      "file": "before/B1-045-front.jpg",
+      "frame_ms": [
+        3500.748
+      ],
+      "objects": 6463.0,
+      "physics_process_ms": 0.775,
+      "primitives": 3609732.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085443169.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3538.479,
+      "camera": {
+        "eye": [
+          -226.8,
+          1.65,
+          -14.047
+        ],
+        "fov": 78.0,
+        "id": "B1-AW1-front",
+        "look": [
+          -233.0,
+          2.5,
+          -14.047
+        ],
+        "store_id": "B1-AW1",
+        "wing": "B"
+      },
+      "draw_calls": 1503.0,
+      "file": "before/B1-AW1-front.jpg",
+      "frame_ms": [
+        2818.087
+      ],
+      "objects": 1519.0,
+      "physics_process_ms": 0.648,
+      "primitives": 2031943.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085506861.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2850.975,
+      "camera": {
+        "eye": [
+          -271.440213791909,
+          1.65,
+          -21.2746429945201
+        ],
+        "fov": 72.0,
+        "id": "B1-AW1-centre",
+        "look": [
+          -297.330598378967,
+          1.55,
+          -25.9018800746445
+        ],
+        "store_id": "B1-AW1",
+        "wing": "B"
+      },
+      "draw_calls": 743.0,
+      "file": "before/B1-AW1-centre.jpg",
+      "frame_ms": [
+        1933.203
+      ],
+      "objects": 743.0,
+      "physics_process_ms": 0.817,
+      "primitives": 1615638.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085600413.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 1964.653,
+      "camera": {
+        "eye": [
+          -303.371688115948,
+          1.65,
+          -26.9815687266736
+        ],
+        "fov": 72.0,
+        "id": "B1-AW1-rear",
+        "look": [
+          -232.0,
+          1.55,
+          -14.047
+        ],
+        "store_id": "B1-AW1",
+        "wing": "B"
+      },
+      "draw_calls": 8937.0,
+      "file": "before/B1-AW1-rear.jpg",
+      "frame_ms": [
+        4756.767
+      ],
+      "objects": 9009.0,
+      "physics_process_ms": 0.656,
+      "primitives": 5226369.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085610429.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4784.862,
+      "camera": {
+        "eye": [
+          -275.058989738499,
+          1.65,
+          3.67108193291142
+        ],
+        "fov": 78.0,
+        "id": "B1-001-front",
+        "look": [
+          -276.36617055258,
+          2.5,
+          -2.38955155867175
+        ],
+        "store_id": "B1-001",
+        "wing": "B"
+      },
+      "draw_calls": 2751.0,
+      "file": "before/B1-001-front.jpg",
+      "frame_ms": [
+        3547.616
+      ],
+      "objects": 2775.0,
+      "physics_process_ms": 0.917,
+      "primitives": 2689682.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085624017.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3584.004,
+      "camera": {
+        "eye": [
+          -264.538556547784,
+          1.65,
+          1.40179470095074
+        ],
+        "fov": 78.0,
+        "id": "B1-015-front",
+        "look": [
+          -265.845679876481,
+          2.5,
+          -4.65885118901662
+        ],
+        "store_id": "B1-015",
+        "wing": "B"
+      },
+      "draw_calls": 3002.0,
+      "file": "before/B1-015-front.jpg",
+      "frame_ms": [
+        4164.93
+      ],
+      "objects": 3029.0,
+      "physics_process_ms": 0.654,
+      "primitives": 2931649.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085629789.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4204.233,
+      "camera": {
+        "eye": [
+          -251.701870106035,
+          1.65,
+          -1.36667174385066
+        ],
+        "fov": 78.0,
+        "id": "B1-028-front",
+        "look": [
+          -253.009050920115,
+          2.5,
+          -7.42730523543393
+        ],
+        "store_id": "B1-028",
+        "wing": "B"
+      },
+      "draw_calls": 3246.0,
+      "file": "before/B1-028-front.jpg",
+      "frame_ms": [
+        4715.16
+      ],
+      "objects": 3281.0,
+      "physics_process_ms": 0.678,
+      "primitives": 3393447.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085631193.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4755.794,
+      "camera": {
+        "eye": [
+          -95.9440305959567,
+          1.65,
+          -9.08077467264985
+        ],
+        "fov": 78.0,
+        "id": "B1-003-front",
+        "look": [
+          -89.7984199398611,
+          2.5,
+          -8.26134214724994
+        ],
+        "store_id": "B1-003",
+        "wing": "B"
+      },
+      "draw_calls": 9423.0,
+      "file": "before/B1-003-front.jpg",
+      "frame_ms": [
+        5545.633
+      ],
+      "objects": 9503.0,
+      "physics_process_ms": 2.477,
+      "primitives": 5266623.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085658805.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5582.823,
+      "camera": {
+        "eye": [
+          -76.6977483953102,
+          1.65,
+          7.97704352068833
+        ],
+        "fov": 78.0,
+        "id": "B1-017-front",
+        "look": [
+          -78.1992678051016,
+          2.5,
+          1.96161008144061
+        ],
+        "store_id": "B1-017",
+        "wing": "B"
+      },
+      "draw_calls": 6819.0,
+      "file": "before/B1-017-front.jpg",
+      "frame_ms": [
+        5133.582
+      ],
+      "objects": 6853.0,
+      "physics_process_ms": 0.802,
+      "primitives": 3513932.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085692433.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5167.836,
+      "camera": {
+        "eye": [
+          -59.060048905522,
+          1.65,
+          3.56730975084095
+        ],
+        "fov": 78.0,
+        "id": "B1-030-front",
+        "look": [
+          -60.5634899129602,
+          2.5,
+          -2.447643710089
+        ],
+        "store_id": "B1-030",
+        "wing": "B"
+      },
+      "draw_calls": 7225.0,
+      "file": "before/B1-030-front.jpg",
+      "frame_ms": [
+        4947.429
+      ],
+      "objects": 7261.0,
+      "physics_process_ms": 4.747,
+      "primitives": 3543464.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085695293.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5014.822,
+      "camera": {
+        "eye": [
+          -61.9580706655596,
+          1.65,
+          -9.56301526367174
+        ],
+        "fov": 72.0,
+        "id": "B1-030-centre",
+        "look": [
+          -63.2598122852325,
+          1.55,
+          -15.8347722719136
+        ],
+        "store_id": "B1-030",
+        "wing": "B"
+      },
+      "draw_calls": 6292.0,
+      "file": "before/B1-030-centre.jpg",
+      "frame_ms": [
+        4491.233
+      ],
+      "objects": 6320.0,
+      "physics_process_ms": 1.304,
+      "primitives": 3346065.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085695981.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4524.941,
+      "camera": {
+        "eye": [
+          -63.5635519964895,
+          1.65,
+          -17.2981822405034
+        ],
+        "fov": 72.0,
+        "id": "B1-030-rear",
+        "look": [
+          -60.3209994278895,
+          1.55,
+          -1.47748992606804
+        ],
+        "store_id": "B1-030",
+        "wing": "B"
+      },
+      "draw_calls": 4384.0,
+      "file": "before/B1-030-rear.jpg",
+      "frame_ms": [
+        3952.482
+      ],
+      "objects": 4396.0,
+      "physics_process_ms": 0.755,
+      "primitives": 3314892.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085697373.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3985.944,
+      "camera": {
+        "eye": [
+          -72.5016085829243,
+          1.65,
+          -41.3838901055796
+        ],
+        "fov": 78.0,
+        "id": "B1-038-front",
+        "look": [
+          -71.9927854933916,
+          2.5,
+          -35.204804488471
+        ],
+        "store_id": "B1-038",
+        "wing": "B"
+      },
+      "draw_calls": 6252.0,
+      "file": "before/B1-038-front.jpg",
+      "frame_ms": [
+        4559.468
+      ],
+      "objects": 6284.0,
+      "physics_process_ms": 0.753,
+      "primitives": 3754845.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085698781.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4591.997,
+      "camera": {
+        "eye": [
+          -80.0667133044317,
+          1.65,
+          -26.7671008227681
+        ],
+        "fov": 72.0,
+        "id": "B1-038-centre",
+        "look": [
+          -85.3879729567342,
+          1.55,
+          -19.749743628194
+        ],
+        "store_id": "B1-038",
+        "wing": "B"
+      },
+      "draw_calls": 4519.0,
+      "file": "before/B1-038-centre.jpg",
+      "frame_ms": [
+        3952.617
+      ],
+      "objects": 4525.0,
+      "physics_process_ms": 1.121,
+      "primitives": 3213146.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085699469.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3985.879,
+      "camera": {
+        "eye": [
+          -86.6296002089381,
+          1.65,
+          -18.1123602827934
+        ],
+        "fov": 72.0,
+        "id": "B1-038-rear",
+        "look": [
+          -72.0748537336388,
+          1.55,
+          -36.2014312009079
+        ],
+        "store_id": "B1-038",
+        "wing": "B"
+      },
+      "draw_calls": 7191.0,
+      "file": "before/B1-038-rear.jpg",
+      "frame_ms": [
+        4477.078
+      ],
+      "objects": 7252.0,
+      "physics_process_ms": 0.761,
+      "primitives": 4078286.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085699405.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4505.335,
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "draw_calls": 6191.0,
+      "file": "before/B1-040-front.jpg",
+      "frame_ms": [
+        4611.559
+      ],
+      "objects": 6205.0,
+      "physics_process_ms": 0.679,
+      "primitives": 3928121.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085702997.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4649.985,
+      "camera": {
+        "eye": [
+          -34.8012865156798,
+          1.65,
+          -16.7825656700315
+        ],
+        "fov": 72.0,
+        "id": "B1-040-centre",
+        "look": [
+          -37.5738002487532,
+          1.55,
+          -20.1578351002096
+        ],
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "draw_calls": 5804.0,
+      "file": "before/B1-040-centre.jpg",
+      "frame_ms": [
+        4242.846
+      ],
+      "objects": 5828.0,
+      "physics_process_ms": 0.931,
+      "primitives": 3422163.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085704413.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4290.988,
+      "camera": {
+        "eye": [
+          -38.2207201198037,
+          1.65,
+          -20.9453979672512
+        ],
+        "fov": 72.0,
+        "id": "B1-040-rear",
+        "look": [
+          -32.0,
+          1.55,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "draw_calls": 6418.0,
+      "file": "before/B1-040-rear.jpg",
+      "frame_ms": [
+        3933.786
+      ],
+      "objects": 6459.0,
+      "physics_process_ms": 0.669,
+      "primitives": 4049824.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085705805.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3967.694,
+      "camera": {
+        "eye": [
+          -46.0178922094391,
+          1.65,
+          0.306751397572626
+        ],
+        "fov": 78.0,
+        "id": "B1-043-front",
+        "look": [
+          -47.5216130846644,
+          2.5,
+          -5.70813210332842
+        ],
+        "store_id": "B1-043",
+        "wing": "B"
+      },
+      "draw_calls": 6982.0,
+      "file": "before/B1-043-front.jpg",
+      "frame_ms": [
+        4439.632
+      ],
+      "objects": 7018.0,
+      "physics_process_ms": 1.462,
+      "primitives": 3438483.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085707941.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4477.099,
+      "camera": {
+        "eye": [
+          -40.2842174724518,
+          1.65,
+          -44.0366832149264
+        ],
+        "fov": 78.0,
+        "id": "B1-N01-front",
+        "look": [
+          -39.7751852478961,
+          2.5,
+          -37.8576148228172
+        ],
+        "store_id": "B1-N01",
+        "wing": "B"
+      },
+      "draw_calls": 6056.0,
+      "file": "before/B1-N01-front.jpg",
+      "frame_ms": [
+        4930.148
+      ],
+      "objects": 6115.0,
+      "physics_process_ms": 0.586,
+      "primitives": 3744883.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085707889.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4964.936,
+      "camera": {
+        "eye": [
+          -88.9513136448389,
+          1.65,
+          -42.6382778302823
+        ],
+        "fov": 78.0,
+        "id": "B1-013-front",
+        "look": [
+          -89.4601714750293,
+          2.5,
+          -48.8173605865378
+        ],
+        "store_id": "B1-013",
+        "wing": "B"
+      },
+      "draw_calls": 4781.0,
+      "file": "before/B1-013-front.jpg",
+      "frame_ms": [
+        3569.695
+      ],
+      "objects": 4807.0,
+      "physics_process_ms": 0.698,
+      "primitives": 2448496.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085707837.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3608.929,
+      "camera": {
+        "eye": [
+          -81.5285691625609,
+          1.65,
+          -43.2495532898133
+        ],
+        "fov": 78.0,
+        "id": "B1-026-front",
+        "look": [
+          -82.0374269927514,
+          2.5,
+          -49.4286360460688
+        ],
+        "store_id": "B1-026",
+        "wing": "B"
+      },
+      "draw_calls": 4642.0,
+      "file": "before/B1-026-front.jpg",
+      "frame_ms": [
+        3970.218
+      ],
+      "objects": 4666.0,
+      "physics_process_ms": 0.684,
+      "primitives": 2460880.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085709241.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3998.329,
+      "camera": {
+        "eye": [
+          -70.6361184582883,
+          1.65,
+          -44.1465648770462
+        ],
+        "fov": 78.0,
+        "id": "B1-039-front",
+        "look": [
+          -71.1449762884787,
+          2.5,
+          -50.3256476333016
+        ],
+        "store_id": "B1-039",
+        "wing": "B"
+      },
+      "draw_calls": 4626.0,
+      "file": "before/B1-039-front.jpg",
+      "frame_ms": [
+        3456.134
+      ],
+      "objects": 4650.0,
+      "physics_process_ms": 0.866,
+      "primitives": 2463066.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085712101.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3501.584,
+      "camera": {
+        "eye": [
+          -56.6733355780942,
+          1.65,
+          -45.2964234693497
+        ],
+        "fov": 78.0,
+        "id": "B1-048-front",
+        "look": [
+          -57.1821934082846,
+          2.5,
+          -51.4755062256052
+        ],
+        "store_id": "B1-048",
+        "wing": "B"
+      },
+      "draw_calls": 4734.0,
+      "file": "before/B1-048-front.jpg",
+      "frame_ms": [
+        3629.295
+      ],
+      "objects": 4762.0,
+      "physics_process_ms": 0.814,
+      "primitives": 2465969.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085712777.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3685.615,
+      "camera": {
+        "eye": [
+          -47.9516356965648,
+          1.65,
+          -46.0146700849649
+        ],
+        "fov": 78.0,
+        "id": "B1-055-front",
+        "look": [
+          -48.4604935267553,
+          2.5,
+          -52.1937528412204
+        ],
+        "store_id": "B1-055",
+        "wing": "B"
+      },
+      "draw_calls": 4674.0,
+      "file": "before/B1-055-front.jpg",
+      "frame_ms": [
+        4802.125
+      ],
+      "objects": 4702.0,
+      "physics_process_ms": 0.825,
+      "primitives": 2458123.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085714181.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4869.549,
+      "camera": {
+        "eye": [
+          -31.9511837860779,
+          1.65,
+          -47.3323341400374
+        ],
+        "fov": 78.0,
+        "id": "B1-061-front",
+        "look": [
+          -32.4600416162684,
+          2.5,
+          -53.5114168962929
+        ],
+        "store_id": "B1-061",
+        "wing": "B"
+      },
+      "draw_calls": 4554.0,
+      "file": "before/B1-061-front.jpg",
+      "frame_ms": [
+        4546.7
+      ],
+      "objects": 4582.0,
+      "physics_process_ms": 0.745,
+      "primitives": 2460015.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085715585.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4576.753,
+      "camera": {
+        "eye": [
+          -19.7602641679203,
+          1.65,
+          -48.3363763903282
+        ],
+        "fov": 78.0,
+        "id": "B1-066-front",
+        "look": [
+          -20.2699399879256,
+          2.5,
+          -54.5153917292396
+        ],
+        "store_id": "B1-066",
+        "wing": "B"
+      },
+      "draw_calls": 4315.0,
+      "file": "before/B1-066-front.jpg",
+      "frame_ms": [
+        4009.22
+      ],
+      "objects": 4343.0,
+      "physics_process_ms": 0.971,
+      "primitives": 2429959.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085716989.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4056.688,
+      "camera": {
+        "eye": [
+          169.021144516485,
+          1.65,
+          41.2577420785505
+        ],
+        "fov": 78.0,
+        "id": "B1-010-front",
+        "look": [
+          164.115160717742,
+          2.5,
+          37.4667893003594
+        ],
+        "store_id": "B1-010",
+        "wing": "B"
+      },
+      "draw_calls": 8028.0,
+      "file": "before/B1-010-front.jpg",
+      "frame_ms": [
+        4889.49
+      ],
+      "objects": 8092.0,
+      "physics_process_ms": 0.786,
+      "primitives": 3910591.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085720901.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4928.09,
+      "camera": {
+        "eye": [
+          88.8343920979061,
+          1.65,
+          31.0678054115446
+        ],
+        "fov": 78.0,
+        "id": "B1-052-front",
+        "look": [
+          90.9042337660742,
+          2.5,
+          36.9120979665691
+        ],
+        "store_id": "B1-052",
+        "wing": "B"
+      },
+      "draw_calls": 2710.0,
+      "file": "before/B1-052-front.jpg",
+      "frame_ms": [
+        3361.622
+      ],
+      "objects": 2710.0,
+      "physics_process_ms": 1.309,
+      "primitives": 2102643.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085750161.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3408.521,
+      "camera": {
+        "eye": [
+          100.356201358793,
+          1.65,
+          42.2932874322017
+        ],
+        "fov": 72.0,
+        "id": "B1-052-centre",
+        "look": [
+          107.188665285436,
+          1.55,
+          47.1993546126542
+        ],
+        "store_id": "B1-052",
+        "wing": "B"
+      },
+      "draw_calls": 5769.0,
+      "file": "before/B1-052-centre.jpg",
+      "frame_ms": [
+        4053.931
+      ],
+      "objects": 5769.0,
+      "physics_process_ms": 0.882,
+      "primitives": 3294089.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085748665.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4084.057,
+      "camera": {
+        "eye": [
+          108.78290686832,
+          1.65,
+          48.3441036214265
+        ],
+        "fov": 72.0,
+        "id": "B1-052-rear",
+        "look": [
+          90.5703883357245,
+          1.55,
+          35.9694701351136
+        ],
+        "store_id": "B1-052",
+        "wing": "B"
+      },
+      "draw_calls": 6813.0,
+      "file": "before/B1-052-rear.jpg",
+      "frame_ms": [
+        4318.995
+      ],
+      "objects": 6879.0,
+      "physics_process_ms": 0.896,
+      "primitives": 3547748.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085750253.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4361.051,
+      "camera": {
+        "eye": [
+          135.402000845098,
+          1.65,
+          31.5518254633233
+        ],
+        "fov": 78.0,
+        "id": "B1-063-front",
+        "look": [
+          134.324573587113,
+          2.5,
+          37.6574909064794
+        ],
+        "store_id": "B1-063",
+        "wing": "B"
+      },
+      "draw_calls": 2412.0,
+      "file": "before/B1-063-front.jpg",
+      "frame_ms": [
+        3280.198
+      ],
+      "objects": 2412.0,
+      "physics_process_ms": 0.674,
+      "primitives": 1891372.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085754153.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3313.485,
+      "camera": {
+        "eye": [
+          117.92184753284,
+          1.65,
+          34.2226280538944
+        ],
+        "fov": 72.0,
+        "id": "B1-063-centre",
+        "look": [
+          106.83029828767,
+          1.55,
+          33.252353511309
+        ],
+        "store_id": "B1-063",
+        "wing": "B"
+      },
+      "draw_calls": 6412.0,
+      "file": "before/B1-063-centre.jpg",
+      "frame_ms": [
+        4031.966
+      ],
+      "objects": 6483.0,
+      "physics_process_ms": 0.854,
+      "primitives": 3531471.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085754113.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4065.2,
+      "camera": {
+        "eye": [
+          104.242270130463,
+          1.65,
+          33.0259561180391
+        ],
+        "fov": 72.0,
+        "id": "B1-063-rear",
+        "look": [
+          134.49835217711,
+          1.55,
+          36.6727061575832
+        ],
+        "store_id": "B1-063",
+        "wing": "B"
+      },
+      "draw_calls": 6154.0,
+      "file": "before/B1-063-rear.jpg",
+      "frame_ms": [
+        3910.797
+      ],
+      "objects": 6174.0,
+      "physics_process_ms": 0.692,
+      "primitives": 3803641.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085756961.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3948.166,
+      "camera": {
+        "eye": [
+          134.549230888684,
+          1.65,
+          51.8334206899257
+        ],
+        "fov": 78.0,
+        "id": "B1-N02-front",
+        "look": [
+          133.212591935148,
+          2.5,
+          45.7792158447054
+        ],
+        "store_id": "B1-N02",
+        "wing": "B"
+      },
+      "draw_calls": 6249.0,
+      "file": "before/B1-N02-front.jpg",
+      "frame_ms": [
+        3635.244
+      ],
+      "objects": 6311.0,
+      "physics_process_ms": 0.653,
+      "primitives": 3298906.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085756493.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3679.997,
+      "camera": {
+        "eye": [
+          -133.191306691299,
+          1.65,
+          39.7622849935556
+        ],
+        "fov": 78.0,
+        "id": "B1-007-front",
+        "look": [
+          -134.139602590524,
+          2.5,
+          45.8893344374163
+        ],
+        "store_id": "B1-007",
+        "wing": "B"
+      },
+      "draw_calls": 1458.0,
+      "file": "before/B1-007-front.jpg",
+      "frame_ms": [
+        2765.929
+      ],
+      "objects": 1458.0,
+      "physics_process_ms": 0.721,
+      "primitives": 1722306.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085767837.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2806.907,
+      "camera": {
+        "eye": [
+          -123.834286916911,
+          1.65,
+          41.2109304024281
+        ],
+        "fov": 78.0,
+        "id": "B1-021-front",
+        "look": [
+          -124.782928513013,
+          2.5,
+          47.3379263320942
+        ],
+        "store_id": "B1-021",
+        "wing": "B"
+      },
+      "draw_calls": 1591.0,
+      "file": "before/B1-021-front.jpg",
+      "frame_ms": [
+        2863.339
+      ],
+      "objects": 1593.0,
+      "physics_process_ms": 1.113,
+      "primitives": 1770855.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085768513.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2898.88,
+      "camera": {
+        "eye": [
+          -110.2996222861,
+          1.65,
+          43.3052775296369
+        ],
+        "fov": 78.0,
+        "id": "B1-034-front",
+        "look": [
+          -111.247918185326,
+          2.5,
+          49.4323269734975
+        ],
+        "store_id": "B1-034",
+        "wing": "B"
+      },
+      "draw_calls": 1970.0,
+      "file": "before/B1-034-front.jpg",
+      "frame_ms": [
+        3145.656
+      ],
+      "objects": 1994.0,
+      "physics_process_ms": 0.824,
+      "primitives": 1899900.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085775013.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3175.735,
+      "camera": {
+        "eye": [
+          -98.4019229400426,
+          1.65,
+          45.1468800572963
+        ],
+        "fov": 78.0,
+        "id": "B1-046-front",
+        "look": [
+          -99.3504537519858,
+          2.5,
+          51.2738931386268
+        ],
+        "store_id": "B1-046",
+        "wing": "B"
+      },
+      "draw_calls": 2093.0,
+      "file": "before/B1-046-front.jpg",
+      "frame_ms": [
+        3518.239
+      ],
+      "objects": 2117.0,
+      "physics_process_ms": 0.944,
+      "primitives": 2014913.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085777873.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3551.964,
+      "camera": {
+        "eye": [
+          -89.679440217156,
+          1.65,
+          46.4967050309838
+        ],
+        "fov": 78.0,
+        "id": "B1-053-front",
+        "look": [
+          -90.6277361163811,
+          2.5,
+          52.6237544748445
+        ],
+        "store_id": "B1-053",
+        "wing": "B"
+      },
+      "draw_calls": 2028.0,
+      "file": "before/B1-053-front.jpg",
+      "frame_ms": [
+        3478.028
+      ],
+      "objects": 2050.0,
+      "physics_process_ms": 0.663,
+      "primitives": 2050890.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085778549.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3514.795,
+      "camera": {
+        "eye": [
+          -72.8,
+          1.65,
+          57.753
+        ],
+        "fov": 78.0,
+        "id": "B1-059-front",
+        "look": [
+          -79.0,
+          2.5,
+          57.753
+        ],
+        "store_id": "B1-059",
+        "wing": "B"
+      },
+      "draw_calls": 3909.0,
+      "file": "before/B1-059-front.jpg",
+      "frame_ms": [
+        4122.211
+      ],
+      "objects": 3944.0,
+      "physics_process_ms": 0.772,
+      "primitives": 2992358.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085781297.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4155.593,
+      "camera": {
+        "eye": [
+          86.7742769621963,
+          1.65,
+          60.6601130930879
+        ],
+        "fov": 78.0,
+        "id": "B1-009-front",
+        "look": [
+          81.6950390549783,
+          2.5,
+          64.2155796281405
+        ],
+        "store_id": "B1-009",
+        "wing": "B"
+      },
+      "draw_calls": 3568.0,
+      "file": "before/B1-009-front.jpg",
+      "frame_ms": [
+        3238.185
+      ],
+      "objects": 3576.0,
+      "physics_process_ms": 0.838,
+      "primitives": 2919065.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085784017.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3273.078,
+      "camera": {
+        "eye": [
+          74.5414970046416,
+          1.65,
+          65.2402018209753
+        ],
+        "fov": 72.0,
+        "id": "B1-009-centre",
+        "look": [
+          68.4397271132861,
+          1.55,
+          66.7472844530033
+        ],
+        "store_id": "B1-009",
+        "wing": "B"
+      },
+      "draw_calls": 4666.0,
+      "file": "before/B1-009-centre.jpg",
+      "frame_ms": [
+        3689.744
+      ],
+      "objects": 4683.0,
+      "physics_process_ms": 0.749,
+      "primitives": 3415258.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085785013.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3719.514,
+      "camera": {
+        "eye": [
+          67.0159808053031,
+          1.65,
+          67.0989370671431
+        ],
+        "fov": 72.0,
+        "id": "B1-009-rear",
+        "look": [
+          82.5142709754973,
+          1.55,
+          63.6421172837772
+        ],
+        "store_id": "B1-009",
+        "wing": "B"
+      },
+      "draw_calls": 7033.0,
+      "file": "before/B1-009-rear.jpg",
+      "frame_ms": [
+        4554.067
+      ],
+      "objects": 7065.0,
+      "physics_process_ms": 0.677,
+      "primitives": 4398350.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085786713.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4587.948,
+      "camera": {
+        "eye": [
+          66.5690945123582,
+          1.65,
+          38.9533371372107
+        ],
+        "fov": 78.0,
+        "id": "B1-051-front",
+        "look": [
+          68.6390203395559,
+          2.5,
+          44.7975998854023
+        ],
+        "store_id": "B1-051",
+        "wing": "B"
+      },
+      "draw_calls": 2571.0,
+      "file": "before/B1-051-front.jpg",
+      "frame_ms": [
+        3308.612
+      ],
+      "objects": 2571.0,
+      "physics_process_ms": 0.791,
+      "primitives": 2176260.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085791033.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3344.415,
+      "camera": {
+        "eye": [
+          48.1876173132309,
+          1.65,
+          28.3706238803431
+        ],
+        "fov": 78.0,
+        "id": "B1-N03-front",
+        "look": [
+          45.5135840216549,
+          2.5,
+          33.9643298035699
+        ],
+        "store_id": "B1-N03",
+        "wing": "B"
+      },
+      "draw_calls": 2365.0,
+      "file": "before/B1-N03-front.jpg",
+      "frame_ms": [
+        3555.548
+      ],
+      "objects": 2365.0,
+      "physics_process_ms": 0.643,
+      "primitives": 2222474.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085796805.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3589.268,
+      "camera": {
+        "eye": [
+          40.6877844695424,
+          1.65,
+          37.7586769700953
+        ],
+        "fov": 72.0,
+        "id": "B1-N03-centre",
+        "look": [
+          36.6871033238296,
+          1.55,
+          41.6963260444149
+        ],
+        "store_id": "B1-N03",
+        "wing": "B"
+      },
+      "draw_calls": 2946.0,
+      "file": "before/B1-N03-centre.jpg",
+      "frame_ms": [
+        2738.385
+      ],
+      "objects": 2946.0,
+      "physics_process_ms": 0.87,
+      "primitives": 2101575.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085798557.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2765.473,
+      "camera": {
+        "eye": [
+          35.7536110564966,
+          1.65,
+          42.6151108284228
+        ],
+        "fov": 72.0,
+        "id": "B1-N03-rear",
+        "look": [
+          45.9448797138446,
+          1.55,
+          33.0621191707914
+        ],
+        "store_id": "B1-N03",
+        "wing": "B"
+      },
+      "draw_calls": 7931.0,
+      "file": "before/B1-N03-rear.jpg",
+      "frame_ms": [
+        4613.532
+      ],
+      "objects": 8011.0,
+      "physics_process_ms": 0.731,
+      "primitives": 4803259.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085799949.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4659.233,
+      "camera": {
+        "eye": [
+          111.677400098791,
+          1.65,
+          59.5454671661053
+        ],
+        "fov": 78.0,
+        "id": "B1-036-front",
+        "look": [
+          113.014065858557,
+          2.5,
+          65.5996660930212
+        ],
+        "store_id": "B1-036",
+        "wing": "B"
+      },
+      "draw_calls": 1517.0,
+      "file": "before/B1-036-front.jpg",
+      "frame_ms": [
+        3032.173
+      ],
+      "objects": 1517.0,
+      "physics_process_ms": 1.3,
+      "primitives": 1439530.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085798221.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3065.809,
+      "camera": {
+        "eye": [
+          121.785961072508,
+          1.65,
+          57.3135031531767
+        ],
+        "fov": 78.0,
+        "id": "B1-047-front",
+        "look": [
+          123.127744872967,
+          2.5,
+          63.3665698332013
+        ],
+        "store_id": "B1-047",
+        "wing": "B"
+      },
+      "draw_calls": 1458.0,
+      "file": "before/B1-047-front.jpg",
+      "frame_ms": [
+        2902.664
+      ],
+      "objects": 1458.0,
+      "physics_process_ms": 0.789,
+      "primitives": 1453983.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085799625.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2933.069,
+      "camera": {
+        "eye": [
+          134.608055242456,
+          1.65,
+          54.482647185773
+        ],
+        "fov": 78.0,
+        "id": "B1-054-front",
+        "look": [
+          135.944698972393,
+          2.5,
+          60.5368509764641
+        ],
+        "store_id": "B1-054",
+        "wing": "B"
+      },
+      "draw_calls": 1143.0,
+      "file": "before/B1-054-front.jpg",
+      "frame_ms": [
+        3033.553
+      ],
+      "objects": 1143.0,
+      "physics_process_ms": 0.636,
+      "primitives": 1500281.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085801029.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3069.941,
+      "camera": {
+        "eye": [
+          145.880800031965,
+          1.65,
+          51.9940884385775
+        ],
+        "fov": 78.0,
+        "id": "B1-060-front",
+        "look": [
+          147.217114456319,
+          2.5,
+          58.0483649237789
+        ],
+        "store_id": "B1-060",
+        "wing": "B"
+      },
+      "draw_calls": 1052.0,
+      "file": "before/B1-060-front.jpg",
+      "frame_ms": [
+        2904.003
+      ],
+      "objects": 1052.0,
+      "physics_process_ms": 0.709,
+      "primitives": 1534108.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085803161.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2940.257,
+      "camera": {
+        "eye": [
+          164.227419854966,
+          1.65,
+          47.9433004173491
+        ],
+        "fov": 78.0,
+        "id": "B1-065-front",
+        "look": [
+          165.564063584903,
+          2.5,
+          53.9975042080404
+        ],
+        "store_id": "B1-065",
+        "wing": "B"
+      },
+      "draw_calls": 827.0,
+      "file": "before/B1-065-front.jpg",
+      "frame_ms": [
+        2332.308
+      ],
+      "objects": 827.0,
+      "physics_process_ms": 0.699,
+      "primitives": 1452316.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085804565.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2364.187,
+      "camera": {
+        "eye": [
+          -98.6659078056543,
+          1.65,
+          -8.34140654288178
+        ],
+        "fov": 78.0,
+        "id": "B1-012-front",
+        "look": [
+          -104.811518476052,
+          2.5,
+          -9.16083896101982
+        ],
+        "store_id": "B1-012",
+        "wing": "B"
+      },
+      "draw_calls": 3424.0,
+      "file": "before/B1-012-front.jpg",
+      "frame_ms": [
+        3770.857
+      ],
+      "objects": 3440.0,
+      "physics_process_ms": 0.724,
+      "primitives": 2814085.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085812269.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3803.705,
+      "camera": {
+        "eye": [
+          -129.991722356897,
+          1.65,
+          3.80281926123899
+        ],
+        "fov": 78.0,
+        "id": "B1-016-front",
+        "look": [
+          -127.949626673771,
+          2.5,
+          -2.05122594023966
+        ],
+        "store_id": "B1-016",
+        "wing": "B"
+      },
+      "draw_calls": 6801.0,
+      "file": "before/B1-016-front.jpg",
+      "frame_ms": [
+        3668.612
+      ],
+      "objects": 6825.0,
+      "physics_process_ms": 1.212,
+      "primitives": 3023381.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085810033.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3696.981,
+      "camera": {
+        "eye": [
+          -96.1096127720658,
+          1.65,
+          -27.5132060560247
+        ],
+        "fov": 78.0,
+        "id": "B1-025-front",
+        "look": [
+          -102.255223442463,
+          2.5,
+          -28.3326384741627
+        ],
+        "store_id": "B1-025",
+        "wing": "B"
+      },
+      "draw_calls": 3581.0,
+      "file": "before/B1-025-front.jpg",
+      "frame_ms": [
+        3727.693
+      ],
+      "objects": 3599.0,
+      "physics_process_ms": 0.764,
+      "primitives": 2734995.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085815077.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3762.56,
+      "camera": {
+        "eye": [
+          -122.378299549217,
+          1.65,
+          6.45852769292942
+        ],
+        "fov": 78.0,
+        "id": "B1-029-front",
+        "look": [
+          -120.334664762359,
+          2.5,
+          0.605019611620609
+        ],
+        "store_id": "B1-029",
+        "wing": "B"
+      },
+      "draw_calls": 7041.0,
+      "file": "before/B1-029-front.jpg",
+      "frame_ms": [
+        3952.035
+      ],
+      "objects": 7067.0,
+      "physics_process_ms": 0.751,
+      "primitives": 3081809.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085812113.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3986.505,
+      "camera": {
+        "eye": [
+          -113.83295086794,
+          1.65,
+          9.43982184413452
+        ],
+        "fov": 78.0,
+        "id": "B1-042-front",
+        "look": [
+          -111.790692278344,
+          2.5,
+          3.58583347267181
+        ],
+        "store_id": "B1-042",
+        "wing": "B"
+      },
+      "draw_calls": 7215.0,
+      "file": "before/B1-042-front.jpg",
+      "frame_ms": [
+        3968.31
+      ],
+      "objects": 7253.0,
+      "physics_process_ms": 1.229,
+      "primitives": 3265014.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085813517.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4010.515,
+      "camera": {
+        "eye": [
+          -174.402691648186,
+          1.65,
+          11.8
+        ],
+        "fov": 78.0,
+        "id": "B1-W4-front",
+        "look": [
+          -174.402691648186,
+          2.5,
+          18.0
+        ],
+        "store_id": "B1-W4",
+        "wing": "B"
+      },
+      "draw_calls": 2056.0,
+      "file": "before/B1-W4-front.jpg",
+      "frame_ms": [
+        2593.892
+      ],
+      "objects": 2056.0,
+      "physics_process_ms": 0.542,
+      "primitives": 1864734.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085817825.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2635.527,
+      "camera": {
+        "eye": [
+          -183.423877399591,
+          1.65,
+          23.9375161903964
+        ],
+        "fov": 72.0,
+        "id": "B1-W4-centre",
+        "look": [
+          -189.531343519965,
+          1.55,
+          29.3113231985504
+        ],
+        "store_id": "B1-W4",
+        "wing": "B"
+      },
+      "draw_calls": 945.0,
+      "file": "before/B1-W4-centre.jpg",
+      "frame_ms": [
+        2149.324
+      ],
+      "objects": 945.0,
+      "physics_process_ms": 0.711,
+      "primitives": 1671595.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085819205.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2177.594,
+      "camera": {
+        "eye": [
+          -190.956418948052,
+          1.65,
+          30.565211500453
+        ],
+        "fov": 72.0,
+        "id": "B1-W4-rear",
+        "look": [
+          -174.402691648186,
+          1.55,
+          17.0
+        ],
+        "store_id": "B1-W4",
+        "wing": "B"
+      },
+      "draw_calls": 12758.0,
+      "file": "before/B1-W4-rear.jpg",
+      "frame_ms": [
+        5266.485
+      ],
+      "objects": 12844.0,
+      "physics_process_ms": 0.586,
+      "primitives": 5596315.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085821709.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5294.669,
+      "camera": {
+        "eye": [
+          -156.870322733741,
+          1.65,
+          28.4671136893702
+        ],
+        "fov": 78.0,
+        "id": "B1-020-front",
+        "look": [
+          -161.661191643151,
+          2.5,
+          32.4025393452366
+        ],
+        "store_id": "B1-020",
+        "wing": "B"
+      },
+      "draw_calls": 1492.0,
+      "file": "before/B1-020-front.jpg",
+      "frame_ms": [
+        2929.275
+      ],
+      "objects": 1492.0,
+      "physics_process_ms": 0.627,
+      "primitives": 1753573.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085828805.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2975.717,
+      "camera": {
+        "eye": [
+          -152.060083138008,
+          1.65,
+          34.3229547955684
+        ],
+        "fov": 78.0,
+        "id": "B1-033-front",
+        "look": [
+          -156.850952047418,
+          2.5,
+          38.2583804514349
+        ],
+        "store_id": "B1-033",
+        "wing": "B"
+      },
+      "draw_calls": 1345.0,
+      "file": "before/B1-033-front.jpg",
+      "frame_ms": [
+        2520.502
+      ],
+      "objects": 1345.0,
+      "physics_process_ms": 0.744,
+      "primitives": 1743635.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085830209.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2555.671,
+      "camera": {
+        "eye": [
+          -128.50588723126,
+          1.65,
+          14.5051018006133
+        ],
+        "fov": 78.0,
+        "id": "B1-050-front",
+        "look": [
+          -130.54473124975,
+          2.5,
+          20.3602802836543
+        ],
+        "store_id": "B1-050",
+        "wing": "B"
+      },
+      "draw_calls": 2422.0,
+      "file": "before/B1-050-front.jpg",
+      "frame_ms": [
+        3702.819
+      ],
+      "objects": 2437.0,
+      "physics_process_ms": 0.669,
+      "primitives": 2017443.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085833069.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3734.889,
+      "camera": {
+        "eye": [
+          -108.85157063515,
+          1.65,
+          21.3490496668123
+        ],
+        "fov": 78.0,
+        "id": "B1-057-front",
+        "look": [
+          -110.890492738771,
+          2.5,
+          27.2042009590819
+        ],
+        "store_id": "B1-057",
+        "wing": "B"
+      },
+      "draw_calls": 2663.0,
+      "file": "before/B1-057-front.jpg",
+      "frame_ms": [
+        3468.274
+      ],
+      "objects": 2688.0,
+      "physics_process_ms": 0.909,
+      "primitives": 2155865.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085835201.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3500.893,
+      "camera": {
+        "eye": [
+          -96.9344744279546,
+          1.65,
+          25.4989254310415
+        ],
+        "fov": 78.0,
+        "id": "B1-N04-front",
+        "look": [
+          -98.9739927140895,
+          2.5,
+          31.3538690823947
+        ],
+        "store_id": "B1-N04",
+        "wing": "B"
+      },
+      "draw_calls": 2658.0,
+      "file": "before/B1-N04-front.jpg",
+      "frame_ms": [
+        3356.195
+      ],
+      "objects": 2685.0,
+      "physics_process_ms": 0.743,
+      "primitives": 2204687.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085840245.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3399.782,
+      "camera": {
+        "eye": [
+          -200.447,
+          1.65,
+          11.8
+        ],
+        "fov": 78.0,
+        "id": "B1-W3-front",
+        "look": [
+          -200.447,
+          2.5,
+          18.0
+        ],
+        "store_id": "B1-W3",
+        "wing": "B"
+      },
+      "draw_calls": 1413.0,
+      "file": "before/B1-W3-front.jpg",
+      "frame_ms": [
+        2602.776
+      ],
+      "objects": 1413.0,
+      "physics_process_ms": 0.712,
+      "primitives": 1746039.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085839961.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2633.382,
+      "camera": {
+        "eye": [
+          -218.8,
+          1.65,
+          13.753
+        ],
+        "fov": 78.0,
+        "id": "B1-067-front",
+        "look": [
+          -225.0,
+          2.5,
+          13.753
+        ],
+        "store_id": "B1-067",
+        "wing": "B"
+      },
+      "draw_calls": 1345.0,
+      "file": "before/B1-067-front.jpg",
+      "frame_ms": [
+        2866.208
+      ],
+      "objects": 1360.0,
+      "physics_process_ms": 0.721,
+      "primitives": 1510567.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085841369.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2898.356,
+      "camera": {
+        "eye": [
+          -190.553,
+          1.65,
+          -44.8
+        ],
+        "fov": 78.0,
+        "id": "B1-W2-front",
+        "look": [
+          -190.553,
+          2.5,
+          -51.0
+        ],
+        "store_id": "B1-W2",
+        "wing": "B"
+      },
+      "draw_calls": 3305.0,
+      "file": "before/B1-W2-front.jpg",
+      "frame_ms": [
+        3358.624
+      ],
+      "objects": 3327.0,
+      "physics_process_ms": 0.569,
+      "primitives": 2247911.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085845565.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3387.161,
+      "camera": {
+        "eye": [
+          -190.729177868446,
+          1.65,
+          -56.7937082888816
+        ],
+        "fov": 72.0,
+        "id": "B1-W2-centre",
+        "look": [
+          -190.85341364052,
+          1.55,
+          -62.2896163454916
+        ],
+        "store_id": "B1-W2",
+        "wing": "B"
+      },
+      "draw_calls": 2426.0,
+      "file": "before/B1-W2-centre.jpg",
+      "frame_ms": [
+        2349.899
+      ],
+      "objects": 2448.0,
+      "physics_process_ms": 0.701,
+      "primitives": 1743821.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085846973.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2395.606,
+      "camera": {
+        "eye": [
+          -190.882401987337,
+          1.65,
+          -63.5719948920339
+        ],
+        "fov": 72.0,
+        "id": "B1-W2-rear",
+        "look": [
+          -190.553,
+          1.55,
+          -50.0
+        ],
+        "store_id": "B1-W2",
+        "wing": "B"
+      },
+      "draw_calls": 4473.0,
+      "file": "before/B1-W2-rear.jpg",
+      "frame_ms": [
+        4122.048
+      ],
+      "objects": 4489.0,
+      "physics_process_ms": 0.627,
+      "primitives": 3035990.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085847629.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4169.811,
+      "camera": {
+        "eye": [
+          -218.553,
+          1.65,
+          -44.8
+        ],
+        "fov": 78.0,
+        "id": "B1-W1-front",
+        "look": [
+          -218.553,
+          2.5,
+          -51.0
+        ],
+        "store_id": "B1-W1",
+        "wing": "B"
+      },
+      "draw_calls": 2538.0,
+      "file": "before/B1-W1-front.jpg",
+      "frame_ms": [
+        2965.752
+      ],
+      "objects": 2556.0,
+      "physics_process_ms": 0.737,
+      "primitives": 1898047.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085851889.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2990.955,
+      "camera": {
+        "eye": [
+          -218.729177868446,
+          1.65,
+          -56.7937082888816
+        ],
+        "fov": 72.0,
+        "id": "B1-W1-centre",
+        "look": [
+          -218.85341364052,
+          1.55,
+          -62.2896163454916
+        ],
+        "store_id": "B1-W1",
+        "wing": "B"
+      },
+      "draw_calls": 2128.0,
+      "file": "before/B1-W1-centre.jpg",
+      "frame_ms": [
+        2167.102
+      ],
+      "objects": 2146.0,
+      "physics_process_ms": 1.292,
+      "primitives": 1621717.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085853297.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2197.254,
+      "camera": {
+        "eye": [
+          -218.882401987337,
+          1.65,
+          -63.5719948920339
+        ],
+        "fov": 72.0,
+        "id": "B1-W1-rear",
+        "look": [
+          -218.553,
+          1.55,
+          -50.0
+        ],
+        "store_id": "B1-W1",
+        "wing": "B"
+      },
+      "draw_calls": 3704.0,
+      "file": "before/B1-W1-rear.jpg",
+      "frame_ms": [
+        3479.494
+      ],
+      "objects": 3714.0,
+      "physics_process_ms": 0.671,
+      "primitives": 2820847.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085854681.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3517.729,
+      "camera": {
+        "eye": [
+          39.5218717518489,
+          1.65,
+          13.5873242379881
+        ],
+        "fov": 78.0,
+        "id": "B1-004-front",
+        "look": [
+          42.1961784715186,
+          2.5,
+          7.99374903342265
+        ],
+        "store_id": "B1-004",
+        "wing": "B"
+      },
+      "draw_calls": 4830.0,
+      "file": "before/B1-004-front.jpg",
+      "frame_ms": [
+        3901.894
+      ],
+      "objects": 4868.0,
+      "physics_process_ms": 0.678,
+      "primitives": 3413329.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085871549.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3940.53,
+      "camera": {
+        "eye": [
+          48.9754615500864,
+          1.65,
+          18.1067772765024
+        ],
+        "fov": 78.0,
+        "id": "B1-018-front",
+        "look": [
+          51.649496118229,
+          2.5,
+          12.5130719635298
+        ],
+        "store_id": "B1-018",
+        "wing": "B"
+      },
+      "draw_calls": 5015.0,
+      "file": "before/B1-018-front.jpg",
+      "frame_ms": [
+        4339.392
+      ],
+      "objects": 5057.0,
+      "physics_process_ms": 1.692,
+      "primitives": 3388161.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085872953.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4379.052,
+      "camera": {
+        "eye": [
+          89.3223884656031,
+          1.65,
+          20.7101272018226
+        ],
+        "fov": 78.0,
+        "id": "B1-005-front",
+        "look": [
+          87.2525412673708,
+          2.5,
+          14.8658366053541
+        ],
+        "store_id": "B1-005",
+        "wing": "B"
+      },
+      "draw_calls": 6079.0,
+      "file": "before/B1-005-front.jpg",
+      "frame_ms": [
+        3817.128
+      ],
+      "objects": 6129.0,
+      "physics_process_ms": 0.71,
+      "primitives": 3192177.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085872901.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3850.691,
+      "camera": {
+        "eye": [
+          106.475114550447,
+          1.65,
+          14.6352201720087
+        ],
+        "fov": 78.0,
+        "id": "B1-019-front",
+        "look": [
+          104.405267352215,
+          2.5,
+          8.79092957554023
+        ],
+        "store_id": "B1-019",
+        "wing": "B"
+      },
+      "draw_calls": 5508.0,
+      "file": "before/B1-019-front.jpg",
+      "frame_ms": [
+        3607.905
+      ],
+      "objects": 5560.0,
+      "physics_process_ms": 0.707,
+      "primitives": 3268364.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085873577.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3654.124,
+      "camera": {
+        "eye": [
+          -20.4394149759945,
+          1.65,
+          29.8002
+        ],
+        "fov": 78.0,
+        "id": "B1-008-front",
+        "look": [
+          -20.4394149759945,
+          2.5,
+          36.0002
+        ],
+        "store_id": "B1-008",
+        "wing": "B"
+      },
+      "draw_calls": 1565.0,
+      "file": "before/B1-008-front.jpg",
+      "frame_ms": [
+        3263.551
+      ],
+      "objects": 1565.0,
+      "physics_process_ms": 0.683,
+      "primitives": 2060535.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085877893.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3290.011,
+      "camera": {
+        "eye": [
+          -3.52724613066835,
+          1.65,
+          29.8
+        ],
+        "fov": 78.0,
+        "id": "B1-022-front",
+        "look": [
+          -3.52724613066835,
+          2.5,
+          36.0
+        ],
+        "store_id": "B1-022",
+        "wing": "B"
+      },
+      "draw_calls": 1124.0,
+      "file": "before/B1-022-front.jpg",
+      "frame_ms": [
+        2203.977
+      ],
+      "objects": 1124.0,
+      "physics_process_ms": 1.875,
+      "primitives": 2046569.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085879297.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2236.909,
+      "camera": {
+        "eye": [
+          -29.9129975426929,
+          1.65,
+          34.8
+        ],
+        "fov": 78.0,
+        "id": "B1-SW32-front",
+        "look": [
+          -29.9129975426929,
+          2.5,
+          41.0
+        ],
+        "store_id": "B1-SW32",
+        "wing": "B"
+      },
+      "draw_calls": 1560.0,
+      "file": "before/B1-SW32-front.jpg",
+      "frame_ms": [
+        2994.994
+      ],
+      "objects": 1560.0,
+      "physics_process_ms": 0.687,
+      "primitives": 2022501.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085878529.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3024.573,
+      "camera": {
+        "eye": [
+          -5.1251065512665,
+          1.65,
+          -44.5912772628671
+        ],
+        "fov": 78.0,
+        "id": "B1-014-front",
+        "look": [
+          0.573705811686459,
+          2.5,
+          -47.0333128178611
+        ],
+        "store_id": "B1-014",
+        "wing": "B"
+      },
+      "draw_calls": 6797.0,
+      "file": "before/B1-014-front.jpg",
+      "frame_ms": [
+        4639.033
+      ],
+      "objects": 6825.0,
+      "physics_process_ms": 0.758,
+      "primitives": 4658788.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085879929.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4669.716,
+      "camera": {
+        "eye": [
+          8.24698664836848,
+          1.65,
+          -29.8
+        ],
+        "fov": 78.0,
+        "id": "B1-027-front",
+        "look": [
+          8.24698664836848,
+          2.5,
+          -36.0
+        ],
+        "store_id": "B1-027",
+        "wing": "B"
+      },
+      "draw_calls": 4328.0,
+      "file": "before/B1-027-front.jpg",
+      "frame_ms": [
+        3419.696
+      ],
+      "objects": 4342.0,
+      "physics_process_ms": 1.214,
+      "primitives": 2460943.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085882789.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3456.804,
+      "camera": {
+        "eye": [
+          -53.044805093064,
+          1.65,
+          36.7456304027307
+        ],
+        "fov": 78.0,
+        "id": "B1-SW12-front",
+        "look": [
+          -52.2729366851684,
+          2.5,
+          30.5938648707153
+        ],
+        "store_id": "B1-SW12",
+        "wing": "B"
+      },
+      "draw_calls": 7823.0,
+      "file": "before/B1-SW12-front.jpg",
+      "frame_ms": [
+        4084.66
+      ],
+      "objects": 7870.0,
+      "physics_process_ms": 0.762,
+      "primitives": 3566103.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085882749.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4119.805,
+      "camera": {
+        "eye": [
+          -52.686100552783,
+          1.65,
+          40.9780943522544
+        ],
+        "fov": 78.0,
+        "id": "B1-SW31-front",
+        "look": [
+          -48.855534454285,
+          2.5,
+          45.8532111062448
+        ],
+        "store_id": "B1-SW31",
+        "wing": "B"
+      },
+      "draw_calls": 4166.0,
+      "file": "before/B1-SW31-front.jpg",
+      "frame_ms": [
+        3693.11
+      ],
+      "objects": 4166.0,
+      "physics_process_ms": 1.178,
+      "primitives": 2862264.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085883433.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3731.615,
+      "camera": {
+        "eye": [
+          -63.206526221033,
+          1.65,
+          45.9377684582686
+        ],
+        "fov": 78.0,
+        "id": "B1-SW11-front",
+        "look": [
+          -67.0371032112137,
+          2.5,
+          41.0626602623106
+        ],
+        "store_id": "B1-SW11",
+        "wing": "B"
+      },
+      "draw_calls": 7315.0,
+      "file": "before/B1-SW11-front.jpg",
+      "frame_ms": [
+        4174.432
+      ],
+      "objects": 7362.0,
+      "physics_process_ms": 0.821,
+      "primitives": 3771035.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085884117.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4207.436,
+      "camera": {
+        "eye": [
+          -155.877547459648,
+          1.65,
+          -327.008768865787
+        ],
+        "fov": 78.0,
+        "id": "C1F-CW-1-front",
+        "look": [
+          -161.929907232788,
+          2.5,
+          -325.663800027311
+        ],
+        "store_id": "C1F-CW-1",
+        "wing": "C"
+      },
+      "draw_calls": 1050.0,
+      "file": "before/C1F-CW-1-front.jpg",
+      "frame_ms": [
+        2648.664
+      ],
+      "objects": 1050.0,
+      "physics_process_ms": 0.88,
+      "primitives": 1640924.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085912581.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2682.018,
+      "camera": {
+        "eye": [
+          -151.069605030633,
+          1.65,
+          -305.373027935222
+        ],
+        "fov": 78.0,
+        "id": "C1F-CW-2-front",
+        "look": [
+          -157.121964803774,
+          2.5,
+          -304.028059096746
+        ],
+        "store_id": "C1F-CW-2",
+        "wing": "C"
+      },
+      "draw_calls": 1223.0,
+      "file": "before/C1F-CW-2-front.jpg",
+      "frame_ms": [
+        3155.657
+      ],
+      "objects": 1223.0,
+      "physics_process_ms": 2.675,
+      "primitives": 1673009.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085913965.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3191.109,
+      "camera": {
+        "eye": [
+          -145.817852531248,
+          1.65,
+          -281.740141687989
+        ],
+        "fov": 78.0,
+        "id": "C1F-CW-3-front",
+        "look": [
+          -151.870212304389,
+          2.5,
+          -280.395172849513
+        ],
+        "store_id": "C1F-CW-3",
+        "wing": "C"
+      },
+      "draw_calls": 1339.0,
+      "file": "before/C1F-CW-3-front.jpg",
+      "frame_ms": [
+        3237.947
+      ],
+      "objects": 1339.0,
+      "physics_process_ms": 0.661,
+      "primitives": 1667647.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085916109.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3268.205,
+      "camera": {
+        "eye": [
+          -158.252132829047,
+          1.65,
+          -278.976968288478
+        ],
+        "fov": 72.0,
+        "id": "C1F-CW-3-centre",
+        "look": [
+          -164.071183894804,
+          1.55,
+          -277.683845829421
+        ],
+        "store_id": "C1F-CW-3",
+        "wing": "C"
+      },
+      "draw_calls": 563.0,
+      "file": "before/C1F-CW-3-centre.jpg",
+      "frame_ms": [
+        2212.883
+      ],
+      "objects": 563.0,
+      "physics_process_ms": 0.756,
+      "primitives": 1521813.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085916809.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2241.647,
+      "camera": {
+        "eye": [
+          -165.428962476814,
+          1.65,
+          -277.382117255641
+        ],
+        "fov": 72.0,
+        "id": "C1F-CW-3-rear",
+        "look": [
+          -150.894025244205,
+          1.55,
+          -280.612103307332
+        ],
+        "store_id": "C1F-CW-3",
+        "wing": "C"
+      },
+      "draw_calls": 7503.0,
+      "file": "before/C1F-CW-3-rear.jpg",
+      "frame_ms": [
+        4333.247
+      ],
+      "objects": 7562.0,
+      "physics_process_ms": 0.743,
+      "primitives": 4314897.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085921865.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4360.359,
+      "camera": {
+        "eye": [
+          -124.625017002459,
+          1.65,
+          -366.39363571092
+        ],
+        "fov": 78.0,
+        "id": "C1F-CNW-1-front",
+        "look": [
+          -126.492031483669,
+          2.5,
+          -372.305848234751
+        ],
+        "store_id": "C1F-CNW-1",
+        "wing": "C"
+      },
+      "draw_calls": 801.0,
+      "file": "before/C1F-CNW-1-front.jpg",
+      "frame_ms": [
+        2939.677
+      ],
+      "objects": 801.0,
+      "physics_process_ms": 0.92,
+      "primitives": 993369.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085924613.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3018.995,
+      "camera": {
+        "eye": [
+          -101.187961790505,
+          1.65,
+          -373.79481104101
+        ],
+        "fov": 78.0,
+        "id": "C1F-CNW-2-front",
+        "look": [
+          -103.054976271715,
+          2.5,
+          -379.707023564842
+        ],
+        "store_id": "C1F-CNW-2",
+        "wing": "C"
+      },
+      "draw_calls": 1192.0,
+      "file": "before/C1F-CNW-2-front.jpg",
+      "frame_ms": [
+        3414.666
+      ],
+      "objects": 1192.0,
+      "physics_process_ms": 0.742,
+      "primitives": 1256097.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085926005.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3479.812,
+      "camera": {
+        "eye": [
+          -105.023652702741,
+          1.65,
+          -385.941165596423
+        ],
+        "fov": 72.0,
+        "id": "C1F-CNW-2-centre",
+        "look": [
+          -106.818696787014,
+          1.55,
+          -391.625471863288
+        ],
+        "store_id": "C1F-CNW-2",
+        "wing": "C"
+      },
+      "draw_calls": 566.0,
+      "file": "before/C1F-CNW-2-centre.jpg",
+      "frame_ms": [
+        1833.891
+      ],
+      "objects": 566.0,
+      "physics_process_ms": 2.622,
+      "primitives": 660120.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085926709.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 1869.658,
+      "camera": {
+        "eye": [
+          -107.237540406677,
+          1.65,
+          -392.951809992223
+        ],
+        "fov": 72.0,
+        "id": "C1F-CNW-2-rear",
+        "look": [
+          -102.753844903778,
+          1.55,
+          -378.753440899708
+        ],
+        "store_id": "C1F-CNW-2",
+        "wing": "C"
+      },
+      "draw_calls": 11019.0,
+      "file": "before/C1F-CNW-2-rear.jpg",
+      "frame_ms": [
+        5084.178
+      ],
+      "objects": 11124.0,
+      "physics_process_ms": 1.119,
+      "primitives": 5390171.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085927389.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5115.862,
+      "camera": {
+        "eye": [
+          -75.5874860974479,
+          1.65,
+          -381.879171786186
+        ],
+        "fov": 78.0,
+        "id": "C1F-CNW-3-front",
+        "look": [
+          -77.4545005786578,
+          2.5,
+          -387.791384310018
+        ],
+        "store_id": "C1F-CNW-3",
+        "wing": "C"
+      },
+      "draw_calls": 1300.0,
+      "file": "before/C1F-CNW-3-front.jpg",
+      "frame_ms": [
+        3027.498
+      ],
+      "objects": 1300.0,
+      "physics_process_ms": 0.7,
+      "primitives": 904623.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085932625.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3066.956,
+      "camera": {
+        "eye": [
+          -79.4231770096834,
+          1.65,
+          -394.025526341599
+        ],
+        "fov": 72.0,
+        "id": "C1F-CNW-3-centre",
+        "look": [
+          -81.2182210939564,
+          1.55,
+          -399.709832608464
+        ],
+        "store_id": "C1F-CNW-3",
+        "wing": "C"
+      },
+      "draw_calls": 578.0,
+      "file": "before/C1F-CNW-3-centre.jpg",
+      "frame_ms": [
+        1910.615
+      ],
+      "objects": 578.0,
+      "physics_process_ms": 0.659,
+      "primitives": 641385.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085933329.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 1943.229,
+      "camera": {
+        "eye": [
+          -81.6370647136201,
+          1.65,
+          -401.036170737399
+        ],
+        "fov": 72.0,
+        "id": "C1F-CNW-3-rear",
+        "look": [
+          -77.1533692107207,
+          1.55,
+          -386.837801644884
+        ],
+        "store_id": "C1F-CNW-3",
+        "wing": "C"
+      },
+      "draw_calls": 10711.0,
+      "file": "before/C1F-CNW-3-rear.jpg",
+      "frame_ms": [
+        4771.517
+      ],
+      "objects": 10821.0,
+      "physics_process_ms": 0.782,
+      "primitives": 5204699.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085934737.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4800.774,
+      "camera": {
+        "eye": [
+          15.5198256783115,
+          1.65,
+          -387.413416489907
+        ],
+        "fov": 78.0,
+        "id": "C1F-CNE-1-front",
+        "look": [
+          18.0854039329788,
+          2.5,
+          -393.057688650175
+        ],
+        "store_id": "C1F-CNE-1",
+        "wing": "C"
+      },
+      "draw_calls": 977.0,
+      "file": "before/C1F-CNE-1-front.jpg",
+      "frame_ms": [
+        2316.998
+      ],
+      "objects": 977.0,
+      "physics_process_ms": 0.577,
+      "primitives": 652271.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085938849.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2360.318,
+      "camera": {
+        "eye": [
+          44.1689671541032,
+          1.65,
+          -374.391079455456
+        ],
+        "fov": 78.0,
+        "id": "C1F-CNE-2-front",
+        "look": [
+          46.7345454087706,
+          2.5,
+          -380.035351615725
+        ],
+        "store_id": "C1F-CNE-2",
+        "wing": "C"
+      },
+      "draw_calls": 1055.0,
+      "file": "before/C1F-CNE-2-front.jpg",
+      "frame_ms": [
+        2528.157
+      ],
+      "objects": 1055.0,
+      "physics_process_ms": 1.576,
+      "primitives": 653930.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085941745.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2564.178,
+      "camera": {
+        "eye": [
+          75.4626447661218,
+          1.65,
+          -360.166680540902
+        ],
+        "fov": 78.0,
+        "id": "C1F-CNE-3-front",
+        "look": [
+          78.0282230207891,
+          2.5,
+          -365.810952701171
+        ],
+        "store_id": "C1F-CNE-3",
+        "wing": "C"
+      },
+      "draw_calls": 1143.0,
+      "file": "before/C1F-CNE-3-front.jpg",
+      "frame_ms": [
+        2680.542
+      ],
+      "objects": 1143.0,
+      "physics_process_ms": 0.828,
+      "primitives": 680521.0,
+      "save_error": 0,
+      "static_memory_bytes": 2085981169.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 2707.647,
+      "camera": {
+        "eye": [
+          143.832339629844,
+          1.65,
+          -311.258685218956
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-1-front",
+        "look": [
+          149.899348296762,
+          2.5,
+          -309.981420236447
+        ],
+        "store_id": "C1F-CE-1",
+        "wing": "C"
+      },
+      "draw_calls": 4714.0,
+      "file": "before/C1F-CE-1-front.jpg",
+      "frame_ms": [
+        3603.296
+      ],
+      "objects": 4736.0,
+      "physics_process_ms": 1.047,
+      "primitives": 3258347.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086057321.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3638.912,
+      "camera": {
+        "eye": [
+          138.939221382033,
+          1.65,
+          -288.016373541853
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-2-front",
+        "look": [
+          145.00623004895,
+          2.5,
+          -286.739108559343
+        ],
+        "store_id": "C1F-CE-2",
+        "wing": "C"
+      },
+      "draw_calls": 4733.0,
+      "file": "before/C1F-CE-2-front.jpg",
+      "frame_ms": [
+        4144.143
+      ],
+      "objects": 4753.0,
+      "physics_process_ms": 0.865,
+      "primitives": 3402752.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086058737.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4182.176,
+      "camera": {
+        "eye": [
+          133.594430680577,
+          1.65,
+          -262.62861770994
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-3-front",
+        "look": [
+          139.661439347495,
+          2.5,
+          -261.351352727431
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "draw_calls": 4717.0,
+      "file": "before/C1F-CE-3-front.jpg",
+      "frame_ms": [
+        3987.074
+      ],
+      "objects": 4741.0,
+      "physics_process_ms": 1.186,
+      "primitives": 3406735.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086060173.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4024.19,
+      "camera": {
+        "eye": [
+          146.058806421824,
+          1.65,
+          -260.004538606519
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-centre",
+        "look": [
+          151.89194169013,
+          1.55,
+          -258.776510128981
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "draw_calls": 4164.0,
+      "file": "before/C1F-CE-3-centre.jpg",
+      "frame_ms": [
+        3571.321
+      ],
+      "objects": 4184.0,
+      "physics_process_ms": 0.909,
+      "primitives": 3271559.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086061601.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3611.967,
+      "camera": {
+        "eye": [
+          153.253006586069,
+          1.65,
+          -258.489970150889
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-rear",
+        "look": [
+          138.682889562508,
+          1.55,
+          -261.55736320848
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "draw_calls": 4115.0,
+      "file": "before/C1F-CE-3-rear.jpg",
+      "frame_ms": [
+        3794.486
+      ],
+      "objects": 4143.0,
+      "physics_process_ms": 0.605,
+      "primitives": 2549474.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086063005.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3827.795,
+      "camera": {
+        "eye": [
+          87.98,
+          1.65,
+          -199.05
+        ],
+        "fov": 78.0,
+        "id": "C1F-CSE-1-front",
+        "look": [
+          87.98,
+          2.5,
+          -192.85
+        ],
+        "store_id": "C1F-CSE-1",
+        "wing": "C"
+      },
+      "draw_calls": 6653.0,
+      "file": "before/C1F-CSE-1-front.jpg",
+      "frame_ms": [
+        4263.036
+      ],
+      "objects": 6705.0,
+      "physics_process_ms": 0.57,
+      "primitives": 3640628.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086066621.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4297.625,
+      "camera": {
+        "eye": [
+          63.28,
+          1.65,
+          -199.05
+        ],
+        "fov": 78.0,
+        "id": "C1F-CSE-2-front",
+        "look": [
+          63.28,
+          2.5,
+          -192.85
+        ],
+        "store_id": "C1F-CSE-2",
+        "wing": "C"
+      },
+      "draw_calls": 6847.0,
+      "file": "before/C1F-CSE-2-front.jpg",
+      "frame_ms": [
+        4750.435
+      ],
+      "objects": 6900.0,
+      "physics_process_ms": 0.925,
+      "primitives": 3995556.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086068045.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4793.812,
+      "camera": {
+        "eye": [
+          36.3,
+          1.65,
+          -199.05
+        ],
+        "fov": 78.0,
+        "id": "C1F-CSE-3-front",
+        "look": [
+          36.3,
+          2.5,
+          -192.85
+        ],
+        "store_id": "C1F-CSE-3",
+        "wing": "C"
+      },
+      "draw_calls": 7256.0,
+      "file": "before/C1F-CSE-3-front.jpg",
+      "frame_ms": [
+        5139.083
+      ],
+      "objects": 7331.0,
+      "physics_process_ms": 0.693,
+      "primitives": 4017593.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086070197.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 5185.954,
+      "camera": {
+        "eye": [
+          -44.9912311342129,
+          1.65,
+          -206.122452540352
+        ],
+        "fov": 78.0,
+        "id": "C1F-CSW-1-front",
+        "look": [
+          -46.3361999726886,
+          2.5,
+          -200.070092767212
+        ],
+        "store_id": "C1F-CSW-1",
+        "wing": "C"
+      },
+      "draw_calls": 5840.0,
+      "file": "before/C1F-CSW-1-front.jpg",
+      "frame_ms": [
+        3930.974
+      ],
+      "objects": 5890.0,
+      "physics_process_ms": 0.652,
+      "primitives": 3270556.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086071621.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 3967.221,
+      "camera": {
+        "eye": [
+          -66.6269720647781,
+          1.65,
+          -210.930394969367
+        ],
+        "fov": 78.0,
+        "id": "C1F-CSW-2-front",
+        "look": [
+          -67.9719409032538,
+          2.5,
+          -204.878035196226
+        ],
+        "store_id": "C1F-CSW-2",
+        "wing": "C"
+      },
+      "draw_calls": 5967.0,
+      "file": "before/C1F-CSW-2-front.jpg",
+      "frame_ms": [
+        4207.758
+      ],
+      "objects": 6018.0,
+      "physics_process_ms": 0.647,
+      "primitives": 3281780.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086073045.0,
+      "video_memory_bytes": 1827954880.0
+    },
+    {
+      "CPU_process_ms": 4249.416,
+      "camera": {
+        "eye": [
+          -90.2598583120109,
+          1.65,
+          -216.182147468752
+        ],
+        "fov": 78.0,
+        "id": "C1F-CSW-3-front",
+        "look": [
+          -91.6048271504865,
+          2.5,
+          -210.129787695611
+        ],
+        "store_id": "C1F-CSW-3",
+        "wing": "C"
+      },
+      "draw_calls": 6193.0,
+      "file": "before/C1F-CSW-3-front.jpg",
+      "frame_ms": [
+        4311.111
+      ],
+      "objects": 6254.0,
+      "physics_process_ms": 0.678,
+      "primitives": 3301884.0,
+      "save_error": 0,
+      "static_memory_bytes": 2086078837.0,
+      "video_memory_bytes": 1827954880.0
+    }
+  ],
+  "settings": {
+    "B_ES": true,
+    "C": true,
+    "cap": 144,
+    "continuous": true,
+    "vsync": 1
+  },
+  "side": "before"
+}

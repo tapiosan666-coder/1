@@ -1,0 +1,8505 @@
+{
+  "blocked_rows": [],
+  "boards": 48,
+  "checks": [
+    {
+      "actual_path": [
+        [
+          309.0,
+          -5.35,
+          -60.0
+        ],
+        [
+          322.5,
+          -5.35,
+          -39.0
+        ],
+        [
+          343.5,
+          -5.35,
+          -18.0
+        ],
+        [
+          349.5,
+          -5.35,
+          3.0
+        ],
+        [
+          352.0,
+          -5.35,
+          22.0
+        ],
+        [
+          351.5,
+          -5.35,
+          26.0
+        ],
+        [
+          346.5,
+          -5.35,
+          25.5
+        ],
+        [
+          344.5,
+          -5.35,
+          26.5
+        ],
+        [
+          334.0,
+          -5.35,
+          27.0
+        ],
+        [
+          334.0,
+          -5.35,
+          27.1000003814697
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 117.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "A-KW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          -5.35,
+          -60.0
+        ],
+        [
+          322.5,
+          -5.35,
+          -39.0
+        ],
+        [
+          343.5,
+          -5.35,
+          -18.0
+        ],
+        [
+          349.5,
+          -5.35,
+          3.0
+        ],
+        [
+          352.0,
+          -5.35,
+          22.0
+        ],
+        [
+          351.5,
+          -5.35,
+          26.0
+        ],
+        [
+          348.0,
+          -5.35,
+          25.5
+        ],
+        [
+          342.0,
+          -5.35,
+          27.0
+        ],
+        [
+          331.5,
+          -5.35,
+          27.5
+        ],
+        [
+          330.0,
+          -5.35,
+          30.0
+        ],
+        [
+          329.899993896484,
+          -5.35,
+          30.0
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 122.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "A-A-KW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          -5.35,
+          -60.0
+        ],
+        [
+          334.5,
+          -5.35,
+          -57.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 25.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "A-E1--1-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          -5.35,
+          -60.0
+        ],
+        [
+          336.0,
+          -5.35,
+          -51.0
+        ],
+        [
+          390.0,
+          -5.35,
+          -49.5
+        ],
+        [
+          453.0,
+          -5.35,
+          -40.5
+        ],
+        [
+          450.0,
+          -5.35,
+          -6.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 180.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "FOOD",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "AB1-001",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          -5.35,
+          -58.5
+        ],
+        [
+          576.0,
+          -5.35,
+          25.5
+        ],
+        [
+          597.0,
+          -5.35,
+          30.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 110.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "A-KE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          -5.35,
+          -58.5
+        ],
+        [
+          576.0,
+          -5.35,
+          25.5
+        ],
+        [
+          597.0,
+          -5.35,
+          30.0
+        ],
+        [
+          600.0,
+          -5.35,
+          30.0
+        ],
+        [
+          601.5,
+          -5.35,
+          27.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 116.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "A-A-KE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          -5.35,
+          -58.5
+        ],
+        [
+          565.5,
+          -5.35,
+          -60.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 18.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "A-E2--1-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          -5.35,
+          -58.5
+        ],
+        [
+          543.0,
+          -5.35,
+          -45.0
+        ],
+        [
+          463.5,
+          -5.35,
+          -40.5
+        ],
+        [
+          450.0,
+          -5.35,
+          -6.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 130.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "FOOD",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "AB1-001",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          -5.35,
+          144.0
+        ],
+        [
+          478.5,
+          -5.35,
+          156.0
+        ],
+        [
+          478.5,
+          -5.35,
+          166.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 36.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "A-KS-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          -5.35,
+          144.0
+        ],
+        [
+          478.5,
+          -5.35,
+          156.0
+        ],
+        [
+          478.5,
+          -5.35,
+          169.5
+        ],
+        [
+          481.5,
+          -5.35,
+          169.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 42.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "A-A-KS",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          -5.35,
+          144.0
+        ],
+        [
+          456.0,
+          -5.35,
+          141.0
+        ],
+        [
+          453.0,
+          -5.35,
+          139.5
+        ],
+        [
+          453.0,
+          -5.35,
+          123.0
+        ],
+        [
+          454.5,
+          -5.35,
+          123.0
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 24.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "A-E3--1-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          -5.35,
+          144.0
+        ],
+        [
+          474.0,
+          -5.35,
+          99.0
+        ],
+        [
+          472.5,
+          -5.35,
+          46.5
+        ],
+        [
+          450.0,
+          -5.35,
+          -6.0
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 158.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "FOOD",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "AB1-001",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          313.5,
+          0.0,
+          -49.5
+        ],
+        [
+          330.0,
+          0.0,
+          -31.5
+        ],
+        [
+          349.5,
+          0.0,
+          -12.0
+        ],
+        [
+          351.0,
+          0.0,
+          -10.5
+        ],
+        [
+          351.0,
+          0.0,
+          10.5
+        ],
+        [
+          352.5,
+          0.0,
+          27.0
+        ],
+        [
+          334.0,
+          0.0,
+          27.0
+        ],
+        [
+          334.0,
+          0.0,
+          27.1000003814697
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 121.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-KW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          313.5,
+          0.0,
+          -49.5
+        ],
+        [
+          328.5,
+          0.0,
+          -33.0
+        ],
+        [
+          349.5,
+          0.0,
+          -12.0
+        ],
+        [
+          351.0,
+          0.0,
+          -10.5
+        ],
+        [
+          351.0,
+          0.0,
+          10.5
+        ],
+        [
+          352.5,
+          0.0,
+          27.0
+        ],
+        [
+          331.5,
+          0.0,
+          27.5
+        ],
+        [
+          330.0,
+          0.0,
+          30.0
+        ],
+        [
+          329.899993896484,
+          0.0,
+          30.0
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 127.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-A-KW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          320.5,
+          0.0,
+          -49.0
+        ],
+        [
+          336.0,
+          0.0,
+          -39.0
+        ],
+        [
+          338.0,
+          0.0,
+          -38.0
+        ],
+        [
+          338.0,
+          0.0,
+          -37.0
+        ],
+        [
+          337.799987792969,
+          0.0,
+          -36.9000015258789
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 37.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-WEST-V22-0-DOWN-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          0.0,
+          -60.0
+        ],
+        [
+          352.5,
+          0.0,
+          -45.0
+        ],
+        [
+          354.0,
+          0.0,
+          -45.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 47.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "INFO",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-WEST-VISITOR-information_counter-1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          0.0,
+          -58.5
+        ],
+        [
+          571.5,
+          0.0,
+          21.0
+        ],
+        [
+          576.0,
+          0.0,
+          25.5
+        ],
+        [
+          597.0,
+          0.0,
+          30.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 110.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A-KE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          0.0,
+          -58.5
+        ],
+        [
+          571.5,
+          0.0,
+          21.0
+        ],
+        [
+          576.0,
+          0.0,
+          25.5
+        ],
+        [
+          597.0,
+          0.0,
+          30.0
+        ],
+        [
+          600.0,
+          0.0,
+          30.0
+        ],
+        [
+          601.5,
+          0.0,
+          27.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 117.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A-A-KE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          0.0,
+          -58.5
+        ],
+        [
+          567.0,
+          0.0,
+          -54.0
+        ],
+        [
+          582.0,
+          0.0,
+          -54.0
+        ],
+        [
+          582.0,
+          0.0,
+          -55.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 36.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A-E2--1-DOWN-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          0.0,
+          -58.5
+        ],
+        [
+          564.0,
+          0.0,
+          9.0
+        ],
+        [
+          559.5,
+          0.0,
+          55.5
+        ],
+        [
+          517.5,
+          0.0,
+          94.5
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 173.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A1F-032",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          459.0,
+          0.0,
+          136.5
+        ],
+        [
+          466.5,
+          0.0,
+          142.5
+        ],
+        [
+          478.5,
+          0.0,
+          156.0
+        ],
+        [
+          478.5,
+          0.0,
+          166.5
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 38.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-KS-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          459.0,
+          0.0,
+          136.5
+        ],
+        [
+          466.5,
+          0.0,
+          142.5
+        ],
+        [
+          478.5,
+          0.0,
+          156.0
+        ],
+        [
+          478.5,
+          0.0,
+          169.5
+        ],
+        [
+          481.5,
+          0.0,
+          169.5
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 44.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-A-KS",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          459.0,
+          0.0,
+          136.5
+        ],
+        [
+          456.0,
+          0.0,
+          139.5
+        ],
+        [
+          454.5,
+          0.0,
+          139.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 5.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-E3--1-UP-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          459.0,
+          0.0,
+          136.5
+        ],
+        [
+          450.0,
+          0.0,
+          115.5
+        ],
+        [
+          429.0,
+          0.0,
+          94.5
+        ],
+        [
+          408.0,
+          0.0,
+          75.0
+        ],
+        [
+          388.5,
+          0.0,
+          54.0
+        ],
+        [
+          369.0,
+          0.0,
+          33.0
+        ],
+        [
+          361.5,
+          0.0,
+          13.5
+        ],
+        [
+          358.0,
+          0.0,
+          0.0
+        ],
+        [
+          357.0,
+          0.0,
+          -7.5
+        ],
+        [
+          357.0,
+          0.0,
+          -28.5
+        ],
+        [
+          357.5,
+          0.0,
+          -41.5
+        ],
+        [
+          355.5,
+          0.0,
+          -44.5
+        ],
+        [
+          354.0,
+          0.0,
+          -44.5
+        ],
+        [
+          354.0,
+          0.0,
+          -44.0
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 220.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "INFO",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-WEST-VISITOR-information_counter-1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          5.525,
+          -60.0
+        ],
+        [
+          313.5,
+          5.525,
+          -39.0
+        ],
+        [
+          317.0,
+          5.525,
+          -27.5
+        ],
+        [
+          330.0,
+          5.525,
+          -10.5
+        ],
+        [
+          339.0,
+          5.525,
+          -1.5
+        ],
+        [
+          345.0,
+          5.525,
+          0.0
+        ],
+        [
+          351.0,
+          5.525,
+          21.0
+        ],
+        [
+          343.5,
+          5.525,
+          27.0
+        ],
+        [
+          334.0,
+          5.525,
+          27.0
+        ],
+        [
+          334.0,
+          5.525,
+          27.1000003814697
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 114.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "A-KW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          5.525,
+          -60.0
+        ],
+        [
+          313.5,
+          5.525,
+          -39.0
+        ],
+        [
+          318.5,
+          5.525,
+          -24.5
+        ],
+        [
+          334.5,
+          5.525,
+          -6.0
+        ],
+        [
+          339.0,
+          5.525,
+          -1.5
+        ],
+        [
+          345.0,
+          5.525,
+          0.0
+        ],
+        [
+          351.0,
+          5.525,
+          21.0
+        ],
+        [
+          343.5,
+          5.525,
+          27.0
+        ],
+        [
+          331.5,
+          5.525,
+          27.5
+        ],
+        [
+          330.0,
+          5.525,
+          30.0
+        ],
+        [
+          329.899993896484,
+          5.525,
+          30.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 120.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "A-A-KW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          5.525,
+          -60.0
+        ],
+        [
+          315.0,
+          5.525,
+          -45.0
+        ],
+        [
+          316.5,
+          5.525,
+          -42.0
+        ],
+        [
+          318.0,
+          5.525,
+          -40.5
+        ],
+        [
+          322.0,
+          5.525,
+          -43.5
+        ],
+        [
+          322.200012207031,
+          5.525,
+          -43.2999992370605
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 26.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "A-WEST-V22-1-DOWN-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          5.525,
+          -60.0
+        ],
+        [
+          319.5,
+          5.525,
+          -51.0
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 13.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "B",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "AB-2-THROUGH-TO-A2F-051-return",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          5.525,
+          -58.5
+        ],
+        [
+          559.5,
+          5.525,
+          1.5
+        ],
+        [
+          576.0,
+          5.525,
+          25.5
+        ],
+        [
+          597.0,
+          5.525,
+          30.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 111.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "A-KE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          5.525,
+          -58.5
+        ],
+        [
+          559.5,
+          5.525,
+          1.5
+        ],
+        [
+          576.0,
+          5.525,
+          25.5
+        ],
+        [
+          597.0,
+          5.525,
+          30.0
+        ],
+        [
+          600.0,
+          5.525,
+          30.0
+        ],
+        [
+          601.5,
+          5.525,
+          27.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 118.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "A-A-KE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          5.525,
+          -58.5
+        ],
+        [
+          565.5,
+          5.525,
+          -60.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 18.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "A-E2-1-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          5.525,
+          -58.5
+        ],
+        [
+          543.0,
+          5.525,
+          -45.0
+        ],
+        [
+          522.0,
+          5.525,
+          -45.0
+        ],
+        [
+          501.0,
+          5.525,
+          -45.0
+        ],
+        [
+          480.0,
+          5.525,
+          -46.5
+        ],
+        [
+          459.0,
+          5.525,
+          -46.5
+        ],
+        [
+          438.0,
+          5.525,
+          -46.5
+        ],
+        [
+          417.0,
+          5.525,
+          -46.5
+        ],
+        [
+          396.0,
+          5.525,
+          -46.5
+        ],
+        [
+          375.0,
+          5.525,
+          -46.5
+        ],
+        [
+          354.0,
+          5.525,
+          -46.5
+        ],
+        [
+          342.0,
+          5.525,
+          -50.5
+        ],
+        [
+          334.5,
+          5.525,
+          -51.0
+        ],
+        [
+          319.0,
+          5.525,
+          -51.5
+        ],
+        [
+          319.0,
+          5.525,
+          -51.5
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 239.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "B",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "AB-2-THROUGH-TO-A2F-051-return",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          5.525,
+          144.0
+        ],
+        [
+          478.5,
+          5.525,
+          156.0
+        ],
+        [
+          478.5,
+          5.525,
+          166.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 36.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "A-KS-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          5.525,
+          144.0
+        ],
+        [
+          478.5,
+          5.525,
+          156.0
+        ],
+        [
+          478.5,
+          5.525,
+          169.5
+        ],
+        [
+          481.5,
+          5.525,
+          169.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 42.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "A-A-KS",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          5.525,
+          144.0
+        ],
+        [
+          456.0,
+          5.525,
+          141.0
+        ],
+        [
+          453.0,
+          5.525,
+          139.5
+        ],
+        [
+          453.0,
+          5.525,
+          123.0
+        ],
+        [
+          454.5,
+          5.525,
+          123.0
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 24.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "A-E3-1-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          5.525,
+          144.0
+        ],
+        [
+          456.0,
+          5.525,
+          141.0
+        ],
+        [
+          453.0,
+          5.525,
+          139.5
+        ],
+        [
+          453.0,
+          5.525,
+          123.0
+        ],
+        [
+          432.0,
+          5.525,
+          102.0
+        ],
+        [
+          411.0,
+          5.525,
+          81.0
+        ],
+        [
+          390.0,
+          5.525,
+          60.0
+        ],
+        [
+          369.0,
+          5.525,
+          39.0
+        ],
+        [
+          351.0,
+          5.525,
+          18.0
+        ],
+        [
+          342.0,
+          5.525,
+          -3.0
+        ],
+        [
+          334.5,
+          5.525,
+          -4.5
+        ],
+        [
+          319.0,
+          5.525,
+          -24.0
+        ],
+        [
+          317.5,
+          5.525,
+          -28.0
+        ],
+        [
+          317.5,
+          5.525,
+          -35.0
+        ],
+        [
+          317.0,
+          5.525,
+          -44.5
+        ],
+        [
+          317.5,
+          5.525,
+          -50.0
+        ],
+        [
+          319.0,
+          5.525,
+          -51.5
+        ],
+        [
+          319.0,
+          5.525,
+          -51.5
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 253.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "B",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "AB-2-THROUGH-TO-A2F-051-return",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          10.875,
+          -60.0
+        ],
+        [
+          313.5,
+          10.875,
+          -39.0
+        ],
+        [
+          317.0,
+          10.875,
+          -27.5
+        ],
+        [
+          330.0,
+          10.875,
+          -10.5
+        ],
+        [
+          339.0,
+          10.875,
+          -1.5
+        ],
+        [
+          345.0,
+          10.875,
+          0.0
+        ],
+        [
+          351.0,
+          10.875,
+          21.0
+        ],
+        [
+          352.5,
+          10.875,
+          27.0
+        ],
+        [
+          334.0,
+          10.875,
+          27.0
+        ],
+        [
+          334.0,
+          10.875,
+          27.1000003814697
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 120.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A-KW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          10.875,
+          -60.0
+        ],
+        [
+          313.5,
+          10.875,
+          -39.0
+        ],
+        [
+          318.5,
+          10.875,
+          -24.5
+        ],
+        [
+          334.5,
+          10.875,
+          -6.0
+        ],
+        [
+          339.0,
+          10.875,
+          -1.5
+        ],
+        [
+          345.0,
+          10.875,
+          0.0
+        ],
+        [
+          351.0,
+          10.875,
+          21.0
+        ],
+        [
+          352.5,
+          10.875,
+          27.0
+        ],
+        [
+          331.5,
+          10.875,
+          27.5
+        ],
+        [
+          330.0,
+          10.875,
+          30.0
+        ],
+        [
+          329.899993896484,
+          10.875,
+          30.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 125.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A-A-KW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          10.875,
+          -60.0
+        ],
+        [
+          339.0,
+          10.875,
+          -46.5
+        ],
+        [
+          339.0,
+          10.875,
+          -43.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 35.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A-WEST-V22-1-DOWN-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          10.875,
+          -60.0
+        ],
+        [
+          336.0,
+          10.875,
+          -51.0
+        ],
+        [
+          390.0,
+          10.875,
+          -49.5
+        ],
+        [
+          468.0,
+          10.875,
+          -40.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 161.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ARCADE",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A3F-012",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          10.875,
+          -58.5
+        ],
+        [
+          559.5,
+          10.875,
+          1.5
+        ],
+        [
+          576.0,
+          10.875,
+          25.5
+        ],
+        [
+          597.0,
+          10.875,
+          30.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 111.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A-KE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          10.875,
+          -58.5
+        ],
+        [
+          559.5,
+          10.875,
+          1.5
+        ],
+        [
+          576.0,
+          10.875,
+          25.5
+        ],
+        [
+          597.0,
+          10.875,
+          30.0
+        ],
+        [
+          600.0,
+          10.875,
+          30.0
+        ],
+        [
+          601.5,
+          10.875,
+          27.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 118.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A-A-KE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          10.875,
+          -58.5
+        ],
+        [
+          567.0,
+          10.875,
+          -54.0
+        ],
+        [
+          582.0,
+          10.875,
+          -54.0
+        ],
+        [
+          582.0,
+          10.875,
+          -55.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 36.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A-E2-1-DOWN-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          547.5,
+          10.875,
+          -58.5
+        ],
+        [
+          543.0,
+          10.875,
+          -45.0
+        ],
+        [
+          463.5,
+          10.875,
+          -40.5
+        ],
+        [
+          450.0,
+          10.875,
+          -6.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 130.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "CINEMA",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A3F-001",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          10.875,
+          144.0
+        ],
+        [
+          478.5,
+          10.875,
+          156.0
+        ],
+        [
+          478.5,
+          10.875,
+          166.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 36.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A-KS-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          10.875,
+          144.0
+        ],
+        [
+          478.5,
+          10.875,
+          156.0
+        ],
+        [
+          478.5,
+          10.875,
+          169.5
+        ],
+        [
+          481.5,
+          10.875,
+          169.5
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 42.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A-A-KS",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          10.875,
+          144.0
+        ],
+        [
+          456.0,
+          10.875,
+          141.0
+        ],
+        [
+          454.5,
+          10.875,
+          139.5
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 5.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A-E3-1-UP-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          456.0,
+          10.875,
+          144.0
+        ],
+        [
+          471.0,
+          10.875,
+          103.5
+        ],
+        [
+          474.0,
+          10.875,
+          99.0
+        ],
+        [
+          472.5,
+          10.875,
+          46.5
+        ],
+        [
+          450.0,
+          10.875,
+          -6.0
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 158.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "CINEMA",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A3F-001",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          16.4,
+          -60.0
+        ],
+        [
+          313.5,
+          16.4,
+          -39.0
+        ],
+        [
+          317.0,
+          16.4,
+          -27.5
+        ],
+        [
+          330.0,
+          16.4,
+          -10.5
+        ],
+        [
+          342.0,
+          16.4,
+          10.5
+        ],
+        [
+          345.0,
+          16.4,
+          15.0
+        ],
+        [
+          344.5,
+          16.4,
+          26.5
+        ],
+        [
+          336.0,
+          16.4,
+          27.0
+        ],
+        [
+          334.0,
+          16.4,
+          27.0
+        ],
+        [
+          334.0,
+          16.4,
+          27.1000003814697
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 106.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-KW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          16.4,
+          -60.0
+        ],
+        [
+          313.5,
+          16.4,
+          -39.0
+        ],
+        [
+          318.5,
+          16.4,
+          -24.5
+        ],
+        [
+          334.5,
+          16.4,
+          -6.0
+        ],
+        [
+          345.0,
+          16.4,
+          15.0
+        ],
+        [
+          344.5,
+          16.4,
+          26.5
+        ],
+        [
+          331.5,
+          16.4,
+          27.5
+        ],
+        [
+          330.0,
+          16.4,
+          30.0
+        ],
+        [
+          329.899993896484,
+          16.4,
+          30.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 112.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-A-KW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          16.4,
+          -60.0
+        ],
+        [
+          316.5,
+          16.4,
+          -43.5
+        ],
+        [
+          317.0,
+          16.4,
+          -41.5
+        ],
+        [
+          322.0,
+          16.4,
+          -37.0
+        ],
+        [
+          322.200012207031,
+          16.4,
+          -36.9000015258789
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 27.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-WEST-V22-2-DOWN-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          309.0,
+          16.4,
+          -60.0
+        ],
+        [
+          313.5,
+          16.4,
+          -43.5
+        ],
+        [
+          317.0,
+          16.4,
+          -33.0
+        ],
+        [
+          317.5,
+          16.4,
+          -27.0
+        ],
+        [
+          328.5,
+          16.4,
+          -9.0
+        ],
+        [
+          343.5,
+          16.4,
+          12.0
+        ],
+        [
+          345.0,
+          16.4,
+          16.5
+        ],
+        [
+          344.5,
+          16.4,
+          26.5
+        ],
+        [
+          341.0,
+          16.4,
+          36.5
+        ],
+        [
+          340.899993896484,
+          16.4,
+          36.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 106.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-KW-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          549.0,
+          16.4,
+          -61.5
+        ],
+        [
+          549.0,
+          16.4,
+          -40.5
+        ],
+        [
+          555.0,
+          16.4,
+          -24.0
+        ],
+        [
+          565.5,
+          16.4,
+          -3.0
+        ],
+        [
+          582.0,
+          16.4,
+          18.0
+        ],
+        [
+          586.5,
+          16.4,
+          27.5
+        ],
+        [
+          597.0,
+          16.4,
+          30.0
+        ],
+        [
+          597.0,
+          16.4,
+          29.8999996185303
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 110.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-KE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          549.0,
+          16.4,
+          -61.5
+        ],
+        [
+          549.0,
+          16.4,
+          -40.5
+        ],
+        [
+          555.0,
+          16.4,
+          -24.0
+        ],
+        [
+          565.5,
+          16.4,
+          -3.0
+        ],
+        [
+          582.0,
+          16.4,
+          18.0
+        ],
+        [
+          586.5,
+          16.4,
+          27.5
+        ],
+        [
+          595.0,
+          16.4,
+          29.5
+        ],
+        [
+          599.5,
+          16.4,
+          29.5
+        ],
+        [
+          601.0,
+          16.4,
+          27.0
+        ],
+        [
+          601.099975585938,
+          16.4,
+          27.0
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 115.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-A-KE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          549.0,
+          16.4,
+          -61.5
+        ],
+        [
+          553.5,
+          16.4,
+          -24.0
+        ],
+        [
+          565.5,
+          16.4,
+          -15.0
+        ],
+        [
+          582.0,
+          16.4,
+          -4.5
+        ],
+        [
+          582.0,
+          16.4,
+          -3.0
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 73.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-E2-2-UP-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          549.0,
+          16.4,
+          -61.5
+        ],
+        [
+          549.0,
+          16.4,
+          -40.5
+        ],
+        [
+          555.0,
+          16.4,
+          -24.0
+        ],
+        [
+          565.5,
+          16.4,
+          -3.0
+        ],
+        [
+          582.0,
+          16.4,
+          18.0
+        ],
+        [
+          586.5,
+          16.4,
+          27.5
+        ],
+        [
+          587.0,
+          16.4,
+          27.5
+        ],
+        [
+          588.0,
+          16.4,
+          27.0
+        ],
+        [
+          590.0,
+          16.4,
+          20.5
+        ],
+        [
+          590.099975585938,
+          16.4,
+          20.5
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 107.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-KE-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          376.5,
+          16.4,
+          40.5
+        ],
+        [
+          337.5,
+          16.4,
+          27.0
+        ],
+        [
+          334.5,
+          16.4,
+          27.0
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 44.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-KW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          376.5,
+          16.4,
+          40.5
+        ],
+        [
+          337.5,
+          16.4,
+          27.0
+        ],
+        [
+          331.5,
+          16.4,
+          27.0
+        ],
+        [
+          330.0,
+          16.4,
+          30.0
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 50.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-A-KW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          376.5,
+          16.4,
+          40.5
+        ],
+        [
+          355.5,
+          16.4,
+          19.5
+        ],
+        [
+          337.5,
+          16.4,
+          0.0
+        ],
+        [
+          320.5,
+          16.4,
+          -21.0
+        ],
+        [
+          317.5,
+          16.4,
+          -28.0
+        ],
+        [
+          317.5,
+          16.4,
+          -35.0
+        ],
+        [
+          317.5,
+          16.4,
+          -37.0
+        ],
+        [
+          318.0,
+          16.4,
+          -37.5
+        ],
+        [
+          322.0,
+          16.4,
+          -34.5
+        ],
+        [
+          322.200012207031,
+          16.4,
+          -34.7000007629395
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 105.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-WEST-V22-2-UP-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          376.5,
+          16.4,
+          40.5
+        ],
+        [
+          343.5,
+          16.4,
+          28.5
+        ],
+        [
+          340.5,
+          16.4,
+          36.0
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 43.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-KW-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -114.0,
+          -5.35,
+          -43.5
+        ],
+        [
+          -109.5,
+          -5.35,
+          -49.5
+        ],
+        [
+          -109.5,
+          -5.35,
+          -51.0
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 9.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-1",
+      "target": "K1-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -114.0,
+          -5.35,
+          -43.5
+        ],
+        [
+          -115.5,
+          -5.35,
+          -48.0
+        ],
+        [
+          -115.5,
+          -5.35,
+          -54.0
+        ],
+        [
+          -112.5,
+          -5.35,
+          -55.5
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 14.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-1",
+      "target": "B-K1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -114.0,
+          -5.35,
+          -43.5
+        ],
+        [
+          -120.0,
+          -5.35,
+          -43.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 6.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-1",
+      "target": "K1-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -69.0,
+          -5.35,
+          61.5
+        ],
+        [
+          -73.5,
+          -5.35,
+          67.5
+        ],
+        [
+          -73.5,
+          -5.35,
+          69.0
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 9.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-2",
+      "target": "K2-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -69.0,
+          -5.35,
+          61.5
+        ],
+        [
+          -67.5,
+          -5.35,
+          66.0
+        ],
+        [
+          -67.5,
+          -5.35,
+          72.0
+        ],
+        [
+          -70.5,
+          -5.35,
+          73.5
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 14.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-2",
+      "target": "B-K2",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -69.0,
+          -5.35,
+          61.5
+        ],
+        [
+          -63.0,
+          -5.35,
+          61.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 6.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-2",
+      "target": "K2-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          103.5,
+          -5.35,
+          76.5
+        ],
+        [
+          102.0,
+          -5.35,
+          84.0
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 7.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-3",
+      "target": "K3-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          103.5,
+          -5.35,
+          76.5
+        ],
+        [
+          102.0,
+          -5.35,
+          84.0
+        ],
+        [
+          102.0,
+          -5.35,
+          87.0
+        ],
+        [
+          105.0,
+          -5.35,
+          88.5
+        ]
+      ],
+      "back_arrow": "↓",
+      "distance_m": 14.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↑",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-3",
+      "target": "B-K3",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          103.5,
+          -5.35,
+          76.5
+        ],
+        [
+          111.0,
+          -5.35,
+          76.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 7.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-B1-NAV-3",
+      "target": "K3-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -189.0,
+          0.0,
+          -31.5
+        ],
+        [
+          -150.0,
+          0.0,
+          -4.5
+        ],
+        [
+          -103.5,
+          0.0,
+          10.5
+        ],
+        [
+          -97.5,
+          0.0,
+          -37.5
+        ],
+        [
+          -109.5,
+          0.0,
+          -40.5
+        ],
+        [
+          -109.5,
+          0.0,
+          -51.0
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 167.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "K1-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -189.0,
+          0.0,
+          -31.5
+        ],
+        [
+          -150.0,
+          0.0,
+          -4.5
+        ],
+        [
+          -103.5,
+          0.0,
+          10.5
+        ],
+        [
+          -97.5,
+          0.0,
+          -37.5
+        ],
+        [
+          -109.5,
+          0.0,
+          -40.5
+        ],
+        [
+          -109.5,
+          0.0,
+          -54.0
+        ],
+        [
+          -112.5,
+          0.0,
+          -55.5
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 173.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "B-K1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -189.0,
+          0.0,
+          -31.5
+        ],
+        [
+          -184.5,
+          0.0,
+          -15.0
+        ],
+        [
+          -184.0,
+          0.0,
+          -14.0
+        ],
+        [
+          -184.0,
+          0.0,
+          -13.5
+        ],
+        [
+          -184.199996948242,
+          0.0,
+          -13.3999996185303
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 18.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "B-WEST-V15-0-DOWN-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -189.0,
+          0.0,
+          -31.5
+        ],
+        [
+          -174.0,
+          0.0,
+          7.5
+        ],
+        [
+          -174.0,
+          0.0,
+          13.5
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 47.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "B1-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          28.5,
+          0.0,
+          6.0
+        ],
+        [
+          61.5,
+          0.0,
+          30.0
+        ],
+        [
+          91.5,
+          0.0,
+          58.5
+        ],
+        [
+          100.5,
+          0.0,
+          66.0
+        ],
+        [
+          102.0,
+          0.0,
+          78.0
+        ],
+        [
+          102.0,
+          0.0,
+          84.0
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 112.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "K3-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          28.5,
+          0.0,
+          6.0
+        ],
+        [
+          61.5,
+          0.0,
+          30.0
+        ],
+        [
+          91.5,
+          0.0,
+          58.5
+        ],
+        [
+          100.5,
+          0.0,
+          66.0
+        ],
+        [
+          102.0,
+          0.0,
+          78.0
+        ],
+        [
+          102.0,
+          0.0,
+          87.0
+        ],
+        [
+          105.0,
+          0.0,
+          88.5
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 118.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "B-K3",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          28.5,
+          0.0,
+          6.0
+        ],
+        [
+          10.5,
+          0.0,
+          -3.0
+        ],
+        [
+          -7.5,
+          0.0,
+          -3.0
+        ],
+        [
+          -19.5,
+          0.0,
+          9.0
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 55.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "E2-12-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          28.5,
+          0.0,
+          6.0
+        ],
+        [
+          70.5,
+          0.0,
+          25.5
+        ],
+        [
+          133.5,
+          0.0,
+          1.5
+        ],
+        [
+          165.0,
+          0.0,
+          -30.0
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 158.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "A",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "AB-1-THROUGH-TO-A1F-051",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          163.5,
+          0.0,
+          24.0
+        ],
+        [
+          175.5,
+          0.0,
+          28.5
+        ],
+        [
+          165.0,
+          0.0,
+          43.5
+        ],
+        [
+          106.5,
+          0.0,
+          63.0
+        ],
+        [
+          102.0,
+          0.0,
+          84.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 114.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "K3-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          163.5,
+          0.0,
+          24.0
+        ],
+        [
+          175.5,
+          0.0,
+          28.5
+        ],
+        [
+          165.0,
+          0.0,
+          43.5
+        ],
+        [
+          106.5,
+          0.0,
+          63.0
+        ],
+        [
+          102.0,
+          0.0,
+          84.0
+        ],
+        [
+          102.0,
+          0.0,
+          87.0
+        ],
+        [
+          105.0,
+          0.0,
+          88.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 120.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "B-K3",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          163.5,
+          0.0,
+          24.0
+        ],
+        [
+          141.0,
+          0.0,
+          -9.0
+        ],
+        [
+          135.0,
+          0.0,
+          -24.0
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 56.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "E3-12-DOWN-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          163.5,
+          0.0,
+          24.0
+        ],
+        [
+          142.5,
+          0.0,
+          24.0
+        ],
+        [
+          121.5,
+          0.0,
+          24.0
+        ],
+        [
+          115.5,
+          0.0,
+          22.5
+        ],
+        [
+          94.5,
+          0.0,
+          25.5
+        ],
+        [
+          73.5,
+          0.0,
+          25.5
+        ],
+        [
+          52.5,
+          0.0,
+          25.5
+        ],
+        [
+          35.5,
+          0.0,
+          24.5
+        ],
+        [
+          30.0,
+          0.0,
+          22.5
+        ],
+        [
+          10.5,
+          0.0,
+          21.0
+        ],
+        [
+          -1.5,
+          0.0,
+          21.0
+        ],
+        [
+          -18.0,
+          0.0,
+          9.0
+        ],
+        [
+          -39.0,
+          0.0,
+          9.0
+        ],
+        [
+          -60.0,
+          0.0,
+          9.0
+        ],
+        [
+          -81.0,
+          0.0,
+          9.0
+        ],
+        [
+          -102.0,
+          0.0,
+          10.5
+        ],
+        [
+          -123.0,
+          0.0,
+          10.5
+        ],
+        [
+          -144.0,
+          0.0,
+          10.5
+        ],
+        [
+          -162.0,
+          0.0,
+          6.0
+        ],
+        [
+          -174.0,
+          0.0,
+          13.5
+        ],
+        [
+          -174.5,
+          0.0,
+          14.0
+        ],
+        [
+          -174.402694702148,
+          0.0,
+          14.1000003814697
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 345.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "B1-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          5.525,
+          -6.0
+        ],
+        [
+          -183.0,
+          5.525,
+          -7.5
+        ],
+        [
+          -180.0,
+          5.525,
+          -15.0
+        ],
+        [
+          -162.0,
+          5.525,
+          -13.5
+        ],
+        [
+          -153.0,
+          5.525,
+          -6.0
+        ],
+        [
+          -103.5,
+          5.525,
+          10.5
+        ],
+        [
+          -97.5,
+          5.525,
+          -37.5
+        ],
+        [
+          -109.5,
+          5.525,
+          -40.5
+        ],
+        [
+          -109.5,
+          5.525,
+          -51.0
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 170.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "K1-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          5.525,
+          -6.0
+        ],
+        [
+          -183.0,
+          5.525,
+          -7.5
+        ],
+        [
+          -180.0,
+          5.525,
+          -15.0
+        ],
+        [
+          -162.0,
+          5.525,
+          -13.5
+        ],
+        [
+          -153.0,
+          5.525,
+          -6.0
+        ],
+        [
+          -103.5,
+          5.525,
+          10.5
+        ],
+        [
+          -97.5,
+          5.525,
+          -37.5
+        ],
+        [
+          -109.5,
+          5.525,
+          -40.5
+        ],
+        [
+          -109.5,
+          5.525,
+          -54.0
+        ],
+        [
+          -112.5,
+          5.525,
+          -55.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 176.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "B-K1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          5.525,
+          -6.0
+        ],
+        [
+          -201.0,
+          5.525,
+          -7.5
+        ],
+        [
+          -201.0,
+          5.525,
+          -10.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 12.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "B-WEST-V15-0-UP-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          5.525,
+          -6.0
+        ],
+        [
+          -183.0,
+          5.525,
+          -7.5
+        ],
+        [
+          -180.0,
+          5.525,
+          -15.0
+        ],
+        [
+          -168.5,
+          5.525,
+          -14.0
+        ],
+        [
+          -165.0,
+          5.525,
+          -14.0
+        ],
+        [
+          -164.5,
+          5.525,
+          -13.5
+        ],
+        [
+          -165.0,
+          5.525,
+          -3.0
+        ],
+        [
+          -174.5,
+          5.525,
+          13.5
+        ],
+        [
+          -174.5,
+          5.525,
+          14.0
+        ],
+        [
+          -174.402694702148,
+          5.525,
+          14.1000003814697
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 63.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "B2-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          5.525,
+          -6.0
+        ],
+        [
+          -15.0,
+          5.525,
+          -4.5
+        ],
+        [
+          -28.5,
+          5.525,
+          12.0
+        ],
+        [
+          -28.5,
+          5.525,
+          22.5
+        ],
+        [
+          -69.0,
+          5.525,
+          52.5
+        ],
+        [
+          -73.5,
+          5.525,
+          69.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 112.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "K2-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          5.525,
+          -6.0
+        ],
+        [
+          -15.0,
+          5.525,
+          -4.5
+        ],
+        [
+          -28.5,
+          5.525,
+          12.0
+        ],
+        [
+          -28.5,
+          5.525,
+          22.5
+        ],
+        [
+          -69.0,
+          5.525,
+          52.5
+        ],
+        [
+          -73.5,
+          5.525,
+          70.5
+        ],
+        [
+          -70.5,
+          5.525,
+          73.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 118.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "B-K2",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          5.525,
+          -6.0
+        ],
+        [
+          13.5,
+          5.525,
+          -4.5
+        ],
+        [
+          19.5,
+          5.525,
+          9.0
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 29.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "E2-23-DOWN-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          5.525,
+          -6.0
+        ],
+        [
+          -15.0,
+          5.525,
+          -4.5
+        ],
+        [
+          -99.0,
+          5.525,
+          10.5
+        ],
+        [
+          -163.5,
+          5.525,
+          6.0
+        ],
+        [
+          -174.0,
+          5.525,
+          13.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 176.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "B2-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          5.525,
+          -24.0
+        ],
+        [
+          127.5,
+          5.525,
+          -15.0
+        ],
+        [
+          111.0,
+          5.525,
+          12.0
+        ],
+        [
+          76.5,
+          5.525,
+          39.0
+        ],
+        [
+          91.5,
+          5.525,
+          58.5
+        ],
+        [
+          100.5,
+          5.525,
+          66.0
+        ],
+        [
+          102.0,
+          5.525,
+          78.0
+        ],
+        [
+          102.0,
+          5.525,
+          84.0
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 148.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "K3-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          5.525,
+          -24.0
+        ],
+        [
+          127.5,
+          5.525,
+          -15.0
+        ],
+        [
+          111.0,
+          5.525,
+          12.0
+        ],
+        [
+          76.5,
+          5.525,
+          39.0
+        ],
+        [
+          91.5,
+          5.525,
+          58.5
+        ],
+        [
+          100.5,
+          5.525,
+          66.0
+        ],
+        [
+          102.0,
+          5.525,
+          78.0
+        ],
+        [
+          102.0,
+          5.525,
+          87.0
+        ],
+        [
+          105.0,
+          5.525,
+          88.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 155.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "B-K3",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          5.525,
+          -24.0
+        ],
+        [
+          150.0,
+          5.525,
+          -30.0
+        ],
+        [
+          148.5,
+          5.525,
+          -33.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 11.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "E3-12-DOWN-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          5.525,
+          -24.0
+        ],
+        [
+          127.5,
+          5.525,
+          -15.0
+        ],
+        [
+          111.0,
+          5.525,
+          12.0
+        ],
+        [
+          67.5,
+          5.525,
+          25.5
+        ],
+        [
+          28.5,
+          5.525,
+          22.5
+        ],
+        [
+          24.0,
+          5.525,
+          25.5
+        ],
+        [
+          -1.5,
+          5.525,
+          24.0
+        ],
+        [
+          -13.5,
+          5.525,
+          15.0
+        ],
+        [
+          -18.0,
+          5.525,
+          9.0
+        ],
+        [
+          -90.0,
+          5.525,
+          9.0
+        ],
+        [
+          -100.5,
+          5.525,
+          10.5
+        ],
+        [
+          -163.5,
+          5.525,
+          6.0
+        ],
+        [
+          -174.0,
+          5.525,
+          13.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 347.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "B2-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          10.875,
+          -6.0
+        ],
+        [
+          -183.0,
+          10.875,
+          -7.5
+        ],
+        [
+          -180.0,
+          10.875,
+          -15.0
+        ],
+        [
+          -162.0,
+          10.875,
+          -13.5
+        ],
+        [
+          -153.0,
+          10.875,
+          -6.0
+        ],
+        [
+          -103.5,
+          10.875,
+          10.5
+        ],
+        [
+          -97.5,
+          10.875,
+          -37.5
+        ],
+        [
+          -109.5,
+          10.875,
+          -40.5
+        ],
+        [
+          -109.5,
+          10.875,
+          -51.0
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 170.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "K1-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          10.875,
+          -6.0
+        ],
+        [
+          -183.0,
+          10.875,
+          -7.5
+        ],
+        [
+          -180.0,
+          10.875,
+          -15.0
+        ],
+        [
+          -162.0,
+          10.875,
+          -13.5
+        ],
+        [
+          -153.0,
+          10.875,
+          -6.0
+        ],
+        [
+          -103.5,
+          10.875,
+          10.5
+        ],
+        [
+          -97.5,
+          10.875,
+          -37.5
+        ],
+        [
+          -109.5,
+          10.875,
+          -40.5
+        ],
+        [
+          -109.5,
+          10.875,
+          -54.0
+        ],
+        [
+          -112.5,
+          10.875,
+          -55.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 176.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "B-K1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          10.875,
+          -6.0
+        ],
+        [
+          -183.0,
+          10.875,
+          -7.5
+        ],
+        [
+          -183.0,
+          10.875,
+          -10.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 12.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "B-WEST-V15-2-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          10.875,
+          -6.0
+        ],
+        [
+          -183.0,
+          10.875,
+          -7.5
+        ],
+        [
+          -180.0,
+          10.875,
+          -15.0
+        ],
+        [
+          -168.5,
+          10.875,
+          -14.0
+        ],
+        [
+          -165.0,
+          10.875,
+          -14.0
+        ],
+        [
+          -164.5,
+          10.875,
+          -13.5
+        ],
+        [
+          -165.0,
+          10.875,
+          -3.0
+        ],
+        [
+          -174.5,
+          10.875,
+          13.5
+        ],
+        [
+          -174.5,
+          10.875,
+          14.0
+        ],
+        [
+          -174.277267456055,
+          10.875,
+          14.1000003814697
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 63.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "B3-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          10.875,
+          -6.0
+        ],
+        [
+          -15.0,
+          10.875,
+          -4.5
+        ],
+        [
+          -28.5,
+          10.875,
+          22.5
+        ],
+        [
+          -69.0,
+          10.875,
+          52.5
+        ],
+        [
+          -73.5,
+          10.875,
+          69.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 111.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "K2-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          10.875,
+          -6.0
+        ],
+        [
+          -15.0,
+          10.875,
+          -4.5
+        ],
+        [
+          -28.5,
+          10.875,
+          22.5
+        ],
+        [
+          -69.0,
+          10.875,
+          52.5
+        ],
+        [
+          -73.5,
+          10.875,
+          70.5
+        ],
+        [
+          -70.5,
+          10.875,
+          73.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 117.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "B-K2",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          10.875,
+          -6.0
+        ],
+        [
+          13.5,
+          10.875,
+          -4.5
+        ],
+        [
+          16.5,
+          10.875,
+          25.5
+        ],
+        [
+          19.5,
+          10.875,
+          25.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 48.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "E2-23-DOWN-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -1.5,
+          10.875,
+          -6.0
+        ],
+        [
+          -15.0,
+          10.875,
+          -4.5
+        ],
+        [
+          -99.0,
+          10.875,
+          10.5
+        ],
+        [
+          -163.5,
+          10.875,
+          6.0
+        ],
+        [
+          -174.0,
+          10.875,
+          13.5
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 176.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "B3-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          10.875,
+          -24.0
+        ],
+        [
+          127.5,
+          10.875,
+          -15.0
+        ],
+        [
+          111.0,
+          10.875,
+          12.0
+        ],
+        [
+          76.5,
+          10.875,
+          39.0
+        ],
+        [
+          91.5,
+          10.875,
+          58.5
+        ],
+        [
+          100.5,
+          10.875,
+          66.0
+        ],
+        [
+          102.0,
+          10.875,
+          78.0
+        ],
+        [
+          102.0,
+          10.875,
+          84.0
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 148.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "K3-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          10.875,
+          -24.0
+        ],
+        [
+          127.5,
+          10.875,
+          -15.0
+        ],
+        [
+          111.0,
+          10.875,
+          12.0
+        ],
+        [
+          76.5,
+          10.875,
+          39.0
+        ],
+        [
+          91.5,
+          10.875,
+          58.5
+        ],
+        [
+          100.5,
+          10.875,
+          66.0
+        ],
+        [
+          102.0,
+          10.875,
+          78.0
+        ],
+        [
+          102.0,
+          10.875,
+          87.0
+        ],
+        [
+          105.0,
+          10.875,
+          88.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 155.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "B-K3",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          10.875,
+          -24.0
+        ],
+        [
+          157.5,
+          10.875,
+          -25.5
+        ],
+        [
+          174.0,
+          10.875,
+          -15.0
+        ],
+        [
+          178.5,
+          10.875,
+          0.0
+        ],
+        [
+          175.5,
+          10.875,
+          18.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 67.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "E3-23-UP-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          144.0,
+          10.875,
+          -24.0
+        ],
+        [
+          127.5,
+          10.875,
+          -15.0
+        ],
+        [
+          111.0,
+          10.875,
+          12.0
+        ],
+        [
+          67.5,
+          10.875,
+          25.5
+        ],
+        [
+          28.5,
+          10.875,
+          22.5
+        ],
+        [
+          24.0,
+          10.875,
+          25.5
+        ],
+        [
+          -15.0,
+          10.875,
+          22.5
+        ],
+        [
+          -28.5,
+          10.875,
+          9.0
+        ],
+        [
+          -133.5,
+          10.875,
+          10.5
+        ],
+        [
+          -162.0,
+          10.875,
+          6.0
+        ],
+        [
+          -174.0,
+          10.875,
+          13.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 346.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "B3-W4",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -192.0,
+          16.4,
+          -25.5
+        ],
+        [
+          -201.0,
+          16.4,
+          -24.0
+        ],
+        [
+          -201.0,
+          16.4,
+          -13.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 19.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-RF-NAV-1",
+      "target": "B-WEST-V15-2-DOWN-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -108.0,
+          16.4,
+          -43.5
+        ],
+        [
+          -109.5,
+          16.4,
+          -43.5
+        ],
+        [
+          -109.5,
+          16.4,
+          -51.0
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 9.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-RF-NAV-2",
+      "target": "K1-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -108.0,
+          16.4,
+          -43.5
+        ],
+        [
+          -109.5,
+          16.4,
+          -43.5
+        ],
+        [
+          -109.5,
+          16.4,
+          -54.0
+        ],
+        [
+          -112.5,
+          16.4,
+          -55.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 15.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-RF-NAV-2",
+      "target": "B-K1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -108.0,
+          16.4,
+          -43.5
+        ],
+        [
+          -120.0,
+          16.4,
+          -43.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 12.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-RF-NAV-2",
+      "target": "K1-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          106.5,
+          16.4,
+          76.5
+        ],
+        [
+          102.0,
+          16.4,
+          81.0
+        ],
+        [
+          102.0,
+          16.4,
+          84.0
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 9.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-RF-NAV-3",
+      "target": "K3-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          106.5,
+          16.4,
+          76.5
+        ],
+        [
+          102.0,
+          16.4,
+          81.0
+        ],
+        [
+          102.0,
+          16.4,
+          87.0
+        ],
+        [
+          105.0,
+          16.4,
+          88.5
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 15.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-RF-NAV-3",
+      "target": "B-K3",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          106.5,
+          16.4,
+          76.5
+        ],
+        [
+          111.0,
+          16.4,
+          76.5
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 4.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-B-RF-NAV-3",
+      "target": "K3-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -93.0,
+          -5.35,
+          -225.0
+        ],
+        [
+          -91.5,
+          -5.35,
+          -219.0
+        ],
+        [
+          -112.5,
+          -5.35,
+          -218.5
+        ],
+        [
+          -119.5,
+          -5.35,
+          -216.5
+        ],
+        [
+          -119.361930847168,
+          -5.35,
+          -216.298034667969
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 34.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-1",
+      "target": "K-CSW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -93.0,
+          -5.35,
+          -225.0
+        ],
+        [
+          -91.5,
+          -5.35,
+          -219.0
+        ],
+        [
+          -112.5,
+          -5.35,
+          -218.5
+        ],
+        [
+          -113.0,
+          -5.35,
+          -217.0
+        ],
+        [
+          -113.0,
+          -5.35,
+          -215.0
+        ],
+        [
+          -113.005867004395,
+          -5.35,
+          -214.936798095703
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 30.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-1",
+      "target": "C-K-CSW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -93.0,
+          -5.35,
+          -225.0
+        ],
+        [
+          -91.5,
+          -5.35,
+          -219.0
+        ],
+        [
+          -112.5,
+          -5.35,
+          -218.5
+        ],
+        [
+          -113.0,
+          -5.35,
+          -218.0
+        ],
+        [
+          -111.0,
+          -5.35,
+          -216.0
+        ],
+        [
+          -107.0,
+          -5.35,
+          -213.5
+        ],
+        [
+          -107.148742675781,
+          -5.35,
+          -213.635208129883
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 35.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-1",
+      "target": "K-CSW-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -21.0,
+          -5.35,
+          -258.0
+        ],
+        [
+          -13.5,
+          -5.35,
+          -237.0
+        ],
+        [
+          -4.5,
+          -5.35,
+          -216.0
+        ],
+        [
+          6.5,
+          -5.35,
+          -198.5
+        ],
+        [
+          9.5,
+          -5.35,
+          -196.5
+        ],
+        [
+          9.5,
+          -5.35,
+          -196.0
+        ],
+        [
+          9.0,
+          -5.35,
+          -195.0
+        ],
+        [
+          6.5,
+          -5.35,
+          -193.0
+        ],
+        [
+          6.5,
+          -5.35,
+          -192.850006103516
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 74.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-2",
+      "target": "K-CSE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -21.0,
+          -5.35,
+          -258.0
+        ],
+        [
+          -12.0,
+          -5.35,
+          -237.0
+        ],
+        [
+          1.5,
+          -5.35,
+          -216.0
+        ],
+        [
+          6.5,
+          -5.35,
+          -199.5
+        ],
+        [
+          7.5,
+          -5.35,
+          -197.0
+        ],
+        [
+          9.0,
+          -5.35,
+          -196.5
+        ],
+        [
+          10.5,
+          -5.35,
+          -195.5
+        ],
+        [
+          13.0,
+          -5.35,
+          -193.0
+        ],
+        [
+          13.0,
+          -5.35,
+          -192.899993896484
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 74.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-2",
+      "target": "C-K-CSE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -21.0,
+          -5.35,
+          -258.0
+        ],
+        [
+          -12.0,
+          -5.35,
+          -237.0
+        ],
+        [
+          4.5,
+          -5.35,
+          -216.0
+        ],
+        [
+          14.0,
+          -5.35,
+          -199.5
+        ],
+        [
+          12.5,
+          -5.35,
+          -196.0
+        ],
+        [
+          14.0,
+          -5.35,
+          -194.0
+        ],
+        [
+          19.0,
+          -5.35,
+          -193.0
+        ],
+        [
+          19.0,
+          -5.35,
+          -192.899993896484
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 80.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-2",
+      "target": "K-CSE-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          73.5,
+          -5.35,
+          -345.0
+        ],
+        [
+          75.0,
+          -5.35,
+          -358.5
+        ],
+        [
+          92.5,
+          -5.35,
+          -355.0
+        ],
+        [
+          102.0,
+          -5.35,
+          -351.0
+        ],
+        [
+          108.5,
+          -5.35,
+          -352.0
+        ],
+        [
+          108.475730895996,
+          -5.35,
+          -351.97119140625
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 48.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-3",
+      "target": "K-CNE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          73.5,
+          -5.35,
+          -345.0
+        ],
+        [
+          75.0,
+          -5.35,
+          -358.5
+        ],
+        [
+          90.5,
+          -5.35,
+          -355.0
+        ],
+        [
+          101.0,
+          -5.35,
+          -351.0
+        ],
+        [
+          101.5,
+          -5.35,
+          -351.5
+        ],
+        [
+          102.5,
+          -5.35,
+          -354.5
+        ],
+        [
+          102.537658691406,
+          -5.35,
+          -354.615386962891
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 44.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-3",
+      "target": "C-K-CNE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          73.5,
+          -5.35,
+          -345.0
+        ],
+        [
+          75.0,
+          -5.35,
+          -358.5
+        ],
+        [
+          92.5,
+          -5.35,
+          -355.0
+        ],
+        [
+          101.0,
+          -5.35,
+          -351.0
+        ],
+        [
+          101.5,
+          -5.35,
+          -351.5
+        ],
+        [
+          102.0,
+          -5.35,
+          -352.5
+        ],
+        [
+          97.0,
+          -5.35,
+          -357.0
+        ],
+        [
+          97.0754623413086,
+          -5.35,
+          -357.098205566406
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 49.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-B1-NAV-3",
+      "target": "K-CNE-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -84.0,
+          0.0,
+          -220.5
+        ],
+        [
+          -103.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -114.0,
+          0.0,
+          -218.5
+        ],
+        [
+          -119.5,
+          0.0,
+          -216.5
+        ],
+        [
+          -119.361930847168,
+          0.0,
+          -216.298034667969
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 36.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "K-CSW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -84.0,
+          0.0,
+          -220.5
+        ],
+        [
+          -90.0,
+          0.0,
+          -220.0
+        ],
+        [
+          -109.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -112.5,
+          0.0,
+          -218.5
+        ],
+        [
+          -113.0,
+          0.0,
+          -217.0
+        ],
+        [
+          -113.0,
+          0.0,
+          -215.0
+        ],
+        [
+          -113.005867004395,
+          0.0,
+          -214.936798095703
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 32.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "C-K-CSW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -84.0,
+          0.0,
+          -220.5
+        ],
+        [
+          -70.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -64.5,
+          0.0,
+          -218.5
+        ],
+        [
+          -43.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -22.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -1.5,
+          0.0,
+          -219.0
+        ],
+        [
+          19.5,
+          0.0,
+          -216.0
+        ],
+        [
+          40.5,
+          0.0,
+          -207.0
+        ],
+        [
+          50.0,
+          0.0,
+          -204.5
+        ],
+        [
+          61.5,
+          0.0,
+          -210.0
+        ],
+        [
+          82.5,
+          0.0,
+          -229.5
+        ],
+        [
+          103.5,
+          0.0,
+          -247.5
+        ],
+        [
+          124.5,
+          0.0,
+          -265.5
+        ],
+        [
+          117.0,
+          0.0,
+          -285.0
+        ],
+        [
+          107.0,
+          0.0,
+          -289.0
+        ],
+        [
+          107.0,
+          0.0,
+          -287.700012207031
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 266.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "CE12-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -84.0,
+          0.0,
+          -220.5
+        ],
+        [
+          -70.5,
+          0.0,
+          -219.0
+        ],
+        [
+          -62.0,
+          0.0,
+          -218.5
+        ],
+        [
+          -48.0,
+          0.0,
+          -219.0
+        ],
+        [
+          -27.0,
+          0.0,
+          -219.0
+        ],
+        [
+          -6.0,
+          0.0,
+          -219.0
+        ],
+        [
+          15.0,
+          0.0,
+          -219.0
+        ],
+        [
+          36.0,
+          0.0,
+          -207.0
+        ],
+        [
+          52.5,
+          0.0,
+          -201.5
+        ],
+        [
+          63.5,
+          0.0,
+          -196.5
+        ],
+        [
+          63.2799987792969,
+          0.0,
+          -196.75
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 153.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "C1F-CSE-2",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -19.5,
+          0.0,
+          -223.5
+        ],
+        [
+          1.5,
+          0.0,
+          -219.0
+        ],
+        [
+          12.0,
+          0.0,
+          -214.5
+        ],
+        [
+          14.0,
+          0.0,
+          -199.5
+        ],
+        [
+          11.5,
+          0.0,
+          -193.5
+        ],
+        [
+          6.5,
+          0.0,
+          -193.0
+        ],
+        [
+          6.5,
+          0.0,
+          -192.850006103516
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 59.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "K-CSE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -19.5,
+          0.0,
+          -223.5
+        ],
+        [
+          12.0,
+          0.0,
+          -214.5
+        ],
+        [
+          15.0,
+          0.0,
+          -198.0
+        ],
+        [
+          12.0,
+          0.0,
+          -196.5
+        ],
+        [
+          13.5,
+          0.0,
+          -193.5
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 56.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "C-K-CSE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -19.5,
+          0.0,
+          -223.5
+        ],
+        [
+          1.5,
+          0.0,
+          -223.5
+        ],
+        [
+          22.5,
+          0.0,
+          -213.0
+        ],
+        [
+          43.5,
+          0.0,
+          -205.5
+        ],
+        [
+          52.5,
+          0.0,
+          -205.5
+        ],
+        [
+          63.0,
+          0.0,
+          -211.5
+        ],
+        [
+          84.0,
+          0.0,
+          -231.0
+        ],
+        [
+          97.5,
+          0.0,
+          -240.0
+        ],
+        [
+          118.5,
+          0.0,
+          -259.5
+        ],
+        [
+          123.0,
+          0.0,
+          -280.5
+        ],
+        [
+          107.0,
+          0.0,
+          -289.0
+        ],
+        [
+          107.0,
+          0.0,
+          -287.700012207031
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 202.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "CE12-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -19.5,
+          0.0,
+          -223.5
+        ],
+        [
+          51.0,
+          0.0,
+          -204.0
+        ],
+        [
+          108.0,
+          0.0,
+          -202.5
+        ],
+        [
+          114.0,
+          0.0,
+          -186.0
+        ],
+        [
+          114.0,
+          0.0,
+          -154.5
+        ],
+        [
+          61.5,
+          0.0,
+          -138.0
+        ],
+        [
+          58.5,
+          0.0,
+          -126.0
+        ]
+      ],
+      "back_arrow": "↖",
+      "distance_m": 246.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↘",
+      "kind": "B",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "BC-1-THROUGH-TO-C1F-CSE-2-return",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          87.0,
+          0.0,
+          -235.0
+        ],
+        [
+          97.5,
+          0.0,
+          -240.0
+        ],
+        [
+          118.5,
+          0.0,
+          -258.0
+        ],
+        [
+          120.0,
+          0.0,
+          -259.5
+        ],
+        [
+          132.0,
+          0.0,
+          -256.5
+        ],
+        [
+          131.0,
+          0.0,
+          -240.0
+        ],
+        [
+          133.5,
+          0.0,
+          -232.5
+        ],
+        [
+          133.627517700195,
+          0.0,
+          -232.690185546875
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 78.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "K-CE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          87.0,
+          0.0,
+          -235.0
+        ],
+        [
+          97.5,
+          0.0,
+          -240.0
+        ],
+        [
+          118.5,
+          0.0,
+          -258.0
+        ],
+        [
+          120.0,
+          0.0,
+          -259.5
+        ],
+        [
+          132.0,
+          0.0,
+          -256.5
+        ],
+        [
+          131.5,
+          0.0,
+          -241.5
+        ],
+        [
+          131.0,
+          0.0,
+          -240.0
+        ],
+        [
+          132.0,
+          0.0,
+          -239.0
+        ],
+        [
+          135.0,
+          0.0,
+          -239.0
+        ],
+        [
+          134.91764831543,
+          0.0,
+          -239.061065673828
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 74.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "C-K-CE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          87.0,
+          0.0,
+          -235.0
+        ],
+        [
+          92.0,
+          0.0,
+          -237.5
+        ],
+        [
+          109.5,
+          0.0,
+          -252.0
+        ],
+        [
+          124.5,
+          0.0,
+          -265.5
+        ],
+        [
+          117.0,
+          0.0,
+          -285.0
+        ],
+        [
+          107.0,
+          0.0,
+          -289.0
+        ],
+        [
+          107.0,
+          0.0,
+          -287.700012207031
+        ]
+      ],
+      "back_arrow": "←",
+      "distance_m": 81.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "→",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "CE12-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          87.5,
+          0.0,
+          -235.5
+        ],
+        [
+          86.5,
+          0.0,
+          -233.0
+        ],
+        [
+          73.5,
+          0.0,
+          -220.5
+        ],
+        [
+          62.0,
+          0.0,
+          -203.0
+        ],
+        [
+          63.5,
+          0.0,
+          -196.5
+        ],
+        [
+          63.2799987792969,
+          0.0,
+          -196.75
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 48.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "C1F-CSE-2",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -117.0,
+          5.525,
+          -221.5
+        ],
+        [
+          -115.5,
+          5.525,
+          -219.0
+        ],
+        [
+          -117.0,
+          5.525,
+          -217.5
+        ],
+        [
+          -119.5,
+          5.525,
+          -216.5
+        ],
+        [
+          -119.361930847168,
+          5.525,
+          -216.298034667969
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 8.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "K-CSW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -117.16008384389,
+          5.525,
+          -221.596558759001
+        ],
+        [
+          -113.005865576662,
+          5.525,
+          -214.936793703969
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 7.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "C-K-CSW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -117.0,
+          5.525,
+          -221.5
+        ],
+        [
+          -102.0,
+          5.525,
+          -217.5
+        ],
+        [
+          -81.0,
+          5.525,
+          -214.5
+        ],
+        [
+          -85.5,
+          5.525,
+          -222.0
+        ],
+        [
+          -102.0,
+          5.525,
+          -240.0
+        ],
+        [
+          -120.0,
+          5.525,
+          -261.0
+        ],
+        [
+          -138.0,
+          5.525,
+          -280.5
+        ],
+        [
+          -145.5,
+          5.525,
+          -291.0
+        ],
+        [
+          -132.0,
+          5.525,
+          -312.0
+        ],
+        [
+          -118.5,
+          5.525,
+          -333.0
+        ],
+        [
+          -103.5,
+          5.525,
+          -354.0
+        ],
+        [
+          -88.5,
+          5.525,
+          -375.0
+        ],
+        [
+          -85.5,
+          5.525,
+          -373.5
+        ],
+        [
+          -81.0,
+          5.525,
+          -366.0
+        ],
+        [
+          -79.0,
+          5.525,
+          -364.0
+        ],
+        [
+          -77.6999969482422,
+          5.525,
+          -364.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 254.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "CN23-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -117.0,
+          5.525,
+          -221.5
+        ],
+        [
+          -104.5,
+          5.525,
+          -217.0
+        ],
+        [
+          -85.5,
+          5.525,
+          -214.5
+        ],
+        [
+          -73.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -63.0,
+          5.525,
+          -222.0
+        ],
+        [
+          -42.0,
+          5.525,
+          -225.0
+        ],
+        [
+          -31.5,
+          5.525,
+          -214.5
+        ],
+        [
+          -27.0,
+          5.525,
+          -201.0
+        ],
+        [
+          -25.5,
+          5.525,
+          -181.5
+        ],
+        [
+          -24.0,
+          5.525,
+          -175.5
+        ],
+        [
+          -6.0,
+          5.525,
+          -168.0
+        ],
+        [
+          -5.0,
+          5.525,
+          -167.5
+        ],
+        [
+          -5.0,
+          5.525,
+          -165.0
+        ],
+        [
+          -3.0,
+          5.525,
+          -163.0
+        ],
+        [
+          -3.0,
+          5.525,
+          -163.0
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 158.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "B",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "BC-2-THROUGH-TO-C2F-CSE-3-return",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -3.0,
+          5.525,
+          -166.5
+        ],
+        [
+          -3.5,
+          5.525,
+          -167.5
+        ],
+        [
+          -13.5,
+          5.525,
+          -172.5
+        ],
+        [
+          -24.0,
+          5.525,
+          -175.5
+        ],
+        [
+          -28.5,
+          5.525,
+          -195.0
+        ],
+        [
+          -30.0,
+          5.525,
+          -213.0
+        ],
+        [
+          -40.5,
+          5.525,
+          -223.5
+        ],
+        [
+          -45.0,
+          5.525,
+          -225.0
+        ],
+        [
+          -66.0,
+          5.525,
+          -222.0
+        ],
+        [
+          -75.0,
+          5.525,
+          -216.0
+        ],
+        [
+          -87.0,
+          5.525,
+          -214.5
+        ],
+        [
+          -100.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -111.0,
+          5.525,
+          -218.5
+        ],
+        [
+          -112.5,
+          5.525,
+          -218.5
+        ],
+        [
+          -119.5,
+          5.525,
+          -216.5
+        ],
+        [
+          -119.361930847168,
+          5.525,
+          -216.298034667969
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 158.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "K-CSW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -3.0,
+          5.525,
+          -166.5
+        ],
+        [
+          -3.5,
+          5.525,
+          -167.5
+        ],
+        [
+          -13.5,
+          5.525,
+          -172.5
+        ],
+        [
+          -24.0,
+          5.525,
+          -175.5
+        ],
+        [
+          -28.5,
+          5.525,
+          -195.0
+        ],
+        [
+          -30.0,
+          5.525,
+          -213.0
+        ],
+        [
+          -40.5,
+          5.525,
+          -223.5
+        ],
+        [
+          -45.0,
+          5.525,
+          -225.0
+        ],
+        [
+          -66.0,
+          5.525,
+          -222.0
+        ],
+        [
+          -75.0,
+          5.525,
+          -216.0
+        ],
+        [
+          -87.0,
+          5.525,
+          -214.5
+        ],
+        [
+          -100.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -111.0,
+          5.525,
+          -218.5
+        ],
+        [
+          -112.5,
+          5.525,
+          -218.5
+        ],
+        [
+          -113.0,
+          5.525,
+          -217.0
+        ],
+        [
+          -113.0,
+          5.525,
+          -215.0
+        ],
+        [
+          -113.005867004395,
+          5.525,
+          -214.936798095703
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 154.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "C-K-CSW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -3.0,
+          5.525,
+          -166.5
+        ],
+        [
+          -3.5,
+          5.525,
+          -167.5
+        ],
+        [
+          -13.5,
+          5.525,
+          -172.5
+        ],
+        [
+          -24.0,
+          5.525,
+          -175.5
+        ],
+        [
+          -27.0,
+          5.525,
+          -192.0
+        ],
+        [
+          -30.0,
+          5.525,
+          -213.0
+        ],
+        [
+          -40.5,
+          5.525,
+          -223.5
+        ],
+        [
+          -45.0,
+          5.525,
+          -225.0
+        ],
+        [
+          -66.0,
+          5.525,
+          -222.0
+        ],
+        [
+          -75.0,
+          5.525,
+          -216.0
+        ],
+        [
+          -79.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -94.5,
+          5.525,
+          -231.0
+        ],
+        [
+          -112.5,
+          5.525,
+          -252.0
+        ],
+        [
+          -132.0,
+          5.525,
+          -273.0
+        ],
+        [
+          -145.5,
+          5.525,
+          -291.0
+        ],
+        [
+          -132.0,
+          5.525,
+          -312.0
+        ],
+        [
+          -118.5,
+          5.525,
+          -333.0
+        ],
+        [
+          -103.5,
+          5.525,
+          -354.0
+        ],
+        [
+          -88.5,
+          5.525,
+          -375.0
+        ],
+        [
+          -85.5,
+          5.525,
+          -373.5
+        ],
+        [
+          -81.0,
+          5.525,
+          -366.0
+        ],
+        [
+          -79.0,
+          5.525,
+          -364.0
+        ],
+        [
+          -77.6999969482422,
+          5.525,
+          -364.0
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 335.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "CN23-UP-test_start",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -3.0,
+          5.525,
+          -166.5
+        ],
+        [
+          -3.5,
+          5.525,
+          -167.5
+        ],
+        [
+          -13.5,
+          5.525,
+          -172.5
+        ],
+        [
+          -24.0,
+          5.525,
+          -175.5
+        ],
+        [
+          -27.0,
+          5.525,
+          -192.0
+        ],
+        [
+          -30.0,
+          5.525,
+          -213.0
+        ],
+        [
+          -40.5,
+          5.525,
+          -223.5
+        ],
+        [
+          -45.0,
+          5.525,
+          -225.0
+        ],
+        [
+          -63.0,
+          5.525,
+          -222.0
+        ],
+        [
+          -58.5,
+          5.525,
+          -228.0
+        ],
+        [
+          -43.5,
+          5.525,
+          -237.0
+        ],
+        [
+          -36.0,
+          5.525,
+          -241.5
+        ],
+        [
+          -15.0,
+          5.525,
+          -238.5
+        ],
+        [
+          6.0,
+          5.525,
+          -232.5
+        ],
+        [
+          27.0,
+          5.525,
+          -228.0
+        ],
+        [
+          31.5,
+          5.525,
+          -226.5
+        ],
+        [
+          45.0,
+          5.525,
+          -205.5
+        ],
+        [
+          49.5,
+          5.525,
+          -201.0
+        ],
+        [
+          57.0,
+          5.525,
+          -198.0
+        ],
+        [
+          63.5,
+          5.525,
+          -197.0
+        ],
+        [
+          63.2799987792969,
+          5.525,
+          -196.75
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 248.4,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "C2F-CSE-2",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          105.0,
+          5.525,
+          -347.0
+        ],
+        [
+          104.5,
+          5.525,
+          -350.0
+        ],
+        [
+          104.5,
+          5.525,
+          -350.5
+        ],
+        [
+          108.5,
+          5.525,
+          -352.0
+        ],
+        [
+          108.475730895996,
+          5.525,
+          -351.97119140625
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 7.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "K-CNE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          105.227377580815,
+          5.525,
+          -347.241408832904
+        ],
+        [
+          102.537658442857,
+          5.525,
+          -354.615377300351
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 7.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "C-K-CNE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          105.0,
+          5.525,
+          -347.0
+        ],
+        [
+          88.5,
+          5.525,
+          -354.0
+        ],
+        [
+          67.5,
+          5.525,
+          -364.5
+        ],
+        [
+          54.0,
+          5.525,
+          -367.5
+        ],
+        [
+          39.0,
+          5.525,
+          -361.5
+        ],
+        [
+          21.0,
+          5.525,
+          -352.5
+        ],
+        [
+          0.0,
+          5.525,
+          -342.0
+        ],
+        [
+          -13.5,
+          5.525,
+          -340.5
+        ],
+        [
+          -34.5,
+          5.525,
+          -340.5
+        ],
+        [
+          -55.5,
+          5.525,
+          -340.5
+        ],
+        [
+          -70.5,
+          5.525,
+          -343.5
+        ],
+        [
+          -78.0,
+          5.525,
+          -354.0
+        ],
+        [
+          -84.5,
+          5.525,
+          -369.0
+        ],
+        [
+          -87.0,
+          5.525,
+          -375.0
+        ],
+        [
+          -94.5,
+          5.525,
+          -367.5
+        ],
+        [
+          -108.0,
+          5.525,
+          -346.5
+        ],
+        [
+          -123.0,
+          5.525,
+          -325.5
+        ],
+        [
+          -138.0,
+          5.525,
+          -304.5
+        ],
+        [
+          -145.5,
+          5.525,
+          -291.0
+        ],
+        [
+          -130.5,
+          5.525,
+          -271.5
+        ],
+        [
+          -111.0,
+          5.525,
+          -250.5
+        ],
+        [
+          -93.0,
+          5.525,
+          -231.0
+        ],
+        [
+          -79.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -73.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -55.5,
+          5.525,
+          -228.0
+        ],
+        [
+          -40.5,
+          5.525,
+          -238.5
+        ],
+        [
+          -36.0,
+          5.525,
+          -241.5
+        ],
+        [
+          -15.0,
+          5.525,
+          -238.5
+        ],
+        [
+          6.0,
+          5.525,
+          -234.0
+        ],
+        [
+          27.0,
+          5.525,
+          -229.5
+        ],
+        [
+          34.5,
+          5.525,
+          -223.5
+        ],
+        [
+          46.5,
+          5.525,
+          -202.5
+        ],
+        [
+          51.0,
+          5.525,
+          -201.0
+        ],
+        [
+          70.5,
+          5.525,
+          -217.5
+        ],
+        [
+          90.0,
+          5.525,
+          -234.0
+        ],
+        [
+          111.0,
+          5.525,
+          -252.0
+        ],
+        [
+          117.0,
+          5.525,
+          -259.5
+        ],
+        [
+          115.0,
+          5.525,
+          -267.5
+        ],
+        [
+          107.0,
+          5.525,
+          -273.0
+        ],
+        [
+          107.0,
+          5.525,
+          -274.299987792969
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 685.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "CE12-UP-test_end",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          105.0,
+          5.525,
+          -347.0
+        ],
+        [
+          88.5,
+          5.525,
+          -354.0
+        ],
+        [
+          67.5,
+          5.525,
+          -364.5
+        ],
+        [
+          54.0,
+          5.525,
+          -367.5
+        ],
+        [
+          39.0,
+          5.525,
+          -361.5
+        ],
+        [
+          21.0,
+          5.525,
+          -352.5
+        ],
+        [
+          0.0,
+          5.525,
+          -342.0
+        ],
+        [
+          -13.5,
+          5.525,
+          -340.5
+        ],
+        [
+          -34.5,
+          5.525,
+          -340.5
+        ],
+        [
+          -55.5,
+          5.525,
+          -340.5
+        ],
+        [
+          -70.5,
+          5.525,
+          -343.5
+        ],
+        [
+          -78.0,
+          5.525,
+          -354.0
+        ],
+        [
+          -84.5,
+          5.525,
+          -369.0
+        ],
+        [
+          -87.0,
+          5.525,
+          -375.0
+        ],
+        [
+          -94.5,
+          5.525,
+          -367.5
+        ],
+        [
+          -108.0,
+          5.525,
+          -346.5
+        ],
+        [
+          -123.0,
+          5.525,
+          -325.5
+        ],
+        [
+          -138.0,
+          5.525,
+          -304.5
+        ],
+        [
+          -145.5,
+          5.525,
+          -291.0
+        ],
+        [
+          -130.5,
+          5.525,
+          -271.5
+        ],
+        [
+          -111.0,
+          5.525,
+          -250.5
+        ],
+        [
+          -93.0,
+          5.525,
+          -231.0
+        ],
+        [
+          -79.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -73.5,
+          5.525,
+          -216.0
+        ],
+        [
+          -55.5,
+          5.525,
+          -228.0
+        ],
+        [
+          -40.5,
+          5.525,
+          -238.5
+        ],
+        [
+          -36.0,
+          5.525,
+          -241.5
+        ],
+        [
+          -15.0,
+          5.525,
+          -238.5
+        ],
+        [
+          6.0,
+          5.525,
+          -232.5
+        ],
+        [
+          27.0,
+          5.525,
+          -228.0
+        ],
+        [
+          31.5,
+          5.525,
+          -226.5
+        ],
+        [
+          45.0,
+          5.525,
+          -205.5
+        ],
+        [
+          49.5,
+          5.525,
+          -201.0
+        ],
+        [
+          58.0,
+          5.525,
+          -198.0
+        ],
+        [
+          63.5,
+          5.525,
+          -197.0
+        ],
+        [
+          63.2799987792969,
+          5.525,
+          -196.75
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 591.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "C2F-CSE-2",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -117.0,
+          10.875,
+          -221.5
+        ],
+        [
+          -116.0,
+          10.875,
+          -220.5
+        ],
+        [
+          -115.5,
+          10.875,
+          -219.0
+        ],
+        [
+          -117.0,
+          10.875,
+          -217.5
+        ],
+        [
+          -119.5,
+          10.875,
+          -216.5
+        ],
+        [
+          -119.361930847168,
+          10.875,
+          -216.298034667969
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 8.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-1",
+      "target": "K-CSW-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -117.0,
+          10.875,
+          -221.5
+        ],
+        [
+          -116.0,
+          10.875,
+          -220.5
+        ],
+        [
+          -113.0,
+          10.875,
+          -215.0
+        ],
+        [
+          -113.005867004395,
+          10.875,
+          -214.936798095703
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 7.7,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-1",
+      "target": "C-K-CSW",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -117.0,
+          10.875,
+          -221.5
+        ],
+        [
+          -112.5,
+          10.875,
+          -217.5
+        ],
+        [
+          -107.0,
+          10.875,
+          -213.5
+        ],
+        [
+          -107.148742675781,
+          10.875,
+          -213.635208129883
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 13.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-1",
+      "target": "K-CSW-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          7.5,
+          10.875,
+          -198.5
+        ],
+        [
+          8.5,
+          10.875,
+          -198.0
+        ],
+        [
+          9.0,
+          10.875,
+          -197.5
+        ],
+        [
+          9.5,
+          10.875,
+          -196.0
+        ],
+        [
+          9.0,
+          10.875,
+          -195.0
+        ],
+        [
+          6.5,
+          10.875,
+          -193.0
+        ],
+        [
+          6.5,
+          10.875,
+          -192.850006103516
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 7.9,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "K-CSE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          7.5,
+          10.875,
+          -198.5
+        ],
+        [
+          9.0,
+          10.875,
+          -198.0
+        ],
+        [
+          13.0,
+          10.875,
+          -193.0
+        ],
+        [
+          13.0,
+          10.875,
+          -192.899993896484
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 8.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "C-K-CSE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          7.5,
+          10.875,
+          -198.5
+        ],
+        [
+          11.0,
+          10.875,
+          -196.5
+        ],
+        [
+          15.0,
+          10.875,
+          -193.5
+        ],
+        [
+          19.0,
+          10.875,
+          -193.0
+        ],
+        [
+          19.0,
+          10.875,
+          -192.899993896484
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 13.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "K-CSE-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          7.5,
+          10.875,
+          -198.5
+        ],
+        [
+          22.5,
+          10.875,
+          -198.0
+        ],
+        [
+          43.5,
+          10.875,
+          -198.0
+        ],
+        [
+          63.0,
+          10.875,
+          -196.5
+        ],
+        [
+          84.0,
+          10.875,
+          -196.5
+        ],
+        [
+          88.0,
+          10.875,
+          -197.0
+        ],
+        [
+          87.9800033569336,
+          10.875,
+          -196.75
+        ]
+      ],
+      "back_arrow": "→",
+      "distance_m": 80.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "←",
+      "kind": "DINING",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "C3F-CSE-1",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          105.0,
+          10.875,
+          -347.0
+        ],
+        [
+          104.0,
+          10.875,
+          -348.5
+        ],
+        [
+          104.5,
+          10.875,
+          -350.5
+        ],
+        [
+          108.5,
+          10.875,
+          -352.0
+        ],
+        [
+          108.475730895996,
+          10.875,
+          -351.97119140625
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 8.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-3",
+      "target": "K-CNE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          105.0,
+          10.875,
+          -347.0
+        ],
+        [
+          103.0,
+          10.875,
+          -351.5
+        ],
+        [
+          102.5,
+          10.875,
+          -354.5
+        ],
+        [
+          102.537658691406,
+          10.875,
+          -354.615386962891
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 8.1,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-3",
+      "target": "C-K-CNE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          105.0,
+          10.875,
+          -347.0
+        ],
+        [
+          101.0,
+          10.875,
+          -353.0
+        ],
+        [
+          97.0,
+          10.875,
+          -357.0
+        ],
+        [
+          97.0754623413086,
+          10.875,
+          -357.098205566406
+        ]
+      ],
+      "back_arrow": "↘",
+      "distance_m": 13.0,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↖",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-3F-NAV-3",
+      "target": "K-CNE-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          13.5,
+          16.4,
+          -180.0
+        ],
+        [
+          10.5,
+          16.4,
+          -180.5
+        ],
+        [
+          9.5,
+          16.4,
+          -191.0
+        ],
+        [
+          9.5,
+          16.4,
+          -192.5
+        ],
+        [
+          6.5,
+          16.4,
+          -193.0
+        ],
+        [
+          6.5,
+          16.4,
+          -192.850006103516
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 18.3,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-RF-NAV-2",
+      "target": "K-CSE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          13.5,
+          16.4,
+          -180.0
+        ],
+        [
+          10.5,
+          16.4,
+          -180.5
+        ],
+        [
+          10.5,
+          16.4,
+          -192.0
+        ],
+        [
+          11.0,
+          16.4,
+          -193.0
+        ],
+        [
+          13.0,
+          16.4,
+          -193.0
+        ],
+        [
+          13.0,
+          16.4,
+          -192.899993896484
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 17.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-RF-NAV-2",
+      "target": "C-K-CSE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          13.5,
+          16.4,
+          -180.0
+        ],
+        [
+          10.5,
+          16.4,
+          -180.5
+        ],
+        [
+          10.5,
+          16.4,
+          -192.0
+        ],
+        [
+          11.0,
+          16.4,
+          -193.0
+        ],
+        [
+          18.0,
+          16.4,
+          -193.0
+        ],
+        [
+          19.0,
+          16.4,
+          -193.0
+        ],
+        [
+          19.0,
+          16.4,
+          -192.899993896484
+        ]
+      ],
+      "back_arrow": "↑",
+      "distance_m": 23.8,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↓",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-RF-NAV-2",
+      "target": "K-CSE-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          108.0,
+          16.4,
+          -369.0
+        ],
+        [
+          110.0,
+          16.4,
+          -364.5
+        ],
+        [
+          106.0,
+          16.4,
+          -353.5
+        ],
+        [
+          108.5,
+          16.4,
+          -352.0
+        ],
+        [
+          108.475730895996,
+          16.4,
+          -351.97119140625
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 19.6,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "WC",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-RF-NAV-3",
+      "target": "K-CNE-AWC",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          108.0,
+          16.4,
+          -369.0
+        ],
+        [
+          110.0,
+          16.4,
+          -364.5
+        ],
+        [
+          105.0,
+          16.4,
+          -354.0
+        ],
+        [
+          102.5,
+          16.4,
+          -354.5
+        ],
+        [
+          102.537658691406,
+          16.4,
+          -354.615386962891
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 19.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "EV",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-RF-NAV-3",
+      "target": "C-K-CNE",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          108.0,
+          16.4,
+          -369.0
+        ],
+        [
+          110.0,
+          16.4,
+          -364.5
+        ],
+        [
+          105.0,
+          16.4,
+          -354.0
+        ],
+        [
+          97.0,
+          16.4,
+          -357.0
+        ],
+        [
+          97.0754623413086,
+          16.4,
+          -357.098205566406
+        ]
+      ],
+      "back_arrow": "↗",
+      "distance_m": 25.2,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↙",
+      "kind": "ST",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V21-combined-C-RF-NAV-3",
+      "target": "K-CNE-ST",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          322.2,
+          5.525,
+          -34.7
+        ],
+        [
+          321.2,
+          5.525,
+          -35.3
+        ],
+        [
+          321.2,
+          5.525,
+          -40.5
+        ],
+        [
+          322.2,
+          5.525,
+          -41.1
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 7.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V22-TRANSFER-A-2F",
+      "target": "A-WEST-V22-1-UP-boarding",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          337.8,
+          10.875,
+          -41.1
+        ],
+        [
+          338.8,
+          10.875,
+          -40.5
+        ],
+        [
+          338.8,
+          10.875,
+          -35.3
+        ],
+        [
+          337.8,
+          10.875,
+          -34.7
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 7.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V22-TRANSFER-A-3F",
+      "target": "A-WEST-V22-2-UP-boarding",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -11.8
+        ],
+        [
+          -200.8,
+          5.525,
+          -17.0
+        ],
+        [
+          -199.8,
+          5.525,
+          -17.6
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 7.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V22-TRANSFER-B-2F",
+      "target": "B-WEST-V15-1-UP-boarding",
+      "variant": "combined"
+    },
+    {
+      "actual_path": [
+        [
+          -184.2,
+          10.875,
+          -17.6
+        ],
+        [
+          -183.2,
+          10.875,
+          -17.0
+        ],
+        [
+          -183.2,
+          10.875,
+          -11.8
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ],
+      "back_arrow": "↙",
+      "distance_m": 7.5,
+      "fallback_from_unverified_target": "",
+      "front_arrow": "↗",
+      "kind": "ES",
+      "pass": true,
+      "reason": "",
+      "replanned_against_live_collision": false,
+      "sign": "V22-TRANSFER-B-3F",
+      "target": "B-WEST-V15-2-UP-boarding",
+      "variant": "combined"
+    }
+  ],
+  "floor_checks": 26617,
+  "human_playtest": false,
+  "live_replans": 0,
+  "mounts": [
+    {
+      "ceiling_y": -0.414999995231628,
+      "floor": "B1",
+      "id": "V21-combined-A-B1-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": -0.414999995231628,
+      "floor": "B1",
+      "id": "V21-combined-A-B1-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": -0.414999876022339,
+      "floor": "B1",
+      "id": "V21-combined-A-B1-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 5.10999998092651,
+      "floor": "1F",
+      "id": "V21-combined-A-1F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 5.10999998092651,
+      "floor": "1F",
+      "id": "V21-combined-A-1F-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 5.10999998092651,
+      "floor": "1F",
+      "id": "V21-combined-A-1F-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-A-2F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-A-2F-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-A-2F-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 15.9850004577637,
+      "floor": "3F",
+      "id": "V21-combined-A-3F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 15.9850004577637,
+      "floor": "3F",
+      "id": "V21-combined-A-3F-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 15.9850004577637,
+      "floor": "3F",
+      "id": "V21-combined-A-3F-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-A-RF-NAV-1",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-A-RF-NAV-2",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-A-RF-NAV-3",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": -0.414999876022339,
+      "floor": "B1",
+      "id": "V21-combined-B-B1-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": -0.414999876022339,
+      "floor": "B1",
+      "id": "V21-combined-B-B1-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": -0.414999876022339,
+      "floor": "B1",
+      "id": "V21-combined-B-B1-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 5.10999998092651,
+      "floor": "1F",
+      "id": "V21-combined-B-1F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 5.10999998092651,
+      "floor": "1F",
+      "id": "V21-combined-B-1F-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 5.10999998092651,
+      "floor": "1F",
+      "id": "V21-combined-B-1F-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-B-2F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-B-2F-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-B-2F-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 15.9850004577637,
+      "floor": "3F",
+      "id": "V21-combined-B-3F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "3F",
+      "id": "V21-combined-B-3F-NAV-2",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 15.9850004577637,
+      "floor": "3F",
+      "id": "V21-combined-B-3F-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-B-RF-NAV-1",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-B-RF-NAV-2",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-B-RF-NAV-3",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": -0.434999976158142,
+      "floor": "B1",
+      "id": "V21-combined-C-B1-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": -0.415000233650208,
+      "floor": "B1",
+      "id": "V21-combined-C-B1-NAV-2",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": -0.434999976158142,
+      "floor": "B1",
+      "id": "V21-combined-C-B1-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": 5.10999998092651,
+      "floor": "1F",
+      "id": "V21-combined-C-1F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "1F",
+      "id": "V21-combined-C-1F-NAV-2",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "1F",
+      "id": "V21-combined-C-1F-NAV-3",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-C-2F-NAV-1",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "2F",
+      "id": "V21-combined-C-2F-NAV-2",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V21-combined-C-2F-NAV-3",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "3F",
+      "id": "V21-combined-C-3F-NAV-1",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "3F",
+      "id": "V21-combined-C-3F-NAV-2",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "3F",
+      "id": "V21-combined-C-3F-NAV-3",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-C-RF-NAV-2",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": null,
+      "floor": "RF",
+      "id": "V21-combined-C-RF-NAV-3",
+      "mount": "floor",
+      "validation": "No verified overhead support; supplemental outdoor/roof pylon retained",
+      "wing": "C"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V22-TRANSFER-A-2F",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 15.9850004577637,
+      "floor": "3F",
+      "id": "V22-TRANSFER-A-3F",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "A"
+    },
+    {
+      "ceiling_y": 10.4599998855591,
+      "floor": "2F",
+      "id": "V22-TRANSFER-B-2F",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    },
+    {
+      "ceiling_y": 15.9850004577637,
+      "floor": "3F",
+      "id": "V22-TRANSFER-B-3F",
+      "mount": "ceiling",
+      "validation": "Actual two-point ceiling ray support",
+      "wing": "B"
+    }
+  ],
+  "offline_route_conflicts": 0,
+  "omitted_boards": [
+    {
+      "id": "V21-combined-C-RF-NAV-1",
+      "reason": "No supported public forecourt for this roof sign; do not install a pylon inside a toilet"
+    }
+  ],
+  "rows": 165,
+  "source_mismatches": [],
+  "sweeps": 960
+}

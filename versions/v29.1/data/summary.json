@@ -1,0 +1,1221 @@
+{
+  "revision": "v29.1 focused continuation, PARTIAL",
+  "focus_store_ids": [
+    "A1F-002",
+    "A1F-044",
+    "B1-040",
+    "C1F-CE-3"
+  ],
+  "new_models": 10,
+  "replaced_fixtures": 19,
+  "added_fixtures": 38,
+  "live_relocated_fixtures": 5,
+  "store_count": 480,
+  "NPC_count": 43,
+  "paired_cameras": 18,
+  "actual_images": 36,
+  "human_playtest": false,
+  "main_game_integrated": false,
+  "all_1F_complete": false,
+  "limitations": {
+    "A1F-002": "TV・大型家電・キッチン家電の専用展示を追加。約5558㎡全域の売場密度はまだ不足。",
+    "A1F-044": "専用衣料ラックとコーディネート台、実支持位置への看板再配置。全内装の美術完成ではない。",
+    "B1-040": "パンケース・コーヒーカウンター・客席を作り分け。旧形式家具も含めて5基を局所再配置。L字入口の直線的な見通しは未解決。",
+    "C1F-CE-3": "低いキッズ用ラックと小さめの展示台、看板の位置を改善。既存ショーウィンドウのマネキン・細かな商品表現は未完成。"
+  },
+  "QA": {
+    "before": {
+      "main_routes_passed": 233,
+      "interior_paths_passed": 42,
+      "representative_body_walks": [
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            461.905731201172,
+            0.000841421366203576,
+            -6.47329092025757
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -0.018198287114501,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 3920,
+          "points": [
+            [
+              461.892260439127,
+              0.02,
+              -6.52860545924304
+            ],
+            [
+              465.029239982629,
+              0.02,
+              6.32284253501105
+            ],
+            [
+              465.029239982629,
+              0.02,
+              20.622842535011
+            ],
+            [
+              467.629239982629,
+              0.02,
+              25.8228425350111
+            ],
+            [
+              469.579239982629,
+              0.02,
+              26.4728425350111
+            ],
+            [
+              472.829239982629,
+              0.02,
+              36.2228425350111
+            ],
+            [
+              473.479239982629,
+              0.02,
+              40.7728425350111
+            ],
+            [
+              475.429239982629,
+              0.02,
+              41.4228425350111
+            ],
+            [
+              476.079239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              477.379239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              478.029239982629,
+              0.02,
+              49.2228425350111
+            ],
+            [
+              481.929239982629,
+              0.02,
+              58.9728425350111
+            ],
+            [
+              483.229239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              483.879239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              486.0,
+              0.02,
+              70.5750000238419
+            ],
+            [
+              483.879239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              483.229239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              481.929239982629,
+              0.02,
+              58.9728425350111
+            ],
+            [
+              478.029239982629,
+              0.02,
+              49.2228425350111
+            ],
+            [
+              477.379239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              476.079239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              475.429239982629,
+              0.02,
+              41.4228425350111
+            ],
+            [
+              473.479239982629,
+              0.02,
+              40.7728425350111
+            ],
+            [
+              472.829239982629,
+              0.02,
+              36.2228425350111
+            ],
+            [
+              469.579239982629,
+              0.02,
+              26.4728425350111
+            ],
+            [
+              467.629239982629,
+              0.02,
+              25.8228425350111
+            ],
+            [
+              465.029239982629,
+              0.02,
+              20.622842535011
+            ],
+            [
+              465.029239982629,
+              0.02,
+              6.32284253501105
+            ],
+            [
+              461.892260439127,
+              0.02,
+              -6.52860545924304
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "A1F-002"
+        },
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            367.876831054688,
+            0.000817120831925422,
+            51.1973609924316
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -0.0159968696534634,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 805,
+          "points": [
+            [
+              367.912185557577,
+              0.02,
+              51.1528896754222
+            ],
+            [
+              362.830688000345,
+              0.02,
+              57.488229205001
+            ],
+            [
+              362.830688000345,
+              0.02,
+              62.038229205001
+            ],
+            [
+              360.230688000345,
+              0.02,
+              64.638229205001
+            ],
+            [
+              359.494408749493,
+              0.02,
+              63.5813944218694
+            ],
+            [
+              360.230688000345,
+              0.02,
+              64.638229205001
+            ],
+            [
+              362.830688000345,
+              0.02,
+              62.038229205001
+            ],
+            [
+              362.830688000345,
+              0.02,
+              57.488229205001
+            ],
+            [
+              367.912185557577,
+              0.02,
+              51.1528896754222
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "A1F-044"
+        },
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            -30.4808158874512,
+            0.000809850578662008,
+            -12.216588973999
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -8.46306793391705e-05,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 2034,
+          "points": [
+            [
+              -30.4799995422363,
+              0.0199999995529652,
+              -12.1548643112183
+            ],
+            [
+              -30.7999992370605,
+              0.02,
+              -32.7999992370605
+            ],
+            [
+              -30.0,
+              0.02,
+              -33.5999984741211
+            ],
+            [
+              -21.2000007629395,
+              0.02,
+              -35.2000007629395
+            ],
+            [
+              -20.3999996185303,
+              0.02,
+              -36.0
+            ],
+            [
+              -20.0,
+              0.02,
+              -36.7999992370605
+            ],
+            [
+              -14.8000001907349,
+              0.02,
+              -39.2000007629395
+            ],
+            [
+              -13.1999998092651,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -12.0,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -11.6000003814697,
+              0.02,
+              -39.5999984741211
+            ],
+            [
+              -11.6000003814697,
+              0.02,
+              -39.2000007629395
+            ],
+            [
+              -11.6000003814697,
+              0.02,
+              -39.5999984741211
+            ],
+            [
+              -12.0,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -13.1999998092651,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -14.8000001907349,
+              0.02,
+              -39.2000007629395
+            ],
+            [
+              -20.0,
+              0.02,
+              -36.7999992370605
+            ],
+            [
+              -20.3999996185303,
+              0.02,
+              -36.0
+            ],
+            [
+              -21.2000007629395,
+              0.02,
+              -35.2000007629395
+            ],
+            [
+              -30.0,
+              0.02,
+              -33.5999984741211
+            ],
+            [
+              -30.7999992370605,
+              0.02,
+              -32.7999992370605
+            ],
+            [
+              -30.4799995422363,
+              0.0199999995529652,
+              -12.1548643112183
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "B1-040"
+        },
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            137.228729248047,
+            0.000808668963145465,
+            -261.846954345703
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -0.0159854404628277,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 863,
+          "points": [
+            [
+              137.195493889329,
+              0.02,
+              -261.870499139676
+            ],
+            [
+              146.942669534301,
+              0.02,
+              -254.939704726295
+            ],
+            [
+              150.192669534301,
+              0.02,
+              -254.289704726295
+            ],
+            [
+              153.041678658866,
+              0.02,
+              -252.275435368134
+            ],
+            [
+              150.192669534301,
+              0.02,
+              -254.289704726295
+            ],
+            [
+              146.942669534301,
+              0.02,
+              -254.939704726295
+            ],
+            [
+              137.195493889329,
+              0.02,
+              -261.870499139676
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "C1F-CE-3"
+        }
+      ],
+      "new_fixtures_support": [],
+      "camera_feet": [
+        {
+          "floor": true,
+          "id": "A1F-002-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-002-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-002-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-044-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-044-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-044-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "B1-040-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "B1-040-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "B1-040-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "C1F-CE-3-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "C1F-CE-3-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "C1F-CE-3-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "bakery-entry-turn",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "bakery-display",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "bakery-east-seating",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "electronics-TV",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "electronics-kitchen",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "kids-interior",
+          "standing": true
+        }
+      ]
+    },
+    "after": {
+      "main_routes_passed": 233,
+      "interior_paths_passed": 42,
+      "representative_body_walks": [
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            461.905731201172,
+            0.000841421366203576,
+            -6.47329092025757
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -0.018198287114501,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 3920,
+          "points": [
+            [
+              461.892260439127,
+              0.02,
+              -6.52860545924304
+            ],
+            [
+              465.029239982629,
+              0.02,
+              6.32284253501105
+            ],
+            [
+              465.029239982629,
+              0.02,
+              20.622842535011
+            ],
+            [
+              467.629239982629,
+              0.02,
+              25.8228425350111
+            ],
+            [
+              469.579239982629,
+              0.02,
+              26.4728425350111
+            ],
+            [
+              472.829239982629,
+              0.02,
+              36.2228425350111
+            ],
+            [
+              473.479239982629,
+              0.02,
+              40.7728425350111
+            ],
+            [
+              475.429239982629,
+              0.02,
+              41.4228425350111
+            ],
+            [
+              476.079239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              477.379239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              478.029239982629,
+              0.02,
+              49.2228425350111
+            ],
+            [
+              481.929239982629,
+              0.02,
+              58.9728425350111
+            ],
+            [
+              483.229239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              483.879239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              486.0,
+              0.02,
+              70.5750000238419
+            ],
+            [
+              483.879239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              483.229239982629,
+              0.02,
+              60.2728425350111
+            ],
+            [
+              481.929239982629,
+              0.02,
+              58.9728425350111
+            ],
+            [
+              478.029239982629,
+              0.02,
+              49.2228425350111
+            ],
+            [
+              477.379239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              476.079239982629,
+              0.02,
+              48.572842535011
+            ],
+            [
+              475.429239982629,
+              0.02,
+              41.4228425350111
+            ],
+            [
+              473.479239982629,
+              0.02,
+              40.7728425350111
+            ],
+            [
+              472.829239982629,
+              0.02,
+              36.2228425350111
+            ],
+            [
+              469.579239982629,
+              0.02,
+              26.4728425350111
+            ],
+            [
+              467.629239982629,
+              0.02,
+              25.8228425350111
+            ],
+            [
+              465.029239982629,
+              0.02,
+              20.622842535011
+            ],
+            [
+              465.029239982629,
+              0.02,
+              6.32284253501105
+            ],
+            [
+              461.892260439127,
+              0.02,
+              -6.52860545924304
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "A1F-002"
+        },
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            367.876831054688,
+            0.000817120831925422,
+            51.1973609924316
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -0.0159968696534634,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 805,
+          "points": [
+            [
+              367.912185557577,
+              0.02,
+              51.1528896754222
+            ],
+            [
+              362.830688000345,
+              0.02,
+              57.488229205001
+            ],
+            [
+              362.830688000345,
+              0.02,
+              62.038229205001
+            ],
+            [
+              360.230688000345,
+              0.02,
+              64.638229205001
+            ],
+            [
+              359.494408749493,
+              0.02,
+              63.5813944218694
+            ],
+            [
+              360.230688000345,
+              0.02,
+              64.638229205001
+            ],
+            [
+              362.830688000345,
+              0.02,
+              62.038229205001
+            ],
+            [
+              362.830688000345,
+              0.02,
+              57.488229205001
+            ],
+            [
+              367.912185557577,
+              0.02,
+              51.1528896754222
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "A1F-044"
+        },
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            -30.4808158874512,
+            0.000809850578662008,
+            -12.216588973999
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -8.46306793391705e-05,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 2034,
+          "points": [
+            [
+              -30.4799995422363,
+              0.0199999995529652,
+              -12.1548643112183
+            ],
+            [
+              -30.7999992370605,
+              0.02,
+              -32.7999992370605
+            ],
+            [
+              -30.0,
+              0.02,
+              -33.5999984741211
+            ],
+            [
+              -21.2000007629395,
+              0.02,
+              -35.2000007629395
+            ],
+            [
+              -20.3999996185303,
+              0.02,
+              -36.0
+            ],
+            [
+              -20.0,
+              0.02,
+              -36.7999992370605
+            ],
+            [
+              -14.8000001907349,
+              0.02,
+              -39.2000007629395
+            ],
+            [
+              -13.1999998092651,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -12.0,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -11.6000003814697,
+              0.02,
+              -39.5999984741211
+            ],
+            [
+              -11.6000003814697,
+              0.02,
+              -39.2000007629395
+            ],
+            [
+              -11.6000003814697,
+              0.02,
+              -39.5999984741211
+            ],
+            [
+              -12.0,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -13.1999998092651,
+              0.02,
+              -41.2000007629395
+            ],
+            [
+              -14.8000001907349,
+              0.02,
+              -39.2000007629395
+            ],
+            [
+              -20.0,
+              0.02,
+              -36.7999992370605
+            ],
+            [
+              -20.3999996185303,
+              0.02,
+              -36.0
+            ],
+            [
+              -21.2000007629395,
+              0.02,
+              -35.2000007629395
+            ],
+            [
+              -30.0,
+              0.02,
+              -33.5999984741211
+            ],
+            [
+              -30.7999992370605,
+              0.02,
+              -32.7999992370605
+            ],
+            [
+              -30.4799995422363,
+              0.0199999995529652,
+              -12.1548643112183
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "B1-040"
+        },
+        {
+          "NPC_collision_excluded": true,
+          "end": [
+            137.228729248047,
+            0.000808668963145465,
+            -261.846954345703
+          ],
+          "failed_target": [],
+          "human_playtest": false,
+          "lowest_y": -0.0159854404628277,
+          "method": "Actual player controller, CharacterBody3D and move_and_slide, out-and-return along one representative interior path",
+          "pass": true,
+          "physics_ticks": 863,
+          "points": [
+            [
+              137.195493889329,
+              0.02,
+              -261.870499139676
+            ],
+            [
+              146.942669534301,
+              0.02,
+              -254.939704726295
+            ],
+            [
+              150.192669534301,
+              0.02,
+              -254.289704726295
+            ],
+            [
+              153.041678658866,
+              0.02,
+              -252.275435368134
+            ],
+            [
+              150.192669534301,
+              0.02,
+              -254.289704726295
+            ],
+            [
+              146.942669534301,
+              0.02,
+              -254.939704726295
+            ],
+            [
+              137.195493889329,
+              0.02,
+              -261.870499139676
+            ]
+          ],
+          "speed_m_s": 2.6,
+          "store_id": "C1F-CE-3"
+        }
+      ],
+      "new_fixtures_support": [
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-1",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-kitchen_demo-2",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-laundry_demo-3",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-4",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-kitchen_demo-5",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-laundry_demo-6",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-7",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-kitchen_demo-8",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-laundry_demo-9",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-kitchen_demo-10",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-11",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-kitchen_demo-12",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-13",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-14",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-15",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-16",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-002-television_demo-17",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-B1-040-bakery_vitrine-18",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-B1-040-coffee_bar-19",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-B1-040-bakery_vitrine-20",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-B1-040-bakery_vitrine-21",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-B1-040-cafe_banquette-22",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-B1-040-cafe_table-23",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-B1-040-cafe_banquette-24",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-044-fashion_table-25",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-044-fashion_table-26",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-044-fashion_table-27",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-044-fashion_table-28",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-044-fashion_table-29",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-A1F-044-fashion_table-30",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-31",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-32",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-33",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-34",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-35",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-36",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-37",
+          "other_geometry_contacts": []
+        },
+        {
+          "all_four_corners_supported": true,
+          "id": "V291-C1F-CE-3-fashion_table-38",
+          "other_geometry_contacts": []
+        }
+      ],
+      "camera_feet": [
+        {
+          "floor": true,
+          "id": "A1F-002-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-002-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-002-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-044-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-044-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "A1F-044-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "B1-040-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "B1-040-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "B1-040-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "C1F-CE-3-front",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "C1F-CE-3-centre",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "C1F-CE-3-rear",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "bakery-entry-turn",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "bakery-display",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "bakery-east-seating",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "electronics-TV",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "electronics-kitchen",
+          "standing": true
+        },
+        {
+          "floor": true,
+          "id": "kids-interior",
+          "standing": true
+        }
+      ]
+    }
+  }
+}

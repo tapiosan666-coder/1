@@ -1,0 +1,82 @@
+{
+  "checks": [
+    {
+      "B_west_ids": [],
+      "dog_world": [
+        -77.0,
+        -245.0
+      ],
+      "from": "res://main.tscn",
+      "key": "F4",
+      "pass": true,
+      "retired_B_ids_present": [
+        "E1-12-UP",
+        "E1-12-DOWN",
+        "E1-23-UP",
+        "E1-23-DOWN"
+      ],
+      "source_mismatches": [],
+      "to": "res://C_proposal_v12.tscn"
+    },
+    {
+      "B_west_ids": [
+        "B-WEST-V15-0-UP",
+        "B-WEST-V15-0-DOWN",
+        "B-WEST-V15-1-UP",
+        "B-WEST-V15-1-DOWN",
+        "B-WEST-V15-2-UP",
+        "B-WEST-V15-2-DOWN"
+      ],
+      "dog_world": [
+        -77.0,
+        -245.0
+      ],
+      "from": "res://C_proposal_v12.tscn",
+      "key": "F4",
+      "pass": true,
+      "retired_B_ids_present": [],
+      "source_mismatches": [],
+      "to": "res://main.tscn"
+    },
+    {
+      "B_west_ids": [],
+      "dog_world": [
+        -77.0,
+        -245.0
+      ],
+      "from": "res://main.tscn",
+      "key": "F6",
+      "pass": true,
+      "retired_B_ids_present": [
+        "E1-12-UP",
+        "E1-12-DOWN",
+        "E1-23-UP",
+        "E1-23-DOWN"
+      ],
+      "source_mismatches": [],
+      "to": "res://B_legacy_comparison_v28.tscn"
+    },
+    {
+      "B_west_ids": [
+        "B-WEST-V15-0-UP",
+        "B-WEST-V15-0-DOWN",
+        "B-WEST-V15-1-UP",
+        "B-WEST-V15-1-DOWN",
+        "B-WEST-V15-2-UP",
+        "B-WEST-V15-2-DOWN"
+      ],
+      "dog_world": [
+        -77.0,
+        -245.0
+      ],
+      "from": "res://B_legacy_comparison_v28.tscn",
+      "key": "F6",
+      "pass": true,
+      "retired_B_ids_present": [],
+      "source_mismatches": [],
+      "to": "res://main.tscn"
+    }
+  ],
+  "human_playtest": false,
+  "method": "Actual injected F4/F6 input events and scene lifecycle; normal integrated candidate restores on second press."
+}

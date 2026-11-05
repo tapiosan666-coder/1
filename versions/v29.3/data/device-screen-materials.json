@@ -1,0 +1,104 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "material": "V293_device_ui_mobile",
+      "model": "mobile_experience_v293",
+      "normalized_uv_max": [
+        1.0,
+        1.0
+      ],
+      "normalized_uv_min": [
+        0.0,
+        0.0
+      ],
+      "pass": true,
+      "texture": "res://assets/v293/art/mobile-demo.png"
+    },
+    {
+      "material": "V293_device_ui_tablet",
+      "model": "mobile_experience_v293",
+      "normalized_uv_max": [
+        1.0,
+        1.0
+      ],
+      "normalized_uv_min": [
+        0.0,
+        0.0
+      ],
+      "pass": true,
+      "texture": "res://assets/v293/art/tablet-demo.png"
+    },
+    {
+      "material": "V293_device_ui_desktop",
+      "model": "computer_experience_v293",
+      "normalized_uv_max": [
+        1.0,
+        1.0
+      ],
+      "normalized_uv_min": [
+        0.0,
+        0.0
+      ],
+      "pass": true,
+      "texture": "res://assets/v293/art/desktop-demo.png"
+    },
+    {
+      "material": "V293_device_ui_desktop",
+      "model": "computer_experience_v293",
+      "normalized_uv_max": [
+        1.0,
+        1.0
+      ],
+      "normalized_uv_min": [
+        0.0,
+        0.0
+      ],
+      "pass": true,
+      "texture": "res://assets/v293/art/desktop-demo.png"
+    },
+    {
+      "material": "V293_device_ui_tablet",
+      "model": "computer_experience_v293",
+      "normalized_uv_max": [
+        1.0,
+        1.0
+      ],
+      "normalized_uv_min": [
+        0.0,
+        0.0
+      ],
+      "pass": true,
+      "texture": "res://assets/v293/art/tablet-demo.png"
+    },
+    {
+      "material": "V293_device_ui_tv",
+      "model": "screen_compare_v293",
+      "normalized_uv_max": [
+        1.0,
+        1.0
+      ],
+      "normalized_uv_min": [
+        0.0,
+        0.0
+      ],
+      "pass": true,
+      "texture": "res://assets/v293/art/tv-demo.png"
+    },
+    {
+      "material": "V293_device_ui_tv",
+      "model": "screen_compare_v293",
+      "normalized_uv_max": [
+        1.0,
+        1.0
+      ],
+      "normalized_uv_min": [
+        0.0,
+        0.0
+      ],
+      "pass": true,
+      "texture": "res://assets/v293/art/tv-demo.png"
+    }
+  ],
+  "scope": "Actual imported meshes/materials; not a human visual approval"
+}

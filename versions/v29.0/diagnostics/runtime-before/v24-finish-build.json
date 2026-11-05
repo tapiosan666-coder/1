@@ -1,0 +1,1642 @@
+{
+  "ceiling_units": 46,
+  "floor_triangles": 490,
+  "new_collision_shapes": 0,
+  "posters": 45,
+  "real_lights": 46,
+  "resource_cache": {
+    "NPC_models_changed": false,
+    "canonical_materials": 231,
+    "canonical_texture_contents": 100,
+    "libraries": 267,
+    "library_hits": 0,
+    "library_misses": 267,
+    "triangles_merged": false
+  },
+  "store_reports": [
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              367.795318603516,
+              5.14500045776367,
+              -67.699104309082
+            ],
+            [
+              365.515289306641,
+              5.14500045776367,
+              -67.699104309082
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              370.54931640625,
+              5.14500045776367,
+              -71.6566619873047
+            ],
+            [
+              368.269287109375,
+              5.14500045776367,
+              -71.6566619873047
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 3,
+      "id": "A1F-003",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.044999998062849,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.985622227191925,
+            0.0,
+            0.168963819742203
+          ],
+          "p": [
+            375.931884765625,
+            1.75,
+            -67.101921081543
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.985622227191925,
+            0.0,
+            -0.168963819742203
+          ],
+          "p": [
+            353.772827148438,
+            1.75,
+            -67.8624649047852
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "leather_gallery",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              584.603576660156,
+              5.14499950408936,
+              16.925365447998
+            ],
+            [
+              584.792907714844,
+              5.14499950408936,
+              14.6532402038574
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              592.685913085938,
+              5.1449990272522,
+              15.4281091690063
+            ],
+            [
+              592.808959960938,
+              5.1449990272522,
+              13.9512281417847
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 49,
+      "id": "A1F-023",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00800001434981823,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.083045482635498,
+            0.0,
+            0.996545732021332
+          ],
+          "p": [
+            593.454895019531,
+            1.75,
+            9.70022392272949
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.00146980513818562,
+            0.0,
+            -0.999998927116394
+          ],
+          "p": [
+            589.419921875,
+            1.75,
+            15.8624362945557
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "modern_beauty",
+      "walls": 5
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              507.227325439453,
+              5.14499998092651,
+              -58.8830680847168
+            ],
+            [
+              504.991607666016,
+              5.14499998092651,
+              -59.3302116394043
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              508.567199707031,
+              5.14499998092651,
+              -65.5823974609375
+            ],
+            [
+              506.331481933594,
+              5.14499998092651,
+              -66.029541015625
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 2,
+      "id": "A1F-017",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00800001434981823,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.980580687522888,
+            0.0,
+            0.196116134524345
+          ],
+          "p": [
+            501.861236572266,
+            1.75,
+            -70.2750625610352
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.980580687522888,
+            0.0,
+            -0.196116134524345
+          ],
+          "p": [
+            511.829986572266,
+            1.75,
+            -55.2996368408203
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "japanese_living",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              -42.6762962341309,
+              5.14499950408936,
+              -36.0055847167969
+            ],
+            [
+              -40.403995513916,
+              5.14499950408936,
+              -36.1927795410156
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              -44.8563652038574,
+              5.14499950408936,
+              -30.8961811065674
+            ],
+            [
+              -42.5840644836426,
+              5.14499950408936,
+              -31.0833721160889
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 28,
+      "id": "B1-N01",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.963054835796356,
+            0.0,
+            -0.269305318593979
+          ],
+          "p": [
+            -41.8820610046387,
+            1.75,
+            -28.3175792694092
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.996671080589294,
+            0.0,
+            -0.0815275982022285
+          ],
+          "p": [
+            -60.3680877685547,
+            1.75,
+            -36.9547233581543
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "technology_lab",
+      "walls": 4
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              397.213745117188,
+              5.14500045776367,
+              -60.2532157897949
+            ],
+            [
+              396.828491210938,
+              5.14500045776367,
+              -62.500431060791
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              396.640045166016,
+              5.14500045776367,
+              -68.150749206543
+            ],
+            [
+              396.254791259766,
+              5.14500045776367,
+              -70.3979721069336
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 3,
+      "id": "A1F-007",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.985622227191925,
+            0.0,
+            -0.168963819742203
+          ],
+          "p": [
+            390.894775390625,
+            1.75,
+            -67.9320526123047
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.985622227191925,
+            0.0,
+            0.168963819742203
+          ],
+          "p": [
+            405.815246582031,
+            1.75,
+            -59.8068504333496
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "warm_book_atelier",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              35.1599998474121,
+              5.14499950408936,
+              -189.491592407227
+            ],
+            [
+              37.439998626709,
+              5.14499950408936,
+              -189.491592407227
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              35.1599998474121,
+              5.14499950408936,
+              -182.537094116211
+            ],
+            [
+              37.439998626709,
+              5.14499950408936,
+              -182.537094116211
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 78,
+      "id": "C1F-CSE-3",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "p": [
+            36.2999992370605,
+            2.79999995231628,
+            -171.824005126953
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "p": [
+            23.3940010070801,
+            1.75,
+            -191.431793212891
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "fresh_market",
+      "walls": 4
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              460.107055664062,
+              5.14499998092651,
+              101.667945861816
+            ],
+            [
+              459.208923339844,
+              5.14499998092651,
+              99.5722885131836
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              458.909027099609,
+              5.14499998092651,
+              97.3935241699219
+            ],
+            [
+              458.010894775391,
+              5.14499998092651,
+              95.2978668212891
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 3,
+      "id": "A1F-035",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00800001434981823,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.77193021774292,
+            0.0,
+            0.635707259178162
+          ],
+          "p": [
+            466.185729980469,
+            1.75,
+            99.600944519043
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.56920999288559,
+            0.0,
+            -0.822192192077637
+          ],
+          "p": [
+            447.888366699219,
+            1.75,
+            103.164070129395
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "modern_dining",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              152.950866699219,
+              16.0200004577637,
+              -308.174011230469
+            ],
+            [
+              153.420562744141,
+              16.0200004577637,
+              -310.405090332031
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              159.75617980957,
+              16.0200004577637,
+              -306.741302490234
+            ],
+            [
+              160.225875854492,
+              16.0200004577637,
+              -308.972381591797
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 86,
+      "id": "C3F-CE-1",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799942016601562,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.206010475754738,
+            0.0,
+            0.978549778461456
+          ],
+          "p": [
+            160.979446411133,
+            12.625,
+            -318.075347900391
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.978549778461456,
+            0.0,
+            -0.206010475754738
+          ],
+          "p": [
+            170.474334716797,
+            13.6750001907349,
+            -305.649871826172
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "colour_arcade",
+      "walls": 4
+    },
+    {
+      "ceiling_support_checks": [],
+      "floor_triangles": 2,
+      "id": "A1F-038",
+      "lights": 0,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.822192192077637,
+            0.0,
+            0.56920999288559
+          ],
+          "p": [
+            408.807250976562,
+            1.75,
+            98.5104675292969
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.822192192077637,
+            0.0,
+            -0.56920999288559
+          ],
+          "p": [
+            413.281829833984,
+            1.75,
+            115.533966064453
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "women_select",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              435.639984130859,
+              10.4949998855591,
+              121.86865234375
+            ],
+            [
+              437.514556884766,
+              10.4949998855591,
+              123.166458129883
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              431.377746582031,
+              10.4949998855591,
+              128.504272460938
+            ],
+            [
+              433.252319335938,
+              10.4949998855591,
+              129.802062988281
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 21,
+      "id": "A2F-035",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799989700317383,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.822192192077637,
+            0.0,
+            0.56920999288559
+          ],
+          "p": [
+            431.527587890625,
+            7.27500009536743,
+            115.33455657959
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "p": [
+            447.055969238281,
+            7.27500009536743,
+            124.677230834961
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "formal_tailoring",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              405.174652099609,
+              10.4950008392334,
+              61.6511650085449
+            ],
+            [
+              403.622100830078,
+              10.4950008392334,
+              59.9814414978027
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              408.016998291016,
+              10.4950008392334,
+              57.2550735473633
+            ],
+            [
+              406.464447021484,
+              10.4950008392334,
+              55.5853500366211
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 3,
+      "id": "A2F-042",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799989700317383,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.680943727493286,
+            0.0,
+            -0.7323357462883
+          ],
+          "p": [
+            406.552947998047,
+            7.27500009536743,
+            65.9600372314453
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.680943727493286,
+            0.0,
+            0.7323357462883
+          ],
+          "p": [
+            402.151916503906,
+            7.27500009536743,
+            47.2321128845215
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "technical_footwear",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              417.215759277344,
+              10.4949998855591,
+              -35.6914253234863
+            ],
+            [
+              419.49560546875,
+              10.4949998855591,
+              -35.6646003723145
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              417.161590576172,
+              10.4949998855591,
+              -31.0858764648438
+            ],
+            [
+              419.441436767578,
+              10.4949998855591,
+              -31.0590553283691
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 2,
+      "id": "A2F-008",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799989700317383,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.999930799007416,
+            0.0,
+            -0.0117638921365142
+          ],
+          "p": [
+            424.629608154297,
+            7.27500009536743,
+            -28.6655120849609
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.999930799007416,
+            0.0,
+            0.0117638921365142
+          ],
+          "p": [
+            412.020385742188,
+            7.27500009536743,
+            -37.4734077453613
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "silver_jewellery",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              480.609039306641,
+              10.4949998855591,
+              -34.7465934753418
+            ],
+            [
+              482.888885498047,
+              10.4949998855591,
+              -34.7197685241699
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              480.552307128906,
+              10.4949998855591,
+              -29.9233856201172
+            ],
+            [
+              482.832153320312,
+              10.4949998855591,
+              -29.8965644836426
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 2,
+      "id": "A2F-014",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799989700317383,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.999930799007416,
+            0.0,
+            -0.0117638921365142
+          ],
+          "p": [
+            490.019073486328,
+            7.27500009536743,
+            -27.3862133026123
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.999930799007416,
+            0.0,
+            0.0117638921365142
+          ],
+          "p": [
+            473.414825439453,
+            7.27500009536743,
+            -36.6391677856445
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "warm_jewellery",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              388.902252197266,
+              5.14500045776367,
+              -33.0153350830078
+            ],
+            [
+              391.149444580078,
+              5.14500045776367,
+              -33.4005737304688
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              390.477569580078,
+              5.14500045776367,
+              -29.5658721923828
+            ],
+            [
+              392.724761962891,
+              5.14499950408936,
+              -29.9511108398438
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 21,
+      "id": "A1F-006",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00800001434981823,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.985622227191925,
+            0.0,
+            0.168963819742203
+          ],
+          "p": [
+            396.194671630859,
+            1.75,
+            -30.5766048431396
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.985622227191925,
+            0.0,
+            -0.168963819742203
+          ],
+          "p": [
+            381.992889404297,
+            1.75,
+            -33.4507064819336
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "everyday_ceramics",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              -69.8133316040039,
+              5.14499950408936,
+              -201.846908569336
+            ],
+            [
+              -67.5876235961914,
+              5.14499950408936,
+              -201.352310180664
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              -71.3219757080078,
+              5.14499950408936,
+              -195.058013916016
+            ],
+            [
+              -69.0962677001953,
+              5.14499950408936,
+              -194.563415527344
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 72,
+      "id": "C1F-CSW-2",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00800001434981823,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.97618705034256,
+            0.0,
+            -0.216930463910103
+          ],
+          "p": [
+            -60.046703338623,
+            1.75,
+            -185.772033691406
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.97618705034256,
+            0.0,
+            0.216930463910103
+          ],
+          "p": [
+            -79.8778457641602,
+            1.75,
+            -206.070999145508
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "warm_living",
+      "walls": 3
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              323.462615966797,
+              -0.380000114440918,
+              -69.183235168457
+            ],
+            [
+              323.462615966797,
+              -0.380000114440918,
+              -71.4632339477539
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              320.950134277344,
+              -0.380000114440918,
+              -74.9462738037109
+            ],
+            [
+              320.950134277344,
+              -0.380000114440918,
+              -77.2262725830078
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 2,
+      "id": "AB1-030",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799989700317383,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "p": [
+            343.855987548828,
+            -3.59999990463257,
+            -73.5
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "p": [
+            291.144012451172,
+            -3.59999990463257,
+            -78.9048004150391
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "underground_book_hall",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              427.680633544922,
+              16.0200004577637,
+              -63.9478149414062
+            ],
+            [
+              425.400787353516,
+              16.0200004577637,
+              -63.9746398925781
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              427.627319335938,
+              16.0200004577637,
+              -72.8810272216797
+            ],
+            [
+              425.347473144531,
+              16.0200004577637,
+              -72.9078521728516
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 3,
+      "id": "A3F-007",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799942016601562,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.999930799007416,
+            0.0,
+            -0.0117638921365142
+          ],
+          "p": [
+            440.00341796875,
+            12.625,
+            -60.3513374328613
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.999930799007416,
+            0.0,
+            0.0117638921365142
+          ],
+          "p": [
+            412.488311767578,
+            12.625,
+            -77.2457885742188
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "play_and_learn",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              -105.509834289551,
+              16.0200004577637,
+              53.6417388916016
+            ],
+            [
+              -103.256675720215,
+              16.0200004577637,
+              53.990592956543
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              -107.267066955566,
+              16.0200004577637,
+              60.3166313171387
+            ],
+            [
+              -105.01390838623,
+              16.0200004577637,
+              60.6654853820801
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 36,
+      "id": "B3-044",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.0,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.98823618888855,
+            0.0,
+            0.152935370802879
+          ],
+          "p": [
+            -111.936370849609,
+            12.625,
+            50.5695533752441
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.98823618888855,
+            0.0,
+            -0.152935355901718
+          ],
+          "p": [
+            -104.151405334473,
+            12.625,
+            63.0970687866211
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "hobby_studio",
+      "walls": 4
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              593.572021484375,
+              5.14499998092651,
+              5.38667249679565
+            ],
+            [
+              594.040649414062,
+              5.14499998092651,
+              6.79262113571167
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              595.310363769531,
+              5.14499998092651,
+              5.54860401153564
+            ],
+            [
+              596.031311035156,
+              5.14499998092651,
+              7.71160221099854
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 2,
+      "id": "A1F-021",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [],
+      "posters": 0,
+      "style": "espresso_bar",
+      "walls": 0
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              -252.428802490234,
+              5.14499950408936,
+              -4.73704433441162
+            ],
+            [
+              -252.741271972656,
+              5.14499950408936,
+              -6.18573093414307
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              -251.738571166992,
+              5.14499950408936,
+              -5.56414794921875
+            ],
+            [
+              -252.051040649414,
+              5.14499950408936,
+              -7.0128345489502
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 24,
+      "id": "B1-028",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799999944865704,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.00135270738974214,
+            0.0,
+            0.999999105930328
+          ],
+          "p": [
+            -232.71647644043,
+            1.75,
+            -10.8446006774902
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 1,
+      "style": "patisserie",
+      "walls": 1
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              -259.301116943359,
+              16.0200004577637,
+              -3.40676498413086
+            ],
+            [
+              -259.781646728516,
+              16.0200004577637,
+              -5.63554859161377
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              -258.628723144531,
+              16.0200004577637,
+              -5.45749807357788
+            ],
+            [
+              -258.941101074219,
+              16.0200004577637,
+              -6.90620756149292
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 12,
+      "id": "B3-015",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.0,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.977526962757111,
+            0.0,
+            0.210810348391533
+          ],
+          "p": [
+            -251.250595092773,
+            12.625,
+            -5.94297218322754
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "p": [
+            -253.041610717773,
+            12.625,
+            -10.8710012435913
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "small_bistro",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              551.406066894531,
+              5.14499998092651,
+              83.2672576904297
+            ],
+            [
+              552.554870605469,
+              5.14499998092651,
+              81.2978363037109
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              555.795776367188,
+              5.14499998092651,
+              85.8279266357422
+            ],
+            [
+              556.944580078125,
+              5.14499998092651,
+              83.8585052490234
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 21,
+      "id": "A1F-029",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00800001434981823,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.503871023654938,
+            0.0,
+            -0.86377888917923
+          ],
+          "p": [
+            545.867370605469,
+            1.75,
+            88.9691848754883
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.503871023654938,
+            0.0,
+            0.86377888917923
+          ],
+          "p": [
+            560.392639160156,
+            1.75,
+            76.0108795166016
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "training_equipment",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              555.108215332031,
+              10.4949998855591,
+              18.6119728088379
+            ],
+            [
+              554.918884277344,
+              10.4949998855591,
+              20.8840980529785
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              547.244140625,
+              10.4949998855591,
+              18.0697612762451
+            ],
+            [
+              547.054809570312,
+              10.4949998855591,
+              20.3418865203857
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 10,
+      "id": "A2F-022",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799989700317383,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            -0.083045482635498,
+            0.0,
+            0.996545732021332
+          ],
+          "p": [
+            558.566345214844,
+            7.27500009536743,
+            13.6164178848267
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            0.083045482635498,
+            0.0,
+            -0.996545732021332
+          ],
+          "p": [
+            542.589782714844,
+            7.27500009536743,
+            25.6511898040771
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "smart_home_lab",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [
+        {
+          "ends": [
+            [
+              551.909912109375,
+              -0.380000114440918,
+              82.4034805297852
+            ],
+            [
+              553.058715820312,
+              -0.380000114440918,
+              80.4340591430664
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        },
+        {
+          "ends": [
+            [
+              556.299621582031,
+              -0.380000114440918,
+              84.9641494750977
+            ],
+            [
+              557.448425292969,
+              -0.380000114440918,
+              82.9947280883789
+            ]
+          ],
+          "two_actual_ceiling_hits": true
+        }
+      ],
+      "floor_triangles": 2,
+      "id": "AB1-017",
+      "lights": 2,
+      "maximum_existing_visual_floor_offset_m": 0.00799989700317383,
+      "not_new_structural_floor": true,
+      "poster_positions": [
+        {
+          "normal": [
+            0.503871023654938,
+            0.0,
+            -0.86377888917923
+          ],
+          "p": [
+            543.851867675781,
+            -3.59999990463257,
+            92.4242935180664
+          ],
+          "visible_from_verified_sales_spine": true
+        },
+        {
+          "normal": [
+            -0.503871023654938,
+            0.0,
+            0.86377888917923
+          ],
+          "p": [
+            561.930725097656,
+            -3.59999990463257,
+            70.8881072998047
+          ],
+          "visible_from_verified_sales_spine": true
+        }
+      ],
+      "posters": 2,
+      "style": "care_and_wellness",
+      "walls": 2
+    },
+    {
+      "ceiling_support_checks": [],
+      "floor_triangles": 3,
+      "id": "ARF-003",
+      "lights": 0,
+      "maximum_existing_visual_floor_offset_m": 0.00799942016601562,
+      "not_new_structural_floor": true,
+      "poster_positions": [],
+      "posters": 0,
+      "style": "garden_cafe",
+      "walls": 0
+    }
+  ],
+  "stores": 25,
+  "unverified": [],
+  "wall_panels": 57
+}

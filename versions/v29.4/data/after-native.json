@@ -1,0 +1,5743 @@
+{
+  "Windows_GPU_measured": false,
+  "actual_Godot_viewport": true,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "camera_feet": [
+    {
+      "floor": true,
+      "id": "room-cinema_room_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "room-kitchen_room_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "room-workspace_room_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "compact-compact_pc_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "compact-compact_mobile_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "compact-compact_tv_v294",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "pop-pc14",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "pop-bread",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-002-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-002-centre",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "A1F-002-rear",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-front",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-centre",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "B1-040-rear",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-screen_compare_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-computer_experience_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-audio_listening_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-mobile_experience_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "detail-accessory_consult_v293",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "bakery-wall-1",
+      "standing": true
+    },
+    {
+      "floor": true,
+      "id": "bakery-wall-2",
+      "standing": true
+    }
+  ],
+  "campaigns": {
+    "architecture_changed": false,
+    "directions": [
+      {
+        "actual_path": [
+          [
+            -32.4426536560059,
+            0.02,
+            -12.9817152023315
+          ],
+          [
+            -30.4799995422363,
+            0.0199999995529652,
+            -12.1548643112183
+          ],
+          [
+            -31.2000007629395,
+            0.02,
+            -36.4000015258789
+          ],
+          [
+            -33.2000007629395,
+            0.02,
+            -40.0
+          ]
+        ],
+        "arrow": "→",
+        "source": "Same existing checkout and actual path, not a decorative invented direction",
+        "store_id": "B1-040",
+        "sweep_pass": true,
+        "target_fixture": "V22-B1-040-checkout-2306",
+        "viewer": [
+          -32.4426536560059,
+          0.0199999995529652,
+          -12.9817152023315
+        ]
+      }
+    ],
+    "existing_panel_campaigns": [
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "ALVENE STUDIO",
+        "genre": "fashion",
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          374.977996826172,
+          1.89999997615814,
+          -23.0430278778076
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "A1F-004",
+        "support": "Collision_v10_chalk",
+        "world_p": [
+          374.971008300781,
+          1.89999997615814,
+          -23.0430278778076
+        ]
+      },
+      {
+        "atlas_region": [
+          0.5,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "NOLLIA HOUSE",
+        "genre": "beauty",
+        "normal": [
+          -0.996546447277069,
+          0.0,
+          -0.0830375328660011
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          577.821044921875,
+          1.89999997615814,
+          13.1942834854126
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "A1F-023",
+        "support": "Collision_v10_chalk",
+        "world_p": [
+          577.814086914062,
+          1.89999997615814,
+          13.1937026977539
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "SORELI EDIT",
+        "genre": "cafe",
+        "normal": [
+          -0.333844244480133,
+          0.0,
+          -0.942628264427185
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          92.7232284545898,
+          1.89999997615814,
+          33.061939239502
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "B1-052",
+        "support": "Collision_wall_sage",
+        "world_p": [
+          92.7208938598633,
+          1.89999997615814,
+          33.0553398132324
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "VELORIA LANE",
+        "genre": "fashion",
+        "normal": [
+          0.976206243038177,
+          0.0,
+          -0.21684430539608
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -157.647918701172,
+          1.89999997615814,
+          -320.878753662109
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.639999985694885,
+          0.959999978542328
+        ],
+        "store_id": "C1F-CW-1",
+        "support": "Collision_v10_charcoal",
+        "world_p": [
+          -157.641082763672,
+          1.89999997615814,
+          -320.880279541016
+        ]
+      },
+      {
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "MIREVA STUDIO",
+        "genre": "fashion",
+        "normal": [
+          0.659525096416473,
+          0.0,
+          -0.751682579517365
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -31.3633136749268,
+          1.85000002384186,
+          -10.6045789718628
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          1.08000004291534,
+          1.62000000476837
+        ],
+        "store_id": "B1-043",
+        "support": "Collision_wall_sage",
+        "world_p": [
+          -30.9302387237549,
+          1.85000002384186,
+          -10.2339115142822
+        ]
+      }
+    ],
+    "human_playtest": false,
+    "new_store_posters": [
+      {
+        "actual_supports": [
+          "Collision_v10_chalk",
+          "Collision_v10_chalk",
+          "Collision_v10_chalk"
+        ],
+        "atlas_region": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "brand": "ALVENE WORKS",
+        "genre": "fashion",
+        "normal": [
+          0.680943608283997,
+          0.0,
+          0.732335865497589
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          355.624816894531,
+          1.89999997615814,
+          51.1733932495117
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "A1F-044",
+        "view": [
+          356.354766845703,
+          0.0199999995529652,
+          51.9584579467773
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          355.629577636719,
+          1.89999997615814,
+          51.1785202026367
+        ]
+      },
+      {
+        "actual_supports": [
+          "Collision_wall_sage",
+          "Collision_wall_sage",
+          "Collision_wall_sage"
+        ],
+        "atlas_region": [
+          0.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "TERRUNE BAKERY",
+        "genre": "cafe",
+        "normal": [
+          0.659525096416473,
+          0.0,
+          -0.751682579517365
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          -33.1496658325195,
+          1.89999997615814,
+          -12.175910949707
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "B1-040",
+        "view": [
+          -32.4426536560059,
+          0.0199999995529652,
+          -12.9817152023315
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          -33.1450500488281,
+          1.89999997615814,
+          -12.1811723709106
+        ]
+      },
+      {
+        "actual_supports": [
+          "Collision_v10_chalk",
+          "Collision_v10_chalk",
+          "Collision_v10_chalk"
+        ],
+        "atlas_region": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "brand": "RIVORA LANE",
+        "genre": "family",
+        "normal": [
+          0.206010952591896,
+          0.0,
+          -0.978549718856812
+        ],
+        "original_art_unmodified": true,
+        "p": [
+          137.201263427734,
+          1.89999997615814,
+          -249.206237792969
+        ],
+        "product_based_ad_replaced_only_here": true,
+        "size": [
+          0.800000011920929,
+          1.20000004768372
+        ],
+        "store_id": "C1F-CE-3",
+        "view": [
+          137.422103881836,
+          0.0199999995529652,
+          -250.255233764648
+        ],
+        "viewpoint_in_own_sales_polygon": true,
+        "world_p": [
+          137.202713012695,
+          1.89999997615814,
+          -249.213088989258
+        ]
+      }
+    ],
+    "omissions": [],
+    "revision": "v29.2"
+  },
+  "departments": {
+    "department_markers": [
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6420",
+        "ceiling_support": "Collision_stone",
+        "label": "テレビ",
+        "no_direction_arrow": true,
+        "p": [
+          469.796752929688,
+          3.3199999332428,
+          14.0878419876099
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6436",
+        "ceiling_support": "Collision_stone",
+        "label": "パソコン",
+        "no_direction_arrow": true,
+        "p": [
+          476.091857910156,
+          3.3199999332428,
+          21.7342300415039
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6465",
+        "ceiling_support": "Collision_stone",
+        "label": "オーディオ",
+        "no_direction_arrow": true,
+        "p": [
+          486.890563964844,
+          3.3199999332428,
+          16.4197807312012
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6556",
+        "ceiling_support": "Collision_stone",
+        "label": "モバイル",
+        "no_direction_arrow": true,
+        "p": [
+          524.744201660156,
+          3.3199999332428,
+          18.8598918914795
+        ]
+      },
+      {
+        "actual_display_id": "V22D-A1F-002-department_island-6569",
+        "ceiling_support": "Collision_stone",
+        "label": "周辺機器",
+        "no_direction_arrow": true,
+        "p": [
+          536.796936035156,
+          3.3199999332428,
+          -0.245336875319481
+        ]
+      }
+    ],
+    "omissions": [],
+    "wall_merchandising": [
+      {
+        "no_new_walls": true,
+        "normal": [
+          0.965925514698029,
+          0.0,
+          -0.258820295333862
+        ],
+        "p": [
+          -40.6349220275879,
+          0.0199999995529652,
+          -24.8181171417236
+        ],
+        "store_id": "B1-040",
+        "support_rays": 15,
+        "view": [
+          -38.7706871032715,
+          0.0199999995529652,
+          -25.3176403045654
+        ]
+      },
+      {
+        "no_new_walls": true,
+        "normal": [
+          0.963054955005646,
+          0.0,
+          0.269305109977722
+        ],
+        "p": [
+          -39.1325874328613,
+          0.0199999995529652,
+          -36.8725357055664
+        ],
+        "store_id": "B1-040",
+        "support_rays": 15,
+        "view": [
+          -37.2738914489746,
+          0.0199999995529652,
+          -36.3527793884277
+        ]
+      }
+    ]
+  },
+  "displays": {
+    "cards": [
+      {
+        "fixture": "V22D-A1F-002-department_island-6407",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          465.752655029297,
+          0.360000014305115,
+          17.9350032806396
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6408",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          466.048706054688,
+          0.360000014305115,
+          14.5495328903198
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6409",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          466.229888916016,
+          0.360000014305115,
+          10.792501449585
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6410",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          466.415679931641,
+          0.360000014305115,
+          6.65778827667236
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6410",
+        "key": "tv2",
+        "own_support": true,
+        "p": [
+          466.294738769531,
+          0.360000014305115,
+          8.01239967346191
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6411",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          466.946136474609,
+          0.360000014305115,
+          4.01595115661621
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6412",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          467.993041992188,
+          0.360000014305115,
+          28.1067886352539
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6413",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          467.084777832031,
+          0.360000014305115,
+          0.436278343200684
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6414",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          468.317321777344,
+          0.360000014305115,
+          24.4073715209961
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6416",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          468.654571533203,
+          0.360000014305115,
+          21.1232395172119
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6417",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          468.142883300781,
+          0.360000014305115,
+          -9.81666851043701
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6419",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          468.254913330078,
+          0.360000014305115,
+          -14.174503326416
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6419",
+        "key": "tv2",
+        "own_support": true,
+        "p": [
+          468.133972167969,
+          0.360000014305115,
+          -12.8198919296265
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6420",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          469.194854736328,
+          0.360000014305115,
+          13.3513965606689
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6420",
+        "key": "tv2",
+        "own_support": true,
+        "p": [
+          469.073913574219,
+          0.360000014305115,
+          14.7060079574585
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6421",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          468.649322509766,
+          0.360000014305115,
+          -17.5293388366699
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6421",
+        "key": "tv2",
+        "own_support": true,
+        "p": [
+          468.528381347656,
+          0.360000014305115,
+          -16.1747283935547
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6422",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          469.410552978516,
+          0.360000014305115,
+          9.72913265228271
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6422",
+        "key": "tv2",
+        "own_support": true,
+        "p": [
+          469.289611816406,
+          0.360000014305115,
+          11.0837440490723
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6423",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          469.925079345703,
+          0.360000014305115,
+          7.23159122467041
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6424",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          470.352203369141,
+          0.360000014305115,
+          3.72470998764038
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6425",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          470.612426757812,
+          0.360000014305115,
+          0.186156049370766
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6426",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          463.459869384766,
+          0.360000014305115,
+          13.441822052002
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6427",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          470.945709228516,
+          0.360000014305115,
+          -3.30936980247498
+        ],
+        "size": [
+          0.400000005960464,
+          0.200000002980232
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6428",
+        "key": "tv1",
+        "own_support": true,
+        "p": [
+          462.7509765625,
+          0.360000014305115,
+          9.18634033203125
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6428",
+        "key": "tv2",
+        "own_support": true,
+        "p": [
+          462.630035400391,
+          0.360000014305115,
+          10.5409517288208
+        ],
+        "size": [
+          0.46000000834465,
+          0.219999998807907
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6430",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          474.276214599609,
+          0.979999959468842,
+          34.6268615722656
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6430",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          474.196166992188,
+          0.979999959468842,
+          35.5232963562012
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6430",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          474.116119384766,
+          0.979999959468842,
+          36.4197311401367
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6431",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          474.102905273438,
+          0.949999988079071,
+          38.6838493347168
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6431",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          474.013977050781,
+          0.949999988079071,
+          39.6798896789551
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6432",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          474.748870849609,
+          0.979999959468842,
+          31.0669002532959
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6432",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          474.668823242188,
+          0.979999959468842,
+          31.9633331298828
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6432",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          474.588775634766,
+          0.979999959468842,
+          32.8597679138184
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6433",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          473.878692626953,
+          0.949999988079071,
+          42.1331481933594
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6433",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          473.789764404297,
+          0.949999988079071,
+          43.1291885375977
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6434",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          475.127197265625,
+          0.949999988079071,
+          28.1176261901855
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6434",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          475.038269042969,
+          0.949999988079071,
+          29.1136627197266
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6435",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          475.370971679688,
+          0.949999988079071,
+          24.5719909667969
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6435",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          475.282043457031,
+          0.949999988079071,
+          25.5680274963379
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6436",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          475.599182128906,
+          0.979999959468842,
+          20.7866611480713
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6436",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          475.519134521484,
+          0.979999959468842,
+          21.6830940246582
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6436",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          475.439086914062,
+          0.979999959468842,
+          22.5795288085938
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6437",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          476.095550537109,
+          0.949999988079071,
+          17.7561302185059
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6437",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          476.006622314453,
+          0.949999988079071,
+          18.7521667480469
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6438",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          476.252227783203,
+          0.949999988079071,
+          14.2679567337036
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6438",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          476.163299560547,
+          0.949999988079071,
+          15.2639942169189
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6439",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          476.675567626953,
+          0.949999988079071,
+          10.5784683227539
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6439",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          476.586639404297,
+          0.949999988079071,
+          11.5745058059692
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6440",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          477.577484130859,
+          0.979999959468842,
+          35.8019523620605
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6440",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          477.497436523438,
+          0.979999959468842,
+          36.6983871459961
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6440",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          477.417388916016,
+          0.979999959468842,
+          37.5948219299316
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6441",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          476.926391601562,
+          0.949999988079071,
+          7.3129825592041
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6441",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          476.837463378906,
+          0.949999988079071,
+          8.30902004241943
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6443",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          477.306182861328,
+          0.949999988079071,
+          3.77141904830933
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6443",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          477.217254638672,
+          0.949999988079071,
+          4.76745700836182
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6444",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          478.236602783203,
+          0.949999988079071,
+          29.1635360717773
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6444",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          478.147674560547,
+          0.949999988079071,
+          30.1595726013184
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6445",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          477.672973632812,
+          0.949999988079071,
+          0.382510125637054
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6445",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          477.584045410156,
+          0.949999988079071,
+          1.37854778766632
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6446",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          476.949340820312,
+          0.979999959468842,
+          42.5746612548828
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6446",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          476.869293212891,
+          0.979999959468842,
+          43.4710960388184
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6446",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          476.789245605469,
+          0.979999959468842,
+          44.3675308227539
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6447",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          476.79736328125,
+          0.949999988079071,
+          46.5194892883301
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6447",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          476.708435058594,
+          0.949999988079071,
+          47.5155296325684
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6448",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          477.928802490234,
+          0.949999988079071,
+          -3.22770214080811
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6448",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          477.839874267578,
+          0.949999988079071,
+          -2.23166441917419
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6450",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          478.915893554688,
+          0.949999988079071,
+          22.0931606292725
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6450",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          478.826965332031,
+          0.949999988079071,
+          23.0891971588135
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6451",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          476.53857421875,
+          0.949999988079071,
+          49.8663864135742
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6451",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          476.449645996094,
+          0.949999988079071,
+          50.8624267578125
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6452",
+        "key": "pc14",
+        "own_support": true,
+        "p": [
+          471.004699707031,
+          0.949999988079071,
+          35.5963745117188
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6452",
+        "key": "pc16",
+        "own_support": true,
+        "p": [
+          470.915771484375,
+          0.949999988079071,
+          36.592414855957
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6453",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          484.624420166016,
+          0.979999959468842,
+          36.4240379333496
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6453",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          484.544372558594,
+          0.979999959468842,
+          37.3204727172852
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6453",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          484.464324951172,
+          0.979999959468842,
+          38.2169075012207
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6454",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          484.153015136719,
+          0.979999959468842,
+          39.7264823913574
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6454",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          484.072967529297,
+          0.979999959468842,
+          40.622917175293
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6454",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          483.992919921875,
+          0.979999959468842,
+          41.5193519592285
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6455",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          484.789733886719,
+          0.979999959468842,
+          32.6613883972168
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6455",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          484.709686279297,
+          0.979999959468842,
+          33.5578231811523
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6455",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          484.629638671875,
+          0.979999959468842,
+          34.4542579650879
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6456",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          484.010314941406,
+          0.979999959468842,
+          43.2812232971191
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6456",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          483.930267333984,
+          0.979999959468842,
+          44.1776580810547
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6456",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          483.850219726562,
+          0.979999959468842,
+          45.0740928649902
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6457",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          485.320648193359,
+          0.949999988079071,
+          29.5586986541748
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6457",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          485.231719970703,
+          0.949999988079071,
+          30.5547351837158
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6458",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          483.614959716797,
+          0.949999988079071,
+          47.0601921081543
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6458",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          483.526031494141,
+          0.949999988079071,
+          48.0562324523926
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6459",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          485.500122070312,
+          0.949999988079071,
+          26.21604347229
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6459",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          485.411193847656,
+          0.949999988079071,
+          27.2120800018311
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6460",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          483.504913330078,
+          0.949999988079071,
+          50.7005844116211
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6460",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          483.415985107422,
+          0.949999988079071,
+          51.6966247558594
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6461",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          485.969421386719,
+          0.949999988079071,
+          22.6439018249512
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6461",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          485.880493164062,
+          0.949999988079071,
+          23.6399383544922
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6462",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          486.276611328125,
+          0.949999988079071,
+          19.2359733581543
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6462",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          486.187683105469,
+          0.949999988079071,
+          20.2320098876953
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6463",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          482.992706298828,
+          0.979999959468842,
+          53.871997833252
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6463",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          482.912658691406,
+          0.979999959468842,
+          54.7684326171875
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6463",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          482.832611083984,
+          0.979999959468842,
+          55.664867401123
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6464",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          482.884216308594,
+          0.949999988079071,
+          57.5119094848633
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6464",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          482.795288085938,
+          0.949999988079071,
+          58.5079498291016
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6465",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          486.397888183594,
+          0.979999959468842,
+          15.4722108840942
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6465",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          486.317840576172,
+          0.979999959468842,
+          16.3686447143555
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6465",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          486.23779296875,
+          0.979999959468842,
+          17.265079498291
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6466",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          482.587463378906,
+          0.949999988079071,
+          61.2237281799316
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6466",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          482.49853515625,
+          0.949999988079071,
+          62.2197685241699
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6467",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          486.882843017578,
+          0.949999988079071,
+          12.1974182128906
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6467",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          486.793914794922,
+          0.949999988079071,
+          13.193455696106
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6468",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          482.054992675781,
+          0.979999959468842,
+          64.3199768066406
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6468",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          481.974945068359,
+          0.979999959468842,
+          65.2164154052734
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6468",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          481.894897460938,
+          0.979999959468842,
+          66.1128463745117
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6469",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          487.901306152344,
+          0.979999959468842,
+          35.8039588928223
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6469",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          487.821258544922,
+          0.979999959468842,
+          36.7003936767578
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6469",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          487.7412109375,
+          0.979999959468842,
+          37.5968284606934
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6470",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          487.122253417969,
+          0.949999988079071,
+          8.76047706604004
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6470",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          487.033325195312,
+          0.949999988079071,
+          9.75651454925537
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6471",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          487.507751464844,
+          0.949999988079071,
+          5.39994812011719
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6471",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          487.418823242188,
+          0.949999988079071,
+          6.39598608016968
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6472",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          488.332672119141,
+          0.949999988079071,
+          32.9552574157715
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6472",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          488.243743896484,
+          0.949999988079071,
+          33.9512977600098
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6473",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          487.719940185547,
+          0.979999959468842,
+          39.5583076477051
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6473",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          487.639892578125,
+          0.979999959468842,
+          40.4547424316406
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6473",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          487.559844970703,
+          0.979999959468842,
+          41.3511772155762
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6474",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          487.253662109375,
+          0.979999959468842,
+          42.9190635681152
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6474",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          487.173614501953,
+          0.979999959468842,
+          43.8154983520508
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6474",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          487.093566894531,
+          0.979999959468842,
+          44.7119331359863
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6475",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          487.626586914062,
+          0.979999959468842,
+          1.58655476570129
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6475",
+        "key": "audio2",
+        "own_support": true,
+        "p": [
+          487.546539306641,
+          0.979999959468842,
+          2.4829888343811
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6475",
+        "key": "audio3",
+        "own_support": true,
+        "p": [
+          487.466491699219,
+          0.979999959468842,
+          3.37942266464233
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6545",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          528.087280273438,
+          0.979999959468842,
+          11.9191617965698
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6545",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          528.007263183594,
+          0.979999959468842,
+          12.8155956268311
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6545",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          527.927185058594,
+          0.979999959468842,
+          13.7120294570923
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6546",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          528.394104003906,
+          0.979999959468842,
+          8.43844985961914
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6546",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          528.314086914062,
+          0.979999959468842,
+          9.33488368988037
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6546",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          528.234008789062,
+          0.979999959468842,
+          10.2313175201416
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6547",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          528.788757324219,
+          0.979999959468842,
+          4.97067594528198
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6547",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          528.708740234375,
+          0.979999959468842,
+          5.86710977554321
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6547",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          528.628662109375,
+          0.979999959468842,
+          6.7635440826416
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6548",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          528.964050292969,
+          0.979999959468842,
+          1.59690117835999
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6548",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          528.884033203125,
+          0.979999959468842,
+          2.49333524703979
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6548",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          528.803955078125,
+          0.979999959468842,
+          3.38976907730103
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6549",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          529.371520996094,
+          0.979999959468842,
+          -1.77619600296021
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6549",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          529.29150390625,
+          0.979999959468842,
+          -0.879762053489685
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6549",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          529.21142578125,
+          0.979999959468842,
+          0.016671895980835
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6550",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          529.95751953125,
+          0.979999959468842,
+          -8.87394332885742
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6550",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          529.877502441406,
+          0.979999959468842,
+          -7.97750997543335
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6550",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          529.797424316406,
+          0.979999959468842,
+          -7.08107566833496
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6551",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          530.160461425781,
+          0.979999959468842,
+          -12.2804679870605
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6551",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          530.080444335938,
+          0.979999959468842,
+          -11.3840341567993
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6551",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          530.000366210938,
+          0.979999959468842,
+          -10.4876003265381
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6552",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          530.638610839844,
+          0.979999959468842,
+          -15.9488201141357
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6552",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          530.55859375,
+          0.979999959468842,
+          -15.0523862838745
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6552",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          530.478515625,
+          0.979999959468842,
+          -14.1559524536133
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6553",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          530.976928710938,
+          0.979999959468842,
+          -19.1306209564209
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6553",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          530.896911621094,
+          0.979999959468842,
+          -18.234188079834
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6553",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          530.816833496094,
+          0.979999959468842,
+          -17.3377532958984
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6554",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          532.01806640625,
+          0.949999988079071,
+          8.68783283233643
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6554",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          531.929138183594,
+          0.949999988079071,
+          9.68387031555176
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6555",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          531.998779296875,
+          0.979999959468842,
+          4.83185052871704
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6555",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          531.918762207031,
+          0.979999959468842,
+          5.72828435897827
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6555",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          531.838684082031,
+          0.979999959468842,
+          6.62471866607666
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6556",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          524.251525878906,
+          0.979999959468842,
+          17.9123229980469
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6556",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          524.171508789062,
+          0.979999959468842,
+          18.8087558746338
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6556",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          524.091430664062,
+          0.979999959468842,
+          19.7051906585693
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6557",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          524.406616210938,
+          0.979999959468842,
+          14.6328649520874
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6557",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          524.326599121094,
+          0.979999959468842,
+          15.5292987823486
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6557",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          524.246520996094,
+          0.979999959468842,
+          16.4257335662842
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6558",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          532.491271972656,
+          0.979999959468842,
+          1.13014245033264
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6558",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          532.411254882812,
+          0.979999959468842,
+          2.02657651901245
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6558",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          532.331176757812,
+          0.979999959468842,
+          2.92301034927368
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6559",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          524.824523925781,
+          0.979999959468842,
+          11.0499048233032
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6559",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          524.744506835938,
+          0.979999959468842,
+          11.9463386535645
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6559",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          524.664428710938,
+          0.979999959468842,
+          12.8427724838257
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6560",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          532.816040039062,
+          0.979999959468842,
+          -2.25792288780212
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6560",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          532.736022949219,
+          0.979999959468842,
+          -1.36148905754089
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6560",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          532.655944824219,
+          0.979999959468842,
+          -0.465055048465729
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6561",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          524.994079589844,
+          0.979999959468842,
+          7.64714527130127
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6561",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          524.9140625,
+          0.979999959468842,
+          8.5435791015625
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6561",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          524.833984375,
+          0.979999959468842,
+          9.44001293182373
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6562",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          525.526184082031,
+          0.979999959468842,
+          4.05951404571533
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6562",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          525.446166992188,
+          0.979999959468842,
+          4.95594787597656
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6562",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          525.366088867188,
+          0.979999959468842,
+          5.85238218307495
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6563",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          533.447143554688,
+          0.979999959468842,
+          -9.36670398712158
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6563",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          533.367126464844,
+          0.979999959468842,
+          -8.47027015686035
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6563",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          533.287048339844,
+          0.979999959468842,
+          -7.57383584976196
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6565",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          525.61083984375,
+          0.979999959468842,
+          0.798125207424164
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6565",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          525.530822753906,
+          0.979999959468842,
+          1.69455909729004
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6565",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          525.450744628906,
+          0.979999959468842,
+          2.59099316596985
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6566",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          533.915344238281,
+          0.979999959468842,
+          -16.3289566040039
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6566",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          533.835327148438,
+          0.979999959468842,
+          -15.4325227737427
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6566",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          533.755249023438,
+          0.979999959468842,
+          -14.5360889434814
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6567",
+        "key": "phone",
+        "own_support": true,
+        "p": [
+          526.094055175781,
+          0.949999988079071,
+          -2.49964594841003
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6567",
+        "key": "tablet",
+        "own_support": true,
+        "p": [
+          526.005126953125,
+          0.949999988079071,
+          -1.50360822677612
+        ],
+        "size": [
+          0.280000001192093,
+          0.150000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6568",
+        "key": "watch",
+        "own_support": true,
+        "p": [
+          540.317504882812,
+          1.0,
+          -8.55140972137451
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6568",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          540.235717773438,
+          1.0,
+          -7.63505554199219
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6568",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          540.157409667969,
+          1.0,
+          -6.75854206085205
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6569",
+        "key": "watch",
+        "own_support": true,
+        "p": [
+          536.306030273438,
+          1.0,
+          -1.21282744407654
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6569",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          536.224243164062,
+          1.0,
+          -0.296472728252411
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6569",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          536.145935058594,
+          1.0,
+          0.580040454864502
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6570",
+        "key": "watch",
+        "own_support": true,
+        "p": [
+          536.985290527344,
+          1.0,
+          -8.11714935302734
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6570",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          536.903503417969,
+          1.0,
+          -7.20079469680786
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6570",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          536.8251953125,
+          1.0,
+          -6.32428121566772
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6571",
+        "key": "watch",
+        "own_support": true,
+        "p": [
+          537.161682128906,
+          1.0,
+          -11.9187431335449
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6571",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          537.079895019531,
+          1.0,
+          -11.0023889541626
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6571",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          537.001586914062,
+          1.0,
+          -10.1258754730225
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6572",
+        "key": "watch",
+        "own_support": true,
+        "p": [
+          537.549377441406,
+          1.0,
+          -15.2154884338379
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6572",
+        "key": "speaker",
+        "own_support": true,
+        "p": [
+          537.467590332031,
+          1.0,
+          -14.2991342544556
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V22D-A1F-002-department_island-6572",
+        "key": "audio1",
+        "own_support": true,
+        "p": [
+          537.389282226562,
+          1.0,
+          -13.4226207733154
+        ],
+        "size": [
+          0.245000004768372,
+          0.119999997317791
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V294-A1F-002-cinema_room_v294",
+        "key": "cinema",
+        "own_support": true,
+        "p": [
+          515.883972167969,
+          1.5699999332428,
+          4.0
+        ],
+        "size": [
+          0.899999976158142,
+          0.360000014305115
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V294-A1F-002-kitchen_room_v294",
+        "key": "kitchen",
+        "own_support": true,
+        "p": [
+          513.898986816406,
+          1.47000002861023,
+          21.9500007629395
+        ],
+        "size": [
+          1.0,
+          0.400000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "V294-A1F-002-workspace_room_v294",
+        "key": "work",
+        "own_support": true,
+        "p": [
+          491.549011230469,
+          1.3199999332428,
+          48.3499984741211
+        ],
+        "size": [
+          1.0,
+          0.400000005960464
+        ],
+        "store_id": "A1F-002"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "bread",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.9848022460938,
+          0.764999985694885,
+          -23.6050472259521
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "tart",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -40.1426811218262,
+          0.764999985694885,
+          -24.1942615509033
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "sandwich",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -40.3005638122559,
+          0.764999985694885,
+          -24.7834758758545
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "bread",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.9848022460938,
+          1.16499996185303,
+          -23.6050472259521
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "tart",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -40.1426811218262,
+          1.16499996185303,
+          -24.1942615509033
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "sandwich",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -40.3005638122559,
+          1.16499996185303,
+          -24.7834758758545
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "bread",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.9848022460938,
+          1.56499993801117,
+          -23.6050472259521
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "tart",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -40.1426811218262,
+          1.56499993801117,
+          -24.1942615509033
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "sandwich",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -40.3005638122559,
+          1.56499993801117,
+          -24.7834758758545
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "bread",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.1910552978516,
+          0.764999985694885,
+          -35.4974784851074
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "tart",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.0267791748047,
+          0.764999985694885,
+          -36.0849456787109
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "sandwich",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -38.8625030517578,
+          0.764999985694885,
+          -36.6724090576172
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "bread",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.1910552978516,
+          1.16499996185303,
+          -35.4974784851074
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "tart",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.0267791748047,
+          1.16499996185303,
+          -36.0849456787109
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "sandwich",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -38.8625030517578,
+          1.16499996185303,
+          -36.6724090576172
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "bread",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.1910552978516,
+          1.56499993801117,
+          -35.4974784851074
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "tart",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -39.0267791748047,
+          1.56499993801117,
+          -36.0849456787109
+        ],
+        "store_id": "B1-040"
+      },
+      {
+        "fixture": "wall_merchandising",
+        "key": "sandwich",
+        "own_shelf_clip_rays": 2,
+        "p": [
+          -38.8625030517578,
+          1.56499993801117,
+          -36.6724090576172
+        ],
+        "store_id": "B1-040"
+      }
+    ],
+    "omitted": [],
+    "prices_are_fictional_display_samples": true,
+    "purchase_implemented": false,
+    "render_batches": 53,
+    "room_headers": [
+      {
+        "fixture": "V294-A1F-002-cinema_room_v294",
+        "not_directional_sign": true,
+        "own_support": true,
+        "source": "same actual fixture department_label",
+        "text": "映像と音の体験"
+      },
+      {
+        "fixture": "V294-A1F-002-kitchen_room_v294",
+        "not_directional_sign": true,
+        "own_support": true,
+        "source": "same actual fixture department_label",
+        "text": "キッチンと暮らし"
+      },
+      {
+        "fixture": "V294-A1F-002-workspace_room_v294",
+        "not_directional_sign": true,
+        "own_support": true,
+        "source": "same actual fixture department_label",
+        "text": "暮らしのワークスペース"
+      }
+    ],
+    "shared_card_materials": 17
+  },
+  "engine": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "first_new_F9_button": {
+    "FOV": 65.0,
+    "button": "room-cinema_room_v294 / 映像と音の体験",
+    "buttons": 528,
+    "pass": true
+  },
+  "human_playtest": false,
+  "interior_checks": [
+    {
+      "id": "V291-A1F-002-television_demo-1",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-2",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-laundry_demo-3",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-4",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-5",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-laundry_demo-6",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-7",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-8",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-laundry_demo-9",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-10",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-11",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-kitchen_demo-12",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-13",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-14",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-15",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-16",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-002-television_demo-17",
+      "pass": true
+    },
+    {
+      "id": "V22C-A1F-002-checkout-5431",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-25",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-26",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-27",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-28",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-29",
+      "pass": true
+    },
+    {
+      "id": "V291-A1F-044-fashion_table-30",
+      "pass": true
+    },
+    {
+      "id": "V22-A1F-044-checkout-769",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-bakery_vitrine-18",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-coffee_bar-19",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-bakery_vitrine-20",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-bakery_vitrine-21",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-cafe_banquette-22",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-cafe_table-23",
+      "pass": true
+    },
+    {
+      "id": "V291-B1-040-cafe_banquette-24",
+      "pass": true
+    },
+    {
+      "id": "V22-B1-040-checkout-2306",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-31",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-32",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-33",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-34",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-35",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-36",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-37",
+      "pass": true
+    },
+    {
+      "id": "V291-C1F-CE-3-fashion_table-38",
+      "pass": true
+    },
+    {
+      "id": "V22-C1F-CE-3-checkout-4266",
+      "pass": true
+    }
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "revision": "29.4",
+  "route_checks": [
+    {
+      "id": "A-1F-R001",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R002",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R003",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R004",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R005",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R006",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R007",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R008",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R009",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R010",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R011",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R012",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R013",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R014",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R015",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R016",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R017",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R018",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R019",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R020",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R021",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R022",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R023",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R024",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R025",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R026",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R027",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R028",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R029",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R030",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R031",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R032",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R033",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R034",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R035",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R036",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R037",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R038",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R039",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R040",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R041",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R042",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R043",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R044",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R045",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R046",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R047",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R048",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R049",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R050",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R051",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R052",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R053",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R054",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R055",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R056",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R057",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R058",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R059",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R060",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R061",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R062",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R063",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R064",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R065",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R066",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R067",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R068",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R069",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R070",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R071",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R072",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R073",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R074",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R075",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R076",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R077",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R078",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R079",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R080",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R081",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R082",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R083",
+      "pass": true
+    },
+    {
+      "id": "A-1F-R084",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R085",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R086",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R087",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R088",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R089",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R090",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R091",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R092",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R093",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R094",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R095",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R096",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R097",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R098",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R099",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R100",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R101",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R102",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R103",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R104",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R105",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R106",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R107",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R108",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R109",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R110",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R111",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R112",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R113",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R114",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R115",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R116",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R117",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R118",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R119",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R120",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R121",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R122",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R123",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R124",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R125",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R126",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R127",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R128",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R129",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R130",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R131",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R132",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R133",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R134",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R135",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R136",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R137",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R138",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R139",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R140",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R141",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R142",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R143",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R144",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R145",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R146",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R147",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R148",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R149",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R150",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R151",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R152",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R153",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R154",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R155",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R156",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R157",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R158",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R159",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R160",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R161",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R162",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R163",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R164",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R165",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R166",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R167",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R168",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R169",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R170",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R171",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R172",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R173",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R174",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R175",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R176",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R177",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R178",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R179",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R180",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R181",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R182",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R183",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R184",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R185",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R186",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R187",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R188",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R189",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R190",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R191",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R192",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R193",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R194",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R195",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R196",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R197",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R198",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R199",
+      "pass": true
+    },
+    {
+      "id": "B-1F-R200",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R201",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R202",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R203",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R204",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R205",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R206",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R207",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R208",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R209",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R210",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R211",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R212",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R213",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R214",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R215",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R216",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R217",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R218",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R219",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R220",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R221",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R222",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R223",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R224",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R225",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R226",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R227",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R228",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R229",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R230",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R231",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R232",
+      "pass": true
+    },
+    {
+      "id": "C-1F-R233",
+      "pass": true
+    }
+  ],
+  "rows": [
+    {
+      "CPU_process_ms": 7635.746,
+      "camera": {
+        "eye": [
+          509.0,
+          1.65,
+          6.0
+        ],
+        "fov": 65.0,
+        "id": "room-cinema_room_v294",
+        "look": [
+          514.0,
+          1.1,
+          6.0
+        ],
+        "store_id": "A1F-002",
+        "title": "映像と音の体験",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 7297.033,
+      "draw_calls": 4514.0,
+      "file": "after/room-cinema_room_v294.jpg",
+      "primitives": 2331501.0,
+      "save_error": 0,
+      "static_memory_bytes": 2424973295.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 3463.79,
+      "camera": {
+        "eye": [
+          507.0,
+          1.65,
+          20.0
+        ],
+        "fov": 65.0,
+        "id": "room-kitchen_room_v294",
+        "look": [
+          512.0,
+          1.1,
+          20.0
+        ],
+        "store_id": "A1F-002",
+        "title": "キッチンと暮らし",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3299.685,
+      "draw_calls": 4545.0,
+      "file": "after/room-kitchen_room_v294.jpg",
+      "primitives": 2568592.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425214303.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 3326.593,
+      "camera": {
+        "eye": [
+          485.0,
+          1.65,
+          50.0
+        ],
+        "fov": 65.0,
+        "id": "room-workspace_room_v294",
+        "look": [
+          490.0,
+          1.1,
+          50.0
+        ],
+        "store_id": "A1F-002",
+        "title": "暮らしのワークスペース",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3166.968,
+      "draw_calls": 5417.0,
+      "file": "after/room-workspace_room_v294.jpg",
+      "primitives": 2642075.0,
+      "save_error": 0,
+      "static_memory_bytes": 2425939163.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 3207.089,
+      "camera": {
+        "eye": [
+          472.476745605469,
+          1.65,
+          39.0406455993652
+        ],
+        "fov": 62.0,
+        "id": "compact-compact_pc_v294",
+        "look": [
+          474.468805815671,
+          1.04,
+          39.2185085428569
+        ],
+        "store_id": "A1F-002",
+        "title": "小型専用展示 / パソコン",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3511.814,
+      "draw_calls": 6194.0,
+      "file": "after/compact-compact_pc_v294.jpg",
+      "primitives": 2767959.0,
+      "save_error": 0,
+      "static_memory_bytes": 2426851752.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 3543.18,
+      "camera": {
+        "eye": [
+          530.391906738281,
+          1.65,
+          9.04462718963623
+        ],
+        "fov": 62.0,
+        "id": "compact-compact_mobile_v294",
+        "look": [
+          532.383963916817,
+          1.04,
+          9.2224909387181
+        ],
+        "store_id": "A1F-002",
+        "title": "小型専用展示 / モバイル",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3066.994,
+      "draw_calls": 3687.0,
+      "file": "after/compact-compact_mobile_v294.jpg",
+      "primitives": 1944600.0,
+      "save_error": 0,
+      "static_memory_bytes": 2427108372.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 3099.097,
+      "camera": {
+        "eye": [
+          464.170959472656,
+          1.65,
+          17.7937793731689
+        ],
+        "fov": 62.0,
+        "id": "compact-compact_tv_v294",
+        "look": [
+          466.163012126691,
+          1.04,
+          17.9716436334754
+        ],
+        "store_id": "A1F-002",
+        "title": "小型専用展示 / テレビ",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3604.44,
+      "draw_calls": 6622.0,
+      "file": "after/compact-compact_tv_v294.jpg",
+      "primitives": 3121444.0,
+      "save_error": 0,
+      "static_memory_bytes": 2427751844.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 3639.328,
+      "camera": {
+        "eye": [
+          473.529174804688,
+          1.65,
+          34.5601615905762
+        ],
+        "fov": 55.0,
+        "id": "pop-pc14",
+        "look": [
+          474.276214599609,
+          0.979999959468842,
+          34.6268615722656
+        ],
+        "store_id": "A1F-002",
+        "title": "商品説明・展示用参考価格",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 2287.674,
+      "draw_calls": 3254.0,
+      "file": "after/pop-pc14.jpg",
+      "primitives": 1520550.0,
+      "save_error": 0,
+      "static_memory_bytes": 2427810172.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 2319.627,
+      "camera": {
+        "eye": [
+          -39.2603569030762,
+          1.65,
+          -23.7991619110107
+        ],
+        "fov": 55.0,
+        "id": "pop-bread",
+        "look": [
+          -39.9848022460938,
+          0.764999985694885,
+          -23.6050472259521
+        ],
+        "store_id": "B1-040",
+        "title": "商品説明・展示用参考価格",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 2065.475,
+      "draw_calls": 3611.0,
+      "file": "after/pop-bread.jpg",
+      "primitives": 2324945.0,
+      "save_error": 0,
+      "static_memory_bytes": 2432712748.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 2098.774,
+      "camera": {
+        "eye": [
+          458.22684168357,
+          1.65,
+          -6.85587499098921
+        ],
+        "fov": 78.0,
+        "id": "A1F-002-front",
+        "look": [
+          464.402275456519,
+          2.5,
+          -6.3044969755473
+        ],
+        "store_id": "A1F-002",
+        "title": "家電売場 A1F-002-front",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4148.966,
+      "draw_calls": 7376.0,
+      "file": "after/A1F-002-front.jpg",
+      "primitives": 3270912.0,
+      "save_error": 0,
+      "static_memory_bytes": 2433352796.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 4181.598,
+      "camera": {
+        "eye": [
+          499.94496737117,
+          1.65,
+          -5.40874045638876
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-centre",
+        "look": [
+          524.028157568265,
+          1.55,
+          -4.70643191158509
+        ],
+        "store_id": "A1F-002",
+        "title": "家電売場 A1F-002-centre",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3196.673,
+      "draw_calls": 5368.0,
+      "file": "after/A1F-002-centre.jpg",
+      "primitives": 2599855.0,
+      "save_error": 0,
+      "static_memory_bytes": 2433715620.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 3242.756,
+      "camera": {
+        "eye": [
+          529.647568614254,
+          1.65,
+          -4.54255991779756
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-rear",
+        "look": [
+          463.406237751205,
+          1.55,
+          -6.3934289135218
+        ],
+        "store_id": "A1F-002",
+        "title": "家電売場 A1F-002-rear",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 4001.491,
+      "draw_calls": 12661.0,
+      "file": "after/A1F-002-rear.jpg",
+      "primitives": 4508161.0,
+      "save_error": 0,
+      "static_memory_bytes": 2452545469.0,
+      "video_memory_bytes": 1967618736.0
+    },
+    {
+      "CPU_process_ms": 4035.458,
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "title": "ベーカリー B1-040-front",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4371.936,
+      "draw_calls": 7569.0,
+      "file": "after/B1-040-front.jpg",
+      "primitives": 3810721.0,
+      "save_error": 0,
+      "static_memory_bytes": 2453223269.0,
+      "video_memory_bytes": 1973385904.0
+    },
+    {
+      "CPU_process_ms": 4409.316,
+      "camera": {
+        "eye": [
+          -34.8012865156798,
+          1.65,
+          -16.7825656700315
+        ],
+        "fov": 72.0,
+        "id": "B1-040-centre",
+        "look": [
+          -37.5738002487532,
+          1.55,
+          -20.1578351002096
+        ],
+        "store_id": "B1-040",
+        "title": "ベーカリー B1-040-centre",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4183.709,
+      "draw_calls": 7524.0,
+      "file": "after/B1-040-centre.jpg",
+      "primitives": 3510653.0,
+      "save_error": 0,
+      "static_memory_bytes": 2453811777.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 4222.774,
+      "camera": {
+        "eye": [
+          -38.2207201198037,
+          1.65,
+          -20.9453979672512
+        ],
+        "fov": 72.0,
+        "id": "B1-040-rear",
+        "look": [
+          -32.0,
+          1.55,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "title": "ベーカリー B1-040-rear",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 3945.769,
+      "draw_calls": 7025.0,
+      "file": "after/B1-040-rear.jpg",
+      "primitives": 4193187.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456045777.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 3977.099,
+      "camera": {
+        "eye": [
+          464.627075195312,
+          1.65,
+          7.18079710006714
+        ],
+        "fov": 70.0,
+        "id": "detail-screen_compare_v293",
+        "look": [
+          467.017578125,
+          1.05,
+          7.39423370361328
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / テレビ",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3648.275,
+      "draw_calls": 6463.0,
+      "file": "after/detail-screen_compare_v293.jpg",
+      "primitives": 3075317.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456042093.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 3685.909,
+      "camera": {
+        "eye": [
+          472.378387451172,
+          1.65,
+          35.3609962463379
+        ],
+        "fov": 70.0,
+        "id": "detail-computer_experience_v293",
+        "look": [
+          474.768890380859,
+          1.05,
+          35.5744323730469
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / パソコン",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3802.334,
+      "draw_calls": 5847.0,
+      "file": "after/detail-computer_experience_v293.jpg",
+      "primitives": 2823190.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456046705.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 3842.861,
+      "camera": {
+        "eye": [
+          482.726593017578,
+          1.65,
+          37.1581726074219
+        ],
+        "fov": 70.0,
+        "id": "detail-audio_listening_v293",
+        "look": [
+          485.117095947266,
+          1.05,
+          37.3716087341309
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / オーディオ",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3635.745,
+      "draw_calls": 5522.0,
+      "file": "after/detail-audio_listening_v293.jpg",
+      "primitives": 2760898.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456049437.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 3680.217,
+      "camera": {
+        "eye": [
+          527.473693847656,
+          1.65,
+          -1.0420628786087
+        ],
+        "fov": 70.0,
+        "id": "detail-mobile_experience_v293",
+        "look": [
+          529.864196777344,
+          1.05,
+          -0.828626215457916
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / モバイル",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3548.125,
+      "draw_calls": 3973.0,
+      "file": "after/detail-mobile_experience_v293.jpg",
+      "primitives": 2067227.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456057717.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 3582.935,
+      "camera": {
+        "eye": [
+          534.406433105469,
+          1.65,
+          -0.458773553371429
+        ],
+        "fov": 70.0,
+        "id": "detail-accessory_consult_v293",
+        "look": [
+          536.796936035156,
+          1.05,
+          -0.245336875319481
+        ],
+        "store_id": "A1F-002",
+        "title": "家電専門展示 / 周辺機器",
+        "variants": [
+          "combined"
+        ],
+        "wing": "A"
+      },
+      "capture_frame_wait_ms": 3664.6,
+      "draw_calls": 3601.0,
+      "file": "after/detail-accessory_consult_v293.jpg",
+      "primitives": 1915630.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456062061.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 3702.96,
+      "camera": {
+        "eye": [
+          -38.7706871032715,
+          1.65,
+          -25.3176403045654
+        ],
+        "fov": 88.0,
+        "id": "bakery-wall-1",
+        "look": [
+          -40.6349220275879,
+          1.35,
+          -24.8181171417236
+        ],
+        "store_id": "B1-040",
+        "title": "パンの壁面展示 / 1",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 5488.007,
+      "draw_calls": 8574.0,
+      "file": "after/bakery-wall-1.jpg",
+      "primitives": 3912499.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456179065.0,
+      "video_memory_bytes": 1971944112.0
+    },
+    {
+      "CPU_process_ms": 5517.733,
+      "camera": {
+        "eye": [
+          -37.2738914489746,
+          1.65,
+          -36.3527793884277
+        ],
+        "fov": 88.0,
+        "id": "bakery-wall-2",
+        "look": [
+          -39.1325874328613,
+          1.35,
+          -36.8725357055664
+        ],
+        "store_id": "B1-040",
+        "title": "パンの壁面展示 / 2",
+        "variants": [
+          "combined"
+        ],
+        "wing": "B"
+      },
+      "capture_frame_wait_ms": 4946.359,
+      "draw_calls": 7827.0,
+      "file": "after/bakery-wall-2.jpg",
+      "primitives": 4003658.0,
+      "save_error": 0,
+      "static_memory_bytes": 2456198933.0,
+      "video_memory_bytes": 1971944112.0
+    }
+  ],
+  "settings": {
+    "B_ES": true,
+    "C": true,
+    "cap": 144,
+    "continuous": true,
+    "vsync": 1
+  },
+  "side": "after",
+  "wall_fixture_contacts": [
+    {
+      "contacts": [],
+      "node": "Bakery_Wall_Merchandising",
+      "pass": true
+    },
+    {
+      "contacts": [],
+      "node": "@Node3D@50366",
+      "pass": true
+    }
+  ]
+}

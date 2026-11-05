@@ -1,0 +1,39 @@
+{
+  "method": "Single recorded capture frame per pose, includes shader compilation/transition overhead. Not steady-state FPS.",
+  "Windows_GPU_measured": false,
+  "144FPS_achieved": false,
+  "samples": {
+    "before": {
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "settings": {
+        "B_ES": true,
+        "C": true,
+        "cap": 144,
+        "continuous": true,
+        "vsync": 1
+      },
+      "views": 13,
+      "draw_calls_median": 5501.0,
+      "primitives_median": 3026594.0,
+      "capture_frame_wait_ms_median": 4113.118,
+      "static_memory_bytes_max": 2377039954.0,
+      "video_memory_bytes_max": 1969948416.0
+    },
+    "after": {
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "settings": {
+        "B_ES": true,
+        "C": true,
+        "cap": 144,
+        "continuous": true,
+        "vsync": 1
+      },
+      "views": 13,
+      "draw_calls_median": 5515.0,
+      "primitives_median": 3026708.0,
+      "capture_frame_wait_ms_median": 4307.736,
+      "static_memory_bytes_max": 2385104223.0,
+      "video_memory_bytes_max": 1964747936.0
+    }
+  }
+}

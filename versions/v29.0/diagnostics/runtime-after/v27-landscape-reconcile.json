@@ -1,0 +1,25 @@
+{
+  "collision_triangles_moved": 44,
+  "delta_world": [
+    -10.5,
+    0,
+    0
+  ],
+  "id": "V9-PARKLIGHT-L-3",
+  "new_centre": [
+    -90.175,
+    0,
+    -248.065
+  ],
+  "old_centre": [
+    -79.675,
+    0,
+    -248.065
+  ],
+  "reason": "既存庭園灯が新しい芝生走行線にあるため柵外の緑地縁へ移設。メッシュ・発光部・衝突を同時移設",
+  "surfaces": [
+    "v9_basalt@@V9-PARKLIGHT-L-3",
+    "v9_bronze@@V9-PARKLIGHT-L-3",
+    "v9_glow@@V9-PARKLIGHT-L-3"
+  ]
+}

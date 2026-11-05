@@ -1,0 +1,38 @@
+{
+  "method": "One actual rendered capture frame per pose; shader compilation/transition overhead included. Not steady FPS.",
+  "Windows_GPU": false,
+  "144FPS_achieved": false,
+  "human_playtest": false,
+  "samples": {
+    "before": {
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "settings": {
+        "B_ES": true,
+        "C": true,
+        "cap": 144,
+        "continuous": true,
+        "vsync": 1
+      },
+      "views": 18,
+      "draw_calls_median": 5682.5,
+      "primitives_median": 3226303.5,
+      "static_memory_bytes_max": 2276413433.0,
+      "capture_frame_wait_ms_median": 3714.525
+    },
+    "after": {
+      "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "settings": {
+        "B_ES": true,
+        "C": true,
+        "cap": 144,
+        "continuous": true,
+        "vsync": 1
+      },
+      "views": 18,
+      "draw_calls_median": 5914.5,
+      "primitives_median": 3302092.5,
+      "static_memory_bytes_max": 2385537615.0,
+      "capture_frame_wait_ms_median": 3795.4570000000003
+    }
+  }
+}

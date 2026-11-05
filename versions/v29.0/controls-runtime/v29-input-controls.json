@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "id": "default43-new1",
+      "pass": true
+    },
+    {
+      "id": "N-v19-old-reference",
+      "pass": true
+    },
+    {
+      "id": "N-new-female-only",
+      "pass": true
+    },
+    {
+      "id": "variant-swap-actual-clip",
+      "pass": true
+    },
+    {
+      "id": "P-face-only-selector",
+      "pass": true
+    },
+    {
+      "id": "F12-off-zero-colliders",
+      "pass": true
+    },
+    {
+      "id": "F12-restores-one",
+      "pass": true
+    },
+    {
+      "id": "N-original-v18-43-preserved",
+      "pass": true
+    },
+    {
+      "id": "N-returns-v20-43",
+      "pass": true
+    },
+    {
+      "id": "M-pauses-person-and-player",
+      "pass": true
+    },
+    {
+      "id": "F11-fair-toggle-maintained",
+      "pass": true
+    },
+    {
+      "id": "F9-maintained",
+      "pass": true
+    }
+  ],
+  "human_playtest": false,
+  "method": "Real N/P/F12/M/F11/F9 key events, actual visible/collidable counts and animation instance"
+}

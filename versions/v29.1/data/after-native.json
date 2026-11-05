@@ -1,0 +1,841 @@
+{
+  "Windows_GPU_measured": false,
+  "actual_Godot_viewport": true,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "engine": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  },
+  "environment": {
+    "department_labels": [
+      {
+        "fixture": "V291-A1F-002-television_demo-1",
+        "label": "映像・音響",
+        "supported_by_actual_fixture": true
+      },
+      {
+        "fixture": "V291-A1F-002-kitchen_demo-2",
+        "label": "キッチン家電",
+        "supported_by_actual_fixture": true
+      },
+      {
+        "fixture": "V291-A1F-002-laundry_demo-3",
+        "label": "生活家電",
+        "supported_by_actual_fixture": true
+      },
+      {
+        "fixture": "V291-A1F-002-television_demo-14",
+        "label": "映像体験",
+        "supported_by_actual_fixture": true
+      },
+      {
+        "fixture": "V291-B1-040-bakery_vitrine-18",
+        "label": "パン・焼菓子",
+        "supported_by_actual_fixture": true
+      },
+      {
+        "fixture": "V291-B1-040-coffee_bar-19",
+        "label": "バリスタ・受取",
+        "supported_by_actual_fixture": true
+      },
+      {
+        "fixture": "V291-A1F-044-fashion_table-25",
+        "label": "コーディネート",
+        "supported_by_actual_fixture": true
+      },
+      {
+        "fixture": "V291-C1F-CE-3-fashion_table-31",
+        "label": "キッズ・コーディネート",
+        "supported_by_actual_fixture": true
+      }
+    ],
+    "human_playtest": false,
+    "lights": [
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-002-television_demo-1",
+        "p": [
+          486.0,
+          5.09999950408936,
+          0.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-002-television_demo-4",
+        "p": [
+          484.0,
+          5.09999950408936,
+          13.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-002-television_demo-7",
+        "p": [
+          489.600006103516,
+          5.09999950408936,
+          27.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-002-kitchen_demo-10",
+        "p": [
+          502.0,
+          5.09999950408936,
+          42.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-002-television_demo-13",
+        "p": [
+          486.0,
+          5.09999950408936,
+          72.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-002-television_demo-16",
+        "p": [
+          503.0,
+          5.09999950408936,
+          -13.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-B1-040-bakery_vitrine-18",
+        "p": [
+          -35.3772087097168,
+          5.09999998092651,
+          -32.7272071838379
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-B1-040-bakery_vitrine-21",
+        "p": [
+          -11.7707891464233,
+          5.09999998092651,
+          -37.7966346740723
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-B1-040-cafe_banquette-24",
+        "p": [
+          -25.2000007629395,
+          5.09999998092651,
+          -40.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-044-fashion_table-25",
+        "p": [
+          360.919250488281,
+          5.09999950408936,
+          52.0807609558105
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-A1F-044-fashion_table-28",
+        "p": [
+          355.649993896484,
+          5.09999998092651,
+          56.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-C1F-CE-3-fashion_table-31",
+        "p": [
+          142.0,
+          5.09999998092651,
+          -267.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-C1F-CE-3-fashion_table-34",
+        "p": [
+          143.0,
+          5.09999998092651,
+          -254.0
+        ]
+      },
+      {
+        "actual_ceiling_support": "Collision_stone",
+        "fixture": "V291-C1F-CE-3-fashion_table-37",
+        "p": [
+          139.0,
+          5.09999998092651,
+          -258.0
+        ]
+      }
+    ],
+    "major_structure_changed": false,
+    "revision": "v29.1",
+    "signs": [
+      {
+        "actual_opaque_support_rays": [
+          {
+            "collider": "Collision_v10_charcoal",
+            "p": [
+              369.918273925781,
+              3.70000004768372,
+              52.4145660400391
+            ]
+          },
+          {
+            "collider": "Collision_v10_charcoal",
+            "p": [
+              368.631286621094,
+              3.70000004768372,
+              51.0304489135742
+            ]
+          },
+          {
+            "collider": "Collision_v10_charcoal",
+            "p": [
+              367.344299316406,
+              3.70000004768372,
+              49.6463356018066
+            ]
+          }
+        ],
+        "after": [
+          368.654724121094,
+          3.70000004768372,
+          51.008659362793
+        ],
+        "before": [
+          368.612979455469,
+          3.09,
+          51.0474718748501
+        ],
+        "clearance_below_m": 3.48500004768372,
+        "fallback_to_original_if_unproven": false,
+        "store_id": "A1F-044",
+        "support_relocation_accepted": true
+      },
+      {
+        "actual_opaque_support_rays": [
+          {
+            "collider": "Collision_v10_sage",
+            "p": [
+              137.039443969727,
+              3.70000004768372,
+              -264.090270996094
+            ]
+          },
+          {
+            "collider": "Collision_v10_sage",
+            "p": [
+              136.650085449219,
+              3.70000004768372,
+              -262.240814208984
+            ]
+          },
+          {
+            "collider": "Collision_v10_sage",
+            "p": [
+              136.260726928711,
+              3.70000004768372,
+              -260.391357421875
+            ]
+          }
+        ],
+        "after": [
+          136.618774414062,
+          3.70000004768372,
+          -262.247406005859
+        ],
+        "before": [
+          136.674544885374,
+          3.09,
+          -262.235652717337
+        ],
+        "clearance_below_m": 3.48500004768372,
+        "fallback_to_original_if_unproven": false,
+        "store_id": "C1F-CE-3",
+        "support_relocation_accepted": true
+      }
+    ]
+  },
+  "human_playtest": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "rows": [
+    {
+      "CPU_process_ms": 3555.302,
+      "camera": {
+        "eye": [
+          458.22684168357,
+          1.65,
+          -6.85587499098921
+        ],
+        "fov": 78.0,
+        "id": "A1F-002-front",
+        "look": [
+          464.402275456519,
+          2.5,
+          -6.3044969755473
+        ],
+        "store_id": "A1F-002",
+        "wing": "A"
+      },
+      "draw_calls": 5884.0,
+      "file": "after/A1F-002-front.jpg",
+      "frame_ms": [
+        7173.081
+      ],
+      "objects": 5890.0,
+      "physics_process_ms": 11.81,
+      "primitives": 2941880.0,
+      "save_error": 0,
+      "static_memory_bytes": 2354094613.0,
+      "video_memory_bytes": 1933875728.0
+    },
+    {
+      "CPU_process_ms": 3651.157,
+      "camera": {
+        "eye": [
+          499.94496737117,
+          1.65,
+          -5.40874045638876
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-centre",
+        "look": [
+          524.028157568265,
+          1.55,
+          -4.70643191158509
+        ],
+        "store_id": "A1F-002",
+        "wing": "A"
+      },
+      "draw_calls": 5171.0,
+      "file": "after/A1F-002-centre.jpg",
+      "frame_ms": [
+        2949.122
+      ],
+      "objects": 5181.0,
+      "physics_process_ms": 0.95,
+      "primitives": 2557061.0,
+      "save_error": 0,
+      "static_memory_bytes": 2355156777.0,
+      "video_memory_bytes": 1933875728.0
+    },
+    {
+      "CPU_process_ms": 2988.314,
+      "camera": {
+        "eye": [
+          529.647568614254,
+          1.65,
+          -4.54255991779756
+        ],
+        "fov": 72.0,
+        "id": "A1F-002-rear",
+        "look": [
+          463.406237751205,
+          1.55,
+          -6.3934289135218
+        ],
+        "store_id": "A1F-002",
+        "wing": "A"
+      },
+      "draw_calls": 12234.0,
+      "file": "after/A1F-002-rear.jpg",
+      "frame_ms": [
+        4476.097
+      ],
+      "objects": 12316.0,
+      "physics_process_ms": 0.635,
+      "primitives": 4460685.0,
+      "save_error": 0,
+      "static_memory_bytes": 2377720911.0,
+      "video_memory_bytes": 1933875728.0
+    },
+    {
+      "CPU_process_ms": 4554.115,
+      "camera": {
+        "eye": [
+          370.607181029605,
+          1.65,
+          48.6470166926585
+        ],
+        "fov": 78.0,
+        "id": "A1F-044-front",
+        "look": [
+          366.066699527818,
+          2.5,
+          52.868867913619
+        ],
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "draw_calls": 5645.0,
+      "file": "after/A1F-044-front.jpg",
+      "frame_ms": [
+        8865.26
+      ],
+      "objects": 5681.0,
+      "physics_process_ms": 14.17,
+      "primitives": 3235091.0,
+      "save_error": 0,
+      "static_memory_bytes": 2359163702.0,
+      "video_memory_bytes": 1967720192.0
+    },
+    {
+      "CPU_process_ms": 4345.447,
+      "camera": {
+        "eye": [
+          362.105056183936,
+          1.65,
+          56.5525011982815
+        ],
+        "fov": 72.0,
+        "id": "A1F-044-centre",
+        "look": [
+          358.255899607582,
+          1.55,
+          60.1315415236634
+        ],
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "draw_calls": 3952.0,
+      "file": "after/A1F-044-centre.jpg",
+      "frame_ms": [
+        2806.571
+      ],
+      "objects": 3982.0,
+      "physics_process_ms": 12.914,
+      "primitives": 2742066.0,
+      "save_error": 0,
+      "static_memory_bytes": 2359171882.0,
+      "video_memory_bytes": 1967720192.0
+    },
+    {
+      "CPU_process_ms": 2844.522,
+      "camera": {
+        "eye": [
+          357.357763073099,
+          1.65,
+          60.9666509329192
+        ],
+        "fov": 72.0,
+        "id": "A1F-044-rear",
+        "look": [
+          366.799035253913,
+          1.55,
+          52.1879241683028
+        ],
+        "store_id": "A1F-044",
+        "wing": "A"
+      },
+      "draw_calls": 7464.0,
+      "file": "after/A1F-044-rear.jpg",
+      "frame_ms": [
+        4060.46
+      ],
+      "objects": 7499.0,
+      "physics_process_ms": 1.14,
+      "primitives": 3941536.0,
+      "save_error": 0,
+      "static_memory_bytes": 2368425682.0,
+      "video_memory_bytes": 1967720192.0
+    },
+    {
+      "CPU_process_ms": 4417.444,
+      "camera": {
+        "eye": [
+          -26.8,
+          1.65,
+          -12.1548640941408
+        ],
+        "fov": 78.0,
+        "id": "B1-040-front",
+        "look": [
+          -33.0,
+          2.5,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "draw_calls": 7423.0,
+      "file": "after/B1-040-front.jpg",
+      "frame_ms": [
+        4588.173
+      ],
+      "objects": 7437.0,
+      "physics_process_ms": 0.66,
+      "primitives": 3803301.0,
+      "save_error": 0,
+      "static_memory_bytes": 2381073647.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 4621.808,
+      "camera": {
+        "eye": [
+          -34.8012865156798,
+          1.65,
+          -16.7825656700315
+        ],
+        "fov": 72.0,
+        "id": "B1-040-centre",
+        "look": [
+          -37.5738002487532,
+          1.55,
+          -20.1578351002096
+        ],
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "draw_calls": 7267.0,
+      "file": "after/B1-040-centre.jpg",
+      "frame_ms": [
+        4094.558
+      ],
+      "objects": 7291.0,
+      "physics_process_ms": 1.773,
+      "primitives": 3487341.0,
+      "save_error": 0,
+      "static_memory_bytes": 2381599083.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 4142.109,
+      "camera": {
+        "eye": [
+          -38.2207201198037,
+          1.65,
+          -20.9453979672512
+        ],
+        "fov": 72.0,
+        "id": "B1-040-rear",
+        "look": [
+          -32.0,
+          1.55,
+          -12.1548640941408
+        ],
+        "store_id": "B1-040",
+        "wing": "B"
+      },
+      "draw_calls": 7000.0,
+      "file": "after/B1-040-rear.jpg",
+      "frame_ms": [
+        3851.297
+      ],
+      "objects": 7041.0,
+      "physics_process_ms": 0.63,
+      "primitives": 4192949.0,
+      "save_error": 0,
+      "static_memory_bytes": 2384173775.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 4092.05,
+      "camera": {
+        "eye": [
+          133.594430680577,
+          1.65,
+          -262.62861770994
+        ],
+        "fov": 78.0,
+        "id": "C1F-CE-3-front",
+        "look": [
+          139.661439347495,
+          2.5,
+          -261.351352727431
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "draw_calls": 5065.0,
+      "file": "after/C1F-CE-3-front.jpg",
+      "frame_ms": [
+        3739.617
+      ],
+      "objects": 5089.0,
+      "physics_process_ms": 0.626,
+      "primitives": 3453188.0,
+      "save_error": 0,
+      "static_memory_bytes": 2371481214.0,
+      "video_memory_bytes": 1967720192.0
+    },
+    {
+      "CPU_process_ms": 3776.129,
+      "camera": {
+        "eye": [
+          146.058806421824,
+          1.65,
+          -260.004538606519
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-centre",
+        "look": [
+          151.89194169013,
+          1.55,
+          -258.776510128981
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "draw_calls": 4456.0,
+      "file": "after/C1F-CE-3-centre.jpg",
+      "frame_ms": [
+        3010.466
+      ],
+      "objects": 4476.0,
+      "physics_process_ms": 1.332,
+      "primitives": 3450220.0,
+      "save_error": 0,
+      "static_memory_bytes": 2371483150.0,
+      "video_memory_bytes": 1967720192.0
+    },
+    {
+      "CPU_process_ms": 3048.036,
+      "camera": {
+        "eye": [
+          153.253006586069,
+          1.65,
+          -258.489970150889
+        ],
+        "fov": 72.0,
+        "id": "C1F-CE-3-rear",
+        "look": [
+          138.682889562508,
+          1.55,
+          -261.55736320848
+        ],
+        "store_id": "C1F-CE-3",
+        "wing": "C"
+      },
+      "draw_calls": 4432.0,
+      "file": "after/C1F-CE-3-rear.jpg",
+      "frame_ms": [
+        3459.452
+      ],
+      "objects": 4460.0,
+      "physics_process_ms": 0.741,
+      "primitives": 2743294.0,
+      "save_error": 0,
+      "static_memory_bytes": 2377840938.0,
+      "video_memory_bytes": 1967720192.0
+    },
+    {
+      "CPU_process_ms": 3165.336,
+      "camera": {
+        "eye": [
+          -32.5,
+          1.65,
+          -15.0
+        ],
+        "fov": 75.0,
+        "id": "bakery-entry-turn",
+        "look": [
+          -38.0,
+          1.35,
+          -26.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "B"
+      },
+      "draw_calls": 7932.0,
+      "file": "after/bakery-entry-turn.jpg",
+      "frame_ms": [
+        3995.924
+      ],
+      "objects": 7954.0,
+      "physics_process_ms": 0.657,
+      "primitives": 3369094.0,
+      "save_error": 0,
+      "static_memory_bytes": 2384894019.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 4040.708,
+      "camera": {
+        "eye": [
+          -35.0,
+          1.65,
+          -28.0
+        ],
+        "fov": 75.0,
+        "id": "bakery-display",
+        "look": [
+          -35.6,
+          1.1,
+          -35.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "B"
+      },
+      "draw_calls": 6352.0,
+      "file": "after/bakery-display.jpg",
+      "frame_ms": [
+        3288.399
+      ],
+      "objects": 6387.0,
+      "physics_process_ms": 1.348,
+      "primitives": 2773651.0,
+      "save_error": 0,
+      "static_memory_bytes": 2385067495.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 3348.564,
+      "camera": {
+        "eye": [
+          -25.2000007629395,
+          1.65,
+          -36.7999992370605
+        ],
+        "fov": 75.0,
+        "id": "bakery-east-seating",
+        "look": [
+          -15.0,
+          1.15,
+          -39.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "B"
+      },
+      "draw_calls": 7939.0,
+      "file": "after/bakery-east-seating.jpg",
+      "frame_ms": [
+        4006.483
+      ],
+      "objects": 7993.0,
+      "physics_process_ms": 0.815,
+      "primitives": 4984983.0,
+      "save_error": 0,
+      "static_memory_bytes": 2385204267.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 4037.184,
+      "camera": {
+        "eye": [
+          480.0,
+          1.65,
+          -6.0
+        ],
+        "fov": 75.0,
+        "id": "electronics-TV",
+        "look": [
+          492.0,
+          1.45,
+          -13.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "A"
+      },
+      "draw_calls": 5945.0,
+      "file": "after/electronics-TV.jpg",
+      "frame_ms": [
+        3358.675
+      ],
+      "objects": 5959.0,
+      "physics_process_ms": 0.811,
+      "primitives": 2720427.0,
+      "save_error": 0,
+      "static_memory_bytes": 2385266203.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 3409.106,
+      "camera": {
+        "eye": [
+          496.0,
+          1.65,
+          11.0
+        ],
+        "fov": 75.0,
+        "id": "electronics-kitchen",
+        "look": [
+          502.0,
+          1.2,
+          24.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "A"
+      },
+      "draw_calls": 4518.0,
+      "file": "after/electronics-kitchen.jpg",
+      "frame_ms": [
+        3467.121
+      ],
+      "objects": 4518.0,
+      "physics_process_ms": 0.992,
+      "primitives": 2502863.0,
+      "save_error": 0,
+      "static_memory_bytes": 2385537615.0,
+      "video_memory_bytes": 1968895312.0
+    },
+    {
+      "CPU_process_ms": 3501.13,
+      "camera": {
+        "eye": [
+          147.0,
+          1.65,
+          -260.0
+        ],
+        "fov": 75.0,
+        "id": "kids-interior",
+        "look": [
+          148.0,
+          1.05,
+          -267.0
+        ],
+        "scope": "v29.1 focused area",
+        "wing": "C"
+      },
+      "draw_calls": 2101.0,
+      "file": "after/kids-interior.jpg",
+      "frame_ms": [
+        2629.123
+      ],
+      "objects": 2101.0,
+      "physics_process_ms": 0.612,
+      "primitives": 1075851.0,
+      "save_error": 0,
+      "static_memory_bytes": 2378719506.0,
+      "video_memory_bytes": 1967720192.0
+    }
+  ],
+  "settings": {
+    "B_ES": true,
+    "C": true,
+    "cap": 144,
+    "continuous": true,
+    "vsync": 1
+  },
+  "side": "after",
+  "final_clothing_retake_ids": [
+    "A1F-044-front",
+    "A1F-044-centre",
+    "A1F-044-rear",
+    "C1F-CE-3-front",
+    "C1F-CE-3-centre",
+    "C1F-CE-3-rear",
+    "kids-interior"
+  ]
+}

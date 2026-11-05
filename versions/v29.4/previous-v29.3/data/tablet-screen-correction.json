@@ -1,0 +1,7 @@
+{
+  "root_cause": "Legacy tablet body tilted 0.22 rad but display label remained vertical; upper screen clipped into body.",
+  "fix": "Apply the same rotation to the display label only when importing the tablet into new v293 assemblies. Legacy asset preserved.",
+  "assembly_bounds_max_delta_m": 0.0,
+  "scope": "new mobile and computer display models only",
+  "no_floor_or_fixture_layout_change": true
+}

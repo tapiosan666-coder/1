@@ -1,0 +1,27 @@
+{
+  "batches": 24411,
+  "colliders": 7308,
+  "department_signs": {
+    "pending": true
+  },
+  "far_merchandise_lod": {
+    "batches": 1227,
+    "far_silhouettes_begin_m": 45.0,
+    "far_silhouettes_end_m": 110.0,
+    "instances": 70208,
+    "near_original_meshes_end_m": 45.0,
+    "scope": "Low-detail bounding silhouettes with per-SKU palette, not detailed product art; no character or architecture simplification. LOD switches use per-batch AABB distance and require visual pop-in review."
+  },
+  "fixtures": 7308,
+  "missing": [],
+  "products": 70208,
+  "shared_materials": 237,
+  "shared_texture_contents": 101,
+  "stock_packets": {
+    "accounted_products": 70208,
+    "all_products_preserved": true,
+    "collision_added": false,
+    "mode": "Production default: original per-SKU MultiMesh, material/texture and mounted-sign sharing enabled. Stock packets are experimental opt-in only.",
+    "source_products": 70208
+  }
+}

@@ -1,0 +1,732 @@
+{
+  "images": 36,
+  "same_eye_look_FOV": true,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "actual_Godot_viewport": true,
+  "NPC_animation_phase_exactly_synchronized": false,
+  "files": [
+    {
+      "file": "before/A1F-002-front.jpg",
+      "camera": {
+        "id": "A1F-002-front",
+        "eye": [
+          458.22684168356955,
+          1.65,
+          -6.855874990989211
+        ],
+        "look": [
+          464.40227545651925,
+          2.5,
+          -6.304496975547296
+        ],
+        "fov": 78,
+        "wing": "A",
+        "store_id": "A1F-002"
+      },
+      "sha256": "f63d3aae2ee398e23d172abd238b95902ac26f0698daff0d5003be4f7eacc360"
+    },
+    {
+      "file": "before/A1F-002-centre.jpg",
+      "camera": {
+        "id": "A1F-002-centre",
+        "eye": [
+          499.9449673711701,
+          1.65,
+          -5.408740456388761
+        ],
+        "look": [
+          524.0281575682653,
+          1.55,
+          -4.706431911585085
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-002"
+      },
+      "sha256": "077480b91152fe2265385c7014a7cb4ca2280240443b0994b5419e0b8689a915"
+    },
+    {
+      "file": "before/A1F-002-rear.jpg",
+      "camera": {
+        "id": "A1F-002-rear",
+        "eye": [
+          529.6475686142542,
+          1.65,
+          -4.542559917797561
+        ],
+        "look": [
+          463.40623775120474,
+          1.55,
+          -6.393428913521799
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-002"
+      },
+      "sha256": "5ce0aa41b0cc0cd1f7a0f9980cca1de07c4c8b603e56f5d3114c803487408660"
+    },
+    {
+      "file": "before/A1F-044-front.jpg",
+      "camera": {
+        "id": "A1F-044-front",
+        "eye": [
+          370.60718102960544,
+          1.65,
+          48.647016692658525
+        ],
+        "look": [
+          366.066699527818,
+          2.5,
+          52.86886791361904
+        ],
+        "fov": 78,
+        "wing": "A",
+        "store_id": "A1F-044"
+      },
+      "sha256": "54983dc171585f46d5842784a97084d6404a8cc4f50a9f65c8f64876c20a19e6"
+    },
+    {
+      "file": "before/A1F-044-centre.jpg",
+      "camera": {
+        "id": "A1F-044-centre",
+        "eye": [
+          362.10505618393563,
+          1.65,
+          56.552501198281476
+        ],
+        "look": [
+          358.2558996075815,
+          1.55,
+          60.13154152366339
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-044"
+      },
+      "sha256": "4ff5e223e9a64d0d3b65e6b91130e84acb8ee1aa882425708c7234001bc8337c"
+    },
+    {
+      "file": "before/A1F-044-rear.jpg",
+      "camera": {
+        "id": "A1F-044-rear",
+        "eye": [
+          357.3577630730989,
+          1.65,
+          60.966650932919165
+        ],
+        "look": [
+          366.79903525391273,
+          1.55,
+          52.18792416830283
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-044"
+      },
+      "sha256": "3a6a19ee7baae2a2975f0827be36c4cb6251f10365c1bdafe4098b45f2ab8f2d"
+    },
+    {
+      "file": "before/B1-040-front.jpg",
+      "camera": {
+        "id": "B1-040-front",
+        "eye": [
+          -26.8,
+          1.65,
+          -12.154864094140805
+        ],
+        "look": [
+          -33.0,
+          2.5,
+          -12.154864094140805
+        ],
+        "fov": 78,
+        "wing": "B",
+        "store_id": "B1-040"
+      },
+      "sha256": "acc52abea1818d5fe745b40c19a7f9cba87414cc9e03f3a6ecae599518c51f23"
+    },
+    {
+      "file": "before/B1-040-centre.jpg",
+      "camera": {
+        "id": "B1-040-centre",
+        "eye": [
+          -34.80128651567976,
+          1.65,
+          -16.782565670031452
+        ],
+        "look": [
+          -37.57380024875318,
+          1.55,
+          -20.157835100209596
+        ],
+        "fov": 72,
+        "wing": "B",
+        "store_id": "B1-040"
+      },
+      "sha256": "c85e6a0d313350b4193becc528050c8a89d4b94b4b6383bcd3a37bb5ec057d57"
+    },
+    {
+      "file": "before/B1-040-rear.jpg",
+      "camera": {
+        "id": "B1-040-rear",
+        "eye": [
+          -38.220720119803644,
+          1.65,
+          -20.94539796725116
+        ],
+        "look": [
+          -32.0,
+          1.55,
+          -12.154864094140805
+        ],
+        "fov": 72,
+        "wing": "B",
+        "store_id": "B1-040"
+      },
+      "sha256": "e79d7ed19cee71332544918a8d781fcfa2410532f9f7c55e57644f7cbe88c02d"
+    },
+    {
+      "file": "before/C1F-CE-3-front.jpg",
+      "camera": {
+        "id": "C1F-CE-3-front",
+        "eye": [
+          133.59443068057732,
+          1.65,
+          -262.6286177099397
+        ],
+        "look": [
+          139.6614393474951,
+          2.5,
+          -261.35135272743054
+        ],
+        "fov": 78,
+        "wing": "C",
+        "store_id": "C1F-CE-3"
+      },
+      "sha256": "79c2265148038b194c018e0e2e3bc6a64ea356495f9307b1f1c24e0056fb3653"
+    },
+    {
+      "file": "before/C1F-CE-3-centre.jpg",
+      "camera": {
+        "id": "C1F-CE-3-centre",
+        "eye": [
+          146.0588064218245,
+          1.65,
+          -260.00453860651913
+        ],
+        "look": [
+          151.8919416901305,
+          1.55,
+          -258.77651012898104
+        ],
+        "fov": 72,
+        "wing": "C",
+        "store_id": "C1F-CE-3"
+      },
+      "sha256": "8057ac12f934cc53074a42fa95eb98adf3ef34e3e3eb32c114d9478d2d9bb7c3"
+    },
+    {
+      "file": "before/C1F-CE-3-rear.jpg",
+      "camera": {
+        "id": "C1F-CE-3-rear",
+        "eye": [
+          153.25300658606855,
+          1.65,
+          -258.48997015088884
+        ],
+        "look": [
+          138.68288956250836,
+          1.55,
+          -261.5573632084804
+        ],
+        "fov": 72,
+        "wing": "C",
+        "store_id": "C1F-CE-3"
+      },
+      "sha256": "c7788cb65549c79326ef9a199e8525a6babf46af2a4437a830339aa059f64964"
+    },
+    {
+      "file": "before/bakery-entry-turn.jpg",
+      "camera": {
+        "id": "bakery-entry-turn",
+        "wing": "B",
+        "eye": [
+          -32.5,
+          1.65,
+          -15
+        ],
+        "look": [
+          -38,
+          1.35,
+          -26
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "f316a6a1469198b244802f86b4372bda9e387bb6c21cf90c847ac76157ba60a4"
+    },
+    {
+      "file": "before/bakery-display.jpg",
+      "camera": {
+        "id": "bakery-display",
+        "wing": "B",
+        "eye": [
+          -35,
+          1.65,
+          -28
+        ],
+        "look": [
+          -35.6,
+          1.1,
+          -35
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "738261f97f2708103ad36ad84329ce03d27830dba1806e9e52c295af543ded7b"
+    },
+    {
+      "file": "before/bakery-east-seating.jpg",
+      "camera": {
+        "id": "bakery-east-seating",
+        "wing": "B",
+        "eye": [
+          -25.2000007629395,
+          1.65,
+          -36.7999992370605
+        ],
+        "look": [
+          -15,
+          1.15,
+          -39
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "70a7dc38a8f6a694c5e133f9cc50f6babc35d0b1d53b1ef0bd5ae5b024a72bd6"
+    },
+    {
+      "file": "before/electronics-TV.jpg",
+      "camera": {
+        "id": "electronics-TV",
+        "wing": "A",
+        "eye": [
+          480,
+          1.65,
+          -6
+        ],
+        "look": [
+          492,
+          1.45,
+          -13
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "3d73c804b9c3d9e442e6e218753941eb78fbee63db493f5c458e2e394b785c20"
+    },
+    {
+      "file": "before/electronics-kitchen.jpg",
+      "camera": {
+        "id": "electronics-kitchen",
+        "wing": "A",
+        "eye": [
+          496,
+          1.65,
+          11
+        ],
+        "look": [
+          502,
+          1.2,
+          24
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "d172d6def121cb1f9a80bafeb90997175fba08456c0f62160f141d292029ac19"
+    },
+    {
+      "file": "before/kids-interior.jpg",
+      "camera": {
+        "id": "kids-interior",
+        "wing": "C",
+        "eye": [
+          147,
+          1.65,
+          -260
+        ],
+        "look": [
+          148,
+          1.05,
+          -267
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "52ead53e4452515d204cc8458fd3c63d1b330a565da5cce462422e0866da8ff3"
+    },
+    {
+      "file": "after/A1F-002-front.jpg",
+      "camera": {
+        "id": "A1F-002-front",
+        "eye": [
+          458.22684168356955,
+          1.65,
+          -6.855874990989211
+        ],
+        "look": [
+          464.40227545651925,
+          2.5,
+          -6.304496975547296
+        ],
+        "fov": 78,
+        "wing": "A",
+        "store_id": "A1F-002"
+      },
+      "sha256": "14b82b0e4830ed6ab930f512a82e630ada4a0a04cca25e28d414b117cf9d8e9e"
+    },
+    {
+      "file": "after/A1F-002-centre.jpg",
+      "camera": {
+        "id": "A1F-002-centre",
+        "eye": [
+          499.9449673711701,
+          1.65,
+          -5.408740456388761
+        ],
+        "look": [
+          524.0281575682653,
+          1.55,
+          -4.706431911585085
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-002"
+      },
+      "sha256": "121c68d1505b25b81c3b01b28dc59cc23f3780cbd20f25f80a52b7eaf8166f68"
+    },
+    {
+      "file": "after/A1F-002-rear.jpg",
+      "camera": {
+        "id": "A1F-002-rear",
+        "eye": [
+          529.6475686142542,
+          1.65,
+          -4.542559917797561
+        ],
+        "look": [
+          463.40623775120474,
+          1.55,
+          -6.393428913521799
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-002"
+      },
+      "sha256": "3bf2a9ffc1dcdb212c876235d627c097c1555297e97440412ca7c1b7794cd541"
+    },
+    {
+      "file": "after/A1F-044-front.jpg",
+      "camera": {
+        "id": "A1F-044-front",
+        "eye": [
+          370.60718102960544,
+          1.65,
+          48.647016692658525
+        ],
+        "look": [
+          366.066699527818,
+          2.5,
+          52.86886791361904
+        ],
+        "fov": 78,
+        "wing": "A",
+        "store_id": "A1F-044"
+      },
+      "sha256": "b1420308e5febcce15c1db30e8c3413c579ed417be749d6660c354d1d99809ae"
+    },
+    {
+      "file": "after/A1F-044-centre.jpg",
+      "camera": {
+        "id": "A1F-044-centre",
+        "eye": [
+          362.10505618393563,
+          1.65,
+          56.552501198281476
+        ],
+        "look": [
+          358.2558996075815,
+          1.55,
+          60.13154152366339
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-044"
+      },
+      "sha256": "5bcfa4bce0403045b27ad7c3cb2030cb8a51f84d98179cc00c8c5ec4bf1e3c3c"
+    },
+    {
+      "file": "after/A1F-044-rear.jpg",
+      "camera": {
+        "id": "A1F-044-rear",
+        "eye": [
+          357.3577630730989,
+          1.65,
+          60.966650932919165
+        ],
+        "look": [
+          366.79903525391273,
+          1.55,
+          52.18792416830283
+        ],
+        "fov": 72,
+        "wing": "A",
+        "store_id": "A1F-044"
+      },
+      "sha256": "72e2a97f4c73bb89ffaca31d245590ee04c66ebd52c9308e74195ad8578e8654"
+    },
+    {
+      "file": "after/B1-040-front.jpg",
+      "camera": {
+        "id": "B1-040-front",
+        "eye": [
+          -26.8,
+          1.65,
+          -12.154864094140805
+        ],
+        "look": [
+          -33.0,
+          2.5,
+          -12.154864094140805
+        ],
+        "fov": 78,
+        "wing": "B",
+        "store_id": "B1-040"
+      },
+      "sha256": "4da046fc659ce132533d2d37ab90d453dab47f4f791f6ec01d3164c045a1098a"
+    },
+    {
+      "file": "after/B1-040-centre.jpg",
+      "camera": {
+        "id": "B1-040-centre",
+        "eye": [
+          -34.80128651567976,
+          1.65,
+          -16.782565670031452
+        ],
+        "look": [
+          -37.57380024875318,
+          1.55,
+          -20.157835100209596
+        ],
+        "fov": 72,
+        "wing": "B",
+        "store_id": "B1-040"
+      },
+      "sha256": "a88036b8ac32d1583f18715af88594ccbafceb8e85e4d7fd680d0d5a29467a15"
+    },
+    {
+      "file": "after/B1-040-rear.jpg",
+      "camera": {
+        "id": "B1-040-rear",
+        "eye": [
+          -38.220720119803644,
+          1.65,
+          -20.94539796725116
+        ],
+        "look": [
+          -32.0,
+          1.55,
+          -12.154864094140805
+        ],
+        "fov": 72,
+        "wing": "B",
+        "store_id": "B1-040"
+      },
+      "sha256": "703baa187f02d7ff91602760f0242c7ff7c61f2f5bb034e03d17b77d63b104c4"
+    },
+    {
+      "file": "after/C1F-CE-3-front.jpg",
+      "camera": {
+        "id": "C1F-CE-3-front",
+        "eye": [
+          133.59443068057732,
+          1.65,
+          -262.6286177099397
+        ],
+        "look": [
+          139.6614393474951,
+          2.5,
+          -261.35135272743054
+        ],
+        "fov": 78,
+        "wing": "C",
+        "store_id": "C1F-CE-3"
+      },
+      "sha256": "f36dbbc7ce47c3397fdeba0e81ecef1f043ded082e42477e21a582810bd266e9"
+    },
+    {
+      "file": "after/C1F-CE-3-centre.jpg",
+      "camera": {
+        "id": "C1F-CE-3-centre",
+        "eye": [
+          146.0588064218245,
+          1.65,
+          -260.00453860651913
+        ],
+        "look": [
+          151.8919416901305,
+          1.55,
+          -258.77651012898104
+        ],
+        "fov": 72,
+        "wing": "C",
+        "store_id": "C1F-CE-3"
+      },
+      "sha256": "4b46d19a78aed82e45004896bdd8917f38ea8638a77446f4a77e3015c37733ba"
+    },
+    {
+      "file": "after/C1F-CE-3-rear.jpg",
+      "camera": {
+        "id": "C1F-CE-3-rear",
+        "eye": [
+          153.25300658606855,
+          1.65,
+          -258.48997015088884
+        ],
+        "look": [
+          138.68288956250836,
+          1.55,
+          -261.5573632084804
+        ],
+        "fov": 72,
+        "wing": "C",
+        "store_id": "C1F-CE-3"
+      },
+      "sha256": "1971b308ba66a8f8e283c32b8e4dcecf22269deea88394d76e823f47bffee135"
+    },
+    {
+      "file": "after/bakery-entry-turn.jpg",
+      "camera": {
+        "id": "bakery-entry-turn",
+        "wing": "B",
+        "eye": [
+          -32.5,
+          1.65,
+          -15
+        ],
+        "look": [
+          -38,
+          1.35,
+          -26
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "735d2f73ac5b737bbe3c2d1a591c5d1627eef37be76554b9722ec5b2321d1ff6"
+    },
+    {
+      "file": "after/bakery-display.jpg",
+      "camera": {
+        "id": "bakery-display",
+        "wing": "B",
+        "eye": [
+          -35,
+          1.65,
+          -28
+        ],
+        "look": [
+          -35.6,
+          1.1,
+          -35
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "a52d8b8cfe59cdb8d76f0fc13e4a4b3678f1ca5eba03f33817ae0e8255353497"
+    },
+    {
+      "file": "after/bakery-east-seating.jpg",
+      "camera": {
+        "id": "bakery-east-seating",
+        "wing": "B",
+        "eye": [
+          -25.2000007629395,
+          1.65,
+          -36.7999992370605
+        ],
+        "look": [
+          -15,
+          1.15,
+          -39
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "9e5c1700df37f9ee31af9021f7e6c5dd0fa5dcaa409edfbd448bf3e47b4eabaf"
+    },
+    {
+      "file": "after/electronics-TV.jpg",
+      "camera": {
+        "id": "electronics-TV",
+        "wing": "A",
+        "eye": [
+          480,
+          1.65,
+          -6
+        ],
+        "look": [
+          492,
+          1.45,
+          -13
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "9e4f8d525181633fbff6a8a135992818a8d25ba3589bd9a56fbc88c2c31ea00d"
+    },
+    {
+      "file": "after/electronics-kitchen.jpg",
+      "camera": {
+        "id": "electronics-kitchen",
+        "wing": "A",
+        "eye": [
+          496,
+          1.65,
+          11
+        ],
+        "look": [
+          502,
+          1.2,
+          24
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "9ee745ba24c465632ad670aae7e541996c74e893ae0cbf591fa9a8be249030b1"
+    },
+    {
+      "file": "after/kids-interior.jpg",
+      "camera": {
+        "id": "kids-interior",
+        "wing": "C",
+        "eye": [
+          147,
+          1.65,
+          -260
+        ],
+        "look": [
+          148,
+          1.05,
+          -267
+        ],
+        "fov": 75,
+        "scope": "v29.1 focused area"
+      },
+      "sha256": "b88e03c0d9e210d227b4f19140c30a45e3eb94ab0bb7823367a2101c8598f1cf"
+    }
+  ]
+}
