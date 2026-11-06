@@ -13,7 +13,7 @@ var floor_select:OptionButton
 func setup(d:Array,p:CharacterBody3D,f:Font)->void:
  data=d;player=p;font=f;set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
  var panel=ColorRect.new();panel.show_behind_parent=true;panel.color=Color(.025,.045,.055,.97);panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);add_child(panel)
- var title=Label.new();title.position=Vector2(38,25);title.text=("構造別案・未承認  /  "if d.any(func(q):return q.has("variant"))else"")+"検証用 館内マップ  /  Mで閉じる";title.add_theme_font_size_override("font_size",30);add_child(title)
+ var title=Label.new();title.position=Vector2(38,25);title.text="館内マップ / 独立検証 / Mで閉じる";title.add_theme_font_size_override("font_size",30);add_child(title)
  wing_select=OptionButton.new();wing_select.position=Vector2(35,135);wing_select.size=Vector2(210,50)
  for w in ["A","B","C","P-A-E","P-B-S","P-C-N","P-B-W","P-A-S"]:wing_select.add_item(w+"館"if w.length()==1 else w)
  wing_select.select(1);wing_select.item_selected.connect(func(index):wing=wing_select.get_item_text(index).trim_suffix("館");refresh_floors());add_child(wing_select)

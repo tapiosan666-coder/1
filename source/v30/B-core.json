@@ -1,0 +1,1303 @@
+{
+  "status": "v30 single normal B west layout; transfer 7.53m, no comparator",
+  "centre_world": [
+    -192,
+    0,
+    -15.5
+  ],
+  "escalators": [
+    {
+      "id": "B-WEST-V15-0-UP",
+      "wing": "B",
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "UP",
+      "c": [
+        -192.0,
+        0.0,
+        -11.2
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 0.0,
+      "high_y": 5.525,
+      "run_m": 11.8,
+      "rise_m": 5.525,
+      "test_start": [
+        -184.2,
+        0.0,
+        -11.2
+      ],
+      "test_end": [
+        -199.8,
+        5.525,
+        -11.2
+      ]
+    },
+    {
+      "id": "B-WEST-V15-0-DOWN",
+      "wing": "B",
+      "levels": [
+        0,
+        1
+      ],
+      "direction": "DOWN",
+      "c": [
+        -192.0,
+        0.0,
+        -13.4
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 0.0,
+      "high_y": 5.525,
+      "run_m": 11.8,
+      "rise_m": 5.525,
+      "test_start": [
+        -184.2,
+        0.0,
+        -13.4
+      ],
+      "test_end": [
+        -199.8,
+        5.525,
+        -13.4
+      ]
+    },
+    {
+      "id": "B-WEST-V15-1-UP",
+      "wing": "B",
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "UP",
+      "c": [
+        -192.0,
+        5.525,
+        -16.73
+      ],
+      "u": [
+        1.0,
+        0.0
+      ],
+      "low_y": 5.525,
+      "high_y": 10.875,
+      "run_m": 11.8,
+      "rise_m": 5.35,
+      "test_start": [
+        -199.8,
+        5.525,
+        -16.73
+      ],
+      "test_end": [
+        -184.2,
+        10.875,
+        -16.73
+      ]
+    },
+    {
+      "id": "B-WEST-V15-1-DOWN",
+      "wing": "B",
+      "levels": [
+        1,
+        2
+      ],
+      "direction": "DOWN",
+      "c": [
+        -192.0,
+        5.525,
+        -18.93
+      ],
+      "u": [
+        1.0,
+        0.0
+      ],
+      "low_y": 5.525,
+      "high_y": 10.875,
+      "run_m": 11.8,
+      "rise_m": 5.35,
+      "test_start": [
+        -199.8,
+        5.525,
+        -18.93
+      ],
+      "test_end": [
+        -184.2,
+        10.875,
+        -18.93
+      ]
+    },
+    {
+      "id": "B-WEST-V15-2-UP",
+      "wing": "B",
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "UP",
+      "c": [
+        -192.0,
+        10.875,
+        -11.2
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 10.875,
+      "high_y": 16.4,
+      "run_m": 11.8,
+      "rise_m": 5.524999999999999,
+      "test_start": [
+        -184.2,
+        10.875,
+        -11.2
+      ],
+      "test_end": [
+        -199.8,
+        16.4,
+        -11.2
+      ]
+    },
+    {
+      "id": "B-WEST-V15-2-DOWN",
+      "wing": "B",
+      "levels": [
+        2,
+        3
+      ],
+      "direction": "DOWN",
+      "c": [
+        -192.0,
+        10.875,
+        -13.4
+      ],
+      "u": [
+        -1.0,
+        0.0
+      ],
+      "low_y": 10.875,
+      "high_y": 16.4,
+      "run_m": 11.8,
+      "rise_m": 5.524999999999999,
+      "test_start": [
+        -184.2,
+        10.875,
+        -13.4
+      ],
+      "test_end": [
+        -199.8,
+        16.4,
+        -13.4
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "from": "B-WEST-V15-0-UP",
+      "to": "B-WEST-V15-1-UP",
+      "points": [
+        [
+          -199.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -11.2
+        ],
+        [
+          -200.8,
+          5.525,
+          -16.73
+        ],
+        [
+          -199.8,
+          5.525,
+          -16.73
+        ]
+      ],
+      "centreline_length_m": 7.530000000000001
+    },
+    {
+      "from": "B-WEST-V15-1-UP",
+      "to": "B-WEST-V15-2-UP",
+      "points": [
+        [
+          -184.2,
+          10.875,
+          -16.73
+        ],
+        [
+          -183.2,
+          10.875,
+          -16.73
+        ],
+        [
+          -183.2,
+          10.875,
+          -11.2
+        ],
+        [
+          -184.2,
+          10.875,
+          -11.2
+        ]
+      ],
+      "centreline_length_m": 7.530000000000001
+    }
+  ],
+  "connectors": [
+    {
+      "level": 1,
+      "height": 5.525,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 1,
+      "height": 5.525,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 2,
+      "height": 10.875,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 2,
+      "height": 10.875,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 3,
+      "height": 16.4,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -204.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    },
+    {
+      "level": 3,
+      "height": 16.4,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -165.0,
+              -17.6
+            ]
+          ]
+        ]
+      },
+      "purpose": "West atrium transfer lobby to existing public promenade",
+      "clear_width_m": 4.2
+    }
+  ],
+  "erase_surfaces": [
+    "step@@ESC-E1-12-UP",
+    "glass@@ESC-E1-12-UP",
+    "step@@ESC-E1-12-DOWN",
+    "glass@@ESC-E1-12-DOWN",
+    "step@@ESC-E1-23-UP",
+    "glass@@ESC-E1-23-UP",
+    "step@@ESC-E1-23-DOWN",
+    "glass@@ESC-E1-23-DOWN",
+    "stone@@V12-ES-E1-12-UP",
+    "v10_floor_B@@V12-ES-E1-12-UP",
+    "plaster@@V12-ES-E1-12-UP",
+    "v10_darkstone@@V12-ES-E1-12-UP",
+    "v10_guard_glass@@V12-ES-E1-12-UP",
+    "v10_metal@@V12-ES-E1-12-UP",
+    "stone@@V12-ES-E1-12-DOWN",
+    "v10_floor_B@@V12-ES-E1-12-DOWN",
+    "plaster@@V12-ES-E1-12-DOWN",
+    "v10_darkstone@@V12-ES-E1-12-DOWN",
+    "v10_guard_glass@@V12-ES-E1-12-DOWN",
+    "v10_metal@@V12-ES-E1-12-DOWN",
+    "stone@@V12-ES-E1-23-UP",
+    "v10_floor_B@@V12-ES-E1-23-UP",
+    "plaster@@V12-ES-E1-23-UP",
+    "v10_darkstone@@V12-ES-E1-23-UP",
+    "v10_guard_glass@@V12-ES-E1-23-UP",
+    "v10_metal@@V12-ES-E1-23-UP",
+    "stone@@V12-ES-E1-23-DOWN",
+    "v10_floor_B@@V12-ES-E1-23-DOWN",
+    "plaster@@V12-ES-E1-23-DOWN",
+    "v10_darkstone@@V12-ES-E1-23-DOWN",
+    "v10_guard_glass@@V12-ES-E1-23-DOWN",
+    "v10_metal@@V12-ES-E1-23-DOWN",
+    "v12_landing_plate@@V12-LANDING-E1-12-UP-0",
+    "v12_landing_plate@@V12-LANDING-E1-12-UP-1",
+    "v12_landing_plate@@V12-LANDING-E1-12-DOWN-0",
+    "v12_landing_plate@@V12-LANDING-E1-12-DOWN-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-UP-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-UP-2",
+    "v12_landing_plate@@V12-LANDING-E1-23-DOWN-1",
+    "v12_landing_plate@@V12-LANDING-E1-23-DOWN-2"
+  ],
+  "rail_mouth_cuts": [
+    {
+      "surface": "glass@@ARCH-1",
+      "triangles_split": 16
+    },
+    {
+      "surface": "dark_stone@@ARCH-1",
+      "triangles_split": 16
+    },
+    {
+      "surface": "dark_stone@@ARCH-2",
+      "triangles_split": 16
+    },
+    {
+      "surface": "glass@@ARCH-2",
+      "triangles_split": 16
+    },
+    {
+      "surface": "metal@@ESC-E3-23-DOWN",
+      "triangles_split": 2
+    },
+    {
+      "surface": "glass@@B-RF",
+      "triangles_split": 16
+    },
+    {
+      "surface": "v10_metal@@V11-GUARD-ACTUAL-16.4-1.1",
+      "triangles_split": 40
+    },
+    {
+      "surface": "v10_metal@@V15-B-WEST-TRANSFER",
+      "triangles_split": 48
+    },
+    {
+      "surface": "v10_guard_glass@@V15-B-WEST-TRANSFER",
+      "triangles_split": 48
+    },
+    {
+      "surface": "v10_chalk@@V15-B-WEST-TRANSFER",
+      "triangles_split": 48
+    }
+  ],
+  "retired_machine_ids": [
+    "E1-12-UP",
+    "E1-12-DOWN",
+    "E1-23-UP",
+    "E1-23-DOWN"
+  ],
+  "deleted_collision_triangles": {
+    "stone": 64,
+    "plaster": 0,
+    "glass": 16,
+    "wall_chalk": 0,
+    "metal": 0,
+    "walnut": 0,
+    "oak": 0,
+    "wall_sand": 0,
+    "wall_sage": 0,
+    "wall_taupe": 0,
+    "fabric_cream": 0,
+    "wood": 0,
+    "fabric_navy": 0,
+    "dark_stone": 0,
+    "step": 104,
+    "soil": 0,
+    "black": 0,
+    "v8_oak": 0,
+    "v8_slate": 0,
+    "v8_bronze": 0,
+    "v8_travertine": 0,
+    "v8_chair_seat": 0,
+    "v9_collision_only": 0,
+    "v9_marble": 0,
+    "v9_basalt": 0,
+    "v9_bronze": 0,
+    "v10_darkstone": 1520,
+    "v10_glass": 0,
+    "v10_chalk": 0,
+    "v10_sage": 0,
+    "v10_oak": 0,
+    "v10_charcoal": 0,
+    "v10_clay": 0,
+    "v11_fixture_proxy": 0,
+    "v10_guard_glass": 1520,
+    "v12_fixture_proxy": 0,
+    "v12_matched_visible_walls": 0,
+    "ceramic_0": 0
+  },
+  "basement_status": "B1 connected by retained three EV/stair cores; no new ES shaft cut through retained basement retail.",
+  "controller_unchanged": true,
+  "stores_relocated": false,
+  "RF_SUPPORT_16": "UNAPPROVED",
+  "structural_capacity_verified": false,
+  "site_physics_evidence": "evidence/v15/physics-ES.json",
+  "ground_slab": {
+    "bounds_world": [
+      -204,
+      -26.5,
+      -180,
+      -4.5
+    ],
+    "top_y": 0.0,
+    "thickness_m": 0.38,
+    "role": "Retained 1F structural foundation carried by the replaced transfer assembly"
+  },
+  "v30_floors": [
+    {
+      "level": 1,
+      "height": 5.525,
+      "deck": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -22.8
+            ],
+            [
+              -180.0,
+              -4.5
+            ],
+            [
+              -204.0,
+              -4.5
+            ],
+            [
+              -204.0,
+              -22.8
+            ],
+            [
+              -180.0,
+              -22.8
+            ]
+          ]
+        ]
+      },
+      "public": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -22.8
+            ],
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -204.0,
+              -4.5
+            ],
+            [
+              -180.0,
+              -4.5
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -180.0,
+              -22.8
+            ],
+            [
+              -204.0,
+              -22.8
+            ]
+          ],
+          [
+            [
+              -184.6,
+              -20.13
+            ],
+            [
+              -184.6,
+              -10.0
+            ],
+            [
+              -199.4,
+              -10.0
+            ],
+            [
+              -199.4,
+              -20.13
+            ],
+            [
+              -184.6,
+              -20.13
+            ]
+          ]
+        ]
+      },
+      "opening": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -199.4,
+              -20.13
+            ],
+            [
+              -199.4,
+              -10.0
+            ],
+            [
+              -184.6,
+              -10.0
+            ],
+            [
+              -184.6,
+              -20.13
+            ],
+            [
+              -199.4,
+              -20.13
+            ]
+          ]
+        ]
+      },
+      "area_m2": 415.27599999999995,
+      "landing_mouths": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -200.70000000000002,
+                -18.05
+              ],
+              [
+                -198.9,
+                -18.05
+              ],
+              [
+                -198.9,
+                -19.81
+              ],
+              [
+                -200.70000000000002,
+                -19.81
+              ],
+              [
+                -200.70000000000002,
+                -18.05
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -200.70000000000002,
+                -15.85
+              ],
+              [
+                -198.9,
+                -15.85
+              ],
+              [
+                -198.9,
+                -17.61
+              ],
+              [
+                -200.70000000000002,
+                -17.61
+              ],
+              [
+                -200.70000000000002,
+                -15.85
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -200.70000000000002,
+                -12.52
+              ],
+              [
+                -198.9,
+                -12.52
+              ],
+              [
+                -198.9,
+                -14.280000000000001
+              ],
+              [
+                -200.70000000000002,
+                -14.280000000000001
+              ],
+              [
+                -200.70000000000002,
+                -12.52
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -200.70000000000002,
+                -10.319999999999999
+              ],
+              [
+                -198.9,
+                -10.319999999999999
+              ],
+              [
+                -198.9,
+                -12.08
+              ],
+              [
+                -200.70000000000002,
+                -12.08
+              ],
+              [
+                -200.70000000000002,
+                -10.319999999999999
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "height": 10.875,
+      "deck": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -22.8
+            ],
+            [
+              -180.0,
+              -4.5
+            ],
+            [
+              -204.0,
+              -4.5
+            ],
+            [
+              -204.0,
+              -22.8
+            ],
+            [
+              -180.0,
+              -22.8
+            ]
+          ]
+        ]
+      },
+      "public": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -22.8
+            ],
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -204.0,
+              -4.5
+            ],
+            [
+              -180.0,
+              -4.5
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -180.0,
+              -22.8
+            ],
+            [
+              -204.0,
+              -22.8
+            ]
+          ],
+          [
+            [
+              -184.6,
+              -20.13
+            ],
+            [
+              -184.6,
+              -10.0
+            ],
+            [
+              -199.4,
+              -10.0
+            ],
+            [
+              -199.4,
+              -20.13
+            ],
+            [
+              -184.6,
+              -20.13
+            ]
+          ]
+        ]
+      },
+      "opening": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -199.4,
+              -20.13
+            ],
+            [
+              -199.4,
+              -10.0
+            ],
+            [
+              -184.6,
+              -10.0
+            ],
+            [
+              -184.6,
+              -20.13
+            ],
+            [
+              -199.4,
+              -20.13
+            ]
+          ]
+        ]
+      },
+      "area_m2": 415.27599999999995,
+      "landing_mouths": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -185.1,
+                -18.05
+              ],
+              [
+                -183.29999999999998,
+                -18.05
+              ],
+              [
+                -183.29999999999998,
+                -19.81
+              ],
+              [
+                -185.1,
+                -19.81
+              ],
+              [
+                -185.1,
+                -18.05
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -185.1,
+                -15.85
+              ],
+              [
+                -183.29999999999998,
+                -15.85
+              ],
+              [
+                -183.29999999999998,
+                -17.61
+              ],
+              [
+                -185.1,
+                -17.61
+              ],
+              [
+                -185.1,
+                -15.85
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -185.1,
+                -12.52
+              ],
+              [
+                -183.29999999999998,
+                -12.52
+              ],
+              [
+                -183.29999999999998,
+                -14.280000000000001
+              ],
+              [
+                -185.1,
+                -14.280000000000001
+              ],
+              [
+                -185.1,
+                -12.52
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -185.1,
+                -10.319999999999999
+              ],
+              [
+                -183.29999999999998,
+                -10.319999999999999
+              ],
+              [
+                -183.29999999999998,
+                -12.08
+              ],
+              [
+                -185.1,
+                -12.08
+              ],
+              [
+                -185.1,
+                -10.319999999999999
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "height": 16.4,
+      "deck": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -22.8
+            ],
+            [
+              -180.0,
+              -4.5
+            ],
+            [
+              -204.0,
+              -4.5
+            ],
+            [
+              -204.0,
+              -22.8
+            ],
+            [
+              -180.0,
+              -22.8
+            ]
+          ]
+        ]
+      },
+      "public": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -204.0,
+              -22.8
+            ],
+            [
+              -204.0,
+              -17.6
+            ],
+            [
+              -219.0,
+              -17.6
+            ],
+            [
+              -219.0,
+              -13.4
+            ],
+            [
+              -204.0,
+              -13.4
+            ],
+            [
+              -204.0,
+              -4.5
+            ],
+            [
+              -180.0,
+              -4.5
+            ],
+            [
+              -180.0,
+              -13.4
+            ],
+            [
+              -165.0,
+              -13.4
+            ],
+            [
+              -165.0,
+              -17.6
+            ],
+            [
+              -180.0,
+              -17.6
+            ],
+            [
+              -180.0,
+              -22.8
+            ],
+            [
+              -204.0,
+              -22.8
+            ]
+          ],
+          [
+            [
+              -184.6,
+              -14.6
+            ],
+            [
+              -184.6,
+              -10.0
+            ],
+            [
+              -199.4,
+              -10.0
+            ],
+            [
+              -199.4,
+              -14.6
+            ],
+            [
+              -184.6,
+              -14.6
+            ]
+          ]
+        ]
+      },
+      "opening": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -199.4,
+              -14.6
+            ],
+            [
+              -199.4,
+              -10.0
+            ],
+            [
+              -184.6,
+              -10.0
+            ],
+            [
+              -184.6,
+              -14.6
+            ],
+            [
+              -199.4,
+              -14.6
+            ]
+          ]
+        ]
+      },
+      "area_m2": 497.12,
+      "landing_mouths": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -200.70000000000002,
+                -14.280000000000001
+              ],
+              [
+                -200.70000000000002,
+                -12.52
+              ],
+              [
+                -198.9,
+                -12.52
+              ],
+              [
+                -198.9,
+                -14.280000000000001
+              ],
+              [
+                -200.70000000000002,
+                -14.280000000000001
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -200.70000000000002,
+                -12.08
+              ],
+              [
+                -200.70000000000002,
+                -10.319999999999999
+              ],
+              [
+                -198.9,
+                -10.319999999999999
+              ],
+              [
+                -198.9,
+                -12.08
+              ],
+              [
+                -200.70000000000002,
+                -12.08
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "old_deck_bounds_world": [
+    -204,
+    -26.5,
+    -180,
+    -4.5
+  ],
+  "replaced_surface_groups": [
+    "step@@V15-B-WEST-TRANSFER",
+    "v10_metal@@V15-B-WEST-TRANSFER",
+    "v10_guard_glass@@V15-B-WEST-TRANSFER",
+    "stone@@V15-B-WEST-TRANSFER",
+    "v10_floor_A@@V15-B-WEST-TRANSFER",
+    "plaster@@V15-B-WEST-TRANSFER",
+    "v10_chalk@@V15-B-WEST-TRANSFER",
+    "roof_glass@@V15-B-WEST-TRANSFER",
+    "stone@@V15-B-WEST-CONNECTORS",
+    "v10_floor_B@@V15-B-WEST-CONNECTORS",
+    "plaster@@V15-B-WEST-CONNECTORS",
+    "v10_darkstone@@V15-B-WEST-CONNECTORS",
+    "v10_guard_glass@@V15-B-WEST-CONNECTORS"
+  ]
+}

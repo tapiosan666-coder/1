@@ -62,7 +62,7 @@ func frontage(d:Dictionary)->void:
  var roof:Dictionary=helper.ceiling(game.v3(d.entry)-n*.75)
  # Joinery is hung immediately below an existing soffit, never across open outdoor sky.
  var record={"store_id":d.store_id,"brand":d.brand,"category":d.category,"entry_preserved":d.entry,"canopy":false,"poster":false}
- if not roof.is_empty()and roof.position.y<6.5 and roof.position.y>3.6:
+ if not d.get("preserve_existing_complex_frontage",false)and not roof.is_empty()and roof.position.y<6.5 and roof.position.y>3.6:
   var a=helper.ceiling(p-u*minf(d.width*.4,3.))
   var b=helper.ceiling(p+u*minf(d.width*.4,3.))
   if not a.is_empty()and not b.is_empty()and absf(a.position.y-b.position.y)<.12:
@@ -71,7 +71,21 @@ func frontage(d:Dictionary)->void:
    helper.box(mount,Vector3(0,0,0),Vector3(w,.13,.58),accent)
    helper.box(mount,Vector3(0,-.073,.18),Vector3(w-.08,.018,.035),glow)
    for x:float in [-w*.44,w*.44]:helper.box(mount,Vector3(x,0,.32),Vector3(.025,.13,.055),brass)
-   record.canopy=true;record.soffit_y=mount.position.y
+   # v30: complete joinery band and real-wall returns, not extra freestanding props.
+   var fascia:Material=game.mats.get("v10_oak",accent)if str(d.category)in["book","home","furniture","cafe"]else accent
+   helper.box(mount,Vector3(0,-.23,0),Vector3(w,.40,.12),fascia)
+   helper.box(mount,Vector3(0,-.44,.07),Vector3(w-.08,.018,.018),glow)
+   var jambs:int=0
+   for side:float in [-1.,1.]:
+    var along:float=side*w*.48;var sample:Vector3=p+u*along+n*.65+Vector3.UP*1.8
+    var wall=get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(sample,sample-n*1.3,1))
+    if wall.is_empty()or absf(wall.normal.y)>.2 or wall.collider.has_meta("v21_fixture"):continue
+    var h:float=mount.position.y-.28
+    var centre:Vector3=wall.position+wall.normal*.012;centre.y=h*.5
+    var jamb=Node3D.new();jamb.transform=Transform3D(basis_for(n),centre);add_child(jamb)
+    helper.box(jamb,Vector3.ZERO,Vector3(.09,h,.075),brass if str(d.category)in["beauty","apparel","accessories"]else fascia)
+    jambs+=1
+   record.canopy=true;record.soffit_y=mount.position.y;record.v30_jambs_supported=jambs;record.v30_fascia_style=d.v30_style
  # Original brand-specific illustration mounted only to an actual opaque store wall.
  var at:Vector3=game.v3(d.entry);var found:bool=false
  for side:float in [-1.,1.]:

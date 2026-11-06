@@ -46,6 +46,11 @@ func v293_enabled()->bool:return v292_enabled()and not OS.get_cmdline_user_args(
 func v292_enabled()->bool:return not OS.get_cmdline_user_args().has("--v291-baseline")and not OS.get_cmdline_user_args().has("--v29-baseline")and not OS.get_cmdline_user_args().has("--v28-baseline")
 func data_hash(p:String)->String:return FileAccess.get_sha256(p if FileAccess.file_exists(p)else p+".zst")
 func read_json(p:String):
+ if p=="res://source/v15/ES-site-proposal.json":p="res://source/v30/B-core.json"
+ if p=="res://source/v29/storefronts.json":p="res://source/v30/storefronts.json"
+ if p=="res://source/v25/store-finishes.json":p="res://source/v30/store-finishes.json"
+ if p=="res://source/v25/finish-release.json":p="res://source/v30/finish-release.json"
+ if p=="res://source/v15/ES-site-proposal.json":p="res://source/v30/B-core.json"
  if p=="res://source/v22/map-data-integrated.json":p="res://source/v30/map-data.json"
  var v30_begin:int=Time.get_ticks_usec()
  if not OS.get_cmdline_user_args().has("--v26-baseline"):
@@ -84,6 +89,8 @@ func load_geometry(path:String)->Dictionary:
  startup_trace_v30.append({"kind":"geometry","path":path,"packed_bytes":packed.size(),"decoded_bytes":raw.size(),"milliseconds":(Time.get_ticks_usec()-v30_begin)/1000.})
  return head
 func _ready()->void:
+ if FileAccess.file_exists("res://assets/v30/world/index.json")and not OS.get_cmdline_user_args().has("--rebuild-world")and mode!="authoring-bake-v30":
+  var runtime=load("res://world_stream_v30.gd").new();add_child(runtime);await runtime.boot(self);return
  load("res://asset_cache_v24.gd").reset()
  start_usec=Time.get_ticks_usec()
  for required:String in ["base-b","base-site","fitout","art","architecture"]:
@@ -354,13 +361,14 @@ func _ready()->void:
  if not OS.get_cmdline_user_args().has("--v27-baseline"):
   if comparison_B_v28:interactive_pose({"eye":[-209,1.65,-38],"look":[-196,2.5,-38],"fov":70})
   elif es_site_proposal:interactive_pose({"eye":[-182,1.65,-6.5],"look":[-194,3.0,-14.0],"fov":72})
- var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v30 制作中・独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
+ var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v30 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
  if not visual_v7 and bool(ProjectSettings.get_setting("rendering/quality/v14_local_probe_reflections",false))and mode not in ["walk-test","walk-v8","ui-test","bake-gi"]:
   for d in [[Vector3(350,3,-32),Vector3(110,12,110)],[Vector3(0,3,8),Vector3(110,12,110)]]:
    var probe=ReflectionProbe.new();probe.position=d[0];probe.size=d[1];probe.interior=true;probe.box_projection=true;probe.max_distance=60;probe.intensity=.7;probe.enable_shadows=false;probe.update_mode=ReflectionProbe.UPDATE_ONCE;probe.ambient_mode=ReflectionProbe.AMBIENT_DISABLED;add_child(probe)
  if not visual_v7:
   var gi=load("res://lighting_v10.gd").new();add_child(gi);gi.setup(self,mode=="bake-gi")
   if mode=="bake-gi":get_tree().quit();return
+ var arrival_v30=load("res://arrival_landmarks_v30.gd").new();add_child(arrival_v30);arrival_v30.setup(self)
  if mode!="interactive":player.input_enabled=false
  results={"godot_version":Engine.get_version_info(),"renderer":RenderingServer.get_current_rendering_method(),"adapter":RenderingServer.get_video_adapter_name(),"resolution":[1920,1080],"msaa":"4x","source_sha256":manifest.source_original_sha256,"context_included":with_context,"context_geometry_sha256":FileAccess.get_sha256("res://assets/baseline-site-v7.pack.gz"if visual_v7 else"res://assets/v10/base-site.pack.zst"),"main_game_loaded":false,"graphics_revision":"v7-preserved-baseline"if visual_v7 else"v25-five-authored-interiors","animation_shader_sha256":FileAccess.get_sha256("res://rubber.gdshader"),"staff_script_sha256":FileAccess.get_sha256("res://staff_doors.gd"),"animation_script_sha256":FileAccess.get_sha256("res://escalator_v2.gd"),"proposal_C":c_open_proposal,"draft":draft,"render_scale":.5 if draft else 1.0,"retail_v10_sha256":FileAccess.get_sha256("res://source/v12/scene-art.json"),"architecture_v10_sha256":FileAccess.get_sha256("res://assets/v10/architecture.pack.zst"),"art_v10_sha256":FileAccess.get_sha256("res://assets/v10/art.pack.zst"),"fitout_sha256":""if visual_v7 else FileAccess.get_sha256("res://assets/v10/fitout.pack.zst"),"geometry_sha256":FileAccess.get_sha256(geometry_path),"main_script_sha256":FileAccess.get_sha256("res://main.gd"),"player_script_sha256":FileAccess.get_sha256("res://player.gd"),"scene_build_seconds":(Time.get_ticks_usec()-start_usec)/1000000.0}
  results.integrated_A_v22=a_continuous_v22;results.v22_retail_plan_sha256=data_hash("res://source/v25/retail-plan.json");results.v22_structure_sha256=FileAccess.get_sha256("res://assets/v30/structure-restoration.pack.zst")if a_continuous_v22 else"";results.effective_map_sha256=data_hash("res://source/v22/map-data-integrated.json"if a_continuous_v22 else"res://source/v22/map-data-combined.json"if c_open_proposal and es_site_proposal else"res://source/v15/map-data-C-option.json"if c_open_proposal else"res://source/v15/map-data-ES-option.json"if es_site_proposal else"res://source/v13/map-data.json")
@@ -382,7 +390,7 @@ func _ready()->void:
  
 func _process(dt:float)->void:
  if player==null or hud==null:return
- hud.text="FIND YOURSELF  v30 制作中・独立検証\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s"%[player.position.x,player.position.y,player.position.z,Engine.get_frames_per_second(),"ESCALATOR "+player.belt_id if player.belt_id!="" else ""]
+ hud.text="FIND YOURSELF  v30 独立検証\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s"%[player.position.x,player.position.y,player.position.z,Engine.get_frames_per_second(),"ESCALATOR "+player.belt_id if player.belt_id!="" else ""]
  if notice_seconds>0:
   notice_seconds-=dt;hud.text+="\n"+interaction_notice
  if developer_mode() and mode=="interactive" and ui.overlay=="":
@@ -495,6 +503,8 @@ func add_brand_slot(d:Dictionary)->void:
   add_vector_sign({"text":d.name,"p":d.sign_position,"n":d.normal,"w":d.max_width_m,"h":.65})
 
 func interactive_pose(shot:Dictionary)->void:
+ if has_node("V30_Runtime"):
+  var v30_eye:Vector3=v3(shot.get("walk_eye",shot.eye));get_node("V30_Runtime").prepare_position(v30_eye-Vector3.UP*1.65)
  player.camera.fov=float(shot.get("fov",75.0))
  var eye=v3(shot.get("walk_eye",shot.eye));var direction=v3(shot.look)-eye
  player.position=eye-Vector3(0,1.65,0);player.velocity=Vector3.ZERO;player.auto_active=false

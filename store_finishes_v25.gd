@@ -57,6 +57,17 @@ func split_walls(edges:Array,h:float)->Array:
    if (interval[1]-interval[0])*length<1.3:continue
    var item:Dictionary=edge.duplicate(true);var aa:Vector2=a+delta*float(interval[0]);var bb:Vector2=a+delta*float(interval[1]);item.a=[aa.x,aa.y];item.b=[bb.x,bb.y];result.append(item)
  return result
+func supported_floor(p:Vector3,h:float)->bool:
+ if not floor_sampler.has_surface(p,h):return false
+ # A display plinth can cover an otherwise valid floor ray. Search down to the
+ # architectural floor level instead of treating the plinth top as missing floor.
+ var q=PhysicsRayQueryParameters3D.create(p+Vector3.UP*.075,p-Vector3.UP*.08,1)
+ for i in 10:
+  var hit=get_world_3d().direct_space_state.intersect_ray(q)
+  if hit.is_empty():return false
+  if absf(float(hit.position.y)-h)<.025:return true
+  q.from=hit.position-Vector3.UP*.0005
+ return false
 func build()->void:
  var lifecycle_tree:SceneTree=get_tree()
  while not game.has_node("V21_Route_Derived_Wayfinding"):
@@ -77,23 +88,24 @@ func build()->void:
  var trim=solid("#776349",.44);trim.metallic=.45
  for d:Dictionary in game.read_json("res://source/v25/store-finishes.json"):
   if not d.id in enabled:continue
+  var per_store=StandardMaterial3D.new();per_store.albedo_texture=load(str(d.get("poster_texture","res://assets/v25/art/store-editorial-atlas.png")));per_store.roughness=.82;per_store.cull_mode=BaseMaterial3D.CULL_DISABLED;poster=per_store
   var row:Dictionary={"id":d.id,"style":d.style,"floor_triangles":0,"walls":0,"posters":0,"lights":0,"ceiling_support_checks":[],"not_new_structural_floor":true,"maximum_existing_visual_floor_offset_m":0.,"poster_positions":[]};var h:float=d.floor_level
   var floor=ShaderMaterial.new();floor.shader=load("res://store_floor_v24.gdshader");floor.set_shader_parameter("oak_texture",load("res://assets/v10/wood-oak.png"));floor.set_shader_parameter("floor_tint",Color(d.floor_colour));floor.set_shader_parameter("finish_type",int(d.floor_type));floor.set_shader_parameter("finish_roughness",float(d.floor_roughness));var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES);var prepared:Array=[];var finish_top:float=h
   for tri:Array in d.floor_triangles:
    var okay:bool=true;var vertices:Array=[];var levels:Array=[]
    for p:Array in tri:
-    var v=Vector3(p[0],h,p[1]);var y:float=way.floor_y(v)
+    var v=Vector3(p[0],h,p[1]);var y:float=h if supported_floor(v,h)else NAN
     if is_nan(y):okay=false;break
     var visual_y:float=floor_sampler.surface_y(v,h);row.maximum_existing_visual_floor_offset_m=maxf(row.maximum_existing_visual_floor_offset_m,visual_y-h);vertices.append(v);levels.append(visual_y)
    if not okay:continue
-   var centre:Vector3=(vertices[0]+vertices[1]+vertices[2])/3.;var y:float=way.floor_y(centre)
+   var centre:Vector3=(vertices[0]+vertices[1]+vertices[2])/3.;var y:float=h if supported_floor(centre,h)else NAN
    if is_nan(y):continue
    var top:float=floor_sampler.surface_y(centre,h)
    for level:float in levels:top=maxf(top,level)
    for k in range(3):
     var length:float=vertices[k].distance_to(vertices[(k+1)%3])
     for j in range(ceili(length/.75)+1):
-     if not way.floor_hit(vertices[k].lerp(vertices[(k+1)%3],float(j)/maxi(1,ceili(length/.75)))):okay=false;break
+     if not supported_floor(vertices[k].lerp(vertices[(k+1)%3],float(j)/maxi(1,ceili(length/.75))),h):okay=false;break
    if not okay:continue
    finish_top=maxf(finish_top,top);prepared.append(vertices)
   for triangle:Array in prepared:
@@ -101,7 +113,7 @@ func build()->void:
    row.floor_triangles+=1
   row["common_finish_y"]=finish_top+.003;row["floor_sample_scope"]="Existing architectural stone/tile floor surfaces only; fixture plinths excluded; one continuous planar finish per store"
   if row.floor_triangles>0:
-   st.generate_tangents();var mesh=MeshInstance3D.new();mesh.mesh=st.commit();mesh.material_override=floor;mesh.visibility_range_end=85.;mesh.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;add_child(mesh)
+   st.generate_tangents();var mesh=MeshInstance3D.new();mesh.name="V30_StoreFloor_"+str(d.id);mesh.mesh=st.commit();mesh.material_override=floor;mesh.visibility_range_end=85.;mesh.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;add_child(mesh)
   var cafe_gallery_done:bool=false
   var painted=solid(d.wall_colour,.82);var accent=solid(d.accent_colour,.73)
   for edge:Dictionary in split_walls(d.wall_candidates,h):

@@ -38,3 +38,13 @@ func surface_y(p:Vector3,fallback:float)->float:
   var t:Dictionary=triangles[id]
   if t.y>maximum and t.y<fallback+.065 and Geometry2D.is_point_in_polygon(Vector2(p.x,p.z),t.polygon):maximum=t.y
  return maximum
+
+func has_surface(p:Vector3,fallback:float)->bool:
+ var band:int=-1
+ for i in heights.size():
+  if absf(p.y-float(heights[i]))<.1:band=i;break
+ if band<0:return false
+ for id:int in cells.get("%d,%d,%d"%[band,floori(p.x/8.),floori(p.z/8.)],[]):
+  var t:Dictionary=triangles[id]
+  if absf(float(t.y)-fallback)<.065 and Geometry2D.is_point_in_polygon(Vector2(p.x,p.z),t.polygon):return true
+ return false

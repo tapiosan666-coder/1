@@ -71,6 +71,7 @@ func build()->void:
    if not okay:continue
    for k in range(3):var v:Vector3=vertices[k];v.y=levels[k]+.003;st.set_normal(Vector3.UP);st.set_uv(Vector2(v.x,v.z));st.add_vertex(v)
    row.floor_triangles+=1
+  if absf(h)<.1:row["floor_superseded_by_v30"]=true;row.floor_triangles=0
   if row.floor_triangles>0:
    st.generate_tangents();var mesh=MeshInstance3D.new();mesh.mesh=st.commit();mesh.material_override=floor;mesh.visibility_range_end=85.;mesh.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;add_child(mesh)
   var painted=solid(d.wall_colour,.82);var accent=solid(d.accent_colour,.73)
