@@ -1,0 +1,2151 @@
+{
+  "distance_labels": [],
+  "human_review": false,
+  "rows": [
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "B1",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "A-KW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "B1",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "A-A-KW"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "B1",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "A-E1--1-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "B1",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-1",
+      "target": "AB1-001"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "B1",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "A-KE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "B1",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "A-A-KE"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "B1",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "A-E2--1-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "B1",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-2",
+      "target": "AB1-001"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "B1",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "A-KS-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "B1",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "A-A-KS"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "B1",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "A-E3--1-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "B1",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-B1-NAV-3",
+      "target": "AB1-001"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "1F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-KW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "1F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-A-KW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "1F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-WEST-V22-0-DOWN-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "1F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-1",
+      "target": "A-WEST-VISITOR-information_counter-1"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "1F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A-KE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "1F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A-A-KE"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "1F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A-E2--1-DOWN-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "1F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-2",
+      "target": "A1F-032"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "1F",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-KS-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "1F",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-A-KS"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "1F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-E3--1-UP-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "1F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-A-1F-NAV-3",
+      "target": "A-WEST-VISITOR-information_counter-1"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "2F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "A-KW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "2F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "A-A-KW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "2F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "A-WEST-V22-1-DOWN-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "2F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-1",
+      "target": "AB-2-THROUGH-TO-A2F-051-return"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "2F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "A-KE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "2F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "A-A-KE"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "A-E2-1-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "2F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-2",
+      "target": "AB-2-THROUGH-TO-A2F-051-return"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "2F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "A-KS-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "2F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "A-A-KS"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "2F",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "A-E3-1-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "2F",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-2F-NAV-3",
+      "target": "AB-2-THROUGH-TO-A2F-051-return"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "3F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A-KW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "3F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A-A-KW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A-WEST-V22-1-DOWN-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-1",
+      "target": "A3F-012"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "3F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A-KE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "3F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A-A-KE"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A-E2-1-DOWN-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "3F",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-2",
+      "target": "A3F-001"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A-KS-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A-A-KS"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "3F",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A-E3-1-UP-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "3F",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-3F-NAV-3",
+      "target": "A3F-001"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "RF",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-KW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "RF",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-A-KW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-WEST-V22-2-DOWN-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "RF",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-1",
+      "target": "A-KW-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "RF",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-KE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "RF",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-A-KE"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "RF",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-E2-2-UP-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "RF",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-2",
+      "target": "A-KE-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-KW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-A-KW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-WEST-V22-2-UP-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-A-RF-NAV-3",
+      "target": "A-KW-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "B1",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-1",
+      "target": "K1-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "B1",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-1",
+      "target": "B-K1"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "B1",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-1",
+      "target": "K1-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "B1",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-2",
+      "target": "K2-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "B1",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-2",
+      "target": "B-K2"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "B1",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-2",
+      "target": "K2-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "B1",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-3",
+      "target": "K3-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↓",
+      "expected": {
+        "back": "↓",
+        "front": "↑"
+      },
+      "floor": "B1",
+      "front": "↑",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-3",
+      "target": "B-K3"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "B1",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-B1-NAV-3",
+      "target": "K3-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "1F",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "K1-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "1F",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "B-K1"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "1F",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "B-WEST-V15-0-DOWN-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "1F",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-1",
+      "target": "B1-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "1F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "K3-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "1F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "B-K3"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "1F",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "E2-12-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "1F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-2",
+      "target": "AB-1-THROUGH-TO-A1F-051"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "1F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "K3-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "1F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "B-K3"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "1F",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "E3-12-DOWN-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "1F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-1F-NAV-3",
+      "target": "B1-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "2F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "K1-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "2F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "B-K1"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "B-WEST-V15-0-UP-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "2F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-1",
+      "target": "B2-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "K2-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "B-K2"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "2F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "E2-23-DOWN-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-2",
+      "target": "B2-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "2F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "K3-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "2F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "B-K3"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "E3-12-DOWN-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "2F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-2F-NAV-3",
+      "target": "B2-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "K1-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "B-K1"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "B-WEST-V15-2-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-1",
+      "target": "B3-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "K2-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "B-K2"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "E2-23-DOWN-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-2",
+      "target": "B3-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "K3-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "B-K3"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "E3-23-UP-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "3F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-3F-NAV-3",
+      "target": "B3-W4"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "RF",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-RF-NAV-1",
+      "target": "B-WEST-V15-2-DOWN-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "RF",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-RF-NAV-2",
+      "target": "K1-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "RF",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-RF-NAV-2",
+      "target": "B-K1"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "RF",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-RF-NAV-2",
+      "target": "K1-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-B-RF-NAV-3",
+      "target": "K3-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-B-RF-NAV-3",
+      "target": "B-K3"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "RF",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-B-RF-NAV-3",
+      "target": "K3-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "B1",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-1",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "B1",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-1",
+      "target": "C-K-CSW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "B1",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-1",
+      "target": "K-CSW-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "B1",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-2",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "B1",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-2",
+      "target": "C-K-CSE"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "B1",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-2",
+      "target": "K-CSE-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "B1",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-3",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "B1",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-3",
+      "target": "C-K-CNE"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "B1",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-C-B1-NAV-3",
+      "target": "K-CNE-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "1F",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "1F",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "C-K-CSW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "1F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "CE12-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "1F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-1",
+      "target": "C1F-CSE-2"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "1F",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "1F",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "C-K-CSE"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "1F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "CE12-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↖",
+      "expected": {
+        "back": "↖",
+        "front": "↘"
+      },
+      "floor": "1F",
+      "front": "↘",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-2",
+      "target": "BC-1-THROUGH-TO-C1F-CSE-2-return"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "1F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "K-CE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "1F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "C-K-CE"
+    },
+    {
+      "arrows_match": true,
+      "back": "←",
+      "expected": {
+        "back": "←",
+        "front": "→"
+      },
+      "floor": "1F",
+      "front": "→",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "CE12-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "1F",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-C-1F-NAV-3",
+      "target": "C1F-CSE-2"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "2F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "2F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "C-K-CSW"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "CN23-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-1",
+      "target": "BC-2-THROUGH-TO-C2F-CSE-3-return"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "2F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "2F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "C-K-CSW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "2F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "CN23-UP-test_start"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "2F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-2",
+      "target": "C2F-CSE-2"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "2F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "2F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "C-K-CNE"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "CE12-UP-test_end"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "2F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-C-2F-NAV-3",
+      "target": "C2F-CSE-2"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-1",
+      "target": "K-CSW-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-1",
+      "target": "C-K-CSW"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-1",
+      "target": "K-CSW-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "C-K-CSE"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "K-CSE-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "→",
+      "expected": {
+        "back": "→",
+        "front": "←"
+      },
+      "floor": "3F",
+      "front": "←",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-2",
+      "target": "C3F-CSE-1"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-3",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-3",
+      "target": "C-K-CNE"
+    },
+    {
+      "arrows_match": true,
+      "back": "↘",
+      "expected": {
+        "back": "↘",
+        "front": "↖"
+      },
+      "floor": "3F",
+      "front": "↖",
+      "path_pass": true,
+      "sign": "V21-combined-C-3F-NAV-3",
+      "target": "K-CNE-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "RF",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-C-RF-NAV-2",
+      "target": "K-CSE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "RF",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-C-RF-NAV-2",
+      "target": "C-K-CSE"
+    },
+    {
+      "arrows_match": true,
+      "back": "↑",
+      "expected": {
+        "back": "↑",
+        "front": "↓"
+      },
+      "floor": "RF",
+      "front": "↓",
+      "path_pass": true,
+      "sign": "V21-combined-C-RF-NAV-2",
+      "target": "K-CSE-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-C-RF-NAV-3",
+      "target": "K-CNE-AWC"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-C-RF-NAV-3",
+      "target": "C-K-CNE"
+    },
+    {
+      "arrows_match": true,
+      "back": "↗",
+      "expected": {
+        "back": "↗",
+        "front": "↙"
+      },
+      "floor": "RF",
+      "front": "↙",
+      "path_pass": true,
+      "sign": "V21-combined-C-RF-NAV-3",
+      "target": "K-CNE-ST"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "2F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V22-TRANSFER-A-2F",
+      "target": "A-WEST-V22-1-UP-boarding"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "3F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V22-TRANSFER-A-3F",
+      "target": "A-WEST-V22-2-UP-boarding"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "2F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V22-TRANSFER-B-2F",
+      "target": "B-WEST-V15-1-UP-boarding"
+    },
+    {
+      "arrows_match": true,
+      "back": "↙",
+      "expected": {
+        "back": "↙",
+        "front": "↗"
+      },
+      "floor": "3F",
+      "front": "↗",
+      "path_pass": true,
+      "sign": "V22-TRANSFER-B-3F",
+      "target": "B-WEST-V15-2-UP-boarding"
+    }
+  ]
+}

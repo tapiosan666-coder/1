@@ -1,0 +1,323 @@
+{
+  "NPC_for_comparison": false,
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "boot_to_ready_ms": 109415.542,
+  "captures": [
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 3892.0,
+      "frame_seconds": 3.634584,
+      "id": "A-1F-main-start",
+      "memory_bytes": 2404397050.0,
+      "nodes": 67810,
+      "primitives": 2088340.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 5333.0,
+      "frame_seconds": 4.207507,
+      "id": "A-1F-main-middle",
+      "memory_bytes": 2408948198.0,
+      "nodes": 67810,
+      "primitives": 2342615.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 10776.0,
+      "frame_seconds": 4.634306,
+      "id": "A-1F-main-end",
+      "memory_bytes": 2424229504.0,
+      "nodes": 67810,
+      "primitives": 4556175.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 10732.0,
+      "frame_seconds": 5.526526,
+      "id": "B-1F-main-start",
+      "memory_bytes": 2428497600.0,
+      "nodes": 67810,
+      "primitives": 5700279.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 7600.0,
+      "frame_seconds": 4.792539,
+      "id": "B-1F-main-middle",
+      "memory_bytes": 2430375204.0,
+      "nodes": 67810,
+      "primitives": 5008060.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 6777.0,
+      "frame_seconds": 3.561062,
+      "id": "B-1F-main-end",
+      "memory_bytes": 2431302320.0,
+      "nodes": 67810,
+      "primitives": 3455682.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 2715.0,
+      "frame_seconds": 2.206989,
+      "id": "C-1F-main-start",
+      "memory_bytes": 2433430448.0,
+      "nodes": 67810,
+      "primitives": 1770629.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 6861.0,
+      "frame_seconds": 3.34621,
+      "id": "C-1F-main-middle",
+      "memory_bytes": 2434046460.0,
+      "nodes": 67810,
+      "primitives": 4146684.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 6873.0,
+      "frame_seconds": 4.254335,
+      "id": "C-1F-main-end",
+      "memory_bytes": 2434652648.0,
+      "nodes": 67810,
+      "primitives": 4058862.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 4087.0,
+      "frame_seconds": 3.655148,
+      "id": "case01",
+      "memory_bytes": 2435859652.0,
+      "nodes": 67810,
+      "primitives": 2965702.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 2745.0,
+      "frame_seconds": 3.223747,
+      "id": "case02",
+      "memory_bytes": 2436079508.0,
+      "nodes": 67810,
+      "primitives": 1979968.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 3125.0,
+      "frame_seconds": 3.067781,
+      "id": "case03",
+      "memory_bytes": 2436120072.0,
+      "nodes": 67810,
+      "primitives": 2341532.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 9562.0,
+      "frame_seconds": 4.692407,
+      "id": "case04",
+      "memory_bytes": 2436233612.0,
+      "nodes": 67810,
+      "primitives": 5289656.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 3657.0,
+      "frame_seconds": 4.105793,
+      "id": "sign-A-1F",
+      "memory_bytes": 2437324172.0,
+      "nodes": 67810,
+      "primitives": 2951555.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 3487.0,
+      "frame_seconds": 3.193037,
+      "id": "sign-A-2F",
+      "memory_bytes": 2437494640.0,
+      "nodes": 67810,
+      "primitives": 2930623.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 3317.0,
+      "frame_seconds": 3.043908,
+      "id": "sign-B-1F",
+      "memory_bytes": 2437528264.0,
+      "nodes": 67810,
+      "primitives": 2311602.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 4913.0,
+      "frame_seconds": 4.276051,
+      "id": "sign-B-2F",
+      "memory_bytes": 2437558424.0,
+      "nodes": 67810,
+      "primitives": 3142416.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 2777.0,
+      "frame_seconds": 3.645816,
+      "id": "sign-C-1F",
+      "memory_bytes": 2437808492.0,
+      "nodes": 67810,
+      "primitives": 2146051.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 5450.0,
+      "frame_seconds": 5.806296,
+      "id": "sign-C-2F",
+      "memory_bytes": 2438065592.0,
+      "nodes": 67810,
+      "primitives": 2977255.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 12843.0,
+      "frame_seconds": 6.450694,
+      "id": "store-A1F-001",
+      "memory_bytes": 2439326772.0,
+      "nodes": 67810,
+      "primitives": 5443060.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 6281.0,
+      "frame_seconds": 6.748977,
+      "id": "store-A1F-002",
+      "memory_bytes": 2439854760.0,
+      "nodes": 67810,
+      "primitives": 3036606.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 2922.0,
+      "frame_seconds": 2.771159,
+      "id": "store-A1F-003",
+      "memory_bytes": 2440356632.0,
+      "nodes": 67810,
+      "primitives": 2139510.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 4401.0,
+      "frame_seconds": 3.742485,
+      "id": "store-A1F-005",
+      "memory_bytes": 2440519432.0,
+      "nodes": 67810,
+      "primitives": 3310391.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 4393.0,
+      "frame_seconds": 3.390732,
+      "id": "store-A1F-007",
+      "memory_bytes": 2440583652.0,
+      "nodes": 67810,
+      "primitives": 3026974.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 6774.0,
+      "frame_seconds": 3.665132,
+      "id": "store-A1F-014",
+      "memory_bytes": 2440868448.0,
+      "nodes": 67810,
+      "primitives": 2986819.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 2582.0,
+      "frame_seconds": 2.451537,
+      "id": "store-A1F-015",
+      "memory_bytes": 2440914656.0,
+      "nodes": 67810,
+      "primitives": 1455945.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 2256.0,
+      "frame_seconds": 2.742016,
+      "id": "store-A1F-023",
+      "memory_bytes": 2440970536.0,
+      "nodes": 67810,
+      "primitives": 1105713.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 1499.0,
+      "frame_seconds": 2.673202,
+      "id": "store-A1F-029",
+      "memory_bytes": 2440989168.0,
+      "nodes": 67810,
+      "primitives": 926580.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 12962.0,
+      "frame_seconds": 8.509055,
+      "id": "store-A1F-032",
+      "memory_bytes": 2441117540.0,
+      "nodes": 67810,
+      "primitives": 4633248.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 1384.0,
+      "frame_seconds": 3.850681,
+      "id": "store-A1F-038",
+      "memory_bytes": 2441135992.0,
+      "nodes": 67810,
+      "primitives": 1182157.0,
+      "save_error": 0
+    },
+    {
+      "camera_capsule_clear": true,
+      "draw_calls": 2467.0,
+      "frame_seconds": 5.247463,
+      "id": "store-B1-N03",
+      "memory_bytes": 2441350204.0,
+      "nodes": 67810,
+      "primitives": 2115422.0,
+      "save_error": 0
+    }
+  ],
+  "height": 1080,
+  "human_playtest": false,
+  "renderer": "forward_plus",
+  "side": "before",
+  "width": 1920,
+  "windows_GPU": false
+}

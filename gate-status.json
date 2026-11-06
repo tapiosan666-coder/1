@@ -1,32 +1,55 @@
-[
-  {
-    "gate": "G1 起動・FPS",
-    "status": "未達",
-    "done": "JSON/パック読込時間と実ノード数の計測。37タイルへのナビ分割・必要時読込。",
-    "remaining": "建築・店舗の区画ストリーミングと実アンロード未施工。Windows GPUで起動3回/60秒×3回、中央値60FPS・1%low45の検証なし。"
-  },
-  {
-    "gate": "G2 建築・ES",
-    "status": "一部施工・未達",
-    "done": "通常F1/F2/F3。比較8シーン退避。C箱状風除室の生成停止。旧ES開口378.9㎡の床/下面再メッシュ化、旧縁1384面除去、衝突・Mマップ・ナビ同期。",
-    "remaining": "B1〜RFのES/EV/階段の抜本再配置、乗降・見通しの全館再評価、意味のない全囲いの除去は未完。通常シーンの旧分岐・積層ビルダー自体も残る。"
-  },
-  {
-    "gate": "G3 横並び看板",
-    "status": "共通処理施工・実画面確認済／全位置の人間評価未実施",
-    "done": "全階の共通描画を横並びへ置換。48面165案内先。距離表示0。A/B/Cの1F/2F、表裏別矢印を撮影。",
-    "remaining": "C-RF-NAV-1はトイレ内しか支持位置がなく設置抑制を維持。人間の実操作・全48面の目視個別合格は未実施。"
-  },
-  {
-    "gate": "G4 1F本格制作",
-    "status": "未施工",
-    "done": "139IDを台帳と一致確認。480店舗の什器・商品レコード数監査。",
-    "remaining": "新たな美術完成店舗0。各館の連続区間の制作と始点/中間/終点比較は未施工。既存の生成適用を今回の完成数へ加算しない。"
-  },
-  {
-    "gate": "G5 回帰・配布",
-    "status": "自動検証実施／一部未検証",
-    "done": "275経路のカプセル/床検査、撤去跡8件の実コントローラ自動歩行、通常キー14件。",
-    "remaining": "人間の実操作、Windows GPU性能、全15層の隅々の安全・美術評価は未検証。新規ZIPの展開・起動結果はfresh-boot.jsonを参照。"
-  }
-]
+{
+  "version": "v30",
+  "all_acceptance_gates_approved": false,
+  "gates": [
+    {
+      "gate": "G1 起動・性能",
+      "status": "実装・起動確認済／Windows性能は未検証",
+      "evidence": [
+        "startup-1.json",
+        "startup-2.json",
+        "startup-3.json",
+        "Windows性能測定表.csv"
+      ],
+      "remaining": "Windows実機のコールド/ウォーム各3回、6地点60秒×3回、中央値60/1%low45FPSの測定"
+    },
+    {
+      "gate": "G2 建築",
+      "status": "指定した物理検査と代表実画面を確認",
+      "evidence": [
+        "final-runtime-QA.json",
+        "devices-runtime-QA.json",
+        "plans/B-5floors-and-west-core.pdf"
+      ],
+      "remaining": "全地点の人間による操作、構造工学上の承認は別。RF-SUPPORT-16未承認を維持"
+    },
+    {
+      "gate": "G3 看板",
+      "status": "165経路・表裏矢印・距離ラベルの自動再検査通過",
+      "evidence": [
+        "signs-runtime-QA.json"
+      ],
+      "remaining": "全設置面の人手での視認性評価"
+    },
+    {
+      "gate": "G4 1F制作",
+      "status": "139店の店頭・床壁施工と連続主動線を収録／美術承認待ち",
+      "evidence": [
+        "1F139店舗台帳.csv",
+        "main-routes.json"
+      ],
+      "remaining": "業種ごとの売場密度・商品/什器の反復、C館の長い棟間通路の景観密度、店内奥までの本格仕上げ。139店の内装完成とは報告しない"
+    },
+    {
+      "gate": "G5 回帰",
+      "status": "提出ZIPの初回インポート・自動起動・指定回帰を確認",
+      "evidence": [
+        "fresh-extraction.json",
+        "baseline-preservation.json",
+        "final-runtime-QA.json",
+        "developer-QA.json"
+      ],
+      "remaining": "Windows実機と人間の実操作。自動試験の範囲外の挙動"
+    }
+  ]
+}

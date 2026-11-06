@@ -1,0 +1,125 @@
+{
+  "EV": [
+    {
+      "accepted": true,
+      "frames": 323,
+      "id": "A-A-KW",
+      "pass": true,
+      "player": [
+        327.040008544922,
+        -5.34992361068726,
+        30.0
+      ],
+      "target": "B1",
+      "wing": "A"
+    },
+    {
+      "accepted": true,
+      "frames": 815,
+      "id": "A-A-KW",
+      "pass": true,
+      "player": [
+        327.040008544922,
+        16.4000854492188,
+        30.0
+      ],
+      "target": "RF",
+      "wing": "A"
+    },
+    {
+      "accepted": true,
+      "frames": 654,
+      "id": "A-A-KW",
+      "pass": true,
+      "player": [
+        327.040008544922,
+        0.00011553056538105,
+        30.0
+      ],
+      "target": "1F",
+      "wing": "A"
+    },
+    {
+      "accepted": true,
+      "frames": 323,
+      "id": "B-K1",
+      "pass": true,
+      "player": [
+        -113.0,
+        -5.34991025924683,
+        -57.9599990844727
+      ],
+      "target": "B1",
+      "wing": "B"
+    },
+    {
+      "accepted": true,
+      "frames": 815,
+      "id": "B-K1",
+      "pass": true,
+      "player": [
+        -113.0,
+        16.400182723999,
+        -57.9599990844727
+      ],
+      "target": "RF",
+      "wing": "B"
+    },
+    {
+      "accepted": true,
+      "frames": 654,
+      "id": "B-K1",
+      "pass": true,
+      "player": [
+        -113.0,
+        0.000115590635687113,
+        -57.9599990844727
+      ],
+      "target": "1F",
+      "wing": "B"
+    },
+    {
+      "accepted": true,
+      "frames": 323,
+      "id": "C-K-CW",
+      "pass": true,
+      "player": [
+        -149.894149780273,
+        -5.34992361068726,
+        -258.365051269531
+      ],
+      "target": "B1",
+      "wing": "C"
+    },
+    {
+      "accepted": true,
+      "frames": 815,
+      "id": "C-K-CW",
+      "pass": true,
+      "player": [
+        -149.894149780273,
+        16.4000854492188,
+        -258.365051269531
+      ],
+      "target": "RF",
+      "wing": "C"
+    },
+    {
+      "accepted": true,
+      "frames": 654,
+      "id": "C-K-CW",
+      "pass": true,
+      "player": [
+        -149.894149780273,
+        0.000115519855171442,
+        -258.365051269531
+      ],
+      "target": "1F",
+      "wing": "C"
+    }
+  ],
+  "developer_toggles": [],
+  "fixed_physics_hz": 60,
+  "human_playtest": false,
+  "stairs": []
+}
