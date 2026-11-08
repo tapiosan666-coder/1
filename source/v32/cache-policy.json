@@ -1,0 +1,26 @@
+{
+  "invalid_v31_scene_ids": [
+    "interior_0_-2_-1",
+    "interior_0_-4_-7",
+    "interior_0_-6_-1",
+    "interior_0_0_-4",
+    "interior_0_0_0",
+    "interior_0_10_-2",
+    "interior_0_12_0",
+    "interior_0_13_-1",
+    "interior_0_7_-2",
+    "interior_0_8_-2",
+    "interior_0_8_2",
+    "interior_0_9_2",
+    "shell_-9_-2_-1",
+    "shell_-9_-2_1",
+    "shell_-9_-3_-1",
+    "shell_-9_-3_1",
+    "shell_-9_1_0",
+    "shell_-9_2_0",
+    "shell_-9_2_1",
+    "shell_-9_3_0",
+    "shell_-9_3_1"
+  ],
+  "reason": "Zero-surface Mesh/MultiMesh in serialized v31 scenes; rebuild from original complete v30 chunks, never assign empty renderer resources."
+}

@@ -1,0 +1,120 @@
+{
+  "store_id": "B1-032",
+  "status": "UNAPPROVED_DESIGN_OPTION_NOT_INTEGRATED",
+  "original_entry": [
+    186.04334372087584,
+    0,
+    -45.494786639036356
+  ],
+  "original_store_area_m2": 190.33389044581773,
+  "plot": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180.049,
+          -24.223
+        ],
+        [
+          181.5719079,
+          -22.4637367
+        ],
+        [
+          186.0743698,
+          -29.3589351
+        ],
+        [
+          187.5297374,
+          -46.8263953
+        ],
+        [
+          170.46215310000002,
+          -31.5361372
+        ],
+        [
+          171.027,
+          -31.246000000000002
+        ],
+        [
+          174.253,
+          -29.195
+        ],
+        [
+          177.274,
+          -26.85
+        ],
+        [
+          180.049,
+          -24.223
+        ]
+      ]
+    ]
+  },
+  "existing_automatic_walk": [
+    [
+      186.04334372087584,
+      0.0,
+      -45.494786639036356
+    ],
+    [
+      186.54983513894024,
+      0.0,
+      -45.304086769474694
+    ],
+    [
+      186.88963468453764,
+      0.0,
+      -44.9247892235588
+    ],
+    [
+      186.0896869568698,
+      0,
+      -42.87700922686799
+    ],
+    [
+      182.23968695686978,
+      0,
+      -24.32700922686799
+    ],
+    [
+      181.5396869568698,
+      0,
+      -23.27700922686799
+    ]
+  ],
+  "reason": "Original fixedentrycamera looks out ofthe store; originalentry atnarrowplot tip cannot be made an inwardview bymerchandisingalone. Keep originaldoor/camera; propose optionaladditionalpublicentry pendingapproval.",
+  "options": [
+    {
+      "centre": [
+        178.99594525,
+        0,
+        -39.18126625
+      ],
+      "along_xz": [
+        -0.7448234684387404,
+        0.6672615685493095
+      ],
+      "inward_xz": [
+        0.6672615685493095,
+        0.7448234684387404
+      ],
+      "clear_width_m": 2.4,
+      "outside_public_point": [
+        178.32868368145068,
+        0,
+        -39.92608971843874
+      ],
+      "inside_sales_point": [
+        179.66320681854933,
+        0,
+        -38.43644278156126
+      ],
+      "segment_length_m": 22.914938939526348,
+      "only_diagram_public_adjacency_checked": true,
+      "Godot_wall_opening_created": false,
+      "physical_pass_tested": false
+    }
+  ],
+  "stores_changed": false,
+  "game_scene_changed": false
+}

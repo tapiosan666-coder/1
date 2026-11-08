@@ -4,6 +4,7 @@ var definitions:Array=[]
 var active:Dictionary={}
 var pending:Array=[]
 var cleaned_namespace:String=""
+var invalid_v31_scenes:Array=[]
 var fair_enabled:bool=true
 var elapsed:float=0.
 var stream_ready:bool=false
@@ -19,13 +20,16 @@ func desired(d:Dictionary,point:Vector3,retention:bool=false)->bool:
  if d.tier=="event":return fair_enabled and distance<135.+extra and point.y> -1 and point.y<13.
  return distance<(92. if d.tier=="interior"else 75.)+extra and visible_level(int(d.level),point.y)
 func scene_path(d:Dictionary)->String:
+ if d.id in invalid_v31_scenes:
+  var fixed:String="res://assets/v32/world/"+str(d.id)+".scn"
+  return fixed if ResourceLoader.exists(fixed)else str(d.path)
  var path:String="res://assets/v31/world/"+cleaned_namespace+"/"+str(d.id)+".scn"
  return path if cleaned_namespace!=""and ResourceLoader.exists(path)else str(d.path)
 func mark_owner(node:Node,owner:Node)->void:
  for child in node.get_children():child.owner=owner;mark_owner(child,owner)
 func cache_cleaned(d:Dictionary,n:Node)->void:
  if cleaned_namespace==""or RenderingServer.get_video_adapter_name()==""or n.get_meta("v31_cleaned","")==cleaned_namespace:return
- var path:String="res://assets/v31/world/"+cleaned_namespace+"/"+str(d.id)+".scn"
+ var path:String=("res://assets/v32/world/"if d.id in invalid_v31_scenes else"res://assets/v31/world/"+cleaned_namespace+"/")+str(d.id)+".scn"
  if ResourceLoader.exists(path):n.set_meta("v31_cleaned",cleaned_namespace);return
  var copy=Node3D.new();copy.name=str(n.name);copy.set_meta("v31_cleaned",cleaned_namespace)
  for source in n.get_children():
@@ -43,6 +47,8 @@ func install(d:Dictionary,scene:PackedScene)->void:
   if game.has_node("V31_Sales"):game.get_node("V31_Sales").clean_chunk(n,d)
   if game.has_node("V31_Signs"):game.get_node("V31_Signs").clean_chunk(n)
   if game.has_node("V31_Sales"):cache_cleaned(d,n)
+ if game.has_node("V31_Sales"):game.get_node("V31_Sales").clean_old_bookstock(n)
+ if game.has_node("V32_Architecture"):game.get_node("V32_Architecture").apply_chunk(n)
  stats.loads+=1;stats.max_resident_zones=maxi(stats.max_resident_zones,active.size())
 func install_sync(d:Dictionary)->void:
  if active.has(d.id):return
@@ -96,7 +102,7 @@ func resident_counts()->Dictionary:
  return result
 func boot(g)->void:
  get_viewport().use_occlusion_culling=true
- game=g;name="V30_Runtime"
+ game=g;name="V30_Runtime";invalid_v31_scenes=g.read_json("res://source/v32/cache-policy.json").invalid_v31_scene_ids
  var design:Dictionary=g.read_json("res://source/v31/sales-design.json")
  var profile:Dictionary=g.read_json("res://source/v31/cache-profile.json")
  if profile.get("retirement_policy","")=="r7"and profile.get("scope_data",[])==design.stores.map(func(s):return [s.id,s.scope])and profile.get("base_index_sha256","")==FileAccess.get_sha256("res://assets/v30/world/index.json"):
@@ -107,6 +113,7 @@ func boot(g)->void:
  g.build_environment();g.build_materials()
  for file:String in ["finish_v8.gd","finish_v9.gd","finish_v10.gd","finish_v14.gd"]:load("res://"+file).new().extend(g.mats)
  for brand:Dictionary in g.read_json("res://source/v17/brands.json"):g.brand_registry[brand.store_id]=brand
+ var arch=load("res://architecture_v32.gd").new();g.add_child(arch);arch.setup(g)
  g.player=load("res://player.gd").new();g.player.name="WalkCapsule";g.add_child(g.player);g.player.input_enabled=false;g.player.set_physics_process(false)
  g.player.escalators=g.manifest.escalators
  g.interactive_pose(g.read_json("res://source/cameras-v8.json")[0])
@@ -122,16 +129,17 @@ func boot(g)->void:
    door.player=g.player;door.actors=g.shoppers_v18.actors;door.leaves=door.get_children().filter(func(n):return n is AnimatableBody3D);door.sense_npcs=true
  g.commons_v16=load("res://runtime_commons_v30.gd").new();g.add_child(g.commons_v16);g.commons_v16.game=g;g.commons_v16.stream=self
  for d:Dictionary in context.gates:g.commons_v16.gates[d.id]={"body":dynamic.get_node(d.body),"angle":d.angle,"target":d.target}
- var es_finish=load("res://es_finish_v31.gd").new();g.add_child(es_finish);es_finish.setup(g)
- var signs=load("res://signs_v31.gd").new();g.add_child(signs);signs.setup(g)
+ var es_finish=load("res://es_finish_v32.gd").new();g.add_child(es_finish);es_finish.setup(g)
+ var signs=load("res://signs_v32.gd").new();g.add_child(signs);signs.setup(g)
  for chunk in active.values():signs.clean_chunk(chunk)
- var sales=load("res://sales_v31.gd").new();g.add_child(sales);sales.setup(g)
+ var sales=load("res://sales_v32.gd").new();g.add_child(sales);sales.setup(g)
+ var exterior=load("res://exterior_v32.gd").new();g.add_child(exterior);exterior.setup(g)
  g.ui=load("res://ui_v7.gd").new();g.add_child(g.ui);g.ui.setup(g)
  var layer=CanvasLayer.new();g.add_child(layer);g.hud=Label.new();g.hud.add_theme_font_override("font",g.font);g.hud.add_theme_font_size_override("font_size",18);g.hud.position=Vector2(22,22);layer.add_child(g.hud)
  var footer=Label.new();footer.text="F1 A館 / F2 B館 / F3 C館  |  WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc 設定";footer.add_theme_font_override("font",g.font);footer.add_theme_font_size_override("font_size",16);footer.position=Vector2(22,1030);layer.add_child(footer)
  await get_tree().physics_frame;await get_tree().physics_frame
  g.player.set_physics_process(true);g.player.input_enabled=g.mode=="interactive";stream_ready=true;g.shoppers_v18.update_near()
- g.results={"version":"v31","streaming":true,"all_building_layers":15,"stores":480,"NPC_records":43,"startup_ms":(Time.get_ticks_usec()-begin)/1000.,"adapter":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"main_game_loaded":false,"Windows_GPU_tested":false};print("V30_STREAM_READY ",JSON.stringify(g.results)," ",JSON.stringify(resident_counts()))
+ g.results={"version":"v32","streaming":true,"all_building_layers":15,"stores":480,"NPC_records":43,"startup_ms":(Time.get_ticks_usec()-begin)/1000.,"adapter":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"main_game_loaded":false,"Windows_GPU_tested":false};print("V30_STREAM_READY ",JSON.stringify(g.results)," ",JSON.stringify(resident_counts()))
 
 func _exit_tree()->void:
  stream_ready=false

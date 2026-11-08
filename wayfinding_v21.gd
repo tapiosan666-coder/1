@@ -32,7 +32,7 @@ func resolve_mount(board:Dictionary)->void:
  else:
   board.mount="floor";board.mount_validation="No verified overhead support; supplemental outdoor/roof pylon retained"
 func floor_y(p:Vector3)->float:
- stats.floor_checks+=1;var q=PhysicsRayQueryParameters3D.create(p+Vector3.UP*.22,p-Vector3.UP*.20,1);var hit=get_world_3d().direct_space_state.intersect_ray(q)
+ stats.floor_checks+=1;var q=PhysicsRayQueryParameters3D.create(p+Vector3.UP*.22,p-Vector3.UP*.20,1);q.exclude=[game.player.get_rid()];var hit=get_world_3d().direct_space_state.intersect_ray(q)
  if hit.is_empty()or hit.normal.y<=.65 or absf(hit.position.y-p.y)>=.16:return NAN
  return hit.position.y
 func floor_hit(p:Vector3)->bool:return not is_nan(floor_y(p))
@@ -40,7 +40,7 @@ func sweep(a:Vector3,b:Vector3)->bool:
  stats.sweeps+=1;var ay:float=floor_y(a);var by:float=floor_y(b)
  if is_nan(ay)or is_nan(by):return false
  a.y=ay;b.y=by
- var q=PhysicsShapeQueryParameters3D.new();q.shape=capsule;q.transform=Transform3D(Basis.IDENTITY,a+Vector3.UP*.95);q.motion=b-a;q.margin=.008;q.collision_mask=1
+ var q=PhysicsShapeQueryParameters3D.new();q.shape=capsule;q.transform=Transform3D(Basis.IDENTITY,a+Vector3.UP*.95);q.motion=b-a;q.margin=.008;q.collision_mask=1;q.exclude=[game.player.get_rid()]
  var hit=get_world_3d().direct_space_state.cast_motion(q);return hit.is_empty()or hit[0]>=.997
 func validate_and_build()->void:
  await get_tree().physics_frame;await get_tree().physics_frame
