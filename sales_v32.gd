@@ -160,7 +160,9 @@ func template(asset:String,category:String,style:int=0)->Dictionary:
  if not OS.get_cmdline_user_args().has("--v31-no-kit-cache")and ResourceLoader.exists(kit_path):
   var scene:Node3D=load(kit_path).instantiate();var kit_parts:Array=[]
   for child in scene.get_children():kit_parts.append({"mesh":child.mesh,"transform":child.transform})
-  var result:Dictionary={"parts":kit_parts,"bounds":scene.get_meta("bounds"),"supported_stock":scene.get_meta("supported_stock")};scene.free();templates[template_key]=result;return result
+  var result:Dictionary={"parts":kit_parts,"bounds":scene.get_meta("bounds"),"supported_stock":scene.get_meta("supported_stock")};scene.free()
+  if not(asset.begins_with("../v32/models/wall_")and int(result.supported_stock)==0):templates[template_key]=result;return result
+  # A wall merchandise kit with zero stock is invalid, not an art-complete empty shelf.
  if asset.begins_with("../v32/models/double_book_"):return double_book_template(asset,category,style,kit_path,template_key)
  if asset.begins_with("../v32/models/wall_"):return wall_template(asset,category,style,kit_path,template_key)
  var source:Dictionary=library.get_asset(asset,false);var parts:Array=[]
@@ -247,6 +249,20 @@ func wall_template(asset:String,category:String,style:int,kit_path:String,templa
    var tr=Transform3D(orientation,Vector3(x,yy,z))
    for part:Dictionary in product.parts:parts.append({"mesh":part.mesh,"transform":tr*part.transform})
    count+=1;cursor+=width+(.055 if category!="book"else .028);index+=1
+ if count==0 and not goods.is_empty():
+  # Never consume shelf width for an oversized SKU. Try fitting merchandise first.
+  for y:float in heights:
+   var cursor:float=-source.bounds.size.x*.5+.10
+   for index:int in goods.size():
+    var key:String=goods[(index+style)%goods.size()];var product:Dictionary=library.get_asset(key,false);var orientation:Basis=Basis(Vector3.UP,PI*.5)if category=="shoes"else Basis(Vector3.RIGHT,PI*.5)if category=="home"and key.ends_with("sku_bowl")else Basis.IDENTITY;var b:AABB=Transform3D(orientation,Vector3.ZERO)*product.bounds
+    if b.size.z>.17 or b.size.x<=.001 or cursor+b.size.x>source.bounds.size.x*.5-.08:continue
+    var yy:float=y-b.position.y+.003
+    if category in["apparel","sports"]:yy=2.10-b.end.y
+    while cursor+b.size.x<=source.bounds.size.x*.5-.08:
+     var tr=Transform3D(orientation,Vector3(cursor-b.position.x,yy,.035-b.get_center().z))
+     for part:Dictionary in product.parts:parts.append({"mesh":part.mesh,"transform":tr*part.transform})
+     count+=1;cursor+=b.size.x+.055
+    break
  parts=merge_parts(parts,style);var scene=Node3D.new();scene.set_meta("bounds",source.bounds);scene.set_meta("supported_stock",count)
  for part:Dictionary in parts:
   var child=MeshInstance3D.new();child.mesh=part.mesh;child.transform=part.transform;scene.add_child(child);child.owner=scene
