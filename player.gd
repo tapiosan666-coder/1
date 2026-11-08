@@ -10,6 +10,8 @@ var landed:bool=false
 var escalators:Array=[]
 var belt_enabled:bool=true
 var belt_id:String=""
+var walk_intent_velocity:Vector3=Vector3.ZERO
+const ES_MOTION=preload("res://escalator_motion_v33.gd")
 func _ready()->void:
  physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_ON
  floor_snap_length=.45
@@ -20,6 +22,8 @@ func _ready()->void:
  shape.shape=capsule;shape.position.y=.9;add_child(shape)
  camera=Camera3D.new();camera.position.y=1.65;camera.fov=75;camera.near=.08;camera.far=800
  add_child(camera);camera.current=true
+func reset_motion_state()->void:
+ walk_intent_velocity=Vector3.ZERO;velocity=Vector3.ZERO;auto_active=false;belt_id=""
 func _unhandled_input(e:InputEvent)->void:
  if not input_enabled:return
  if e is InputEventMouseButton and e.pressed:Input.mouse_mode=Input.MOUSE_MODE_CAPTURED
@@ -27,6 +31,7 @@ func _unhandled_input(e:InputEvent)->void:
  if e is InputEventMouseMotion and Input.mouse_mode==Input.MOUSE_MODE_CAPTURED:
   rotate_y(-e.relative.x*.0022);camera.rotation.x=clamp(camera.rotation.x-e.relative.y*.0022,-1.4,1.4)
 func _physics_process(dt:float)->void:
+ if global_position.distance_to(previous)>1.:walk_intent_velocity=Vector3.ZERO
  previous=global_position;ticks+=1
  var motion=Vector3.ZERO
  if auto_active:
@@ -35,7 +40,10 @@ func _physics_process(dt:float)->void:
  elif input_enabled:
   var x=float(Input.is_physical_key_pressed(KEY_D))-float(Input.is_physical_key_pressed(KEY_A))
   var z=float(Input.is_physical_key_pressed(KEY_S))-float(Input.is_physical_key_pressed(KEY_W))
-  motion=global_basis*Vector3(x,0,z).normalized()*(7.0 if Input.is_physical_key_pressed(KEY_SHIFT) else 4.3)
+  var wanted:Vector3=global_basis*Vector3(x,0,z).normalized()*(7.0 if Input.is_physical_key_pressed(KEY_SHIFT) else 4.3)
+  walk_intent_velocity=walk_intent_velocity.move_toward(wanted,(16. if wanted.length()<walk_intent_velocity.length()else 12.)*dt)
+  motion=walk_intent_velocity
+ if auto_active or not input_enabled:walk_intent_velocity=Vector3.ZERO
  velocity.x=motion.x;velocity.z=motion.z
  velocity.y=-1.0 if is_on_floor() else max(velocity.y-20*dt,-30)
  # Conveyor follows an actual collidable inclined support, not teleportation.
@@ -49,7 +57,7 @@ func _physics_process(dt:float)->void:
   if belt_enabled and abs(lateral)<.65 and s>=-half-1.45 and s<=half+1.45 and abs(global_position.y-height)<.55:
    var sign_dir=1.0 if e.direction=="UP" else -1.0
    var slope=float(e.rise_m)/float(e.run_m)
-   var ground_speed=.50/sqrt(1+slope*slope)
+   var ground_speed=ES_MOTION.ground_speed(float(e.rise_m),float(e.run_m))
    var conveyor=u*(ground_speed*sign_dir)
    velocity.x+=conveyor.x;velocity.z+=conveyor.z
    if is_on_floor():

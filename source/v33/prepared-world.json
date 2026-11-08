@@ -1,0 +1,729 @@
+{
+ "initial_resident_counts": {
+  "available_zones": 1798,
+  "nodes": 6212,
+  "pending": 0,
+  "physics_bodies": 661,
+  "render_nodes": 4406,
+  "resident_zones": 119
+ },
+ "method": "Native Godot instantiated final v32 cleaning and book retirement at the existing A initial pose. Packed static chunks include unchanged render/physics data; runtime verifies policy signature. No .godot import cache.",
+ "rows": [
+  {
+   "id": "shell_-9_2_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_2_-1.scn",
+   "render_and_collision_child_nodes": 39,
+   "sha256": "68fc260bfae00ff2a506830aa3053eeaf12e2e1f8e8c94b8c08474c99b4b2fc8"
+  },
+  {
+   "id": "shell_-9_3_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_3_-1.scn",
+   "render_and_collision_child_nodes": 73,
+   "sha256": "39ad3835d2fa09bb6c67b676fe225620ffdc5c422a24e9285db4807dbc79b14f"
+  },
+  {
+   "id": "shell_-9_3_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_3_0.scn",
+   "render_and_collision_child_nodes": 127,
+   "sha256": "6a2e775dfef4cbf93fafd403870579cf2cb4509931011f000151e1641f36c694"
+  },
+  {
+   "id": "shell_-9_3_1",
+   "path": "res://assets/v33/prepared-world/shell_-9_3_1.scn",
+   "render_and_collision_child_nodes": 68,
+   "sha256": "2e9196dc1e0b4f34ff78b26c8845facfca05a8f62c4fd44b6c79c55fe08839c4"
+  },
+  {
+   "id": "shell_-9_3_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_3_-2.scn",
+   "render_and_collision_child_nodes": 18,
+   "sha256": "6671b1bbbdc0ac3d5d665b881941e6850411c4c51d461b9d450ae2e958afc14f"
+  },
+  {
+   "id": "shell_-9_4_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_4_-2.scn",
+   "render_and_collision_child_nodes": 23,
+   "sha256": "38c6b5eab0a9749611597085d9d5098549e7dfa4205e71b3407619d372757288"
+  },
+  {
+   "id": "shell_-9_4_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_4_-1.scn",
+   "render_and_collision_child_nodes": 51,
+   "sha256": "b14b2e5c205bd39cc4bf2f77cd588281cfbb7076f3ef38153684ae9e6a3ca0aa"
+  },
+  {
+   "id": "shell_-9_4_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_4_0.scn",
+   "render_and_collision_child_nodes": 45,
+   "sha256": "f03f4ca3d2830d9428d3d65a9478f00313510e883d44dd93df6bfc40584c94e2"
+  },
+  {
+   "id": "shell_-9_5_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_-2.scn",
+   "render_and_collision_child_nodes": 37,
+   "sha256": "2188891606fb6f696c72aca156230444a89a410c8ce0d30593ed9e1ed1a635ce"
+  },
+  {
+   "id": "shell_-9_5_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_-1.scn",
+   "render_and_collision_child_nodes": 36,
+   "sha256": "f367d2ecabcfdad3e8fe30b5b82ed2c9f933a8d2e78d7a774c9afc33b72a0c8d"
+  },
+  {
+   "id": "shell_-9_5_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_0.scn",
+   "render_and_collision_child_nodes": 24,
+   "sha256": "97436a17fe5eb18f8e827dbffc4cd641e99a105e1d86c343b3baa045ec2afa9f"
+  },
+  {
+   "id": "shell_-9_6_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_6_-2.scn",
+   "render_and_collision_child_nodes": 74,
+   "sha256": "891ebea9b80ed64e5beef54a9fffb2b52b4edd59ef39f3d25d3e8eef40271823"
+  },
+  {
+   "id": "shell_-9_6_1",
+   "path": "res://assets/v33/prepared-world/shell_-9_6_1.scn",
+   "render_and_collision_child_nodes": 12,
+   "sha256": "90a7747d3ae1d805570306fa3bca7d7c8198764b2f203c03b77471ad43a0c0f6"
+  },
+  {
+   "id": "shell_-9_7_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_7_0.scn",
+   "render_and_collision_child_nodes": 120,
+   "sha256": "0f07a5ed1cd4bf142167f0dae5332c6482050d9945050e64bcb7e87ea2d0dac1"
+  },
+  {
+   "id": "shell_-9_7_1",
+   "path": "res://assets/v33/prepared-world/shell_-9_7_1.scn",
+   "render_and_collision_child_nodes": 73,
+   "sha256": "b1b514cd1aff3c49a37dad8e24cea8c749020269317a3540847c0661c9e4b2c2"
+  },
+  {
+   "id": "shell_-9_7_2",
+   "path": "res://assets/v33/prepared-world/shell_-9_7_2.scn",
+   "render_and_collision_child_nodes": 14,
+   "sha256": "09823d86b2218a5616f0383a82c6795f43975155fada7227d349422d4877b939"
+  },
+  {
+   "id": "shell_-9_8_1",
+   "path": "res://assets/v33/prepared-world/shell_-9_8_1.scn",
+   "render_and_collision_child_nodes": 91,
+   "sha256": "883fb8198da3775b676938ea08ad44f39be8e34eb1e3e401df073db45c4a3ca2"
+  },
+  {
+   "id": "shell_-9_8_2",
+   "path": "res://assets/v33/prepared-world/shell_-9_8_2.scn",
+   "render_and_collision_child_nodes": 61,
+   "sha256": "84881fdb6f120ab2d066033c4ab76d54c23534596965ae0c4f9f8649c15e1faa"
+  },
+  {
+   "id": "shell_-9_10_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_10_-2.scn",
+   "render_and_collision_child_nodes": 63,
+   "sha256": "f422efd5b2e1aa8e5750e8f796e8f4f1c4a509a9430f56234c964bc85310cf6b"
+  },
+  {
+   "id": "shell_-9_9_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_9_-2.scn",
+   "render_and_collision_child_nodes": 66,
+   "sha256": "39401db0dfb3cc1bdbe6478f1a3450a5e5f1291f6ed74e620976e8e614c5a3f2"
+  },
+  {
+   "id": "shell_-9_8_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_8_-2.scn",
+   "render_and_collision_child_nodes": 79,
+   "sha256": "03904d433c3ec8356348e529e8bd6308854d3eb53e54d0c15a44b8a017f48747"
+  },
+  {
+   "id": "shell_-9_7_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_7_-1.scn",
+   "render_and_collision_child_nodes": 71,
+   "sha256": "630f212f105d44096d1137f22c4bea0106a8434eeea97ed30b1d55c3682e24a5"
+  },
+  {
+   "id": "shell_-9_8_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_8_-1.scn",
+   "render_and_collision_child_nodes": 86,
+   "sha256": "b75b3859ca106fdef0da092f5407e3c0c939a817e89d1cc0d90052836969e534"
+  },
+  {
+   "id": "shell_-9_7_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_7_-2.scn",
+   "render_and_collision_child_nodes": 77,
+   "sha256": "1f2531a1151145bba2c41dea256dcf98f6aaf6ee24f814f926563bfc3b3fb1bc"
+  },
+  {
+   "id": "shell_-9_6_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_6_-1.scn",
+   "render_and_collision_child_nodes": 31,
+   "sha256": "6a5207d389443bbef0ac0cc4832a7fb643bbaa1f4fc81ecf802a67f326be79c0"
+  },
+  {
+   "id": "shell_-9_6_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_6_0.scn",
+   "render_and_collision_child_nodes": 67,
+   "sha256": "459665b4dde531d80bcd97edd3255af8112dde68aba9ad1bcdb601f3017c6c7f"
+  },
+  {
+   "id": "shell_-9_8_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_8_0.scn",
+   "render_and_collision_child_nodes": 50,
+   "sha256": "67b5c0237cc6579b658adef98bb9d18946d4b2cb19a0543a41fbfd86f88c124f"
+  },
+  {
+   "id": "shell_-9_9_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_9_-1.scn",
+   "render_and_collision_child_nodes": 95,
+   "sha256": "60e7a6a44637ccdd564dc3545d0c09993fd2a0533bda20ef9d45a9587684477b"
+  },
+  {
+   "id": "shell_-9_10_-1",
+   "path": "res://assets/v33/prepared-world/shell_-9_10_-1.scn",
+   "render_and_collision_child_nodes": 74,
+   "sha256": "8525844004b07a5a921338743040f5da3115ef4ab78aa74a0a1d7007fb42a593"
+  },
+  {
+   "id": "shell_-9_10_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_10_0.scn",
+   "render_and_collision_child_nodes": 15,
+   "sha256": "daa05f7b6c7e02a3ff2f9553394a38767dee83d7bfc18f1ff9adac11a5281424"
+  },
+  {
+   "id": "shell_-9_9_0",
+   "path": "res://assets/v33/prepared-world/shell_-9_9_0.scn",
+   "render_and_collision_child_nodes": 34,
+   "sha256": "eda00fb5a9690aa8df069fe409fe8260141a9ab8955d3d491268bd26925a7c9b"
+  },
+  {
+   "id": "shell_-9_9_1",
+   "path": "res://assets/v33/prepared-world/shell_-9_9_1.scn",
+   "render_and_collision_child_nodes": 47,
+   "sha256": "7723c098315e3e6a9723f81ae667985fa4ac0489d09ddfe4a0cc143971edf436"
+  },
+  {
+   "id": "shell_-9_4_1",
+   "path": "res://assets/v33/prepared-world/shell_-9_4_1.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "337c6bd08640b79c774c0628a1ae83fdc2d0949ff81683662a2266e3aafe25be"
+  },
+  {
+   "id": "shell_-9_5_1",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_1.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "7c9df93ec3b1d860e851dda4b92060ce581f6579f069431b51b58fefdfa36b84"
+  },
+  {
+   "id": "shell_-9_5_2",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_2.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "cc1210eae92541bbe625734a5c643f633f29bacc149bac8eb02288b55606066b"
+  },
+  {
+   "id": "shell_-9_5_-3",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_-3.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "7f3956a98c3e5c5f5ec485cad3214baaaca924d12554212a14c5e58b818b1670"
+  },
+  {
+   "id": "shell_-9_4_-3",
+   "path": "res://assets/v33/prepared-world/shell_-9_4_-3.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "7031f1b64672888b459a254d0d535f2eb31e95dd86d81605fbba0baa185ebbf1"
+  },
+  {
+   "id": "shell_-9_5_-4",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_-4.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "eba962ff6800fea993df5a89ca2cb1a1e5154bc5df3f06cad2af2038a1c7e53a"
+  },
+  {
+   "id": "shell_-9_5_-6",
+   "path": "res://assets/v33/prepared-world/shell_-9_5_-6.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "63a3b72a4d877c32224b765fd794a51fc7501cba6683e57f70b58d9e110b3af6"
+  },
+  {
+   "id": "shell_-9_9_-3",
+   "path": "res://assets/v33/prepared-world/shell_-9_9_-3.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "9a9d3c6c87967dfc63c5722f273486fe3203f8ba68927bad2cb1eda6c0c290ba"
+  },
+  {
+   "id": "shell_-9_8_-3",
+   "path": "res://assets/v33/prepared-world/shell_-9_8_-3.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "14868c31d570687dc951a245fd49b3f452eea719abfb05c29247211f8483e262"
+  },
+  {
+   "id": "shell_-9_7_-3",
+   "path": "res://assets/v33/prepared-world/shell_-9_7_-3.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "6e3ced253f91396cf69cf74cb9230b18af543335e11090d0647e8b4183ef6f91"
+  },
+  {
+   "id": "shell_-9_6_-3",
+   "path": "res://assets/v33/prepared-world/shell_-9_6_-3.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "fa74d30c7f9c31e09f407f8e4c3fed2c04879c79914d0fe5efcd2bbd42e4b42b"
+  },
+  {
+   "id": "shell_-9_4_-4",
+   "path": "res://assets/v33/prepared-world/shell_-9_4_-4.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "f5dd45e49b712b5fc97b2155058f4749e27a19c4e066add79721c255aeadb148"
+  },
+  {
+   "id": "shell_-9_2_-2",
+   "path": "res://assets/v33/prepared-world/shell_-9_2_-2.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "16bcfdf465dedbb229fb484a74aaade593cb307693f5035f8d7b77385c8f5d1d"
+  },
+  {
+   "id": "shell_-9_2_-3",
+   "path": "res://assets/v33/prepared-world/shell_-9_2_-3.scn",
+   "render_and_collision_child_nodes": 2,
+   "sha256": "146c474aa114fd86b89f4c71a6585d97d880abb74bb52ee9ab9ce2f58df9002c"
+  },
+  {
+   "id": "physics_-9_5_-2",
+   "path": "res://assets/v33/prepared-world/physics_-9_5_-2.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "d1eb5d3ab1fe67d70fe39576fcaa470ce027bb317d3c7d02352d0b284e73541a"
+  },
+  {
+   "id": "physics_-9_5_-1",
+   "path": "res://assets/v33/prepared-world/physics_-9_5_-1.scn",
+   "render_and_collision_child_nodes": 52,
+   "sha256": "ccbe05c29e730d767e90961afcca0c0671d61a380de30c608c85a765cbafcf02"
+  },
+  {
+   "id": "physics_-9_5_0",
+   "path": "res://assets/v33/prepared-world/physics_-9_5_0.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "037f8e78e8f83525f6e4b9553fa1475f1e51d621a792c2f320c2e870ab8e15ca"
+  },
+  {
+   "id": "physics_-9_6_-2",
+   "path": "res://assets/v33/prepared-world/physics_-9_6_-2.scn",
+   "render_and_collision_child_nodes": 164,
+   "sha256": "e8776ffdc96f4faac41adadc51ab9a87661a0f52d5ae5976722e3b0d820cb298"
+  },
+  {
+   "id": "physics_-9_6_0",
+   "path": "res://assets/v33/prepared-world/physics_-9_6_0.scn",
+   "render_and_collision_child_nodes": 32,
+   "sha256": "3897b4a9ccf1faecc98da4c7ed85fb543a39f7ec6b1467a5ffb49764f7e58ab9"
+  },
+  {
+   "id": "physics_-9_7_0",
+   "path": "res://assets/v33/prepared-world/physics_-9_7_0.scn",
+   "render_and_collision_child_nodes": 208,
+   "sha256": "8230f8077d3c24658e9126d0b78ed7ef2d8e4487df19c34fcd42a43eb7a1e63c"
+  },
+  {
+   "id": "physics_-9_8_-2",
+   "path": "res://assets/v33/prepared-world/physics_-9_8_-2.scn",
+   "render_and_collision_child_nodes": 184,
+   "sha256": "154cfa121f25c785a729034bcfec1103ca4895b22a7b864c5d5d0ce36b9ec258"
+  },
+  {
+   "id": "physics_-9_7_-2",
+   "path": "res://assets/v33/prepared-world/physics_-9_7_-2.scn",
+   "render_and_collision_child_nodes": 146,
+   "sha256": "2f216b1533c1d9897fc4b7322985d5a2efb58da1a6d8cd3c9c96ee2e52fc1c08"
+  },
+  {
+   "id": "physics_-9_7_-1",
+   "path": "res://assets/v33/prepared-world/physics_-9_7_-1.scn",
+   "render_and_collision_child_nodes": 76,
+   "sha256": "7b0d33f6db81607e0ce133a7d22e58973bf25df0d3aeb392b50259043342b761"
+  },
+  {
+   "id": "physics_-9_8_-1",
+   "path": "res://assets/v33/prepared-world/physics_-9_8_-1.scn",
+   "render_and_collision_child_nodes": 434,
+   "sha256": "2df7fd41db9ac2008d6c2e6d47c533d4dcdae2af71f5391c4501651afef10c2c"
+  },
+  {
+   "id": "physics_-9_6_-1",
+   "path": "res://assets/v33/prepared-world/physics_-9_6_-1.scn",
+   "render_and_collision_child_nodes": 6,
+   "sha256": "809dffb0d466a6cf2886ed1bc11c9ae7d6a9a0aa75b3fa6d858fbd0c894334b5"
+  },
+  {
+   "id": "physics_-9_5_-3",
+   "path": "res://assets/v33/prepared-world/physics_-9_5_-3.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "c7d2ca4da4bddad94086a6967c6e45925d2267daba40417c52bec0fa0d02f4d9"
+  },
+  {
+   "id": "physics_-9_6_-3",
+   "path": "res://assets/v33/prepared-world/physics_-9_6_-3.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "b9046dec292b80cf3d2c35c65479ecc77990b0bcd6cfc9aa2f1eeb186680009c"
+  },
+  {
+   "id": "physics_-9_8_-3",
+   "path": "res://assets/v33/prepared-world/physics_-9_8_-3.scn",
+   "render_and_collision_child_nodes": 2,
+   "sha256": "a9c5557673a82dbdccf1fb8d92772c20a60a2546c1efd520b0e4003e1d8b2d3a"
+  },
+  {
+   "id": "physics_-9_7_-3",
+   "path": "res://assets/v33/prepared-world/physics_-9_7_-3.scn",
+   "render_and_collision_child_nodes": 2,
+   "sha256": "a62752dfb608bf6c21c62f28e4081439b2c782b4b304e523ed7aa04bacb7e462"
+  },
+  {
+   "id": "interior_0_4_-1",
+   "path": "res://assets/v33/prepared-world/interior_0_4_-1.scn",
+   "render_and_collision_child_nodes": 111,
+   "sha256": "0ba0212a285bdc747a8a394a54b7a25c2fa4ee57c8fc15266e3cf4973342ac52"
+  },
+  {
+   "id": "interior_2_4_-1",
+   "path": "res://assets/v33/prepared-world/interior_2_4_-1.scn",
+   "render_and_collision_child_nodes": 24,
+   "sha256": "5f97e312b7b6be2ffbb0eb509f363cbe6cace20669cee52549466e3b0c418d66"
+  },
+  {
+   "id": "detail_1_7_-2",
+   "path": "res://assets/v33/prepared-world/detail_1_7_-2.scn",
+   "render_and_collision_child_nodes": 13,
+   "sha256": "ff9332d766c65010fdf4c02007653a97b4abf077d96cfc3ea91d79eec92b5764"
+  },
+  {
+   "id": "detail_1_8_-1",
+   "path": "res://assets/v33/prepared-world/detail_1_8_-1.scn",
+   "render_and_collision_child_nodes": 30,
+   "sha256": "e4956e1a4397406d3ddd804ca7c9c8a1e9010e28e31e11f2fdec6dd575369cd2"
+  },
+  {
+   "id": "detail_1_7_0",
+   "path": "res://assets/v33/prepared-world/detail_1_7_0.scn",
+   "render_and_collision_child_nodes": 16,
+   "sha256": "6a0ad832cf04f2e1940fce1231b72d7d4524a4bf76a949ffcae6b66301a3bccf"
+  },
+  {
+   "id": "detail_1_7_-1",
+   "path": "res://assets/v33/prepared-world/detail_1_7_-1.scn",
+   "render_and_collision_child_nodes": 17,
+   "sha256": "9f99126dd84ae800af92c2fe1d2711f4ee0f4fe853f9f2dfb792369754abae6b"
+  },
+  {
+   "id": "detail_1_6_-2",
+   "path": "res://assets/v33/prepared-world/detail_1_6_-2.scn",
+   "render_and_collision_child_nodes": 5,
+   "sha256": "7784352d5345ef717826ffd5133342e166e97a18d7ed4c5f592f36b2fa9667fd"
+  },
+  {
+   "id": "detail_2_7_-1",
+   "path": "res://assets/v33/prepared-world/detail_2_7_-1.scn",
+   "render_and_collision_child_nodes": 2,
+   "sha256": "041e1acad4f2fb9c41a986360306f07f6bc5e077b3b3b4c44cd1ddee17a0d577"
+  },
+  {
+   "id": "detail_2_8_-2",
+   "path": "res://assets/v33/prepared-world/detail_2_8_-2.scn",
+   "render_and_collision_child_nodes": 6,
+   "sha256": "b8f6ee6efb0af6dcad18a22986aef39222676d0dab4ca086618e1ca4b19bb32a"
+  },
+  {
+   "id": "detail_2_8_-1",
+   "path": "res://assets/v33/prepared-world/detail_2_8_-1.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "a35b9755ea32d8d1f9a1cb40d2e462c6ba994f375adf929fc2ae91d98db6ebfc"
+  },
+  {
+   "id": "detail_2_7_0",
+   "path": "res://assets/v33/prepared-world/detail_2_7_0.scn",
+   "render_and_collision_child_nodes": 11,
+   "sha256": "437e83c1cc17dab1df59fa736360ac75948e6e1d25e1d1c2ba89051faa5e5b34"
+  },
+  {
+   "id": "detail_2_6_-2",
+   "path": "res://assets/v33/prepared-world/detail_2_6_-2.scn",
+   "render_and_collision_child_nodes": 2,
+   "sha256": "894db389256504b2f02cd927eb5e2e5945c20b5f1cee62bb0bdeb6014af73a10"
+  },
+  {
+   "id": "detail_0_7_0",
+   "path": "res://assets/v33/prepared-world/detail_0_7_0.scn",
+   "render_and_collision_child_nodes": 88,
+   "sha256": "86af5567aa39b0b15d68fa2602ce051446aed38d89d657a0add22dd5060ef4eb"
+  },
+  {
+   "id": "interior_0_7_-1",
+   "path": "res://assets/v33/prepared-world/interior_0_7_-1.scn",
+   "render_and_collision_child_nodes": 139,
+   "sha256": "7d2c10a4f7f35d5f838fb82549ef751d7cbff0c23adc96af5a482f40b1628935"
+  },
+  {
+   "id": "interior_0_8_-1",
+   "path": "res://assets/v33/prepared-world/interior_0_8_-1.scn",
+   "render_and_collision_child_nodes": 156,
+   "sha256": "cc2e8f9635546d8e2afe8a4ad9ef3057de3c5678b3963e143f6e63df64a0c95d"
+  },
+  {
+   "id": "interior_0_8_-2",
+   "path": "res://assets/v33/prepared-world/interior_0_8_-2.scn",
+   "render_and_collision_child_nodes": 112,
+   "sha256": "b4391620e159046960f58f368733e34ef2e7cf04ff2fd5782d81ab078444c6e6"
+  },
+  {
+   "id": "interior_0_7_0",
+   "path": "res://assets/v33/prepared-world/interior_0_7_0.scn",
+   "render_and_collision_child_nodes": 57,
+   "sha256": "9fdfe16381d9123d02a7650cb0843f690f030f920bf3a25b0e58674a0cc53b32"
+  },
+  {
+   "id": "interior_0_6_0",
+   "path": "res://assets/v33/prepared-world/interior_0_6_0.scn",
+   "render_and_collision_child_nodes": 46,
+   "sha256": "acaf195cf732e4c9a938c880629ad93a72a7fdeed50712a6344eaae810db5a0e"
+  },
+  {
+   "id": "interior_0_6_-2",
+   "path": "res://assets/v33/prepared-world/interior_0_6_-2.scn",
+   "render_and_collision_child_nodes": 375,
+   "sha256": "2fea018808fbbfc3e04dee001dba4edac74df041552cd861194dfe8524567446"
+  },
+  {
+   "id": "detail_0_7_-1",
+   "path": "res://assets/v33/prepared-world/detail_0_7_-1.scn",
+   "render_and_collision_child_nodes": 18,
+   "sha256": "f9e594cbe9f9f363ee767f43173d4a609ba2181ac96b2b79500d8989c29cdb5c"
+  },
+  {
+   "id": "detail_0_8_-1",
+   "path": "res://assets/v33/prepared-world/detail_0_8_-1.scn",
+   "render_and_collision_child_nodes": 66,
+   "sha256": "40cd294bd2fdd8f17b0a3bd501ea317c30c0a1dfdf949dd8aeaae4f37f55f578"
+  },
+  {
+   "id": "detail_0_8_-2",
+   "path": "res://assets/v33/prepared-world/detail_0_8_-2.scn",
+   "render_and_collision_child_nodes": 63,
+   "sha256": "fbb8cf79b563151b1dafa468ae15caa01bdf093f5fd24f1d68c6aefa93a4e486"
+  },
+  {
+   "id": "detail_0_6_0",
+   "path": "res://assets/v33/prepared-world/detail_0_6_0.scn",
+   "render_and_collision_child_nodes": 23,
+   "sha256": "814277278ba9fa102bfb96072e6b672a06b3f698ba0126000b4f56accafa2271"
+  },
+  {
+   "id": "detail_0_6_-2",
+   "path": "res://assets/v33/prepared-world/detail_0_6_-2.scn",
+   "render_and_collision_child_nodes": 65,
+   "sha256": "d19095197bea34b66098b67bf4862de72141280c07db7d4ea8fa30b4945345a9"
+  },
+  {
+   "id": "detail_0_7_-2",
+   "path": "res://assets/v33/prepared-world/detail_0_7_-2.scn",
+   "render_and_collision_child_nodes": 23,
+   "sha256": "8d898bd4c0746b89de761f73efe5f24db4b0b84a9311ac800132a04b760540d9"
+  },
+  {
+   "id": "detail_1_8_-2",
+   "path": "res://assets/v33/prepared-world/detail_1_8_-2.scn",
+   "render_and_collision_child_nodes": 7,
+   "sha256": "c848f1bf3ee2041185c6f20ff66a937c12a2cc5d1080fb2b3ffec887271f18c1"
+  },
+  {
+   "id": "interior_1_7_-1",
+   "path": "res://assets/v33/prepared-world/interior_1_7_-1.scn",
+   "render_and_collision_child_nodes": 51,
+   "sha256": "406fa8b4fc1839099190e5d2b48a60bc25b299d094fe67746585d191ccc7c3c7"
+  },
+  {
+   "id": "detail_1_6_-1",
+   "path": "res://assets/v33/prepared-world/detail_1_6_-1.scn",
+   "render_and_collision_child_nodes": 10,
+   "sha256": "bf72b3993280e2a6956c82a97c95d8c95aa37d4f4f9135124c2e43b83a18b787"
+  },
+  {
+   "id": "interior_1_6_0",
+   "path": "res://assets/v33/prepared-world/interior_1_6_0.scn",
+   "render_and_collision_child_nodes": 39,
+   "sha256": "dfd3a984bc84adf64d550d45a6031bc12f01e05bee677f3bf7e2b98acb223645"
+  },
+  {
+   "id": "interior_2_6_0",
+   "path": "res://assets/v33/prepared-world/interior_2_6_0.scn",
+   "render_and_collision_child_nodes": 32,
+   "sha256": "3bcaad005db70c60fce7738df394599d1893c2dc970b0955f971c918b39f68bc"
+  },
+  {
+   "id": "detail_1_6_0",
+   "path": "res://assets/v33/prepared-world/detail_1_6_0.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "b4f4fac38170e2bda6fd703eeccee6b32b8b5281499e59ba01239058f9f481bb"
+  },
+  {
+   "id": "detail_2_6_0",
+   "path": "res://assets/v33/prepared-world/detail_2_6_0.scn",
+   "render_and_collision_child_nodes": 4,
+   "sha256": "07980df151d6891d53c3511c6fc8fb45f0834128391327c2010a493956eb84cd"
+  },
+  {
+   "id": "interior_1_7_0",
+   "path": "res://assets/v33/prepared-world/interior_1_7_0.scn",
+   "render_and_collision_child_nodes": 84,
+   "sha256": "7ce4b98c7db1197e4cd94643993d8fdb8163e2b49c90840b2efa789aae4a630d"
+  },
+  {
+   "id": "interior_2_7_0",
+   "path": "res://assets/v33/prepared-world/interior_2_7_0.scn",
+   "render_and_collision_child_nodes": 102,
+   "sha256": "464f3bc6ab28cece59e157e318a234178fafaf03f0f8ee6d95521a36521b3d12"
+  },
+  {
+   "id": "interior_0_7_-2",
+   "path": "res://assets/v33/prepared-world/interior_0_7_-2.scn",
+   "render_and_collision_child_nodes": 62,
+   "sha256": "9efacc43c3470dba80bfb284942ad3395bccc7ff3009dbdeef91733c4b438d76"
+  },
+  {
+   "id": "interior_0_6_-1",
+   "path": "res://assets/v33/prepared-world/interior_0_6_-1.scn",
+   "render_and_collision_child_nodes": 17,
+   "sha256": "c03b394c6e47a287af0ec37671e3ee8fe532d27e596a8038fd18c0142e960e18"
+  },
+  {
+   "id": "interior_1_7_-2",
+   "path": "res://assets/v33/prepared-world/interior_1_7_-2.scn",
+   "render_and_collision_child_nodes": 145,
+   "sha256": "5c5c1f335eed9b08bd94b9ce1aed997a2400bb3a816af4d3da731834f78c5db2"
+  },
+  {
+   "id": "interior_1_8_-1",
+   "path": "res://assets/v33/prepared-world/interior_1_8_-1.scn",
+   "render_and_collision_child_nodes": 71,
+   "sha256": "4b058750a5e28912267fe55510ca4dc24ee05e03ef7ed8e2b0590c3cc5dbdade"
+  },
+  {
+   "id": "interior_1_8_-2",
+   "path": "res://assets/v33/prepared-world/interior_1_8_-2.scn",
+   "render_and_collision_child_nodes": 84,
+   "sha256": "05dc909293c9825607a54fe96695da16b831f80e31bdf3f3111b26065b477e23"
+  },
+  {
+   "id": "interior_1_6_-2",
+   "path": "res://assets/v33/prepared-world/interior_1_6_-2.scn",
+   "render_and_collision_child_nodes": 103,
+   "sha256": "b83ff9ad0447680705ba3c0597b83ba3ba9a32e3536760db2f1f39a6510426d9"
+  },
+  {
+   "id": "interior_2_7_-2",
+   "path": "res://assets/v33/prepared-world/interior_2_7_-2.scn",
+   "render_and_collision_child_nodes": 81,
+   "sha256": "a7e52b059c1dfcd8a7c570c66c9b48b6b1dc6ba42296ec3b9add09a09d41f053"
+  },
+  {
+   "id": "interior_2_7_-1",
+   "path": "res://assets/v33/prepared-world/interior_2_7_-1.scn",
+   "render_and_collision_child_nodes": 30,
+   "sha256": "4047f8e734c0f235b1ae167558eae1e8248b714b59d54f2ed297e672e96e7300"
+  },
+  {
+   "id": "interior_2_8_-1",
+   "path": "res://assets/v33/prepared-world/interior_2_8_-1.scn",
+   "render_and_collision_child_nodes": 31,
+   "sha256": "6e04e0adb7ec1556a640b733615a555c912e9d729006d656772f1430e8857b75"
+  },
+  {
+   "id": "interior_2_6_-2",
+   "path": "res://assets/v33/prepared-world/interior_2_6_-2.scn",
+   "render_and_collision_child_nodes": 114,
+   "sha256": "2705b223fab922494ead196b08bfc01651d754ac6d412c731397ba15dce9e3f7"
+  },
+  {
+   "id": "interior_1_4_-1",
+   "path": "res://assets/v33/prepared-world/interior_1_4_-1.scn",
+   "render_and_collision_child_nodes": 36,
+   "sha256": "08fdc1832f0d689d2fb279de293c3fb876e17879a89128d6af8e717e6b969e07"
+  },
+  {
+   "id": "detail_2_7_-2",
+   "path": "res://assets/v33/prepared-world/detail_2_7_-2.scn",
+   "render_and_collision_child_nodes": 2,
+   "sha256": "f8d2de1705d5d3fe6d7f5a502eb9bdf939a608737bbf4dbec614552efdff60e6"
+  },
+  {
+   "id": "interior_0_8_0",
+   "path": "res://assets/v33/prepared-world/interior_0_8_0.scn",
+   "render_and_collision_child_nodes": 118,
+   "sha256": "e77a012a91216895da98cef91996721ad3b8d3cc652b87c2b6b8b93b548683a6"
+  },
+  {
+   "id": "interior_1_8_0",
+   "path": "res://assets/v33/prepared-world/interior_1_8_0.scn",
+   "render_and_collision_child_nodes": 63,
+   "sha256": "4d051f8fea74e719b59ef2f2e376f704771c640742e30db3723aec03601715fe"
+  },
+  {
+   "id": "interior_2_8_-2",
+   "path": "res://assets/v33/prepared-world/interior_2_8_-2.scn",
+   "render_and_collision_child_nodes": 66,
+   "sha256": "8ad3fb561d2728dbc0761bcef4bad71f3c70ac74e86fe969f04301cbe7c23b4f"
+  },
+  {
+   "id": "interior_2_8_0",
+   "path": "res://assets/v33/prepared-world/interior_2_8_0.scn",
+   "render_and_collision_child_nodes": 67,
+   "sha256": "5757fe00e5ddcf19063188f938577c4742da785bb67b702c2d447920f6cc80a2"
+  },
+  {
+   "id": "interior_0_5_-1",
+   "path": "res://assets/v33/prepared-world/interior_0_5_-1.scn",
+   "render_and_collision_child_nodes": 61,
+   "sha256": "7bf480dfeae4099a6ab708b99329c6dc38861e59ad0d52f193704295258d1bef"
+  },
+  {
+   "id": "interior_1_5_-1",
+   "path": "res://assets/v33/prepared-world/interior_1_5_-1.scn",
+   "render_and_collision_child_nodes": 16,
+   "sha256": "5a09d8333fffd288895ec23e16704dd700867d853bd438bcb8d286aa18b144e7"
+  },
+  {
+   "id": "interior_2_5_-1",
+   "path": "res://assets/v33/prepared-world/interior_2_5_-1.scn",
+   "render_and_collision_child_nodes": 8,
+   "sha256": "f8f0fe6ad70b24d0f013032fd8b82b14d99edfba53b717b8966ce3c09af1f75c"
+  },
+  {
+   "id": "interior_1_6_-1",
+   "path": "res://assets/v33/prepared-world/interior_1_6_-1.scn",
+   "render_and_collision_child_nodes": 14,
+   "sha256": "eb1961cc1674de6b89cc2dcb9fd66f99e59eb1c3b947921648fdaa5296ec2ed4"
+  },
+  {
+   "id": "interior_0_5_0",
+   "path": "res://assets/v33/prepared-world/interior_0_5_0.scn",
+   "render_and_collision_child_nodes": 2,
+   "sha256": "cffe4eb1a48dc7a1c6d42e1f318d538367272caced880230ac30d59c94fb24b3"
+  },
+  {
+   "id": "interior_2_6_-1",
+   "path": "res://assets/v33/prepared-world/interior_2_6_-1.scn",
+   "render_and_collision_child_nodes": 6,
+   "sha256": "5c53c24445731ea22e5e8507d3d8e0bca6f992a22f3d25de9911aa9a7474fae9"
+  },
+  {
+   "id": "interior_0_5_-2",
+   "path": "res://assets/v33/prepared-world/interior_0_5_-2.scn",
+   "render_and_collision_child_nodes": 1,
+   "sha256": "00f329ea6722abea184b49d20150ee98ca2796078d6e7cb39781461e1b9dabe3"
+  },
+  {
+   "id": "detail_1_5_-1",
+   "path": "res://assets/v33/prepared-world/detail_1_5_-1.scn",
+   "render_and_collision_child_nodes": 3,
+   "sha256": "6d7afe31d6f91020e69fc41d45a6820e68ed814b1116145a4fb806610b7453da"
+  }
+ ],
+ "signature": "4ccd9de373a92a7017c5cc4b5fa7c760362a47a70429e7d67f8339a24b0cbb3e",
+ "version": "prepared-v33-r1"
+}

@@ -1,9 +1,14 @@
 extends Node3D
 ## Visible mechanical assembly. Continuous collision ramp remains the v1 movement support.
 var banks:Array=[]
+var definitions:Array=[]
+var shared_tread:Mesh
+var simulation_time:float=0.
+var nearby_check:float=0.
 var clock:float=0.0
 var paused:bool=false
-var speed:float=.50
+const ES_MOTION=preload("res://escalator_motion_v33.gd")
+var speed:float=ES_MOTION.SURFACE_SPEED
 var material_set:Dictionary
 var samples:Array=[]
 var culled_updates:int=0
@@ -12,43 +17,59 @@ var next_far_update:float=0.0
 func v3(a:Array)->Vector3:return Vector3(a[0],a[1],a[2])
 func setup(manifest:Dictionary,mats:Dictionary)->void:
  material_set=mats
- for data:Dictionary in manifest.escalators:
-  var rise=float(data.rise_m);var run=float(data.run_m);var lo=float(data.low_y) if data.has("low_y") else float(manifest.floors[int(data.levels[0])].height)
-  var c=v3(data.c);c.y=lo;var u=Vector3(data.u[0],0,data.u[1]);var lateral=Vector3(u.z,0,-u.x)
-  var bank:Dictionary={"id":data.id,"direction":1.0 if data.direction=="UP" else -1.0,"c":c,"u":u,"x":lateral,"rise":rise,"run":run,"path":[]}
-  var points:PackedVector3Array=[]
-  # Top centers, arc returns and underside. Turnaround stays within original 14.8m shaft.
-  var end:float=run*.5+1.10;var radius:float=.30
-  for i in range(141):
-   var s=lerp(-end,end,i/140.0);points.append(Vector3(0,height(s,bank),s))
-  for i in range(1,21):
-   var a=PI/2-i*PI/20;points.append(Vector3(0,rise-radius+sin(a)*radius,end+cos(a)*radius))
-  for i in range(1,141):
-   var s=lerp(end,-end,i/140.0);points.append(Vector3(0,height(s,bank)-2*radius,s))
-  for i in range(1,21):
-   var a=-PI/2-i*PI/20;points.append(Vector3(0,-radius+sin(a)*radius,-end+cos(a)*radius))
-  var distance:float=0.0;var previous=points[0];var distance_table:Array=[0.0]
-  for i in range(1,points.size()):distance+=points[i].distance_to(previous);distance_table.append(distance);previous=points[i]
-  var rubber=ShaderMaterial.new();rubber.shader=load("res://rubber.gdshader");bank.rubber=rubber
-  bank.points=points;bank.distances=distance_table;bank.length=distance;bank.top_length=float(distance_table[140]);bank.top_end=140
-  var count=int(ceil(distance/.4));bank.count=count;bank.pitch=distance/count
-  var instance=MultiMeshInstance3D.new();instance.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF;var mm=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=step_mesh(mats);mm.instance_count=count;instance.multimesh=mm;instance.name=data.id+"_moving_treads";add_child(instance);bank.multimesh=mm
-  # Rubber loop is a smooth elliptic profile, not a flat diagonal strip.
-  for side in[-1,1]:
-   var rail=MeshInstance3D.new();rail.name=data.id+"_continuous_handrail";rail.mesh=rail_mesh(bank,.94*side,rubber);add_child(rail)
-  var comb=MultiMeshInstance3D.new();comb.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF;var comb_mesh=BoxMesh.new();comb_mesh.size=Vector3(.017,.016,.15);comb_mesh.material=mats.yellow
-  var comb_mm=MultiMesh.new();comb_mm.transform_format=MultiMesh.TRANSFORM_3D;comb_mm.mesh=comb_mesh;comb_mm.instance_count=64
-  for side_index in range(2):
-   var side=-1.0 if side_index==0 else 1.0
-   for tooth in range(32):
-    var x=-.615+(tooth+.5)*.0395;var s=side*6.89;var yy=.010+(rise if side>0 else 0.0)
-    var origin=c+lateral*x+u*s+Vector3.UP*yy;comb_mm.set_instance_transform(side_index*32+tooth,Transform3D(Basis(lateral,Vector3.UP,u),origin))
-  comb.multimesh=comb_mm;comb.name=data.id+"_interleaved_comb_teeth";add_child(comb)
-  for side in[-1,1]:
-   var plate=MeshInstance3D.new();plate.name=data.id+"_comb_backing_plate";var plate_mesh=BoxMesh.new();plate_mesh.size=Vector3(1.40,.035,.24);plate_mesh.material=mats.metal;plate.mesh=plate_mesh;plate.transform=Transform3D(Basis(lateral,Vector3.UP,u),c+u*(side*6.89)+Vector3.UP*(-.010+(rise if side>0 else 0.0)));add_child(plate)
-  add_truss_housing(bank,mats)
-  banks.append(bank)
+ definitions=manifest.escalators
+ ensure_near(get_viewport().get_camera_3d().global_position if get_viewport().get_camera_3d()!=null else Vector3.ZERO)
+
  set_time(0.0)
+func create_bank(data:Dictionary)->void:
+ var mats:Dictionary=material_set
+ var rise=float(data.rise_m);var run=float(data.run_m);var lo=float(data.get("low_y",data.c[1]))
+ var c=v3(data.c);c.y=lo;var u=Vector3(data.u[0],0,data.u[1]);var lateral=Vector3(u.z,0,-u.x)
+ var bank:Dictionary={"id":data.id,"direction":1.0 if data.direction=="UP" else -1.0,"c":c,"u":u,"x":lateral,"rise":rise,"run":run,"path":[],"force_initial":true}
+ var points:PackedVector3Array=[]
+ # Top centers, arc returns and underside. Turnaround stays within original 14.8m shaft.
+ var end:float=run*.5+1.10;var radius:float=.30
+ for i in range(141):
+  var s=lerp(-end,end,i/140.0);points.append(Vector3(0,height(s,bank),s))
+ for i in range(1,21):
+  var a=PI/2-i*PI/20;points.append(Vector3(0,rise-radius+sin(a)*radius,end+cos(a)*radius))
+ for i in range(1,141):
+  var s=lerp(end,-end,i/140.0);points.append(Vector3(0,height(s,bank)-2*radius,s))
+ for i in range(1,21):
+  var a=-PI/2-i*PI/20;points.append(Vector3(0,-radius+sin(a)*radius,-end+cos(a)*radius))
+ var distance:float=0.0;var previous=points[0];var distance_table:Array=[0.0]
+ for i in range(1,points.size()):distance+=points[i].distance_to(previous);distance_table.append(distance);previous=points[i]
+ var rubber=ShaderMaterial.new();rubber.shader=load("res://rubber.gdshader");bank.rubber=rubber
+ bank.points=points;bank.distances=distance_table;bank.length=distance;bank.top_length=float(distance_table[140]);bank.top_end=140
+ var count=int(ceil(distance/.4));bank.count=count;bank.pitch=distance/count
+ var instance=MultiMeshInstance3D.new();instance.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF;var mm=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=shared_step_mesh(mats);mm.instance_count=count;instance.multimesh=mm;instance.name=data.id+"_moving_treads";add_child(instance);bank.multimesh=mm
+ # Rubber loop is a smooth elliptic profile, not a flat diagonal strip.
+ for side in[-1,1]:
+  var rail=MeshInstance3D.new();rail.name=data.id+"_continuous_handrail";rail.mesh=rail_mesh(bank,.94*side,rubber);add_child(rail)
+ var comb=MultiMeshInstance3D.new();comb.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF;var comb_mesh=BoxMesh.new();comb_mesh.size=Vector3(.017,.016,.15);comb_mesh.material=mats.yellow
+ var comb_mm=MultiMesh.new();comb_mm.transform_format=MultiMesh.TRANSFORM_3D;comb_mm.mesh=comb_mesh;comb_mm.instance_count=64
+ for side_index in range(2):
+  var side=-1.0 if side_index==0 else 1.0
+  for tooth in range(32):
+   var x=-.615+(tooth+.5)*.0395;var s=side*6.89;var yy=.010+(rise if side>0 else 0.0)
+   var origin=c+lateral*x+u*s+Vector3.UP*yy;comb_mm.set_instance_transform(side_index*32+tooth,Transform3D(Basis(lateral,Vector3.UP,u),origin))
+ comb.multimesh=comb_mm;comb.name=data.id+"_interleaved_comb_teeth";add_child(comb)
+ for side in[-1,1]:
+  var plate=MeshInstance3D.new();plate.name=data.id+"_comb_backing_plate";var plate_mesh=BoxMesh.new();plate_mesh.size=Vector3(1.40,.035,.24);plate_mesh.material=mats.metal;plate.mesh=plate_mesh;plate.transform=Transform3D(Basis(lateral,Vector3.UP,u),c+u*(side*6.89)+Vector3.UP*(-.010+(rise if side>0 else 0.0)));add_child(plate)
+ add_truss_housing(bank,mats)
+ banks.append(bank)
+ for part:GeometryInstance3D in find_children("*","GeometryInstance3D",true,false):
+  if part.visibility_range_end==0.:part.visibility_range_end=125.;part.visibility_range_end_margin=15.
+func ensure_near(point:Vector3)->void:
+ var added:bool=false
+ for data:Dictionary in definitions:
+  var centre=v3(data.c)+Vector3.UP*float(data.rise_m)*.5
+  if Vector2(centre.x-point.x,centre.z-point.z).length()>150. or absf(centre.y-point.y)>17.:continue
+  if banks.any(func(b):return b.id==data.id):continue
+  create_bank(data);added=true
+ if added:set_time(clock)
+func _physics_process(dt:float)->void:
+ if not paused:simulation_time+=dt
 func add_truss_housing(bank:Dictionary,mats:Dictionary)->void:
  # Return treads and landing pits belong inside a real closed machinery casing.
  # Their 0.60m return loop used to protrude through the next floor's underside.
@@ -86,8 +107,9 @@ func set_time(t:float)->void:
  clock=t
  for b:Dictionary in banks:
   var camera=get_viewport().get_camera_3d()
-  if t>0 and camera!=null and camera.global_position.distance_to(b.c)>65 and int(clock*4)==int((clock-get_process_delta_time())*4):
+  if t>0 and camera!=null and not b.get("force_initial",false) and camera.global_position.distance_to(b.c)>65 and int(clock*4)==int((clock-get_process_delta_time())*4):
    culled_updates+=1;continue
+  b.force_initial=false
   visible_updates+=1
   var mm:MultiMesh=b.multimesh
   b.rubber.set_shader_parameter("belt_offset",clock*speed*float(b.direction))
@@ -98,10 +120,18 @@ func set_time(t:float)->void:
    var yaw=Basis(b.x,Vector3.UP,b.u)
    mm.set_instance_transform(i,Transform3D(yaw*Basis(Vector3.RIGHT,float(point.angle)),position))
 func _process(dt:float)->void:
- if not paused:set_time(clock+dt)
+ nearby_check+=dt
+ if nearby_check>.25:
+  nearby_check=0.
+  var cam=get_viewport().get_camera_3d()
+  if cam!=null:ensure_near(cam.global_position)
+ if not paused:set_time(maxf(0.,simulation_time-(1.-Engine.get_physics_interpolation_fraction())*get_physics_process_delta_time()))
 func add_box(st:SurfaceTool,c:Vector3,size:Vector3)->void:
  var mesh=BoxMesh.new();mesh.size=size
  st.append_from(mesh,0,Transform3D(Basis.IDENTITY,c))
+func shared_step_mesh(mats:Dictionary)->Mesh:
+ if shared_tread==null:shared_tread=step_mesh(mats)
+ return shared_tread
 func step_mesh(mats:Dictionary)->ArrayMesh:
  var output=ArrayMesh.new()
  var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)

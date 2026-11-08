@@ -30,7 +30,7 @@ func setup(g)->void:
  lift_panel=PanelContainer.new();lift_panel.position=Vector2(710,180);lift_panel.size=Vector2(500,650);root.add_child(lift_panel);lift_buttons=VBoxContainer.new();lift_buttons.add_theme_constant_override("separation",12);lift_panel.add_child(lift_buttons);lift_panel.visible=false
 func pause_player(value:bool)->void:
  if game.hud!=null:game.hud.visible=not value
- game.player.input_enabled=not value;game.player.velocity=Vector3.ZERO;game.player.set_physics_process(not value);game.elevators.set_physics_process(not value);game.animator.paused=value
+ game.player.input_enabled=not value;game.player.reset_motion_state();game.player.set_physics_process(not value);game.elevators.set_physics_process(not value);game.animator.paused=value
  Input.mouse_mode=Input.MOUSE_MODE_VISIBLE if value else Input.MOUSE_MODE_CAPTURED
 func close()->void:
  overlay="";map.visible=false;settings_panel.visible=false;lift_panel.visible=false;pause_player(false)
