@@ -15,7 +15,7 @@ func setup(g)->void:
    st.generate_normals();var mesh:Mesh=st.commit();var mat=StandardMaterial3D.new();mat.albedo_color=Color("#788283");mat.metallic=.68;mat.roughness=.31;mat.cull_mode=BaseMaterial3D.CULL_DISABLED
    var body=StaticBody3D.new();body.name=str(e.id)+"_brushed_inner_skirt";add_child(body);var n=MeshInstance3D.new();n.mesh=mesh;n.material_override=mat;n.visibility_range_end=115.;body.add_child(n);var shape=CollisionShape3D.new();shape.shape=mesh.create_trimesh_shape();shape.shape.backface_collision=true;body.add_child(shape)
   for end:float in [-1.,1.]:
-   var entering:bool=(end<0.)==(e.direction=="UP");var normal:Vector3=u*end;var p:Vector3=c+u*end*6.9+v*.97+Vector3.UP*(.95+(float(e.rise_m)if end>0. else 0.))
+   var entering:bool=(end<0.)==(e.direction=="UP");var normal:Vector3=u*end;var p:Vector3=c+u*end*6.4+v*.97+Vector3.UP*(.70+(float(e.rise_m)if end>0. else 0.))
    var holder=Node3D.new();holder.transform=Transform3D(Basis(Vector3.UP.cross(normal),Vector3.UP,normal),p);add_child(holder)
    var board=MeshInstance3D.new();var face=QuadMesh.new();face.size=Vector2(.35,.42);board.mesh=face;var mat=StandardMaterial3D.new();mat.albedo_color=Color("#f5f5e9");mat.shading_mode=BaseMaterial3D.SHADING_MODE_UNSHADED;board.material_override=mat;holder.add_child(board)
    var icon=Label3D.new();icon.font=g.font;icon.font_size=64 if entering else 28;icon.pixel_size=.0038 if entering else .0028;icon.text="↑"if entering else"進入禁止";icon.modulate=Color("#08764f")if entering else Color("#ae2830");icon.outline_size=0;icon.position=Vector3(0,.04,.005);icon.double_sided=false;holder.add_child(icon)
