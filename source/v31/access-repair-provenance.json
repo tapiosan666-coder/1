@@ -1,0 +1,182 @@
+{
+  "physical_register_local_changes": {
+    "human_playtest": false,
+    "rows": [
+      {
+        "controller": {
+          "checkpoints": [
+            {
+              "on_floor": true,
+              "position": [
+                448.963165283203,
+                0.00094180682208389,
+                -5.95208406448364
+              ]
+            },
+            {
+              "on_floor": true,
+              "position": [
+                448.790557861328,
+                0.000941769627388567,
+                -5.96749591827393
+              ]
+            },
+            {
+              "on_floor": true,
+              "position": [
+                446.048370361328,
+                0.000941787729971111,
+                -6.37977933883667
+              ]
+            },
+            {
+              "on_floor": true,
+              "position": [
+                445.901611328125,
+                0.000941796344704926,
+                -6.11436176300049
+              ]
+            }
+          ],
+          "contact_ticks": 83,
+          "max_vertical_difference_m": 0.000941838603466749,
+          "pass": true,
+          "position": "(445.9016, 0.000942, -6.114362)",
+          "ticks": 83
+        },
+        "fixture_id": "A1F-001-V31-018",
+        "id": "A1F-001",
+        "p": [
+          445.650939941406,
+          0.0179999992251396,
+          -4.82154941558838
+        ],
+        "pass": true,
+        "points": [
+          [
+            449.308386682689,
+            0.0,
+            -5.92125627109651
+          ],
+          [
+            448.830288584138,
+            0.0,
+            -5.96394360132427
+          ],
+          [
+            448.660962174235,
+            0.0,
+            -5.97906203077994
+          ],
+          [
+            445.893249511719,
+            0.0,
+            -6.40309572219849
+          ],
+          [
+            445.828887939453,
+            0.0,
+            -5.98299694061279
+          ]
+        ],
+        "reason": "Register placed beside physically verified customer spine, customer face toward the spine; original walls and backrooms preserved.",
+        "yaw": 2.98956711357613
+      },
+      {
+        "controller": {
+          "checkpoints": [
+            {
+              "on_floor": true,
+              "position": [
+                166.214736938477,
+                0.000940898549742997,
+                39.0891761779785
+              ]
+            },
+            {
+              "on_floor": true,
+              "position": [
+                165.803298950195,
+                0.000940903555601835,
+                38.7712478637695
+              ]
+            },
+            {
+              "on_floor": true,
+              "position": [
+                163.73420715332,
+                0.000941362581215799,
+                38.5598793029785
+              ]
+            },
+            {
+              "on_floor": true,
+              "position": [
+                163.662673950195,
+                0.000941356760449708,
+                38.0886077880859
+              ]
+            }
+          ],
+          "contact_ticks": 79,
+          "max_vertical_difference_m": 0.00094137224368751,
+          "pass": true,
+          "position": "(163.6627, 0.000941, 38.08861)",
+          "ticks": 79
+        },
+        "fixture_id": "B1-010-V31-000",
+        "id": "B1-010",
+        "p": [
+          163.71174621582,
+          0.0179999992251396,
+          36.9501800537109
+        ],
+        "pass": true,
+        "points": [
+          [
+            166.489023846166,
+            0.0,
+            39.3011212898067
+          ],
+          [
+            166.109205726975,
+            0.0,
+            39.0076281570886
+          ],
+          [
+            165.697736136692,
+            0.0,
+            38.6896772933242
+          ],
+          [
+            163.602630615234,
+            0.0,
+            38.5464553833008
+          ],
+          [
+            163.642868041992,
+            0.0,
+            37.9578285217285
+          ]
+        ],
+        "reason": "Register placed beside physically verified customer spine, customer face toward the spine; original walls and backrooms preserved.",
+        "yaw": -0.0682536457013927
+      }
+    ]
+  },
+  "NPC_clearance": {
+    "43_records": 43,
+    "protected_zone_count": 94,
+    "new_fixture_intersections": [],
+    "method": "2D footprint vs original v19 NPC standing/seat/path zone with0.68m clearance; not a full runtime NPC behavior playtest."
+  },
+  "baseline_protection": {
+    "baseline_v30_protected": true,
+    "changed_v30_payload_files": [],
+    "480_store_IDs_unchanged": true,
+    "original_store_records_changed": [],
+    "v31_first_floor_store_count": 139,
+    "separate_from_main_game": true,
+    "method": "SHA256 of every v30 manifest payload; complete original480 ledger equality, sidecar v31 placements are separate."
+  }
+}
