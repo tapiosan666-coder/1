@@ -125,15 +125,9 @@ func _physics_process(dt:float)->void:
    var heading:float=atan2(-direction.x,-direction.z);var angle:float=absf(wrapf(heading-rotation.y,-PI,PI))
    if angle>1.15:desired_speed*=.12
    rotation.y=rotate_toward(rotation.y,heading,dt*1.65)
-   if game!=null and game.shoppers_v18!=null:
-    for other in game.shoppers_v18.actors:
-     if other==self or not other.enabled:continue
-     var diff=other.position-position;diff.y=0
-     if diff.length()<1.0 and diff.dot(direction)>.15:desired_speed*=.35
-   if game!=null and game.player!=null:
-    var diff:Vector3=game.player.position-position;diff.y=0
-    if diff.length()<1.05 and diff.dot(direction)>.15:desired_speed*=.15
- else:rotation.y=rotate_toward(rotation.y,float(behaviour.yaw),dt*1.8)
+   desired_speed *= nearby_people_speed_factor(direction)
+ elif record.role != "walking":
+  rotation.y = rotate_toward(rotation.y, float(behaviour.yaw), dt * 1.8)
  speed_current=move_toward(speed_current,desired_speed,dt*(1.3 if desired_speed>speed_current else 2.0));velocity.x=direction.x*speed_current;velocity.z=direction.z*speed_current;velocity.y=-1. if is_on_floor()else maxf(velocity.y-dt*20,-20.);move_and_slide()
  var delta_actual:Vector3=position-last_position;delta_actual.y=0;var moved:float=delta_actual.length();distance_walked+=moved;minimum_y=minf(minimum_y,position.y);maximum_y=maxf(maximum_y,position.y);gait_phase+=moved/float(record.get("stride_m",.75));motion_weight=move_toward(motion_weight,clampf(moved/maxf(dt,.001)/.75,0.,1.),dt*5.);motion_samples+=1
  if desired_speed>.1 and moved<.001:blocked_time+=dt
@@ -144,6 +138,25 @@ func _physics_process(dt:float)->void:
  if pending_pose_dt>=interval:
   pose(clock,moved>.001);pending_pose_dt=0.;pending_pose_distance=0.
  last_position=position
+# An actor on a balcony or a floor below cannot block this path.
+func person_blocks_path(other_position: Vector3, direction: Vector3, radius: float) -> bool:
+ var relative := other_position - position
+ if absf(relative.y) > 0.90:
+  return false
+ var planar := Vector2(relative.x, relative.z)
+ return planar.length_squared() < radius * radius and planar.dot(Vector2(direction.x, direction.z)) > .15
+
+func nearby_people_speed_factor(direction: Vector3) -> float:
+ if game == null:
+  return 1.0
+ if game.player != null and person_blocks_path(game.player.position, direction, 1.05):
+  return .15
+ if game.shoppers_v18 != null:
+  for other in game.shoppers_v18.actors:
+   if other != self and other.enabled and person_blocks_path(other.position, direction, 1.0):
+    return .35
+ return 1.0
+
 func leg_pose(side:int,foot_y:float,foot_z:float,hip_y:float)->void:
  var l1:float=.45;var l2:float=.44;var dy:float=foot_y-hip_y;var dz:float=foot_z;var distance:float=minf(sqrt(dy*dy+dz*dz),l1+l2-.0001);var along:float=(l1*l1-l2*l2+distance*distance)/(2.*distance);var height:float=sqrt(maxf(0.,l1*l1-along*along));var ny:float=dy/maxf(.0001,sqrt(dy*dy+dz*dz));var nz:float=dz/maxf(.0001,sqrt(dy*dy+dz*dz));var knee_y:float=hip_y+ny*along-nz*height;var knee_z:float=nz*along+ny*height
  var hip:float=atan2(-knee_z,hip_y-knee_y);var shin:float=atan2(-(foot_z-knee_z),knee_y-foot_y)-hip;rig.set_bone_pose_rotation(5+side*2,Quaternion(Vector3.RIGHT,hip));rig.set_bone_pose_rotation(6+side*2,Quaternion(Vector3.RIGHT,shin));rig.set_bone_pose_rotation(10+side,Quaternion(Vector3.RIGHT,-hip-shin))

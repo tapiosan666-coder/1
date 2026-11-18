@@ -14,13 +14,6 @@ func setup(g)->void:
    for i:int in [0,2,1,0,3,2]:st.add_vertex(pts[i])
    st.generate_normals();var mesh:Mesh=st.commit();var mat=StandardMaterial3D.new();mat.albedo_color=Color("#788283");mat.metallic=.68;mat.roughness=.31;mat.cull_mode=BaseMaterial3D.CULL_DISABLED
    var body=StaticBody3D.new();body.name=str(e.id)+"_brushed_inner_skirt";add_child(body);var n=MeshInstance3D.new();n.mesh=mesh;n.material_override=mat;n.visibility_range_end=115.;body.add_child(n);var shape=CollisionShape3D.new();shape.shape=mesh.create_trimesh_shape();shape.shape.backface_collision=true;body.add_child(shape)
-  for end:float in [-1.,1.]:
-   var entering:bool=(end<0.)==(e.direction=="UP");var normal:Vector3=u*end;var p:Vector3=c+u*end*6.4+v*.97+Vector3.UP*(.70+(float(e.rise_m)if end>0. else 0.))
-   var holder=Node3D.new();holder.transform=Transform3D(Basis(Vector3.UP.cross(normal),Vector3.UP,normal),p);add_child(holder)
-   var board=MeshInstance3D.new();var face=QuadMesh.new();face.size=Vector2(.35,.42);board.mesh=face;var mat=StandardMaterial3D.new();mat.albedo_color=Color("#f5f5e9");mat.shading_mode=BaseMaterial3D.SHADING_MODE_UNSHADED;board.material_override=mat;holder.add_child(board)
-   var icon=Label3D.new();icon.font=g.font;icon.font_size=64 if entering else 28;icon.pixel_size=.0038 if entering else .0028;icon.text="↑"if entering else"進入禁止";icon.modulate=Color("#08764f")if entering else Color("#ae2830");icon.outline_size=0;icon.position=Vector3(0,.04,.005);icon.double_sided=false;holder.add_child(icon)
-   var label=Label3D.new();label.font=g.font;label.font_size=34;label.pixel_size=.003;label.text=("上り"if e.direction=="UP"else"下り")if entering else"";label.position=Vector3(0,-.12,.007);label.modulate=Color("#183c36");label.outline_size=0;label.double_sided=false;holder.add_child(label)
-   signs.append({"ES":e.id,"end":"lower"if end<0. else"upper","entry_permitted":entering,"normal":[normal.x,normal.y,normal.z],"p":[p.x,p.y,p.z],"distance_label":false})
  add_transfer_guide(g,1,Vector3(-201.55,5.525,-13.965),Vector3.RIGHT,"3F 上り →   1F 下り ←","← 3F 上り   → 1F 下り")
  add_transfer_guide(g,2,Vector3(-182.45,10.875,-13.965),Vector3.LEFT,"RF 上り →   2F 下り ←","← RF 上り   → 2F 下り")
  report.movement_changed=true;report.collision_changed=true;report.skirt_count=12;report.direction_panels=signs

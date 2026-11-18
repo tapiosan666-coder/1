@@ -1,0 +1,66 @@
+{
+  "replacements": {
+    "A1F-001": {
+      "A1F-001-V31-020": "rivora_orchard_large",
+      "A1F-001-V31-023": "rivora_orchard_large",
+      "A1F-001-V31-026": "rivora_orchard_large",
+      "A1F-001-V31-032": "rivora_orchard_large",
+      "A1F-001-V31-035": "rivora_orchard_large",
+      "A1F-001-V31-047": "rivora_orchard_large",
+      "A1F-001-V31-050": "rivora_orchard_large",
+      "A1F-001-V31-053": "rivora_orchard_large",
+      "A1F-001-V31-056": "rivora_orchard_large",
+      "A1F-001-V31-059": "rivora_orchard_large",
+      "A1F-001-V31-065": "rivora_orchard_large",
+      "A1F-001-V31-019": "rivora_orchard_small",
+      "A1F-001-V31-024": "rivora_orchard_small",
+      "A1F-001-V31-031": "rivora_orchard_small",
+      "A1F-001-V31-037": "rivora_orchard_small",
+      "A1F-001-V31-046": "rivora_orchard_small",
+      "A1F-001-V31-049": "rivora_orchard_small",
+      "A1F-001-V31-063": "rivora_orchard_small",
+      "A1F-001-V31-021": "rivora_citrus",
+      "A1F-001-V31-025": "rivora_citrus",
+      "A1F-001-V31-036": "rivora_citrus",
+      "A1F-001-V31-048": "rivora_citrus",
+      "A1F-001-V31-057": "rivora_citrus",
+      "A1F-001-V31-060": "rivora_citrus",
+      "A1F-001-V31-066": "rivora_citrus",
+      "A1F-001-V31-027": "rivora_pantry",
+      "A1F-001-V31-034": "rivora_pantry",
+      "A1F-001-V31-040": "rivora_pantry",
+      "A1F-001-V31-055": "rivora_pantry",
+      "A1F-001-V31-064": "rivora_pantry",
+      "A1F-001-V31-030": "rivora_bakery",
+      "A1F-001-V31-033": "rivora_bakery",
+      "A1F-001-V31-045": "rivora_bakery",
+      "A1F-001-V31-069": "rivora_bakery"
+    },
+    "A1F-002": {
+      "A1F-002-V31-013": "suvel_audio",
+      "A1F-002-V31-014": "suvel_photo"
+    },
+    "B1-032": {
+      "B1-032-V31-015": "terrune_studio",
+      "B1-032-V31-018": "terrune_studio",
+      "B1-032-V31-016": "terrune_studio_small"
+    }
+  },
+  "stock_by_asset": {
+    "rivora_orchard_large": 48,
+    "rivora_orchard_small": 48,
+    "rivora_citrus": 48,
+    "rivora_pantry": 15,
+    "rivora_bakery": 12,
+    "suvel_audio": 4,
+    "suvel_photo": 6,
+    "terrune_studio": 6,
+    "terrune_studio_small": 6
+  },
+  "description": "The prior fixture IDs, XZ positions, yaw, store routes and polygons, and checkouts are retained. Vertical placement uses the measured v30 finish plus 1 mm. Bound the custom GLB meshes to existing placement envelopes. Furniture colliders are 12-triangle shells inside the existing floor footprints. Original v32 sales data and prepared chunk cache signature remain intact.",
+  "floor_height_by_store": {
+    "A1F-001": 0.011,
+    "A1F-002": 0.011,
+    "B1-032": 0.007
+  }
+}

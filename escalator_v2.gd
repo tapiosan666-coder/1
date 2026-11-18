@@ -1,5 +1,15 @@
 extends Node3D
-## Visible mechanical assembly. Continuous collision ramp remains the v1 movement support.
+## Mechanical assembly and tread transport for the authored escalator definitions.
+const ES_MESH = preload("res://es_mechanical_mesh_v34.gd")
+var shared_machines: Dictionary = {}
+var bank_ids: Dictionary = {}
+var comb_material: Material
+var stainless_material: Material
+var traction_material: Material
+var sign_panel_material: StandardMaterial3D
+var label_font: Font
+var directional_panels: Array[Dictionary] = []
+
 var banks:Array=[]
 var definitions:Array=[]
 var shared_tread:Mesh
@@ -15,153 +25,263 @@ var culled_updates:int=0
 var visible_updates:int=0
 var next_far_update:float=0.0
 func v3(a:Array)->Vector3:return Vector3(a[0],a[1],a[2])
-func setup(manifest:Dictionary,mats:Dictionary)->void:
- material_set=mats
- definitions=manifest.escalators
- ensure_near(get_viewport().get_camera_3d().global_position if get_viewport().get_camera_3d()!=null else Vector3.ZERO)
+func setup(manifest: Dictionary, mats: Dictionary) -> void:
+ material_set = mats
+ definitions = manifest.escalators
+ label_font = load("res://assets/NotoSansCJKjp-Regular.otf")
+ traction_material = ES_MESH.material(Color("#283338"), .45, .58)
+ stainless_material = ES_MESH.material(Color("#aeb7b7"), .68, .36)
+ comb_material = ES_MESH.material(Color("#b88c38"), .51, .47)
+ sign_panel_material = StandardMaterial3D.new()
+ sign_panel_material.albedo_color = Color("#15242a")
+ sign_panel_material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+ shared_tread = ES_MESH.tread(traction_material, mats.yellow)
+ var camera := get_viewport().get_camera_3d()
+ ensure_near(camera.global_position if camera != null else Vector3.ZERO)
 
- set_time(0.0)
-func create_bank(data:Dictionary)->void:
- var mats:Dictionary=material_set
- var rise=float(data.rise_m);var run=float(data.run_m);var lo=float(data.get("low_y",data.c[1]))
- var c=v3(data.c);c.y=lo;var u=Vector3(data.u[0],0,data.u[1]);var lateral=Vector3(u.z,0,-u.x)
- var bank:Dictionary={"id":data.id,"direction":1.0 if data.direction=="UP" else -1.0,"c":c,"u":u,"x":lateral,"rise":rise,"run":run,"path":[],"force_initial":true}
- var points:PackedVector3Array=[]
- # Top centers, arc returns and underside. Turnaround stays within original 14.8m shaft.
- var end:float=run*.5+1.10;var radius:float=.30
- for i in range(141):
-  var s=lerp(-end,end,i/140.0);points.append(Vector3(0,height(s,bank),s))
- for i in range(1,21):
-  var a=PI/2-i*PI/20;points.append(Vector3(0,rise-radius+sin(a)*radius,end+cos(a)*radius))
- for i in range(1,141):
-  var s=lerp(end,-end,i/140.0);points.append(Vector3(0,height(s,bank)-2*radius,s))
- for i in range(1,21):
-  var a=-PI/2-i*PI/20;points.append(Vector3(0,-radius+sin(a)*radius,-end+cos(a)*radius))
- var distance:float=0.0;var previous=points[0];var distance_table:Array=[0.0]
- for i in range(1,points.size()):distance+=points[i].distance_to(previous);distance_table.append(distance);previous=points[i]
- var rubber=ShaderMaterial.new();rubber.shader=load("res://rubber.gdshader");bank.rubber=rubber
- bank.points=points;bank.distances=distance_table;bank.length=distance;bank.top_length=float(distance_table[140]);bank.top_end=140
- var count=int(ceil(distance/.4));bank.count=count;bank.pitch=distance/count
- var instance=MultiMeshInstance3D.new();instance.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF;var mm=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=shared_step_mesh(mats);mm.instance_count=count;instance.multimesh=mm;instance.name=data.id+"_moving_treads";add_child(instance);bank.multimesh=mm
- # Rubber loop is a smooth elliptic profile, not a flat diagonal strip.
- for side in[-1,1]:
-  var rail=MeshInstance3D.new();rail.name=data.id+"_continuous_handrail";rail.mesh=rail_mesh(bank,.94*side,rubber);add_child(rail)
- var comb=MultiMeshInstance3D.new();comb.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF;var comb_mesh=BoxMesh.new();comb_mesh.size=Vector3(.017,.016,.15);comb_mesh.material=mats.yellow
- var comb_mm=MultiMesh.new();comb_mm.transform_format=MultiMesh.TRANSFORM_3D;comb_mm.mesh=comb_mesh;comb_mm.instance_count=64
- for side_index in range(2):
-  var side=-1.0 if side_index==0 else 1.0
-  for tooth in range(32):
-   var x=-.615+(tooth+.5)*.0395;var s=side*6.89;var yy=.010+(rise if side>0 else 0.0)
-   var origin=c+lateral*x+u*s+Vector3.UP*yy;comb_mm.set_instance_transform(side_index*32+tooth,Transform3D(Basis(lateral,Vector3.UP,u),origin))
- comb.multimesh=comb_mm;comb.name=data.id+"_interleaved_comb_teeth";add_child(comb)
- for side in[-1,1]:
-  var plate=MeshInstance3D.new();plate.name=data.id+"_comb_backing_plate";var plate_mesh=BoxMesh.new();plate_mesh.size=Vector3(1.40,.035,.24);plate_mesh.material=mats.metal;plate.mesh=plate_mesh;plate.transform=Transform3D(Basis(lateral,Vector3.UP,u),c+u*(side*6.89)+Vector3.UP*(-.010+(rise if side>0 else 0.0)));add_child(plate)
- add_truss_housing(bank,mats)
+func machine_resources(rise: float, run: float) -> Dictionary:
+ var key := Vector2(rise, run)
+ if not shared_machines.has(key):
+  shared_machines[key] = {
+   "rail": ES_MESH.rail(rise, run),
+   "case": ES_MESH.machine_case(rise, run, stainless_material, material_set.metal, comb_material),
+   "collider": ES_MESH.housing_collision(rise, run),
+  }
+ return shared_machines[key]
+
+func create_bank(data: Dictionary) -> void:
+ var rise := float(data.rise_m)
+ var run := float(data.run_m)
+ var centre := v3(data.c)
+ centre.y = float(data.get("low_y", centre.y))
+ var axis := Vector3(data.u[0], 0., data.u[1]).normalized()
+ # Local +X is the left flank when looking from the low landing toward the upper level.
+ var lateral := Vector3(axis.z, 0., -axis.x)
+ var yaw := Basis(lateral, Vector3.UP, axis)
+ var direction := 1.0 if data.direction == "UP" else -1.0
+ var bank: Dictionary = {"id": data.id, "direction": direction, "c": centre, "u": axis, "x": lateral, "rise": rise, "run": run}
+ var end := run * .5 + 1.12
+ var half := run * .5
+ var return_radius := .30
+ var points: PackedVector3Array = [Vector3(0., 0., -end), Vector3(0., 0., -half), Vector3(0., rise, half), Vector3(0., rise, end)]
+ var angles: PackedFloat32Array = [0., 0., 0., 0.]
+ # The flat/sloping track knots are exact at the support mesh's transition points.
+ for i: int in range(1, 19):
+  var a := PI * float(i) / 18
+  points.append(Vector3(0., rise - return_radius + cos(a) * return_radius, end + sin(a) * return_radius))
+  angles.append(a)
+ points.append(Vector3(0., rise - 2. * return_radius, half));angles.append(PI)
+ points.append(Vector3(0., -2. * return_radius, -half));angles.append(PI)
+ points.append(Vector3(0., -2. * return_radius, -end));angles.append(PI)
+ for i: int in range(1, 19):
+  var a := PI * float(i) / 18
+  points.append(Vector3(0., -return_radius - cos(a) * return_radius, -end - sin(a) * return_radius))
+  angles.append(PI + a)
+ var distances: PackedFloat32Array = [0.]
+ for i: int in range(1, points.size()):
+  distances.append(distances[i - 1] + points[i - 1].distance_to(points[i]))
+ var length := float(distances[-1])
+ var count := ceili(length / .4)
+ bank.merge({"points": points, "distances": distances, "angles": angles, "top_length": distances[3], "top_end": 3, "length": length, "count": count, "pitch": length / count})
+ var assembly := Node3D.new()
+ assembly.name = str(data.id) + "_Assembly"
+ assembly.transform = Transform3D(yaw, centre)
+ add_child(assembly)
+ var local_machine := machine_resources(rise, run)
+ var body := StaticBody3D.new()
+ body.name = str(data.id) + "_enclosed_truss_and_landing_pit"
+ assembly.add_child(body)
+ var shape := CollisionShape3D.new()
+ shape.shape = local_machine.collider
+ body.add_child(shape)
+ var casing := MeshInstance3D.new()
+ casing.mesh = local_machine.case
+ casing.visibility_range_end = 125.
+ casing.visibility_range_end_margin = 15.
+ body.add_child(casing)
+ var rail := MeshInstance3D.new()
+ rail.name = str(data.id) + "_continuous_handrail"
+ rail.mesh = local_machine.rail
+ var rubber := ShaderMaterial.new()
+ rubber.shader = preload("res://rubber.gdshader")
+ rail.material_override = rubber
+ rail.visibility_range_end = 125.
+ rail.visibility_range_end_margin = 15.
+ assembly.add_child(rail)
+ var treads := MultiMeshInstance3D.new()
+ treads.name = str(data.id) + "_moving_treads"
+ treads.physics_interpolation_mode = Node.PHYSICS_INTERPOLATION_MODE_OFF
+ treads.visibility_range_end = 125.
+ treads.visibility_range_end_margin = 15.
+ var multimesh := MultiMesh.new()
+ multimesh.transform_format = MultiMesh.TRANSFORM_3D
+ multimesh.mesh = shared_tread
+ multimesh.instance_count = count
+ multimesh.custom_aabb = AABB(Vector3(-.8, -.9, -end - .63), Vector3(1.6, rise + 1.2, (end + .63) * 2.))
+ treads.multimesh = multimesh
+ assembly.add_child(treads)
+ bank.merge({"rubber": rubber, "multimesh": multimesh, "next_update": 0., "assembly": assembly})
+ for side: float in [-1., 1.]:
+  mount_direction_panel(assembly, bank, side)
  banks.append(bank)
- for part:GeometryInstance3D in find_children("*","GeometryInstance3D",true,false):
-  if part.visibility_range_end==0.:part.visibility_range_end=125.;part.visibility_range_end_margin=15.
-func ensure_near(point:Vector3)->void:
- var added:bool=false
- for data:Dictionary in definitions:
-  var centre=v3(data.c)+Vector3.UP*float(data.rise_m)*.5
-  if Vector2(centre.x-point.x,centre.z-point.z).length()>150. or absf(centre.y-point.y)>17.:continue
-  if banks.any(func(b):return b.id==data.id):continue
-  create_bank(data);added=true
- if added:set_time(clock)
-func _physics_process(dt:float)->void:
- if not paused:simulation_time+=dt
-func add_truss_housing(bank:Dictionary,mats:Dictionary)->void:
- # Return treads and landing pits belong inside a real closed machinery casing.
- # Their 0.60m return loop used to protrude through the next floor's underside.
- var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
- var half:float=bank.run*.5;var end:float=half+1.45;var ss:Array=[-end,-half,half,end];var width:float=.77
- for i in range(ss.size()-1):
-  var a:float=ss[i];var b:float=ss[i+1];var ya:float=height(a,bank);var yb:float=height(b,bank)
-  for side in[-1,1]:housing_quad(st,[Vector3(side*width,ya-.84,a),Vector3(side*width,yb-.84,b),Vector3(side*width,yb-.025,b),Vector3(side*width,ya-.025,a)],bank)
-  housing_quad(st,[Vector3(-width,ya-.84,a),Vector3(width,ya-.84,a),Vector3(width,yb-.84,b),Vector3(-width,yb-.84,b)],bank)
- for z in[-end,end]:
-  var yy:float=height(z,bank);housing_quad(st,[Vector3(-width,yy-.84,z),Vector3(width,yy-.84,z),Vector3(width,yy-.025,z),Vector3(-width,yy-.025,z)],bank)
- st.generate_normals();var material=StandardMaterial3D.new();material.resource_name="V11_enclosed_escalator_truss";material.albedo_color=Color(.43,.45,.47);material.metallic=.72;material.roughness=.33;material.cull_mode=BaseMaterial3D.CULL_DISABLED;st.set_material(material);var mesh:Mesh=st.commit();var body=StaticBody3D.new();body.name=bank.id+"_enclosed_truss_and_landing_pit";add_child(body)
- var visible=MeshInstance3D.new();visible.mesh=mesh;visible.gi_mode=GeometryInstance3D.GI_MODE_STATIC;body.add_child(visible)
- var collision=CollisionShape3D.new();collision.shape=mesh.create_trimesh_shape();collision.shape.backface_collision=true;body.add_child(collision)
-func housing_quad(st:SurfaceTool,points:Array,bank:Dictionary)->void:
- for i in[0,1,2,0,2,3]:
-  var p:Vector3=points[i];st.set_uv(Vector2(p.z,p.y));st.add_vertex(bank.c+bank.x*p.x+Vector3.UP*p.y+bank.u*p.z)
+ bank_ids[data.id] = true
+ update_bank(bank, clock)
+
+func mount_direction_panel(assembly: Node3D, bank: Dictionary, side: float) -> void:
+ var entering: bool = (side < 0.) == (bank.direction > 0.)
+ var upper: bool = side > 0.
+ var destination: String = "上り" if bank.direction > 0. else "下り"
+ var holder := Node3D.new()
+ holder.name = "UpperDirection" if upper else "LowerDirection"
+ # The sign's back sits on the fixed balustrade return, below the moving grip.
+ # It is offset away from the centre of the 1.30 m tread.
+ holder.position = Vector3(-.974, .70 + (float(bank.rise) if upper else 0.), side * (float(bank.run) * .5 + .50))
+ holder.rotation.y = 0. if upper else PI
+ assembly.add_child(holder)
+ var panel := MeshInstance3D.new()
+ var shell := BoxMesh.new()
+ shell.size = Vector3(.31, .31, .048)
+ shell.material = sign_panel_material
+ panel.mesh = shell
+ panel.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+ panel.visibility_range_end = 30.
+ holder.add_child(panel)
+ var clamp := MeshInstance3D.new()
+ var stem := BoxMesh.new()
+ stem.size = Vector3(.06, .41, .065)
+ stem.material = stainless_material
+ clamp.mesh = stem
+ clamp.position.y = -.35
+ clamp.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+ clamp.visibility_range_end = 30.
+ holder.add_child(clamp)
+ var indicator := Label3D.new()
+ indicator.font = label_font
+ indicator.font_size = 68
+ indicator.pixel_size = .0027
+ indicator.text = "↑" if entering else "⊖"
+ indicator.position = Vector3(0., .041, .0255)
+ indicator.modulate = Color("#9ff6cc") if entering else Color("#ffaba2")
+ indicator.outline_size = 0
+ indicator.double_sided = false
+ indicator.visibility_range_end = 30.
+ holder.add_child(indicator)
+ var caption := Label3D.new()
+ caption.font = label_font
+ caption.font_size = 36 if entering else 24
+ caption.pixel_size = .0025
+ caption.text = destination if entering else "進入禁止"
+ caption.position = Vector3(0., -.091, .0255)
+ caption.modulate = Color("#f2f7ee")
+ caption.outline_size = 0
+ caption.double_sided = false
+ caption.visibility_range_end = 30.
+ holder.add_child(caption)
+ directional_panels.append({"id": bank.id, "end": "upper" if upper else "lower", "entry": entering, "panel": caption.text, "floor_relative_y_m": .70, "distance_label": false})
+
+func ensure_near(point: Vector3) -> void:
+ for data: Dictionary in definitions:
+  if bank_ids.has(data.id):
+   continue
+  var centre := v3(data.c) + Vector3.UP * float(data.rise_m) * .5
+  if Vector2(centre.x - point.x, centre.z - point.z).length_squared() > 150. * 150. or absf(centre.y - point.y) > 17.:
+   continue
+  create_bank(data)
+
+func _physics_process(dt: float) -> void:
+ if not paused:
+  simulation_time += dt
+
 func height(s:float,b:Dictionary)->float:
  var half:float=b.run*.5
  return float(b.rise)*clamp((s+half)/float(b.run),0.0,1.0)
-func at_distance(bank:Dictionary,distance:float)->Dictionary:
- var distances:Array=bank.distances;var points:PackedVector3Array=bank.points
- var d=fposmod(distance,float(bank.length));var low:int=0;var high:int=distances.size()-1
- while low+1<high:
-  var m=(low+high)/2
-  if distances[m]<=d:low=m
-  else:high=m
- var f=(d-float(distances[low]))/max(.00001,float(distances[high])-float(distances[low]));var local=points[low].lerp(points[high],f)
- var angle:float=0.0
- if low>140 and low<=160:angle=-(low-140)*PI/20
- elif low>160 and low<=300:angle=-PI
- elif low>300:angle=-PI-(low-300)*PI/20
- return {"local":local,"angle":angle,"index":low}
-func set_time(t:float)->void:
- clock=t
- for b:Dictionary in banks:
-  var camera=get_viewport().get_camera_3d()
-  if t>0 and camera!=null and not b.get("force_initial",false) and camera.global_position.distance_to(b.c)>65 and int(clock*4)==int((clock-get_process_delta_time())*4):
-   culled_updates+=1;continue
-  b.force_initial=false
-  visible_updates+=1
-  var mm:MultiMesh=b.multimesh
-  b.rubber.set_shader_parameter("belt_offset",clock*speed*float(b.direction))
-  for i in range(b.count):
-   var d=float(i)*float(b.pitch)+clock*speed*float(b.direction);var point:Dictionary=at_distance(b,d);var local:Vector3=point.local
-   var position:Vector3=b.c+b.x*local.x+Vector3.UP*local.y+b.u*local.z
-   # Yaw aligns bank to shaft. Top treads remain horizontal; return rotates under enclosed truss.
-   var yaw=Basis(b.x,Vector3.UP,b.u)
-   mm.set_instance_transform(i,Transform3D(yaw*Basis(Vector3.RIGHT,float(point.angle)),position))
-func _process(dt:float)->void:
- nearby_check+=dt
- if nearby_check>.25:
-  nearby_check=0.
-  var cam=get_viewport().get_camera_3d()
-  if cam!=null:ensure_near(cam.global_position)
- if not paused:set_time(maxf(0.,simulation_time-(1.-Engine.get_physics_interpolation_fraction())*get_physics_process_delta_time()))
-func add_box(st:SurfaceTool,c:Vector3,size:Vector3)->void:
- var mesh=BoxMesh.new();mesh.size=size
- st.append_from(mesh,0,Transform3D(Basis.IDENTITY,c))
-func shared_step_mesh(mats:Dictionary)->Mesh:
- if shared_tread==null:shared_tread=step_mesh(mats)
- return shared_tread
-func step_mesh(mats:Dictionary)->ArrayMesh:
- var output=ArrayMesh.new()
- var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
- # Horizontal ribbed tread with a genuine vertical riser, inner flanges and a lower curved lip.
- add_box(st,Vector3(0,-.022,0),Vector3(1.30,.044,.37))
- add_box(st,Vector3(0,-.105,-.183),Vector3(1.30,.19,.014))
- for x in[-.62,.62]:add_box(st,Vector3(x,-.11,0),Vector3(.022,.17,.35))
- st.set_material(mats.step);st.generate_normals();st.commit(output)
- st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
- for i in range(32):
-  var x=-.615+i*.0395;add_box(st,Vector3(x,.003,0),Vector3(.010,.006,.355))
- st.set_material(mats.metal);st.generate_normals();st.commit(output)
- st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
- add_box(st,Vector3(0,.007,-.176),Vector3(1.30,.008,.013))
- for x in[-.64,.64]:add_box(st,Vector3(x,.007,0),Vector3(.013,.008,.35))
- st.set_material(mats.yellow);st.generate_normals();st.commit(output);return output
-func rail_mesh(b:Dictionary,offset:float,mat:Material)->ArrayMesh:
- var st=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
- var points:PackedVector3Array=b.points;var sides:int=10
- for i in range(points.size()-1):
-  var a=points[i]+Vector3(offset,1.02,0);var bb=points[i+1]+Vector3(offset,1.02,0)
-  var dir=(bb-a).normalized();var cross=Vector3(0,dir.z,-dir.y).normalized()
-  for j in range(sides):
-   var a0=j*TAU/sides;var a1=(j+1)*TAU/sides
-   var q0=Vector3.RIGHT*cos(a0)*.053+cross*sin(a0)*.037;var q1=Vector3.RIGHT*cos(a1)*.053+cross*sin(a1)*.037
-   var coords:Array=[a+q0,bb+q0,bb+q1,a+q1]
-   for k in[0,2,1,0,3,2]:
-    var local:Vector3=coords[k];var world:Vector3=b.c+b.x*local.x+Vector3.UP*local.y+b.u*local.z
-    st.set_uv(Vector2(float(j)/sides,float(b.distances[i])));st.add_vertex(world)
- st.set_material(mat);st.generate_normals();st.generate_tangents();return st.commit()
+func sample_track(bank: Dictionary, distance: float) -> Vector4:
+ var distances: PackedFloat32Array = bank.distances
+ var points: PackedVector3Array = bank.points
+ var angles: PackedFloat32Array = bank.angles
+ var d := fposmod(distance, float(bank.length))
+ var low := 0
+ var high := distances.size() - 1
+ while low + 1 < high:
+  var mid := (low + high) / 2
+  if distances[mid] <= d:
+   low = mid
+  else:
+   high = mid
+ var f := (d - distances[low]) / maxf(.00001, distances[high] - distances[low])
+ var local := points[low].lerp(points[high], f)
+ return Vector4(local.z, local.y, lerpf(angles[low], angles[high], f), float(low))
+
+func at_distance(bank: Dictionary, distance: float) -> Dictionary:
+ var sample := sample_track(bank, distance)
+ return {"local": Vector3(0., sample.y, sample.x), "angle": sample.z, "index": int(sample.w)}
+
+func update_bank(bank: Dictionary, t: float) -> void:
+ var count: int = bank.count
+ var pitch: float = bank.pitch
+ var belt_distance := t * speed * float(bank.direction)
+ var multimesh: MultiMesh = bank.multimesh
+ var data := PackedFloat32Array()
+ data.resize(count * 12)
+ bank.rubber.set_shader_parameter("belt_offset", belt_distance)
+ for i: int in count:
+  var d := i * pitch + belt_distance
+  var point := sample_track(bank, d)
+  var angle := point.z
+  var stretch := pitch / .4
+  var tread_y := point.y
+  if point.w < float(bank.top_end):
+   # At a floor/slope transition keep adjacent treads at a uniform projected
+   # pitch. This avoids the visible gap or overlap left by a fixed tread depth.
+   var before := sample_track(bank, d - pitch * .5)
+   var after := sample_track(bank, d + pitch * .5)
+   stretch = clampf((after.x - before.x) / .4, .60, 1.04)
+   # Set the level plateau above the highest support under its footprint. The
+   # controller keeps a continuous contact plane; the visible stair top and
+   # riser stay intact and do not intersect the baked support surface.
+   tread_y = height(point.x + .20 * stretch, bank)
+  var a := i * 12
+  var sine := sin(angle)
+  var cosine := cos(angle)
+  data[a] = 1.
+  data[a + 5] = cosine
+  data[a + 6] = -sine * stretch
+  data[a + 7] = tread_y
+  data[a + 9] = sine
+  data[a + 10] = cosine * stretch
+  data[a + 11] = point.x
+ multimesh.buffer = data
+ visible_updates += 1
+
+func set_time(t: float) -> void:
+ clock = t
+ for bank: Dictionary in banks:
+  update_bank(bank, t)
+  bank.next_update = t
+
+func _process(dt: float) -> void:
+ nearby_check += dt
+ var camera := get_viewport().get_camera_3d()
+ if nearby_check > .25:
+  nearby_check = 0.
+  if camera != null:
+   ensure_near(camera.global_position)
+ if paused:
+  return
+ clock = maxf(0., simulation_time - (1. - Engine.get_physics_interpolation_fraction()) * get_physics_process_delta_time())
+ for bank: Dictionary in banks:
+  var delta := (Vector3(bank.c) + Vector3.UP * float(bank.rise) * .5) - camera.global_position if camera != null else Vector3.ZERO
+  var distance_sq := delta.length_squared()
+  if distance_sq > 130. * 130.:
+   culled_updates += 1
+   continue
+  var interval := 0. if distance_sq < 40. * 40. else 1. / 24. if distance_sq < 75. * 75. else 1. / 12.
+  if clock < float(bank.next_update) and interval > 0.:
+   culled_updates += 1
+   continue
+  bank.next_update = clock + interval
+  update_bank(bank, clock)
+
 func audit()->Dictionary:
  var checks:Array=[]
  for b:Dictionary in banks:

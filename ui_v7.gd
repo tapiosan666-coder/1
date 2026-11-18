@@ -8,14 +8,15 @@ var settings
 var resolution:OptionButton
 var caps:OptionButton
 var vsync:CheckButton
+var graphics:OptionButton
 var overlay:String=""
 var lift_index:int=-1
 func setup(g)->void:
  game=g;settings=load("res://settings_v7.gd").new();settings.restore()
  var theme=Theme.new();theme.default_font=g.font;theme.default_font_size=22
  var root=Control.new();root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);root.mouse_filter=Control.MOUSE_FILTER_IGNORE;root.theme=theme;add_child(root)
- map=load("res://map_v7.gd").new();root.add_child(map);map.setup(g.read_json("res://source/v22/map-data-integrated.json"if g.a_continuous_v22 else"res://source/v22/map-data-combined.json"if g.c_open_proposal and g.es_site_proposal else"res://source/v15/map-data-C-option.json"if g.c_open_proposal else"res://source/v15/map-data-ES-option.json"if g.es_site_proposal else"res://source/v13/map-data.json"),g.player,g.font);map.visible=false
- settings_panel=PanelContainer.new();settings_panel.position=Vector2(555,235);settings_panel.size=Vector2(810,600);root.add_child(settings_panel);var style=StyleBoxFlat.new();style.bg_color=Color(.045,.065,.08,.98);style.content_margin_left=24;style.content_margin_right=24;style.content_margin_top=24;style.content_margin_bottom=24;style.corner_radius_top_left=12;style.corner_radius_top_right=12;style.corner_radius_bottom_left=12;style.corner_radius_bottom_right=12;settings_panel.add_theme_stylebox_override("panel",style)
+ map=load("res://map_v7.gd").new();root.add_child(map);map.setup(g.read_json("res://source/v22/map-data-integrated.json"if g.a_continuous_v22 else"res://source/v22/map-data-combined.json"if g.c_open_proposal and g.es_site_proposal else"res://source/v15/map-data-C-option.json"if g.c_open_proposal else"res://source/v15/map-data-ES-option.json"if g.es_site_proposal else"res://source/v13/map-data.json"),g.player,g.font,g.brand_registry);map.close_requested.connect(close);map.visible=false
+ settings_panel=PanelContainer.new();settings_panel.position=Vector2(555,165);settings_panel.size=Vector2(810,720);root.add_child(settings_panel);var style=StyleBoxFlat.new();style.bg_color=Color(.045,.065,.08,.98);style.content_margin_left=24;style.content_margin_right=24;style.content_margin_top=24;style.content_margin_bottom=24;style.corner_radius_top_left=12;style.corner_radius_top_right=12;style.corner_radius_bottom_left=12;style.corner_radius_bottom_right=12;settings_panel.add_theme_stylebox_override("panel",style)
  var v=VBoxContainer.new();v.add_theme_constant_override("separation",18);settings_panel.add_child(v)
  var title=Label.new();title.text="画面設定 / Escで閉じる";v.add_child(title)
  resolution=OptionButton.new()
@@ -25,7 +26,25 @@ func setup(g)->void:
  for text in ["30 FPS","60 FPS","120 FPS","144 FPS","無制限"]:caps.add_item(text)
  caps.select(settings.LIMITS.find(settings.fps_limit));v.add_child(caps)
  vsync=CheckButton.new();vsync.text="VSync";vsync.button_pressed=settings.vsync;v.add_child(vsync)
- var apply=Button.new();apply.text="適用して保存";apply.pressed.connect(func():settings.resolution_index=resolution.selected;settings.fps_limit=settings.LIMITS[caps.selected];settings.vsync=vsync.button_pressed;settings.apply();close());v.add_child(apply)
+ var quality_label := Label.new()
+ quality_label.text = "描画品質"
+ v.add_child(quality_label)
+ graphics = OptionButton.new()
+ for quality: String in settings.GRAPHICS_NAMES:
+  graphics.add_item(quality)
+ graphics.select(settings.graphics_index)
+ v.add_child(graphics)
+ var apply := Button.new()
+ apply.text = "適用して保存"
+ apply.pressed.connect(func():
+  settings.resolution_index = resolution.selected
+  settings.fps_limit = settings.LIMITS[caps.selected]
+  settings.vsync = vsync.button_pressed
+  settings.graphics_index = graphics.selected
+  settings.apply()
+  close()
+ )
+ v.add_child(apply)
  var note=Label.new();note.text="設定は独立検証版に保存します。\nVSync ON時は、画面の更新速度が実際の上限にもなります。\n物理更新は60 Hz、描画FPSとは分離しています。";note.add_theme_font_size_override("font_size",18);v.add_child(note);settings_panel.visible=false
  lift_panel=PanelContainer.new();lift_panel.position=Vector2(710,180);lift_panel.size=Vector2(500,650);root.add_child(lift_panel);lift_buttons=VBoxContainer.new();lift_buttons.add_theme_constant_override("separation",12);lift_panel.add_child(lift_buttons);lift_panel.visible=false
 func pause_player(value:bool)->void:
@@ -36,10 +55,18 @@ func close()->void:
  overlay="";map.visible=false;settings_panel.visible=false;lift_panel.visible=false;pause_player(false)
 func show_map()->void:
  if overlay=="map":close();return
- close();overlay="map";map.follow_current_floor();map.visible=true;pause_player(true)
+ close();overlay="map";map.prepare_to_show();map.visible=true;pause_player(true)
 func show_settings()->void:
  if overlay=="settings":close();return
- close();overlay="settings";settings_panel.visible=true;pause_player(true)
+ close()
+ overlay = "settings"
+ # Reopening a panel after Escape reflects the applied settings.
+ resolution.select(settings.resolution_index)
+ caps.select(settings.LIMITS.find(settings.fps_limit))
+ vsync.button_pressed = settings.vsync
+ graphics.select(settings.graphics_index)
+ settings_panel.show()
+ pause_player(true)
 func show_lift(index:int)->void:
  close();lift_index=index;overlay="lift";pause_player(true)
  for child in lift_buttons.get_children():child.queue_free()

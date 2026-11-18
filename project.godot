@@ -1,7 +1,7 @@
 ; Independent validation project. Does not load FIND YOURSELF game scenes or saves.
 config_version=5
 [application]
-config/name="FIND YOURSELF - v33 独立検証"
+config/name="FIND YOURSELF - v34 独立検証"
 run/main_scene="res://main.tscn"
 run/max_fps=144
 config/features=PackedStringArray("4.6", "Forward Plus")
@@ -16,7 +16,7 @@ renderer/rendering_method="forward_plus"
 renderer/rendering_method.mobile="forward_plus"
 textures/default_filters/use_nearest_mipmap_filter=false
 textures/default_filters/anisotropic_filtering_level=3
-anti_aliasing/quality/msaa_3d=2
+anti_aliasing/quality/msaa_3d=0
 lights_and_shadows/directional_shadow/size=2048
 [physics]
 common/physics_ticks_per_second=60

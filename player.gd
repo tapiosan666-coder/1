@@ -29,7 +29,8 @@ func _unhandled_input(e:InputEvent)->void:
  if e is InputEventMouseButton and e.pressed:Input.mouse_mode=Input.MOUSE_MODE_CAPTURED
  if e is InputEventKey and e.pressed and e.keycode==KEY_ESCAPE:Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
  if e is InputEventMouseMotion and Input.mouse_mode==Input.MOUSE_MODE_CAPTURED:
-  rotate_y(-e.relative.x*.0022);camera.rotation.x=clamp(camera.rotation.x-e.relative.y*.0022,-1.4,1.4)
+  # Keep the same angular response in physical pixels at every resolution.
+  rotate_y(-e.screen_relative.x*.0022);camera.rotation.x=clamp(camera.rotation.x-e.screen_relative.y*.0022,-1.4,1.4)
 func _physics_process(dt:float)->void:
  if global_position.distance_to(previous)>1.:walk_intent_velocity=Vector3.ZERO
  previous=global_position;ticks+=1
@@ -57,11 +58,12 @@ func _physics_process(dt:float)->void:
   if belt_enabled and abs(lateral)<.65 and s>=-half-1.45 and s<=half+1.45 and abs(global_position.y-height)<.55:
    var sign_dir=1.0 if e.direction=="UP" else -1.0
    var slope=float(e.rise_m)/float(e.run_m)
-   var ground_speed=ES_MOTION.ground_speed(float(e.rise_m),float(e.run_m))
+   var on_incline:bool=s>=-half and s<=half
+   var ground_speed=ES_MOTION.ground_speed(float(e.rise_m),float(e.run_m)) if on_incline else ES_MOTION.SURFACE_SPEED
    var conveyor=u*(ground_speed*sign_dir)
    velocity.x+=conveyor.x;velocity.z+=conveyor.z
    if is_on_floor():
-    var active_slope=slope if s>=-half and s<=half else 0.0
+    var active_slope=slope if on_incline else 0.0
     velocity.y=(velocity.x*u.x+velocity.z*u.z)*active_slope
    # Rise comes from slope contact via move_and_slide. Gravity / snap retains contact.
    belt_id=e.id;break
@@ -74,4 +76,8 @@ func _physics_process(dt:float)->void:
    if test_move(next,Vector3.DOWN*.25,down) and down.get_normal().dot(Vector3.UP)>.75:
     move_and_collide(Vector3.UP*.22)
  move_and_slide()
+ # Godot skips automatic floor snap while projected velocity points up.
+ # The handrail and guard collisions still govern position; snap only checks
+ # for authored support immediately below a capsule over a flight.
+ if on_es_support and not is_on_floor():apply_floor_snap()
  landed=is_on_floor()

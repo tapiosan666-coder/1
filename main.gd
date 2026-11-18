@@ -39,6 +39,7 @@ var art_v10:Dictionary={}
 var startup_trace_v30:Array=[]
 var interaction_notice:String=""
 var notice_seconds:float=0.0
+var hud_refresh_seconds := 0.25
 func developer_mode()->bool:return OS.get_cmdline_user_args().has("--developer")
 func v3(a:Array)->Vector3:return Vector3(a[0],a[1],a[2])
 func v294_enabled()->bool:return v293_enabled()and not OS.get_cmdline_user_args().has("--v293-baseline")
@@ -364,7 +365,7 @@ func _ready()->void:
  if not OS.get_cmdline_user_args().has("--v27-baseline"):
   if comparison_B_v28:interactive_pose({"eye":[-209,1.65,-38],"look":[-196,2.5,-38],"fov":70})
   elif es_site_proposal:interactive_pose({"eye":[-182,1.65,-6.5],"look":[-194,3.0,-14.0],"fov":72})
- var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v33 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
+ var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v34 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
  if not visual_v7 and bool(ProjectSettings.get_setting("rendering/quality/v14_local_probe_reflections",false))and mode not in ["walk-test","walk-v8","ui-test","bake-gi"]:
   for d in [[Vector3(350,3,-32),Vector3(110,12,110)],[Vector3(0,3,8),Vector3(110,12,110)]]:
    var probe=ReflectionProbe.new();probe.position=d[0];probe.size=d[1];probe.interior=true;probe.box_projection=true;probe.max_distance=60;probe.intensity=.7;probe.enable_shadows=false;probe.update_mode=ReflectionProbe.UPDATE_ONCE;probe.ambient_mode=ReflectionProbe.AMBIENT_DISABLED;add_child(probe)
@@ -393,9 +394,13 @@ func _ready()->void:
  
 func _process(dt:float)->void:
  if player==null or hud==null:return
- hud.text="FIND YOURSELF  v33 独立検証\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s"%[player.position.x,player.position.y,player.position.z,Engine.get_frames_per_second(),"ESCALATOR "+player.belt_id if player.belt_id!="" else ""]
- if notice_seconds>0:
-  notice_seconds-=dt;hud.text+="\n"+interaction_notice
+ notice_seconds = maxf(0.0, notice_seconds - dt)
+ hud_refresh_seconds += dt
+ if hud_refresh_seconds >= 0.25:
+  hud_refresh_seconds = 0.0
+  hud.text = "FIND YOURSELF  v34 独立検証\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s" % [player.position.x, player.position.y, player.position.z, Engine.get_frames_per_second(), "ESCALATOR " + player.belt_id if player.belt_id != "" else ""]
+  if notice_seconds > 0.0:
+   hud.text += "\n" + interaction_notice
  if developer_mode() and mode=="interactive" and ui.overlay=="":
   if Input.is_physical_key_pressed(KEY_1):player.position=Vector3(-3,.08,28.3)
   if Input.is_physical_key_pressed(KEY_2):player.position=Vector3(-3,5.605,28.3)
@@ -435,6 +440,9 @@ func build_sign(d:Dictionary)->void:
 func write_json(name:String,data)->void:
  var file=FileAccess.open(output+"/"+name,FileAccess.WRITE);file.store_string(JSON.stringify(data,"  "))
 func _unhandled_input(e:InputEvent)->void:
+ if ui==null:return
+ var runtime = get_node_or_null("V30_Runtime")
+ if runtime != null and runtime.is_traveling():return
  if e is InputEventKey and e.pressed and e.keycode==KEY_F and ui.overlay=="":
   var index=elevators.nearest()
   if index>=0:
@@ -483,11 +491,25 @@ func add_vector_sign(d:Dictionary)->void:
  var n=Label3D.new();n.font=font;n.text=d.text;n.font_size=38;n.pixel_size=min(.009,float(d.w)/max(font.get_string_size(str(d.text),HORIZONTAL_ALIGNMENT_LEFT,-1,38).x,1.));n.outline_size=4;n.modulate=Color(.2,.30,.28);n.position=v3(d.p);var normal=Vector3(d.n[0],0,d.n[1]);n.basis=Basis(Vector3.UP.cross(normal),Vector3.UP,normal);add_child(n)
 func _input(e:InputEvent)->void:
  if ui==null or mode!="interactive":return
+ var runtime = get_node_or_null("V30_Runtime")
+ if runtime != null and runtime.is_traveling():
+  if e is InputEventKey:
+   if e.pressed and not e.echo and e.keycode == KEY_ESCAPE:
+    runtime.cancel_travel()
+   get_viewport().set_input_as_handled()
+  return
  if e is InputEventKey and e.pressed and not e.echo and ui.overlay=="":
   if e.keycode in [KEY_F1,KEY_F2,KEY_F3]:
-   var idx=int(e.keycode)-int(KEY_F1);var shots=read_json("res://source/cameras-v8.json");var shot=shots[[0,2,4][idx]];interactive_pose(shot);get_viewport().set_input_as_handled();return
+   var index := int(e.keycode) - int(KEY_F1)
+   if runtime != null:
+    runtime.request_travel(index)
+   else:
+    var shots: Array = read_json("res://source/cameras-v8.json")
+    interactive_pose(shots[[0,2,4][index]])
+   get_viewport().set_input_as_handled()
+   return
  if e is InputEventKey and e.pressed and not e.echo:
-  if e.keycode==KEY_M:ui.show_map();get_viewport().set_input_as_handled()
+  if e.keycode==KEY_M and not (ui.overlay=="map" and ui.map.has_method("search_has_focus") and ui.map.search_has_focus()):ui.show_map();get_viewport().set_input_as_handled()
   elif developer_mode() and e.keycode==KEY_F10:ui.show_settings();get_viewport().set_input_as_handled()
   elif developer_mode() and e.keycode==KEY_F8:ui.show_pilots();get_viewport().set_input_as_handled()
   elif developer_mode() and e.keycode==KEY_F9:ui.show_amenities();get_viewport().set_input_as_handled()
@@ -508,6 +530,9 @@ func add_brand_slot(d:Dictionary)->void:
 func interactive_pose(shot:Dictionary)->void:
  if has_node("V30_Runtime"):
   var v30_eye:Vector3=v3(shot.get("walk_eye",shot.eye));get_node("V30_Runtime").prepare_position(v30_eye-Vector3.UP*1.65)
+ apply_interactive_camera_pose(shot)
+
+func apply_interactive_camera_pose(shot: Dictionary) -> void:
  player.camera.fov=float(shot.get("fov",75.0))
  var eye=v3(shot.get("walk_eye",shot.eye));var direction=v3(shot.look)-eye
  player.position=eye-Vector3(0,1.65,0);player.reset_motion_state()

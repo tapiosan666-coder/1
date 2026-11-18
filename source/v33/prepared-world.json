@@ -485,9 +485,11 @@
   },
   {
    "id": "interior_0_6_-2",
-   "path": "res://assets/v33/prepared-world/interior_0_6_-2.scn",
+   "path": "res://assets/v34/sign-chunks/interior_0_6_-2.scn",
    "render_and_collision_child_nodes": 375,
-   "sha256": "2fea018808fbbfc3e04dee001dba4edac74df041552cd861194dfe8524567446"
+   "sha256": "9113da210391c43345863eee5ed6172ed7ed6fcac1afccf25b0caedf4af50a41",
+   "v33_original_path": "res://assets/v33/prepared-world/interior_0_6_-2.scn",
+   "v33_original_sha256": "2fea018808fbbfc3e04dee001dba4edac74df041552cd861194dfe8524567446"
   },
   {
    "id": "detail_0_7_-1",
@@ -611,9 +613,11 @@
   },
   {
    "id": "interior_1_6_-2",
-   "path": "res://assets/v33/prepared-world/interior_1_6_-2.scn",
+   "path": "res://assets/v34/sign-chunks/interior_1_6_-2.scn",
    "render_and_collision_child_nodes": 103,
-   "sha256": "b83ff9ad0447680705ba3c0597b83ba3ba9a32e3536760db2f1f39a6510426d9"
+   "sha256": "6f929d75f933a706da17b5e1518d4a5ad223055ccabcabec8190eb4d920598b4",
+   "v33_original_path": "res://assets/v33/prepared-world/interior_1_6_-2.scn",
+   "v33_original_sha256": "b83ff9ad0447680705ba3c0597b83ba3ba9a32e3536760db2f1f39a6510426d9"
   },
   {
    "id": "interior_2_7_-2",
@@ -725,5 +729,6 @@
   }
  ],
  "signature": "4ccd9de373a92a7017c5cc4b5fa7c760362a47a70429e7d67f8339a24b0cbb3e",
- "version": "prepared-v33-r1"
+ "version": "prepared-v33-r1",
+ "v34_local_override": "Two prepared interior zones contain exactly the four retired legacy ceiling-sign render instances each. Original static chunks and collision resources are preserved. See the v34 verification report."
 }
