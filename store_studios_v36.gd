@@ -13,6 +13,7 @@ var mesh_cache: Dictionary = {}
 var shape_cache: Dictionary = {}
 var threshold_materials: Dictionary = {}
 var dining_programs: Dictionary = {}
+var campaign_materials: Dictionary = {}
 var elapsed := .24
 var last_query := Vector3.INF
 var studied_stores := 0
@@ -45,8 +46,11 @@ func setup(game: Node3D) -> void:
 				"role":"threshold","width":patch.width,"depth":patch.depth,
 				"atlas":entry.atlas,"uv":entry.uv,"material":entry.material})
 
-	var programmes: Dictionary = game.read_json("res://source/v36/dining-programs.json")
-	dining_programs = programmes.models
+	for program_file: String in ["res://source/v36/dining-programs.json","res://source/v36/anchor-programs.json"]:
+		register_programs(game.read_json(program_file))
+
+func register_programs(programmes: Dictionary) -> void:
+	dining_programs.merge(programmes.models)
 	for room: Dictionary in programmes.rooms:
 		for station: Dictionary in room.placements:
 			var p := Vector3(station.p[0],station.p[1],station.p[2])
@@ -79,6 +83,27 @@ func install_room(bay: Dictionary) -> void:
 		collision.position = Vector3(p[0],p[1],p[2])
 		collision.rotation.y = solid.yaw
 		body.add_child(collision)
+	for panel: Dictionary in dining_programs[bay.program].get("posters",[]):
+		var key_art: String = dining_programs[bay.program].campaign
+		var src: String = key_art + str(panel.tile)
+		if not campaign_materials.has(src):
+			var mat := StandardMaterial3D.new()
+			mat.albedo_texture = load("res://assets/v36/anchor-editions/"+key_art+".webp")
+			mat.uv1_scale = Vector3(.3333333,1,1)
+			mat.uv1_offset = Vector3(int(panel.tile)/3.0,0,0)
+			mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
+			mat.roughness = .72
+			campaign_materials[src] = mat
+		var face := QuadMesh.new()
+		face.size = Vector2(panel.width,panel.height)
+		face.material = campaign_materials[src]
+		var print_node := MeshInstance3D.new()
+		print_node.mesh = face
+		print_node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		print_node.position = Vector3(panel.p[0],panel.p[1],panel.p[2])
+		print_node.rotation.y = panel.yaw
+		print_node.visibility_range_end = RETIRE_RADIUS
+		body.add_child(print_node)
 	for lamp: Dictionary in dining_programs[bay.program].lights:
 		var light := OmniLight3D.new()
 		var p: Array = lamp.p
