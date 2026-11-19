@@ -1,8 +1,8 @@
-# FIND YOURSELF v35｜モール探索・独立検証版
+# FIND YOURSELF v36｜モール探索・独立検証版
 
 ## 遊び方
 
-Windows用ZIPを展開した方は、展開先で `FIND_YOURSELF.exe` を開いてください。`FIND_YOURSELF.pck` は同じフォルダに置きます。Godotプロジェクト用ZIPを展開した方は、Godot **4.6.3** で `project.godot` を開き、インポート後に **F5** を押してください。
+Windows用ZIPを展開した方は、展開先で `FIND_YOURSELF.exe` を開いてください。`FIND_YOURSELF.pck` と `MallData` はEXEと同じフォルダに置きます。Godotプロジェクト用ZIPを展開した方は、Godot **4.6.3** で `project.godot` を開き、インポート後に **F5** を押してください。
 
 | 操作 | 内容 |
 | --- | --- |
@@ -10,7 +10,7 @@ Windows用ZIPを展開した方は、展開先で `FIND_YOURSELF.exe` を開い�
 | Shift | 速歩 |
 | F1 / F2 / F3 | A館 / B館 / C館の入口側へ移動 |
 | F | 対応する扉・エレベーターを操作 |
-| M | 現在地と目的地を館内マップで確認。店名・施設名・店舗IDで検索 |
+| M | 現在地を確認。店名・施設名・店舗IDで検索し、一覧または地図をクリックして目的地を選択 |
 | H | 操作案内を再表示 |
 | Esc | マップを閉じる / 画面と音量の設定を開く |
 
@@ -18,8 +18,10 @@ Windows用ZIPを展開した方は、展開先で `FIND_YOURSELF.exe` を開い�
 
 ## 今回のルート
 
-- **A館1F。** 西口側の広場から ORIENNE BOOKS へ。書店の入口と新刊・児童書売場を見られます。
+- **A館1F。** 西口側の広場から ORIENNE BOOKS へ。平台を回り込み、奥の壁面書架まで進めます。
 - **B館1F。** 時の広場を両面時計から見渡し、FERNELL COFFEE と OVELIS HOME の店頭から店内へ進みます。
-- **C館1F。** 南側の屋外回廊から中庭と LUMEVA TABLE へ。植栽側の休憩席とカフェの列の関係を見られます。
+- **C館1F。** 南側の屋外回廊から中庭と LUMEVA TABLE へ。上階にも立ち寄り、地図で `C2F-CSE-3` の家族向け客席、`C3F-CSE-3` のカフェを選んでください。
 
 標準設定は1920×1080、VSyncオン、FPS上限144です。画面品質と音量はローカルに保存されます。比較画像、再検査の結果、作業範囲はReview ZIPに掲載しています。
+
+B館1Fの TERRUNE TOKYO 第2出入口は個別の検討案です。Godotエディターで `TERRUNE_additional_entry_proposal.tscn` を開き、F6でこのシーンを実行すると入口前から歩けます。
