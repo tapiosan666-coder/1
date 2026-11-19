@@ -6,9 +6,11 @@ var bank_ids: Dictionary = {}
 var comb_material: Material
 var stainless_material: Material
 var traction_material: Material
+var laminated_glass: StandardMaterial3D
 var sign_panel_material: StandardMaterial3D
 var label_font: Font
 var directional_panels: Array[Dictionary] = []
+var exit_symbol: ArrayMesh
 
 var banks:Array=[]
 var definitions:Array=[]
@@ -35,6 +37,8 @@ func setup(manifest: Dictionary, mats: Dictionary) -> void:
  sign_panel_material = StandardMaterial3D.new()
  sign_panel_material.albedo_color = Color("#15242a")
  sign_panel_material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+ laminated_glass = ES_MESH.material(Color(.66,.83,.81,.31), .015, .15)
+ laminated_glass.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
  shared_tread = ES_MESH.tread(traction_material, mats.yellow)
  var camera := get_viewport().get_camera_3d()
  ensure_near(camera.global_position if camera != null else Vector3.ZERO)
@@ -44,7 +48,7 @@ func machine_resources(rise: float, run: float) -> Dictionary:
  if not shared_machines.has(key):
   shared_machines[key] = {
    "rail": ES_MESH.rail(rise, run),
-   "case": ES_MESH.machine_case(rise, run, stainless_material, material_set.metal, comb_material),
+   "case": ES_MESH.machine_case(rise, run, stainless_material, material_set.metal, comb_material, laminated_glass),
    "collider": ES_MESH.housing_collision(rise, run),
   }
  return shared_machines[key]
@@ -127,6 +131,34 @@ func create_bank(data: Dictionary) -> void:
  bank_ids[data.id] = true
  update_bank(bank, clock)
 
+## The white stripe has a separate depth plane from the red disc. These are raised
+## printed faces, shared by all exit markers, with no font fallback at distance.
+func no_entry_symbol() -> ArrayMesh:
+ if exit_symbol != null:
+  return exit_symbol
+ var brush := SurfaceTool.new()
+ brush.begin(Mesh.PRIMITIVE_TRIANGLES)
+ var ink := StandardMaterial3D.new()
+ ink.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+ ink.vertex_color_use_as_albedo = true
+ ink.vertex_color_is_srgb = true
+ ink.cull_mode = BaseMaterial3D.CULL_DISABLED
+ brush.set_material(ink)
+ brush.set_color(Color("#dd302d"))
+ var radius := .081
+ for i: int in 32:
+  var a := TAU * i / 32.
+  var b := TAU * (i + 1) / 32.
+  brush.add_vertex(Vector3.ZERO)
+  brush.add_vertex(Vector3(cos(b), sin(b), 0.) * radius)
+  brush.add_vertex(Vector3(cos(a), sin(a), 0.) * radius)
+ brush.set_color(Color("#fff9eb"))
+ var stripe := PackedVector3Array([Vector3(-.053,-.014,.0015),Vector3(.053,-.014,.0015),Vector3(.053,.014,.0015),Vector3(-.053,.014,.0015)])
+ for vertex: int in [0,2,1,0,3,2]:
+  brush.add_vertex(stripe[vertex])
+ exit_symbol = brush.commit()
+ return exit_symbol
+
 func mount_direction_panel(assembly: Node3D, bank: Dictionary, side: float) -> void:
  var entering: bool = (side < 0.) == (bank.direction > 0.)
  var upper: bool = side > 0.
@@ -135,7 +167,13 @@ func mount_direction_panel(assembly: Node3D, bank: Dictionary, side: float) -> v
  holder.name = "UpperDirection" if upper else "LowerDirection"
  # The sign's back sits on the fixed balustrade return, below the moving grip.
  # It is offset away from the centre of the 1.30 m tread.
- holder.position = Vector3(-.974, .70 + (float(bank.rise) if upper else 0.), side * (float(bank.run) * .5 + .50))
+ # Across the C north upper landing the neighbouring down handrail screens a
+ # low sign. The raised mast sits outside the moving grip and bolts into the
+ # stationary skirt. Keep it in sight from both upper landing approaches.
+ var north_exit := str(bank.id) == "CN23-UP" and upper
+ var marker_height := 1.34 if north_exit else .70
+ var end_offset := .13 if north_exit else .50
+ holder.position = Vector3(-1.12 if north_exit else -.974, marker_height + (float(bank.rise) if upper else 0.), side * (float(bank.run) * .5 + end_offset))
  holder.rotation.y = 0. if upper else PI
  assembly.add_child(holder)
  var panel := MeshInstance3D.new()
@@ -148,24 +186,43 @@ func mount_direction_panel(assembly: Node3D, bank: Dictionary, side: float) -> v
  holder.add_child(panel)
  var clamp := MeshInstance3D.new()
  var stem := BoxMesh.new()
- stem.size = Vector3(.06, .41, .065)
+ stem.size = Vector3(.06, marker_height - .39 if north_exit else .41, .065)
  stem.material = stainless_material
  clamp.mesh = stem
- clamp.position.y = -.35
+ clamp.position.y = -marker_height + .25 + stem.size.y * .5 if north_exit else -.35
  clamp.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
  clamp.visibility_range_end = 30.
  holder.add_child(clamp)
- var indicator := Label3D.new()
- indicator.font = label_font
- indicator.font_size = 68
- indicator.pixel_size = .0027
- indicator.text = "↑" if entering else "⊖"
- indicator.position = Vector3(0., .041, .0255)
- indicator.modulate = Color("#9ff6cc") if entering else Color("#ffaba2")
- indicator.outline_size = 0
- indicator.double_sided = false
- indicator.visibility_range_end = 30.
- holder.add_child(indicator)
+ if north_exit:
+  var bracket := MeshInstance3D.new()
+  var tie := BoxMesh.new()
+  tie.size = Vector3(.38,.042,.09)
+  tie.material = stainless_material
+  bracket.mesh = tie
+  bracket.position = Vector3(.16, .25 - marker_height, 0.)
+  bracket.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+  bracket.visibility_range_end = 30.
+  holder.add_child(bracket)
+ if entering:
+  var indicator := Label3D.new()
+  indicator.font = label_font
+  indicator.font_size = 68
+  indicator.pixel_size = .0027
+  indicator.text = "↑"
+  indicator.position = Vector3(0., .041, .0255)
+  indicator.modulate = Color("#9ff6cc")
+  indicator.outline_size = 0
+  indicator.double_sided = false
+  indicator.visibility_range_end = 30.
+  holder.add_child(indicator)
+ else:
+  var symbol := MeshInstance3D.new()
+  symbol.name = "NoEntry"
+  symbol.mesh = no_entry_symbol()
+  symbol.position = Vector3(0., .047, .027)
+  symbol.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+  symbol.visibility_range_end = 30.
+  holder.add_child(symbol)
  var caption := Label3D.new()
  caption.font = label_font
  caption.font_size = 36 if entering else 24
@@ -177,7 +234,7 @@ func mount_direction_panel(assembly: Node3D, bank: Dictionary, side: float) -> v
  caption.double_sided = false
  caption.visibility_range_end = 30.
  holder.add_child(caption)
- directional_panels.append({"id": bank.id, "end": "upper" if upper else "lower", "entry": entering, "panel": caption.text, "floor_relative_y_m": .70, "distance_label": false})
+ directional_panels.append({"id": bank.id, "end": "upper" if upper else "lower", "entry": entering, "panel": caption.text, "floor_relative_y_m": marker_height, "distance_label": false})
 
 func ensure_near(point: Vector3) -> void:
  for data: Dictionary in definitions:

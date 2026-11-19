@@ -5,6 +5,10 @@ const TRACK_HALF_WIDTH := .655
 const CASE_HALF_WIDTH := .775
 const COMB_DEPTH := .28
 const RIB_COUNT := 32
+const NEWEL_FLAT := 1.01
+const RETURN_RADIUS := .40
+const GRIP_HEIGHT := 1.02
+const PANE_BASE := .323
 
 static func height(s: float, rise: float, run: float) -> float:
 	return rise * clampf(s / run + .5, 0.0, 1.0)
@@ -75,22 +79,38 @@ static func tread(antislip: Material, yellow: Material) -> ArrayMesh:
 	add_surface(trim, mesh, yellow)
 	return mesh
 
+# Ease the handhold through the horizontal/inclined transitions. The authored
+# floor and tread transport retain their exact levels at both comb plates.
+static func eased_positive(t: float) -> float:
+	const EASE := .48
+	if t <= -EASE:
+		return 0.
+	if t >= EASE:
+		return t
+	return (t + EASE) * (t + EASE) / (4.0 * EASE)
+
+static func handhold_height(s: float, rise: float, run: float) -> float:
+	return GRIP_HEIGHT + rise / run * (eased_positive(s + run * .5) - eased_positive(s - run * .5))
+
 static func rail(rise: float, run: float) -> ArrayMesh:
 	var half := run * .5
-	var rail_end := half + 1.12
-	var return_radius := .300
-	var section: Array[Vector2] = [Vector2(-rail_end, 1.02), Vector2(-half, 1.02), Vector2(half, 1.02 + rise), Vector2(rail_end, 1.02 + rise)]
-	# Constant-height moving grip above the balustrade, with smooth turns into the
-	# side compartments. Seams use continuous arc length UVs around the loop.
+	var rail_end := half + NEWEL_FLAT
+	var upper: Array[Vector2] = [Vector2(-rail_end, GRIP_HEIGHT)]
+	for transition: float in [-half, half]:
+		for sample_index: int in 7:
+			var s := transition + lerpf(-.48, .48, sample_index / 6.0)
+			upper.append(Vector2(s, handhold_height(s, rise, run)))
+	upper.append(Vector2(rail_end, rise + GRIP_HEIGHT))
+	var section: Array[Vector2] = upper.duplicate()
+	# The lower return is hidden inside the stationary skirt, as on a real machine.
 	for i: int in range(1, 13):
 		var a := PI * float(i) / 12
-		section.append(Vector2(rail_end + sin(a) * return_radius, 1.02 + rise - return_radius + cos(a) * return_radius))
-	section.append(Vector2(half, 1.02 + rise - 2. * return_radius))
-	section.append(Vector2(-half, 1.02 - 2. * return_radius))
-	section.append(Vector2(-rail_end, 1.02 - 2. * return_radius))
+		section.append(Vector2(rail_end + sin(a) * RETURN_RADIUS, GRIP_HEIGHT + rise - RETURN_RADIUS + cos(a) * RETURN_RADIUS))
+	for i: int in range(upper.size() - 2, -1, -1):
+		section.append(upper[i] - Vector2(0., 2. * RETURN_RADIUS))
 	for i: int in range(1, 12):
 		var a := PI * float(i) / 12
-		section.append(Vector2(-rail_end - sin(a) * return_radius, 1.02 - return_radius - cos(a) * return_radius))
+		section.append(Vector2(-rail_end - sin(a) * RETURN_RADIUS, GRIP_HEIGHT - RETURN_RADIUS - cos(a) * RETURN_RADIUS))
 	var full_loop := section.duplicate()
 	full_loop.append(section[0])
 	var cumulative: PackedFloat32Array = [0.]
@@ -131,7 +151,49 @@ static func rail(rise: float, run: float) -> ArrayMesh:
 	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
 	return mesh
 
-static func machine_case(rise: float, run: float, brushed: Material, landing: Material, accent: Material) -> ArrayMesh:
+# One transparent face per pane, rendered from both sides. A concealed shoe
+# supports the lower edge. Gaps between the individual panes are 8 mm.
+static func glazing_polygon(st: SurfaceTool, side: float, contour: PackedVector2Array) -> void:
+	var indices := Geometry2D.triangulate_polygon(contour)
+	for i: int in indices:
+		var point := contour[i]
+		st.set_normal(Vector3.RIGHT * side)
+		st.set_uv(point)
+		st.add_vertex(Vector3(side * .94, point.y, point.x))
+
+static func glass_balustrades(mesh: ArrayMesh, rise: float, run: float, glass: Material) -> void:
+	var st := SurfaceTool.new()
+	st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	st.set_material(glass)
+	var half := run * .5
+	var pane_count := ceili(run / 1.85)
+	for side: float in [-1., 1.]:
+		for i: int in pane_count:
+			var a := lerpf(-half, half, float(i) / pane_count) + .004
+			var b := lerpf(-half, half, float(i + 1) / pane_count) - .004
+			var contour := PackedVector2Array([Vector2(a, height(a,rise,run) + PANE_BASE), Vector2(b, height(b,rise,run) + PANE_BASE)])
+			for j: int in 6:
+				var z := lerpf(b, a, j / 5.)
+				contour.append(Vector2(z, handhold_height(z,rise,run) - .013))
+			glazing_polygon(st,side,contour)
+		for end_sign: float in [-1., 1.]:
+			var level := rise if end_sign > 0. else 0.
+			var root_z := end_sign * (half + .004)
+			var end_z := end_sign * (half + NEWEL_FLAT)
+			var contour := PackedVector2Array([Vector2(root_z,level + PANE_BASE)])
+			for j: int in 5:
+				var z := lerpf(root_z, end_z, j / 4.)
+				contour.append(Vector2(z, handhold_height(z,rise,run) - .015))
+			var inner_radius := RETURN_RADIUS - .022
+			for j: int in range(1, 16):
+				var angle := deg_to_rad(140.) * j / 15.
+				contour.append(Vector2(end_z + end_sign * inner_radius * sin(angle), level + GRIP_HEIGHT - RETURN_RADIUS + inner_radius * cos(angle)))
+			contour.append(Vector2(end_z + end_sign * .20, level + PANE_BASE))
+			glazing_polygon(st,side,contour)
+	st.index()
+	st.commit(mesh)
+
+static func machine_case(rise: float, run: float, brushed: Material, landing: Material, accent: Material, glass: Material) -> ArrayMesh:
 	var half := run * .5
 	var end := half + 1.45
 	var knots: Array[float] = [-end, -half, half, end]
@@ -147,11 +209,24 @@ static func machine_case(rise: float, run: float, brushed: Material, landing: Ma
 		for side: float in [-1., 1.]:
 			var edge := side * CASE_HALF_WIDTH
 			basic_face(metal, [Vector3(edge, ya - .84, a), Vector3(edge, yb - .84, b), Vector3(edge, yb - .043, b), Vector3(edge, ya - .043, a)])
-			# Closed brushed inner skirt rises to meet the existing glass balustrade.
-			var inner := side * .735
-			basic_face(metal, [Vector3(inner, ya - .12, a), Vector3(inner, yb - .12, b), Vector3(inner, yb + .255, b), Vector3(inner, ya + .255, a)])
-			basic_face(metal, [Vector3(inner, ya + .255, a), Vector3(inner, yb + .255, b), Vector3(edge, yb + .255, b), Vector3(edge, ya + .255, a)])
-			basic_face(metal, [Vector3(edge, ya - .043, a), Vector3(edge, yb - .043, b), Vector3(edge, yb + .255, b), Vector3(edge, ya + .255, a)])
+			# The deck slopes up from the inner anti-entrapment skirt to the glass
+			# shoe, then folds down along the outer cheek. The rubber return runs
+			# inside that channel, with no second black belt visible from the stair.
+			var profile := PackedVector2Array([Vector2(.735,-.12),Vector2(.735,.238),Vector2(.76,.26),
+				Vector2(.91,.31),Vector2(.924,PANE_BASE),Vector2(.955,PANE_BASE),Vector2(.98,.292),
+				Vector2(.98,-.47),Vector2(.765,-.57)])
+			for j: int in range(profile.size()-1):
+				var p := profile[j]
+				var q := profile[j+1]
+				basic_face(metal,[Vector3(side*p.x,ya+p.y,a),Vector3(side*p.x,yb+p.y,b),
+					Vector3(side*q.x,yb+q.y,b),Vector3(side*q.x,ya+q.y,a)])
+			if i == 0 or i == knots.size()-2:
+				var level := ya if i == 0 else yb
+				var z := a if i == 0 else b
+				for j: int in Geometry2D.triangulate_polygon(profile):
+					var p := profile[j]
+					metal.set_uv(p)
+					metal.add_vertex(Vector3(side*p.x,level+p.y,z))
 	for s: float in [-end, end]:
 		var y := height(s, rise, run)
 		basic_face(metal, [Vector3(-CASE_HALF_WIDTH, y - .84, s), Vector3(CASE_HALF_WIDTH, y - .84, s), Vector3(CASE_HALF_WIDTH, y - .043, s), Vector3(-CASE_HALF_WIDTH, y - .043, s)])
@@ -171,6 +246,7 @@ static func machine_case(rise: float, run: float, brushed: Material, landing: Ma
 			box(comb, Vector3(x, y + .006, comb_s), Vector3(.015, .012, .094))
 	add_surface(plates, mesh, landing)
 	add_surface(comb, mesh, accent)
+	glass_balustrades(mesh, rise, run, glass)
 	return mesh
 
 static func housing_collision(rise: float, run: float) -> ConcavePolygonShape3D:

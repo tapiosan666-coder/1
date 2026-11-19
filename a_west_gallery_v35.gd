@@ -5,7 +5,9 @@ extends Node3D
 const VICINITY := Vector3(328., 0., -60.)
 const TREE_PATH := "res://assets/v17/models/atrium_ficus_dense.glb"
 const SEAT_A := Vector3(330.0, 0., -54.2)
-const SEAT_B := Vector3(353.8, 0., -53.25)
+# Keep the centre and both diagonal paths to the B1 down flight free.
+# The island stays inside its existing 350.9..358.9 m terrazzo pocket.
+const SEAT_B := Vector3(356.3, 0., -53.25)
 const BOOK_DISPLAY := Vector3(321.25, 0., -67.05)
 
 var player: Node3D
