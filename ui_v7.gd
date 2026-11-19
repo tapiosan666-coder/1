@@ -9,6 +9,8 @@ var resolution:OptionButton
 var caps:OptionButton
 var vsync:CheckButton
 var graphics:OptionButton
+var volume: HSlider
+var volume_value: Label
 var overlay:String=""
 var lift_index:int=-1
 func setup(g)->void:
@@ -16,9 +18,9 @@ func setup(g)->void:
  var theme=Theme.new();theme.default_font=g.font;theme.default_font_size=22
  var root=Control.new();root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);root.mouse_filter=Control.MOUSE_FILTER_IGNORE;root.theme=theme;add_child(root)
  map=load("res://map_v7.gd").new();root.add_child(map);map.setup(g.read_json("res://source/v22/map-data-integrated.json"if g.a_continuous_v22 else"res://source/v22/map-data-combined.json"if g.c_open_proposal and g.es_site_proposal else"res://source/v15/map-data-C-option.json"if g.c_open_proposal else"res://source/v15/map-data-ES-option.json"if g.es_site_proposal else"res://source/v13/map-data.json"),g.player,g.font,g.brand_registry);map.close_requested.connect(close);map.visible=false
- settings_panel=PanelContainer.new();settings_panel.position=Vector2(555,165);settings_panel.size=Vector2(810,720);root.add_child(settings_panel);var style=StyleBoxFlat.new();style.bg_color=Color(.045,.065,.08,.98);style.content_margin_left=24;style.content_margin_right=24;style.content_margin_top=24;style.content_margin_bottom=24;style.corner_radius_top_left=12;style.corner_radius_top_right=12;style.corner_radius_bottom_left=12;style.corner_radius_bottom_right=12;settings_panel.add_theme_stylebox_override("panel",style)
- var v=VBoxContainer.new();v.add_theme_constant_override("separation",18);settings_panel.add_child(v)
- var title=Label.new();title.text="画面設定 / Escで閉じる";v.add_child(title)
+ settings_panel=PanelContainer.new();settings_panel.position=Vector2(555,233);settings_panel.size=Vector2(810,610);root.add_child(settings_panel);var style=StyleBoxFlat.new();style.bg_color=Color(.045,.065,.08,.98);style.content_margin_left=24;style.content_margin_right=24;style.content_margin_top=24;style.content_margin_bottom=24;style.corner_radius_top_left=12;style.corner_radius_top_right=12;style.corner_radius_bottom_left=12;style.corner_radius_bottom_right=12;settings_panel.add_theme_stylebox_override("panel",style)
+ var v=VBoxContainer.new();v.add_theme_constant_override("separation",13);settings_panel.add_child(v)
+ var title=Label.new();title.text="設定 / Escで閉じる";title.add_theme_font_size_override("font_size",28);v.add_child(title)
  resolution=OptionButton.new()
  for text in ["1920 × 1080","2560 × 1440","3840 × 2160"]:resolution.add_item(text)
  resolution.select(settings.resolution_index);v.add_child(resolution)
@@ -34,17 +36,44 @@ func setup(g)->void:
   graphics.add_item(quality)
  graphics.select(settings.graphics_index)
  v.add_child(graphics)
+ var volume_heading := HBoxContainer.new()
+ var volume_label := Label.new()
+ volume_label.text = "環境音・足音"
+ volume_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+ volume_heading.add_child(volume_label)
+ volume_value = Label.new()
+ volume_heading.add_child(volume_value)
+ v.add_child(volume_heading)
+ volume = HSlider.new()
+ volume.min_value = 0
+ volume.max_value = 100
+ volume.step = 1
+ volume.custom_minimum_size.y = 32
+ volume.value_changed.connect(func(level: float): volume_value.text = "%d%%" % int(level))
+ volume.value = settings.sound_level * 100.0
+ volume_value.text = "%d%%" % int(volume.value)
+ v.add_child(volume)
+ var actions := HBoxContainer.new()
+ actions.add_theme_constant_override("separation",16)
+ var quit_game := Button.new()
+ quit_game.text = "ゲームを終了"
+ quit_game.custom_minimum_size.x = 158
+ quit_game.pressed.connect(func(): get_tree().quit())
+ actions.add_child(quit_game)
  var apply := Button.new()
  apply.text = "適用して保存"
+ apply.size_flags_horizontal = Control.SIZE_EXPAND_FILL
  apply.pressed.connect(func():
   settings.resolution_index = resolution.selected
   settings.fps_limit = settings.LIMITS[caps.selected]
   settings.vsync = vsync.button_pressed
   settings.graphics_index = graphics.selected
+  settings.sound_level = volume.value / 100.0
   settings.apply()
   close()
  )
- v.add_child(apply)
+ actions.add_child(apply)
+ v.add_child(actions)
  var note=Label.new();note.text="設定は独立検証版に保存します。\nVSync ON時は、画面の更新速度が実際の上限にもなります。\n物理更新は60 Hz、描画FPSとは分離しています。";note.add_theme_font_size_override("font_size",18);v.add_child(note);settings_panel.visible=false
  lift_panel=PanelContainer.new();lift_panel.position=Vector2(710,180);lift_panel.size=Vector2(500,650);root.add_child(lift_panel);lift_buttons=VBoxContainer.new();lift_buttons.add_theme_constant_override("separation",12);lift_panel.add_child(lift_buttons);lift_panel.visible=false
 func pause_player(value:bool)->void:
@@ -65,6 +94,7 @@ func show_settings()->void:
  caps.select(settings.LIMITS.find(settings.fps_limit))
  vsync.button_pressed = settings.vsync
  graphics.select(settings.graphics_index)
+ volume.value = settings.sound_level * 100.0
  settings_panel.show()
  pause_player(true)
 func show_lift(index:int)->void:

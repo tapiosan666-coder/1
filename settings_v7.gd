@@ -13,6 +13,7 @@ var resolution_index: int = 0
 var fps_limit: int = 144
 var vsync: bool = true
 var graphics_index: int = 0
+var sound_level: float = 0.7
 var config_path: String = "user://site-v7-settings.cfg"
 
 func restore() -> void:
@@ -23,6 +24,7 @@ func restore() -> void:
 		fps_limit = cap if cap in LIMITS else 144
 		vsync = bool(config.get_value("display", "vsync", true))
 		graphics_index = clampi(int(config.get_value("display", "graphics_index", 0)), 0, PROFILES.size() - 1)
+		sound_level = clampf(float(config.get_value("sound", "level", 0.7)), 0.0, 1.0)
 	apply(false)
 
 func apply(persist: bool = true) -> void:
@@ -40,6 +42,7 @@ func apply(persist: bool = true) -> void:
 		config.set_value("display", "fps_limit", fps_limit)
 		config.set_value("display", "vsync", vsync)
 		config.set_value("display", "graphics_index", graphics_index)
+		config.set_value("sound", "level", sound_level)
 		var result := config.save(config_path)
 		if result != OK:
 			push_warning("画面設定を保存できませんでした: %s" % error_string(result))
@@ -68,5 +71,6 @@ func snapshot() -> Dictionary:
 		"graphics_index": graphics_index,
 		"graphics_name": GRAPHICS_NAMES[graphics_index],
 		"render_scale": window.scaling_3d_scale,
+		"sound_level": sound_level,
 		"note": "VSync and display refresh can impose a lower real FPS"
 	}

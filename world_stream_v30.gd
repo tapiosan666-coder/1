@@ -5,6 +5,11 @@ const MAX_STREAM_REQUESTS := 3
 const FRAME_BUDGET_USEC := 7000
 const MAX_INSTALLS_PER_FRAME := 12
 const MAX_RETIREMENTS_PER_FRAME := 5
+const HANDOVER_RETIREMENT_DELAY_FRAMES := 2
+# X/Z envelope of the v32 B core navigation and replacement geometry.
+const B_CORE_MIN := Vector2(-225.0, -32.0)
+const B_CORE_MAX := Vector2(-159.0, 6.0)
+const B_CORE_LOAD_DISTANCE := 185.0
 
 var game
 var profile_spans:Array=[]
@@ -23,12 +28,15 @@ var tile_index: Dictionary = {}
 var active_defs: Dictionary = {}
 var view_queue: Array = []
 var retirement_queue: Array = []
+var hidden_for_retirement: Dictionary = {}
+var retirement_resume_frame := 0
 var native_streaming := false
 var travel: Dictionary = {}
 var travel_history: Array = []
 var staged_floor_sync := false
 var camera_shots: Array = []
 var signs_stream
+var mall_art_v35: Node
 var exterior_positions: Array[Vector3] = []
 var exterior_loaded := false
 var cleaned_namespace:String=""
@@ -154,12 +162,19 @@ func install_sync(d: Dictionary) -> bool:
  return active.has(d.id)
 
 func ensure_local_systems(point: Vector3) -> void:
- if not architecture_ready and Vector2(point.x + 192.0, point.z + 15.5).length() < 235.0:
+ var point_xz := Vector2(point.x, point.z)
+ var nearest_core := point_xz.clamp(B_CORE_MIN, B_CORE_MAX)
+ if not architecture_ready and point_xz.distance_squared_to(nearest_core) < B_CORE_LOAD_DISTANCE * B_CORE_LOAD_DISTANCE:
   var navigation_map: RID = game.get_world_3d().navigation_map
   NavigationServer3D.map_set_use_async_iterations(navigation_map, false)
   var arch = load("res://architecture_v32.gd").new()
   game.add_child(arch)
   arch.setup(game)
+  # Streaming can retain cells from another viewpoint or wing. Patch them too,
+  # so a retained original floor or guard never competes with the replacement.
+  for id: String in active.keys():
+   if desired(active_defs[id], point, true):
+    arch.apply_chunk(active[id])
   NavigationServer3D.map_force_update(navigation_map)
   architecture_ready = true
   stats.B_navigation_iteration = NavigationServer3D.map_get_iteration_id(navigation_map)
@@ -186,6 +201,8 @@ func prepare_position(point: Vector3) -> void:
  retire(point)
  if signs_stream != null:
   signs_stream.retire_far(point)
+ if is_instance_valid(mall_art_v35) and game.player.position.distance_squared_to(point) < 0.01:
+  mall_art_v35.update_near()
 
 func available_async() -> bool:
  # Godot's Dummy RenderingServer has no native resource creation worker.
@@ -245,17 +262,17 @@ func install_initial(point:Vector3)->bool:
  ensure_local_systems(point)
  var needed:Array=needed_zones(point);var total:int=needed.size();var completed:int=0;var start:int=Time.get_ticks_usec();var batch:int=start
  stats.initial_install_max_ms=0.;stats.initial_install_budget_ms=8.;stats.initial_loader="prepared-scene main-thread batches; actual progress in window title; one final render after readiness"
- DisplayServer.window_set_title("FIND YOURSELF v34 読込 0 / %d"%total)
+ DisplayServer.window_set_title("FIND YOURSELF v35 読込 0 / %d"%total)
  var old_fps_cap := Engine.max_fps
  Engine.max_fps = 0
  for d:Dictionary in needed:
   var t:int=Time.get_ticks_usec();var installed_ok:bool=install_sync(d)
   if not installed_ok:
    Engine.max_fps = old_fps_cap
-   push_error("マップデータを読み込めません。完全なZIPを新しいフォルダへ展開してください。");game.results={"version":"v34","startup_failed":true,"zone":d.id};return false
+   push_error("マップデータを読み込めません。完全なZIPを新しいフォルダへ展開してください。");game.results={"version":"v35","startup_failed":true,"zone":d.id};return false
   stats.initial_install_max_ms=maxf(stats.initial_install_max_ms,(Time.get_ticks_usec()-t)/1000.);completed+=1
   if Time.get_ticks_usec()-batch>=8000:
-   DisplayServer.window_set_title("FIND YOURSELF v34 読込 %d / %d"%[completed,total])
+   DisplayServer.window_set_title("FIND YOURSELF v35 読込 %d / %d"%[completed,total])
    await get_tree().process_frame;batch=Time.get_ticks_usec()
  Engine.max_fps = old_fps_cap
  stats.initial_required_zones=total;stats.initial_completed_zones=completed;stats.initial_install_wall_ms=(Time.get_ticks_usec()-start)/1000.
@@ -265,6 +282,7 @@ func detach_chunk(id: String) -> void:
  var node: Node = active[id]
  active.erase(id)
  active_defs.erase(id)
+ hidden_for_retirement.erase(id)
  remove_child(node)
  node.queue_free()
  stats.unloads += 1
@@ -274,16 +292,36 @@ func retire(point: Vector3) -> void:
  for id: String in active.keys():
   if not desired(active_defs[id], point, true):
    detach_chunk(id)
+ reveal_retained_chunks(point)
  retirement_queue.clear()
 
+func reveal_retained_chunks(point: Vector3) -> void:
+ for id: String in hidden_for_retirement.keys():
+  if desired(active_defs[id], point, true):
+   active[id].show()
+   hidden_for_retirement.erase(id)
+
 func queue_retirements(point: Vector3) -> void:
+ reveal_retained_chunks(point)
  retirement_queue.clear()
  for id: String in active.keys():
   if not desired(active_defs[id], point, true):
    retirement_queue.append(id)
  stats.max_retire_queue = maxi(retirement_queue.size(), int(stats.get("max_retire_queue", 0)))
 
+func hide_retiring_chunks() -> int:
+ var count := 0
+ for id: String in retirement_queue:
+  var chunk: Node3D = active[id]
+  if chunk.visible:
+   chunk.hide()
+   hidden_for_retirement[id] = true
+   count += 1
+ return count
+
 func drain_retirements(point: Vector3, deadline_usec: int, keep_target: Vector3 = Vector3.INF) -> void:
+ if Engine.get_process_frames() < retirement_resume_frame:
+  return
  var work := 0
  while not retirement_queue.is_empty() and work < MAX_RETIREMENTS_PER_FRAME and Time.get_ticks_usec() < deadline_usec:
   var id: String = retirement_queue.pop_front()
@@ -309,6 +347,8 @@ func schedule() -> void:
  queue_retirements(point)
  if signs_stream != null:
   signs_stream.retire_far(point)
+ if is_instance_valid(mall_art_v35):
+  mall_art_v35.update_near()
 
 func is_traveling() -> bool:
  return not travel.is_empty()
@@ -328,7 +368,8 @@ func request_travel(index: int) -> void:
   "started": Time.get_ticks_usec(), "queue": needed.duplicate(), "needed": needed,
   "player_physics": game.player.is_physics_processing(), "player_input": game.player.input_enabled,
   "elevator_physics": game.elevators.is_physics_processing(), "sales_process": sales.is_processing(),
-  "local_ready": false, "max_slice_ms": 0.0, "sales_ready": false, "customers_ready": false,
+  "local_ready": false, "local_ms": 0.0, "zones_ms": 0.0, "sales_prepare_ms": 0.0, "crowd_prepare_ms": 0.0,
+  "max_slice_ms": 0.0, "sales_ready": false, "customers_ready": false,
   "paused_source_render": available_async(), "original_3d_state": get_viewport().disable_3d
  }
  # The player is paused during transfer. Rendering the source wing competes
@@ -383,6 +424,10 @@ func complete_travel() -> void:
  var commit_start := Time.get_ticks_usec()
  game.apply_interactive_camera_pose(progress.shot)
  queue_retirements(point)
+ # Retire rendering before exposing the destination view. Keep the existing
+ # collision bodies alive until the normal bounded retirement queue drains.
+ var hidden_count := hide_retiring_chunks()
+ retirement_resume_frame = Engine.get_process_frames() + HANDOVER_RETIREMENT_DELAY_FRAMES
  if signs_stream != null:
   signs_stream.retire_far(point)
  var retire_done := Time.get_ticks_usec()
@@ -396,6 +441,8 @@ func complete_travel() -> void:
  var art: Node = game.get_node_or_null("V34_Mall_Art")
  if art != null and art.has_method("update_near"):
   art.update_near()
+ if is_instance_valid(mall_art_v35):
+  mall_art_v35.update_near()
  game.player.input_enabled = progress.player_input
  game.player.set_physics_process(progress.player_physics)
  game.elevators.set_physics_process(progress.elevator_physics)
@@ -403,6 +450,11 @@ func complete_travel() -> void:
   "wing": progress.wing,
   "loaded_chunks_at_handover": progress.needed.size(),
   "prepare_ms": (Time.get_ticks_usec() - token) / 1000.0,
+  "local_system_ms": progress.local_ms,
+  "zone_queue_main_thread_ms": progress.zones_ms,
+  "sales_prepare_main_thread_ms": progress.sales_prepare_ms,
+  "crowd_prepare_main_thread_ms": progress.crowd_prepare_ms,
+  "old_visual_chunks_hidden_at_handover": hidden_count,
   "longest_measured_install_or_local_slice_ms": progress.max_slice_ms,
   "commit_retirement_ms": (retire_done - commit_start) / 1000.0,
   "commit_crowd_ms": (crowd_done - retire_done) / 1000.0,
@@ -424,14 +476,17 @@ func progress_travel() -> void:
  var point: Vector3 = travel.point
  var begin := Time.get_ticks_usec()
  drain_retirements(game.player.position, begin + 1500, point)
+ var phase_start := Time.get_ticks_usec()
  if not travel.local_ready:
   ensure_local_systems(point)
   travel.local_ready = true
+  travel.local_ms = (Time.get_ticks_usec() - phase_start) / 1000.0
  else:
   if not process_zone_queue(travel.queue, point, begin + FRAME_BUDGET_USEC):
    cancel_travel()
    game.interaction_notice = "移動先の区画を読み込めませんでした"
    return
+  travel.zones_ms += (Time.get_ticks_usec() - phase_start) / 1000.0
  travel.max_slice_ms = maxf(travel.max_slice_ms, (Time.get_ticks_usec() - begin) / 1000.0)
  var loaded := 0
  for d: Dictionary in travel.needed:
@@ -443,9 +498,13 @@ func progress_travel() -> void:
   game.interaction_notice = travel.wing + "の店舗・来館者を準備中  |  Escで中止"
   var sales = game.get_node("V31_Sales")
   if not travel.sales_ready:
+   phase_start = Time.get_ticks_usec()
    travel.sales_ready = not sales.has_method("prepare_near") or sales.prepare_near(point, begin + FRAME_BUDGET_USEC)
+   travel.sales_prepare_ms += (Time.get_ticks_usec() - phase_start) / 1000.0
   if travel.sales_ready and not travel.customers_ready:
+   phase_start = Time.get_ticks_usec()
    travel.customers_ready = game.shoppers_v18.prepare_near(point, begin + FRAME_BUDGET_USEC)
+   travel.crowd_prepare_ms += (Time.get_ticks_usec() - phase_start) / 1000.0
   travel.max_slice_ms = maxf(travel.max_slice_ms, (Time.get_ticks_usec() - begin) / 1000.0)
   if travel.sales_ready and travel.customers_ready:
    complete_travel()
@@ -546,19 +605,26 @@ func boot(g)->void:
  mall_art.name="V34_Mall_Art"
  g.add_child(mall_art)
  mall_art.setup(g)
+ if ResourceLoader.exists("res://mall_art_v35.gd"):
+  mall_art_v35 = load("res://mall_art_v35.gd").new()
+  mall_art_v35.name = "V35_Mall_Art"
+  g.add_child(mall_art_v35)
+  mall_art_v35.setup(g)
  profile_mark("public_space_art")
  g.ui=load("res://ui_v7.gd").new();g.add_child(g.ui);g.ui.setup(g)
  var layer=CanvasLayer.new();g.add_child(layer);g.hud=Label.new();g.hud.add_theme_font_override("font",g.font);g.hud.add_theme_font_size_override("font_size",18);g.hud.position=Vector2(22,22);layer.add_child(g.hud)
  var footer=Label.new();footer.text="F1 A館 / F2 B館 / F3 C館  |  WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc 設定";footer.add_theme_font_override("font",g.font);footer.add_theme_font_size_override("font_size",16);footer.position=Vector2(22,1030);layer.add_child(footer)
+ if g.has_method("setup_presentation"):
+  g.setup_presentation()
  profile_mark("exterior_and_UI")
  await get_tree().physics_frame;await get_tree().physics_frame
  g.player.set_physics_process(true);g.player.input_enabled=g.mode=="interactive";stream_ready=true;g.shoppers_v18.update_near()
- get_viewport().disable_3d=false;game.show();RenderingServer.set_render_loop_enabled(initial_render_loop_was_enabled);DisplayServer.window_set_title("FIND YOURSELF v34 独立検証")
+ get_viewport().disable_3d=false;game.show();RenderingServer.set_render_loop_enabled(initial_render_loop_was_enabled);DisplayServer.window_set_title("FIND YOURSELF v35 独立検証")
  profile_mark("physics_sync_and_nearby_NPC")
  stats.initial_wayfinding_resident = signs_stream.active_mounts.size()
  stats.available_wayfinding_signs = signs_stream.definitions.size()
  stats.C_canopies_deferred_at_boot = not exterior_loaded
- g.results={"version":"v34","streaming":true,"all_building_layers":15,"stores":480,"NPC_records":43,"startup_ms":(Time.get_ticks_usec()-begin)/1000.,"adapter":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"main_game_loaded":false,"Windows_GPU_tested":false};g.results.ES_models_at_start=g.animator.banks.size();g.results.ES_definitions=g.animator.definitions.size();g.results.startup_profile=profile_spans;g.results.startup_zone_stats=stats.duplicate();print("V30_STREAM_READY ",JSON.stringify(g.results)," ",JSON.stringify(resident_counts()))
+ g.results={"version":"v35","streaming":true,"all_building_layers":15,"stores":480,"NPC_records":43,"startup_ms":(Time.get_ticks_usec()-begin)/1000.,"adapter":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"main_game_loaded":false,"Windows_GPU_tested":false};g.results.ES_models_at_start=g.animator.banks.size();g.results.ES_definitions=g.animator.definitions.size();g.results.startup_profile=profile_spans;g.results.startup_zone_stats=stats.duplicate();print("V30_STREAM_READY ",JSON.stringify(g.results)," ",JSON.stringify(resident_counts()))
 
 func _exit_tree() -> void:
  stream_ready = false

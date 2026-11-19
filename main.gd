@@ -4,6 +4,7 @@ var font:Font
 var manifest:Dictionary
 var mats:Dictionary={}
 var hud:Label
+var mall_presentation: Node
 var frame_times:Array=[]
 var results:Dictionary={}
 var mode:String="interactive"
@@ -365,7 +366,7 @@ func _ready()->void:
  if not OS.get_cmdline_user_args().has("--v27-baseline"):
   if comparison_B_v28:interactive_pose({"eye":[-209,1.65,-38],"look":[-196,2.5,-38],"fov":70})
   elif es_site_proposal:interactive_pose({"eye":[-182,1.65,-6.5],"look":[-194,3.0,-14.0],"fov":72})
- var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v34 独立検証 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
+ var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v35 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
  if not visual_v7 and bool(ProjectSettings.get_setting("rendering/quality/v14_local_probe_reflections",false))and mode not in ["walk-test","walk-v8","ui-test","bake-gi"]:
   for d in [[Vector3(350,3,-32),Vector3(110,12,110)],[Vector3(0,3,8),Vector3(110,12,110)]]:
    var probe=ReflectionProbe.new();probe.position=d[0];probe.size=d[1];probe.interior=true;probe.box_projection=true;probe.max_distance=60;probe.intensity=.7;probe.enable_shadows=false;probe.update_mode=ReflectionProbe.UPDATE_ONCE;probe.ambient_mode=ReflectionProbe.AMBIENT_DISABLED;add_child(probe)
@@ -398,15 +399,28 @@ func _process(dt:float)->void:
  hud_refresh_seconds += dt
  if hud_refresh_seconds >= 0.25:
   hud_refresh_seconds = 0.0
-  hud.text = "FIND YOURSELF  v34 独立検証\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s" % [player.position.x, player.position.y, player.position.z, Engine.get_frames_per_second(), "ESCALATOR " + player.belt_id if player.belt_id != "" else ""]
-  if notice_seconds > 0.0:
-   hud.text += "\n" + interaction_notice
+  if mall_presentation != null:
+   mall_presentation.refresh()
+  else:
+   hud.text = "FIND YOURSELF  v35\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s" % [player.position.x, player.position.y, player.position.z, Engine.get_frames_per_second(), "ESCALATOR " + player.belt_id if player.belt_id != "" else ""]
+   if notice_seconds > 0.0:
+    hud.text += "\n" + interaction_notice
  if developer_mode() and mode=="interactive" and ui.overlay=="":
   if Input.is_physical_key_pressed(KEY_1):player.position=Vector3(-3,.08,28.3)
   if Input.is_physical_key_pressed(KEY_2):player.position=Vector3(-3,5.605,28.3)
   if Input.is_physical_key_pressed(KEY_3):player.position=Vector3(-3,10.955,28.3)
   if Input.is_physical_key_pressed(KEY_4):player.position=Vector3(-118.99913,16.48,63.99970)
   if Input.is_physical_key_pressed(KEY_B):player.position=Vector3(-111.00000,-5.27,-40.00000)
+func setup_presentation() -> void:
+ if mall_presentation != null or mode != "interactive":
+  return
+ mall_presentation = load("res://mall_presentation_v35.gd").new()
+ add_child(mall_presentation)
+ mall_presentation.setup(self)
+ var room_sound: Node = load("res://mall_sound_v35.gd").new()
+ add_child(room_sound)
+ room_sound.setup(self)
+
 func build_environment()->void:
  var world=WorldEnvironment.new();var env=Environment.new();world.environment=env
  env.background_mode=Environment.BG_SKY
@@ -509,7 +523,10 @@ func _input(e:InputEvent)->void:
    get_viewport().set_input_as_handled()
    return
  if e is InputEventKey and e.pressed and not e.echo:
-  if e.keycode==KEY_M and not (ui.overlay=="map" and ui.map.has_method("search_has_focus") and ui.map.search_has_focus()):ui.show_map();get_viewport().set_input_as_handled()
+  if e.keycode == KEY_H and ui.overlay.is_empty() and mall_presentation != null:
+   mall_presentation.show_controls()
+   get_viewport().set_input_as_handled()
+  elif e.keycode==KEY_M and not (ui.overlay=="map" and ui.map.has_method("search_has_focus") and ui.map.search_has_focus()):ui.show_map();get_viewport().set_input_as_handled()
   elif developer_mode() and e.keycode==KEY_F10:ui.show_settings();get_viewport().set_input_as_handled()
   elif developer_mode() and e.keycode==KEY_F8:ui.show_pilots();get_viewport().set_input_as_handled()
   elif developer_mode() and e.keycode==KEY_F9:ui.show_amenities();get_viewport().set_input_as_handled()

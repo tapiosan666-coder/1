@@ -1,0 +1,14 @@
+FIND YOURSELF v35 / C館南側回廊・LUMEVA TABLE
+
+Original for this project: game geometry, baked lettering artwork, café menu layout,
+and the editorial grain emblem. See c_promenade_v35.gd and authoring/v35_c_bakery.py.
+
+The café menu incorporates assets/v17/photos/campaign_cafe.jpg, an original Blender
+render from v17. The v17 shrub and ficus meshes use their inherited notices in
+v17-original-assets.txt. Existing limestone, pavers, plaster, brick and oak finishes
+reuse the licenses already included with this project's materials.
+
+New raster typography: Noto Sans CJK and Noto Serif CJK, SIL Open Font License 1.1.
+See Noto-OFL.txt. The two baked textures are included and require no extra fonts
+or Python at runtime. Rebuilding the art source uses Pillow and the two Noto
+font collections.
