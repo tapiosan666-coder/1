@@ -1,30 +1,53 @@
 extends "res://sales_v32.gd"
 
 const CUSTOM := "../v34/models/"
+const BOOKSHOP := "../v36/models/"
+const StudioCases := preload("res://studio_case_v36.gd")
+const STUDIO_PREFIX := "v36-fit/"
+var studio_refits: Dictionary
+var studio_stores: Dictionary
 var replacements: Dictionary
 var stock_counts: Dictionary
 var floor_heights: Dictionary
 
 func setup(g) -> void:
+ studio_refits = g.read_json("res://source/v36/store-refits.json")
+ for id: String in studio_refits:
+  studio_stores[id.get_slice("-V3",0)] = true
  var edit: Dictionary = g.read_json("res://source/v34/retail-edit.json")
  replacements = edit.replacements
  stock_counts = edit.stock_by_asset
  floor_heights = edit.floor_height_by_store
+ var book: Dictionary = g.read_json("res://source/v36/orienne.json")
+ replacements["A1F-051"] = book.by_fixture
+ stock_counts.merge(book.stock)
+ floor_heights["A1F-051"] = 0.0
  super.setup(g)
 
 func install_store(store: Dictionary) -> void:
- if not replacements.has(store.id):
+ if not replacements.has(store.id) and not studio_stores.has(store.id):
   super.install_store(store)
   return
 
  var fitted := store.duplicate(false)
  fitted.placements = []
- var changes: Dictionary = replacements[store.id]
+ var changes: Dictionary = replacements.get(store.id,{})
  for fixture: Dictionary in store.placements:
+  if studio_refits.has(fixture.id):
+   var code: String = STUDIO_PREFIX + str(fixture.id)
+   var kit: Dictionary = template(code,store.category)
+   if not kit.is_empty():
+    var adapted := fixture.duplicate(false)
+    adapted.asset = code
+    adapted.role = "studio_" + str(studio_refits[fixture.id].role)
+    record_fitted_bounds(adapted,kit.bounds)
+    fitted.placements.append(adapted)
+    continue
   if not changes.has(fixture.id):
    fitted.placements.append(fixture)
    continue
-  var authored_asset: String = CUSTOM + str(changes[fixture.id])
+  var is_bookshop := str(store.id) == "A1F-051"
+  var authored_asset: String = (BOOKSHOP if is_bookshop else CUSTOM) + str(changes[fixture.id])
   var source: Dictionary = library.get_asset(authored_asset, false)
   if source.is_empty():
    fitted.placements.append(fixture)
@@ -36,6 +59,9 @@ func install_store(store: Dictionary) -> void:
    fitted.placements.append(fixture)
    continue
   var new_fixture := fixture.duplicate(false)
+  if is_bookshop:
+   # This case has its own department fascia. Suppress the generic overlaid label.
+   new_fixture.role = "department_bookcase"
   new_fixture.asset = authored_asset
   new_fixture.p = fixture.p.duplicate()
   new_fixture.p[1] = float(floor_heights[store.id]) + .001 - source.bounds.position.y
@@ -56,17 +82,44 @@ func record_fitted_bounds(fixture: Dictionary, bounds: AABB) -> void:
  ring.append(ring[0])
  fixture.footprint = {"type":"Polygon","coordinates":[ring]}
 
+func studio_pose(row: Dictionary) -> Transform3D:
+ return Transform3D(Basis.from_scale(game.v3(row.scale)),game.v3(row.offset))
+
 func template(asset: String, category: String, style: int = 0) -> Dictionary:
- if not asset.begins_with(CUSTOM):
+ if asset.begins_with(STUDIO_PREFIX):
+  if not templates.has(asset):
+   var row: Dictionary = studio_refits[asset.trim_prefix(STUDIO_PREFIX)]
+   var mesh := load(StudioCases.DIRECTORY + str(row.mesh) + ".res") as Mesh
+   if mesh == null:
+    push_error("Missing fitting for " + asset)
+    return {}
+   var pose := studio_pose(row)
+   templates[asset] = {"parts":[{"mesh":mesh,"transform":pose}],"bounds":pose*mesh.get_aabb(),"supported_stock":0}
+  return templates[asset]
+ if not asset.begins_with(CUSTOM) and not asset.begins_with(BOOKSHOP):
   return super.template(asset, category, style)
  if not templates.has(asset):
   var source: Dictionary = library.get_asset(asset,false)
   templates[asset] = {"parts": source.parts, "bounds": source.bounds,
-   "supported_stock": stock_counts[asset.trim_prefix(CUSTOM)]}
+   "supported_stock": stock_counts[asset.get_file()]}
  return templates[asset]
 
+func pristine(mesh: Mesh) -> Mesh:
+ # Published shop kits and v36 furnishings are read-only. MultiMesh instances
+ # can use them directly, preserving their authored LOD and shadow meshes and
+ # avoiding a GPU-to-CPU readback/re-upload of every merchandising surface.
+ var path := mesh.resource_path
+ if path.begins_with("res://assets/v36/studios/") or path.begins_with("res://assets/v32/kits/"):
+  return mesh
+ return super.pristine(mesh)
+
 func fixture_shape(asset: String) -> Shape3D:
- if not asset.begins_with(CUSTOM):
+ if asset.begins_with(STUDIO_PREFIX):
+  if not fixture_shapes.has(asset):
+   var row: Dictionary = studio_refits[asset.trim_prefix(STUDIO_PREFIX)]
+   fixture_shapes[asset] = StudioCases.shape_for(row.role,row.variant,studio_pose(row),str(row.mesh))
+  return fixture_shapes[asset]
+ if not asset.begins_with(CUSTOM) and not asset.begins_with(BOOKSHOP):
   return super.fixture_shape(asset)
  if not fixture_shapes.has(asset):
   var source: Dictionary = library.get_asset(asset,false)
@@ -79,6 +132,8 @@ func fixture_shape(asset: String) -> Shape3D:
    furniture_top = .51
   if asset.ends_with("orchard_large"):
    furniture_top = .49
+  if asset.begins_with(BOOKSHOP):
+   furniture_top = bounds.end.y
   var collision_mesh := BoxMesh.new()
   collision_mesh.size = Vector3(bounds.size.x, furniture_top, bounds.size.z)
   var center := Vector3(bounds.get_center().x, furniture_top * .5, bounds.get_center().z)

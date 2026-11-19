@@ -1,7 +1,11 @@
 extends Node3D
 
 const LOCAL_DESIGNS := [
+	preload("res://commons_v36.gd"),
+	preload("res://parking_v36.gd"),
+	preload("res://wall_editions_v36.gd"),
 	preload("res://a_west_gallery_v35.gd"),
+	preload("res://store_studios_v36.gd"),
 	preload("res://b_gallery_v35.gd"),
 	preload("res://c_promenade_v35.gd"),
 ]
