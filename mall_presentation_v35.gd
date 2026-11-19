@@ -8,6 +8,8 @@ var controls: Label
 var last_check: int = -LOCATION_CHECK_MS
 var label: String = "A館  1F"
 var controls_until: int
+var pin_caption := ""
+var pin_id := ""
 
 func setup(g: Node3D) -> void:
 	game = g
@@ -48,17 +50,22 @@ func refresh() -> void:
 	var now := Time.get_ticks_msec()
 	var hud: Label = game.hud
 	var map_screen = game.ui.map
-	if now - last_check >= LOCATION_CHECK_MS:
+	var selected_id := "" if map_screen.pinned.is_empty() else str(map_screen.pinned.item.id)
+	if now - last_check >= LOCATION_CHECK_MS or selected_id != pin_id:
+		pin_id = selected_id
 		last_check = now
 		var location: Dictionary = map_screen.floor_at(map_screen.world_plan_point(), game.player.global_position.y)
 		if not location.is_empty():
 			label = map_screen.floor_title(location)
+		pin_caption = map_screen.pin_walking_caption(location, map_screen.world_plan_point(), game.player.global_position.y)
 	if controls != null:
 		var expanded := now < controls_until
 		controls.position.y = 956.0 if expanded else 1003.0
 		controls.text = CONTROLS if expanded else "M  館内マップ    H  操作ガイド"
 		controls.visible = game.ui.overlay.is_empty() and hud.visible
 	var message := label
+	if not pin_caption.is_empty():
+		message += "\n" + pin_caption
 	if game.player.belt_id != "":
 		message += "   エスカレーター"
 	if game.notice_seconds > 0.0:

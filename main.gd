@@ -38,6 +38,7 @@ var shoppers_v18
 var draft:bool=false
 var art_v10:Dictionary={}
 var startup_trace_v30:Array=[]
+var runtime_catalogs_v36: Dictionary = {}
 var interaction_notice:String=""
 var notice_seconds:float=0.0
 var hud_refresh_seconds := 0.25
@@ -72,6 +73,15 @@ func read_json(p:String):
  if p=="res://source/v293/retail-plan.json"and v294_enabled():p="res://source/v294/retail-plan.json"
  if p in ["res://source/v25/retail-plan.json","res://source/v29/retail-plan.json","res://source/v291/retail-plan.json","res://source/v292/retail-plan.json","res://source/v293/retail-plan.json","res://source/v294/retail-plan.json"]and not retail_v23_cache.is_empty():return retail_v23_cache
  var value
+ if runtime_catalogs_v36.has(p):
+  var descriptor: Dictionary = runtime_catalogs_v36[p]
+  if descriptor.sha256 == FileAccess.get_sha256(p):
+   var compiled := FileAccess.open_compressed(descriptor.path, FileAccess.READ, FileAccess.COMPRESSION_ZSTD)
+   if compiled != null:
+    value = compiled.get_var(false)
+    if compiled.get_error() == OK and (value is Dictionary or value is Array):
+     startup_trace_v30.append({"kind":"baked_catalog","path":p,"milliseconds":(Time.get_ticks_usec()-v30_begin)/1000.})
+     return value
  if not FileAccess.file_exists(p)and FileAccess.file_exists(p+".zst"):
   var bytes=FileAccess.get_file_as_bytes(p+".zst");var raw=bytes.slice(8).decompress(bytes.decode_u32(4),FileAccess.COMPRESSION_ZSTD);value=JSON.parse_string(raw.get_string_from_utf8())
  else:value=JSON.parse_string(FileAccess.get_file_as_string(p))
@@ -366,7 +376,7 @@ func _ready()->void:
  if not OS.get_cmdline_user_args().has("--v27-baseline"):
   if comparison_B_v28:interactive_pose({"eye":[-209,1.65,-38],"look":[-196,2.5,-38],"fov":70})
   elif es_site_proposal:interactive_pose({"eye":[-182,1.65,-6.5],"look":[-194,3.0,-14.0],"fov":72})
- var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v35 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
+ var bottom=Label.new();bottom.add_theme_font_override("font",font);bottom.add_theme_font_size_override("font_size",14);bottom.position=Vector2(22,1015);bottom.text="v36 | WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc メニュー\nF1 A館 / F2 B館 / F3 C館";layer.add_child(bottom)
  if not visual_v7 and bool(ProjectSettings.get_setting("rendering/quality/v14_local_probe_reflections",false))and mode not in ["walk-test","walk-v8","ui-test","bake-gi"]:
   for d in [[Vector3(350,3,-32),Vector3(110,12,110)],[Vector3(0,3,8),Vector3(110,12,110)]]:
    var probe=ReflectionProbe.new();probe.position=d[0];probe.size=d[1];probe.interior=true;probe.box_projection=true;probe.max_distance=60;probe.intensity=.7;probe.enable_shadows=false;probe.update_mode=ReflectionProbe.UPDATE_ONCE;probe.ambient_mode=ReflectionProbe.AMBIENT_DISABLED;add_child(probe)
@@ -402,7 +412,7 @@ func _process(dt:float)->void:
   if mall_presentation != null:
    mall_presentation.refresh()
   else:
-   hud.text = "FIND YOURSELF  v35\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s" % [player.position.x, player.position.y, player.position.z, Engine.get_frames_per_second(), "ESCALATOR " + player.belt_id if player.belt_id != "" else ""]
+   hud.text = "FIND YOURSELF  v36\n位置 %.1f / %.2f / %.1f m   FPS %.1f\n%s" % [player.position.x, player.position.y, player.position.z, Engine.get_frames_per_second(), "ESCALATOR " + player.belt_id if player.belt_id != "" else ""]
    if notice_seconds > 0.0:
     hud.text += "\n" + interaction_notice
  if developer_mode() and mode=="interactive" and ui.overlay=="":

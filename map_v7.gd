@@ -49,10 +49,13 @@ var result_floor_only: bool = true
 var destination_index_ready: bool = false
 var brand_registry: Dictionary = {}
 var geometry_cache: Dictionary = {}
+var location_polygons: Dictionary = {}
 var map_labels: Array[Dictionary] = []
+var store_entrances: Dictionary = {}
 
 func setup(floors: Array, body: CharacterBody3D, interface_font: Font, brands: Dictionary = {}) -> void:
  data = floors
+ location_polygons.clear()
  player = body
  font = interface_font
  brand_registry = brands
@@ -183,6 +186,7 @@ func floor_title(floor: Dictionary) -> String:
  return wing_title(str(floor.wing)) + "  " + str(floor.label)
 
 func index_destinations() -> void:
+ store_entrances = JSON.parse_string(FileAccess.get_file_as_string("res://source/v36/map-entrances.json"))
  item_index.clear()
  for f: Dictionary in data:
   for item: Dictionary in f.get("items", []):
@@ -263,7 +267,8 @@ func update_pin_caption() -> void:
  if label.length() > 32:
   label = label.substr(0, 31) + "…"
  var extra := "" if item.implemented else " / 未公開"
- details_label.text = label + "\n" + location_text + "　" + str(item.id) + extra
+ var pin_type := "店舗入口" if item.kind == "店舗" and store_entrances.has(item.id) else str(item.kind)
+ details_label.text = label + "\n" + location_text + "　" + pin_type + extra + "\n" + str(item.id)
 
 func select_floor(floor: Dictionary) -> void:
  wing = str(floor.wing)
@@ -411,7 +416,7 @@ func _draw() -> void:
   draw_rect(tag.rect, PANEL_COLOR)
   draw_string(font, tag.rect.position + Vector2(6, 15), tag.caption, HORIZONTAL_ALIGNMENT_LEFT, -1, 14, INK if tag.available else MUTED)
  if not pinned.is_empty() and pinned.floor.wing == wing and pinned.floor.label == floor_label:
-  draw_marker_pin(point(pinned.item.point))
+  draw_destination_pin()
  if not current_floor.is_empty() and current_floor.wing == wing and current_floor.label == floor_label:
   draw_player_marker()
  draw_string(font, Vector2(407, 129), floor_title(selected), HORIZONTAL_ALIGNMENT_LEFT, -1, 29, INK)
@@ -426,6 +431,35 @@ func _draw() -> void:
  var ruler_x := map_rect.end.x - ruler - 8.0
  draw_line(Vector2(ruler_x, 1004), Vector2(ruler_x + ruler, 1004), MUTED, 2.0)
  draw_string(font, Vector2(ruler_x, 1027), "50 m", HORIZONTAL_ALIGNMENT_LEFT, -1, 15, MUTED)
+
+func draw_destination_pin() -> void:
+ var item: Dictionary = pinned.item
+ if item.kind == "店舗" and store_entrances.has(item.id):
+  for polygon: Array in item.geometry:
+   if polygon.is_empty():
+    continue
+   var outline := PackedVector2Array()
+   for vertex: Array in polygon[0]:
+    outline.append(point(vertex))
+   if outline.size() > 2:
+    if not outline[0].is_equal_approx(outline[-1]):
+     outline.append(outline[0])
+    draw_polyline(outline, ACCENT, 2.0, true)
+  draw_marker_pin(point(store_entrances[item.id]))
+ else:
+  draw_marker_pin(point(item.point))
+
+func pin_walking_caption(location: Dictionary, player_point: Vector2, height: float) -> String:
+ if pinned.is_empty():
+  return ""
+ var item: Dictionary = pinned.item
+ var title := str(pinned.title)
+ if not item.implemented:
+  return "未公開　%s　%s" % [floor_title(pinned.floor), title]
+ var on_level: bool = location.get("wing", "") == pinned.floor.wing and location.get("label", "") == pinned.floor.label and absf(height - float(pinned.floor.height)) < 0.65
+ if on_level and item.kind == "店舗" and covers(player_point, item.geometry):
+  return "店内　" + title
+ return "目的地　%s　%s" % [floor_title(pinned.floor), title]
 
 func draw_player_marker() -> void:
  var marker := world_plan_point() * scale_m + offset
@@ -449,18 +483,40 @@ func draw_marker_pin(marker: Vector2) -> void:
 func world_plan_point() -> Vector2:
  return Vector2(player.global_position.x - 429.0, player.global_position.z + 46.0)
 
+func floor_covers(floor_record: Dictionary, part: String, point_in_plan: Vector2) -> bool:
+ var key := "%s/%s/%s" % [floor_record.wing, floor_record.label, part]
+ if not location_polygons.has(key):
+  var polygons: Array = []
+  for polygon: Array in floor_record[part]:
+   if polygon.is_empty(): continue
+   var rings: Array[PackedVector2Array] = []
+   for ring: Array in polygon:
+    rings.append(ring_points(ring))
+   polygons.append(rings)
+  location_polygons[key] = polygons
+ for rings: Array in location_polygons[key]:
+  if not Geometry2D.is_point_in_polygon(point_in_plan, rings[0]):
+   continue
+  var in_hole := false
+  for index in range(1, rings.size()):
+   if Geometry2D.is_point_in_polygon(point_in_plan, rings[index]):
+    in_hole = true
+    break
+  if not in_hole: return true
+ return false
+
 func floor_at(pos: Vector2, height: float) -> Dictionary:
  var best_score := INF
  var best: Dictionary = {}
  for f: Dictionary in data:
+  var score := absf(height - float(f.height))
+  # Both horizontal penalties are nonnegative. Preserve the original tie rule.
+  if score >= best_score: continue
   var bb: Array = f.bounds
   var bounds := Rect2(bb[0], bb[1], bb[2] - bb[0], bb[3] - bb[1])
-  var exact := bounds.has_point(pos) and covers(pos, f.floor)
-  var nearest := pos.clamp(bounds.position, bounds.end)
-  var score := absf(height - float(f.height))
-  if not exact:
-   score += 80.0 + nearest.distance_to(pos)
-  elif not covers(pos, f.public):
+  if not bounds.has_point(pos) or not floor_covers(f, "floor", pos):
+   score += 80.0 + pos.clamp(bounds.position, bounds.end).distance_to(pos)
+  elif not floor_covers(f, "public", pos):
    score += .12
   if score < best_score:
    best_score = score
