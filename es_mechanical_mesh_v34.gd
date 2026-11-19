@@ -3,7 +3,14 @@ extends RefCounted
 ## share the rail, side panels and comb plates; the moving tread meshes are shared sitewide.
 const TRACK_HALF_WIDTH := .655
 const CASE_HALF_WIDTH := .775
-const COMB_DEPTH := .28
+# Finished heights above the original physical support. The 6 mm public tile
+# finish used to draw through the flat steps and the fixed access cover.
+const TREAD_FINISH_Y := .026
+const TRACK_BED_Y := .013
+const PLATE_TOP_Y := .041
+const COMB_START := .72
+const PLATE_RAMP_START := 1.42
+const PLATE_END := 1.66
 const RIB_COUNT := 32
 const NEWEL_FLAT := 1.01
 const RETURN_RADIUS := .40
@@ -235,15 +242,33 @@ static func machine_case(rise: float, run: float, brushed: Material, landing: Ma
 	plates.begin(Mesh.PRIMITIVE_TRIANGLES)
 	var comb := SurfaceTool.new()
 	comb.begin(Mesh.PRIMITIVE_TRIANGLES)
+	# A fixed narrow bed peeks through the gaps between tread noses. This
+	# separates the moving deck from the hall tile across both flat approaches.
+	for i: int in range(knots.size() - 1):
+		var a := knots[i]
+		var b := knots[i + 1]
+		var ya := height(a, rise, run) + TRACK_BED_Y
+		var yb := height(b, rise, run) + TRACK_BED_Y
+		basic_face(plates,[Vector3(-.727,ya,a),Vector3(.727,ya,a),Vector3(.727,yb,b),Vector3(-.727,yb,b)])
 	for side: float in [-1., 1.]:
-		var y := rise if side > 0. else 0.
-		var plate_center: float = side * (end - COMB_DEPTH * .5)
-		box(plates, Vector3(0., y - .012, plate_center), Vector3(1.46, .022, COMB_DEPTH))
-		# Precisely spaced tooth fingers conceal the joint without covering the yellow tread lip.
-		var comb_s: float = side * (end - COMB_DEPTH - .04)
-		for i: int in RIB_COUNT:
-			var x: float = -.627 + (i + .5) * (1.254 / RIB_COUNT)
-			box(comb, Vector3(x, y + .006, comb_s), Vector3(.015, .012, .094))
+		var level := rise if side > 0. else 0.
+		var start := side * (half + COMB_START)
+		var ramp := side * (half + PLATE_RAMP_START)
+		var stop := side * (half + PLATE_END)
+		var depth := absf(ramp - start)
+		box(plates, Vector3(0., level + PLATE_TOP_Y - .007, (start+ramp)*.5), Vector3(1.464,.014,depth))
+		# Feather the far end of the metal cover back down to the tile. The
+		# public floor and its existing collision do not need a new step.
+		var lead: Array[Vector3] = [Vector3(-.732,level+PLATE_TOP_Y,ramp),Vector3(.732,level+PLATE_TOP_Y,ramp),Vector3(.732,level+.007,stop),Vector3(-.732,level+.007,stop)]
+		if side < 0.:
+			lead.reverse()
+		basic_face(plates, lead)
+		# Finger centres fall between adjacent tread ribs. The lip overlaps
+		# the teeth; all turnarounds are already behind the fixed plate.
+		box(comb,Vector3(0.,level + PLATE_TOP_Y + .0005,start + side*.019),Vector3(1.34,.003,.044))
+		for i: int in range(RIB_COUNT - 1):
+			var x := -.627 + (i + 1.) * (1.254 / RIB_COUNT)
+			box(comb, Vector3(x, level + .033,start - side*.028),Vector3(.013,.008,.062))
 	add_surface(plates, mesh, landing)
 	add_surface(comb, mesh, accent)
 	glass_balustrades(mesh, rise, run, glass)

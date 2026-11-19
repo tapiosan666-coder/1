@@ -46,9 +46,12 @@ func setup(manifest: Dictionary, mats: Dictionary) -> void:
 func machine_resources(rise: float, run: float) -> Dictionary:
  var key := Vector2(rise, run)
  if not shared_machines.has(key):
+  var access_plate := ShaderMaterial.new()
+  access_plate.shader = preload("res://es_access_plate_v36.gdshader")
+  access_plate.set_shader_parameter("half_run_m",run*.5)
   shared_machines[key] = {
    "rail": ES_MESH.rail(rise, run),
-   "case": ES_MESH.machine_case(rise, run, stainless_material, material_set.metal, comb_material, laminated_glass),
+   "case": ES_MESH.machine_case(rise, run, stainless_material, access_plate, comb_material, laminated_glass),
    "collider": ES_MESH.housing_collision(rise, run),
   }
  return shared_machines[key]
@@ -287,6 +290,9 @@ func update_bank(bank: Dictionary, t: float) -> void:
   var angle := point.z
   var stretch := pitch / .4
   var tread_y := point.y
+  var tread_z := point.x
+  var width_scale := 1.
+  var height_scale := 1.
   if point.w < float(bank.top_end):
    # At a floor/slope transition keep adjacent treads at a uniform projected
    # pitch. This avoids the visible gap or overlap left by a fixed tread depth.
@@ -296,17 +302,30 @@ func update_bank(bank: Dictionary, t: float) -> void:
    # Set the level plateau above the highest support under its footprint. The
    # controller keeps a continuous contact plane; the visible stair top and
    # riser stay intact and do not intersect the baked support surface.
-   tread_y = height(point.x + .20 * stretch, bank)
+   # Centre the tread between the true projected half-pitch endpoints. A
+   # track-space midpoint is off-centre in plan at the flat/slope kink and
+   # previously left oversized horizontal joints between adjacent steps.
+   tread_z = (before.x + after.x) * .5
+   tread_y = height(after.x, bank) + ES_MESH.TREAD_FINISH_Y
+  else:
+   # The hidden return runs through a closed truss. A rotating riser can
+   # otherwise poke through the low landing top or out of the casing below.
+   # The switch happens beneath the overlapping cover, beyond the last
+   # fully visible tread. Park the return representation inside the case.
+   tread_y = height(point.x,bank) - .38
+   width_scale = .002
+   height_scale = .002
+   stretch = .002
   var a := i * 12
   var sine := sin(angle)
   var cosine := cos(angle)
-  data[a] = 1.
-  data[a + 5] = cosine
+  data[a] = width_scale
+  data[a + 5] = cosine * height_scale
   data[a + 6] = -sine * stretch
   data[a + 7] = tread_y
-  data[a + 9] = sine
+  data[a + 9] = sine * height_scale
   data[a + 10] = cosine * stretch
-  data[a + 11] = point.x
+  data[a + 11] = tread_z
  multimesh.buffer = data
  visible_updates += 1
 
