@@ -200,6 +200,7 @@ func ensure_local_systems(point: Vector3) -> void:
     break
 
 func prepare_position(point: Vector3) -> void:
+ if is_instance_valid(game.staff): game.staff.prepare_labels(point)
  # Authoring and automated QA can prepare a specific inspection point synchronously.
  if is_traveling():
   cancel_travel()
@@ -271,24 +272,16 @@ func install_initial(point: Vector3) -> bool:
  ensure_local_systems(point)
  var needed := needed_zones(point)
  var completed := 0
- var next_request := 0
  var begin := Time.get_ticks_usec()
  var last_yield := begin
  stats.initial_install_max_ms = 0.0
  stats.initial_install_budget_ms = 8.0
- stats.initial_loader = "Two prepared cells read ahead; all required geometry and collision are installed before first view."
+ stats.initial_loader = "Serial prepared startup cells; all required geometry and collision are installed before first view."
  DisplayServer.window_set_title("FIND YOURSELF v36 読込 0 / %d" % needed.size())
  var old_cap := Engine.max_fps
  Engine.max_fps = 0
  measure_initial_load = OS.get_cmdline_user_args().has("--startup-profile")
  for d: Dictionary in needed:
-  # Use the resource workers for deserialization only. Physics and node changes
-  # stay on the main thread; at most two not-yet-consumed cells hold resources.
-  while native_streaming and next_request < needed.size() and pending.size() < 2:
-   var next: Dictionary = needed[next_request]
-   next_request += 1
-   if not active.has(next.id):
-    begin_request(next)
   var start := Time.get_ticks_usec()
   if not install_sync(d):
    Engine.max_fps = old_cap
@@ -458,6 +451,7 @@ func complete_travel() -> void:
   return
  var commit_start := Time.get_ticks_usec()
  game.apply_interactive_camera_pose(progress.shot)
+ game.staff.prepare_labels(point)
  queue_retirements(point)
  # Retire rendering before exposing the destination view. Keep the existing
  # collision bodies alive until the normal bounded retirement queue drains.
@@ -636,7 +630,7 @@ func boot(g)->void:
  var initial_ok:bool=await install_initial(g.player.position)
  if not initial_ok:return
  profile_mark("initial_zone_load")
- g.staff=load("res://staff_doors.gd").new();g.add_child(g.staff);g.staff.setup(g.manifest.staff_doors,g.mats)
+ g.staff=load("res://staff_doors.gd").new();g.add_child(g.staff);g.staff.setup(g.manifest.staff_doors,g.mats,g.player)
  g.animator=load("res://escalator_v2.gd").new();g.add_child(g.animator);g.animator.setup(g.manifest,g.mats)
  for mesh in g.animator.find_children("*","GeometryInstance3D",true,false):mesh.visibility_range_end=125.;mesh.visibility_range_end_margin=15.
  profile_mark("doors_and_42_ES_assemblies")
