@@ -27,10 +27,14 @@ var failed_paths: Dictionary = {}
 var tile_index: Dictionary = {}
 var active_defs: Dictionary = {}
 var view_queue: Array = []
+var last_scheduled_position := Vector3.INF
+var retry_zone_schedule := false
 var retirement_queue: Array = []
 var hidden_for_retirement: Dictionary = {}
 var retirement_resume_frame := 0
 var native_streaming := false
+var initial_timings: Array[Dictionary] = []
+var measure_initial_load := false
 var travel: Dictionary = {}
 var travel_history: Array = []
 var staged_floor_sync := false
@@ -149,6 +153,7 @@ func install_sync(d: Dictionary) -> bool:
  if active.has(d.id):
   return true
  var path := scene_path(d)
+ var started := Time.get_ticks_usec() if measure_initial_load else 0
  var packed: PackedScene
  if pending.has(d.id):
   packed = ResourceLoader.load_threaded_get(pending[d.id].path)
@@ -158,7 +163,10 @@ func install_sync(d: Dictionary) -> bool:
  if packed == null:
   push_error("区画を読み込めません: " + path)
   return false
+ var loaded := Time.get_ticks_usec() if measure_initial_load else 0
  install(d, packed)
+ if measure_initial_load:
+  initial_timings.append({"id":d.id,"load_or_wait_ms":(loaded-started)/1000.,"attach_ms":(Time.get_ticks_usec()-loaded)/1000.})
  return active.has(d.id)
 
 func ensure_local_systems(point: Vector3) -> void:
@@ -233,6 +241,7 @@ func drain_requests(point: Vector3, deadline_usec: int) -> int:
   pending.erase(id)
   if scene == null:
    failed_paths[id] = true
+   retry_zone_schedule = true
   if scene != null and desired(task.definition, point, true):
    install(task.definition, scene)
    installed += 1
@@ -258,26 +267,50 @@ func process_zone_queue(queue: Array, point: Vector3, deadline_usec: int) -> boo
   work += 1
  return true
 
-func install_initial(point:Vector3)->bool:
+func install_initial(point: Vector3) -> bool:
  ensure_local_systems(point)
- var needed:Array=needed_zones(point);var total:int=needed.size();var completed:int=0;var start:int=Time.get_ticks_usec();var batch:int=start
- stats.initial_install_max_ms=0.;stats.initial_install_budget_ms=8.;stats.initial_loader="prepared-scene main-thread batches; actual progress in window title; one final render after readiness"
- DisplayServer.window_set_title("FIND YOURSELF v35 読込 0 / %d"%total)
- var old_fps_cap := Engine.max_fps
+ var needed := needed_zones(point)
+ var completed := 0
+ var next_request := 0
+ var begin := Time.get_ticks_usec()
+ var last_yield := begin
+ stats.initial_install_max_ms = 0.0
+ stats.initial_install_budget_ms = 8.0
+ stats.initial_loader = "Two prepared cells read ahead; all required geometry and collision are installed before first view."
+ DisplayServer.window_set_title("FIND YOURSELF v36 読込 0 / %d" % needed.size())
+ var old_cap := Engine.max_fps
  Engine.max_fps = 0
- for d:Dictionary in needed:
-  var t:int=Time.get_ticks_usec();var installed_ok:bool=install_sync(d)
-  if not installed_ok:
-   Engine.max_fps = old_fps_cap
-   push_error("マップデータを読み込めません。完全なZIPを新しいフォルダへ展開してください。");game.results={"version":"v35","startup_failed":true,"zone":d.id};return false
-  stats.initial_install_max_ms=maxf(stats.initial_install_max_ms,(Time.get_ticks_usec()-t)/1000.);completed+=1
-  if Time.get_ticks_usec()-batch>=8000:
-   DisplayServer.window_set_title("FIND YOURSELF v35 読込 %d / %d"%[completed,total])
-   await get_tree().process_frame;batch=Time.get_ticks_usec()
- Engine.max_fps = old_fps_cap
- stats.initial_required_zones=total;stats.initial_completed_zones=completed;stats.initial_install_wall_ms=(Time.get_ticks_usec()-start)/1000.
+ measure_initial_load = OS.get_cmdline_user_args().has("--startup-profile")
+ for d: Dictionary in needed:
+  # Use the resource workers for deserialization only. Physics and node changes
+  # stay on the main thread; at most two not-yet-consumed cells hold resources.
+  while native_streaming and next_request < needed.size() and pending.size() < 2:
+   var next: Dictionary = needed[next_request]
+   next_request += 1
+   if not active.has(next.id):
+    begin_request(next)
+  var start := Time.get_ticks_usec()
+  if not install_sync(d):
+   Engine.max_fps = old_cap
+   push_error("マップデータを読み込めません。完全なZIPを新しいフォルダへ展開してください。")
+   game.results = {"version": "v36", "startup_failed": true, "zone": d.id}
+   return false
+  stats.initial_install_max_ms = maxf(stats.initial_install_max_ms, (Time.get_ticks_usec()-start)/1000.)
+  completed += 1
+  if Time.get_ticks_usec() - last_yield >= 8000:
+   DisplayServer.window_set_title("FIND YOURSELF v36 読込 %d / %d" % [completed, needed.size()])
+   await get_tree().process_frame
+   last_yield = Time.get_ticks_usec()
+ Engine.max_fps = old_cap
+ measure_initial_load = false
+ if not initial_timings.is_empty():
+  stats.initial_files = initial_timings
+ stats.initial_required_zones = needed.size()
+ stats.initial_completed_zones = completed
+ stats.initial_install_wall_ms = (Time.get_ticks_usec()-begin)/1000.
  retire(point)
  return true
+
 func detach_chunk(id: String) -> void:
  var node: Node = active[id]
  active.erase(id)
@@ -334,6 +367,8 @@ func drain_retirements(point: Vector3, deadline_usec: int, keep_target: Vector3 
 
 func schedule() -> void:
  var point: Vector3 = game.player.position
+ last_scheduled_position = point
+ retry_zone_schedule = false
  ensure_local_systems(point)
  view_queue.clear()
  for d: Dictionary in needed_zones(point):
@@ -520,13 +555,17 @@ func _process(dt: float) -> void:
  if is_traveling():
   progress_travel()
   return
+ var point: Vector3 = game.player.position
  elapsed += dt
  if elapsed > 0.25:
   elapsed = 0.0
-  schedule()
- var point: Vector3 = game.player.position
+  # Keep draining reads and retirements on each frame. A stationary player
+  # already has exactly the same position-dependent candidate list.
+  if retry_zone_schedule or point != last_scheduled_position:
+   schedule()
  var deadline_usec := Time.get_ticks_usec() + FRAME_BUDGET_USEC
- process_zone_queue(view_queue, point, deadline_usec)
+ if not process_zone_queue(view_queue, point, deadline_usec):
+  retry_zone_schedule = true
  drain_retirements(point, deadline_usec)
 
 func settle()->void:
@@ -547,11 +586,23 @@ func boot(g)->void:
  get_viewport().use_occlusion_culling=true
  native_streaming = RenderingServer.get_video_adapter_name() != ""
  game=g;initial_render_loop_was_enabled=RenderingServer.is_render_loop_enabled();RenderingServer.set_render_loop_enabled(false);game.hide();get_viewport().disable_3d=true;name="V30_Runtime";invalid_v31_scenes=g.read_json("res://source/v32/cache-policy.json").invalid_v31_scene_ids
- var design:Dictionary=g.read_json("res://source/v31/sales-design.json")
- var profile:Dictionary=g.read_json("res://source/v31/cache-profile.json")
- if profile.get("retirement_policy","")=="r7"and profile.get("scope_data",[])==design.stores.map(func(s):return [s.id,s.scope])and profile.get("base_index_sha256","")==FileAccess.get_sha256("res://assets/v30/world/index.json"):
-  cleaned_namespace=str(profile.namespace)
- else:cleaned_namespace=("v31-r7|"+JSON.stringify(design.stores.map(func(s):return [s.id,s.scope]))+FileAccess.get_sha256("res://sales_v31.gd")+FileAccess.get_sha256("res://signs_v31.gd")).sha256_text().substr(0,16)
+ g.runtime_catalogs_v36 = g.read_json("res://assets/v36/catalog-index.json")
+ var profile: Dictionary = g.read_json("res://source/v31/cache-profile.json")
+ var stamps: Dictionary = g.runtime_catalogs_v36.get("validated_scope_files", {})
+ var verified_scopes := stamps.size() == 2
+ for source: String in stamps:
+  verified_scopes = verified_scopes and FileAccess.get_sha256(source) == stamps[source]
+ var scopes: Array = []
+ if not verified_scopes:
+  var design: Dictionary = g.read_json("res://source/v31/sales-design.json")
+  scopes = design.stores.map(func(s): return [s.id,s.scope])
+  verified_scopes = scopes == profile.get("scope_data",[])
+ if profile.get("retirement_policy","") == "r7" and verified_scopes and profile.get("base_index_sha256","") == FileAccess.get_sha256("res://assets/v30/world/index.json"):
+  cleaned_namespace = str(profile.namespace)
+ else:
+  if scopes.is_empty():
+   scopes = g.read_json("res://source/v31/sales-design.json").stores.map(func(s): return [s.id,s.scope])
+  cleaned_namespace = ("v31-r7|" + JSON.stringify(scopes) + FileAccess.get_sha256("res://sales_v31.gd") + FileAccess.get_sha256("res://signs_v31.gd")).sha256_text().substr(0,16)
  profile_mark("cache_profile_and_source_validation")
  var begin:int=Time.get_ticks_usec();var context:Dictionary=g.read_json("res://assets/v30/world/context.json");definitions=g.read_json("res://assets/v30/world/index.json").zones
  build_tile_index()
@@ -565,8 +616,13 @@ func boot(g)->void:
 
  g.manifest=context.manifest;g.font=load("res://assets/NotoSansCJKjp-Regular.otf");g.retail_v18_plan=g.read_json("res://source/v19/retail-plan.json") # Full legacy product plan remains available on demand through read_json, not decoded for baked-runtime startup.
  profile_mark("metadata_and_retail_plan")
- g.build_environment();g.build_materials()
- for file:String in ["finish_v8.gd","finish_v9.gd","finish_v10.gd","finish_v14.gd"]:load("res://"+file).new().extend(g.mats)
+ g.build_environment()
+ # Apply the selected renderer profile before creating the thousands of first-view
+ # geometry instances, so driver preparation sees the actual MSAA/effect settings.
+ var display_settings = load("res://settings_v7.gd").new()
+ display_settings.restore()
+ # Static chunks own their baked finishes. Load the final materials for live assemblies directly.
+ g.mats = load("res://assets/v36/runtime-palette.tres").get_meta("materials")
  for brand:Dictionary in g.read_json("res://source/v17/brands.json"):g.brand_registry[brand.store_id]=brand
  profile_mark("environment_materials_and_brands")
  # Remote B-only floor reconstruction is prepared before entering its streamed area, not at the A entrance.
@@ -611,7 +667,7 @@ func boot(g)->void:
   g.add_child(mall_art_v35)
   mall_art_v35.setup(g)
  profile_mark("public_space_art")
- g.ui=load("res://ui_v7.gd").new();g.add_child(g.ui);g.ui.setup(g)
+ g.ui=load("res://ui_v7.gd").new();g.add_child(g.ui);g.ui.setup(g, display_settings)
  var layer=CanvasLayer.new();g.add_child(layer);g.hud=Label.new();g.hud.add_theme_font_override("font",g.font);g.hud.add_theme_font_size_override("font_size",18);g.hud.position=Vector2(22,22);layer.add_child(g.hud)
  var footer=Label.new();footer.text="F1 A館 / F2 B館 / F3 C館  |  WASD 移動 / Shift 速歩 / F 扉・EV / M 館内マップ / Esc 設定";footer.add_theme_font_override("font",g.font);footer.add_theme_font_size_override("font_size",16);footer.position=Vector2(22,1030);layer.add_child(footer)
  if g.has_method("setup_presentation"):
@@ -619,12 +675,12 @@ func boot(g)->void:
  profile_mark("exterior_and_UI")
  await get_tree().physics_frame;await get_tree().physics_frame
  g.player.set_physics_process(true);g.player.input_enabled=g.mode=="interactive";stream_ready=true;g.shoppers_v18.update_near()
- get_viewport().disable_3d=false;game.show();RenderingServer.set_render_loop_enabled(initial_render_loop_was_enabled);DisplayServer.window_set_title("FIND YOURSELF v35 独立検証")
+ get_viewport().disable_3d=false;game.show();RenderingServer.set_render_loop_enabled(initial_render_loop_was_enabled);DisplayServer.window_set_title("FIND YOURSELF v36 独立検証")
  profile_mark("physics_sync_and_nearby_NPC")
  stats.initial_wayfinding_resident = signs_stream.active_mounts.size()
  stats.available_wayfinding_signs = signs_stream.definitions.size()
  stats.C_canopies_deferred_at_boot = not exterior_loaded
- g.results={"version":"v35","streaming":true,"all_building_layers":15,"stores":480,"NPC_records":43,"startup_ms":(Time.get_ticks_usec()-begin)/1000.,"adapter":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"main_game_loaded":false,"Windows_GPU_tested":false};g.results.ES_models_at_start=g.animator.banks.size();g.results.ES_definitions=g.animator.definitions.size();g.results.startup_profile=profile_spans;g.results.startup_zone_stats=stats.duplicate();print("V30_STREAM_READY ",JSON.stringify(g.results)," ",JSON.stringify(resident_counts()))
+ g.results={"version":"v36","streaming":true,"all_building_layers":15,"stores":480,"NPC_records":43,"startup_ms":(Time.get_ticks_usec()-begin)/1000.,"adapter":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"main_game_loaded":false,"Windows_GPU_tested":false};g.results.ES_models_at_start=g.animator.banks.size();g.results.ES_definitions=g.animator.definitions.size();g.results.startup_profile=profile_spans;g.results.startup_zone_stats=stats.duplicate();print("V30_STREAM_READY ",JSON.stringify(g.results)," ",JSON.stringify(resident_counts()))
 
 func _exit_tree() -> void:
  stream_ready = false

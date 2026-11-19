@@ -1,8 +1,18 @@
 extends RefCounted
 static var meshes:Dictionary={}
-static func body_mesh(style:int,source:Mesh)->ArrayMesh:
- var key:int=style%6
- if meshes.has(key):return meshes[key]
+static func body_mesh(style:int, source:Mesh) -> ArrayMesh:
+ var variant := posmod(style,6)
+ var cache_key := "%s:%d" % [source.resource_path,variant]
+ if not source.resource_path.is_empty() and meshes.has(cache_key): return meshes[cache_key]
+ var mesh: ArrayMesh
+ if source.resource_path == "res://assets/v19/character/shopper-motion.scn::ArrayMesh_2c10q":
+  mesh = load("res://assets/v36/shopper-clothing-%d.res" % variant)
+ if mesh == null:
+  mesh = build_variant(variant, source)
+ if not source.resource_path.is_empty(): meshes[cache_key] = mesh
+ return mesh
+
+static func build_variant(key:int, source:Mesh) -> ArrayMesh:
  var channels=PackedVector2Array();var vertices=PackedVector3Array();var normals=PackedVector3Array();var uv=PackedVector2Array();var bones=PackedInt32Array();var weights=PackedFloat32Array();var indices=PackedInt32Array();var colors=PackedColorArray()
  var palette:Array=[Color("364c59"),Color("8b6b52"),Color("6b755d"),Color("b4aaa0"),Color("5b4c60"),Color("9b6857")]
  for surface in source.get_surface_count():
@@ -26,4 +36,4 @@ static func body_mesh(style:int,source:Mesh)->ArrayMesh:
    colors.append(c)
   for i:int in a[Mesh.ARRAY_INDEX]:indices.append(i+offset)
  var out=[];out.resize(Mesh.ARRAY_MAX);out[Mesh.ARRAY_VERTEX]=vertices;out[Mesh.ARRAY_NORMAL]=normals;out[Mesh.ARRAY_TEX_UV]=uv;out[Mesh.ARRAY_BONES]=bones;out[Mesh.ARRAY_WEIGHTS]=weights;out[Mesh.ARRAY_INDEX]=indices;out[Mesh.ARRAY_COLOR]=colors;out[Mesh.ARRAY_TEX_UV2]=channels
- var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,out);var material=StandardMaterial3D.new();material.vertex_color_use_as_albedo=true;material.vertex_color_is_srgb=true;material.roughness=.78;material.resource_name="Merged_clothing";mesh.surface_set_material(0,material);meshes[key]=mesh;return mesh
+ var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,out);var material=StandardMaterial3D.new();material.vertex_color_use_as_albedo=true;material.vertex_color_is_srgb=true;material.roughness=.78;material.resource_name="Merged_clothing";mesh.surface_set_material(0,material);return mesh

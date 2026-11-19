@@ -1,0 +1,144 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Shader" path="res://physical.gdshader" id="1_qm30w"]
+[ext_resource type="Texture2D" path="res://assets/brushed_albedo.png" id="2_fcnkj"]
+[ext_resource type="Texture2D" path="res://assets/brushed_normal.png" id="3_r5euw"]
+[ext_resource type="Texture2D" path="res://assets/brushed_roughness.png" id="4_vimem"]
+[ext_resource type="Shader" path="res://surface_v14.gdshader" id="5_m7udw"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/plaster-albedo.png" id="6_k3lr6"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/ceramic-normal.png" id="7_ln0rw"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/plaster-rough.png" id="8_fwnro"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/limestone-albedo.png" id="9_mlvnv"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/limestone-normal.png" id="10_p2tu0"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/limestone-rough.png" id="11_sukxg"]
+[ext_resource type="Shader" path="res://guard_glass_v10.gdshader" id="12_536i3"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/terrazzo-albedo.png" id="13_tph3e"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/terrazzo-normal.png" id="14_1u7qo"]
+[ext_resource type="Texture2D" path="res://assets/v14/materials/terrazzo-rough.png" id="15_o613e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0yij"]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.7, 0.5, 0.09, 1)
+roughness = 0.4
+texture_filter = 5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nashw"]
+render_priority = 0
+shader = ExtResource("1_qm30w")
+shader_parameter/albedo_map = ExtResource("2_fcnkj")
+shader_parameter/normal_map = ExtResource("3_r5euw")
+shader_parameter/rough_map = ExtResource("4_vimem")
+shader_parameter/tint = Color(0.8, 0.82, 0.82, 1)
+shader_parameter/metres_per_repeat = 0.45
+shader_parameter/metal = 0.82
+shader_parameter/normal_strength = null
+shader_parameter/rough_multiplier = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tot55"]
+render_priority = 0
+shader = ExtResource("5_m7udw")
+shader_parameter/colour_map = ExtResource("6_k3lr6")
+shader_parameter/normal_map = ExtResource("7_ln0rw")
+shader_parameter/rough_map = ExtResource("8_fwnro")
+shader_parameter/tint = Color(0.88, 0.86, 0.81, 1)
+shader_parameter/modules = Vector2(1, 1)
+shader_parameter/joint_m = 0.0
+shader_parameter/texture_repeat = 0.9
+shader_parameter/stagger = null
+shader_parameter/roughness_value = 0.86
+shader_parameter/bump = null
+shader_parameter/panel = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eh5nc"]
+render_priority = 0
+shader = ExtResource("5_m7udw")
+shader_parameter/colour_map = ExtResource("6_k3lr6")
+shader_parameter/normal_map = ExtResource("7_ln0rw")
+shader_parameter/rough_map = ExtResource("8_fwnro")
+shader_parameter/tint = Color(1.02, 1.02, 1, 1)
+shader_parameter/modules = Vector2(1.2, 0.6)
+shader_parameter/joint_m = 0.0015
+shader_parameter/texture_repeat = 0.8
+shader_parameter/stagger = null
+shader_parameter/roughness_value = 0.88
+shader_parameter/bump = null
+shader_parameter/panel = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5ikik"]
+render_priority = 0
+shader = ExtResource("5_m7udw")
+shader_parameter/colour_map = ExtResource("9_mlvnv")
+shader_parameter/normal_map = ExtResource("10_p2tu0")
+shader_parameter/rough_map = ExtResource("11_sukxg")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/modules = Vector2(1.2, 0.6)
+shader_parameter/joint_m = 0.002
+shader_parameter/texture_repeat = 1.5
+shader_parameter/stagger = null
+shader_parameter/roughness_value = 0.37
+shader_parameter/bump = null
+shader_parameter/panel = null
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6y8ax"]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.25, 0.28, 0.28, 1)
+metallic = 0.6
+roughness = 0.4
+texture_filter = 5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6tifb"]
+render_priority = 0
+shader = ExtResource("12_536i3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_55ahi"]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.065, 0.075, 0.076, 1)
+metallic = 0.78
+roughness = 0.29
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l2l24"]
+render_priority = 0
+shader = ExtResource("5_m7udw")
+shader_parameter/colour_map = ExtResource("13_tph3e")
+shader_parameter/normal_map = ExtResource("14_1u7qo")
+shader_parameter/rough_map = ExtResource("15_o613e")
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/modules = Vector2(1.2, 1.2)
+shader_parameter/joint_m = 0.002
+shader_parameter/texture_repeat = 1.5
+shader_parameter/stagger = null
+shader_parameter/roughness_value = 0.44
+shader_parameter/bump = null
+shader_parameter/panel = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xi7ih"]
+render_priority = 0
+shader = ExtResource("5_m7udw")
+shader_parameter/colour_map = ExtResource("6_k3lr6")
+shader_parameter/normal_map = ExtResource("7_ln0rw")
+shader_parameter/rough_map = ExtResource("8_fwnro")
+shader_parameter/tint = Color(0.96, 0.96, 0.94, 1)
+shader_parameter/modules = Vector2(1, 1)
+shader_parameter/joint_m = 0.0
+shader_parameter/texture_repeat = 0.9
+shader_parameter/stagger = null
+shader_parameter/roughness_value = 0.86
+shader_parameter/bump = null
+shader_parameter/panel = null
+
+[resource]
+metadata/materials = {
+"ceiling_panel": SubResource("ShaderMaterial_eh5nc"),
+"metal": SubResource("ShaderMaterial_nashw"),
+"plaster": SubResource("ShaderMaterial_xi7ih"),
+"step": SubResource("StandardMaterial3D_6y8ax"),
+"stone": SubResource("ShaderMaterial_5ikik"),
+"v10_floor_B": SubResource("ShaderMaterial_l2l24"),
+"v10_guard_glass": SubResource("ShaderMaterial_6tifb"),
+"v10_metal": SubResource("StandardMaterial3D_55ahi"),
+"wall_taupe": SubResource("ShaderMaterial_tot55"),
+"yellow": SubResource("StandardMaterial3D_y0yij")
+}

@@ -13,8 +13,12 @@ var volume: HSlider
 var volume_value: Label
 var overlay:String=""
 var lift_index:int=-1
-func setup(g)->void:
- game=g;settings=load("res://settings_v7.gd").new();settings.restore()
+func setup(g, restored_settings = null)->void:
+ game = g
+ settings = restored_settings
+ if settings == null:
+  settings = load("res://settings_v7.gd").new()
+  settings.restore()
  var theme=Theme.new();theme.default_font=g.font;theme.default_font_size=22
  var root=Control.new();root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);root.mouse_filter=Control.MOUSE_FILTER_IGNORE;root.theme=theme;add_child(root)
  map=load("res://map_v7.gd").new();root.add_child(map);map.setup(g.read_json("res://source/v22/map-data-integrated.json"if g.a_continuous_v22 else"res://source/v22/map-data-combined.json"if g.c_open_proposal and g.es_site_proposal else"res://source/v15/map-data-C-option.json"if g.c_open_proposal else"res://source/v15/map-data-ES-option.json"if g.es_site_proposal else"res://source/v13/map-data.json"),g.player,g.font,g.brand_registry);map.close_requested.connect(close);map.visible=false
