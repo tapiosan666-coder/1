@@ -4,7 +4,7 @@ A build-time Godot script converts the binary triangles to compressed ArrayMeshe
 """
 from pathlib import Path
 from collections import defaultdict
-import math, struct, sys
+import json, math, struct, sys
 from art import CATEGORIES, PALETTES
 MATT, METAL, PRINT, LAMP, VENEER = range(5)
 TAU=math.tau
@@ -14,6 +14,7 @@ cream='#eee4ce';coal='#393b3d';steel='#9ba59d';oak='#967458';gold='#ae9162';pape
 class Case:
     def __init__(self,category,role,v):
         self.cat=category;self.v=v;self.role=role;self.data=defaultdict(bytearray)
+        self.solids=[]
         self.print_id=list(CATEGORIES).index(category)*3+v
         self.pal=PALETTES[(list(CATEGORIES).index(category)+v)%len(PALETTES)]
         self.make()
@@ -161,86 +162,13 @@ class Case:
                 lat(0,0,[(0,.09),(.025,.091),(.031,.084)],dark,(1,.7))
                 for i in range(3):lat((i-1)*.041,0,[(.031,.012),(.047,.019),(.066,.003)],gold,mat=METAL)
     def make(self):
-        cat=self.cat;v=self.v;gallery=self.role=='gallery'
-        dark,light,accent,sage=self.pal
-        timber=('#976e51','#a78160','#796451')[v]
+        from department_fixtures import build
         if self.role=='dining':
+            dark,light,accent,_=self.pal
             self.dining_booth(dark,light,accent)
-            return
-        # A solid plinth inset below the top gives floating casework a real bearing.
-        w=2.58;h=.40 if gallery else (.62,.48,.55)[v]
-        self.box(0,.04,0,w-.13,.08,.63,coal)
-        self.box(0,h/2+.07,0,w-.055,h,.68,dark if gallery else timber)
-        self.box(0,h+.094,0,w,.048,.74,light if v==1 else timber)
-        level=h+.118
-        for x in (-.78,-.22,.46):self.box(x,.07+h/2,.343,.009,h*.83,.006,gold,METAL)
-        if gallery:
-            top=2.23;left=-1.26;right=1.26
-            # Half-arch / reeded side pier / portal opening vary by brand.
-            self.box(0,(top+level)/2,-.30,2.50,top-level,.076,dark)
-            for edge in (left,right):self.box(edge,(top+level)/2,-.1,.048,top-level,.46,gold if v==1 else timber)
-            if cat in ('apparel','shoes','beauty','garden','gallery'):
-                # An architectural niche: a radiused rail follows the face of
-                # the display, with no projecting lintel in the customer aisle.
-                previous=None
-                for i in range(25):
-                    a=math.pi*i/24
-                    q=(.33+math.cos(a)*.79,1.53+math.sin(a)*.56,-.216)
-                    if previous:self.tube(previous,q,.019,gold)
-                    previous=q
-            if cat in ('garden','sports'):
-                for j in range(8):
-                    x=-1.14+j*.30
-                    self.tube((x,.72,-.234),(min(1.22,x+.55),1.91,-.234),.014,timber,MATT)
-            if v==0:
-                for i in range(9):self.box(left+.07+i*.065,(top+level)/2,-.244,.029,top-level-.03,.056,timber)
-            elif v==1:
-                for i in range(9):self.box(right-.09-i*.06,(top+level)/2,-.24,.016,top-level-.04,.055,gold,METAL)
-            self.box(0,top,-.03,2.58,.08,.65,timber)
-            self.box(.27,top-.046,.207,1.69,.012,.046,cream,LAMP)
-            card_x=-.81 if v!=1 else .81; merchandise_x=-card_x*.42
-            self.box(card_x,1.53,-.20,.70,.85,.065,gold,METAL)
-            self.card(card_x,1.53,-.166,.655,.803)
-            levels=[level,1.0,1.49] if cat not in ('apparel','cinema','electronics','garden') else [level,1.33]
-            for j,yy in enumerate(levels):
-                if j:self.box(merchandise_x,yy-.026,-.035,1.52,.052,.48,timber)
-                num=3 if cat in ('food','books','pharmacy','beauty') else 2
-                if cat=='apparel':
-                    self.tube((merchandise_x-.65,yy+.67,0),(merchandise_x+.65,yy+.67,0),.012,gold)
-                for i in range(num):
-                    px=merchandise_x+(i-(num-1)/2)*(.47 if num==3 else .69)
-                    self.object(px,yy,.005,1.0,(v+i+j)%3)
-        else:
-            side=(-1 if v in (0,2) else 1)
-            # A returned backing and a collection card anchor a shop window, while
-            # the middle stays low enough for sightlines deep into the shop.
-            self.box(side*.858,level+.35,-.207,.64,.70,.09,dark)
-            self.box(side*.858,level+.37,-.158,.60,.61,.025,gold,METAL)
-            self.card(side*.858,level+.37,-.142,.55,.565)
-            if cat in ('food','garden','stationery'):
-                # Canted trim and open contemporary market bins hold produce
-                # in a shallow lip; edition cards mark the collection.
-                for xx in [-.36,.14,.83] if side==-1 else [.36,-.14,-.83]:
-                    self.box(xx,level+.10,.237,.46,.054,.025,timber)
-            if cat in ('beauty','optics'):
-                for i in range(19):
-                    a=math.pi*i/18;b=math.pi*(i+1)/18
-                    self.tube((.01+.25*math.cos(a),level+.39+.31*math.sin(a),-.25),(.01+.25*math.cos(b),level+.39+.31*math.sin(b),-.25),.011,gold)
-                for i in [-.24,.26]:
-                    self.tube((i,level,-.25),(i,level+.40,-.25),.011,gold)
-            if cat=='apparel':
-                self.tube((-.47,level,-.02),(-.47,level+.7,-.02),.012,gold)
-                self.tube((.48,level,-.02),(.48,level+.7,-.02),.012,gold)
-                self.tube((-.48,level+.69,-.02),(.50,level+.69,-.02),.012,gold)
-                for i in range(2):self.object(-.23+i*.46,level,-.02,1.0,v+i)
-            else:
-                xs=(-.36,.14,.83) if side==-1 else (.36,-.14,-.83)
-                for i,xx in enumerate(xs):
-                    lift=(.065,.135,.02)[(v+i)%3];yy=level+lift
-                    self.box(xx,level+lift/2,.018,.43,lift,.39,light if i<2 else dark)
-                    self.object(xx,yy,.018,1.28,i+v)
-                if cat in ('beauty','electronics','accessories'):
-                    self.box(0,level-.012,.371,1.93,.012,.006,cream,LAMP)
+        elif not build(self):
+            raise KeyError(f"No authored display for {self.cat}")
+
     def dining_booth(self,dark,light,accent):
         # Paired upholstered seats and a porcelain table on a real pedestal.
         self.box(0,.073,-.205,2.44,.146,.52,oak)
@@ -262,7 +190,14 @@ class Case:
                 b=self.data[k];f.write(struct.pack('<I',len(b)//36));f.write(b)
 def main():
     tmp=Path(sys.argv[1]);tmp.mkdir(parents=True,exist_ok=True)
+    solids={}
     for cat in CATEGORIES:
         for role in (('arrival','gallery','dining') if cat=='restaurant' else ('arrival','gallery')):
-            for v in range(3):Case(cat,role,v).save(tmp/f'{cat}-{role}-{v}.bin')
+            for v in range(3):
+                case=Case(cat,role,v)
+                key=f'{cat}-{role}-{v}'
+                case.save(tmp/f'{key}.bin')
+                if case.solids:solids[key]=[[round(n,5) for n in row] for row in case.solids]
+    target=Path(__file__).resolve().parents[3]/'source/v36/studio-solids.json'
+    target.write_text(json.dumps(solids,separators=(',',':'))+'\n')
 if __name__=='__main__':main()

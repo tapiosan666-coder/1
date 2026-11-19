@@ -205,9 +205,9 @@ func install(bay: Dictionary) -> void:
 	counter.scale = size
 	counter.visibility_range_end = RETIRE_RADIUS
 	body.add_child(counter)
-	var shape_key := "%s-%d-%.2f" % [bay.role,bay.variant,bay.width]
+	var shape_key := "%s-%.2f" % [key,bay.width]
 	if not shape_cache.has(shape_key):
-		shape_cache[shape_key] = Cases.shape_for(bay.role,bay.variant,Transform3D(Basis.from_scale(size),Vector3.ZERO))
+		shape_cache[shape_key] = Cases.shape_for(bay.role,bay.variant,Transform3D(Basis.from_scale(size),Vector3.ZERO),key)
 	var collision := CollisionShape3D.new()
 	collision.shape = shape_cache[shape_key]
 	body.add_child(collision)
