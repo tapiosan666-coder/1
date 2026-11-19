@@ -9,6 +9,9 @@ var game: Node3D
 var interior: AudioStreamPlayer
 var courtyard: AudioStreamPlayer
 var footstep: AudioStreamPlayer
+var steps: AudioStreamPlaybackPolyphonic
+var last_gain := -1.0
+var last_mix := -1.0
 var tile_clips: Array[AudioStream] = []
 var paving_clips: Array[AudioStream] = []
 var last_position: Vector3
@@ -25,7 +28,9 @@ func setup(g: Node3D) -> void:
 	interior = make_player("Mall interior", "res://assets/v35/sound/interior.ogg")
 	courtyard = make_player("Open courtyard", "res://assets/v35/sound/court.ogg")
 	footstep = make_player("Footsteps", "")
-	footstep.max_polyphony = 2
+	var step_bus := AudioStreamPolyphonic.new()
+	step_bus.polyphony = 2
+	footstep.stream = step_bus
 	for index in CLIP_COUNT:
 		tile_clips.append(load("res://assets/v35/sound/tile_%d.wav" % index))
 		paving_clips.append(load("res://assets/v35/sound/paving_%d.wav" % index))
@@ -35,6 +40,8 @@ func setup(g: Node3D) -> void:
 	apply_mix()
 	interior.play()
 	courtyard.play()
+	footstep.play()
+	steps = footstep.get_stream_playback() as AudioStreamPlaybackPolyphonic
 
 func make_player(label: String, path: String) -> AudioStreamPlayer:
 	var audio := AudioStreamPlayer.new()
@@ -59,9 +66,18 @@ func is_outdoor(point: Vector3) -> bool:
 
 func apply_mix() -> void:
 	var gain: float = game.ui.settings.sound_level
+	if gain == last_gain and mix == last_mix:
+		return
+	# A Godot 4.6.3 live player volume write publishes a new routing snapshot.
+	# Serialize actual changes with the audio driver before it mixes either bed.
+	AudioServer.lock()
 	interior.volume_db = linear_to_db(maxf(0.0001, gain * (1.0 - mix) * 0.31))
 	courtyard.volume_db = linear_to_db(maxf(0.0001, gain * mix * 0.32))
-	footstep.volume_db = linear_to_db(maxf(0.0001, gain * 0.46))
+	if gain != last_gain:
+		footstep.volume_db = linear_to_db(maxf(0.0001, gain * 0.46))
+	AudioServer.unlock()
+	last_gain = gain
+	last_mix = mix
 
 func _physics_process(delta: float) -> void:
 	if game == null:
@@ -84,8 +100,8 @@ func _physics_process(delta: float) -> void:
 	if step_distance < STEP_DISTANCE:
 		return
 	step_distance = 0.0
-	footstep.stream = (paving_clips if outdoors else tile_clips)[sequence % CLIP_COUNT]
-	footstep.pitch_scale = [0.98, 1.03, 0.95, 1.04, 1.0][sequence % CLIP_COUNT]
+	var clip := (paving_clips if outdoors else tile_clips)[sequence % CLIP_COUNT]
+	var pitch: float = [0.98, 1.03, 0.95, 1.04, 1.0][sequence % CLIP_COUNT]
 	sequence += 1
-	if game.ui.settings.sound_level > 0.0:
-		footstep.play()
+	if game.ui.settings.sound_level > 0.0 and steps != null:
+		steps.play_stream(clip, 0.0, 0.0, pitch)
