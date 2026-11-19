@@ -32,7 +32,7 @@ func setup(game: Node3D) -> void:
 				by_cell[key] = []
 			var id: String = store.id + "/" + bay.role
 			by_cell[key].append({"id":id,"p":p,"yaw":float(bay.yaw),"role":bay.role,
-				"variant":int(store.variant),"width":float(bay.width),"mesh": "%s-%s-%d" % [store.category,bay.role,store.variant]})
+				"variant":int(store.variant),"width":float(bay.width),"mesh": bay.get("mesh","%s-%s-%d" % [store.category,bay.role,store.variant])})
 
 	# Floor plates and inlaid entry mats share a single printed sheet per floor.
 	for entry: Dictionary in game.read_json("res://source/v36/thresholds.json"):

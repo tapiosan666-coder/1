@@ -10,3 +10,5 @@ The shipped Godot project reads calibrated coordinates in res://source/v36. The 
 - qa_dining_rooms.gd accepts the full path to dining-programs.json and output JSON. Run the v35 site once to test clearances. On v36 add `with-install` to check residents, walk the two rooms with the player controller, and sample the access lanes.
 
 - refit_envelopes.py RAW_DIRECTORY REPORT_JSON --fit-refits measures the final mesh vertices against the previous fitting envelopes and vertically fits each replacement to the available height. Remove the optional flag for a read-only check. Requires NumPy.
+
+- luggage.py adds two dedicated travel assemblies and their solids. Then fit_travel.py BASELINE_HOST_RESULT_JSON assigns these to retail IDs recorded as 旅行; qa_luggage_host.gd obtains the sixth floor sample at each different support point, checks the existing body, room for the whole replacement and an approaching customer before a site is enabled. Run refit_envelopes.py with all raw meshes, including luggage, as the final check.
