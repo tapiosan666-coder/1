@@ -120,6 +120,8 @@ func build_deck(row:Dictionary)->Node3D:
    hull.position.y=size.y*.5+.12
    parked.add_child(hull)
    deck.add_child(parked)
+ if row.floor=="B1":
+  add_ceiling_lights(deck,Vector3(row.centre[0],-.38,row.centre[1]))
  if count>0:
   var mesh:=topping.commit()
   lines.commit(mesh)
@@ -129,3 +131,54 @@ func build_deck(row:Dictionary)->Node3D:
   graphics.mesh=mesh
   deck.add_child(graphics)
  return deck
+
+# The four anchors at the underground drive lane were individually surveyed on
+# the concrete soffit. Both linear enclosures sit above the vehicle clearance.
+func add_ceiling_lights(deck:Node3D,mount:Vector3)->void:
+ var channels:=StandardMaterial3D.new()
+ channels.albedo_color=Color("#657277")
+ channels.metallic=.55
+ channels.roughness=.46
+ var diffuser:=StandardMaterial3D.new()
+ diffuser.albedo_color=Color("#f1f4e7")
+ diffuser.emission_enabled=true
+ diffuser.emission=Color("#eaf1dd")
+ diffuser.emission_energy_multiplier=1.75
+ var structural:=SurfaceTool.new()
+ structural.begin(Mesh.PRIMITIVE_TRIANGLES)
+ structural.set_material(channels)
+ var lenses:=SurfaceTool.new()
+ lenses.begin(Mesh.PRIMITIVE_TRIANGLES)
+ lenses.set_material(diffuser)
+ for side:float in [-1.,1.]:
+  var x:=side*.627
+  for bracket:float in [-.972,.972]:
+   add_box(structural,Vector3(x,-.12,bracket),Vector3(.033,.26,.033))
+   add_box(structural,Vector3(x,-.027,bracket),Vector3(.18,.048,.09))
+  add_box(structural,Vector3(x,-.264,0.),Vector3(.18,.088,3.48))
+  for edge:float in [-.042,.042]:
+   add_box(lenses,Vector3(x+edge,-.309,0.),Vector3(.049,.025,3.35))
+ var shell:=structural.commit()
+ lenses.commit(shell)
+ var lamp:=MeshInstance3D.new()
+ lamp.name="SuspendedParkingLuminaires"
+ lamp.position=mount
+ lamp.mesh=shell
+ deck.add_child(lamp)
+ var cast:=SpotLight3D.new()
+ cast.position=mount-Vector3.UP*.335
+ cast.rotation.x=-PI*.5
+ cast.light_color=Color("#eff6e6")
+ cast.light_energy=1.1
+ cast.spot_range=8.
+ cast.spot_angle=64.
+ cast.distance_fade_enabled=true
+ cast.distance_fade_begin=23.
+ cast.distance_fade_length=10.
+ cast.shadow_enabled=false
+ deck.add_child(cast)
+
+func add_box(st:SurfaceTool,at:Vector3,size:Vector3)->void:
+ var shape:=BoxMesh.new()
+ shape.size=size
+ st.append_from(shape,0,Transform3D(Basis.IDENTITY,at))
