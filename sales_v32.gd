@@ -6,6 +6,9 @@ var library
 var templates:Dictionary={}
 var pristine_meshes:Dictionary={}
 var spatial:Dictionary={}
+# This V30 primitive is the isolated arched handle of a retired bag.
+# Its narrow profile also matches the legacy glass-panel protection rule.
+const OLD_TRAVEL_BAG_HANDLE := "res://assets/v30/world/meshes/ec844cee285f76658857515f4d3d2b6b2440ce9be9ea0558385a76239b02a32d.res"
 var mesh_cache:Dictionary={}
 var retirement_revision:String=""
 var shape_cache:Dictionary={}
@@ -71,9 +74,12 @@ func clean_chunk(chunk:Node,d:Dictionary)->void:
   elif node is MultiMeshInstance3D and node.multimesh!=null:
    var mm:MultiMesh=node.multimesh;var bound:AABB=mm.mesh.get_aabb()
    var kept:Array=[]
+   var is_old_travel_handle:bool=d.id=="interior_0_-1_0" and mm.mesh.resource_path==OLD_TRAVEL_BAG_HANDLE
    for i in mm.instance_count:
     var tr:Transform3D=node.global_transform*mm.get_instance_transform(i);var p:Vector3=tr*bound.get_center();var b:AABB=tr*bound
     var protected_panel:bool=b.size.y>.30 and minf(b.size.x,b.size.z)<.045
+    if protected_panel and is_old_travel_handle and store_at(p)=="B1-SW32":
+     protected_panel=false
     var low_base:bool=b.end.y>.03 and b.end.y<.2 and b.size.y>.004 and minf(b.size.x,b.size.z)<1.1 and maxf(b.size.x,b.size.z)<3.5
     if not protected_panel and b.size.y>.005 and b.end.y<2.95 and b.size.y<2.72 and maxf(b.size.x,b.size.z)<8. and store_at(p+Vector3.UP*(.2 if low_base else 0.))!="":report.retired_render_instances+=1
     else:kept.append(i)
