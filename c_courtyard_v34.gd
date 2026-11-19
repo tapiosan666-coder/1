@@ -22,6 +22,7 @@ func setup(_game: Node3D) -> void:
 		mesh.visibility_range_end_margin = 9.0
 		if "plant" in mesh.name.to_lower() or "flowers" in mesh.name.to_lower():
 			mesh.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	add_child(preload("res://north_garden_crossing_v36.gd").new())
 	for plan in ISLANDS:
 		add_planter_collision(plan)
 
