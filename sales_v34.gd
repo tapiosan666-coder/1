@@ -74,6 +74,48 @@ func install_store(store: Dictionary) -> void:
   fitted.placements.append(new_fixture)
  super.install_store(fitted)
 
+# The legacy B-wing cell contains a detached product-handle batch. This
+# correction belongs to that one cell and store, outside the shared v33
+# startup bake. Rebuilt raw cells and the shipped cleaned cell are both safe.
+const LEGACY_TRAVEL_HANDLE := "res://assets/v30/world/meshes/ec844cee285f76658857515f4d3d2b6b2440ce9be9ea0558385a76239b02a32d.res"
+
+func clean_chunk(chunk: Node, descriptor: Dictionary) -> void:
+ if descriptor.id == "interior_0_-1_0" and not RenderingServer.get_video_adapter_name().is_empty():
+  for node: MultiMeshInstance3D in chunk.find_children("*","MultiMeshInstance3D",true,false):
+   var batch := node.multimesh
+   if batch != null and batch.mesh != null and batch.mesh.resource_path == LEGACY_TRAVEL_HANDLE:
+    retire_travel_handles(node,batch)
+ super.clean_chunk(chunk,descriptor)
+
+func retire_travel_handles(node: MultiMeshInstance3D, batch: MultiMesh) -> void:
+ var keep := PackedInt32Array()
+ var envelope := batch.mesh.get_aabb()
+ for index in batch.instance_count:
+  var world := node.global_transform * batch.get_instance_transform(index)
+  var box: AABB = world * envelope
+  var narrow_handle := box.size.y > .30 and box.size.y < 2.72 and minf(box.size.x,box.size.z)<.045 and maxf(box.size.x,box.size.z)<8.
+  if not narrow_handle or box.end.y>=2.95 or store_at(box.get_center())!="B1-SW32":
+   keep.append(index)
+ if keep.size()==batch.instance_count:
+  return
+ report.retired_render_instances += batch.instance_count-keep.size()
+ if keep.is_empty():
+  node.get_parent().remove_child(node)
+  node.queue_free()
+  return
+ var replacement := MultiMesh.new()
+ replacement.transform_format = batch.transform_format
+ replacement.use_colors = batch.use_colors
+ replacement.use_custom_data = batch.use_custom_data
+ replacement.mesh = batch.mesh
+ replacement.instance_count = keep.size()
+ for target in keep.size():
+  var source := keep[target]
+  replacement.set_instance_transform(target,batch.get_instance_transform(source))
+  if batch.use_colors: replacement.set_instance_color(target,batch.get_instance_color(source))
+  if batch.use_custom_data: replacement.set_instance_custom_data(target,batch.get_instance_custom_data(source))
+ node.multimesh = replacement
+
 func record_fitted_bounds(fixture: Dictionary, bounds: AABB) -> void:
  fixture.bounds = {"p":[bounds.position.x,bounds.position.y,bounds.position.z],
   "size":[bounds.size.x,bounds.size.y,bounds.size.z]}

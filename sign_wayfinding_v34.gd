@@ -74,6 +74,7 @@ func add_trim_box(parent: Node3D, size: Vector3, position: Vector3) -> void:
  parent.add_child(instance)
 
 func clean_chunk(chunk: Node) -> void:
+ preload("res://legacy_board_housings_v36.gd").clean_cell(chunk)
  for label: Label3D in chunk.find_children("*", "Label3D", true, false):
   for board: Dictionary in definitions:
    # Clean the authored position even if the runtime face was moved.
