@@ -9,8 +9,11 @@ var studio_stores: Dictionary
 var replacements: Dictionary
 var stock_counts: Dictionary
 var floor_heights: Dictionary
+var prepared_sales := preload("res://prepared_sales_v36.gd").new()
 
 func setup(g) -> void:
+ prepared_sales.setup()
+ report.prepared_stores_used = []
  studio_refits = g.read_json("res://source/v36/store-refits.json")
  for id: String in studio_refits:
   studio_stores[id.get_slice("-V3",0)] = true
@@ -25,6 +28,8 @@ func setup(g) -> void:
  super.setup(g)
 
 func install_store(store: Dictionary) -> void:
+ if prepared_sales.install(self,store):
+  return
  if not replacements.has(store.id) and not studio_stores.has(store.id):
   super.install_store(store)
   return

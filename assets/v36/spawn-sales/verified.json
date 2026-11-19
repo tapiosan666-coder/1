@@ -1,0 +1,197 @@
+{
+ "format": 1,
+ "generators": {
+  "res://asset_cache_v24.gd": "c040a9faa51578593cd9c58cd752426b09031e6aa527ff22fd5f401fb3cb2d70",
+  "res://material_pool_v23.gd": "ed48cc17ab643bad0044684d55d239e1e793f80f26667e179ebed31f89bd7d43",
+  "res://prepared_sales_v36.gd": "6e676e9197d6aecd6dedfd39d5ab7d8961b4c99b0d787284e88628d0e9a4f296",
+  "res://retail_finish_v14.gd": "a32589cff124b7356005e0286622ee0a166cc9a790fd4c10b69d11b57d105b2f",
+  "res://retail_v10.gd": "86dcd033e5f35450477fc0ba2dea63d98d3fd6046d95300f4bb3373de9ab9f8c",
+  "res://sales_v32.gd": "635291e1c4461da62f4efb4b8d5f9c2132a7b72befc45e355826c5f5cfe22e2e",
+  "res://sales_v34.gd": "09007f46ea95df143f69692ded9efc3c3873ed67a742a475696de3448999e76f",
+  "res://studio_case_v36.gd": "c6f3cc34687981c7fc9f4cf088476a62f3534ffb8a3ab8f135c664f9c6f8d578"
+ },
+ "stores": {
+  "A1F-003": {
+   "file": "res://assets/v36/spawn-sales/A1F-003.scn",
+   "files": {
+    "res://assets/v31/collision/bc15ef6ea16f967d3a915c60215851f9f3487445d32ea4196cd450b013b48f62.res": "9267f07f36ce1ac5991c16e9a620d243718402313ec08a5bb7c09e7663496d82",
+    "res://assets/v31/collision/d00e8f51e0ec9fd9e381b5faff373933cb24bb18f975b3fc60caac8e1963cbfd.res": "91c887b5e535554e936dd9041c90e9d5f83f7c6e5d61478de062b1c12286a76a",
+    "res://assets/v31/collision/e71102825dbedfcc09bd92456dfb5729ff456c92cbecabe0ebe484c45fdb10b7.res": "f0fa4653a272c8083530780f5359f520668f39700f3f62c744af4036ca5d23e6",
+    "res://assets/v36/spawn-sales/A1F-003.scn": "eb4fc6dd5b5212fb5d24d1d2ea5f4983e29653ade8346073978f69a03b78e811",
+    "res://assets/v36/studios/shoes-gallery-0.res": "b7c08cfd894c0ba1f6b61e69a7ddb8124a6b472db3716bec0d32558e4ebbf143"
+   },
+   "layout_signature": "4cde61a2732f5154017d65f9b8cb8a13df59a4c03811332a48a232dcec9c87fc",
+   "report": {
+    "category": "shoes",
+    "fixtures": 12,
+    "products": 261,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-004": {
+   "file": "res://assets/v36/spawn-sales/A1F-004.scn",
+   "files": {
+    "res://assets/v31/collision/bc15ef6ea16f967d3a915c60215851f9f3487445d32ea4196cd450b013b48f62.res": "9267f07f36ce1ac5991c16e9a620d243718402313ec08a5bb7c09e7663496d82",
+    "res://assets/v31/collision/f578603ea77e6437a3b7bf084458fef353800dd8bf838421dcb1cdc18da2e6c2.res": "3eeeb580944e4224825f566dc009efd8a3db453085ec02026b61d0a4b0438764",
+    "res://assets/v36/spawn-sales/A1F-004.scn": "cf11b52132f7aca3b038af4c908c0444a18a25b59ffd27c24173ff3a023e3258",
+    "res://assets/v36/studios/shoes-arrival-1.res": "f4391924cf24d7619faf355d50cadff881dce036bf25f093d5028a4af66e0e38",
+    "res://assets/v36/studios/shoes-gallery-1.res": "880bd68010707c128d6d8fd9ded48df30c41a7ea7bde9f402559421629d9ef59"
+   },
+   "layout_signature": "7c3bd63731645b0fa49019584cc0a0fd5f92d1b964e764dd2193bffc90a2886c",
+   "report": {
+    "category": "shoes",
+    "fixtures": 6,
+    "products": 87,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-005": {
+   "file": "res://assets/v36/spawn-sales/A1F-005.scn",
+   "files": {
+    "res://assets/v31/collision/79fc935c076ad7dd7040abcfc79fdaac3df53db568df17f65930fd03ebed3ffe.res": "ba22d4ccbb41d561890998a7531e4608f3014af23c028955710f44029b674020",
+    "res://assets/v31/collision/7f299fd8ec710da7f7a3187535a70985c2bb58ffcedff0e4d8075ba4238d8545.res": "93be69b2cdcc64035afd78be5f4662985a1dd346e9086c4e27dd8e9375df93d8",
+    "res://assets/v31/collision/ca72e9f6fd6859f29d4e99c691e4643f88e3d0e07d12ce440c4709d0559987d0.res": "5bf5de319760fc2f8894e13bd5a5e845bb1ab7389c56b0d2e0ff062bef514a9a",
+    "res://assets/v31/collision/d00e8f51e0ec9fd9e381b5faff373933cb24bb18f975b3fc60caac8e1963cbfd.res": "91c887b5e535554e936dd9041c90e9d5f83f7c6e5d61478de062b1c12286a76a",
+    "res://assets/v31/collision/ed947f319b265e204ffd2ea6aa7fbf275e923896b20d76c2e2823fcff0a3a6ac.res": "8bc2ffe185ccba7f440cc8f2d0eb4fe0a62f38ef216154fec0a3f8c5dbe79bba",
+    "res://assets/v31/collision/f219030721a63db3e3de44ec55c40d437eb78e4bb2acf87aaa617a04eac2becf.res": "77f8a981a1101f8e6cd28d2ebcb4ceb1a55481b7a2108c9ffbd6b3ca3510a10d",
+    "res://assets/v36/spawn-sales/A1F-005.scn": "2d5d6986009aa0d5ec2dfb955081dd105955f06c6ff1c09bc116c09af3f6b7bf",
+    "res://assets/v36/studios/home-gallery-2.res": "fe274f7064d1f968a4b949245fb0b91aef7cd0a06fc61f67cf8cb194f1f936f7"
+   },
+   "layout_signature": "3ccb4bae1f1cf212a7f1e7dcc1efe911f3820dfac1bbb0c6e5387d80e6b8ae62",
+   "report": {
+    "category": "home",
+    "fixtures": 29,
+    "products": 4,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-006": {
+   "file": "res://assets/v36/spawn-sales/A1F-006.scn",
+   "files": {
+    "res://assets/v31/collision/ca72e9f6fd6859f29d4e99c691e4643f88e3d0e07d12ce440c4709d0559987d0.res": "5bf5de319760fc2f8894e13bd5a5e845bb1ab7389c56b0d2e0ff062bef514a9a",
+    "res://assets/v31/collision/d00e8f51e0ec9fd9e381b5faff373933cb24bb18f975b3fc60caac8e1963cbfd.res": "91c887b5e535554e936dd9041c90e9d5f83f7c6e5d61478de062b1c12286a76a",
+    "res://assets/v31/collision/ed947f319b265e204ffd2ea6aa7fbf275e923896b20d76c2e2823fcff0a3a6ac.res": "8bc2ffe185ccba7f440cc8f2d0eb4fe0a62f38ef216154fec0a3f8c5dbe79bba",
+    "res://assets/v31/collision/f219030721a63db3e3de44ec55c40d437eb78e4bb2acf87aaa617a04eac2becf.res": "77f8a981a1101f8e6cd28d2ebcb4ceb1a55481b7a2108c9ffbd6b3ca3510a10d",
+    "res://assets/v36/spawn-sales/A1F-006.scn": "f455f508a54658658d2be1da0ee45f2d868e3a61bc6a7da62884f060a1dddded",
+    "res://assets/v36/studios/home-arrival-1.res": "d415890691853ee206bc67b909828f4a7ced2ae7df072c0b9c44766fb098e813",
+    "res://assets/v36/studios/home-gallery-1.res": "e50cec8cb50144a85b9512bd049032fdbaa3c5e41cf099584de91dbde97bec88"
+   },
+   "layout_signature": "d3da768a79ed9fdda06c5d0496ea58c14de501a4ff3e445463542e85c424cdf9",
+   "report": {
+    "category": "home",
+    "fixtures": 15,
+    "products": 0,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-007": {
+   "file": "res://assets/v36/spawn-sales/A1F-007.scn",
+   "files": {
+    "res://assets/v31/collision/30e89f8dc53635f1d1b78833430bba07bd64675b86c773c7e033922670806d71.res": "841dcb7399ab130fa650bf789927f8f4bbf1ed7b193283350c85b7d89bd7d6b0",
+    "res://assets/v31/collision/8bfd6538b39fd54b4071d376294270a1d82a6368d9c9349f8dec562fa7084f7e.res": "d9e12b27617b7f15754f6f0f6d1bbdca157102e42072c450dba5d529e4f3f23a",
+    "res://assets/v31/collision/d00e8f51e0ec9fd9e381b5faff373933cb24bb18f975b3fc60caac8e1963cbfd.res": "91c887b5e535554e936dd9041c90e9d5f83f7c6e5d61478de062b1c12286a76a",
+    "res://assets/v31/collision/e3b0d46e01304b3139a334c9ad781d6290bdb9f50b480e58eef961a2bb55e21b.res": "33efc8ee293fe1f15470d8cba38972782ca9e468960757cc234e3b82f18bf721",
+    "res://assets/v36/spawn-sales/A1F-007.scn": "a071fe473a48efb52cd4ad063dad91d6832c8f3d0e645bd6ae5f12015587e6c6",
+    "res://assets/v36/studios/book-arrival-1.res": "c2b9f802a0d4dedf8f968a5cced354251208a290f9bc385441f4c50a30b92d57",
+    "res://assets/v36/studios/book-gallery-1.res": "80b61f1102bc29c7476e5581d34aeae935ef97be9a30b00d777d6cde167a1b49"
+   },
+   "layout_signature": "bd6b64783a2802f14fa6c14b673a4c15d1d14a6cbf1bc30ed36ad9ef422bf332",
+   "report": {
+    "category": "book",
+    "fixtures": 30,
+    "products": 1144,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-048": {
+   "file": "res://assets/v36/spawn-sales/A1F-048.scn",
+   "files": {
+    "res://assets/v31/collision/05ae36f610a1c9d5122f5acc392b703c2e27ac3d6bb3e3696ebf183ca3be1485.res": "144812a6a7fe67c3754d6dccb6a34d5c876a347b916b273210a37e770f208d91",
+    "res://assets/v31/collision/366b68a13a8b4529e1f6c823a97e0f6c2e29e49aa8d79f649bd55533ac8c005a.res": "6bee3272e69ecfc2b238445087f57f84465c26d7aa54f02129ab3db1c63730cd",
+    "res://assets/v31/collision/5227f723555f3611e1b1c24103635228726db38e3012f85af38e145fd6df1561.res": "8a56f90aad9f3ad875bb1f708a0db9800cc11b646280eb0571b7024e12f6cd80",
+    "res://assets/v31/collision/57b3a115a5ed48cdf4b2fa6b46d81903f6dd50ffc6e958b9c6fa44d6999efa8e.res": "4433ab07756a96427a558009d28be5f8bc5dfeb1c0a925f5b235cf0b4384205d",
+    "res://assets/v31/collision/d00e8f51e0ec9fd9e381b5faff373933cb24bb18f975b3fc60caac8e1963cbfd.res": "91c887b5e535554e936dd9041c90e9d5f83f7c6e5d61478de062b1c12286a76a",
+    "res://assets/v31/collision/d88a027d981e375727c32914f3c7234e7d2fb10c102b0b5f188854c137805ce8.res": "a732b878f214b689172f00c4d8b136846958784e9e6cd557527a2774d7d2da6d",
+    "res://assets/v31/collision/f3e9149c3777c296cef2d070d933bf03c7cbab1f5ac2b9ac4fbf7247bf031a24.res": "27030d2cf9a03feb473f9001ed3febb4dae0f585f21ce5242d6ba74d67f55cf7",
+    "res://assets/v36/spawn-sales/A1F-048.scn": "b2b04a72ee71bed2c8b9780ce4d0cebee2141d847a38fb6bc106b5a0411a7d64",
+    "res://assets/v36/studios/apparel-arrival-2.res": "bff80ce1ad9e6d4653e71fe385ef0ae49029b7071b3dcb26617e6aefd2c674e8",
+    "res://assets/v36/studios/apparel-gallery-2.res": "ba04dec217ac7ff45f388176f31e8f73aafa2a7b86cb3f9ca558805f49458ac6"
+   },
+   "layout_signature": "963545cdbbbe7090c225fcfb26b96a91075a277ebed92623456d6f5ded8a30f8",
+   "report": {
+    "category": "apparel",
+    "fixtures": 28,
+    "products": 2,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-049": {
+   "file": "res://assets/v36/spawn-sales/A1F-049.scn",
+   "files": {
+    "res://assets/v31/collision/5227f723555f3611e1b1c24103635228726db38e3012f85af38e145fd6df1561.res": "8a56f90aad9f3ad875bb1f708a0db9800cc11b646280eb0571b7024e12f6cd80",
+    "res://assets/v31/collision/57b3a115a5ed48cdf4b2fa6b46d81903f6dd50ffc6e958b9c6fa44d6999efa8e.res": "4433ab07756a96427a558009d28be5f8bc5dfeb1c0a925f5b235cf0b4384205d",
+    "res://assets/v31/collision/d00e8f51e0ec9fd9e381b5faff373933cb24bb18f975b3fc60caac8e1963cbfd.res": "91c887b5e535554e936dd9041c90e9d5f83f7c6e5d61478de062b1c12286a76a",
+    "res://assets/v31/collision/f3e9149c3777c296cef2d070d933bf03c7cbab1f5ac2b9ac4fbf7247bf031a24.res": "27030d2cf9a03feb473f9001ed3febb4dae0f585f21ce5242d6ba74d67f55cf7",
+    "res://assets/v36/spawn-sales/A1F-049.scn": "f3a60bc418ac870eef98c16dc24566ca26fd714324616d3ac4dc54dcf86ffa2e",
+    "res://assets/v36/studios/apparel-arrival-2.res": "bff80ce1ad9e6d4653e71fe385ef0ae49029b7071b3dcb26617e6aefd2c674e8",
+    "res://assets/v36/studios/apparel-gallery-2.res": "ba04dec217ac7ff45f388176f31e8f73aafa2a7b86cb3f9ca558805f49458ac6"
+   },
+   "layout_signature": "78461f29570f420c06f8611a5ffbac339e043f6fa162020d5ca2fe65950b5d53",
+   "report": {
+    "category": "apparel",
+    "fixtures": 10,
+    "products": 3,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-050": {
+   "file": "res://assets/v36/spawn-sales/A1F-050.scn",
+   "files": {
+    "res://assets/v31/collision/844bbadddaa8659dc62d12df39121a6221dd6e89f9712cfabf46759c813dbad7.res": "71780d6742c487b097e05c3400d312e8464a304d3655595879ab345c40c6cade",
+    "res://assets/v31/collision/f578603ea77e6437a3b7bf084458fef353800dd8bf838421dcb1cdc18da2e6c2.res": "3eeeb580944e4224825f566dc009efd8a3db453085ec02026b61d0a4b0438764",
+    "res://assets/v36/spawn-sales/A1F-050.scn": "b33f6c882645e56a33ac719bb66388c6b53d689d3703147ee60fde2d3f74d502",
+    "res://assets/v36/studios/shoes-arrival-0.res": "afe859a5bbbdcfa18da409663156053268d74a42d1ad2ac42cb34962f760aea3",
+    "res://assets/v36/studios/shoes-gallery-0.res": "b7c08cfd894c0ba1f6b61e69a7ddb8124a6b472db3716bec0d32558e4ebbf143"
+   },
+   "layout_signature": "af3ca71082f02b58bbcb5bd50a549617736036c430d283ed3a1e392b89724266",
+   "report": {
+    "category": "shoes",
+    "fixtures": 4,
+    "products": 16,
+    "stage": "施工・画像判定待ち"
+   }
+  },
+  "A1F-051": {
+   "file": "res://assets/v36/spawn-sales/A1F-051.scn",
+   "files": {
+    "res://.godot/imported/orienne_atelier_0.glb-03574e610921464ccb11521efe07574a.scn": "e168c2d04a44c1b3d4ab9358405c1f99b2994ac25e7ec2399c7af69cd95949ba",
+    "res://.godot/imported/orienne_atelier_1.glb-565caec9aeea2af9ca2eecc71688aa43.scn": "b66c715a48580d08c732a707ea8337f8fd4aee6495497a72fcc9942c50c6a63b",
+    "res://.godot/imported/orienne_atelier_2.glb-38e3d7d9e92604fe879cb9f625c091fa.scn": "150b6584074f60bb6a78bdb85c11f60e372d6bad844eefda7c963e7263d9d7ae",
+    "res://.godot/imported/orienne_atelier_island.glb-0bb1dd1ebd5382db87f41f0db2486817.scn": "65a7487e5a8e39ef4c3ac7701b6447198d7f8f1939c865a5d2b7a0e1e601501d",
+    "res://.godot/imported/orienne_field_0.glb-4f0b56c7ca36abc59f3c0ba8fdf2b7c3.scn": "acdc2cd57fc92430f59a718e36bd470aad7c5474cc6ed0b61dae66171e25d762",
+    "res://.godot/imported/orienne_field_1.glb-c78b84dc8fd2491d046bafcf8be0c151.scn": "04931643a9a6b371da4521af922b27e79b95064b75d6afd1c5b53c4e8f42134d",
+    "res://.godot/imported/orienne_field_island.glb-407414d68cb0328b71cca968bd99b75b.scn": "647a811567d2b8439abe3bed961344560bb3fc19e74a8361b562619a182faf0c",
+    "res://.godot/imported/orienne_junior_0.glb-ca9a9519079bb217b9b19f60ee0c6466.scn": "bb77d516c050df52405f145967b36afbc50f0427ab830fff3c414c4812073f73",
+    "res://.godot/imported/orienne_junior_1.glb-caa3abcf5c6a396a9940d1790c9a6ec3.scn": "b0c9b707759c0a04d7370289c82af759423c274308c6fec15649885f5224e457",
+    "res://.godot/imported/orienne_junior_island.glb-adbff00901e6e9c56ca7333ec74f66cf.scn": "2a8a6159b9955878bf44708e1582129e7aece46e52e2dca08ee3c97c3e82eca8",
+    "res://.godot/imported/orienne_press_0.glb-12c9d86addf0b017bf5b852d30b8fbe9.scn": "88e0714a39a593953c12c195c37cbccd1dfc5a5595f8091d237dc9ba5f0a03ab",
+    "res://.godot/imported/orienne_press_1.glb-cff1ceec7898400a07c5ca5f295326a5.scn": "db6e1fb30349c27e093143c97a9988e8c5159e837662ab215fc19a250296ba88",
+    "res://.godot/imported/orienne_press_2.glb-81e0b83bacdebbdba723b699ae04481b.scn": "6b1de483df3a15f55e8714ce54e2601aba519c6e4506e0f5dc6836d805705e05",
+    "res://.godot/imported/orienne_press_island.glb-8dcc8c1c8f54c43be8054e827b955513.scn": "12d8433aa1474f29780f28d50493e46932c802c4d2279d82e3798d4860ecc733",
+    "res://assets/v31/collision/30e89f8dc53635f1d1b78833430bba07bd64675b86c773c7e033922670806d71.res": "841dcb7399ab130fa650bf789927f8f4bbf1ed7b193283350c85b7d89bd7d6b0",
+    "res://assets/v31/collision/8bfd6538b39fd54b4071d376294270a1d82a6368d9c9349f8dec562fa7084f7e.res": "d9e12b27617b7f15754f6f0f6d1bbdca157102e42072c450dba5d529e4f3f23a",
+    "res://assets/v31/collision/d00e8f51e0ec9fd9e381b5faff373933cb24bb18f975b3fc60caac8e1963cbfd.res": "91c887b5e535554e936dd9041c90e9d5f83f7c6e5d61478de062b1c12286a76a",
+    "res://assets/v31/collision/e3b0d46e01304b3139a334c9ad781d6290bdb9f50b480e58eef961a2bb55e21b.res": "33efc8ee293fe1f15470d8cba38972782ca9e468960757cc234e3b82f18bf721",
+    "res://assets/v36/spawn-sales/A1F-051.scn": "d216ed226987a183505518a07c21c58713cc30b55ffdaf8193cdfb2dd70e8979",
+    "res://assets/v36/studios/book-arrival-0.res": "2ec885194d7cac8be198b96f9018b1d1af4e95c2f913f48993156013aad4560e"
+   },
+   "layout_signature": "b46908ab312693481abf0e4ab4ace4e183b33b8ff87d719d8fe74f259a9cd01b",
+   "report": {
+    "category": "book",
+    "fixtures": 65,
+    "products": 2630.0,
+    "stage": "施工・画像判定待ち"
+   }
+  }
+ }
+}
